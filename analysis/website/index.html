@@ -1,0 +1,68 @@
+<!--
+To avoid CORS error, start a server using Python to view the table
+
+>>> python3 -m http.server 8000
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src= 
+"https://code.jquery.com/jquery-3.5.1.js"> 
+    </script> 
+    </head>
+<body>
+
+<h1>Simple Tabular Display of Evidence</h1>
+
+<table id = "table">
+    <tr>
+       <!-- <th>Paper DOI</th>
+        <th>Paper Citation</th>-->
+        <th>Cell Type</th>
+        <th>Cell State</th>
+        <th>Gene</th>
+        <th>Gene ID</th>
+        <th>Source Type</th>
+        <th>Source Rational</th>
+    </tr>
+</table>
+
+<script>
+
+    $(document).ready(function () {
+        $.getJSON("evidence.json",
+            function (data) {
+                var row = '';
+
+                $.each(data, function (key, value) {
+                    row += '<tr>';
+                    row += '<td>' + 
+                        value.cell_type + '</td>';
+                    
+                    row += '<td>' +
+                        value.cell_state + '</td>';
+                    
+                    row += '<td>' + 
+                        value.gene + '</td>';
+                    
+                    row += '<td>' + 
+                        value.gene_id + '</td>';
+                    
+                    row += '<td>' + 
+                        value.source.source_type + '</td>';
+                    
+                    row += '<td>' + 
+                        value.source.source_rationale + '</td>';
+                    
+                    row += '</tr>';
+                });
+
+                $('#table').append(row);
+            }
+        )
+    })
+   
+</script>
+
+</body>
+</html>
