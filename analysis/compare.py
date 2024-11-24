@@ -11,7 +11,7 @@ with open(file1, 'r') as f1, open(file2, 'r') as f2:
 
 for item1 in data1:
     for item2 in data2:
-        if item1['cell_type'] == item2['cell_type'] or item1['gene'] == item2['gene'] or item1['gene'] in item2['gene'] or item2['gene'] in item1['gene']:
+        if item1['cell_type'] == item2['cell_type'] or item1['gene'] == item2['gene']:
             with open("similarities.txt", "a") as file:
                 file.write("Similarity Found\n")
                 file.write(json.dumps(item1))
