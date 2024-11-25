@@ -7278,6 +7278,19 @@
           "source_type": "img",
           "source_rationale": "marker shows sign of expression in figure"
         }
-    }
+    },
+
+    {
+      "organism": "homo_sapiens",
+      "cell_source": "heart",
+      "cell_type": "Adipocytes",
+      "cell_state": "none",
+      "gene": "ADIPOQ",
+      "source": {
+        "source_id": "text",
+        "source_type": "text",
+        "source_rationale": "ADIPOQ, which modulates fatty acid transport and increases intracellular calcium, is present in nearly 65% of adipocyte nuclei but only 0.3% of other cell types"
+      }
+  }
 
 ]
