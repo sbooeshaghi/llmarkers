@@ -42,12 +42,12 @@
             <td><a target="_blank" href="${citation.doi}">${
           citation.citation || "N/A"
         }</a></td>
-            <td>${evidence.organism || "N/A"}</td>
-            <td>${evidence.cell_source || "N/A"}</td>
-            <td>${evidence.cell_type || "N/A"}</td>
-            <td>${evidence.cell_state || "N/A"}</td>
-            <td>${evidence.gene || "N/A"}</td>
-            <td>${evidence.gene_id || "N/A"}</td>
+            <td>${evidence.derived.organism || "N/A"}</td>
+            <td>${evidence.derived.cell_source || "N/A"}</td>
+            <td>${evidence.derived.cell_type_label || "N/A"}</td>
+            <td>${evidence.derived.cell_state || "N/A"}</td>
+            <td>${evidence.derived.gene || "N/A"}</td>
+            <td>${evidence.derived.gene_id || "N/A"}</td>
             <td>${evidence.source.source_type || "N/A"}</td>
             <td>${evidence.source.source_rationale || "N/A"}</td>
         </tr>`;
@@ -130,6 +130,18 @@
           {
             evidence: "../data/kidney_Wu2018/evidence_human/evidence.json",
             citation: "../data/kidney_Wu2018/citation.json",
+          },
+          {
+            evidence: "../data/adipose_Hildreth2021/evidence_human/evidence.json",
+            citation: "../data/adipose_Hildreth2021/citation.json",
+          },
+          {
+            evidence: "../data/adipose_Jaitin2019/evidence_human/evidence.json",
+            citation: "../data/adipose_Jaitin2019/citation.json",
+          },
+          {
+            evidence: "../data/adipose_Massier2023/evidence_human/evidence.json",
+            citation: "../data/adipose_Massier2023/citation.json",
           },
         ];
 
