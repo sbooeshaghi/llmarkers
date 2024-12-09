@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 
 def load_evidence(fn):
@@ -20,22 +19,8 @@ def make_comparison(paper1: str, paper2: str):
         paper2 (str): the file name of the second paper
     
     Returns:
-        list: the 3D matrix describing set difference and intersection in gene expression
+        pd.DataFrame: the 3D matrix describing set difference and intersection in gene expression
     """
-    """
-    data1 = load_evidence(paper1)
-    data2 = load_evidence(paper2)
-    set_arr = [1,2,3] # placeholder
-    
-    feature = 'derived_cell_type_label'
-    #print(data1[feature].to_string(index=False).upper())
-    
-
-    data = {'x': data1[feature].to_string(index=False).upper(), 'y': data2[feature].to_string(index=False).upper(), 'z': set_arr}
-    df = pd.DataFrame(data)
-    return df
-    """
-    
 
     data1 = load_evidence(paper1)
     data2 = load_evidence(paper2)
