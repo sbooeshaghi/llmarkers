@@ -31,7 +31,7 @@ def add_json_to_db(ev_file, db_file):
     
     conn = duckdb.connect(db_file) # connect to database
     table_name = 'evidence'
-    # conn.execute(f'DROP TABLE IF EXISTS {table_name}') FOR TESTING/DEBUGGING PURPOSES ONLY
+    # conn.execute(f'DROP TABLE IF EXISTS {table_name}') # FOR TESTING/DEBUGGING PURPOSES ONLY
     conn.execute(f"CREATE TABLE IF NOT EXISTS {table_name} AS SELECT * FROM evidence_df")
     conn.execute(f"INSERT INTO {table_name} SELECT * FROM evidence_df")
     
