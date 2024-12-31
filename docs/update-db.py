@@ -2,7 +2,6 @@
 
 import duckdb
 import json
-import os
 import pandas as pd
 
 def load_citation(fn):
@@ -10,6 +9,13 @@ def load_citation(fn):
         data = json.load(file)
     if 'citation' in list(data.keys()):
         return data['citation']
+    return 'N/A'
+
+def load_doi(fn):
+    with open(fn, 'r') as file:
+        data = json.load(file)
+    if 'doi' in list(data.keys()):
+        return data['doi']
     return 'N/A'
 
 def load_evidence(fn):
@@ -26,18 +32,19 @@ def load_evidence(fn):
 def add_json_to_db(ev_file, db_file):
     evidence_df = load_evidence(f"../data/{ev_file}/evidence_human/evidence.json")
     citation = load_citation(f"../data/{ev_file}/citation.json")
+    doi = load_doi(f"../data/{ev_file}/citation.json")
 
-    evidence_df.insert(0, 'citation', citation)
+    evidence_df.insert(0, 'doi', doi)
+    evidence_df.insert(1, 'citation', citation)
     
     conn = duckdb.connect(db_file) # connect to database
     table_name = 'evidence'
-    # conn.execute(f'DROP TABLE IF EXISTS {table_name}') # FOR TESTING/DEBUGGING PURPOSES ONLY
+    #conn.execute(f'DROP TABLE IF EXISTS {table_name}') # FOR TESTING/DEBUGGING PURPOSES ONLY
     conn.execute(f"CREATE TABLE IF NOT EXISTS {table_name} AS SELECT * FROM evidence_df")
     conn.execute(f"INSERT INTO {table_name} SELECT * FROM evidence_df")
     
     result = conn.execute(f"SELECT * FROM {table_name}").fetchdf()
     print(result)
-    
     conn.close()
 
 evidence = input("Enter folder name of evidence: ")

@@ -36,131 +36,34 @@
     </div>
 
     <script>
-      // Data formatting functions
-      const formatRow = (citation, evidence) => {
-        return `<tr>
-            <td><a target="_blank" href="${citation.doi}">${
-          citation.citation || "N/A"
-        }</a></td>
-            <td>${evidence.derived.organism || "N/A"}</td>
-            <td>${evidence.derived.cell_source || "N/A"}</td>
-            <td>${evidence.derived.cell_type_label || "N/A"}</td>
-            <td>${evidence.derived.cell_state || "N/A"}</td>
-            <td>${evidence.derived.gene || "N/A"}</td>
-            <td>${evidence.derived.gene_id || "N/A"}</td>
-            <td>${evidence.source.source_type || "N/A"}</td>
-            <td>${evidence.source.source_rationale || "N/A"}</td>
-        </tr>`;
-      };
+      $(document).ready(function() {
+        $.getJSON("http://127.0.0.1:5000/evidence", function(data) {
+          let rows = data.map((item) => `
+            <tr>
+              <td><a target="_blank" href="${item.doi}">${item.citation || "N/A"}</a></td>
+              <td>${item.organsim || "N/A"}</td>
+              <td>${item.cell_source || "N/A"}</td>
+              <td>${item.cell_type_label || "N/A"}</td>
+              <td>${item.cell_state || "N/A"}</td>
+              <td>${item.gene || "N/A"}</td>
+              <td>${item.gene_id || "N/A"}</td>
+              <td>${item.source_type || "N/A"}</td>
+              <td>${item.source_rationale || "N/A"}</td>
+            </tr>`).join("");
+          
+          $("#evidence-table tbody").html(rows);
 
-      const formatRows = (citation, evidence) => {
-        return evidence.map((item) => formatRow(citation, item)).join("");
-      };
-
-      // Data loading functions
-      const loadFilePair = async (evidencePath, citationPath) => {
-        try {
-          const [evidenceData, citationData] = await Promise.all([
-            $.getJSON(evidencePath),
-            $.getJSON(citationPath),
-          ]);
-          return {
-            evidence: evidenceData,
-            citation: citationData,
-          };
-        } catch (error) {
-          console.error(
-            `Error loading files ${evidencePath} and ${citationPath}:`,
-            error
-          );
-          throw error;
-        }
-      };
-
-      const loadMultipleFilePairs = async (filePairs) => {
-        try {
-          const results = await Promise.all(
-            filePairs.map(async (pair) => {
-              const { evidence, citation } = await loadFilePair(
-                pair.evidence,
-                pair.citation
-              );
-              return formatRows(citation, evidence);
-            })
-          );
-          return results.join("");
-        } catch (error) {
-          console.error("Error loading multiple file pairs:", error);
-          throw error;
-        }
-      };
-
-      // Main execution
-      $(document).ready(function () {
-        const filePairs = [
-          {
-            evidence: "../data/adipose_Emont2022/evidence_human/evidence.json",
-            citation: "../data/adipose_Emont2022/citation.json",
-          },
-          {
-            evidence: "../data/adipose_Emont2022/evidence_human/evidence.json",
-            citation: "../data/adipose_Emont2022/citation.json",
-          },
-          {
-            evidence: "../data/adipose_Vijay2019/evidence_human/evidence.json",
-            citation: "../data/adipose_Vijay2019/citation.json",
-          },
-          {
-            evidence: "../data/bladder_Yu2019/evidence_human/evidence.json",
-            citation: "../data/bladder_Yu2019/citation.json",
-          },
-          {
-            evidence: "../data/bone_He2021/evidence_human/evidence.json",
-            citation: "../data/bone_He2021/citation.json",
-          },
-          {
-            evidence: "../data/eye_Gautam2021/evidence_human/evidence.json",
-            citation: "../data/eye_Gautam2021/citation.json",
-          },
-
-          {
-            evidence: "../data/heart_Tucker2020/evidence_human/evidence.json",
-            citation: "../data/heart_Tucker2020/citation.json",
-          },
-          {
-            evidence: "../data/kidney_Wu2018/evidence_human/evidence.json",
-            citation: "../data/kidney_Wu2018/citation.json",
-          },
-          {
-            evidence: "../data/adipose_Hildreth2021/evidence_human/evidence.json",
-            citation: "../data/adipose_Hildreth2021/citation.json",
-          },
-          {
-            evidence: "../data/adipose_Jaitin2019/evidence_human/evidence.json",
-            citation: "../data/adipose_Jaitin2019/citation.json",
-          },
-          {
-            evidence: "../data/adipose_Massier2023/evidence_human/evidence.json",
-            citation: "../data/adipose_Massier2023/citation.json",
-          },
-        ];
-
-        loadMultipleFilePairs(filePairs)
-          .then((formattedRows) => {
-            $("#evidence-table tbody").append(formattedRows);
-            let table = new DataTable("#evidence-table", {
-              paging: true,
-              searching: true,
-              info: true,
-              order: [[0, "asc"]],
-            });
-          })
-          .catch((error) => {
-            $("#evidence-table tbody").append(
-              '<tr><td colspan="9">Error loading data</td></tr>'
-            );
+          new DataTable("#evidence-table", {
+            paging: true,
+            searching: true,
+            info: true,
+            order: [[0, "asc"]],
           });
+        }).fail(function () {
+            $("#evidence-table tbody").html('<tr><td colspan="9">Failed to load data</td></tr>');
+        });
       });
     </script>
   </body>
 </html>
+    

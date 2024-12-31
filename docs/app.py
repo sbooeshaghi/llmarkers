@@ -4,8 +4,10 @@
 
 import duckdb
 from flask import Flask, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 conn = duckdb.connect("evidence.db")
 
@@ -15,8 +17,8 @@ def index():
 
 @app.route('/evidence')
 def get_evidence():
-    result = conn.execute("SELECT * FROM evidence").fetchall()
-    return jsonify(result)
+    df = conn.execute("SELECT * FROM evidence").fetch_df()
+    return jsonify(df.to_dict(orient='records'))
 
 if __name__ == '__main__':
     app.run(debug=True)
