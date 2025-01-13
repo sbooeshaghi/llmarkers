@@ -1,0 +1,3337 @@
+[
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4",
+            "gene_id": "ENSG00000152670"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "In contrast to all other types of germline cells, OSCs are suggested to express DDX4 on their cell membrane enabling the isolation via FACS"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "isolation",
+            "gene": "DAZL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "isolation",
+            "gene": "DAZL",
+            "gene_id": "ENSG00000092345"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Isolated OSCs were shown to express germline markers (e.g., DAZL, PRDM1, and IFITM3)"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "isolation",
+            "gene": "PRDM1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "isolation",
+            "gene": "PRDM1",
+            "gene_id": "ENSG00000057657"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Isolated OSCs were shown to express germline markers (e.g., DAZL, PRDM1, and IFITM3)"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "isolation",
+            "gene": "IFITM3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "isolation",
+            "gene": "IFITM3",
+            "gene_id": "ENSG00000142089"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Isolated OSCs were shown to express germline markers (e.g., DAZL, PRDM1, and IFITM3)"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4-Ab"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Oogonial Stem Cells (OSCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4-Ab",
+            "gene_id": "ENSG00000152670"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "In order to relate the findings to OSCs, we marked the cells with DDX4 antibodies (Ab) in all experiments; the single-cell mRNA sequencing (scRNA-seq) experiments were done on uncultured, unsorted cells, and sorted DDX4-Ab+ and Ab\u2212 cell fractions as well as on cultured, sorted DDX4-Ab+ and Ab\u2212 cells. The surface marker screen included DDX4 Ab as an additional marker."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD69"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD69",
+            "gene_id": "ENSG00000110848"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ITGB2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ITGB2",
+            "gene_id": "ENSG00000160255"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD2",
+            "gene_id": "ENSG00000116824"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD3G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD3G",
+            "gene_id": "ENSG00000160654"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD8A"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD8A",
+            "gene_id": "ENSG00000153563"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "antigen-presenting cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD14"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "antigen-presenting cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD14",
+            "gene_id": "ENSG00000170458"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "antigen-presenting cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "HLA-DRA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "antigen-presenting cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "HLA-DRA",
+            "gene_id": "ENSG00000204287"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "antigen-presenting cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "B2M"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "antigen-presenting cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "B2M",
+            "gene_id": "ENSG00000166710"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "antigen-presenting cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "HLA-DQB1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "antigen-presenting cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "HLA-DQB1",
+            "gene_id": "ENSG00000179344"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CDH5"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CDH5",
+            "gene_id": "ENSG00000179776"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "ndothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF. "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "VWF"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "VWF",
+            "gene_id": "ENSG00000110799"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "ndothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF. "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FOXL2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FOXL2",
+            "gene_id": "ENSG00000183770"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-M\u00fcllerian hormone (AMH)."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "AMH"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "AMH",
+            "gene_id": "ENSG00000104899"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-M\u00fcllerian hormone (AMH)."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MYH11"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MYH11",
+            "gene_id": "ENSG00000133392"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MCAM"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MCAM",
+            "gene_id": "ENSG00000076706"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "RGS5"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "RGS5",
+            "gene_id": "ENSG00000143248"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "RERGL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "RERGL",
+            "gene_id": "ENSG00000111404"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TAGLN"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TAGLN",
+            "gene_id": "ENSG00000149591"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4",
+            "gene_id": "ENSG00000152670"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The OSC markers DDX4, DAZL, and DPPA3 were found in the oocytes only"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DAZL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DAZL",
+            "gene_id": "ENSG00000092345"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The OSC markers DDX4, DAZL, and DPPA3 were found in the oocytes only"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DPPA3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DPPA3",
+            "gene_id": "ENSG00000187569"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The OSC markers DDX4, DAZL, and DPPA3 were found in the oocytes only"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MCAM"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MCAM",
+            "gene_id": "ENSG00000076706"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "he top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TAGLN"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TAGLN",
+            "gene_id": "ENSG00000149591"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "he top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ACTA2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ACTA2",
+            "gene_id": "ENSG00000107796"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "he top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab- cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DCN"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab- cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DCN",
+            "gene_id": "ENSG00000011465"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The top 25 highly expressed genes in the Ab\u2212 cells included stromal cell markers, such as DCN and PDGFRA"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab- cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PDGFRA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab- cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PDGFRA",
+            "gene_id": "ENSG00000134853"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The top 25 highly expressed genes in the Ab\u2212 cells included stromal cell markers, such as DCN and PDGFRA"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD9"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD9",
+            "gene_id": "ENSG00000010278"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD39"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD39",
+            "gene_id": "ENSG00000138185"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD44"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD44",
+            "gene_id": "ENSG00000026508"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49a"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49a",
+            "gene_id": "ENSG00000213949"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49c"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49c",
+            "gene_id": "ENSG00000005884"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD144"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD144",
+            "gene_id": "ENSG00000179776"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD146"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "DDX4-Ab+ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD146",
+            "gene_id": "ENSG00000076706"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal mitosis",
+            "gene": "PRDM14"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal mitosis",
+            "gene": "PRDM14",
+            "gene_id": "ENSG00000147596"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Fetal mitotic FGCs showed a high expression of the pluripotency genes PRDM14, POU5F1, NANOG, and LIN28A"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal mitosis",
+            "gene": "POU5F1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal mitosis",
+            "gene": "POU5F1",
+            "gene_id": "ENSG00000204531"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Fetal mitotic FGCs showed a high expression of the pluripotency genes PRDM14, POU5F1, NANOG, and LIN28A"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal mitosis",
+            "gene": "NANOG"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal mitosis",
+            "gene": "NANOG",
+            "gene_id": "ENSG00000111704"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Fetal mitotic FGCs showed a high expression of the pluripotency genes PRDM14, POU5F1, NANOG, and LIN28A"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal mitosis",
+            "gene": "LIN28A"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal mitosis",
+            "gene": "LIN28A",
+            "gene_id": "ENSG00000131914"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Fetal mitotic FGCs showed a high expression of the pluripotency genes PRDM14, POU5F1, NANOG, and LIN28A"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "TFAP2C"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "TFAP2C",
+            "gene_id": "ENSG00000087510"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "STAR8"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "STAR8",
+            "gene_id": "ENSG00000147465"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "SYCP3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "SYCP3",
+            "gene_id": "ENSG00000139351"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "NANOS2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "NANOS2",
+            "gene_id": "ENSG00000188425"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "NANOS3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "NANOS3",
+            "gene_id": "ENSG00000187556"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "DAZL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "DAZL",
+            "gene_id": "ENSG00000092345"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "DPPA3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "DPPA3",
+            "gene_id": "ENSG00000187569"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "PRDM1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "PRDM1",
+            "gene_id": "ENSG00000057657"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "DDX4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "DDX4",
+            "gene_id": "ENSG00000152670"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "SALL4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "SALL4",
+            "gene_id": "ENSG00000101115"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "BOLL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Fetal Germline Cells (FGCs)",
+            "cell_source": "ovarian cortex",
+            "cell_state": "fetal meiotic",
+            "gene": "BOLL",
+            "gene_id": "ENSG00000152430"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9",
+            "gene_id": "ENSG00000164404"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3",
+            "gene_id": "ENSG00000188372"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA",
+            "gene_id": "ENSG00000183733"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2",
+            "gene_id": "ENSG00000149507"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LIN28"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LIN28",
+            "gene_id": "ENSG00000131914"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TUBB8"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TUBB8",
+            "gene_id": "ENSG00000261456"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9",
+            "gene_id": "ENSG00000164404"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3",
+            "gene_id": "ENSG00000188372"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA",
+            "gene_id": "ENSG00000183733"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2",
+            "gene_id": "ENSG00000149507"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LIN28"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LIN28",
+            "gene_id": "ENSG00000131914"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TUBB8"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TUBB8",
+            "gene_id": "ENSG00000261456"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Consistently, germline marker genes expressed in RA responsive and meiotic FGCs (TFAP2C, STAR8, SYCP3, NANOS2, NANOS3, DAZL, DPPA3, PRDM1, DDX4, SALL4, and BOLL) as well as oocyte marker genes expressed in fetal oogonia and adult oocytes (GDF9, ZP3, FIGLA, OOSP2, LIN28, TUBB8) were not detected in the four adult cells "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9",
+            "gene_id": "ENSG00000164404"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3",
+            "gene_id": "ENSG00000188372"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2",
+            "gene_id": "ENSG00000149507"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA",
+            "gene_id": "ENSG00000183733"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD69"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD69",
+            "gene_id": "ENSG00000110848"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ITGB2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ITGB2",
+            "gene_id": "ENSG00000160255"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CXCR4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CXCR4",
+            "gene_id": "ENSG00000121966"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD14"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "immune cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD14",
+            "gene_id": "ENSG00000170458"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "AMH"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "AMH",
+            "gene_id": "ENSG00000104899"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FOXL2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FOXL2",
+            "gene_id": "ENSG00000183770"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "BEX1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "BEX1",
+            "gene_id": "ENSG00000133169"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FST"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "granulosa cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FST",
+            "gene_id": "ENSG00000134363"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD34"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD34",
+            "gene_id": "ENSG00000174059"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "VWF"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "VWF",
+            "gene_id": "ENSG00000110799"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FLI1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FLI1",
+            "gene_id": "ENSG00000177731"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CDH5"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "endothelial cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CDH5",
+            "gene_id": "ENSG00000179776"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MYH11"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MYH11",
+            "gene_id": "ENSG00000133392"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MCAM"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MCAM",
+            "gene_id": "ENSG00000076706"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "RGS5"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "RGS5",
+            "gene_id": "ENSG00000143248"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "RERGL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "RERGL",
+            "gene_id": "ENSG00000111404"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TAGLN"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TAGLN",
+            "gene_id": "ENSG00000149591"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PDGFRA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PDGFRA",
+            "gene_id": "ENSG00000134853"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DCN"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DCN",
+            "gene_id": "ENSG00000011465"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "APOE"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "APOE",
+            "gene_id": "ENSG00000130203"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FHL2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FHL2",
+            "gene_id": "ENSG00000115641"
+        },
+        "source": {
+            "source_id": "Fig. 2d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DPPA3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DPPA3",
+            "gene_id": "ENSG00000187569"
+        },
+        "source": {
+            "source_id": "Fig. 3c",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DAZL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DAZL",
+            "gene_id": "ENSG00000092345"
+        },
+        "source": {
+            "source_id": "Fig. 3c",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PRDM1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PRDM1",
+            "gene_id": "ENSG00000057657"
+        },
+        "source": {
+            "source_id": "Fig. 3c",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9",
+            "gene_id": "ENSG00000164404"
+        },
+        "source": {
+            "source_id": "Fig. 3c",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3",
+            "gene_id": "ENSG00000188372"
+        },
+        "source": {
+            "source_id": "Fig. 3c",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2",
+            "gene_id": "ENSG00000149507"
+        },
+        "source": {
+            "source_id": "Fig. 3c",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "oocyte cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA",
+            "gene_id": "ENSG00000183733"
+        },
+        "source": {
+            "source_id": "Fig. 3c",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD9"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD9",
+            "gene_id": "ENSG00000010278"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD39"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD39",
+            "gene_id": "ENSG00000138185"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD44"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD44",
+            "gene_id": "ENSG00000026508"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49A"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49A",
+            "gene_id": "ENSG00000213949"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49C"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49C",
+            "gene_id": "ENSG00000005884"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD144"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD144",
+            "gene_id": "ENSG00000179776"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MCAM"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "perivascular cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "MCAM",
+            "gene_id": "ENSG00000076706"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD26"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD26",
+            "gene_id": "ENSG00000197635"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49E"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD49E",
+            "gene_id": "ENSG00000161638"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD54"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD54",
+            "gene_id": "ENSG00000090339"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD55"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD55",
+            "gene_id": "ENSG00000196352"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD62E"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD62E",
+            "gene_id": "ENSG00000007908"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD105"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD105",
+            "gene_id": "ENSG00000106991"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD200"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "CD200",
+            "gene_id": "ENSG00000091972"
+        },
+        "source": {
+            "source_id": "Fig. 6b",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PRDM14"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PRDM14",
+            "gene_id": "ENSG00000147596"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "POU5F1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "POU5F1",
+            "gene_id": "ENSG00000204531"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "NANOG"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "NANOG",
+            "gene_id": "ENSG00000111704"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LIN28A"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LIN28A",
+            "gene_id": "ENSG00000131914"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "BOLL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "BOLL",
+            "gene_id": "ENSG00000152430"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "SALL4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mitotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "SALL4",
+            "gene_id": "ENSG00000101115"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "BOLL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "BOLL",
+            "gene_id": "ENSG00000152430"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "SALL4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "SALL4",
+            "gene_id": "ENSG00000101115"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4",
+            "gene_id": "ENSG00000152670"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PRDM1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PRDM1",
+            "gene_id": "ENSG00000057657"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DPPA3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "RA responsive fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DPPA3",
+            "gene_id": "ENSG00000187569"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "BOLL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "BOLL",
+            "gene_id": "ENSG00000152430"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "SALL4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "SALL4",
+            "gene_id": "ENSG00000101115"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DDX4",
+            "gene_id": "ENSG00000152670"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PRDM1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "PRDM1",
+            "gene_id": "ENSG00000057657"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DPPA3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DPPA3",
+            "gene_id": "ENSG00000187569"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DAZL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "DAZL",
+            "gene_id": "ENSG00000092345"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "NANOS2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "NANOS2",
+            "gene_id": "ENSG00000188425"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "NANOS3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "NANOS3",
+            "gene_id": "ENSG00000187556"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "SYCP3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "SYCP3",
+            "gene_id": "ENSG00000139351"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "STRA8"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "STRA8",
+            "gene_id": "ENSG00000146857"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TFAP2C"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "meiotic fetal germ cells",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TFAP2C",
+            "gene_id": "ENSG00000087510"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TUBB8"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TUBB8",
+            "gene_id": "ENSG00000261456"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LHX8"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LHX8",
+            "gene_id": "ENSG00000162624"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2",
+            "gene_id": "ENSG00000149507"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA",
+            "gene_id": "ENSG00000183733"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3",
+            "gene_id": "ENSG00000188372"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "fetal oogonia",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9",
+            "gene_id": "ENSG00000164404"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TUBB8"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "TUBB8",
+            "gene_id": "ENSG00000261456"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LHX8"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "LHX8",
+            "gene_id": "ENSG00000162624"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "OOSP2",
+            "gene_id": "ENSG00000149507"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "FIGLA",
+            "gene_id": "ENSG00000183733"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "ZP3",
+            "gene_id": "ENSG00000188372"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "adult oocytes",
+            "cell_source": "ovarian cortex",
+            "cell_state": "none",
+            "gene": "GDF9",
+            "gene_id": "ENSG00000164404"
+        },
+        "source": {
+            "source_id": "Fig. 7d",
+            "source_type": "image",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    }
+]
