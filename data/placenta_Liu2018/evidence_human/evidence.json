@@ -1,0 +1,4602 @@
+[
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "HLA-G, a marker of EVTs,24 was highly and specifically expressed in EVTs, slightly expressed in the STB, and could not be detected in the CTBs and STRs."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "epithelial cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CDH1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "epithelial cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CDH1",
+            "gene_id": "ENSG00000039068"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "In contrast, CDH1, which is a marker of epithelial cells,24 was highly expressed in the CTBs and some EVTs but not in the STB or STRs"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CDH1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CDH1",
+            "gene_id": "ENSG00000039068"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "In contrast, CDH1, which is a marker of epithelial cells,24 was highly expressed in the CTBs and some EVTs but not in the STB or STRs"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "VIM"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "VIM",
+            "gene_id": "ENSG00000026025"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "As presented in Fig. 1c, the clusters exhibiting high expression of VIM and HLA-A were cells from the stromal cell core. Among these cells, the CD14- and CD68-positive clusters were macrophages (Hofbauer cells), and the clusters with high expression of THY1 were mesenchymal stromal cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HLA-A"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HLA-A",
+            "gene_id": "ENSG00000206503"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "As presented in Fig. 1c, the clusters exhibiting high expression of VIM and HLA-A were cells from the stromal cell core. Among these cells, the CD14- and CD68-positive clusters were macrophages (Hofbauer cells), and the clusters with high expression of THY1 were mesenchymal stromal cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "macrophages (Hofbauer cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD14"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "macrophages (Hofbauer cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD14",
+            "gene_id": "ENSG00000170458"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "As presented in Fig. 1c, the clusters exhibiting high expression of VIM and HLA-A were cells from the stromal cell core. Among these cells, the CD14- and CD68-positive clusters were macrophages (Hofbauer cells), and the clusters with high expression of THY1 were mesenchymal stromal cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "macrophages (Hofbauer cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD68"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "macrophages (Hofbauer cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD68",
+            "gene_id": "ENSG00000129226"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "As presented in Fig. 1c, the clusters exhibiting high expression of VIM and HLA-A were cells from the stromal cell core. Among these cells, the CD14- and CD68-positive clusters were macrophages (Hofbauer cells), and the clusters with high expression of THY1 were mesenchymal stromal cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "THY1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "THY1",
+            "gene_id": "ENSG00000154096"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "As presented in Fig. 1c, the clusters exhibiting high expression of VIM and HLA-A were cells from the stromal cell core. Among these cells, the CD14- and CD68-positive clusters were macrophages (Hofbauer cells), and the clusters with high expression of THY1 were mesenchymal stromal cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "blood cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HBB"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "blood cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HBB",
+            "gene_id": "ENSG00000244734"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The cluster with high expression of HBB was blood cells. "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "trophoblasts",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CK7"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "trophoblasts",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CK7",
+            "gene_id": "ENSG00000135480"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The cell clusters with high expression of CK7 were those of trophoblast origin, and these cells also exhibited high expression of TFAP2C and GATA3, which are the two generic trophoblast markers."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "trophoblasts",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "TFAP2C"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "trophoblasts",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "TFAP2C",
+            "gene_id": "ENSG00000087510"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The cell clusters with high expression of CK7 were those of trophoblast origin, and these cells also exhibited high expression of TFAP2C and GATA3, which are the two generic trophoblast markers."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "trophoblasts",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "GATA3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "trophoblasts",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "GATA3",
+            "gene_id": "ENSG00000107485"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The cell clusters with high expression of CK7 were those of trophoblast origin, and these cells also exhibited high expression of TFAP2C and GATA3, which are the two generic trophoblast markers."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CDH1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CDH1",
+            "gene_id": "ENSG00000039068"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The CDH1 and EGFR double-positive and HLA-G-negative clusters were CTB_8W cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "EGFR"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "EGFR",
+            "gene_id": "ENSG00000146648"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The CDH1 and EGFR double-positive and HLA-G-negative clusters were CTB_8W cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The cell clusters with high expression of HLA-G and MMP2 [27], which are marker genes identifying EVTs, were EVT_8W and EVT_24W cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The cell clusters with high expression of HLA-G and MMP2 [27], which are marker genes identifying EVTs, were EVT_8W and EVT_24W cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MMP2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MMP2",
+            "gene_id": "ENSG00000087245"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The cell clusters with high expression of HLA-G and MMP2 [27], which are marker genes identifying EVTs, were EVT_8W and EVT_24W cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "MMP2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "MMP2",
+            "gene_id": "ENSG00000087245"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The cell clusters with high expression of HLA-G and MMP2 [27], which are marker genes identifying EVTs, were EVT_8W and EVT_24W cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CGB"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CGB",
+            "gene_id": "ENSG00000104827"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "STB_8W cells exhibited high expression of CGB and CSH1, genes used to recognize the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CSH1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CSH1",
+            "gene_id": "ENSG00000136488"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "STB_8W cells exhibited high expression of CGB and CSH1, genes used to recognize the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD90"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD90",
+            "gene_id": "ENSG00000154096"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The CD90-positive mesenchymal stromal cells also fell into 2 subtypes, i.e., Mes_1 and Mes_2."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2",
+            "gene_id": "ENSG00000171848"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Violin plots revealed that many of the genes that were highly expressed in the CTB_8W_3 cells were cell cycle-related genes, including RRM2, CCNB1 and CDK1"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1",
+            "gene_id": "ENSG00000134057"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Violin plots revealed that many of the genes that were highly expressed in the CTB_8W_3 cells were cell cycle-related genes, including RRM2, CCNB1 and CDK1"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CDK1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CDK1",
+            "gene_id": "ENSG00000170312"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Violin plots revealed that many of the genes that were highly expressed in the CTB_8W_3 cells were cell cycle-related genes, including RRM2, CCNB1 and CDK1"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "Syncytin-2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "Syncytin-2",
+            "gene_id": "ENSG00000244476"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Among all the genes examined, Syncytin-2, which encodes a membrane-localized fusogenic protein in mammals that directly mediates cell-cell fusion,29 exhibited a very high expression level in CTB_8W_1 cells compared with the other two CTB subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2",
+            "gene_id": "ENSG00000171848"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "RRM2, which plays an important role in DNA replication, was found to be highly expressed in EVT_8W_1 cells compared with the other two EVT_8W subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TAC3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TAC3",
+            "gene_id": "ENSG00000166863"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "and EVT_8W_3 cells displayed a strong similarity with EVT_24W cells in terms of gene expression. For example, both of these subtypes exhibited high expression of Tachykinin-3 (TAC3), Plasminogen activator inhibitor-1 (SERPINE1), PRG2 and JAM2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "and EVT_8W_3 cells displayed a strong similarity with EVT_24W cells in terms of gene expression. For example, both of these subtypes exhibited high expression of Tachykinin-3 (TAC3), Plasminogen activator inhibitor-1 (SERPINE1), PRG2 and JAM2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRG2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRG2",
+            "gene_id": "ENSG00000186652"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "and EVT_8W_3 cells displayed a strong similarity with EVT_24W cells in terms of gene expression. For example, both of these subtypes exhibited high expression of Tachykinin-3 (TAC3), Plasminogen activator inhibitor-1 (SERPINE1), PRG2 and JAM2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "JAM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "JAM2",
+            "gene_id": "ENSG00000154721"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "and EVT_8W_3 cells displayed a strong similarity with EVT_24W cells in terms of gene expression. For example, both of these subtypes exhibited high expression of Tachykinin-3 (TAC3), Plasminogen activator inhibitor-1 (SERPINE1), PRG2 and JAM2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "TAC3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "TAC3",
+            "gene_id": "ENSG00000166863"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "and EVT_8W_3 cells displayed a strong similarity with EVT_24W cells in terms of gene expression. For example, both of these subtypes exhibited high expression of Tachykinin-3 (TAC3), Plasminogen activator inhibitor-1 (SERPINE1), PRG2 and JAM2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "and EVT_8W_3 cells displayed a strong similarity with EVT_24W cells in terms of gene expression. For example, both of these subtypes exhibited high expression of Tachykinin-3 (TAC3), Plasminogen activator inhibitor-1 (SERPINE1), PRG2 and JAM2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PRG2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PRG2",
+            "gene_id": "ENSG00000130508"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "and EVT_8W_3 cells displayed a strong similarity with EVT_24W cells in terms of gene expression. For example, both of these subtypes exhibited high expression of Tachykinin-3 (TAC3), Plasminogen activator inhibitor-1 (SERPINE1), PRG2 and JAM2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "JAM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "JAM2",
+            "gene_id": "ENSG00000154721"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "and EVT_8W_3 cells displayed a strong similarity with EVT_24W cells in terms of gene expression. For example, both of these subtypes exhibited high expression of Tachykinin-3 (TAC3), Plasminogen activator inhibitor-1 (SERPINE1), PRG2 and JAM2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD90"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD90",
+            "gene_id": "ENSG00000154096"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Further analysis revealed that the CD90, ENG and CD74 tri-positive mesenchymal stromal cells were clustered into two subtypes, i.e., Mes_1 and Mes_2 cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ENG"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ENG",
+            "gene_id": "ENSG00000106991"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Further analysis revealed that the CD90, ENG and CD74 tri-positive mesenchymal stromal cells were clustered into two subtypes, i.e., Mes_1 and Mes_2 cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD74"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD74",
+            "gene_id": "ENSG00000019582"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Further analysis revealed that the CD90, ENG and CD74 tri-positive mesenchymal stromal cells were clustered into two subtypes, i.e., Mes_1 and Mes_2 cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Hofbauer cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD68"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Hofbauer cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD68",
+            "gene_id": "ENSG00000129226"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "The CD68-positive Hofbauer cells also clustered into two subtypes, designated Macro_1 and Macro_2"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Macro_1 cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CTSS"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Macro_1 cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CTSS",
+            "gene_id": "ENSG00000163131"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Compared with Macro_2 cells, Macro_1 cells seemed to be in an activated state and highly expressed genes encoding different chains of the HLA class II histocompatibility antigen that have been demonstrated to be involved in the endocytic route of antigen presentation (Supplementary information, Table S1). Enzymes, such as CTSS and LYZ, which are involved in this process were also highly expressed in this cell subtype."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Macro_1 cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "LYZ"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Macro_1 cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "LYZ",
+            "gene_id": "ENSG00000090382"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Compared with Macro_2 cells, Macro_1 cells seemed to be in an activated state and highly expressed genes encoding different chains of the HLA class II histocompatibility antigen that have been demonstrated to be involved in the endocytic route of antigen presentation (Supplementary information, Table S1). Enzymes, such as CTSS and LYZ, which are involved in this process were also highly expressed in this cell subtype."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Macro_1 cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD74"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Macro_1 cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CD74",
+            "gene_id": "ENSG00000019582"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "When we used immunofluorescence to detect CD74 and MRC1, markers for Macro_1 and Macro_2 cells, respectively (Fig. 4e), we could detect these two subtypes of cells among the CD68-positive macrophages with anti-MRC1 antibody in human placental villi in vitro"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Macro_2 cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "MRC1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Macro_2 cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "MRC1",
+            "gene_id": "ENSG00000260314"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "When we used immunofluorescence to detect CD74 and MRC1, markers for Macro_1 and Macro_2 cells, respectively (Fig. 4e), we could detect these two subtypes of cells among the CD68-positive macrophages with anti-MRC1 antibody in human placental villi in vitro"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "DNMT1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "DNMT1",
+            "gene_id": "ENSG00000130816"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "DNMT1, which functions to maintain DNA methylation patterns during cellular replication, was highly expressed in all CTB_8W cell subtypes, and the expression pattern of this gene was further confirmed by immunofluorescence staining of 8 week human placental villi "
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TET1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TET1",
+            "gene_id": "ENSG00000138336"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of the TET family of DNA dioxygenases,36 TET1 and TET3 were highly expressed in all EVT_8W cell subtypes, whereas TET2 was most highly expressed in CTB_8W subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TET3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TET3",
+            "gene_id": "ENSG00000187605"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of the TET family of DNA dioxygenases,36 TET1 and TET3 were highly expressed in all EVT_8W cell subtypes, whereas TET2 was most highly expressed in CTB_8W subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TET2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TET2",
+            "gene_id": "ENSG00000168769"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Of the TET family of DNA dioxygenases,36 TET1 and TET3 were highly expressed in all EVT_8W cell subtypes, whereas TET2 was most highly expressed in CTB_8W subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "AICDA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "AICDA",
+            "gene_id": "ENSG00000111732"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "AICDA, a cytidine deaminase involved in DNA demethylation, was only slightly expressed in EVT_24W cells."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "SUV39H1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "SUV39H1",
+            "gene_id": "ENSG00000101945"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "SUV39H1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "SUV39H1",
+            "gene_id": "ENSG00000101945"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "KDM5B"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "KDM5B",
+            "gene_id": "ENSG00000117139"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "KDM5B"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "KDM5B",
+            "gene_id": "ENSG00000117139"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "JMJD6"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "JMJD6",
+            "gene_id": "ENSG00000070495"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "JMJD6"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "JMJD6",
+            "gene_id": "ENSG00000070495"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HDAC5"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HDAC5",
+            "gene_id": "ENSG00000108840"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HDAC5"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "HDAC5",
+            "gene_id": "ENSG00000108840"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "SMYD2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "SMYD2",
+            "gene_id": "ENSG00000143499"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "SMYD2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "SMYD2",
+            "gene_id": "ENSG00000143499"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For example, the writer gene SUV39H1 and eraser genes, such as KDM5B, JMJD6 and HDAC5, were highly expressed in all trophoblast cell subtypes except for the CTB subtypes, whereas SMYD2 was found to be highly expressed in all trophoblasts except for the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "RPS6KA5"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "RPS6KA5",
+            "gene_id": "ENSG00000100784"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "RPS6KA5 was extremely highly expressed in the STB."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "AURKB"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "AURKB",
+            "gene_id": "ENSG00000178999"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "for example, writer genes, such as AURKB and BUB1, and eraser genes, such as PPP2CA, were highly expressed in EVT_8W_1 subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "BUB1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "BUB1",
+            "gene_id": "ENSG00000169679"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "for example, writer genes, such as AURKB and BUB1, and eraser genes, such as PPP2CA, were highly expressed in EVT_8W_1 subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PPP2CA"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PPP2CA",
+            "gene_id": "ENSG00000113575"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "for example, writer genes, such as AURKB and BUB1, and eraser genes, such as PPP2CA, were highly expressed in EVT_8W_1 subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRKCD"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRKCD",
+            "gene_id": "ENSG00000163932"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Previously, we demonstrated that EVT_8W_3 cells exhibit some similarities with EVT_24W subtypes in gene expression, and here, we also found these similarities regarding the expression of PRKCD, KDM4B and DUSP1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "KDM4B"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "KDM4B",
+            "gene_id": "ENSG00000127663"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Previously, we demonstrated that EVT_8W_3 cells exhibit some similarities with EVT_24W subtypes in gene expression, and here, we also found these similarities regarding the expression of PRKCD, KDM4B and DUSP1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "DUSP1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "DUSP1",
+            "gene_id": "ENSG00000081721"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Previously, we demonstrated that EVT_8W_3 cells exhibit some similarities with EVT_24W subtypes in gene expression, and here, we also found these similarities regarding the expression of PRKCD, KDM4B and DUSP1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PRKCD"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PRKCD",
+            "gene_id": "ENSG00000163932"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Previously, we demonstrated that EVT_8W_3 cells exhibit some similarities with EVT_24W subtypes in gene expression, and here, we also found these similarities regarding the expression of PRKCD, KDM4B and DUSP1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "KDM4B"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "KDM4B",
+            "gene_id": "ENSG00000127663"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Previously, we demonstrated that EVT_8W_3 cells exhibit some similarities with EVT_24W subtypes in gene expression, and here, we also found these similarities regarding the expression of PRKCD, KDM4B and DUSP1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "DUSP1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "DUSP1",
+            "gene_id": "ENSG00000120129"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Previously, we demonstrated that EVT_8W_3 cells exhibit some similarities with EVT_24W subtypes in gene expression, and here, we also found these similarities regarding the expression of PRKCD, KDM4B and DUSP1."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "trophoblasts (except for STB_8W)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PHLDA2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "trophoblasts (except for STB_8W)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PHLDA2",
+            "gene_id": "ENSG00000181649"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For instance, maternally imprinted genes, such as PHLDA2 and CDKN1C, were specifically expressed in all trophoblast cell subtypes except for STB_8W."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "trophoblasts (except for STB_8W)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CDKN1C"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "trophoblasts (except for STB_8W)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CDKN1C",
+            "gene_id": "ENSG00000129757"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For instance, maternally imprinted genes, such as PHLDA2 and CDKN1C, were specifically expressed in all trophoblast cell subtypes except for STB_8W."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ZNF331"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ZNF331",
+            "gene_id": "ENSG00000130844"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Regarding the STB_8W, the highly and specifically expressed genes included maternally imprinted genes, such as ZNF331, PHACTR2, TFPI2, PPP1R9A and ANO1, and the paternally imprinted gene RHOBTB3."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PHACTR2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PHACTR2",
+            "gene_id": "ENSG00000112419"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Regarding the STB_8W, the highly and specifically expressed genes included maternally imprinted genes, such as ZNF331, PHACTR2, TFPI2, PPP1R9A and ANO1, and the paternally imprinted gene RHOBTB3."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TFPI2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TFPI2",
+            "gene_id": "ENSG00000105825"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Regarding the STB_8W, the highly and specifically expressed genes included maternally imprinted genes, such as ZNF331, PHACTR2, TFPI2, PPP1R9A and ANO1, and the paternally imprinted gene RHOBTB3."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PPP1R9A"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PPP1R9A",
+            "gene_id": "ENSG00000158528"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Regarding the STB_8W, the highly and specifically expressed genes included maternally imprinted genes, such as ZNF331, PHACTR2, TFPI2, PPP1R9A and ANO1, and the paternally imprinted gene RHOBTB3."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ANO1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ANO1",
+            "gene_id": "ENSG00000131620"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Regarding the STB_8W, the highly and specifically expressed genes included maternally imprinted genes, such as ZNF331, PHACTR2, TFPI2, PPP1R9A and ANO1, and the paternally imprinted gene RHOBTB3."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RHOBTB3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RHOBTB3",
+            "gene_id": "ENSG00000164292"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Regarding the STB_8W, the highly and specifically expressed genes included maternally imprinted genes, such as ZNF331, PHACTR2, TFPI2, PPP1R9A and ANO1, and the paternally imprinted gene RHOBTB3."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PEG3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PEG3",
+            "gene_id": "ENSG00000198300"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Paternally imprinted genes, such as PEG3, PEG10, MEST and AIM1, were highly expressed in all three CTB subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PEG10"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PEG10",
+            "gene_id": "ENSG00000242265"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Paternally imprinted genes, such as PEG3, PEG10, MEST and AIM1, were highly expressed in all three CTB subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "MEST"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "MEST",
+            "gene_id": "ENSG00000106484"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Paternally imprinted genes, such as PEG3, PEG10, MEST and AIM1, were highly expressed in all three CTB subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "AIM1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "AIM1",
+            "gene_id": "ENSG00000112297"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Paternally imprinted genes, such as PEG3, PEG10, MEST and AIM1, were highly expressed in all three CTB subtypes."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "GRB10"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "GRB10",
+            "gene_id": "ENSG00000106070"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the EVT cell subtypes (including EVT_8W and EVT_24W), maternally expressed genes, such as GRB10, ASCL2 and H19, and paternally expressed genes, such as GPR1 and IGF2, were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ASCL2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ASCL2",
+            "gene_id": "ENSG00000183734"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the EVT cell subtypes (including EVT_8W and EVT_24W), maternally expressed genes, such as GRB10, ASCL2 and H19, and paternally expressed genes, such as GPR1 and IGF2, were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "H19"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "H19",
+            "gene_id": "ENSG00000130600"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the EVT cell subtypes (including EVT_8W and EVT_24W), maternally expressed genes, such as GRB10, ASCL2 and H19, and paternally expressed genes, such as GPR1 and IGF2, were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "GPR1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "GPR1",
+            "gene_id": "ENSG00000183671"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the EVT cell subtypes (including EVT_8W and EVT_24W), maternally expressed genes, such as GRB10, ASCL2 and H19, and paternally expressed genes, such as GPR1 and IGF2, were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "IGF2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "IGF2",
+            "gene_id": "ENSG00000167244"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the EVT cell subtypes (including EVT_8W and EVT_24W), maternally expressed genes, such as GRB10, ASCL2 and H19, and paternally expressed genes, such as GPR1 and IGF2, were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "KCNQ1OT1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "KCNQ1OT1",
+            "gene_id": "ENSG00000269821"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the two subtypes of mesenchymal stromal cells, maternally imprinted genes, such as KCNQ1OT1, PHACTR2 and MEG3, and paternally imprinted genes, such as PLAGL1, DLK1 and MEST1, were highly expressed in the Mes_2 subtype."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PHACTR2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PHACTR2",
+            "gene_id": "ENSG00000112419"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the two subtypes of mesenchymal stromal cells, maternally imprinted genes, such as KCNQ1OT1, PHACTR2 and MEG3, and paternally imprinted genes, such as PLAGL1, DLK1 and MEST1, were highly expressed in the Mes_2 subtype."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "MEG3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "MEG3",
+            "gene_id": "ENSG00000214548"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the two subtypes of mesenchymal stromal cells, maternally imprinted genes, such as KCNQ1OT1, PHACTR2 and MEG3, and paternally imprinted genes, such as PLAGL1, DLK1 and MEST1, were highly expressed in the Mes_2 subtype."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PLAGL1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PLAGL1",
+            "gene_id": "ENSG00000118495"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the two subtypes of mesenchymal stromal cells, maternally imprinted genes, such as KCNQ1OT1, PHACTR2 and MEG3, and paternally imprinted genes, such as PLAGL1, DLK1 and MEST1, were highly expressed in the Mes_2 subtype."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "DLK1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "DLK1",
+            "gene_id": "ENSG00000185559"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the two subtypes of mesenchymal stromal cells, maternally imprinted genes, such as KCNQ1OT1, PHACTR2 and MEG3, and paternally imprinted genes, such as PLAGL1, DLK1 and MEST1, were highly expressed in the Mes_2 subtype."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "mesenchymal stromal cells subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "MEST1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mesenchymal stromal cells subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "MEST1",
+            "gene_id": "ENSG00000106484"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "For the two subtypes of mesenchymal stromal cells, maternally imprinted genes, such as KCNQ1OT1, PHACTR2 and MEG3, and paternally imprinted genes, such as PLAGL1, DLK1 and MEST1, were highly expressed in the Mes_2 subtype."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CGB"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CGB",
+            "gene_id": "ENSG00000104827"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "STB_8W expressed 60 hormone genes, including those of well-documented gene families, such as CGB and PSG."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PSG"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "STBs (syncytiotrophoblasts)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PSG",
+            "gene_id": "ENSG00000204941"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "STB_8W expressed 60 hormone genes, including those of well-documented gene families, such as CGB and PSG."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CSH1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CSH1",
+            "gene_id": "ENSG00000213218"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "To our surprise, the EVT cell subtypes expressed 42 polypeptide hormone genes, among which CSH1, FSTL1, PAPPA2, TAC3 and several PSG genes were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "FSTL1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "FSTL1",
+            "gene_id": "ENSG00000163430"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "To our surprise, the EVT cell subtypes expressed 42 polypeptide hormone genes, among which CSH1, FSTL1, PAPPA2, TAC3 and several PSG genes were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PAPPA2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PAPPA2",
+            "gene_id": "ENSG00000116183"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "To our surprise, the EVT cell subtypes expressed 42 polypeptide hormone genes, among which CSH1, FSTL1, PAPPA2, TAC3 and several PSG genes were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "TAC3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "TAC3",
+            "gene_id": "ENSG00000166863"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "To our surprise, the EVT cell subtypes expressed 42 polypeptide hormone genes, among which CSH1, FSTL1, PAPPA2, TAC3 and several PSG genes were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PSG"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "PSG",
+            "gene_id": "ENSG00000204941"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "To our surprise, the EVT cell subtypes expressed 42 polypeptide hormone genes, among which CSH1, FSTL1, PAPPA2, TAC3 and several PSG genes were highly expressed."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ANGPTL1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ANGPTL1",
+            "gene_id": "ENSG00000116194"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Furthermore, the stromal cells also expressed many hormone genes, and the expression levels of ANGPTL1, ANGPTL2, ANGPTL4, CTGF and ACTN1 were high."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ANGPTL2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ANGPTL2",
+            "gene_id": "ENSG00000136859"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Furthermore, the stromal cells also expressed many hormone genes, and the expression levels of ANGPTL1, ANGPTL2, ANGPTL4, CTGF and ACTN1 were high."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ANGPTL4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ANGPTL4",
+            "gene_id": "ENSG00000167772"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Furthermore, the stromal cells also expressed many hormone genes, and the expression levels of ANGPTL1, ANGPTL2, ANGPTL4, CTGF and ACTN1 were high."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CTGF"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "CTGF",
+            "gene_id": "ENSG00000118523"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Furthermore, the stromal cells also expressed many hormone genes, and the expression levels of ANGPTL1, ANGPTL2, ANGPTL4, CTGF and ACTN1 were high."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ACTN1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "stromal cells",
+            "cell_source": "placenta",
+            "cell_state": "none",
+            "gene": "ACTN1",
+            "gene_id": "ENSG00000072110"
+        },
+        "source": {
+            "source_id": "text",
+            "source_type": "text",
+            "source_rationale": "Furthermore, the stromal cells also expressed many hormone genes, and the expression levels of ANGPTL1, ANGPTL2, ANGPTL4, CTGF and ACTN1 were high."
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PAGE4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PAGE4",
+            "gene_id": "ENSG00000101951"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SMAGP"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SMAGP",
+            "gene_id": "ENSG00000170545"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "LAIR2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "LAIR2",
+            "gene_id": "ENSG00000167618"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PRG2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PRG2",
+            "gene_id": "ENSG00000130508"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "EGFR-AS1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "EGFR-AS1",
+            "gene_id": "ENSG00000224057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "TAC3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "TAC3",
+            "gene_id": "ENSG00000166863"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE2",
+            "gene_id": "ENSG00000135919"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "JAM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "JAM2",
+            "gene_id": "ENSG00000154721"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PAGE4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PAGE4",
+            "gene_id": "ENSG00000101951"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SMAGP"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SMAGP",
+            "gene_id": "ENSG00000170545"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "LAIR2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "LAIR2",
+            "gene_id": "ENSG00000167618"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PRG2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "PRG2",
+            "gene_id": "ENSG00000130508"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "EGFR-AS1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "EGFR-AS1",
+            "gene_id": "ENSG00000224057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "TAC3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "TAC3",
+            "gene_id": "ENSG00000166863"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE2",
+            "gene_id": "ENSG00000135919"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "JAM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "JAM2",
+            "gene_id": "ENSG00000154721"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP",
+            "gene_id": "ENSG00000170545"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "LAIR2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "LAIR2",
+            "gene_id": "ENSG00000167618"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MMP12"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MMP12",
+            "gene_id": "ENSG00000262406"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1",
+            "gene_id": "ENSG00000134057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRG2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRG2",
+            "gene_id": "ENSG00000130508"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "EGFR-AS1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "EGFR-AS1",
+            "gene_id": "ENSG00000224057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TAC3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TAC3",
+            "gene_id": "ENSG00000166863"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2",
+            "gene_id": "ENSG00000135919"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "JAM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "JAM2",
+            "gene_id": "ENSG00000154721"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 3",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PAGE4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PAGE4",
+            "gene_id": "ENSG00000101951"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP",
+            "gene_id": "ENSG00000170545"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "LAIR2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "LAIR2",
+            "gene_id": "ENSG00000167618"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MMP12"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MMP12",
+            "gene_id": "ENSG00000262406"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1",
+            "gene_id": "ENSG00000134057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRG2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRG2",
+            "gene_id": "ENSG00000130508"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2",
+            "gene_id": "ENSG00000135919"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PAGE4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PAGE4",
+            "gene_id": "ENSG00000101951"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP",
+            "gene_id": "ENSG00000170545"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "LAIR2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "LAIR2",
+            "gene_id": "ENSG00000167618"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MMP12"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MMP12",
+            "gene_id": "ENSG00000262406"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1",
+            "gene_id": "ENSG00000134057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2",
+            "gene_id": "ENSG00000171848"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRG2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PRG2",
+            "gene_id": "ENSG00000130508"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "EGFR-AS1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "EGFR-AS1",
+            "gene_id": "ENSG00000224057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TAC3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "TAC3",
+            "gene_id": "ENSG00000166863"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2",
+            "gene_id": "ENSG00000135919"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PAGE4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PAGE4",
+            "gene_id": "ENSG00000101951"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP",
+            "gene_id": "ENSG00000170545"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SLC27A2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SLC27A2",
+            "gene_id": "ENSG00000140284"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCR7"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCR7",
+            "gene_id": "ENSG00000126353"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "KCNJ2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "KCNJ2",
+            "gene_id": "ENSG00000123700"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1",
+            "gene_id": "ENSG00000134057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2",
+            "gene_id": "ENSG00000171848"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2",
+            "gene_id": "ENSG00000135919"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 1",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PAGE4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "PAGE4",
+            "gene_id": "ENSG00000101951"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SMAGP",
+            "gene_id": "ENSG00000170545"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SLC27A2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SLC27A2",
+            "gene_id": "ENSG00000140284"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCR7"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCR7",
+            "gene_id": "ENSG00000126353"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "KCNJ2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "KCNJ2",
+            "gene_id": "ENSG00000123700"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "CCNB1",
+            "gene_id": "ENSG00000134057"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "RRM2",
+            "gene_id": "ENSG00000171848"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE2",
+            "gene_id": "ENSG00000135919"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SERPINE1",
+            "gene_id": "ENSG00000106366"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells) Subtype 2",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "HLA-G",
+            "gene_id": "ENSG00000204632"
+        },
+        "source": {
+            "source_id": "Fig. 3a",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SOX4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SOX4",
+            "gene_id": "ENSG00000124766"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "STAT1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "STAT1",
+            "gene_id": "ENSG00000115415"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ID1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ID1",
+            "gene_id": "ENSG00000125968"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MLLT1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MLLT1",
+            "gene_id": "ENSG00000130382"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "NFE2L3"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CTBs (cytotrophoblast cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "NFE2L3",
+            "gene_id": "ENSG00000050344"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ZNF124"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ZNF124",
+            "gene_id": "ENSG00000196418"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SOX4"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SOX4",
+            "gene_id": "ENSG00000124766"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ASCL2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ASCL2",
+            "gene_id": "ENSG00000183734"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SNAI1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "SNAI1",
+            "gene_id": "ENSG00000124216"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "STAT1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "STAT1",
+            "gene_id": "ENSG00000115415"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MYCN"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MYCN",
+            "gene_id": "ENSG00000134323"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ID1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ID1",
+            "gene_id": "ENSG00000125968"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MLLT1"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "MLLT1",
+            "gene_id": "ENSG00000130382"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "LCORL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "LCORL",
+            "gene_id": "ENSG00000178177"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ZNF468"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ZNF468",
+            "gene_id": "ENSG00000204604"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ELF2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "8 week pregnancy",
+            "gene": "ELF2",
+            "gene_id": "ENSG00000109381"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SHOX2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SHOX2",
+            "gene_id": "ENSG00000168779"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ARNTL2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ARNTL2",
+            "gene_id": "ENSG00000029153"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ZNF444"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ZNF444",
+            "gene_id": "ENSG00000167685"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ETV5"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ETV5",
+            "gene_id": "ENSG00000244405"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ZNF445"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ZNF445",
+            "gene_id": "ENSG00000185219"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "SHTFE3OX2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "TFE3",
+            "gene_id": "ENSG00000068323"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "LCORL"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "LCORL",
+            "gene_id": "ENSG00000178177"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ZNF468"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ZNF468",
+            "gene_id": "ENSG00000204604"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ETV7"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ETV7",
+            "gene_id": "ENSG00000010030"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ELF2"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "EVTs (Extravillous Trophoblast Cells)",
+            "cell_source": "placenta",
+            "cell_state": "24 week pregnancy",
+            "gene": "ELF2",
+            "gene_id": "ENSG00000109381"
+        },
+        "source": {
+            "source_id": "Fig. 3e",
+            "source_type": "img",
+            "source_rationale": "marker shows sign of expression in graph"
+        }
+    }
+]
