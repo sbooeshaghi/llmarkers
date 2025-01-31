@@ -11,29 +11,30 @@ Example
 
 Quote from Text: "We identified six distinct subpopulations of human ASPCs (see Supplementary Note 1) in subclustered scRNA-seq and sNuc-seq samples, all of which express the common marker gene PDGFRA (Extended Data Fig. 7a, b)."
 
-Corresponding JSON Object in evidence_human.json: 
-{
-    "extracted": {
-      "organism": "homo_sapiens",
-      "cell_type_label": "human ASPCs",
-      "cell_source": "adipose",
-      "cell_state": "None",
-      "gene": "PDGFRA"
-    },
-    "derived": {
-      "organism": "homo_sapiens",
-      "cell_type_id": null,
-      "cell_type_label": "human ASPCs",
-      "cell_source": "adipose",
-      "cell_state": "None",
-      "gene": "PDGFRA",
-      "gene_id": "ENSG00000134853"
-    },
-    "source": {
-      "source_id": "text",
-      "source_type": "text",
-      "source_rationale": "We identified six distinct subpopulations of human ASPCs (see Supplementary Note 1) in subclustered scRNA-seq and sNuc-seq samples, all of which express the common marker gene PDGFRA (Extended Data Fig. 7a, b)."
-    }
+Corresponding JSON Object in evidence_human.json:
+
+{\
+    &emsp;"extracted": {\
+      &emsp;&emsp;"organism": "homo_sapiens",\
+      &emsp;&emsp;"cell_type_label": "human ASPCs",\
+      &emsp;&emsp;"cell_source": "adipose",\
+      &emsp;&emsp;"cell_state": "None",\
+      &emsp;&emsp;"gene": "PDGFRA"\
+    &emsp;},\
+    &emsp;"derived": {\
+      &emsp;&emsp;"organism": "homo_sapiens",\
+      &emsp;&emsp;"cell_type_id": null,\
+      &emsp;&emsp;"cell_type_label": "human ASPCs",\
+      &emsp;&emsp;"cell_source": "adipose",\
+      &emsp;&emsp;"cell_state": "None",\
+      &emsp;&emsp;"gene": "PDGFRA",\
+      &emsp;&emsp;"gene_id": "ENSG00000134853"\
+    &emsp;},\
+    &emsp;"source": {\
+      &emsp;&emsp;"source_id": "text",\
+      &emsp;&emsp;"source_type": "text",\
+      &emsp;&emsp;"source_rationale": "We identified six distinct subpopulations of human ASPCs (see Supplementary Note 1) in subclustered scRNA-seq and sNuc-seq samples, all of which express the common marker gene PDGFRA (Extended Data Fig. 7a, b)."\
+    &emsp;}\
 }
 
 ### Figure
@@ -42,56 +43,58 @@ Given an scRNA-seq research paper, human readers can extract marker gene informa
 Example
 
 JSON Object in evidence_human.json:
-{
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Macrophage",
-            "cell_source": "bone",
-            "cell_state": "8WPC Neural Crest",
-            "gene": "RUNX2"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Macrophage",
-            "cell_source": "bone",
-            "cell_state": "8WPC Neural Crest",
-            "gene": "RUNX2",
-            "gene_id": "ENSG00000124813"
-        },
-        "source": {
-            "source_type": "img",
-            "source_rationale": "marker shows sign of expression in figure",
-            "source_id": "Fig. 6b"
-        }
+
+{\
+        &emsp;"extracted": {\
+            &emsp;&emsp;"organism": "homo_sapiens",\
+            &emsp;&emsp;"cell_type_label": "Macrophage",\
+            &emsp;&emsp;"cell_source": "bone",\
+            &emsp;&emsp;"cell_state": "8WPC Neural Crest",\
+            &emsp;&emsp;"gene": "RUNX2"\
+        &emsp;},\
+        &emsp;"derived": {\
+            &emsp;&emsp;"organism": "homo_sapiens",\
+            &emsp;&emsp;"cell_type_id": null,\
+            &emsp;&emsp;"cell_type_label": "Macrophage",\
+            &emsp;&emsp;"cell_source": "bone",\
+            &emsp;&emsp;"cell_state": "8WPC Neural Crest",\
+            &emsp;&emsp;"gene": "RUNX2",\
+            &emsp;&emsp;"gene_id": "ENSG00000124813"\
+        &emsp;},\
+        &emsp;"source": {\
+            &emsp;&emsp;"source_type": "img",\
+            &emsp;&emsp;"source_rationale": "marker shows sign of expression in figure",\
+            &emsp;&emsp;"source_id": "Fig. 6b"\
+        &emsp;}\
 }
 
 ### Data Format
 The evidence the human extracts are placed as a list of JSON objects within a file named evidence_human.json. The below JSON object describes the typical structure of how a piece of evidence can be structured into JSON format. 
 
 JSON Object Template:
-{
-        "extracted": {
-            "organism": "{organism in which cell type is found, eg: homo_sapiens, mus_musculus, etc}",
-            "cell_type_label": "{name of cell type as mentioned in figure or text in which cell was found, eg: adipocyte}",
-            "cell_source": "{tissue in which the cell type was found in, eg: adipose tissue}",
-            "cell_state": "{if the figure or text suggests the cell was in a specific state while expressing the marker gene, place it here (null otherwise), eg: obesity, null}",
-            "gene": "{marker gene corresponding to cell type}"
-        },
-        "derived": {
-            "organism": "{organism in which cell type is found, eg: homo_sapiens, mus_musculus, etc}",
-            "cell_type_id": {ID corresponding to cell type, derived using a mapping file that maps distinct cell type labels under specific categories},
-            "cell_type_label": "{name of cell type as mentioned in figure or text in which cell was found, eg: adipocyte}",
-            "cell_source": "{tissue in which the cell type was found in, eg: adipose tissue}",
-            "cell_state": "{if the figure or text suggests the cell was in a specific state while expressing the marker gene, place it here (null otherwise), eg: obesity, null}",
-            "gene": "{marker gene corresponding to cell type}",
-            "gene_id": {Ensembl ID for marker gene, populated using a Python script that maps gene names to Ensembl IDs using a GTF file}
-        },
-        "source": {
-            "source_type": "{img or text}",
-            "source_rationale": "{quote derived from text or reasoning for why human reader believes gene is a marker based on the figure}",
-            "source_id": "{figure number or text}"
-        }
+
+{\
+        &emsp;"extracted": {\
+            &emsp;&emsp;"organism": "{organism in which cell type is found, eg: homo_sapiens, mus_musculus, etc}",\
+            &emsp;&emsp;"cell_type_label": "{name of cell type as mentioned in figure or text in which cell was found, eg: adipocyte}",\
+            &emsp;&emsp;"cell_source": "{tissue in which the cell type was found in, eg: adipose tissue}",\
+            &emsp;&emsp;"cell_state": "{if the figure or text suggests the cell was in a specific state while expressing the marker gene, place it here (null otherwise), eg: obesity, null}",\
+            &emsp;&emsp;"gene": "{marker gene corresponding to cell type}"\
+        &emsp;},\
+        &emsp;"derived": {\
+            &emsp;&emsp;"organism": "{organism in which cell type is found, eg: homo_sapiens, mus_musculus, etc}",\
+            &emsp;&emsp;"cell_type_id": {ID corresponding to cell type, derived using a mapping file that maps distinct cell type labels under specific categories},\
+            &emsp;&emsp;"cell_type_label": "{name of cell type as mentioned in figure or text in which cell was found, eg: adipocyte}",\
+            &emsp;&emsp;"cell_source": "{tissue in which the cell type was found in, eg: adipose tissue}",\
+            &emsp;&emsp;"cell_state": "{if the figure or text suggests the cell was in a specific state while expressing the marker gene, place it here (null otherwise), eg: obesity, null}",\
+            &emsp;&emsp;"gene": "{marker gene corresponding to cell type}",\
+            &emsp;&emsp;"gene_id": {Ensembl ID for marker gene, populated using a Python script that maps gene names to Ensembl IDs using a GTF file}\
+        &emsp;},\
+        &emsp;"source": {\
+            &emsp;&emsp;"source_type": "{img or text}",\
+            &emsp;&emsp;"source_rationale": "{quote derived from text or reasoning for why human reader believes gene is a marker based on the figure}",\
+            &emsp;&emsp;"source_id": "{figure number or text}"\
+        &emsp;}\
 }
 
 ## Deg Extraction
