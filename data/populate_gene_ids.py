@@ -131,4 +131,4 @@ class EnsemblIdFinder:
             json.dump(data, file, indent = 4)
         
 eif = EnsemblIdFinder()
-eif.update_json("adipose_Emont2022/evidence_deg/evidence.json")
+eif.update_json("adipose_Hildreth2021/evidence_deg/evidence.json")

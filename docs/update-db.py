@@ -5,6 +5,9 @@ import json
 import pandas as pd
 import hashlib
 import os
+import uuid
+
+uuids = {}
 
 def generate_hash(*args):
     combined_str = "_".join(str(arg) for arg in args if arg)
@@ -20,14 +23,13 @@ def load_source_table(fn):
     organism_df = df['derived'].apply(lambda x: {k: x[k] for k in organism_key if k in x}).apply(pd.Series)
 
     cell_gene_detail_keys = ['cell_source', 'cell_type_label', 'cell_state', 'gene', 'gene_id']
-    cell_gene_detail_df = df['derived'].apply(lambda x: {k: x[k] for k in cell_gene_detail_keys if k in x}).apply(pd.Series)
+    # cell_gene_detail_df = df['derived'].apply(lambda x: {k: x[k] for k in cell_gene_detail_keys if k in x}).apply(pd.Series)
 
     extracted_df = pd.DataFrame()
-    extracted_df['extracted_id'] = cell_gene_detail_df.apply(lambda row: 
-        generate_hash(row.get('cell_type_label'), row.get('gene'), source_df.loc[row.name, 'source_rationale'], organism_df.loc[row.name, 'organism']), axis=1)
+    extracted_df['extracted_id'] = [uuid.uuid4() for _ in range(len(organism_df))]
 
     derived_df = pd.DataFrame()
-    derived_df['derived_id'] = extracted_df['extracted_id']
+    derived_df['derived_id'] = [uuid.uuid4() for _ in range(len(organism_df))]
 
     df = pd.concat([extracted_df, derived_df, organism_df, source_df], axis=1)
 
