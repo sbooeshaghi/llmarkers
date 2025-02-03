@@ -6,6 +6,7 @@ import pandas as pd
 import hashlib
 import os
 import uuid
+import numpy as np
 
 uuids = {}
 
@@ -16,15 +17,12 @@ def generate_hash(*args):
 def load_source_table(fn):
     df = pd.read_json(fn)
 
-    source_keys = ['source_type', 'source_rationale']
-    source_df = df['source'].apply(lambda x: {k: x[k] for k in source_keys if k in x}).apply(pd.Series)
-
     organism_key = ['organism']
     organism_df = df['derived'].apply(lambda x: {k: x[k] for k in organism_key if k in x}).apply(pd.Series)
 
-    cell_gene_detail_keys = ['cell_source', 'cell_type_label', 'cell_state', 'gene', 'gene_id']
-    # cell_gene_detail_df = df['derived'].apply(lambda x: {k: x[k] for k in cell_gene_detail_keys if k in x}).apply(pd.Series)
-
+    source_keys = ['source_type', 'source_rationale']
+    source_df = df['source'].apply(lambda x: {k: x[k] for k in source_keys if k in x}).apply(pd.Series)
+   
     extracted_df = pd.DataFrame()
     extracted_df['extracted_id'] = [uuid.uuid4() for _ in range(len(organism_df))]
 
@@ -36,35 +34,26 @@ def load_source_table(fn):
     return df
 
 def load_extracted_derived_table(fn, key, article_fn, source_df):
-    df = pd.read_json(fn)
-    citation = ""
-    if os.path.exists(article_fn):
-        with open(article_fn, 'r') as file:
-            data = json.load(file)
-        if 'citation' in list(data.keys()):
-            citation =  data['citation']
-
-    result_df = pd.DataFrame()
-
-    cell_key = ['cell_type_label']
-    result_df['cell_type_label'] = df['derived' if key == 'derived_id' else 'extracted'].apply(lambda x: {k: x[k] for k in cell_key if k in x}).apply(pd.Series)
-    result_df['article_id'] = generate_hash(citation)
+    result_df = pd.DataFrame() 
     result_df[key]= source_df[key]
-    result_df['gene_id'] = df['derived' if key == 'derived_id' else 'extracted'].apply(lambda row: generate_hash(row.get('gene')))
+    result_df['gene_id'] = [uuid.uuid4() for _ in range(len(result_df))]
+    result_df['cell_id'] = [uuid.uuid4() for _ in range(len(result_df))]
+    result_df['article_id'] = [uuid.uuid4() for _ in range(len(result_df))]
 
     return result_df
 
 def load_cell_table(fn, extracted_df, derived_df):
     df = pd.read_json(fn)
 
-    result_df = pd.DataFrame({'cell_type_label': pd.concat([extracted_df['cell_type_label'], derived_df['cell_type_label']], ignore_index=True)})
+    result_df = pd.DataFrame({'cell_id': pd.concat([extracted_df['cell_id'], derived_df['cell_id']], ignore_index=True)})
 
-    cell_keys = ['cell_source', 'cell_state']
+    cell_keys = ['cell_source', 'cell_state', 'cell_type_label']
     cell_derived_df = df['derived'].apply(lambda x: {k: x[k] for k in cell_keys if k in x}).apply(pd.Series)
     cell_extracted_df = df['extracted'].apply(lambda x: {k: x[k] for k in cell_keys if k in x}).apply(pd.Series)
     
     cell_df = pd.DataFrame({'cell_source': pd.concat([cell_derived_df['cell_source'], cell_extracted_df['cell_source']], ignore_index=True),
-                            'cell_state': pd.concat([cell_derived_df['cell_state'], cell_extracted_df['cell_state']], ignore_index=True)})
+                            'cell_state': pd.concat([cell_derived_df['cell_state'], cell_extracted_df['cell_state']], ignore_index=True),
+                            'cell_type_label': pd.concat([cell_derived_df['cell_type_label'], cell_extracted_df['cell_type_label']], ignore_index=True)})
     
     df = pd.concat([result_df, cell_df], axis=1)
     
@@ -73,18 +62,20 @@ def load_cell_table(fn, extracted_df, derived_df):
 def load_gene_table(fn, extracted_df, derived_df):
     df = pd.read_json(fn)
 
-    result_df = pd.DataFrame({'gene_id': pd.concat([extracted_df['gene_id'], derived_df['gene_id']], ignore_index=True)})
+    result_df = pd.DataFrame({'gene_id': pd.concat([extracted_df['gene_id'], derived_df['gene_id']])})
 
-    gene_keys = ['gene', 'gene_id']
-    gene_derived_df = df['derived'].apply(lambda x: {k: x[k] for k in gene_keys if k in x}).apply(pd.Series)
-    gene_extracted_df = df['extracted'].apply(lambda x: {k: x[k] for k in ['gene'] if k in x}).apply(pd.Series)
+    derived_genes = df['derived'].apply(lambda x: {k: x[k] for k in ['gene'] if k in x}).apply(pd.Series)
+    extracted_genes = df['extracted'].apply(lambda x: {k: x[k] for k in ['gene'] if k in x}).apply(pd.Series)
+
+    gene_df = pd.concat([derived_genes, extracted_genes])
+
+    ensembl_ids = df['derived'].apply(lambda x: {k: x[k] for k in ['gene_id'] if k in x}).apply(pd.Series)
     
-    gene_df = pd.DataFrame({'gene': pd.concat([gene_derived_df['gene'], gene_extracted_df['gene']], ignore_index=True),
-                            'ensembl_id': gene_derived_df['gene_id']})
+    gene_df['ensembl_id'] = ensembl_ids
+
+    final_df = pd.concat([result_df, gene_df], axis = 1)
     
-    df = pd.concat([result_df, gene_df], axis=1)
-    
-    return df
+    return final_df
 
 def load_article_table(fn, extracted_df, derived_df):
     result_df = pd.DataFrame({'article_id': pd.concat([extracted_df['article_id'], derived_df['article_id']], ignore_index=True)})
@@ -107,7 +98,6 @@ def load_article_table(fn, extracted_df, derived_df):
 
 def add_json_to_db(ev_file, db_file):
     conn = duckdb.connect(db_file) # connect to database
-    
     """
     conn.execute(f'DROP TABLE IF EXISTS Source') # FOR TESTING/DEBUGGING PURPOSES ONLY
     conn.execute(f'DROP TABLE IF EXISTS Extracted') # FOR TESTING/DEBUGGING PURPOSES ONLY
@@ -116,37 +106,37 @@ def add_json_to_db(ev_file, db_file):
     conn.execute(f'DROP TABLE IF EXISTS Gene') # FOR TESTING/DEBUGGING PURPOSES ONLY
     conn.execute(f'DROP TABLE IF EXISTS Article') # FOR TESTING/DEBUGGING PURPOSES ONLY
     """
-
+    
     # source_df
     source_df = load_source_table(f"../data/{ev_file}/evidence_human/evidence.json")
-    conn.execute(f"CREATE TABLE IF NOT EXISTS Source AS SELECT * FROM source_df")
+    #conn.execute(f"CREATE TABLE IF NOT EXISTS Source AS SELECT * FROM source_df")
     conn.execute(f"INSERT INTO Source SELECT * FROM source_df")
     
     # extracted_df
     extracted_df = load_extracted_derived_table(f"../data/{ev_file}/evidence_human/evidence.json", "extracted_id", f"../data/{ev_file}/citation.json", source_df)
-    conn.execute(f"CREATE TABLE IF NOT EXISTS Extracted AS SELECT * FROM extracted_df")
+    #conn.execute(f"CREATE TABLE IF NOT EXISTS Extracted AS SELECT * FROM extracted_df")
     conn.execute(f"INSERT INTO Extracted SELECT * FROM extracted_df")
 
     # derived_df
     derived_df = load_extracted_derived_table(f"../data/{ev_file}/evidence_human/evidence.json", "derived_id", f"../data/{ev_file}/citation.json", source_df)
-    conn.execute(f"CREATE TABLE IF NOT EXISTS Derived AS SELECT * FROM derived_df")
+    #conn.execute(f"CREATE TABLE IF NOT EXISTS Derived AS SELECT * FROM derived_df")
     conn.execute(f"INSERT INTO Derived SELECT * FROM derived_df")
    
     # cell_df
     cell_df = load_cell_table(f"../data/{ev_file}/evidence_human/evidence.json", extracted_df, derived_df)
-    conn.execute(f"CREATE TABLE IF NOT EXISTS Cell AS SELECT * FROM cell_df")
+    #conn.execute(f"CREATE TABLE IF NOT EXISTS Cell AS SELECT * FROM cell_df")
     conn.execute(f"INSERT INTO Cell SELECT * FROM cell_df")
 
     # gene_df
     gene_df = load_gene_table(f"../data/{ev_file}/evidence_human/evidence.json", extracted_df, derived_df)
-    conn.execute(f"CREATE TABLE IF NOT EXISTS Gene AS SELECT * FROM gene_df")
+    #conn.execute(f"CREATE TABLE IF NOT EXISTS Gene AS SELECT * FROM gene_df")
     conn.execute(f"INSERT INTO Gene SELECT * FROM gene_df")
 
     # article_df
     article_df = load_article_table(f"../data/{ev_file}/citation.json", extracted_df, derived_df)
-    conn.execute(f"CREATE TABLE IF NOT EXISTS Article AS SELECT * FROM article_df")
+    #conn.execute(f"CREATE TABLE IF NOT EXISTS Article AS SELECT * FROM article_df")
     conn.execute(f"INSERT INTO Article SELECT * FROM article_df")
-
+    
     conn.close()
 
     print("Done!")
