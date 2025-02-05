@@ -55,6 +55,10 @@ def load_cell_table(fn, extracted_df, derived_df):
                             'cell_state': pd.concat([cell_derived_df['cell_state'], cell_extracted_df['cell_state']], ignore_index=True),
                             'cell_type_label': pd.concat([cell_derived_df['cell_type_label'], cell_extracted_df['cell_type_label']], ignore_index=True)})
     
+    cell_type_ids = df['derived'].apply(lambda x: {k: x[k] for k in ['cell_type_id'] if k in x}).apply(pd.Series)
+
+    cell_df['cell_type_id'] = cell_type_ids.astype(str)
+    
     df = pd.concat([result_df, cell_df], axis=1)
     
     return df
@@ -96,7 +100,7 @@ def load_article_table(fn, extracted_df, derived_df):
     
     return result_df
 
-def add_json_to_db(ev_file, db_file):
+def add_json_to_db(ev_file, h_or_d, db_file):
     conn = duckdb.connect(db_file) # connect to database
     """
     conn.execute(f'DROP TABLE IF EXISTS Source') # FOR TESTING/DEBUGGING PURPOSES ONLY
@@ -106,29 +110,33 @@ def add_json_to_db(ev_file, db_file):
     conn.execute(f'DROP TABLE IF EXISTS Gene') # FOR TESTING/DEBUGGING PURPOSES ONLY
     conn.execute(f'DROP TABLE IF EXISTS Article') # FOR TESTING/DEBUGGING PURPOSES ONLY
     """
+    folder_name = "evidence_human"
+
+    if h_or_d == 'd':
+        folder_name = "evidence_deg"
     
     # source_df
-    source_df = load_source_table(f"../data/{ev_file}/evidence_human/evidence.json")
+    source_df = load_source_table(f"../data/{ev_file}/{folder_name}/evidence.json")
     #conn.execute(f"CREATE TABLE IF NOT EXISTS Source AS SELECT * FROM source_df")
     conn.execute(f"INSERT INTO Source SELECT * FROM source_df")
     
     # extracted_df
-    extracted_df = load_extracted_derived_table(f"../data/{ev_file}/evidence_human/evidence.json", "extracted_id", f"../data/{ev_file}/citation.json", source_df)
+    extracted_df = load_extracted_derived_table(f"../data/{ev_file}/{folder_name}/evidence.json", "extracted_id", f"../data/{ev_file}/citation.json", source_df)
     #conn.execute(f"CREATE TABLE IF NOT EXISTS Extracted AS SELECT * FROM extracted_df")
     conn.execute(f"INSERT INTO Extracted SELECT * FROM extracted_df")
 
     # derived_df
-    derived_df = load_extracted_derived_table(f"../data/{ev_file}/evidence_human/evidence.json", "derived_id", f"../data/{ev_file}/citation.json", source_df)
+    derived_df = load_extracted_derived_table(f"../data/{ev_file}/{folder_name}/evidence.json", "derived_id", f"../data/{ev_file}/citation.json", source_df)
     #conn.execute(f"CREATE TABLE IF NOT EXISTS Derived AS SELECT * FROM derived_df")
     conn.execute(f"INSERT INTO Derived SELECT * FROM derived_df")
    
     # cell_df
-    cell_df = load_cell_table(f"../data/{ev_file}/evidence_human/evidence.json", extracted_df, derived_df)
+    cell_df = load_cell_table(f"../data/{ev_file}/{folder_name}/evidence.json", extracted_df, derived_df)
     #conn.execute(f"CREATE TABLE IF NOT EXISTS Cell AS SELECT * FROM cell_df")
     conn.execute(f"INSERT INTO Cell SELECT * FROM cell_df")
 
     # gene_df
-    gene_df = load_gene_table(f"../data/{ev_file}/evidence_human/evidence.json", extracted_df, derived_df)
+    gene_df = load_gene_table(f"../data/{ev_file}/{folder_name}/evidence.json", extracted_df, derived_df)
     #conn.execute(f"CREATE TABLE IF NOT EXISTS Gene AS SELECT * FROM gene_df")
     conn.execute(f"INSERT INTO Gene SELECT * FROM gene_df")
 
@@ -142,6 +150,7 @@ def add_json_to_db(ev_file, db_file):
     print("Done!")
 
 evidence = input("Enter folder name of evidence: ")
+human_or_deg = input("Human (h) or DEG (d)? ")
 
-add_json_to_db(evidence, "evidence.db")
+add_json_to_db(evidence, human_or_deg, "evidence.db")
 

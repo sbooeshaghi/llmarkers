@@ -1,602 +1,1727 @@
 [
-    {
-        "cell_type_label": "T cells",
-        "gene": "Nkg7",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000105374"
-    },
-    {
-        "cell_type_label": "T cells",
-        "gene": "Ccl5",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000271503"
-    },
-    {
-        "cell_type_label": "T cells",
-        "gene": "Cd3g",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000289746"
-    },
-    {
-        "cell_type_label": "T cells",
-        "gene": "Trbc2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000211772"
-    },
-    {
-        "cell_type_label": "T cells",
-        "gene": "AW112010",
-        "organism": "mus_musculus",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSMUSG00000075010"
-    },
-    {
-        "cell_type_label": "dendritic cells",
-        "gene": "Cd209a",
-        "organism": "mus_musculus",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSMUSG00000031494"
-    },
-    {
-        "cell_type_label": "T cells",
-        "gene": "Ltb",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000227507"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Actg2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000163017"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Des",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000175084"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Ccl8",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000108700"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Cnn1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000130176"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Myh11",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000133392"
-    },
-    {
-        "cell_type_label": "dendritic cells",
-        "gene": "Tnip3",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000050730"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Folr2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000165457"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Apold1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000178878"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Igfbp5",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000115461"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Tagln",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000149591"
-    },
-    {
-        "cell_type_label": "fibroblast 3",
-        "gene": "Gpx3",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000211445"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "F13a1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000124491"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Myl9",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000101335"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Mylk",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000065534"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Klf2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000127528"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Tpm2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000198467"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Csrp1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000159176"
-    },
-    {
-        "cell_type_label": "smooth muscle cells",
-        "gene": "Acta2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000107796"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Ccl9",
-        "organism": "mus_musculus",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSMUSG00000019122"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Ccl6",
-        "organism": "mus_musculus",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSMUSG00000018927"
-    },
-    {
-        "cell_type_label": "neurone",
-        "gene": "Msln",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000102854"
-    },
-    {
-        "cell_type_label": "neurone",
-        "gene": "Gpm6a",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000150625"
-    },
-    {
-        "cell_type_label": "T cells",
-        "gene": "Rac2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000128340"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Wfdc17",
-        "organism": "mus_musculus",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSMUSG00000069792"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Gpihbp1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000277494"
-    },
-    {
-        "cell_type_label": "neurone",
-        "gene": "Slpi",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000124107"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Cd68",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000129226"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Ctss",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000163131"
-    },
-    {
-        "cell_type_label": "fibroblast 3",
-        "gene": "Gas1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000180447"
-    },
-    {
-        "cell_type_label": "dendritic cells",
-        "gene": "Alox5ap",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000132965"
-    },
-    {
-        "cell_type_label": "dendritic cells",
-        "gene": "H2-DMb1",
-        "organism": "mus_musculus",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSMUSG00000079547"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Ninj1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000131669"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Reln",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000189056"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Cp",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000047457"
-    },
-    {
-        "cell_type_label": "neurone",
-        "gene": "Aebp1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000106624"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Ecscr",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000249751"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Fcgr3",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000203747"
-    },
-    {
-        "cell_type_label": "dendritic cells",
-        "gene": "H2-DMa",
-        "organism": "mus_musculus",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSMUSG00000037649"
-    },
-    {
-        "cell_type_label": "neurone",
-        "gene": "C3",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000125730"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Ctsc",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000109861"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Csf1r",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000182578"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Pf4",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000163737"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Cavin2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000168497"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Fxyd6",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000137726"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Lyve1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000133800"
-    },
-    {
-        "cell_type_label": "neurone",
-        "gene": "Igfbp6",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000167779"
-    },
-    {
-        "cell_type_label": "fibroblast 3",
-        "gene": "Lum",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000139329"
-    },
-    {
-        "cell_type_label": "neurone",
-        "gene": "Crip1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000119865"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Mmrn1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000138722"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Ccl21a",
-        "organism": "mus_musculus",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSMUSG00000094686"
-    },
-    {
-        "cell_type_label": "myofibroblast",
-        "gene": "Rbp4",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000138207"
-    },
-    {
-        "cell_type_label": "myofibroblast",
-        "gene": "Cxcl14",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000145824"
-    },
-    {
-        "cell_type_label": "fibroblast 2",
-        "gene": "Pi16",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000164530"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Fgl2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000127951"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Gng11",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000127920"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Fcer1g",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000158869"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "C1qc",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000159189"
-    },
-    {
-        "cell_type_label": "dendritic cells",
-        "gene": "Cst3",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000101439"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Selenop",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000250722"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "C1qb",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000173369"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "C1qa",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000173372"
-    },
-    {
-        "cell_type_label": "endothelial cells",
-        "gene": "Cldn5",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000184113"
-    },
-    {
-        "cell_type_label": "monocytes",
-        "gene": "Apoe",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000130203"
-    },
-    {
-        "cell_type_label": "myofibroblast",
-        "gene": "Col1a2",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000164692"
-    },
-    {
-        "cell_type_label": "myofibroblast",
-        "gene": "Sparc",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000113140"
-    },
-    {
-        "cell_type_label": "myofibroblast",
-        "gene": "Col1a1",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000108821"
-    },
-    {
-        "cell_type_label": "myofibroblast",
-        "gene": "Car3",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000164879"
-    },
-    {
-        "cell_type_label": "fibroblast 2",
-        "gene": "Gsn",
-        "organism": "homo_sapiens",
-        "cell_source": "bladder",
-        "cell_state": null,
-        "gene_id": "ENSG00000148180"
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Nkg7"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Nkg7",
+      "gene_id": "ENSG00000105374"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
     }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl5"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl5",
+      "gene_id": "ENSG00000271503"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cd3g"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cd3g",
+      "gene_id": "ENSG00000289746"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Trbc2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Trbc2",
+      "gene_id": "ENSG00000211772"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "AW112010"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": null,
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "AW112010",
+      "gene_id": "ENSMUSG00000075010"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cd209a"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": null,
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cd209a",
+      "gene_id": "ENSMUSG00000031494"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ltb"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ltb",
+      "gene_id": "ENSG00000227507"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Actg2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Actg2",
+      "gene_id": "ENSG00000163017"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Des"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Des",
+      "gene_id": "ENSG00000175084"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl8"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl8",
+      "gene_id": "ENSG00000108700"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cnn1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cnn1",
+      "gene_id": "ENSG00000130176"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Myh11"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Myh11",
+      "gene_id": "ENSG00000133392"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Tnip3"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Tnip3",
+      "gene_id": "ENSG00000050730"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Folr2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Folr2",
+      "gene_id": "ENSG00000165457"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Apold1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Apold1",
+      "gene_id": "ENSG00000178878"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Igfbp5"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Igfbp5",
+      "gene_id": "ENSG00000115461"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Tagln"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Tagln",
+      "gene_id": "ENSG00000149591"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "fibroblast 3",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gpx3"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "fibroblast 3",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gpx3",
+      "gene_id": "ENSG00000211445"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "F13a1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "F13a1",
+      "gene_id": "ENSG00000124491"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Myl9"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Myl9",
+      "gene_id": "ENSG00000101335"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Mylk"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Mylk",
+      "gene_id": "ENSG00000065534"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Klf2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Klf2",
+      "gene_id": "ENSG00000127528"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Tpm2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Tpm2",
+      "gene_id": "ENSG00000198467"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Csrp1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Csrp1",
+      "gene_id": "ENSG00000159176"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Acta2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "smooth muscle cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Acta2",
+      "gene_id": "ENSG00000107796"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl9"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl9",
+      "gene_id": "ENSMUSG00000019122"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl6"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl6",
+      "gene_id": "ENSMUSG00000018927"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Msln"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Msln",
+      "gene_id": "ENSG00000102854"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gpm6a"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gpm6a",
+      "gene_id": "ENSG00000150625"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Rac2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "T cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Rac2",
+      "gene_id": "ENSG00000128340"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Wfdc17"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Wfdc17",
+      "gene_id": "ENSMUSG00000069792"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gpihbp1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gpihbp1",
+      "gene_id": "ENSG00000277494"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Slpi"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Slpi",
+      "gene_id": "ENSG00000124107"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cd68"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cd68",
+      "gene_id": "ENSG00000129226"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ctss"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ctss",
+      "gene_id": "ENSG00000163131"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "fibroblast 3",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gas1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "fibroblast 3",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gas1",
+      "gene_id": "ENSG00000180447"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Alox5ap"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Alox5ap",
+      "gene_id": "ENSG00000132965"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "H2-DMb1"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": null,
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "H2-DMb1",
+      "gene_id": "ENSMUSG00000079547"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ninj1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ninj1",
+      "gene_id": "ENSG00000131669"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Reln"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Reln",
+      "gene_id": "ENSG00000189056"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cp"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cp",
+      "gene_id": "ENSG00000047457"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Aebp1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Aebp1",
+      "gene_id": "ENSG00000106624"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ecscr"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ecscr",
+      "gene_id": "ENSG00000249751"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Fcgr3"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Fcgr3",
+      "gene_id": "ENSG00000203747"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "H2-DMa"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": null,
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "H2-DMa",
+      "gene_id": "ENSMUSG00000037649"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "C3"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "C3",
+      "gene_id": "ENSG00000125730"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ctsc"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ctsc",
+      "gene_id": "ENSG00000109861"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Csf1r"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Csf1r",
+      "gene_id": "ENSG00000182578"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Pf4"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Pf4",
+      "gene_id": "ENSG00000163737"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cavin2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cavin2",
+      "gene_id": "ENSG00000168497"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Fxyd6"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Fxyd6",
+      "gene_id": "ENSG00000137726"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Lyve1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Lyve1",
+      "gene_id": "ENSG00000133800"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Igfbp6"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Igfbp6",
+      "gene_id": "ENSG00000167779"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "fibroblast 3",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Lum"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "fibroblast 3",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Lum",
+      "gene_id": "ENSG00000139329"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Crip1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "neurone",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Crip1",
+      "gene_id": "ENSG00000119865"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Mmrn1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Mmrn1",
+      "gene_id": "ENSG00000138722"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl21a"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Ccl21a",
+      "gene_id": "ENSMUSG00000094686"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Rbp4"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Rbp4",
+      "gene_id": "ENSG00000138207"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cxcl14"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cxcl14",
+      "gene_id": "ENSG00000145824"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "fibroblast 2",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Pi16"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "fibroblast 2",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Pi16",
+      "gene_id": "ENSG00000164530"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Fgl2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Fgl2",
+      "gene_id": "ENSG00000127951"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gng11"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gng11",
+      "gene_id": "ENSG00000127920"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Fcer1g"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Fcer1g",
+      "gene_id": "ENSG00000158869"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "C1qc"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "C1qc",
+      "gene_id": "ENSG00000159189"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cst3"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "dendritic cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cst3",
+      "gene_id": "ENSG00000101439"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Selenop"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Selenop",
+      "gene_id": "ENSG00000250722"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "C1qb"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "C1qb",
+      "gene_id": "ENSG00000173369"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "C1qa"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "C1qa",
+      "gene_id": "ENSG00000173372"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cldn5"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "endothelial cells",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Cldn5",
+      "gene_id": "ENSG00000184113"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Apoe"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "monocytes",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Apoe",
+      "gene_id": "ENSG00000130203"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Col1a2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Col1a2",
+      "gene_id": "ENSG00000164692"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Sparc"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Sparc",
+      "gene_id": "ENSG00000113140"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Col1a1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Col1a1",
+      "gene_id": "ENSG00000108821"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Car3"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "myofibroblast",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Car3",
+      "gene_id": "ENSG00000164879"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "fibroblast 2",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gsn"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "fibroblast 2",
+      "cell_source": "bladder",
+      "cell_state": null,
+      "gene": "Gsn",
+      "gene_id": "ENSG00000148180"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  }
 ]

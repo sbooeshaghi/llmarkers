@@ -1,386 +1,1106 @@
 [
-    {
-        "cell_type_label": "AT1",
-        "gene": "NTM",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000182667"
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "NTM"
     },
-    {
-        "cell_type_label": "PNEC",
-        "gene": "SEC11C",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000166562"
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "NTM",
+      "gene_id": "ENSG00000182667"
     },
-    {
-        "cell_type_label": "PNEC",
-        "gene": "GRP",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000134443"
-    },
-    {
-        "cell_type_label": "B Plasma",
-        "gene": "IGHA1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000211895"
-    },
-    {
-        "cell_type_label": "AT1",
-        "gene": "NCKAP5",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000176771"
-    },
-    {
-        "cell_type_label": "AT2",
-        "gene": "SFTPC",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000168484"
-    },
-    {
-        "cell_type_label": "Mast",
-        "gene": "IL1RL1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000115602"
-    },
-    {
-        "cell_type_label": "B Plasma",
-        "gene": "JCHAIN",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000132465"
-    },
-    {
-        "cell_type_label": "PNEC",
-        "gene": "NRG1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000157168"
-    },
-    {
-        "cell_type_label": "DC Langerhans",
-        "gene": "S100B",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000160307"
-    },
-    {
-        "cell_type_label": "Mesothelial",
-        "gene": "ITLN1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000179914"
-    },
-    {
-        "cell_type_label": "AT1",
-        "gene": "AGER",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000204305"
-    },
-    {
-        "cell_type_label": "Mesothelial",
-        "gene": "TIMP1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000102265"
-    },
-    {
-        "cell_type_label": "Goblet",
-        "gene": "BPIFB1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000125999"
-    },
-    {
-        "cell_type_label": "Goblet",
-        "gene": "SCGB1A1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000149021"
-    },
-    {
-        "cell_type_label": "AT1",
-        "gene": "CAV1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000105974"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "DNAH9",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000007174"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "HYDIN",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000157423"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "LRRIQ1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000133640"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "CAPS",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000105519"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "CFAP299",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000197826"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "AGBL4",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000186094"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "RP1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000104237"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "TMEM232",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000186952"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "DNAH12",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000174844"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "RSPH1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000160188"
-    },
-    {
-        "cell_type_label": "B",
-        "gene": "CD74",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000019582"
-    },
-    {
-        "cell_type_label": "Mast",
-        "gene": "TPSB2",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000197253"
-    },
-    {
-        "cell_type_label": "NK",
-        "gene": "CCL4",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000275302"
-    },
-    {
-        "cell_type_label": "NK",
-        "gene": "NKG7",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000105374"
-    },
-    {
-        "cell_type_label": "pDC",
-        "gene": "FCHSD2",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000137478"
-    },
-    {
-        "cell_type_label": "pDC",
-        "gene": "IRF4",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000137265"
-    },
-    {
-        "cell_type_label": "pDC",
-        "gene": "GZMB",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000100453"
-    },
-    {
-        "cell_type_label": "Ciliated",
-        "gene": "CDHR3",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000128536"
-    },
-    {
-        "cell_type_label": "NK",
-        "gene": "GNLY",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000115523"
-    },
-    {
-        "cell_type_label": "Macrophage Alveolar",
-        "gene": "APOC1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000130208"
-    },
-    {
-        "cell_type_label": "cMonocyte",
-        "gene": "S100A9",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000163220"
-    },
-    {
-        "cell_type_label": "cMonocyte",
-        "gene": "S100A8",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000143546"
-    },
-    {
-        "cell_type_label": "Macrophage Alveolar",
-        "gene": "C1QA",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000173372"
-    },
-    {
-        "cell_type_label": "Macrophage Alveolar",
-        "gene": "FABP4",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000170323"
-    },
-    {
-        "cell_type_label": "AT2",
-        "gene": "SFTPB",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000168878"
-    },
-    {
-        "cell_type_label": "Ionocyte",
-        "gene": "PDE1C",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000154678"
-    },
-    {
-        "cell_type_label": "Mesothelial",
-        "gene": "MT2A",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000125148"
-    },
-    {
-        "cell_type_label": "B Plasma",
-        "gene": "ENSG00000240040",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000240040"
-    },
-    {
-        "cell_type_label": "Goblet",
-        "gene": "SLPI",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000124107"
-    },
-    {
-        "cell_type_label": "Goblet",
-        "gene": "SCGB3A1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000161055"
-    },
-    {
-        "cell_type_label": "Mast",
-        "gene": "TPSAB1",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000172236"
-    },
-    {
-        "cell_type_label": "AT1",
-        "gene": "EMP2",
-        "organism": "homo_sapiens",
-        "cell_source": "lung",
-        "cell_state": null,
-        "gene_id": "ENSG00000213853"
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
     }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "PNEC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SEC11C"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "PNEC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SEC11C",
+      "gene_id": "ENSG00000166562"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "PNEC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "GRP"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "PNEC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "GRP",
+      "gene_id": "ENSG00000134443"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "B Plasma",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "IGHA1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "B Plasma",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "IGHA1",
+      "gene_id": "ENSG00000211895"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "NCKAP5"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "NCKAP5",
+      "gene_id": "ENSG00000176771"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "AT2",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SFTPC"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "AT2",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SFTPC",
+      "gene_id": "ENSG00000168484"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mast",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "IL1RL1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Mast",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "IL1RL1",
+      "gene_id": "ENSG00000115602"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "B Plasma",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "JCHAIN"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "B Plasma",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "JCHAIN",
+      "gene_id": "ENSG00000132465"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "PNEC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "NRG1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "PNEC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "NRG1",
+      "gene_id": "ENSG00000157168"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC Langerhans",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "S100B"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "DC Langerhans",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "S100B",
+      "gene_id": "ENSG00000160307"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesothelial",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "ITLN1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Mesothelial",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "ITLN1",
+      "gene_id": "ENSG00000179914"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "AGER"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "AGER",
+      "gene_id": "ENSG00000204305"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesothelial",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "TIMP1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Mesothelial",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "TIMP1",
+      "gene_id": "ENSG00000102265"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Goblet",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "BPIFB1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Goblet",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "BPIFB1",
+      "gene_id": "ENSG00000125999"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Goblet",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SCGB1A1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Goblet",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SCGB1A1",
+      "gene_id": "ENSG00000149021"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CAV1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CAV1",
+      "gene_id": "ENSG00000105974"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "DNAH9"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "DNAH9",
+      "gene_id": "ENSG00000007174"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "HYDIN"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "HYDIN",
+      "gene_id": "ENSG00000157423"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "LRRIQ1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "LRRIQ1",
+      "gene_id": "ENSG00000133640"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CAPS"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CAPS",
+      "gene_id": "ENSG00000105519"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CFAP299"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CFAP299",
+      "gene_id": "ENSG00000197826"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "AGBL4"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "AGBL4",
+      "gene_id": "ENSG00000186094"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "RP1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "RP1",
+      "gene_id": "ENSG00000104237"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "TMEM232"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "TMEM232",
+      "gene_id": "ENSG00000186952"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "DNAH12"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "DNAH12",
+      "gene_id": "ENSG00000174844"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "RSPH1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "RSPH1",
+      "gene_id": "ENSG00000160188"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "B",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CD74"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "B",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CD74",
+      "gene_id": "ENSG00000019582"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mast",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "TPSB2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Mast",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "TPSB2",
+      "gene_id": "ENSG00000197253"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "NK",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CCL4"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "NK",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CCL4",
+      "gene_id": "ENSG00000275302"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "NK",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "NKG7"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "NK",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "NKG7",
+      "gene_id": "ENSG00000105374"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "pDC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "FCHSD2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "pDC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "FCHSD2",
+      "gene_id": "ENSG00000137478"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "pDC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "IRF4"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "pDC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "IRF4",
+      "gene_id": "ENSG00000137265"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "pDC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "GZMB"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "pDC",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "GZMB",
+      "gene_id": "ENSG00000100453"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CDHR3"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ciliated",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "CDHR3",
+      "gene_id": "ENSG00000128536"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "NK",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "GNLY"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "NK",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "GNLY",
+      "gene_id": "ENSG00000115523"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage Alveolar",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "APOC1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Macrophage Alveolar",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "APOC1",
+      "gene_id": "ENSG00000130208"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "cMonocyte",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "S100A9"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "cMonocyte",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "S100A9",
+      "gene_id": "ENSG00000163220"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "cMonocyte",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "S100A8"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "cMonocyte",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "S100A8",
+      "gene_id": "ENSG00000143546"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage Alveolar",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "C1QA"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Macrophage Alveolar",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "C1QA",
+      "gene_id": "ENSG00000173372"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage Alveolar",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "FABP4"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Macrophage Alveolar",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "FABP4",
+      "gene_id": "ENSG00000170323"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "AT2",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SFTPB"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "AT2",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SFTPB",
+      "gene_id": "ENSG00000168878"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Ionocyte",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "PDE1C"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Ionocyte",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "PDE1C",
+      "gene_id": "ENSG00000154678"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesothelial",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "MT2A"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Mesothelial",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "MT2A",
+      "gene_id": "ENSG00000125148"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "B Plasma",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "ENSG00000240040"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "B Plasma",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "ENSG00000240040",
+      "gene_id": "ENSG00000240040"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Goblet",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SLPI"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Goblet",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SLPI",
+      "gene_id": "ENSG00000124107"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Goblet",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SCGB3A1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Goblet",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "SCGB3A1",
+      "gene_id": "ENSG00000161055"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mast",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "TPSAB1"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "Mast",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "TPSAB1",
+      "gene_id": "ENSG00000172236"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "EMP2"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "AT1",
+      "cell_source": "lung",
+      "cell_state": null,
+      "gene": "EMP2",
+      "gene_id": "ENSG00000213853"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "deg",
+      "source_id": "deg"
+    }
+  }
 ]
