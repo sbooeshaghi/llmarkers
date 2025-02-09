@@ -25,8 +25,8 @@
               <th>Cell Type</th>
               <th>Cell Type ID</th>
               <th>Cell State</th>
-              <th>Gene</th>
-              <th>Gene ID</th>
+              <th>Feature</th>
+              <th>Feature ID</th>
               <th>Source Type</th>
               <th>Source Rational</th>
             </tr>
@@ -47,8 +47,8 @@
               <td>${item.cell_type_label || "N/A"}</td>
               <td>${item.cell_type_id || "N/A"}</td>
               <td>${item.cell_state || "N/A"}</td>
-              <td>${item.gene || "N/A"}</td>
-              <td>${item.ensembl_id || "N/A"}</td>
+              <td>${item.feature_name || "N/A"}</td>
+              <td>${item.feature_identifier || "N/A"}</td>
               <td>${item.source_type || "N/A"}</td>
               <td>${item.source_rationale || "N/A"}</td>
             </tr>`).join("");

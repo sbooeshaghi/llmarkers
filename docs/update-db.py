@@ -36,7 +36,7 @@ def load_source_table(fn):
 def load_extracted_derived_table(fn, key, article_fn, source_df):
     result_df = pd.DataFrame() 
     result_df[key]= source_df[key]
-    result_df['gene_id'] = [uuid.uuid4() for _ in range(len(result_df))]
+    result_df['feature_id'] = [uuid.uuid4() for _ in range(len(result_df))]
     result_df['cell_id'] = [uuid.uuid4() for _ in range(len(result_df))]
     result_df['article_id'] = [uuid.uuid4() for _ in range(len(result_df))]
 
@@ -66,18 +66,16 @@ def load_cell_table(fn, extracted_df, derived_df):
 def load_gene_table(fn, extracted_df, derived_df):
     df = pd.read_json(fn)
 
-    result_df = pd.DataFrame({'gene_id': pd.concat([extracted_df['gene_id'], derived_df['gene_id']])})
+    result_df = pd.DataFrame({'feature_id': pd.concat([extracted_df['feature_id'], derived_df['feature_id']])})
 
-    derived_genes = df['derived'].apply(lambda x: {k: x[k] for k in ['gene'] if k in x}).apply(pd.Series)
-    extracted_genes = df['extracted'].apply(lambda x: {k: x[k] for k in ['gene'] if k in x}).apply(pd.Series)
+    derived_genes = df['derived'].apply(lambda x: {k: x[k] for k in ['feature_name', 'feature_type'] if k in x}).apply(pd.Series)
+    extracted_genes = df['extracted'].apply(lambda x: {k: x[k] for k in ['feature_name', 'feature_type'] if k in x}).apply(pd.Series)
 
     gene_df = pd.concat([derived_genes, extracted_genes])
 
-    ensembl_ids = df['derived'].apply(lambda x: {k: x[k] for k in ['gene_id'] if k in x}).apply(pd.Series)
+    ensembl_ids = df['derived'].apply(lambda x: {k: x[k] for k in ['feature_identifier', 'feature_identifier_type'] if k in x}).apply(pd.Series)
     
-    gene_df['ensembl_id'] = ensembl_ids
-
-    final_df = pd.concat([result_df, gene_df], axis = 1)
+    final_df = pd.concat([result_df, gene_df, ensembl_ids], axis = 1)
     
     return final_df
 
