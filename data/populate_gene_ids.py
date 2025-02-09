@@ -118,11 +118,15 @@ class EnsemblIdFinder:
                     main_obj = obj['derived']
 
                 gene = main_obj['gene']
+                if gene is str:
+                    gene = gene.upper()
 
                 if gene in self.gene_data.keys():
                     gene_id = self.gene_data[gene]
                     main_obj['gene_id'] = gene_id
                 else:
+                    print(main_obj)
+                    """
                     result = self.client.get_id(species, gene) # 2nd pass is using the Ensebml REST API
                     if result == "gene not found":
                         if "." in main_obj['gene']:
@@ -141,9 +145,10 @@ class EnsemblIdFinder:
                             print(obj)
                     else:
                         main_obj['gene_id'] = result
+                    """
 
         with open(json_fn, "w") as file:
             json.dump(data, file, indent = 4)
         
 eif = EnsemblIdFinder()
-eif.update_json("adipose_Hildreth2021/evidence_deg/evidence.json")
+eif.update_json("yolksac_Goh2023/evidence_deg/evidence_unfiltered.json")
