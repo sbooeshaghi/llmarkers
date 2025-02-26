@@ -5,7 +5,7 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "RACK1",
             "feature_type": "gene"
         },
         "derived": {
@@ -14,9 +14,9 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "RACK1",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000125691"
+            "feature_identifier": "ENSG00000204628"
         },
         "source": {
             "source_type": "deg",
@@ -30,7 +30,7 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD52",
             "feature_type": "gene"
         },
         "derived": {
@@ -39,9 +39,9 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD52",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000148303"
+            "feature_identifier": "ENSG00000169442"
         },
         "source": {
             "source_type": "deg",
@@ -55,7 +55,7 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "HLA-DRB1",
             "feature_type": "gene"
         },
         "derived": {
@@ -64,32 +64,7 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000116251"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
+            "feature_name": "HLA-DRB1",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000196126"
         },
@@ -105,7 +80,7 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD79A",
             "feature_type": "gene"
         },
         "derived": {
@@ -114,107 +89,7 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000223865"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000179344"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000023445"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000100721"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "B",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD79A",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000105369"
         },
@@ -230,7 +105,7 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD37",
             "feature_type": "gene"
         },
         "derived": {
@@ -239,9 +114,9 @@
             "cell_type_label": "B",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD37",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000156738"
+            "feature_identifier": "ENSG00000104894"
         },
         "source": {
             "source_type": "deg",
@@ -255,7 +130,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "PSMB9",
             "feature_type": "gene"
         },
         "derived": {
@@ -264,9 +139,9 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "PSMB9",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000172543"
+            "feature_identifier": "ENSG00000240065"
         },
         "source": {
             "source_type": "deg",
@@ -280,7 +155,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD8A",
             "feature_type": "gene"
         },
         "derived": {
@@ -289,9 +164,9 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD8A",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000069493"
+            "feature_identifier": "ENSG00000153563"
         },
         "source": {
             "source_type": "deg",
@@ -305,7 +180,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD27",
             "feature_type": "gene"
         },
         "derived": {
@@ -314,7 +189,57 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD27",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000139193"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "HLA-F",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "HLA-F",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000204642"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "LYAR",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "LYAR",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000145220"
         },
@@ -330,7 +255,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "STK17A",
             "feature_type": "gene"
         },
         "derived": {
@@ -339,34 +264,9 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "STK17A",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000153563"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000075234"
+            "feature_identifier": "ENSG00000164543"
         },
         "source": {
             "source_type": "deg",
@@ -380,7 +280,7 @@
             "cell_type_label": "LAM",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "HEXB",
             "feature_type": "gene"
         },
         "derived": {
@@ -389,7 +289,157 @@
             "cell_type_label": "LAM",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "HEXB",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000049860"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "LAM",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "NENF",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "LAM",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "NENF",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000117691"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "LAM",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CYP27A1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "LAM",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CYP27A1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000135929"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CYP1B1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CYP1B1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000138061"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CCND3",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CCND3",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000112576"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "A2M",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "A2M",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000175899"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "LAM",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CTSH",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "LAM",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CTSH",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000103811"
         },
@@ -402,135 +452,10 @@
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000110934"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000101474"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000038945"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000074416"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000136235"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CXCR6",
             "feature_type": "gene"
         },
         "derived": {
@@ -539,7 +464,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CXCR6",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000172215"
         },
@@ -552,21 +477,21 @@
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "CD8 T",
+            "cell_type_label": "Neut",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "COMT",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
             "cell_type_id": null,
-            "cell_type_label": "CD8 T",
+            "cell_type_label": "Neut",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "COMT",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000172116"
+            "feature_identifier": "ENSG00000093010"
         },
         "source": {
             "source_type": "deg",
@@ -580,7 +505,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "KLRG1",
             "feature_type": "gene"
         },
         "derived": {
@@ -589,82 +514,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000143184"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "CD8 T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "CD8 T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000139193"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000168229"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "CD8 T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "CD8 T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
+            "feature_name": "KLRG1",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000139187"
         },
@@ -680,7 +530,7 @@
             "cell_type_label": "Neut",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "C2",
             "feature_type": "gene"
         },
         "derived": {
@@ -689,9 +539,184 @@
             "cell_type_label": "Neut",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "C2",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000214063"
+            "feature_identifier": "ENSG00000166278"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "XCL1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "XCL1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000143184"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "PYHIN1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "PYHIN1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000163564"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "PTPN4",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "PTPN4",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000088179"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "LAM",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CXCL16",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "LAM",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CXCL16",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000161921"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "APOBEC3G",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "APOBEC3G",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000239713"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "TXK",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "TXK",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000074966"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CD160",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CD160",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000117281"
         },
         "source": {
             "source_type": "deg",
@@ -705,7 +730,7 @@
             "cell_type_label": "Neut",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "FLNA",
             "feature_type": "gene"
         },
         "derived": {
@@ -714,9 +739,9 @@
             "cell_type_label": "Neut",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "FLNA",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000179163"
+            "feature_identifier": "ENSG00000196924"
         },
         "source": {
             "source_type": "deg",
@@ -730,7 +755,7 @@
             "cell_type_label": "Neut",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "HMOX1",
             "feature_type": "gene"
         },
         "derived": {
@@ -739,7 +764,7 @@
             "cell_type_label": "Neut",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "HMOX1",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000100292"
         },
@@ -755,7 +780,7 @@
             "cell_type_label": "LAM",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "MGLL",
             "feature_type": "gene"
         },
         "derived": {
@@ -764,59 +789,9 @@
             "cell_type_label": "LAM",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "MGLL",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000168961"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000138061"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000161921"
+            "feature_identifier": "ENSG00000074416"
         },
         "source": {
             "source_type": "deg",
@@ -830,7 +805,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "SH2D1A",
             "feature_type": "gene"
         },
         "derived": {
@@ -839,7 +814,7 @@
             "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "SH2D1A",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000183918"
         },
@@ -852,85 +827,10 @@
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000166278"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000088827"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000111144"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
             "cell_type_label": "NK",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TPST2",
             "feature_type": "gene"
         },
         "derived": {
@@ -939,157 +839,7 @@
             "cell_type_label": "NK",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000117281"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000196743"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000169439"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neut",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000163694"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000204475"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LAM",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000186818"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TPST2",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000128294"
         },
@@ -1105,7 +855,7 @@
             "cell_type_label": "LAM",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "ATP6V1B2",
             "feature_type": "gene"
         },
         "derived": {
@@ -1114,9 +864,9 @@
             "cell_type_label": "LAM",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "ATP6V1B2",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000224397"
+            "feature_identifier": "ENSG00000147416"
         },
         "source": {
             "source_type": "deg",
@@ -1127,46 +877,21 @@
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "LAM",
+            "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD8B",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
             "cell_type_id": null,
-            "cell_type_label": "LAM",
+            "cell_type_label": "CD8 T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD8B",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000115355"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "NK",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000074966"
+            "feature_identifier": "ENSG00000172116"
         },
         "source": {
             "source_type": "deg",
@@ -1180,7 +905,7 @@
             "cell_type_label": "LAM",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "GLIPR2",
             "feature_type": "gene"
         },
         "derived": {
@@ -1189,9 +914,9 @@
             "cell_type_label": "LAM",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "GLIPR2",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000135838"
+            "feature_identifier": "ENSG00000122694"
         },
         "source": {
             "source_type": "deg",
@@ -1205,7 +930,7 @@
             "cell_type_label": "NK",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TTC38",
             "feature_type": "gene"
         },
         "derived": {
@@ -1214,9 +939,84 @@
             "cell_type_label": "NK",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TTC38",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000100385"
+            "feature_identifier": "ENSG00000075234"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "LYPD2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "LYPD2",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000197353"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "ADAP2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "ADAP2",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000184060"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CAPNS1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Neut",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CAPNS1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000126247"
         },
         "source": {
             "source_type": "deg",
@@ -1230,7 +1030,7 @@
             "cell_type_label": "NK",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TMIGD2",
             "feature_type": "gene"
         },
         "derived": {
@@ -1239,9 +1039,59 @@
             "cell_type_label": "NK",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TMIGD2",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000205336"
+            "feature_identifier": "ENSG00000167664"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "FCRL6",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "NK",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "FCRL6",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000181036"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "DTHD1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CD8 T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "DTHD1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000197057"
         },
         "source": {
             "source_type": "deg",
@@ -1255,7 +1105,7 @@
             "cell_type_label": "Mac",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "SLC11A1",
             "feature_type": "gene"
         },
         "derived": {
@@ -1264,84 +1114,9 @@
             "cell_type_label": "Mac",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "SLC11A1",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000121316"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000136867"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000158270"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000065833"
+            "feature_identifier": "ENSG00000018280"
         },
         "source": {
             "source_type": "deg",
@@ -1355,7 +1130,7 @@
             "cell_type_label": "Mac",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CSF3R",
             "feature_type": "gene"
         },
         "derived": {
@@ -1364,9 +1139,34 @@
             "cell_type_label": "Mac",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CSF3R",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000101220"
+            "feature_identifier": "ENSG00000119535"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mac",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "LILRB3",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mac",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "LILRB3",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000204577"
         },
         "source": {
             "source_type": "deg",
@@ -1380,7 +1180,7 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "FCER2",
             "feature_type": "gene"
         },
         "derived": {
@@ -1389,9 +1189,9 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "FCER2",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000088854"
+            "feature_identifier": "ENSG00000104921"
         },
         "source": {
             "source_type": "deg",
@@ -1405,7 +1205,7 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD93",
             "feature_type": "gene"
         },
         "derived": {
@@ -1414,82 +1214,7 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000186815"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000155657"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000075618"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mon",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CD93",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000125810"
         },
@@ -1505,7 +1230,7 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TBC1D9",
             "feature_type": "gene"
         },
         "derived": {
@@ -1514,9 +1239,9 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TBC1D9",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000108861"
+            "feature_identifier": "ENSG00000109436"
         },
         "source": {
             "source_type": "deg",
@@ -1530,7 +1255,7 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "AXL",
             "feature_type": "gene"
         },
         "derived": {
@@ -1539,9 +1264,9 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "AXL",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000181631"
+            "feature_identifier": "ENSG00000167601"
         },
         "source": {
             "source_type": "deg",
@@ -1555,7 +1280,7 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "PID1",
             "feature_type": "gene"
         },
         "derived": {
@@ -1564,9 +1289,109 @@
             "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "PID1",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000164125"
+            "feature_identifier": "ENSG00000153823"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CNRIP1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CNRIP1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000119865"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "SPRED1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "SPRED1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000166068"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "NRP2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "NRP2",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000118257"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "FGFR1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "FGFR1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000077782"
         },
         "source": {
             "source_type": "deg",
@@ -1580,7 +1405,7 @@
             "cell_type_label": "Mac",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "IFI30",
             "feature_type": "gene"
         },
         "derived": {
@@ -1589,9 +1414,34 @@
             "cell_type_label": "Mac",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "IFI30",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000172322"
+            "feature_identifier": "ENSG00000216490"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CPED1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CPED1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000106034"
         },
         "source": {
             "source_type": "deg",
@@ -1605,7 +1455,7 @@
             "cell_type_label": "Naive T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "LDLRAP1",
             "feature_type": "gene"
         },
         "derived": {
@@ -1614,7 +1464,82 @@
             "cell_type_label": "Naive T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "LDLRAP1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000157978"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mac",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "GPAT3",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mac",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "GPAT3",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000138678"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mac",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "GAPT",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mac",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "GAPT",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000175857"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "SPINK2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "SPINK2",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000128040"
         },
@@ -1627,21 +1552,21 @@
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "Naive T",
+            "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "HRH1",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
             "cell_type_id": null,
-            "cell_type_label": "Naive T",
+            "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "HRH1",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000152495"
+            "feature_identifier": "ENSG00000196639"
         },
         "source": {
             "source_type": "deg",
@@ -1655,7 +1580,7 @@
             "cell_type_label": "Naive T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "RGL4",
             "feature_type": "gene"
         },
         "derived": {
@@ -1664,7 +1589,57 @@
             "cell_type_label": "Naive T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "RGL4",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000159496"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "IL2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "IL2",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000109471"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CCR6",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CCR6",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000112486"
         },
@@ -1677,21 +1652,21 @@
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "Mac",
+            "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CHKA",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
             "cell_type_id": null,
-            "cell_type_label": "Mac",
+            "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "CHKA",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000237541"
+            "feature_identifier": "ENSG00000110721"
         },
         "source": {
             "source_type": "deg",
@@ -1705,7 +1680,7 @@
             "cell_type_label": "Mac",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "PKIB",
             "feature_type": "gene"
         },
         "derived": {
@@ -1714,182 +1689,7 @@
             "cell_type_label": "Mac",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000176788"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000140678"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Naive T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Naive T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000186854"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000214212"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Naive T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Naive T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000107485"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Naive T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Naive T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000172005"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Naive T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Naive T",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000070718"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
+            "feature_name": "PKIB",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000135549"
         },
@@ -1905,7 +1705,7 @@
             "cell_type_label": "Naive T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "BCL11B",
             "feature_type": "gene"
         },
         "derived": {
@@ -1914,7 +1714,107 @@
             "cell_type_label": "Naive T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "BCL11B",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000127152"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "TNFRSF21",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mon",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "TNFRSF21",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000146072"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "TESPA1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "TESPA1",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000135426"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Mac",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CD1D",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Mac",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "CD1D",
+            "feature_type": "ensembl",
+            "feature_identifier": "ENSG00000158473"
+        },
+        "source": {
+            "source_type": "deg",
+            "source_rationale": "unfiltered",
+            "source_id": "deg"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "LEF1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "Naive T",
+            "cell_source": "adipose",
+            "cell_state": null,
+            "feature_name": "LEF1",
             "feature_type": "ensembl",
             "feature_identifier": "ENSG00000138795"
         },
@@ -1927,46 +1827,21 @@
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "Naive T",
+            "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "PDGFB",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
             "cell_type_id": null,
-            "cell_type_label": "Naive T",
+            "cell_type_label": "Mon",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "PDGFB",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000246223"
-        },
-        "source": {
-            "source_type": "deg",
-            "source_rationale": "unfiltered",
-            "source_id": "deg"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mac",
-            "cell_source": "adipose",
-            "cell_state": null,
-            "feature_name": null,
-            "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000239998"
+            "feature_identifier": "ENSG00000100311"
         },
         "source": {
             "source_type": "deg",
@@ -1980,7 +1855,7 @@
             "cell_type_label": "Naive T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TRABD2A",
             "feature_type": "gene"
         },
         "derived": {
@@ -1989,9 +1864,9 @@
             "cell_type_label": "Naive T",
             "cell_source": "adipose",
             "cell_state": null,
-            "feature_name": null,
+            "feature_name": "TRABD2A",
             "feature_type": "ensembl",
-            "feature_identifier": "ENSG00000109471"
+            "feature_identifier": "ENSG00000186854"
         },
         "source": {
             "source_type": "deg",
