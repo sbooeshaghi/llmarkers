@@ -1,17 +1,94 @@
 import re
 import tiktoken
 from collections import defaultdict
+import unicodedata
 
 
-def clean_text(text):
-    # strip leading/trailing whitespace
-    text = text.strip()
-    # remove newlines
-    text = text.replace("\n", " ")
-    # remove multiple spaces
-    text = re.sub(r"\s+", " ", text)
+def norm_text(text):
+    """
+    Normalize text to ensure UTF-8 compatibility for NLP processing.
+    
+    This function:
+    1. Normalizes Unicode to the NFC form
+    2. Replaces problematic characters with ASCII equivalents
+    3. Handles common special characters that cause issues
+    
+    Args:
+        text (str): Input text to normalize
+        
+    Returns:
+        str: Normalized text safe for UTF-8 processing
+    """
+    if not isinstance(text, str):
+        try:
+            text = str(text)
+        except:
+            return ""
+    
+    # Step 1: Unicode normalization to NFC form (composed form)
+    # This combines characters and diacritics when possible
+    text = unicodedata.normalize('NFC', text)
+    
+    # Step 2: Map specific problematic characters to ASCII equivalents
+    char_map = {
+        'ɛ': 'e',        # epsilon
+        'ɑ': 'a',        # alpha
+        'β': 'b',        # beta
+        'δ': 'd',        # delta
+        'γ': 'g',        # gamma
+        'λ': 'l',        # lambda
+        'μ': 'u',        # mu
+        'π': 'pi',       # pi
+        'θ': 'theta',    # theta
+        'τ': 't',        # tau
+        'ω': 'omega',    # omega
+        '′': "'",        # prime
+        '″': '"',        # double prime
+        '–': '-',        # en dash
+        '—': '--',       # em dash
+        ''': "'",        # curly single quote
+        ''': "'",        # curly single quote
+        '"': '"',        # curly double quote
+        '"': '"',        # curly double quote
+        '…': '...',      # ellipsis
+        '•': '*',        # bullet
+        '·': '.',        # middle dot
+        '×': 'x',        # multiplication sign
+        '÷': '/',        # division sign
+        '≤': '<=',       # less than or equal
+        '≥': '>=',       # greater than or equal
+        '≠': '!=',       # not equal
+        '≈': '~',        # approximately equal
+        '∞': 'inf',      # infinity
+        '∂': 'd',        # partial differential
+        '∫': 'integral', # integral
+        '∑': 'sum',      # sum
+        '∏': 'product',  # product
+        '√': 'sqrt',     # square root
+        '∝': 'prop to',  # proportional to
+        '∠': 'angle',    # angle
+        '△': 'triangle', # triangle
+        '□': 'square',   # square
+        '∈': 'in',       # element of
+        '∉': 'not in',   # not an element of
+        '⊂': 'subset',   # subset
+        '⊃': 'superset', # superset
+        '∪': 'union',    # union
+        '∩': 'intersect',# intersection
+        '⊆': 'subseteq', # subset or equal
+        '⊇': 'superseteq',# superset or equal
+        # Add more mappings as needed
+    }
+    
+    for char, replacement in char_map.items():
+        text = text.replace(char, replacement)
+    # Step 3: Remove any remaining non-ASCII characters (optional)
+    # Uncomment if you want to remove ALL non-ASCII characters
+    # text = re.sub(r'[^\x00-\x7F]+', '', text)
+
+    text.replace("\n", " ")
+    
     return text
-
 
 def tokenize_whitespace_with_offsets(text):
     """Tokenizes text on whitespace and returns tokens with their character start and end positions."""
