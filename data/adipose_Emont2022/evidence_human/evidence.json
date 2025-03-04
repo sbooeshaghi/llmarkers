@@ -7776,6 +7776,32 @@
   {
     "extracted": {
       "organism": "homo_sapiens",
+      "cell_type_label": " male epithelial populations",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "SPTLC3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": null,
+      "cell_type_label": "male epithelial populations",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "SPTLC3",
+      "feature_type": "gene",
+      "feature_identifier": "",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "After doublet removal and quality filtering, we considered a total of 197,721 cells (106,469 from PG and 91,252 from ING), identifying all cell types observed in human WAT (Fig. 2c, d, Supplementary Table 2) with the addition of distinct male and female epithelial populations (Dcdc2a+ and Erbb4+, respectively)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
       "cell_type_label": "hAd5",
       "cell_source": "adipose",
       "cell_state": "Sphingolipid Signaling",
