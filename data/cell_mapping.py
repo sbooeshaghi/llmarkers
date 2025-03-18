@@ -1,4 +1,3 @@
-import pandas as pd
 import json
 
 def load_universal_labels_map():
@@ -15,51 +14,42 @@ def load_evidence_labels(f):
 def find_keys_with_same_value(d, value):
     return [k for k, v in d.items() if v == value]
 
-def update_universal_labels():
-    with open('../analysis/CELL_TYPE_KEYS.json', 'w') as f:
-        json.dump(universal_labels.values(), f)
-
 universal_labels = load_universal_labels_map()
 folder_name = input("Folder name: ")
+include_degs = bool(input("Include degs? (True or False) "))
 human_labels = load_evidence_labels(f'{folder_name}/evidence_human/evidence.json')
-deg_labels = load_evidence_labels(f'{folder_name}/evidence_deg/evidence.json')
+deg_labels = set()
+if include_degs:
+    deg_labels = load_evidence_labels(f'{folder_name}/evidence_deg/evidence.json')
 
 unique_hl = set(human_labels)
-map_hl = {label: None for label in unique_hl}
 unique_dl = set(deg_labels)
-map_dl = {label: None for label in unique_dl}
-og_size = len(universal_labels)
-
-for label in unique_hl:
+combined = set(unique_hl.union(unique_dl))
+combined_map = {label: None for label in combined}
+test_counter = 0
+for idx, label in enumerate(combined):
+    if test_counter == 2:
+        break
+    test_counter += 1
+    print(f"\n{idx + 1}/{len(combined)}\n")
     print(universal_labels)
-    print(label)
+    print(f"\n{label}\n")
     ul = input("Universal label? Or N for none ")
-    map_hl[label] = universal_labels[int(ul)] if ul != 'N' else label
+    combined_map[label] = universal_labels[int(ul)] if ul != 'N' else label
     if ul == 'N':
         universal_labels[len(universal_labels) + 1] = label
-    print(f"{int(ul)}/{len(universal_labels)}")
 
-for label in unique_dl:
-    print(universal_labels)
-    print(label)
-    ul = input("Universal label? Or N for none ")
-    map_dl[label] = universal_labels[int(ul)] if ul != 'N' else label
-    if ul == 'N':
-        universal_labels[len(universal_labels) + 1] = label
-    print(f"{int(ul)}/{len(universal_labels)}")
 
-with open(f'{folder_name}/cell_mapping.json', 'w') as f:
-    f.write("[")
-    for label in universal_labels.values():
-        result = []
-        if label in map_hl.values():
-            result.extend(find_keys_with_same_value(map_hl, label))
-        if label in map_dl.values():
-            result.extend(find_keys_with_same_value(map_dl, label))
-        json.dump({label: result}, f, indent = 4)
-        f.write(",\n")
-    f.write("]")
-
-update_universal_labels()
+final_map = {}
+for idx, label in enumerate(universal_labels.values()):
+    result = []
+    result.extend(find_keys_with_same_value(combined_map, label))
+    if result != []:
+        final_map[label] = result            
+data = json.dumps(final_map)
+with open(f'{folder_name}/cell_mapping.json', 'a') as f:
+    f.write(data + '\n')
+with open('../analysis/CELL_TYPE_KEYS.json', 'w') as f:
+    json.dump(list(universal_labels.values()), f, indent = 4)
 
 print("Done editing! Please check cell_map.json in your folder for the results and any updates in CELL_TYPE_KEYS.json")
