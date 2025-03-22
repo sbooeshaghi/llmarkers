@@ -47,7 +47,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ γδ T cells [...]",
+      "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ \u03b3\u03b4 T cells [...]",
       "source_id": "text"
     }
   },
@@ -73,7 +73,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ γδ T cells [...]",
+      "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ \u03b3\u03b4 T cells [...]",
       "source_id": "text"
     }
   },
@@ -99,14 +99,14 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ γδ T cells [...]",
+      "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ \u03b3\u03b4 T cells [...]",
       "source_id": "text"
     }
   },
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": " γδ T cells",
+      "cell_type_label": " \u03b3\u03b4 T cells",
       "cell_source": "adipose",
       "cell_state": "none",
       "feature_name": "CD8",
@@ -115,7 +115,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": null,
-      "cell_type_label": "γδ T cells",
+      "cell_type_label": "\u03b3\u03b4 T cells",
       "cell_source": "adipose",
       "cell_state": "none",
       "feature_name": "CD8",
@@ -125,7 +125,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ γδ T cells [...]",
+      "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ \u03b3\u03b4 T cells [...]",
       "source_id": "text"
     }
   },
@@ -671,7 +671,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: CD16+ mNK cells; CD16– trNK cells; and CD16–CD62L+/– iNK cells",
+      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: CD16+ mNK cells; CD16\u2013 trNK cells; and CD16\u2013CD62L+/\u2013 iNK cells",
       "source_id": "text"
     }
   },
@@ -692,12 +692,12 @@
       "cell_state": "none",
       "feature_name": "CD16",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000203747",
+      "feature_identifier": "ENSG00000162747",
       "feature_identifier_type": "ensembl"
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: TBEThiEOMESintPERFORINhiCD16+ mNK cells; TBETintEOMEShiPERFORINintCD16– trNK cells; and TBETloEOMESloPERFORINintCD16–CD62L+/– iNK cells",
+      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: TBEThiEOMESintPERFORINhiCD16+ mNK cells; TBETintEOMEShiPERFORINintCD16\u2013 trNK cells; and TBETloEOMESloPERFORINintCD16\u2013CD62L+/\u2013 iNK cells",
       "source_id": "text"
     }
   },
@@ -723,7 +723,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: TBEThiEOMESintPERFORINhiCD16+ mNK cells; TBETintEOMEShiPERFORINintCD16– trNK cells; and TBETloEOMESloPERFORINintCD16–CD62L+/– iNK cells",
+      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: TBEThiEOMESintPERFORINhiCD16+ mNK cells; TBETintEOMEShiPERFORINintCD16\u2013 trNK cells; and TBETloEOMESloPERFORINintCD16\u2013CD62L+/\u2013 iNK cells",
       "source_id": "text"
     }
   },
@@ -749,7 +749,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: TBEThiEOMESintPERFORINhiCD16+ mNK cells; TBETintEOMEShiPERFORINintCD16– trNK cells; and TBETloEOMESloPERFORINintCD16–CD62L+/– iNK cells",
+      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: TBEThiEOMESintPERFORINhiCD16+ mNK cells; TBETintEOMEShiPERFORINintCD16\u2013 trNK cells; and TBETloEOMESloPERFORINintCD16\u2013CD62L+/\u2013 iNK cells",
       "source_id": "text"
     }
   },
@@ -775,7 +775,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: TBEThiEOMESintPERFORINhiCD16+ mNK cells; TBETintEOMEShiPERFORINintCD16– trNK cells; and TBETloEOMESloPERFORINintCD16–CD62L+/– iNK cells",
+      "source_rationale": "[...] CD62L, CD16, TBET and EOMES expression: TBEThiEOMESintPERFORINhiCD16+ mNK cells; TBETintEOMEShiPERFORINintCD16\u2013 trNK cells; and TBETloEOMESloPERFORINintCD16\u2013CD62L+/\u2013 iNK cells",
       "source_id": "text"
     }
   },
@@ -1212,7 +1212,7 @@
       "cell_state": "none",
       "feature_name": "TNF",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000232810",
+      "feature_identifier": "ENSG00000204490",
       "feature_identifier_type": "ensembl"
     },
     "source": {
@@ -1581,7 +1581,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C–, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26–CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26–CD1C+CD206-CD14intFCER1A–CLEC10A–) [...]",
+      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C\u2013, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26\u2013CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26\u2013CD1C+CD206-CD14intFCER1A\u2013CLEC10A\u2013) [...]",
       "source_id": "text"
     }
   },
@@ -1607,7 +1607,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C–, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26–CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26–CD1C+CD206-CD14intFCER1A–CLEC10A–) [...]",
+      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C\u2013, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26\u2013CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26\u2013CD1C+CD206-CD14intFCER1A\u2013CLEC10A\u2013) [...]",
       "source_id": "text"
     }
   },
@@ -1633,7 +1633,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C–, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26–CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26–CD1C+CD206-CD14intFCER1A–CLEC10A–) [...]",
+      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C\u2013, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26\u2013CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26\u2013CD1C+CD206-CD14intFCER1A\u2013CLEC10A\u2013) [...]",
       "source_id": "text"
     }
   },
@@ -1659,7 +1659,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C–, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26–CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26–CD1C+CD206-CD14intFCER1A–CLEC10A–) [...]",
+      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C\u2013, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26\u2013CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26\u2013CD1C+CD206-CD14intFCER1A\u2013CLEC10A\u2013) [...]",
       "source_id": "text"
     }
   },
@@ -1685,7 +1685,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C–, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26–CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26–CD1C+CD206-CD14intFCER1A–CLEC10A–) [...]",
+      "source_rationale": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C\u2013, whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26\u2013CD1C+CD206+CD14hiFCER1A+CLEC10A+); cDC2As (CD26\u2013CD1C+CD206-CD14intFCER1A\u2013CLEC10A\u2013) [...]",
       "source_id": "text"
     }
   },
@@ -1810,12 +1810,12 @@
       "cell_state": "none",
       "feature_name": "MIF",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000104899",
+      "feature_identifier": "ENSG00000163220",
       "feature_identifier_type": "ensembl"
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1β and TNFSF9 [...]",
+      "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1\u03b2 and TNFSF9 [...]",
       "source_id": "text"
     }
   },
@@ -1841,7 +1841,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1β and TNFSF9 [...]",
+      "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1\u03b2 and TNFSF9 [...]",
       "source_id": "text"
     }
   },
@@ -1867,7 +1867,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1β and TNFSF9 [...]",
+      "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1\u03b2 and TNFSF9 [...]",
       "source_id": "text"
     }
   },
@@ -2980,7 +2980,7 @@
       "cell_state": "none",
       "feature_name": "TNF",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000232810",
+      "feature_identifier": "ENSG00000204490",
       "feature_identifier_type": "ensembl"
     },
     "source": {
@@ -3864,7 +3864,7 @@
       "cell_state": "obese",
       "feature_name": "TNF",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000232810",
+      "feature_identifier": "ENSG00000204490",
       "feature_identifier_type": "ensembl"
     },
     "source": {
@@ -3994,7 +3994,7 @@
       "cell_state": "obese",
       "feature_name": "OSM",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000136280",
+      "feature_identifier": "ENSG00000099985",
       "feature_identifier_type": "ensembl"
     },
     "source": {
@@ -4046,7 +4046,7 @@
       "cell_state": "obese",
       "feature_name": "TNF",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000232810",
+      "feature_identifier": "ENSG00000204490",
       "feature_identifier_type": "ensembl"
     },
     "source": {
@@ -4098,7 +4098,7 @@
       "cell_state": "obese",
       "feature_name": "HGF",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000019991",
+      "feature_identifier": "ENSG00000115904",
       "feature_identifier_type": "ensembl"
     },
     "source": {
