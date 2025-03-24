@@ -34,6 +34,6 @@ elif deg_or_human == "llm":
     inner_folder = "evidence_llm"
 
 fn = os.path.join(folder, inner_folder, "evidence.json")
-label_map_fn = os.path.join(folder, "cell_mapping.json")
+label_map_fn = os.path.join(folder, "ctmap.json")
 update_json(get_label_map(label_map_fn), fn)
 print("Done!")
