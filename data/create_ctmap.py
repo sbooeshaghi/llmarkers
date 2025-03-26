@@ -50,11 +50,13 @@ for idx, label in enumerate(universal_labels.values()):
     if result != []:
         final_map[label] = result            
 data = json.dumps(final_map)
-with open(f'{folder_name}/ctmap/ctmap.json', 'a') as f:
-    f.write(data + '\n')
+with open(f'{folder_name}/ctmap/ctmap.json', 'w') as f:
+    json.dump(data, f, indent = 4)
+    f.write('\n')
 rev_data = json.dumps(combined_map)
-with open(f'{folder_name}/ctmap/rev_ctmap.json', 'a') as f:
-    f.write(rev_data + '\n')
+with open(f'{folder_name}/ctmap/rev_ctmap.json', 'w') as f:
+    json.dump(rev_data, f, indent = 4)
+    f.write('\n')
 with open('../analysis/CELL_TYPE_KEYS.json', 'w') as f:
     json.dump(list(universal_labels.values()), f, indent = 4)
 

@@ -43,6 +43,6 @@ while deg_or_human != "done":
     fn = os.path.join(folder, inner_folder, ev_fn)
     label_map_fn = os.path.join(folder, "ctmap", "ctmap.json")
     update_json(get_label_map(label_map_fn), fn)
-    print("Finished editing", inner_folder)
+    print("Finished editing", inner_folder, "\n")
 
-print("Done!\n")
+print("Done!")
