@@ -40,6 +40,8 @@ class MarkerGeneStrict(BaseModel):
 class MarkerGeneListStrict(BaseModel):
     genes: List[MarkerGeneStrict]  # A list of marker genes extracted from the input text
 
+MODEL_TO_USE = "llama3.2"
+
 LLMODELS = {
     "deepseek-r1": "deepseek-r1",
     "llama3.2": "llama3.2",
@@ -72,7 +74,7 @@ Return the results in **structured JSON format** with the following schema:
 }
 """
 
-def extract_genes(user_prompt, system_prompt, data_model, model="llama3.2"):
+def extract_genes(user_prompt, system_prompt, data_model, model=MODEL_TO_USE):
     response = chat(
         messages=[
             {
@@ -98,9 +100,7 @@ def load_evidence(fn, ds_name):
     # Unwrap the 'source' column (contains a dictionary) into separate columns
     source_df = df['source'].apply(pd.Series)
     extracted_df = df['extracted'].apply(pd.Series).add_prefix('extracted_')
-    # derived_df = df['derived'].apply(pd.Series).add_prefix('derived_')
     # Combine the original DataFrame with the unwrapped columns
-    # df = pd.concat([df.drop(columns=['source', 'extracted', 'derived']), source_df, extracted_df, derived_df], axis=1)
     df = pd.concat([df.drop(columns=['source', 'extracted']), source_df, extracted_df], axis=1)
     df["ds"] = ds_name
     del df["derived"]
@@ -112,7 +112,7 @@ def get_llm_evidence(folder_name):
     df = load_evidence(fn, ds_name)
 
     model_metadata = {
-        "model_id" : LLMODELS["llama3.2"],
+        "model_id" : LLMODELS[MODEL_TO_USE],
         "system_prompt": system_prompt,
         "data_model": DATA_MODELS["MarkerGeneListStrict"].__name__
     }
@@ -159,13 +159,17 @@ def get_llm_evidence(folder_name):
 
             ct_mgs.append(tmp)
 
-    llm_folder = os.path.join(folder_name, "evidence_llm")
+    llm_folder = os.path.join(folder_name, f"evidence_llm_{MODEL_TO_USE}")
     os.mkdir(llm_folder)
     llm_fn = os.path.join(llm_folder, "evidence.json") 
     with open(llm_fn, 'w') as f:
         json.dump(ct_mgs, f, indent = 4)
+    model_fn = os.path.join(llm_folder, "model_metadata.json")
+    with open(model_fn, 'w') as f:
+        json.dump(model_metadata, f, indent = 4)
     print("Done!")
 
+# user functionality: 
 fn = input("Enter folder name: ")
 get_llm_evidence(fn)
 

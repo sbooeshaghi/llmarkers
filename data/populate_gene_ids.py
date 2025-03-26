@@ -1,3 +1,49 @@
+import pandas as pd
+import json
+import os
+
+def load_gmap(fn = "gmap.txt"):
+    df = pd.read_csv(fn, sep = "\t", index_col = False)
+    df.columns = ["feature", "id"]
+    return df
+
+def update(df, fn = "evidence.json"):
+    with open(fn, 'r') as f:
+        data = json.load(f)
+
+        for obj in data:
+            feature = obj["derived"]["feature_name"].strip().upper()
+            mini_df = df[df["feature"] == feature]
+            if not mini_df.empty:
+                feature_id = mini_df.iloc[0]["id"]
+                obj["derived"]["feature_identifier"] = feature_id
+        
+        with open(fn, "w") as file:
+            json.dump(data, file, indent = 4)
+
+df = load_gmap()
+folder = input("folder name: ")
+inner_folder = "evidence_human"
+dt = ""
+
+while dt != "done":
+    dt = input("human, deg, or llm? type done if done: ")
+    fn = "evidence.json"
+    if dt == "deg":
+        inner_folder = "evidence_deg"
+        u_or_f = input("unfiltered or filtered? (u / f) ")
+        if u_or_f == "u":
+            fn = "evidence_unfiltered.json"
+    elif dt == "llm":
+        model = input("model name? ")
+        inner_folder = f"evidence_llm_{model}"
+    fn = os.path.join(folder, inner_folder, fn)
+    update(df, fn)
+    if dt != "done":
+        print("finished", dt)
+
+print("Done!")
+"""
 import json
 
 import sys
@@ -126,7 +172,7 @@ class EnsemblIdFinder:
                     main_obj['gene_id'] = gene_id
                 else:
                     print(main_obj)
-                    """
+                    
                     result = self.client.get_id(species, gene) # 2nd pass is using the Ensebml REST API
                     if result == "gene not found":
                         if "." in main_obj['gene']:
@@ -145,10 +191,11 @@ class EnsemblIdFinder:
                             print(obj)
                     else:
                         main_obj['gene_id'] = result
-                    """
 
         with open(json_fn, "w") as file:
             json.dump(data, file, indent = 4)
         
 eif = EnsemblIdFinder()
 eif.update_json("yolksac_Goh2023/evidence_deg/evidence_unfiltered.json")
+"""
+

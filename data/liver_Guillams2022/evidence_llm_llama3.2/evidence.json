@@ -1,0 +1,80 @@
+[
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "KC",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "Timd4",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "KC",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "Timd4",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "we observed both long-term resident Timd4-expressing KCs and recently recruited Timd4- monocyte-derived KCs",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "KC",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "VSIG4",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "KC",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "VSIG4",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "Although not the case at mRNA level, VSIG4 was found to be the best human KC protein marker in the CITE-seq data, while FOLR2, CD163, and CD169 were also identified as useful markers of these cells for flow cytometry and confocal microscopy on frozen and paraffin sections",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "CD163, CD169",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "FOLR2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "CD163, CD169",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "FOLR2",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "Although not the case at mRNA level, VSIG4 was found to be the best human KC protein marker in the CITE-seq data, while FOLR2, CD163, and CD169 were also identified as useful markers of these cells for flow cytometry and confocal microscopy on frozen and paraffin sections",
+            "source_id": "text"
+        }
+    }
+]

@@ -1,5 +1,3 @@
-## IMPORTANT: THE CURRENT CELL MAPPINGS THAT EXIST ARE NOT POPULATED WITH EVIDENCE_LLM DATA
-
 import json
 import os
 
@@ -24,16 +22,27 @@ def update_json(label_map, json_fn = 'evidence.json'):
         with open(json_fn, "w") as file:
             json.dump(data, file, indent = 4)
 
+# user functionality: 
+
 folder = input("Enter folder name: ")
-deg_or_human = input("deg, human, or llm? ")
+deg_or_human = ""
 
-inner_folder = "evidence_human"
-if deg_or_human == "deg":
-    inner_folder = "evidence_deg"
-elif deg_or_human == "llm":
-    inner_folder = "evidence_llm"
+while deg_or_human != "done":
+    deg_or_human = input("deg, human, or llm? type \"done\" if done editing: ")
+    inner_folder = "evidence_human"
+    ev_fn = "evidence.json"
+    if deg_or_human == "deg":
+        inner_folder = "evidence_deg"
+        f_or_uf = input("filtered or unfiltered? (f / u): ")
+        if f_or_uf == 'u':
+            ev_fn = "evidence_unfiltered.json"
+    elif deg_or_human == "llm":
+        model = input("type model name: ")
+        inner_folder = f"evidence_llm_{model}"
 
-fn = os.path.join(folder, inner_folder, "evidence.json")
-label_map_fn = os.path.join(folder, "ctmap.json")
-update_json(get_label_map(label_map_fn), fn)
-print("Done!")
+    fn = os.path.join(folder, inner_folder, ev_fn)
+    label_map_fn = os.path.join(folder, "ctmap", "ctmap.json")
+    update_json(get_label_map(label_map_fn), fn)
+    print("Finished editing", inner_folder)
+
+print("Done!\n")
