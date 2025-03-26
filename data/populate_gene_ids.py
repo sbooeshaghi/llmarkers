@@ -1,201 +1,39 @@
-import pandas as pd
 import json
-import os
+import csv
+import sys
 
-def load_gmap(fn = "gmap.txt"):
-    df = pd.read_csv(fn, sep = "\t", index_col = False)
-    df.columns = ["feature", "id"]
-    return df
+def update_json_with_identifiers(json_path, tsv_path, output_path):
+    # Step 1: Load the feature mapping, uppercasing keys
+    feature_map = {}
+    with open(tsv_path, 'r') as tsvfile:
+        reader = csv.reader(tsvfile, delimiter='\t')
+        for row in reader:
+            if len(row) >= 2:
+                key = row[0].strip().upper()
+                value = row[1].strip()
+                feature_map[key] = value
 
-def update(df, fn = "evidence.json"):
-    with open(fn, 'r') as f:
+    # Step 2: Load JSON
+    with open(json_path, 'r') as f:
         data = json.load(f)
 
-        for obj in data:
-            feature = obj["derived"]["feature_name"].strip().upper()
-            mini_df = df[df["feature"] == feature]
-            if not mini_df.empty:
-                feature_id = mini_df.iloc[0]["id"]
-                obj["derived"]["feature_identifier"] = feature_id
-        
-        with open(fn, "w") as file:
-            json.dump(data, file, indent = 4)
+    # Step 3: Process and conditionally update
+    for entry in data:
+        derived = entry.get("derived", {})
+        organism = derived.get("organism", "").strip().lower()
+        feature_name = derived.get("feature_name", "").strip().upper()
 
-df = load_gmap()
-folder = input("folder name: ")
-inner_folder = "evidence_human"
-dt = ""
+        if organism == "homo_sapiens" and feature_name in feature_map:
+            derived["feature_identifier"] = feature_map[feature_name]
+            derived["feature_identifier_type"] = "ensembl"
 
-while dt != "done":
-    dt = input("human, deg, or llm? type done if done: ")
-    fn = "evidence.json"
-    if dt == "deg":
-        inner_folder = "evidence_deg"
-        u_or_f = input("unfiltered or filtered? (u / f) ")
-        if u_or_f == "u":
-            fn = "evidence_unfiltered.json"
-    elif dt == "llm":
-        model = input("model name? ")
-        inner_folder = f"evidence_llm_{model}"
-    fn = os.path.join(folder, inner_folder, fn)
-    update(df, fn)
-    if dt != "done":
-        print("finished", dt)
+    # Step 4: Save updated JSON
+    with open(output_path, 'w') as f:
+        json.dump(data, f, indent=2)
 
-print("Done!")
-"""
-import json
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print("Usage: python update_json.py input.json mapping.tsv output.json")
+        sys.exit(1)
 
-import sys
-import json
-import time
-
-# Python 2/3 adaptability
-
-from urllib.parse import urlparse, urlencode
-from urllib.request import urlopen, Request
-from urllib.error import HTTPError
-
-class EnsemblRestClient(object):
-    def __init__(self, server='http://rest.ensembl.org', reqs_per_sec=5):
-        self.server = server
-        self.reqs_per_sec = reqs_per_sec
-        self.req_count = 0
-        self.last_req = 0
-
-    def perform_rest_action(self, endpoint, hdrs=None, params=None):
-        if hdrs is None:
-            hdrs = {}
-
-        if 'Content-Type' not in hdrs:
-            hdrs['Content-Type'] = 'application/json'
-
-        if params:
-            endpoint += '?' + urlencode(params)
-
-        data = None
-
-        # check if we need to rate limit ourselves
-        if self.req_count >= self.reqs_per_sec:
-            delta = time.time() - self.last_req
-            if delta < 1:
-                time.sleep(1 - delta)
-            self.last_req = time.time()
-            self.req_count = 0
-        
-        try:
-            request = Request(self.server + endpoint, headers=hdrs)
-            response = urlopen(request)
-            content = response.read()
-            if content:
-                data = json.loads(content)
-            self.req_count += 1
-
-        except HTTPError as e:
-            # check if we are being rate limited by the server
-            if e.code == 429:
-                if 'Retry-After' in e.headers:
-                    retry = e.headers['Retry-After']
-                    time.sleep(float(retry))
-                    self.perform_rest_action(endpoint, hdrs, params)
-            else:
-                sys.stderr.write('Request failed for {0}: Status code: {1.code} Reason: {1.reason}\n'.format(endpoint, e))
-           
-        return data
-
-    def get_id(self, species, symbol):
-        genes = self.perform_rest_action(
-            endpoint='/xrefs/symbol/{0}/{1}'.format(species, symbol), 
-            params={'object_type': 'gene'}
-        )
-        if genes:
-            stable_id = genes[0]['id']
-            return stable_id
-        else:
-            return "gene not found"
-
-class EnsemblIdFinder:
-
-    def __init__(self):
-        gtf_fn = "/Users/nithya/Homo_sapiens.GRCh38.113.gtf"
-        self.gene_data = {}
-        self.create_mapping(gtf_fn)
-        self.client = EnsemblRestClient()
-        
-    def create_mapping(self,gtf_file):
-        # open the file
-        with open(gtf_file, 'r') as file:
-            # now, we want to go through every line in the file
-            for line in file:
-                if line.startswith('#'):
-                    continue # skip comment lines in the gtf file
-                columns = line.strip().split('\t') # get all the diff columns within gtf file 
-                if columns[2] == 'gene':
-                    gene_details = columns[8].split(';')
-                    gene_id = ""
-                    gene_name = ""
-                    for detail in gene_details:
-                        detail = detail.strip();
-                        if detail.startswith("gene_id"):
-                            gene_id_arr = detail.split(' ') # this gives the label and the id
-                            gene_id = gene_id_arr[1].strip('"') # remove the double quotes surrounding the gene id
-                        elif detail.startswith("gene_name"):
-                            gene_id_arr = detail.split(' ')
-                            gene_name = gene_id_arr[1].strip('"')
-                if gene_name and gene_id:
-                    self.gene_data[gene_name] = gene_id
-    
-    def update_json(self, json_fn = 'evidence.json'):
-        with open(json_fn, 'r') as file:
-            data = json.load(file)
-        
-        for obj in data:
-            obj_keys = obj.keys()
-            main_obj = obj
-            species = 'human'
-
-            if 'extracted' in obj_keys and obj['extracted']['organism'] == 'mus_musculus':
-                species = obj['extracted']['organism']
-            elif obj['organism'] == 'mus_musculus':
-                    species = obj['organism']
-
-            if species == 'human':
-                if 'derived' in obj_keys:
-                    main_obj = obj['derived']
-
-                gene = main_obj['gene']
-                if gene is str:
-                    gene = gene.upper()
-
-                if gene in self.gene_data.keys():
-                    gene_id = self.gene_data[gene]
-                    main_obj['gene_id'] = gene_id
-                else:
-                    print(main_obj)
-                    
-                    result = self.client.get_id(species, gene) # 2nd pass is using the Ensebml REST API
-                    if result == "gene not found":
-                        if "." in main_obj['gene']:
-                            first_part = main_obj['gene'].split(".")[0]
-                            print(first_part)
-                            if first_part in self.gene_data.keys():
-                                gene_id = self.gene_data[first_part]
-                                main_obj['gene_id'] = gene_id
-                            else:
-                                result = self.client.get_id(species, gene) # 2nd pass is using the Ensebml REST API
-                                if result == "gene not found":
-                                    print(obj)
-                                else:
-                                    main_obj['gene_id'] = result
-                        else:
-                            print(obj)
-                    else:
-                        main_obj['gene_id'] = result
-
-        with open(json_fn, "w") as file:
-            json.dump(data, file, indent = 4)
-        
-eif = EnsemblIdFinder()
-eif.update_json("yolksac_Goh2023/evidence_deg/evidence_unfiltered.json")
-"""
-
+    update_json_with_identifiers(sys.argv[1], sys.argv[2], sys.argv[3])

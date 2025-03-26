@@ -1,1640 +1,1640 @@
 [
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Retnla",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Retnla",
-            "feature_type": "gene",
-            "feature_identifier": "ENSMUSG00000061100",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
-            "source_id": "text"
-        }
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Retnla",
+      "feature_type": "gene"
     },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Fn1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Fn1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000115414",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
-            "source_id": "text"
-        }
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Retnla",
+      "feature_type": "gene",
+      "feature_identifier": "ENSMUSG00000061100",
+      "feature_identifier_type": "ensembl"
     },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Plac8",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Plac8",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000105198",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Retnla",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Retnla",
-            "feature_type": "gene",
-            "feature_identifier": "ENSMUSG00000061100",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "lec4e",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Clec4e",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000166523",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Plac8",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Plac8",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000105198",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Retnla",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Retnla",
-            "feature_type": "gene",
-            "feature_identifier": "ENSMUSG00000061100",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "One macrophage population (Mac1) highly expressed Retnla, Cd163, Lyve1, and Cd209f, a signature that was recently associated with perivascular macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Cd163",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd163",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000177575",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "One macrophage population (Mac1) highly expressed Retnla, Cd163, Lyve1, and Cd209f, a signature that was recently associated with perivascular macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Lyve1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Lyve1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000133800",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "One macrophage population (Mac1) highly expressed Retnla, Cd163, Lyve1, and Cd209f, a signature that was recently associated with perivascular macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Cd209f",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd209f",
-            "feature_type": "gene",
-            "feature_identifier": "ENSMUSG00000051906",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "One macrophage population (Mac1) highly expressed Retnla, Cd163, Lyve1, and Cd209f, a signature that was recently associated with perivascular macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Cd9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Cd9",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000010278",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Two additional macrophage populations (Mac2 and Mac3) were characterized by gradual expression of genes, such as Cd9 and Nceh1, in line with the recently described CD9+ subset of adipose tissue macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Nceh1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Nceh1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000144959",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Two additional macrophage populations (Mac2 and Mac3) were characterized by gradual expression of genes, such as Cd9 and Nceh1, in line with the recently described CD9+ subset of adipose tissue macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Spp1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Spp1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000154832",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Among the differentially expressed genes between these macrophage subsets was the osteopontin-encoding gene Spp1",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Cd9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Cd9",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000010278",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Two additional macrophage populations (Mac2 and Mac3) were characterized by gradual expression of genes, such as Cd9 and Nceh1, in line with the recently described CD9+ subset of adipose tissue macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Nceh1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Nceh1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000144959",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Two additional macrophage populations (Mac2 and Mac3) were characterized by gradual expression of genes, such as Cd9 and Nceh1, in line with the recently described CD9+ subset of adipose tissue macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Spp1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Spp1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000154832",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Among the differentially expressed genes between these macrophage subsets was the osteopontin-encoding gene Spp1",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " CD9+CD63+ages",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " CD9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "CD9+CD63+ Macrophages",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "CD9",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000010278",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We validated these findings on the protein level by flow cytometry, which confirmed the emergence of CD9+CD63+ macrophages during obesity, as predicted by single-cell RNA-seq",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " CD9+CD63+ages",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " CD63",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "CD9+CD63+ Macrophages",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "CD63",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000135404",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We validated these findings on the protein level by flow cytometry, which confirmed the emergence of CD9+CD63+ macrophages during obesity, as predicted by single-cell RNA-seq",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " HFD monocytes",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " C1qa",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "HFD (High-Fat Diet) monocytes",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "C1qa",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000173372",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Slingshot suggested a linear transition of adipose tissue HFD monocytes to Mac3 along a clear differentiation trajectory, characterized by loss of expression of Ly6c2, Il1b, Ccr2, Lyz2, and S100a10 and acquisition of C1qa, Cd9, Cd63, and Cd68 expression",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " HFD monocytes",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Cd9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "HFD (High-Fat Diet) monocytes",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd9",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000010278",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Slingshot suggested a linear transition of adipose tissue HFD monocytes to Mac3 along a clear differentiation trajectory, characterized by loss of expression of Ly6c2, Il1b, Ccr2, Lyz2, and S100a10 and acquisition of C1qa, Cd9, Cd63, and Cd68 expression",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " HFD monocytes",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Cd63",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "HFD (High-Fat Diet) monocytes",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd63",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000135404",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Slingshot suggested a linear transition of adipose tissue HFD monocytes to Mac3 along a clear differentiation trajectory, characterized by loss of expression of Ly6c2, Il1b, Ccr2, Lyz2, and S100a10 and acquisition of C1qa, Cd9, Cd63, and Cd68 expression",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " HFD monocytes",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " Cd68",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "HFD (High-Fat Diet) monocytes",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd68",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000129226",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Slingshot suggested a linear transition of adipose tissue HFD monocytes to Mac3 along a clear differentiation trajectory, characterized by loss of expression of Ly6c2, Il1b, Ccr2, Lyz2, and S100a10 and acquisition of C1qa, Cd9, Cd63, and Cd68 expression",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Trem2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Trem2",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000095970",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Lipa",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Lipa",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000107798",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Lpl",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Lpl",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000175445",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Ctsb",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Ctsb",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000164733",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Fabp4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Fabp4",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000170323",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Fabp5",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Fabp5",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000164687",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Lgals1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Lgals1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000100097",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Lgals3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Lgals3",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000131981",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Cd9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Cd9",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000010278",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " Cd36",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "Cd36",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000135218",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " TREM2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "TREM2",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000095970",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " LIPA",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "LIPA",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000107798",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " CTSB",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "CTSB",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000164733",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " CTSL",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "CTSL",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000135047",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " FABP4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "FABP4",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000170323",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "DC2As",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " CCL17",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "DENDRITIC CELL",
-            "cell_type_label": "DC2As",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "CCL17",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000102970",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "DC2As",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " CCL22",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "DENDRITIC CELL",
-            "cell_type_label": "DC2As",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "CCL22",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000102962",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "DC2As",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " CCL19",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "DENDRITIC CELL",
-            "cell_type_label": "DC2As",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "CCL19",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000172724",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "DC2As",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": " IL-15",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "DENDRITIC CELL",
-            "cell_type_label": "DC2As",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "IL-15",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000164136",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " FABP5",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "FABP5",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000164687",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " LGALS3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "LGALS3",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000131981",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " CD9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "CD9",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000010278",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " CD36",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "CD36",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000135218",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " TIMP1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "TIMP1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000102265",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In addition to the conserved gene signature, human LAM cells expressed a small number of unique genes, including the metallopeptidase inhibitors TIMP1 and TIMP3 as well as the aldolase A gene ALDOA and the apolipoprotein C1 gene APOC1",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " TIMP3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "TIMP3",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000100234",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In addition to the conserved gene signature, human LAM cells expressed a small number of unique genes, including the metallopeptidase inhibitors TIMP1 and TIMP3 as well as the aldolase A gene ALDOA and the apolipoprotein C1 gene APOC1",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " ALDOA",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "ALDOA",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000149925",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In addition to the conserved gene signature, human LAM cells expressed a small number of unique genes, including the metallopeptidase inhibitors TIMP1 and TIMP3 as well as the aldolase A gene ALDOA and the apolipoprotein C1 gene APOC1",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " LAM cells",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": " APOC1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "obesity",
-            "feature_name": "APOC1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000130208",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In addition to the conserved gene signature, human LAM cells expressed a small number of unique genes, including the metallopeptidase inhibitors TIMP1 and TIMP3 as well as the aldolase A gene ALDOA and the apolipoprotein C1 gene APOC1",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Retnla",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Retnla",
-            "feature_type": "gene",
-            "feature_identifier": "ENSMUSG00000061100",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Fn1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Fn1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000115414",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Plac8",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Plac8",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000105198",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Lyve1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Lyve1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000133800",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd209f",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd209f",
-            "feature_type": "gene",
-            "feature_identifier": "ENSMUSG00000051906",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac1",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd163",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac1)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd163",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000177575",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Plac8",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Plac8",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000105198",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mon2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Clec4e",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MONOCYTE",
-            "cell_type_label": "Monocyte (Mon2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Clec4e",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000166523",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Nceh1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Nceh1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000144959",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd9",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000010278",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": "Mac2",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Spp1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac2)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Spp1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000154832",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Nceh1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Nceh1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000144959",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Cd9",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000010278",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "mus_musculus",
-            "cell_type_label": " Mac3",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Spp1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "mus_musculus",
-            "cell_type_id": "MACROPHAGE",
-            "cell_type_label": "Macrophage (Mac3)",
-            "cell_source": "White Adipose Tissue",
-            "cell_state": "none",
-            "feature_name": "Spp1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000154832",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "image",
-            "source_rationale": "marker shows sign of expression in graph",
-            "source_id": "Fig. 2b"
-        }
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
+      "source_id": "text"
     }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Fn1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Fn1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000115414",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Plac8",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Plac8",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105198",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Retnla",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Retnla",
+      "feature_type": "gene",
+      "feature_identifier": "ENSMUSG00000061100",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Clec4e",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Clec4e",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000166523",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Plac8",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Plac8",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105198",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The two monocyte subsets, Mon1 and Mon2, were distinguished by the expression of Retnla, Fn1 (Mon1), Plac8, and Clec4e (Mon2), among other differentially expressed genes",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Retnla",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Retnla",
+      "feature_type": "gene",
+      "feature_identifier": "ENSMUSG00000061100",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "One macrophage population (Mac1) highly expressed Retnla, Cd163, Lyve1, and Cd209f, a signature that was recently associated with perivascular macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Cd163",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd163",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000177575",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "One macrophage population (Mac1) highly expressed Retnla, Cd163, Lyve1, and Cd209f, a signature that was recently associated with perivascular macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Lyve1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Lyve1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000133800",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "One macrophage population (Mac1) highly expressed Retnla, Cd163, Lyve1, and Cd209f, a signature that was recently associated with perivascular macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Cd209f",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd209f",
+      "feature_type": "gene",
+      "feature_identifier": "ENSMUSG00000051906",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "One macrophage population (Mac1) highly expressed Retnla, Cd163, Lyve1, and Cd209f, a signature that was recently associated with perivascular macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Cd9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Cd9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010278",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Two additional macrophage populations (Mac2 and Mac3) were characterized by gradual expression of genes, such as Cd9 and Nceh1, in line with the recently described CD9+ subset of adipose tissue macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Nceh1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Nceh1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000144959",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Two additional macrophage populations (Mac2 and Mac3) were characterized by gradual expression of genes, such as Cd9 and Nceh1, in line with the recently described CD9+ subset of adipose tissue macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Spp1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Spp1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000154832",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Among the differentially expressed genes between these macrophage subsets was the osteopontin-encoding gene Spp1",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Cd9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Cd9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010278",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Two additional macrophage populations (Mac2 and Mac3) were characterized by gradual expression of genes, such as Cd9 and Nceh1, in line with the recently described CD9+ subset of adipose tissue macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Nceh1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Nceh1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000144959",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Two additional macrophage populations (Mac2 and Mac3) were characterized by gradual expression of genes, such as Cd9 and Nceh1, in line with the recently described CD9+ subset of adipose tissue macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Spp1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Spp1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000154832",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Among the differentially expressed genes between these macrophage subsets was the osteopontin-encoding gene Spp1",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " CD9+CD63+ macrophages",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " CD9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "CD9+CD63+ Macrophages",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "CD9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010278",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We validated these findings on the protein level by flow cytometry, which confirmed the emergence of CD9+CD63+ macrophages during obesity, as predicted by single-cell RNA-seq",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " CD9+CD63+ macrophages",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " CD63",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "CD9+CD63+ Macrophages",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "CD63",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000135404",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We validated these findings on the protein level by flow cytometry, which confirmed the emergence of CD9+CD63+ macrophages during obesity, as predicted by single-cell RNA-seq",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " HFD monocytes",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " C1qa",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "HFD (High-Fat Diet) monocytes",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "C1qa",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000173372",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Slingshot suggested a linear transition of adipose tissue HFD monocytes to Mac3 along a clear differentiation trajectory, characterized by loss of expression of Ly6c2, Il1b, Ccr2, Lyz2, and S100a10 and acquisition of C1qa, Cd9, Cd63, and Cd68 expression",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " HFD monocytes",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Cd9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "HFD (High-Fat Diet) monocytes",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010278",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Slingshot suggested a linear transition of adipose tissue HFD monocytes to Mac3 along a clear differentiation trajectory, characterized by loss of expression of Ly6c2, Il1b, Ccr2, Lyz2, and S100a10 and acquisition of C1qa, Cd9, Cd63, and Cd68 expression",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " HFD monocytes",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Cd63",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "HFD (High-Fat Diet) monocytes",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd63",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000135404",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Slingshot suggested a linear transition of adipose tissue HFD monocytes to Mac3 along a clear differentiation trajectory, characterized by loss of expression of Ly6c2, Il1b, Ccr2, Lyz2, and S100a10 and acquisition of C1qa, Cd9, Cd63, and Cd68 expression",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " HFD monocytes",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " Cd68",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "HFD (High-Fat Diet) monocytes",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd68",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000129226",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Slingshot suggested a linear transition of adipose tissue HFD monocytes to Mac3 along a clear differentiation trajectory, characterized by loss of expression of Ly6c2, Il1b, Ccr2, Lyz2, and S100a10 and acquisition of C1qa, Cd9, Cd63, and Cd68 expression",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Trem2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Trem2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000095970",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Lipa",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Lipa",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107798",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Lpl",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Lpl",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000175445",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Ctsb",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Ctsb",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000164733",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Fabp4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Fabp4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000170323",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Fabp5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Fabp5",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000164687",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Lgals1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Lgals1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000100097",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Lgals3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Lgals3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000131981",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Cd9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Cd9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010278",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " Cd36",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "Cd36",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000135218",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Given its strong expansion under obese conditions, we next sought to functionally characterize the Mac3 subset. Analysis of gene modules most highly associated with this subset revealed a transcriptional signature of Trem2, Lipa, Lpl, Ctsb, Ctsl, Fabp4, Fabp5, Lgals1, Lgals3, Cd9, and Cd36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " TREM2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "TREM2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000095970",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " LIPA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "LIPA",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107798",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " CTSB",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "CTSB",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000164733",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " CTSL",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "CTSL",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000135047",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " FABP4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "FABP4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000170323",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " cDC2As",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " CCL17",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "cDC2As",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "CCL17",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000102970",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " cDC2As",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " CCL22",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "cDC2As",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "CCL22",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000102962",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " cDC2As",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " CCL19",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "cDC2As",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "CCL19",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000172724",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " cDC2As",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": " IL-15",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "cDC2As",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "IL-15",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000164136",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " FABP5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "FABP5",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000164687",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " LGALS3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "LGALS3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000131981",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " CD9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "CD9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010278",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " CD36",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "CD36",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000135218",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ndeed, TREM2-expressing human LAM cells constituted a defined cluster (Figure S5B) that was characterized by a highly conserved gene signature compared with what we had observed in mice, including LIPA, CTSB, CTSL, FABP4, FABP5, LGALS3, CD9, and CD36",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " TIMP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "TIMP1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000102265",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In addition to the conserved gene signature, human LAM cells expressed a small number of unique genes, including the metallopeptidase inhibitors TIMP1 and TIMP3 as well as the aldolase A gene ALDOA and the apolipoprotein C1 gene APOC1",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " TIMP3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "TIMP3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000100234",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In addition to the conserved gene signature, human LAM cells expressed a small number of unique genes, including the metallopeptidase inhibitors TIMP1 and TIMP3 as well as the aldolase A gene ALDOA and the apolipoprotein C1 gene APOC1",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " ALDOA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "ALDOA",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000149925",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In addition to the conserved gene signature, human LAM cells expressed a small number of unique genes, including the metallopeptidase inhibitors TIMP1 and TIMP3 as well as the aldolase A gene ALDOA and the apolipoprotein C1 gene APOC1",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " LAM cells",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": " APOC1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "LAM cells (Lipid-Associated Macrophages)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "obesity",
+      "feature_name": "APOC1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000130208",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In addition to the conserved gene signature, human LAM cells expressed a small number of unique genes, including the metallopeptidase inhibitors TIMP1 and TIMP3 as well as the aldolase A gene ALDOA and the apolipoprotein C1 gene APOC1",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Retnla",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Retnla",
+      "feature_type": "gene",
+      "feature_identifier": "ENSMUSG00000061100",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Fn1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Fn1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000115414",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Plac8",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Plac8",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105198",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Lyve1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Lyve1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000133800",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd209f",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd209f",
+      "feature_type": "gene",
+      "feature_identifier": "ENSMUSG00000051906",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac1",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd163",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac1)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd163",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000177575",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Plac8",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Plac8",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105198",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mon2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Clec4e",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte (Mon2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Clec4e",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000166523",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Nceh1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Nceh1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000144959",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010278",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": "Mac2",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Spp1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac2)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Spp1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000154832",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Nceh1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Nceh1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000144959",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Cd9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010278",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "mus_musculus",
+      "cell_type_label": " Mac3",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Spp1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "mus_musculus",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage (Mac3)",
+      "cell_source": "White Adipose Tissue",
+      "cell_state": "none",
+      "feature_name": "Spp1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000154832",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "marker shows sign of expression in graph",
+      "source_id": "Fig. 2b"
+    }
+  }
 ]
