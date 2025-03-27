@@ -11,6 +11,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 from ollama import chat
 import os
+import hashlib
 
 # Permissive class object (allows for missing fields)
 class MarkerGene(BaseModel):
@@ -39,6 +40,10 @@ class MarkerGeneStrict(BaseModel):
 
 class MarkerGeneListStrict(BaseModel):
     genes: List[MarkerGeneStrict]  # A list of marker genes extracted from the input text
+
+def short_hash(s: str) -> str:
+    """Generate a 7-character hash from a given string."""
+    return hashlib.sha256(s.encode()).hexdigest()[:7]
 
 MODEL_TO_USE = "llama3.2"
 
@@ -73,6 +78,13 @@ Return the results in **structured JSON format** with the following schema:
     ]
 }
 """
+
+model_metadata = {
+        "model_id" : LLMODELS[MODEL_TO_USE],
+        "system_prompt": system_prompt,
+        "system_prompt_hash": short_hash(system_prompt),
+        "data_model": DATA_MODELS["MarkerGeneListStrict"].__name__
+}
 
 def extract_genes(user_prompt, system_prompt, data_model, model=MODEL_TO_USE):
     response = chat(
@@ -111,11 +123,7 @@ def get_llm_evidence(folder_name):
     ds_name = folder_name
     df = load_evidence(fn, ds_name)
 
-    model_metadata = {
-        "model_id" : LLMODELS[MODEL_TO_USE],
-        "system_prompt": system_prompt,
-        "data_model": DATA_MODELS["MarkerGeneListStrict"].__name__
-    }
+    
 
     ## get all the unique source rationales by querying the dataframe for source_rationales where source_type is text
     tdf = df.query("source_type == 'text'").copy()
@@ -159,7 +167,7 @@ def get_llm_evidence(folder_name):
 
             ct_mgs.append(tmp)
 
-    llm_folder = os.path.join(folder_name, f"evidence_llm_{MODEL_TO_USE}")
+    llm_folder = os.path.join(folder_name, f"evidence_llm_{model_metadata['model_id']}_{model_metadata['data_model']}_{model_metadata['system_prompt_hash']}")
     os.mkdir(llm_folder)
     llm_fn = os.path.join(llm_folder, "evidence.json") 
     with open(llm_fn, 'w') as f:
@@ -172,5 +180,3 @@ def get_llm_evidence(folder_name):
 # user functionality: 
 fn = input("Enter folder name: ")
 get_llm_evidence(fn)
-
-

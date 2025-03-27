@@ -100,7 +100,7 @@ def main():
         while True:
             ul = input("Universal label number? (or 'N' for new label) ")
             if ul.upper() == 'N':
-                combined_map[label] = label
+                combined_map[label] = label.upper().strip()
                 next_id = max(universal_labels.keys()) + 1 if universal_labels else 1
                 universal_labels[next_id] = label
                 break
@@ -136,7 +136,6 @@ def main():
         print(f"Updated cell type keys at {args.keys}")
     
     print("\nDone! Cell type mapping complete.")
-
 
 if __name__ == "__main__":
     main()
