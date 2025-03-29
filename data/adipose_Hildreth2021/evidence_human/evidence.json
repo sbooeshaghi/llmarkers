@@ -47,7 +47,7 @@
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ γδ T cells [...]",
+            "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ \u03b3\u03b4 T cells [...]",
             "source_id": "text"
         }
     },
@@ -73,7 +73,7 @@
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ γδ T cells [...]",
+            "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ \u03b3\u03b4 T cells [...]",
             "source_id": "text"
         }
     },
@@ -99,7 +99,7 @@
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ γδ T cells [...]",
+            "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ \u03b3\u03b4 T cells [...]",
             "source_id": "text"
         }
     },
@@ -115,7 +115,7 @@
         "derived": {
             "organism": "homo_sapiens",
             "cell_type_id": "T CELL",
-            "cell_type_label": "γδ T cells",
+            "cell_type_label": "\u03b3\u03b4 T cells",
             "cell_source": "adipose",
             "cell_state": "none",
             "feature_name": "CD8",
@@ -125,7 +125,7 @@
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ γδ T cells [...]",
+            "source_rationale": "[...] naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ \u03b3\u03b4 T cells [...]",
             "source_id": "text"
         }
     },
@@ -1128,7 +1128,7 @@
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
+            "cell_type_id": "PERIVASCULAR MACROPHAGE",
             "cell_type_label": "PVMs (perivascular macrophages)",
             "cell_source": "adipose",
             "cell_state": "none",
@@ -1154,7 +1154,7 @@
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
+            "cell_type_id": "PERIVASCULAR MACROPHAGE",
             "cell_type_label": "PVMs (perivascular macrophages)",
             "cell_source": "adipose",
             "cell_state": "none",
@@ -1815,7 +1815,7 @@
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1β and TNFSF9 [...]",
+            "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1\u03b2 and TNFSF9 [...]",
             "source_id": "text"
         }
     },
@@ -1841,7 +1841,7 @@
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1β and TNFSF9 [...]",
+            "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1\u03b2 and TNFSF9 [...]",
             "source_id": "text"
         }
     },
@@ -1867,7 +1867,7 @@
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1β and TNFSF9 [...]",
+            "source_rationale": "cDC2Bs expressed MIF, IL-18, IL-1\u03b2 and TNFSF9 [...]",
             "source_id": "text"
         }
     },
@@ -3052,7 +3052,7 @@
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
+            "cell_type_id": "PERIVASCULAR MACROPHAGE",
             "cell_type_label": "PVMs (perivascular macrophages)",
             "cell_source": "adipose",
             "cell_state": "none",
@@ -3078,7 +3078,7 @@
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
+            "cell_type_id": "PERIVASCULAR MACROPHAGE",
             "cell_type_label": "PVMs (perivascular macrophages)",
             "cell_source": "adipose",
             "cell_state": "none",
@@ -3780,7 +3780,7 @@
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
+            "cell_type_id": "PERIVASCULAR MACROPHAGE",
             "cell_type_label": "PVMs (perivascular macrophages)",
             "cell_source": "adipose",
             "cell_state": "obese",
@@ -3806,7 +3806,7 @@
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
+            "cell_type_id": "PERIVASCULAR MACROPHAGE",
             "cell_type_label": "PVMs (perivascular macrophages)",
             "cell_source": "adipose",
             "cell_state": "obese",
@@ -3832,7 +3832,7 @@
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
+            "cell_type_id": "PERIVASCULAR MACROPHAGE",
             "cell_type_label": "PVMs (perivascular macrophages)",
             "cell_source": "adipose",
             "cell_state": "obese",
@@ -3858,7 +3858,7 @@
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "MACROPHAGE",
+            "cell_type_id": "PERIVASCULAR MACROPHAGE",
             "cell_type_label": "PVMs (perivascular macrophages)",
             "cell_source": "adipose",
             "cell_state": "obese",

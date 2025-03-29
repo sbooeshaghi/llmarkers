@@ -17,7 +17,7 @@ def update_json(label_map, json_fn = 'evidence.json'):
         data = json.load(file)
         
         for obj in data:
-            obj['derived']['cell_type_id'] = find_key_given_value(label_map, obj['derived']['cell_type_label'])
+            obj['derived']['cell_type_id'] = find_key_given_value(label_map, obj['derived']['cell_type_label'].upper())
 
         with open(json_fn, "w") as file:
             json.dump(data, file, indent = 4)
@@ -37,8 +37,7 @@ while deg_or_human != "done":
         if f_or_uf == 'u':
             ev_fn = "evidence_unfiltered.json"
     elif deg_or_human == "llm":
-        model = input("type model name: ")
-        inner_folder = f"evidence_llm_{model}"
+        inner_folder = f"evidence_llm_llama3.2_MarkerGeneListStrict_4efcc22"
 
     fn = os.path.join(folder, inner_folder, ev_fn)
     label_map_fn = os.path.join(folder, "ctmap", "ctmap.json")
