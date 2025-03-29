@@ -1,1328 +1,1328 @@
 [
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PLA2G2A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PLA2G2A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, in fibroblast 1 (cluster 3), PLA2G2A and IGFBP6 were highly expressed compared with those of other clusters. ",
-            "source_id": "text"
-        }
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PLA2G2A",
+      "feature_type": "gene"
     },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IGFBP6",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IGFBP6",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, in fibroblast 1 (cluster 3), PLA2G2A and IGFBP6 were highly expressed compared with those of other clusters. ",
-            "source_id": "text"
-        }
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PLA2G2A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000188257",
+      "feature_identifier_type": "ensembl"
     },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Umbrella cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PIGR",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Umbrella cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PIGR",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "PIGR and LCN2 were also highly expressed in umbrella cells.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Umbrella cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "LCN2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Umbrella cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "LCN2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "PIGR and LCN2 were also highly expressed in umbrella cells.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "VIM",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "VIM",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL1A1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL1A1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL3A1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL3A1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "ICs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ACTA2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "ICs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ACTA2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "However, we discovered a novel type of ICs which coexpressed ACTA2 and S100A4",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "ICs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "ICs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "However, we discovered a novel type of ICs which coexpressed ACTA2 and S100A4",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "IC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ADRA2A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "IC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ADRA2A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Unlike other ICs, these cells were highly expressed in ADRA2A and HRH2, as well in AVPR1A. ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "IC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HRH2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "IC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HRH2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Unlike other ICs, these cells were highly expressed in ADRA2A and HRH2, as well in AVPR1A. ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "IC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "AVPR1A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "IC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "AVPR1A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Unlike other ICs, these cells were highly expressed in ADRA2A and HRH2, as well in AVPR1A. ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CLEC3B",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CLEC3B",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FSTL1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FSTL1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IGFBP6",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IGFBP6",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FBN1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FBN1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "APOD",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "APOD",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SFRP2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SFRP2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CHRDL2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CHRDL2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "C7",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "C7",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "DUSP1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "DUSP1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SERPINE1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SERPINE1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FST",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FST",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Myofibroblasts",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "APOE",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Myofibroblasts",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "APOE",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Myofibroblasts",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PTGDS",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Myofibroblasts",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PTGDS",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Interstitial Cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ADRA2A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Interstitial Cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ADRA2A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We also discovered a new population of ICs that specifically expressed ADRA2A and HRH2 (Figure 3A).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Interstitial Cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HRH2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Interstitial Cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HRH2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We also discovered a new population of ICs that specifically expressed ADRA2A and HRH2 (Figure 3A).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "JUN",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "JUN",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PLA2G2A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PLA2G2A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A10",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A10",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SH3BGRL3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SH3BGRL3",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Epithelial cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "TNNT1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Epithelial cell",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "TNNT1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Interestingly, we discovered a new type of epithelial cell which specifically highly expressed TNNT1 (Figure 5C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Epithelial",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "KRT18",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Epithelial",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "KRT18",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "These cells also highly expressed some gene markers of epithelial cells, such as KRT18 and KRT19 (Figure 5D).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Epithelial",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "KRT19",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Epithelial",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "KRT19",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "These cells also highly expressed some gene markers of epithelial cells, such as KRT18 and KRT19 (Figure 5D).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "mouse smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Krt15",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "mouse smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Krt15",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "mouse smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Gsta4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "mouse smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Gsta4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "mouse smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Rpl17",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "mouse smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Rpl17",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "mouse smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Ly6d",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "mouse smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Ly6d",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "human smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ACTC1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "human smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ACTC1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "human smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "TIMP1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "human smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "TIMP1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "human smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CCL2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "human smooth muscle cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CCL2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "mouse fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Clec3b",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "mouse fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Clec3b",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "mouse fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Gpx3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "mouse fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Gpx3",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "mouse fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Jund",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "mouse fibroblast 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Jund",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "human fibroblast 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "human fibroblast 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "S100A4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "human fibroblast 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "TIMP1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "human fibroblast 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "TIMP1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "human fibroblast 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SFRP2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "human fibroblast 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SFRP2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "human fibroblast 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "RPL13A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "human fibroblast 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "RPL13A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
-            "source_id": "text"
-        }
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, in fibroblast 1 (cluster 3), PLA2G2A and IGFBP6 were highly expressed compared with those of other clusters. ",
+      "source_id": "text"
     }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "IGFBP6",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "IGFBP6",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000167779",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, in fibroblast 1 (cluster 3), PLA2G2A and IGFBP6 were highly expressed compared with those of other clusters. ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Umbrella cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PIGR",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "UMBRELLA CELL",
+      "cell_type_label": "Umbrella cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PIGR",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000162896",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "PIGR and LCN2 were also highly expressed in umbrella cells.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Umbrella cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "LCN2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "UMBRELLA CELL",
+      "cell_type_label": "Umbrella cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "LCN2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000148346",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "PIGR and LCN2 were also highly expressed in umbrella cells.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "VIM",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "VIM",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000026025",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL1A1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL1A1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000108821",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL3A1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL3A1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000168542",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000196154",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "ICs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ACTA2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "INTERSTITIAL CELL",
+      "cell_type_label": "ICs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ACTA2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107796",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "However, we discovered a novel type of ICs which coexpressed ACTA2 and S100A4",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "ICs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "INTERSTITIAL CELL",
+      "cell_type_label": "ICs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000196154",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "However, we discovered a novel type of ICs which coexpressed ACTA2 and S100A4",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "IC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ADRA2A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "INTERSTITIAL CELL",
+      "cell_type_label": "IC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ADRA2A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000150594",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Unlike other ICs, these cells were highly expressed in ADRA2A and HRH2, as well in AVPR1A. ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "IC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HRH2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "INTERSTITIAL CELL",
+      "cell_type_label": "IC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HRH2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000113749",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Unlike other ICs, these cells were highly expressed in ADRA2A and HRH2, as well in AVPR1A. ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "IC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "AVPR1A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "INTERSTITIAL CELL",
+      "cell_type_label": "IC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "AVPR1A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000166148",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Unlike other ICs, these cells were highly expressed in ADRA2A and HRH2, as well in AVPR1A. ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CLEC3B",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CLEC3B",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000163815",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FSTL1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FSTL1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000163430",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "IGFBP6",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "IGFBP6",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000167779",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FBN1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FBN1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000166147",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "APOD",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "APOD",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000189058",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SFRP2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SFRP2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000145423",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CHRDL2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CHRDL2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000054938",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "C7",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "C7",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000169245",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "DUSP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "DUSP1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000081721",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SERPINE1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SERPINE1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000106366",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FST",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FST",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000134363",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Myofibroblasts",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "APOE",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Myofibroblasts",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "APOE",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000130203",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Myofibroblasts",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PTGDS",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Myofibroblasts",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PTGDS",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107317",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Interstitial Cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ADRA2A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "INTERSTITIAL CELL",
+      "cell_type_label": "Interstitial Cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ADRA2A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000150594",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We also discovered a new population of ICs that specifically expressed ADRA2A and HRH2 (Figure 3A).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Interstitial Cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HRH2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "INTERSTITIAL CELL",
+      "cell_type_label": "Interstitial Cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HRH2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000113749",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We also discovered a new population of ICs that specifically expressed ADRA2A and HRH2 (Figure 3A).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "JUN",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "JUN",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000177606",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PLA2G2A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PLA2G2A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000188257",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A10",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A10",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000197747",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000196754",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000196154",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SH3BGRL3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SH3BGRL3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000142669",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Epithelial cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "TNNT1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EPITHELIUM",
+      "cell_type_label": "Epithelial cell",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "TNNT1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105048",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Interestingly, we discovered a new type of epithelial cell which specifically highly expressed TNNT1 (Figure 5C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Epithelial",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "KRT18",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EPITHELIUM",
+      "cell_type_label": "Epithelial",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "KRT18",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000111057",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "These cells also highly expressed some gene markers of epithelial cells, such as KRT18 and KRT19 (Figure 5D).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Epithelial",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "KRT19",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EPITHELIUM",
+      "cell_type_label": "Epithelial",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "KRT19",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000171345",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "These cells also highly expressed some gene markers of epithelial cells, such as KRT18 and KRT19 (Figure 5D).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "mouse smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Krt15",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SMOOTH MUSCLE CELLS",
+      "cell_type_label": "mouse smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Krt15",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000171346",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "mouse smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Gsta4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SMOOTH MUSCLE CELLS",
+      "cell_type_label": "mouse smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Gsta4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000170899",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "mouse smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Rpl17",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SMOOTH MUSCLE CELLS",
+      "cell_type_label": "mouse smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Rpl17",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000125691",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "mouse smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Ly6d",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SMOOTH MUSCLE CELLS",
+      "cell_type_label": "mouse smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Ly6d",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000167656",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "human smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ACTC1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SMOOTH MUSCLE CELLS",
+      "cell_type_label": "human smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ACTC1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000159251",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "human smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "TIMP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SMOOTH MUSCLE CELLS",
+      "cell_type_label": "human smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "TIMP1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000102265",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "human smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CCL2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SMOOTH MUSCLE CELLS",
+      "cell_type_label": "human smooth muscle cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CCL2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000108691",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "mouse fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Clec3b",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "mouse fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Clec3b",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000163815",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "mouse fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Gpx3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "mouse fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Gpx3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000211445",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "mouse fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Jund",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "mouse fibroblast 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "Jund",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000130522",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "human fibroblast 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "human fibroblast 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "S100A4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000196154",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "human fibroblast 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "TIMP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "human fibroblast 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "TIMP1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000102265",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "human fibroblast 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SFRP2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "human fibroblast 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SFRP2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000145423",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "human fibroblast 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "RPL13A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "human fibroblast 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "RPL13A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000142541",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D).",
+      "source_id": "text"
+    }
+  }
 ]
