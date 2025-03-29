@@ -1,784 +1,756 @@
 [
     {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "PDGFRα",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "PDGFRα",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "PDGFRα",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "PDGFRα",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor–α (PDGFRα), CD29, CD34, stem cell antigen–1 (SCA1)/LY6A, and CD24",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor-α (PDGFRα), CD29, CD34, stem cell antigen-1 (SCA1)/LY6A, and CD24",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " CD29",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " CD29",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "CD29",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "CD29",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000150093",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor–α (PDGFRα), CD29, CD34, stem cell antigen–1 (SCA1)/LY6A, and CD24",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor-α (PDGFRα), CD29, CD34, stem cell antigen-1 (SCA1)/LY6A, and CD24",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " CD34",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " CD34",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "CD34",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "CD34",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000174059",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor–α (PDGFRα), CD29, CD34, stem cell antigen–1 (SCA1)/LY6A, and CD24",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor-α (PDGFRα), CD29, CD34, stem cell antigen-1 (SCA1)/LY6A, and CD24",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " stem cell antigen-1 (SCA1)/LY6A",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " stem cell antigen-1 (SCA1)/LY6A",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "LY6A",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "LY6A",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor–α (PDGFRα), CD29, CD34, stem cell antigen–1 (SCA1)/LY6A, and CD24",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor-α (PDGFRα), CD29, CD34, stem cell antigen-1 (SCA1)/LY6A, and CD24",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " CD24",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " CD24",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "adipose progenitor cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "CD24",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "adipose progenitor cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "CD24",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000272398",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor–α (PDGFRα), CD29, CD34, stem cell antigen–1 (SCA1)/LY6A, and CD24",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Adipose progenitor cells have been isolated on the basis of their expression of common progenitor or mesenchymal cell surface markers, including platelet-derived growth factor receptor-α (PDGFRα), CD29, CD34, stem cell antigen-1 (SCA1)/LY6A, and CD24",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " adipogenic cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "PREF1",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " adipogenic cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "PREF1",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "adipogenic cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "PREF1 (preadipocyte factor-1)",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "adipogenic cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "PREF1 (preadipocyte factor-1)",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Preadipocyte factor–1 (PREF1) [also called delta-like homolog–1 (DLK1)] and the adipose lineage marker peroxisome proliferator–activated receptor–γ (PPARγ) are also reported to mark adipogenic cells that are closely associated with blood vessels in adipose tissue",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Preadipocyte factor-1 (PREF1) [also called delta-like homolog-1 (DLK1)] and the adipose lineage marker peroxisome proliferator-activated receptor-γ (PPARγ) are also reported to mark adipogenic cells that are closely associated with blood vessels in adipose tissue",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " adipogenic cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "PPARγ",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " adipogenic cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "PPARγ",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "adipogenic cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "PPARγ (peroxisome proliferator–activated receptor–γ)",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "adipogenic cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "PPARγ (peroxisome proliferator-activated receptor-γ)",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Preadipocyte factor–1 (PREF1) [also called delta-like homolog–1 (DLK1)] and the adipose lineage marker peroxisome proliferator–activated receptor–γ (PPARγ) are also reported to mark adipogenic cells that are closely associated with blood vessels in adipose tissue",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Preadipocyte factor-1 (PREF1) [also called delta-like homolog-1 (DLK1)] and the adipose lineage marker peroxisome proliferator-activated receptor-γ (PPARγ) are also reported to mark adipogenic cells that are closely associated with blood vessels in adipose tissue",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " mural cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "Acta2",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " mural cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " Acta2",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": " mural cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " Acta2",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": null,
+            "cell_type_label": "mural cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "Acta2",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000107796",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Lastly, mural and smooth muscle–related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Lastly, mural and smooth muscle-related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " mural cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " Myh11",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " mural cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " Myh11",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "mural cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "Myh11",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "MURAL CELLS",
+            "cell_type_label": "mural cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "Myh11",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000133392",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Lastly, mural and smooth muscle–related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Lastly, mural and smooth muscle-related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " mural cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " Pdgfrβ",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " mural cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " Pdgfrβ",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "mural cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "Pdgfrβ",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "MURAL CELLS",
+            "cell_type_label": "mural cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "Pdgfrβ",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Lastly, mural and smooth muscle–related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Lastly, mural and smooth muscle-related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " smooth muscle-related cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " Pdgfrβ",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " smooth muscle-related cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " Pdgfrβ",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "smooth muscle-related cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "Pdgfrβ",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "SMOOTH MUSCLE CELLS",
+            "cell_type_label": "smooth muscle-related cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "Pdgfrβ",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Lastly, mural and smooth muscle–related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Lastly, mural and smooth muscle-related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " smooth muscle-related cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " Myh11",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " smooth muscle-related cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " Myh11",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "smooth muscle-related cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "Myh11",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "SMOOTH MUSCLE CELLS",
+            "cell_type_label": "smooth muscle-related cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "Myh11",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000133392",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Lastly, mural and smooth muscle–related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Lastly, mural and smooth muscle-related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " smooth muscle-related cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " Acta2",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " smooth muscle-related cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " Acta2",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "smooth muscle-related cells",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "Acta2",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "SMOOTH MUSCLE CELLS",
+            "cell_type_label": "smooth muscle-related cells",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "Acta2",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000107796",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Lastly, mural and smooth muscle–related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Lastly, mural and smooth muscle-related cells that express Acta2 (encoding smooth muscle actin), Myh11, or Pdgfrβ contribute to adipocyte formation under certain conditions",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " leukocytes",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": " CD45",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " leukocytes",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": " CD45",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "leukocytes",
-          "cell_source": "adipose",
-          "cell_state": "none",
-          "feature_name": "CD45",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "LEUKOCYTES",
+            "cell_type_label": "leukocytes",
+            "cell_source": "adipose",
+            "cell_state": "none",
+            "feature_name": "CD45",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000081237",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "SVCs were then depleted of CD45+ leukocytes and subjected to single-cell RNA-seq",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "SVCs were then depleted of CD45+ leukocytes and subjected to single-cell RNA-seq",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " CD45-depleted SVCs",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " PDGFRa",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " CD45-depleted SVCs",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " PDGFRa",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "PDGFRa",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "PDGFRa",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000134853",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "To investigate the heterogeneity of human adipose stromal cells in an unbiased manner, we performed single-cell expression profiling of CD45-depleted SVCs from human abdominal subcutaneous WAT. Clustering analysis of gene expression profiles identified five cell populations, including two main groups of cells (groups 1 and 2) that expressed mesenchymal markers PDGFRa, PDGFRb, and SCA1.",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "To investigate the heterogeneity of human adipose stromal cells in an unbiased manner, we performed single-cell expression profiling of CD45-depleted SVCs from human abdominal subcutaneous WAT. Clustering analysis of gene expression profiles identified five cell populations, including two main groups of cells (groups 1 and 2) that expressed mesenchymal markers PDGFRa, PDGFRb, and SCA1.",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " CD45-depleted SVCs",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " PDGFRb",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " CD45-depleted SVCs",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " PDGFRb",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "PDGFRb",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "PDGFRb",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000113721",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "To investigate the heterogeneity of human adipose stromal cells in an unbiased manner, we performed single-cell expression profiling of CD45-depleted SVCs from human abdominal subcutaneous WAT. Clustering analysis of gene expression profiles identified five cell populations, including two main groups of cells (groups 1 and 2) that expressed mesenchymal markers PDGFRa, PDGFRb, and SCA1.",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "To investigate the heterogeneity of human adipose stromal cells in an unbiased manner, we performed single-cell expression profiling of CD45-depleted SVCs from human abdominal subcutaneous WAT. Clustering analysis of gene expression profiles identified five cell populations, including two main groups of cells (groups 1 and 2) that expressed mesenchymal markers PDGFRa, PDGFRb, and SCA1.",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " CD45-depleted SVCs",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " SCA1",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " CD45-depleted SVCs",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " SCA1",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "SCA1",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "SCA1",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000124788",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "To investigate the heterogeneity of human adipose stromal cells in an unbiased manner, we performed single-cell expression profiling of CD45-depleted SVCs from human abdominal subcutaneous WAT. Clustering analysis of gene expression profiles identified five cell populations, including two main groups of cells (groups 1 and 2) that expressed mesenchymal markers PDGFRa, PDGFRb, and SCA1.",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "To investigate the heterogeneity of human adipose stromal cells in an unbiased manner, we performed single-cell expression profiling of CD45-depleted SVCs from human abdominal subcutaneous WAT. Clustering analysis of gene expression profiles identified five cell populations, including two main groups of cells (groups 1 and 2) that expressed mesenchymal markers PDGFRa, PDGFRb, and SCA1.",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "Group 1 cells",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " DPP4",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Group 1 cells",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " DPP4",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "DPP4",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "DPP4",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000197635",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Group 1 cells selectively expressed DPP4, CD55, and WNT2, comparable to murine group 1 cells",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Group 1 cells selectively expressed DPP4, CD55, and WNT2, comparable to murine group 1 cells",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "Group 1 cells",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " CD55",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Group 1 cells",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " CD55",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "CD55",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "CD55",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000196352",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Group 1 cells selectively expressed DPP4, CD55, and WNT2, comparable to murine group 1 cells",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Group 1 cells selectively expressed DPP4, CD55, and WNT2, comparable to murine group 1 cells",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "Group 1 cells",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " WNT2",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Group 1 cells",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " WNT2",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "WNT2",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "WNT2",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000105989",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Group 1 cells selectively expressed DPP4, CD55, and WNT2, comparable to murine group 1 cells",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Group 1 cells selectively expressed DPP4, CD55, and WNT2, comparable to murine group 1 cells",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "Group 2 cells",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " ICAM1",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Group 2 cells",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " ICAM1",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "ICAM1",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "ICAM1",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000090339",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Group 2 cells expressed ICAM1, PPARg, and GGT5, comparable to murine group 2 cells.",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Group 2 cells expressed ICAM1, PPARg, and GGT5, comparable to murine group 2 cells.",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "Group 2 cells",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " PPARg",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Group 2 cells",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " PPARg",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "PPARg",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "PPARg",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000132170",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Group 2 cells expressed ICAM1, PPARg, and GGT5, comparable to murine group 2 cells.",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Group 2 cells expressed ICAM1, PPARg, and GGT5, comparable to murine group 2 cells.",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": "Group 2 cells",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " GGT5",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": "Group 2 cells",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " GGT5",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "GGT5",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "GGT5",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000099998",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "Group 2 cells expressed ICAM1, PPARg, and GGT5, comparable to murine group 2 cells.",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "Group 2 cells expressed ICAM1, PPARg, and GGT5, comparable to murine group 2 cells.",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " human groups 1",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " CD142",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " human groups 1",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " CD142",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "CD142",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "CD142",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000117525",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " human groups 1",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " CLEC11A",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " human groups 1",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " CLEC11A",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "CLEC11A",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "CLEC11A",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000105472",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " human groups 1",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " FMO2",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " human groups 1",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " FMO2",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "FMO2",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 1 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "FMO2",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000076258",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " human groups 2",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " CD142",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " human groups 2",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " CD142",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "CD142",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "CD142",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000117525",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " human groups 2",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " CLEC11A",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " human groups 2",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " CLEC11A",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "CLEC11A",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "CLEC11A",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000105472",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
+            "source_id": "text"
         }
-      },
-
-      {
+    },
+    {
         "extracted": {
-          "organism": "homo_sapiens",
-          "cell_type_label": " human groups 2",
-          "cell_source": " human abdominal subcutaneous WAT",
-          "cell_state": "none",
-          "feature_name": " FMO2",
-          "feature_type": "gene"
+            "organism": "homo_sapiens",
+            "cell_type_label": " human groups 2",
+            "cell_source": " human abdominal subcutaneous WAT",
+            "cell_state": "none",
+            "feature_name": " FMO2",
+            "feature_type": "gene"
         },
         "derived": {
-          "organism": "homo_sapiens",
-          "cell_type_id": null,
-          "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
-          "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
-          "cell_state": "none",
-          "feature_name": "FMO2",
-          "feature_type": "gene",
-          "feature_identifier": null,
-          "feature_identifier_type": "ensembl"
+            "organism": "homo_sapiens",
+            "cell_type_id": "STROMAL CELLS",
+            "cell_type_label": "Group 2 - CD45-depleted SVCs (stromal vascular cells)",
+            "cell_source": "human abdominal subcutaneous WAT (white adipose tissue)",
+            "cell_state": "none",
+            "feature_name": "FMO2",
+            "feature_type": "gene",
+            "feature_identifier": "ENSG00000076258",
+            "feature_identifier_type": "ensembl"
         },
         "source": {
-          "source_type": "text",
-          "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
-          "source_id": "text"
+            "source_type": "text",
+            "source_rationale": "However, murine group 3 markers CD142, CLEC11A, and FMO2 were broadly expressed across human groups 1 and 2",
+            "source_id": "text"
         }
-      }
+    }
 ]
