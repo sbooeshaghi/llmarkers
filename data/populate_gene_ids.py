@@ -20,9 +20,12 @@ def update_json_with_identifiers(json_path, tsv_path, output_path):
     # Step 3: Process and conditionally update
     for entry in data:
         derived = entry.get("derived", {})
+        
         organism = derived.get("organism", "").strip().lower()
-        feature_name = derived.get("feature_name", "").strip().upper()
-
+        if derived.get("feature_name", "") is str:
+            feature_name = derived.get("feature_name", "").strip().upper()
+        else:
+            feature_name = derived.get("feature_name", "")
         if organism == "homo_sapiens" and feature_name in feature_map:
             derived["feature_identifier"] = feature_map[feature_name]
             derived["feature_identifier_type"] = "ensembl"

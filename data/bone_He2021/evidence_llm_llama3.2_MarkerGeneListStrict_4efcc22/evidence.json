@@ -1,1848 +1,1848 @@
 [
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Limb Bud Mesenchyme",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Limb Bud Mesenchyme",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX9",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The core limb bud mesenchyme expresses SOX9 to specify the osteo-chondrogenic lineage and generate the primordial cartilage template.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Limb Bud Mesenchymal Subset",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PRRX1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Limb Bud Mesenchymal Subset",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PRRX1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3) [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LBM1-3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PRRX1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LBM1-3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PRRX1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3), which differentially expressed PDGFRA, reflecting mesenchymal progenitors at different maturation stages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LBM1-3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PDGFRA",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LBM1-3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PDGFRA",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3), which differentially expressed PDGFRA, reflecting mesenchymal progenitors at different maturation stages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mesenchymal subset",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PRRX1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mesenchymal subset",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PRRX1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mesenchymal subset",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mesenchymal subset",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX9",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mesenchymal subset",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PDGFRA",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mesenchymal subset",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PDGFRA",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Epithelial cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "EPCAM",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Epithelial cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "EPCAM",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Erythrocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GYPA",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Erythrocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GYPA",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Epithelium",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FGF8",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Epithelium",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FGF8",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Of the two epithelial subsets (Fig. 2a), only cluster 9 (corresponds to Epithelium 1, Fig. 1c, d) highly expressed AER marker FGF8, consistent with previous study in mouse embryos.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "myoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SIX1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "myoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SIX1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "endothelial cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CDH5",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "endothelial cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CDH5",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "macrophages",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CD68",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "macrophages",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CD68",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "RUNX2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "RUNX2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Perichondrial mesenchymal stromal cells (PMSCs)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "OSR2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Perichondrial mesenchymal stromal cells (PMSCs)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "OSR2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Perichondrial mesenchymal stromal cells (PMSCs)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "NOV",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Perichondrial mesenchymal stromal cells (PMSCs)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "NOV",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Chondroblasts",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Chondroblasts",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX9",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Chondrocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Chondrocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX9",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Myocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "MYOG",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Myocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "MYOG",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Schwann cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX10",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Schwann cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX10",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX3",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX5",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX5",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX6",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neuron",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX6",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mesenchymal cell (distal)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX9",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mesenchymal cell (distal)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX9",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mesenchymal cell (distal)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX10",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mesenchymal cell (distal)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX10",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mesenchymal cell (distal)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX11",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mesenchymal cell (distal)",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOX11",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "BMSCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCL12",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "BMSCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCL12",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "BMSCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PDGFRA",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "BMSCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PDGFRA",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Limb Bud Mesenchymal",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "TWIST2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Limb Bud Mesenchymal",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "TWIST2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Cluster 2 highly expressed limb bud mesenchymal genes such as TWIST2 [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Cluster 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GAS2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Cluster 3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GAS2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Cluster 3 highly expressed GAS2 and localized in the center of all OCLC subsets",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LBDMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PITX1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LBDMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PITX1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LBDMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOXA10",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LBDMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "HOXA10",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LBDMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CRABP1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LBDMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CRABP1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "LBDMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CD24",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "LBDMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CD24",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GAS1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GAS1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GAS2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GAS2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SFRP2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SFRP2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FOXP1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FOXP1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FOXP2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FOXP2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GAS2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "eSSPCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "GAS2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Schwann cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Schwann cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Schwann cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX10",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Schwann cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SOX10",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Schwann cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "MPZ",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Schwann cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "MPZ",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Chondrocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CNMD",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Chondrocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CNMD",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Chondrocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "EPYC",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Chondrocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "EPYC",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Chondrocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL9A2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Chondrocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL9A2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Chondrocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL11A2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Chondrocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL11A2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "DLX5",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "DLX5",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CDH11",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CDH11",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "OGN",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "OGN",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL1A1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL1A1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL1A2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Osteoprogenitor",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL1A2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Cranial Neural Crest",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "NGFR",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Cranial Neural Crest",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "NGFR",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "VLMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SLC6A13",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "VLMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SLC6A13",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "VLMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PTGDS",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "VLMCs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PTGDS",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "mig_NC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "BMP4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "mig_NC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "BMP4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neural Crest-Derived Cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "BMP4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neural Crest-Derived Cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "BMP4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Neural Crest-Derived Cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FOXC2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Neural Crest-Derived Cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FOXC2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "DLX5",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "DLX5",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CLEC11A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CLEC11A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "OSR2+ PMSC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "POSTN",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "OSR2+ PMSC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "POSTN",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "chondrocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL9A2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "chondrocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL9A2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "(6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8)",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "pericytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PDGFRB",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "pericytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PDGFRB",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "PDGFRB+ pericytes that highly expressed MCAM and ACTA2",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "pericytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "MCAM",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "pericytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "MCAM",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "PDGFRB+ pericytes that highly expressed MCAM and ACTA2",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "pericytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ACTA2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "pericytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ACTA2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "PDGFRB+ pericytes that highly expressed MCAM and ACTA2",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Calvarial Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL1A1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Calvarial Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL1A1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Calvarial Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PRRX2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Calvarial Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PRRX2",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Calvarial Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CLEC11A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Calvarial Osteoprogenitors",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CLEC11A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A [...]",
-            "source_id": "text"
-        }
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Limb Bud Mesenchyme",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "Limb Bud Mesenchyme",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000125398",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The core limb bud mesenchyme expresses SOX9 to specify the osteo-chondrogenic lineage and generate the primordial cartilage template.",
+      "source_id": "text"
     }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Limb Bud Mesenchymal Subset",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PRRX1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "Limb Bud Mesenchymal Subset",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PRRX1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000116132",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3) [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "LBM1-3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PRRX1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "LBM1-3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PRRX1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000116132",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3), which differentially expressed PDGFRA, reflecting mesenchymal progenitors at different maturation stages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "LBM1-3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PDGFRA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "LBM1-3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PDGFRA",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000134853",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3), which differentially expressed PDGFRA, reflecting mesenchymal progenitors at different maturation stages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesenchymal subset",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PRRX1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MESOTHELIUM",
+      "cell_type_label": "Mesenchymal subset",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PRRX1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000116132",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesenchymal subset",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MESOTHELIUM",
+      "cell_type_label": "Mesenchymal subset",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000125398",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesenchymal subset",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PDGFRA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MESOTHELIUM",
+      "cell_type_label": "Mesenchymal subset",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PDGFRA",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000134853",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Epithelial cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "EPCAM",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EPITHELIUM",
+      "cell_type_label": "Epithelial cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "EPCAM",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000119888",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Erythrocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GYPA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ERYTHROCYTE",
+      "cell_type_label": "Erythrocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GYPA",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000170180",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Epithelium",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FGF8",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EPITHELIUM",
+      "cell_type_label": "Epithelium",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FGF8",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107831",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Of the two epithelial subsets (Fig. 2a), only cluster 9 (corresponds to Epithelium 1, Fig. 1c, d) highly expressed AER marker FGF8, consistent with previous study in mouse embryos.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "myoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SIX1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MYELOID-LIKE CELLS",
+      "cell_type_label": "myoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SIX1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000126778",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "endothelial cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CDH5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "endothelial cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CDH5",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000179776",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "macrophages",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CD68",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "macrophages",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CD68",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000129226",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "RUNX2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "RUNX2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000124813",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Perichondrial mesenchymal stromal cells (PMSCs)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "OSR2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICHONDRIAL MESENCHYMAL STROMAL CELL",
+      "cell_type_label": "Perichondrial mesenchymal stromal cells (PMSCs)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "OSR2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000164920",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Perichondrial mesenchymal stromal cells (PMSCs)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "NOV",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICHONDRIAL MESENCHYMAL STROMAL CELL",
+      "cell_type_label": "Perichondrial mesenchymal stromal cells (PMSCs)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "NOV",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000147403",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Chondroblasts",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "CHONDROCYTE",
+      "cell_type_label": "Chondroblasts",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000125398",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Chondrocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "CHONDROCYTE",
+      "cell_type_label": "Chondrocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX9",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000125398",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Myocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "MYOG",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MYOCYTE",
+      "cell_type_label": "Myocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "MYOG",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000122180",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Schwann cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX10",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SCHWANN CELL",
+      "cell_type_label": "Schwann cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX10",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000100146",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000170689",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000180806",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000128709",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX5",
+      "feature_type": "gene",
+      "feature_identifier": null,
+      "feature_identifier_type": null
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX6",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURON",
+      "cell_type_label": "Neuron",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX6",
+      "feature_type": "gene",
+      "feature_identifier": null,
+      "feature_identifier_type": null
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesenchymal cell (distal)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MESOTHELIUM",
+      "cell_type_label": "Mesenchymal cell (distal)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX9",
+      "feature_type": "gene",
+      "feature_identifier": null,
+      "feature_identifier_type": null
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesenchymal cell (distal)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX10",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MESOTHELIUM",
+      "cell_type_label": "Mesenchymal cell (distal)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX10",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000119614",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mesenchymal cell (distal)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX11",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MESOTHELIUM",
+      "cell_type_label": "Mesenchymal cell (distal)",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOX11",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107807",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "We found that LBM3 preferentially expressed 3' HOX genes such as HOX2-6, while LBM1 and LBM2 preferentially expressed 5' HOX genes such as HOX9-11, suggesting that they represented proximal (LBM3) and distal (LBM1 and LBM2) mesenchymal cells, respectively (Fig. 2f).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "BMSCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCL12",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "BMSCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCL12",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107562",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "BMSCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PDGFRA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "BMSCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PDGFRA",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000134853",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Limb Bud Mesenchymal",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "TWIST2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "Limb Bud Mesenchymal",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "TWIST2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000233608",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Cluster 2 highly expressed limb bud mesenchymal genes such as TWIST2 [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cluster 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GAS2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Cluster 3",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GAS2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000148935",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Cluster 3 highly expressed GAS2 and localized in the center of all OCLC subsets",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "LBDMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PITX1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "LBDMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PITX1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000069011",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "LBDMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOXA10",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "LBDMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "HOXA10",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000253293",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "LBDMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CRABP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "LBDMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CRABP1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000166426",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "LBDMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CD24",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LIMB BUD MESENCHYMAL CELL",
+      "cell_type_label": "LBDMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CD24",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000272398",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GAS1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL - ESSPC",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GAS1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000180447",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GAS2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL - ESSPC",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GAS2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000148935",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL - ESSPC",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000124766",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SFRP2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL - ESSPC",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SFRP2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000145423",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FOXP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL - ESSPC",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FOXP1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000114861",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FOXP2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL - ESSPC",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FOXP2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000128573",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GAS2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL - ESSPC",
+      "cell_type_label": "eSSPCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "GAS2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000148935",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Schwann cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SCHWANN CELL",
+      "cell_type_label": "Schwann cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000181449",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Schwann cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX10",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SCHWANN CELL",
+      "cell_type_label": "Schwann cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SOX10",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000100146",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Schwann cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "MPZ",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "SCHWANN CELL",
+      "cell_type_label": "Schwann cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "MPZ",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000158887",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Chondrocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CNMD",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "CHONDROCYTE",
+      "cell_type_label": "Chondrocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CNMD",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000136110",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Chondrocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "EPYC",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "CHONDROCYTE",
+      "cell_type_label": "Chondrocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "EPYC",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000083782",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Chondrocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL9A2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "CHONDROCYTE",
+      "cell_type_label": "Chondrocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL9A2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000049089",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Chondrocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL11A2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "CHONDROCYTE",
+      "cell_type_label": "Chondrocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL11A2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000204248",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "DLX5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "DLX5",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105880",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CDH11",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CDH11",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000140937",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "OGN",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "OGN",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000106809",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL1A1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL1A1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000108821",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL1A2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Osteoprogenitor",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL1A2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000164692",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "[...] while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cranial Neural Crest",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "NGFR",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURAL CREST CELL",
+      "cell_type_label": "Cranial Neural Crest",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "NGFR",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000064300",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "VLMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SLC6A13",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "VASCULAR LEPTOMENINGEAL CELL",
+      "cell_type_label": "VLMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SLC6A13",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010379",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "VLMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PTGDS",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "VASCULAR LEPTOMENINGEAL CELL",
+      "cell_type_label": "VLMCs",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PTGDS",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107317",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "mig_NC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "BMP4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NATURAL KILLER CELL",
+      "cell_type_label": "mig_NC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "BMP4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000125378",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neural Crest-Derived Cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "BMP4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURAL CREST-DERIVED CELL",
+      "cell_type_label": "Neural Crest-Derived Cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "BMP4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000125378",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Neural Crest-Derived Cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FOXC2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "NEURAL CREST-DERIVED CELL",
+      "cell_type_label": "Neural Crest-Derived Cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FOXC2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000176692",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "DLX5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "DLX5",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105880",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CLEC11A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CLEC11A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105472",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "OSR2+ PMSC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "POSTN",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICHONDRIAL MESENCHYMAL STROMAL CELL",
+      "cell_type_label": "OSR2+ PMSC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "POSTN",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000133110",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "chondrocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL9A2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "CHONDROCYTE",
+      "cell_type_label": "chondrocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL9A2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000049089",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "(6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8)",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "pericytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PDGFRB",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICYTE",
+      "cell_type_label": "pericytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PDGFRB",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000113721",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "PDGFRB+ pericytes that highly expressed MCAM and ACTA2",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "pericytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "MCAM",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICYTE",
+      "cell_type_label": "pericytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "MCAM",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000076706",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "PDGFRB+ pericytes that highly expressed MCAM and ACTA2",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "pericytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ACTA2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICYTE",
+      "cell_type_label": "pericytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ACTA2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107796",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "PDGFRB+ pericytes that highly expressed MCAM and ACTA2",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Calvarial Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL1A1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Calvarial Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL1A1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000108821",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Calvarial Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PRRX2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Calvarial Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PRRX2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000167157",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Calvarial Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CLEC11A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "OSTEOCHONDROGENIC PROGENITOR",
+      "cell_type_label": "Calvarial Osteoprogenitors",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CLEC11A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105472",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A [...]",
+      "source_id": "text"
+    }
+  }
 ]
