@@ -39,9 +39,12 @@
         "WAT ILC (WHITE ADIPOSE TISSUE INNATE LYMPHOID CELL)",
         "ILCP-LIKE CELLS (INNATE LYMPHOID PRECURSOR LIKE CELLS)",
         "ILCP",
-        "ILC2"
+        "ILC2", 
+        "ILCP-like"
     ],
     "MACROPHAGE": [
+        "LAM",
+        "IM",
         "INFLAMMATORY MACROPHAGE",
         "IMS (INFLAMMATORY MACROPHAGES)",
         "LAMS (LIPID-ASSOCIATED MACROPHAGES)",
@@ -58,7 +61,9 @@
         "NCMOS (NONCLASSIC MONOCYTES)",
         "MO-1S",
         "NCMOS",
-        "NCMO"
+        "NCMO",
+        "MO-2",
+        "MO-1"
     ],
     "MYELOID-LIKE CELLS": [
         "MYELOID-LIKE"
@@ -77,12 +82,15 @@
         "MNK",
         "NK-LIKE CELLS",
         "TBETHIEOMESINTPERFORINHICD16+ MNK CELLS",
-        "TISSUE RESIDENT NATURAL KILLER (TRNK) CELLS"
+        "TISSUE RESIDENT NATURAL KILLER (TRNK) CELLS",
+        "iNK", 
+        "trNK"
     ],
     "NEUTROPHIL": [
         "WAT NEUTROPHILS",
         "HUMAN WAT (WHITE ADIPOSE TISSUE) NEUTROPHILS",
-        "NEU (NEUTROPHILS)"
+        "NEU (NEUTROPHILS)",
+        "NEU"
     ],
     "SMOOTH MUSCLE CELLS": [
         "SMCS (SMOOTH MUSCLE CELLS)",
@@ -102,8 +110,5 @@
         "\u0393\u0394 T CELLS",
         "T HELPER 2 (TH2)",
         "MAIT"
-    ],
-    "PERIVASCULAR MACROPHAGE": [
-        
     ]
 }

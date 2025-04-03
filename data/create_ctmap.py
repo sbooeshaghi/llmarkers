@@ -24,7 +24,7 @@ def load_evidence_labels(filepath: str) -> List[str]:
     try:
         with open(filepath) as f:
             data = json.load(f)
-        return [obj['derived']['cell_type_label'].strip().upper() for obj in data]
+        return [obj['derived']['cell_type_label'].strip().upper() for obj in data if obj['derived']['cell_type_id'] is None]
     except FileNotFoundError:
         print(f"Warning: Evidence file not found at {filepath}")
         return []
