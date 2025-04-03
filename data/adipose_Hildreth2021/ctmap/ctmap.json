@@ -47,7 +47,9 @@
         "LAMS (LIPID-ASSOCIATED MACROPHAGES)",
         "INFLAMMATORY MACROPHAGES",
         "MACROPHAGE",
-        "LIPID-ASSOCIATED MACROPHAGES"
+        "LIPID-ASSOCIATED MACROPHAGES",
+        "PVM",
+        "PVMS (PERIVASCULAR MACROPHAGES)"
     ],
     "MONOCYTE": [
         "MO-2S (MONOCYTE 2)",
@@ -55,13 +57,13 @@
         "MO-2S",
         "NCMOS (NONCLASSIC MONOCYTES)",
         "MO-1S",
-        "NCMOS"
+        "NCMOS",
+        "NCMO"
     ],
     "MYELOID-LIKE CELLS": [
         "MYELOID-LIKE"
     ],
     "NATURAL KILLER CELL": [
-        "NCMO",
         "MNK (MATURE NATURAL KILLER) CELLS",
         "TRNK CELLS",
         "NK-LIKE",
@@ -102,7 +104,6 @@
         "MAIT"
     ],
     "PERIVASCULAR MACROPHAGE": [
-        "PVM",
-        "PVMS (PERIVASCULAR MACROPHAGES)"
+        
     ]
 }
