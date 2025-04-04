@@ -19,12 +19,12 @@ def load_universal_labels_map(keys_path: str) -> Dict[int, str]:
         return {}
 
 
-def load_evidence_labels(filepath: str) -> List[str]:
+def load_evidence_labels(filepath: str, universal_map) -> List[str]:
     """Load cell type labels from an evidence JSON file."""
     try:
         with open(filepath) as f:
             data = json.load(f)
-        return [obj['derived']['cell_type_label'].strip().upper() for obj in data if obj['derived']['cell_type_id'] is None]
+        return [obj['derived']['cell_type_label'].strip().upper() for obj in data if obj['derived']['cell_type_id'] is None or obj['derived']['cell_type_id'] not in universal_map.values()]
     except FileNotFoundError:
         print(f"Warning: Evidence file not found at {filepath}")
         return []
@@ -64,22 +64,22 @@ def main():
     all_labels: List[str] = []
     
     if args.human:
-        human_labels = load_evidence_labels(args.human)
+        human_labels = load_evidence_labels(args.human, universal_labels)
         all_labels.extend(human_labels)
         print(f"Loaded {len(human_labels)} human evidence labels from {args.human}")
     
     if args.deg:
-        deg_labels = load_evidence_labels(args.deg)
+        deg_labels = load_evidence_labels(args.deg, universal_labels)
         all_labels.extend(deg_labels)
         print(f"Loaded {len(deg_labels)} DEG evidence labels from {args.deg}")
     
     if args.llm:
-        llm_labels = load_evidence_labels(args.llm)
+        llm_labels = load_evidence_labels(args.llm, universal_labels)
         all_labels.extend(llm_labels)
         print(f"Loaded {len(llm_labels)} LLM evidence labels from {args.llm}")
     
     if not all_labels:
-        print("Error: No evidence files provided. Please specify at least one evidence file with --human, --deg, or --llm")
+        #print("Error: No evidence files provided. Please specify at least one evidence file with --human, --deg, or --llm")
         return
     
     # Get unique labels
