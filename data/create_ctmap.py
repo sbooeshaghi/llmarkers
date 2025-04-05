@@ -70,8 +70,10 @@ def main():
     
     if args.deg:
         deg_labels = load_evidence_labels(args.deg, universal_labels)
+        unfiltered_deg_labels = load_evidence_labels(f"{args.deg[:args.deg.rfind('/')]}/evidence_unfiltered.json", universal_labels)
         all_labels.extend(deg_labels)
-        print(f"Loaded {len(deg_labels)} DEG evidence labels from {args.deg}")
+        all_labels.extend(unfiltered_deg_labels)
+        print(f"Loaded {len(deg_labels) + len(unfiltered_deg_labels)} DEG evidence labels from {args.deg}")
     
     if args.llm:
         llm_labels = load_evidence_labels(args.llm, universal_labels)

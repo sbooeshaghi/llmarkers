@@ -19,7 +19,7 @@ def update_json(label_map, json_fn = 'evidence.json'):
         for obj in data:
             #obj['derived']['cell_type_id'] = find_key_given_value(label_map, obj['derived']['cell_type_label'].upper())
             #print(label_map[obj['derived']['cell_type_label'].upper()])
-            obj['derived']['cell_type_id'] = label_map[obj['derived']['cell_type_label'].upper()]
+            obj['derived']['cell_type_id'] = label_map[obj['derived']['cell_type_label'].upper().strip()]
         with open(json_fn, "w") as file:
             json.dump(data, file, indent = 4)
 
