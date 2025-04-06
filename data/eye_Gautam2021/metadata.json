@@ -1,0 +1,8 @@
+{
+  "doi": "https://doi.org/10.1038/s41467-021-25968-8",
+  "citation": "Gautam, P., Hamashima, K., Chen, Y. et al. Multi-species single-cell transcriptomic analysis of ocular compartment regulons. Nat Commun 12, 5675 (2021).",
+  "tables": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8478974/bin/41467_2021_25968_MOESM5_ESM.xlsx"
+  ],
+  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt"
+}

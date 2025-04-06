@@ -1,0 +1,1127 @@
+Main
+
+An atlas of human white adipose tissue
+
+Mature adipocytes are too large and fragile to withstand traditional
+single-cell approaches. As a result, several groups have focused on the
+non-adipocyte stromal-vascular fraction (SVF) of mouse ^(3 , 4 , 5 , 6)
+and human ⁷ adipose tissue. An alternative strategy involves
+single-nucleus sequencing (sNuc-seq), which can capture adipocytes, and
+has been used to describe mouse white ^(8 , 9) and human brown adipose
+tissue ¹⁰ . To compare these approaches in the context of human white
+adipose tissue (WAT), we pursued experiments on two cohorts of subjects.
+In the first, we collected subcutaneous WAT from nine women, isolated
+single cells from the SVF using collagenase digestion, and then
+performed whole-cell Drop-seq (hereafter referred to as single-cell RNA
+sequencing (scRNA-seq)). Because different depots have been
+differentially linked to metabolic disease ¹¹ , for the second cohort we
+collected paired subcutaneous (SAT) and visceral (VAT) adipose tissue
+from ten individuals and SAT alone from three additional individuals
+(ten women and three men), and performed sNuc-seq (Fig. 1a, b , Extended
+Data Table 1 ). Doublet and low-quality filtering left 166,149 total
+cells (28,465 single cells and 137,684 single nuclei). The data from
+both approaches were integrated, enabling the identification of the
+canonical cell types found in WAT, including adipocytes, adipose stem
+and progenitor cells (ASPCs), vascular cells and immune cells (Fig. 1c,
+d , Supplementary Table 1 ). As expected, adipocytes were found only in
+the sNuc-seq dataset. The sNuc-seq data were also enriched for vascular
+cells and macrophages, probably because collagenase digestion did not
+fully dissociate these cell types. Mesothelial cells were not detected
+in the scRNA-seq dataset, which did not include visceral tissue. Some of
+the visceral samples included cells that appeared to be endometrial in
+origin ( PRLR +), probably owing to endometriosis. Overall proportions
+of adipocytes and ASPCs did not differ between depots, but depot clearly
+affects the distribution of cells within these populations (Extended
+Data Fig. 1a, b , Extended Data Table 2 , Supplementary Fig. 1 ). In our
+limited cohort, we could not detect major effects of body mass index
+(BMI) on cell-type proportions. To assess this finding at larger scale,
+we used our dataset as a reference to estimate cell-type proportions in
+bulk RNA-sequencing data ¹² obtained from the SAT of 331 men in the
+METSIM cohort ¹³ . This deconvolution analysis showed that the relative
+abundance of adipocytes in that cohort was negatively correlated with
+BMI, whereas ASPCs and myeloid cells were positively correlated
+(Extended Data Fig. 1c ).
+
+[figure 1]
+
+a , Schematic of workflows for scRNA-seq and sNuc-seq of human WAT. b ,
+Graphical representation of the cohorts for both studies. Only the
+sNuc-seq cohort contains VAT. c , Uniform manifold approximation and
+projection (UMAP) projection of all 166,129 sequenced human cells split
+by cohort. d , Marker genes for each cell population in the human WAT
+dataset. e , Schematic of workflow for sNuc-seq of mouse ING and PG
+adipose tissue. f , UMAP projection of all 197,721 sequenced mouse cells
+split by diet. g , Marker genes for each cell population in the mouse
+WAT dataset.
+
+Full size image []
+
+Fig. 1: A single-cell atlas of human white adipose tissue.
+
+An atlas of mouse white adipose tissue
+
+Mouse models are commonly used to study adipose tissue biology ¹⁴ . We
+thus sought to compare mouse and human WAT at the single-cell level by
+performing sNuc-seq on inguinal adipose tissue (ING) (corresponding to
+human SAT) and perigonadal adipose tissue (PG) (epididymal (EPI) in
+males and periovarian (POV) in females, corresponding to human VAT) of
+mice fed either a chow or high-fat diet (HFD) for 13 weeks (Fig. 2a, b
+). After doublet removal and quality filtering, we considered a total of
+197,721 cells (106,469 from PG and 91,252 from ING), identifying all
+cell types observed in human WAT (Fig. 2c, d , Supplementary Table 2 )
+with the addition of distinct male and female epithelial populations (
+Dcdc2a + and Erbb4 +, respectively). The female population is largely
+found in ING samples and resembles mammary epithelial cells, whereas the
+male population is almost exclusively found in PG samples, and as noted
+by others ⁹ may represent contaminants from the epididymis and other
+reproductive structures that are tightly apposed to fat ¹⁵ . In contrast
+to the human data, cell-type abundance in mouse WAT is highly dependent
+on body weight, with relatively little variation between depots (Fig. 2c
+, Extended Data Fig. 2a, b , Extended Data Table 2 ). The proportions of
+cell types in mouse adipose tissue after HFD were notably different
+between male and female mice, which might reflect a true sex difference
+or may reflect higher weight gain in males (Extended Data Fig. 2b ). To
+compare across species, we used a reference mapping algorithm to assign
+each mouse cell to a human cluster and noted a high degree of overall
+similarity between annotated mouse clusters and mapped human clusters
+(Extended Data Fig. 2c ).
+
+[figure 2]
+
+a , Schematic of workflow for sNuc-seq of mouse ING and PG adipose
+tissue. b , Body weight of chow and high-fat fed animals used for
+sNuc-seq (n = 5 chow and 5 HFD male mice, 2 chow and 2 HFD female mice).
+Error bars represent standard error of the mean (SEM). c , UMAP
+projection of all 197,721 sequenced mouse cells split by diet. d ,
+Marker genes for each cell population in the mouse WAT dataset.
+
+Source data
+
+Full size image []
+
+Fig. 2: A single cell atlas of mouse white adipose tissue.
+
+Vascular cells
+
+Subclustering of human vascular cells revealed expected cell types,
+including blood endothelial clusters that represent arteriolar, stalk
+and venular cells, as well as lymphatic endothelial cells, pericytes and
+smooth muscle cells (Extended Data Fig. 3a, b ). Mouse vascular cells
+formed similar clusters (Extended Data Fig. 3c, d ). As expected,
+reference mapping demonstrated high similarity between human and mouse
+vascular subclusters (Extended Data Fig. 3e ) and proportions of
+subclusters were similar across species (Extended Data Fig. 3f, g ).
+
+Immune cells
+
+Analysis of human immune cells from scRNA-seq and sNuc-seq samples again
+revealed expected cell types, including multiple subpopulations of
+monocytes, macrophages ( CD14 +), dendritic cells, B and T lymphocytes,
+and natural killer (NK) cells ( CD96 +), mast cells ( CPA3 +), and
+neutrophils ( CSF3R +) (Extended Data Fig. 4a, b ). Monocyte
+subpopulations 1 and 2 resemble classical and non-classical monocytes
+and DC subpopulations 1 and 2 resemble previously reported CLEC9A + and
+CD1C + populations from blood, respectively ¹⁶ . Lymphocytes also
+resemble previously reported B cell, T cell and NK cell populations from
+human WAT, including CTLA4 + human regulatory T cells ¹⁷ . Examination
+of the mouse WAT immune compartment revealed most of the same cell
+types, although there were notable differences in the relative abundance
+of myeloid and lymphoid cells between species (Extended Data Fig. 4c, d
+). Human WAT contains somewhat fewer T and NK cells than macrophages or
+monocytes (approximately 30% versus 60% of recovered immune cells); this
+imbalance was greatly exaggerated in mouse WAT (macrophages were
+approximately 90% of recovered immune cells versus 3% T and NK cells).
+Because a wealth of data supports a key role for macrophages and
+monocytes in adipose biology ^(18 , 19) , we separated these cell types
+from other immune cells in silico for subsequent analysis. Mouse
+clusters of non-monocytes and non-macrophages mapped relatively well to
+their human counterparts, with some mixing of T and NK populations
+(Extended Data Fig. 4e ). Macrophages and monocytes also mapped well to
+their general class, but this association often broke down when
+considering macrophage subpopulations (Extended Data Fig. 4f ).
+
+The proportion of immune cell populations was similar in human SAT and
+VAT, with a few exceptions (Extended Data Fig. 5a, e ). In mice, small
+depot-dependent differences were eclipsed by relatively huge shifts in
+response to diet in male mice (Extended Data Fig. 5b, d, f ). Most
+notably, HFD resulted in a massive increase in macrophage numbers,
+primarily in PG, consistent with a large body of prior data ^(18 , 20)
+(Extended Data Figs. 2 b, 5f ). Reductions in the proportion of most
+other immune cell types (for example, NK cells, T and B lymphocytes,
+dendritic cells and neutrophils) are probably due to the large increase
+in macrophages, rather than to intrinsic loss of those specific cell
+types following HFD (Extended Data Fig. 5b, d, f ). Mast cells increase
+proportionally after HFD, as previously reported ²¹ (Extended Data Fig.
+5f ).
+
+Accumulation of adipose tissue macrophages in obesity has also been
+shown in human WAT, using a combination of histomorphometry and flow
+sorting ^(19 , 22) . Our data generally support this conclusion,
+although the magnitude of the effect is substantially less prominent
+than that seen in mouse WAT (Extended Data Fig. 1b , 5c, e, f ). The
+largest change involves the hMac3 cluster, which is induced in visceral
+fat with higher BMI (Extended Data Fig. 5c, e ).
+
+Mesothelial cells
+
+Subclustering of mesothelial cells revealed three populations in both
+human VAT and mouse PG (Extended Data Fig. 6a–d ). When mouse
+mesothelial clusters were mapped to human clusters, cells were split
+between human clusters hMes1 and hMes2, with no cells mapping to hMes3
+(Extended Data Fig. 6e ). The proportions of most mesothelial
+subpopulations did not vary with obesity or HFD, with the exception of
+hMes1 and hMes2, which were reduced and increased in higher BMIs,
+respectively (Extended Data Fig. 6f, g ).
+
+ASPCs
+
+We identified six distinct subpopulations of human ASPCs (see
+Supplementary Note 1 ) in subclustered scRNA-seq and sNuc-seq samples,
+all of which express the common marker gene PDGFRA (Extended Data Fig.
+7a, b ). Similarly, we noted six subpopulations in the mouse ASPC data,
+all of which were also Pdgfra+ and some of which correspond well with a
+particular human subpopulation (Extended Data Fig. 7c–e ). For example,
+mASPC2 and hASPC2 are characterized by high expression of Aldh1a3 and
+ALDH1A3 , respectively, and strongly resemble previously identified
+early multipotent progenitor cells that reside in the reticular
+interstitium of the fat pad ⁵ . Similarly, mASPC4 and hASPC4 express
+Epha3 and EPHA3 , respectively, and probably represent the
+anti-adipogenic ‘adipogenesis-regulatory’ cells (Aregs) population
+reported by Schwalie et al. ³ . Seeking to better place our mouse ASPC
+data into the overall context of the published literature, we integrated
+our data with those reported by others ^(3 , 4 , 5 , 6 , 9) and found
+that ASPC populations identified by individual studies were generally
+preserved after integration, suggesting robustness of these clusters.
+Specifically, the previously described Icam1 + committed progenitor,
+Dpp4 + early progenitor and Cd142 + Areg populations ²³ cluster together
+across studies (Extended Data Fig. 7f ).
+
+Many human and mouse ASPC subclusters showed dependency on diet, depot
+or both. hASPC1, hASPC4 and hASPC5 were more prevalent in SAT than VAT,
+with increases in SAT hASPC4 and hASPC5 proportion in subjects with
+higher BMI (Extended Data Fig. 8a, c, e ). Conversely, hASPC3 and hASPC6
+were more prevalent in VAT. In male mice, early progenitor cells
+(mASPC2) were notably more abundant in ING than PG and mASPC5 and mASPC6
+were more prevalent in EPI versus ING, although this varied with obesity
+(Extended Data Fig. 8b, d, f ). Many of these observations are
+consistent with previous findings. For example, HFD has been shown to
+increase adipogenesis specifically in PG in mice ^(24 , 25) . Our data
+indicate that pre-adipocyte subclusters such as mASPC6 increase markedly
+in response to HFD in PG only. The loss of early progenitors (mASPC2) in
+PG with HFD is consistent with conversion of these cells along the
+differentiative pathway, that is, towards mASPC6 (Extended Data Fig. 8b,
+d, f ).
+
+Unique populations of human adipocytes
+
+White adipocytes are generally considered to be monotypic and
+essentially uniform in function, although some recent studies have begun
+to challenge this assumption ^(8 , 9 , 10 , 26) . The high resolution of
+our data enabled us to find that human white adipocytes cluster into
+seven subpopulations with distinct markers (Fig. 3a, b ). We noted
+strong depot-specific associations of adipocyte subtypes, with hAd1,
+hAd3, hAd4 and hAd7 localized primarily to SAT, whereas hAd2 and hAd6
+were almost exclusively found in VAT. hAd5 represents a smaller
+population that is roughly equally distributed between SAT and VAT
+(Extended Data Fig. 9a–c ). We also noted a BMI-dependent shift in
+adipocyte subtype within both depots (Extended Data Fig. 9b, c ).
+Notably, all adipocyte subpopulations are present in the majority of
+subjects, indicating that these subtype designations are generalizable
+and do not reflect sample-specific variation (Extended Data Fig. 9c ).
+Immunohistochemistry and/or immunofluorescence of markers for hAd4,
+hAd5, hAd6 and hAd7 in human SAT or VAT identified specific
+subpopulations of adipocytes at proportions similar to those seen in the
+single-cell data (Fig. 3c , Extended Data Fig. 9d, e ). To examine
+whether SAT subtype proportion was influenced by BMI in a larger
+dataset, we estimated individual subtype proportions by deconvolution
+analysis of bulk RNA-seq data from purified isolated subcutaneous human
+adipocytes from 43 women (Fig. 3d ). This analysis showed that clusters
+hAd4 and hAd7 trend to negative correlation with BMI, aligning with our
+immunohistochemistry findings, whereas hAd5 proportion is positively
+correlated with BMI. Visceral adipocytes are absent from this dataset
+and so we were unable to assess the prevalence of hAd2 or hAd6 in this
+cohort, although immunohistochemistry of the hAd6 marker EBF2 also
+suggests that its prevalence may be positively correlated with BMI (Fig.
+3c ).
+
+[figure 3]
+
+a , UMAP projection of clusters formed by 25,871 human white adipocytes.
+b , Expression of adipocyte marker ADIPOQ and specific marker genes for
+each adipocyte subpopulation. c , Immunohistochemistry for marker genes
+of adipocyte subpopulations hAd4, hAd5, hAd6, and hAd7 in human adipose
+tissue and percentage of positive adipocytes per slide in lean and obese
+individuals (GRIA4: 5 lean, 5 obese, 2 slides each; PGAP1: 5 lean SAT, 4
+obese SAT, 3 lean VAT, 4 obese VAT, 1 slide each; EBF2: 3 lean, 4 obese,
+2 slides each; AGMO: 4 lean, 4 obese, 2 slides each). Scale bars: 25 μm
+for GRIA4, EBF2 and AGMO, 20 μm for PGAP1. d , Estimated proportions of
+adipocyte subpopulations in bulk RNA sequencing data of enzymatically
+isolated subcutaneous adipocytes from 43 individuals plotted against
+BMI. P values were calculated using an F -test (with null hypothesis
+that slope is zero), error bars represent a confidence level of 0.95. e
+, Representative images of ex vivo differentiated human subcutaneous
+adipocytes predicted to have low or high hAd3 content on the basis of
+deconvolution of bulk RNA sequencing data. Green represents BODIPY
+staining, blue represents Hoechst staining. Scale bars, 100 μm. f ,
+Normalized count of BODIPY-related features in ex vivo differentiated
+adipocytes stratified into hAd3-low and hAd3-high populations. Points
+represent normalized feature for cultures derived from individual
+subjects. n = 8 hAd3-low SAT, 4 hAd3-high SAT, 19 hAd3-low VAT,
+4 hAd3-high VAT. g , UMAP projection of 39,934 mouse white adipocytes. h
+, Expression of Adipoq and marker genes for each mouse adipocyte
+subpopulation. In bar graphs, error bars represent s.e.m. and P values
+were calculated using two tailed t -tests with no correction for
+multiple comparisons.
+
+Source data
+
+Full size image []
+
+Fig. 3: Subclustering of human and mouse adipocytes reveals multiple
+distinct populations that vary across depot and diet.
+
+A critical question is whether individual adipocyte subpopulations have
+specific functions. To assess this, we first looked at genes that
+participate in the major metabolic activities of adipocytes. All
+subpopulations expressed these genes, although their relative amounts
+differed. Thus, the adipokines adiponectin and adipsin (encoded by CFD )
+are most highly expressed in hAd3, and genes encoding insulin signalling
+components such as INSR , IRS1 and IRS2 are most highly expressed in
+hAd5 (Extended Data Fig. 9f ). We next examined the data more
+holistically by performing pathway analysis for markers of each
+subpopulation (Extended Data Fig. 9g–m , Supplementary Table 3 ). The
+subpopulations hAd1 (which accounts for around 40% of SAT adipocyte
+nuclei) and hAd2 (which accounts for ~60% of VAT adipocyte nuclei) have
+relatively few specific markers, and the pathways that emerged were
+similarly generic (Extended Data Fig. 9g, h ). These populations
+probably represent ‘basal’ subcutaneous or visceral adipocytes, so we
+therefore focused on subpopulations hAd3–hAd7 for more detailed
+analysis. hAd3 was associated with ‘triglyceride biosynthesis’ and
+included higher expression of DGAT2 , SREBF1 and PNPLA3 (Extended Data
+Fig. 9i ). The hAd4 cluster expresses the highest amounts of several
+fatty acid desaturases, including ELOVL5 and FADS3 (Extended Data Fig.
+9j ), which is particularly interesting in light of the
+insulin-sensitizing role of unsaturated lipokines such as palmitoleate
+²⁷ . hAd5 adipocytes, besides having the highest expression of several
+insulin signaling genes, were also characterized by expression of
+‘sphingolipid signalling genes’ (Extended Data Fig. 9k ). Both hAd3 and
+hAd4 exhibit high expression of lipogenic genes, whereas lipolytic gene
+expression is higher in hAd5 (Extended Data Fig. 9f ).
+
+We next investigated whether cultured human adipocytes retain evidence
+of subpopulation diversity. To this end, we used 57 RNA-seq datasets
+from human subcutaneous and visceral adipocyte progenitors
+differentiated ex vivo over a 14-day timecourse ²⁸ . Deconvolution
+analysis revealed that many subpopulations identified in vivo were
+retained in culture. Furthermore, much of the previously noted depot
+selectivity was recapitulated, such that the visceral subpopulations
+hAd2 and hAd6 were more likely to appear in cultured visceral cells and
+the subcutaneous subpopulation hAd4 was overrepresented in cultured
+subcutaneous cells (Extended Data Fig. 10a ). Furthermore, because these
+cultured samples were also subjected to high-content image-based
+profiling using LipocyteProfiler ²⁸ , we were able to correlate
+individual subpopulations with image-based features representing
+morphological and cellular phenotypes including lipid and mitochondrial
+content. Thus, ex vivo differentiated adipocyte cultures predicted to
+have high amounts of hAd3—associated with high lipogenic gene expression
+and lower lipolytic gene expression—have more overall lipid and larger
+lipid droplets (Fig. 3e, f ). Conversely, ex vivo differentiated
+adipocyte cultures with high predicted hAd5 content have less overall
+lipid and smaller lipid droplets, consistent with a higher ratio of
+lipolytic to lipogenic gene expression (Extended Data Fig. 10b–d ).
+
+One particularly notable adipocyte subpopulation is hAd6, which
+selectively expresses genes typically associated with thermogenesis,
+such as EBF2 , ESRRG and PPARGC1A (Extended Data Fig. 9l ), a surprising
+finding given that this population is almost exclusively visceral (Fig.
+3c , Extended Data Fig. 9a, c ). To better understand the relationship
+between this subpopulation and visceral adiposity, we looked further
+into the hAd6 marker EBF2, which has previously been identified as a
+pro-thermogenic transcription factor ²⁹ . Single nucleotide
+polymorphisms (SNPs) at the EBF2 locus are associated with waist–hip
+ratio (WHR) ³⁰ , which could involve actions in either SAT or VAT.
+However, a recent genome-wide association study (GWAS) of loci
+associated with adiposity in specific depots ³¹ found a common variant
+15 kb upstream of EBF2 associated specifically with VAT (Extended Data
+Fig. 11a ). Further analysis revealed that the minor allele of this SNP
+(minor allele frequency = 0.23) was associated with VAT adjusted for BMI
+and height (VATadj) (beta = 0.062 s.d. per allele, P = 1.0 × 10 ⁻¹² ),
+but not adjusted abdominal subcutaneous (ASAT) (ASATadj:
+beta = −0.018 s.d. per allele, P = 0.03) or gluteofemoral (GFAT)
+(GFATadj: beta = −0.020 s.d. per allele, P = 0.02, Extended Data Fig.
+11b ) depots. We additionally stratified individuals into either 0, 1 or
+2 carriers of the minor allele and observed an additive trend (G/G
+median VATadj −0.10 s.d., G/A median VATadj = −0.04 s.d., A/A median
+VATadj 0.04 s.d.; Extended Data Fig. 11c ). Next, we returned to the
+visceral human adipocytes differentiated ex vivo, and found that samples
+predicted to have a higher proportion of hAd6 adipocytes were
+characterized by higher mitochondrial intensity and increased expression
+of mitochondrial and thermogenic genes (Extended Data Fig. 11d–f ).
+Finally, our analysis of hAd6 markers suggested other pathways
+associated with thermogenesis, including one for ‘axon guidance’
+(Extended Data Fig. 11g ). We could not measure innervation directly
+using our data, because the nuclei of innervating sympathetic neurons
+are located in the spinal ganglia and not the fat depot itself.
+Nonetheless, we estimated the degree of innervation using the presence
+of neuron-specific gene expression in the ambient RNA of our visceral
+sNuc-seq samples. Indeed, the amount of pan-neuronal markers like TUBB3
+and UCHL1 ³² strongly correlate with hAd6 proportion (Extended Data Fig.
+11h ), further supporting a role for hAd6 as a novel visceral adipocyte
+subtype with thermogenic potential.
+
+Mouse adipocyte subpopulations
+
+Subclustering mouse adipocytes revealed six subpopulations (Fig. 3g, h
+). Unlike human adipocytes, mouse adipocyte subtypes exhibit little
+depot enrichment (Extended Data Fig. 12a–c ). There was strong diet
+dependency, however, as relative proportions of mAd1 and mAd3 were
+reduced after HFD, while the opposite was noted for mAd4 and mAd5
+(Extended Data Fig. 12b, c ). In contrast to the relatively good
+cross-species concordance between immune cells, vascular cells, and
+ASPCs, mouse adipocytes do not map cleanly onto human adipocyte
+subpopulations (Extended Data Fig. 12d–f ).
+
+As in humans, genes associated with major adipocyte functions showed
+some subpopulation selectivity in mice. For example, lipogenesis genes
+were highest in HFD-induced population mAd5 (Extended Data Fig. 12c, g
+). More detailed pathway analysis on mouse adipocyte subpopulations
+(Supplementary Table 3 ) showed that the chow-associated clusters
+mAd1–mAd3 were notably enriched in metabolic pathways, particularly
+those involved in lipid handling (Extended Data Fig. 12h–j ). By
+contrast, the HFD-associated clusters mAd4–mAd6 were linked to pathways
+such as ‘HIF-1 signalling’, ‘actin cytoskeleton’ and ‘NF-kB signalling’
+(Extended Data Fig. 12k–n ), consistent with the known roles of hypoxia,
+cytoskeletal remodelling and inflammation in HFD-induced adipose
+dysfunction and insulin resistance ^(23 , 24 , 25) .
+
+Our data allow us to address the question of whether diet-induced
+changes in gene expression at the population level are shared among
+subpopulations or whether they reflect a change in the relative
+proportion of these subpopulations. To assess this, we examined the 20
+most positively and negatively regulated genes from a translating
+ribosome affinity purification (TRAP)-based RNA-seq experiment in white
+adipocytes from mice fed chow or HFD ³³ (Supplementary Fig. 2a ). We
+noted that some genes (for example, Cyp2e1 and Fam13a ) exhibit elevated
+expression in chow adipocytes in almost all subpopulations, whereas for
+others (for example, Cfd ), expression is largely driven by the mAd3
+population which decreases in abundance with HFD (Extended Data Fig.
+12b, c , Supplementary Fig. 2b ). Similarly, Sept9 , Cdkn1a and Fgf13
+show increased gene expression after HFD across almost all
+subpopulations, whereas other HFD-induced genes (for example, Slc5a7 and
+Dclk1 ) increase their expression after HFD in the chow-associated
+clusters mAd1–mAd4 but not in the HFD-associated clusters mAd5–mAd7
+(Supplementary Fig. 2b ). Thus, diet-dependent expression changes
+reflect both alterations across all clusters and the emergence or
+disappearance of distinct populations.
+
+Finally, we could not identify a mouse adipocyte population that could
+be clearly delineated as thermogenic. Such cells have been noted by
+others in WAT, even at room temperature ³⁴ . However, when we considered
+the adipocytes from chow-fed mice independently, mAd1 split into three
+clusters (Supplementary Fig. 3a, b ). Two of these clusters, mAd1B and
+mAd1C, were recognizable as thermogenic beige adipocytes, with
+relatively high expression of Prdm16 and Ppargc1a in mAd1B and even
+higher expression of these genes, as well as expression of Ucp1 and
+Cidea in mAd1C (Supplementary Fig. 3c ). As expected, the thermogenic
+mAd1B and mAd1C subpopulations were enriched in ING versus PG samples
+(Supplementary Fig. 3d, e ).
+
+Cell–cell interactions in adipose tissue
+
+The functions of WAT are coordinated by neural and hormonal cues from
+outside the fat pad ³⁵ . There is growing appreciation, however, that
+intercellular communication within the depot is also critical for the
+WAT response to overnutrition and other stressors ³⁶ . In particular,
+attention has focused on cross-talk between adipocytes and immune cells
+(especially macrophages) in the context of obesity ³⁷ . To assess
+potential interactions between all identified cell types in different
+depots and at different body mass, we used CellPhoneDB ³⁸ , which uses
+the expression of ligand-receptor pairs as a proxy for intercellular
+communication (Supplementary Tables 4 , 5 ). As expected, we detected
+increased potential communication between human adipocytes and
+macrophages in high-BMI versus low-BMI subjects; of 84 potential
+interactions identified between human adipocytes and macrophages, 40
+(48%) were specific for high-BMI subjects, and only 3 (4%) were specific
+for low-BMI subjects (Fig. 4a , Extended Data Fig. 13a, d ). Notably,
+obesity was also associated with robustly increased expression of genes
+encoding ligand–receptor pairs between adipocytes and many non-immune
+cell types, including blood and lymphatic endothelial cells, vascular
+SMCs, pericytes and ASPCs (Fig. 4a, b , Extended Data Fig. 13a, d ). For
+example, out of 145 potential interactions identified between human
+adipocytes and endothelial cells, 65 (45%) were specific for high-BMI
+subjects, and only 6 (4%) were specific for low-BMI subjects (Extended
+Data Fig. 13d ). Potential interactions between these cell types are
+frequently bidirectional, and receptors are often expressed on multiple
+cell types, suggesting networks of communication (Fig. 4b , Extended
+Data Fig. 13e ). We also noted differential expression of ligands and
+receptors within human adipocyte subpopulations, lending further support
+to the idea that they carry out distinct functions (Extended Data Fig.
+13b ). The specific interactions upregulated during obesity suggest that
+adipocytes have a significant role in obesity-related adipose tissue
+remodelling. For example, adipocyte expression of angiogenic factors
+such as JAG1 and VEGFC is increased in the obese state, as is the
+expression of their receptors (for example, NOTCH3 and KDR ) on
+endothelial cells, consistent with obesity-associated induction of
+angiogenesis by adipocytes ³⁹ (Fig. 4b , Supplementary Table 6 ).
+
+[figure 4]
+
+a , Heat map showing number of significant interactions identified
+between cell types in VAT of low-BMI (<30) and high-BMI (>40)
+individuals as determined by CellphoneDB. b , Selected interactions
+between adipocytes and ASPCs, endothelial cells, and macrophages
+identified using CellphoneDB; orange and green indicate interactions
+that are significant only with BMI > 40 and only with BMI > 30,
+respectively. c , CELLECT P values of the association between cell types
+in the human adipose sNuc-seq dataset with GWAS studies. The grey line
+represents P = 0.05 and the orange line represents significant P value
+after Bonferroni adjustment ( P = 0.003), based on number of cell types
+queried. Both T2D and WHR were BMI-adjusted. TG, triglyceride. d ,
+CELLECT P values for adipocyte subpopulations. The grey line represents
+P = 0.05 and the orange line represents significant P value after
+Bonferroni adjustment ( P = 0.001), based on all cell subtypes queried.
+e , Estimated cell type proportion of hAd7 in bulk RNA-seq data of
+enzymatically isolated subcutaneous adipocytes from 43 individuals
+plotted against HOMA-IR. For line of best fit, R ² = 0.11, the error
+band represents a confidence level of 0.95. f , g , Expression of hAd7
+marker genes negatively correlated with HOMA-IR in human adipocyte
+subpopulations ( f ) and bulk RNA-sequencing data of human adipocytes (
+g ). In scatter plots, P values were calculated using an F -test with
+the null hypothesis that the slope is zero.
+
+Full size image []
+
+Fig. 4: Extensive cell–cell interactions in WAT and associations with
+human disease traits.
+
+Analysis of the mouse data yielded similar results, as HFD increased the
+intensity of ligand–receptor pair expression, with the most prominent
+interactions again occurring between non-immune cell types, especially
+between ASPCs and adipocytes, pericytes and SMCs (Extended Data Fig. 13c
+). Of note, adipose niche interactions were only moderately conserved
+between mouse and human (Extended Data Fig. 13d ). Interactions between
+WAT cell types include several that have been studied, such as the
+effect of the adipokine leptin on endothelial cells via LEPR ⁴⁰ , and
+the actions of TGF-β1 on adipose fibrosis via its receptor TGF-βR1 ³³ .
+The majority of these interactions, however, are unstudied in the
+context of WAT biology.
+
+WAT cell types and human disease
+
+Adiposity is associated with a wide range of metabolic diseases and
+traits, and GWAS studies have suggested a specific link between WAT and
+coronary artery disease, BMI-adjusted type 2 diabetes (T2D),
+dyslipidemia, and BMI-adjusted WHR ^(41 , 42 , 43) (a measure of body
+fat distribution). To determine which specific cell types in WAT are
+likely to mediate these associations, we used CELLECT, a method for
+integrating scRNA-seq and sNuc-seq data with GWAS ⁴⁴ . As expected, type
+1 diabetes (T1D) was significantly associated with B and T lymphocytes
+and NK cells, consistent with the known autoimmune basis of that disease
+(Fig. 4c ). No WAT cell type was associated with BMI, as expected given
+the strong neuronal basis of body weight regulation ⁴⁵ . The strongest
+phenotypic association for white adipocytes was with BMI-adjusted WHR,
+and associations approaching significance were also noted between
+adipocytes and high-density lipoprotein and BMI-adjusted T2D (Fig. 4c ,
+Supplementary Table 7 ).
+
+All adipocyte subpopulations were significantly associated with WHR
+(Fig. 4d ), so we looked for genes responsible for the association with
+WHR that lack specificity for any particular adipocyte subpopulation.
+One such gene is PPARG , which is highly expressed in all adipocytes
+(Extended Data Fig. 14a ). Data from the METSIM cohort indicates a
+strong inverse relationship between WHR and PPARG in whole WAT (Extended
+Data Fig. 14b ). Unfortunately, WHR was not recorded in the cohort used
+to generate our floated human adipocytes. WHR is, however, highly
+correlated with homeostatic model assessment for insulin resistance ¹¹
+(HOMA-IR), and we found that PPARG expression showed a strong inverse
+relationship with HOMA-IR in both the METSIM cohort and in our floated
+adipocytes (Extended Data Fig. 14c, d ). Furthermore, SNPs in the PPARG
+gene that are associated with BMI-adjusted WHR ³⁰ are also significantly
+associated with PPARG mRNA and HOMA-IR in our floated adipocyte cohort
+(Extended Data Fig. 14e–h ).
+
+Adipocytes were also the cell type most likely to mediate the
+association of WAT with T2D, with the strongest association specifically
+with hAd7 (Fig. 4d ). To further investigate the association between
+hAd7 and T2D, we plotted the abundance of hAd7 as a function of HOMA-IR
+in our deconvolved floated adipocyte data. This revealed that hAd7 shows
+significant inverse correlation with insulin resistance (Fig. 4e ). We
+then searched for specific hAd7 marker genes that exhibit this same
+relationship with HOMA-IR, and identified several (Fig. 4f, g ). Of
+note, AGMO (also called TMEM195 ) has emerged as a candidate locus in
+T2D GWAS ^(46 , 47) . Taken together, our data suggest that hAd7 may
+have an outsized influence on the risk of T2D, despite representing only
+about 1% of human adipocytes.
+
+Additionally, although adipocytes did not meet genome-wide significance
+for an association with low-density lipoprotein (LDL), we found a
+near-significant relationship between LDL and hAd1, and to a lesser
+extent, hAd4 (Fig. 4c, d ). Several hAd1- and hAd4-selective genes
+showed a strong positive relationship with LDL in our floated adipocyte
+cohort (Extended Data Fig. 14i, j )
+
+We also performed CELLECT using the mouse data and noted associations
+between BMI-adjusted WHR and mouse adipocytes and pre-adipocytes (
+Extended Data Fig. 14k–m ). This suggests that WHR may be determined in
+large part by alterations in adipocyte differentiation, a hypothesis
+consistent with the PPARG data above, and with independent studies of
+different WHR genes ⁴⁸ . High-density lipoprotein and triglyceride are
+also associated with mouse white adipocyte gene expression (Extended
+Data Fig. 14k–m ).
+
+Discussion
+
+Here we present a comprehensive atlas of human and mouse WAT across
+depot and body mass. Our analysis reveals a rich array of cell types,
+including blood and lymphatic vascular cells, immune cells, and ASPCs,
+in addition to adipocytes. These cell types are grossly similar across
+species, but differ more profoundly when cellular subpopulations are
+explored. It is tempting to attribute these subpopulation differences to
+divergence across 65 million years of evolution, but other factors also
+need to be considered. For example, the human samples were collected
+after a fast, whereas the mice were collected after ad libitum feeding,
+which might be expected to cause some differences in cell state related
+to insulin signalling or related pathways.
+
+Overall, our data highlight a central role for adipocytes in the local
+regulation of the adipose depot as well as in systemic physiology. The
+single-cell resolution of our dataset enables the identification of
+heterogeneity that cannot be appreciated by bulk RNA sequencing, such as
+a potentially visceral thermogenic subpopulation (hAd6) and a rare
+subpopulation associated with T2DM (hAd7). We additionally provide a
+framework for mouse–human comparison in studies of adipose tissue that
+will be an important resource for groups hoping to translate mouse
+findings to human treatments. These data provide a lens of unprecedented
+acuity that better informs our understanding of WAT biology and enables
+a deeper exploration of the role of adipose tissue in health and
+disease.
+
+Methods
+
+Collection of human adipose tissue samples
+
+Drop-seq and floated adipocyte bulk RNA-seq
+
+Subcutaneous adipose tissue was collected under Beth Israel Deaconess
+Medical Center Committee on Clinical Investigations IRB 2011P000079.
+Potential subjects were recruited in a consecutive fashion, as
+scheduling permitted, from the plastic surgery operating room rosters at
+Beth Israel Deaconess Medical Center. Male and female subjects over the
+age of 18 undergoing elective plastic surgery procedures and free of
+other acute medical conditions were included and provided written
+informed consent preoperatively. Excess adipose tissue from the surgical
+site was collected at the discretion of the surgeon during the normal
+course of the procedure. Subjects with a diagnosis of diabetes, or
+taking insulin-sensitizing medications such as thiazolidinediones or
+metformin, chromatin-modifying enzymes such as valproic acid,
+anti-retroviral medications, or drugs known to induce insulin resistance
+such as mTOR inhibitors or systemic steroid medications, were excluded.
+
+sNuc-Seq
+
+Subcutaneous and visceral adipose tissue was collected under BIDMC
+Committee on Clinical Investigations IRB 2011P000079 and University of
+Pittsburgh Medical Center STUDY 19010309. At BIDMC, potential subjects
+were recruited in a consecutive fashion, as scheduling permitted, from
+the gynecological, vascular, and general surgery rosters. Male and
+female subjects over the age of 18 undergoing plastic surgery
+(panniculectomy, thighplasty or deep inferior epigastric perforators),
+gynecological surgery (total abdominal hysterectomy and bilateral
+salpingo-oophorectomy) or general surgery (cholecystectomy (CCY) or
+colon polyp surgery) and free of other acute medical conditions were
+included and provided written informed consent preoperatively. Excess
+adipose tissue from the surgical site was collected at the discretion of
+the surgeon during the normal course of the procedure. The exclusion
+criteria were any subjects taking thiazolidinediones,
+chromatin-modifying enzymes such as valproic acid, anti-retroviral
+medications, and drugs known to induce insulin resistance such as mTOR
+inhibitors or systemic steroid medications. At UPMC, inclusion criteria
+were patients receiving bariatric surgery (vertical sleeve gastrectomy
+or roux en Y gastric bypass) or lean controls (hernia or CCY surgeries)
+ages 21–60, exclusion criteria were diagnosis of diabetes (Type 1 or
+Type 2), pregnancy, alcohol or drug addiction, bleeding or clotting
+abnormality, or inflammatory abdominal disease. All patients provided
+written informed consent preoperatively. Excess adipose tissue from the
+surgical site was collected at the discretion of the surgeon during the
+normal course of the procedure. 200–500 mg samples were flash frozen
+immediately after collection for downstream processing.
+
+Mouse adipose tissue samples
+
+All animal experiments were performed under a protocol approved by the
+BIDMC Institutional Animal Care and Use Committee. Male C57Bl/6J
+16-week-old HFD-fed (JAX 380050) and chow-fed (JAX 380056) mice were
+obtained from The Jackson Laboratory and maintained on 60% HFD (Research
+Diets, D12492) or chow diet (8664 Harlan Teklad, 6.4% wt/wt fat),
+respectively, for three weeks before sacrifice at 19 weeks. Female
+6-week-old chow fed C57Bl/6J mice (JAX 380056) were maintained on 60%
+HFD for 13 weeks before sacrifice at 19 weeks. Mice were maintained
+under a 12 h light/12 h dark cycle at constant temperature (23 °C) and
+humidity in the range of 30%–70% with free access to food and water.
+There were no calculations performed to determine sample size. Animals
+were not randomized and researchers were not blinded to the diet of the
+animal due to the nature of the study. During dissection, to avoid
+contamination by cells from the inguinal lymph node, we excised the node
+with a fairly wide margin, possibly de-enriching beige adipocytes from
+our samples ⁴⁹ .
+
+Mature human adipocyte sample preparation
+
+Purification of mature human adipocytes
+
+Whole tissue subcutaneous adipose specimens were freshly collected from
+the operating room. Skin was removed, and adipose tissue was cut into 1-
+to 2-inch pieces and rinsed thoroughly with 37 °C PBS to remove blood.
+Cleaned adipose tissue pieces were quickly minced in an electric grinder
+with 3/16-inch hole plate, and 400 ml of sample was placed in a 2-liter
+wide-mouthed Erlenmeyer culture flask with 100 ml of freshly prepared
+blendzyme (Roche Liberase TM, research grade, cat. no. 05401127001, in
+PBS, at a ratio of 6.25 mg per 50 ml) and shaken in a 37 °C shaking
+incubator at 120 r.p.m. for 15–20 min to digest until the sample
+appeared uniform. Digestion was stopped with 100 ml of freshly made KRB
+(5.5 mM glucose, 137 mM NaCl, 15 mM HEPES, 5 mM KCl, 1.25 mM CaCl ₂ ,
+0.44 mM KH ₂ PO ₄ , 0.34 mM Na ₂ HPO ₄ and 0.8 mM MgSO ₄ ), supplemented
+with 2% BSA. Digested tissue was filtered through a 300 μM sieve and
+washed with KRB/albumin and flow through until only connective tissue
+remained. Samples were centrifuged at 233 g for 5 min at room
+temperature, clear lipid was later removed, and floated adipocyte
+supernatant was collected, divided into aliquots and flash-frozen in
+liquid nitrogen.
+
+Sample selection and Bulk-RNA-seq library construction
+
+Fasting serum was collected and insulin, glucose, free fatty acids, and
+a lipid panel were measured by Labcorp. BMI measures were derived from
+electronic medical records and confirmed by self-reporting, and measures
+of insulin resistance, the homeostasis model assessment-estimated
+insulin resistance index (HOMA-IR) and revised quantitative insulin
+sensitivity check index (QUICKI) were calculated ^(50 , 51) . Female
+subjects in the first and fourth quartiles for either HOMA-IR or QUICKI
+and matched for age and BMI were processed for RNA-seq.
+
+Total RNA from about 400 μl of thawed floated adipocytes was isolated in
+TRIzol reagent (Invitrogen) according to the manufacturer’s
+instructions. For RNA-seq library construction, mRNA was purified from
+100 ng of total RNA by using a Ribo-Zero rRNA removal kit (Epicentre) to
+deplete ribosomal RNA and convert into double-stranded complementary DNA
+by using an NEBNext mRNA Second Strand Synthesis Module (E6111L). cDNA
+was subsequently tagmented and amplified for 12 cycles by using a
+Nextera XT DNA Library Preparation Kit (Illumina FC-131). Sequencing
+libraries were analysed with Qubit and Agilent Bioanalyzer, pooled at a
+final loading concentration of 1.8 pM and sequenced on a NextSeq500.
+
+Single-cell and single-nucleus sample preparation and processing
+
+SVF isolation and Drop-seq
+
+Adipose tissue samples were collected and processed as above. After
+removal of floated adipocytes, remaining supernatant was aspirated and
+the remaining pelleted stromal vascular fraction (SVF)was combined from
+multiple tubes. The combined SVF was washed 2 times with 50 ml cold PBS
+with 233 g for 5 min centrifugation between washes. Erythrocytes were
+depleted with two rounds of 25 ml. ACK lysing buffer (Gibco A1049201)
+exposure (5 min at RT followed by 233 g × 5 min centrifugation).
+Remaining SVF pellet was further washed two times with 50 ml cold PBS
+prior to counting on a haematocytometer and loading onto Drop-seq
+microfluidic devices. Drop-seq was performed as described ⁵² , with the
+following modifications: first, flow rates of 2.1 ml h ⁻¹ were used for
+each aqueous suspension and 12 ml h ⁻¹ for the oil. Second, libraries
+were sequenced on the Illumina NextSeq500, using between 1.6–1.7 pM in a
+volume of 1.2 ml HT1 and 3 ml of 0.3 μM Read1CustSeqB
+(GCCTGTCCGCGGAAGCAGTGGTATCAACGCAGAGTAC) using a 20 × 8 × 60 read
+structure.
+
+sNuc-seq
+
+Nuclei were isolated from frozen mouse and human adipose tissue samples
+for 10x snRNA-seq using a slightly modified approach to what was
+previously described ^(53 , 54 , 55) . Samples were kept frozen on dry
+ice until immediately before nuclei isolation, and all sample handling
+steps were performed on ice. Each flash-frozen adipose tissue sample was
+placed into a gentleMACS C tube (Miltenyi Biotec) with 2 ml freshly
+prepared TST buffer (0.03% Tween 20 (Bio-Rad), 0.01% Molecular Grade BSA
+(New England Biolabs), 146 mM NaCl (ThermoFisher Scientific), 1 mM CaCl
+₂ (VWR International), 21 mM MgCl ₂ (Sigma Aldrich), and 10 mM Tris-Hcl
+pH 7.5 (ThermoFisher Scientific) in Ultrapure water (ThermoFisher
+Scientific)) with or without 0.2 U µl ⁻¹ of Protector RNase Inhibitor
+(Sigma Aldrich). gentleMACS C tubes were then placed on the gentleMACS
+Dissociator (Miltenyi Biotec) and tissue was dissociated by running the
+program mr_adipose_01 twice, and then incubated on ice for 10 min.
+Lysate was passed through a 40 µm nylon filter (CellTreat) and collected
+into a 50 ml conical tube (Corning). Filter was rinsed with 3 ml of
+freshly prepared ST buffer buffer (146 mM NaCl, 1 mM CaCl ₂ , 21 mM MgCl
+₂ ; 10 mM Tris-Hcl pH 7.5) with or without 0.2 U µl ⁻¹ RNase Inhibitor,
+and collected into the same tube. Flow-through was centrifuged at 500 g
+for 5 min at 4 °C with brake set to low. Following centrifugation,
+supernatant was removed, and the nuclear pellet was resuspended in
+50–200 µl PBS pH 7.4 (ThermoFisher Scientific) with 0.02% BSA, with or
+without 0.2 U µl ⁻¹ RNase inhibitor. In order to reduce ambient mRNA,
+the nuclear pellets of some samples were washed 1–3 times with 5 ml PBS,
+0.02% BSA before final resuspension. An aliquot of nuclei from each
+sample was stained with NucBlue (Thermofisher Scientific), counted in a
+haemocytometer using fluorescence to identify intact nuclei, and then
+immediately loaded on the 10x Chromium controller (10x Genomics)
+according to the manufacturer’s protocol.
+
+For each sample, 10,000–16,500 nuclei were loaded in one channel of a
+Chromium Chip (10x Genomics). The Single Cell 3′ v3.1 chemistry was used
+to process all samples. cDNA and gene expression libraries were
+generated according to the manufacturer’s instructions (10x Genomics).
+cDNA and gene expression library fragment sizes were assessed with a DNA
+High Sensitivity Bioanalyzer Chip (Agilent). cDNA and gene expression
+libraries were quantified using the Qubit dsDNA High Sensitivity assay
+kit (ThermoFisher Scientific). Gene expression libraries were
+multiplexed and sequenced on the Nextseq 500 (Illumina) with a 75-cycle
+kit and the following read structure: Read 1: 28 cycles, Read 2: 55
+cycles, Index Read 1: 8 cycles.
+
+Public datasets
+
+Publicly available datasets and databases used were the following:
+METSIM RNA-seq data from Raulerson et al. ¹³ ( GSE135134 ); single-cell
+ASPC data from Burl et al. ⁴ ( SRP145475 ), Hepler et al. ⁶ ( GSE111588
+), Merrick et al. ⁵ ( GSE128889 ), Sárvári et al. ⁹ ( GSE160729 ), and
+Schwalie et al. ³ (E-MTAB-6677); human assembly GRCh38 and GENCODE
+annotation 27 ( https://www.gencodegenes.org/human/release_27.html );
+mouse assembly GRCm38 and GENCODE annotation M16 (
+https://www.gencodegenes.org/mouse/release_M16.html ).
+
+Sequencing, read alignments, and quality control
+
+Single-cell and single-nucleus RNA-seq data analysis
+
+Raw sequencing reads were demultiplexed to FASTQ format files using
+bcl2fastq (Illumina; version 2.20.0). Digital expression matrices were
+generated from the FASTQ files using the Drop-Seq tools (
+https://github.com/broadinstitute/Drop-seq , version 2.4.0) pipeline,
+with appropriate adjustments made to the default program parameters to
+account for the different read-structures in the scRNA Drop-Seq data and
+sNuc 10x data. Reads from mouse and human were aligned with STAR ⁵⁶
+(version 2.7.3) against the GRCm38 and GRCh38 genome assemblies,
+respectively. Gene counts were obtained, on a per-droplet basis, by
+summarizing the unique read alignments across exons and introns in
+appropriate GENCODE annotations (release 16 of the mouse annotation and
+release 27 of the human annotation). In order to adjust for downstream
+effects of ambient RNA expression within mouse nuclei (hereafter
+“cells”), we used CellBender ⁵⁷ (version 0.2.0) to remove counts due to
+ambient RNA molecules from the count matrices and estimate the true
+cells. We also used CellBender to distinguish droplets containing cells
+from droplets containing only ambient RNA, by selecting droplets
+with >50% posterior probability of containing a cell. We compared the
+true cell estimation obtained using CellBender against the same using
+the DropletUtils software package ⁵⁸ , which estimates ambient RNA
+expression but does not remove any ambient counts, keeping only the
+cells that were marked as not ambient by both algorithms. To address
+ambient RNA in the human sNuc data, we calculated spliced and unspliced
+RNA content in each cell, because nuclei have a high unspliced RNA
+content, a high percentage of spliced RNA indicates a high ambient RNA
+content. We therefore removed sNuc-seq cells containing over 75% spliced
+RNA. All samples were assessed for doublet content using scrublet ⁵⁹
+version 0.2.1, and cells called as doublets were removed before further
+analysis. All cells were further filtered to have greater than 400
+unique molecular identifiers (UMIs) with <10% of UMIs from mitochondrial
+genes. Genes were filtered such that only genes detected in two or more
+cells were retained. For the human data, the median number of UMIs
+detected per cell was 2,559 and the median number of genes detected per
+cell was 1,524. For the mouse data, the median number of UMIs detected
+per cell was 2,291 and the median number of genes detected per cell was
+1,369.
+
+Bulk RNA-seq analysis
+
+Raw sequencing reads were demultiplexed by using bcl2fastq (Illumina).
+Salmon ⁶⁰ (version 1.1.0) was used to simultaneously map and quantify
+transcript abundances of hg19 genes annotated by release 19 of the
+GENCODE project’s human reference. Salmon was run using “full” selective
+alignment (SAF) with mapping validation as described previously ⁶¹ .
+Gene counts were summarized from transcript abundances using the
+tximport package for R ⁶² .
+
+Integration, clustering, subclustering and annotation
+
+Integration, clustering and subclustering analysis were performed using
+Seurat 4.0.0 ⁶³ . The gene counts were normalized using SCTransform ⁶⁴ ,
+and regressed on mitochondrial read percentage, ribosomal read
+percentage, and cell cycle score as determined by Seurat. In order to
+avoid smoothing over depot differences, for integration human and mouse
+data were grouped by ‘individual’, that is, if both subcutaneous and
+visceral adipose tissue for an individual human or mouse were available,
+they were pooled together during this step. Individuals were integrated
+with reciprocal principal components analysis (PCA), using individuals
+that had both subcutaneous and visceral samples as references. As a
+result, the human and mouse references were comprised exclusively from
+the sNuc-seq cohort. To integrate, references were integrated together,
+then the remaining samples— sNuc-seq individuals with only subcutaneous
+data as well as all Drop-seq samples—were mapped to the reference. For
+clustering, 5,000 variable genes were used, and ribosomal and
+mitochondrial genes were removed from the variable gene set before
+running PCA and calculating clusters using a Louvain algorithm,
+40 principal components, and a resolution of 0.5. Clusters were
+identified as adipocytes, preadipocytes, mesothelial cells, vascular
+cells, or immune cells using marker genes, subset into individual
+objects, and re-integrated using the above method. Samples with fewer
+than 50 cells in the subset were removed before re-integration. This led
+to samples having artificially fewer cells in some instances—for example
+some Drop-seq samples had cells that clustered with adipocytes, but
+these cells were removed in subclustering because the small numbers of
+cells introduced too much variability into the integration.
+Subclustering was performed using a range of variable genes
+(1,000–2,000), PCs (10–40) and resolutions (0.2–0.6). Markers were
+calculated using a non-parametric Wilcoxon rank sum test with P values
+adjusted using Bonferroni correction (Supplementary Tables 1 , 2 ), and
+clusters were evaluated based on the distinctness of called markers to
+determine the final subclustering conditions. In the subclustered
+objects, we removed clusters that appeared to represent doublets based
+on the score assigned by scrublet ⁵⁹ , or that appeared to be driven by
+high ambient RNA content as determined by percentage of mitochondrial
+genes and spliced/unspliced RNA ratio. The remaining clusters were
+annotated based on marker gene expression. In some cases, smaller
+subclusters (T and NK cells, B cells, monocytes/neutrophils) were
+further subset and PCA and clustering analysis but not integration was
+re-run in order to assign clusters. After subcluster annotation,
+identities were mapped back onto the original object and cells that were
+removed from the subclustered objects were similarly removed from the
+all-cell object.
+
+Deconvolution of bulk RNA-seq data
+
+Bulk RNA sequencing data for subcutaneous adipose tissue from the METSIM
+cohort were obtained as described previously ¹³ . Only individuals with
+available metabolic phenotyping data were used for the deconvolution
+analysis. Bulk RNA sequencing data for floated human adipocytes were
+obtained described above. Deconvolution analysis was performed using
+MuSiC ¹² (version 0.1.1) with human sNuc subcutaneous all cell or
+adipocyte data as reference. Marker genes used for deconvolution can be
+found in Supplementary Table 1 .
+
+Comparison between mouse and human datasets
+
+Mapping of mouse cells onto human clusters was performed using Seurat
+multimodal reference mapping ⁶⁵ . To run, for the all-cell and each
+subset, the mouse data were prepared by extracting the counts matrix
+from the mouse sNuc object and mapping the mouse gene names to their
+human orthologs using a database of ortholog mappings from Mouse Genome
+Informatics ( http://www.informatics.jax.org/homology.shtml ). In the
+case of multi-mapping, the first ortholog pair was used. The mouse
+object was then split by sample and mapped onto the sNuc-seq data from
+the matching human all-cell or subset object using the RNA assay and PCA
+reduction.
+
+Integration of ASPCs from this and other studies
+
+Data was obtained from Burl et al. ⁴ (SRP145475), Hepler et al. ⁶
+(GSE111588), Merrick et al. ⁵ (GSE128889), Sárvári et al. ⁹ (GSE160729),
+and Schwalie et al. ³ (E-MTAB-6677); processed data, metadata, and/or
+cell type designations were obtained from the authors when necessary.
+Datasets were subset to contain only ASPCs, grouped by individual animal
+or experiment when possible or by laboratory when not, and integrated
+with the data from this paper (grouped by animal) using RPCA integration
+without references with 1,500 variable genes. The UMAP reduction was
+calculated using the top 20 PCs and ASPCs were grouped by cell type
+annotations from their original papers for analysis.
+
+Immunohistochemistry
+
+Subcutaneous (abdominal) and omental adipose tissue biopsies belonging
+to lean and obese women (GRIA4: subcutaneous, 5 lean and 5 obese
+individuals; PGAP1: subcutaneous, 5 lean, 4 obese, visceral 3 lean, 4
+obese; EBF2: omental, 3 lean and 4 obese individuals; AGMO:
+subcutaneous, 4 lean and 4 obese individuals, for all experiments two
+slides per individual for GRIA4, EBF2, AGMO, one slide per individual
+for PGAP1) were fixed (overnight in 4% paraformaldehyde at 4 °C,
+dehydrated, paraffin embedded and sectioned (4 μm thick). The following
+primary antibodies and respective dilution were used: GRIA4, 1:200,
+23350-1-AP, Proteintech; PGAP1, 1:400, Cat. #55392-1-AP, Proteintech
+EBF2, 1:1000, AF7006, R&D systems; AGMO (TMEM195) 1:100, orb395684,
+Biorbyt. In brief, after rinsing in PBS, tissue slices were blocked with
+3% normal goat serum and incubated with the primary antibody in PBS,
+overnight at 4 °C. After a thorough rinse in PBS, sections were
+incubated in 1:200 v/v biotinylated secondary antibody solution for
+30 min (Invitrogen), rinsed in PBS and incubated in
+avidin-biotin-peroxidase complex (ABC Standard, Vector Laboratories),
+washed several times in PBS and lastly incubated in
+3,3′-diaminobenzidine tetrahydrochloride (0.05% in 0.05 M Tris with
+0.03% H ₂ O ₂ ; 5 min). After immunohistochemical staining, sections
+were counterstained with hematoxylin, dehydrated in ethanol, cleared in
+xylene and covered with coverslip using Eukitt (Merck). All observations
+were performed using Nikon Eclipse E800 light microscope.
+
+Immunofluorescence microscopy of mature human adipocytes
+
+Adipocyte immunofluorescence protocol was adapted from Sárvári et al ⁹ .
+Abdominal subcutaneous adipose tissue was collected from two adult
+female human subjects (BMI 24.9 and 40.3) as above and placed on ice.
+Tissue was minced and digested with 1 mg ml ⁻¹ type II collagenase
+(Sigma-Aldrich, C6885) in Hanks’ balanced salt solution supplemented
+with 0.5% fatty acid-free BSA (Sigma-Aldrich, A6003) at 37° in a water
+bath with constant shaking at 250 rpm. The cell suspension was filtered
+through a 250 µM nylon mesh strainer (Thermo, 87791) and washed three
+times with Krebs–Ringer bicarbonate buffer containing 1% fatty acid-free
+BSA. All washes throughout this protocol were performed without
+centrifugation to minimize adipocyte damage and loss; cell suspension
+was maintained upright for at least 5 min to allow mature adipocytes to
+float, and infranatant was removed with a needle and syringe. The
+floating adipocytes were fixed with 2% PFA and 1% sucrose in PBS for
+30 min with constant rotation followed by three washes with 2% fatty
+acid-free BSA in PBS. Adipocytes were subsequently permeabilized with
+0.5% Triton-X (Thermo, 28314) in PBS for five minutes, and incubated
+with 2.5 µg ml ⁻¹ trypsin (Corning, 25053CI) in PBS for 10 min at 37° in
+a water bath with constant shaking. Adipocytes were then blocked with 2%
+fatty acid-free BSA in PBS for 30 min, and incubated overnight at room
+temperature with rabbit polyclonal anti-GRIA4 (Proteintech, 23350-1-AP)
+diluted 1:100 in 500 µl 2% fatty acid-free BSA in PBS with constant
+rotation. The adipocytes were then washed twice for 10 min each with
+0.1% fatty acid-free BSA and 0.05% Tween-20 (Sigma-Aldrich, P9416) in
+PBS, followed by incubation with goat anti-rabbit Alexa Fluor 546
+(Thermo, A-11035) secondary antibody diluted 1:500 in 2% fatty acid-free
+BSA for 2 h with rotation. For the final 30 min of incubation, Hoechst
+33342 (Thermo, 62249) and BODIPY 493/503 (Invitrogen, D3922) were added
+at 1:500 dilutions. Adipocytes were washed twice and resuspended in
+300 µl Fluoromount G (Southern Biotech, 0100-01) and mounted on glass
+slides with 1.4–1.6 mm concavity wells (Electron Microscopy Sciences,
+71878-03). A sample of adipocytes was also incubated as above but
+without primary antibody to verify the specificity of the secondary
+antibody. Fluorescence images were acquired using Zeiss LSM 880 Upright
+Laser Scanning Confocal Microscope with filter cubes for DAPI, GFP, and
+Rhodamine in parallel using the 20× objective and processed using Zen
+Black 2.3 software. Images were analysed and counted with ImageJ v.
+1.53 k.
+
+Ex vivo differentiation and transcriptional and high-content image-based characterization of differentiating primary human adipocyte progenitors
+
+We obtained adipocyte progenitors from subcutaneous and visceral adipose
+tissue from patients undergoing a range of abdominal laparoscopic
+surgeries (sleeve gastrectomy, fundoplication or appendectomy). The
+visceral adipose tissue is derived from the proximity of the angle of
+His and subcutaneous adipose tissue obtained from beneath the skin at
+the site of surgical incision. Additionally, human liposuction material
+was obtained. Each participant gave written informed consent before
+inclusion and the study protocol was approved by the ethics committee of
+the Technical University of Munich (study no. 5716/13). Isolation of
+AMSCs was performed as previously described ²⁸ , and cells were
+differentiated in culture over 14 days. Ex vivo differentiated
+adipocytes were stained and imaged, and features were extracted using
+LipocyteProfiler as described ²⁸ . RNA-sequencing libraries were
+prepared and sequenced and QC’ed as previously described ²⁸ . Bulk-RNA
+sequencing counts from subcutaneous and visceral samples differentiated
+for 14 days were deconvoluted using both subcutaneous and visceral
+adipocytes as reference as described above. Raw images collected during
+LipocyteProfiler analysis were randomly selected from samples predicted
+to have high or low content of hAd3, hAd5, or hAd6 adipocytes, and
+pseudocoloured and combined using Adobe Photoshop.
+
+Gene pathway analysis
+
+Analysis of enriched pathways in adipocyte markers was performed using
+clusterProfiler ⁶⁶ (version 3.16.1). Adipocyte cluster markers were
+filtered to a Benjamini–Hochberg adjusted P -value < .05, then evaluated
+for enrichment in GO biological pathways or KEGG pathways containing
+under 300 genes. All pathways and P values can be found in Supplementary
+Table 3 .
+
+Identification and analysis of EBF2 SNP association with visceral adiposity
+
+VAT, ASAT, and GFAT volumes in 40,032 individuals from the UK Biobank
+^(67 , 68) who underwent MRI imaging were quantified as described
+elsewhere ⁶⁹ . Variant rs4872393 was identified as a lead SNP associated
+with VATadj and waist-to-hip ratio from summary statistics of two prior
+studies ^(31 , 70) . Among the cohort who underwent MRI imaging, all
+variants at this locus (±250 kb around rs4872393) with minor allele
+frequency ≥ 0.005 and imputation quality (INFO) score ≥ 0.3 were
+analysed. For all 554 nominally significant ( P < 0.05) variants
+associated with VATadj in this region, a secondary conditional analysis
+testing for association with VATadj was performed controlling for
+rs4872393 carrier status ( P < 0.05/554 = 9 × 10 ⁻⁵ ). Participants were
+excluded from analysis if they met any of the following criteria: (1)
+mismatch between self-reported sex and sex chromosome count, (2) sex
+chromosome aneuploidy, (3) genotyping call rate < 0.95, or (4) were
+outliers for heterozygosity. Up to 37,641 participants were available
+for analysis. Fat depot volumes adjusted for BMI and height (‘adj’
+traits) were calculated by taking the residuals of the fat depot in
+sex-specific linear regressions against age at the time of MRI, age
+squared, BMI, and height ³¹ . Each trait was scaled to mean 0 and
+variance 1 in sex-specific groups before being combined for analysis.
+Linear regressions between a given trait-variant pair were adjusted for
+age at the time of imaging, age squared, sex, the first 10 principal
+components of genetic ancestry, genotyping array, and MRI imaging
+center. Analyses were performed using R 3.6.0 (R Project for Statistical
+Computing). EBF2 regional visualization plot was made with the LocusZoom
+online tool ⁷¹ .
+
+Calculation of pseudobulk datasets to estimate adipose innervation
+
+Approximate bulk RNA-seq datasets (pseudobulk) were obtained for
+visceral sNuc-seq samples by summing the total expression per-gene
+across all droplets containing a valid 10x cell barcode. This includes
+all cells that would normally have been removed in the single-nuclei
+studies by any of the filtering criteria (above): doublet score,
+splicing content, droplets with fewer than 400 UMIs, etc, in order to
+preserve the ambient RNA present in otherwise empty droplets. Repeated
+UMIs were still collapsed into single counts (per-droplet) before
+summing. Amounts of pan-neuronal markers were calculated using this
+pesudobulk dataset and plotted against the proportion of visceral
+populations hAd2 and hAd6 relative to total adipocytes in each sample.
+
+Prediction of cell–cell interactions
+
+Analysis of cell–cell interactions was performed using CellphoneDB ³⁸
+(version 2.0.0). For human data, sNuc-seq count data were split into
+files containing cells from subcutaneous and visceral fat from
+individuals with BMI lower than 30 or higher than 40. CellphoneDB with
+statistical analysis was run on each file separately to evaluate
+interactions in each condition. For mouse data, count data were split
+into files containing cells from the inguinal and perigonadal fat of
+chow- and HFD-fed mice. Mouse gene names were converted to human gene
+names, as above, before running CellphoneDB with statistical analysis on
+each file.
+
+Identification of candidate aetiologic cell types using CELLEX and CELLECT
+
+CELLECT and CELLEX were used to identify candidate aetiological cell
+types for a total of 23 traits. The input data for CELLECT is GWAS
+summary statistics for a given trait and cell type expression
+specificity (ES) estimates derived from single-cell RNA-seq data. The
+output is a list of prioritized candidate aetiologic cell types for a
+given trait. ES estimates were calculated using CELLEX (version 1.1),
+which computes robust estimates of ES by relying on multiple expression
+specificity measures (for further details see Timshel et al. ⁴⁴ ).
+CELLEX was run separately on the raw mouse and human (sNuc) gene
+expression matricies to compute gene expression specificities for each
+cluster based on the clustering assignment reported above. The resulting
+cell type specificity matrix was used along with multiple GWAS studies
+^(30 , 72 , 73 , 74 , 75 , 76) (Extended Data Table 3 ) as input for
+CELLECT ⁴⁴ (version 1.1), which was run with default parameters.
+Significant cell types were identified using a by-trait and by-species
+Bonferroni P -value threshold of P < 0.05.
+
+SNP analysis for bulk mRNA-seq cohort
+
+The raw GTC SNP expression data from Infinium OmniExpress-24 Kit was
+converted to VCF format using Picard version 2.21.6. The pre-processing
+of the SNP data before phasing and imputation was performed using plink2
+( https://www.cog-genomics.org/plink/2.0/ ). The SNP genotype was then
+phased and imputed using the Eagle v2.3.5 ⁷⁷ and Minimac3 ⁷⁸ packages,
+respectively. SNPs were mapped to the NCBI database using the rsnps
+package ( https://CRAN.R-project.org/package=rsnps ) and filtered to
+keep only SNPs that had a minor allele frequency > 0.05. For plotting
+gene expression against genotype, bulk RNA sequencing data were TMM
+normalized using edgeR ⁷⁹ . Statistical validation for significance was
+done using the Wilcoxon rank-sum test, which is a non-parametric test
+assuming independent samples.
+
+Statistics
+
+P -values for scatterplots were calculated using GraphPad Prism version
+8.0 and represent the results of an extra sum-of-squares F -test with
+the null hypothesis that the slope equals zero. All error bars on bar
+graphs represent standard error. Statistics on proportional composition
+graphs were calculated using scCODA ⁸⁰ (version 0.1.2) using the
+Hamiltonian Monte Carlo sampling method. The model formula used was
+‘Depot + BMI’ (human) or ‘Depot + Diet’) (mouse) for all objects in for
+which both of these covariates were present, or the individual covariate
+when only a single condition was present.
+
+Reporting summary
+
+Further information on research design is available in the Nature
+Research Reporting Summary linked to this paper.

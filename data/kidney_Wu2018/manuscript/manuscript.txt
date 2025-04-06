@@ -1,0 +1,1081 @@
+Basic Research
+
+Single-Cell Transcriptomics of a Human Kidney Allograft Biopsy Specimen Defines a Diverse Inflammatory Response
+
+Wu, Haojia ¹ ; Malone, Andrew F. ¹ ; Donnelly, Erinn L. ¹ ; Kirita,
+Yuhei ¹ ; Uchimura, Kohei ¹ ; Ramakrishnan, Sai M. ¹ ; Gaut, Joseph P. ²
+; Humphreys, Benjamin D. ^(1,3)
+
+Author Information
+
+¹ Division of Nephrology, Department of Medicine and Departments of
+
+² Pathology and Immunology and
+
+³ Developmental Biology, Washington University in St. Louis School of
+Medicine, St. Louis, Missouri
+
+H.W. and A.F.M. contributed equally to this work.
+
+Correspondence: Dr. Benjamin D. Humphreys, Division of Nephrology,
+Washington University School of Medicine, 660 South Euclid Avenue, CB
+8129, St. Louis, MO 63110. Email: humphreysbd@wustl.edu
+
+Journal of the American Society of Nephrology 29(8):p 2069-2080, August
+2018. | DOI: 10.1681/ASN.2018020125
+
+-    Free
+-    Infographic
+-   [SDC]
+-   [SDC]
+-   [SDC]
+
+Metrics
+
+Abstract
+
+Background Single-cell genomics techniques are revolutionizing our
+ability to characterize complex tissues. By contrast, the techniques
+used to analyze renal biopsy specimens have changed little over several
+decades. We tested the hypothesis that single-cell RNA-sequencing can
+comprehensively describe cell types and states in a human kidney biopsy
+specimen.
+
+Methods We generated 8746 single-cell transcriptomes from a healthy
+adult kidney and a single kidney transplant biopsy core by single-cell
+RNA-sequencing. Unsupervised clustering analysis of the biopsy specimen
+was performed to identify 16 distinct cell types, including all of the
+major immune cell types and most native kidney cell types, in this
+biopsy specimen, for which the histologic read was mixed rejection.
+
+Results Monocytes formed two subclusters representing a nonclassical
+CD16+ group and a classic CD16− group expressing dendritic cell
+maturation markers. The presence of both monocyte cell subtypes was
+validated by staining of independent transplant biopsy specimens.
+Comparison of healthy kidney epithelial transcriptomes with biopsy
+specimen counterparts identified novel segment-specific proinflammatory
+responses in rejection. Endothelial cells formed three distinct
+subclusters: resting cells and two activated endothelial cell groups.
+One activated endothelial cell group expressed Fc receptor pathway
+activation and Ig internalization genes, consistent with the pathologic
+diagnosis of antibody-mediated rejection. We mapped previously defined
+genes that associate with rejection outcomes to single cell types and
+generated a searchable online gene expression database.
+
+Conclusions We present the first step toward incorporation of
+single-cell transcriptomics into kidney biopsy specimen interpretation,
+describe a heterogeneous immune response in mixed rejection, and provide
+a searchable resource for the scientific community.
+
+[Abstract]
+
+Export
+
+The renal biopsy provides critical diagnostic and prognostic
+information, but interpretation rests on a limited number of techniques
+perfected decades ago. With few exceptions, there have been no
+substantive changes in the way that biopsies are read in 25 years.
+Recent techniques for massively parallel single-cell RNA-sequencing
+(scRNA-seq) have been developed, in which the expression of thousands of
+genes in thousands of individual cells can be measured rapidly,
+simultaneously, and quantitatively. These approaches offer an
+unprecedented opportunity to define cell types and states
+comprehensively with molecular precision. Several international efforts,
+including the Kidney Precision Medicine Project, are underway using
+these strategies and other tissue interrogation strategies to generate
+kidney cellular expression atlases in health and disease. Recently, the
+first comprehensive mouse scRNA-seq dataset was published. ^(¹)
+
+Hurdles limit application of scRNA-seq to human kidney biopsies. ^(²)
+Tissue availability is unpredictable, requiring access to equipment,
+such as fluorescence-activated sorting machines, with little notice.
+Additionally, the kidney biopsy consists of a very small sample of about
+10×2 mm, but low-input samples pose challenges in scRNA-seq, which
+relies on double-Poisson loading of cells and oligobearing beads,
+leading to loss of 95% of cellular input, for example, with the DropSeq
+approach. Despite these limitations, we hypothesized that scRNA-seq can
+be successfully applied to a single human kidney biopsy and that doing
+so would reveal novel insights about disease pathogenesis. Successful
+application of scRNA-seq to human biopsies will enable evaluation of
+this powerful tool as an adjunct to traditional renal biopsy
+interpretation.
+
+We chose to focus on renal allograft biopsies, because a substantial
+body of data has already established bulk transcriptional profiling to
+be predictive of outcomes in transplantation. These analyses, however,
+are limited, because population-averaged measurements mask single-cell
+transcriptomic heterogeneity, particularly with rare cell types.
+Moreover, rejection in all of its forms involves the complex interaction
+of many different immune and parenchymal cells. scRNA-seq is uniquely
+well suited to dissecting a complex tissue into multiple cellular
+subpopulations, because it can be easily scaled to tens of thousands of
+cells. Longitudinal clinicopathologic studies, such as the DeKAF Study,
+and bulk transcriptional analysis using microarrays suggest that
+antibody-mediated immune injury is the most common driver of late
+allograft loss. ^(^(3–5)) Our understanding of the molecular and
+cellular mechanisms of rejection, in particular, antibody-mediated
+rejection (ABMR), is poor. Analyses of allograft biopsy transcriptional
+profiles by microarray have classified patterns of gene expression that
+can define the different clinical phenotypes of allograft rejection ^(⁶)
+^(,) ^(⁷) or predict the development of IFTA using biopsy tissue. ^(⁸)
+^(,) ^(⁹) From these studies, a large number of genes have been
+described that play a role in allograft rejection and failure. Whether
+resolution of these bulk transcriptional profiles to individual cell
+types might improve our understanding of rejection or provide for better
+disease subclassification is unknown.
+
+In this study, we present the first scRNA-seq analysis of a single human
+kidney allograft biopsy. We used unsupervised computational approaches
+to identify 16 different cell types and novel cell states within
+endothelium. We compared tubular cell transcriptomes with healthy adult
+kidney and thereby, identified proinflammatory parenchymal responses in
+the rejecting kidney. We mapped genes with expression that is known to
+associate with allograft pathologies to specific kidney cell types, in
+many cases finding expression in unexpected cells. Our data prove the
+feasibility of applying comprehensive scRNA-seq to human kidney biopsies
+and identify complex immune cell infiltrates and proinflammatory
+parenchymal responses.
+
+Methods
+
+Clinical Sample
+
+The patient described in this study consented under the Washington
+University Kidney Translational Research Core (WUKTRC) Institutional
+Review Board protocol (identification 201102312). The donor and
+recipient HLA haplotypes, the clinical biopsy Banff scores, and
+follow-up clinical outcome data were received in a deidentified manner
+through the WUKTRC. The healthy kidney tissue was from a discarded human
+donor kidney where donor anonymity was preserved. The donor was a
+70-year-old white man with a serum creatinine of 1.1 mg/dl.
+
+Tissue Processing and Single-Cell Dissociation
+
+The renal biopsy was minced into small pieces with a razor blade and
+incubated at 37°C in freshly prepared dissociation buffer containing
+0.25% trypsin and 40 U/ml DNase I. Dissociated cells were harvested
+every 10 minutes by filtering the cell suspension through a 70- μ m cell
+strainer (pluriSelect) into 10% FBS buffer on ice. The residual biopsy
+tissue trapped on the cell strainer was dissociated once again with 1 ml
+dissociation buffer for 10 minutes and passed through the cell strainer
+into the same FBS buffer from the first collection. We repeated this
+dissociation procedure three times until most of the tissue had been
+dissociated into single cells (total dissociation time was 30 minutes).
+Finally, cells were collected by centrifugation at 400× g for 5 minutes,
+resuspended in inDrops cell suspension buffer (9% Optiprep), and
+strained through a 40- μ m cell mesh (pluriSelect) to further remove
+cell clumps and large fragments. Cell viability was approximately 90%
+for the biopsy used in this study as assessed by Trypan Blue staining.
+
+Single-Cell and Single-Nucleus InDrops and Bioinformatic Analysis
+
+Information is in Supplemental Material .
+
+Data Availability
+
+All relevant data have been deposited in the Gene Expression Omnibus
+under accession numbers GSE109564 and GSE114156.
+
+Results
+
+A clinically indicated kidney allograft biopsy was performed on a
+21-year-old white man with ESRD secondary to hemolytic uremic syndrome.
+He received a deceased donor kidney transplant 2 years prior (HLA
+mismatch 1A, 2B, 1DR) with thymoglobulin induction ( Supplemental Table
+1 ). At the time of the biopsy, his creatinine was 6.1 mg/dl, and it had
+increased from a baseline of 1.2 mg/dl 4 months prior. Maintenance
+immunosuppression was tacrolimus (trough levels 4–8 ng/ml), mycophenolic
+acid, and prednisone. He failed to get laboratory testing in the 4
+months before biopsy, raising suspicion of medication noncompliance.
+
+The histologic diagnosis was acute T cell–mediated rejection with plasma
+cells graded Banff 1B and acute C4d-negative ABMR ( Figure 1A ,
+Supplemental Table 2 ). Donor-specific antibodies (DSAs) were positive
+at the time of biopsy ( Supplemental Table 3 ). Treatment consisted of
+high-dose corticosteroids (750 mg methylprednisone), thymoglobulin (3.5
+mg/kg), IVIG (1 g/kg), and rituximab (200 mg). Allograft function did
+not improve, and he returned to dialysis 2 months later.
+
+[fig1]
+
+Figure 1.:
+
+Comprehensive single-cell RNA-sequencing of an allograft biopsy reveals
+diverse kidney and immune cell types. (A) Four 16-mm biopsy cores were
+subjected to cell dissociation. Cell yield varied between 44,000 and
+75,000 cells, and viability was 88%–96%. (B) Biopsy A14 was used for
+single-cell RNA-sequencing, and periodic acid–Schiff staining revealed
+diffuse inflammatory infiltrates. (C) tSNE plot of cell clusters
+identified on the basis of the expression of highly variable genes. (D)
+Heat map of all cells clustered by recursive hierarchical clustering and
+Louvain–Jaccard clustering (Seurat) showing selected marker genes for
+each population. CD, collecting duct; EC, endothelial cell; LOH (AL),
+loop of Henle, ascending limb; LOH (DL), loop of Henle, distal limb;
+Mono, monocyte; PT, proximal tubule; tSNE, t-Distributed Stochastic
+Neighbor Embedding.
+
+scRNA-seq Identifies Kidney Allograft Biopsy Cell Types
+
+In preliminary experiments, we used a 30-minute 0.25% trypsin cell
+dissociation procedure to compare the cell yield and viability from four
+human kidney biopsies. Biopsy length ranged from 10 to 15 mm, cell yield
+ranged from 44,000 to 75,000 cells, and viability was between 88% and
+96% ( Figure 1A ). We next assessed the ability of two common
+droplet-based techniques, DropSeq ^(¹⁰) and inDrops, ^(¹¹) to generate
+single-cell transcriptomes from human kidney ( Supplemental Figure 1 ).
+We consistently failed to generate libraries using DropSeq lysis buffer
+and beads, but we were successful using inDrops reagents ( Supplemental
+Figure 1B ). Of note, the DropSeq lysis buffer includes the detergent
+sarcosyl, whereas the inDrops lysis buffer includes NP40, suggesting the
+possibility that incomplete cell lysis might explain our failure to
+generate libraries using DropSeq.
+
+We enzymatically dissociated one 16G biopsy core ( Figure 1B ) into a
+single-cell suspension, performed droplet-based microfluidic cell
+separation using InDrops, generated libraries, and sequenced the cells
+to a read depth of approximately 50,000 reads per cell. A total of 4487
+cells passed our quality filters. We detected, on average, 1481
+transcripts from 827 different genes per cell. Unsupervised clustering
+analysis using Seurat identified 16 distinct cell clusters ( Figure 1C
+). A similar number of unique clusters were identified using an
+independent clustering approach ^(¹²) ( Supplemental Figure 2 ). We
+confirmed that there was no batch effect by projecting the cells from
+different tubes onto the same tSNE ( Supplemental Figure 3 ).
+
+We annotated clusters on the basis of anchor gene expression and the
+literature. We independently validated the clusters by computing Pearson
+correlation on averaged expression profiles derived from a recently
+generated mouse P1 kidney scRNA-seq dataset and a PBMC dataset from a
+healthy donor ( http://support.10xgenomics.com/single-cell/datasets ) (
+Figure 2A , Supplemental Figure 4A ). ^(¹³) We could, therefore,
+confidently annotate four tubular cell types (38.0%), three leukocyte
+populations (21.4%), four types of lymphocytes (19.8%), three stromal
+cell types (8.2%), endothelial cells (ECs; 11.5%), and an actively
+proliferating cell population (1.1%) ( Supplemental Figure 4B ). The
+expression of unique marker genes in each cell population confirmed the
+robustness of our cell type classification approach ( Figure 1D ). Full
+lists of differentially expressed genes in each cluster are provided in
+Supplemental Table 4 . A searchable database for this dataset, including
+gene expression projected onto the tSNE diagram, is available at
+http://humphreyslab.com/SingleCell/ .
+
+[fig2]
+
+Figure 2.:
+
+Annotation of leukocyte subsets. (A) Heat map indicating Pearson
+correlations of the averaged transcriptional profiles between human
+PBMCs and leukocyte clusters from the kidney biopsy. (B) Ligand-receptor
+pair expression according to cell type. Ligands are indicated in the
+left panel, and receptors are indicated in the right panel. Straight
+lines indicate ligand-receptor pairs. (C) The biopsy monocyte 1 cluster
+is most similar to CD16+ peripheral blood monocytes on the basis of
+average expression; however, these cells form different clusters on the
+basis of tSNE, indicating that they are different cell types. (D) The
+monocyte 1 cluster is differentiating toward an acquired dendritic cell
+phenotype on the basis of expression of marker genes. (E) Violin plot
+showing that FCGR3A (CD16) distinguishes monocyte 1 from monocyte 2,
+whereas FCN1 is expressed in monocyte 2 but not monocyte 1. MSR1 is
+expressed in both clusters. (F) Immunohistochemistry for FCGR3A or FCN1
+on normal, mixed rejected, or pure antibody-mediated rejection (ABMR)
+transplant kidney biopsies. Distinct monocyte 1 and 2 cell types can be
+seen. Upper and lower panels are serial sections. Scale bar, 50 μ m. (G)
+Immunofluorescence analysis of mixed rejection. FCN1+ cells (arrowheads)
+and FCGR3A+ cells (arrows) are separate cell types. CD, collecting duct;
+DAPI, 4′,6-diamidino-2-phenylindole; EC, endothelial cell; LOH (AL),
+loop of Henle, ascending limb; LOH (DL), loop of Henle, distal limb;
+Mono, monocyte; PT, proximal tubule. Scale bar, 10 μ m.
+
+Comparative Analysis Reveals Monocyte Cell-State Transition and Cell-Cell Interactions between Many Cell Types
+
+Monocyte infiltration is quantitatively associated with kidney
+dysfunction during allograft rejection. ^(¹⁴) ^(,) ^(¹⁵) By mapping our
+dataset to a published single-cell PBMC dataset, ^(¹⁶) we identified two
+distinct monocyte clusters ( Figure 2A ). Monocyte 1 strongly expressed
+FCGR3A (CD16) and was most similar to CD16-positive, proinflammatory,
+nonclassic monocytes. ^(¹⁷) Of note, CD16++ cells are strongly
+associated with allograft rejection. ^(¹⁸) ^(,) ^(¹⁹)
+
+Monocyte 2 seems to be a classic or intermediate monocyte population (
+Figure 2A , Supplemental Table 4 ). Interestingly, ABCA1 , which
+mediates sterol efflux in activated dendritic cells (DCs), ^(²⁰) ^(,)
+^(²¹) was uniquely detected in monocyte 1 ( Figure 2D ), likely
+indicating a phenotypic transition toward a DC fate by monocytes in
+allograft rejection. In support of this interpretation, direct
+comparison of monocyte 1 with the mono_CD16+_C1qa cluster from the PBMC
+dataset revealed a clear separation of monocyte 1 and the PBMC
+monocytes, although they were highly correlated on the basis of averaged
+expression ( Figure 2C ). Although both cells clusters expressed typical
+monocyte markers ( Figure 2D ), monocyte 1 from the biopsy dataset
+highly expressed two receptors ( SDC3 and ABCA1 ) ( Figure 2D ) and a
+panel of DC maturation markers, including APOE , ^(²²) PDE3A , IGKC ,
+^(²³) LGMN , and i CD83 , ^(²⁴) suggesting differentiation into DC in
+situ ( Figure 2D ).
+
+We identified unique marker genes for each monocyte cluster ( Figure 2E
+) and performed immunohistochemistry on independent transplant biopsies,
+with histologic diagnoses of no disease, mixed rejection, or ABMR. There
+was sparse interstitial staining for both the monocyte 1 marker (FCGR3A
+or CD16) and the monocyte 2 marker (FCN1) in biopsies with no disease.
+By contrast, there was strong staining for both monocyte subsets in
+mixed rejection, with lesser infiltration in pure ABMR ( Figure 2F ,
+Supplemental Figure 5 ). Costaining by immunofluorescence analysis
+confirmed that the monocyte subtypes are separate populations ( Figure
+2G ). The presence of these monocyte subsets in all six independent
+biopsies with mixed rejection or ABMR validates the use of scRNA-seq to
+identify novel cell types associated with kidney rejection.
+
+Ligand-receptor analysis revealed expression of 14 receptors (excluding
+collagens) for which we could detect expression of their cognate ligands
+( Figure 2B ). These ligands were detected in all cell types,
+emphasizing the integration of signals between multiple kidney and
+leukocyte cell types. Pericytes, fibroblasts, and myofibroblasts
+expressed the chemoki CXCL12 , which promotes lymphocyte and monocyte
+chemotaxis through its cognate receptor CXCR4 , which itself is
+expressed in T cells, monocytes, and mast cells in our dataset. Further
+evidence for parenchymal cell regulation of the inflammatory response
+comes from the observation that collecting duct epithelia express KITLG
+, also known as stem cell factor, which binds the transmembrane receptor
+encoded by KIT and is expressed on mast cells in the biopsy ( Figure 2B
+). ^(²⁵) Stem cell factor promotes mast cell migration, adhesion,
+proliferation, and survival. Mast cells transcripts correlate strongly
+with allograft biopsy fibrosis. ^(²⁶) These results suggest the
+unexpected hypothesis that collecting duct epithelia actively coordinate
+mast cell infiltration during rejection. Consistent with an important
+role for mast cells in kidney injury, a recent study showed that mast
+cell ablation in the early phases of renal injury is sufficient to
+reduce subsequent fibrosis by decreasing the inflammatory response.
+^(²⁷) ^(,) ^(²⁸)
+
+Activation of Epithelial, Endothelial, and Stromal Cells in Allograft Rejection
+
+We next compared epithelial transcriptomes from the biopsy with their
+healthy counterparts. Multiple attempts at scRNA-seq of healthy
+nephrectomy tissue failed to generate libraries; however, we were
+successful in generating adult human kidney single-nucleus
+RNA-sequencing (RNA-seq) data. We sequenced 4259 nuclei to a similar
+depth as the biopsy and identified six distinct epithelial cell
+clusters, including podocytes, proximal tubule, loop of Henle, distal
+tubule, principal cells, and intercalated cells ( Figure 3, A–C ). The
+absence of stromal or leukocyte populations presumably reflects either
+dissociation bias and/or a cell frequency below our limit of detection.
+
+[fig3]
+
+Figure 3.:
+
+Comparison of epithelia from single-cell RNA-sequencing of healthy adult
+kidney with transplant biopsy reveals activated and proinflammatory cell
+states. (A) Unsupervised clustering identified six distinct cell types
+in human adult kidney. These types include three tubular cell types
+(proximal tubule [PT], loop of Henle (LH), and distal tubule (DT), two
+collecting duct (CD) cell populations principal cells (PC) and
+intercalated cells (IC), and one podocyte population (P). (B) The heat
+map showed that putative molecular signature marks the identity of each
+cluster. (C) The violin plot further confirmed the clean expression of
+well known cell type–specific markers in each cell population, which
+makes it suitable for use in benchmarked comparison analysis. (D) tSNE
+analysis of PT, loop of Henle (LOH), and CD cells from the allograft
+biopsy and healthy adult human kidney cluster together indicating that
+cell identity is maintained despite allograft inflammation. (E)
+Collecting duct cells from the biopsy (CD-bx) coproject by tSNE onto the
+collecting duct cluster from healthy kidney (CD-h). The same is true of
+PT and LOH. (F) A dot plot comparing expression of terminal
+differentiation or inflammatory genes in epithelial cells from the
+biopsy or healthy kidney. (G) Ordering of healthy and activated PT cells
+along pseudotime using Monocle. (H) Selected transcription factors that
+are upregulated during PT activation. LOH-bx, loop of Henle from the
+biopsy; LOH-h, loop of Henle from healthy kidney; PT-bx, proximal tubule
+from the biopsy; PT-h, proximal tubule from healthy kidney.
+
+Comparison of scRNA-seq and single-nucleus RNA-seq datasets has been
+shown to be valid after normalizing to reduce method-specific
+differences. ^(²⁹) Using a computational approach allowing for
+integrated analysis of multiple datasets across techniques, ^(³⁰) we
+compared proximal tubule, loop of Henle, and collecting duct cells from
+our biopsy dataset with the same cell types from our healthy adult
+kidney single-nucleus RNA-seq dataset. Unsupervised analysis of combined
+cells from all six clusters (three healthy and three rejection) by tSNE
+resulted in the expected three cell types, indicating that rejection did
+not fundamentally alter tubular cell identity ( Figure 3D , Supplemental
+Figure 6 ). Consistent with this interpretation, projecting the source
+of cells onto this tSNE confirmed that healthy proximal tubule was
+overlaid with rejecting proximal tubule as was loop of Henle and
+collecting duct ( Figure 3E ).
+
+Despite the overall similarity between healthy and rejecting proximal
+tubule, loop of Henle, and collecting duct, differential gene analysis
+revealed downregulation of terminal differentiation markers and
+upregulation of proinflammatory genes in biopsy epithelia ( Figure 3F ).
+The proximal tubule in particular expressed proinflammatory cytokine
+genes, such as CXCL14 , which induces monocyte chemotaxis, and IL32 ,
+which induces expression of TNF α by macrophages ( Figure 3F ). ITGB6 ,
+a gene previously shown to be expressed in distal tubule of the diseased
+kidney transplant, ^(³¹) was specifically induced in the loop of Henle
+in our biopsy dataset. Within collecting duct epithelia, the top
+statistically significant canonical signature by GSEA that distinguished
+the biopsy collecting duct from the healthy collecting duct was the TGF-
+β /BMP signaling signature ( Supplemental Figure 7 ). Collectively,
+these results highlight the degree to which epithelial damage during
+rejection amplifies proinflammatory and profibrotic responses.
+
+To further investigate proximal tubule injury responses, we performed
+cell trajectory analysis by reconstituting the healthy and biopsy
+proximal tubule clusters by pseudotime analysis. We found a smooth
+transition between healthy and activated proximal tubule cells ( Figure
+3G and F ). We next asked what genes might be regulating proximal tubule
+activation by plotting differentially expressed transcription factors
+across pseudotime. Among others, we observed strong upregulation of
+Sox9, which has recently been identified as a master regulator of
+proximal tubule repair after injury, validating our approach. ^(³²)
+
+Donor ECs are the primary targets of the recipients’ humoral immune
+response in ABMR. Reclustering of the ECs revealed three separate cell
+states in rejection ( Figure 4, A and B ). Differential gene expression
+analysis suggested that the predominant EC cluster was in the resting
+state, because it expressed EC markers ( PECAM1 , VWF , and ENG ) but no
+transcripts previously associated with ABMR or angiogenesis ( Figure 4C
+). We compared average gene expression of the three clusters with
+healthy human brain and pancreas ECs, and the resting cluster correlated
+best ( Figure 4D ). A smaller subcluster expressed the angiogenic
+program, ^(³³) with several of these genes previously described in
+association with ABMR ( Figure 4, C and E ) ^(³⁴) ^(,) ^(³⁵) A third EC
+cluster expressed markers of endoplasmic stress (XBP1) and the cold
+shock gene RBM3 , suggesting cell stress and activation. This cluster
+was also actively transcribing Ig, such as has been observed in vitro (
+Figure 4C ). ^(³⁶) The src family kinases have been shown to be
+activated on ingestion of IgG. Consistent with this, FYN is highly
+expressed in this EC subcluster. ^(³⁷) Thus, these ECs maybe
+internalizing bound IgG, consistent with DSA-EC binding in ABMR. Studies
+have shown that this process occurs in EC via Fc receptor–mediated
+phagocytosis. ^(³⁸) In line with this notion, our GO analysis data
+showed that the top GO terms for this cluster were all related to
+phagocytosis ( Supplemental Figure 8 ).
+
+[fig4]
+
+Figure 4.:
+
+Analysis of endothelial cell (EC) subsets. (A) tSNE plot of endothelial
+subclusters from the kidney biopsy. (B) Heat map showing selected marker
+genes for the three EC subclusters. (C) Violin plots showing conserved
+expression of endothelial markers across all three subclusters. The
+genes SEMA3G , IGFBP3 , SERPINE2 , and AQP1 indicate activation of an
+angiogenic program. A separate EC subcluster expresses Igs as well as
+markers of endoplasmic reticulum stress (XBP1) and cold shock (RBM3).
+(D) Pearson correlation of all three EC subsets shows best correlation
+between the resting EC cluster and healthy brain or pancreas ECs. (E)
+Markers of antibody-mediated rejection are detected in the angiogenic
+cluster.
+
+We identified three separate stromal clusters ( Supplemental Table 4 ).
+Cluster 1 highly expresses RSG5 , a pericyte marker, ^(³⁹) as well as
+CACNA1C , which is expressed in a pericyte pattern. Stromal cluster 2
+expresses MoxD1 , a gene upregulated in early kidney transplant biopsies
+and associated with subsequent fibrosis. ^(⁴⁰) This cluster likely
+represents a fibroblast cell type. The third stromal cluster uniquely
+expressed COL8A1 and COL12A1 , two genes that we have previously shown
+to be strongly upregulated in kidney myofibroblasts during fibrotic
+injury, suggesting a myofibroblast identity for this cluster. ^(⁴¹) The
+interstitial expression patterns for marker genes from each stromal
+cluster are shown in Figure 5 .
+
+[fig5]
+
+Figure 5.:
+
+Marker gene localization to independent stromal cell types. The
+expression of known and new cell type discriminating genes. Violin plots
+are shown adjacent to immunohistochemistry, which is from the Human
+Protein Atlas ( https://www.proteinatlas.org/ ). Examples of pericyte-,
+fibroblast-, and myofibroblast-specific marker genes are shown. In
+addition, DCN and COL6A1 are expressed in both fibroblast and
+myofibroblast populations, whereas SPARC , BGN , and COL6A2 are
+expressed in all three stromal cell types.
+
+Antigen Expression and Antibody Production
+
+Because alloantigens play a central role in ABMR, we profiled the
+expression of HLA transcripts. Appropriately, class 2HLA transcripts
+were predominantly expressed in the antigen-presenting cell clusters (
+Supplemental Figure 9A ). Seurat analysis of our biopsy revealed two
+plasma cell clusters and one B cell cluster. The B cell cluster
+expressed few Ig genes but did express genes involved in antigen
+presentation ( CD86 ) and T cell regulation (indoleamine
+2,3-dioxygenase, IDO1 ), thus behaving like a naïve B cell. Plasma cell
+clusters highly express Ig genes; however, cluster 1 was κ -chain
+restricted, suggesting that these cells are monoclonal. Plasma cell
+cluster 2 was not light-chain restricted, and it highly expressed both
+κ - and λ -gene types ( Supplemental Figure 9B ). These clusters were
+labeled plasma cells on the basis of the correlation with a PBMC
+reference dataset; however, these cells could also represent mature B
+cells.
+
+Reassessing the Molecular Signature for Disease Classification at the Single-Cell Level
+
+We next assigned expression of genes previously associated with
+allograft pathologies to single-cell types. ^(⁴²) When we mapped
+putative EC-associated transcripts, we found that most of these genes
+were actually not specifically expressed in ECs. Some of them were even
+uniquely expressed in non-EC types, such as ENPEP (PT), ANGPT1
+(fibroblast), MGP (myofibroblast), and FOSB (mast cells) ( Figure 6A ).
+Over one half of the transcripts were expressed in multiple cell types.
+Whether disease outcome correlates best with expression of these genes
+in one cell type and not others will require further investigation. By
+contrast, the 30 genes with expression that is associated with T
+cell–mediated rejection are predominantly expressed in immune cell
+types, with the majority expressed in T cells and almost no expression
+in kidney parenchyma ( Figure 6B ). ^(⁴³) Finally, most of the
+transcripts reported to be enriched in ABMR biopsies ^(³⁵) were mainly
+detected in the EC cluster in our biopsy dataset ( Figure 6C ),
+substantiating the critical role of endothelium in the pathogenesis of
+ABMR. ^(⁴⁴)
+
+[fig6]
+
+Figure 6.:
+
+Mapping cell type expression of genes previously associated with kidney
+allograft pathology. (A) Expression of 35 endothelial cell
+(EC)–associated genes identified in bulk transcriptional profiling
+assigned to individual biopsy cell types (likelihood ratio test). A heat
+map was used to visualize the z score–normalized average gene expression
+of the candidate genes for each cell cluster identified from the biopsy
+dataset. A majority of EC-associated transcripts are not expressed in
+ECs. (B) A similar analysis performed on transcripts associated with T
+cell–mediated rejection reveals that nearly all of them are expressed in
+leukocytes and that the majority are expressed in T cells. (C) A similar
+analysis on transcripts associated with antibody-mediated rejection
+reveals that most of the genes were expressed in EC clusters. CD,
+collecting duct; LOH (AL), loop of Henle, ascending limb; LOH (DL), loop
+of Henle, distal limb; Mono, monocyte; PT, proximal tubule.
+
+Discussion
+
+This study establishes the feasibility of using scRNA-seq to
+comprehensively measure gene expression from thousands of cells from a
+single human kidney biopsy. We were able to identify 16 separate cell
+types from just under 5000 single-cell libraries. We are confident that
+future improvements of our basic workflow will enable the generation of
+ten times as many single-cell libraries from a single human biopsy,
+which should allow for much finer cell type separation and deeper
+transcript detection. Our experience suggests that standard DropSeq
+approaches are poorly suited for this application, however, potentially
+due to incomplete cell lysis as well as inefficient cell capture rates.
+By contrast, InDrops, as we used here, or the 10× Chromium system are
+much better suited to analyze single human kidney biopsy.
+
+Our study is limited to a single biopsy, and therefore, results cannot
+be generalized. However, our findings do reveal several novel insights
+into human allograft rejection. Anti-HLA antibodies are known to play
+important roles in rejection, with much attention focused on EC
+responses to antibody binding. Previous studies suggest that antibody
+binding causes a number of EC responses, including cell proliferation,
+^(^(45–48)) induction of secondary factors ( FGFR and VEGF ), ^(⁴⁹) ^(,)
+^(⁵⁰) and leukocyte recruitment (including vWF and P-selectin
+expression), ^(^(51–53)) as well as cell survival responses. Our data
+show two distinct pathologic EC responses in mixed rejection: a resting
+state and two ABMR response states consisting of an angiogenic state or
+an Ig phagocytosis state. The resting-state cells probably elicit the
+initial humoral response, because they express donor-specific HLA and
+leukocyte adhesion molecules ( PECAM1 ). Evaluating the EC responses to
+different antibodies in the setting of ABMR will help us better
+understand why DSAs confer variable degrees of pathogenicity.
+Therapeutically, the B cell-plasma cell lineage is an attractive target
+for therapy, because inhibition of alloantibody production will likely
+improve outcomes in ABMR. To this end, we identified B cells that are
+likely naïve, polyclonal plasma cells (or mature B cells), and a
+monoclonal plasma cell cluster representing the spectrum of
+antibody-producing cells.
+
+We have additionally provided the first single-nucleus RNA-seq dataset
+from healthy adult human kidney. The reasons for our failure to generate
+scRNA-seq libraries from healthy adult kidney compared with our success
+with a diseased transplant biopsy are unclear. We speculate that the
+robust inflammation present in the transplant biopsy made the tissue
+more amenable to dissociation. However, this points to a major current
+challenge and limitation in the application of single-cell technologies
+to human kidney—the difficulty of successful dissociation without RNA
+degradation and the associated problem of dissociation bias. For
+example, we could not identify podocytes in the transplant biopsy,
+whereas they were present in the healthy kidney single-nucleus dataset,
+although similar numbers of cells/nuclei were analyzed. However, the
+healthy human kidney dataset contained only epithelial cell types
+without stroma, endothelium, or leukocytes. These striking differences
+indicate that dissociation methods selectively enrich for certain cell
+types, while losing others—either because they die during dissociation
+or because they remain in clumps. Clearly, future work is needed to
+define the optimal cell/nucleus dissociation approach for human kidney.
+It is worth considering that nuclear dissociation can be carried out
+entirely on ice—which eliminates the artefactual transcriptional stress
+responses that are known to arise on incubation of kidney tissue with
+proteases at 37°C. ^(¹³)
+
+An additional important consideration is that information concerning
+cell positioning is lost with scRNA-seq. Such information may be
+critical to properly interpret results. For example, a ligand-receptor
+analysis between podocytes and intercalated cells does not make sense
+biologically, because they are positioned so far apart, whereas the same
+comparison between principle cells and intercalated cells is
+biologically meaningful. New experimental and computational tools are in
+development to address the loss of spatial context with scRNA-seq. One
+approach, fluorescent in situ sequencing, ^(⁵⁴) allows for genome-wide
+expression profiling in fixed tissues—preserving tissue architecture for
+RNA localization studies. In addition, computational approaches can
+integrate scRNA-seq data with in situ hybridization RNA expression
+patterns, allowing inference of spatial expression patterns by virtual
+in situ hybridization. ^(⁵⁵)
+
+Despite current challenges, we envision a time in the future when kidney
+biopsies are routinely sent for scRNA-seq as part of a molecular
+diagnostic workup. scRNA-seq can unmask the transcriptional
+heterogeneity that is hidden in population-averaged measurements. We
+illustrate the power of this approach by analyzing paracrine signaling
+pathways between infiltrating leukocytes and kidney parenchyma and by
+mapping predictive gene expression to single-cell types. We expect that
+application of scRNA-seq technologies to human native and allograft
+biopsies will ultimately generate clinically useful datasets to improve
+diagnostic and prognostic accuracy, enable disease subphenotyping, and
+accelerate adoption of molecular biopsy interpretation.
+
+Disclosures
+
+None.
+
+Published online ahead of print. Publication date available at
+www.jasn.org .
+
+See related perspective, “Single-Cell Sequencing the Glomerulus,
+Unraveling the Molecular Programs of Glomerular Filtration, One Cell at
+a Time,” on pages .
+
+This article contains supplemental material online at
+http://jasn.asnjournals.org/lookup/suppl/doi:10.1681/ASN.2018020125/-/DCSupplemental
+.
+
+This work was supported by National Institutes of Health/National
+Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) grant
+DK107374 (to B.D.H.), grant 173970 (to B.D.H.) from the Chan Zuckerberg
+Initiative, NIDDK Diabetic Complications Consortium ( www.diacomp.org )
+grants DK076169 (to B.D.H.) and DK115255 (to B.D.H.), and The Keller
+Family Fund at the Foundation for Barnes-Jewish Hospital (B.D.H.).
+
+References
+
+1. Park J, Shrestha R, Qiu C, Kondo A, Huang S, Werth M, et al.:
+Single-cell transcriptomics of the mouse kidney reveals potential
+cellular targets of kidney disease [published online ahead of print
+April 5, 2018]. Science doi:10.1126/science.aar213129622724
+
+-   Cited Here |
+-   Google Scholar
+
+2. Malone AF, Wu H, Humphreys BD: Bringing renal biopsy interpretation
+into the molecular age with single-cell RNA sequencing. Semin Nephrol
+38: 31–39, 201829291760
+
+-   Cited Here |
+-   Google Scholar
+
+3. Sellarés J, de Freitas DG, Mengel M, Reeve J, Einecke G, Sis B, et
+al.: Understanding the causes of kidney transplant failure: The dominant
+role of antibody-mediated rejection and nonadherence. Am J Transplant
+12: 388–399, 201222081892
+
+-   Cited Here |
+-   Google Scholar
+
+4. El-Zoghby ZM, Stegall MD, Lager DJ, Kremers WK, Amer H, Gloor JM, et
+al.: Identifying specific causes of kidney allograft loss. Am J
+Transplant 9: 527–535, 200919191769
+
+-   Cited Here |
+-   Google Scholar
+
+5. Gaston RS, Cecka JM, Kasiske BL, Fieberg AM, Leduc R, Cosio FC, et
+al.: Evidence for antibody-mediated injury as a major determinant of
+late kidney allograft failure. Transplantation 90: 68–74, 201020463643
+
+-   Cited Here |
+-   Google Scholar
+
+6. Halloran PF, Pereira AB, Chang J, Matas A, Picton M, De Freitas D, et
+al.: Potential impact of microarray diagnosis of T cell-mediated
+rejection in kidney transplants: The INTERCOM study. Am J Transplant 13:
+2352–2363, 201323915426
+
+-   Cited Here |
+-   Google Scholar
+
+7. Halloran PF, Pereira AB, Chang J, Matas A, Picton M, De Freitas D, et
+al.: Microarray diagnosis of antibody-mediated rejection in kidney
+transplant biopsies: An international prospective study (INTERCOM). Am J
+Transplant 13: 2865–2874, 201324119109
+
+-   Cited Here |
+-   Google Scholar
+
+8. O’Connell PJ, Zhang W, Menon MC, Yi Z, Schröppel B, Gallon L, et al.:
+Biopsy transcriptome expression profiling to identify kidney transplants
+at risk of chronic injury: A multicentre, prospective study. Lancet 388:
+983–993, 201627452608
+
+-   Cited Here |
+-   Google Scholar
+
+9. Modena BD, Kurian SM, Gaber LW, Waalen J, Su AI, Gelbart T, et al.:
+Gene expression in biopsies of acute rejection and interstitial
+fibrosis/tubular atrophy reveals highly shared mechanisms that correlate
+with worse long-term outcomes. Am J Transplant 16: 1982–1998,
+201626990570
+
+-   Cited Here |
+-   Google Scholar
+
+10. Macosko EZ, Basu A, Satija R, Nemesh J, Shekhar K, Goldman M, et
+al.: Highly parallel genome-wide expression profiling of individual
+cells using nanoliter droplets. Cell 161: 1202–1214, 201526000488
+
+-   Cited Here |
+-   Google Scholar
+
+11. Klein AM, Mazutis L, Akartuna I, Tallapragada N, Veres A, Li V, et
+al.: Droplet barcoding for single-cell transcriptomics applied to
+embryonic stem cells. Cell 161: 1187–1201, 201526000487
+
+-   Cited Here |
+-   Google Scholar
+
+12. Kiselev VY, Kirschner K, Schaub MT, Andrews T, Yiu A, Chandra T, et
+al.: SC3: Consensus clustering of single-cell RNA-seq data. Nat Methods
+14: 483–486, 201728346451
+
+-   Cited Here |
+-   Google Scholar
+
+13. Adam M, Potter AS, Potter SS: Psychrophilic proteases dramatically
+reduce single-cell RNA-seq artifacts: A molecular atlas of kidney
+development. Development 144: 3625–3632, 201728851704
+
+-   Cited Here |
+-   Google Scholar
+
+14. Mannon RB: Macrophages: Contributors to allograft dysfunction,
+repair, or innocent bystanders? Curr Opin Organ Transplant 17: 20–25,
+201222157320
+
+-   Cited Here |
+-   Google Scholar
+
+15. Girlanda R, Kleiner DE, Duan Z, Ford EA, Wright EC, Mannon RB, et
+al.: Monocyte infiltration and kidney allograft dysfunction during acute
+rejection. Am J Transplant 8: 600–607, 200818294156
+
+-   Cited Here |
+-   Google Scholar
+
+16. Zheng GX, Terry JM, Belgrader P, Ryvkin P, Bent ZW, Wilson R, et
+al.: Massively parallel digital transcriptional profiling of single
+cells. Nat Commun 8: 14049, 201728091601
+
+-   Cited Here |
+-   Google Scholar
+
+17. Ziegler-Heitbrock L, Ancuta P, Crowe S, Dalod M, Grau V, Hart DN, et
+al.: Nomenclature of monocytes and dendritic cells in blood. Blood 116:
+e74–e80, 201020628149
+
+-   Cited Here |
+-   Google Scholar
+
+18. van den Bosch TPP, Hilbrands LB, Kraaijeveld R, Litjens NHR, Rezaee
+F, Nieboer D, et al.: Pretransplant numbers of CD16 ⁺ monocytes as a
+novel biomarker to predict acute rejection after kidney transplantation:
+A pilot study. Am J Transplant 17: 2659–2667, 201728332287
+
+-   Cited Here |
+-   Google Scholar
+
+19. Vereyken EJ, Kraaij MD, Baan CC, Rezaee F, Weimar W, Wood KJ, et
+al.: A shift towards pro-inflammatory CD16+ monocyte subsets with
+preserved cytokine production potential after kidney transplantation.
+PLoS One 8: e70152, 201323922945
+
+-   Cited Here |
+-   Google Scholar
+
+20. Westerterp M, Gautier EL, Ganda A, Molusky MM, Wang W, Fotakis P, et
+al.: Cholesterol accumulation in dendritic cells links the inflammasome
+to acquired immunity. Cell Metab 25: 1294–1304.e6, 2017
+
+-   Cited Here |
+-   Google Scholar
+
+21. Castella B, Kopecka J, Sciancalepore P, Mandili G, Foglietta M,
+Mitro N, et al.: The ATP-binding cassette transporter A1 regulates
+phosphoantigen release and Vγ9Vδ2 T cell activation by dendritic cells.
+Nat Commun 8: 15663, 201728580927
+
+-   Cited Here |
+-   Google Scholar
+
+22. Stephens TA, Nikoopour E, Rider BJ, Leon-Ponte M, Chau TA,
+Mikolajczak S, et al.: Dendritic cell differentiation induced by a
+self-peptide derived from apolipoprotein E. J Immunol 181: 6859–6871,
+200818981105
+
+-   Cited Here |
+-   Google Scholar
+
+23. Worah K, Mathan TSM, Vu Manh TP, Keerthikumar S, Schreibelt G, Tel
+J, et al.: Proteomics of human dendritic cell subsets reveals
+subset-specific surface markers and differential inflammasome function.
+Cell Rep 16: 2953–2966, 201627626665
+
+-   Cited Here |
+-   Google Scholar
+
+24. Lechmann M, Berchtold S, Hauber J, Steinkasserer A: CD83 on
+dendritic cells: More than just a marker for maturation. Trends Immunol
+23: 273–275, 200212072358
+
+-   Cited Here |
+-   Google Scholar
+
+25. Okayama Y, Kawakami T: Development, migration, and survival of mast
+cells. Immunol Res 34: 97–115, 200616760571
+
+-   Cited Here |
+-   Google Scholar
+
+26. Mengel M, Reeve J, Bunnag S, Einecke G, Sis B, Mueller T, et al.:
+Molecular correlates of scarring in kidney transplants: The emergence of
+mast cell transcripts. Am J Transplant 9: 169–178, 200918976290
+
+-   Cited Here |
+-   Google Scholar
+
+27. Danelli L, Madjene LC, Madera-Salcedo I, Gautier G, Pacreau E, Ben
+Mkaddem S, et al.: Early phase mast cell activation determines the
+chronic outcome of renal ischemia-reperfusion injury. J Immunol 198:
+2374–2382, 2017
+
+-   Cited Here |
+-   Google Scholar
+
+28. Holdsworth SR, Summers SA: Role of mast cells in progressive renal
+diseases. J Am Soc Nephrol 19: 2254–2261, 200818776124
+
+-   Cited Here |
+-   Google Scholar
+
+29. Lake BB, Codeluppi S, Yung YC, Gao D, Chun J, Kharchenko PV, et al.:
+A comparative strategy for single-nucleus and single-cell transcriptomes
+confirms accuracy in predicted cell-type expression from nuclear RNA.
+Sci Rep 7: 6031, 201728729663
+
+-   Cited Here |
+-   Google Scholar
+
+30. Butler A, Hoffman P, Smibert P, Papalexi E, Satija R: Integrating
+single-cell transcriptomic data across different conditions,
+technologies, and species. Nat Biotechnol 36: 411–420, 201829608179
+
+-   Cited Here |
+-   Google Scholar
+
+31. Trevillian P, Paul H, Millar E, Hibberd A, Agrez MV: Alpha(v)beta(6)
+integrin expression in diseased and transplanted kidneys. Kidney Int 66:
+1423–1433, 200415458435
+
+-   Cited Here |
+-   Google Scholar
+
+32. Kumar S, Liu J, Pang P, Krautzberger AM, Reginensi A, Akiyama H, et
+al.: Sox9 activation highlights a cellular pathway of renal repair in
+the acutely injured mammalian kidney. Cell Rep 12: 1325–1338,
+201526279573
+
+-   Cited Here |
+-   Google Scholar
+
+33. Reinders ME, Rabelink TJ, Briscoe DM: Angiogenesis and endothelial
+cell repair in renal disease and allograft rejection. J Am Soc Nephrol
+17: 932–942, 200616481411
+
+-   Cited Here |
+-   Google Scholar
+
+34. Sis B, Jhangri GS, Bunnag S, Allanach K, Kaplan B, Halloran PF:
+Endothelial gene expression in kidney transplants with alloantibody
+indicates antibody-mediated damage despite lack of C4d staining. Am J
+Transplant 9: 2312–2323, 200919681822
+
+-   Cited Here |
+-   Google Scholar
+
+35. Sellarés J, Reeve J, Loupy A, Mengel M, Sis B, Skene A, et al.:
+Molecular diagnosis of antibody-mediated rejection in human kidney
+transplants. Am J Transplant 13: 971–983, 201323414212
+
+-   Cited Here |
+-   Google Scholar
+
+36. Zhao Y, Liu Y, Chen Z, Korteweg C, Gu J: Immunoglobulin g (IgG)
+expression in human umbilical cord endothelial cells. J Histochem
+Cytochem 59: 474–488, 201121430258
+
+-   Cited Here |
+-   Google Scholar
+
+37. Majeed M, Caveggion E, Lowell CA, Berton G: Role of Src kinases and
+Syk in Fcgamma receptor-mediated phagocytosis and phagosome-lysosome
+fusion. J Leukoc Biol 70: 801–811, 200111698501
+
+-   Cited Here |
+-   Google Scholar
+
+38. Goebl NA, Babbey CM, Datta-Mannan A, Witcher DR, Wroblewski VJ, Dunn
+KW: Neonatal Fc receptor mediates internalization of Fc in transfected
+human endothelial cells. Mol Biol Cell 19: 5490–5505, 200818843053
+
+-   Cited Here |
+-   Google Scholar
+
+39. He L, Vanlandewijck M, Raschperger E, Andaloussi Mäe M, Jung B,
+Lebouvier T, et al.: Analysis of the brain mural cell transcriptome. Sci
+Rep 6: 35108, 201627725773
+
+-   Cited Here |
+-   Google Scholar
+
+40. Wei C, Menon M, Zhang W, Woytovich C, Philippe N, He J, Murphy B,
+Wei C: Genomic Analysis of Gene Expression in Human Kidney Transplants
+Identifies Moxd1 as a Key Driver for Renal Fibrosis [abstract]. Am J
+Transplant 2017 17(suppl 3). Available at:
+http://atcmeetingabstracts.com/abstract/genomic-analysis-of-gene-expression-in-human-kidney-transplants-identifies-moxd1-as-a-key-driver-for-renal-fibrosis/
+. Accessed May 21, 2018
+
+-   Cited Here |
+-   Google Scholar
+
+41. Grgic I, Krautzberger AM, Hofmeister A, Lalli M, DiRocco DP, Fleig
+SV, et al.: Translational profiles of medullary myofibroblasts during
+kidney fibrosis. J Am Soc Nephrol 25: 1979–1990, 201424652793
+
+-   Cited Here |
+-   Google Scholar
+
+42. Einecke G, Sis B, Reeve J, Mengel M, Campbell PM, Hidalgo LG, et
+al.: Antibody-mediated microcirculation injury is the major cause of
+late kidney transplant failure. Am J Transplant 9: 2520–2531,
+200919843030
+
+-   Cited Here |
+-   Google Scholar
+
+43. Venner JM, Famulski KS, Badr D, Hidalgo LG, Chang J, Halloran PF:
+Molecular landscape of T cell-mediated rejection in human kidney
+transplants: Prominence of CTLA4 and PD ligands. Am J Transplant 14:
+2565–2576, 201425219326
+
+-   Cited Here |
+-   Google Scholar
+
+44. Wang S, Zhang C, Wang J, Yang C, Xu M, Rong R, et al.: Endothelial
+cells in antibody-mediated rejection of kidney transplantation:
+Pathogenesis mechanisms and therapeutic implications. J Immunol Res
+2017: 8746303, 201728255564
+
+-   Cited Here |
+-   Google Scholar
+
+45. Coupel S, Leboeuf F, Boulday G, Soulillou JP, Charreau B: RhoA
+activation mediates phosphatidylinositol 3-kinase-dependent
+proliferation of human vascular endothelial cells: An alloimmune
+mechanism of chronic allograft nephropathy. J Am Soc Nephrol 15:
+2429–2439, 200415339992
+
+-   Cited Here |
+-   Google Scholar
+
+46. Jin YP, Korin Y, Zhang X, Jindra PT, Rozengurt E, Reed EF: RNA
+interference elucidates the role of focal adhesion kinase in HLA class
+I-mediated focal adhesion complex formation and proliferation in human
+endothelial cells. J Immunol 178: 7911–7922, 2007
+
+-   Google Scholar
+
+47. Jin YP, Jindra PT, Gong KW, Lepin EJ, Reed EF: Anti-HLA class I
+antibodies activate endothelial cells and promote chronic rejection.
+Transplantation 79[Suppl]: S19–S21, 200515699739
+
+-   Google Scholar
+
+48. Jindra PT, Jin YP, Rozengurt E, Reed EF: HLA class I
+antibody-mediated endothelial cell proliferation via the mTOR pathway. J
+Immunol 180: 2357–2366, 2008
+
+-   Cited Here |
+-   Google Scholar
+
+49. Bieri M, Oroszlan M, Farkas A, Ligeti N, Bieri J, Mohacsi P:
+Anti-HLA I antibodies induce VEGF production by endothelial cells, which
+increases proliferation and paracellular permeability. Int J Biochem
+Cell Biol 41: 2422–2430, 200919577661
+
+-   Cited Here |
+-   Google Scholar
+
+50. Bian H, Harris PE, Reed EF: Ligation of HLA class I molecules on
+smooth muscle cells with anti-HLA antibodies induces tyrosine
+phosphorylation, fibroblast growth factor receptor expression and cell
+proliferation. Int Immunol 10: 1315–1323, 19989786431
+
+-   Cited Here |
+-   Google Scholar
+
+51. Lowenstein CJ, Morrell CN, Yamakuchi M: Regulation of Weibel-Palade
+body exocytosis. Trends Cardiovasc Med 15: 302–308, 200516297768
+
+-   Cited Here |
+-   Google Scholar
+
+52. Yamakuchi M, Kirkiles-Smith NC, Ferlito M, Cameron SJ, Bao C,
+Fox-Talbot K, et al.: Antibody to human leukocyte antigen triggers
+endothelial exocytosis. Proc Natl Acad Sci U S A 104: 1301–1306,
+200717229850
+
+-   Google Scholar
+
+53. Fishbein MC, Kobashigawa J: Biopsy-negative cardiac transplant
+rejection: Etiology, diagnosis, and therapy. Curr Opin Cardiol 19:
+166–169, 200415075746
+
+-   Cited Here |
+-   Google Scholar
+
+54. Lee JH, Daugharthy ER, Scheiman J, Kalhor R, Ferrante TC, Terry R,
+et al.: Fluorescent in situ sequencing (FISSEQ) of RNA for gene
+expression profiling in intact cells and tissues. Nat Protoc 10:
+442–458, 201525675209
+
+-   Cited Here |
+-   Google Scholar
+
+55. Karaiskos N, Wahle P, Alles J, Boltengagen A, Ayoub S, Kipar C, et
+al.: The Drosophila embryo at single-cell transcriptome resolution.
+Science 358: 194–199, 201728860209
+
+-   Cited Here |
+-   Google Scholar
+
+View full references list
+
+Keywords:
+
+kidney biopsy; rejection; transcriptional profiling
+
+Copyright © 2018 by the American Society of Nephrology
+
+View full article text

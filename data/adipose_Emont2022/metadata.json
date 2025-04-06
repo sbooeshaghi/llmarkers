@@ -1,0 +1,8 @@
+{
+  "doi": "https://doi.org/10.1038/s41586-022-04518-2",
+  "citation": "Emont, M.P., Jacobs, C., Essene, A.L. et al. A single-cell atlas of human and mouse white adipose tissue. Nature 603, 926–933 (2022).",
+  "tables": [
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx"
+  ],
+  "extract_text_cmd": "cat manuscript.html | pup 'div.main-content' | pandoc -f html -t plain > manuscript.txt"
+}

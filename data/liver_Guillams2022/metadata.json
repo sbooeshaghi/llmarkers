@@ -1,0 +1,8 @@
+{
+  "doi": "https://doi.org/10.1016/j.cell.2021.12.018",
+  "citation": "Guilliams, M., Bonnardel, J., Haest, B., Vanderborght, B., Wagner, C., Remmerie, A., Bujko, A., Martens, L., Thoné, T., Browaeys, R. and De Ponti, F.F., 2022. Spatial proteogenomics reveals distinct and evolutionarily conserved hepatic macrophage niches. Cell, 185(2), pp.379-396.",
+  "tables": [
+    "https://www.cell.com/cms/10.1016/j.cell.2021.12.018/attachment/8fa3e327-5cc5-4937-ad8d-0eeef0eb366a/mmc1.xlsx"
+  ],
+  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt"
+}
