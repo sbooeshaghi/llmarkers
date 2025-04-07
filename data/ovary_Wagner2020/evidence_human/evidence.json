@@ -10,7 +10,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PROGENITOR CELLS",
       "cell_type_label": "Oogonial Stem Cells (OSCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -36,7 +36,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PROGENITOR CELLS",
       "cell_type_label": "Oogonial Stem Cells (OSCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "isolation",
@@ -62,7 +62,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PROGENITOR CELLS",
       "cell_type_label": "Oogonial Stem Cells (OSCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "isolation",
@@ -88,7 +88,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PROGENITOR CELLS",
       "cell_type_label": "Oogonial Stem Cells (OSCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "isolation",
@@ -114,7 +114,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PROGENITOR CELLS",
       "cell_type_label": "Oogonial Stem Cells (OSCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -125,7 +125,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "In order to relate the findings to OSCs, we marked the cells with DDX4 antibodies (Ab) in all experiments; the single-cell mRNA sequencing (scRNA-seq) experiments were done on uncultured, unsorted cells, and sorted DDX4-Ab+ and Ab− cell fractions as well as on cultured, sorted DDX4-Ab+ and Ab− cells. The surface marker screen included DDX4 Ab as an additional marker.",
+      "source_rationale": "In order to relate the findings to OSCs, we marked the cells with DDX4 antibodies (Ab) in all experiments; the single-cell mRNA sequencing (scRNA-seq) experiments were done on uncultured, unsorted cells, and sorted DDX4-Ab+ and Ab\u2212 cell fractions as well as on cultured, sorted DDX4-Ab+ and Ab\u2212 cells. The surface marker screen included DDX4 Ab as an additional marker.",
       "source_id": "text"
     }
   },
@@ -140,7 +140,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -166,7 +166,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -192,7 +192,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -218,13 +218,13 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD3G",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000160654",
+      "feature_identifier": "ENSG00000289746",
       "feature_identifier_type": "ensembl"
     },
     "source": {
@@ -244,7 +244,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -270,7 +270,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ANTIGEN-PRESENTING CELLS",
       "cell_type_label": "antigen-presenting cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -296,7 +296,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ANTIGEN-PRESENTING CELLS",
       "cell_type_label": "antigen-presenting cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -322,7 +322,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ANTIGEN-PRESENTING CELLS",
       "cell_type_label": "antigen-presenting cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -348,7 +348,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ANTIGEN-PRESENTING CELLS",
       "cell_type_label": "antigen-presenting cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -374,7 +374,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ENDOTHELIUM",
       "cell_type_label": "endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -400,7 +400,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ENDOTHELIUM",
       "cell_type_label": "endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -426,7 +426,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GRANULOSA CELLS",
       "cell_type_label": "granulosa cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -437,7 +437,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-Müllerian hormone (AMH).",
+      "source_rationale": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-M\u00fcllerian hormone (AMH).",
       "source_id": "text"
     }
   },
@@ -452,7 +452,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GRANULOSA CELLS",
       "cell_type_label": "granulosa cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -463,7 +463,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-Müllerian hormone (AMH).",
+      "source_rationale": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-M\u00fcllerian hormone (AMH).",
       "source_id": "text"
     }
   },
@@ -478,7 +478,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -504,7 +504,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -530,7 +530,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -556,7 +556,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -582,7 +582,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -608,7 +608,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -634,7 +634,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -660,7 +660,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -686,7 +686,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -712,7 +712,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -738,7 +738,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -764,7 +764,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab- cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -775,7 +775,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "The top 25 highly expressed genes in the Ab− cells included stromal cell markers, such as DCN and PDGFRA",
+      "source_rationale": "The top 25 highly expressed genes in the Ab\u2212 cells included stromal cell markers, such as DCN and PDGFRA",
       "source_id": "text"
     }
   },
@@ -790,7 +790,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab- cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -801,7 +801,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "The top 25 highly expressed genes in the Ab− cells included stromal cell markers, such as DCN and PDGFRA",
+      "source_rationale": "The top 25 highly expressed genes in the Ab\u2212 cells included stromal cell markers, such as DCN and PDGFRA",
       "source_id": "text"
     }
   },
@@ -816,7 +816,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -827,7 +827,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab− cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
       "source_id": "text"
     }
   },
@@ -842,7 +842,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -853,7 +853,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab− cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
       "source_id": "text"
     }
   },
@@ -868,7 +868,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -879,7 +879,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab− cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
       "source_id": "text"
     }
   },
@@ -894,7 +894,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -905,7 +905,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab− cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
       "source_id": "text"
     }
   },
@@ -920,7 +920,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -931,7 +931,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab− cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
       "source_id": "text"
     }
   },
@@ -946,7 +946,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -957,7 +957,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab− cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
       "source_id": "text"
     }
   },
@@ -972,7 +972,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "DDX4-AB+ CELLS",
       "cell_type_label": "DDX4-Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -983,7 +983,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab− cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
       "source_id": "text"
     }
   },
@@ -998,7 +998,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal mitosis",
@@ -1024,7 +1024,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal mitosis",
@@ -1050,7 +1050,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal mitosis",
@@ -1076,7 +1076,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal mitosis",
@@ -1102,7 +1102,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1128,7 +1128,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1154,7 +1154,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1180,7 +1180,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1206,7 +1206,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1232,7 +1232,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1258,7 +1258,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1284,7 +1284,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1310,7 +1310,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1336,7 +1336,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1362,7 +1362,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "Fetal Germline Cells (FGCs)",
       "cell_source": "ovarian cortex",
       "cell_state": "fetal meiotic",
@@ -1388,7 +1388,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1414,7 +1414,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1440,7 +1440,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1466,7 +1466,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1492,7 +1492,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1518,7 +1518,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1544,7 +1544,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1570,7 +1570,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1596,7 +1596,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1622,7 +1622,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1648,7 +1648,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1674,7 +1674,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1700,7 +1700,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1726,7 +1726,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1752,7 +1752,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1778,7 +1778,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1804,7 +1804,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1830,7 +1830,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1856,7 +1856,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1882,7 +1882,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "IMMUNE CELLS",
       "cell_type_label": "immune cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1908,7 +1908,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GRANULOSA CELLS",
       "cell_type_label": "granulosa cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1934,7 +1934,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GRANULOSA CELLS",
       "cell_type_label": "granulosa cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1960,7 +1960,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GRANULOSA CELLS",
       "cell_type_label": "granulosa cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -1986,7 +1986,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GRANULOSA CELLS",
       "cell_type_label": "granulosa cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2012,7 +2012,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ENDOTHELIUM",
       "cell_type_label": "endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2038,7 +2038,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ENDOTHELIUM",
       "cell_type_label": "endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2064,7 +2064,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ENDOTHELIUM",
       "cell_type_label": "endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2090,7 +2090,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "ENDOTHELIUM",
       "cell_type_label": "endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2116,7 +2116,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2142,7 +2142,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2168,7 +2168,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2194,7 +2194,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2220,7 +2220,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2246,7 +2246,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2272,7 +2272,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2298,7 +2298,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2324,7 +2324,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2350,7 +2350,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocyte cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2376,7 +2376,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocyte cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2402,7 +2402,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocyte cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2428,7 +2428,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocyte cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2454,7 +2454,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocyte cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2480,7 +2480,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocyte cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2506,7 +2506,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "oocyte cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2532,7 +2532,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2558,7 +2558,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2584,7 +2584,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2610,7 +2610,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2636,7 +2636,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2662,7 +2662,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2688,7 +2688,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "PERIVASCULAR CELL",
       "cell_type_label": "perivascular cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2714,7 +2714,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2740,7 +2740,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2766,7 +2766,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2792,7 +2792,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2818,7 +2818,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2844,7 +2844,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2870,7 +2870,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "STROMAL CELLS",
       "cell_type_label": "stromal cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2896,7 +2896,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "mitotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2922,7 +2922,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "mitotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2948,7 +2948,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "mitotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -2974,7 +2974,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "mitotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3000,7 +3000,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "mitotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3026,7 +3026,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "mitotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3052,7 +3052,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "RA responsive fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3078,7 +3078,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "RA responsive fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3104,7 +3104,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "RA responsive fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3130,7 +3130,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "RA responsive fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3156,7 +3156,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "RA responsive fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3182,7 +3182,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3208,7 +3208,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3234,7 +3234,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3260,7 +3260,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3286,7 +3286,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3312,7 +3312,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3338,7 +3338,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3364,7 +3364,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3390,7 +3390,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3416,7 +3416,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3442,7 +3442,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "GERM CELLS",
       "cell_type_label": "meiotic fetal germ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3468,7 +3468,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3494,7 +3494,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3520,7 +3520,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3546,7 +3546,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3572,7 +3572,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3598,7 +3598,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "fetal oogonia",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3624,7 +3624,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3650,7 +3650,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3676,7 +3676,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3702,7 +3702,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3728,7 +3728,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
@@ -3754,7 +3754,7 @@
     },
     "derived": {
       "organism": "homo_sapiens",
-      "cell_type_id": null,
+      "cell_type_id": "OOCYTE",
       "cell_type_label": "adult oocytes",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
