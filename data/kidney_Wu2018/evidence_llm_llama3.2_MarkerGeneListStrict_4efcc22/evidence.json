@@ -1,808 +1,808 @@
 [
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FCGR3A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FCGR3A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Monocyte 1 strongly expressed FCGR3A (CD16) and was most similar to CD16-positive, proinflammatory, nonclassic monocytes.",
-            "source_id": "text"
-        }
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FCGR3A",
+      "feature_type": "gene"
     },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ABCA1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ABCA1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Interestingly, ABCA1, which mediates sterol efflux in activated dendritic cells (DCs),20,21 was uniquely detected in monocyte 1 (Figure 2D), likely indicating a phenotypic transition toward a DC fate by monocytes in allograft rejection.",
-            "source_id": "text"
-        }
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FCGR3A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000203747",
+      "feature_identifier_type": "ensembl"
     },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SDC3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SDC3",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ABCA1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ABCA1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "APOE",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "APOE",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "22PDE3A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "22PDE3A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IGKC",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IGKC",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "23LGMN",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "23LGMN",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "iCD83",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "DC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "iCD83",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FCGR3A",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FCGR3A",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "There was sparse interstitial staining for both the monocyte 1 marker (FCGR3A or CD16) and the monocyte 2 marker (FCN1) in biopsies with no disease. By contrast, there was strong staining for both monocyte subsets in mixed rejection, with lesser infiltration in pure ABMR",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CD16",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CD16",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "There was sparse interstitial staining for both the monocyte 1 marker (FCGR3A or CD16) and the monocyte 2 marker (FCN1) in biopsies with no disease. By contrast, there was strong staining for both monocyte subsets in mixed rejection, with lesser infiltration in pure ABMR",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FCN1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Monocyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FCN1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "There was sparse interstitial staining for both the monocyte 1 marker (FCGR3A or CD16) and the monocyte 2 marker (FCN1) in biopsies with no disease. By contrast, there was strong staining for both monocyte subsets in mixed rejection, with lesser infiltration in pure ABMR",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Pericytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCL12",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Pericytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCL12",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Pericytes, fibroblasts, and myofibroblasts expressed the chemoki CXCL12, which promotes lymphocyte and monocyte chemotaxis through its cognate receptor CXCR4, which itself is expressed in T cells, monocytes, and mast cells in our dataset.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "T cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCR4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "T cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCR4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Pericytes, fibroblasts, and myofibroblasts expressed the chemoki CXCL12, which promotes lymphocyte and monocyte chemotaxis through its cognate receptor CXCR4, which itself is expressed in T cells, monocytes, and mast cells in our dataset.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Monocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCR4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Monocytes",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCR4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Pericytes, fibroblasts, and myofibroblasts expressed the chemoki CXCL12, which promotes lymphocyte and monocyte chemotaxis through its cognate receptor CXCR4, which itself is expressed in T cells, monocytes, and mast cells in our dataset.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Mast cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCR4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Mast cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCR4",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Pericytes, fibroblasts, and myofibroblasts expressed the chemoki CXCL12, which promotes lymphocyte and monocyte chemotaxis through its cognate receptor CXCR4, which itself is expressed in T cells, monocytes, and mast cells in our dataset.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Collecting Duct Epithelia",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "KITLG",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Collecting Duct Epithelia",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "KITLG",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Further evidence for parenchymal cell regulation of the inflammatory response comes from the observation that collecting duct epithelia express KITLG [...]",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Proximal Tubule",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCL14",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Proximal Tubule",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CXCL14",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The proximal tubule in particular expressed proinflammatory cytokine genes, such as CXCL14, which induces monocyte chemotaxis, and IL32, which induces expression of TNF\u03b1 by macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Proximal Tubule",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IL32",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Proximal Tubule",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IL32",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The proximal tubule in particular expressed proinflammatory cytokine genes, such as CXCL14, which induces monocyte chemotaxis, and IL32, which induces expression of TNF\u03b1 by macrophages",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Loop of Henle",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ITGB6",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Loop of Henle",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ITGB6",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "ITGB6, a gene previously shown to be expressed in distal tubule of the diseased kidney transplant,31 was specifically induced in the loop of Henle in our biopsy dataset.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "EC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PECAM1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "EC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PECAM1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Differential gene expression analysis suggested that the predominant EC cluster was in the resting state, because it expressed EC markers (PECAM1, VWF, and ENG) but no transcripts previously associated with ABMR or angiogenesis",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "EC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "VWF",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "EC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "VWF",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Differential gene expression analysis suggested that the predominant EC cluster was in the resting state, because it expressed EC markers (PECAM1, VWF, and ENG) but no transcripts previously associated with ABMR or angiogenesis",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "EC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ENG",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "EC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ENG",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Differential gene expression analysis suggested that the predominant EC cluster was in the resting state, because it expressed EC markers (PECAM1, VWF, and ENG) but no transcripts previously associated with ABMR or angiogenesis",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Endoplasmic Stress Response",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "XBP1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Endoplasmic Stress Response",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "XBP1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "A third EC cluster expressed markers of endoplasmic stress (XBP1) and the cold shock gene RBM3, suggesting cell stress and activation.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Cold Shock Response",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "RBM3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Cold Shock Response",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "RBM3",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "A third EC cluster expressed markers of endoplasmic stress (XBP1) and the cold shock gene RBM3, suggesting cell stress and activation.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "EC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FYN",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "EC",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FYN",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Consistent with this, FYN is highly expressed in this EC subcluster.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Pericyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "RGS5",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Pericyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "RGS5",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Cluster 1 highly expresses RGS5, a pericyte marker,39 as well as CACNA1C, which is expressed in a pericyte pattern.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Pericyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CACNA1C",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Pericyte",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "CACNA1C",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Cluster 1 highly expresses RGS5, a pericyte marker,39 as well as CACNA1C, which is expressed in a pericyte pattern.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "stromal cluster 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "MoxD1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "stromal cluster 2",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "MoxD1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "Stromal cluster 2 expresses MoxD1, a gene upregulated in early kidney transplant biopsies and associated with subsequent fibrosis.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Myofibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL8A1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Myofibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL8A1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The third stromal cluster uniquely expressed COL8A1 and COL12A1, two genes that we have previously shown to be strongly upregulated in kidney myofibroblasts during fibrotic injury, suggesting a myofibroblast identity for this cluster.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Myofibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL12A1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": null,
-            "cell_type_label": "Myofibroblast",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "COL12A1",
-            "feature_type": "gene",
-            "feature_identifier": null,
-            "feature_identifier_type": null
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The third stromal cluster uniquely expressed COL8A1 and COL12A1, two genes that we have previously shown to be strongly upregulated in kidney myofibroblasts during fibrotic injury, suggesting a myofibroblast identity for this cluster.",
-            "source_id": "text"
-        }
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Monocyte 1 strongly expressed FCGR3A (CD16) and was most similar to CD16-positive, proinflammatory, nonclassic monocytes.",
+      "source_id": "text"
     }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ABCA1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ABCA1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000165029",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Interestingly, ABCA1, which mediates sterol efflux in activated dendritic cells (DCs),20,21 was uniquely detected in monocyte 1 (Figure 2D), likely indicating a phenotypic transition toward a DC fate by monocytes in allograft rejection.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SDC3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "SDC3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000162512",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ABCA1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ABCA1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000165029",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "APOE",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "APOE",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000130203",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "22PDE3A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "22PDE3A",
+      "feature_type": "gene",
+      "feature_identifier": null,
+      "feature_identifier_type": null
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "IGKC",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "IGKC",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000211592",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "23LGMN",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "23LGMN",
+      "feature_type": "gene",
+      "feature_identifier": null,
+      "feature_identifier_type": null
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "iCD83",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "iCD83",
+      "feature_type": "gene",
+      "feature_identifier": null,
+      "feature_identifier_type": null
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Although both cells clusters expressed typical monocyte markers (Figure 2D), monocyte 1 from the biopsy dataset highly expressed two receptors (SDC3 and ABCA1) (Figure 2D) and a panel of DC maturation markers, including APOE,22PDE3A, IGKC,23LGMN, and iCD83,24 suggesting differentiation into DC in situ",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FCGR3A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FCGR3A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000203747",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "There was sparse interstitial staining for both the monocyte 1 marker (FCGR3A or CD16) and the monocyte 2 marker (FCN1) in biopsies with no disease. By contrast, there was strong staining for both monocyte subsets in mixed rejection, with lesser infiltration in pure ABMR",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CD16",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CD16",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000162747",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "There was sparse interstitial staining for both the monocyte 1 marker (FCGR3A or CD16) and the monocyte 2 marker (FCN1) in biopsies with no disease. By contrast, there was strong staining for both monocyte subsets in mixed rejection, with lesser infiltration in pure ABMR",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FCN1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FCN1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000085265",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "There was sparse interstitial staining for both the monocyte 1 marker (FCGR3A or CD16) and the monocyte 2 marker (FCN1) in biopsies with no disease. By contrast, there was strong staining for both monocyte subsets in mixed rejection, with lesser infiltration in pure ABMR",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Pericytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCL12",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICYTE",
+      "cell_type_label": "Pericytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCL12",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000107562",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Pericytes, fibroblasts, and myofibroblasts expressed the chemoki CXCL12, which promotes lymphocyte and monocyte chemotaxis through its cognate receptor CXCR4, which itself is expressed in T cells, monocytes, and mast cells in our dataset.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "T cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCR4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "T cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCR4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000121966",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Pericytes, fibroblasts, and myofibroblasts expressed the chemoki CXCL12, which promotes lymphocyte and monocyte chemotaxis through its cognate receptor CXCR4, which itself is expressed in T cells, monocytes, and mast cells in our dataset.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCR4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocytes",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCR4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000121966",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Pericytes, fibroblasts, and myofibroblasts expressed the chemoki CXCL12, which promotes lymphocyte and monocyte chemotaxis through its cognate receptor CXCR4, which itself is expressed in T cells, monocytes, and mast cells in our dataset.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Mast cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCR4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MAST_CELL",
+      "cell_type_label": "Mast cells",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCR4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000121966",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Pericytes, fibroblasts, and myofibroblasts expressed the chemoki CXCL12, which promotes lymphocyte and monocyte chemotaxis through its cognate receptor CXCR4, which itself is expressed in T cells, monocytes, and mast cells in our dataset.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Collecting Duct Epithelia",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "KITLG",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "COLLECTING DUCT CELLS",
+      "cell_type_label": "Collecting Duct Epithelia",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "KITLG",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000049130",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Further evidence for parenchymal cell regulation of the inflammatory response comes from the observation that collecting duct epithelia express KITLG [...]",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Proximal Tubule",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCL14",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DISTAL TUBULE",
+      "cell_type_label": "Proximal Tubule",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CXCL14",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000145824",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The proximal tubule in particular expressed proinflammatory cytokine genes, such as CXCL14, which induces monocyte chemotaxis, and IL32, which induces expression of TNF\u03b1 by macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Proximal Tubule",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "IL32",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DISTAL TUBULE",
+      "cell_type_label": "Proximal Tubule",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "IL32",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000008517",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The proximal tubule in particular expressed proinflammatory cytokine genes, such as CXCL14, which induces monocyte chemotaxis, and IL32, which induces expression of TNF\u03b1 by macrophages",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Loop of Henle",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ITGB6",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "LOOP OF HENLE",
+      "cell_type_label": "Loop of Henle",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ITGB6",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000115221",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "ITGB6, a gene previously shown to be expressed in distal tubule of the diseased kidney transplant,31 was specifically induced in the loop of Henle in our biopsy dataset.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "EC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PECAM1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "EC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "PECAM1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000261371",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Differential gene expression analysis suggested that the predominant EC cluster was in the resting state, because it expressed EC markers (PECAM1, VWF, and ENG) but no transcripts previously associated with ABMR or angiogenesis",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "EC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "VWF",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "EC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "VWF",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000110799",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Differential gene expression analysis suggested that the predominant EC cluster was in the resting state, because it expressed EC markers (PECAM1, VWF, and ENG) but no transcripts previously associated with ABMR or angiogenesis",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "EC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ENG",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "EC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "ENG",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000106991",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Differential gene expression analysis suggested that the predominant EC cluster was in the resting state, because it expressed EC markers (PECAM1, VWF, and ENG) but no transcripts previously associated with ABMR or angiogenesis",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Endoplasmic Stress Response",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "XBP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOPLASMIC STRESS RESPONSE",
+      "cell_type_label": "Endoplasmic Stress Response",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "XBP1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000249947",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "A third EC cluster expressed markers of endoplasmic stress (XBP1) and the cold shock gene RBM3, suggesting cell stress and activation.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cold Shock Response",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "RBM3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "COLD SHOCK RESPONSE",
+      "cell_type_label": "Cold Shock Response",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "RBM3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000102317",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "A third EC cluster expressed markers of endoplasmic stress (XBP1) and the cold shock gene RBM3, suggesting cell stress and activation.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "EC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FYN",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "EC",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "FYN",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000010810",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Consistent with this, FYN is highly expressed in this EC subcluster.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Pericyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "RGS5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICYTE",
+      "cell_type_label": "Pericyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "RGS5",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000143248",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Cluster 1 highly expresses RGS5, a pericyte marker,39 as well as CACNA1C, which is expressed in a pericyte pattern.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Pericyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CACNA1C",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "PERICYTE",
+      "cell_type_label": "Pericyte",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "CACNA1C",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000151067",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Cluster 1 highly expresses RGS5, a pericyte marker,39 as well as CACNA1C, which is expressed in a pericyte pattern.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "stromal cluster 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "MoxD1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "STROMAL CELLS",
+      "cell_type_label": "stromal cluster 2",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "MoxD1",
+      "feature_type": "gene",
+      "feature_identifier": null,
+      "feature_identifier_type": null
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "Stromal cluster 2 expresses MoxD1, a gene upregulated in early kidney transplant biopsies and associated with subsequent fibrosis.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Myofibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL8A1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Myofibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL8A1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000144810",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The third stromal cluster uniquely expressed COL8A1 and COL12A1, two genes that we have previously shown to be strongly upregulated in kidney myofibroblasts during fibrotic injury, suggesting a myofibroblast identity for this cluster.",
+      "source_id": "text"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Myofibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL12A1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Myofibroblast",
+      "cell_source": null,
+      "cell_state": null,
+      "feature_name": "COL12A1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000111799",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "text",
+      "source_rationale": "The third stromal cluster uniquely expressed COL8A1 and COL12A1, two genes that we have previously shown to be strongly upregulated in kidney myofibroblasts during fibrotic injury, suggesting a myofibroblast identity for this cluster.",
+      "source_id": "text"
+    }
+  }
 ]
