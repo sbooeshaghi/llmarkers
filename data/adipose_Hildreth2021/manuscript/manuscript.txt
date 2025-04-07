@@ -1,0 +1,632 @@
+- Resource 
+- Published: 27 April 2021 
+ 
+Single-cell sequencing of human white adipose tissue identifies new cell states in health and obesity 
+ 
+- Andrew D. Hildreth^(1,2 na1), 
+- Feiyang Ma ORCID: orcid.org/0000-0002-6260-0787^(3,4 na1), 
+- Yung Yu Wong1, 
+- Ryan Sun1, 
+- Matteo Pellegrini ORCID: orcid.org/0000-0001-9355-9564^(3,4) & 
+- ... 
+- Timothy E. O'Sullivan[] ORCID: orcid.org/0000-0003-1435-8188^(1,2) 
+ 
+[]Show authors 
+ 
+Nature Immunology volume 22, pages 639-653 (2021)Cite this article 
+ 
+- 30k Accesses 
+ 
+- 52 Altmetric 
+ 
+- Metrics details 
+ 
+Abstract 
+ 
+White adipose tissue (WAT) is an essential regulator of energy storage and systemic metabolic homeostasis. Regulatory networks consisting of immune and structural cells are necessary to maintain WAT metabolism, which can become impaired during obesity in mammals. Using single-cell transcriptomics and flow cytometry, we unveil a large-scale comprehensive cellular census of the stromal vascular fraction of healthy lean and obese human WAT. We report new subsets and developmental trajectories of adipose-resident innate lymphoid cells, dendritic cells and monocyte-derived macrophage populations that accumulate in obese WAT. Analysis of cell-cell ligand-receptor interactions and obesity-enriched signaling pathways revealed a switch from immunoregulatory mechanisms in lean WAT to inflammatory networks in obese WAT. These results provide a detailed and unbiased cellular landscape of homeostatic and inflammatory circuits in healthy human WAT. 
+ 
+You have full access to this article via University of California, Berkeley. 
+ 
+Download PDF [] 
+ 
+Similar content being viewed by others 
+ 
+[] 
+ 
+An integrated single cell and spatial transcriptomic map of human white adipose tissue 
+ 
+Article Open access 15 March 2023 
+ 
+[] 
+ 
+A single-cell atlas of human and mouse white adipose tissue 
+ 
+Article 16 March 2022 
+ 
+[] 
+ 
+Adipose tissue in health and disease through the lens of its building blocks 
+ 
+Article Open access 26 June 2020 
+ 
+Main 
+ 
+WAT is the primary metabolic organ utilized for energy storage in mammals. During dietary nutrient excess, adipocytes store energy in the form of triacylglycerides to fuel peripheral organ metabolism during states of caloric restriction through fatty acid release1. Chronic caloric excess results in the expansion of the WAT through adipocyte hyperplasia and hypertrophy, resulting in increased body mass and obesity1. Due to limits on adipocyte fat storage and cell size, adipocytes can undergo chronic stress responses and apoptosis during obesity, leading to WAT inflammation that contributes to a systemic low-grade inflammatory state associated with cardiovascular disease and type 2 diabetes^(1,2). However, the cell types and mechanisms responsible for initiating human WAT inflammation during obesity remain poorly understood. 
+ 
+In mice, diet-induced or genetic obesity-associated increases in the cytokines tumor necrosis factor (TNF) and interleukin (IL)-6, in addition to microRNA-containing exosomes produced by proinflammatory macrophages, can subsequently reduce systemic insulin sensitivity over time3. Furthermore, recruitment and activation of type 1 immune cells such as CD8+ T cells, helper T1 (T_(H)1) cells, natural killer (NK) cells and type 1 innate lymphoid cells (ILC1s) contribute to the accumulation of proinflammatory macrophages in the adipose tissue in an interferon (IFN)-g-dependent manner4. However, current clinical strategies to target individual proinflammatory cytokines or pathways induced by WAT macrophages in obese patients (that is, anti-TNF) are either ineffective or only moderately improve insulin sensitivity in obese patients with type 2 diabetes, suggesting that multiple overlapping pathways potentially maintain WAT inflammation in humans5. Given that the prevalence of obesity is expected to increase to nearly 50% of the US population by 2030 (ref. 6), there is a pressing need to understand the complete cellular composition and cell type-specific inflammatory network of the healthy human WAT to dissect the mechanisms that may lead to systemic, chronic, low-grade inflammation and obesity-associated metabolic dysfunction. 
+ 
+Recent studies employing single-cell RNA-sequencing (scRNA-seq) or single nuclei RNA-seq have provided broad characterization of the composition of the stromal vascular fraction (SVF) and adipocytes of human WAT^(7,8,9). Although these studies have discovered abundant adipocyte, stromal and macrophage populations with unique roles in WAT homeostasis, their scale was too limited to represent the full extent of immune cell heterogeneity present in the tissue. Thus, whether previously annotated WAT immune populations represented bona fide cell lineages, activation or developmental states or a complex mixture of unidentified cell types remained unknown. Therefore, we sought to generate a large-scale, high-dimensional analysis of sorted immune cells derived from healthy lean and obese patient WAT to more precisely define the changes in immune composition and signaling networks that are associated with human obesity at single-cell resolution. 
+ 
+Our analysis of approximately 110,000 human cells present in the SVF of human WAT revealed 28 distinct cell types, including 8 previously uncharacterized immune populations. These consisted of unique subsets of adipose-resident NK cells, innate lymphoid cells (ILCs), macrophages and dendritic cells (DCs). Using independent cohorts of healthy patient samples, we demonstrated that distinct subsets of stromal cells, T cells, DCs, macrophages and ILCs accumulate in obese WAT by flow cytometry. Finally, analysis of single-cell ligand-receptor pairs and upstream regulators revealed distinct obesity-associated inflammatory interactomes and signalomes enriched in WAT-resident immune cells. Our high-dimensional single-cell WAT atlas provides insight into the potential functions, regulation and interactions of known and new human WAT cell types. 
+ 
+Results 
+ 
+Single-cell sequencing reveals a diverse WAT immune system 
+ 
+To understand the unbiased cellular composition of the SVF of healthy human WAT, we isolated single-cell suspensions of deep subcutaneous abdominal adipose tissue from three lean and three obese patients. Patients were considered 'healthy' if they had no history of cardiovascular or liver disease, diabetes or immunological disorders (Supplementary Table 1). Single-cell suspensions were sorted into CD45+ (hematopoietic) and CD45^(-) (nonhematopoietic) populations for each patient sample, and then profiled using 10x Genomics Chromium droplet scRNA-seq (Fig. 1a). The resulting quality-controlled, human WAT SVF single-cell atlas included 82,577 cells that were clustered based on differential expression of marker genes and visualized using a uniform manifold approximation and projection (UMAP) plot (Fig. 1b, Extended Data Fig. 1a and Supplementary Table 2). Cluster annotation and identification were corroborated using overlapping marker genes from the Human Cell Atlas and previous scRNA-seq datasets profiling human immune lineages and parenchymal cells^(10,11,12,13,14). Clustering analysis revealed 19 distinct clusters: adipocyte precursor cells (APCs), preadipocytes (pADs), smooth muscle cells (SMCs), endothelial cells (Endos), conventional type 1 DCs (cDC1s), perivascular macrophages (PVMs), nonclassic monocytes (ncMos), B cells, naive CD4+ T cells, naive CD8+ T cells, cytotoxic CD8+ T cells, CD8+ gd T cells, regulatory T (T_(reg)) cells, mucosa-associated invariant T cells (MAITs), mature NK (mNK) cells, and four previously uncharacterized clusters of myeloid-like cells, conventional type 2B DC-like cells (cDC2Bs), NK-like cells and non-NK ILCs (Extended Data Figs. 1a,b and 2a-c). 
+ 
+[figure 1] 
+ 
+a, Schematic of the experimental pipeline. Human adipose tissue was isolated from healthy patients (patient information in Supplementary Table 1), dissociated into single-cell suspensions, sorted into CD45+ and CD45- populations, and analyzed using 10x Genomics Chromium droplet scRNA-seq. Cells were clustered via differential gene expression, and ligand-receptor analysis was performed to assess the interactions between cell types. b,c, UMAP plot of 82,577 human adipose cells isolated from the SVF of 3 lean and 3 obese patients. b, Annotations are derived from cluster-specific analysis (Extended Data Fig. 1). c, UMAP indicating the patient sample classification as lean (red) or obese (blue). d,e, Boxplots showing the proportion of nonimmune (d) and immune (e) cells derived from n = 3 lean (red) and n = 3 obese (blue) patients for each cell type. The center is the median, the box limits the upper and lower quartiles, and the whiskers are 1.5x the interquartile range. f,g, Density correlation analysis of accumulating nonimmune (f) and T cell (g) subsets with patient BMI. Line of best fit and 95% CIs are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson's correlation analysis with 95% CIs were conducted. P < 0.05 was considered significant. 
+ 
+Full size image[] 
+ 
+Fig. 1: Single-cell sequencing reveals the cellular heterogeneity of the SVF of human WAT. 
+ 
+Identified clusters contained cells from both lean and obese WAT samples, suggesting that each identified cell type was associated with a common cell lineage rather than derived from a single patient sample (Fig. 1c). Analysis of the frequency of lean and obese patient cells in each cluster revealed an increased proportion of Endos and adipose-resident DCs, unconventional T cells, ILCs, and myeloid-like and NK-like cells in obese WAT samples. In contrast, frequency analysis suggested a decreased or unchanged proportion of pADs, circulating CD8+ and CD4+ T cell subsets, B cells and other myeloid populations (Fig. 1d,e). To interrogate these changes, we first used an independent cohort of four lean, four overweight and three obese individuals to validate all identified structural cell and conventional and innate-like T cell populations by flow cytometry (Extended Data Figs. 1c and 2d, and Supplementary Table 3). Using an additional cohort of four lean patients, we confirmed KLRB1 (CD161) expression on a defined population of MAITs and detected the presence of CD4+CD8^(-) and CD4^(-)CD8^(-) gd T cells, in addition to a rare population of Va24-a18-positive invariant NK T cells that could not be resolved by our 36,601, non-B cell lymphoid lineage, scRNA-seq dataset (Extended Data Fig. 2e,f and Supplementary Table 3). Flow cytometry further supported our scRNA-seq analysis, demonstrating that WAT Endos and APCs, as well as gd T cells, MAITs, and CD4+ T and T_(reg) cells positively correlated with increasing patient body mass index (BMI). In contrast, SMCs, pADs and CD8+ T cells had a negative correlation. Interstitial progenitor cells had no correlation with patient BMI (Fig. 1f,g, and Extended Data Figs. 1d and 2g). Although these results suggested that human obesity is associated with an accumulation of diverse nonimmune and lymphoid cell lineages consistent with tissue-resident phenotypes, how WAT-resident ILC and myeloid populations changed during obesity remained unclear. Several of the obese-enriched cell clusters (NK cell like, myeloid cell like, ILC, cDC2B like) probably represented heterogeneous populations of transcriptionally similar cell types or new cell subsets that have not been described previously, suggesting that analysis of a larger sample size from sorted subsets was necessary to confirm cell-lineage identification. 
+ 
+Unique WAT-resident ILC subsets accumulate in obese patients 
+ 
+Previous studies from mice and humans suggest that ILCs consist of a heterogeneous family that can be classified into three distinct groups based on the expression of transcription factors, cell surface markers and effector cytokines15. Our CD45+-sorted scRNA-seq dataset suggested that CD200R1 expression could distinguish ILCs from mNK cells, similar to previous studies performed in mice and human peripheral blood mononuclear cells (PBMCs)^(16,17). To examine whether further cellular heterogeneity existed in human WAT ILCs, we pooled single-cell suspensions from the WAT of either seven lean or five obese patients and sorted CD45+Lin^(-)CD7+CD200R1+ or CD45+Lin^(-)CD7+CD200R1^(-) populations that were subsequently analyzed using scRNA-seq (Extended Data Fig. 3a and Supplementary Table 4). Assessment of 14,849 pooled cells from both sorted populations revealed 7 distinct clusters based on differential expression of marker genes (Fig. 2a, Extended Data Fig. 3b and Supplementary Table 5). Similar to the CD45+-sorted scRNA-seq dataset, mNK cells comprised a distinct cluster marked by expression of FCGR3A, FGFBP2, KLRF1 and EOMES (Fig. 2b and Extended Data Fig. 3b,c). However, we also identified the presence of two additional distinct NK cell subsets derived from CD45+Lin^(-)CD7+CD200R1^(-) cells that expressed lower levels of FCGR3A and KLRF1, and displayed similar cluster marker expression with previously identified NK-like cell clusters: one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56^(bright) immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver^(19,20) (Fig. 2b and Extended Data Fig. 3b,c). Four clusters did not express the NK cell-lineage-associated genes IRF8, EOMES, KLRF1, NCAM1 or PRF1. Instead, these clusters could be distinguished from NK-lineage cells based on CD200R1 and IL7R coexpression and were derived from sorted CD45+Lin^(-)CD7+CD200R1+ cells, but not CD45+Lin^(-)CD7+CD200R1^(-) cells, indicating that these clusters represented ILCs (Fig. 2a-c and Extended Data Fig. 3b-d). WAT ILC clusters were defined based on differential expression of marker genes: GATA3 and IL1RL1 consistent with ILC2s described in mice and humans^(21,22,23); ZNF683 and TBX21 consistent with ILC1s described in mice^(16,24); CCR6, IL1R1 and IL23R consistent with ILC3s described in mice and humans^(23,25,26); and SELL and IL1R1 consistent with circulating ILC precursor cells (ILCPs) found in human blood^(27,28) (Fig. 2b,c and Extended Data Fig. 3b,c). These results confirmed that CD200R1 could be used as a bona fide surface marker to distinguish ILCs from NK-lineage cells in human WAT. Analysis of the frequency of lean and obese patient cells in each cluster suggested an accumulation of trNK cells and ILC3s in obese WAT, with a decrease in mNK cells and ILCP-like cells, and little change in other identified subsets (Extended Data Fig. 3e). 
+ 
+[figure 2] 
+ 
+a, UMAP plot of 14,849 human WAT CD45+Lin^(-)CD7+CD200R1+ ILCs or CD45+Lin^(-)CD7+CD200R1^(-) NK cells isolated from the SVF of an independent cohort of 7 lean and 5 obese patients. Cluster analysis yields seven distinct clusters comprising ILCs and NK cells. b, Dot plot showing selected top DEGs for the populations depicted. Color saturation indicates the strength of expression in positive cells, whereas dot size reflects the percentage of each cell cluster expressing the gene. c, Violin plots showing RNA expression levels of selected cluster markers for the indicated cell clusters. d, Representative gating strategy for scRNA-seq-defined human WAT NK cell populations (CD45+Lin^(-)(CD3+TCRab+CD19+CD34+CD14+CD5+TCRgd+)CD7+TBET+CD200R1^(-)): mNK cells, EOMES+PERFORIN+; trNK cells, EOMES^(hi)PERFORIN^(int), iNK cells, EOMES^(lo)PERFORIN^(int). e, Representative histograms of CD16, perforin, Eomes, CD62L and T-bet expression on human WAT NK cells, ILC1s, and CD56^(dim) and CD56^(bright) NK PBMC populations. f, Representative histograms of CD62L, IL-1R1, CCR6, IL-2, IFN-g, IL-13 and IL-17 expression on human WAT ILC populations. Unstim refers to CD45+Lin^(-)CD7+CD200R1+ cells cultured without PMA and ionomycin. g, Relative frequencies of ILC populations as a percentage of Lin^(-)CD7+ cells (above; n = 8 lean, n = 8 overweight and n = 7 obese patients) or Lin^(-)CD7+CD200R1+ cells (below; n = 5 lean, n = 4 overweight and n = 3 obese patients) isolated from the human WAT SVF. The P values are as follows: mNK cells: P = 0.0065; iNK cells: P = 0.0467; trNK cells: P = 0.0138; ILC2 lean versus obese: P = 0.0032; ILC2 overweight versus obese: P = 0.0113; ILCP-like cells: P = 0.0255; ILC3s: P = 0.0341. NS, not significant. h, Density correlation analysis of the depicted ILC types with patient BMI. Line of best fit and 95% CIs are shown for each plot. d-f, Data are representative of three individual patient samples. Each point represents an individual patient. Samples were compared using a two-tailed Student's t-test with Welch's correction, assuming unequal s.d., and data are presented as individual points with the mean +- s.e.m. (*P < 0.05, **P < 0.01). Linear regression and two-tailed Pearson's correlation analysis with 95% CIs were conducted. P < 0.05 was considered significant. 
+ 
+Full size image[] 
+ 
+Fig. 2: Single-cell analysis unveils unique human WAT-resident ILC subsets. 
+ 
+To functionally validate the existence of identified NK cell and ILC clusters, we utilized WAT samples from 2 additional cohorts of 26 (10 lean, 9 overweight, 7 obese) and 12 (5 lean, 4 overweight, 3 obese) patients, respectively (Supplementary Table 3). Flow cytometry experiments corroborated the results from our scRNA-seq analysis, supporting the identification of three distinct IFN-g-producing NK cell populations based on PERFORIN, CD62L, CD16, TBET and EOMES expression: TBET^(hi)EOMES^(int)PERFORIN^(hi)CD16+ mNK cells; TBET^(int)EOMES^(hi)PERFORIN^(int)CD16^(-) trNK cells; and TBET^(lo)EOMES^(lo)PERFORIN^(int)CD16^(-)CD62L^(+/-) iNK cells (Fig. 2d,e and Extended Data Fig. 4a,c). Comparison of WAT NK cell subsets with human PBMC-derived CD56^(dim) and CD56^(bright) NK cells suggested that, although WAT mNK cells phenotypically overlap with CD56^(dim) NK cells, WAT iNK and trNK cells were phenotypically distinct from CD56^(bright) NK cells and potentially represent unique subsets of the NK-cell lineage found in the WAT (Fig. 2e). Furthermore, mature CD200R1+ ILC populations did not express PERFORIN or EOMES, and could be discerned based on the expression of several transcription factors, surface markers and signature cytokines after stimulation: T-bet, IFN-g and IL-2 expression defined ILC1s; CRTH2 and IL-13 expression defined ILC2s; and NKp44, IL-1 receptor type 1 (IL-1R1), CCR6, RORC^(hi) and IL-17A expression defined ILC3s (Fig. 2e,f and Extended Data Fig. 4b,d,e). CD62L, the lack of other mature ILC markers and the absence of cytokine production defined the ILCP-like population, similar to results obtained with CD200R1+CD62L+ ILCPs derived from human PBMCs (Fig. 2f and Extended Data Fig. 4d-f). To confirm whether specific subsets of WAT ILCs accumulate during obesity, we examined the frequency and density of each identified NK cell and ILC population from WAT samples of lean, overweight and obese patients. WAT mNK cells displayed decreased frequency and density in obese compared with lean patients, and negatively correlated with patient BMI (Fig. 2g,h and Extended Data Fig. 4h). iNK and trNK cells increased in frequency, but not density, and did not significantly correlate with patient BMI, suggesting that iNK and trNK cells do not accumulate during obesity, but represent a larger proportion of NK-cell subsets in obese WAT due to depletion of mNK cells (Fig. 2g,h and Extended Data Fig. 4h). Analysis of adipose-resident ILC populations revealed similar frequencies and densities of ILC1s in lean and obese patients (Fig. 2g,h and Extended Data Fig. 4i). ILC2s decreased in frequency and density in obese patients, consistent with previous reports in humans and mice21, but did not significantly negatively correlate with increasing patient BMI due to similar densities of WAT ILC2s in overweight and lean patients (Fig. 2g and Extended Data Fig. 4g,i). ILC3s and ILCP-like cells increased in frequency and density in obese WAT, and positively correlated with patient BMI, suggesting that WAT-resident ILC3s preferentially accumulate in obese patients compared with other mature ILC subsets (Fig. 2g,h and Extended Data Fig. 4i). 
+ 
+Although circulating CD62L+ ILCPs have been found to give rise to all mature ILCs in humans28, UMAP visualization of sorted ILC subsets suggested that the identified WAT ILCP-like population was more transcriptionally similar to ILC1s and ILC3s than to ILC2s, suggesting that ILCP-like cells might represent a committed precursor to ILC1s and ILC3s. To test this hypothesis, we utilized RNA-velocity analysis29 to determine the transcriptional fate of the ILCP-like population in silico (Fig. 3a). Projection of the velocity field arrows on to the UMAP plot extrapolated future states of ILCP-like cells to both mature ILC1 and ILC3 populations (Fig. 3a). Furthermore, CytoTRACE analysis30 suggested that ILCP-like cells represented less-differentiated cells and that progression toward either the ILC1 or ILC3 cell states increased the differentiation score (Fig. 3b). Manually averaged principal curves were assigned based on RNA-velocity and CytoTRACE analyses, suggesting a clear developmental trajectory from ILCP-like cells to ILC1 and ILC3, but not ILC2, populations (Fig. 3c). Monocle pseudotime analysis further corroborated the ILCP-like cells to ILC1 and ILC3 transition, and assessment of the frequency of lean and obese patient cells in each cell cluster revealed a shift in frequency from ILCP-like cells and ILC1s in lean samples to ILC3s in obese samples (Fig. 3d,e). Analysis of differentially expressed genes (DEGs) between the ILC1 and ILC3 fates from ILCP-like cells showed a clear bifurcation, further suggesting a developmental switch to the ILC3 fate during obesity (Extended Data Fig. 5). Ingenuity pathway analysis (IPA) implicated both IL-23 and STAT3 signaling as important mediators of the transition to the ILC3 fate, whereas IFN-a coupled with ID2 and STAT5B signaling regulated the transition to the ILC1 fate (Fig. 3f,g and Supplementary Table 6,7). These results suggest that a previously unidentified shared ILC1-ILC3 precursor exists in the human WAT, and that the accumulation of WAT-resident ILC3s during obesity may be due to increased ILC3 differentiation from ILCP-like cells. 
+ 
+[figure 3] 
+ 
+a, RNA-velocity analysis of WAT ILC clusters with velocity field projected onto the UMAP plot of human adipose ILCs subclustered from Fig. 2. Arrows show the local average velocity evaluated on a regular grid and indicate the extrapolated future states of cells. b, CytoTRACE scatter plot of WAT ILC clusters. The color indicates the level of differentiation from low (gray) to high (red). c, UMAP plot of WAT ILC clusters with velocity arrows and corresponding principal curves shown in bold. Principal curves indicate the manually averaged differentiation directionality projected by RNA-velocity and CytoTRACE analyses. d, Monocle analysis of the ILCP-like, ILC1 and ILC3 populations, indicating pseudotime directionality (left) and cell type (right): ILC1s (red), ILCP-like cells (green) and ILC3s (blue). e, Bar plots showing the proportion of the indicated ILC clusters derived from seven pooled lean or five pooled obese patients. f,g, IPA of putative upstream regulators of the transition from either ILCP-like cells to ILC3s (f) or ILCP-like cells to ILC1s (g). 
+ 
+Full size image[] 
+ 
+Fig. 3: RNA-velocity and CytoTRACE analyses identify a shared ILC precursor to mature adipose ILC1s and ILC3s. 
+ 
+Distinct DC and macrophage subsets accumulate in obese WAT 
+ 
+To examine whether further cellular heterogeneity existed in human WAT myeloid cells, we pooled single-cell suspensions from the WAT of either seven lean or five obese patients and sorted CD45+Lin^(-)CD11b+CD14+ and CD45+Lin^(-)CD11b^(int)CD14^(int)HLA-DR+CD11c+ populations that were subsequently analyzed using scRNA-seq (Extended Data Fig. 6a and Supplementary Table 4). Assessment of pooled cells from both sorted populations resolved 12,824 healthy human WAT DCs, macrophages, monocytes and neutrophils that clustered into 10 distinct populations based on differential expression of marker genes (Fig. 4a,b, Extended Data Fig. 6b-d and Supplementary Table 8). Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d). Using cluster annotation and cell cluster identification data from the Human Cell Atlas and other previously published datasets^(10,11,12,31), we created module scores to assess the identity of the Mo-1 and Mo-2 populations (Supplementary Table 9). Analysis of gene expression data and module score results suggested that Mo-1s and Mo-2s both displayed enrichment for the classic monocyte gene module, suggesting the presence of two cell states of classic monocytes (Extended Data Fig. 6e). The scRNA-seq analysis also identified a population of human WAT neutrophils based on expression of THBS1 and S100A12, which displayed enrichment for the neutrophil gene module compared with other myeloid cell clusters (Fig. 4b and Extended Data Fig. 6b,c,f). We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c). Furthermore, analysis of the frequency of lean and obese patient cells in each cluster revealed an accumulation of IMs, LAMs, and Mo-1 and Mo-2 cells with a decrease in PVMs, neutrophils and ncMos in obese patient samples (Extended Data Fig. 6g). To confirm the presence of scRNA-seq-identified cell lineages, we utilized WAT from an additional patient cohort (seven lean, seven overweight, seven obese; Supplementary Table 3). Analysis of macrophage populations corroborated the results from our scRNA-seq data by supporting the identification of three different CD11B+CD14+CD15^(-)CD64+CD68+ macrophage subsets (Fig. 4c and Extended Data Fig. 7a,b). WAT macrophage subsets were defined based on differential expression of MRC1 (CD206) and CD11c, with expression of CD9 distinguishing CD206+CD11c+ LAMs, and CD206+CD11c^(-) distinguishing WAT PVMs as described previously^(8,32,33) (Fig. 4c,d). To confirm that CD206^(-)CD11c+ WAT macrophages represented IMs, we harvested WAT from an additional cohort of individuals (four lean, two overweight, four obese) and profiled endogenous IL-1b and TNF production by flow cytometry (Supplementary Table 3). Although PVMs showed little endogenous production of TNF or IL-1b, both LAMs and IMs showed increased IL-1b production and a trend toward higher TNF production in obese compared with lean patients, suggesting that IM and LAM populations are subsets of proinflammatory macrophages in obese WAT (Fig. 4e and Extended Data Fig. 7c). 
+ 
+[figure 4] 
+ 
+a, UMAP plot of 12,824 pooled human adipose myeloid cells isolated from the SVF of 7 lean and 5 obese patients. Cluster analysis yields ten distinct clusters comprising DCs, macrophages, monocytes and neutrophils (Neu). b, Dot plot showing selected top DEGs for the neutrophil, monocyte and macrophage populations depicted. c, Representative gating strategy for scRNA-seq-defined human WAT macrophage populations (CD45+Lin^(-)(CD3+TCRab+CD19+CD34+CD5+CD7+CD1c+)HLA-DR+CD11b+CD14+): PVMs, CD206+CD11c^(-); LAMs: CD206+CD11c+; IMs: CD206^(-)CD11c+. d, Representative flow cytometry histogram of CD9 expression on human WAT macrophage populations. e, Flow cytometry analysis of endogenous IL-1b production by human WAT macrophage subsets from an additional n = 4 lean, n = 2 overweight and n = 4 obese patients (LAMs: P = 0.0158; IMs: P = 0.0204). Each point represents an individual. f, Dot plot showing selected top DEGs for indicated DC subsets. g, Representative gating strategy for scRNA-seq-defined human WAT DC populations (CD45+Lin^(-)(CD3+TCRab+CD19+CD34+CD7+CD16+CD88+CD89+)HLA-DR+CD14^(int)CD11c+): cDC1s, CD1c^(-)CD26+; cDC2As CD1c+CD26^(-)CD206^(-)CD14^(int); cDC2Bs, CD1c+CD26^(-)CD206+CD14^(hi). h, Relative frequencies of DC subsets as a percentage of Lin^(-)CD11c+HLA-DR+ cells isolated from the SVF of WAT from n = 9 lean, n = 9 overweight and n = 7 obese patients. NS, not significant. i, Density correlation analysis of the depicted DC subsets with patient BMI. Line of best fit and 95% CIs are shown for each plot. j, Relative frequencies of macrophage populations as a percentage of Lin^(-)CD11b+CD14+ cells isolated from the SVF of WAT from n = 7 lean, n = 7 overweight and n = 7 obese patients. PVM lean versus obese: P = 0.0054; PVM overweight versus obese: P = 0.0362; LAM lean versus obese: P = 0.0052; LAM overweight versus obese: P = 0.0088; IMs: P = 0.0404. k, Density correlation analysis of the indicated macrophages with patient BMI. Line of best fit and 95% CIs are shown for each plot. Each point represents an individual patient. c,d,g, Data are representative of three individual patient samples. Samples were compared using a two-tailed Student's t-test with Welch's correction, assuming unequal s.d., and data are presented as individual points with the mean +- s.e.m. (*P < 0.05, **P < 0.01). Linear regression and two-tailed Pearson's correlation analysis with 95% CIs were conducted. P < 0.05 was considered significant. 
+ 
+Full size image[] 
+ 
+Fig. 4: Single-cell analysis identifies unique cell lineages within human WAT myeloid populations. 
+ 
+In contrast to our CD45+-sorted scRNA-seq dataset, DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4). Validation of DC subsets within the human WAT tissue was performed using an additional patient cohort (nine lean, nine overweight, seven obese) and confirmed the presence of three distinct populations (Fig. 4g, Extended Data Fig. 7a and Supplementary Table 3). WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C^(-), whereas cDC2s could be differentiated into two subsets by expression of CD206, CD14, FCER1A and CLEC10A: cDC2Bs (CD26^(-)CD1C+CD206+CD14^(hi)FCER1A+CLEC10A+); cDC2As (CD26^(-)CD1C+CD206-CD14^(int)FCER1A^(-)CLEC10A^(-)) (Fig. 4g and Extended Data Fig. 7d). Although DC subset frequencies did not change, their densities increased in obese compared with lean patients, positively correlating with increasing patient BMI (Fig. 4h,i and Extended Data Fig. 7e). Furthermore, IMs and LAMs were not present in high frequencies or densities in lean WAT, but drastically accumulated in obese WAT and positively correlated with increasing patient BMI (Fig. 4j,k and Extended Data Fig. 7f,g). Altogether, these data suggest that cDC1, cDC2B, cDC2A, LAM and IM populations accumulate in obese human WAT (Fig. 4h-k and Extended Data Fig. 7e,g). 
+ 
+Classical monocytes differentiate into PVMs and IMs in WAT 
+ 
+Studies in mice have shown that recruitment of CCR2-dependent monocytes is required for adipose tissue inflammation, proinflammatory macrophage accumulation and insulin resistance^(35,36). Although these studies suggest that circulating monocytes give rise to most of the IMs in obese mice, previous work has also proposed that WAT-resident macrophages are polarized to a metabolically activated proinflammatory phenotype^(37,38). However, the ontogeny and upstream regulators of inflammatory macrophages in human WAT are not well understood. To test whether scRNA-seq-identified monocyte or macrophage subsets were precursors to WAT IMs and LAMs, we used RNA-velocity analysis (Fig. 5a). UMAP visualization of manually subclustered monocyte and macrophage subsets suggested that the Mo-1 population was most transcriptionally related to both the Mo-2 and the PVM populations, whereas Mo-2s appeared to be more transcriptionally similar to IMs. Projection of the velocity field arrows on to the UMAP plot showed a strong directional flow of the Mo-1 cluster to both PVM and IM fates, suggesting that human WAT macrophages are derived from the Mo-1 cell state in silico (Fig. 5a). CytoTRACE analysis indicated that both PVMs and a subset of Mo-1s were the least differentiated cell states, whereas LAMs, Mo-2s and IMs represented more highly differentiated cell types (Fig. 5b). Manually averaged principal curves incorporating both RNA-velocity vectors and CytoTRACE differentiation scores suggested distinct developmental trajectories from Mo-1s to PVMs and IMs, with Mo-2s representing an additional transition state between Mo-1s and IMs in obese cells, as well as differentiation from PVMs to LAMs (Fig. 5c). Monocle pseudotime analysis further supported the bifurcation of PVM and IM fates from Mo-1s (Fig. 5d). Analysis of the frequency of lean and obese patient cells in each cell cluster displayed a preference of Mo-1 transitioning to IMs rather than to PVMs in obese cells, suggesting a developmental shift from monocyte-derived PVMs in lean patients to polarization of Mo-1s to IMs in obese WAT (Fig. 5e). Analysis of the DEGs between PVM and IM fates showed a clear bifurcation in gene expression programs (Extended Data Fig. 8). We then assessed the potential upstream regulators of the DEGs between Mo-1s to PVMs and IMs as well as PVMs to LAMs using IPA (Fig. 5f-h and Supplementary Tables 10-13). This implicated proinflammatory cytokines (TNF, IFN-g, IL-1b, IL-6, oncostatin M (OSM) and migration inhibition factor (MIF)) and signaling pathways (Jun-Fos) as significant mediators of the transition of Mo-1s to IMs, whereas anti-inflammatory cytokines (IL-1RA, IL-13 and IL-37) and transcription factors (NANOG, MAFB, MEF2C and GATA4) were suggested to regulate the transition to PVMs (Fig. 5f,g). IPA suggested that similar proinflammatory cytokines TNF, IFN-g, IL-1b and IL-12A, and signaling pathways involving Jun-Fos, mediated the transition from PVMs to LAMs (Fig. 5h). Our analysis also suggested hypoxic signaling pathways involving hypoxia-inducible factor (HIF)-1a, aryl hydrocarbon receptor nuclear translocator (ARNT), and endothelial PAS domain protein 1 (EPASE1) may regulate the PVM-to-LAM transition. Thus, these results suggest an obese WAT microenvironment-induced shift in monocyte-derived macrophage development toward proinflammatory subsets influenced by specific proinflammatory cytokines and hypoxia. 
+ 
+[figure 5] 
+ 
+a, RNA-velocity analysis of WAT monocyte and macrophage clusters with velocity field projected on to the UMAP plot of human adipose myeloid cells subclustered from Fig. 4. Arrows show the local average velocity evaluated on a regular grid and indicate the extrapolated future states of cells. b, CytoTRACE scatter plot of WAT monocyte and macrophage clusters. The color indicates the level of differentiation from low (gray) to high (red). c, UMAP plot of WAT monocyte and macrophage clusters with velocity arrows and corresponding principal curves shown in bold. Principal curves indicate the manually averaged differentiation directionality projected by RNA-velocity and CytoTRACE analyses. d, Monocle analysis of the Mo-1, PVM and IM populations indicating pseudotime directionality (left) and cell type (middle): PVM (red), Mo-1 (blue), IM (red); and patient source classification as lean or obese (right): lean (red), obese (blue). e, Bar plots showing the proportion of the indicated myeloid populations derived from seven lean and five obese patients. f-h, IPA of putative upstream regulators (left) and transcription factors (right) implicated in the Mo-1-to-IM transition (f), the Mo-1-to-PVM transition (g) or the PVM-to-LAM transition (h). 
+ 
+Full size image[] 
+ 
+Fig. 5: RNA-velocity analysis uncovers a distinct monocyte state upstream of adipose IMs in obese individuals. 
+ 
+Ligand-receptor analysis reveals WAT interactomes 
+ 
+Given the observed changes in immune composition of obese compared with lean human WAT, we next analyzed how WAT cellular communication networks changed during obesity. To do this, we performed ligand-receptor analysis on all lean WAT cells acquired using CellPhoneDB39 to generate a lean WAT homeostatic interactome (Supplementary Table 14). CellPhoneDB ligand-receptor analysis revealed thousands of structural cell-to-immune as well as immune-to-immune interactions (Fig. 6a). Connectome web analysis of putative WAT-resident populations revealed structural cells, DCs, ILC subsets and PVMs as central communication hubs in the healthy lean WAT (Fig. 6b). Analysis of highly expressed interactions uncovered various uncharacterized and validated signaling pathways implicated in adipose tissue homeostasis and immunoregulation in mice (Fig. 6c). Analysis of the lean interactome suggested that cDC2As may serve an immunoregulatory role via production of growth arrest-specific 6 (GAS6), Jagged1 (JAG1), platelet-derived growth factor (PDGF)b and AREG, interacting with APCs, pADs, Endos and SMCs. These cells could contribute to the maintenance of the WAT via interactions involving Nectin2 and inducible co-stimulator ligand (ICOSLG) with T_(reg) populations^(40,41) and CD200-CD200R with ILCs42. Furthermore, cDC2As uniquely expressed the chemokines CCL17, CCL22 and CCL19, and the cytokine IL-15, which interacted with ILCs, NK cells and APCs, suggesting additional roles for cDC2As in the recruitment and maintenance of innate lymphocytes and progenitor cell types in the lean WAT. pADs expressed IL-15RA, suggesting a synergistic mechanism with cDC2A-derived IL-15 to regulate WAT lymphocyte populations. In contrast, PVMs probably play an important role in WAT homeostasis through interactions with structural cells involving vascular endothelial growth factor A (VEGFA), transforming growth factor (TGF)b and PDGFC. Among ILCs, ILC3s may play similar homeostatic roles to ILC2s via ICOS and TNF receptor superfamily member 25 (TNFRSF25) signaling^(43,44), and trNK cells may function in maintaining DC populations in the lean adipose tissue via CSF2-CSF2R signaling. Together, these results implicate diverse structural and immune cell crosstalk in the maintenance of human WAT homeostasis, and suggest that protective anti-inflammatory mechanisms may be active within healthy lean WAT. 
+ 
+[figure 6] 
+ 
+a, Interaction heatmap plotting the total number of lean WAT-derived cell receptor (y axis) and ligand (x axis) interactions for the specified cell types. The color represents the number of interactions between cell types: higher number of interactions (red), lower number of interactions (blue). b, Connectome web analysis of lean interacting tissue-resident cell types based on expression of the ligand in at least 25% of the cell population. Vertex (colored cell node) size is proportional to the number of interactions to and from that cell, whereas the thickness of the connecting lines is proportional to the number of interactions between two nodes. c, Dot plots showing expression of ligands (left) and receptors (right) in human tissue-resident WAT cells; only ligands and receptors from cell types with detected expression (>25%) are shown. Implicated chemokines can be found in the lower panel. Color saturation indicates the strength of expression in positive cells, whereas dot size reflects the percentage of each cell cluster expressing the gene. 
+ 
+Full size image[] 
+ 
+Fig. 6: CellphoneDB analysis reveals the lean human WAT interactome. 
+ 
+To assess the changes that occur to the cellular communication network during obesity, we similarly performed CellPhoneDB ligand-receptor analysis on all obese WAT cells. Analysis of the cell-cell interactions indicated an increased number of overall ligand-receptor pairings in obese compared to lean cells, especially ligand-receptor interactions involving recruited circulating myeloid and macrophage subsets (Fig. 7a). Connectome web analysis revealed an enrichment of PVM, IM, cDC2B and LAM communication hubs within the obese WAT (Fig. 7b,c). Analysis of the obese interactome suggested that IMs and LAMs probably contribute to adipose tissue inflammation during obesity via TNF-, IL-1b-, IL-18-, CXCL8-, PDGFb- and TNFSF13B-mediated regulation of stromal cells, DCs and circulating myeloid subsets. Interestingly, our analysis suggested that PVM populations in obesity act as major producers of the chemokines (CCL3, CCL3L1, CCL4 and CCL2) involved in the recruitment of myeloid cells. Previous studies have demonstrated that CCL2-CCR2-mediated recruitment of monocytes contributes to adipose tissue inflammation and systemic insulin resistance in mouse models of obesity36, suggesting that PVMs may indirectly contribute to inflammation in humans in a similar manner. cDC2Bs expressed MIF, IL-18, IL-1b and TNFSF9, interacting with ILCs, NK cells and myeloid cells, suggesting that DC populations may exacerbate adipose tissue inflammation and tissue fibrosis in a similar manner to proinflammatory macrophages. trNK cells paired with WAT DC populations via LIGHT (TNFSF14-TNFRSF14) interactions45. As LIGHT signaling has also been shown to enhance adipose tissue macrophage-mediated inflammation46, these results may suggest a role for trNK cells in human obesity-associated inflammation. Similarly, obese ILC3s appear to be mediators of adipose tissue inflammation via TNFSF13B and MIF, acting on macrophage, DC and monocyte subsets. Together, these data suggest significant inflammatory shifts within the WAT interactome during obesity, and implicate new cell types in the potentiation of human WAT inflammation during obesity (Extended Data Fig. 9a). 
+ 
+[figure 7] 
+ 
+a, Interaction heatmap plotting the total number of lean WAT-derived cell receptor (y axis) and ligand (x axis) interactions for the specified cell types. The color represents the number of interactions between cell types: higher number of interactions (red), lower number of interactions (blue). b, Connectome web analysis of obese highly interacting cell types based on expression of the ligand in at least 25% of the cell population. Vertex (colored cell node) size is proportional to the number of interactions to and from that cell, whereas the thickness of the connecting lines is proportional to the number of interactions between two nodes. c, Dot plots showing expression of ligands (left) and receptors (right) in human WAT cells; only ligands and receptors from cell types with detected expression (>25%) are shown. Implicated chemokines can be found in the lower panel. Color saturation indicates the strength of expression in positive cells, whereas dot size reflects the percentage of each cell cluster expressing the gene. 
+ 
+Full size image[] 
+ 
+Fig. 7: CellphoneDB analysis predicts a dramatic remodeling of the human WAT interactome in obesity. 
+ 
+IPA uncovers a distinct obese-enriched WAT signalome 
+ 
+To understand whether predicted interacting cell types influence transcriptional changes during obesity, we performed IPA on the DEGs between all lean and obese WAT cell populations (Supplementary Tables 15 and 16). Our analysis uncovered approximately 110 genes implicated as putative shared upstream regulators in >=3 cell types. Analysis of highly expressed upstream regulators suggested that many of the inflammatory signals identified using CellPhoneDB served as transcriptional regulators of gene expression during obesity (Fig. 8a). A number of common upstream regulators identified by our analysis (TNF, IL-1b, IL-18, IL-6, insulin-like growth factor (IGF) 1, IFN-g, CXCL8 and OSM) were also found to be previously associated with human systemic insulin resistance (Fig. 8a and Supplementary Data Table 17). Furthermore, our analysis suggested that many previously uncharacterized WAT-resident immune cells including IMs, cDC2As, cDC2Bs, ILC3s and trNK cells highly expressed the upstream ligands of many of these key pathways in obesity. Our analysis also found several secreted upstream regulators that have not yet been associated with human insulin resistance, but have been suggested to play a role in the development of metabolic dysfunction in mice (CSF2, leukemia inhibitory factor (LIF), bone morphogenetic protein (BMP)4, endothelin 1, CXCL12 and TNFSF13B) (Supplementary Data Table 17). Analysis of nonsecreted upstream regulators suggested that several transcription factors (HIF1-a, cAMP response element-binding protein (CREB), MYC, CCAAT/enhancer-binding protein beta (CEBPB), forkhead box protein O1 (FOXO1) and STAT4), implicated in obesity-associated inflammation and metabolic dysfunction in mice (Supplementary Data Table 17), may also be important in regulating adipose tissue inflammation in human cells (Fig. 8b). Together, gene set enrichment analysis of the common upstream regulators suggested a number of significant pathways that were transcriptionally regulated in obese WAT cells (Fig. 8c and Supplementary Table 18). Implicated signaling mechanisms involved several JAK-STAT signaling pathways, including IL-1, IL-6, IL-12, IL-17, IFN-g signaling, TNF signaling and hypoxia. Furthermore, many of these pathways were induced in new human WAT cell types, as shown by gene set enrichment analysis of obese trNK cells, ILC3s, cDC2Bs and IMs (Extended Data Fig. 9b-e). Combined, these data suggest that a complex mixture of inflammatory pathways produced by macrophages, DCs, ILCs, NK cells and structural cells regulates inflammatory signaling pathways in the human WAT during obesity (Extended Data Fig. 10). 
+ 
+[figure 8] 
+ 
+a,b, IPA of obese immune and nonimmune populations showing common putative upstream regulators. Terms were considered common if implicated in three or more cell types from a lineage. Terms were considered statistically significant if the activation z-score > 2. a, Dot plots showing expression of common secreted upstream regulators from obese cells (left) and the putative regulated cell types (right) as suggested by IPA. Left, color saturation indicates the strength of expression in positive cells, whereas dot size reflects the percentage of each cell cluster expressing the gene. Right, the color indicates the implicated cell type, whereas dot size reflects the number of genes downstream of the suggested secreted upstream regulator. Only ligands from cell types with detected expression (>25%) are shown. Red-highlighted upstream regulators denote those that have been associated with human insulin resistance (see Supplementary Data Table 17). b, Dot plot showing common non-secreted signaling upstream regulators. The color indicates the implicated cell type, whereas dot size reflects the number of genes downstream of the suggested signaling upstream regulator. c, GOSt analysis of differentially regulated signaling pathways in obesity. Terms were considered statistically significantly enriched if -log10(P_(adj)) < 0.05. 
+ 
+Full size image[] 
+ 
+Fig. 8: Analysis of putative upstream regulators uncovers a distinct obese human WAT-enriched signalome. 
+ 
+Discussion 
+ 
+We performed scRNA-seq on a total of 110,250 cells from multiple sorted atlases including CD45- cells, CD45+ cells, macrophages, DCs, NK cells and ILCs. This led to the validation of 13 out of 13 previously identified populations, as well as the identification of an additional 15 distinct cell clusters, including previously uncharacterized populations of WAT ILCs, DCs, NK cells and proinflammatory macrophages. Using flow cytometry, we then validated the presence of each of these populations within the human lean and obese WAT using an independent cohort of patients. Finally, we utilized single-cell ligand-receptor analysis to profile both the lean and the obese human WAT interactomes, in addition to a cell type-specific, obesity-enriched signalome. 
+ 
+Our study identifies a number of unique ILC populations (iNK cells, trNK cells, ILC1s, ILC3s, ILCP-like cells) that have not been described in human WAT previously. We find that the healthy human WAT contains a distinct population of trNK cells that can be differentiated from both WAT mNK and iNK cell populations and shares a similar phenotype with trNK cells described in human liver transplantation studies20. Our data suggest that trNK cells as well as ILC1s express IFN-g, which is implicated in the regulation of obesity-associated transcriptional changes of many cell types, notably as a critical regulator of IM differentiation. Accordingly, previous studies in diet-induced obese mice have suggested that WAT-resident ILC1 and NK populations produce IFN-g early during the administration of a high-fat diet24, and that IFN-g is important for the regulation of adipose tissue inflammation47. As such, trNK cells and ILC1s may play a similar role in the potentiation of human WAT inflammation during obesity, although future studies will be needed to support this conclusion. Our data also suggest that trNK cells are involved in the recruitment of cDC1s via XCL1/2-XCR1 signaling during obesity, similar to mechanisms recently observed within the tumor microenvironment48. The full extent of ILC-DC communication in the WAT, and the implications of these interactions, merit attention through future mechanistic studies in mice. 
+ 
+We also identified a subset of human WAT ICL3s that accumulate during obesity. In the lean state, our data suggest that ILC3s may play a homeostatic role, similar to ILC2s. However, in the obese state, our data suggest that ILC3s are mediators of adipose tissue inflammation via expression of LIF, TNFSF13B and MIF. Furthermore, although we were unable to determine the source of IL-17 signaling as suggested by gene set enrichment analysis, our data suggest that adipose ILC3s may contribute to the proinflammatory effects of this cytokine during obesity. As such, our data suggest that resident ILC3s probably play important roles in human WAT biology that were not recognized previously. However, ILC3s are not present in lean or obese mouse WAT24, highlighting key differences between mouse and human WAT ILC composition, and suggesting that certain aspects of ILC-mediated inflammation during obesity may not be evolutionarily conserved in mammals. 
+ 
+Our scRNA-seq dataset also identified three unique subpopulations of WAT DCs that accumulate in obese patients. Although the specific roles of cDC1, cDC2A and cDC2B subsets in mammalian obesity are unknown, studies in mice have implicated WNT signaling and DCs in driving tolerogenic programs in lean WAT49. Whether this process becomes dysregulated during obesity is unclear. Analysis of the lean interactome suggests that cDC2As serve an immunoregulatory role, similar to DC populations found in tumors50. During obesity, however, our data suggest that cDC2Bs may contribute to tissue inflammation via expression of MIF, IL-18, IL-1b and TNFSF9. As such, future studies are necessary to elucidate the roles of these different DCs within the adipose tissue. Similarly, previous studies in diet-induced obese mice have suggested both protective and proinflammatory roles of CD9+ LAMs through TREM2 function or cytokine production, respectively^(8,33). Our results suggest that human WAT LAMs, alongside IMs, actively produce IL-1b and TNF in obese patients. Both populations may also contribute to adipose tissue inflammation via expression of IL-18, CXCL8 and PDGFb. Furthermore, although analysis of endogenous cytokine production suggests that PVMs are not actively producing IL-1b or TNF in obese patients, ligand-receptor analysis suggests that these macrophages may contribute to adipose tissue inflammation via increased chemokine production and recruitment of monocytes into the WAT. These data suggest that there are probably more complex mechanisms underlying the contribution of WAT DCs and macrophages to adipose tissue inflammation and insulin resistance than previously understood. 
+ 
+In summary, our study provides a comprehensive atlas of immune and structural cell populations within the healthy human WAT, offering insight into cell type-specific transcriptional changes and communication networks that underpin obesity-associated WAT inflammation. Our dataset not only increases our understanding of the interactions that occur between cell types in human WAT, but also identifies potential therapeutic targets that may aid in reducing systemic low-grade inflammation in obese patients. 
+ 
+Methods 
+ 
+Human samples 
+ 
+Human deep subcutaneous WAT samples were obtained from donors undergoing cosmetic abdominoplasty procedures via Barrett Plastic Surgery, Los Angeles. Donor characteristics are summarized in Supplementary Tables 1, 3 and 4. Human samples were defined as healthy status based on no previous history of cardiovascular disease, liver disease, diabetes or immunological disorders, and divided into three categories based on BMI: lean, BMI < 25; overweight, 25 < BMI < 30; obese, BMI > 30. The human samples used in the present study do not qualify as human subjects' research, confirmed by the UCLA institutional review board. As such, obtaining informed consent was not necessary. Human samples were de-identified and were not obtained for the specific purpose of these studies. 
+ 
+Adipose tissue harvest and cell dissociation 
+ 
+Patient deep subcutaneous adipose tissue was freshly harvested from abdominoplasty samples within an hour of their respective operations. Adipose tissue samples were kept on ice until processing. Adipose tissues were first washed three times with 1x phosphate-buffered saline before physical homogenization in adipose harvest medium ((AHM) 1x Hank's balanced salt solution + CaCl2 + MgCl2, 5% heat-inactivated fetal bovine serum, 1% l-glutamine, 1% penicillin-streptomycin and 50 mg ml-1 of DNAse1) using a blender (900 W, Ninja BL450 Series). Homogenized tissue was then distributed into 14-ml round-bottomed tubes and supplemented with collagenase type II digestion medium (AHM + 2 mg ml-1 of collagenase type II (Worthington Biochem)) before shaking incubation at 37 degC for 1 h. Post-incubation, digested samples were filtered using 100-mm cell strainers (Corning) and then centrifuged to isolate the SVF pellets. After aspiration of the supernatants, the pellets were lysed using ACK lysis buffer, pooled into one tube, and then filtered again through 100-mm nitex mesh. The combined SVF pellet was then split and either resuspended in a mixture of 9:1 fetal bovine serum:dimethylsulfoxide solution and frozen at -80 degC or stained using fluorescently labeled antibodies, and then analyzed via flow cytometry. 
+ 
+FACS 
+ 
+Selected samples for scRNA-seq analysis were thawed and then pooled based on the BMI to ensure high cell count recovery for each subpopulation and BMI classification (lean, n = 10; obese, n = 8). Samples were then sorted on the BD FACSAriaIII before submission for 10x Library preparation. Cells were sorted from lean and obese WAT samples as follows: nonimmune cells (CD45^(-)), immune cells (CD45+), macrophages (CD45+Lin^(-)(CD3+TCRab+CD19+CD34+CD5+CD7+)CD11b+CD14+), cDCs (CD45+Lin^(-)(CD3+TCRab+CD19+CD34+CD7+)CD11b^(-)CD14^(int)HLA-DR+CD11c+), NK cells (CD45+Lin^(-)(CD3+TCRab+CD19+CD34+CD14+CD5+TCRgd+)CD7+CD200R1^(-)) and ILCs (CD45+Lin^(-)(CD3+TCRab+CD19+CD34+CD14+CD5+TCRgd+)CD7+CD200R1+). 
+ 
+Library preparation, sequencing and alignment 
+ 
+ScRNA-seq libraries were generated with the Chromium Single Cell 3' v.3 assay (10x Genomics). Libraries were sequenced using the NovaSeq 6000 S2 platform (Illumina) to a depth of approximately 300 million reads per library with 2 x 50 read length. Raw reads were aligned to the human genome (hg38) and cells were called using cellranger count (v.3.0.2). Individual samples were aggregated to generate the merged digital expression matrix using cellranger aggr (v.3.0.2). 
+ 
+Cell clustering and cell-type annotation 
+ 
+The R package Seurat51 (v.3.1.2) was used to cluster the cells in the merged matrix. Cells with <500 transcripts detected or >25% mitochondrial gene expression were first filtered out as low-quality cells. The gene counts for each cell were divided by the total gene counts for the cell and multiplied by a scale factor of 10,000, then natural-log transformation was applied to the counts. The FindVariableFeatures function was used to select variable genes with default parameters. The ScaleData function was used to scale and center the counts in the dataset. Principal component analysis was performed on the variable genes, and 20 principal components were used for cell clustering (resolution = 0.5) and UMAP dimensional reduction. The cluster markers were found using the FindAllMarkers function, and cell types were manually annotated based on the cluster markers^(10,11,12,13,14,31,52,53,54). Module scores were calculated using the AddModuleScore function with default parameters and used to validate certain cell-type annotations^(10,11,12,31,55). To calculate the sample composition based on cell type, the number of cells for each cell type from each sample were counted. The counts were then divided by the total number of cells for each sample and scaled to 100% for each cell type^(56,57). 
+ 
+Cell-type subclustering 
+ 
+Subclustering was performed on all cell types. The same functions described above were used to obtain the subclusters. Subclusters that were defined exclusively by mitochondrial gene expression, indicating low quality, were removed from further analysis. To calculate the composition of lean and obese cells for the subclusters, the numbers of lean and obese cells for each subcluster were counted. The number of lean (or obese) cells in each cluster was then divided by the total number of lean (or obese) cells to calculate the percentages of each cell state. Subclusters were filtered based on >10% frequency for each cell lineage and assigned as a lean- or obese-enriched state if the subcluster contained >5% representation of lean compared with obese cells, and vice versa. Cell states with equal representation of lean and obese cells were excluded from lean- and obese-specific cell-state analysis. For each cell type, differential expression analysis was carried out on the lean cells from the lean state and obese cells from the obese state. Then IPA was applied to the DEGs to determine the potential upstream regulators driving the differential expression. The upstream regulators that were activated in obese (activation z-score >= 2) in at least three cell types were plotted. The normalized expression matrix for ILC and myeloid subtypes was extracted and uploaded to the CytoTRACE webtool (https://cytotrace.stanford.edu/), and the output CytoTRACE score for each cell was then plotted on the UMAP. 
+ 
+Pseudotime trajectory construction 
+ 
+Pseudotime trajectories for ILCs and myeloid cells were constructed using the R package Monocle53 (v.2.10.1). The raw counts for cells in the intended cell types were extracted and normalized by the estimateSizeFactors and estimateDispersions functions with the default parameters. Genes with average expression >0.5 and detected in >10 cells were retained for further analysis. Variable genes were determined by the differentialGeneTest function with a model against the cell-type identities. The top 2,000 variable genes with the lowest adjusted P value were used to order the cells. The orders were determined by the orderCells function and the trajectory was constructed by the reduceDimension function with default parameters. Differential expression between pseudotime states was carried out using the Seurat function FindMarkers. The DEGs with the lowest adjusted P value were used to plot the heatmap showing the bifurcation expression patterns. The heatmap was generated using function plot_genes_branched_heatmap. IPA was used to determine the upstream regulators for the DEGs. 
+ 
+RNA-velocity analysis 
+ 
+To estimate the RNA velocities of single cells, velocyto29 was used to distinguish unspliced and spliced messenger RNAs in each sample. The python package scVelo58 was then used to recover the directed dynamic information by leveraging RNA-splicing information. Specifically, the data were first normalized using the filter_and_normalize function. The first- and second-order moments were computed for velocity estimation using the moments function. The velocity vectors were obtained using the velocity function. The velocities were projected into a lower-dimensional embedding using the velocity_graph function. Finally, the velocities were visualized in the UMAP embedding using the velocity_embedding_stream function. All scVelo functions were used with default parameters. 
+ 
+Cell-cell ligand-receptor interaction analysis 
+ 
+CellphoneDB (v.2.0.0) was applied for ligand-receptor analysis. The raw counts and cell type annotation for each cell were imputed into CellphoneDB to determine the potential ligand-receptor pairs. Pairs with P > 0.05 were filtered out from further analysis. Four runs were performed on four groups of cells: all lean cells, lean cells in lean-enriched states, all obese cells and obese cells in obese-enriched states. The results on all lean cells were plotted as the base level interaction among the cell types. The number of interactions between each pair of cell types were plotted using the results with all lean cells and all obese cells. To determine the differential interactions between lean- and obese-specific states, DEGs were determined between the lean and obese cells for each cell type and an adjusted P value at 0.05 was applied to filter the DEGs. A ligand-receptor pair with higher average expression in lean (or obese) or the ligand being significantly highly expressed in lean (or obese) was considered to be a lean (or obese)-specific pair. Selected obese-specific pairs were plotted. 
+ 
+Analysis with g:GOSt 
+ 
+Cluster markers from obese-enriched states were input into the functional enrichment analysis query and then analyzed using g:GOSt functional profiling55. 
+ 
+Flow cytometry 
+ 
+Cells were analyzed for cell-surface markers using fluorophore-conjugated antibodies (BioLegend, eBioscience, R&D Systems, Miltenyi Biotec). Cell surface staining was performed in 1x phosphate-buffered saline and intracellular staining was performed using the eBioscience Foxp3/transcription factor or BD Cytofix/Cytoperm kits. Flow cytometry was performed using the Attune NxT Acoustic Focusing cytometer and data were analyzed using the Attune NxT Software v.3.1.2, with quantification performed using FlowJo v.9.9.6 (BD). Cell surface and intracellular staining were performed using the following fluorophore-conjugated antibodies: CD3 (UCHT1), TCRab (IP26), CD26 (2A6), CD56 (TULY56), CD1c (L161), CD19 (SJ25-C1), CD34 (581), CD14 (TuK4), CD7 (124-1D1), CD45 (HI30), T-bet (4B10), CD5 (UCHT2), TCRg (B1), perforin (B-D48), CD200R1 (OX-108), EOMES (WD1928), CD11c (BU15), HLA-DR (L243), CD206 (15-2), IL-13 (JES10-5A2), CD9 (HI9a), IFN- (B27), CD88 (S5/1), IL-1R1 (FAB269A), CD16 (CB16), FCER1A (AER-37 (CRA-1)), CD294 (BM16), CD62L (DREG-56), CD89 (A59), CD301 (H037G3), CD196 (G034E3), IL-17A (BL168), TNF-a (Mab11), IL-1b (CRM56), CD336 (2.29), CD11b (M1/70), TCR Va7.2 (3C10), CD8a (RPA-T8), CD161 (HP-3G10), FOXP3 (206D), CD15 (HI98), CD4 (RPA-T4), CD68 (Y1/82A), CD64 (10.1), TCR Va24-Ja18 (6B11), RORC (AFKJS-9), CD31 (WM59), CD29 (TS2/16) and ICAM-1 (HA58). All antibodies used in this study were validated with human PBMCs before use on human WAT SVF samples. 
+ 
+Human macrophage endogenous cytokine production 
+ 
+Human adipose SVF cells were cultured for 5 h in CR-10 medium containing Brefeldin A (1:1,000; BioLegend) and monensin (2 mM; BioLegend) and then analyzed for intracellular cytokine production via flow cytometry. Cells were cultured in medium alone as a negative control. 
+ 
+Ex vivo stimulation of human ILCs 
+ 
+Human adipose SVF cells were cultured for 5 h in CR-10 medium containing Brefeldin A (1:1,000; BioLegend) and monensin (2 mM; BioLegend) with or without phorbol 12-myristate 13-acetate (Sigma) and ionomycin (Sigma). For quantification of IL-17A staining, SVF cells were cultured overnight in CR-10 and then subsequently stimulated in the presence of phorbol 12-myristate 13-acetate, ionomycin, Brefeldin A and monensin for 5 h. 
+ 
+Quantification, statistical analysis and reproducibility 
+ 
+For graphs, data are shown as mean +- s.e.m. and, unless otherwise indicated, statistical differences were evaluated using a Student's t-test with Welch's correction to assume a non-normal variance in our data distribution. For cell-type density analysis, linear regression was performed alongside two-tailed Pearson's correlation analysis with 95% confidence intervals (CIs). P < 0.05 was considered significant. The scRNA-seq of sorted CD45+ and CD45- cells was performed initially. This was followed by scRNA-seq of sorted macrophage, DC, ILC and NK cell populations. Flow cytometric analysis of each patient was performed independently. Graphs were produced and statistical analyses were performed using GraphPad Prism. 
+ 
+Reporting Summary 
+ 
+Further information on research design is available in the Nature Research Reporting Summary linked to this article. 
+ 
+Data availability 
+ 
+The scRNA-seq datasets are accessible from the Gene Expression Omnibus with accession nos. GSE155960 and GSE156110. 
+ 
+References 
+ 
+1. Christ, A., Lauterbach, M. & Latz, E. Western diet and the immune system: an inflammatory connection. Immunity 51, 794-811 (2019). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+2. Roden, M. & Shulman, G. I. The integrative biology of type 2 diabetes. Nature 576, 51-60 (2019). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+3. Lee, Y. S., Wollam, J. & Olefsky, J. M. An integrated view of immunometabolism. Cell 172, 22-40 (2018). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+4. Lackey, D. E. & Olefsky, J. M. Regulation of metabolism by the innate immune system. Nat. Rev. Endocrinol. 12, 15-28 (2016). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+5. Pollack, R. M., Donath, M. Y., LeRoith, D. & Leibowitz, G. Anti-inflammatory agents in the treatment of diabetes and its vascular complications. Diabetes Care 39, S244-S252 (2016). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+6. Ward, Z. J. et al. Projected U.S. state-level prevalence of adult obesity and severe obesity. N. Engl. J. Med. 381, 2440-2450 (2019). 
+ 
+ Article PubMed Google Scholar 
+ 
+7. Vijay, J. et al. Single-cell analysis of human adipose tissue identifies depot- and disease-specific cell types. Nat. Metab. 2, 97-109 (2020). 
+ 
+ Article PubMed Google Scholar 
+ 
+8. Jaitin, D. A. et al. Lipid-associated macrophages control metabolic homeostasis in a Trem2-dependent manner. Cell 178, 686-698.e14 (2019). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+9. Sun, W. et al. snRNA-seq reveals a subpopulation of adipocytes that regulates thermogenesis. Nature https://doi.org/10.1038/s41586-020-2856-x (2020). 
+ 
+10. Dutertre, C.-A. et al. Single-cell analysis of human mononuclear phagocytes reveals subset-defining markers and identifies circulating inflammatory dendritic cells. Immunity 51, 573-589.e8 (2019). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+11. Raredon, M. S. B. et al. Single-cell connectomic analysis of adult mammalian lungs. Sci. Adv. 5, eaaw3851 (2019). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+12. Stewart, B. J. et al. Spatiotemporal immune zonation of the human kidney. Science 365, 1461-1466 (2019). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+13. Merrick, D. et al. Identification of a mesenchymal progenitor cell hierarchy in adipose tissue. Science 364, eaav2501 (2019). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+14. Vieira Braga, F. A. et al. A cellular census of human lungs identifies novel cell states in health and in asthma. Nat. Med. 25, 1153-1163 (2019). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+15. Vivier, E. et al. Innate lymphoid cells: 10 years on. Cell 174, 1054-1066 (2018). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+16. Weizman, O.-E. et al. ILC1 confer early host protection at initial sites of viral infection. Cell 171, 795-808.e12 (2017). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+17. Nagasawa, M. et al. KLRG1 and NKp46 discriminate subpopulations of human CD117+CRTH2- ILCs biased toward ILC2 or ILC3. J. Exp. Med. 216, 1762-1776 (2019). 
+ 
+ Article PubMed PubMed Central Google Scholar 
+ 
+18. Dogra, P. et al. Tissue determinants of human NK cell development, function, and residence. Cell 180, 749-763.e13 (2020). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+19. Zhao, J. et al. Single-cell RNA sequencing reveals the heterogeneity of liver-resident immune cells in human. Cell Discov. 6, 22 (2020). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+20. Cuff, A. O. et al. Eomes^(hi) NK cells in human liver are long-lived and do not recirculate but can be replenished from the circulation. J. Immunol. 197, 4283-4291 (2016). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+21. Brestoff, J. R. et al. Group 2 innate lymphoid cells promote beiging of white adipose tissue and limit obesity. Nature 519, 242-246 (2015). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+22. Mjosberg, J. M. et al. Human IL-25- and IL-33-responsive type 2 innate lymphoid cells are defined by expression of CRTH2 and CD161. Nat. Immunol. 12, 1055-1062 (2011). 
+ 
+ Article PubMed CAS Google Scholar 
+ 
+23. Simoni, Y. et al. Human innate lymphoid cell subsets possess tissue-type based heterogeneity in phenotype and frequency. Immunity 46, 148-161 (2017). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+24. O'Sullivan, T. E. et al. Adipose-resident group 1 innate lymphoid cells promote obesity-associated insulin resistance. Immunity 45, 428-441 (2016). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+25. Bar-Ephraim, Y. E. et al. Cross-tissue transcriptomic analysis of human secondary lymphoid organ-residing ILC3s reveals a quiescent state in the absence of inflammation. Cell Rep. 21, 823-833 (2017). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+26. Villanova, F. et al. Characterization of innate lymphoid cells in human skin and blood demonstrates increase of NKp44+ ILC3 in psoriasis. J. Invest. Dermatol. 134, 984-991 (2014). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+27. Lim, A. I. et al. Systemic human ILC precursors provide a substrate for tissue ILC differentiation. Cell 168, 1086-1100.e10 (2017). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+28. Bar-Ephraim, Y. E. et al. CD62L is a functional and phenotypic marker for circulating innate lymphoid cell precursors. J. Immunol. 202, 171-182 (2019). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+29. La Manno, G. et al. RNA velocity of single cells. Nature 560, 494-498 (2018). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+30. Gulati, G. S. et al. Single-cell transcriptional diversity is a hallmark of developmental potential. Science 367, 405-411 (2020). 
+ 
+31. Villani, A.-C. et al. Single-cell RNA-seq reveals new types of human blood dendritic cells, monocytes, and progenitors. Science 356, eaah4573 (2017). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+32. Chakarov, S. et al. Two distinct interstitial macrophage populations coexist across tissues in specific subtissular niches. Science 363, eaau0964 (2019). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+33. Hill, D. A. et al. Distinct macrophage populations direct inflammatory versus physiological changes in adipose tissue. Proc. Natl Acad. Sci. USA 115, E5096-E5105 (2018). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+34. Brown, C. C. et al. Transcriptional basis of mouse and human dendritic cell heterogeneity. Cell 179, 846-863.e24 (2019). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+35. Kim, J. et al. Silencing CCR2 in macrophages alleviates adipose tissue inflammation and the associated metabolic syndrome in dietary obese mice. Mol. Ther. Nucleic Acids 5, e280 (2016). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+36. Weisberg, S. P. et al. CCR2 modulates inflammatory and metabolic effects of high-fat feeding. J. Clin. Invest. 116, 115-124 (2006). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+37. Hotamisligil, G. S. Inflammation, metaflammation and immunometabolic disorders. Nature 542, 177-185 (2017). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+38. Hume, D. A. The many alternative faces of macrophage activation. Front. Immunol. 6, 370 (2015). 
+ 
+39. Efremova, M., Vento-Tormo, M., Teichmann, S. A. & Vento-Tormo, R. CellPhoneDB: inferring cell-cell communication from combined expression of multi-subunit ligand-receptor complexes. Nat. Protoc. 15, 1484-1506 (2020). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+40. Mittelsteadt, K. L. & Campbell, D. J. ICOS signaling in visceral adipose tissue regulatory T cell homeostasis and function. J. Immunol. 202 (Suppl.), 128.4 (2019). 
+ 
+ Google Scholar 
+ 
+41. Joller, N. et al. Treg cells expressing the coinhibitory molecule TIGIT selectively inhibit proinflammatory Th1 and Th17 cell responses. Immunity 40, 569-581 (2014). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+42. Snelgrove, R. J. et al. A critical function for CD200 in lung immune homeostasis and the severity of influenza infection. Nat. Immunol. 9, 1074-1083 (2008). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+43. Shafiei-Jahani, P. et al. DR3 stimulation of adipose resident ILC2s ameliorates type 2 diabetes mellitus. Nat. Commun. 11, 4718 (2020). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+44. Maazi, H. et al. ICOS:ICOS-ligand interaction is required for type 2 innate lymphoid cell function, homeostasis, and induction of airway hyperreactivity. Immunity 42, 538-551 (2015). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+45. Holmes, T. D. et al. Licensed human natural killer cells aid dendritic cell maturation via TNFSF14/LIGHT. Proc. Natl Acad. Sci. USA 111, E5688-E5696 (2014). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+46. Kim, H.-M., Jeong, C.-S., Choi, H.-S., Kawada, T. & Yu, R. LIGHT/TNFSF14 enhances adipose tissue inflammatory responses through its interaction with HVEM. FEBS Lett. 585, 579-584 (2011). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+47. O'Rourke, R. W. et al. Systemic inflammation and insulin sensitivity in obese IFN-g knockout mice. Metabolism 61, 1152-1161 (2012). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+48. Bottcher, J. P. et al. NK cells stimulate recruitment of cDC1 into the tumor microenvironment promoting cancer immune control. Cell 172, 1022-1037.e14 (2018). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+49. Macdougall, C. E. et al. Visceral adipose tissue immune homeostasis is tegulated by the crosstalk between adipocytes and dendritic cell subsets. Cell Metab. 27, 588-601.e4 (2018). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+50. Maier, B. et al. A conserved dendritic-cell regulatory program limits antitumour immunity. Nature 580, 257-262 (2020). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+51. Butler, A., Hoffman, P., Smibert, P., Papalexi, E. & Satija, R. Integrating single-cell transcriptomic data across different conditions, technologies, and species. Nat. Biotechnol. 36, 411-420 (2018). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+52. Koay, H.-F. et al. A divergent transcriptional landscape underpins the development and functional branching of MAIT cells. Sci. Immunol. 4, eaay6039 (2019). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+53. Szabo, P. A. et al. Single-cell transcriptomics of human T cells reveals tissue and activation signatures in health and disease. Nat. Commun. 10, 4706 (2019). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+54. Zheng, G. X. Y. et al. Massively parallel digital transcriptional profiling of single cells. Nat. Commun. 8, 14049 (2017). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+55. Wong, K. L. et al. Gene expression profiling reveals the defining features of the classical, intermediate, and nonclassical human monocyte subsets. Blood 118, e16-e31 (2011). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+56. Trapnell, C. et al. The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells. Nat. Biotechnol. 32, 381-386 (2014). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+57. Bergen, V., Lange, M., Peidli, S., Wolf, F. A. & Theis, F. J. Generalizing RNA velocity to transient cell states through dynamical modeling. Nat. Biotechnol. https://doi.org/10.1038/s41587-020-0591-3 (2020). 
+ 
+58. Raudvere, U. et al. g:Profiler: a web server for functional enrichment analysis and conversions of gene lists (2019 update). Nucleic Acids Res. 47, W191-W198 (2019). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+Download references[] 
+ 
+Acknowledgements 
+ 
+We thank members of the following labs for helpful discussions: A. Freud, T.E.O., M.P. and M. Su. We thank D. Barrett for discarded surgical subcutaneous adipose tissue samples. We thank R. Modlin for assistance with IPA. A.D.H was supported by the Ruth L. Kirschstein National Research Service (award no. AI007323). T.E.O. was supported by the National Institutes of Health (grant nos. P30DK063491 and AI145997). F.M. was supported by the Whitcome Fellowship at UCLA. 
+ 
+Author information 
+ 
+Author notes 
+ 
+1. These authors contributed equally: Andrew D. Hildreth, Feiyang Ma. 
+ 
+Authors and Affiliations 
+ 
+1. Department of Microbiology, Immunology, and Molecular Genetics, David Geffen School of Medicine at UCLA, Los Angeles, CA, USA 
+ 
+ Andrew D. Hildreth, Yung Yu Wong, Ryan Sun & Timothy E. O'Sullivan 
+ 
+2. Molecular Biology Institute, University of California, Los Angeles, Los Angeles, CA, USA 
+ 
+ Andrew D. Hildreth & Timothy E. O'Sullivan 
+ 
+3. Department of Molecular, Cell, and Developmental Biology, University of California, Los Angeles, Los Angeles, CA, USA 
+ 
+ Feiyang Ma & Matteo Pellegrini 
+ 
+4. Institute for Genomics and Proteomics, University of California, Los Angeles, Los Angeles, CA, USA 
+ 
+ Feiyang Ma & Matteo Pellegrini 
+ 
+Authors 
+ 
+1. Andrew D. Hildreth 
+ View author publications 
+ 
+ You can also search for this author inPubMed Google Scholar 
+2. Feiyang Ma 
+ View author publications 
+ 
+ You can also search for this author inPubMed Google Scholar 
+3. Yung Yu Wong 
+ View author publications 
+ 
+ You can also search for this author inPubMed Google Scholar 
+4. Ryan Sun 
+ View author publications 
+ 
+ You can also search for this author inPubMed Google Scholar 
+5. Matteo Pellegrini 
+ View author publications 
+ 
+ You can also search for this author inPubMed Google Scholar 
+6. Timothy E. O'Sullivan 
+ View author publications 
+ 
+ You can also search for this author inPubMed Google Scholar 
+ 
+Contributions 
+ 
+A.D.H. and T.E.O. designed the study. F.M. and M.P. performed scRNA-seq bioinformatics. A.D.H, YY.W. and R.S. performed all other experiments. A.D.H. and T.E.O. wrote the manuscript. 
+ 
+Corresponding author 
+ 
+Correspondence to Timothy E. O'Sullivan. 
+ 
+Ethics declarations 
+ 
+Competing interests 
+ 
+The authors declare no competing interests. 
+ 
+Additional information 
+ 
+Peer review information Nature Immunology thanks Jorge Moscat, Sarah Teichmann, and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. Zoltan Fehervari was the primary editor on this article and managed its editorial process and peer review in collaboration with the rest of the editorial team. 
+ 
+Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. 
+ 
+Extended data 
+ 
+Extended Data Fig. 1 Lineage-associated gene signatures of CD45+ and CD45^(-) SVF cells from healthy human WAT. 
+ 
+a, Dot plot showing selected top differentially expressed marker genes for each cluster, supporting assignment of clusters to compartments shown in Fig. 1b. Color saturation indicates the strength of expression in positive cells, while dot size reflects the percentage of each cell cluster expressing the gene. b, Violin plots showing expression levels of additional cluster markers for the indicated structural cell populations. c, Representative gating strategy for scRNAseq-defined human WAT non-immune cell populations (CD45^(-)): Endothelial cell: CD31+, Smooth muscle cell (SMC): CD31^(-)CD34^(-)CD29^(-), Adipocyte precursor cell (APC): CD31^(-)CD34^(-)CD29+, Preadipocyte: CD31^(-)CD34+CD29^(int)ICAM-1+CD26^(-), Interstitial progenitor cell: CD31^(-)CD34+CD29^(int)ICAM-1+CD26+. d, Density correlation analysis of the indicated non-immune subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p < 0.05 was considered significant. 
+ 
+Extended Data Fig. 2 Single cell analysis reveals heterogeneous adaptive lymphocyte populations in healthy human WAT. 
+ 
+a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin^(-)(CD34+CD19+CD14+): gdT cell (gd T): TCRgd+Va24-Ja18^(-)Va7.2^(-), NKT cell (NKT): TCRgd^(-)Va24-Ja18+Va7.2^(-), MAIT cell (MAIT): TCRgd^(-)Va24-Ja18^(-)Va7.2+TCRab+, CD8+ T cell (CD8 T): TCRgd^(-)Va24-Ja18^(-)Va7.2^(-)TCRab+CD8a+CD4^(-), CD4+ T cell (CD4 T): TCRgd^(-)Va24-Ja18^(-)Va7.2^(-)TCRab+CD8a^(-)CD4+, Regulatory T cell (Treg): TCRgd^(-)Va24-Ja18^(-)Va7.2^(-)TCRab+CD8a^(-)CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8a and CD4 expression on human WAT gd T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p < 0.05 was considered significant. 
+ 
+Extended Data Fig. 3 Single cell analysis identifies unique human WAT-resident ILCs. 
+ 
+a, Representative sorting strategy for Lin^(-)CD7+ cell populations based on expression of CD200R1; used in Fig. 2. b, Unsupervised heatmap of the top 5 differentially expressed cluster marker genes for each indicated innate lymphoid cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Selected UMAP feature plots showing RNA expression of additional cluster markers, based on the UMAP shown in Fig. 2a. d, UMAP of sorted innate lymphoid cell populations denoted by the source of the sorted sample (CD200R1+ vs CD200R1^(-)) and patient source classification as lean (red, green) or obese (blue, purple); based on the UMAP shown in Fig. 2a. e, Bar plots showing the proportion of innate lymphoid cells derived from 7 lean (blue) and 5 obese (red) patients. 
+ 
+Extended Data Fig. 4 Flow cytometry analysis of scRNAseq-identified human WAT ILCs. 
+ 
+a,b, Representative gating strategies for the scRNAseq-defined human WAT (a) NK cell and (b) ILC populations identified in Fig. 2. Human WAT ILC populations are defined as CD45+Lin^(-)(CD3+TCRab+CD19+CD34+CD14+CD5+TCRgd+EOMES+)CD7+CD200R1+); ILC1: TBET+, ILC2: TBET^(-)CRTH2+NKp44^(-), ILC3: TBET^(-)CRTH2^(-)NKp44+, ILCP-like: TBET^(-)CRTH2^(-)NKp44^(-)CD62L^(+/-). c, Representative histogram of IFN-g by human WAT NK cell subsets. Unstim refers to CD200R1^(-) cells cultured without PMA and Ionomycin. d, Representative histograms of TBET, CRTH2, NKp44, and RORC expression on human WAT ILC subsets. e, Analysis of RORC MFI values from human WAT ILC subsets. Each point represents an individual patient (n = 3). ILCP-like: p = 0.0198, ILC1: p = 0.0313, ILC2: p = 0.0194. f, Representative flow cytometry plots of CD7+CD200R1+ cells isolated from human PBMC. g, Density correlation analysis of ILC2 with patient BMI. Each point represents an individual patient. Line of best fit and 95% confidence intervals are shown for the plot. h,i, Density of indicated ILCs by BMI classification. Each point represents an individual patient; (h) n = 8 lean and n = 7 obese patients. i, ILC1: n = 10 lean and n = 7 obese patients; ILC2, ILC3, ILCP-like: n = 5 lean and n = 3 obese patients. ILC2: p = 0.0293, ILC3: p = 0.0094, ILCP-like: p = 0.022. c,d,f, Data is representative of 3 individual patient samples. Samples were compared using two-tailed Student's t test with Welch's correction, assuming unequal SD, and data are presented as individual points with the mean +- SEM (*p < 0.05, **p < 0.01). Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p < 0.05 was considered significant. 
+ 
+Extended Data Fig. 5 Analysis of ILC1 and ILC3 fate DEGs suggests a clear developmental bifurcation. 
+ 
+Bifurcation heatmap of enriched genes for ILC1 (left), ILCP-like (middle) and ILC3 (right). Color indicates increased (red) or decreased (blue) expression. 
+ 
+Extended Data Fig. 6 Single cell analysis identifies unique myeloid populations within healthy human WAT. 
+ 
+a, Representative sorting strategies for CD11b+CD14+ macrophage and HLA-DR+CD11c+ dendritic cell populations indicated in Fig. 4. b, Heatmap shows the top 4 differentially expressed cluster marker genes for each indicated myeloid cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c,d, Violin plots showing RNA expression levels of cluster markers for (c) myeloid (d) and monocyte populations. e, Classical, Intermediate, and Nonclassical Monocyte gene module score analysis for the indicated monocyte populations based on comparison of signature genes for each cell type from previously defined datasets to DEGs within each cluster. f, Neutrophil gene module score analysis for the indicated myeloid populations based on comparison of signature genes for each cell type from previously defined datasets to DEGs within each cluster. g, Bar plots showing the proportion of myeloid cells derived from 7 lean (blue) and 5 obese (red) patients. 
+ 
+Extended Data Fig. 7 Flow cytometry analysis of scRNAseq-identified human WAT macrophage and dendritic cell populations. 
+ 
+a, Representative gating strategy for scRNAseq-defined human WAT macrophage and DC populations identified in Fig. 4. b, Representative histograms of CD64, CD68, CD88, and CD15 expression on human WAT macrophage cell subsets, CD14+ monocytes and CD15+ neutrophils isolated from human PBMC. c, Flow cytometry analysis of endogenous TNF-a production by human WAT macrophage subsets from n = 4 lean, n = 2 overweight, and n = 4 obese patients. Each point represents an individual patient. d, Representative flow cytometry histograms of CLEC10A and FCER1A expression on human WAT DC subsets. e, Density of the indicated DC populations by BMI classification, n = 9 lean and n = 7 obese patients. Each point represents an individual patient (f) Representative flow cytometry plots of human WAT macrophage populations from lean (left) and obese (right) patients. g, Density of the indicated macrophage populations by BMI classification, n = 7 lean and n = 7 obese patients. Each point represents an individual patient. b,d, Data is representative of 3 individual patient samples. Samples were compared using two-tailed Student's t test with Welch's correction, assuming unequal SD, and data are presented as individual points with the mean +- SEM (*p < 0.05, **p < 0.01). 
+ 
+Extended Data Fig. 8 Analysis of the DEGs between PVM and IM fates shows a clear bifurcation in gene expression programs. 
+ 
+Bifurcation heatmap of enriched genes for PVM (left), Mo-1 (middle) and IM (right). Color indicates increased (red) or decreased (blue) expression. 
+ 
+Extended Data Fig. 9 Novel human WAT cell types contribute to obesity-associated inflammatory networks. 
+ 
+a, Dot plots showing expression of ligands (left) and receptors (right) in novel human WAT cells; only ligands and receptors from cell types with detected expression (>25%) are shown. Implicated chemokines can be found in the lower panel. Color saturation indicates the strength of expression in positive cells, while dot size reflects the percentage of each cell cluster expressing the gene. b-e, GOSt analysis of obese-enriched differentially expressed genes for the indicated novel human WAT cell types. b, GOSt analysis of trNK. c, GOSt analysis of ILC3. d, GOSt analysis of IM. e, GOSt analysis of cDC2B. Terms were considered statistically significantly enriched if -log10(P_(adj))<0.05. 
+ 
+Extended Data Fig. 10 Proposed model of cell-cell interactions in healthy lean and obese human WAT. 
+ 
+In lean WAT, IL-15 expression from cDC2A coupled with IL-15RA expression from APCs may support the viability of IL-15RB-expressing ILCs and NK cell populations. CSF1 (M-CSF) expression from APCs and IL-13 from ILC2s likely drives the Mo-1 transition to PVMs, while CSF2 from APCs may support dendritic cell homeostasis. cDC2A-derived CD200 could suppress ILC activation at steady-state. TGFb1, PDGF, AREG, and GAS6 signaling from dendritic cells and PVM to APCs may promote tissue homeostasis. During obesity, IL-23 from an unknown source could drive the differentiation and accumulation of WAT ILC3s from ILCP-like cells. cDC2B-derived IL-18 and potentially IL-12 might stimulate the production of IFNg by trNK and ILC1 subsets and contribute to the development of LAM from PVM. Increased CCL2 production from hypoxia-sensing PVM and SMC could recruit circulating Mo-1 into the WAT where MIF, LIF, and IFN-g signaling from ILCs and NKs, as well as IL-1b, OSM and TNF-a signaling from IM, LAM, and cDC2B could polarize Mo-1 to the IM fate. trNK production of TNFSF14 (LIGHT) may further promote activation of cDC2B and IM. Together, these interactions suggest a cell type specific positive feedback loop whereby accumulation and polarization of WAT-resident lymphoid and myeloid cell types potentiate inflammation during human obesity. 
+ 
+Supplementary information 
+ 
+Reporting Summary 
+ 
+Supplementary Tables 1-18 
+ 
+Supplementary tables 1-18, containing patient data, gene lists, DEGs, IPA and gene set enrichment analyses. 
+ 
+Rights and permissions 
+ 
+Reprints and permissions 
+ 
+About this article 
+ 
+[Check for updates. Verify currency and authenticity via CrossMark] 
+ 
+Cite this article 
+ 
+Hildreth, A.D., Ma, F., Wong, Y.Y. et al. Single-cell sequencing of human white adipose tissue identifies new cell states in health and obesity. Nat Immunol 22, 639-653 (2021). https://doi.org/10.1038/s41590-021-00922-4 
+ 
+Download citation[] 
+ 
+- Received: 14 September 2020 
+ 
+- Accepted: 22 March 2021 
+ 
+- Published: 27 April 2021 
+ 
+- Issue Date: May 2021 
+ 
+- DOI: https://doi.org/10.1038/s41590-021-00922-4 
+ 
+Share this article 
+ 
+Anyone you share the following link with will be able to read this content: 
+ 
+Get shareable link 
+ 
+Sorry, a shareable link is not currently available for this article. 
+ 
+Copy to clipboard 
+ 
+Provided by the Springer Nature SharedIt content-sharing initiative 
+ 
+Subjects 
+ 
+- Chronic inflammation 
+- Gene regulation in immune cells 
