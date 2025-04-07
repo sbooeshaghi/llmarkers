@@ -4,5 +4,6 @@
   "tables": [
     "https://cdn-links.lww.com/permalink/jsn/c/jsn_30_11_2022_12_07_yu_2019040335_sdc5.xlsx"
   ],
-  "extract_text_cmd": "cat manuscript.html | pup 'div#ArticleContainer' | pandoc -f html -t plain > manuscript.txt"
+  "extract_text_cmd": "cat manuscript.html | pup 'div#ArticleContainer' | pandoc -f html -t plain > manuscript.txt",
+  "css_selector": "div#ArticleContainer"
 }

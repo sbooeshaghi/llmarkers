@@ -1,1577 +1,688 @@
-Basic Research
-
-Single-Cell Transcriptomic Map of the Human and Mouse Bladders
-
-Yu, Zhenyuan; Liao, Jinling; Chen, Yang; Zou, Chunlin; Zhang, Haiying;
-Cheng, Jiwen; Liu, Deyun; Li, Tianyu; Zhang, Qingyun; Li, Jiaping; Yang,
-Xiaobo; Ye, Yu; Huang, Zhiguang; Long, Xinyang; Yang, Rirong; Mo,
-Zengnan
-
-Author Information
-
-¹ Institute of Urology and Nephrology,
-
-Departments of ³ Urology and
-
-⁹ Cardiology, The First Affiliated Hospital of Guangxi Medical
-University, Nanning, China;
-
-² Center for Genomic and Personalized Medicine,
-
-¹³ Department of Immunology, School of Preclinical Medicine, Guangxi
-Medical University, Nanning, China;
-
-⁴ Guangxi Collaborative Innovation Center for Genomic and Personalized
-Medicine, Nanning, China;
-
-⁵ Guangxi Key Laboratory for Genomic and Personalized Medicine, Guangxi
-Key Laboratory of Colleges and Universities, Nanning, China;
-
-⁶ Key Laboratory of Longevity and Ageing-related Diseases, Ministry of
-Education, Nanning, China;
-
-⁷ Center for Translational Medicine, Guangxi Medical University,
-Nanning, China;
-
-⁸ Department of Urology, Affiliated Tumor Hospital of Guangxi Medical
-University, Nanning, China;
-
-¹⁰ Guangxi Key Laboratory of Precision Medicine in
-Cardio-cerebrovascular Diseases Control and Prevention, Nanning, China;
-
-¹¹ Guangxi Clinical Research Center for Cardio-cerebrovascular Diseases,
-Nanning, China; and
-
-¹² Scientific Research Department, The Second Affiliated Hospital of
-Guangxi Medical University, Nanning, China
-
-Z.Y., J. Liao., and Y.C. contributed equally to this work.
-
-Correspondence: Prof. Zengnan Mo or Dr. Rirong Yang, Center for Genomic
-and Personalized Medicine, Guangxi Medical University, Shuangyong Road
-22, Nanning, Guangxi, China, 530021. E-mail: zengnanmo@hotmail.com or
-520yrr@163.com
-
-JASN 30(11):p 2159-2176, November 2019. | DOI: 10.1681/ASN.2019040335
-
--    Infographic
--   [SDC]
--   [SDC]
--   [SDC]
--   [SDC]
--   [SDC]
--   [SDC]
--   [SDC]
-
-Metrics
-
-Abstract
-
-Significance Statement
-
-Previous studies of bladder cell classification mostly relied on the
-cell’s morphology, location, electrophysiology, and function. However,
-it is difficult to classify bladder cells accurately and comprehensively
-using these methods. The authors created a single-cell transcriptomic
-map of human bladder cells using single-cell RNA sequencing. They also
-created a more detailed single-cell sequencing RNA map of the mouse
-bladder than what was previously available. Using these tools, the
-authors compare the similarities and differences between human and mouse
-bladder cells and found many cell types that are highly similar across
-the two. Additionally, the authors discovered two new types of human
-bladder cells. One may play a role in allergic reactions and nerve
-conduction, whereas the other may play a role in bladder emptying. The
-results may assist scientists studying the relationship between bladder
-cell types and diseases.
-
-Background
-
-Having a comprehensive map of the cellular anatomy of the normal human
-bladder is vital to understanding the cellular origins of benign bladder
-disease and bladder cancer.
-
-Methods
-
-We used single-cell RNA sequencing (scRNA-seq) of 12,423 cells from
-healthy human bladder tissue samples taken from patients with bladder
-cancer and 12,884 cells from mouse bladders to classify bladder cell
-types and their underlying functions.
-
-Results
-
-We created a single-cell transcriptomic map of human and mouse bladders,
-including 16 clusters of human bladder cells and 15 clusters of mouse
-bladder cells. The homology and heterogeneity of human and mouse bladder
-cell types were compared and both conservative and heterogeneous aspects
-of human and mouse bladder evolution were identified. We also discovered
-two novel types of human bladder cells. One type is ADRA2A ⁺ and HRH2 ⁺
-interstitial cells which may be associated with nerve conduction and
-allergic reactions. The other type is TNNT1 ⁺ epithelial cells that may
-be involved with bladder emptying. We verify these TNNT1 ⁺ epithelial
-cells also occur in rat and mouse bladders.
-
-Conclusions
-
-This transcriptomic map provides a resource for studying bladder cell
-types, specific cell markers, signaling receptors, and genes that will
-help us to learn more about the relationship between bladder cell types
-and diseases.
-
-Visual Abstract
-
-[Abstract]
-
-Export
-
-The urinary bladder wall is organized into mucosal, muscular, serosal,
-and adventitial layers to sustain continuous storage and elimination
-phases. ^(¹) In normal conditions, the bladder cells can coordinate with
-one another. However, when bladder cells are dysfunctional, bladder
-diseases will occur. Bladder cancer is the most common malignancy of the
-urinary system and is the second most common cause of death among
-genitourinary tumors. ^(²) Urinary tract infections are among the most
-common bacterial infections acquired in the community and in hospitals.
-^(³) Each year, approximately 10% of women report having had a urinary
-tract infection and >50% of all women have at least one such infection
-in their lifetime. ^(⁴) Some benign bladder diseases, such as lower
-urinary tract symptoms, overactive bladder (OAB), and interstitial
-cystitis/bladder pain syndrome (IC/BPS), are highly prevalent conditions
-worldwide. ^(⁵) ^(,) ^(⁶) Patients suffer from substantial economic and
-human burden, ^(⁵) ^(,) ^(⁶) but the pathogenesis of these diseases
-remains unclear.
-
-Sanders et al. ^(⁷) suggested interstitial cell (IC) as a morphologic
-term indicating a variety of cells with varying origins and phenotypes
-that occupy spaces within the interstitium between the cells and is the
-most prominent in defining a given tissue. In bladder smooth muscle
-tissues, fibroblasts, myofibroblasts, endothelial cells, and ICs of
-Cajal meet the definition above. ^(⁷) McCloskey and Gurney ^(⁸)
-discovered the bladder ICs of Cajal and suggested these cells can act as
-pacemakers or intermediaries in the transmission of nerve signals to
-smooth muscle cells. The ICs in detrusor muscles are controversial. In a
-previous study, researchers could not find c-Kit ⁺ ICs in bladder
-muscles but discovered a new class of ICs, the platelet-derived growth
-factor receptor- α (PDGFRA) cells in mouse urinary bladder. ^(⁹)
-However, to our knowledge, previous studies lacked an integrated
-perspective for studying bladder cells. The number of existing bladder
-cell subtypes, their distinctive properties, and the homology and
-heterogeneity of human and mouse are unclear. Although Han et al . ^(¹⁰)
-mapped the Mouse Cell Atlas (MCA) by microwell sequencing which
-analyzed >400,000 single cells covering all major mouse organs,
-including 3143 mouse bladder cells, the number and cell types of mouse
-bladder cells are scarce, and the high-throughput single-cell RNA
-sequencing (scRNA-seq) of human bladder cells has not been reported thus
-far.
-
-We aim to understand the unsupervised classification and function of
-both human and mouse bladder cells precisely. With the development of
-next-generation sequencing, high-throughput single-cell analysis, ^(¹¹)
-and The Human Cell Atlas, ^(¹²) we used scRNA-seq for the experimental
-technique. Single-cell transcriptome analysis should identify the
-heterogeneity of human bladder cells and will provide information to
-understand how the different cell types are associated with bladder
-diseases.
-
-Methods
-
-Human Bladder Tissue Procurement and Isolation
-
-Fresh human bladder samples ( Supplemental Table 1 ) were collected at
-The First Affiliated Hospital of Guangxi Medical University and
-Affiliated Tumor Hospital of Guangxi Medical University. We received
-approval of Institution Review Board from The First Affiliated Hospital
-of Guangxi Medical University, and received signed informed consent from
-all patients. Two out of the three samples were obtained from patients
-undergoing radical cystectomy, and the remaining sample was from a
-patient undergoing partial cystectomy. None of the three patients had
-received radiation, chemotherapy, or intracystic treatments before
-surgery. It took about 30 minutes from cutting off blood supply to
-remove the sample from the body. To ensure bladder tissues removed from
-the three participants (P1, P2, P3) were far enough away from the tumor,
-the bladder tissues for P2 and P3 were obtained from the bladder body
-and those for P1 were obtained from the bladder dome. Normal bladder
-tissue was obtained at least 2 cm away from the tumor tissue (
-Supplemental Figure 1A ). The immunohistochemistry and
-immunofluorescence (IF) samples were obtained from patients undergoing
-radical cystectomy ( Supplemental Table 2 ).
-
-First, we transferred fresh tissue from the operating room to the
-laboratory in cold HBSS (311-512-CL; WISENT) with 1%
-penicillin-streptomycin (15240062; Gibco), and the entire transport
-process was ≤20 minutes. After washing with 4°C Dulbecco’s
-phosphate-buffered saline (DPBS; 311-425-CL; WISENT), full-thickness
-bladder tissues with a surface diameter of 1 cm were cut using surgical
-scissors ( Supplemental Figure 1A ). After adding DPBS to the conical
-tube, the bladder fragment was centrifuged at 300 × g for 5 minutes at
-4°C, with one repeat. After discarding supernatant, 10 ml of collagenase
-type 1 (1.5 mg/ml; 17100017; Gibco) with DNase I (0.2 mg/ml;
-10104159001; Roche) perfusion was carried out for 30 minutes at 37°C and
-then centrifuged at 300 × g for 5 minutes at 4°C. After discarding the
-supernatant, we used 5 ml of TrypLE Express Enzyme (1×; 12605010;
-Gibco,) to further digest the sticky clumps of cells for 5 minutes at
-37°C. Digestion was then terminated by 10 ml DMEM (319-006-CL; WISENT)
-with 10% FBS (10099141; Gibco,). Following treatment with collagenase
-type 1 and TrypLE Express Enzyme, the dissociated single cells were
-collected ( Supplemental Figure 1B ). Next, we removed red blood cells
-using 5 ml of 1× RBC Lysis Buffer (10× diluted to 1×; B250015;
-BioLegend) for 5 minutes and centrifuged at 300 × g for 5 minutes at
-4°C. After discarding the supernatant, the cells were resuspended in 4°C
-DPBS. Finally, the cells were passed through a 40- μ m cell strainer. We
-obtained the single-cell suspension ( Supplemental Figure 1C ) and
-detected live cells using a hemocytometer with trypan blue (0.4%;
-420301; Gibco). In total, it took about 3 hours from tissue ischemia to
-the successful preparation of single-cell suspension in our laboratory.
-
-Mouse and Rat Bladder Tissue Procurement and Isolation
-
-All mouse and rat procedures were approved by the Guangxi Medical
-University Institutional Animal Care and Use Committee. Wild-type
-C57BL/6 mice were ordered from Hunan SJA Laboratory Animal Co., Ltd.,
-and Guangxi Medical University Laboratory Animal Centre. Sprague Dawley
-rats were ordered from Guangxi Medical University Laboratory Animal
-Centre. All mice and rats were housed in Guangxi Medical University
-Laboratory Animal Centre in a specific-pathogen-free facility with
-individually ventilated cages. The room has controlled temperature
-(20°C–22°C), humidity (30%–70%) and light (12-hour light/dark cycle).
-The bladder tissues of rats were used for immunohistochemistry and
-Western blot. Mice ( Supplemental Table 3 ) were randomly assigned after
-matching for sex, and bladder tissues were harvested from 7- to
-12-week-old male ( n =5) or female mice ( n =5). Given the genetic
-stability of C57BL/6 mice, we obtained single-cell suspensions from the
-entire bladders of 10 C57BL/6 mice mixed together. We then took twice
-the mice bladder cells from the same single-cell suspension and
-performed two 10× Genomics reactions, respectively. At the same time, we
-harvested bladder tissues from other mice for immunohistochemistry and
-Western blot ( Supplemental Table 4 ).
-
-Next, we cut the tissues into fragments using surgical scissors. Bladder
-fragments were stored temporarily in DPBS (311-425-CL) at 4°C. It was
-centrifuged at 300 × g for 5 minutes at 4°C, and this step was repeated.
-Collagenase type 1 (10 ml, 1 mg/ml; 17100017) with DNase I (0.2mg/ml;
-10104159001) perfusion was carried out for 20 minutes at 37°C and then
-centrifuged at 300 × g for 5 minutes at 4°C. After discarding the
-supernatant, we used StemPro Accutase Cell Dissociation Reagent
-(A1110501; Gibco) to digest the sticky clumps of cells for 10 minutes
-and then terminated digestion with DPBS. Following collagenase and
-accutase treatment, the dissociated single cells were collected. Next,
-we removed red blood cells using 5 ml of 1× RBC Lysis Buffer (10×
-diluted to 1×; B250015) for 5 minutes, and then centrifuged at 300 × g
-for 5 minutes at 4°C. After discarding the supernatant, the cells were
-resuspended in DPBS at 4°C. The cells passed through a 40- μ m cell
-strainer. We obtained the single-cell suspension ( Supplemental Figure
-1D ) and detected live cells using a hemocytometer with trypan blue
-(0.4%; 420301). It took about 2 hours to prepare the mouse single-cell
-suspension.
-
-Sample Processing with 10× Genomics and cDNA Library Preparation
-
-We used 10× Genomics Chromium Single Cell 3′ Reagents Kit version 2 (
-https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry
-) to perform the previously mentioned single-cell suspensions. Briefly,
-the single-cell samples were passed through a 40- μ m cell strainer and
-live cells were counted using a hemocytometer with trypan blue ( Table 1
-). Subsequently, the appropriate volume of each sample was calculated to
-recover 10,000 cells. Using the 10× protocol, we added the single cells,
-the gel beads, and the oils to the 10× Genomics Single Cell A Chip and
-ran the machine. After droplet generation, samples were transferred onto
-a PCR tube and reverse transcription was performed using T100 Thermal
-Cycler (Bio-Rad). After the reverse transcription, cDNA was recovered
-using Recovery Agent which was provided by 10× Genomics. The cDNA was
-then cleaned using a Silane DynaBead as outlined in the user guide.
-Purified cDNA was amplified for ten cycles before being cleaned up using
-SPRIselect beads. The samples were detected using a Qubit2.0 Fluorometer
-(Invitrogen) to determine cDNA concentration. The cDNA libraries were
-prepared according to the Chromium Single Cell 3′ Reagent Kits version 2
-user guide.
-
-Table 1. - Cell viability of samples before performing 10× Genomics
-
-  -----------------------------------------------------------------------
-  Samples                                     Cell Viability (%)
-  ----------------------------------- -----------------------------------
-  P1                                                  95
-
-  P2                                                  90
-
-  P3                                                  86
-
-  Mice                                               82.5
-  -----------------------------------------------------------------------
-
-scRNA-Seq Processing and Preliminary Results
-
-Samples were sequenced using a Hiseq Xten (Illumina, San Diego, CA) with
-the following run parameters: read 1 for 150 cycles, read 2 for 150
-cycles, and index for 14 cycles. Preliminary sequencing results (bcl
-files) were converted to FASTQ files with CellRanger (version 2.1.1 for
-P3 data, version 2.2.0 for P1 and P2 data, and version 3.0.0 for mouse
-data;
-https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger
-). The FASTQ files were then aligned to the human genome reference
-sequence, GRCh38, and the mouse genome reference sequence, mm10. We also
-used Cell Ranger for preliminary data analysis and generated a file
-containing a barcodes table, a genes table, and a gene expression
-matrix. Next, we obtained an overview website containing a considerable
-amount of information, such as number of cells, median number of
-detected genes, sequencing saturation, and sequencing depth (
-Supplemental Tables 1 and 5 ).
-
-Using Seurat for Quality Control and Human Bladder Data Secondary Analysis
-
-First, we installed R (version 3.5.1, https://www.r-project.org/ ) and
-Seurat R package (version 2.3.4, https://satijalab.org/seurat/ ). We
-used the MergeSeurat function to merge three human samples and two
-reactions of mouse samples. The proportion of mitochondrial genes to all
-genetic material may indicate whether a cell is in homeostasis or not.
-We generally believe when a cell has a high percentage of mitochondrial
-genes versus all genes, it may be under stress. Thus, according to the
-median number of genes and the percentage of mitochondrial genes in the
-human and mouse samples ( Supplemental Figures 2, A–C and 3, A and B ),
-the cells with <200 and >4000 genes (potential cell duplets) and a
-mitochondrial gene percentage of >10% were filtered out ( Supplemental
-Figures 2D and 3C ). After the step above, we obtained 12,423 human
-bladder and 12,884 mouse bladder cells.
-
-After data normalization, we identified highly variable genes in the
-single cells after controlling for the relationship between average
-expression and dispersion. Genes were removed using the low cut-off of
-0.0125 and high cut-off of 3, and the z -score cut-off of 0.5 was
-applied to identify the highly variable genes, thereby resulting in 1778
-genes for human data and 2568 genes for mouse data. We then used
-principal-component analysis (PCA), with the variable genes as input,
-and identified significant principal components based on the jackStraw
-function. A total of 15 principal components were selected as
-statistically significant input for t -distributed stochastic neighbor
-embedding (t-SNE). We detected the distribution of t-SNE and PCA between
-these samples ( Supplemental Figures 4, A–C and 5, A and B ). Both human
-and mice data showed a good correlation ( Supplemental Figures 4, D–F,
-and 5C ). At the same time, we also examined the distribution of PCA in
-all types of cells ( Supplemental Figure 4B ). We compared the average
-expression of genes between the three samples, and found a good Pearson
-correlation between them ( Supplemental Figure 4, D–F ). Cells were
-clustered by the FindClusters function and classified into 16 clusters
-for human and 15 clusters for mouse. Next, we used the FindAllMarkers
-function to find differentially expressed genes (DEGs) between each type
-of cells ( Supplemental Tables 6 and 7 ). To facilitate in-depth
-analysis of human ICs, we used the FindMarkers function to find DEGs
-among five ICs ( Supplemental Table 8 ).
-
-Mouse bladder data from MCA were analyzed using a similar method. MCA
-data are available from the Gene Expression Omnibus (GEO), accession
-GSE108097.
-
-Cell Cycle Analysis
-
-Cell cycle analysis was performed using the Seurat package and we used a
-previously defined core set of 43 G1/S and 54 G2/M cell cycle genes.
-^(¹³) We classified cells by the maximal average expression (“cycle
-score”) in these two gene sets. When the cycle scores of G1/S and G2/M
-were both less than two, we considered these cells as noncycling.
-Otherwise, we considered the cells as proliferative.
-
-Reconstructing Human ICs Differentiation Trajectories using Monocle2
-
-Cell fate decisions and pseudotime trajectories were reconstructed using
-the Monocle2 R package (version 2.8.0,
-http://cole-trapnell-lab.github.io/monocle-release/ ). Firstly, the five
-types of ICs were performed by Seurat. These Seurat data which included
-3328 ICs were imported into Monocle2. Genes that were expressed in at
-least ten cells were used and only genes expressed in >5% of cells were
-kept. We used thresholds on the cells local density ( ρ ) and nearest
-distance ( δ ) to determine the number of clusters. We then performed
-the differential gene expression analysis as before but across all cell
-clusters. We used the top 1000 most significant DEGs as the set of
-ordering genes and performed the dimension reduction and the trajectory
-analysis. Once we established a trajectory, we used the
-differentialGeneTest function to find genes that had an expression
-pattern that varied according to pseudotime.
-
-Comparison of Human and Mouse Bladder Cells at Single-Cell Resolution
-
-We performed comparisons across species by referring to a previous
-analysis method. ^(¹⁴) Briefly, after the above program (quality control
-step), we obtained 12,423 human bladder cells and 12,884 mouse bladder
-cells. We considered all homologous genes with identical gene names
-between the human and mouse data sets. For both species, we calculated
-average expression per gene ( n =12,235 genes) in each cluster. Then, we
-calculate the Pearson correlation coefficient.
-
-RNA Velocity Analysis
-
-RNA velocity analysis was performed using the velocyto.R program (
-http://velocyto.org , version 0.6). ^(¹⁵) Briefly, spliced/unspliced
-reads were annotated by velocyto.py with CellRanger (version 2.2.0),
-generating BAM files and accompany GTF, and then saved in .loom files.
-The .loom files were then loaded to R (version 3.5.2) using the
-read.loom.matrices function to generate count tables for splicing and
-unsplicing reads. Next, we filtered out the cells in the bottom 0.5% of
-the total unspliced transcript count. We then removed genes according to
-an average spliced variant expression of <0.2 or average unspliced
-variant expression of 0.05 in at least one cluster. Lastly, the
-velocity-vector arrows were projected onto the t-SNE plot which was
-obtained in Seurat.
-
-Immunohistochemistry
-
-The results from immunohistochemistry were verified in at least three
-different patient samples, especially the result of TNNT1 in seven
-different patient samples. Each sample was performed in at least five
-slides. Human bladder tissue was cut into 5 mm × 4 mm × 3 mm blocks and
-fixed in 4% paraformaldehyde (P1110-500; Solarbio) for 24–48 hours.
-These paraffin-embedded tissues were obtained from patients undergoing
-partial cystectomy ( Supplemental Table 2 ). The slides of 3- μ m
-sections were cut by using a Leica Sliding Microtome (RM2235; Leica).
-Tissues were then rehydrated using solutions of ethanol ranging from
-100% to 70% and washed with PBS (P1010-2; Solarbio). Sodium citrate (pH
-6.0, 50× diluted to 1×; catalog number C1032; Solarbio) to perform a
-high-pressure repair on the slides. Tissues were blocked in goat serum
-(SP-9000; ZSGB-BIO) in PBS for 15 minutes at room temperature. The
-slides were incubated with anti- ADRA2A antibody (rabbit
-anti-human/mouse, 1:1000, ab85570; Abcam), anti- TNNT1 antibody (rabbit
-anti-human/mouse/rat, 1:500, NBP1-32748; Novus), anti- HRH2 antibody
-(rabbit anti-human, 1:100, NBP1-86082; Novus), anti-cytokeratin 17
-antibody (rabbit anti-human/mouse, 1:100, ab109725; Abcam),
-anti-cytokeratin 15 antibody (rabbit anti-human/mouse, 1:500, ab52816;
-Abcam), and PBS control prepared in blocking solution at 4°C overnight.
-After washing in PBS, the tissues were incubated with secondary
-antibodies (D-3004-15; Shanghai Long Island Antibody Diagnostica Inc.)
-for 15 minutes at room temperature. Finally, we used DAB (ZLI-9018;
-Beijing Noble Ryder Technology Co., Ltd.) for staining and hematoxylin
-for nucleation.
-
-Immunohistochemistry paraffin (IHC-P) of mouse and rat tissues was
-performed by the same method. We used anti- ADRA2A antibody (rabbit
-anti-mouse/human, 1:100, ab92650; Abcam), anti-cytokeratin 17 antibody
-(rabbit anti-mouse/human, 1:100, ab109725), anti-cytokeratin15 antibody
-(rabbit anti-mouse/human, 1:500, ab52816), and anti- TNNT1 antibody
-(rabbit anti-mouse/rat/human, 1:500, NBP1-32748) as the primary
-antibodies.
-
-IF
-
-The results of IF were verified in at least two different patient
-samples. Some steps were similar to those of immunohistochemistry.
-Before we performed IF, the antibody specificity was confirmed by
-labeling control groups. We set six negative controls: PBS and
-anti-mouse secondary antibody, PBS and anti-rabbit secondary antibody,
-rabbit primary antibody ( ADRA2A ) and anti-mouse secondary antibody,
-rabbit primary antibody ( HRH2 ) and anti-mouse secondary antibody,
-mouse primary antibody ( VIM ) and anti-rabbit secondary antibody, and
-mouse primary antibody ( PECAM1 ) and anti-rabbit secondary antibody.
-The results from the controls indicated there is no unspecific reaction
-between PBS and the primary and secondary antibodies used ( Supplemental
-Figure 6A ). Briefly, we used the slides after high-pressure repair and
-incubated them with primary antibodies. We divided the primary antibody
-into the following groups: anti- ADRA2A (rabbit anti-human, 1:200,
-ab85570; Abcam) and anti-vimentin antibodies (mouse anti-human, 1:1000,
-ab8978; Abcam), anti- HRH2 (rabbit anti-human, 1:200, NBP1-86082; Novus)
-and anti-vimentin antibodies (mouse anti-human, 1:1000, ab8978), and
-anti- ADRA2A (rabbit anti-human, 1:200, ab85570) and anti- PECAM1
-antibodies (mouse anti-human, 1:25, NB600-562; Novus). The slides were
-incubated with the primary antibodies at 4°C overnight. After washing
-with PBS, the slides were incubated with secondary antibodies, namely
-Alexa Fluor 488 (goat anti-mouse IgG preadsorbed, 1:500, ab150117;
-Abcam) and Alexa Fluor 594 (goat anti-rabbit IgG preadsorbed, 1:500,
-ab150084; Abcam) for 1 hour. After washing with PBS, we stained the
-slides with DAPI (ab104139, Abcam) for 10 minutes.
-
-Immunoblotting
-
-Briefly, the bladder tissues of Sprague Dawley rat (77.3 mg), C57BL/6
-mouse (70 mg), and human (137 mg) were lysed with RIPA lysis buffer
-(P0013B; Beyotime) containing both protease inhibitor (P1045-1;
-Beyotime) and phosphatase inhibitor (P1045-2; Beyotime) on ice. After
-centrifugation at 12,000 rpm for 5 minutes, the supernatants were
-harvested and the protein concentrations were determined using a BSA
-Quantification Kit (A8020; Solarbio). Protein samples (20–50 μ g) from
-supernatants were separated on SDS-PAGE and transferred onto
-polyvinylidene difluoride membrane (BS-PVDF-22; Biosharp). The membrane
-was blocked for 2 hours with blocking buffer containing 5% nonfat milk
-(wt/vol), 1× Tris-buffered saline/Tween 20 (TBST; 20× TBS [T1080;
-Solarbio] was diluted with double-distilled water and Tween 20 [C-0086;
-Bioss] was added). After three washings with TBST, membranes were
-incubated at 4°C overnight with primary antibodies, respectively. The
-primary antibodies were anti- ADRA2A (rabbit anti-human/mouse/rat,
-1:1000, ab85570) and anti–glyceraldehyde-3-phosphate dehydrogenase
-(anti- GAPDH ; rabbit anti-human/mouse/rat, catalog number 2118, 1:1000;
-CST). The membranes were washed three times with TBST, and incubated
-with horseradish peroxidase–conjugated secondary antibody (goat
-anti-rabbit, 1:1000, A0208; Beyotime) at room temperature for 1 hour,
-and then washed three times again. Immunoreactivity using the ECL Kit
-for Western blot (P0018S; Beyotime) was visualized by an imager
-(ImageQuant LAS 500; GE Healthcare). GAPDH was used as a loading
-control. The presented results are from at least three repetitions of
-Western blot.
-
-Data Access
-
-The raw data and processed data in this article can be accessed in the
-National Center for Biotechnology Information (GEO) database
-(GSE129845). The average expression of every gene in every cell cluster
-of human and mouse bladder ( Supplemental Tables 9 and 10 ) can be
-accessed in Figshare ( https://doi.org/10.6084/m9.figshare.8942663.v1 ),
-together with DEGs of every cell cluster in human or mouse bladder (
-Supplemental Tables 6 and 7 ).
-
-Results
-
-scRNA-Seq Profiling and Unbiased Clustering of Human Urinary Bladder Cells
-
-Bladder specimens from two males and one female organ donors aged 35–48
-( Supplemental Table 1 ) were collected fresh, dissected, and digested
-into single cells (Methods). We then performed scRNA-seq with a
-high-throughput, droplet-mediated scRNA-seq platform (10× Genomics
-Chromium; ^(¹⁶) Figure 1A and Methods). A total of 13,495 cells were
-isolated and sequenced from the three samples with a median of 1356–2336
-genes detected per cell ( Supplemental Table 1 ). Under stringent
-quality controls by Seurat ^(¹⁷) ( https://satijalab.org/seurat/ ),
-12,423 high-quality cells were further analyzed. Clustering analysis
-identified 16 distinct cell clusters consisting of cells in the range of
-66–2337 cells per cluster ( Figure 1B , Supplemental Figure 2E ).
-According to the marker genes ( Table 2 ) of each type of cells, we
-classified cells into cluster 1–16, thereby corresponding to basal cells
-1, basal cells 2, fibroblast 1, intermediate cells 1, intermediate cells
-2, smooth muscle cells, fibroblast 2, myofibroblast, fibroblast 3,
-monocytes, endothelial cells, TNNT1 ⁺ epithelial cells, T cells,
-umbrella cells, ADRA2A ⁺ ICs, and B cells, respectively ( Figure 1C ).
-
-[fig1]
-
-Figure 1.:
-
-High-throughput 10× scRNA-seq reveals the cell populations of human
-bladder. (A) Overview of the scRNA-seq approach using human and mouse
-bladder tissue samples that were processed into a single-cell
-suspension, and scRNA-seq analysis using the 10× platform. (B) t-SNE
-plot representation of 12,423 urinary bladder cells from three human
-samples and clusters are colored and distinctively labeled. (C) Heat map
-showing the marker genes of each cluster, highlighting the selected
-marker genes for each cluster from humans. (D) t-SNE plot representation
-of 12,884 urinary bladder cells from ten mice and clusters are colored
-and distinctively labeled. (E) Heat map showing the marker genes of each
-cluster, highlighting the selected marker genes for each cluster from
-mouse.
-
-Table 2. - Genes used as markers of different cell types and the
-reference that justified their use
-
-  ------------------------------------------------------------------------
-  Gene           Marker                                  Reference
-  -------------- -------------------------------- ------------------------
-  KRT18          Epithelial cell                           ^(³⁷)
-
-  KRT19          Epithelial cell                           ^(³⁷)
-
-  KRT5           Basal cell                                ^(³⁷)
-
-  KRT17          Basal cell                                ^(³⁷)
-
-  KRT13          Intermediate cell, basal cell             ^(³⁷)
-
-  KRT20          Umbrella cell                             ^(³⁷)
-
-  UPK1A          Umbrella cell ^(high) ,                 ^(³⁷ , ³⁸)
-                 intermediate cell ^(low) ^(a)    
-
-  UPK1B          Umbrella cell ^(high) ,                 ^(³⁷ , ³⁸)
-                 intermediate cell ^(low) ^(a)    
-
-  UPK3B          Umbrella cell ^(high) ,                 ^(³⁷ , ³⁸)
-                 intermediate cell ^(low) ^(a)    
-
-  UPK3A          Umbrella cell                           ^(³⁷ , ³⁸)
-
-  UPK2           Umbrella cell                           ^(³⁷ , ³⁸)
-
-  VIM            Interstitial cell                       ^(⁷ , ¹⁸)
-
-  S100A4         Fibroblast                              ^(¹⁹ , ²⁰)
-
-  COL3A1         Fibroblast                                ^(²¹)
-
-  COL1A1         Fibroblast                              ^(²⁰ , ²¹)
-
-  COL1A2         Fibroblast                              ^(²⁰ , ²¹)
-
-  ACTA2          Myofibroblast                             ^(²²)
-
-  TAGLN          Smooth muscle cell                      ^(³⁹ , ⁴⁰)
-
-  DES            Smooth muscle cell                        ^(⁴⁰)
-
-  CNN1           Smooth muscle cell                        ^(⁴⁰)
-
-  ACTG2          Smooth muscle cell                        ^(⁴¹)
-
-  TPM2           Smooth muscle cell                        ^(⁴²)
-
-  SELE           Endothelial cell                          ^(⁴³)
-
-  PECAM1         Endothelial cell                        ^(⁴³ , ⁴⁴)
-
-  VCAM1          Endothelial cell                        ^(⁴³ , ⁴⁴)
-
-  CDH5           Endothelial cell                          ^(⁴⁵)
-
-  LYZ            Monocyte                                  ^(⁴⁶)
-
-  MS4A7          Monocyte                                  ^(⁴⁶)
-
-  CD14           Monocyte                                ^(⁴⁶ , ⁴⁷)
-
-  CD209          Dendritic cell                          ^(⁴⁸ , ⁴⁹)
-
-  CD3D           T cell                                  ^(⁴⁶ , ⁵⁰)
-
-  CD3E           T cell                                  ^(⁴⁶ , ⁵⁰)
-
-  MZB1           B cell                                    ^(⁵¹)
-
-  CD79A          B cell                              ^(⁴⁶ , ^(52–54) –)
-
-  GPM6A          Neuron                                  ^(⁵⁵ , ⁵⁶)
-  ------------------------------------------------------------------------
-
-^(a) The expression of this gene was higher in umbrella cells than in
-intermediate cells.
-
-Some differences in cell homogeneity were found between different
-populations. In the top five genes of each cluster, only the smooth
-muscle cells (cluster 6) maintained high homogeneity, in which each cell
-approximately expressed the top five genes ( Supplemental Figure 7, A
-and B ). However, other clusters did not have this characteristic.
-
-Interestingly, we defined each cluster cell by using the reported marker
-genes ( Table 2 ), some new gene markers can be found in some clusters.
-For example, in fibroblast 1 (cluster 3), PLA2G2A and IGFBP6 were highly
-expressed compared with those of other clusters. ( Supplemental Figure
-7A ). PIGR and LCN2 were also highly expressed in umbrella cells
-(cluster 14, Supplemental Figure 7A ).
-
-Five Types of ICs, Especially a Novel IC in Human Bladder, Revealed by scRNA-Seq
-
-Next, we focused on ICs ( Figure 2A ). In previous studies, VIM , which
-encodes vimentin, was considered the specific gene marker for ICs. ^(⁷)
-^(,) ^(¹⁸) These VIM -positive cells can be classified into five
-populations ( Figure 2B ), excluding immune cells. Depending on the
-fibroblast marker genes S100A4 , ^(¹⁹) COL1A1 , ^(²⁰) ^(,) ^(²¹) and
-COL3A1 , ^(²¹) fibroblasts can be classified into three subpopulations,
-namely fibroblast 1, fibroblast 2, and fibroblast 3 ( Figure 2B ).
-Fibroblast 3 expresses VIM , COL1A1 , and COL3A1 but did not express
-S100A4. We also defined the myofibroblast by coexpressing ACTA2 ^(²²)
-and VIM but not expressing S100A4 ( Figure 2B ). However, we discovered
-a novel type of ICs which coexpressed ACTA2 and S100A4 ( Figure 2B ).
-Unlike other ICs, these cells were highly expressed in ADRA2A and HRH2 ,
-as well in AVPR1A . ( Figure 2B ).
-
-[fig2]
-
-Figure 2.:
-
-ICs can be classified into multiple cell types by scRNA-seq. (A) The
-distribution of ICs in this t-SNE plot. (B) Heat map showing the gene
-expression of five IC types. (C) Gene markers distinguishing the five IC
-types from one another by using Seurat. avg_logFC, average log ₂ fold
-change.
-
-To distinguish these five types of ICs, we used the FindMarkers function
-of Seurat to analyze their gene expression ( Figure 2C ). In addition to
-the marker genes above, some genes exhibited evident differences in
-their expression. For example, fibroblast 1 showed high CLEC3B , FSTL1 ,
-IGFBP6 , and FBN1 expression levels; whereas fibroblast 2 exhibited high
-APOD , SFRP2 , CHRDL2 , and C7 expression levels ( Figure 2C ).
-Fibroblast 3 showed high DUSP1 , SERPINE1 , and FST expression levels.
-Myofibroblasts also exhibited high APOE and PTGDS expression levels (
-Figure 2C ). We also discovered a new population of ICs that
-specifically expressed ADRA2A and HRH2 ( Figure 3A ). ADRA2A encodes the
-α _(2A) -adrenergic receptor which is a receptor that binds to
-noradrenaline and adrenaline, ^(²³) whereas HRH2 encodes a H2 histamine
-receptor that binds to histamine to indicate allergic reactions. α ₂
--Adrenoceptor stimulation inhibits the field stimulation–induced
-contraction of rat bladder in a tetrodotoxin and the parasympathetic
-nerve activity in the bladder of rabbits. ^(²⁴)
-
-[fig3]
-
-Figure 3.:
-
-ADRA2A ⁺ ICs can be validated in human bladder tissues. (A) Violin plots
-showing the ADRA2A and HRH2 expression levels in each cluster. (B) IHC-P
-verified the ADRA2A protein expression (arrows) in human bladder tissue
-( Supplemental Table 2 , sample ID: S004). (C) IHC-P verified the cells
-of the HRH2 ⁺ (arrows) in human bladder tissue ( Supplemental Table 2 ,
-sample ID: S004). (D) IF analysis of the expression of VIM (red), which
-is an IC marker, in combination with the novel cell marker ADRA2A
-(green) and DNA staining by DAPI (blue) within the tissue paraffin
-sections from human bladder samples ( Supplemental Table 2 , sample ID:
-S004) verified these novel ICs. (E) We used another marker, HRH2
-(green), to verify the same result. Scale bars, 20 μ m.
-
-To further verify the presence of these ICs in human bladder tissue, we
-selected ADRA2A and HRH2 for the following experiments ( Figure 3A ). By
-using IHC-P on ADRA2A and HRH2 , respectively, these cells can be
-observed in human bladder tissues ( Figure 3, B and C , Supplemental
-Table 2 ). To validate if these cells were ICs, we performed IF analysis
-on the protein level. Immunostaining for ADRA2A , which was identified
-by scRNA-seq, and VIM , which is the specific marker of ICs, showed the
-two proteins can be merged in one cell ( Figure 3D ). To verify this
-result further, we also selected HRH2 and VIM for immunostaining. The
-two proteins can be merged in one cell ( Figure 3E ).
-
-Reconstructing the Developmental Trajectory of Human ICs and Discovering Genes that Change as a Function of Pseudotime
-
-We used Monocle2 ^(²⁵) ^(,) ^(²⁶) to understand the relationship between
-ICs and their states. In our data, 3328 ICs were included for analysis.
-We used reverse graph embedding to generate a trajectory plot, including
-five IC populations ( Figure 4A ). Combined with pseudotime analysis (
-Figure 4B ), we can conclude the states and relationships among these
-ICs. Fibroblast 1 is the beginning of the trajectory, and then
-fibroblast 2 is the continuation. Fibroblast 3 appeared as the end of
-the trajectory branch 1. Myofibroblast and ADRA2A ⁺ ICs appeared as the
-two ends of the trajectory branch 2. Then, after a trajectory was
-established, we found the top six genes that have an expression pattern
-and varied according to pseudotime. The expression of JUN , PLA2G2A ,
-S100A10 , S100A2 , S100A4 , and SH3BGRL3 demonstrated the most evident
-changes in pseudotime ( Figure 4C ).
-
-[fig4]
-
-Figure 4.:
-
-Reconstructing the developmental trajectory of ICs can find some genes
-that vary as a function of pseudotime. (A) Monocle2-generated
-pseudotemporal trajectory of five IC types ( n =3328) imported from
-Seurat data, colored by cell-name designation. (B) Pseudotime was
-colored in a gradient from dark to light blue, and the start of
-pseudotime was indicated. (C) Top six genes calculated by Monocle2 were
-shown as dot plots displayed as expression level over pseudotime. (D)
-Heat map for clustering the top 50 genes that vary as a function of
-pseudotime. The 50 genes were divided into three clusters (cluster 1,
-cluster 2, and cluster 3), representing the genes at the beginning
-stage, the transitory stage, and the end stage of developmental
-trajectory, respectively. Fib1, fibroblast 1; Myo, myofibroblast.
-
-To further analyze the genes in terms of the changes in pseudotime, we
-clustered genes via a pseudotemporal expression pattern. The top 50
-genes that vary as a function of pseudotime were clustered, as shown by
-the heat map ( Figure 4D ). We divided the genes that influence cell
-developmental trajectory into three gene clusters. Gene cluster 1
-consisted of genes highly expressed at the early stage of developmental
-trajectory; this includes genes such as SH3BGRL3 , FN1 , and FSTL1 which
-were highly expressed at the beginning stage. Gene cluster 2, which
-includes APOD , C7 , and SFRP2 , was highly expressed gene at the
-transitory stage of the developmental trajectory. Gene cluster 3, which
-includes AREG , LY6D , and RGS5 , was highly expressed gene at the end
-stage of developmental trajectory.
-
-Urothelium Cell Clusters and the Discovery of a New Type of Epithelial Cells in Human, Rat, and Mouse Bladder by scRNA-Seq
-
-We objectively defined the epithelial cell–type identities by
-subclustering the human bladder epithelial cells ( Figure 5A ). The
-epithelial cells can be classified as basal cell 1, basal cell 2,
-intermediate cell 1, intermediate cell 2, TNNT1 ⁺ epithelial cells, and
-umbrella cells by gene markers ( Table 2 ). Many markers, such as KRT18
-, KRT19 , and KRT13 , were highly expressed in two or more cell types (
-Figure 5B ). Although the gene expression of these cells was slightly
-similar, a heat map of the gene expression among them showed significant
-differences ( Figure 5B ). For example, the KRT13 expression in basal
-cell 2 was higher than that in basal cell 1, and KRT5 was highly
-expressed in basal cells 1 ( Figure 5B ). Intermediate cells can be
-classified into two subtypes. The KRT13 , KRT19 , and UPK1B expression
-levels in intermediate cell 2 were higher than those in intermediate
-cell 1 ( Figure 5B ). By contrast, the uroplakin (UP) gene family (
-UPK1A , UPK1B , UPK2 , UPK3A and UPK3B ) was highly expressed in
-umbrella cells, whereas intermediate cells showed low UPK1A , UPK1B ,
-UPK3A , and UPK3B expression levels ( Figure 5B ).
-
-[fig5]
-
-Figure 5.:
-
-Epithelial cells can be classified into multiple cell types by scRNA-seq
-and identified the novel cell type. (A) EC distribution in the t-SNE
-plot. (B) Heat map showing the epithelial cells gene expression. (C)
-Violin plot showing the expression of TNNT1 in each cluster. (D) Feature
-plots of the characteristic markers for all cell types and their
-expression levels (shown as gradient of purple). The red circles and
-arrows indicate TNNT1 ⁺ cells. (E) IHC-P verified the TNNT1 protein
-expression (arrows) in human bladder tissue ( Supplemental Table 2 ,
-sample ID: S001). Scale bars, 20 μ m. avg_logFC, average log ₂ fold
-change.
-
-Interestingly, we discovered a new type of epithelial cell which
-specifically highly expressed TNNT1 ( Figure 5C ). These cells also
-highly expressed some gene markers of epithelial cells, such as KRT18
-and KRT19 ( Figure 5D ). TNNT1 encodes slow skeletal muscle protein and
-is specifically expressed in skeletal muscle fibers. ^(²⁷) However,
-TNNT1 ⁺ bladder epithelial cells have never been reported before, which
-leads us to speculate whether such cells are epithelial cells with
-skeletal muscle characteristics. More importantly, we had to confirm
-whether such cells exist in the urothelium. To verify this result, we
-performed IHC-P on TNNT1 and found the positive epithelial cells in
-seven different human bladder samples ( Figure 5E , Supplemental Figure
-8A ). Interestingly, TNNT1 ⁺ epithelial cells also existed in the
-bladder urothelium cells of rats and mice ( Supplemental Figure 8, B and
-C , Supplemental Table 5 ). The majority of slow skeletal muscle
-proteins were found in the umbrella cell layer, but few proteins were
-found in the intermediate cell layer. However, not all umbrella cells
-expressed these proteins ( Supplemental Figure 9, A and B ).
-
-RNA Velocity Analysis Revealed the Developmental Lineages of Human Bladder Cells
-
-Next we used RNA velocity ^(¹⁵) to study the developmental lineage of
-bladder cells. RNA velocity can aid the analysis of developmental
-lineages and cellular dynamics, particularly in humans. ^(¹⁵) This
-method estimates the rate of gene splicing and degradation based on the
-relative abundance of unspliced and spliced mRNA. The direction of the
-vector reflects the direction of cell lineage development, and the
-length of the vector reflects the rate. In this study, we performed RNA
-velocity analysis on human bladder epithelial cells and ICs ( Figure 6,
-A and C ), and then projected the RNA velocity results onto the previous
-t-SNE plot. Epithelial cells are one of the major cell types in the
-bladder. RNA velocity analysis revealed the developmental lineages of
-epithelial cells. Bladder epithelial cells can be transformed from basal
-cells to intermediate cells and then to umbrella cells or TNNT1 ⁺
-epithelial cells ( Figure 6B ). In addition, the developmental lineage
-of ICs was similar to the previous results obtained using Monocle2. The
-RNA velocity analysis revealed some features about ICs directly:
-Fibroblast 1 had longer velocity vectors and some had a tendency to turn
-into fibroblast 2 ( Figure 6D ). Some fibroblast 2 velocity-vector
-arrows point to myofibroblasts ( Figure 6D ). Together, this result
-elucidated some rules about the developmental trajectory of bladder
-cells.
-
-[fig6]
-
-Figure 6.:
-
-Pseudotime analysis of human bladder cells by using RNA velocity
-reconstructed the developmental lineages. (A) t-SNE plot of all of the
-epithelial cells, and different colors correspond to different cell
-types. (B) Velocity field projected onto the t-SNE plot of the
-epithelial cells (arrows represent average velocity). (C) t-SNE plot of
-all of the ICs, and different colors correspond to different cell types.
-(D) Velocity field projected onto t-SNE plot of the ICs.
-
-scRNA-Seq Profiling and Unbiased Clustering of Mouse Urinary Bladder
-
-Human bladder cells can be classified into many subtypes, what about
-those of the mouse? The reliability and similarity of the mice model in
-studying human bladder function, and whether the novel human bladder
-cell types exist in mouse bladders, remain unknown. scRNA-seq in mouse
-is necessary to address these problems. In a previous study, MCA ^(¹⁰)
-provided guidance and a reference for this research. Initially, we used
-the MCA bladder data (GEO: GSE108097) for analysis. After filtering
-low-quality cells, 11 distinct cell clusters can be identified (
-Supplemental Figure 10A ) by their marker genes ( Supplemental Figure
-10B ). However, MCA only provided 2498 high-quality bladder cells and
-transcriptome information. To establish the transcriptome map of mouse
-bladder cells, we performed scRNA-seq of mouse bladder again, and 15,795
-cells were obtained ( Supplemental Table 5 ). After filtering out
-low-quality cells (Methods), we obtained 12,884 cells. We compared our
-mouse data with MCA and found this data were highly correlated with MCA,
-and the Pearson correlation coefficient was 0.905 ( Supplemental Figure
-10C ). A total of 15 distinct cell clusters can be identified by
-unbiased clustering ( Figure 1D , Supplemental Figure 3D ). According to
-the marker genes ( Table 2 ) of each type of cells, we classified cells
-into clusters 1–15, corresponding to basal cell 1, umbrella cells,
-fibroblast 1, basal cell 2, intermediate cells, mixed epithelial cells,
-fibroblast 2, fibroblast 3, myofibroblast, monocytes, neuron, smooth
-muscle cells, dendritic cells, T cells, and endothelial cells,
-respectively ( Figure 1E ). The top five genes expressed in each cell
-type are shown in Supplemental Figure 7C .
-
-Homology and Heterogeneity of Human and Mouse Bladder Cells
-
-Although human and mouse are different species, homology and
-heterogeneity must exist between their bladder cells. Initially, we
-considered all homologous genes with identical gene names between the
-human and mouse data sets. We compared the average expression of all
-homologous genes in human and mouse bladder cells, and the Pearson
-correlation coefficient was 0.855 ( Figure 7A ). Some genes, such as
-Krt15 , Gsta4 , and Wfdc2 , were also highly expressed in mouse bladder
-cells but low in human bladder cells ( Figure 7A ). On the contrary,
-FABP4 , TIMP1 , and S100A2 were highly expressed in human bladder cells
-but low in mouse bladder cells ( Figure 7A ).
-
-[figure8-1]
-
-Figure 7-1.:
-
-Comparison of homology and heterogeneity of human and mouse found some
-characteristic. (A) Scatterplot shows the homologous genes, with the
-average expression (AE) per gene ( n =12,235 genes) in total human
-(horizontal) and mouse cells (vertical). The Pearson correlation
-coefficient was 0.855 ( r =0.855). The blue line is the regression
-curve. Genes with distinct DEGs are marked. (B) Heat map indicating
-Pearson correlations on the averaged profiles among each cell type for
-human (vertical) and mouse (horizontal). (C) Scatterplot showing the
-homologous genes with AE per gene ( n =12,235 genes) in human smooth
-muscle cells (HumanSMC) and mouse smooth muscle cells (MouseSMC). (D)
-Scatterplot showing the homologous genes with the AE per gene ( n
-=12,235 genes) in human fibroblast 2 (HumanFib2) and mouse fibroblast 3
-(MouseFib3). (E) Violin plots showing cytokeratin genes expressed in
-human epithelial cells, such as basal cell 1 (BC1), basal cells 2 (BC2),
-intermediate cell 1 (IMC1), intermediate cell 2 (IMC2), TNNT1 ⁺
-epithelial cells (TNNT1), and umbrella cells (UC). (F) Violin plots
-showing the cytokeratin genes expressed in mouse epithelial cells, such
-as basal cell 1, umbrella cells, basal cell 2, intermediate cells, and
-mixed epithelial cells (mixed). (G) Violin plots showing the cytokeratin
-genes expressed in MCA mouse epithelial cells, such as basal cells,
-umbrella cells, intermediate cells.
-
-[figure8-2]
-
-Figure 7-2.:
-
-Comparison of homology and heterogeneity of human and mouse found some
-characteristic. (A) Scatterplot shows the homologous genes, with the
-average expression (AE) per gene ( n =12,235 genes) in total human
-(horizontal) and mouse cells (vertical). The Pearson correlation
-coefficient was 0.855 ( r =0.855). The blue line is the regression
-curve. Genes with distinct DEGs are marked. (B) Heat map indicating
-Pearson correlations on the averaged profiles among each cell type for
-human (vertical) and mouse (horizontal). (C) Scatterplot showing the
-homologous genes with AE per gene ( n =12,235 genes) in human smooth
-muscle cells (HumanSMC) and mouse smooth muscle cells (MouseSMC). (D)
-Scatterplot showing the homologous genes with the AE per gene ( n
-=12,235 genes) in human fibroblast 2 (HumanFib2) and mouse fibroblast 3
-(MouseFib3). (E) Violin plots showing cytokeratin genes expressed in
-human epithelial cells, such as basal cell 1 (BC1), basal cells 2 (BC2),
-intermediate cell 1 (IMC1), intermediate cell 2 (IMC2), TNNT1 ⁺
-epithelial cells (TNNT1), and umbrella cells (UC). (F) Violin plots
-showing the cytokeratin genes expressed in mouse epithelial cells, such
-as basal cell 1, umbrella cells, basal cell 2, intermediate cells, and
-mixed epithelial cells (mixed). (G) Violin plots showing the cytokeratin
-genes expressed in MCA mouse epithelial cells, such as basal cells,
-umbrella cells, intermediate cells.
-
-Next, we compared each cell type across each species and found that most
-human and mouse bladder cells were relatively well correlated ( Figure
-7B ). In these cells, a high correlation was observed between human and
-mouse smooth muscle cells, and the Pearson correlation coefficient was
-0.837. We compared the heterogeneity of the smooth muscle cells in mouse
-and human ( Figure 7C ). For mouse smooth muscle cells, Krt15 , Gsta4 ,
-Rpl17 , and Ly6d demonstrated a higher expression in mice than that in
-human, whereas ACTC1 , TIMP1 , and CCL2 were highly expressed in human
-smooth muscle cells ( Figure 7C ). The Pearson correlation coefficient
-was 0.851 between human fibroblast 2 and mouse fibroblast 3, but some
-heterogeneity still existed ( Figure 7D ). For example, Clec3b , Gpx3 ,
-and Jund were highly expressed in mouse fibroblast 3, whereas S100A4 ,
-TIMP1 , SFRP2 , and RPL13A were highly expressed in human fibroblast 2 (
-Figure 7D ). Other cell types between human and mouse, such as basal
-cells, intermediate cells, umbrella cells, myofibroblast, monocytes, and
-T cells, were also well correlated ( Supplemental Figure 11, A–F ).
-However, a lower correlation was found between human and mouse
-endothelial cells ( Supplemental Figure 11G ).
-
-Cytokeratin is the intermediate filament protein characteristic of
-epithelial cells. In human cells, over 20 different cytokeratin isotypes
-have been identified. ^(²⁸) We are interested in the cytokeratin
-transcriptome expression levels in epithelial cells of different
-species. Therefore, we analyzed and compared the expression of the
-cytokeratin gene family in human and mouse epithelial cells ( Figure 7,
-E–G ). Mouse data were derived from MCA and this paper, and some results
-were obtained. Krt17 cannot be captured in the mouse epithelial
-transcriptome, and KRT13 was highly expressed in human basal and
-intermediate cells but lowly expressed in all mouse epithelial cells (
-Figure 7, E–G ). By contrast, the Krt15 expression in mouse epithelial
-cells was significantly higher than that in human epithelial cells. (
-Figure 7, E–G ). The results of scRNA-seq were verified by
-immunohistochemistry ( Supplemental Figure 12, A and B ). However, the
-expression levels of the KRT7 , KRT8 , KRT18 , KRT19 , and KRT20 were
-similar in human and mouse epithelial cells. These results indicated
-human and mouse evolution both had conservative and heterogeneous
-aspects.
-
-The Genitourinary Developmental Molecular Anatomy Project (GUDMAP;
-http://www.gudmap.org ) provides an ontology of the cell types present
-during mammalian urogenital tract development and the molecular
-hallmarks of those cells as discerned by a variety of procedures,
-including in situ hybridization, transcriptional profiling, and
-immunostaining. ^(²⁹) We integrated the urothelium cell data (GUDMAP ID
-TS22-TS28) from GUDMAP with our scRNA-seq data for analysis. We found
-that most marker genes identified by GUDMAP were expressed in human
-bladder urothelium cells of scRNA-seq data, but the expression level was
-low ( Figure 8 ). Interestingly, UPK3A was considered as a marker gene
-of umbrella cells in GUDMAP, which was also highly expressed in umbrella
-cells in our scRNA-seq result ( Figure 8 ). KRT5 was a marker gene of
-basal cells that was also highly expressed in the basal cells of our
-scRNA-seq result ( Figure 8 ). Through integrated analysis, overlap and
-unique genes missed between our study and GUDMAP were identified.
-
-[fig8]
-
-Figure 8.:
-
-Integration of single-cell resolution of different urothelial cells with
-the GUDMAP database identified overlap and unique genes missed. Human
-bladder urothelial cells were divided into six types and mouse cells
-into four types in this study. These cells were divided into three types
-in the GUDMAP database: the umbrella cells (UC), intermediate cells
-(IMC), and basal cells (BC). We showed the average expression (AE) of
-the marker genes in this study and GUDMAP using a heat map. The genes
-identified by GUDMAP were confirmed by in situ hybridization. The UPK3A
-and KRT 5 were comarkers in this study and GUDMAP. Three results were
-obtained: uncertain, not detected, and present. Genes that did not exist
-were represented by “NA.”
-
-Discussion
-
-Through the scRNA-seq of bladder cells, our study accurately classified
-bladder ICs according to the cell transcriptome, and bladder ICs can be
-recognized from another perspective. We discovered a novel IC type (
-Figure 3, B–E ) in human bladder. These cells were characterized by the
-specific expression of ADRA2A and HRH2 but low PDGFRA expression (
-Figure 2B ). ADRA2A encodes the α _(2A) -adrenergic receptor, a receptor
-that binds to noradrenaline and adrenaline. ^(²³) The adrenergic
-receptor family is considered to be widely distributed in bladder. ^(²⁴)
-At the neuroeffector junction between sympathetic nerves and smooth
-muscle cells, α ₁ - and α ₂ -adrenoceptors generally mediate contraction
-enhancement. ^(³⁰) β -Adrenoceptors were also identified in smooth
-muscle tissue and β ₃ -adrenoceptors, which can relax human detrusor
-muscles under adrenergic stimulation, may be a new therapeutic target
-for OAB treatment. ^(^(31–33))
-
-In contrast, HRH2 , which encodes the H2 histamine receptor, binds to
-histamine to activate allergic reactions. The number of mast cells in
-bladder tissue of patients with OAB and IC/BPS is significantly higher
-than that of the general population. ^(³⁴) To our knowledge, mast cells
-can release histamine: in patients with IC/BPS, the histamine and
-methylhistamine levels significantly increase in urine. ^(³⁵) These
-cells also expressed AVPR1A ( Figure 2B ) which encodes arginine
-vasopressin receptor 1A. In addition to the inhibitory effect of
-arginine vasopressin on urination, studies have shown that arginine
-vasopressin (termed the antidiuretic hormone) can induce bladder
-contraction in rats. ^(³⁶) We tried to investigate whether ADRA2A ⁺ ICs
-were a new type of endothelial cell. We selected PECAM1 , a marker of
-endothelial cells, and ADRA2A for IF. This result did not support that
-ADRA2A ⁺ ICs were a new type of endothelial cell. We found that
-endothelial cells were not labeled with ADRA2A , whereas ADRA2A ⁺ ICs
-were not labeled with PECAM1 ( Supplemental Figure 6B ). We hypothesized
-that these ICs may be involved in nerve regulation and allergic
-reactions in the bladder and also associated with the physiology and
-pathology, such as smooth muscle contraction ( Supplemental Figure 13 ).
-
-However, these ADRA2A ⁺ ICs were not found in the bladder of mice.
-According to the scRNA-seq results in mouse, Adra2a and Hrh2 cannot be
-detected. IHC-P was performed on Adra2a but a negative result was
-obtained ( Supplemental Figure 9C ). In addition, the Adra2a protein was
-not detected in mouse or rat bladder tissues by Western blot, whereas it
-can be found in human bladder tissues ( Supplemental Figure 9D ). Thus,
-these ADRA2A ⁺ ICs appeared to a special type of ICs that can exist in
-the human bladder, but not in the mouse bladder.
-
-In our study, we discovered a new type of epithelial cell in human
-bladder which specifically expressed TNNT1 ( Figure 5E ). This
-interesting result also occurred in the urothelium cells of mice and
-rats ( Supplemental Figure 8, B and C ). TNNT1 (encoding slow skeletal
-muscle Troponin T) which is an isoform of Troponin T is crucial in the
-calcium regulation of actin thin filament function and is essential for
-the contraction of striated muscles. ^(²⁷) The TNNT1 ⁺ epithelial cells
-may appear in the umbrella cell layer or in the intermediate cell layer.
-However, not all urothelium cells expressed these proteins, in humans or
-mice ( Supplemental Figure 9, A and B ). It is possible that TNNT1 ⁺
-epithelial cells are located at a specific anatomic site of the bladder.
-Thus, we hypothesized that these TNNT1 ⁺ epithelial cells may have a
-contractile function and play a role in the physiologic process of
-bladder filling and emptying. Additionally, these cells will provide a
-new insight into the research on urothelium.
-
-Although we showed a high-resolution, single-cell RNA map, we also
-realized the percentage of smooth muscle cells was low. The reasons for
-this may be that smooth muscle cells are adherent to each other, fail to
-disperse adequately, and do not get through the filters. Furthermore, in
-this study, human bladder tissues were obtained from patients with
-cancer. Although we selected normal tissue remote from the tumor sites,
-bladders with cancer usually are described as “unstable,” because there
-are some precancerous cells throughout the bladder, including in the
-parts that are seemingly uninvolved. However, this is an unavoidable
-issue. People do not get cystectomies unless they have bladder cancer,
-and the vast majority of the cell types identified in the patients were
-also in the mice. Therefore, we consider these results to be reliable.
-
-Overall, our study provides the most comprehensive information on the
-cell types found in the normal human and mouse bladders thus far. These
-findings provide insights into the discovery of the novel cell type,
-specific cell markers, signaling receptors, and gene data set which will
-aid in studying the relationship between cell types and bladder
-diseases.
-
-Disclosures
-
-None.
-
-Funding
-
-This work was supported by grants from the National Natural Science
-Foundation of China (81770759), the National Natural Science Foundation
-of China (81370857), National Key R&D Program of China (2017YFC0908000),
-and Guangxi Natural Science Fund for Innovation Research Team
-(2013GXNSFFA019002).
-
-Published online ahead of print. Publication date available at
-www.jasn.org .
-
-Dr. Yu performed scRNA-seq experiments and analyses, performed
-immunohistochemistry and IF, made figures, and wrote the paper; Miss
-Liao dissected mouse bladder tissues, performed RNA-seq experiments, and
-wrote the paper; Dr. Chen dissected mouse bladder tissues and wrote the
-paper; Dr. Zou dissected human and mouse bladder tissues, performed
-RNA-seq experiments; Dr. Cheng, Prof. Liu, Dr. T. Li, and Dr. Q. Zhang
-provided and dissected human bladder tissue; Dr. R. Yang and Dr. Ye
-discussed the draft paper and performed bioinformatics and Western blot;
-Mr. J. Li performed RNA velocity analysis; Dr. Huang and Miss Long made
-figures; Dr. H. Zhang and Dr. X. Yang critically reviewed the
-manuscript; Prof. Mo conceived of and supervised the project, analyzed
-data, made figures, and wrote the paper; and all authors read and
-commented on the manuscript.
-
-Supplemental Material
-
-This article contains the following supplemental material online at
-http://jasn.asnjournals.org/lookup/suppl/doi:10.1681/ASN.2019040335/-/DCSupplemental
-.
-
-Supplemental Figure 1 . Details of single-cell suspension preparation
-process.
-
-Supplemental Figure 2 . Quality control (QC) of human bladder single
-cell data.
-
-Supplemental Figure 3 . QC of mouse bladder single-cell data.
-
-Supplemental Figure 4 . Distribution of human bladder cells from each
-batche.
-
-Supplemental Figure 5 . Distribution of mouse bladder cells from two
-reactions.
-
-Supplemental Figure 6 . The IF of human bladder tissues.
-
-Supplemental Figure 7 . Heat map of gene expression in bladder.
-
-Supplemental Figure 8 . The expression of TNNT1 in human, mouse and rat
-bladder tissue by IHC-P.
-
-Supplemental Figure 9 . Immunohistochemistry of paraffin (IHC-P) and
-Western blot negative results.
-
-Supplemental Figure 10 . Compare mouse bladder data from Mouse Cell
-Atlas.
-
-Supplemental Figure 11 . Homology of human and mouse.
-
-Supplemental Figure 12 . IHC-P verified the unique expression
-cytokeratin genes of human and mouse urothelium.
-
-Supplemental Figure 13 . Hypothesis diagram of the internal mechanism of
-ADRA2A ⁺ ICs.
-
-Supplemental Table 1 . Patient information and sequencing statistics.
-
-Supplemental Table 2 . Patient information of IHC-P/IF.
-
-Supplemental Table 3 . Mice information.
-
-Supplemental Table 4 . Mouse and rat information of IHC-P.
-
-Supplemental Table 5 . Mice sequencing statistics.
-
-Supplemental Table 6 . Summary of clusters about human bladder cells.
-
-Supplemental Table 7 . Summary of clusters about mouse bladder cells.
-
-Supplemental Table 8 . Comparison of the differences between the five
-types of ICs.
-
-Supplemental Table 9 . The average expression of every gene in every
-cell cluster of human bladder.
-
-Supplemental Table 10 . The average expression of every gene in every
-cell cluster of mouse bladder.
-
-References
-
-1. Merrill L, Gonzalez EJ, Girard BM, Vizzard MA: Receptors, channels,
-and signalling in the urothelial sensory system in the bladder. Nat Rev
-Urol 13: 193–204, 2016 26926246
-
--   Cited Here |
--   Google Scholar
-
-2. Wein AJ, Kavoussi LR, Partin AW, Peters CA, Abrams P, Adams MC, et
-al.: Campbell-Walsh Urology, Philadelphia, PA, Elsevier, Inc., 2016
-
--   Cited Here
-
-3. Foxman B: The epidemiology of urinary tract infection. Nat Rev Urol
-7: 653–660, 2010 21139641
-
--   Cited Here |
--   Google Scholar
-
-4. Foxman B, Barlow R, D’Arcy H, Gillespie B, Sobel JD: Urinary tract
-infection: Self-reported incidence and associated costs. Ann Epidemiol
-10: 509–515, 2000 11118930
-
--   Cited Here |
--   Google Scholar
-
-5. Irwin DE, Kopp ZS, Agatep B, Milsom I, Abrams P: Worldwide prevalence
-estimates of lower urinary tract symptoms, overactive bladder, urinary
-incontinence and bladder outlet obstruction. BJU Int 108: 1132–1138,
-2011 21231991
-
--   Cited Here |
--   Google Scholar
-
-6. Berry SH, Elliott MN, Suttorp M, Bogart LM, Stoto MA, Eggers P, et
-al.: Prevalence of symptoms of bladder pain syndrome/interstitial
-cystitis among adult females in the United States. J Urol 186: 540–544,
-2011 21683389
-
--   Cited Here |
--   Google Scholar
-
-7. Sanders KM, Ward SM, Koh SD: Interstitial cells: Regulators of smooth
-muscle function. Physiol Rev 94: 859–907, 2014 24987007
-
--   Cited Here |
--   Google Scholar
-
-8. McCloskey KD, Gurney AM: Kit positive cells in the Guinea pig
-bladder. J Urol 168: 832–836, 2002 12131376
-
--   Cited Here |
--   Google Scholar
-
-9. Koh BH, Roy R, Hollywood MA, Thornbury KD, McHale NG, Sergeant GP, et
-al.: Platelet-derived growth factor receptor-α cells in mouse urinary
-bladder: A new class of interstitial cells. J Cell Mol Med 16: 691–700,
-2012 22151424
-
--   Cited Here |
--   Google Scholar
-
-10. Han X, Wang R, Zhou Y, Fei L, Sun H, Lai S, et al.: Mapping the
-mouse cell atlas by microwell-seq [published correction appears in Cell
-173: 1307, 2018]. Cell 172: 1091–1107.e17, 2018 29775597
-
--   Cited Here |
--   Google Scholar
-
-11. Macosko EZ, Basu A, Satija R, Nemesh J, Shekhar K, Goldman M, et
-al.: Highly parallel genome-wide expression profiling of individual
-cells using nanoliter droplets. Cell 161: 1202–1214, 2015 26000488
-
--   Cited Here |
--   Google Scholar
-
-12. Regev A, Teichmann SA, Lander ES, Amit I, Benoist C, Birney E, et
-al.; Human Cell Atlas Meeting Participants: The human cell atlas. ELife
-6: e27041, 2017 29206104
-
--   Cited Here |
--   Google Scholar
-
-13. Tirosh I, Izar B, Prakadan SM, Wadsworth MH 2nd, Treacy D, Trombetta
-JJ, et al.: Dissecting the multicellular ecosystem of metastatic
-melanoma by single-cell RNA-seq. Science 352: 189–196, 2016 27124452
-
--   Cited Here |
--   Google Scholar
-
-14. Butler A, Hoffman P, Smibert P, Papalexi E, Satija R: Integrating
-single-cell transcriptomic data across different conditions,
-technologies, and species. Nat Biotechnol 36: 411–420, 2018 29608179
-
--   Cited Here |
--   Google Scholar
-
-15. La Manno G, Soldatov R, Zeisel A, Braun E, Hochgerner H, Petukhov V,
-et al.: RNA velocity of single cells. Nature 560: 494–498, 2018 30089906
-
--   Cited Here |
--   Google Scholar
-
-16. Zheng GX, Terry JM, Belgrader P, Ryvkin P, Bent ZW, Wilson R, et
-al.: Massively parallel digital transcriptional profiling of single
-cells. Nat Commun 8: 14049, 2017 28091601
-
--   Cited Here |
--   Google Scholar
-
-17. Satija R, Farrell JA, Gennert D, Schier AF, Regev A: Spatial
-reconstruction of single-cell gene expression data. Nat Biotechnol 33:
-495–502, 2015 25867923
-
--   Cited Here |
--   Google Scholar
-
-18. Koh SD, Lee H, Ward SM, Sanders KM: The mystery of the interstitial
-cells in the urinary bladder. Annu Rev Pharmacol Toxicol 58: 603–623,
-2018 28992432
-
--   Cited Here |
--   Google Scholar
-
-19. Strutz F, Okada H, Lo CW, Danoff T, Carone RL, Tomaszewski JE, et
-al.: Identification and characterization of a fibroblast marker: FSP1. J
-Cell Biol 130: 393–405, 1995 7615639
-
--   Cited Here |
--   Google Scholar
-
-20. Iwano M, Plieth D, Danoff TM, Xue C, Okada H, Neilson EG: Evidence
-that fibroblasts derive from epithelium during tissue fibrosis. J Clin
-Invest 110: 341–350, 2002 12163453
-
--   Cited Here |
--   Google Scholar
-
-21. Varga J, Rosenbloom J, Jimenez SA: Transforming growth factor beta
-(TGF beta) causes a persistent increase in steady-state amounts of type
-I and type III collagen and fibronectin mRNAs in normal human dermal
-fibroblasts. Biochem J 247: 597–604, 1987 3501287
-
--   Cited Here |
--   Google Scholar
-
-22. Drake MJ, Fry CH, Eyden B: Structural characterization of
-myofibroblasts in the bladder. BJU Int 97: 29–32, 2006 16336323
-
--   Cited Here |
--   Google Scholar
-
-23. Bylund DB, Eikenberg DC, Hieble JP, Langer SZ, Lefkowitz RJ,
-Minneman KP, et al.: International Union of Pharmacology nomenclature of
-adrenoceptors. Pharmacol Rev 46: 121–136, 1994 7938162
-
--   Cited Here |
--   Google Scholar
-
-24. Michel MC, Vrydag W: Alpha1-, alpha2- and beta-adrenoceptors in the
-urinary bladder, urethra and prostate. Br J Pharmacol 147[Suppl 2]:
-S88–S119, 2006 16465187
-
--   Cited Here |
--   Google Scholar
-
-25. Trapnell C, Cacchiarelli D, Grimsby J, Pokharel P, Li S, Morse M, et
-al.: The dynamics and regulators of cell fate decisions are revealed by
-pseudotemporal ordering of single cells. Nat Biotechnol 32: 381–386,
-2014 24658644
-
--   Cited Here |
--   Google Scholar
-
-26. Qiu X, Mao Q, Tang Y, Wang L, Chawla R, Pliner HA, et al.: Reversed
-graph embedding resolves complex single-cell trajectories. Nat Methods
-14: 979–982, 2017 28825705
-
--   Cited Here |
--   Google Scholar
-
-27. Wei B, Jin JP: TNNT1, TNNT2, and TNNT3: Isoform genes, regulation,
-and structure-function relationships. Gene 582: 1–13, 2016 26774798
-
--   Cited Here |
--   Google Scholar
-
-28. Southgate J, Harnden P, Trejdosiewicz LK: Cytokeratin expression
-patterns in normal and malignant urothelium: A review of the biological
-and diagnostic implications. Histol Histopathol 14: 657–664, 1999
-10212826
-
--   Cited Here |
--   Google Scholar
-
-29. McMahon AP, Aronow BJ, Davidson DR, Davies JA, Gaido KW, Grimmond S,
-et al.; GUDMAP project: GUDMAP: The genitourinary developmental
-molecular anatomy project. J Am Soc Nephrol 19: 667–671, 2008 18287559
-
--   Cited Here |
--   Google Scholar
-
-30. Goepel M, Wittmann A, Rübben H, Michel MC: Comparison of
-adrenoceptor subtype expression in porcine and human bladder and
-prostate. Urol Res 25: 199–206, 1997 9228673
-
--   Cited Here |
--   Google Scholar
-
-31. Yamaguchi O, Chapple CR: Beta3-adrenoceptors in urinary bladder.
-Neurourol Urodyn 26: 752–756, 2007 17600372
-
--   Cited Here |
--   Google Scholar
-
-32. Yamaguchi O: Beta3-adrenoceptors in human detrusor muscle. Urology
-59[Suppl 1]: 25–29, 2002 12007519
-
--   Google Scholar
-
-33. Yoshimura N, Kaiho Y, Miyazato M, Yunoki T, Tai C, Chancellor MB, et
-al.: Therapeutic receptor targets for lower urinary tract dysfunction.
-Naunyn Schmiedebergs Arch Pharmacol 377: 437–448, 2008 18034230
-
--   Cited Here |
--   Google Scholar
-
-34. Liu HT, Shie JH, Chen SH, Wang YS, Kuo HC: Differences in mast cell
-infiltration, E-cadherin, and zonula occludens-1 expression between
-patients with overactive bladder and interstitial cystitis/bladder pain
-syndrome. Urology 80: 225.e13–225.e18, 2012 22521193
-
--   Cited Here |
--   Google Scholar
-
-35. el-Mansoury M, Boucher W, Sant GR, Theoharides TC: Increased urine
-histamine and methylhistamine in interstitial cystitis. J Urol 152:
-350–353, 1994 8015069
-
--   Cited Here |
--   Google Scholar
-
-36. Uvelius B, Lundin S, Andersson KE: Content and contractile effect of
-arginine vasopressin in rat urinary bladder. Eur J Pharmacol 182:
-549–554, 1990 2226623
-
--   Cited Here |
--   Google Scholar
-
-37. Khandelwal P, Abraham SN, Apodaca G: Cell biology and physiology of
-the uroepithelium. Am J Physiol Renal Physiol 297: F1477–F1501, 2009
-19587142
-
--   Google Scholar
-
-38. Lee G, Romih R, Zupančič D: Cystitis: From urothelial cell biology
-to clinical applications. BioMed Res Int 2014: 473536, 2014 24877098
-
--   Google Scholar
-
-39. Solway J, Seltzer J, Samaha FF, Kim S, Alger LE, Niu Q, et al.:
-Structure and expression of a smooth muscle cell-specific gene, SM22
-alpha. J Biol Chem 270: 13460–13469, 1995 7768949
-
--   Google Scholar
-
-40. Owens GK, Kumar MS, Wamhoff BR: Molecular regulation of vascular
-smooth muscle cell differentiation in development and disease. Physiol
-Rev 84: 767–801, 2004 15269336
-
--   Google Scholar
-
-41. Qian J, Kumar A, Szucsik JC, Lessard JL: Tissue and developmental
-specific expression of murine smooth muscle gamma-actin fusion genes in
-transgenic mice. Dev Dyn 207: 135–144, 1996 8906417
-
--   Google Scholar
-
-42. Owens GK: Regulation of differentiation of vascular smooth muscle
-cells. Physiol Rev 75: 487–517, 1995 7624392
-
--   Google Scholar
-
-43. Garlanda C, Dejana E: Heterogeneity of endothelial cells. Specific
-markers. Arterioscler Thromb Vasc Biol 17: 1193–1202, 1997 9261246
-
--   Google Scholar
-
-44. Young MD, Mitchell TJ, Vieira Braga FA, Tran MGB, Stewart BJ,
-Ferdinand JR, et al.: Single-cell transcriptomes from human kidneys
-reveal the cellular identity of renal tumors. Science 361: 594–599, 2018
-30093597
-
--   Google Scholar
-
-45. Sauteur L, Krudewig A, Herwig L, Ehrenfeuchter N, Lenard A, Affolter
-M, et al.: Cdh5/VE-cadherin promotes endothelial cell interface
-elongation via cortical actin polymerization during angiogenic
-sprouting. Cell Reports 9: 504–513, 2014 25373898
-
--   Google Scholar
-
-46. Chen J, Cheung F, Shi R, Zhou H, Lu W; CHI Consortium: PBMC fixation
-and processing for Chromium single-cell RNA sequencing. J Transl Med 16:
-198, 2018 30016977
-
--   Google Scholar
-
-47. Villani AC, Satija R, Reynolds G, Sarkizova S, Shekhar K, Fletcher
-J, et al.: Single-cell RNA-seq reveals new types of human blood
-dendritic cells, monocytes, and progenitors. Science 356: eaah4573, 2017
-28428369
-
--   Google Scholar
-
-48. Geijtenbeek TB, Kwon DS, Torensma R, van Vliet SJ, van Duijnhoven
-GC, Middel J, et al.: DC-SIGN, a dendritic cell-specific HIV-1-binding
-protein that enhances trans-infection of T cells. Cell 100: 587–597,
-2000 10721995
-
--   Google Scholar
-
-49. Cheong C, Matos I, Choi JH, Dandamudi DB, Shrestha E, Longhi MP, et
-al.: Microbial stimulation fully differentiates monocytes to
-DC-SIGN/CD209(+) dendritic cells for immune T cell areas. Cell 143:
-416–429, 2010 21029863
-
--   Google Scholar
-
-50. Gil J, Busto EM, Garcillán B, Chean C, García-Rodríguez MC,
-Díaz-Alderete A, et al.: A leaky mutation in CD3D differentially affects
-αβ and γδ T cells and leads to a Tαβ-Tγδ+B+NK+ human SCID. J Clin Invest
-121: 3872–3876, 2011 21926461
-
--   Google Scholar
-
-51. Flach H, Rosenbaum M, Duchniewicz M, Kim S, Zhang SL, Cahalan MD, et
-al.: Mzb1 protein regulates calcium homeostasis, antibody secretion, and
-integrin activation in innate-like B cells. Immunity 33: 723–735, 2010
-21093319
-
--   Google Scholar
-
-52. Vockerodt M, Morgan SL, Kuo M, Wei W, Chukwuma MB, Arrand JR, et
-al.: The Epstein-Barr virus oncoprotein, latent membrane protein-1,
-reprograms germinal centre B cells towards a Hodgkin’s
-Reed-Sternberg-like phenotype. J Pathol 216: 83–92, 2008 18566961
-
--   Google Scholar
-
-53. Mason DY, Cordell JL, Brown MH, Borst J, Jones M, Pulford K, et al.:
-CD79a: A novel marker for B-cell neoplasms in routinely processed tissue
-samples. Blood 86: 1453–1459, 1995 7632952
-
--   Google Scholar
-
-54. Chu PG, Arber DA: CD79: A review. Appl Immunohistochem Mol Morphol
-9: 97–106, 2001 11396639
-
--   Google Scholar
-
-55. Brocco MA, Fernández ME, Frasch AC: Filopodial protrusions induced
-by glycoprotein M6a exhibit high motility and aids synapse formation.
-Eur J Neurosci 31: 195–202, 2010 20074218
-
--   Google Scholar
-
-56. Scorticati C, Formoso K, Frasch AC: Neuronal glycoprotein M6a
-induces filopodia formation via association with cholesterol-rich lipid
-rafts. J Neurochem 119: 521–531, 2011 21426347
-
--   Google Scholar
-
-View full references list
-
-Keywords:
-
-single-cell RNA sequencing; single-cell transcriptomic map; bladder
-cells; interstitial cells; epithelial cells
-
-Copyright © 2019 by the American Society of Nephrology
-
-View full article text
+Basic Research 
+ 
+Single-Cell Transcriptomic Map of the Human and Mouse Bladders 
+ 
+Yu, Zhenyuan; Liao, Jinling; Chen, Yang; Zou, Chunlin; Zhang, Haiying; Cheng, Jiwen; Liu, Deyun; Li, Tianyu; Zhang, Qingyun; Li, Jiaping; Yang, Xiaobo; Ye, Yu; Huang, Zhiguang; Long, Xinyang; Yang, Rirong; Mo, Zengnan 
+ 
+Author Information 
+ 
+1Institute of Urology and Nephrology, 
+ 
+Departments of 3Urology and 
+ 
+9Cardiology, The First Affiliated Hospital of Guangxi Medical University, Nanning, China; 
+ 
+2Center for Genomic and Personalized Medicine, 
+ 
+13Department of Immunology, School of Preclinical Medicine, Guangxi Medical University, Nanning, China; 
+ 
+4Guangxi Collaborative Innovation Center for Genomic and Personalized Medicine, Nanning, China; 
+ 
+5Guangxi Key Laboratory for Genomic and Personalized Medicine, Guangxi Key Laboratory of Colleges and Universities, Nanning, China; 
+ 
+6Key Laboratory of Longevity and Ageing-related Diseases, Ministry of Education, Nanning, China; 
+ 
+7Center for Translational Medicine, Guangxi Medical University, Nanning, China; 
+ 
+8Department of Urology, Affiliated Tumor Hospital of Guangxi Medical University, Nanning, China; 
+ 
+10Guangxi Key Laboratory of Precision Medicine in Cardio-cerebrovascular Diseases Control and Prevention, Nanning, China; 
+ 
+11Guangxi Clinical Research Center for Cardio-cerebrovascular Diseases, Nanning, China; and 
+ 
+12Scientific Research Department, The Second Affiliated Hospital of Guangxi Medical University, Nanning, China 
+ 
+Z.Y., J. Liao., and Y.C. contributed equally to this work. 
+ 
+Correspondence: Prof. Zengnan Mo or Dr. Rirong Yang, Center for Genomic and Personalized Medicine, Guangxi Medical University, Shuangyong Road 22, Nanning, Guangxi, China, 530021. E-mail: zengnanmo@hotmail.com or 520yrr@163.com 
+ 
+JASN 30(11):p 2159-2176, November 2019. | DOI: 10.1681/ASN.2019040335 
+ 
+- Infographic 
+- [SDC] 
+- [SDC] 
+- [SDC] 
+- [SDC] 
+- [SDC] 
+- [SDC] 
+- [SDC] 
+ 
+Metrics 
+ 
+Abstract 
+ 
+Significance Statement 
+ 
+Previous studies of bladder cell classification mostly relied on the cell's morphology, location, electrophysiology, and function. However, it is difficult to classify bladder cells accurately and comprehensively using these methods. The authors created a single-cell transcriptomic map of human bladder cells using single-cell RNA sequencing. They also created a more detailed single-cell sequencing RNA map of the mouse bladder than what was previously available. Using these tools, the authors compare the similarities and differences between human and mouse bladder cells and found many cell types that are highly similar across the two. Additionally, the authors discovered two new types of human bladder cells. One may play a role in allergic reactions and nerve conduction, whereas the other may play a role in bladder emptying. The results may assist scientists studying the relationship between bladder cell types and diseases. 
+ 
+Background 
+ 
+Having a comprehensive map of the cellular anatomy of the normal human bladder is vital to understanding the cellular origins of benign bladder disease and bladder cancer. 
+ 
+Methods 
+ 
+We used single-cell RNA sequencing (scRNA-seq) of 12,423 cells from healthy human bladder tissue samples taken from patients with bladder cancer and 12,884 cells from mouse bladders to classify bladder cell types and their underlying functions. 
+ 
+Results 
+ 
+We created a single-cell transcriptomic map of human and mouse bladders, including 16 clusters of human bladder cells and 15 clusters of mouse bladder cells. The homology and heterogeneity of human and mouse bladder cell types were compared and both conservative and heterogeneous aspects of human and mouse bladder evolution were identified. We also discovered two novel types of human bladder cells. One type is ADRA2A+ and HRH2+ interstitial cells which may be associated with nerve conduction and allergic reactions. The other type is TNNT1+ epithelial cells that may be involved with bladder emptying. We verify these TNNT1+ epithelial cells also occur in rat and mouse bladders. 
+ 
+Conclusions 
+ 
+This transcriptomic map provides a resource for studying bladder cell types, specific cell markers, signaling receptors, and genes that will help us to learn more about the relationship between bladder cell types and diseases. 
+ 
+Visual Abstract 
+ 
+[Abstract] 
+ 
+Export 
+ 
+The urinary bladder wall is organized into mucosal, muscular, serosal, and adventitial layers to sustain continuous storage and elimination phases.^(1) In normal conditions, the bladder cells can coordinate with one another. However, when bladder cells are dysfunctional, bladder diseases will occur. Bladder cancer is the most common malignancy of the urinary system and is the second most common cause of death among genitourinary tumors.^(2) Urinary tract infections are among the most common bacterial infections acquired in the community and in hospitals.^(3) Each year, approximately 10% of women report having had a urinary tract infection and >50% of all women have at least one such infection in their lifetime.^(4) Some benign bladder diseases, such as lower urinary tract symptoms, overactive bladder (OAB), and interstitial cystitis/bladder pain syndrome (IC/BPS), are highly prevalent conditions worldwide.^(5,6) Patients suffer from substantial economic and human burden,^(5,6) but the pathogenesis of these diseases remains unclear. 
+ 
+Sanders et al.^(7) suggested interstitial cell (IC) as a morphologic term indicating a variety of cells with varying origins and phenotypes that occupy spaces within the interstitium between the cells and is the most prominent in defining a given tissue. In bladder smooth muscle tissues, fibroblasts, myofibroblasts, endothelial cells, and ICs of Cajal meet the definition above.^(7) McCloskey and Gurney^(8) discovered the bladder ICs of Cajal and suggested these cells can act as pacemakers or intermediaries in the transmission of nerve signals to smooth muscle cells. The ICs in detrusor muscles are controversial. In a previous study, researchers could not find c-Kit+ ICs in bladder muscles but discovered a new class of ICs, the platelet-derived growth factor receptor-a (PDGFRA) cells in mouse urinary bladder.^(9) However, to our knowledge, previous studies lacked an integrated perspective for studying bladder cells. The number of existing bladder cell subtypes, their distinctive properties, and the homology and heterogeneity of human and mouse are unclear. Although Han et al.^(10) mapped the Mouse Cell Atlas (MCA) by microwell sequencing which analyzed >400,000 single cells covering all major mouse organs, including 3143 mouse bladder cells, the number and cell types of mouse bladder cells are scarce, and the high-throughput single-cell RNA sequencing (scRNA-seq) of human bladder cells has not been reported thus far. 
+ 
+We aim to understand the unsupervised classification and function of both human and mouse bladder cells precisely. With the development of next-generation sequencing, high-throughput single-cell analysis,^(11) and The Human Cell Atlas,^(12) we used scRNA-seq for the experimental technique. Single-cell transcriptome analysis should identify the heterogeneity of human bladder cells and will provide information to understand how the different cell types are associated with bladder diseases. 
+ 
+Methods 
+ 
+Human Bladder Tissue Procurement and Isolation 
+ 
+Fresh human bladder samples (Supplemental Table 1) were collected at The First Affiliated Hospital of Guangxi Medical University and Affiliated Tumor Hospital of Guangxi Medical University. We received approval of Institution Review Board from The First Affiliated Hospital of Guangxi Medical University, and received signed informed consent from all patients. Two out of the three samples were obtained from patients undergoing radical cystectomy, and the remaining sample was from a patient undergoing partial cystectomy. None of the three patients had received radiation, chemotherapy, or intracystic treatments before surgery. It took about 30 minutes from cutting off blood supply to remove the sample from the body. To ensure bladder tissues removed from the three participants (P1, P2, P3) were far enough away from the tumor, the bladder tissues for P2 and P3 were obtained from the bladder body and those for P1 were obtained from the bladder dome. Normal bladder tissue was obtained at least 2 cm away from the tumor tissue (Supplemental Figure 1A). The immunohistochemistry and immunofluorescence (IF) samples were obtained from patients undergoing radical cystectomy (Supplemental Table 2). 
+ 
+First, we transferred fresh tissue from the operating room to the laboratory in cold HBSS (311-512-CL; WISENT) with 1% penicillin-streptomycin (15240062; Gibco), and the entire transport process was <=20 minutes. After washing with 4degC Dulbecco's phosphate-buffered saline (DPBS; 311-425-CL; WISENT), full-thickness bladder tissues with a surface diameter of 1 cm were cut using surgical scissors (Supplemental Figure 1A). After adding DPBS to the conical tube, the bladder fragment was centrifuged at 300 x g for 5 minutes at 4degC, with one repeat. After discarding supernatant, 10 ml of collagenase type 1 (1.5 mg/ml; 17100017; Gibco) with DNase I (0.2 mg/ml; 10104159001; Roche) perfusion was carried out for 30 minutes at 37degC and then centrifuged at 300 x g for 5 minutes at 4degC. After discarding the supernatant, we used 5 ml of TrypLE Express Enzyme (1x; 12605010; Gibco,) to further digest the sticky clumps of cells for 5 minutes at 37degC. Digestion was then terminated by 10 ml DMEM (319-006-CL; WISENT) with 10% FBS (10099141; Gibco,). Following treatment with collagenase type 1 and TrypLE Express Enzyme, the dissociated single cells were collected (Supplemental Figure 1B). Next, we removed red blood cells using 5 ml of 1x RBC Lysis Buffer (10x diluted to 1x; B250015; BioLegend) for 5 minutes and centrifuged at 300 x g for 5 minutes at 4degC. After discarding the supernatant, the cells were resuspended in 4degC DPBS. Finally, the cells were passed through a 40-mm cell strainer. We obtained the single-cell suspension (Supplemental Figure 1C) and detected live cells using a hemocytometer with trypan blue (0.4%; 420301; Gibco). In total, it took about 3 hours from tissue ischemia to the successful preparation of single-cell suspension in our laboratory. 
+ 
+Mouse and Rat Bladder Tissue Procurement and Isolation 
+ 
+All mouse and rat procedures were approved by the Guangxi Medical University Institutional Animal Care and Use Committee. Wild-type C57BL/6 mice were ordered from Hunan SJA Laboratory Animal Co., Ltd., and Guangxi Medical University Laboratory Animal Centre. Sprague Dawley rats were ordered from Guangxi Medical University Laboratory Animal Centre. All mice and rats were housed in Guangxi Medical University Laboratory Animal Centre in a specific-pathogen-free facility with individually ventilated cages. The room has controlled temperature (20degC-22degC), humidity (30%-70%) and light (12-hour light/dark cycle). The bladder tissues of rats were used for immunohistochemistry and Western blot. Mice (Supplemental Table 3) were randomly assigned after matching for sex, and bladder tissues were harvested from 7- to 12-week-old male (n=5) or female mice (n=5). Given the genetic stability of C57BL/6 mice, we obtained single-cell suspensions from the entire bladders of 10 C57BL/6 mice mixed together. We then took twice the mice bladder cells from the same single-cell suspension and performed two 10x Genomics reactions, respectively. At the same time, we harvested bladder tissues from other mice for immunohistochemistry and Western blot (Supplemental Table 4). 
+ 
+Next, we cut the tissues into fragments using surgical scissors. Bladder fragments were stored temporarily in DPBS (311-425-CL) at 4degC. It was centrifuged at 300 x g for 5 minutes at 4degC, and this step was repeated. Collagenase type 1 (10 ml, 1 mg/ml; 17100017) with DNase I (0.2mg/ml; 10104159001) perfusion was carried out for 20 minutes at 37degC and then centrifuged at 300 x g for 5 minutes at 4degC. After discarding the supernatant, we used StemPro Accutase Cell Dissociation Reagent (A1110501; Gibco) to digest the sticky clumps of cells for 10 minutes and then terminated digestion with DPBS. Following collagenase and accutase treatment, the dissociated single cells were collected. Next, we removed red blood cells using 5 ml of 1x RBC Lysis Buffer (10x diluted to 1x; B250015) for 5 minutes, and then centrifuged at 300 x g for 5 minutes at 4degC. After discarding the supernatant, the cells were resuspended in DPBS at 4degC. The cells passed through a 40-mm cell strainer. We obtained the single-cell suspension (Supplemental Figure 1D) and detected live cells using a hemocytometer with trypan blue (0.4%; 420301). It took about 2 hours to prepare the mouse single-cell suspension. 
+ 
+Sample Processing with 10x Genomics and cDNA Library Preparation 
+ 
+We used 10x Genomics Chromium Single Cell 3' Reagents Kit version 2 (https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry) to perform the previously mentioned single-cell suspensions. Briefly, the single-cell samples were passed through a 40-mm cell strainer and live cells were counted using a hemocytometer with trypan blue (Table 1). Subsequently, the appropriate volume of each sample was calculated to recover 10,000 cells. Using the 10x protocol, we added the single cells, the gel beads, and the oils to the 10x Genomics Single Cell A Chip and ran the machine. After droplet generation, samples were transferred onto a PCR tube and reverse transcription was performed using T100 Thermal Cycler (Bio-Rad). After the reverse transcription, cDNA was recovered using Recovery Agent which was provided by 10x Genomics. The cDNA was then cleaned using a Silane DynaBead as outlined in the user guide. Purified cDNA was amplified for ten cycles before being cleaned up using SPRIselect beads. The samples were detected using a Qubit2.0 Fluorometer (Invitrogen) to determine cDNA concentration. The cDNA libraries were prepared according to the Chromium Single Cell 3' Reagent Kits version 2 user guide. 
+ 
+Table 1. - Cell viability of samples before performing 10x Genomics 
+ 
+ ----------------------------------------------------------------------- 
+ Samples Cell Viability (%) 
+ ----------------------------------- ----------------------------------- 
+ P1 95 
+ 
+ P2 90 
+ 
+ P3 86 
+ 
+ Mice 82.5 
+ ----------------------------------------------------------------------- 
+ 
+scRNA-Seq Processing and Preliminary Results 
+ 
+Samples were sequenced using a Hiseq Xten (Illumina, San Diego, CA) with the following run parameters: read 1 for 150 cycles, read 2 for 150 cycles, and index for 14 cycles. Preliminary sequencing results (bcl files) were converted to FASTQ files with CellRanger (version 2.1.1 for P3 data, version 2.2.0 for P1 and P2 data, and version 3.0.0 for mouse data; https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger). The FASTQ files were then aligned to the human genome reference sequence, GRCh38, and the mouse genome reference sequence, mm10. We also used Cell Ranger for preliminary data analysis and generated a file containing a barcodes table, a genes table, and a gene expression matrix. Next, we obtained an overview website containing a considerable amount of information, such as number of cells, median number of detected genes, sequencing saturation, and sequencing depth (Supplemental Tables 1 and 5). 
+ 
+Using Seurat for Quality Control and Human Bladder Data Secondary Analysis 
+ 
+First, we installed R (version 3.5.1, https://www.r-project.org/) and Seurat R package (version 2.3.4, https://satijalab.org/seurat/). We used the MergeSeurat function to merge three human samples and two reactions of mouse samples. The proportion of mitochondrial genes to all genetic material may indicate whether a cell is in homeostasis or not. We generally believe when a cell has a high percentage of mitochondrial genes versus all genes, it may be under stress. Thus, according to the median number of genes and the percentage of mitochondrial genes in the human and mouse samples (Supplemental Figures 2, A-C and 3, A and B), the cells with <200 and >4000 genes (potential cell duplets) and a mitochondrial gene percentage of >10% were filtered out (Supplemental Figures 2D and 3C). After the step above, we obtained 12,423 human bladder and 12,884 mouse bladder cells. 
+ 
+After data normalization, we identified highly variable genes in the single cells after controlling for the relationship between average expression and dispersion. Genes were removed using the low cut-off of 0.0125 and high cut-off of 3, and the z-score cut-off of 0.5 was applied to identify the highly variable genes, thereby resulting in 1778 genes for human data and 2568 genes for mouse data. We then used principal-component analysis (PCA), with the variable genes as input, and identified significant principal components based on the jackStraw function. A total of 15 principal components were selected as statistically significant input for t-distributed stochastic neighbor embedding (t-SNE). We detected the distribution of t-SNE and PCA between these samples (Supplemental Figures 4, A-C and 5, A and B). Both human and mice data showed a good correlation (Supplemental Figures 4, D-F, and 5C). At the same time, we also examined the distribution of PCA in all types of cells (Supplemental Figure 4B). We compared the average expression of genes between the three samples, and found a good Pearson correlation between them (Supplemental Figure 4, D-F). Cells were clustered by the FindClusters function and classified into 16 clusters for human and 15 clusters for mouse. Next, we used the FindAllMarkers function to find differentially expressed genes (DEGs) between each type of cells (Supplemental Tables 6 and 7). To facilitate in-depth analysis of human ICs, we used the FindMarkers function to find DEGs among five ICs (Supplemental Table 8). 
+ 
+Mouse bladder data from MCA were analyzed using a similar method. MCA data are available from the Gene Expression Omnibus (GEO), accession GSE108097. 
+ 
+Cell Cycle Analysis 
+ 
+Cell cycle analysis was performed using the Seurat package and we used a previously defined core set of 43 G1/S and 54 G2/M cell cycle genes.^(13) We classified cells by the maximal average expression ("cycle score") in these two gene sets. When the cycle scores of G1/S and G2/M were both less than two, we considered these cells as noncycling. Otherwise, we considered the cells as proliferative. 
+ 
+Reconstructing Human ICs Differentiation Trajectories using Monocle2 
+ 
+Cell fate decisions and pseudotime trajectories were reconstructed using the Monocle2 R package (version 2.8.0, http://cole-trapnell-lab.github.io/monocle-release/). Firstly, the five types of ICs were performed by Seurat. These Seurat data which included 3328 ICs were imported into Monocle2. Genes that were expressed in at least ten cells were used and only genes expressed in >5% of cells were kept. We used thresholds on the cells local density (r) and nearest distance (d) to determine the number of clusters. We then performed the differential gene expression analysis as before but across all cell clusters. We used the top 1000 most significant DEGs as the set of ordering genes and performed the dimension reduction and the trajectory analysis. Once we established a trajectory, we used the differentialGeneTest function to find genes that had an expression pattern that varied according to pseudotime. 
+ 
+Comparison of Human and Mouse Bladder Cells at Single-Cell Resolution 
+ 
+We performed comparisons across species by referring to a previous analysis method.^(14) Briefly, after the above program (quality control step), we obtained 12,423 human bladder cells and 12,884 mouse bladder cells. We considered all homologous genes with identical gene names between the human and mouse data sets. For both species, we calculated average expression per gene (n=12,235 genes) in each cluster. Then, we calculate the Pearson correlation coefficient. 
+ 
+RNA Velocity Analysis 
+ 
+RNA velocity analysis was performed using the velocyto.R program (http://velocyto.org, version 0.6).^(15) Briefly, spliced/unspliced reads were annotated by velocyto.py with CellRanger (version 2.2.0), generating BAM files and accompany GTF, and then saved in .loom files. The .loom files were then loaded to R (version 3.5.2) using the read.loom.matrices function to generate count tables for splicing and unsplicing reads. Next, we filtered out the cells in the bottom 0.5% of the total unspliced transcript count. We then removed genes according to an average spliced variant expression of <0.2 or average unspliced variant expression of 0.05 in at least one cluster. Lastly, the velocity-vector arrows were projected onto the t-SNE plot which was obtained in Seurat. 
+ 
+Immunohistochemistry 
+ 
+The results from immunohistochemistry were verified in at least three different patient samples, especially the result of TNNT1 in seven different patient samples. Each sample was performed in at least five slides. Human bladder tissue was cut into 5 mm x 4 mm x 3 mm blocks and fixed in 4% paraformaldehyde (P1110-500; Solarbio) for 24-48 hours. These paraffin-embedded tissues were obtained from patients undergoing partial cystectomy (Supplemental Table 2). The slides of 3-mm sections were cut by using a Leica Sliding Microtome (RM2235; Leica). Tissues were then rehydrated using solutions of ethanol ranging from 100% to 70% and washed with PBS (P1010-2; Solarbio). Sodium citrate (pH 6.0, 50x diluted to 1x; catalog number C1032; Solarbio) to perform a high-pressure repair on the slides. Tissues were blocked in goat serum (SP-9000; ZSGB-BIO) in PBS for 15 minutes at room temperature. The slides were incubated with anti-ADRA2A antibody (rabbit anti-human/mouse, 1:1000, ab85570; Abcam), anti-TNNT1 antibody (rabbit anti-human/mouse/rat, 1:500, NBP1-32748; Novus), anti-HRH2 antibody (rabbit anti-human, 1:100, NBP1-86082; Novus), anti-cytokeratin 17 antibody (rabbit anti-human/mouse, 1:100, ab109725; Abcam), anti-cytokeratin 15 antibody (rabbit anti-human/mouse, 1:500, ab52816; Abcam), and PBS control prepared in blocking solution at 4degC overnight. After washing in PBS, the tissues were incubated with secondary antibodies (D-3004-15; Shanghai Long Island Antibody Diagnostica Inc.) for 15 minutes at room temperature. Finally, we used DAB (ZLI-9018; Beijing Noble Ryder Technology Co., Ltd.) for staining and hematoxylin for nucleation. 
+ 
+Immunohistochemistry paraffin (IHC-P) of mouse and rat tissues was performed by the same method. We used anti-ADRA2A antibody (rabbit anti-mouse/human, 1:100, ab92650; Abcam), anti-cytokeratin 17 antibody (rabbit anti-mouse/human, 1:100, ab109725), anti-cytokeratin15 antibody (rabbit anti-mouse/human, 1:500, ab52816), and anti-TNNT1 antibody (rabbit anti-mouse/rat/human, 1:500, NBP1-32748) as the primary antibodies. 
+ 
+IF 
+ 
+The results of IF were verified in at least two different patient samples. Some steps were similar to those of immunohistochemistry. Before we performed IF, the antibody specificity was confirmed by labeling control groups. We set six negative controls: PBS and anti-mouse secondary antibody, PBS and anti-rabbit secondary antibody, rabbit primary antibody (ADRA2A) and anti-mouse secondary antibody, rabbit primary antibody (HRH2) and anti-mouse secondary antibody, mouse primary antibody (VIM) and anti-rabbit secondary antibody, and mouse primary antibody (PECAM1) and anti-rabbit secondary antibody. The results from the controls indicated there is no unspecific reaction between PBS and the primary and secondary antibodies used (Supplemental Figure 6A). Briefly, we used the slides after high-pressure repair and incubated them with primary antibodies. We divided the primary antibody into the following groups: anti-ADRA2A (rabbit anti-human, 1:200, ab85570; Abcam) and anti-vimentin antibodies (mouse anti-human, 1:1000, ab8978; Abcam), anti-HRH2 (rabbit anti-human, 1:200, NBP1-86082; Novus) and anti-vimentin antibodies (mouse anti-human, 1:1000, ab8978), and anti-ADRA2A (rabbit anti-human, 1:200, ab85570) and anti-PECAM1 antibodies (mouse anti-human, 1:25, NB600-562; Novus). The slides were incubated with the primary antibodies at 4degC overnight. After washing with PBS, the slides were incubated with secondary antibodies, namely Alexa Fluor 488 (goat anti-mouse IgG preadsorbed, 1:500, ab150117; Abcam) and Alexa Fluor 594 (goat anti-rabbit IgG preadsorbed, 1:500, ab150084; Abcam) for 1 hour. After washing with PBS, we stained the slides with DAPI (ab104139, Abcam) for 10 minutes. 
+ 
+Immunoblotting 
+ 
+Briefly, the bladder tissues of Sprague Dawley rat (77.3 mg), C57BL/6 mouse (70 mg), and human (137 mg) were lysed with RIPA lysis buffer (P0013B; Beyotime) containing both protease inhibitor (P1045-1; Beyotime) and phosphatase inhibitor (P1045-2; Beyotime) on ice. After centrifugation at 12,000 rpm for 5 minutes, the supernatants were harvested and the protein concentrations were determined using a BSA Quantification Kit (A8020; Solarbio). Protein samples (20-50 mg) from supernatants were separated on SDS-PAGE and transferred onto polyvinylidene difluoride membrane (BS-PVDF-22; Biosharp). The membrane was blocked for 2 hours with blocking buffer containing 5% nonfat milk (wt/vol), 1x Tris-buffered saline/Tween 20 (TBST; 20x TBS [T1080; Solarbio] was diluted with double-distilled water and Tween 20 [C-0086; Bioss] was added). After three washings with TBST, membranes were incubated at 4degC overnight with primary antibodies, respectively. The primary antibodies were anti-ADRA2A (rabbit anti-human/mouse/rat, 1:1000, ab85570) and anti-glyceraldehyde-3-phosphate dehydrogenase (anti-GAPDH; rabbit anti-human/mouse/rat, catalog number 2118, 1:1000; CST). The membranes were washed three times with TBST, and incubated with horseradish peroxidase-conjugated secondary antibody (goat anti-rabbit, 1:1000, A0208; Beyotime) at room temperature for 1 hour, and then washed three times again. Immunoreactivity using the ECL Kit for Western blot (P0018S; Beyotime) was visualized by an imager (ImageQuant LAS 500; GE Healthcare). GAPDH was used as a loading control. The presented results are from at least three repetitions of Western blot. 
+ 
+Data Access 
+ 
+The raw data and processed data in this article can be accessed in the National Center for Biotechnology Information (GEO) database (GSE129845). The average expression of every gene in every cell cluster of human and mouse bladder (Supplemental Tables 9 and 10) can be accessed in Figshare (https://doi.org/10.6084/m9.figshare.8942663.v1), together with DEGs of every cell cluster in human or mouse bladder (Supplemental Tables 6 and 7). 
+ 
+Results 
+ 
+scRNA-Seq Profiling and Unbiased Clustering of Human Urinary Bladder Cells 
+ 
+Bladder specimens from two males and one female organ donors aged 35-48 (Supplemental Table 1) were collected fresh, dissected, and digested into single cells (Methods). We then performed scRNA-seq with a high-throughput, droplet-mediated scRNA-seq platform (10x Genomics Chromium;^(16)Figure 1A and Methods). A total of 13,495 cells were isolated and sequenced from the three samples with a median of 1356-2336 genes detected per cell (Supplemental Table 1). Under stringent quality controls by Seurat^(17) (https://satijalab.org/seurat/), 12,423 high-quality cells were further analyzed. Clustering analysis identified 16 distinct cell clusters consisting of cells in the range of 66-2337 cells per cluster (Figure 1B, Supplemental Figure 2E). According to the marker genes (Table 2) of each type of cells, we classified cells into cluster 1-16, thereby corresponding to basal cells 1, basal cells 2, fibroblast 1, intermediate cells 1, intermediate cells 2, smooth muscle cells, fibroblast 2, myofibroblast, fibroblast 3, monocytes, endothelial cells, TNNT1+ epithelial cells, T cells, umbrella cells, ADRA2A+ ICs, and B cells, respectively (Figure 1C). 
+ 
+[fig1] 
+ 
+Figure 1.: 
+ 
+High-throughput 10x scRNA-seq reveals the cell populations of human bladder. (A) Overview of the scRNA-seq approach using human and mouse bladder tissue samples that were processed into a single-cell suspension, and scRNA-seq analysis using the 10x platform. (B) t-SNE plot representation of 12,423 urinary bladder cells from three human samples and clusters are colored and distinctively labeled. (C) Heat map showing the marker genes of each cluster, highlighting the selected marker genes for each cluster from humans. (D) t-SNE plot representation of 12,884 urinary bladder cells from ten mice and clusters are colored and distinctively labeled. (E) Heat map showing the marker genes of each cluster, highlighting the selected marker genes for each cluster from mouse. 
+ 
+Table 2. - Genes used as markers of different cell types and the reference that justified their use 
+ 
+ ---------------------------------------------------------------------------------------- 
+ Gene Marker Reference 
+ -------------- ------------------------------------------------ ------------------------ 
+ KRT18 Epithelial cell ^(37) 
+ 
+ KRT19 Epithelial cell ^(37) 
+ 
+ KRT5 Basal cell ^(37) 
+ 
+ KRT17 Basal cell ^(37) 
+ 
+ KRT13 Intermediate cell, basal cell ^(37) 
+ 
+ KRT20 Umbrella cell ^(37) 
+ 
+ UPK1A Umbrella cell^(high), intermediate cell^(lowa) ^(37,38) 
+ 
+ UPK1B Umbrella cell^(high), intermediate cell^(lowa) ^(37,38) 
+ 
+ UPK3B Umbrella cell^(high), intermediate cell^(lowa) ^(37,38) 
+ 
+ UPK3A Umbrella cell ^(37,38) 
+ 
+ UPK2 Umbrella cell ^(37,38) 
+ 
+ VIM Interstitial cell ^(7,18) 
+ 
+ S100A4 Fibroblast ^(19,20) 
+ 
+ COL3A1 Fibroblast ^(21) 
+ 
+ COL1A1 Fibroblast ^(20,21) 
+ 
+ COL1A2 Fibroblast ^(20,21) 
+ 
+ ACTA2 Myofibroblast ^(22) 
+ 
+ TAGLN Smooth muscle cell ^(39,40) 
+ 
+ DES Smooth muscle cell ^(40) 
+ 
+ CNN1 Smooth muscle cell ^(40) 
+ 
+ ACTG2 Smooth muscle cell ^(41) 
+ 
+ TPM2 Smooth muscle cell ^(42) 
+ 
+ SELE Endothelial cell ^(43) 
+ 
+ PECAM1 Endothelial cell ^(43,44) 
+ 
+ VCAM1 Endothelial cell ^(43,44) 
+ 
+ CDH5 Endothelial cell ^(45) 
+ 
+ LYZ Monocyte ^(46) 
+ 
+ MS4A7 Monocyte ^(46) 
+ 
+ CD14 Monocyte ^(46,47) 
+ 
+ CD209 Dendritic cell ^(48,49) 
+ 
+ CD3D T cell ^(46,50) 
+ 
+ CD3E T cell ^(46,50) 
+ 
+ MZB1 B cell ^(51) 
+ 
+ CD79A B cell ^(46,^(52-54)-) 
+ 
+ GPM6A Neuron ^(55,56) 
+ ---------------------------------------------------------------------------------------- 
+ 
+^(a)The expression of this gene was higher in umbrella cells than in intermediate cells. 
+ 
+Some differences in cell homogeneity were found between different populations. In the top five genes of each cluster, only the smooth muscle cells (cluster 6) maintained high homogeneity, in which each cell approximately expressed the top five genes (Supplemental Figure 7, A and B). However, other clusters did not have this characteristic. 
+ 
+Interestingly, we defined each cluster cell by using the reported marker genes (Table 2), some new gene markers can be found in some clusters. For example, in fibroblast 1 (cluster 3), PLA2G2A and IGFBP6 were highly expressed compared with those of other clusters. (Supplemental Figure 7A). PIGR and LCN2 were also highly expressed in umbrella cells (cluster 14, Supplemental Figure 7A). 
+ 
+Five Types of ICs, Especially a Novel IC in Human Bladder, Revealed by scRNA-Seq 
+ 
+Next, we focused on ICs (Figure 2A). In previous studies, VIM, which encodes vimentin, was considered the specific gene marker for ICs.^(7,18) These VIM-positive cells can be classified into five populations (Figure 2B), excluding immune cells. Depending on the fibroblast marker genes S100A4,^(19)COL1A1,^(20,21) and COL3A1,^(21) fibroblasts can be classified into three subpopulations, namely fibroblast 1, fibroblast 2, and fibroblast 3 (Figure 2B). Fibroblast 3 expresses VIM, COL1A1, and COL3A1 but did not express S100A4. We also defined the myofibroblast by coexpressing ACTA2^(22) and VIM but not expressing S100A4 (Figure 2B). However, we discovered a novel type of ICs which coexpressed ACTA2 and S100A4 (Figure 2B). Unlike other ICs, these cells were highly expressed in ADRA2A and HRH2, as well in AVPR1A. (Figure 2B). 
+ 
+[fig2] 
+ 
+Figure 2.: 
+ 
+ICs can be classified into multiple cell types by scRNA-seq. (A) The distribution of ICs in this t-SNE plot. (B) Heat map showing the gene expression of five IC types. (C) Gene markers distinguishing the five IC types from one another by using Seurat. avg_logFC, average log2 fold change. 
+ 
+To distinguish these five types of ICs, we used the FindMarkers function of Seurat to analyze their gene expression (Figure 2C). In addition to the marker genes above, some genes exhibited evident differences in their expression. For example, fibroblast 1 showed high CLEC3B, FSTL1, IGFBP6, and FBN1 expression levels; whereas fibroblast 2 exhibited high APOD, SFRP2, CHRDL2, and C7 expression levels (Figure 2C). Fibroblast 3 showed high DUSP1, SERPINE1, and FST expression levels. Myofibroblasts also exhibited high APOE and PTGDS expression levels (Figure 2C). We also discovered a new population of ICs that specifically expressed ADRA2A and HRH2 (Figure 3A). ADRA2A encodes the a_(2A)-adrenergic receptor which is a receptor that binds to noradrenaline and adrenaline,^(23) whereas HRH2 encodes a H2 histamine receptor that binds to histamine to indicate allergic reactions. a2-Adrenoceptor stimulation inhibits the field stimulation-induced contraction of rat bladder in a tetrodotoxin and the parasympathetic nerve activity in the bladder of rabbits.^(24) 
+ 
+[fig3] 
+ 
+Figure 3.: 
+ 
+ADRA2A + ICs can be validated in human bladder tissues. (A) Violin plots showing the ADRA2A and HRH2 expression levels in each cluster. (B) IHC-P verified the ADRA2A protein expression (arrows) in human bladder tissue (Supplemental Table 2, sample ID: S004). (C) IHC-P verified the cells of the HRH2 + (arrows) in human bladder tissue (Supplemental Table 2, sample ID: S004). (D) IF analysis of the expression of VIM (red), which is an IC marker, in combination with the novel cell marker ADRA2A (green) and DNA staining by DAPI (blue) within the tissue paraffin sections from human bladder samples (Supplemental Table 2, sample ID: S004) verified these novel ICs. (E) We used another marker, HRH2 (green), to verify the same result. Scale bars, 20 mm. 
+ 
+To further verify the presence of these ICs in human bladder tissue, we selected ADRA2A and HRH2 for the following experiments (Figure 3A). By using IHC-P on ADRA2A and HRH2, respectively, these cells can be observed in human bladder tissues (Figure 3, B and C, Supplemental Table 2). To validate if these cells were ICs, we performed IF analysis on the protein level. Immunostaining for ADRA2A, which was identified by scRNA-seq, and VIM, which is the specific marker of ICs, showed the two proteins can be merged in one cell (Figure 3D). To verify this result further, we also selected HRH2 and VIM for immunostaining. The two proteins can be merged in one cell (Figure 3E). 
+ 
+Reconstructing the Developmental Trajectory of Human ICs and Discovering Genes that Change as a Function of Pseudotime 
+ 
+We used Monocle2^(25,26) to understand the relationship between ICs and their states. In our data, 3328 ICs were included for analysis. We used reverse graph embedding to generate a trajectory plot, including five IC populations (Figure 4A). Combined with pseudotime analysis (Figure 4B), we can conclude the states and relationships among these ICs. Fibroblast 1 is the beginning of the trajectory, and then fibroblast 2 is the continuation. Fibroblast 3 appeared as the end of the trajectory branch 1. Myofibroblast and ADRA2A+ ICs appeared as the two ends of the trajectory branch 2. Then, after a trajectory was established, we found the top six genes that have an expression pattern and varied according to pseudotime. The expression of JUN, PLA2G2A, S100A10, S100A2, S100A4, and SH3BGRL3 demonstrated the most evident changes in pseudotime (Figure 4C). 
+ 
+[fig4] 
+ 
+Figure 4.: 
+ 
+Reconstructing the developmental trajectory of ICs can find some genes that vary as a function of pseudotime. (A) Monocle2-generated pseudotemporal trajectory of five IC types (n=3328) imported from Seurat data, colored by cell-name designation. (B) Pseudotime was colored in a gradient from dark to light blue, and the start of pseudotime was indicated. (C) Top six genes calculated by Monocle2 were shown as dot plots displayed as expression level over pseudotime. (D) Heat map for clustering the top 50 genes that vary as a function of pseudotime. The 50 genes were divided into three clusters (cluster 1, cluster 2, and cluster 3), representing the genes at the beginning stage, the transitory stage, and the end stage of developmental trajectory, respectively. Fib1, fibroblast 1; Myo, myofibroblast. 
+ 
+To further analyze the genes in terms of the changes in pseudotime, we clustered genes via a pseudotemporal expression pattern. The top 50 genes that vary as a function of pseudotime were clustered, as shown by the heat map (Figure 4D). We divided the genes that influence cell developmental trajectory into three gene clusters. Gene cluster 1 consisted of genes highly expressed at the early stage of developmental trajectory; this includes genes such as SH3BGRL3, FN1, and FSTL1 which were highly expressed at the beginning stage. Gene cluster 2, which includes APOD, C7, and SFRP2, was highly expressed gene at the transitory stage of the developmental trajectory. Gene cluster 3, which includes AREG, LY6D, and RGS5, was highly expressed gene at the end stage of developmental trajectory. 
+ 
+Urothelium Cell Clusters and the Discovery of a New Type of Epithelial Cells in Human, Rat, and Mouse Bladder by scRNA-Seq 
+ 
+We objectively defined the epithelial cell-type identities by subclustering the human bladder epithelial cells (Figure 5A). The epithelial cells can be classified as basal cell 1, basal cell 2, intermediate cell 1, intermediate cell 2, TNNT1+ epithelial cells, and umbrella cells by gene markers (Table 2). Many markers, such as KRT18, KRT19, and KRT13, were highly expressed in two or more cell types (Figure 5B). Although the gene expression of these cells was slightly similar, a heat map of the gene expression among them showed significant differences (Figure 5B). For example, the KRT13 expression in basal cell 2 was higher than that in basal cell 1, and KRT5 was highly expressed in basal cells 1 (Figure 5B). Intermediate cells can be classified into two subtypes. The KRT13, KRT19, and UPK1B expression levels in intermediate cell 2 were higher than those in intermediate cell 1 (Figure 5B). By contrast, the uroplakin (UP) gene family (UPK1A, UPK1B, UPK2, UPK3A and UPK3B) was highly expressed in umbrella cells, whereas intermediate cells showed low UPK1A, UPK1B, UPK3A, and UPK3B expression levels (Figure 5B). 
+ 
+[fig5] 
+ 
+Figure 5.: 
+ 
+Epithelial cells can be classified into multiple cell types by scRNA-seq and identified the novel cell type. (A) EC distribution in the t-SNE plot. (B) Heat map showing the epithelial cells gene expression. (C) Violin plot showing the expression of TNNT1 in each cluster. (D) Feature plots of the characteristic markers for all cell types and their expression levels (shown as gradient of purple). The red circles and arrows indicate TNNT1 + cells. (E) IHC-P verified the TNNT1 protein expression (arrows) in human bladder tissue (Supplemental Table 2, sample ID: S001). Scale bars, 20 mm. avg_logFC, average log2 fold change. 
+ 
+Interestingly, we discovered a new type of epithelial cell which specifically highly expressed TNNT1 (Figure 5C). These cells also highly expressed some gene markers of epithelial cells, such as KRT18 and KRT19 (Figure 5D). TNNT1 encodes slow skeletal muscle protein and is specifically expressed in skeletal muscle fibers.^(27) However, TNNT1+ bladder epithelial cells have never been reported before, which leads us to speculate whether such cells are epithelial cells with skeletal muscle characteristics. More importantly, we had to confirm whether such cells exist in the urothelium. To verify this result, we performed IHC-P on TNNT1 and found the positive epithelial cells in seven different human bladder samples (Figure 5E, Supplemental Figure 8A). Interestingly, TNNT1+ epithelial cells also existed in the bladder urothelium cells of rats and mice (Supplemental Figure 8, B and C, Supplemental Table 5). The majority of slow skeletal muscle proteins were found in the umbrella cell layer, but few proteins were found in the intermediate cell layer. However, not all umbrella cells expressed these proteins (Supplemental Figure 9, A and B). 
+ 
+RNA Velocity Analysis Revealed the Developmental Lineages of Human Bladder Cells 
+ 
+Next we used RNA velocity^(15) to study the developmental lineage of bladder cells. RNA velocity can aid the analysis of developmental lineages and cellular dynamics, particularly in humans.^(15) This method estimates the rate of gene splicing and degradation based on the relative abundance of unspliced and spliced mRNA. The direction of the vector reflects the direction of cell lineage development, and the length of the vector reflects the rate. In this study, we performed RNA velocity analysis on human bladder epithelial cells and ICs (Figure 6, A and C), and then projected the RNA velocity results onto the previous t-SNE plot. Epithelial cells are one of the major cell types in the bladder. RNA velocity analysis revealed the developmental lineages of epithelial cells. Bladder epithelial cells can be transformed from basal cells to intermediate cells and then to umbrella cells or TNNT1+ epithelial cells (Figure 6B). In addition, the developmental lineage of ICs was similar to the previous results obtained using Monocle2. The RNA velocity analysis revealed some features about ICs directly: Fibroblast 1 had longer velocity vectors and some had a tendency to turn into fibroblast 2 (Figure 6D). Some fibroblast 2 velocity-vector arrows point to myofibroblasts (Figure 6D). Together, this result elucidated some rules about the developmental trajectory of bladder cells. 
+ 
+[fig6] 
+ 
+Figure 6.: 
+ 
+Pseudotime analysis of human bladder cells by using RNA velocity reconstructed the developmental lineages. (A) t-SNE plot of all of the epithelial cells, and different colors correspond to different cell types. (B) Velocity field projected onto the t-SNE plot of the epithelial cells (arrows represent average velocity). (C) t-SNE plot of all of the ICs, and different colors correspond to different cell types. (D) Velocity field projected onto t-SNE plot of the ICs. 
+ 
+scRNA-Seq Profiling and Unbiased Clustering of Mouse Urinary Bladder 
+ 
+Human bladder cells can be classified into many subtypes, what about those of the mouse? The reliability and similarity of the mice model in studying human bladder function, and whether the novel human bladder cell types exist in mouse bladders, remain unknown. scRNA-seq in mouse is necessary to address these problems. In a previous study, MCA^(10) provided guidance and a reference for this research. Initially, we used the MCA bladder data (GEO: GSE108097) for analysis. After filtering low-quality cells, 11 distinct cell clusters can be identified (Supplemental Figure 10A) by their marker genes (Supplemental Figure 10B). However, MCA only provided 2498 high-quality bladder cells and transcriptome information. To establish the transcriptome map of mouse bladder cells, we performed scRNA-seq of mouse bladder again, and 15,795 cells were obtained (Supplemental Table 5). After filtering out low-quality cells (Methods), we obtained 12,884 cells. We compared our mouse data with MCA and found this data were highly correlated with MCA, and the Pearson correlation coefficient was 0.905 (Supplemental Figure 10C). A total of 15 distinct cell clusters can be identified by unbiased clustering (Figure 1D, Supplemental Figure 3D). According to the marker genes (Table 2) of each type of cells, we classified cells into clusters 1-15, corresponding to basal cell 1, umbrella cells, fibroblast 1, basal cell 2, intermediate cells, mixed epithelial cells, fibroblast 2, fibroblast 3, myofibroblast, monocytes, neuron, smooth muscle cells, dendritic cells, T cells, and endothelial cells, respectively (Figure 1E). The top five genes expressed in each cell type are shown in Supplemental Figure 7C. 
+ 
+Homology and Heterogeneity of Human and Mouse Bladder Cells 
+ 
+Although human and mouse are different species, homology and heterogeneity must exist between their bladder cells. Initially, we considered all homologous genes with identical gene names between the human and mouse data sets. We compared the average expression of all homologous genes in human and mouse bladder cells, and the Pearson correlation coefficient was 0.855 (Figure 7A). Some genes, such as Krt15, Gsta4, and Wfdc2, were also highly expressed in mouse bladder cells but low in human bladder cells (Figure 7A). On the contrary, FABP4, TIMP1, and S100A2 were highly expressed in human bladder cells but low in mouse bladder cells (Figure 7A). 
+ 
+[figure8-1] 
+ 
+Figure 7-1.: 
+ 
+Comparison of homology and heterogeneity of human and mouse found some characteristic. (A) Scatterplot shows the homologous genes, with the average expression (AE) per gene (n=12,235 genes) in total human (horizontal) and mouse cells (vertical). The Pearson correlation coefficient was 0.855 (r=0.855). The blue line is the regression curve. Genes with distinct DEGs are marked. (B) Heat map indicating Pearson correlations on the averaged profiles among each cell type for human (vertical) and mouse (horizontal). (C) Scatterplot showing the homologous genes with AE per gene (n=12,235 genes) in human smooth muscle cells (HumanSMC) and mouse smooth muscle cells (MouseSMC). (D) Scatterplot showing the homologous genes with the AE per gene (n=12,235 genes) in human fibroblast 2 (HumanFib2) and mouse fibroblast 3 (MouseFib3). (E) Violin plots showing cytokeratin genes expressed in human epithelial cells, such as basal cell 1 (BC1), basal cells 2 (BC2), intermediate cell 1 (IMC1), intermediate cell 2 (IMC2), TNNT1 + epithelial cells (TNNT1), and umbrella cells (UC). (F) Violin plots showing the cytokeratin genes expressed in mouse epithelial cells, such as basal cell 1, umbrella cells, basal cell 2, intermediate cells, and mixed epithelial cells (mixed). (G) Violin plots showing the cytokeratin genes expressed in MCA mouse epithelial cells, such as basal cells, umbrella cells, intermediate cells. 
+ 
+[figure8-2] 
+ 
+Figure 7-2.: 
+ 
+Comparison of homology and heterogeneity of human and mouse found some characteristic. (A) Scatterplot shows the homologous genes, with the average expression (AE) per gene (n=12,235 genes) in total human (horizontal) and mouse cells (vertical). The Pearson correlation coefficient was 0.855 (r=0.855). The blue line is the regression curve. Genes with distinct DEGs are marked. (B) Heat map indicating Pearson correlations on the averaged profiles among each cell type for human (vertical) and mouse (horizontal). (C) Scatterplot showing the homologous genes with AE per gene (n=12,235 genes) in human smooth muscle cells (HumanSMC) and mouse smooth muscle cells (MouseSMC). (D) Scatterplot showing the homologous genes with the AE per gene (n=12,235 genes) in human fibroblast 2 (HumanFib2) and mouse fibroblast 3 (MouseFib3). (E) Violin plots showing cytokeratin genes expressed in human epithelial cells, such as basal cell 1 (BC1), basal cells 2 (BC2), intermediate cell 1 (IMC1), intermediate cell 2 (IMC2), TNNT1 + epithelial cells (TNNT1), and umbrella cells (UC). (F) Violin plots showing the cytokeratin genes expressed in mouse epithelial cells, such as basal cell 1, umbrella cells, basal cell 2, intermediate cells, and mixed epithelial cells (mixed). (G) Violin plots showing the cytokeratin genes expressed in MCA mouse epithelial cells, such as basal cells, umbrella cells, intermediate cells. 
+ 
+Next, we compared each cell type across each species and found that most human and mouse bladder cells were relatively well correlated (Figure 7B). In these cells, a high correlation was observed between human and mouse smooth muscle cells, and the Pearson correlation coefficient was 0.837. We compared the heterogeneity of the smooth muscle cells in mouse and human (Figure 7C). For mouse smooth muscle cells, Krt15, Gsta4, Rpl17, and Ly6d demonstrated a higher expression in mice than that in human, whereas ACTC1, TIMP1, and CCL2 were highly expressed in human smooth muscle cells (Figure 7C). The Pearson correlation coefficient was 0.851 between human fibroblast 2 and mouse fibroblast 3, but some heterogeneity still existed (Figure 7D). For example, Clec3b, Gpx3, and Jund were highly expressed in mouse fibroblast 3, whereas S100A4, TIMP1, SFRP2, and RPL13A were highly expressed in human fibroblast 2 (Figure 7D). Other cell types between human and mouse, such as basal cells, intermediate cells, umbrella cells, myofibroblast, monocytes, and T cells, were also well correlated (Supplemental Figure 11, A-F). However, a lower correlation was found between human and mouse endothelial cells (Supplemental Figure 11G). 
+ 
+Cytokeratin is the intermediate filament protein characteristic of epithelial cells. In human cells, over 20 different cytokeratin isotypes have been identified.^(28) We are interested in the cytokeratin transcriptome expression levels in epithelial cells of different species. Therefore, we analyzed and compared the expression of the cytokeratin gene family in human and mouse epithelial cells (Figure 7, E-G). Mouse data were derived from MCA and this paper, and some results were obtained. Krt17 cannot be captured in the mouse epithelial transcriptome, and KRT13 was highly expressed in human basal and intermediate cells but lowly expressed in all mouse epithelial cells (Figure 7, E-G). By contrast, the Krt15 expression in mouse epithelial cells was significantly higher than that in human epithelial cells. (Figure 7, E-G). The results of scRNA-seq were verified by immunohistochemistry (Supplemental Figure 12, A and B). However, the expression levels of the KRT7, KRT8, KRT18, KRT19, and KRT20 were similar in human and mouse epithelial cells. These results indicated human and mouse evolution both had conservative and heterogeneous aspects. 
+ 
+The Genitourinary Developmental Molecular Anatomy Project (GUDMAP; http://www.gudmap.org) provides an ontology of the cell types present during mammalian urogenital tract development and the molecular hallmarks of those cells as discerned by a variety of procedures, including in situ hybridization, transcriptional profiling, and immunostaining.^(29) We integrated the urothelium cell data (GUDMAP ID TS22-TS28) from GUDMAP with our scRNA-seq data for analysis. We found that most marker genes identified by GUDMAP were expressed in human bladder urothelium cells of scRNA-seq data, but the expression level was low (Figure 8). Interestingly, UPK3A was considered as a marker gene of umbrella cells in GUDMAP, which was also highly expressed in umbrella cells in our scRNA-seq result (Figure 8). KRT5 was a marker gene of basal cells that was also highly expressed in the basal cells of our scRNA-seq result (Figure 8). Through integrated analysis, overlap and unique genes missed between our study and GUDMAP were identified. 
+ 
+[fig8] 
+ 
+Figure 8.: 
+ 
+Integration of single-cell resolution of different urothelial cells with the GUDMAP database identified overlap and unique genes missed. Human bladder urothelial cells were divided into six types and mouse cells into four types in this study. These cells were divided into three types in the GUDMAP database: the umbrella cells (UC), intermediate cells (IMC), and basal cells (BC). We showed the average expression (AE) of the marker genes in this study and GUDMAP using a heat map. The genes identified by GUDMAP were confirmed by in situ hybridization. The UPK3A and KRT5 were comarkers in this study and GUDMAP. Three results were obtained: uncertain, not detected, and present. Genes that did not exist were represented by "NA." 
+ 
+Discussion 
+ 
+Through the scRNA-seq of bladder cells, our study accurately classified bladder ICs according to the cell transcriptome, and bladder ICs can be recognized from another perspective. We discovered a novel IC type (Figure 3, B-E) in human bladder. These cells were characterized by the specific expression of ADRA2A and HRH2 but low PDGFRA expression (Figure 2B). ADRA2A encodes the a_(2A)-adrenergic receptor, a receptor that binds to noradrenaline and adrenaline.^(23) The adrenergic receptor family is considered to be widely distributed in bladder.^(24) At the neuroeffector junction between sympathetic nerves and smooth muscle cells, a1- and a2-adrenoceptors generally mediate contraction enhancement.^(30)b-Adrenoceptors were also identified in smooth muscle tissue and b3-adrenoceptors, which can relax human detrusor muscles under adrenergic stimulation, may be a new therapeutic target for OAB treatment.^(^(31-33)) 
+ 
+In contrast, HRH2, which encodes the H2 histamine receptor, binds to histamine to activate allergic reactions. The number of mast cells in bladder tissue of patients with OAB and IC/BPS is significantly higher than that of the general population.^(34) To our knowledge, mast cells can release histamine: in patients with IC/BPS, the histamine and methylhistamine levels significantly increase in urine.^(35) These cells also expressed AVPR1A (Figure 2B) which encodes arginine vasopressin receptor 1A. In addition to the inhibitory effect of arginine vasopressin on urination, studies have shown that arginine vasopressin (termed the antidiuretic hormone) can induce bladder contraction in rats.^(36) We tried to investigate whether ADRA2A+ ICs were a new type of endothelial cell. We selected PECAM1, a marker of endothelial cells, and ADRA2A for IF. This result did not support that ADRA2A+ ICs were a new type of endothelial cell. We found that endothelial cells were not labeled with ADRA2A, whereas ADRA2A+ ICs were not labeled with PECAM1 (Supplemental Figure 6B). We hypothesized that these ICs may be involved in nerve regulation and allergic reactions in the bladder and also associated with the physiology and pathology, such as smooth muscle contraction (Supplemental Figure 13). 
+ 
+However, these ADRA2A+ ICs were not found in the bladder of mice. According to the scRNA-seq results in mouse, Adra2a and Hrh2 cannot be detected. IHC-P was performed on Adra2a but a negative result was obtained (Supplemental Figure 9C). In addition, the Adra2a protein was not detected in mouse or rat bladder tissues by Western blot, whereas it can be found in human bladder tissues (Supplemental Figure 9D). Thus, these ADRA2A+ ICs appeared to a special type of ICs that can exist in the human bladder, but not in the mouse bladder. 
+ 
+In our study, we discovered a new type of epithelial cell in human bladder which specifically expressed TNNT1 (Figure 5E). This interesting result also occurred in the urothelium cells of mice and rats (Supplemental Figure 8, B and C). TNNT1 (encoding slow skeletal muscle Troponin T) which is an isoform of Troponin T is crucial in the calcium regulation of actin thin filament function and is essential for the contraction of striated muscles.^(27) The TNNT1+ epithelial cells may appear in the umbrella cell layer or in the intermediate cell layer. However, not all urothelium cells expressed these proteins, in humans or mice (Supplemental Figure 9, A and B). It is possible that TNNT1+ epithelial cells are located at a specific anatomic site of the bladder. Thus, we hypothesized that these TNNT1+ epithelial cells may have a contractile function and play a role in the physiologic process of bladder filling and emptying. Additionally, these cells will provide a new insight into the research on urothelium. 
+ 
+Although we showed a high-resolution, single-cell RNA map, we also realized the percentage of smooth muscle cells was low. The reasons for this may be that smooth muscle cells are adherent to each other, fail to disperse adequately, and do not get through the filters. Furthermore, in this study, human bladder tissues were obtained from patients with cancer. Although we selected normal tissue remote from the tumor sites, bladders with cancer usually are described as "unstable," because there are some precancerous cells throughout the bladder, including in the parts that are seemingly uninvolved. However, this is an unavoidable issue. People do not get cystectomies unless they have bladder cancer, and the vast majority of the cell types identified in the patients were also in the mice. Therefore, we consider these results to be reliable. 
+ 
+Overall, our study provides the most comprehensive information on the cell types found in the normal human and mouse bladders thus far. These findings provide insights into the discovery of the novel cell type, specific cell markers, signaling receptors, and gene data set which will aid in studying the relationship between cell types and bladder diseases. 
+ 
+Disclosures 
+ 
+None. 
+ 
+Funding 
+ 
+This work was supported by grants from the National Natural Science Foundation of China (81770759), the National Natural Science Foundation of China (81370857), National Key R&D Program of China (2017YFC0908000), and Guangxi Natural Science Fund for Innovation Research Team (2013GXNSFFA019002). 
+ 
+Published online ahead of print. Publication date available at www.jasn.org. 
+ 
+Dr. Yu performed scRNA-seq experiments and analyses, performed immunohistochemistry and IF, made figures, and wrote the paper; Miss Liao dissected mouse bladder tissues, performed RNA-seq experiments, and wrote the paper; Dr. Chen dissected mouse bladder tissues and wrote the paper; Dr. Zou dissected human and mouse bladder tissues, performed RNA-seq experiments; Dr. Cheng, Prof. Liu, Dr. T. Li, and Dr. Q. Zhang provided and dissected human bladder tissue; Dr. R. Yang and Dr. Ye discussed the draft paper and performed bioinformatics and Western blot; Mr. J. Li performed RNA velocity analysis; Dr. Huang and Miss Long made figures; Dr. H. Zhang and Dr. X. Yang critically reviewed the manuscript; Prof. Mo conceived of and supervised the project, analyzed data, made figures, and wrote the paper; and all authors read and commented on the manuscript. 
+ 
+Supplemental Material 
+ 
+This article contains the following supplemental material online at http://jasn.asnjournals.org/lookup/suppl/doi:10.1681/ASN.2019040335/-/DCSupplemental. 
+ 
+Supplemental Figure 1. Details of single-cell suspension preparation process. 
+ 
+Supplemental Figure 2. Quality control (QC) of human bladder single cell data. 
+ 
+Supplemental Figure 3. QC of mouse bladder single-cell data. 
+ 
+Supplemental Figure 4. Distribution of human bladder cells from each batche. 
+ 
+Supplemental Figure 5. Distribution of mouse bladder cells from two reactions. 
+ 
+Supplemental Figure 6. The IF of human bladder tissues. 
+ 
+Supplemental Figure 7. Heat map of gene expression in bladder. 
+ 
+Supplemental Figure 8. The expression of TNNT1 in human, mouse and rat bladder tissue by IHC-P. 
+ 
+Supplemental Figure 9. Immunohistochemistry of paraffin (IHC-P) and Western blot negative results. 
+ 
+Supplemental Figure 10. Compare mouse bladder data from Mouse Cell Atlas. 
+ 
+Supplemental Figure 11. Homology of human and mouse. 
+ 
+Supplemental Figure 12. IHC-P verified the unique expression cytokeratin genes of human and mouse urothelium. 
+ 
+Supplemental Figure 13. Hypothesis diagram of the internal mechanism of ADRA2A+ ICs. 
+ 
+Supplemental Table 1. Patient information and sequencing statistics. 
+ 
+Supplemental Table 2. Patient information of IHC-P/IF. 
+ 
+Supplemental Table 3. Mice information. 
+ 
+Supplemental Table 4. Mouse and rat information of IHC-P. 
+ 
+Supplemental Table 5. Mice sequencing statistics. 
+ 
+Supplemental Table 6. Summary of clusters about human bladder cells. 
+ 
+Supplemental Table 7. Summary of clusters about mouse bladder cells. 
+ 
+Supplemental Table 8. Comparison of the differences between the five types of ICs. 
+ 
+Supplemental Table 9. The average expression of every gene in every cell cluster of human bladder. 
+ 
+Supplemental Table 10. The average expression of every gene in every cell cluster of mouse bladder. 
+ 
+References 
+ 
+1. Merrill L, Gonzalez EJ, Girard BM, Vizzard MA: Receptors, channels, and signalling in the urothelial sensory system in the bladder. Nat Rev Urol 13: 193-204, 2016 26926246 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+2. Wein AJ, Kavoussi LR, Partin AW, Peters CA, Abrams P, Adams MC, et al.: Campbell-Walsh Urology, Philadelphia, PA, Elsevier, Inc., 2016 
+ 
+- Cited Here 
+ 
+3. Foxman B: The epidemiology of urinary tract infection. Nat Rev Urol 7: 653-660, 2010 21139641 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+4. Foxman B, Barlow R, D'Arcy H, Gillespie B, Sobel JD: Urinary tract infection: Self-reported incidence and associated costs. Ann Epidemiol 10: 509-515, 2000 11118930 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+5. Irwin DE, Kopp ZS, Agatep B, Milsom I, Abrams P: Worldwide prevalence estimates of lower urinary tract symptoms, overactive bladder, urinary incontinence and bladder outlet obstruction. BJU Int 108: 1132-1138, 2011 21231991 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+6. Berry SH, Elliott MN, Suttorp M, Bogart LM, Stoto MA, Eggers P, et al.: Prevalence of symptoms of bladder pain syndrome/interstitial cystitis among adult females in the United States. J Urol 186: 540-544, 2011 21683389 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+7. Sanders KM, Ward SM, Koh SD: Interstitial cells: Regulators of smooth muscle function. Physiol Rev 94: 859-907, 2014 24987007 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+8. McCloskey KD, Gurney AM: Kit positive cells in the Guinea pig bladder. J Urol 168: 832-836, 2002 12131376 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+9. Koh BH, Roy R, Hollywood MA, Thornbury KD, McHale NG, Sergeant GP, et al.: Platelet-derived growth factor receptor-a cells in mouse urinary bladder: A new class of interstitial cells. J Cell Mol Med 16: 691-700, 2012 22151424 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+10. Han X, Wang R, Zhou Y, Fei L, Sun H, Lai S, et al.: Mapping the mouse cell atlas by microwell-seq [published correction appears in Cell 173: 1307, 2018]. Cell 172: 1091-1107.e17, 2018 29775597 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+11. Macosko EZ, Basu A, Satija R, Nemesh J, Shekhar K, Goldman M, et al.: Highly parallel genome-wide expression profiling of individual cells using nanoliter droplets. Cell 161: 1202-1214, 2015 26000488 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+12. Regev A, Teichmann SA, Lander ES, Amit I, Benoist C, Birney E, et al.; Human Cell Atlas Meeting Participants: The human cell atlas. ELife 6: e27041, 2017 29206104 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+13. Tirosh I, Izar B, Prakadan SM, Wadsworth MH 2nd, Treacy D, Trombetta JJ, et al.: Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq. Science 352: 189-196, 2016 27124452 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+14. Butler A, Hoffman P, Smibert P, Papalexi E, Satija R: Integrating single-cell transcriptomic data across different conditions, technologies, and species. Nat Biotechnol 36: 411-420, 2018 29608179 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+15. La Manno G, Soldatov R, Zeisel A, Braun E, Hochgerner H, Petukhov V, et al.: RNA velocity of single cells. Nature 560: 494-498, 2018 30089906 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+16. Zheng GX, Terry JM, Belgrader P, Ryvkin P, Bent ZW, Wilson R, et al.: Massively parallel digital transcriptional profiling of single cells. Nat Commun 8: 14049, 2017 28091601 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+17. Satija R, Farrell JA, Gennert D, Schier AF, Regev A: Spatial reconstruction of single-cell gene expression data. Nat Biotechnol 33: 495-502, 2015 25867923 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+18. Koh SD, Lee H, Ward SM, Sanders KM: The mystery of the interstitial cells in the urinary bladder. Annu Rev Pharmacol Toxicol 58: 603-623, 2018 28992432 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+19. Strutz F, Okada H, Lo CW, Danoff T, Carone RL, Tomaszewski JE, et al.: Identification and characterization of a fibroblast marker: FSP1. J Cell Biol 130: 393-405, 1995 7615639 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+20. Iwano M, Plieth D, Danoff TM, Xue C, Okada H, Neilson EG: Evidence that fibroblasts derive from epithelium during tissue fibrosis. J Clin Invest 110: 341-350, 2002 12163453 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+21. Varga J, Rosenbloom J, Jimenez SA: Transforming growth factor beta (TGF beta) causes a persistent increase in steady-state amounts of type I and type III collagen and fibronectin mRNAs in normal human dermal fibroblasts. Biochem J 247: 597-604, 1987 3501287 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+22. Drake MJ, Fry CH, Eyden B: Structural characterization of myofibroblasts in the bladder. BJU Int 97: 29-32, 2006 16336323 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+23. Bylund DB, Eikenberg DC, Hieble JP, Langer SZ, Lefkowitz RJ, Minneman KP, et al.: International Union of Pharmacology nomenclature of adrenoceptors. Pharmacol Rev 46: 121-136, 1994 7938162 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+24. Michel MC, Vrydag W: Alpha1-, alpha2- and beta-adrenoceptors in the urinary bladder, urethra and prostate. Br J Pharmacol 147[Suppl 2]: S88-S119, 2006 16465187 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+25. Trapnell C, Cacchiarelli D, Grimsby J, Pokharel P, Li S, Morse M, et al.: The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells. Nat Biotechnol 32: 381-386, 2014 24658644 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+26. Qiu X, Mao Q, Tang Y, Wang L, Chawla R, Pliner HA, et al.: Reversed graph embedding resolves complex single-cell trajectories. Nat Methods 14: 979-982, 2017 28825705 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+27. Wei B, Jin JP: TNNT1, TNNT2, and TNNT3: Isoform genes, regulation, and structure-function relationships. Gene 582: 1-13, 2016 26774798 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+28. Southgate J, Harnden P, Trejdosiewicz LK: Cytokeratin expression patterns in normal and malignant urothelium: A review of the biological and diagnostic implications. Histol Histopathol 14: 657-664, 1999 10212826 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+29. McMahon AP, Aronow BJ, Davidson DR, Davies JA, Gaido KW, Grimmond S, et al.; GUDMAP project: GUDMAP: The genitourinary developmental molecular anatomy project. J Am Soc Nephrol 19: 667-671, 2008 18287559 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+30. Goepel M, Wittmann A, Rubben H, Michel MC: Comparison of adrenoceptor subtype expression in porcine and human bladder and prostate. Urol Res 25: 199-206, 1997 9228673 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+31. Yamaguchi O, Chapple CR: Beta3-adrenoceptors in urinary bladder. Neurourol Urodyn 26: 752-756, 2007 17600372 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+32. Yamaguchi O: Beta3-adrenoceptors in human detrusor muscle. Urology 59[Suppl 1]: 25-29, 2002 12007519 
+ 
+- Google Scholar 
+ 
+33. Yoshimura N, Kaiho Y, Miyazato M, Yunoki T, Tai C, Chancellor MB, et al.: Therapeutic receptor targets for lower urinary tract dysfunction. Naunyn Schmiedebergs Arch Pharmacol 377: 437-448, 2008 18034230 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+34. Liu HT, Shie JH, Chen SH, Wang YS, Kuo HC: Differences in mast cell infiltration, E-cadherin, and zonula occludens-1 expression between patients with overactive bladder and interstitial cystitis/bladder pain syndrome. Urology 80: 225.e13-225.e18, 2012 22521193 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+35. el-Mansoury M, Boucher W, Sant GR, Theoharides TC: Increased urine histamine and methylhistamine in interstitial cystitis. J Urol 152: 350-353, 1994 8015069 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+36. Uvelius B, Lundin S, Andersson KE: Content and contractile effect of arginine vasopressin in rat urinary bladder. Eur J Pharmacol 182: 549-554, 1990 2226623 
+ 
+- Cited Here | 
+- Google Scholar 
+ 
+37. Khandelwal P, Abraham SN, Apodaca G: Cell biology and physiology of the uroepithelium. Am J Physiol Renal Physiol 297: F1477-F1501, 2009 19587142 
+ 
+- Google Scholar 
+ 
+38. Lee G, Romih R, Zupancic D: Cystitis: From urothelial cell biology to clinical applications. BioMed Res Int 2014: 473536, 2014 24877098 
+ 
+- Google Scholar 
+ 
+39. Solway J, Seltzer J, Samaha FF, Kim S, Alger LE, Niu Q, et al.: Structure and expression of a smooth muscle cell-specific gene, SM22 alpha. J Biol Chem 270: 13460-13469, 1995 7768949 
+ 
+- Google Scholar 
+ 
+40. Owens GK, Kumar MS, Wamhoff BR: Molecular regulation of vascular smooth muscle cell differentiation in development and disease. Physiol Rev 84: 767-801, 2004 15269336 
+ 
+- Google Scholar 
+ 
+41. Qian J, Kumar A, Szucsik JC, Lessard JL: Tissue and developmental specific expression of murine smooth muscle gamma-actin fusion genes in transgenic mice. Dev Dyn 207: 135-144, 1996 8906417 
+ 
+- Google Scholar 
+ 
+42. Owens GK: Regulation of differentiation of vascular smooth muscle cells. Physiol Rev 75: 487-517, 1995 7624392 
+ 
+- Google Scholar 
+ 
+43. Garlanda C, Dejana E: Heterogeneity of endothelial cells. Specific markers. Arterioscler Thromb Vasc Biol 17: 1193-1202, 1997 9261246 
+ 
+- Google Scholar 
+ 
+44. Young MD, Mitchell TJ, Vieira Braga FA, Tran MGB, Stewart BJ, Ferdinand JR, et al.: Single-cell transcriptomes from human kidneys reveal the cellular identity of renal tumors. Science 361: 594-599, 2018 30093597 
+ 
+- Google Scholar 
+ 
+45. Sauteur L, Krudewig A, Herwig L, Ehrenfeuchter N, Lenard A, Affolter M, et al.: Cdh5/VE-cadherin promotes endothelial cell interface elongation via cortical actin polymerization during angiogenic sprouting. Cell Reports 9: 504-513, 2014 25373898 
+ 
+- Google Scholar 
+ 
+46. Chen J, Cheung F, Shi R, Zhou H, Lu W; CHI Consortium: PBMC fixation and processing for Chromium single-cell RNA sequencing. J Transl Med 16: 198, 2018 30016977 
+ 
+- Google Scholar 
+ 
+47. Villani AC, Satija R, Reynolds G, Sarkizova S, Shekhar K, Fletcher J, et al.: Single-cell RNA-seq reveals new types of human blood dendritic cells, monocytes, and progenitors. Science 356: eaah4573, 2017 28428369 
+ 
+- Google Scholar 
+ 
+48. Geijtenbeek TB, Kwon DS, Torensma R, van Vliet SJ, van Duijnhoven GC, Middel J, et al.: DC-SIGN, a dendritic cell-specific HIV-1-binding protein that enhances trans-infection of T cells. Cell 100: 587-597, 2000 10721995 
+ 
+- Google Scholar 
+ 
+49. Cheong C, Matos I, Choi JH, Dandamudi DB, Shrestha E, Longhi MP, et al.: Microbial stimulation fully differentiates monocytes to DC-SIGN/CD209(+) dendritic cells for immune T cell areas. Cell 143: 416-429, 2010 21029863 
+ 
+- Google Scholar 
+ 
+50. Gil J, Busto EM, Garcillan B, Chean C, Garcia-Rodriguez MC, Diaz-Alderete A, et al.: A leaky mutation in CD3D differentially affects ab and gd T cells and leads to a Tab-Tgd+B+NK+ human SCID. J Clin Invest 121: 3872-3876, 2011 21926461 
+ 
+- Google Scholar 
+ 
+51. Flach H, Rosenbaum M, Duchniewicz M, Kim S, Zhang SL, Cahalan MD, et al.: Mzb1 protein regulates calcium homeostasis, antibody secretion, and integrin activation in innate-like B cells. Immunity 33: 723-735, 2010 21093319 
+ 
+- Google Scholar 
+ 
+52. Vockerodt M, Morgan SL, Kuo M, Wei W, Chukwuma MB, Arrand JR, et al.: The Epstein-Barr virus oncoprotein, latent membrane protein-1, reprograms germinal centre B cells towards a Hodgkin's Reed-Sternberg-like phenotype. J Pathol 216: 83-92, 2008 18566961 
+ 
+- Google Scholar 
+ 
+53. Mason DY, Cordell JL, Brown MH, Borst J, Jones M, Pulford K, et al.: CD79a: A novel marker for B-cell neoplasms in routinely processed tissue samples. Blood 86: 1453-1459, 1995 7632952 
+ 
+- Google Scholar 
+ 
+54. Chu PG, Arber DA: CD79: A review. Appl Immunohistochem Mol Morphol 9: 97-106, 2001 11396639 
+ 
+- Google Scholar 
+ 
+55. Brocco MA, Fernandez ME, Frasch AC: Filopodial protrusions induced by glycoprotein M6a exhibit high motility and aids synapse formation. Eur J Neurosci 31: 195-202, 2010 20074218 
+ 
+- Google Scholar 
+ 
+56. Scorticati C, Formoso K, Frasch AC: Neuronal glycoprotein M6a induces filopodia formation via association with cholesterol-rich lipid rafts. J Neurochem 119: 521-531, 2011 21426347 
+ 
+- Google Scholar 
+ 
+View full references list 
+ 
+Keywords: 
+ 
+single-cell RNA sequencing; single-cell transcriptomic map; bladder cells; interstitial cells; epithelial cells 
+ 
+Copyright (c) 2019 by the American Society of Nephrology 
+ 
+View full article text 

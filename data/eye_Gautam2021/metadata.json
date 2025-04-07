@@ -4,5 +4,6 @@
   "tables": [
     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8478974/bin/41467_2021_25968_MOESM5_ESM.xlsx"
   ],
-  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt"
+  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt",
+  "css_selector": "article"
 }

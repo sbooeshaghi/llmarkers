@@ -7,5 +7,6 @@
     "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s4.txt",
     "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s5.txt"
   ],
-  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt"
+  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt",
+  "css_selector": "article"
 }

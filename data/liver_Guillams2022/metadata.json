@@ -4,5 +4,6 @@
   "tables": [
     "https://www.cell.com/cms/10.1016/j.cell.2021.12.018/attachment/8fa3e327-5cc5-4937-ad8d-0eeef0eb366a/mmc1.xlsx"
   ],
-  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt"
+  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt",
+  "css_selector": "article"
 }

@@ -4,5 +4,6 @@
   "tables": [
     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls"
   ],
-  "extract_text_cmd": "cat manuscript.html | pup 'div#ArticleContainer' | pandoc -f html -t plain > manuscript.txt"
+  "extract_text_cmd": "cat manuscript.html | pup 'div#ArticleContainer' | pandoc -f html -t plain > manuscript.txt",
+  "css_selector": "div#ArticleContainer"
 }

@@ -7,5 +7,6 @@
   "organ": "adipose",
   "species": "homo_sapiens",
   "reference": "GRCh38",
-  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt"
+  "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt",
+  "css_selector": "article"
 }

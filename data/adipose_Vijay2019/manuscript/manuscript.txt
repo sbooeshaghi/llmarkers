@@ -1,1846 +1,798 @@
--   Article
--   Published: 23 December 2019
-
-Single-cell analysis of human adipose tissue identifies depot- and disease-specific cell types
-
--   Jinchu Vijay ORCID: orcid.org/0000-0002-7311-475X ^(1 , 2) ,
--   Marie-Frédérique Gauthier ³ ,
--   Rebecca L. Biswell ⁴ ,
--   Daniel A. Louiselle ⁴ ,
--   Jeffrey J. Johnston ORCID: orcid.org/0000-0002-8962-6186 ⁴ ,
--   Warren A. Cheung ⁴ ,
--   Bradley Belden ⁴ ,
--   Albena Pramatarova ² ,
--   Laurent Biertho ³ ,
--   Margaret Gibson ⁴ ,
--   Marie-Michelle Simon ² ,
--   Haig Djambazian ² ,
--   Alfredo Staffa ² ,
--   Guillaume Bourque ORCID: orcid.org/0000-0002-3933-9656 ^(1 , 2) ,
--   Anita Laitinen ⁵ ,
--   Johanna Nystedt ⁵ ,
--   Marie-Claude Vohl ⁶ ,
--   Jason D. Fraser ⁷ ,
--   Tomi Pastinen ⁴ ,
--   André Tchernof [] ORCID: orcid.org/0000-0002-2587-1000 ³ &
--   …
--   Elin Grundberg [] ORCID: orcid.org/0000-0001-5415-7896 ⁴
-
-[] Show authors
-
-Nature Metabolism volume 2 , pages 97–109 ( 2020 ) Cite this article
-
--   19k Accesses
-
--   238 Citations
-
--   79 Altmetric
-
--   Metrics details
-
-Abstract
-
-The complex relationship between metabolic disease risk and body fat
-distribution in humans involves cellular characteristics that are
-specific to body fat compartments. Here we show depot-specific
-differences in the stromal vascular fraction of visceral and
-subcutaneous adipose tissue by performing single-cell RNA sequencing of
-tissue specimens from obese individuals. We characterize multiple immune
-cells, endothelial cells, fibroblasts, adipose and haematopoietic stem
-cell progenitors. Subpopulations of adipose-resident immune cells are
-metabolically active and associated with metabolic disease status,
-including a population of potential dysfunctional CD8 ⁺ T cells that
-express metallothioneins. We identify multiple types of adipocyte
-progenitors that are common across depots, including a subtype enriched
-in individuals with type 2 diabetes. Depot-specific analysis reveals a
-class of adipocyte progenitors unique to visceral adipose tissue, which
-shares common features with beige pre-adipocytes. Our human single-cell
-transcriptome atlas across fat depots provides a resource to dissect the
-functional genomics of metabolic disease.
-
-<div class="c-nature-box c-nature-box--side "
-data-component="entitlement-box"> <p class="c-nature-box__text
-js-text">You have full access to this article via your institution.</p>
-<div class="c-pdf-download u-clear-both js-pdf-download"> <a
-href="/articles/s42255-019-0152-6.pdf" class="u-button
-u-button--full-width u-button--primary u-justify-content-space-between
-c-pdf-download__link" data-article-pdf="true"
-data-readcube-pdf-url="true" data-test="download-pdf"
-data-draft-ignore="true" data-track="content_download"
-data-track-type="article pdf download" data-track-action="download pdf"
-data-track-label="link" data-track-external download> <span
-class="c-pdf-download__text">Download PDF</span> <svg aria-hidden="true"
-focusable="false" width="16" height="16" class="u-icon"><use
-xlink:href="#icon-download"/></svg> </a> </div> </div>
-
-You have full access to this article via University of California,
-Berkeley Nature Masterclasses
-
-Download PDF []
-
-Similar content being viewed by others
-
-[]
-
-Single-cell sequencing of human white adipose tissue identifies new cell states in health and obesity
-
-Article 27 April 2021
-
-[]
-
-Insulin signaling establishes a developmental trajectory of adipose regulatory T cells
-
-Article 24 August 2021
-
-[]
-
-An integrated single cell and spatial transcriptomic map of human white adipose tissue
-
-Article Open access 15 March 2023
-
-Main
-
-White adipose tissue (WAT) and its endocrine activities are known to be
-implicated in the development of obesity and associated metabolic
-disorders. Specifically, the risk increases with increased abdominal
-obesity contributed by excessive visceral adipose tissue (VAT) ¹ —a
-linear relationship that is not seen with abdominal subcutaneous adipose
-tissue (SAT) ² . Susceptibility to obesity-related cardiovascular and
-metabolic disorders has also been linked to the increase in adipose
-volume resulting from enlargement of tissue-resident adipocytes (that
-is, hypertrophy) ³ . However, adipocyte expansion by recruiting new
-progenitors (hyperplasia) is often considered a protective mechanism
-from the metabolic standpoint ⁴ . Studies have also shown that adipose
-tissue dysfunction leading to insulin-resistant type 2 diabetes (T2D) is
-marked by inflammation, fibrosis, lipodystrophy or a combination of
-these factors ⁵ , which emphasizes the importance of
-adipose-infiltrating immune cell populations in modulating and
-developing metabolic disorders. For instance, M1 macrophages, mast
-cells, B-2 cells, CD8 ⁺ T cells and IFN-γ ⁺ Th1 cells were increased in
-the adipose tissue of individuals with obesity compared with those who
-were normal weight, and the reverse pattern was observed in M2
-macrophages, eosinophils, T _(reg) cells, invariant natural killer T
-(iNKT) cells, B1 cells and γδ T cells ⁶ . These adipose-tissue-resident
-immune cells have also been shown to create a microenvironment that can
-inhibit adipocyte progenitor differentiation to lipid-storing adipocytes
-⁷ . However, despite extensive work on characterizing various cell
-subpopulations in adipose tissue, the complete human non-adipocyte
-fraction, also known as the stromal vascular fraction (SVF), has not
-been profiled across depots in an unbiased manner. Given the multitude
-of factors affecting adipose tissue function, a thorough understanding
-of the cell types involved and their specific gene expression pattern is
-essential. The emergence of single-cell transcriptomic approaches in the
-past few years has made it possible to use these technologies to
-determine cellular heterogeneity and functional states at the
-single-cell level with high reproducibility and sensitivity ⁸ . Current
-high-throughput microfluidics techniques can capture thousands of cells
-from each sample simultaneously for gene expression profiling and,
-together with new algorithms for clustering, visualization and
-modelling, this allows for high-powered analysis of disease-targeted
-tissue samples for efficient cataloguing of cellular compositions and
-roles in disease risk. Recent studies using single-cell RNA sequencing
-(scRNA-seq) in adipose tissue from mouse models have identified a subset
-of adipocyte progenitors that regulates adipocyte differentiation ⁹ and
-a novel type of inflammatory progenitor residing in the visceral fat
-depot of mice ¹⁰ . Similar strategies in human adipose samples have not
-been applied so far.
-
-We present a high-throughput single-cell expression profiling study of
-human adipose tissue including 25 samples derived from multiple depots
-of individuals with obesity. We provide a rich catalogue of cell types
-residing in adipose tissue, including both latent and common cell
-populations. We characterize and validate distinct cell types that are
-metabolically active or specific to each depot, or that correlate with
-metabolic disease status.
-
-Results
-
-Characterization of SVF across multiple adipose depots
-
-We generated scRNA-seq data from 25 adipose samples (12 VAT and 13 SAT)
-derived from 14 individuals undergoing bariatric surgery (Supplementary
-Table 1 , Supplementary Fig. 1 and Methods ). All samples were matched
-for age and body-mass index (BMI), but fasting glycaemia differed
-between those with and without T2D (Table 1 ). We annotated the clusters
-using marker genes (Supplementary Tables 2 , 3 ), which resulted in
-three groups of cells: adipocyte progenitors and stem cells (P1–P7),
-immune cells (I1–I7) and endothelial cells (E1–E3) (Fig. 1 ). The
-average proportion of cell types per individual was 55% progenitors, 37%
-immune cells and 8% endothelial cells. This distribution was similar to
-the merged sample, which was 60% progenitors, 34% immune cells and 6%
-endothelial cells; this is in line with the results of classic
-fluorescence-activated cell sorting (FACS) experiments ¹¹ . To avoid
-subjectivity and to add strength to the analyses, we also performed
-reference-based single-cell annotation ( Methods ), which confirmed our
-broad clusters of cell populations (Supplementary Table 4 ). Finally, as
-the distribution of female and male samples was slightly skewed (Table 1
-), we performed in-depth sex-specific expression analysis of the marker
-genes in 245 ( n = 165 male and n = 80 female) VAT and SAT samples from
-the Genotype-Tissue Expression (GTEx) Consortium (Supplementary Table 5
-).
-
-Full size table []
-
-Table 1 Characteristics of the study subjects
-
-[figure 1]
-
-Clustering results of 26,350 cells from the SVF derived from 25 adipose
-samples that underwent scRNA-seq, identifying 17 clusters. Cell
-populations were classified as progenitors (P1–P7), immune cells
-(I1–I17) and endothelial cells (E1–E3) and labelled accordingly.
-
-Full size image []
-
-Fig. 1: Identified cell populations in the non-adipocyte fraction of
-adipose tissue.
-
-Multiple types of endothelial cells reside in adipose tissue
-
-We identified three types of endothelial cells (E1–E3, Fig. 1 ), all
-showing selective expression for GNG11 and SEPW1 . E1 and E2 cells were
-fairly similar, sharing nearly half of their top expressed genes,
-including SPARCL1 , FABP4 and IFI27 . However, comparative analysis
-between E1 and E2 cells showed that E2 cells express classic endothelial
-markers such as ACKR1 , SELE , TM4SF1 , VCAM1 , TMEM173 , PLVAP , ICAM1
-, PECAM1 , VWF , ADAMTS9 and TFPI . By contrast, E1 cells had pronounced
-expression of FABP4 , LGALS1 , RBP7 , GPX3 and CD36 , which are
-expressed in the microvascular endothelial cells of adipose tissue
-involved in the fatty-acid-handling machinery ¹² . To characterize E3,
-we performed differential gene expression analysis between E3 and the
-combined population of E1 and E2 cells (Supplementary Table 6 ) and
-found LYVE1 among the top expressed genes. LYVE1 is a marker of
-lymphatic endothelial cells ¹³ and these results therefore indicate the
-presence of lymphatic vasculature in the SVF, with 78% of its cell
-population from VAT samples.
-
-Characterization of immune cells and their link to adipose tissue inflammation
-
-We found that 34% of cells from our merged clusters (I1–I17, Fig. 1 and
-Supplementary Table 4 ) expressed markers of different immune cell
-populations. To facilitate the classification of the cell types we
-subset the immune cell clusters and identified 14 new clusters, labelled
-IS1–IS14, in which all groups were present across depots (Fig. 2a,b ).
-
-[figure 2]
-
-Re-clustering of 9,025 CD34 ⁻ cells representing immune cells in the SVF
-of adipose tissue identified 14 cell types including T and natural
-killer cells (IS1, IS4, IS6 and IS8), macrophages (IS2, IS3, IS7, IS9
-and IS12), dendritic cells (IS5 and IS13), monocytes (IS10) and B cells
-(IS11) in the SAT ( a ) and VAT ( b ). Violin plots of expression
-density of metallothionein genes across T cell and natural killer cell
-clusters in discovery samples ( c , n = 25) and CD34 ⁻ validation
-samples ( d , n = 3). The y axis indicates log-transformed expression
-values and the width indicates the number of cells expressing the
-particular gene. Immunohistochemistry in subcutaneous adipose derived
-from a 60-year-old woman with a BMI of 52.2 kg m ⁻² , showing
-co-expression of CD9 ( e ) and CD68 ( f ) cells. Scale bar, 5 µm. The
-staining was done on four independent individuals to confirm.
-
-Full size image []
-
-Fig. 2: SVF-derived immune cells.
-
-A large proportion (40%) of the immune cells (IS1, IS4, IS6 and IS8)
-were clustered closely together and showed gene expression signatures of
-natural killer and T cells. IS1 exhibited selective expression of IL7R ,
-which is expressed in naive T cells ¹⁴ . However, unsupervised cell type
-definition suggested a mixture of naive and memory CD4 ⁺ and CD8 ⁺ T
-cells (Supplementary Table 7 ). Manual annotation of IS4 cells
-identified specific expression of GNLY , NKG7 , FGFBP2 , GZMB , GZMH and
-CTSW , which indicated that these cells are natural killer cells
-(Supplementary Table 8 ). Indeed, this was supported by unsupervised
-annotation, which showed that 68% of IS4 cells correlated with the
-natural killer cell reference. A recent report found that obesity is
-associated with reprogramming of blood-derived natural killer cells,
-with upregulation of genes involved in lipid metabolism including CD36
-(ref. ¹⁵ ). However, the IS4 natural killer cells identified here did
-not express any genes involved in lipid metabolism, suggesting a
-different obesity-related effect on natural killer cells, dependent on
-resident tissue.
-
-IS6 showed increased expression of CCL5 and IL32 , indicating that these
-cells may be activated T cells ¹⁶ ; this was confirmed by the
-unsupervised annotation, which revealed that 68% of the cells were
-associated with memory CD8 ⁺ T cells. Although a large proportion (59%)
-of the IS8 cells were, similarly to IS6 cells, mapped as memory CD8 ⁺ T
-cells in our unsupervised annotation we noted in the manual curation
-that they showed a unique pattern of high expression of metallothionein
-genes ( MT1E , MT1F , MT1G , MT1X and MT2A , Supplementary Table 8 and
-Fig. 2c ). We followed up this finding by performing additional
-scRNA-seq profiling on CD34 ⁻ sorted SVF cells and found evidence of the
-presence of metallothionein-rich T cells in the validation sample
-(cluster 7, Supplementary Table 9 and Fig. 2d ); both discovery and
-validation samples specifically showed MT1F and MT1G to be uniquely
-expressed by this T cell subpopulation (Fig. 2c,d ). Similarly to what
-was recently shown for circulating immune cells ¹⁵ , these potential
-adipose-resident dysfunctional T cells may be induced by obesity and
-therefore enriched in our scRNA study. To test this, we used bulk gene
-expression data from two large SAT population-based collections (776
-female samples from the MuTHER resource, and 770 male samples from the
-METSIM study) that have, in addition to tissue collection, study
-subjects deeply phenotyped for obesity-related traits ^(17 , 18) . Here,
-we used BMI and dual-energy X-ray absorptiometry (DXA)-derived
-percentage trunk fat (PTF) in association with the expression of MT1E ,
-MT1F , MT1G , MT1X and MT2A (Supplementary Table 10 ). Encouragingly, we
-found consistent strong positive associations between the obesity traits
-and expression of MT1F , MT1G and MT2A , whereas MT1E and MT1X showed
-weaker association or no significant association, in line with our
-observations of cell-specific expression of these two genes. Finally, we
-found that all metallothionein genes are expressed in adipose tissue
-irrespective of tissue depot, with no sex-specific expression pattern
-(Supplementary Fig. 2 and Supplementary Table 5 ).
-
-Our manual or unsupervised annotation mapped clusters IS2, IS3, IS7, IS9
-and IS12 to adipose tissue macrophages (ATMs); the proportion of cells
-expressing the classic macrophage marker CD68 ranged from 19% to 52%
-(Extended Data Fig. 1a ), with IS2 having the highest expression (52%)
-and IS9 the lowest expression (19%). IS2 cells were also enriched with
-genes that are involved in lipid metabolism during obesity
-(Supplementary Table 8 ), including LIPA , LPL , CD36 and FABP4 ; these
-findings are in line with the idea that obesity activates a non-classic
-inflammatory phenotype of ATM involving lipid accumulation and
-trafficking ¹⁹ . In addition, we found these metabolically active ATMs
-(that is, IS2 cells) to have more pronounced expression of CD9 than the
-other ATMs (Extended Data Fig. 1a ). We performed cellular phenotyping
-by immunohistochemistry and validated the co-expression of CD68 and CD9
-in obese adipose tissue (Fig. 2e,f ). We also confirmed ^(17 , 18) the
-linear relationship of CD9 expression and BMI in the MuTHER and METSIM
-SAT cohorts (MuTHER BMI, P = 2.2 × 10 ⁻¹³ , β = 0.011; METSIM BMI, P
-= 9.4 × 10 ⁻²⁸ , β = 0.379).
-
-IS12 and IS3 clusters showed a similar signature to that of IS2, but IS3
-cells had increased expression of the inflammatory genes CXCL3 , CXCL2 ,
-IL1B , CCL3 and CXCL8 (Extended Data Fig. 1b ). By contrast, IS9 cells
-are marked by the expression of FOLR2 and KLF4 , which are known
-signatures of M2 macrophages ^(20 , 21) . Finally, although our
-unsupervised annotation indicated that IS12 are macrophages, we could
-not distinguish them further.
-
-Our unsupervised annotation identified IS5 and IS10 as classic CD16 ⁻
-monocytes with high expression of S100A8 , S100A9 and S100A12 in IS10.
-However, further literature mining showed that IS5 cells are rather
-dendritic cells, owing to their high expression of HLA genes including
-HLA-DPB1 , HLA-DQA1 , HLA-DPA1 , HLA-DRA and HLA-DQB1 . IS13 cells
-possessed signatures of a newly identified subtype of dendritic cells ²²
-with high expression of LST1 , SERPINA1 , AIF1 and FCGR3A .
-
-Finally, we were able to link the IS11 cluster to B cells, owing to
-their expression of IGKC , JCHAIN , CD79A and CD37 . The remaining
-cluster (IS14) showed mixed signatures in both annotation strategies and
-was therefore not explored further.
-
-Identification of adipocyte progenitors derived from different adipose tissue depots
-
-Next, we characterized our progenitor clusters (P1–P7) by studying the
-expression pattern of cell surface makers used in FACS of SVF
-progenitors ²³ and noted that all clusters seemed to be CD45 ⁻ CD34 ⁺
-CD31 ⁻ (Fig. 3a ) with a profound signature in P1–P6. We also noted that
-five of the clusters (P2 and P4–P7) were identified to express CFD ²⁴ ,
-which encodes the adipokine adipsin, a marker of adipocyte
-differentiation (Fig. 3b ); the range of CFD expression observed across
-the clusters may therefore be linked to different stages of
-adipogenesis. To validate this, we performed in vitro differentiation
-studies of human mesenchymal stem cells (MSCs) and identified a 5.6 log
-₂ (fold induction) between undifferentiated MSCs (that is, adipogenic
-induction control (ACI)) and MSC during adipogenic induction (AI)
-(adjusted P = 1.19 × 10 ⁻²⁶ , Fig. 3c ). We further noted that CFD
-expression is additionally increased at the first (AD1) and second (AD2)
-stages of adipogenesis (AI versus AD1, log ₂ (fold) = 1.3, adjusted P
-= 0.012; AI versus AD2, log ₂ (fold) = 1.2, adjusted P = 0.036).
-Incorporating this information with our progenitor signature indicated
-that P2 and P7 include more mature pre-adipocytes than clusters P4–P6.
-We further validated this by unsupervised annotation, which linked on
-average 88% of the cells in P2 and P7 to adipocytes compared to an
-average of only 70% of cells in P4–P6 (Supplementary Table 11 ).
-
-[figure 3]
-
-a , Violin plots of log-transformed expression density of CD34 (upper
-panel), CD31/PECAM1 (middle panel) and CD45/PTPRC (bottom panel) across
-all SVF clusters from 25 samples. The width of the violin plot indicates
-the number of cells expressing the particular gene. b , Dot plot of the
-expression of CFD across progenitor clusters. The size of the dot
-corresponds to the percentage of cells expressing CFD in each cluster
-and the colour represents the average CFD expression level. c , Boxplot
-of CFD expression at four different timepoints of adipocyte
-differentiation from MSCs ( n = 8 individuals). AI corresponds to the
-first timepoint 3 d after culturing MSCs in the induction medium. AD1
-and AD2 correspond to 1 and 2 weeks of differentiation in adipogenic
-medium after the AI timepoint. ACI, AC1 and AC2 are the corresponding
-control sets for AI, AD1 and AD2 without any adipocyte differentiation
-treatments. Each timepoint with corresponding control includes three
-independent MSC cultures and is shown by the average log ₂ (read count).
-The black line inside the boxplot represents the median value and the
-size of the box is determined by the 25th and 75th percentiles of the
-data. The whiskers of boxplot represent the maximum and minimum values
-of the data shown.
-
-Source data
-
-Full size image []
-
-Fig. 3: SVF-derived progenitor clusters.
-
-We then compared the seven progenitor clusters based on tissue type and
-found a striking depot-specific pattern (Fig. 4a ) in which three of the
-clusters (P2, P6 and P7) were mainly composed of cells from the SAT,
-whereas P1, P3 and P5 included mostly cells from the VAT and only one
-cluster of progenitors (P4) included a mixed population of SAT- and
-VAT-derived cells. For instance, the VAT-specific clusters P1 and P3
-exhibited pronounced expression (average log(fold change) > 1.5) of
-omentin ( ITLN1 ) ²⁵ and mesothelin ( MSLN ). Omentin is a VAT-specific
-adipocytokine that serves as a biomarker for metabolic diseases ²⁶ and,
-together with MSLN , is also a marker of mesothelial cells ²⁷ , in line
-with findings that VAT develops from the mesothelium ²⁸ . Additionally,
-we identified 16 other genes that characterize P1 and P3 (average
-log(fold change) > 1, Supplementary Table 2 ); we followed up these
-genes with bulk RNA-seq and found 11 (68%) of them to be differentially
-expressed (adjusted P < 0.05 and log(fold change) ≥1) (Supplementary
-Table 12 and Fig. 4b ).
-
-[figure 4]
-
-a , Clustering results of all SVF samples that underwent scRNA-seq,
-which identified 17 clusters from 26,350 cells. Clusters were classified
-as progenitors, immune cells and endothelial cells and labelled
-accordingly. Cells are labelled as VAT-derived (red) or SAT-derived
-(blue). b , Violin plots of expression density of 11 genes that are
-specific to VAT progenitor clusters. The y axis indicates
-log-transformed expression values and the width indicates the number of
-cells expressing the particular gene.
-
-Full size image []
-
-Fig. 4: Main cell clusters in the SVF based on depot.
-
-To study these cell populations in more detail, we created two subsets
-for re-clustering: SAT-derived progenitor cells (SP, n = 5,458) and
-VAT-derived progenitor cells (VP, n = 9,847).
-
-Subcutaneous adipocyte progenitors and their role in metabolic conditions
-
-The clustering of the adipocyte progenitors identified five groups
-(SP1–SP5, Fig. 5a,b ), all of which expressed CFD . SP1 and SP3 cells
-expressed pre-adipocyte or adipose stem cell markers (for example MGP ,
-APOD , CXCL14 and WISP2 ), whereas SP2 showed signatures of a more
-mature adipocyte progenitor cell (for example APOE , FABP4 , CEBPB and
-CD36 ). The SP4 group contained cells expressing genes involved in
-fibrosis and extracellular matrix accumulation, including COL3A1 ,
-COL6A3 , COL1A1 and COL6A1 . This fibroblast signature was validated by
-unsupervised annotation; 69% of the cells were mapped as fibroblasts,
-whereas more than 80% of SP1–SP3 cells mapped as adipocytes
-(Supplementary Table 13 ). SP5 cells expressed high levels of
-inflammatory markers (for example CCL5 , CD3E , IL7R and IL32 ) ,
-including CD45/PTPRC (Fig. 5c ), indicating that SP5 cells represent
-haematopoietic stem cell (HSC) progenitors.
-
-[figure 5]
-
-a , Re-clustering of SAT-specific progenitors from the complete sample
-set of 26,350 cells. b , Re-clustering of SAT-specific progenitors
-(2,705 cells) by subsampling the high-coverage library to 1,500 cells. c
-, Dot plot of the expression of PTPRC ( CD45 ) and CFD across SAT
-progenitors (SP1–SP5). d , Pearson correlation of fasting glucose levels
-(mmol l ⁻¹ ) and SP1 proportion across all samples obtained from 13
-individuals. e , Dot plot of differentially expressed SP1 genes in cells
-derived from T2D (DX) versus non-T2D (NDX) samples previously validated
-in the MuTHER study. f , Boxplot of T2D-associated SP1 gene expression
-at different timepoints of adipocyte differentiation from MSCs ( n = 8
-individuals). AI corresponds to the first timepoint 3 d after culturing
-MSCs in the induction medium. AD1 and AD2 correspond to 1 and 2 weeks of
-differentiation in adipogenic medium after the AI timepoint. ACI, AC1
-and AC2 are the corresponding control sets for AI, AD1 and AD2 without
-any adipocyte differentiation treatments. Each timepoint with
-corresponding control includes three independent MSC cultures and is
-shown by average log ₂ (read count) and error bars corresponding to s.d.
-The black line inside the boxplot represents the median value and the
-size of the box is determined by the 25th and 75th percentiles of the
-data. The wiskers of the boxplot represent the maximum and minimum
-values of the data shown. The sizes of the dots in c and e correspond to
-the percentage of cells expressing the genes in each cluster and the
-colour represents the average expression level.
-
-Source data
-
-Full size image []
-
-Fig. 5: Progenitor clusters specific to the SAT.
-
-We then investigated whether the proportion of adipocyte progenitor
-clusters specific to the SAT in each individual sample was associated
-with T2D status. We correlated fasting glucose levels with all of the SP
-cell proportions and found the abundance of SP1 to be significantly
-correlated with glucose levels (Pearson r = 0.56, P = 0.046, Fig. 5d and
-Supplementary Table 14 ). We followed up this finding in multiple ways
-and provide further evidence of the link between SP1 cells and T2D.
-First, we used top differently expressed genes in this group (SP1, n
-= 43, adjusted P < 0.01) compared to all other cell types (SP2–SP5,
-Supplementary Table 15 ) for disease annotation ( Methods ) and found
-T2D as the top annotated disease (Supplementary Table 16 , P = 3.21 × 10
-⁻⁶ ). Second, we used the MuTHER resource ¹⁷ followed by the METSIM
-Study ¹⁸ for transcription-wide association analysis of multiple
-T2D-related traits. We found the SP1 gene set ( n = 43) to be
-significantly enriched for association to the T2D traits in both studies
-(Supplementary Table 17 ), corresponding to fold changes between 2.5 and
-9.4, depending on the trait and study (Fisher’s P = 0.06–7.96 × 10 ⁻⁸ ,
-Supplementary Table 18 ). Specifically, the female MuTHER study included
-enriched association for 44% of the SP1 genes by using a strict
-Bonferroni-corrected study-wise P value threshold of P < 2.53 × 10 ⁻⁶ .
-Replication of these genes in the male METSIM study showed strong
-correlation of effect sizes across T2D traits (Pearson r = 0.92,
-Supplementary Fig. 3 ).
-
-Finally, we went back to our single-cell dataset and performed
-differential expression analysis between SP cells from T2D versus
-non-T2D samples, as defined by their fasting glycaemia, restricting
-analysis to the 19 validated SP1-specific genes (Supplementary Tables 17
-, 18 ). We found that 53% of the genes (ten of 19) were also differently
-expressed (Bonferroni P < 0.05, Fig. 5e ) in cells based on T2D status
-with the same direction of effect as seen in MuTHER (Supplementary Table
-19 ). These genes include GPX3 , WISP2 , ATF3 , EIF1 , MGP , TMEM176B ,
-CXCL12 , CFH , C1S and ADH1B ²⁹ . The top differentially expressed gene
-was GPX3 , with a significantly higher proportion of cells expressing
-the gene in non-T2D samples (73%) than in T2D samples (66%) ( P = 1.50 ×
-10 ⁻¹⁴ ). In line with these findings, we found GPX3 to be negatively
-correlated with Homoeostatic Model Assessment for Insulin Resistance
-(HOMA-IR) in both the MuTHER ( β = −0.084, P = 1.03 × 10 ⁻¹¹ ) and
-METSIM cohort ( β = −0.147, P = 4.46 × 10 ⁻⁵ ).
-
-We also noted WISP2 among those top ten genes with differential
-expression between T2D and non-T2D cells ( P = 3.1 × 10 ⁻⁵ ) but, as
-opposed to GPX3 , WISP2 seems to have a negative effect on T2D status.
-We found that 72% of T2D cells expressed the gene versus only 52% of the
-non-T2D cells. Again, we validated this pattern in the large MuTHER and
-METSIM adipose tissue cohorts, with a positive correlation with HOMA-IR
-( β = 0.115, P = 2.2 × 10 ⁻²⁰ and β = 0.132, P = 2.3 × 10 ⁻⁴ ,
-respectively). We found that, similarly to the results for WISP2 , T2D
-cells expressed ATF3 to a greater extent (51%) than non-T2D cells (29%),
-and ATF3 was positively correlated to HOMA-IR in MuTHER ( β = 0.079, P
-= 2.9 × 10 ⁻²¹ ) and METSIM ( β = 0.102, P = 4.4 × 10 ⁻³ ).
-
-Validation of depot-independent adipocyte progenitors in CD34 ⁺ sorted cells
-
-Clustering of the VP cells resulted in six clusters (Fig. 6a and
-Supplementary Table 20 ); cells expressing CFD (referred to as VPC and
-corresponding to VP4–VP6) versus MSLN (referred to as VPM and
-corresponding to VP1–VP3) were clustered separately (Fig. 6b ). The VPCs
-(VP4–VP6) resembled the progenitor types identified in the SAT and may
-therefore represent adipocyte progenitors that are present across
-depots. Specifically, VP4 included cells enriched for genes such as APOD
-, CXCL14 , DPT , GPX3 , MGP , EIF1 , C1S and ADH1B and thus having a
-similar expression pattern to that of the T2D-linked SP1 cells. VP5 are
-enriched for MFAP5 , which in turn is involved in adipose tissue
-remodelling in individuals with obesity ³⁰ . Another notable gene
-expressed in cluster VP5 was S100A4 , a biomarker for inhibition of
-adipogenesis, associated with reduced obesity and inflammation in
-rodents ³¹ . The expression signature of VP5 was similar to the fibrotic
-signatures of the cells grouped as SP4. Finally, VP6 is marked by the
-expression of TYROBP , HLA-DRA and CD74 ; in general, these cells have
-the inflammatory signature identified for the HSC progenitors in SP5.
-Taken together, the combined results from our SAT and VAT single-cell
-data indicate the presence of three depot-independent cell types:
-T2D-associated adipocyte progenitors, fibroblasts and HSC. To provide
-further support for these observations, we generated scRNA-seq profiles
-of CD34 ⁺ sorted SVF cells ( Methods ). The clustering of these cells
-resulted in 13 groups (0–12, Supplementary Fig. 4 and Supplementary
-Table 21 ); there was clear evidence for overlapping fibrotic and HSC
-properties in two of the clusters. Specifically, we linked cluster 10
-(134 cells) to HSC progenitors, which corresponded to 2% of the complete
-cell population, concurring with the proportion of cells in the SP5
-cluster (3%) from the deep-sequenced sample when restricting to
-progenitors only. The expression signature of this cluster also
-resembles that of SP5, with PTPRC, CCL5 and IL32 among the top genes
-distinguishing these progenitors from the other CD34 ⁺ cell clusters.
-Similarly, we found clusters 5 and 7 in the validation sample to have
-similar properties to the fibrotic SP4 cluster, including expression of
-FBN1 , PI16 and IGFBP6 .
-
-[figure 6]
-
-a , Re-clustering of VAT-specific progenitors (9,847 cells) from the
-complete sample set. b , Violin plots showing the expression density of
-MSLN and CFD in six VP clusters. The y axis indicates log-transformed
-expression values and the width indicates the number of cells expressing
-the particular gene. c , VAT progenitor cells labelled based on
-mitochondrial gene distribution: group 0 (grey, 5,018 cells) shows cells
-with mitochondrial gene expression ≤ 5%, group 1 (blue, 4,100 cells)
-represents 6–14% expression and group 2 (red, 729 cells) represents
-15–24% expression. See also Supplementary Fig. 5 . d , Pearson
-correlation of fasting glucose levels (mmol l ⁻¹ ) and VPM cell
-proportion across all samples from 12 individuals. e , Expression
-pattern of UCP1 , MSLN and WT1 from bulk RNA-seq showing the change in
-expression in mature adipocytes.
-
-Source data
-
-Full size image []
-
-Fig. 6: Progenitor clusters specific to the VAT derived from individuals
-with obesity.
-
-Visceral-specific progenitor cells have different origins and mitochondrial activity
-
-In contrast to VPCs, VPM cells seemed to have unique properties specific
-to the visceral depot with a signature of mesothelial origin, as
-discussed above. Apart from the specific expression of MSLN , the VPM
-progenitor cells also expressed the mesothelial adipocyte markers UPK3B
-and WT1 (Extended Data Fig. 2 ). Comparing VPC and VPM cells, we also
-noted clear differences in mitochondrial gene expression. Specifically,
-we found that the VPM cells had comparatively high mitochondrial
-expression (that is, 6–20%), whereas VPCs showed a consistent pattern of
-low (that is, ≤ 5%) expression of mitochondrial genes (Fig. 6c ). As it
-is well known that brown adipocytes contain a higher number of
-mitochondria than white adipocytes, this intriguing finding prompted us
-to test whether the VPM cells constitute progenitors with
-differentiation potential towards beige adipocytes, thus potentially
-having a protective function against obesity and insulin resistance. To
-test this, we first correlated VPM cell proportion with fasting glucose
-levels and found a significant negative correlation (Pearson r = −0.64,
-P = 0.025, Fig. 6d ). We also noted that VPM cells expressed PLA2G2A
-(VP1, adjusted P = 5.84 × 10 ⁻¹⁰⁹ ), which was recently shown to
-activate mitochondrial uncoupling in brown adipose tissue and, in line
-with our observations here, provided protection from the deleterious
-effects of high-fat diets in mice ³² . In addition, the mitochondrial
-marker gene SOD2 (VP3, adjusted P = 2.72 × 10 ⁻²⁴⁵ ), which is
-upregulated in beige and brown adipose tissue ³³ compared to white
-adipose tissue, was found to be specific to the VPM cells ³⁴ .
-
-Next, we investigated whether this beige adipose signature found among a
-subset of the VAT progenitor cells (that is, VPM cells) could be
-validated in independent datasets of purified VAT- and SAT-derived
-mature adipocytes from the same clinical study population (Supplementary
-Table 22 ). Indeed, we noted striking over-representation of not only
-the mesothelial markers MSLN (log ₂ (fold) = 1.48, adjusted P = 1.7 × 10
-⁻³ ), WT1 (log ₂ (fold) = 2.73, adjusted P = 8.1 × 10 ⁻¹⁰ ) and UPK3B
-(log ₂ (fold) = 2.54, adjusted P = 8.3 × 10 ⁻⁹ ) but also the classical
-markers for beige and brown adipocytes EBF2 (log ₂ (fold) = 2.39,
-adjusted P = 2.1 × 10 ⁻²⁰ ), PRDM16 (log ₂ (fold) = 1.44, adjusted P
-= 9.9 × 10 ⁻⁵ ) and UCP1 (log ₂ (fold) = 2.20, adjusted P = 2.3 × 10 ⁻⁷
-). However, the progenitor or mature brown adipocyte markers MYF5 (log ₂
-(fold) = 0.04, adjusted P = 0.96) or ZIC1 (log ₂ (fold) = −0.01,
-adjusted P = 0.98) were not differentially expressed, suggesting that
-the VPM cells are not of the brown adipocyte lineage. We then used bulk
-SVF and whole tissue from VAT and SAT to validate the induction of UCP1
-during differentiation to mature adipocytes; by contrast, the expression
-of MSLN and WT1 peaks in progenitors (Fig. 6e ). In addition, we noted a
-strong negative correlation in VAT between UCP1 and both mesothelial
-markers ( MSLN versus UCP1 , Pearson r = −0.72, P = 0.018 and WT1 versus
-UCP1 , Pearson r = −0.72, P = 0.019; Supplementary Fig. 6 ). We also
-noted a significant positive correlation between UCP1 and IRX3 in VAT
-(Pearson r = 0.85, P = 1.71 × 10 ⁻³ ) in line with recent reports
-showing the induction of IRX3 in the browning process of adipocytes ³⁵
-(Supplementary Fig. 6 ). Last, in line with our observations of marker
-genes characterizing VPM cells, we observed a trend towards SOD2
-expression being positively correlated with the expression of UCP1
-(Pearson r = 0.56, P = 0.09), further indicating a browning signature of
-a subset of VPM-derived adipocytes residing in the visceral depot only.
-
-These several lines of evidence indicate that there are UCP1 ⁺ cells
-originating from MSLN - and WT1- expressing progenitors in the VAT, with
-the expression of UCP1 peaking in mature adipocytes that underwent
-browning. This may explain why we failed to detect any UCP1 -expressing
-cells in our large single-cell dataset of VPM progenitors from
-individuals with obesity. However, as we observed a negative correlation
-between the proportions of VPM cells and metabolic disease status (Fig.
-6d ), we proposed that UCP1 -expressing pre-adipocytes derived from VPM
-progenitors may be more prevalent in healthy tissue early in
-development. To address this, we accessed VAT from a healthy young
-donor. We used the subset of CD34 ⁺ cells for clustering (Fig. 7 ) and
-confirmed the high abundance of MSLN ⁻ and WT1 ⁻ progenitors in the SVF
-derived from VAT. Encouragingly, we also identified a distinct cluster
-of cells among the VPM cells that not only expressed UCP1 (Fig. 7c ) but
-also had the highest mitochondrial content (Fig. 7d ). Finally, we also
-noted SOD2 among the top genes with differential expression between UCP1
--expressing versus non- UCP1- expressing VPM cells (adjusted P = 7.02 ×
-10 ⁻⁹³ ), with 95% of UCP1 ⁺ cells expressing the gene versus only 75%
-of the UCP1 ⁻ VPM cells. By contrast, as shown above, UCP1 ⁺ cells had
-significantly lower expression of WT1 (adjusted P = 4.24 × 10 ⁻⁸ ), with
-only 22% of UCP1 ⁺ cells expressing the gene versus 56% of the UCP1 ⁻
-VPM cells (Supplementary Table 23 ).
-
-[figure 7]
-
-a , Re-clustering of progenitors identified six clusters comprising
-1,781 cells. b , MSLN expression (purple) across progenitor clusters. c
-, UCP1 expression across the six clusters of progenitors. d ,
-Mitochondrial gene expression across the six clusters of progenitors.
-
-Full size image []
-
-Fig. 7: Progenitor clusters specific to the VAT derived from a healthy
-individual.
-
-Discussion
-
-We have performed a large, unbiased assessment of the cellular landscape
-in the non-adipocyte fraction of human adipose tissue (known as the
-SVF). The corresponding mature adipocyte fraction per depot was studied
-in parallel by bulk sequencing approaches, owing to current technical
-limitations in profiling large and lipid-rich cells at single-cell
-resolution. Study subjects were selected on the basis of obesity-related
-metabolic phenotypes, including the presence or absence of T2D, which
-allowed the incorporation of differences in cell populations not only
-dependent on depot but also on disease status.
-
-Our initial classification resulted in three broad categories of cell
-types: progenitors or stem cells, immune cells and endothelial cells.
-Endothelial cells represented around 8% of all cells, but distinctive
-signatures divided the group further into subpopulations. Although in a
-minority, endothelial cells are well known to play an important role in
-adipose tissue inflammation (obesity-induced T2D has been associated
-with profound dysfunction of endothelial cells) ³⁶ . The largest
-population of endothelial cells were characterized as
-fatty-acid-handling microvascular endothelial cells because of their
-pronounced expression of genes encoding fatty acid transport and binding
-proteins. These results are in line with recent work showing the
-importance of endothelial fatty acid uptake in adipose tissue,
-especially during obesity-induced tissue inflammation ¹² . Another
-subpopulation was identified as lymphatic derived, owing to expression
-of the lymphatic vessel endothelial hyaluronan receptor ( LYVE1 ) gene.
-This is of interest as recent studies have shown the importance of
-crosstalk between lymphatic vessels and adipose tissue, and that
-lymphatic dysfunction is linked to metabolic diseases ³⁷ . We extend
-these efforts and show that the lymphatic vasculature is depot specific,
-as the majority of these cells were derived from visceral samples.
-
-Our characterization of adipose-resident immune cells, representing
-around 30% of the cells, confirmed the complex nature of obesity-induced
-adipose tissue inflammation. We identified 14 different immune cell
-types, including T cells, B cells, natural killer cells, dendritic
-cells, monocytes and macrophages. T cells, and particularly the CD8 ⁺
-subset, play an important role in adipose inflammation; the obese
-adipose tissue activates these cells, which then recruit and activate
-adipose-resident macrophages ³⁸ . We identified activated memory CD8 ⁺ T
-cells expressing CCL5 , which is positively correlated with obesity ³⁹
-(increased expression is associated with increased BMI). Interestingly,
-we found that a subpopulation of these CD8 ⁺ T cells express
-metallothionein with a unique clustering pattern compared to the
-activated memory CD8 ⁺ T cells, which may be associated with
-obesity-related traits. Specifically, using two large population-based
-adipose tissue resources, we found a strong association between the
-expression of the cell-specific metallothionein genes MT2A , MT1F and
-MT1G and obesity phenotypes, indicating a role for these cells in
-adipose dysfunction. This T cell expression profile of metallothionein
-genes was recently linked to a novel dysfunctional CD8 ⁺ T cell
-population identified in single-cell studies of tumour-infiltrating
-lymphocytes ⁴⁰ , in which targeted deletion of the metallothionein genes
-resulted in loss of T cell dysfunction. Similarly to Singer et al., we
-also found that these metallothionein genes are expressed only in the
-potential dysfunctional adipose-resident T cells but not in the
-activated memory CD8 ⁺ T cells, and as such break new grounds in
-possibly defining the role of T cells in adipose inflammation and
-potentially in insulin resistance.
-
-As mentioned above, macrophages are activated by T cells and infiltrate
-the adipose tissue, contributing to obesity-related tissue inflammation
-and subsequent insulin resistance. Adipose-resident macrophages play a
-different key role in energy metabolism, clearance of dead adipocytes
-and removal of extracellular lipids ⁴¹ , which are found to be altered
-during the development of obesity and insulin resistance. We observed
-that, with high expression of genes involved in lipid metabolism during
-obesity, the largest macrophage population probably represents the
-so-called metabolically active ATMs, which have been associated with a
-beneficial role in obesity, including promoting the clearance of dead
-adipocytes ⁴² . We further showed that they have selective expression of
-CD9 , which suggests that they represent a distinct type of
-obesity-related ATMs.
-
-We identified multiple clusters of progenitor cells with clear
-expression signatures dependent on cell source (that is, subcutaneous or
-visceral). They were further characterized to be at different stages of
-adipogenesis, which was marked by a varying degree of CFD expression.
-CFD has been identified as a key player in adipogenesis, with knockdown
-of the gene inhibiting lipid accumulation and the expression of
-adipocyte markers during adipocyte differentiation ⁴³ . By contrast,
-overexpression of CFD promotes adipocyte differentiation. We confirmed
-the association of CFD expression and adipocyte differentiation with
-validation experiments using MSCs that were monitored during
-adipogenesis. These stem cells were derived from bone marrow and
-cultured in vitro and may therefore possess different properties to
-adipose-derived stem cells; however, they were recently shown to have
-similar adipogenic differential potential ⁴⁴ . We also show clear
-distinction between the subpopulations beyond what has been shown before
-⁴⁵ . We identified a subtype of premature adipocytes that are associated
-with T2D (individuals with high glucose levels had higher abundance of
-this cell type than those with normal glucose levels). We noted that
-this T2D-linked cell type was characterized by genes in the PPARγ
-pathway, some of which have a protective role against insulin
-resistance. One of those key protective genes was GPX3 , which had
-significantly higher expression in cells derived from individuals
-without diabetes. T2D-associated oxidative stress can be reversed by
-PPARγ-mediated antioxidant regulation through the expression of GPX3
-(ref . ⁴⁶ ). Furthermore, PPARγ agonists such as thiazolidinediones,
-which are commonly used to treat T2D (although not in our samples),
-induce these antioxidant effects, resulting in increased expression of
-GPX3 . By contrast, we also found genes expressed by these
-T2D-associated cells that had a seemingly negative effect on T2D status,
-including WISP2 and ATF3 . The expression of these genes was
-significantly higher in T2D cells, and a larger proportion of T2D cells
-expressed the genes than non-T2D cells. WISP2 is an adipokine and,
-although one of its key functions is to regulate adipogenic commitment
-and PPARγ activation, our results confirm previous findings that it can
-also induce insulin resistance, probably through the inhibition of
-adipocyte recruitment and promotion of hypertrophic obesity ⁴⁷ . ATF3
-inhibits PPARγ-mediated transactivation ⁴⁸ and hepatic ATF3 expression
-is associated with T2D ⁴⁹ ; as such, ATF3 , similarly to GPX3 , may
-serve as a potential therapeutic target for the reduction of insulin
-resistance.
-
-Finally, although our depot-specific analysis confirmed earlier findings
-that visceral-derived adipocyte progenitors originate from the
-mesothelium ²⁸ , we provide additional support to the idea that a subset
-of these are also probably inducible by environmental stimuli and may
-differentiate into beige pre-adipocytes. For instance, we noted that the
-visceral-specific VPM cells, although CD34 ⁺ WT1 ⁺ , did not express
-MYF5 , suggesting that, rather than being classic brown pre-adipocytes,
-they are more likely to be induced and could be consistent with
-so-called beige adipocyte progenitors ⁵⁰ . Although the physiological
-importance of such beige adipocyte progenitors in the VAT of individuals
-with morbid obesity is uncertain, they may represent a compensatory
-mechanism to reduce the adverse effects of obesity. This idea is
-supported by our finding of over-representation of this particular cell
-population in non-insulin-resistant and healthy subjects.
-
-We acknowledge that a limitation of our study is the focus on
-individuals with obesity and that further studies are needed to compare
-these results with the cellular architecture in adipose tissue derived
-from healthy individuals. However, as there are clear depot- and
-region-specific differences in cellular distributions, single-cell
-profiling spanning healthy and obese individuals would require a
-surgical procedure common in the general population so that tissue can
-be obtained for research purposes.
-
-In conclusion, we show the richness of the cellular contribution in
-human adipose tissue with multiple subpopulations of immune cells,
-endothelial cells, fibroblasts and progenitors. Investigation of the
-non-adipocyte fraction of adipose tissue at the single-cell level
-suggests that the development of obesity and T2D could be a joint action
-of subpopulations of different cell types with altered functions
-residing in the adipose tissue.
-
-Methods
-
-Study subjects
-
-Participants were selected through an institutionally approved biobank
-infrastructure with ongoing recruitment at the Quebec Heart and Lung
-Institute (IUCPQ, Université Laval, Quebec City, Canada). Inclusion and
-exclusion criteria were those related to bariatric surgery.
-Specifically, men and women who had a BMI ≥ 40 kg m ⁻² or ≥ 35 kg m ⁻²
-with major comorbidities, who required surgery and who met the National
-Institutes of Health (NIH) Guidelines for bariatric surgery were invited
-to participate. Exclusion criteria were general contra-indications for
-bariatric surgery, a BMI < 35 kg m ⁻² , age under 18 or over 60 years,
-abnormal bowel habits including irritable bowel syndrome, pregnancy,
-cirrhosis, inflammatory bowel disease and previous bariatric surgery.
-Participants were further selected based on the presence of a signed
-consent form and availability of T2D status, with subgroups (that is,
-with or without T2D) were matched for BMI, age and male:female ratio as
-much as possible.
-
-For the discovery cohort used for scRNA-seq, we identified 14
-individuals (four men and ten women) using the above-described inclusion
-criteria; five individuals were diagnosed with type 2 diabetes and nine
-individuals did not have type 2 diabetes. Detailed clinical information
-is provided in Table 1 . For single-cell expression validation, two
-additional individuals were identified using the same selection
-criteria, including one 35-year-old man without type 2 diabetes with a
-BMI of 59 kg m ⁻² and one 42-year-old woman with type 2 diabetes with a
-BMI of 44.8 kg m ⁻² .
-
-For validation studies using bulk SVF and adipocyte samples, we
-identified 13 independent individuals from the same study population.
-This sample set included 12 women and one man with a BMI range from 39.7
-to 59.2 kg m ⁻² and age values ranging from 29 to 60 years. Six of these
-individuals were diagnosed with T2D and six were not. Similarly, for
-validation studies using bulk adipose tissue samples, we identified
-another set of ten independent individuals with BMI between 35.5 and
-71.8 kg m ⁻² , age between 42 and 49 years and a male:female ratio of
-1:1.
-
-For all sample sets, adipose tissue was collected during the bariatric
-surgery from two different fat compartments: the greater omentum,
-corresponding to VAT, and the abdominal subcutaneous fat compartment
-(SAT). Informed consent was obtained from each participant through the
-management of the framework of the Quebec Heart and Lung Institute
-Obesity Biobank. The protocol was approved by the Research Ethics
-Committee of the IUCPQ (protocol number 21320).
-
-Sample preparation
-
-SVF and mature adipocytes were obtained as follows: adipose tissue was
-digested within 30 min of collection with collagenase according to a
-modification of the Robdell method ⁵¹ . Briefly, adipose tissue samples
-were digested with collagenase type 1 in Krebs-Ringer-Henseleit (KRH)
-buffer for 45 min at 37 °C. Cell suspensions containing mature
-adipocytes and SVF were then filtered with a nylon mesh and washed three
-times with KRH buffer. The buoyancy of adipocytes allows them to float
-to the surface. Mature adipocytes were divided into aliquots, and the
-remaining solution containing the SVF was centrifuged at 1,500 r.p.m.
-for 5 min. The pellet was washed with pre-adipocyte growth medium (PGM)
-(DMEM-F12 supplemented with 10% FBS, 1% penicillin–streptomycin, 17 µM
-pantothenic acid, 33 µM biotin, 100 µM ascorbic acid and 2.5 µm ml ⁻¹
-amphoB) followed by a second centrifugation. SVF cells were then
-cryopreserved using freezing medium (PGM supplemented with 40% FBS and
-10% DMSO). The medium was added to the pellet and frozen with a
-temperature gradient (−1 °C per min) and stored in liquid nitrogen until
-analysis. Whole adipose tissue samples were quickly frozen in liquid
-nitrogen following collection and stored until analysis.
-
-Isolation of CD34 ⁺ CD34 ⁻ SVF cells by FACS
-
-Cells from the SVF were thawed and suspended in PBS with 0.1% BSA. They
-were centrifuged at 1,500 r.p.m. for 5 min. Erythrocyte lysis buffer was
-added for 5 min to the suspension to remove red blood cells. The
-suspension was centrifuged again at 1,500 r.p.m. for 5 min. Primary
-antibody ( CD34 , PE, eBioscience) was added to the samples and
-incubated for 60 min at 4 °C in the dark. PBS with 0.1% BSA was added to
-wash the suspension followed by 80 µm filtration with a nylon mesh to
-remove debris. The suspension was then transferred to a 10 ml
-polypropylene tube, centrifuged at 1,500 r.p.m. for 5 min and the pellet
-was suspended in PBS with 0.1% BSA. Viability staining solution was
-added 15 min before the sorting process. Viability control was performed
-with live and dead cells to ascertain that the staining solution worked
-well, and for gate adjustment. OneComp Ebeads (Thermo Fisher Scientific)
-control was also used to provide a positive and negative control for the
-antibody. The samples were sorted with the BD FACSAria II (BD
-Biosciences) with the following parameters: cell size, graininess,
-viability, singlet cell and CD34 ⁺ CD34 ⁻ .
-
-Dead and non-singlet cells were automatically discarded. Cells that were
-positive and negative for CD34 were collected in two distinct tubes
-(Supplementary Fig. 7 ). After sorting, cells were centrifuged at
-1,500 r.p.m. for 5 min and were conserved in freezing medium as
-described above and stored at −80 °C until further analysis.
-
-MSC culture and differentiation
-
-Bone-marrow-derived mesenchymal stromal cells (LY-MSCs) from eight
-healthy 19–27 year-old female donors were provided by the GMP facility
-of the Advanced Cell Therapy Centre, Finnish Red Cross Blood Service
-(FRCBS), Helsinki, Finland. The cells were thawed, expanded and
-differentiated into adipocytes following the FRCBS protocol published
-previously ⁵² . Briefly, in preparation for adipogenic differentiation,
-cells at passage number three were plated in 10 cm cell culture plates
-(Corning) and grown in expansion medium containing low-glucose DMEM
-(Thermo Fisher Scientific), 100 units per ml penicillin and 100 μg ml ⁻¹
-streptomycin (Thermo Fisher Scientific) and 10% Stemulate (pooled human
-platelet lysate culture media supplement, Cook Regentec) until they
-reached 70–90% confluence (timepoint 1), at which point the medium was
-changed to adipogenic basal medium containing alpha-MEM GlutaMAX, 10%
-FBS, 20 mM HEPES, 100 units per ml penicillin and 100 μg ml ⁻¹
-streptomycin (Thermo Fisher Scientific). Half of the culture plates were
-used as controls and maintained in the adipogenic basal medium until
-harvesting. The other half was subjected to adipogenic differentiation.
-More specifically, the cells were first incubated for 3–4 days in
-adipogenic basal medium supplemented with the induction cocktail of
-0.1 mM indomethacin (Sigma-Aldrich), 0.5 μg ml ⁻¹ insulin, 0.2 mM
-3-isobutyl-1-methylxanthine (IBMX) and 0.4 μg ml ⁻¹ dexamethasone
-(Preadipocyte Differentiation Medium Supplement Pack, PromoCell)
-(timepoint 2); the medium was then changed to the terminal
-differentiation cocktail containing 0.1 mM indomethacin (Sigma-Aldrich),
-0.5 μg ml ⁻¹ insulin and 3 μg ml ⁻¹ ciglitazone (PromoCell). The medium
-was changed twice a week for all plates and the differentiation was
-allowed to proceed for 3 weeks for timepoint 3 or 4 weeks for timepoint
-4. For each donor, samples were harvested at timepoint 1
-(non-differentiated cells), timepoint 2 (adipocyte-induced control
-without drugs in the media or differentiated with induction drugs),
-timepoint 3 (adipocyte control without drugs in the media or
-differentiated with drugs) and timepoint 4 (adipocyte control without
-drugs in the media or differentiated with drugs).
-
-scRNA-seq
-
-Cells from the SVF were thawed and serially diluted in DMEM/F12
-supplemented with 10% FBS and 1% penicillin–streptomycin in a 15 ml
-conical tube to a volume of 14 ml. They were centrifuged at 300 r.c.f.
-for 10 min and the supernatant was removed and discarded. The pelleted
-cells were suspended in an adequate amount of DMEM/F12 supplemented with
-10% FBS and 1% penicillin–streptomycin and transferred to a 1.5 ml
-microfuge tube for counting. To determine the volume of suspension to be
-used in the 10x Chromium Single Cell Library protocol, 10 µl of the
-suspension was used for a cell count and viability assay on a Countess
-II Automated Cell Counter (Invitrogen). The desired number of viable
-cells to be loaded onto the Chromium Single Cell A Chip (10x Genomics)
-was 12,000 cells. After cell capture, the remaining cells were
-centrifuged at 300 r.c.f. for 10 min and cryopreserved using freezing
-medium (Recovery Cell Culture Freezing Medium, Thermo Fisher
-Scientific). The cells were suspended in freezing medium and frozen with
-a temperature gradient of −1 °C per min. Cell capture, complementary DNA
-amplification and library preparation were performed using the Chromium
-Single Cell 3′ Library & Gel Bead Kit v2 (10x Genomics), according to
-the manufacturer’s protocol. The final libraries were analysed using a
-TapeStation (Agilent) to determine library size and a Qubit Broad Range
-dsDNA assay (Thermo Fisher Scientific) to determine library
-concentration and sequenced using Illumina HiSeq at high depth (mean
-171,560 reads per cell), capturing on average 1,527 cells per sample.
-
-Bulk RNA sequencing
-
-A total of 0.5–3 million cells were re-suspended in 500 µl TRIzol
-reagent and total RNA was extracted using the miRNeasy Mini Kit (Qiagen)
-according to the manufacturer’s protocol. RNA library preparations were
-carried out on 500 ng of RNA with an RNA integrity number greater than
-seven using the Illumina TruSeq Stranded Total RNA Sample Preparation
-Kit (Illumina), according to manufacturer’s protocol. Final libraries
-were analysed on a Bioanalyzer (Agilent) and sequenced on the Illumina
-HiSeq 2500 (Illumina, pair-ended 100–150 bp sequences). On average
-61,222,621, 49,175,966, 66,301,281 and 84,454,561 paired-end reads were
-sequenced in adipocytes, SVF, adipose tissue and MSCs, respectively.
-
-Quality control and clustering of single-cell data from the SVF
-
-Initial analysis of the single-cell libraries was done using cellranger
-v.2.1.0 from 10x Genomics. GRCh38 was used as the genome reference. The
-analysis was started with 26 samples. All sequenced samples were
-aggregated using the cellranger aggr pipeline, where read depth
-difference between libraries was normalized by subsampling higher-depth
-libraries. Seurat ⁵³ was used for further analysis of clustering,
-dimensionality reduction and differential gene expression. For
-filtering, we used only cells with a minimum gene count of 200 and a
-maximum of 2,500 genes per cell based on their distribution in the
-sample. We also removed cells with less than 200 and greater than 13,750
-unique molecular identifiers (UMIs) per cell. Cells with mitochondrial
-gene expression greater than 20% were also removed. However, clustering
-showed that the majority of the cells (90%) from one sample were
-clustered together apart from the clusters of all the other samples. The
-sample was removed the and analysis was repeated.
-
-The final input data to Seurat consisted of 38,170 cells, and after
-filtering we obtained 26,350 cells. 11,111 cells were removed because of
-a low gene or UMI count. We regressed out the variability due to UMI
-distribution, mitochondrial gene expression and the difference between
-G2M and S phase scores based on the gene expression of cell cycle genes
-⁵⁴ . The top 23 dimensions were used to generate the final clusters
-using principal component analysis (PCA) and graph-based clustering. The
-top 100 genes in each cluster were identified in comparison with all
-other cells using the function ‘FindAllMarkers’ in Seurat while keeping
-a cutoff of padj ≤ 0.01. Genes expressed in a minimum of 25% of cells in
-either of the test populations were considered for analysis. Clusters
-were annotated using overlapping known marker genes among the
-cluster-specific genes. Differential gene expression analysis between
-cell populations was done using the Wilcoxon rank sum test in
-‘FindMarkers’ function. The raw expression data of the filtered cells
-used in clustering of Seurat was used for generating annotation using
-SingleR with default parameters ⁵⁵ . The annotation for each cell was
-then overlapped with Seurat cluster identities to identify the cell type
-of each cluster. The subsets for the VAT progenitors and immune clusters
-were created from the clustering results using the ‘SubsetData’ function
-of Seurat. The top ten and 15 dimensions were used for clustering VAT
-progenitors and immune cells, respectively, using highly variable genes
-in the corresponding data.
-
-The sample with highest number of cells captured ( n = 6,672) is
-randomly subsampled to 1,500 cells to match the cell counts of remaining
-samples. The clustering was repeated using the same settings as that of
-the initial analysis. A subset of SAT progenitors (P2, P4, P6 and P7)
-was created. Cells from the VAT that were included in the subset were
-removed and we obtained 2,705 that were from SAT progenitors. The top
-variable genes were identified and clustering was done using the top ten
-dimensions. The cluster-specific genes were used for functional
-annotation using DAVID Bioinformatics Resources 6.8 (ref. ^(56 , 57) ).
-
-Differential gene expression analysis using bulk RNA
-
-Raw reads were trimmed for quality (phred33 ≥ 30) and length ( n ≥ 32),
-and Illumina adapters were clipped off using Trimmomatic v.0.35 (ref. ⁵⁸
-). Filtered reads were then aligned to the GRCh38 human reference using
-STAR v.2.5.3a ⁵⁹ . Raw read counts of genes were obtained using
-htseq-count v.0.6.0 (ref. ⁶⁰ ). Differential gene expression analysis
-was done using DeSeq2 v.1.18.1 (ref. ⁶¹ ).
-
-The gene raw count table (V6p) of RNA-seq data was downloaded from the
-GTEx web portal. The subset of data was then created by selecting only
-tissues of interest based on the sample attribute file provided in the
-GTEx portal. Differential expression gene analysis was done using DeSeq2
-v.1.18.1.
-
-Detection of CD9 ⁺ CD68 ⁺ macrophages by histological immunofluorescence
-
-VAT and SAT samples from four patients undergoing bariatric surgery were
-identified, two of whom were diagnosed with type 2 diabetes. The mean
-age was 47.3 years (standard deviation (SD) = 11.7), and the mean BMI
-was 49.9 kg m ⁻² (SD = 5.2). Adipose tissue slides were disembedded by
-xylene (2 × 10 min) followed by a rehydration step using ethanol
-(2 × 5 min 100% ethanol, and 2 × 5 min 95% ethanol). Antigen retrieval
-was performed using citrate buffer 0.01 M (0.1 M citric acid with 0.1
-sodium citrate mixed with water) for 5 min at 65 °C and 10 min at 95 °C.
-The final rehydration step was performed by immersion of the slides for
-5 min in water and for 5 min in PBS. Non-specific sites were blocked for
-at least 45 min using 1× PBS, 0.1% BSA, 0.4% Triton X-100 and 10% goat
-serum. The slides were incubated with the primary antibodies rabbit
-anti-human CD9 (PA5-11556, Invitrogen) and mouse anti-human CD68 (ab955,
-Abcam) overnight at 4 °C in a humidified chamber. The slides were then
-washed three times in 1× PBS for 5 min. The slides were then incubated
-with the secondary antibodies goat anti-rabbit Alexa488 (A11008,
-Invitrogen) and goat anti-mouse Alexa594 (A11005, Invitrogen) for 2 h at
-room temperature in the dark. The slides were then washed three times
-with 1× PBS for 5 min. Vectashield mounting medium with DAPI (H-1200,
-Vector Laboratories) was used and the coverslip was sealed with nail
-polish. Digital images were taken using a Zeiss LSM800 confocal system
-(Zeiss). Images were taken at ×20 and ×63 magnification. The slides were
-stored at 4 °C in the dark and imaged less than 4 days after staining.
-
-Validation of beige adipocyte signatures by single-cell sequencing
-
-Adipose tissue was collected from a 15-month-old boy undergoing inguinal
-hernia repair at Children’s Mercy Kansas City, Missouri, USA. Consent
-was obtained through the management of the study protocol approved by
-the Institutional Review Board at Children’s Mercy Kansas City (protocol
-number 17110653). An easily accessible portion of the greater omentum at
-the lower end of the omental drape was identified, a portion was pulled
-out and a 2 cm segment was amputated to allow for areas of cautery
-changes to be discarded. The specimen was transported in a jar
-containing saline. Adipose tissue was then prepared as described above
-to obtain the SVF. The SVF pellet was treated with ACK lysis buffer at
-room temperature (22 °C) for 5 min, and this was followed by another
-centrifugation step at 300 r.c.f. at 10 min. The ACK lysis buffer was
-removed from the pellet and the cells were washed once more with HBSS,
-200 µM adenosine and 2% FBS, and centrifuged one final time at 300
-r.c.f. at 10 min. Cells were counted to determine the total number of
-cells in suspension and cell viability. Cells were then cryopreserved
-using freezing medium (Gibco Recovery Cell Culture Freezing Medium, 10%
-DMSO). The medium was added to the pellet and was frozen with a
-temperature gradient (−1 °C per min) and stored in liquid nitrogen until
-analysis. At the time of single-cell analysis, cells from the SVF were
-thawed and prepared as described above, including a cell count and
-viability assay on a Countess II Automated Cell Counter (Invitrogen) to
-determine the volume of suspension to be used in the 10x Chromium Single
-Cell Library protocol. The desired number of viable cells to be loaded
-onto two wells of a Chromium Single Cell A Chip (10x Genomics) was 8,000
-cells for a total of two captures with 4,000 cells per capture. Cell
-capture, cDNA amplification and library preparation were performed using
-the Chromium Single Cell 3′ Library & Gel Bead Kit v2 (10x Genomics),
-according to the manufacturer’s protocol. The final two libraries were
-analysed using a TapeStation to determine library size and a Qubit Broad
-Range dsDNA assay to determine library concentration and sequenced on an
-Illumina NovaSeq6000 instrument (Illumina). For QC and clustering, we
-followed same procedure used for the discovery samples to analyse the
-validation sample. However, for filtering, we used only cells with a
-minimum gene count of 200 and a maximum of 6,000 genes per cell based on
-their distribution in the sample. We also removed cells with more than
-50,000 UMIs. Cells with mitochondrial gene expression greater than 40%
-were also removed. After filtering we used 2,779 cells for further
-clustering and analysis. The top 55 dimensions were used to generate the
-final clusters using PCA and graph-based clustering. The subsets for the
-progenitors were created from the clustering results using the
-‘SubsetData’ function of Seurat. The top 50 dimensions were used for
-clustering VAT progenitors using highly variable genes in the
-corresponding data.
-
-Gene expression analysis in population-based cohorts
-
-Associations between gene expression levels (IlluminaHT12) and
-phenotypes within the MuTHER cohort were modelled using a linear
-mixed-effects model as described previously ¹⁷ . Briefly, the lmer
-function in the lme4 package, was fitted by maximum-likelihood. The
-linear mixed-effects model was adjusted for age and experimental batch
-(fixed effects) and family relationship (twin-pairing) and zygosity
-(random effects). A likelihood ratio test was used to assess the
-significance of the phenotype effect. The P value of the phenotype
-effect in each model was calculated from the χ ² distribution with 1
-degree of freedom using −2log(likelihood ratio) as the test statistic.
-Summary statistics from associations between gene expression levels and
-phenotypes within the METSIM cohort were obtained from METSIM study ¹⁸ .
-
-Reporting Summary
-
-Further information on research design is available in the Nature
-Research Reporting Summary linked to this article.
-
-Data availability
-
-Raw data files from single-cell and bulk RNA-seq used in this study are
-uploaded in the Gene Expression Omnibus (GEO) in a SuperSeries with
-accession number: GSE136230 . The expression data from the MuTHER cohort
-have been deposited in the ArrayExpress (
-https://www.ebi.ac.uk/arrayexpress/ ) with accession number E-TABM-1140
-. Source data are available online for Figs. 3 , 5 and 6 , and
-Supplementary Fig. 6 .
-
-References
-
-1.  Tchernof, A. & Despres, J. P. Pathophysiology of human visceral
-    obesity: an update. Physiol. Rev 93 , 359–404 (2013).
-
-    Article CAS PubMed Google Scholar
-
-2.  Porter, S. A. et al. Abdominal subcutaneous adipose tissue: a
-    protective fat depot? Diabetes Care 32 , 1068–1075 (2009).
-
-    Article PubMed PubMed Central Google Scholar
-
-3.  Laforest, S., Labrecque, J., Michaud, A., Cianflone, K. &
-    Tchernof, A. Adipocyte size as a determinant of metabolic disease
-    and adipose tissue dysfunction. Crit. Rev. Clin. Lab. Sci. 52 ,
-    301–313 (2015).
-
-    Article CAS PubMed Google Scholar
-
-4.  Denis, G. V. & Obin, M. S. ‘Metabolically healthy obesity’: origins
-    and implications. Mol. Aspects Med. 34 , 59–70 (2013).
-
-    Article CAS PubMed Google Scholar
-
-5.  Michaud, A. et al. Relevance of omental pericellular adipose tissue
-    collagen in the pathophysiology of human abdominal obesity and
-    related cardiometabolic risk. Int. J. Obes. (Lond) 40 , 1823–1831
-    (2016).
-
-    Article CAS Google Scholar
-
-6.  Schipper, H. S., Prakken, B., Kalkhoven, E. & Boes, M. Adipose
-    tissue-resident immune cells: key players in immunometabolism.
-    Trends Endocrinol. Metab. 23 , 407–415 (2012).
-
-    Article CAS PubMed Google Scholar
-
-7.  Nawaz, A. et al. CD206(+) M2-like macrophages regulate systemic
-    glucose metabolism by inhibiting proliferation of adipocyte
-    progenitors. Nat. Commun. 8 , 286 (2017).
-
-    Article PubMed PubMed Central CAS Google Scholar
-
-8.  Olsen, T. K. & Baryawno, N. Introduction to Single-Cell RNA
-    Sequencing. Curr. Protoc. Mol. Biol . 122 , e57 (2018).
-
-    Article PubMed CAS Google Scholar
-
-9.  Schwalie, P. C. et al. A stromal cell population that inhibits
-    adipogenesis in mammalian fat depots. Nature 559 , 103–108 (2018).
-
-    Article CAS PubMed Google Scholar
-
-10. Helper, C. et al. Identification of functionally distinct
-    fibro-inflammatory and adipogenic stromal subpopulations in visceral
-    adipose tissue of adult mice. eLife 7 , e39636 (2018).
-
-    Article Google Scholar
-
-11. Ehrlund, A. et al. The cell-type specific transcriptome in human
-    adipose tissue and influence of obesity on adipocyte progenitors.
-    Sci. Data 4 , 170164 (2017).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-12. Briot, A. et al. Senescence alters PPARγ (peroxisome
-    proliferator-activated receptor gamma)-dependent fatty acid handling
-    in human adipose tissue microvascular endothelial cells and favors
-    inflammation. Arterioscler. Thromb. Vasc. Biol. 38 , 1134–1146
-    (2018).
-
-    Article CAS PubMed Google Scholar
-
-13. Banerji, S. et al. LYVE-1, a new homologue of the CD44 glycoprotein,
-    is a lymph-specific receptor for hyaluronan. J. Cell Biol. 144 ,
-    789–801 (1999).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-14. Schluns, K. S., Kieper, W. C., Jameson, S. C. & Lefrancois, L.
-    Interleukin-7 mediates the homeostasis of naive and memory CD8 T
-    cells in vivo. Nat. Immunol. 1 , 426–432 (2000).
-
-    Article CAS PubMed Google Scholar
-
-15. Michelet, X. et al. Metabolic reprogramming of natural killer cells
-    in obesity limits antitumor responses. Nat. Immunol. 19 , 1330–1340
-    (2018).
-
-    Article CAS PubMed Google Scholar
-
-16. Schall, T. J. et al. A human T cell-specific molecule is a member of
-    a new gene family. J. Immunol. 141 , 1018–1025 (1988).
-
-    CAS PubMed Google Scholar
-
-17. Small, K. S. et al. Identification of an imprinted master trans
-    regulator at the KLF14 locus related to multiple metabolic
-    phenotypes. Nat. Genet. 43 , 561–564 (2011).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-18. Civelek, M. et al. Genetic regulation of adipose gene expression and
-    cardio-metabolic traits. Am. J. Hum. Genet. 100 , 428–443 (2017).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-19. Kratz, M. et al. Metabolic dysfunction drives a mechanistically
-    distinct proinflammatory phenotype in adipose tissue macrophages.
-    Cell Metab. 20 , 614–625 (2014).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-20. Jager, N. A. et al. Folate receptor-β imaging using ^(99m) Tc-folate
-    to explore distribution of polarized macrophage populations in human
-    atherosclerotic plaque. J. Nucl. Med. 55 , 1945–1951 (2014).
-
-    Article CAS PubMed Google Scholar
-
-21. Liao, X. et al. Kruppel-like factor 4 regulates macrophage
-    polarization. J. Clin. Invest. 121 , 2736–2749 (2011).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-22. Villani, A. C. et al. Single-cell RNA-seq reveals new types of human
-    blood dendritic cells, monocytes, and progenitors. Science 356 ,
-    eaah4573 (2017).
-
-    Article PubMed PubMed Central CAS Google Scholar
-
-23. Acosta, J. R. et al. Increased fat cell size: a major phenotype of
-    subcutaneous white adipose tissue in non-obese individuals with type
-    2 diabetes. Diabetologia 59 , 560–570 (2016).
-
-    Article CAS PubMed Google Scholar
-
-24. Ribeiro, R. et al. Human periprostatic white adipose tissue is rich
-    in stromal progenitor cells and a potential source of prostate tumor
-    stroma. Exp. Biol. Med. (Maywood) 237 , 1155–1162 (2012).
-
-    Article CAS Google Scholar
-
-25. Yang, R. Z. et al. Identification of omentin as a novel
-    depot-specific adipokine in human adipose tissue: possible role in
-    modulating insulin action. Am. J. Physiol. Endocrinol. Metab. 290 ,
-    E1253–E1261 (2006).
-
-    Article CAS PubMed Google Scholar
-
-26. de Souza Batista, C. M. et al. Omentin plasma levels and gene
-    expression are decreased in obesity. Diabetes 56 , 1655–1661 (2007).
-
-    Article PubMed CAS Google Scholar
-
-27. Watanabe, T., Watanabe-Kominato, K., Takahashi, Y., Kojima, M. &
-    Watanabe, R. Adipose tissue-derived omentin-1 function and
-    regulation. Compr. Physiol. 7 , 765–781 (2017).
-
-    Article PubMed Google Scholar
-
-28. Chau, Y. Y. et al. Visceral and subcutaneous fat have different
-    origins and evidence supports a mesothelial source. Nat. Cell Biol.
-    16 , 367–375 (2014).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-29. Winnier, D. A. et al. Transcriptomic identification of ADH1B as a
-    novel candidate gene for obesity and insulin resistance in human
-    adipose tissue in Mexican Americans from the Veterans Administration
-    Genetic Epidemiology Study (VAGES). PLoS One 10 , e0119941 (2015).
-
-    Article PubMed PubMed Central CAS Google Scholar
-
-30. Vaittinen, M. et al. MFAP5 is related to obesity-associated adipose
-    tissue and extracellular matrix remodeling and inflammation. Obesity
-    (Silver Spring) 23 , 1371–1378 (2015).
-
-    Article CAS Google Scholar
-
-31. Hou, S. et al. S100A4 protects mice from high-fat diet-induced
-    obesity and inflammation. Lab. Invest. 98 , 1025–1038 (2018).
-
-    Article CAS PubMed Google Scholar
-
-32. Kuefner, M. S. et al. Secretory phospholipase A2 group IIA modulates
-    insulin sensitivity and metabolism. J. Lipid. Res. 58 , 1822–1833
-    (2017).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-33. Perdikari, A. et al. BATLAS: deconvoluting brown adipose tissue.
-    Cell Rep. 25 , 784–797 e784 (2018).
-
-    Article CAS PubMed Google Scholar
-
-34. Wankhade, U. D. et al. TGF-β receptor 1 regulates progenitors that
-    promote browning of white fat. Mol. Metab. 16 , 160–171 (2018).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-35. Zou, Y. et al. IRX3 promotes the browning of white adipocytes and
-    its rare variants are associated with human obesity risk.
-    EBioMedicine 24 , 64–75 (2017).
-
-    Article PubMed PubMed Central Google Scholar
-
-36. Roberts, A. C. & Porter, K. E. Cellular and molecular mechanisms of
-    endothelial dysfunction in diabetes. Diab. Vasc. Dis. Res. 10 ,
-    472–482 (2013).
-
-    Article PubMed CAS Google Scholar
-
-37. Escobedo, N. & Oliver, G. The lymphatic vasculature: Its role in
-    adipose metabolism and obesity. Cell Metab. 26 , 598–609 (2017).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-38. Nishimura, S. et al. CD8 ⁺ effector T cells contribute to macrophage
-    recruitment and adipose tissue inflammation in obesity. Nat. Med. 15
-    , 914–920 (2009).
-
-    Article CAS PubMed Google Scholar
-
-39. Wu, H. et al. T-cell accumulation and regulated on activation,
-    normal T cell expressed and secreted upregulation in adipose tissue
-    in obesity. Circulation 115 , 1029–1038 (2007).
-
-    Article CAS PubMed Google Scholar
-
-40. Singer, M. et al. A distinct gene module for dysfunction uncoupled
-    from activation in tumor-infiltrating T cells. Cell 166 , 1500–1511
-    e1509 (2016).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-41. Russo, L. & Lumeng, C. N. Properties and functions of adipose tissue
-    macrophages in obesity. Immunology 155 , 407–417 (2018).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-42. Coats, B. R. et al. Metabolically activated adipose tissue
-    macrophages perform detrimental and beneficial functions during
-    diet-induced obesity. Cell Rep . 20 , 3149–3161 (2017).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-43. Song, N. J. et al. Small molecule-induced complement factor D
-    (Adipsin) promotes lipid accumulation and adipocyte differentiation.
-    PLoS One 11 , e0162228 (2016).
-
-    Article PubMed PubMed Central CAS Google Scholar
-
-44. Li, C. Y. et al. Comparative analysis of human mesenchymal stem
-    cells from bone marrow and adipose tissue under xeno-free conditions
-    for cell therapy. Stem Cell Res. Ther. 6 , 55 (2015).
-
-    Article PubMed PubMed Central CAS Google Scholar
-
-45. Acosta, J. R. et al. Single cell transcriptomics suggest that human
-    adipocyte progenitor cells constitute a homogeneous cell population.
-    Stem Cell Res. Ther. 8 , 250 (2017).
-
-    Article PubMed PubMed Central CAS Google Scholar
-
-46. Chung, S. S. et al. Glutathione peroxidase 3 mediates the
-    antioxidant effect of peroxisome proliferator-activated receptor γ
-    in human skeletal muscle cells. Mol. Cell Biol. 29 , 20–30 (2009).
-
-    Article CAS PubMed Google Scholar
-
-47. Hammarstedt, A. et al. WISP2 regulates preadipocyte commitment and
-    PPARγ activation by BMP4. Proc. Natl Acad. Sci. USA 110 , 2563–2568
-    (2013).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-48. Jang, M. K. & Jung, M. H. ATF3 inhibits PPARγ-stimulated
-    transactivation in adipocyte cells. Biochem. Biophys. Res. Commun.
-    456 , 80–85 (2015).
-
-    Article CAS PubMed Google Scholar
-
-49. Kim, J. Y. et al. Activating transcription factor 3 is a target
-    molecule linking hepatic steatosis to impaired glucose
-    homeostasis. J. Hepatol. 67 , 349–359 (2017).
-
-    Article PubMed Google Scholar
-
-50. Wu, J. et al. Beige adipocytes are a distinct type of thermogenic
-    fat cell in mouse and human. Cell 150 , 366–376 (2012).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-51. Tchernof, A. et al. Regional differences in adipose tissue
-    metabolism in women: minor effect of obesity and body fat
-    distribution. Diabetes 55 , 1353–1360 (2006).
-
-    Article CAS PubMed Google Scholar
-
-52. Laitinen, A. et al. A robust and reproducible animal serum-free
-    culture method for clinical-grade bone marrow-derived mesenchymal
-    stromal cells. Cytotechnology 68 , 891–906 (2016).
-
-    Article CAS PubMed Google Scholar
-
-53. Butler, A., Hoffman, P., Smibert, P., Papalexi, E. & Satija, R.
-    Integrating single-cell transcriptomic data across different
-    conditions, technologies, and species. Nat. Biotechnol. 36 , 411–420
-    (2018).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-54. Tirosh, I. et al. Dissecting the multicellular ecosystem of
-    metastatic melanoma by single-cell RNA-seq. Science 352 , 189–196
-    (2016).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-55. Aran, D. et al. Reference-based analysis of lung single-cell
-    sequencing reveals a transitional profibrotic macrophage. Nat.
-    Immunol. 20 , 163–172 (2019).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-56. Huang da, W., Sherman, B. T. & Lempicki, R. A. Systematic and
-    integrative analysis of large gene lists using DAVID bioinformatics
-    resources. Nat. Protoc. 4 , 44–57 (2009).
-
-    Article PubMed CAS Google Scholar
-
-57. Huang da, W., Sherman, B. T. & Lempicki, R. A. Bioinformatics
-    enrichment tools: paths toward the comprehensive functional analysis
-    of large gene lists. Nucleic Acids Res . 37 , 1–13 (2009).
-
-    Article PubMed CAS Google Scholar
-
-58. Bolger, A. M., Lohse, M. & Usadel, B. Trimmomatic: a flexible
-    trimmer for Illumina sequence data. Bioinformatics 30 , 2114–2120
-    (2014).
-
-    Article CAS PubMed PubMed Central Google Scholar
-
-59. Dobin, A. et al. STAR: ultrafast universal RNA-seq aligner.
-    Bioinformatics 29 , 15–21 (2013).
-
-    Article CAS PubMed Google Scholar
-
-60. Anders, S., Pyl, P. T. & Huber, W. HTSeq–a Python framework to work
-    with high-throughput sequencing data. Bioinformatics 31 , 166–169
-    (2015).
-
-    Article CAS PubMed Google Scholar
-
-61. Love, M. I., Huber, W. & Anders, S. Moderated estimation of fold
-    change and dispersion for RNA-seq data with DESeq2. Genome Biol . 15
-    , 550 (2014).
-
-    Article PubMed PubMed Central CAS Google Scholar
-
-Download references []
-
-Acknowledgements
-
-This work was supported by a Canadian Institute of Health Research
-(CIHR) team grant awarded to E.G. (EGM141898) and the CIHR-funded
-Epigenome Mapping Centre at McGill University (EP1-120608) awarded to
-T.P. E.G. holds the Roberta D. Harding & William F. Bradley, Jr. Endowed
-Chair in Genomic Research and T.P. holds the Dee Lyons/Missouri Endowed
-Chair in Pediatric Genomic Medicine. A.T. is the director of a Research
-Chair in Bariatric and Metabolic Surgery. M.C.V. is the recipient of the
-Canada Research Chair in Genomics Applied to Nutrition and Metabolic
-Health (tier 1). The MuTHER study was funded by a program grant from the
-Wellcome Trust (081917/Z/07/Z) and core funding for the Wellcome Trust
-Centre for Human Genetics (090532). The TwinsUK study was funded by the
-Wellcome Trust and European Community’s Seventh Framework Programme
-(FP7/2007-2013). The TwinsUK study also receives support from the
-National Institute for Health Research (NIHR)-funded BioResource,
-Clinical Research Facility and Biomedical Research Centre based at Guy’s
-and St Thomas’ NHS Foundation Trust in partnership with King’s College
-London. The authors thank M. Korhonen and M. Ahti at the Finnish Red
-Cross Blood Service, Helsinki, Finland, for valuable help in this study.
-The GTEx Project was supported by the Common Fund of the Office of the
-Director of the NIH, and by the National Cancer Institute (NCI),
-National Human Genome Research Institute (NHGRI), National Heart, Lung
-and Blood Institute (NHLBI), National Institute of Drug Abuse (NIDA),
-National Institute of Mental Health (NIMH) and National Institue of
-Neurological Disorders and Stroke (NINDS). The data used for the
-analyses described in this manuscript were obtained from the dbGaP
-accession number phs000424.v7.p2 on 7 October 2019.
-
-Author information
-
-Authors and Affiliations
-
-1.  Department of Human Genetics, McGill University, Montreal, Québec,
-    Canada
-
-    Jinchu Vijay & Guillaume Bourque
-
-2.  McGill University and Genome Québec Innovation Centre, Montreal,
-    Québec, Canada
-
-    Jinchu Vijay, Albena Pramatarova, Marie-Michelle Simon, Haig
-    Djambazian, Alfredo Staffa & Guillaume Bourque
-
-3.  Québec Heart and Lung Institute, Université Laval, Québec, Québec,
-    Canada
-
-    Marie-Frédérique Gauthier, Laurent Biertho & André Tchernof
-
-4.  Center for Pediatric Genomic Medicine, Children’s Mercy Kansas City,
-    Kansas City, MO, USA
-
-    Rebecca L. Biswell, Daniel A. Louiselle, Jeffrey J.
-    Johnston, Warren A. Cheung, Bradley Belden, Margaret Gibson, Tomi
-    Pastinen & Elin Grundberg
-
-5.  Finnish Red Cross Blood Service, Helsinki, Finland
-
-    Anita Laitinen & Johanna Nystedt
-
-6.  Institute of Nutrition and Functional Foods (INAF), Université
-    Laval, Québec, Québec, Canada
-
-    Marie-Claude Vohl
-
-7.  Department of Surgery, Children’s Mercy Kansas City, Kansas City,
-    MO, USA
-
-    Jason D. Fraser
-
-Authors
-
-1.   Jinchu Vijay
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-2.   Marie-Frédérique Gauthier
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-3.   Rebecca L. Biswell
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-4.   Daniel A. Louiselle
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-5.   Jeffrey J. Johnston
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-6.   Warren A. Cheung
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-7.   Bradley Belden
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-8.   Albena Pramatarova
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-9.   Laurent Biertho
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-10.  Margaret Gibson
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-11.  Marie-Michelle Simon
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-12.  Haig Djambazian
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-13.  Alfredo Staffa
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-14.  Guillaume Bourque
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-15.  Anita Laitinen
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-16.  Johanna Nystedt
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-17.  Marie-Claude Vohl
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-18.  Jason D. Fraser
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-19.  Tomi Pastinen
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-20.  André Tchernof
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-21.  Elin Grundberg
-    View author publications
-
-    You can also search for this author in PubMed Google Scholar
-
-Contributions
-
-E.G. conceived the study. E.G., A.T., T.P. and M.-C.V. designed
-experiments. A.T., J.D.F. and M.-F.G prepared or provided the clinical
-samples. L.B. and B.B. managed the clinical aspects of the study. A.P.,
-R.L.B., M.G., D.A.L. and M.-M.S performed the experiments. W.A.C,
-J.J.J., H.D., A.S. and G.B. provided bioinformatics support. A.L and
-J.N. provided the MSC cell lines and culture protocols. J.V. and E.G.
-analysed the data and drafted the manuscript. All authors reviewed and
-contributed feedback on the final manuscript.
-
-Corresponding authors
-
-Correspondence to André Tchernof or Elin Grundberg .
-
-Ethics declarations
-
-Competing interests
-
-A.T. receives funding from Johnson & Johnson Medical Companies and
-Medtronic for research unrelated to the present manuscript. The other
-authors declare no competing interests.
-
-Additional information
-
-Editor recognition Primary handling editor: Elena Bellafante.
-
-Publisher’s note Springer Nature remains neutral with regard to
-jurisdictional claims in published maps and institutional affiliations.
-
-Extended data
-
-Extended Data Fig. 1 Multiple macrophage clusters were identified in SVF from both SAT and VAT depots.
-
-Multiple macrophage clusters were identified in SVF from both SAT and
-VAT depots (a) 4 distinct macrophage clusters showing varying expression
-of CD68 (19–52% of cells), CD9 (10–51% of cells) and CD36 (25–72% of
-cells). The y axis of the violin plot indicate log transformed
-expression values and the width indicate number of cells expressing the
-particular gene. (b)Genes involves in lipid metabolism is found
-expressed in macrophage cluster – IS2, whereas IS3 is rich in
-inflammatory markers.
-
-Extended Data Fig. 2 Gene expression of marker genes in 6 visceral specific progenitor clusters.
-
-Gene expression of marker genes in 6 visceral specific progenitor
-clusters. The y axis of the violin plot indicate log transformed
-expression values and the width indicate number of cells expressing the
-particular gene.
-
-Supplementary information
-
-Supplementary Information
-
-Supplementary Figures 1–7
-
-Reporting Summary
-
-Supplementary Tables
-
-Supplementary Tables 1–23
-
-Supplementary Data
-
-Statistical source data for Supplementary Figure 6
-
-Source data
-
-Source Data Fig. 3
-
-Statistical source data for Figure 3c
-
-Source Data Fig. 5
-
-Statistical source data for Figure 5d and 5f
-
-Source Data Fig. 6
-
-Statistical source data for Figure 6d
-
-Rights and permissions
-
-Reprints and permissions
-
-About this article
-
-[Check for updates. Verify currency and authenticity via CrossMark]
-
-Cite this article
-
-Vijay, J., Gauthier, MF., Biswell, R.L. et al. Single-cell analysis of
-human adipose tissue identifies depot- and disease-specific cell types.
-Nat Metab 2 , 97–109 (2020). https://doi.org/10.1038/s42255-019-0152-6
-
-Download citation []
-
--   Received : 08 March 2019
-
--   Accepted : 13 November 2019
-
--   Published : 23 December 2019
-
--   Issue Date : January 2020
-
--   DOI : https://doi.org/10.1038/s42255-019-0152-6
-
-Share this article
-
-Anyone you share the following link with will be able to read this
-content:
-
-Get shareable link
-
-Sorry, a shareable link is not currently available for this article.
-
-Copy to clipboard
-
-Provided by the Springer Nature SharedIt content-sharing initiative
-
-Subjects
-
--   Adipocytes
--   Gene expression
--   Obesity
--   RNA sequencing
-
-This article is cited by
-
--   Single-cell RNA sequencing in donor and end-stage heart failure patients identifies NLRP3 as a therapeutic target for arrhythmogenic right ventricular cardiomyopathy
-
-    -   Mengxia Fu
-    -   Xiumeng Hua
-    -   Jiangping Song
-
-    BMC Medicine (2024)
-
--   Dissecting human adipose tissue heterogeneity using single‐cell omics technologies
-
-    -   Giuliana Di Rocco
-    -   Angelo Trivisonno
-    -   Gabriele Toietta
-
-    Stem Cell Research & Therapy (2024)
-
--   Dipeptidyl peptidase-4 marks distinct subtypes of human adipose stromal/stem cells with different hepatocyte differentiation and immunoregulatory properties
-
-    -   Yu Zhang
-    -   Mingxi Hua
-    -   Haiyan Zhang
-
-    Stem Cell Research & Therapy (2024)
-
--   PDGFRβ + cell HIF2α is dispensable for white adipose tissue metabolic remodeling and hepatic lipid accumulation in obese mice
-
-    -   Tao Yao
-    -   Danni Wei
-    -   Ying Wu
-
-    Lipids in Health and Disease (2024)
-
--   Macrophage and T cell networks in adipose tissue
-
-    -   Ramiah D. Jacks
-    -   Carey N. Lumeng
-
-    Nature Reviews Endocrinology (2024)
+- Article 
+- Published: 23 December 2019 
+ 
+Single-cell analysis of human adipose tissue identifies depot- and disease-specific cell types 
+ 
+- Jinchu Vijay ORCID: orcid.org/0000-0002-7311-475X^(1,2), 
+- Marie-Frederique Gauthier3, 
+- Rebecca L. Biswell4, 
+- Daniel A. Louiselle4, 
+- Jeffrey J. Johnston ORCID: orcid.org/0000-0002-8962-61864, 
+- Warren A. Cheung4, 
+- Bradley Belden4, 
+- Albena Pramatarova2, 
+- Laurent Biertho3, 
+- Margaret Gibson4, 
+- Marie-Michelle Simon2, 
+- Haig Djambazian2, 
+- Alfredo Staffa2, 
+- Guillaume Bourque ORCID: orcid.org/0000-0002-3933-9656^(1,2), 
+- Anita Laitinen5, 
+- Johanna Nystedt5, 
+- Marie-Claude Vohl6, 
+- Jason D. Fraser7, 
+- Tomi Pastinen4, 
+- Andre Tchernof[] ORCID: orcid.org/0000-0002-2587-10003 & 
+- ... 
+- Elin Grundberg[] ORCID: orcid.org/0000-0001-5415-78964 
+ 
+[]Show authors 
+ 
+Nature Metabolism volume 2, pages 97-109 (2020)Cite this article 
+ 
+- 19k Accesses 
+ 
+- 238 Citations 
+ 
+- 79 Altmetric 
+ 
+- Metrics details 
+ 
+Abstract 
+ 
+The complex relationship between metabolic disease risk and body fat distribution in humans involves cellular characteristics that are specific to body fat compartments. Here we show depot-specific differences in the stromal vascular fraction of visceral and subcutaneous adipose tissue by performing single-cell RNA sequencing of tissue specimens from obese individuals. We characterize multiple immune cells, endothelial cells, fibroblasts, adipose and haematopoietic stem cell progenitors. Subpopulations of adipose-resident immune cells are metabolically active and associated with metabolic disease status, including a population of potential dysfunctional CD8+ T cells that express metallothioneins. We identify multiple types of adipocyte progenitors that are common across depots, including a subtype enriched in individuals with type 2 diabetes. Depot-specific analysis reveals a class of adipocyte progenitors unique to visceral adipose tissue, which shares common features with beige pre-adipocytes. Our human single-cell transcriptome atlas across fat depots provides a resource to dissect the functional genomics of metabolic disease. 
+ 
+<div class="c-nature-box c-nature-box--side " data-component="entitlement-box"> <p class="c-nature-box__text js-text">You have full access to this article via your institution.</p> <div class="c-pdf-download u-clear-both js-pdf-download"> <a href="/articles/s42255-019-0152-6.pdf" class="u-button u-button--full-width u-button--primary u-justify-content-space-between c-pdf-download__link" data-article-pdf="true" data-readcube-pdf-url="true" data-test="download-pdf" data-draft-ignore="true" data-track="content_download" data-track-type="article pdf download" data-track-action="download pdf" data-track-label="link" data-track-external download> <span class="c-pdf-download__text">Download PDF</span> <svg aria-hidden="true" focusable="false" width="16" height="16" class="u-icon"><use xlink:href="#icon-download"/></svg> </a> </div> </div> 
+ 
+You have full access to this article via University of California, Berkeley Nature Masterclasses 
+ 
+Download PDF [] 
+ 
+Similar content being viewed by others 
+ 
+[] 
+ 
+Single-cell sequencing of human white adipose tissue identifies new cell states in health and obesity 
+ 
+Article 27 April 2021 
+ 
+[] 
+ 
+Insulin signaling establishes a developmental trajectory of adipose regulatory T cells 
+ 
+Article 24 August 2021 
+ 
+[] 
+ 
+An integrated single cell and spatial transcriptomic map of human white adipose tissue 
+ 
+Article Open access 15 March 2023 
+ 
+Main 
+ 
+White adipose tissue (WAT) and its endocrine activities are known to be implicated in the development of obesity and associated metabolic disorders. Specifically, the risk increases with increased abdominal obesity contributed by excessive visceral adipose tissue (VAT)1--a linear relationship that is not seen with abdominal subcutaneous adipose tissue (SAT)2. Susceptibility to obesity-related cardiovascular and metabolic disorders has also been linked to the increase in adipose volume resulting from enlargement of tissue-resident adipocytes (that is, hypertrophy)3. However, adipocyte expansion by recruiting new progenitors (hyperplasia) is often considered a protective mechanism from the metabolic standpoint4. Studies have also shown that adipose tissue dysfunction leading to insulin-resistant type 2 diabetes (T2D) is marked by inflammation, fibrosis, lipodystrophy or a combination of these factors5, which emphasizes the importance of adipose-infiltrating immune cell populations in modulating and developing metabolic disorders. For instance, M1 macrophages, mast cells, B-2 cells, CD8+ T cells and IFN-g+ Th1 cells were increased in the adipose tissue of individuals with obesity compared with those who were normal weight, and the reverse pattern was observed in M2 macrophages, eosinophils, T_(reg) cells, invariant natural killer T (iNKT) cells, B1 cells and gd T cells6. These adipose-tissue-resident immune cells have also been shown to create a microenvironment that can inhibit adipocyte progenitor differentiation to lipid-storing adipocytes7. However, despite extensive work on characterizing various cell subpopulations in adipose tissue, the complete human non-adipocyte fraction, also known as the stromal vascular fraction (SVF), has not been profiled across depots in an unbiased manner. Given the multitude of factors affecting adipose tissue function, a thorough understanding of the cell types involved and their specific gene expression pattern is essential. The emergence of single-cell transcriptomic approaches in the past few years has made it possible to use these technologies to determine cellular heterogeneity and functional states at the single-cell level with high reproducibility and sensitivity8. Current high-throughput microfluidics techniques can capture thousands of cells from each sample simultaneously for gene expression profiling and, together with new algorithms for clustering, visualization and modelling, this allows for high-powered analysis of disease-targeted tissue samples for efficient cataloguing of cellular compositions and roles in disease risk. Recent studies using single-cell RNA sequencing (scRNA-seq) in adipose tissue from mouse models have identified a subset of adipocyte progenitors that regulates adipocyte differentiation9 and a novel type of inflammatory progenitor residing in the visceral fat depot of mice10. Similar strategies in human adipose samples have not been applied so far. 
+ 
+We present a high-throughput single-cell expression profiling study of human adipose tissue including 25 samples derived from multiple depots of individuals with obesity. We provide a rich catalogue of cell types residing in adipose tissue, including both latent and common cell populations. We characterize and validate distinct cell types that are metabolically active or specific to each depot, or that correlate with metabolic disease status. 
+ 
+Results 
+ 
+Characterization of SVF across multiple adipose depots 
+ 
+We generated scRNA-seq data from 25 adipose samples (12 VAT and 13 SAT) derived from 14 individuals undergoing bariatric surgery (Supplementary Table 1, Supplementary Fig. 1 and Methods). All samples were matched for age and body-mass index (BMI), but fasting glycaemia differed between those with and without T2D (Table 1). We annotated the clusters using marker genes (Supplementary Tables 2,3), which resulted in three groups of cells: adipocyte progenitors and stem cells (P1-P7), immune cells (I1-I7) and endothelial cells (E1-E3) (Fig. 1). The average proportion of cell types per individual was 55% progenitors, 37% immune cells and 8% endothelial cells. This distribution was similar to the merged sample, which was 60% progenitors, 34% immune cells and 6% endothelial cells; this is in line with the results of classic fluorescence-activated cell sorting (FACS) experiments11. To avoid subjectivity and to add strength to the analyses, we also performed reference-based single-cell annotation (Methods), which confirmed our broad clusters of cell populations (Supplementary Table 4). Finally, as the distribution of female and male samples was slightly skewed (Table 1), we performed in-depth sex-specific expression analysis of the marker genes in 245 (n = 165 male and n = 80 female) VAT and SAT samples from the Genotype-Tissue Expression (GTEx) Consortium (Supplementary Table 5). 
+ 
+Full size table[] 
+ 
+Table 1 Characteristics of the study subjects 
+ 
+[figure 1] 
+ 
+Clustering results of 26,350 cells from the SVF derived from 25 adipose samples that underwent scRNA-seq, identifying 17 clusters. Cell populations were classified as progenitors (P1-P7), immune cells (I1-I17) and endothelial cells (E1-E3) and labelled accordingly. 
+ 
+Full size image[] 
+ 
+Fig. 1: Identified cell populations in the non-adipocyte fraction of adipose tissue. 
+ 
+Multiple types of endothelial cells reside in adipose tissue 
+ 
+We identified three types of endothelial cells (E1-E3, Fig. 1), all showing selective expression for GNG11 and SEPW1. E1 and E2 cells were fairly similar, sharing nearly half of their top expressed genes, including SPARCL1, FABP4 and IFI27. However, comparative analysis between E1 and E2 cells showed that E2 cells express classic endothelial markers such as ACKR1, SELE, TM4SF1, VCAM1, TMEM173, PLVAP, ICAM1, PECAM1, VWF, ADAMTS9 and TFPI. By contrast, E1 cells had pronounced expression of FABP4, LGALS1, RBP7, GPX3 and CD36, which are expressed in the microvascular endothelial cells of adipose tissue involved in the fatty-acid-handling machinery12. To characterize E3, we performed differential gene expression analysis between E3 and the combined population of E1 and E2 cells (Supplementary Table 6) and found LYVE1 among the top expressed genes. LYVE1 is a marker of lymphatic endothelial cells13 and these results therefore indicate the presence of lymphatic vasculature in the SVF, with 78% of its cell population from VAT samples. 
+ 
+Characterization of immune cells and their link to adipose tissue inflammation 
+ 
+We found that 34% of cells from our merged clusters (I1-I17, Fig. 1 and Supplementary Table 4) expressed markers of different immune cell populations. To facilitate the classification of the cell types we subset the immune cell clusters and identified 14 new clusters, labelled IS1-IS14, in which all groups were present across depots (Fig. 2a,b). 
+ 
+[figure 2] 
+ 
+Re-clustering of 9,025 CD34- cells representing immune cells in the SVF of adipose tissue identified 14 cell types including T and natural killer cells (IS1, IS4, IS6 and IS8), macrophages (IS2, IS3, IS7, IS9 and IS12), dendritic cells (IS5 and IS13), monocytes (IS10) and B cells (IS11) in the SAT (a) and VAT (b). Violin plots of expression density of metallothionein genes across T cell and natural killer cell clusters in discovery samples (c, n = 25) and CD34- validation samples (d, n = 3). The y axis indicates log-transformed expression values and the width indicates the number of cells expressing the particular gene. Immunohistochemistry in subcutaneous adipose derived from a 60-year-old woman with a BMI of 52.2 kg m-2, showing co-expression of CD9 (e) and CD68 (f) cells. Scale bar, 5 um. The staining was done on four independent individuals to confirm. 
+ 
+Full size image[] 
+ 
+Fig. 2: SVF-derived immune cells. 
+ 
+A large proportion (40%) of the immune cells (IS1, IS4, IS6 and IS8) were clustered closely together and showed gene expression signatures of natural killer and T cells. IS1 exhibited selective expression of IL7R, which is expressed in naive T cells14. However, unsupervised cell type definition suggested a mixture of naive and memory CD4+ and CD8+ T cells (Supplementary Table 7). Manual annotation of IS4 cells identified specific expression of GNLY, NKG7, FGFBP2, GZMB, GZMH and CTSW, which indicated that these cells are natural killer cells (Supplementary Table 8). Indeed, this was supported by unsupervised annotation, which showed that 68% of IS4 cells correlated with the natural killer cell reference. A recent report found that obesity is associated with reprogramming of blood-derived natural killer cells, with upregulation of genes involved in lipid metabolism including CD36 (ref. 15). However, the IS4 natural killer cells identified here did not express any genes involved in lipid metabolism, suggesting a different obesity-related effect on natural killer cells, dependent on resident tissue. 
+ 
+IS6 showed increased expression of CCL5 and IL32, indicating that these cells may be activated T cells16; this was confirmed by the unsupervised annotation, which revealed that 68% of the cells were associated with memory CD8+ T cells. Although a large proportion (59%) of the IS8 cells were, similarly to IS6 cells, mapped as memory CD8+ T cells in our unsupervised annotation we noted in the manual curation that they showed a unique pattern of high expression of metallothionein genes (MT1E, MT1F, MT1G, MT1X and MT2A, Supplementary Table 8 and Fig. 2c). We followed up this finding by performing additional scRNA-seq profiling on CD34- sorted SVF cells and found evidence of the presence of metallothionein-rich T cells in the validation sample (cluster 7, Supplementary Table 9 and Fig. 2d); both discovery and validation samples specifically showed MT1F and MT1G to be uniquely expressed by this T cell subpopulation (Fig. 2c,d). Similarly to what was recently shown for circulating immune cells15, these potential adipose-resident dysfunctional T cells may be induced by obesity and therefore enriched in our scRNA study. To test this, we used bulk gene expression data from two large SAT population-based collections (776 female samples from the MuTHER resource, and 770 male samples from the METSIM study) that have, in addition to tissue collection, study subjects deeply phenotyped for obesity-related traits^(17,18). Here, we used BMI and dual-energy X-ray absorptiometry (DXA)-derived percentage trunk fat (PTF) in association with the expression of MT1E, MT1F, MT1G, MT1X and MT2A (Supplementary Table 10). Encouragingly, we found consistent strong positive associations between the obesity traits and expression of MT1F, MT1G and MT2A, whereas MT1E and MT1X showed weaker association or no significant association, in line with our observations of cell-specific expression of these two genes. Finally, we found that all metallothionein genes are expressed in adipose tissue irrespective of tissue depot, with no sex-specific expression pattern (Supplementary Fig. 2 and Supplementary Table 5). 
+ 
+Our manual or unsupervised annotation mapped clusters IS2, IS3, IS7, IS9 and IS12 to adipose tissue macrophages (ATMs); the proportion of cells expressing the classic macrophage marker CD68 ranged from 19% to 52% (Extended Data Fig. 1a), with IS2 having the highest expression (52%) and IS9 the lowest expression (19%). IS2 cells were also enriched with genes that are involved in lipid metabolism during obesity (Supplementary Table 8), including LIPA, LPL, CD36 and FABP4; these findings are in line with the idea that obesity activates a non-classic inflammatory phenotype of ATM involving lipid accumulation and trafficking19. In addition, we found these metabolically active ATMs (that is, IS2 cells) to have more pronounced expression of CD9 than the other ATMs (Extended Data Fig. 1a). We performed cellular phenotyping by immunohistochemistry and validated the co-expression of CD68 and CD9 in obese adipose tissue (Fig. 2e,f). We also confirmed^(17,18) the linear relationship of CD9 expression and BMI in the MuTHER and METSIM SAT cohorts (MuTHER BMI, P = 2.2 x 10-13, b = 0.011; METSIM BMI, P = 9.4 x 10-28, b = 0.379). 
+ 
+IS12 and IS3 clusters showed a similar signature to that of IS2, but IS3 cells had increased expression of the inflammatory genes CXCL3, CXCL2, IL1B, CCL3 and CXCL8 (Extended Data Fig. 1b). By contrast, IS9 cells are marked by the expression of FOLR2 and KLF4, which are known signatures of M2 macrophages^(20,21). Finally, although our unsupervised annotation indicated that IS12 are macrophages, we could not distinguish them further. 
+ 
+Our unsupervised annotation identified IS5 and IS10 as classic CD16- monocytes with high expression of S100A8, S100A9 and S100A12 in IS10. However, further literature mining showed that IS5 cells are rather dendritic cells, owing to their high expression of HLA genes including HLA-DPB1, HLA-DQA1, HLA-DPA1, HLA-DRA and HLA-DQB1. IS13 cells possessed signatures of a newly identified subtype of dendritic cells22 with high expression of LST1, SERPINA1, AIF1 and FCGR3A. 
+ 
+Finally, we were able to link the IS11 cluster to B cells, owing to their expression of IGKC, JCHAIN, CD79A and CD37. The remaining cluster (IS14) showed mixed signatures in both annotation strategies and was therefore not explored further. 
+ 
+Identification of adipocyte progenitors derived from different adipose tissue depots 
+ 
+Next, we characterized our progenitor clusters (P1-P7) by studying the expression pattern of cell surface makers used in FACS of SVF progenitors23 and noted that all clusters seemed to be CD45-CD34+CD31- (Fig. 3a) with a profound signature in P1-P6. We also noted that five of the clusters (P2 and P4-P7) were identified to express CFD24, which encodes the adipokine adipsin, a marker of adipocyte differentiation (Fig. 3b); the range of CFD expression observed across the clusters may therefore be linked to different stages of adipogenesis. To validate this, we performed in vitro differentiation studies of human mesenchymal stem cells (MSCs) and identified a 5.6 log2(fold induction) between undifferentiated MSCs (that is, adipogenic induction control (ACI)) and MSC during adipogenic induction (AI) (adjusted P = 1.19 x 10-26, Fig. 3c). We further noted that CFD expression is additionally increased at the first (AD1) and second (AD2) stages of adipogenesis (AI versus AD1, log2(fold) = 1.3, adjusted P = 0.012; AI versus AD2, log2(fold) = 1.2, adjusted P = 0.036). Incorporating this information with our progenitor signature indicated that P2 and P7 include more mature pre-adipocytes than clusters P4-P6. We further validated this by unsupervised annotation, which linked on average 88% of the cells in P2 and P7 to adipocytes compared to an average of only 70% of cells in P4-P6 (Supplementary Table 11). 
+ 
+[figure 3] 
+ 
+a, Violin plots of log-transformed expression density of CD34 (upper panel), CD31/PECAM1 (middle panel) and CD45/PTPRC (bottom panel) across all SVF clusters from 25 samples. The width of the violin plot indicates the number of cells expressing the particular gene. b, Dot plot of the expression of CFD across progenitor clusters. The size of the dot corresponds to the percentage of cells expressing CFD in each cluster and the colour represents the average CFD expression level. c, Boxplot of CFD expression at four different timepoints of adipocyte differentiation from MSCs (n = 8 individuals). AI corresponds to the first timepoint 3 d after culturing MSCs in the induction medium. AD1 and AD2 correspond to 1 and 2 weeks of differentiation in adipogenic medium after the AI timepoint. ACI, AC1 and AC2 are the corresponding control sets for AI, AD1 and AD2 without any adipocyte differentiation treatments. Each timepoint with corresponding control includes three independent MSC cultures and is shown by the average log2(read count). The black line inside the boxplot represents the median value and the size of the box is determined by the 25th and 75th percentiles of the data. The whiskers of boxplot represent the maximum and minimum values of the data shown. 
+ 
+Source data 
+ 
+Full size image[] 
+ 
+Fig. 3: SVF-derived progenitor clusters. 
+ 
+We then compared the seven progenitor clusters based on tissue type and found a striking depot-specific pattern (Fig. 4a) in which three of the clusters (P2, P6 and P7) were mainly composed of cells from the SAT, whereas P1, P3 and P5 included mostly cells from the VAT and only one cluster of progenitors (P4) included a mixed population of SAT- and VAT-derived cells. For instance, the VAT-specific clusters P1 and P3 exhibited pronounced expression (average log(fold change) > 1.5) of omentin (ITLN1)25 and mesothelin (MSLN). Omentin is a VAT-specific adipocytokine that serves as a biomarker for metabolic diseases26 and, together with MSLN, is also a marker of mesothelial cells27, in line with findings that VAT develops from the mesothelium28. Additionally, we identified 16 other genes that characterize P1 and P3 (average log(fold change) > 1, Supplementary Table 2); we followed up these genes with bulk RNA-seq and found 11 (68%) of them to be differentially expressed (adjusted P < 0.05 and log(fold change) >=1) (Supplementary Table 12 and Fig. 4b). 
+ 
+[figure 4] 
+ 
+a, Clustering results of all SVF samples that underwent scRNA-seq, which identified 17 clusters from 26,350 cells. Clusters were classified as progenitors, immune cells and endothelial cells and labelled accordingly. Cells are labelled as VAT-derived (red) or SAT-derived (blue). b, Violin plots of expression density of 11 genes that are specific to VAT progenitor clusters. The y axis indicates log-transformed expression values and the width indicates the number of cells expressing the particular gene. 
+ 
+Full size image[] 
+ 
+Fig. 4: Main cell clusters in the SVF based on depot. 
+ 
+To study these cell populations in more detail, we created two subsets for re-clustering: SAT-derived progenitor cells (SP, n = 5,458) and VAT-derived progenitor cells (VP, n = 9,847). 
+ 
+Subcutaneous adipocyte progenitors and their role in metabolic conditions 
+ 
+The clustering of the adipocyte progenitors identified five groups (SP1-SP5, Fig. 5a,b), all of which expressed CFD. SP1 and SP3 cells expressed pre-adipocyte or adipose stem cell markers (for example MGP, APOD, CXCL14 and WISP2), whereas SP2 showed signatures of a more mature adipocyte progenitor cell (for example APOE, FABP4, CEBPB and CD36). The SP4 group contained cells expressing genes involved in fibrosis and extracellular matrix accumulation, including COL3A1, COL6A3, COL1A1 and COL6A1. This fibroblast signature was validated by unsupervised annotation; 69% of the cells were mapped as fibroblasts, whereas more than 80% of SP1-SP3 cells mapped as adipocytes (Supplementary Table 13). SP5 cells expressed high levels of inflammatory markers (for example CCL5, CD3E, IL7R and IL32), including CD45/PTPRC (Fig. 5c), indicating that SP5 cells represent haematopoietic stem cell (HSC) progenitors. 
+ 
+[figure 5] 
+ 
+a, Re-clustering of SAT-specific progenitors from the complete sample set of 26,350 cells. b, Re-clustering of SAT-specific progenitors (2,705 cells) by subsampling the high-coverage library to 1,500 cells. c, Dot plot of the expression of PTPRC (CD45) and CFD across SAT progenitors (SP1-SP5). d, Pearson correlation of fasting glucose levels (mmol l-1) and SP1 proportion across all samples obtained from 13 individuals. e, Dot plot of differentially expressed SP1 genes in cells derived from T2D (DX) versus non-T2D (NDX) samples previously validated in the MuTHER study. f, Boxplot of T2D-associated SP1 gene expression at different timepoints of adipocyte differentiation from MSCs (n = 8 individuals). AI corresponds to the first timepoint 3 d after culturing MSCs in the induction medium. AD1 and AD2 correspond to 1 and 2 weeks of differentiation in adipogenic medium after the AI timepoint. ACI, AC1 and AC2 are the corresponding control sets for AI, AD1 and AD2 without any adipocyte differentiation treatments. Each timepoint with corresponding control includes three independent MSC cultures and is shown by average log2(read count) and error bars corresponding to s.d. The black line inside the boxplot represents the median value and the size of the box is determined by the 25th and 75th percentiles of the data. The wiskers of the boxplot represent the maximum and minimum values of the data shown. The sizes of the dots in c and e correspond to the percentage of cells expressing the genes in each cluster and the colour represents the average expression level. 
+ 
+Source data 
+ 
+Full size image[] 
+ 
+Fig. 5: Progenitor clusters specific to the SAT. 
+ 
+We then investigated whether the proportion of adipocyte progenitor clusters specific to the SAT in each individual sample was associated with T2D status. We correlated fasting glucose levels with all of the SP cell proportions and found the abundance of SP1 to be significantly correlated with glucose levels (Pearson r = 0.56, P = 0.046, Fig. 5d and Supplementary Table 14). We followed up this finding in multiple ways and provide further evidence of the link between SP1 cells and T2D. First, we used top differently expressed genes in this group (SP1, n = 43, adjusted P < 0.01) compared to all other cell types (SP2-SP5, Supplementary Table 15) for disease annotation (Methods) and found T2D as the top annotated disease (Supplementary Table 16, P = 3.21 x 10-6). Second, we used the MuTHER resource17 followed by the METSIM Study18 for transcription-wide association analysis of multiple T2D-related traits. We found the SP1 gene set (n = 43) to be significantly enriched for association to the T2D traits in both studies (Supplementary Table 17), corresponding to fold changes between 2.5 and 9.4, depending on the trait and study (Fisher's P = 0.06-7.96 x 10-8, Supplementary Table 18). Specifically, the female MuTHER study included enriched association for 44% of the SP1 genes by using a strict Bonferroni-corrected study-wise P value threshold of P < 2.53 x 10-6. Replication of these genes in the male METSIM study showed strong correlation of effect sizes across T2D traits (Pearson r = 0.92, Supplementary Fig. 3). 
+ 
+Finally, we went back to our single-cell dataset and performed differential expression analysis between SP cells from T2D versus non-T2D samples, as defined by their fasting glycaemia, restricting analysis to the 19 validated SP1-specific genes (Supplementary Tables 17,18). We found that 53% of the genes (ten of 19) were also differently expressed (Bonferroni P < 0.05, Fig. 5e) in cells based on T2D status with the same direction of effect as seen in MuTHER (Supplementary Table 19). These genes include GPX3, WISP2, ATF3, EIF1, MGP, TMEM176B, CXCL12, CFH, C1S and ADH1B29. The top differentially expressed gene was GPX3, with a significantly higher proportion of cells expressing the gene in non-T2D samples (73%) than in T2D samples (66%) (P = 1.50 x 10-14). In line with these findings, we found GPX3 to be negatively correlated with Homoeostatic Model Assessment for Insulin Resistance (HOMA-IR) in both the MuTHER (b = -0.084, P = 1.03 x 10-11) and METSIM cohort (b = -0.147, P = 4.46 x 10-5). 
+ 
+We also noted WISP2 among those top ten genes with differential expression between T2D and non-T2D cells (P = 3.1 x 10-5) but, as opposed to GPX3, WISP2 seems to have a negative effect on T2D status. We found that 72% of T2D cells expressed the gene versus only 52% of the non-T2D cells. Again, we validated this pattern in the large MuTHER and METSIM adipose tissue cohorts, with a positive correlation with HOMA-IR (b = 0.115, P = 2.2 x 10-20 and b = 0.132, P = 2.3 x 10-4, respectively). We found that, similarly to the results for WISP2, T2D cells expressed ATF3 to a greater extent (51%) than non-T2D cells (29%), and ATF3 was positively correlated to HOMA-IR in MuTHER (b = 0.079, P = 2.9 x 10-21) and METSIM (b = 0.102, P = 4.4 x 10-3). 
+ 
+Validation of depot-independent adipocyte progenitors in CD34+ sorted cells 
+ 
+Clustering of the VP cells resulted in six clusters (Fig. 6a and Supplementary Table 20); cells expressing CFD (referred to as VPC and corresponding to VP4-VP6) versus MSLN (referred to as VPM and corresponding to VP1-VP3) were clustered separately (Fig. 6b). The VPCs (VP4-VP6) resembled the progenitor types identified in the SAT and may therefore represent adipocyte progenitors that are present across depots. Specifically, VP4 included cells enriched for genes such as APOD, CXCL14, DPT, GPX3, MGP, EIF1, C1S and ADH1B and thus having a similar expression pattern to that of the T2D-linked SP1 cells. VP5 are enriched for MFAP5, which in turn is involved in adipose tissue remodelling in individuals with obesity30. Another notable gene expressed in cluster VP5 was S100A4, a biomarker for inhibition of adipogenesis, associated with reduced obesity and inflammation in rodents31. The expression signature of VP5 was similar to the fibrotic signatures of the cells grouped as SP4. Finally, VP6 is marked by the expression of TYROBP, HLA-DRA and CD74; in general, these cells have the inflammatory signature identified for the HSC progenitors in SP5. Taken together, the combined results from our SAT and VAT single-cell data indicate the presence of three depot-independent cell types: T2D-associated adipocyte progenitors, fibroblasts and HSC. To provide further support for these observations, we generated scRNA-seq profiles of CD34+ sorted SVF cells (Methods). The clustering of these cells resulted in 13 groups (0-12, Supplementary Fig. 4 and Supplementary Table 21); there was clear evidence for overlapping fibrotic and HSC properties in two of the clusters. Specifically, we linked cluster 10 (134 cells) to HSC progenitors, which corresponded to 2% of the complete cell population, concurring with the proportion of cells in the SP5 cluster (3%) from the deep-sequenced sample when restricting to progenitors only. The expression signature of this cluster also resembles that of SP5, with PTPRC, CCL5 and IL32 among the top genes distinguishing these progenitors from the other CD34+ cell clusters. Similarly, we found clusters 5 and 7 in the validation sample to have similar properties to the fibrotic SP4 cluster, including expression of FBN1, PI16 and IGFBP6. 
+ 
+[figure 6] 
+ 
+a, Re-clustering of VAT-specific progenitors (9,847 cells) from the complete sample set. b, Violin plots showing the expression density of MSLN and CFD in six VP clusters. The y axis indicates log-transformed expression values and the width indicates the number of cells expressing the particular gene. c, VAT progenitor cells labelled based on mitochondrial gene distribution: group 0 (grey, 5,018 cells) shows cells with mitochondrial gene expression <= 5%, group 1 (blue, 4,100 cells) represents 6-14% expression and group 2 (red, 729 cells) represents 15-24% expression. See also Supplementary Fig. 5. d, Pearson correlation of fasting glucose levels (mmol l-1) and VPM cell proportion across all samples from 12 individuals. e, Expression pattern of UCP1, MSLN and WT1 from bulk RNA-seq showing the change in expression in mature adipocytes. 
+ 
+Source data 
+ 
+Full size image[] 
+ 
+Fig. 6: Progenitor clusters specific to the VAT derived from individuals with obesity. 
+ 
+Visceral-specific progenitor cells have different origins and mitochondrial activity 
+ 
+In contrast to VPCs, VPM cells seemed to have unique properties specific to the visceral depot with a signature of mesothelial origin, as discussed above. Apart from the specific expression of MSLN, the VPM progenitor cells also expressed the mesothelial adipocyte markers UPK3B and WT1 (Extended Data Fig. 2). Comparing VPC and VPM cells, we also noted clear differences in mitochondrial gene expression. Specifically, we found that the VPM cells had comparatively high mitochondrial expression (that is, 6-20%), whereas VPCs showed a consistent pattern of low (that is, <= 5%) expression of mitochondrial genes (Fig. 6c). As it is well known that brown adipocytes contain a higher number of mitochondria than white adipocytes, this intriguing finding prompted us to test whether the VPM cells constitute progenitors with differentiation potential towards beige adipocytes, thus potentially having a protective function against obesity and insulin resistance. To test this, we first correlated VPM cell proportion with fasting glucose levels and found a significant negative correlation (Pearson r = -0.64, P = 0.025, Fig. 6d). We also noted that VPM cells expressed PLA2G2A (VP1, adjusted P = 5.84 x 10-109), which was recently shown to activate mitochondrial uncoupling in brown adipose tissue and, in line with our observations here, provided protection from the deleterious effects of high-fat diets in mice32. In addition, the mitochondrial marker gene SOD2 (VP3, adjusted P = 2.72 x 10-245), which is upregulated in beige and brown adipose tissue33 compared to white adipose tissue, was found to be specific to the VPM cells34. 
+ 
+Next, we investigated whether this beige adipose signature found among a subset of the VAT progenitor cells (that is, VPM cells) could be validated in independent datasets of purified VAT- and SAT-derived mature adipocytes from the same clinical study population (Supplementary Table 22). Indeed, we noted striking over-representation of not only the mesothelial markers MSLN (log2(fold) = 1.48, adjusted P = 1.7 x 10-3), WT1 (log2(fold) = 2.73, adjusted P = 8.1 x 10-10) and UPK3B (log2(fold) = 2.54, adjusted P = 8.3 x 10-9) but also the classical markers for beige and brown adipocytes EBF2 (log2(fold) = 2.39, adjusted P = 2.1 x 10-20), PRDM16 (log2(fold) = 1.44, adjusted P = 9.9 x 10-5) and UCP1 (log2(fold) = 2.20, adjusted P = 2.3 x 10-7). However, the progenitor or mature brown adipocyte markers MYF5 (log2(fold) = 0.04, adjusted P = 0.96) or ZIC1 (log2(fold) = -0.01, adjusted P = 0.98) were not differentially expressed, suggesting that the VPM cells are not of the brown adipocyte lineage. We then used bulk SVF and whole tissue from VAT and SAT to validate the induction of UCP1 during differentiation to mature adipocytes; by contrast, the expression of MSLN and WT1 peaks in progenitors (Fig. 6e). In addition, we noted a strong negative correlation in VAT between UCP1 and both mesothelial markers (MSLN versus UCP1, Pearson r = -0.72, P = 0.018 and WT1 versus UCP1, Pearson r = -0.72, P = 0.019; Supplementary Fig. 6). We also noted a significant positive correlation between UCP1 and IRX3 in VAT (Pearson r = 0.85, P = 1.71 x 10-3) in line with recent reports showing the induction of IRX3 in the browning process of adipocytes35 (Supplementary Fig. 6). Last, in line with our observations of marker genes characterizing VPM cells, we observed a trend towards SOD2 expression being positively correlated with the expression of UCP1 (Pearson r = 0.56, P = 0.09), further indicating a browning signature of a subset of VPM-derived adipocytes residing in the visceral depot only. 
+ 
+These several lines of evidence indicate that there are UCP1+ cells originating from MSLN- and WT1-expressing progenitors in the VAT, with the expression of UCP1 peaking in mature adipocytes that underwent browning. This may explain why we failed to detect any UCP1-expressing cells in our large single-cell dataset of VPM progenitors from individuals with obesity. However, as we observed a negative correlation between the proportions of VPM cells and metabolic disease status (Fig. 6d), we proposed that UCP1-expressing pre-adipocytes derived from VPM progenitors may be more prevalent in healthy tissue early in development. To address this, we accessed VAT from a healthy young donor. We used the subset of CD34+ cells for clustering (Fig. 7) and confirmed the high abundance of MSLN-and WT1- progenitors in the SVF derived from VAT. Encouragingly, we also identified a distinct cluster of cells among the VPM cells that not only expressed UCP1 (Fig. 7c) but also had the highest mitochondrial content (Fig. 7d). Finally, we also noted SOD2 among the top genes with differential expression between UCP1-expressing versus non-UCP1-expressing VPM cells (adjusted P = 7.02 x 10-93), with 95% of UCP1+ cells expressing the gene versus only 75% of the UCP1- VPM cells. By contrast, as shown above, UCP1+ cells had significantly lower expression of WT1 (adjusted P = 4.24 x 10-8), with only 22% of UCP1+ cells expressing the gene versus 56% of the UCP1- VPM cells (Supplementary Table 23). 
+ 
+[figure 7] 
+ 
+a, Re-clustering of progenitors identified six clusters comprising 1,781 cells. b, MSLN expression (purple) across progenitor clusters. c, UCP1 expression across the six clusters of progenitors. d, Mitochondrial gene expression across the six clusters of progenitors. 
+ 
+Full size image[] 
+ 
+Fig. 7: Progenitor clusters specific to the VAT derived from a healthy individual. 
+ 
+Discussion 
+ 
+We have performed a large, unbiased assessment of the cellular landscape in the non-adipocyte fraction of human adipose tissue (known as the SVF). The corresponding mature adipocyte fraction per depot was studied in parallel by bulk sequencing approaches, owing to current technical limitations in profiling large and lipid-rich cells at single-cell resolution. Study subjects were selected on the basis of obesity-related metabolic phenotypes, including the presence or absence of T2D, which allowed the incorporation of differences in cell populations not only dependent on depot but also on disease status. 
+ 
+Our initial classification resulted in three broad categories of cell types: progenitors or stem cells, immune cells and endothelial cells. Endothelial cells represented around 8% of all cells, but distinctive signatures divided the group further into subpopulations. Although in a minority, endothelial cells are well known to play an important role in adipose tissue inflammation (obesity-induced T2D has been associated with profound dysfunction of endothelial cells)36. The largest population of endothelial cells were characterized as fatty-acid-handling microvascular endothelial cells because of their pronounced expression of genes encoding fatty acid transport and binding proteins. These results are in line with recent work showing the importance of endothelial fatty acid uptake in adipose tissue, especially during obesity-induced tissue inflammation12. Another subpopulation was identified as lymphatic derived, owing to expression of the lymphatic vessel endothelial hyaluronan receptor (LYVE1) gene. This is of interest as recent studies have shown the importance of crosstalk between lymphatic vessels and adipose tissue, and that lymphatic dysfunction is linked to metabolic diseases37. We extend these efforts and show that the lymphatic vasculature is depot specific, as the majority of these cells were derived from visceral samples. 
+ 
+Our characterization of adipose-resident immune cells, representing around 30% of the cells, confirmed the complex nature of obesity-induced adipose tissue inflammation. We identified 14 different immune cell types, including T cells, B cells, natural killer cells, dendritic cells, monocytes and macrophages. T cells, and particularly the CD8+ subset, play an important role in adipose inflammation; the obese adipose tissue activates these cells, which then recruit and activate adipose-resident macrophages38. We identified activated memory CD8+ T cells expressing CCL5, which is positively correlated with obesity39 (increased expression is associated with increased BMI). Interestingly, we found that a subpopulation of these CD8+ T cells express metallothionein with a unique clustering pattern compared to the activated memory CD8+ T cells, which may be associated with obesity-related traits. Specifically, using two large population-based adipose tissue resources, we found a strong association between the expression of the cell-specific metallothionein genes MT2A, MT1F and MT1G and obesity phenotypes, indicating a role for these cells in adipose dysfunction. This T cell expression profile of metallothionein genes was recently linked to a novel dysfunctional CD8+ T cell population identified in single-cell studies of tumour-infiltrating lymphocytes40, in which targeted deletion of the metallothionein genes resulted in loss of T cell dysfunction. Similarly to Singer et al., we also found that these metallothionein genes are expressed only in the potential dysfunctional adipose-resident T cells but not in the activated memory CD8+ T cells, and as such break new grounds in possibly defining the role of T cells in adipose inflammation and potentially in insulin resistance. 
+ 
+As mentioned above, macrophages are activated by T cells and infiltrate the adipose tissue, contributing to obesity-related tissue inflammation and subsequent insulin resistance. Adipose-resident macrophages play a different key role in energy metabolism, clearance of dead adipocytes and removal of extracellular lipids41, which are found to be altered during the development of obesity and insulin resistance. We observed that, with high expression of genes involved in lipid metabolism during obesity, the largest macrophage population probably represents the so-called metabolically active ATMs, which have been associated with a beneficial role in obesity, including promoting the clearance of dead adipocytes42. We further showed that they have selective expression of CD9, which suggests that they represent a distinct type of obesity-related ATMs. 
+ 
+We identified multiple clusters of progenitor cells with clear expression signatures dependent on cell source (that is, subcutaneous or visceral). They were further characterized to be at different stages of adipogenesis, which was marked by a varying degree of CFD expression. CFD has been identified as a key player in adipogenesis, with knockdown of the gene inhibiting lipid accumulation and the expression of adipocyte markers during adipocyte differentiation43. By contrast, overexpression of CFD promotes adipocyte differentiation. We confirmed the association of CFD expression and adipocyte differentiation with validation experiments using MSCs that were monitored during adipogenesis. These stem cells were derived from bone marrow and cultured in vitro and may therefore possess different properties to adipose-derived stem cells; however, they were recently shown to have similar adipogenic differential potential44. We also show clear distinction between the subpopulations beyond what has been shown before45. We identified a subtype of premature adipocytes that are associated with T2D (individuals with high glucose levels had higher abundance of this cell type than those with normal glucose levels). We noted that this T2D-linked cell type was characterized by genes in the PPARg pathway, some of which have a protective role against insulin resistance. One of those key protective genes was GPX3, which had significantly higher expression in cells derived from individuals without diabetes. T2D-associated oxidative stress can be reversed by PPARg-mediated antioxidant regulation through the expression of GPX3 (ref. 46). Furthermore, PPARg agonists such as thiazolidinediones, which are commonly used to treat T2D (although not in our samples), induce these antioxidant effects, resulting in increased expression of GPX3. By contrast, we also found genes expressed by these T2D-associated cells that had a seemingly negative effect on T2D status, including WISP2 and ATF3. The expression of these genes was significantly higher in T2D cells, and a larger proportion of T2D cells expressed the genes than non-T2D cells. WISP2 is an adipokine and, although one of its key functions is to regulate adipogenic commitment and PPARg activation, our results confirm previous findings that it can also induce insulin resistance, probably through the inhibition of adipocyte recruitment and promotion of hypertrophic obesity47. ATF3 inhibits PPARg-mediated transactivation48 and hepatic ATF3 expression is associated with T2D49; as such, ATF3, similarly to GPX3, may serve as a potential therapeutic target for the reduction of insulin resistance. 
+ 
+Finally, although our depot-specific analysis confirmed earlier findings that visceral-derived adipocyte progenitors originate from the mesothelium28, we provide additional support to the idea that a subset of these are also probably inducible by environmental stimuli and may differentiate into beige pre-adipocytes. For instance, we noted that the visceral-specific VPM cells, although CD34+WT1+, did not express MYF5, suggesting that, rather than being classic brown pre-adipocytes, they are more likely to be induced and could be consistent with so-called beige adipocyte progenitors50. Although the physiological importance of such beige adipocyte progenitors in the VAT of individuals with morbid obesity is uncertain, they may represent a compensatory mechanism to reduce the adverse effects of obesity. This idea is supported by our finding of over-representation of this particular cell population in non-insulin-resistant and healthy subjects. 
+ 
+We acknowledge that a limitation of our study is the focus on individuals with obesity and that further studies are needed to compare these results with the cellular architecture in adipose tissue derived from healthy individuals. However, as there are clear depot- and region-specific differences in cellular distributions, single-cell profiling spanning healthy and obese individuals would require a surgical procedure common in the general population so that tissue can be obtained for research purposes. 
+ 
+In conclusion, we show the richness of the cellular contribution in human adipose tissue with multiple subpopulations of immune cells, endothelial cells, fibroblasts and progenitors. Investigation of the non-adipocyte fraction of adipose tissue at the single-cell level suggests that the development of obesity and T2D could be a joint action of subpopulations of different cell types with altered functions residing in the adipose tissue. 
+ 
+Methods 
+ 
+Study subjects 
+ 
+Participants were selected through an institutionally approved biobank infrastructure with ongoing recruitment at the Quebec Heart and Lung Institute (IUCPQ, Universite Laval, Quebec City, Canada). Inclusion and exclusion criteria were those related to bariatric surgery. Specifically, men and women who had a BMI >= 40 kg m-2 or >= 35 kg m-2 with major comorbidities, who required surgery and who met the National Institutes of Health (NIH) Guidelines for bariatric surgery were invited to participate. Exclusion criteria were general contra-indications for bariatric surgery, a BMI < 35 kg m-2, age under 18 or over 60 years, abnormal bowel habits including irritable bowel syndrome, pregnancy, cirrhosis, inflammatory bowel disease and previous bariatric surgery. Participants were further selected based on the presence of a signed consent form and availability of T2D status, with subgroups (that is, with or without T2D) were matched for BMI, age and male:female ratio as much as possible. 
+ 
+For the discovery cohort used for scRNA-seq, we identified 14 individuals (four men and ten women) using the above-described inclusion criteria; five individuals were diagnosed with type 2 diabetes and nine individuals did not have type 2 diabetes. Detailed clinical information is provided in Table 1. For single-cell expression validation, two additional individuals were identified using the same selection criteria, including one 35-year-old man without type 2 diabetes with a BMI of 59 kg m-2 and one 42-year-old woman with type 2 diabetes with a BMI of 44.8 kg m-2. 
+ 
+For validation studies using bulk SVF and adipocyte samples, we identified 13 independent individuals from the same study population. This sample set included 12 women and one man with a BMI range from 39.7 to 59.2 kg m-2 and age values ranging from 29 to 60 years. Six of these individuals were diagnosed with T2D and six were not. Similarly, for validation studies using bulk adipose tissue samples, we identified another set of ten independent individuals with BMI between 35.5 and 71.8 kg m-2, age between 42 and 49 years and a male:female ratio of 1:1. 
+ 
+For all sample sets, adipose tissue was collected during the bariatric surgery from two different fat compartments: the greater omentum, corresponding to VAT, and the abdominal subcutaneous fat compartment (SAT). Informed consent was obtained from each participant through the management of the framework of the Quebec Heart and Lung Institute Obesity Biobank. The protocol was approved by the Research Ethics Committee of the IUCPQ (protocol number 21320). 
+ 
+Sample preparation 
+ 
+SVF and mature adipocytes were obtained as follows: adipose tissue was digested within 30 min of collection with collagenase according to a modification of the Robdell method51. Briefly, adipose tissue samples were digested with collagenase type 1 in Krebs-Ringer-Henseleit (KRH) buffer for 45 min at 37 degC. Cell suspensions containing mature adipocytes and SVF were then filtered with a nylon mesh and washed three times with KRH buffer. The buoyancy of adipocytes allows them to float to the surface. Mature adipocytes were divided into aliquots, and the remaining solution containing the SVF was centrifuged at 1,500 r.p.m. for 5 min. The pellet was washed with pre-adipocyte growth medium (PGM) (DMEM-F12 supplemented with 10% FBS, 1% penicillin-streptomycin, 17 uM pantothenic acid, 33 uM biotin, 100 uM ascorbic acid and 2.5 um ml-1 amphoB) followed by a second centrifugation. SVF cells were then cryopreserved using freezing medium (PGM supplemented with 40% FBS and 10% DMSO). The medium was added to the pellet and frozen with a temperature gradient (-1 degC per min) and stored in liquid nitrogen until analysis. Whole adipose tissue samples were quickly frozen in liquid nitrogen following collection and stored until analysis. 
+ 
+Isolation of CD34+CD34- SVF cells by FACS 
+ 
+Cells from the SVF were thawed and suspended in PBS with 0.1% BSA. They were centrifuged at 1,500 r.p.m. for 5 min. Erythrocyte lysis buffer was added for 5 min to the suspension to remove red blood cells. The suspension was centrifuged again at 1,500 r.p.m. for 5 min. Primary antibody (CD34, PE, eBioscience) was added to the samples and incubated for 60 min at 4 degC in the dark. PBS with 0.1% BSA was added to wash the suspension followed by 80 um filtration with a nylon mesh to remove debris. The suspension was then transferred to a 10 ml polypropylene tube, centrifuged at 1,500 r.p.m. for 5 min and the pellet was suspended in PBS with 0.1% BSA. Viability staining solution was added 15 min before the sorting process. Viability control was performed with live and dead cells to ascertain that the staining solution worked well, and for gate adjustment. OneComp Ebeads (Thermo Fisher Scientific) control was also used to provide a positive and negative control for the antibody. The samples were sorted with the BD FACSAria II (BD Biosciences) with the following parameters: cell size, graininess, viability, singlet cell and CD34+CD34-. 
+ 
+Dead and non-singlet cells were automatically discarded. Cells that were positive and negative for CD34 were collected in two distinct tubes (Supplementary Fig. 7). After sorting, cells were centrifuged at 1,500 r.p.m. for 5 min and were conserved in freezing medium as described above and stored at -80 degC until further analysis. 
+ 
+MSC culture and differentiation 
+ 
+Bone-marrow-derived mesenchymal stromal cells (LY-MSCs) from eight healthy 19-27 year-old female donors were provided by the GMP facility of the Advanced Cell Therapy Centre, Finnish Red Cross Blood Service (FRCBS), Helsinki, Finland. The cells were thawed, expanded and differentiated into adipocytes following the FRCBS protocol published previously52. Briefly, in preparation for adipogenic differentiation, cells at passage number three were plated in 10 cm cell culture plates (Corning) and grown in expansion medium containing low-glucose DMEM (Thermo Fisher Scientific), 100 units per ml penicillin and 100 mg ml-1 streptomycin (Thermo Fisher Scientific) and 10% Stemulate (pooled human platelet lysate culture media supplement, Cook Regentec) until they reached 70-90% confluence (timepoint 1), at which point the medium was changed to adipogenic basal medium containing alpha-MEM GlutaMAX, 10% FBS, 20 mM HEPES, 100 units per ml penicillin and 100 mg ml-1 streptomycin (Thermo Fisher Scientific). Half of the culture plates were used as controls and maintained in the adipogenic basal medium until harvesting. The other half was subjected to adipogenic differentiation. More specifically, the cells were first incubated for 3-4 days in adipogenic basal medium supplemented with the induction cocktail of 0.1 mM indomethacin (Sigma-Aldrich), 0.5 mg ml-1 insulin, 0.2 mM 3-isobutyl-1-methylxanthine (IBMX) and 0.4 mg ml-1 dexamethasone (Preadipocyte Differentiation Medium Supplement Pack, PromoCell) (timepoint 2); the medium was then changed to the terminal differentiation cocktail containing 0.1 mM indomethacin (Sigma-Aldrich), 0.5 mg ml-1 insulin and 3 mg ml-1 ciglitazone (PromoCell). The medium was changed twice a week for all plates and the differentiation was allowed to proceed for 3 weeks for timepoint 3 or 4 weeks for timepoint 4. For each donor, samples were harvested at timepoint 1 (non-differentiated cells), timepoint 2 (adipocyte-induced control without drugs in the media or differentiated with induction drugs), timepoint 3 (adipocyte control without drugs in the media or differentiated with drugs) and timepoint 4 (adipocyte control without drugs in the media or differentiated with drugs). 
+ 
+scRNA-seq 
+ 
+Cells from the SVF were thawed and serially diluted in DMEM/F12 supplemented with 10% FBS and 1% penicillin-streptomycin in a 15 ml conical tube to a volume of 14 ml. They were centrifuged at 300 r.c.f. for 10 min and the supernatant was removed and discarded. The pelleted cells were suspended in an adequate amount of DMEM/F12 supplemented with 10% FBS and 1% penicillin-streptomycin and transferred to a 1.5 ml microfuge tube for counting. To determine the volume of suspension to be used in the 10x Chromium Single Cell Library protocol, 10 ul of the suspension was used for a cell count and viability assay on a Countess II Automated Cell Counter (Invitrogen). The desired number of viable cells to be loaded onto the Chromium Single Cell A Chip (10x Genomics) was 12,000 cells. After cell capture, the remaining cells were centrifuged at 300 r.c.f. for 10 min and cryopreserved using freezing medium (Recovery Cell Culture Freezing Medium, Thermo Fisher Scientific). The cells were suspended in freezing medium and frozen with a temperature gradient of -1 degC per min. Cell capture, complementary DNA amplification and library preparation were performed using the Chromium Single Cell 3' Library & Gel Bead Kit v2 (10x Genomics), according to the manufacturer's protocol. The final libraries were analysed using a TapeStation (Agilent) to determine library size and a Qubit Broad Range dsDNA assay (Thermo Fisher Scientific) to determine library concentration and sequenced using Illumina HiSeq at high depth (mean 171,560 reads per cell), capturing on average 1,527 cells per sample. 
+ 
+Bulk RNA sequencing 
+ 
+A total of 0.5-3 million cells were re-suspended in 500 ul TRIzol reagent and total RNA was extracted using the miRNeasy Mini Kit (Qiagen) according to the manufacturer's protocol. RNA library preparations were carried out on 500 ng of RNA with an RNA integrity number greater than seven using the Illumina TruSeq Stranded Total RNA Sample Preparation Kit (Illumina), according to manufacturer's protocol. Final libraries were analysed on a Bioanalyzer (Agilent) and sequenced on the Illumina HiSeq 2500 (Illumina, pair-ended 100-150 bp sequences). On average 61,222,621, 49,175,966, 66,301,281 and 84,454,561 paired-end reads were sequenced in adipocytes, SVF, adipose tissue and MSCs, respectively. 
+ 
+Quality control and clustering of single-cell data from the SVF 
+ 
+Initial analysis of the single-cell libraries was done using cellranger v.2.1.0 from 10x Genomics. GRCh38 was used as the genome reference. The analysis was started with 26 samples. All sequenced samples were aggregated using the cellranger aggr pipeline, where read depth difference between libraries was normalized by subsampling higher-depth libraries. Seurat53 was used for further analysis of clustering, dimensionality reduction and differential gene expression. For filtering, we used only cells with a minimum gene count of 200 and a maximum of 2,500 genes per cell based on their distribution in the sample. We also removed cells with less than 200 and greater than 13,750 unique molecular identifiers (UMIs) per cell. Cells with mitochondrial gene expression greater than 20% were also removed. However, clustering showed that the majority of the cells (90%) from one sample were clustered together apart from the clusters of all the other samples. The sample was removed the and analysis was repeated. 
+ 
+The final input data to Seurat consisted of 38,170 cells, and after filtering we obtained 26,350 cells. 11,111 cells were removed because of a low gene or UMI count. We regressed out the variability due to UMI distribution, mitochondrial gene expression and the difference between G2M and S phase scores based on the gene expression of cell cycle genes54. The top 23 dimensions were used to generate the final clusters using principal component analysis (PCA) and graph-based clustering. The top 100 genes in each cluster were identified in comparison with all other cells using the function 'FindAllMarkers' in Seurat while keeping a cutoff of padj <= 0.01. Genes expressed in a minimum of 25% of cells in either of the test populations were considered for analysis. Clusters were annotated using overlapping known marker genes among the cluster-specific genes. Differential gene expression analysis between cell populations was done using the Wilcoxon rank sum test in 'FindMarkers' function. The raw expression data of the filtered cells used in clustering of Seurat was used for generating annotation using SingleR with default parameters55. The annotation for each cell was then overlapped with Seurat cluster identities to identify the cell type of each cluster. The subsets for the VAT progenitors and immune clusters were created from the clustering results using the 'SubsetData' function of Seurat. The top ten and 15 dimensions were used for clustering VAT progenitors and immune cells, respectively, using highly variable genes in the corresponding data. 
+ 
+The sample with highest number of cells captured (n = 6,672) is randomly subsampled to 1,500 cells to match the cell counts of remaining samples. The clustering was repeated using the same settings as that of the initial analysis. A subset of SAT progenitors (P2, P4, P6 and P7) was created. Cells from the VAT that were included in the subset were removed and we obtained 2,705 that were from SAT progenitors. The top variable genes were identified and clustering was done using the top ten dimensions. The cluster-specific genes were used for functional annotation using DAVID Bioinformatics Resources 6.8 (ref. ^(56,57)). 
+ 
+Differential gene expression analysis using bulk RNA 
+ 
+Raw reads were trimmed for quality (phred33 >= 30) and length (n >= 32), and Illumina adapters were clipped off using Trimmomatic v.0.35 (ref. 58). Filtered reads were then aligned to the GRCh38 human reference using STAR v.2.5.3a59. Raw read counts of genes were obtained using htseq-count v.0.6.0 (ref. 60). Differential gene expression analysis was done using DeSeq2 v.1.18.1 (ref. 61). 
+ 
+The gene raw count table (V6p) of RNA-seq data was downloaded from the GTEx web portal. The subset of data was then created by selecting only tissues of interest based on the sample attribute file provided in the GTEx portal. Differential expression gene analysis was done using DeSeq2 v.1.18.1. 
+ 
+Detection of CD9+CD68+ macrophages by histological immunofluorescence 
+ 
+VAT and SAT samples from four patients undergoing bariatric surgery were identified, two of whom were diagnosed with type 2 diabetes. The mean age was 47.3 years (standard deviation (SD) = 11.7), and the mean BMI was 49.9 kg m-2 (SD = 5.2). Adipose tissue slides were disembedded by xylene (2 x 10 min) followed by a rehydration step using ethanol (2 x 5 min 100% ethanol, and 2 x 5 min 95% ethanol). Antigen retrieval was performed using citrate buffer 0.01 M (0.1 M citric acid with 0.1 sodium citrate mixed with water) for 5 min at 65 degC and 10 min at 95 degC. The final rehydration step was performed by immersion of the slides for 5 min in water and for 5 min in PBS. Non-specific sites were blocked for at least 45 min using 1x PBS, 0.1% BSA, 0.4% Triton X-100 and 10% goat serum. The slides were incubated with the primary antibodies rabbit anti-human CD9 (PA5-11556, Invitrogen) and mouse anti-human CD68 (ab955, Abcam) overnight at 4 degC in a humidified chamber. The slides were then washed three times in 1x PBS for 5 min. The slides were then incubated with the secondary antibodies goat anti-rabbit Alexa488 (A11008, Invitrogen) and goat anti-mouse Alexa594 (A11005, Invitrogen) for 2 h at room temperature in the dark. The slides were then washed three times with 1x PBS for 5 min. Vectashield mounting medium with DAPI (H-1200, Vector Laboratories) was used and the coverslip was sealed with nail polish. Digital images were taken using a Zeiss LSM800 confocal system (Zeiss). Images were taken at x20 and x63 magnification. The slides were stored at 4 degC in the dark and imaged less than 4 days after staining. 
+ 
+Validation of beige adipocyte signatures by single-cell sequencing 
+ 
+Adipose tissue was collected from a 15-month-old boy undergoing inguinal hernia repair at Children's Mercy Kansas City, Missouri, USA. Consent was obtained through the management of the study protocol approved by the Institutional Review Board at Children's Mercy Kansas City (protocol number 17110653). An easily accessible portion of the greater omentum at the lower end of the omental drape was identified, a portion was pulled out and a 2 cm segment was amputated to allow for areas of cautery changes to be discarded. The specimen was transported in a jar containing saline. Adipose tissue was then prepared as described above to obtain the SVF. The SVF pellet was treated with ACK lysis buffer at room temperature (22 degC) for 5 min, and this was followed by another centrifugation step at 300 r.c.f. at 10 min. The ACK lysis buffer was removed from the pellet and the cells were washed once more with HBSS, 200 uM adenosine and 2% FBS, and centrifuged one final time at 300 r.c.f. at 10 min. Cells were counted to determine the total number of cells in suspension and cell viability. Cells were then cryopreserved using freezing medium (Gibco Recovery Cell Culture Freezing Medium, 10% DMSO). The medium was added to the pellet and was frozen with a temperature gradient (-1 degC per min) and stored in liquid nitrogen until analysis. At the time of single-cell analysis, cells from the SVF were thawed and prepared as described above, including a cell count and viability assay on a Countess II Automated Cell Counter (Invitrogen) to determine the volume of suspension to be used in the 10x Chromium Single Cell Library protocol. The desired number of viable cells to be loaded onto two wells of a Chromium Single Cell A Chip (10x Genomics) was 8,000 cells for a total of two captures with 4,000 cells per capture. Cell capture, cDNA amplification and library preparation were performed using the Chromium Single Cell 3' Library & Gel Bead Kit v2 (10x Genomics), according to the manufacturer's protocol. The final two libraries were analysed using a TapeStation to determine library size and a Qubit Broad Range dsDNA assay to determine library concentration and sequenced on an Illumina NovaSeq6000 instrument (Illumina). For QC and clustering, we followed same procedure used for the discovery samples to analyse the validation sample. However, for filtering, we used only cells with a minimum gene count of 200 and a maximum of 6,000 genes per cell based on their distribution in the sample. We also removed cells with more than 50,000 UMIs. Cells with mitochondrial gene expression greater than 40% were also removed. After filtering we used 2,779 cells for further clustering and analysis. The top 55 dimensions were used to generate the final clusters using PCA and graph-based clustering. The subsets for the progenitors were created from the clustering results using the 'SubsetData' function of Seurat. The top 50 dimensions were used for clustering VAT progenitors using highly variable genes in the corresponding data. 
+ 
+Gene expression analysis in population-based cohorts 
+ 
+Associations between gene expression levels (IlluminaHT12) and phenotypes within the MuTHER cohort were modelled using a linear mixed-effects model as described previously17. Briefly, the lmer function in the lme4 package, was fitted by maximum-likelihood. The linear mixed-effects model was adjusted for age and experimental batch (fixed effects) and family relationship (twin-pairing) and zygosity (random effects). A likelihood ratio test was used to assess the significance of the phenotype effect. The P value of the phenotype effect in each model was calculated from the kh2 distribution with 1 degree of freedom using -2log(likelihood ratio) as the test statistic. Summary statistics from associations between gene expression levels and phenotypes within the METSIM cohort were obtained from METSIM study18. 
+ 
+Reporting Summary 
+ 
+Further information on research design is available in the Nature Research Reporting Summary linked to this article. 
+ 
+Data availability 
+ 
+Raw data files from single-cell and bulk RNA-seq used in this study are uploaded in the Gene Expression Omnibus (GEO) in a SuperSeries with accession number: GSE136230. The expression data from the MuTHER cohort have been deposited in the ArrayExpress (https://www.ebi.ac.uk/arrayexpress/) with accession number E-TABM-1140. Source data are available online for Figs. 3, 5 and 6, and Supplementary Fig. 6. 
+ 
+References 
+ 
+1. Tchernof, A. & Despres, J. P. Pathophysiology of human visceral obesity: an update. Physiol. Rev 93, 359-404 (2013). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+2. Porter, S. A. et al. Abdominal subcutaneous adipose tissue: a protective fat depot? Diabetes Care 32, 1068-1075 (2009). 
+ 
+ Article PubMed PubMed Central Google Scholar 
+ 
+3. Laforest, S., Labrecque, J., Michaud, A., Cianflone, K. & Tchernof, A. Adipocyte size as a determinant of metabolic disease and adipose tissue dysfunction. Crit. Rev. Clin. Lab. Sci. 52, 301-313 (2015). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+4. Denis, G. V. & Obin, M. S. 'Metabolically healthy obesity': origins and implications. Mol. Aspects Med. 34, 59-70 (2013). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+5. Michaud, A. et al. Relevance of omental pericellular adipose tissue collagen in the pathophysiology of human abdominal obesity and related cardiometabolic risk. Int. J. Obes. (Lond) 40, 1823-1831 (2016). 
+ 
+ Article CAS Google Scholar 
+ 
+6. Schipper, H. S., Prakken, B., Kalkhoven, E. & Boes, M. Adipose tissue-resident immune cells: key players in immunometabolism. Trends Endocrinol. Metab. 23, 407-415 (2012). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+7. Nawaz, A. et al. CD206(+) M2-like macrophages regulate systemic glucose metabolism by inhibiting proliferation of adipocyte progenitors. Nat. Commun. 8, 286 (2017). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+8. Olsen, T. K. & Baryawno, N. Introduction to Single-Cell RNA Sequencing. Curr. Protoc. Mol. Biol. 122, e57 (2018). 
+ 
+ Article PubMed CAS Google Scholar 
+ 
+9. Schwalie, P. C. et al. A stromal cell population that inhibits adipogenesis in mammalian fat depots. Nature 559, 103-108 (2018). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+10. Helper, C. et al. Identification of functionally distinct fibro-inflammatory and adipogenic stromal subpopulations in visceral adipose tissue of adult mice. eLife 7, e39636 (2018). 
+ 
+ Article Google Scholar 
+ 
+11. Ehrlund, A. et al. The cell-type specific transcriptome in human adipose tissue and influence of obesity on adipocyte progenitors. Sci. Data 4, 170164 (2017). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+12. Briot, A. et al. Senescence alters PPARg (peroxisome proliferator-activated receptor gamma)-dependent fatty acid handling in human adipose tissue microvascular endothelial cells and favors inflammation. Arterioscler. Thromb. Vasc. Biol. 38, 1134-1146 (2018). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+13. Banerji, S. et al. LYVE-1, a new homologue of the CD44 glycoprotein, is a lymph-specific receptor for hyaluronan. J. Cell Biol. 144, 789-801 (1999). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+14. Schluns, K. S., Kieper, W. C., Jameson, S. C. & Lefrancois, L. Interleukin-7 mediates the homeostasis of naive and memory CD8 T cells in vivo. Nat. Immunol. 1, 426-432 (2000). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+15. Michelet, X. et al. Metabolic reprogramming of natural killer cells in obesity limits antitumor responses. Nat. Immunol. 19, 1330-1340 (2018). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+16. Schall, T. J. et al. A human T cell-specific molecule is a member of a new gene family. J. Immunol. 141, 1018-1025 (1988). 
+ 
+ CAS PubMed Google Scholar 
+ 
+17. Small, K. S. et al. Identification of an imprinted master trans regulator at the KLF14 locus related to multiple metabolic phenotypes. Nat. Genet. 43, 561-564 (2011). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+18. Civelek, M. et al. Genetic regulation of adipose gene expression and cardio-metabolic traits. Am. J. Hum. Genet. 100, 428-443 (2017). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+19. Kratz, M. et al. Metabolic dysfunction drives a mechanistically distinct proinflammatory phenotype in adipose tissue macrophages. Cell Metab. 20, 614-625 (2014). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+20. Jager, N. A. et al. Folate receptor-b imaging using ^(99m)Tc-folate to explore distribution of polarized macrophage populations in human atherosclerotic plaque. J. Nucl. Med. 55, 1945-1951 (2014). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+21. Liao, X. et al. Kruppel-like factor 4 regulates macrophage polarization. J. Clin. Invest. 121, 2736-2749 (2011). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+22. Villani, A. C. et al. Single-cell RNA-seq reveals new types of human blood dendritic cells, monocytes, and progenitors. Science 356, eaah4573 (2017). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+23. Acosta, J. R. et al. Increased fat cell size: a major phenotype of subcutaneous white adipose tissue in non-obese individuals with type 2 diabetes. Diabetologia 59, 560-570 (2016). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+24. Ribeiro, R. et al. Human periprostatic white adipose tissue is rich in stromal progenitor cells and a potential source of prostate tumor stroma. Exp. Biol. Med. (Maywood) 237, 1155-1162 (2012). 
+ 
+ Article CAS Google Scholar 
+ 
+25. Yang, R. Z. et al. Identification of omentin as a novel depot-specific adipokine in human adipose tissue: possible role in modulating insulin action. Am. J. Physiol. Endocrinol. Metab. 290, E1253-E1261 (2006). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+26. de Souza Batista, C. M. et al. Omentin plasma levels and gene expression are decreased in obesity. Diabetes 56, 1655-1661 (2007). 
+ 
+ Article PubMed CAS Google Scholar 
+ 
+27. Watanabe, T., Watanabe-Kominato, K., Takahashi, Y., Kojima, M. & Watanabe, R. Adipose tissue-derived omentin-1 function and regulation. Compr. Physiol. 7, 765-781 (2017). 
+ 
+ Article PubMed Google Scholar 
+ 
+28. Chau, Y. Y. et al. Visceral and subcutaneous fat have different origins and evidence supports a mesothelial source. Nat. Cell Biol. 16, 367-375 (2014). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+29. Winnier, D. A. et al. Transcriptomic identification of ADH1B as a novel candidate gene for obesity and insulin resistance in human adipose tissue in Mexican Americans from the Veterans Administration Genetic Epidemiology Study (VAGES). PLoS One 10, e0119941 (2015). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+30. Vaittinen, M. et al. MFAP5 is related to obesity-associated adipose tissue and extracellular matrix remodeling and inflammation. Obesity (Silver Spring) 23, 1371-1378 (2015). 
+ 
+ Article CAS Google Scholar 
+ 
+31. Hou, S. et al. S100A4 protects mice from high-fat diet-induced obesity and inflammation. Lab. Invest. 98, 1025-1038 (2018). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+32. Kuefner, M. S. et al. Secretory phospholipase A2 group IIA modulates insulin sensitivity and metabolism. J. Lipid. Res. 58, 1822-1833 (2017). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+33. Perdikari, A. et al. BATLAS: deconvoluting brown adipose tissue. Cell Rep. 25, 784-797 e784 (2018). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+34. Wankhade, U. D. et al. TGF-b receptor 1 regulates progenitors that promote browning of white fat. Mol. Metab. 16, 160-171 (2018). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+35. Zou, Y. et al. IRX3 promotes the browning of white adipocytes and its rare variants are associated with human obesity risk. EBioMedicine 24, 64-75 (2017). 
+ 
+ Article PubMed PubMed Central Google Scholar 
+ 
+36. Roberts, A. C. & Porter, K. E. Cellular and molecular mechanisms of endothelial dysfunction in diabetes. Diab. Vasc. Dis. Res. 10, 472-482 (2013). 
+ 
+ Article PubMed CAS Google Scholar 
+ 
+37. Escobedo, N. & Oliver, G. The lymphatic vasculature: Its role in adipose metabolism and obesity. Cell Metab. 26, 598-609 (2017). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+38. Nishimura, S. et al. CD8+ effector T cells contribute to macrophage recruitment and adipose tissue inflammation in obesity. Nat. Med. 15, 914-920 (2009). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+39. Wu, H. et al. T-cell accumulation and regulated on activation, normal T cell expressed and secreted upregulation in adipose tissue in obesity. Circulation 115, 1029-1038 (2007). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+40. Singer, M. et al. A distinct gene module for dysfunction uncoupled from activation in tumor-infiltrating T cells. Cell 166, 1500-1511 e1509 (2016). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+41. Russo, L. & Lumeng, C. N. Properties and functions of adipose tissue macrophages in obesity. Immunology 155, 407-417 (2018). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+42. Coats, B. R. et al. Metabolically activated adipose tissue macrophages perform detrimental and beneficial functions during diet-induced obesity. Cell Rep. 20, 3149-3161 (2017). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+43. Song, N. J. et al. Small molecule-induced complement factor D (Adipsin) promotes lipid accumulation and adipocyte differentiation. PLoS One 11, e0162228 (2016). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+44. Li, C. Y. et al. Comparative analysis of human mesenchymal stem cells from bone marrow and adipose tissue under xeno-free conditions for cell therapy. Stem Cell Res. Ther. 6, 55 (2015). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+45. Acosta, J. R. et al. Single cell transcriptomics suggest that human adipocyte progenitor cells constitute a homogeneous cell population. Stem Cell Res. Ther. 8, 250 (2017). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+46. Chung, S. S. et al. Glutathione peroxidase 3 mediates the antioxidant effect of peroxisome proliferator-activated receptor g in human skeletal muscle cells. Mol. Cell Biol. 29, 20-30 (2009). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+47. Hammarstedt, A. et al. WISP2 regulates preadipocyte commitment and PPARg activation by BMP4. Proc. Natl Acad. Sci. USA 110, 2563-2568 (2013). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+48. Jang, M. K. & Jung, M. H. ATF3 inhibits PPARg-stimulated transactivation in adipocyte cells. Biochem. Biophys. Res. Commun. 456, 80-85 (2015). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+49. Kim, J. Y. et al. Activating transcription factor 3 is a target molecule linking hepatic steatosis to impaired glucose homeostasis. J. Hepatol. 67, 349-359 (2017). 
+ 
+ Article PubMed Google Scholar 
+ 
+50. Wu, J. et al. Beige adipocytes are a distinct type of thermogenic fat cell in mouse and human. Cell 150, 366-376 (2012). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+51. Tchernof, A. et al. Regional differences in adipose tissue metabolism in women: minor effect of obesity and body fat distribution. Diabetes 55, 1353-1360 (2006). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+52. Laitinen, A. et al. A robust and reproducible animal serum-free culture method for clinical-grade bone marrow-derived mesenchymal stromal cells. Cytotechnology 68, 891-906 (2016). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+53. Butler, A., Hoffman, P., Smibert, P., Papalexi, E. & Satija, R. Integrating single-cell transcriptomic data across different conditions, technologies, and species. Nat. Biotechnol. 36, 411-420 (2018). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+54. Tirosh, I. et al. Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq. Science 352, 189-196 (2016). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+55. Aran, D. et al. Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage. Nat. Immunol. 20, 163-172 (2019). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+56. Huang da, W., Sherman, B. T. & Lempicki, R. A. Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources. Nat. Protoc. 4, 44-57 (2009). 
+ 
+ Article PubMed CAS Google Scholar 
+ 
+57. Huang da, W., Sherman, B. T. & Lempicki, R. A. Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists. Nucleic Acids Res. 37, 1-13 (2009). 
+ 
+ Article PubMed CAS Google Scholar 
+ 
+58. Bolger, A. M., Lohse, M. & Usadel, B. Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics 30, 2114-2120 (2014). 
+ 
+ Article CAS PubMed PubMed Central Google Scholar 
+ 
+59. Dobin, A. et al. STAR: ultrafast universal RNA-seq aligner. Bioinformatics 29, 15-21 (2013). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+60. Anders, S., Pyl, P. T. & Huber, W. HTSeq-a Python framework to work with high-throughput sequencing data. Bioinformatics 31, 166-169 (2015). 
+ 
+ Article CAS PubMed Google Scholar 
+ 
+61. Love, M. I., Huber, W. & Anders, S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 15, 550 (2014). 
+ 
+ Article PubMed PubMed Central CAS Google Scholar 
+ 
+Download references[] 
+ 
+Acknowledgements 
+ 
+This work was supported by a Canadian Institute of Health Research (CIHR) team grant awarded to E.G. (EGM141898) and the CIHR-funded Epigenome Mapping Centre at McGill University (EP1-120608) awarded to T.P. E.G. holds the Roberta D. Harding & William F. Bradley, Jr. Endowed Chair in Genomic Research and T.P. holds the Dee Lyons/Missouri Endowed Chair in Pediatric Genomic Medicine. A.T. is the director of a Research Chair in Bariatric and Metabolic Surgery. M.C.V. is the recipient of the Canada Research Chair in Genomics Applied to Nutrition and Metabolic Health (tier 1). The MuTHER study was funded by a program grant from the Wellcome Trust (081917/Z/07/Z) and core funding for the Wellcome Trust Centre for Human Genetics (090532). The TwinsUK study was funded by the Wellcome Trust and European Community's Seventh Framework Programme (FP7/2007-2013). The TwinsUK study also receives support from the National Institute for Health Research (NIHR)-funded BioResource, Clinical Research Facility and Biomedical Research Centre based at Guy's and St Thomas' NHS Foundation Trust in partnership with King's College London. The authors thank M. Korhonen and M. Ahti at the Finnish Red Cross Blood Service, Helsinki, Finland, for valuable help in this study. The GTEx Project was supported by the Common Fund of the Office of the Director of the NIH, and by the National Cancer Institute (NCI), National Human Genome Research Institute (NHGRI), National Heart, Lung and Blood Institute (NHLBI), National Institute of Drug Abuse (NIDA), National Institute of Mental Health (NIMH) and National Institue of Neurological Disorders and Stroke (NINDS). The data used for the analyses described in this manuscript were obtained from the dbGaP accession number phs000424.v7.p2 on 7 October 2019. 
+ 
+Author information 
+ 
+Authors and Affiliations 
+ 
+1. Department of Human Genetics, McGill University, Montreal, Quebec, Canada 
+ 
+ Jinchu Vijay & Guillaume Bourque 
+ 
+2. McGill University and Genome Quebec Innovation Centre, Montreal, Quebec, Canada 
+ 
+ Jinchu Vijay, Albena Pramatarova, Marie-Michelle Simon, Haig Djambazian, Alfredo Staffa & Guillaume Bourque 
+ 
+3. Quebec Heart and Lung Institute, Universite Laval, Quebec, Quebec, Canada 
+ 
+ Marie-Frederique Gauthier, Laurent Biertho & Andre Tchernof 
+ 
+4. Center for Pediatric Genomic Medicine, Children's Mercy Kansas City, Kansas City, MO, USA 
+ 
+ Rebecca L. Biswell, Daniel A. Louiselle, Jeffrey J. Johnston, Warren A. Cheung, Bradley Belden, Margaret Gibson, Tomi Pastinen & Elin Grundberg 
+ 
+5. Finnish Red Cross Blood Service, Helsinki, Finland 
+ 
+ Anita Laitinen & Johanna Nystedt 
+ 
+6. Institute of Nutrition and Functional Foods (INAF), Universite Laval, Quebec, Quebec, Canada 
+ 
+ Marie-Claude Vohl 
+ 
+7. Department of Surgery, Children's Mercy Kansas City, Kansas City, MO, USA 
+ 
+ Jason D. Fraser 
+ 
+Authors 
+ 
+1. Jinchu Vijay 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+2. Marie-Frederique Gauthier 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+3. Rebecca L. Biswell 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+4. Daniel A. Louiselle 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+5. Jeffrey J. Johnston 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+6. Warren A. Cheung 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+7. Bradley Belden 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+8. Albena Pramatarova 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+9. Laurent Biertho 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+10. Margaret Gibson 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+11. Marie-Michelle Simon 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+12. Haig Djambazian 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+13. Alfredo Staffa 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+14. Guillaume Bourque 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+15. Anita Laitinen 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+16. Johanna Nystedt 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+17. Marie-Claude Vohl 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+18. Jason D. Fraser 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+19. Tomi Pastinen 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+20. Andre Tchernof 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+21. Elin Grundberg 
+ View author publications 
+ 
+ You can also search for this author in PubMed Google Scholar 
+ 
+Contributions 
+ 
+E.G. conceived the study. E.G., A.T., T.P. and M.-C.V. designed experiments. A.T., J.D.F. and M.-F.G prepared or provided the clinical samples. L.B. and B.B. managed the clinical aspects of the study. A.P., R.L.B., M.G., D.A.L. and M.-M.S performed the experiments. W.A.C, J.J.J., H.D., A.S. and G.B. provided bioinformatics support. A.L and J.N. provided the MSC cell lines and culture protocols. J.V. and E.G. analysed the data and drafted the manuscript. All authors reviewed and contributed feedback on the final manuscript. 
+ 
+Corresponding authors 
+ 
+Correspondence to Andre Tchernof or Elin Grundberg. 
+ 
+Ethics declarations 
+ 
+Competing interests 
+ 
+A.T. receives funding from Johnson & Johnson Medical Companies and Medtronic for research unrelated to the present manuscript. The other authors declare no competing interests. 
+ 
+Additional information 
+ 
+Editor recognition Primary handling editor: Elena Bellafante. 
+ 
+Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. 
+ 
+Extended data 
+ 
+Extended Data Fig. 1 Multiple macrophage clusters were identified in SVF from both SAT and VAT depots. 
+ 
+Multiple macrophage clusters were identified in SVF from both SAT and VAT depots (a) 4 distinct macrophage clusters showing varying expression of CD68 (19-52% of cells), CD9 (10-51% of cells) and CD36 (25-72% of cells). The y axis of the violin plot indicate log transformed expression values and the width indicate number of cells expressing the particular gene. (b)Genes involves in lipid metabolism is found expressed in macrophage cluster - IS2, whereas IS3 is rich in inflammatory markers. 
+ 
+Extended Data Fig. 2 Gene expression of marker genes in 6 visceral specific progenitor clusters. 
+ 
+Gene expression of marker genes in 6 visceral specific progenitor clusters. The y axis of the violin plot indicate log transformed expression values and the width indicate number of cells expressing the particular gene. 
+ 
+Supplementary information 
+ 
+Supplementary Information 
+ 
+Supplementary Figures 1-7 
+ 
+Reporting Summary 
+ 
+Supplementary Tables 
+ 
+Supplementary Tables 1-23 
+ 
+Supplementary Data 
+ 
+Statistical source data for Supplementary Figure 6 
+ 
+Source data 
+ 
+Source Data Fig. 3 
+ 
+Statistical source data for Figure 3c 
+ 
+Source Data Fig. 5 
+ 
+Statistical source data for Figure 5d and 5f 
+ 
+Source Data Fig. 6 
+ 
+Statistical source data for Figure 6d 
+ 
+Rights and permissions 
+ 
+Reprints and permissions 
+ 
+About this article 
+ 
+[Check for updates. Verify currency and authenticity via CrossMark] 
+ 
+Cite this article 
+ 
+Vijay, J., Gauthier, MF., Biswell, R.L. et al. Single-cell analysis of human adipose tissue identifies depot- and disease-specific cell types. Nat Metab 2, 97-109 (2020). https://doi.org/10.1038/s42255-019-0152-6 
+ 
+Download citation[] 
+ 
+- Received: 08 March 2019 
+ 
+- Accepted: 13 November 2019 
+ 
+- Published: 23 December 2019 
+ 
+- Issue Date: January 2020 
+ 
+- DOI: https://doi.org/10.1038/s42255-019-0152-6 
+ 
+Share this article 
+ 
+Anyone you share the following link with will be able to read this content: 
+ 
+Get shareable link 
+ 
+Sorry, a shareable link is not currently available for this article. 
+ 
+Copy to clipboard 
+ 
+Provided by the Springer Nature SharedIt content-sharing initiative 
+ 
+Subjects 
+ 
+- Adipocytes 
+- Gene expression 
+- Obesity 
+- RNA sequencing 
+ 
+This article is cited by 
+ 
+- Single-cell RNA sequencing in donor and end-stage heart failure patients identifies NLRP3 as a therapeutic target for arrhythmogenic right ventricular cardiomyopathy 
+ 
+ - Mengxia Fu 
+ - Xiumeng Hua 
+ - Jiangping Song 
+ 
+ BMC Medicine (2024) 
+ 
+- Dissecting human adipose tissue heterogeneity using single-cell omics technologies 
+ 
+ - Giuliana Di Rocco 
+ - Angelo Trivisonno 
+ - Gabriele Toietta 
+ 
+ Stem Cell Research & Therapy (2024) 
+ 
+- Dipeptidyl peptidase-4 marks distinct subtypes of human adipose stromal/stem cells with different hepatocyte differentiation and immunoregulatory properties 
+ 
+ - Yu Zhang 
+ - Mingxi Hua 
+ - Haiyan Zhang 
+ 
+ Stem Cell Research & Therapy (2024) 
+ 
+- PDGFRb + cell HIF2a is dispensable for white adipose tissue metabolic remodeling and hepatic lipid accumulation in obese mice 
+ 
+ - Tao Yao 
+ - Danni Wei 
+ - Ying Wu 
+ 
+ Lipids in Health and Disease (2024) 
+ 
+- Macrophage and T cell networks in adipose tissue 
+ 
+ - Ramiah D. Jacks 
+ - Carey N. Lumeng 
+ 
+ Nature Reviews Endocrinology (2024) 

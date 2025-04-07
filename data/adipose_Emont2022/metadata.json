@@ -4,5 +4,6 @@
   "tables": [
     "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx"
   ],
-  "extract_text_cmd": "cat manuscript.html | pup 'div.main-content' | pandoc -f html -t plain > manuscript.txt"
+  "extract_text_cmd": "cat manuscript.html | pup -r 'div.main-content' | pandoc -f html -t plain --wrap=none | python norm_text.py",
+  "css_selector": "div.main-content"
 }

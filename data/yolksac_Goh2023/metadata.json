@@ -1,5 +1,6 @@
 {
   "doi": "https://doi.org/10.1126/science.add7564",
   "citation": "",
-  "extract_text_cmd": "cat manuscript.html | pup 'div.core-container' | pandoc -f html -t plain > manuscript.txt"
+  "extract_text_cmd": "cat manuscript.html | pup 'div.core-container' | pandoc -f html -t plain > manuscript.txt",
+  "css_selector": "div.core-container"
 }
