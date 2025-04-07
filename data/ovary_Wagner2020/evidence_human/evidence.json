@@ -125,7 +125,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "In order to relate the findings to OSCs, we marked the cells with DDX4 antibodies (Ab) in all experiments; the single-cell mRNA sequencing (scRNA-seq) experiments were done on uncultured, unsorted cells, and sorted DDX4-Ab+ and Ab\u2212 cell fractions as well as on cultured, sorted DDX4-Ab+ and Ab\u2212 cells. The surface marker screen included DDX4 Ab as an additional marker.",
+      "source_rationale": "In order to relate the findings to OSCs, we marked the cells with DDX4 antibodies (Ab) in all experiments; the single-cell mRNA sequencing (scRNA-seq) experiments were done on uncultured, unsorted cells, and sorted DDX4 Ab+ and Ab- cell fractions as well as on cultured, sorted DDX4 Ab+ and Ab- cells. The surface marker screen included DDX4 Ab as an additional marker.",
       "source_id": "text"
     }
   },
@@ -366,7 +366,7 @@
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": "endothelial cells",
+      "cell_type_label": "Endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CDH5",
@@ -375,7 +375,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "ENDOTHELIUM",
-      "cell_type_label": "endothelial cells",
+      "cell_type_label": "Endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CDH5",
@@ -385,14 +385,14 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "endothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF. ",
+      "source_rationale": "Endothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF. ",
       "source_id": "text"
     }
   },
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": "endothelial cells",
+      "cell_type_label": "Endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": " VWF",
@@ -401,7 +401,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "ENDOTHELIUM",
-      "cell_type_label": "endothelial cells",
+      "cell_type_label": "Endothelial cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "VWF",
@@ -411,7 +411,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "endothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF. ",
+      "source_rationale": "Endothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF. ",
       "source_id": "text"
     }
   },
@@ -687,7 +687,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "MCAM",
@@ -713,7 +713,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "TAGLN",
@@ -739,7 +739,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "ACTA2",
@@ -808,7 +808,7 @@
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": " DDX4-Ab+ cells",
+      "cell_type_label": " DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD9",
@@ -817,7 +817,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD9",
@@ -827,14 +827,14 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab- cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4 Ab+ cells when compared with the DDX4 Ab- cell population",
       "source_id": "text"
     }
   },
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": " DDX4-Ab+ cells",
+      "cell_type_label": " DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": " CD39",
@@ -843,7 +843,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD39",
@@ -853,14 +853,14 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4 Ab+ cells when compared with the DDX4 Ab- cell population",
       "source_id": "text"
     }
   },
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": " DDX4-Ab+ cells",
+      "cell_type_label": " DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": " CD44",
@@ -869,7 +869,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD44",
@@ -879,14 +879,14 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4 Ab+ cells when compared with the DDX4 Ab- cell population",
       "source_id": "text"
     }
   },
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": " DDX4-Ab+ cells",
+      "cell_type_label": " DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": " CD49a",
@@ -895,7 +895,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD49a",
@@ -905,14 +905,14 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4 Ab+ cells when compared with the DDX4 Ab- cell population",
       "source_id": "text"
     }
   },
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": " DDX4-Ab+ cells",
+      "cell_type_label": " DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": " CD49c",
@@ -921,7 +921,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD49c",
@@ -931,14 +931,14 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4 Ab+ cells when compared with the DDX4 Ab- cell population",
       "source_id": "text"
     }
   },
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": " DDX4-Ab+ cells",
+      "cell_type_label": " DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": " CD144",
@@ -947,7 +947,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD144",
@@ -957,14 +957,14 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4 Ab+ cells when compared with the DDX4 Ab- cell population",
       "source_id": "text"
     }
   },
   {
     "extracted": {
       "organism": "homo_sapiens",
-      "cell_type_label": " DDX4-Ab+ cells",
+      "cell_type_label": " DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": " CD146",
@@ -973,7 +973,7 @@
     "derived": {
       "organism": "homo_sapiens",
       "cell_type_id": "DDX4-AB+ CELLS",
-      "cell_type_label": "DDX4-Ab+ cells",
+      "cell_type_label": "DDX4 Ab+ cells",
       "cell_source": "ovarian cortex",
       "cell_state": "none",
       "feature_name": "CD146",
@@ -983,7 +983,7 @@
     },
     "source": {
       "source_type": "text",
-      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4-Ab+ cells when compared with the DDX4 Ab\u2212 cell population",
+      "source_rationale": "Of these, seven (CD9; CD39; CD44; CD49a; CD49c; CD144; and CD146, also known as MCAM) were brightly expressed on DDX4 Ab+ cells when compared with the DDX4 Ab- cell population",
       "source_id": "text"
     }
   },
