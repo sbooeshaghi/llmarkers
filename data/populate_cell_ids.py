@@ -20,14 +20,15 @@ def update_json(label_map, json_fn = 'evidence.json'):
         data = json.load(file)
         
         for obj in data:
-            obj['derived']['cell_type_id'] = find_key_given_value(label_map, obj['derived']['cell_type_label'].upper().strip())
+            if obj['derived']['cell_type_label'] is not None:
+                obj['derived']['cell_type_id'] = find_key_given_value(label_map, obj['derived']['cell_type_label'].upper().strip())
             #print(label_map[obj['derived']['cell_type_label'].upper()])
             #obj['derived']['cell_type_id'] = label_map[obj['derived']['cell_type_label'].upper().strip()]
         with open(json_fn, "w") as file:
             json.dump(data, file, indent = 4)
 
 # user functionality: 
-
+"""
 folder = input("Enter folder name: ")
 deg_or_human = ""
 
@@ -47,5 +48,8 @@ while deg_or_human != "done":
     label_map_fn = os.path.join(folder, "ctmap", "ctmap.json")
     update_json(get_label_map(label_map_fn), fn)
     print("Finished editing", inner_folder, "\n")
+"""
+
+update_json(get_label_map("data/adipose_Massier2023/ctmap/vijay/ctmap.json"), "data/adipose_Massier2023/evidence_deg/evidence_unfiltered_vijay.json")
 
 print("Done!")

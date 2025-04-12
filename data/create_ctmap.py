@@ -24,7 +24,15 @@ def load_evidence_labels(filepath: str, universal_map) -> List[str]:
     try:
         with open(filepath) as f:
             data = json.load(f)
-        return [obj['derived']['cell_type_label'].strip().upper() for obj in data if obj['derived']['cell_type_id'] is None or obj['derived']['cell_type_id'] not in universal_map.values()]
+
+        ls = []
+        for obj in data:
+            if obj['derived']['cell_type_label'] is not None and (obj['derived']['cell_type_id'] is None or obj['derived']['cell_type_id'] not in universal_map.values()):
+                if isinstance(obj['derived']['cell_type_label'],str):
+                    ls.append(obj['derived']['cell_type_label'].strip().upper())
+                else:
+                    ls.append(obj['derived']['cell_type_label'])
+        return ls
     except FileNotFoundError:
         print(f"Warning: Evidence file not found at {filepath}")
         return []

@@ -1,0 +1,1302 @@
+[
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SPP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SPP1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000118785",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CXCL14",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CXCL14",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000145824",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SAA2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ADIPOCYTE",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SAA2",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000134339",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "S100A8",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "S100A8",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000143546",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "PLA2G2A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "PLA2G2A",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000188257",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "RBP7",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "RBP7",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000162444",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "MARCO",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "MARCO",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000019169",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "APOE",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "APOE",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000130203",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "S100A9",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "S100A9",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000163220",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "DPT",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "DPT",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000143196",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "APOC1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "APOC1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000130208",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "IGFBP6",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "IGFBP6",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000167779",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CTSD",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CTSD",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000117984",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "LIPA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "LIPA",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000168515",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CLDN5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CLDN5",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000184113",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CRYAB",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ADIPOCYTE",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CRYAB",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000109846",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "FABP5",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "FABP5",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000236972",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "APOD",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "APOD",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000189058",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "TFPI2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "TFPI2",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000105825",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Basophil granulocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CPA3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "GRANULOSA CELLS",
+      "cell_type_label": "Basophil granulocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CPA3",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000128510",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "MFAP4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "MFAP4",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000166482",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "RARRES1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "RARRES1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000118849",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "G0S2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ADIPOCYTE",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "G0S2",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000123689",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SAA1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ADIPOCYTE",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SAA1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000173432",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "GPX3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "GPX3",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000211445",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "FCER1A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "FCER1A",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000179639",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CD36",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CD36",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000135218",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SPARCL1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SPARCL1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000152583",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CPVL",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CPVL",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000106066",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CPE",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CPE",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000109472",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "C1QA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "C1QA",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000173372",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "C1QB",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "C1QB",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000173369",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "RARRES2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "RARRES2",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000106538",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CFD",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CFD",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000197766",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "MGP",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "MGP",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000111341",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "LUM",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "LUM",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000139329",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "GSN",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "GSN",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000148180",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "HLA-DQB1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "HLA-DQB1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000179344",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "HLA-DPA1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "HLA-DPA1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000168384",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "HLA-DRB1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "HLA-DRB1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000196126",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CD74",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "CD74",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000019582",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "IFI27",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ENDOTHELIUM",
+      "cell_type_label": "Endothelial",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "IFI27",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000165949",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "MGST1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "ADIPOCYTE",
+      "cell_type_label": "Adipocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "MGST1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000008394",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SNX3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MACROPHAGE",
+      "cell_type_label": "Macrophage",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "SNX3",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000112335",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Basophil granulocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "TPSAB1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "GRANULOSA CELLS",
+      "cell_type_label": "Basophil granulocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "TPSAB1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000172236",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Basophil granulocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "TPSB2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "GRANULOSA CELLS",
+      "cell_type_label": "Basophil granulocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "TPSB2",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000197253",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "DCN",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "DCN",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000011465",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "KRT19",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "FIBROBLAST",
+      "cell_type_label": "Fibro",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "KRT19",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000171345",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "LST1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "MONOCYTE",
+      "cell_type_label": "Monocyte",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "LST1",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000204482",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "DC",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "HLA-DRA",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "DENDRITIC CELL",
+      "cell_type_label": "DC",
+      "cell_source": "adipose",
+      "cell_state": null,
+      "feature_name": "HLA-DRA",
+      "feature_type": "ensembl",
+      "feature_identifier": "ENSG00000204287",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "deg",
+      "source_rationale": "filtered",
+      "source_id": "deg"
+    }
+  }
+]
