@@ -2,7 +2,48 @@
   "doi": "https://doi.org/10.1038/s41586-022-04518-2",
   "citation": "Emont, M.P., Jacobs, C., Essene, A.L. et al. A single-cell atlas of human and mouse white adipose tissue. Nature 603, 926–933 (2022).",
   "tables": [
-    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx"
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx",
+      "sheet_name": "all markers"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx",
+      "sheet_name": "adipocyte markers"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx",
+      "sheet_name": "ASPC markers"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx",
+      "sheet_name": "vascular markers"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx",
+      "sheet_name": "immune markers"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-04518-2/MediaObjects/41586_2022_4518_MOESM4_ESM.xlsx",
+      "sheet_name": "mesothelial markers"
+    }
   ],
   "extract_text_cmd": "cat manuscript.html | pup -r 'div.main-content' | pandoc -f html -t plain --wrap=none | python norm_text.py",
   "css_selector": "div.main-content"
