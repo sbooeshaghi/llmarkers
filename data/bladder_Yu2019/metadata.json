@@ -2,7 +2,13 @@
   "doi": "https://doi.org/10.1681/ASN.2019040335",
   "citation": "Yu, Zhenyuan; Liao, Jinling; Chen, Yang; Zou, Chunlin; Zhang, Haiying; Cheng, Jiwen; Liu, Deyun; Li, Tianyu; Zhang, Qingyun; Li, Jiaping; Yang, Xiaobo; Ye, Yu; Huang, Zhiguang; Long, Xinyang; Yang, Rirong; Mo, Zengnan. Single-Cell Transcriptomic Map of the Human and Mouse Bladders. JASN 30(11):p 2159-2176, November 2019.",
   "tables": [
-    "https://cdn-links.lww.com/permalink/jsn/c/jsn_30_11_2022_12_07_yu_2019040335_sdc5.xlsx"
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://cdn-links.lww.com/permalink/jsn/c/jsn_30_11_2022_12_07_yu_2019040335_sdc5.xlsx",
+      "sheet_name": "Sheet1"
+    }
   ],
   "extract_text_cmd": "cat manuscript.html | pup 'div#ArticleContainer' | pandoc -f html -t plain > manuscript.txt",
   "css_selector": "div#ArticleContainer"

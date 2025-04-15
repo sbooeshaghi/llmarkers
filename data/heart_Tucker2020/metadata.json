@@ -2,7 +2,34 @@
   "doi": "https://doi.org/10.1161/CIRCULATIONAHA.119.045401",
   "citation": "Tucker, N.R., Chaffin, M., Fleming, S.J., Hall, A.W., Parsons, V.A., Bedi Jr, K.C., Akkad, A.D., Herndon, C.N., Arduini, A., Papangeli, I. and Roselli, C., 2020. Transcriptional and cellular diversity of the human heart. Circulation, 142(5), pp.466-482.",
   "tables": [
-    "https://www.ahajournals.org/action/downloadSupplement?doi=10.1161%2FCIRCULATIONAHA.119.045401&file=supplemental+tables+%282%29.xlsx"
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ahajournals.org/action/downloadSupplement?doi=10.1161%2FCIRCULATIONAHA.119.045401&file=supplemental+tables+%282%29.xlsx",
+      "sheet_name": "Table IV MarkerGene"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ahajournals.org/action/downloadSupplement?doi=10.1161%2FCIRCULATIONAHA.119.045401&file=supplemental+tables+%282%29.xlsx",
+      "sheet_name": "Table V SubclusterMarkerGene"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ahajournals.org/action/downloadSupplement?doi=10.1161%2FCIRCULATIONAHA.119.045401&file=supplemental+tables+%282%29.xlsx",
+      "sheet_name": "Table VI ChamberDiff"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ahajournals.org/action/downloadSupplement?doi=10.1161%2FCIRCULATIONAHA.119.045401&file=supplemental+tables+%282%29.xlsx",
+      "sheet_name": "Table VII SexDiff"
+    }
   ],
   "extract_text_cmd": "cat manuscript.html | pup 'div[data-core-wrapper=\"content\"]' | pandoc -f html -t plain > manuscript.txt",
   "css_selector": "div[data-core-wrapper=\"content\"]"

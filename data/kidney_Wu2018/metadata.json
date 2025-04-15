@@ -2,7 +2,111 @@
   "doi": "http://doi.org/10.1681/ASN.2018020125",
   "citation": "Wu, H., Malone, A.F., Donnelly, E.L., Kirita, Y., Uchimura, K., Ramakrishnan, S.M., Gaut, J.P. and Humphreys, B.D., 2018. Single-cell transcriptomics of a human kidney allograft biopsy specimen defines a diverse inflammatory response. Journal of the American Society of Nephrology, 29(8), pp.2069-2080.",
   "tables": [
-    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls"
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "1. PT"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "2. LOH (DL)"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "3. LOH (AL)"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "4. CD"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "5. Mono1"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "6. Mono2"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "7. B cells"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "8. T cells"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "9. Plasma1"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "10. Plasma2"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "11. Pericyte"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "12. Fibroblast"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "13. Myofibroblast"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "14. Mast cells"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065085/bin/ASN.2018020125SupplementaryData3.xls",
+      "sheet_name": "15. EC"
+    }
   ],
   "extract_text_cmd": "cat manuscript.html | pup 'div#ArticleContainer' | pandoc -f html -t plain > manuscript.txt",
   "css_selector": "div#ArticleContainer"

@@ -2,10 +2,41 @@
   "doi": "https://doi.org/10.1126/sciadv.aba1983",
   "citation": "Adams, T.S., Schupp, J.C., Poli, S., Ayaub, E.A., Neumark, N., Ahangari, F., Chu, S.G., Raby, B.A., DeIuliis, G., Januszyk, M. and Duan, Q., 2020. Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis. Science advances, 6(28), p.eaba1983.",
   "tables": [
-    "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s2.txt",
-    "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s3.txt",
-    "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s4.txt",
-    "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s5.txt"
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s1.txt",
+      "sheet_name": "paper_degs1.txt"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s2.txt",
+      "sheet_name": "paper_degs2.txt"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s3.txt",
+      "sheet_name": "paper_degs3.txt"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s4.txt",
+      "sheet_name": "paper_degs4.txt"
+    },
+    {
+      "file_id": "",
+      "file_name": "clean_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.science.org/doi/suppl/10.1126/sciadv.aba1983/suppl_file/aba1983_data_s5.txt",
+      "sheet_name": "paper_degs5.txt"
+    }
   ],
   "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt",
   "css_selector": "article"
