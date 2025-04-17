@@ -28,24 +28,25 @@ def update_json(label_map, json_fn = 'evidence.json'):
             json.dump(data, file, indent = 4)
 
 # user functionality: 
-folder = input("Enter folder name: ")
+#folder = input("Enter folder name: ")
 deg_or_human = ""
 
 while deg_or_human != "done":
-    deg_or_human = input("deg, human, or llm? type \"done\" if done editing: ")
-    inner_folder = "evidence_human"
-    ev_fn = "evidence.json"
-    if deg_or_human == "deg":
-        inner_folder = "evidence_deg"
-        f_or_uf = input("filtered or unfiltered? (f / u): ")
-        if f_or_uf == 'u':
-            ev_fn = "evidence_unfiltered.json"
-    elif deg_or_human == "llm":
-        inner_folder = f"evidence_llm_llama3.2_MarkerGeneListStrict_4efcc22"
+    folder = input("folder name? ")
+    deg_or_human = input("path of data? ")#input("deg, human, or llm? type \"done\" if done editing: ")
+    # inner_folder = "evidence_human"
+    # ev_fn = "evidence.json"
+    # if deg_or_human == "deg":
+    #     inner_folder = "evidence_deg"
+    #     f_or_uf = input("filtered or unfiltered? (f / u): ")
+    #     if f_or_uf == 'u':
+    #         ev_fn = "evidence_unfiltered.json"
+    # elif deg_or_human == "llm":
+    #     inner_folder = f"evidence_llm_llama3.2_MarkerGeneListStrict_4efcc22"
 
-    fn = os.path.join(folder, inner_folder, ev_fn)
+    #fn = os.path.join(folder, inner_folder, ev_fn)
     label_map_fn = os.path.join(folder, "ctmap", "ctmap.json")
-    update_json(get_label_map(label_map_fn), fn)
-    print("Finished editing", inner_folder, "\n")
+    update_json(get_label_map(label_map_fn), deg_or_human) #fn)
+    #print("Finished editing", inner_folder, "\n")
 
 print("Done!")
