@@ -7,7 +7,14 @@
       "file_name": "paper_degs.xlsx",
       "file_type": "xlsx",
       "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5069352/bin/mmc2.xlsx",
-      "sheet_name": ""
+      "sheet_name": "VariableGenes_Celltypes"
+    },
+    {
+      "file_id": "",
+      "file_name": "paper_degs.xlsx",
+      "file_type": "xlsx",
+      "file_uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5069352/bin/mmc2.xlsx",
+      "sheet_name": "ExpressedGenes_Celltypes"
     }
   ],
   "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt",
