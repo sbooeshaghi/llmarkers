@@ -2,364 +2,156 @@
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "ASPCells",
+            "cell_type_label": "human aspcs",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "PDGFRA",
+            "feature_name": "pdgfra",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
             "cell_type_id": "HUMAN ASPCS",
-            "cell_type_label": "ASPCells",
+            "cell_type_label": "human aspcs",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "PDGFRA",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000134853",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "We identified six distinct subpopulations of human ASPCs (see Supplementary Note 1) in subclustered scRNA-seq and sNuc-seq samples, all of which express the common marker gene PDGFRA (Extended Data Fig. 7a, b).",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Early Multipotent Progenitor Cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Aldh1a3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "PROGENITOR CELLS",
-            "cell_type_label": "Early Multipotent Progenitor Cells",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "Aldh1a3",
+            "feature_name": "pdgfra",
             "feature_type": "gene",
             "feature_identifier": null,
             "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "For example, mASPC2 and hASPC2 are characterized by high expression of Aldh1a3 and ALDH1A3, respectively, and strongly resemble previously identified early multipotent progenitor cells that reside in the reticular interstitium of the fat pad5.",
+            "source_rationale": "we identified six distinct subpopulations of human aspcs see supplementary note 1 in subclustered scrnaseq and snucseq samples all of which express the common marker gene pdgfra extended data fig 7a b",
             "source_id": "text"
         }
     },
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "Early Multipotent Progenitor Cells",
+            "cell_type_label": "human ASPCs",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "ALDH1A3",
+            "feature_name": "aldh1a3",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "PROGENITOR CELLS",
-            "cell_type_label": "Early Multipotent Progenitor Cells",
+            "cell_type_id": "HUMAN ASPCS",
+            "cell_type_label": "human ASPCs",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "ALDH1A3",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000184254",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "For example, mASPC2 and hASPC2 are characterized by high expression of Aldh1a3 and ALDH1A3, respectively, and strongly resemble previously identified early multipotent progenitor cells that reside in the reticular interstitium of the fat pad5.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "Aregs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "mASPC4",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "Aregs",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "mASPC4",
+            "feature_name": "aldh1a3",
             "feature_type": "gene",
             "feature_identifier": null,
             "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "Similarly, mASPC4 and hASPC4 express Epha3 and EPHA3, respectively, and probably represent the anti-adipogenic \u2018adipogenesis-regulatory\u2019 cells (Aregs) population reported by Schwalie et al.3",
+            "source_rationale": "for example human aspcs and human aspcs are characterized by high expression of aldh1a3 and aldh1a3 respectively and strongly resemble previously identified early multipotent progenitor cells that reside in the reticular interstitium of the fat pad5",
             "source_id": "text"
         }
     },
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "Aregs",
+            "cell_type_label": "human ASPCs",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "hASPC4",
+            "feature_name": "aldh1a3",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "Aregs",
+            "cell_type_id": "HUMAN ASPCS",
+            "cell_type_label": "human ASPCs",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "hASPC4",
+            "feature_name": "aldh1a3",
             "feature_type": "gene",
             "feature_identifier": null,
             "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "Similarly, mASPC4 and hASPC4 express Epha3 and EPHA3, respectively, and probably represent the anti-adipogenic \u2018adipogenesis-regulatory\u2019 cells (Aregs) population reported by Schwalie et al.3",
+            "source_rationale": "for example human aspcs and human aspcs are characterized by high expression of aldh1a3 and aldh1a3 respectively and strongly resemble previously identified early multipotent progenitor cells that reside in the reticular interstitium of the fat pad5",
             "source_id": "text"
         }
     },
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "hAd3",
+            "cell_type_label": "Human ASPC",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "CFD",
+            "feature_name": "Human ASPC",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd3",
+            "cell_type_id": null,
+            "cell_type_label": "Human ASPC",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "CFD",
+            "feature_name": "Human ASPC",
             "feature_type": "gene",
-            "feature_identifier": "ENSG00000197766",
-            "feature_identifier_type": "ensembl"
+            "feature_identifier": null,
+            "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "Thus, the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3,",
+            "source_rationale": "similarly human aspcs and human aspcs express epha3 and epha3 respectively and probably represent the antiadipogenic \u2018adipogenesisregulatory\u2019 cells adipocyte population reported by schwalie et al3",
             "source_id": "text"
         }
     },
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "hAd5",
+            "cell_type_label": "Human ASPCs",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "INSR",
+            "feature_name": "Human ASPCs",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd5",
+            "cell_type_id": "HUMAN ASPCS",
+            "cell_type_label": "Human ASPCs",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "INSR",
+            "feature_name": "Human ASPCs",
             "feature_type": "gene",
-            "feature_identifier": "ENSG00000171105",
-            "feature_identifier_type": "ensembl"
+            "feature_identifier": null,
+            "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5",
+            "source_rationale": "similarly human aspcs and human aspcs express epha3 and epha3 respectively and probably represent the antiadipogenic \u2018adipogenesisregulatory\u2019 cells adipocyte population reported by schwalie et al3",
             "source_id": "text"
         }
     },
     {
         "extracted": {
             "organism": "homo_sapiens",
-            "cell_type_label": "hAd5",
+            "cell_type_label": "Antiadipogenic \u2018adipogenesisregulatory\u2019 cells",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "IRS1",
+            "feature_name": "Epha3",
             "feature_type": "gene"
         },
         "derived": {
             "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd5",
+            "cell_type_id": null,
+            "cell_type_label": "Antiadipogenic \u2018adipogenesisregulatory\u2019 cells",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "IRS1",
+            "feature_name": "Epha3",
             "feature_type": "gene",
-            "feature_identifier": "ENSG00000169047",
-            "feature_identifier_type": "ensembl"
+            "feature_identifier": null,
+            "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "hAd5",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IRS2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd5",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "IRS2",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000185950",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "hAd3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "DGAT2",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "DGAT2",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000062282",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "hAd3 was associated with \u2018triglyceride biosynthesis\u2019 and included higher expression of DGAT2, SREBF1 and PNPLA3",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "hAd3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SREBF1",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "SREBF1",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000072310",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "hAd3 was associated with \u2018triglyceride biosynthesis\u2019 and included higher expression of DGAT2, SREBF1 and PNPLA3",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "hAd3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PNPLA3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd3",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "PNPLA3",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000100344",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "hAd3 was associated with \u2018triglyceride biosynthesis\u2019 and included higher expression of DGAT2, SREBF1 and PNPLA3",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "hAd4 cluster",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ELOVL5",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd4 cluster",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "ELOVL5",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000012660",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The hAd4 cluster expresses the highest amounts of several fatty acid desaturases, including ELOVL5 and FADS3 (Extended Data Fig. 9j), which is particularly interesting in light of the insulin-sensitizing role of unsaturated lipokines such as palmitoleate27.",
-            "source_id": "text"
-        }
-    },
-    {
-        "extracted": {
-            "organism": "homo_sapiens",
-            "cell_type_label": "hAd4 cluster",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FADS3",
-            "feature_type": "gene"
-        },
-        "derived": {
-            "organism": "homo_sapiens",
-            "cell_type_id": "ADIPOCYTE",
-            "cell_type_label": "hAd4 cluster",
-            "cell_source": null,
-            "cell_state": null,
-            "feature_name": "FADS3",
-            "feature_type": "gene",
-            "feature_identifier": "ENSG00000221968",
-            "feature_identifier_type": "ensembl"
-        },
-        "source": {
-            "source_type": "text",
-            "source_rationale": "The hAd4 cluster expresses the highest amounts of several fatty acid desaturases, including ELOVL5 and FADS3 (Extended Data Fig. 9j), which is particularly interesting in light of the insulin-sensitizing role of unsaturated lipokines such as palmitoleate27.",
+            "source_rationale": "similarly human aspcs and human aspcs express epha3 and epha3 respectively and probably represent the antiadipogenic \u2018adipogenesisregulatory\u2019 cells adipocyte population reported by schwalie et al3",
             "source_id": "text"
         }
     },
@@ -369,7 +161,7 @@
             "cell_type_label": "Adipocyte",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "EBF2",
+            "feature_name": "cfd",
             "feature_type": "gene"
         },
         "derived": {
@@ -378,14 +170,14 @@
             "cell_type_label": "Adipocyte",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "EBF2",
+            "feature_name": "cfd",
             "feature_type": "gene",
-            "feature_identifier": "ENSG00000221818",
-            "feature_identifier_type": "ensembl"
+            "feature_identifier": null,
+            "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "One particularly notable adipocyte subpopulation is hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A (Extended Data Fig. 9l), a surprising finding given that this population is almost exclusively visceral (Fig. 3c, Extended Data Fig. 9a, c).",
+            "source_rationale": "thus the adipokines adiponectin and adipsin encoded by cfd are most highly expressed in adipocyte",
             "source_id": "text"
         }
     },
@@ -395,7 +187,7 @@
             "cell_type_label": "Adipocyte",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "ESRRG",
+            "feature_name": "insr",
             "feature_type": "gene"
         },
         "derived": {
@@ -404,14 +196,14 @@
             "cell_type_label": "Adipocyte",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "ESRRG",
+            "feature_name": "insr",
             "feature_type": "gene",
-            "feature_identifier": "ENSG00000196482",
-            "feature_identifier_type": "ensembl"
+            "feature_identifier": null,
+            "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "One particularly notable adipocyte subpopulation is hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A (Extended Data Fig. 9l), a surprising finding given that this population is almost exclusively visceral (Fig. 3c, Extended Data Fig. 9a, c).",
+            "source_rationale": "genes encoding insulin signalling components such as insr irs1 and irs2 are most highly expressed in adipocyte",
             "source_id": "text"
         }
     },
@@ -421,7 +213,7 @@
             "cell_type_label": "Adipocyte",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "PPARGC1A",
+            "feature_name": "irs1",
             "feature_type": "gene"
         },
         "derived": {
@@ -430,14 +222,248 @@
             "cell_type_label": "Adipocyte",
             "cell_source": null,
             "cell_state": null,
-            "feature_name": "PPARGC1A",
+            "feature_name": "irs1",
             "feature_type": "gene",
-            "feature_identifier": "ENSG00000109819",
-            "feature_identifier_type": "ensembl"
+            "feature_identifier": null,
+            "feature_identifier_type": null
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "One particularly notable adipocyte subpopulation is hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A (Extended Data Fig. 9l), a surprising finding given that this population is almost exclusively visceral (Fig. 3c, Extended Data Fig. 9a, c).",
+            "source_rationale": "genes encoding insulin signalling components such as insr irs1 and irs2 are most highly expressed in adipocyte",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "irs2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "irs2",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "genes encoding insulin signalling components such as insr irs1 and irs2 are most highly expressed in adipocyte",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "dgat2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "dgat2",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "adipocyte was associated with \u2018triglyceride biosynthesis\u2019 and included higher expression of dgat2 srebf1 and pnpla3",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "srebf1",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "srebf1",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "adipocyte was associated with \u2018triglyceride biosynthesis\u2019 and included higher expression of dgat2 srebf1 and pnpla3",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "pnpla3",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "pnpla3",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "adipocyte was associated with \u2018triglyceride biosynthesis\u2019 and included higher expression of dgat2 srebf1 and pnpla3",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "elovl5",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "elovl5",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "the adipocyte cluster expresses the highest amounts of several fatty acid desaturases including elovl5 and fads3 extended data fig 9j which is particularly interesting in light of the insulinsensitizing role of unsaturated lipokines such as palmitoleate27",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "fads3",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "fads3",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "the adipocyte cluster expresses the highest amounts of several fatty acid desaturases including elovl5 and fads3 extended data fig 9j which is particularly interesting in light of the insulinsensitizing role of unsaturated lipokines such as palmitoleate27",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "ebf2",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "ebf2",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "one particularly notable adipocyte subpopulation is adipocyte which selectively expresses genes typically associated with thermogenesis such as ebf2 esrrg and ppargc1a extended data fig 9l a surprising finding given that this population is almost exclusively visceral fig 3c extended data fig 9a c",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "esrrg",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "esrrg",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "one particularly notable adipocyte subpopulation is adipocyte which selectively expresses genes typically associated with thermogenesis such as ebf2 esrrg and ppargc1a extended data fig 9l a surprising finding given that this population is almost exclusively visceral fig 3c extended data fig 9a c",
+            "source_id": "text"
+        }
+    },
+    {
+        "extracted": {
+            "organism": "homo_sapiens",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "ppargc1a",
+            "feature_type": "gene"
+        },
+        "derived": {
+            "organism": "homo_sapiens",
+            "cell_type_id": "ADIPOCYTE",
+            "cell_type_label": "Adipocyte",
+            "cell_source": null,
+            "cell_state": null,
+            "feature_name": "ppargc1a",
+            "feature_type": "gene",
+            "feature_identifier": null,
+            "feature_identifier_type": null
+        },
+        "source": {
+            "source_type": "text",
+            "source_rationale": "one particularly notable adipocyte subpopulation is adipocyte which selectively expresses genes typically associated with thermogenesis such as ebf2 esrrg and ppargc1a extended data fig 9l a surprising finding given that this population is almost exclusively visceral fig 3c extended data fig 9a c",
             "source_id": "text"
         }
     },
@@ -463,7 +489,7 @@
         },
         "source": {
             "source_type": "text",
-            "source_rationale": "One such gene is PPARG, which is highly expressed in all adipocytes (Extended Data Fig. 14a).",
+            "source_rationale": "one such gene is pparg which is highly expressed in all adipocyte extended data fig 14a",
             "source_id": "text"
         }
     }
