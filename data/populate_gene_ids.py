@@ -22,13 +22,11 @@ def update_json_with_identifiers(json_path, tsv_path, output_path):
         derived = entry.get("derived", {})
         
         organism = derived.get("organism", "").strip().lower()
-        if derived.get("feature_name", "") is str:
+
+        if organism == "homo_sapiens":
             feature_name = derived.get("feature_name", "").strip().upper()
-        else:
-            feature_name = derived.get("feature_name", "")
-        if organism == "homo_sapiens" and feature_name in feature_map:
-            derived["feature_identifier"] = feature_map[feature_name]
-            derived["feature_identifier_type"] = "ensembl"
+            derived["feature_identifier"] = feature_map.get(feature_name, None)
+            derived["feature_identifier_type"] = "ensembl" if derived["feature_identifier"] != None else None
 
     # Step 4: Save updated JSON
     with open(output_path, 'w') as f:
