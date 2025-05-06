@@ -1,0 +1,1008 @@
+Single Cell Landscape of Sex-specific Drivers of Alzheimer’s Disease
+======================================================================
+
+* Yiyang Wu
+* Kyle J. Travaglini
+* Mariano Gabitto
+* C. Dirk Keene
+* Amy R. Dunn
+* Catherine C. Kaczorowski
+* Philip L. De Jager
+* Vilas Menon
+* Julie A. Schneider
+* David A. Bennett
+* Logan Dumitrescu
+* Timothy J Hohman
+
+## Abstract
+
+**Background** Sex differences in Alzheimer’s disease (AD) have been documented for decades, and many sex-specific molecular contributors to AD have been discovered through bulk omics analysis of brain tissues. RNA sequencing (RNAseq) at single cell resolution provides an opportunity to characterize transcript associations with AD in a cell type-specific matter. Here, we investigated sex-specific gene expression associations with neuropathology and cognitive manifestation of AD (endophenotypes) leveraging a large single-nucleus transcriptomic dataset consisting of 1.64 million nuclei from dorsolateral prefrontal cortex (DLPFC) tissue of 424 unique donors from the Religious Orders Study and Memory and Aging Project (ROS/MAP; AD Knowledge Portal syn2580853).
+
+**Methods** ROS/MAP single-nucleus RNAseq data (snRNA-seq) were processed through a rigorous pipeline. In total, eight major cell types from DLPFC were identified. We first performed sex-stratified and sex-interaction association analyses by fitting negative binomial mixed models in relation to β-amyloid load (Aβ), paired helical filament tau tangle density (tau), global cognitive performance at last visit, and longitudinal cognitive trajectory. We then conducted gene-set enrichment analysis to identify functional signaling pathways enriched for sex-specific associations. Lastly, we compared differential gene expression patterns and intercellular communication profiles between sexes and diagnostic groups among major cell types. For replication, sex-specific associations were examined using snRNA-seq derived from DLPFC tissue-derived of an independent set of 84 donors from The Seattle Alzheimer’s Disease Brain Cell Atlas (SEA-AD) study.
+
+**Results** 68% of the ROS/MAP participants were female, and 52% were diagnosed with AD dementia. We first identified several disease-dependent or sex-dependent cell subpopulations. Then we identified 2,660 sex-specific associations involving 2,110 genes with Aβ (51%), tau (21%), and cognitive performance (29%). 60% female-specific associations were for Aβ, and 49% male-specific associations were with tau. The vast majority (93%) of female protective associations were from neurons, and most (76%) of female risk associations were from glial cells. Nine of the female-specific associations involving eight unique genes were replicated in the SEA-AD cohort, including *ADGRV1* and *OR3A3* with Aβ; *IFI27L1*, *LYRM1*, *STAP2*, and *TSTD2* with tau; *PDYN* with global cognition; and *TMEM50B* with longitudinal cognitive decline. All replicated associations except *TMEM50B* were observed in neurons. Furthermore, the preponderance of protective female-specific associations in neurons was also recapitulated in the SEA-AD cohort. Sex-specific associations were enriched for genes in the immune, inflammation, and damage-related stress response pathways, and microglia presented the most sex-specific enriched pathways. Finally, we identified six ITGB1-mediated microglia-specific incoming signals that may play a role in female-specific risk for Aβ accumulation.
+
+**Conclusion** Our study highlights the transcriptome-wide, single-cell landscape of sex-specific molecular associations with AD neuropathology and cognitive decline. We delineate the full scope of sex-specific transcript associations, differential expression, signaling pathway, and cell-cell communication network changes in each major DLPFC cell type, while identifying and replicating several female-specific gene associations in neurons to help direct future mechanistic studies.
+
+Key Words
+*   Alzheimer’s disease
+*   Dementia
+*   Sex difference
+*   Sex specific
+*   Single cell
+*   RNA sequencing
+*   Transcriptome
+*   Signaling pathway
+
+## Background
+
+Alzheimer’s disease (AD) has a higher prevalence in women, with women making up two-thirds of prevalent AD cases1,2. While differences in life-span contribute to the gender disparity in AD, several studies have shown that even at the same age, women are more likely to develop AD than men2,3. Women with AD also tend to have more global AD pathology4, faster cognitive decline5,6, faster brain atrophy7, and experience enhanced risk when carrying the *APOE*-ε4 allele8–10. In contrast, men with AD have a higher mortality rate and a greater comorbidity burden11,12. Thus, there is a pressing need to better characterize the molecular contributors that underlie such sex differences in the neuropathology and clinical manifestation of AD.
+
+Our team has been particularly interested in identifying genetic factors that act in a sex-specific manner to modify risk and resilience in AD. We and others have identified novel female-specific and male-specific drivers of AD neuropathology13,14, cognitive decline15, and resilience to cognitive decline leveraging advanced genomic approaches16. Additionally, we have provided a deep characterization of sex-specific associations between *APOE* and AD neuropathology17 and cognitive decline18. Together, our work has suggested that the sex-specific genetic drivers of AD emerge largely downstream of Aβ with a notable sex-specific genetic architecture that contributes to tau deposition, neurodegeneration, and cognitive decline19.
+
+In addition to the genomic evidence, multiple studies have characterized sex differences in AD using bulk multiomics measured in brain and blood tissue of humans and mice20–23, consistently highlighting that sex-specific genes are enriched for immune response. However, most of these studies either focused on roles of sex chromosomes and sex hormones or were limited to differentially expressed genes (DEGs) between sexes. The advancement of single cell/nucleus RNA sequencing in recent years has facilitated a more complete dissection of the molecular mechanisms that contribute to sex differences in AD at single-cell resolution. One study characterized sex differences in AD neuropathology and cognitive decline at the single-cell level leveraging data generated from 48 brains in the Religious Orders Study and Memory and Aging Project (ROS/MAP), highlighting multiple female-specific protective associations in neurons and male-specific risk associations in oligodendrocytes24. Our study builds on this important work by leveraging a much larger single-nucleus transcriptomic dataset (AD Knowledge Portal syn2580853) derived from dorsolateral prefrontal cortex (DLPFC) tissue of 424 donors from ROS/MAP25 and performing an independent replication of sex-specific associations utilizing another single-nucleus RNA sequencing (snRNA-seq) dataset from 84 donors in The Seattle Alzheimer’s Disease Brain Cell Atlas (SEA-AD) study26. The goal of this manuscript is to comprehensively characterize the transcriptome-wide single cell landscape of sex-specific molecular associations with AD neuropathology and cognitive decline. We hypothesized that sex-specific effects would emerge in a cell-type specific manner, and based on studies mentioned above, that we would observe female-specific protective associations in neurons, male-specific risk associations in oligodendrocytes, as well as sex-specific associations enriched in immune cells. Finally, we move beyond single-transcript associations to provide detailed cell-cell communication alterations in the AD brain that act in a sex-specific manner, along with biological pathways that show sex-specific enrichment in the AD brain.
+
+## METHODS
+
+### Participants
+
+The participants included in this study were from two longitudinal clinical-pathological cohort studies including the Religious Orders Study and the Rush Memory and Aging Project (ROS/MAP). Each study was approved by the Institutional Review Board (IRB) of Rush University Medical Center. At enrollment, all participants were free of known dementia and agreed to annual clinical evaluation and brain donation27–29. All participants signed an informed repository consent and an Anatomic Gift Act. Secondary analyses of this extant data were approved by the Vanderbilt University Medical Center IRB.
+
+Independent replication was sought leveraging snRNA-seq data from 84 donors from The Seattle Alzheimer’s Disease Brain Cell Atlas (SEA-AD) study30. Postmortem brain tissue and donor metadata of SEA-AD study were obtained via the University of Washington (UW) BioRepository and Integrated Neuropathology (BRaIN) laboratory from participants in the Kaiser Permanente Washington Health Research Institute Adult Changes in Thought (ACT) Study and the University of Washington Alzheimer’s Disease Research Center (ADRC). Informed consent for research brain donation was obtained according to protocols approved by the UW and Kaiser Permanente Washington Health Research Institute IRBs.
+
+There are various fundamental differences underlying these two cohorts, including cohort characteristics, sequencing data generation, quality control process, and cell type taxonomies that we discuss in detail in the limitations section of the discussion.
+
+### Single-nucleus RNA Sequencing
+
+Single-nucleus transcriptomes of DLPFC brain specimen derived from 465 ROS/MAP participants (AD Knowledge Portal Accession Number syn31512863) were collected by the Rush ADRC and processed at Columbia University Medical Center, including sample processing, library preparation and sequencing of single nuclei, processing of single-nucleus RNAseq reads, quality control, cell type classification, and cell sub-classers analysis. Detail methods can be found in the previous report31. Post-quality control (post-QC) datasets contained 424 unique participants with a median of 3,824 sequenced nuclei. Eight major cell types were clustered and used for analysis, including astrocytes, vascular niches (referred to as “endothelial cells” in this article), microglia, oligodendrocytes, oligodendrocyte precursor cells (OPCs), inhibitory neurons, and *CUX2+* and *CUX2-* excitatory neurons (Fig. 1b). Excitatory neurons were split into two subgroups to increase computational efficiency (*CUX2+* consisted of upper cortical layer 2-4 pyramidal neurons, and *CUX2-* consisted of all others deeper cortical layer pyramidal neurons). Genes with expression in at least 10% of all cells were used for downstream analyses. Cells were removed from downstream analyses if they counted more than 20,000 or less than 200 total RNA Unique molecular identifiers (UMIs) or had more than 5% mitochondrially-mapped reads. RNA molecular count data was normalized and scaled by the “sctransform” R package32 (v2) using “percent.mt” values for “vars.to.regress” parameter.
+
+![Fig. 1:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F1.medium.gif)
+
+[Fig. 1:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F1)
+
+Fig. 1: ROS/MAP snRNA-seq cohort characteristics and cell type annotations.
+a, ROS/MAP snRNA-seq cohort characteristics summary, showing age at death, PMI, education length, Aβ, tau, global cognition at last visit, cognition slope, AD dementia diagnosis, and APOE ε4 carrier status. \***|p<0.001, **p<0.01, *P<0.05, Abbreviations: NS, not significant. PMI, post-mortem interval. For APOE ε4 carrier status and diagnosis, statistical testing was done for the number of ε4 carriers or AD dementia patients between sexes. b, Joint uniform manifold approximation and projection (UMAP), colored by major cell type. Composition of each major cell type was represented by subtype UMAP and box plots.
+
+The snRNA-seq dataset of SEA-AD (syn52146347) consisted of 1.2 million nuclei derived from 84 donors’ postmortem DLPFC (Brodmann area 9) tissues. Cells were mapped to the NIH’s Brain Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative - Cell Census Network (BICCN)-based cellular taxonomy33, which resulted in 24 subclasses including LAMP5 LHX6, LAMP5, PAX6, SNCG, VIP, SST CHODL, SST, PVALB, CHANDELIER, L2/3 IT, L6 IT, L4 IT, L5 IT, L5 ET, L6 CT, L6B, L6 IT Car3, L5/6 NP, astrocytes, OPC, oligodendrocytes, endothelial cells, VLMC, and Microglia-PVM.
+
+### Cell Composition Analysis
+
+Cell composition analyses of the ROS/MAP snRNA-seq dataset include both cell fraction comparison and cell abundance comparison between sexes and AD diagnostic groups for the eight major cell types as well as for the 67 subgroups (unidentified “NA” (unassigned) subgroups were removed). Cell fraction (percentage) was calculated with “NA” subgroups included and compared by two-way ANNOVA with sex-by-AD dementia diagnosis interaction term. Cell abundance analyses were carried out using “crumblr” (v0.99.11) R package ([https://DiseaseNeurogenomics.github.io/crumblr](https://DiseaseNeurogenomics.github.io/crumblr)). For cell abundance analyses, subpopulation cell counts were centered log ratio (CLR) transformed using “crumblr” function, which also returned observation-level inverse-variance weights for use in weighted linear models to test compositional change of each cell type separately following the formula: ∼ age at death + postmortem interval (PMI) + sex + AD dementia diagnosis + sex*AD dementia diagnosis implemented by the “dream” function in the “crumblr” package. 299 participants were included in this analysis after removing those without PMI or AD dementia diagnosis data. P-values were adjusted using a Bonferroni correction across all 8 cell types or 67 subgroups tested.
+
+### AD Endophenotype Measurements
+
+For the ROS/MAP cohorts, global β-amyloid load (Aβ, “amyloid” variable from Research Resource Sharing Hub (RADC)) and paired helical filament tau tangle density (tau, “tangles” variable from RADC) were measured at autopsy by immunohistochemistry staining, quantified as the average percent area occupied by Aβ (using antibodies specific to Aβ42) or tau (using antibodies specific to AT8 epitope of abnormally phosphorylated tau) across eight brain regions at autopsy: hippocampus, angular gyrus, and entorhinal, midfrontal, inferior temporal, calcarine, anterior cingulate, and superior frontal cortices. Then, values were transformed to approximate a normal distribution34.
+
+The global cognitive score was calculated as a composite measure of global cognitive function by converting raw scores from 17 cognitive tests to Z scores and calculating their average35. For cross-sectional analyses of cognitive function, the global cognitive score at last visit before death was used. Due to the mixed effects model required for snRNA analysis, longitudinal cognitive trajectory was evaluated by quantifying a cognitive slope derived leveraging a linear mixed effects model with global cognition as the outcome, the intercept and years from last cognitive visit entered as both fixed effects and random effects. The random slope is the estimated person-specific rate of change in the global cognition variable over time. This person-specific estimate was added to the fixed effects slope to calculate each individual’s annual rate of change.
+
+For the SEA-AD DLPFC cohort, we used gold standard Consortium to Establish a Registry for Alzheimer’s Disease (CERAD) neuritic plaque staging (none, sparse, moderate, frequent) and Braak neurofibrillary tangle staging (stages 0-VI) and as semi-quantitative outcomes to represent Aβ and tau pathology, respectively, due to lack of quantitative pathology scores during the preparation of this manuscript. Slopes of memory decline over time based on the original Cognitive Abilities Screening Instrument (CASI) scores (to derive stable and generalizable estimates) were calculated using mixed-effects models with an unstructured covariance matrix, where time was parameterized as years before death. The CASI score at the last visit was used to represent global cognition at last visit.
+
+### Sex-specific Association Analyses with AD Endophenotypes
+
+Gene expression associations using the ROS/MAP dataset with four AD endophenotypes (global cognition longitudinally and at last visit before death, Aβ, and tau at death) and AD dementia diagnosis were conducted for each gene in each of the eight major cell type using a negative binomial mixed model implemented in the R package “Nebula” (v1.4.2).36 The number of genes analyzed in each association model ranged from 14,537 to 16,672. Only participants with a PMI less than 24 hours were included, which yielded 417 participants.
+
+To estimate associations with Aβ, tau, global cognition at last visit before death, and AD dementia diagnosis, the following formula was used; “gene count matrices ∼ AD endophenotype + sex + age at death + PMI”. For analyses of longitudinal cognitive performance, interval years between last visit and death was added as covariate together with others mentioned above. Four participants who had more than five years between their last visit and death were removed from this analysis. The gene count matrices used in all association models were taken from the “count” slot of the SCT assay (transformed RNA count assay generated by “sctransform” package mentioned above) from the Seurat object associated with each major cell type. All models were run in a combined-sex and sex-stratified manner. To estimate the sex-interaction effect with each AD endophenotype, an interaction term of “AD endophenotype*sex” was added to each model described above with the same covariates. Lowly-expressed genes were removed from the analysis in Nebula be default setting (counts per cell < 0.5% and number of cells with a positive count < 5) to obtain accurate estimates of the overdispersions. Finally, association models from Nebula with convergence scores less than or equal to -20 were removed from downstream analysis.
+
+Sex-specific association analysis of the SEA-AD dataset was performed using the same model setup and inclusion criteria above. We carried out the association analyses in each of the pre-defined 25 cell subclasses (L2L3 subclass was split into two separate files for analysis due to computational limitation) and then reclassified them into seven major cell types to match ROS/MAP cell taxonomy for comparison. Only gene-phenotype association pairs that showed consistent direction of effect across all subclasses under the same major cell type were reserved for comparison.
+
+Sex-specific associations of ROS/MAP were defined as those which had nominal p values < 0.05 from sex-interaction models and had false discovery rate (FDR)-adjusted p-values < 0.05 from sex-stratified models and showed the same direction of effect on the same AD endophenotype in the same cell type tested.
+
+### Differential Gene Expression Between Sexes and AD Dementia Diagnosis
+
+Differential gene expression (DGE) analyses in each of the eight major cell types of the ROS/MAP dataset among participants with AD dementia or normal cognition were carried out using “Nebula” R package as described above with the same covariates. DGE analysis was set up to detect gene expression changes not only within the same sex cross diagnostic groups, but also between sexes within the same diagnostic group for completeness.
+
+We used the final consensus cognitive diagnosis (“cogdx” variable from RADC) to categorize participants into AD dementia group or normal cognition group. In total, 299 participants had cogdx scores, among which 142 with “cogdx” = 1 were assigned to the normal cognition group, and 157 participants with “cogdx” = 4 or “cogdx” = 5 were assigned to the AD dementia group.
+
+### Gene Set Enrichment
+
+The gene set enrichment analysis of gene lists generated from sex-stratified association models was conducted using “fgsea” function from “fgsea” R package37. We used 20,354 unique genes that were detected in all cell types in post-QC ROS/MAP snRNA-seq cohorts as the background set for testing to avoid bias. We ranked all genes from each sex, cell type, and AD phenotype combination by statistical significance using ranking values calculated by -log10({p-value})*sign({log value of Fold Change, logFC}). Under this rank metric, up-regulated (logFC > 0) genes with relatively small p-values appear at the top of the list and down-regulated (logFC > 0) genes with small p-values at the bottom. We removed genes that have a ranking of infinity due to having very small p-values. Then we tested each of the 64 pre-ranked gene lists (four AD phenotypes*eight cell types*two sexes) against 50 signature gene sets in HALLMARK from MSigDB38 (v2023.1) with 1,000,000 permutations. P-values of enrichment tests were adjusted using Bonferroni correction cross 3,200 tests for HALLMARK gene sets.
+
+### Intercellular Communication Profiling
+
+Intercellular communication patterns among seven major cell types (merging both excitatory neuron subgroups) was analyzed using the “CellChat” (v2.0) R package39 with default setting without projecting gene expression data onto human protein-protein interaction network. ANOVA (for more than two groups) and Wilcoxon rank-sum (between two groups) tests were used for statistical comparison. Turkey HSD tests post ANOVA were run to detect difference between any two groups.
+
+### Gene ratio calculation
+
+To examine whether sex-specific genes located on sex chromosomes were enriched comparing to those from autosomes, we calculated gene ratio by dividing the total annotated gene number on each chromosome based on Human Genome Assembly GRCh38.p1440.
+
+### Statistical Analysis
+
+Statistical analyses were conducted in RStudio (R version 4.3.1). Significance was set *a priori* to α=0.05. P-values from all sex-stratified models were corrected for multiple comparisons using the FDR procedure across all 1,003,028 tests combining all four endophenotypes for ROS/MAP. Overlapping sex-specific associations between SEA-AD and ROS/MAP from sex-stratified models of SEA-AD were corrected for 2,660 tests using R function “p.adjust” with “BH” as the method.
+
+## RESULTS
+
+For the purpose of summarizing, we defined an association is protective or has a protective effect if in which a higher gene expression is associated with a better AD-related endophenotype (less neuropathology, or better cognition performance), and defined an association is risk or has a risk effect if in which a higher gene expression is associated with a worse AD-related endophenotype.
+
+### ROS/MAP cohorts characteristics
+
+The post-QC ROS/MAP snRNA-seq dataset was derived from 424 Non-Hispanic White donors, with a mean age at death of 89 years, and an average of 16 years of education. 68% were females, 52% participants met clinical AD dementia criteria, and 26% carried at least one *APOE*-ε4 allele. Females and males differed statistically in their age at death, education, Aβ, and tau, with females presenting at an older age at death, with less education, and higher Aβ and tau than males (Fig. 1a, Supplementary Table 1).
+
+### Identifying vulnerable cell subpopulations in AD dementia
+
+We first compared whether the composition of the eight major cell types in the ROS/MAP snRNA-seq dataset (Fig. 2a) was influenced by sex, AD dementia, or their interaction to provide a foundation for our explorations into the sex-specific transcript associations with AD endophenotypes. We observed no major cell type constitution differences in either cell fraction or cell abundance by sex or AD dementia, and no significant interactions (Supplementary Table 2, 3).
+
+![Fig. 2:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F2.medium.gif)
+
+[Fig. 2:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F2)
+
+Fig. 2: ROS/MAP snRNA-seq cell composition comparison.
+a, The proportion of each major cell type in ROS/MAP snRNA-seq samples by sex and diagnostic groups. Cell type abbreviation: cux2+/cux2-, CUX2+ or CUX2-excitatory neurons; inhibitory, inhibitory neurons; endo, endothelial cells. b, The proportion of each subtype of each major cell type in ROS/MAP snRNA-seq samples by sex and diagnostic groups. c, Sex-dependent or AD dementia diagnosis-dependent cell composition changes. Abbreviations: DLPFC, dorsolateral prefrontal cortex. Panel c. was created in BioRender.
+
+Then, for the cell fractions of the 67 annotated cell subpopulations (Fig. 2b), seven showed a significant sex difference and four were significantly influenced by AD dementia. The cell types that showed the most difference in cell fractions either between sex or diagnostic groups were oligodendrocytes and inhibitory neurons. Females had a higher fraction of enhanced-translation Oli.6, Oli.12, enhanced-mitophagy subgroup OPC.1, and VIP inhibitory neurons, while males had a higher fraction of Oli.3, Oli.9, and SST inhibitory neurons (Fig. 2c, Extended Data Fig. 1). In AD, we observed higher fractions of disease-elevated microglia and astrocytes as expected, together with lower fractions of arterial smooth muscle cells (SMC.1 aSMC) within the vascular niche and excitatory neuron subtype 3 (Exc.3, mapped to cortical layer L2 and L3 by the Allen Brain Map; Fig. 2c, Extended Data Fig. 1). Notably, no significant sex and AD dementia diagnosis interaction effect was observed, suggesting cell type alterations in disease are largely shared across sexes (Supplementary Table 2).
+
+From the cell abundance analysis, only interferon-response astrocytes showed a sex-dependent effect. Moreover, the same four cell subgroups showed an AD dementia-dependent effect as seen from cell fraction analysis (Fig. 2c). Specifically, males showed elevated interferon-response astrocytes compared to females (Extended Data Fig. 1), although the overall fraction of this cell subgroup is low in both sexes (2.4% for males, 0.1% for females). Increased disease-elevated microglia and astrocytes, along with decreased aSMC and Exc.3, associated with AD dementia (Extended Data Fig. 1). Again, no sex by AD dementia interaction effect was observed within any cell subpopulation (Supplementary Table 3).
+
+### Overview of sex-specific associations with AD endophenotypes
+
+Among the four AD endophenotypes studied, we identified 2,660 sex-specific transcript associations across eight major DLPFC cell types (Supplementary Table 4). Among the sex-specific associations, 79% were female-specific (likely due to sample size differences by sex), and about half (51%) were associated with Aβ (Fig. 3a). Neurons contributed to the most sex-specific associations, accounting for 62% of the total, whereas each glial cell type contributed less than 10% respectively (Fig.3b).
+
+![Fig. 3:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F3.medium.gif)
+
+[Fig. 3:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F3)
+
+Fig. 3: Sex-specific gene associations with AD endophenotypes.
+a, Pie-donut chart showing the relative proportions of sex-specific associations (N = 2,660) by sex, endophenotype, major cell types, and associations effect on four endophenotypes. Cell type abbreviations: ast, astrocytes; cux2+/cux2-, CUX2+ or CUX2-excitatory neurons; inhib, inhibitory neurons; mic, microglia; oligo, oligodendrocytes; opc, oligodendrocyte precursor cells; endo, endothelial cells. b, Comparison of female-specific vs male-specific associations distribution among eight major cell types and four endophenotypes by chord diagram, pie-donut chart, and heatmap. c, Forrest plot highlighting sex-specific associations in the same cell type with ADGRG7 and FOXC2 showing opposing effect between sexes for Tau and Aβ, respectively. Abbreviations: LogFC, log2 fold change.
+
+Among the sex-specific gene associations, there were ten genes that showed FDR significant associations within each sex for the same AD endophenotype in the same cell type: *ADGRG7*, *EYA1*, and *FOXC2* for Aβ; *ADGRG7*, *ASIP*, *GPCPD1*, *KCNMB3*, *MRAS*, *SLC44A1*, and *UQCC1* for tau; and *IFI44L* for cognitive trajectory (Supplementary Table 5). Most of these associations displayed modest differences in effect size across sexes. However, interestingly two genes showed a risk effect in females but a protective effect in males, including *FOXC2* in endothelial cells on Aβ (risk for females, protection for males), and *ADGRG7* on tau from three cell types (*CUX2*+ excitatory neurons, inhibitory neurons, and microglia; Fig. 3c, Supplementary Table 5).
+
+### Neurons may protect and glial cells may pose risk to A**β** in females
+
+Among the female-specific associations we identified, 60% were with Aβ (Fig. 3b). In fact, the vast majority (77%) of detrimental gene associations among females were from glial cells in relation to Aβ (Fig. 3b). In contrast, the majority (86%) of neuronal associations in females demonstrated a protective effect, with 55% female protective associations across endophenotypes originating in excitatory neurons (Fig. 3b).
+
+### Excitatory neurons may be the key cell type for tau associations for males
+
+Among the male-specific associations we identified, 49% were with tau, while excitatory neurons (31%) and endothelial cells (22%) combined contributed to over half of all male-specific associations (Fig. 3b). Interestingly, neurons were responsible for providing the most protection against tau among males, especially CUX2+ excitatory neurons (Fig. 3b). In contrast to the female-specific effects outlined above, we did not see a striking split between neuronal and glial cell types with regards to detrimental and protective effects. Rather, male-specific associations showed more of a balance between detrimental and protective effects across cell types. Among all major cell types, endothelial cells seemed to play the most important role in protecting against increasing Aβ and faster cognitive decline among males (Fig. 3b).
+
+### Validating sex-specific associations in SEA-AD cohort
+
+To validate the 2,660 ROS/MAP sex-specific associations, we tested them in the independent SEA-AD cohort. To compare results from the two studies which used different cell taxonomies, we identified gene associations that showed a consistent effect with subgroups of the same parent cell type. We replicated nine female-specific associations involving eight unique genes, including *ADGRV1* and *OR3A3* with Aβ; *IFI27L1*, *LYRM1*, *STAP2*, and *TSTD2* with tau; *PDYN* with global cognition; and *TMEM50B* with cognitive trajectory (Fig. 4a). *ADGRV1*, *OR3A3*, and *PDYN* showed associations in excitatory neurons; *ADGRV1*, *TSTD2*, *IFI27L1*, *LYRM1*, and *STAP2* in inhibitory neurons; and *TMEM50B* in astrocytes. Higher *ADGRV1* and *PDYN* expression was related to worse AD endophenotypes, while elevations for the other genes were related to better AD endophenotypes (Fig. 4a). Interestingly, we also replicated the pattern of sex-specific effects in AD across cell types and endophenotypes, such that female-protective associations were enriched in neurons (93% for ROS/MAP, 80% for SEA-AD), whereas male-protective associations were evenly distributed across cell types (Fig. 4b). In addition, among all glial cell types, endothelial cells contributed to the most sex-specific associations in males (40% for ROS/MAP, 31% for SEA-AD; Fig. 4b).
+
+![Fig. 4:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F4.medium.gif)
+
+[Fig. 4:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F4)
+
+Fig. 4: Replication of ROS/MAP sex-specific gene associations in SEA-AD
+a, Replicated ROS/MAP sex-specific associations in SEA-AD cohort, all being female-specific associations. Volcano plot showing log2 fold change of gene expression associated with one unit increase of annotated endophenotype in each sex. Pink dots represent FDR associations in females; blue dots represent FDR associations in males; grey dots represent non-FDR results. Scatter plot showing correlation of highlighted gene expression and the annotated endophenotype in specific cell type. Pink dots represent female samples; blue dots represent male samples. Outliers beyond 4SD were removed from scatter plots. Lines in scatter plots represent the unadjusted linear fit. b, Chord diagrams showing sex-specific associations in females and males from ROS/MAP and SEA-AD cohorts. The length of each sector of the circle represents the total number of associations. Only protective links are displayed in the plots. Cell type abbreviations: ast, astrocytes; excit, excitatory neurons; inhib, inhibitory neurons; mic, microglia; oligo, oligodendrocytes; opc, oligodendrocyte precursor cells; endo, endothelial cells. Cell types were color-coded to show difference between neurons and glial cell types.
+
+### Very few of the genes that show sex-specific associations with AD endophenotypes are differentially expressed by AD dementia diagnosis or by sex
+
+We evaluated whether the sex-specific associations we observed are primarily driven by genes that are differentially expressed in disease, or genes that are differentially expressed by sex. Overall, we found 111 out of 2,472 (4%) sex-specific gene-cell type combinations showed differential expression patterns in AD dementia, involving 102 unique genes, 96 combinations in females, 15 in males (Fig. 5a, Supplementary Table 6). Similarly, 40 gene-cell type combinations from 31 unique genes (1%) were differentially expressed between males and females with AD dementia and only 10 gene-cell type combinations from 10 unique genes (0.5%) were differentially expressed between males and females among those with normal cognition (Fig. 5b, Supplementary Table 7). Male-specific effect genes from microglia showed the most (44%) differential expression pattern regardless of diagnosis, whereas female-specific effect genes from excitatory neurons had the most (45%) differential expressions. Three genes on sex chromosomes, *DDX3Y (*on Chr.Y*)*, *TSIX* (on Chr.X), and *TXLNG* (on Chr.X), showed sex-biased expression (FDR<0.05) in both diagnostic groups, likely reflecting physiological differences by sex irrespective of disease for these genes. Due to the complexity of sex-dependent gene dose regulation on sex chromosomes, we will discuss genes on sex chromosomes further in a separate section below.
+
+![Fig. 5:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F5.medium.gif)
+
+[Fig. 5:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F5)
+
+Fig. 5: Differential expression of sex-specific association genes between sexes and under AD diagnosis.
+a, Chord diagram showing sex-specific association genes that FDR-differentially expressed pattern between sexes either in normal cognition or AD dementia group. b, Chord diagram showing sex-specific association genes that FDR-differentially expressed under AD dementia diagnosis. Purple links represent protective sex-specific associations; Yellow links represent risk sex-specific associations. DE, differential expression. Cell type abbreviations: ast, astrocytes; cux2+/cux2-, CUX2+ or CUX2-excitatory neurons; inhib, inhibitory neurons; mic, microglia; oligo, oligodendrocytes; opc, oligodendrocyte precursor cells; endo, endothelial cells.
+
+### Sex-specific effect genes showed no over-representation on sex chromosomes
+
+Among 2,110 sex-specific effect genes (the number of unique genes that make up the 2,660 sex-specific associations), 67 are on X chromosome and one is on Y chromosome, which is *DDX3Y* (Supplementary Table 4). We did not see an enrichment of sex-specific gene associations on the sex chromosomes relative to the autosomes either by total number (autosome vs. sex chromosomes: female-unique: 71 vs. 48, male-unique: 20 vs. 9, shared: 2 vs. 2; Fig. 6a) or ratio (autosome vs. sex chromosomes: female-unique: 4.8% vs. 3.4%, male-unique: 1.3% vs. 0.9%, shared: 0.2% vs. 0.1%; Fig. 6b). X chromosome genes are subject to X chromosome inactivation (XCI)41 in females, but due to being able to escape from XCI42,43 (a tissue-dependent process44), X-chromosome genes are enriched for having sex-biased expression45–47. Hence, to filter out this compounding factor for interpreting our result, we checked genes’ XCI patterns throughout our discovery process against a recent published XCI consensus call list48. For the 67 genes that show sex-specific effects on the X chromosome, 35 are subject to XCI and three are known XCI escapees, including *STS*, *SYAP1*, and *TXLNG* (Supplementary Table 4).
+
+![Fig. 6:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F6.medium.gif)
+
+[Fig. 6:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F6)
+
+Fig. 6: Chromosome localization of ROS/MAP sex-specific association genes
+a, The count of sex-specific association genes on each chromosome. b, The ratio of sex-specific association gene count to total annotated gene number for each chromosome. Total annotated gene number of each chromosome was extracted based on Human Genome Assembly GRCh38.p14. Female-unique represents genes that only show sex-specific associations with females, male-unique represents genes that only show sex-specific associations with males, shared represents genes that show sex-specific associations with both sexes.
+
+In addition, we more closely examined sex-biased expression patterns of these 68 genes from the sex chromosomes. Among these genes, seven showed sex-biased expression in the cell type they exerted sex-specific effect under either normal cognition or AD dementia, including *BX842570.1* (inhibitory neuron), *DDX3Y* (microglia), *STS* (CUX2+ excitatory neuron), *TSIX* (CUX2+ excitatory neuron), *TXLNG* (oligodendrocyte), *ASMTL-AS1* (CUX2-excitatory neuron), and *SYAP1* (oligodendrocytes). *DDX3Y* is the only Y chromosomal gene from our list, and as expected, it showed male-biased expression regardless of disease status.
+
+### Eight sex-specific effect genes were known AD risk genes from GWAS studies
+
+AD GWAS studies to date have identified over 100 genomic loci to be linked to AD disease susceptibility49. We examined our sex-specific effect gene list against 112 recent-reviewed AD risk loci from GWAS49, and found eight GWAS associated genes that are on our list, including *CR1*, *WDR12*, *INPP5D*, *HESX1*, *TNIP1*, *EPHA1*, *SHARPIN*, and *CTSH.* All these genes showed sex-specific associations with either Aβ or tau pathology. *CR1* showed a male-specific effect, while the rest showed female-specific effects (Supplementary Table 4). Higher levels of *CR1* in microglia were associated with less tau among males. For the female-specific associations, higher levels of five genes in neurons were associated with better AD endophenotypes: including *EPHA1, HESX1,* and *WDR12* in CUX2-neurons with Aβ, and *SHARPIN* in both CUX2- and inhibitory neurons with tau. In contrast, among the glial cells, higher *INPP5D* in astrocytes and *CTSH* and *TNIP1* in microglial was related to a higher Aβ. While sex-specific associations for the lead variants at these candidate genes have not been reported in the literature.
+
+### Sex-stratified association genes are enriched for immune/inflammatory/stress response pathways
+
+In gene-set enrichment analyses, we observed many sex-specific pathways (Fig. 7a, Supplementary Table 8). For females, gene associations with cognitive performance contributed to 66% of female-specific enrichment pathways, whereas for males, enriched pathways were distributed evenly among the four AD endophenotypes. Male-specific pathways included “ANGIOGENESIS”, “APOPTOSIS”, “COMPLEMENT”, “ESTROGEN\_RESPONSE\_EARLY”, “IL2\_STAT5\_SIGNALING”, “INFLAMMATORY\_RESPONSE”, “KRAS\_SIGNALING\_UP”, and “TGF\_BETA\_SIGNALING”. Female-specific pathways included “APICAL\_JUNCTION”, “BILE\_ACID\_METABOLISM”, and “XENOBIOTIC_METABOLISM”.
+
+![Fig. 7:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F7.medium.gif)
+
+[Fig. 7:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F7)
+
+Fig. 7: Gene set enrichment pattern of sex-stratified AD endophenotype associations.
+a, ALL global false discovery rate (FDR) <0.05 gene set enrichment results from sex-stratified associations for each of four endophenotypes tested. Purple tiles indicate risk association genes enriched; yellow tiles indicate protective association genes enriched. Annotated numbers are normalized enrichment scores extracted from the analysis. b, Top 10 FDR enrichment pathway by number for each sex. Annotated numbers showing the total frequency of individual pathway was seen FDR-enriched. c, Five combinations of endophenotype and cell type that showed enrichment of the same pathway with opposing effect gene enriched between sex.
+
+Interestingly, we observed three pathways that were enriched in opposing directions by sex (Fig. 7c). The first one was “TNFA\_SIGNALING\_VIA\_NFKB” which was enriched in opposite directions for microglial gene associations with cognition and endothelial gene associations with Aβ. In both cases, the pathway was enriched for protective gene associations among males, but detrimental gene associations among females. The second pathway showing this pattern is “OXIDATIVE\_PHOSPHORYLATION” in both astrocytes and endothelial cells, in this case with protective gene associations among females and detrimental gene associations among males. Finally, “MYC\_TARGETS\_V1” in OPCs was enriched for protective gene associations with cognition among females, but detrimental gene associations with cognition among males.
+
+Regardless of differences, both sexes shared many enriched pathways (Fig. 7b). There were 22 unique pathways across all major cell types and endophenotypes that were enriched in both sexes in the same cell type for the same AD endophenotype in same direction (Supplementary Table 8), accounting for one third of all female enrichments and a quarter of all male enrichments. These common pathways highlight the shared molecular mechanisms of AD pathogenesis between sexes as expected.
+
+### Sex-specific effects led to sex-differences in intercellular communication in the AD dementia brain
+
+To get an overview of sex differences in cell-cell communication patterns, we first inferred intercellular communication of all curated signals in each sex and diagnostic group. All four groups had comparable communication count and strength (probability), except for a significant reduction (adjusted p-value < 0.05) of communication strength among AD females compared to normal cognition males (Fig. 8a). The strongest intercellular communications among DLPFC cell types were among neurons, astrocytes, and OPCs for all groups (Fig. 8b). Among those with normal cognition, females showed a slightly stronger (p>0.05) communication strength from OPCs to oligodendrocytes than males. However, the difference disappeared among participants with AD (Fig. 8c), due to the reduction of such communication pathways in females. On the other hand, AD females showed a slightly stronger (p>0.05) communication strength within microglia compared to AD males (Fig. 8c), due to a larger downregulation of such communication pathways in males with AD. For both sexes, the biggest reduction in cell communication among those AD was observed among excitatory neurons, inhibitory neurons, and OPCs (Fig. 8d). On an individual communication signal level, we observed several that were differently dysregulated in AD between sexes that did not present among those with normal cognition (Fig. 8e). For example, compared to AD females, AD males lacked meaningful inferred communication of the THY1, COMPLEMENT, MHC-II, and ICAM signals, due to significant downregulation of these pathways among those with AD dementia. Interestingly, all of these are exclusively incoming signals from microglia that were present in males with normal cognition, except for THY1 sent from endothelial cells (Fig. 8f), which was unique to females. Conversely, AD females lacked significant communication of CD99, due to a significant reduction in this cell communication pathway among females with AD dementia (Fig. 8f). CD99 showed an outgoing signal from both endothelial cells and astrocytes in males regardless of diagnosis; however, females with normal cognition only showed CD99 sent from endothelial cells (Fig. 8f), indicating astrocyte-sent CD99 signal is unique to males.
+
+![Fig. 8:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F8.medium.gif)
+
+[Fig. 8:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F8)
+
+Fig. 8: Intercellular communication comparison between sex and AD dementia diagnostic groups.
+a, Comparison of total count and strength of all curated intercellular communication interactions for four groups. b, Overall information flow of four groups. Annotated numbers showing the total count of interactions between each cell type pair. Cell type abbreviations: ast, astrocytes; excit, excitatory neurons; inhib, inhibitory neurons; mic, microglia; oligo, oligodendrocytes; opc, oligodendrocyte precursor cells; endo, endothelial cells. c, Differential interaction strength heatmap between sexes among those with normal cognition or AD dementia. The colored bar plot at the top represents the sum of incoming signaling displayed in the heatmap. The colored bar plot on the right represents the sum of outgoing signaling. The bar height indicates the degree of change in terms of the number of interactions or interaction strength between sex. In the heatmap, red (or blue) represents increased (or decreased) signaling in the male dataset compared to the female dataset. d, Changes of the outgoing and incoming interaction strength for each major cell type in each sex with or without AD dementia. e, Comparison the information flow between sexes for each signaling pathway among each diagnostic group. Each inferred signaling network is defined by the sum of the communication probability (strength) among all pairs of cell groups in the inferred network. Significant signaling pathways were ranked based on differences in the overall information flow within the inferred networks between sexes. A paired Wilcoxon test is performed to determine whether there is a significant difference in the signaling information flow. Signaling pathways colored pink are enriched in females; those colored blue are enriched in males; and those colored black show no difference between sexes. f, Circle plot of intercellular communications of COMPLEMENT, ICAM, MHC-II, THY1, and CD99 networks in four groups. Circle sizes representing major cell type are proportional to the number of cells in each cell group. The width of chords represents the strength of the total communication.
+
+We then identified unique outgoing or incoming signals from each of the major cell types between sexes and diagnostic groups in a pairwise fashion. We found a total of 124 unique incoming or outgoing signals which represented 34 unique pathways among the four groups (Supplementary Table 9). Almost one-third (30%) of these unique signals involved microglia, hinting at its leading role in driving sex differences in intercellular communication networks in AD. AD females (32%) and normal cognition males (33%) combined to contribute two-thirds of all unique incoming or outgoing signals (Supplementary Table 9), indicating downregulation of male-specific intercellular communications in AD males and upregulation of AD-specific signals in AD females as the main mechanisms underlying sex-specific cell signaling alterations in AD.
+
+Next, we examined the involvement of the 2,110 sex-specific effect genes in these 34 unique communication networks. Only 133 of our sex-specific effect genes were curated in human CellChatDB v2, and they are involved in 119 intercellular signals by encoding either a ligand or a receptor. Of these, six pathways including three sex-specific effect genes (*ITGB1*, *JAM2*, and *TNC*) showed communication alterations that aligned with the direction of effect and the cell type implicated in our sex-specific gene association analyses above. These signals are COLLAGEN, FN1, JAM, LAMININ, SPP1, and TENASCIN, all of which contribute to unique incoming signals to microglia among females with AD dementia compared to males with AD, and among males with normal cognition compared to males with AD dementia (Supplementary Table 9). Though it should be noted that each of these signals includes numerous cell types besides microglia (Extended Data Fig. 2). Upon further investigation, these signals share a common receptor on microglia, ITGB1 (encoded by *ITGB1*). In all cases, the sex difference in this signaling pathway was driven by a more severe downregulation of incoming ITGB1 signals to microglia among males with AD to the degrees that there were no inferred communications of these signals in this cohort (Fig. 9a). Microglial *ITGB1* indeed showed more expression in females with AD compared to males with AD (p=0.02, FDR=0.4; Supplementary Table 7), but no sex-by-AD interaction effect was observed (p=0.06). Notably, *ITGB1* in microglia shows a risk association with Aβ among females (FDR=0.01, Fig. 9b), suggesting these six microglial incoming signals might play a role in sex-specific risk for Aβ accumulation.
+
+![Fig. 9:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F9.medium.gif)
+
+[Fig. 9:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F9)
+
+Fig. 9: ITGB1 and JAM2 induced six sex-unique microglial-incoming signals under AD dementia.
+a, Dot plot showing all enriched intercellular communication (L-R pair interactions) from every major cell group to microglia, evaluated by sex and diagnosis. b, Scatter plot showing the correlation of ITGB1 expression with Aβ in microglia and JAM2 expression with tau in astrocytes. Pink dots represent female samples; blue dots represent male samples. Outliers beyond 4SD were removed from scatter plots. Lines in scatter plots represent the unadjusted linear fit.
+
+Apart from using ITGB1 as a receptor, the JAM signal also involves another sex-specific effect gene *JAM2*, which encodes one of its ligands by the same name (JAM2). The JAM2-(ITGAV+ITGB1) interaction induced a unique incoming signal to microglia from astrocytes and endothelial cells in AD females (Fig. 9a). *JAM2* expression in astrocytes was significantly increased (FDR=0.03) in AD dementia compared to normal cognition in both sexes (female p= 0.004, male p=0.09), but it did not show sex-biased expression in any cell type regardless of disease diagnosis. Hence, the lack of JAM2-(ITGAV+ITGB1) signal to microglial in AD males was due to the downregulation of *ITGB1* as we discussed above. Since *JAM2* is a male-specific risk gene in astrocytes for tau (FDR=0.02, Fig. 9b), we hypothesize JAM2 induced JAM signal from astrocyte to microglia functions as a protective mechanism against tau pathology for men. Lastly, TNC is curated to be a ligand for TENASCIN signals; however, no meaningful communications induced by it was observed in any of the four groups we analyzed.
+
+## DISCUSSION
+
+We have provided a comprehensive assessment of sex-specific transcriptomic effects that contribute to AD neuropathology and cognitive decline in a cell-specific manner (Fig. 10a). Our results highlight a striking dissociation between protective and detrimental gene associations among females, with protective associations arising primarily from neurons and detrimental gene associations arising primarily from glial cells. In contrast, we did not observe a similar dissociation among males (Fig. 10b). We also identified and replicated nine cell-specific gene associations with AD neuropathology and cognitive decline, all of which act in a female-specific manner, highlighting a set of genes that may have therapeutic potential in women. Next, we identified a host of sex-specific biological pathways and cell-cell communication alterations that behave in a cell-specific manner (Fig. 10b), drawing attention to novel biological signals that may only be relevant among males or females. Among those sex-specific effects, we highlight *ITGB1* as a high-quality candidate for a sex-biased role in Aβ accumulation in AD that deserves further functional validation. Finally, in contrast to some work, we did not observe a substantial enrichment for sex-specific gene associations with AD endophenotypes on the sex chromosomes, suggesting that sex-biased expression on the X and Y chromosomes may not be a major contributor to sex-specific risk and resilience in AD.
+
+![Fig 10:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F10.medium.gif)
+
+[Fig 10:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F10)
+
+Fig 10: Summary of single cell landscape of sex-specific differences in AD dementia
+a, Schematic illustration of the analysis strategy. b, Key sex-specific associations with AD endophenotypes at single cell resolution. Both figures were created in BioRender.
+
+### A host of neuronal genes protect against AD neuropathology among females, while endothelial cell genes protect against A**β** and cognitive decline among males
+
+Nearly all protective gene associations with AD neuropathology among females were observed in neurons (93%), suggesting a female-specific alterations in neurons that may be critical for understanding neuroprotection in AD. Our observation from these two independent cohorts that females show a sharper downregulation of protective genes in neurons seems to align with earlier studies in fewer participants showing a similar downregulation of gene expression in both excitatory and inhibitory neurons among females in response to AD pathology, a change that was not seen among males50. More interestingly, that same study also showed that the extreme changes observed in neuronal cells in females showed particularly strong associations with Aβ, aligning with our findings in the present study in which 50% of all protective neuronal associations in females were in relation to Aβ.
+
+The female-specific associations between neuronal gene expression and Aβ aligns well with previous literature in other domains. Our group and others have shown that Aβ positive females are more susceptible to hippocampal atrophy and cognitive decline51, a finding that has been well-supported by the autopsy literature as well4. In fact, a similar neuronal vulnerability is also observed in mouse models of brain amyloidosis where female mice show faster neurodegeneration and cognitive decline in response to Aβ52. While response to Aβ pathology is the simplest interpretation and aligns well with the literature, we cannot rule out the possibility that these alterations are upstream of Aβ in females and protect against deposition. Future mechanistic work is needed to clarify the temporal ordering of the associations and clarify whether down regulation of neuronal genes in women is a cause or consequence of Aβ deposition.
+
+In contrast to these female-specific effects, we observed robust male-specific protective associations in endothelial cells, particularly in relation to Aβ and cognitive decline. Endothelial cells made up the majority of male-specific protective associations with Aβ and cognitive decline, and also presented with the most enriched pathways among males. It is known that sex hormones influence endothelial cell health and function, and hence there are notable differences in endothelial cell structure and function between the sexes53. Endothelial cells have a sex-dependent secretome54 and 14-25% of the endothelial transcriptome is sex-biased, due to differences both at birth and acquired over life55. Our results suggest that these notable differences in endothelial cell function may lead to differential disease-response in the AD brain as AD neuropathology begins to accumulate.
+
+Additionally, and in contrast to the female-specific associations highlighted above, male-specific associations in neurons were primarily in relation to tau. While females appear to accumulate tau pathology more rapidly than males56,57, and show a faster rate of cognitive decline in the presence of AD pathology as highlighted above including in relation to tau pathology58, there is some evidence it takes a higher level of tau pathology for females to reach a clinical diagnosis of AD59. Perhaps the male-specific and female-specific gene associations that we have observed in the present analysis provide some additional insight into these contradictory interpretations of similar data. It may be that the downregulation of protective gene effects in neurons among females arise more sharply in relation to Aβ and drive a faster rate of tau accumulation and a faster rate of cognitive decline. At the same time, males may show a stronger neuronal response to tau deposition that makes them more susceptible to the downstream consequences of tau.
+
+From the present results, it is difficult to speculate on the direction or timing of these sex-specific effects given the cross-sectional nature of the study, but these results offer additional information about the clear sex differences in the cellular profile of the AD brain and highlight the clear need to better characterize how and when sex-specific associations emerge across stages of disease.
+
+### Novel female-specific gene associations with AD neuropathology and cognitive decline
+
+All our replicated sex-specific associations were for females, likely due to the larger sample size and additional statistical power. First, we observed three female-specific associations in neurons with Aβ including *ADGRV1* in both excitatory and inhibitory neurons and *OR3A3* in excitatory neurons. Both *ADGRV1* and *OR3A3* encode proteins that are members of G protein-coupled receptors, which mediate most of our physiological responses to hormones, neurotransmitters and environmental stimulants60. *ADGRV1* plays an important role in brain development and sensory cell function61. Mutations in *ADGRV1* have been linked to Usher syndrome type 2C (USH2C, OMIM 605472)62, the most common form of hereditary deaf blindness, and various forms of epilepsy63,64. USH2C can affect both sexes, although some reported males with *ADGRV1* mutations show more severe and even lethal clinical manifestations65. Additionally, one study identified *ADGRV1* as a male-specific risk factor in opioid dependence in African Americans66, highlighting potential differences in *ADGRV1* function by sex. *OR3A3* encodes an olfactory receptor protein, but its function in human disease is not well-defined. Certainly, there are notable impairments in olfaction in AD, so alterations in this gene may reflect sex differences in neurodegenerative process relevant to olfaction, aligning with recent evidence that females show a faster rate of neuronal loss in the olfactory cortex during AD compared to males67, and that there is a tighter coupling between olfaction impairment and cognitive impairment among females compared to males68.
+
+We also observed four female-specific associations in neurons with tau including *IFI27L1*, *LYRM1*, *STAP2*, and *TSTD2*, all in inhibitory neurons. *IFI27L1* is part of the interferon-stimulated gene (ISG) family, which is typically involved in the immune response to viral infections and other inflammatory processes. IFI27 was identified as one of three ISG genes that mediated an antiviral effect in cortical neurons69; however, the particular evidence for IFI27L1 in human cells is still lacking. LYRM1 has been mostly studied for its role in regulating adipose tissue homeostasis and obesity-associated insulin resistance70. Overexpression of LYRM1 in adipocytes has been linked to mitochondrial impairment71. STAP2 was shown to be an adaptor protein to enhance TCR signaling72, dysregulation of which can either cause immunodeficiency or autoimmunity linked to diseases such as multiple sclerosis73. Studies of TSTD2 are limited, but serum TSTD2 antibody levels were reported to be higher in males, older adults, smokers, in those who consumed alcohol regularly, in those with hypertension, and significantly higher in patients with acute cerebral infarction or chronic kidney disease74.
+
+Finally, we observed two female-specific associations in neurons with cognitive decline including *PDYN* in excitatory neurons and *TMEM50B* in astrocytes. *PDYN* encodes the dynorphin neuropeptides, polymorphisms and structural variants within this gene locus were reported to be associated with drug addiction75. Interestingly, many *PDYN* variants exclusively showed associations with risk in female opioid addicts76. *TMEM50B* encodes a membrane protein which presents on endoplasmic reticulum and Golgi apparatus. Located on chromosome 21, *TMEM50B* has been implicated in the neurophenotypes of Down Syndrome due to being one of a few genes upregulated in model systems of Down Syndrome, particularly in the cerebellum during development77.
+
+### Immune/inflammatory response and microglia may play central role to sex differences in AD
+
+Another key finding from our results is that immune and inflammation response pathways show striking sex-specific enrichment for associations with AD neuropathology, particularly in microglia, endothelial cells, and OPCs. Of particular note, the TNF-α signaling via NF-κB pathway and MYC Targets pathway were enriched in each sex with an opposite direction of association. The role of NF-κB signaling in AD pathogenesis, especially in glial cells, is well-known to produce pro-inflammatory cytokines and induce neuroinflammation, promote myelin injury and neurodegeneration, drive Aβ formation and tau hyperphosphorylation, and stimulate more NF-κB activation in neurons and glial cells78,79. The fact that NF-κB signaling showed sex-dimorphic enrichment might indicate a drastic sex difference in the microenvironment for these cell types during AD. In fact, our observations of many unique microglia-based signals in each sex seems to provide further support to this hypothesis.
+
+Indeed, the importance of microglia-specific signals in contributing to sex differences in AD was evident from our intercellular communication analysis. We not only showed that microglia present with the most sex-specific enriched pathways but also showed that 30% of group specific intercellular signals involved microglia, significantly more than any other cell type. Microglia are the primary resident immune cells of the brain and play a crucial role in regulating the immune response to AD80–82. Many of the top AD genes identified in GWAS studies are expressed by microglia, such as *TREM2*, *ABCA7*, *CR1* and *INPP5D*. Moreover, increasing evidence has recognized the importance of microglia in contributing to sex-differences in AD1. Our intercellular communication profiling pinpointed several pathways that are differentially dysregulated in AD between sexes, including THY1, COMPLEMENT, MHC-II, ICAM, and CD99, many of which are well known for their roles in immune and inflammatory response.
+
+It is also worth highlighting that one key player from microglia induced numerous sex-unique signals: *ITGB1,* a gene that encodes the β1 subunit of integrin receptors. *ITGB1* was identified as one of the five hub genes that is associated with the progression of AD and Major Depressive Disorder84. Most interestingly, microglial ITGB1 is a key component of the cell surface receptor system that mediate interaction between fibrillar Aβ (fAβ) and microglia to promote the clearance and phagocytosis of fAβ85. fAβ can induce overexpression of *ITGB1* transcription, whereas the more potent neurotoxicity form Aβ oligomers can downregulate *ITGB1*86. Our evidence that microglial *ITGB1* may act as a female-specific risk factor for Aβ suggests that there is a higher sensitivity of *ITGB1* to Aβ pathology in the female brain.
+
+### Sex chromosomes are not enriched for sex-specific associations with AD endophenotypes
+
+While there is emerging evidence of sex-biased expression of genes on the sex chromosomes, particularly the X chromosome, contributing to AD pathogenesis83,87,88, our study found that only 3.2% of all sex-specific gene associations were located on the X chromosome, accounting for less than 5% of all X-linked genes and indicating no enrichment on the X chromosome compared to the autosomes. Similarly, we only observed one sex-specific gene association on Y chromosome. Interestingly though, we did observe Androgen Response as one of the top pathways that was significantly enriched in multiple cell types for both sexes, highlighting the possibility of a sex-by-hormone interaction effect in AD.
+
+Among the X-chromosome genes contributing to sex-specific associations we observed, a few are known XCI escapees. Oligodendrocyte-*TXLNG* showed female-biased expression regardless of disease, which aligns with the fact that it is a known XCI escapee in the brain89. *TSIX* from CUX2+ neurons, the antisense regulator of XIST, also showed female-biased expression in both diagnostic groups. Our observation is consistent with a previous study showing both *TXLNG* and *TSIX* had female-biased expression in human blastocysts from sibling embryos90, indicating a baseline expression difference between sexes that is independent of AD dementia. *BX842570.1* from inhibitory neurons showed female-biased expression only among participants with normal cognition (female-more expression in AD dementia with a FDR=0.07), but its XCI pattern is unknown, although it locates adjacent to a known and well-studied XCI escape gene *PRKX*91, about 100kb away on the opposite strand. *STS* from CUX2+ neurons, which encodes an endoplasmic reticulum protein called Steroid Sulfatase, and showed female-biased expression among participants with normal cognition. Since it is a known XCI escapee in the brain48,89, this expression pattern can be expected. Interestingly, *STS*’s sex-biased expression was not observed among participants with AD dementia. Oligodendrocyte-*SYAP1*, which encodes the Synapse Associated Protein 1, showed female-biased expression among participants with AD dementia. It is a known XCI escapee, and hence one would expect to see a female-biased expression pattern regardless of diagnosis. It is possible that the heterogeneity in sex-biased expression among those with AD dementia compared to those with normal cognition reflects cell-specific heterogeneity in XCI or reflects a fundamental shift in XCI for these genes in AD, so additional work on XCI for these genes in the AD brain is warranted. In fact, our discovery of sex-biased expression pattern change for selected XCI genes during AD dementia is in line with a very recent study92 which revealed aging remodels transcription of the inactive X (Xi) and active X (Xa) across hippocampal cell types in female mice. The study observed that some genes on Xi underwent activation whereas some others showed new escape with aging, both in a cell-type-specific manner. It is safe to say that AD dementia-induced differential expression of X chromosome genes in certain brain cell types might contribute to sex differences of disease pathogenesis.
+
+The most interesting finding of all sex chromosomal genes is *ASMTL-AS1* from CUX2-neurons, a long non-coding RNA (lncRNA) that resides in the PAR (i.e. pseudoautosomal region) of the X chromosome. Surprisingly, it showed male-biased expression among those with AD dementia (FDR<0.001) in CUX2-excitatory neurons and was not differentially expressed by sex among those with normal cognition (FDR=0.4). Upon further investigation, this male-biased expression seen in AD was caused by a severe reduction of *ASMTL-AS1* expression in excitatory neurons among females with AD (FDR=0.01**)**. The XCI escape pattern of *ASMTL-AS1* is unknown, however its antisense gene *ASMTL* is a known XCI escapee93. Dysregulated expression of *ASMTL-AS1* was reported in several cancers94–96, but no evidence has yet linked it to neurodegenerative diseases. In fact, the role of lncRNA genes in non-tumorous diseases is just beginning to emerge, especially in AD97,98. A recent report discussed how a one copy deletion of a lncRNA gene, *CHASERR*, caused a neurodevelopmental disorder by increasing expression of an adjacent gene *CHD2*99.
+
+### Damage-related stress-response pathways show notable sex-specific alterations in AD
+
+We observed sex-specific enrichment for a number of metabolism-related and stress-response related pathways, including Hypoxia, DNA Repair, Oxidative Phosphorylation, and UV Response, all of which are related to well-known AD risk factors100. Stress-response gene signatures are upregulated in the AD brain across multiple cell types, especially in latest stages of pathology50,100–102, supporting our findings. Differences in both metabolism and stress-response have been highlighted as key contributors to sex differences in AD in a recent review due to the striking sex differences in the alterations of these key pathways over the course of aging and AD103.
+
+Among these top enriched pathways for both sexes, Oxidative Phosphorylation (OXPHOS) is of particular interest. OXPHOS is another pathway that had the leading edge of enrichment with opposite AD effect genes in different sex. It was enriched in both endothelial cells and astrocytes for tau (protective genes enriched in females and risk genes enriched in males). OXPHOS is a process that takes place in mitochondria which produces ATP to meet cell’s energy demand through oxidizing NADH or FADH. Mitochondrial dysfunction and oxidative damage in AD patients have been documented as early as 1990s104,105. The mitochondrial cascade hypothesis for AD, which was first proposed in 2004106, posits that AD endophenotypes, such as Aβ production and tau phosphorylation, arise as a consequence of the compensation response to mitochondrial function and durability changes during aging107. Indeed, multiple studies showed AD pathology promoted dysfunctional mitochondria108–111. Our work suggests that sex differences may play a crucial role in this pathway.
+
+One of the mechanisms by which abnormal OXPHOS (oxidative stress) contributes to AD is through damaging the blood-brain barrier (BBB), promoting the release of proinflammatory cytokines, and upregulating genes and proteins which can affect BBB permeability112–114. BBB dysfunction can expedite tau formation and dispersion115, and tau alone can initiate BBB breakdown with tau-induced glial activation and endothelial damage116,117. Endothelial cells and astrocytes are two essential components of BBB, which mediate the formation of tight junctions that critically affect the BBB function. Sex difference in BBB strength, shear stress response, vascular function, and metabolism has been observed, and multiple potential mechanisms including the influence from sex hormones have been proposed118. The interesting tau-related OXPHOS enrichment patten we observed in both endothelial cells and astrocytes might indicate BBB dysfunction through dysregulation of OXPHOS. In males, since OXPHOS enrichment was driven by genes that related to higher levels of tau pathology, the upregulation of OXPHOS in these cell types may trigger more tau buildup. In females, OXPHOS enrichment was driven by genes that were related to lower levels of tau pathology, so the upregulation of the same OXPHOS in females may serve as a protective mechanism against tau pathology.
+
+### Sex-influenced and disease-vulnerable cell subpopulations
+
+Recent studies25,26 from both ROS/MAP and SEA-AD cohorts demonstrated SST GABAergic neurons are the most vulnerable and the earliest affected neuronal subtypes in AD, and their downregulation in AD brains is evident, validated in both DLPFC and middle temporal gyrus (MTG) brain tissues. In our research, we observed that males had a significantly higher fraction of SST inhibitory neurons compared to females, and a nominally significant lower SST neuron fraction in AD dementia group compared to cognitive normal controls for both sexes, with a slightly larger disease-related reduction among females (-1.5%) compared to males (-0.6%). However, neither cell fraction nor weighted linear regression analysis of cell abundance find robust evidence of statistically significant sex interaction effect. That said, the SST neurons remain an interesting focus for future cell-specific work to clarify if there are sex differences in the loss of this important neuron population.
+
+In addition, a recent study26 from SEA-AD demonstrated that certain oligodendrocyte subpopulations (“Oligo_2” and “Oligo_4”) were the most vulnerable cell types during AD pathogenesis and progression. Our cell fraction results showed that females had a higher fraction of enhanced-translation Oli.6 and Oli.12, while males had a higher fraction of Oli.3 and Oli.9. However, due to contradicting subtype classifications between studies, it is difficult to tell whether these sex differences map onto the previously reported disease alterations in oligodendrocytes. Again, our cell composition models did not show robust evidence of a statistically significant sex interaction effect with these oligodendrocyte subpopulations.
+
+Most importantly, our study identified two more disease-associated, disease-vulnerable cell subpopulations in DLPFC, aSMC and Exc.3. Previous study119 observed a strong loss of brain vascular nuclei - across endothelial cells, SMCs, pericytes and fibroblast-like cells, though no association with AD diagnosis or endophenotype was detected in their dataset. A recent study31 investigating the relevance of fraction quantitative trait locus (fQTL) to AD risk using both snRNA-seq and bulk RNA-seq DLPFC data from ROS/MAP cohorts discovered one known AD risk SNP, rs5011436, that coincided with the fQTL of excitatory neuron 3 (Exc.3). Specifically, the major allele rs5011436A, the risk allele for AD, is negatively associated with Exc.3 fraction. This SNP resides within *TMEM106B*. The authors further demonstrated rs5011436 not only was an fQTL but also had a cis-eQTL effect on *TMEM106B* expression. Our discovery bolsters evidence that Exc.3 cell composition is altered in AD dementia. As for the aSMC subpopulations, more evidence is needed to understand its specific role in AD pathogenesis. aSMCs were showed to display profound organotypicity120, which suggested their functions being highly dependent on tissue environment. This might hint their modulation potential in disease.
+
+### Limitations and future work
+
+This manuscript included multiple strengths. The large sample size, longitudinal data prior to death from ROS/MAP, comprehensive clinical and neuropathological characterization of participants, independent replication, and deep sequencing provided the most comprehensive molecular profile of sex differences in the AD brain to date. Yet, the work is not without limitations. While we were able to replicate some effects, differences in sample size and cohort characteristics may have prevented additional replications. For example, basic demographic differences between the two cohorts, such as age at death, education, and sex distribution were notable. The SEA-AD cohort also included a greater proportion of advanced Braak stage patients (Braak 5 or 6) compared to the ROS/MAP cohorts. In terms of the sequencing data, they were prepared and generated in different settings and were processed based on different pipelines, which not only affected the discovery power but also created unique technical noise during replication. And finally, drastic differences in cell taxonomy and clustering algorithms used to produce cell types from ROS/MAP and SEA-AD cohorts prevented a rigorous assessment of cell identities and made cell-type based comparison very challenging. Hence, the low replication rate (0.4%) between these two studies was not surprising. More effort in the field should be focusing on data integration26 and phenotype harmonization121 to tackle abovementioned issues.
+
+Another shortcoming of this study is that the ROS/MAP cohorts include more than twice as many females than males, providing more statistical power in analyses of females and likely contributing to the almost four-fold increase in female-specific gene associations compared to males. Our observations are also limited to non-Hispanic White individuals limiting our generalizability to other populations. Finally, our study only focused on DLPFC brain tissue. AD pathogenesis involves multiple brain regions and there are variations in AD pathology both spatially and temporally among different regions122. Our future effort should also include exploring other brain tissues as well as investigating evidence beyond transcriptomes, including protein translation, post-translational modifications, epigenetics, etc. to picture a broader overview of sex-specific effect of AD pathogenesis. Ultimately, experimental validation of some of these identified sex-specific gene effects will be crucial to move the field forward and realize the potential of sex-specific therapeutic interventions in AD.
+
+## CONCLUSION
+
+This manuscript has provided the most comprehensive analysis of sex-specific transcriptomic associations with AD endophenotypes at cellular resolution. Due to differences in sample size, we had more statistical power to identify true female-specific associations, and we were indeed able to identify and replicate multiple female-specific associations in neurons and astrocytes. Additionally, our results provide broad support for previous suggestions of enhanced neuroprotective associations in neurons for females, and enhanced risk associations in glial cells among males and females. While most of the female-specific associations we observed in our study were among neurons in relation to Aβ, most of the male-specific associations were observed among endothelial cells in relation to tau. Finally, our cell signaling analyses highlight multiple cell-cell interactions that appear to be altered in a sex-specific manner in AD. Together, these findings provide strong evidence of sex-specific transcriptomic drivers in the AD brain and provide a host of exciting sex-specific targets for intervention that can be validated and prioritized in future mechanistic studies.
+
+## Supporting information
+
+Supplemental Table 1-9 [[supplements/647076_file15.xlsx]](pending:yes)
+
+## Data and code availability
+
+Raw sequence and processed data of snRNA-seq from ROS/MAP study are available at Synapse (https://www.synapse.org/#!Synapse:syn31512863). FASTQ files of SEA-AD snRNA-seq are available through controlled access at Sage Bionetworks (accession no. syn26223298). Processed SEA-AD snRNA-seq are available through the Open Data Registry in an AWS bucket (sea-ad-single-cell-profiling) as AnnData objects (h5ad files) and viewable on CELLxGENE and Allen Brain Cell Atlas ([https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas)). All codes used for analysis discussed in the manuscript are available upon request.
+
+## Author Contributions
+
+Y.W. and T.J.H. designed the study and wrote the manuscript. Y.W. performed all the analyses. K.T., M.G., D.K, P.L.D.J, V.M, J.A.S, D.A.B. generated data, aided in the interpretation of results, and provided critical revision of the manuscript. A.D., C.D.K., L.D. contributed to study design and provided critical revision of the manuscript. All authors approved the final manuscript.
+
+## Conflict of Interest
+
+T.J.H. serves on the Scientific Advisory Board for Vivid Genomics, serves as Deputy Editor for Alzheimer’s & Dementia: Translational Research and Clinical Intervention, and as Senior Associate Editor for Alzheimer’s & Dementia. All other authors have no competing interests.
+
+## Extended data figures and tables
+
+![Extended Data Fig 1:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F11.medium.gif)
+
+[Extended Data Fig 1:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F11)
+
+Extended Data Fig 1: ROS/MAP Cell Composition influenced by sex or AD dementia diagnosis.
+a, Boxplots showing the four cell subtypes that are influenced by AD dementia diagnosis. b, Boxplots showing the cell count for interferon-response astrocytes that are influenced by sex. c, Boxplots showing fraction (percentage) of the four cell subtypes that are influenced by AD dementia diagnosis. d, Boxplots showing fraction (percentage) of the seven cell subtypes that are influenced by sex.
+
+![Extended Data Fig 2:](http://biorxiv.org/https://www.biorxiv.org/content/biorxiv/early/2025/04/22/2025.04.18.647076/F12.medium.gif)
+
+[Extended Data Fig 2:](http://biorxiv.org/content/early/2025/04/22/2025.04.18.647076/F12)
+
+Extended Data Fig 2: Six microglial-incoming signals comparison.
+Chord diagram showing six signaling pathways in females and males with AD dementia. Males with AD dementia lacked meaningful incoming signals of each of these signals to microglia compared to females with AD dementia. Cell type abbreviation: ast, astrocytes; excit, excitatory neurons; inhib, inhibitory neurons; mic, microglia; oligo, oligodendrocytes; opc, oligodendrocyte precursor cells; endo, endothelial cells. Each information flow represents combined interactions from all enriched ligand-receptor pairs.
+
+## Acknowledgement
+
+We thank all participants and their families from each of the studies we mentioned for their generous donation and support for research. All sex difference analyses are supported through NIH funding R01AG061518. The results published here are in whole or in part based on data obtained from the AD Knowledge Portal ([https://adknowledgeportal.org](https://adknowledgeportal.org)).
+
+Study data of ROS/MAP were provided by the Rush Alzheimer’s Disease Center, Rush University Medical Center, Chicago. Data collection was supported through funding by NIA grants P30AG10161 (ROS), P30AG072975 (ROS), R01AG015819 (ROS/MAP; genomics and RNAseq), R01AG017917 (MAP), U01AG46152, U01AG61356, R01AG030146, RF1AG57473 (snRNA-seq), the Illinois Department of Public Health (ROS/MAP). Additional phenotypic data can be requested at [www.radc.rush.edu](https://www.radc.rush.edu). The Seattle Alzheimer’s Disease Brain Cell Atlas (SEA-AD) consortium is supported by the National Institutes on Aging (NIA) grant U19AG060909. Study data were generated under the support of in part by the UW (University of Washington) Alzheimer’s Disease Research Center (NIA P30AG066509), the Adult Changes in Thought (ACT) Study (NIA U19AG066567), and the Nancy and Buster Alvord Endowment (to C.D.K.). Data collection for this work was additionally supported, in part, by prior funding from NIA (P50AG005136; U01AG006781).
+
+## Funding
+
+National Institute on Aging, , 
+
+National Institute on Aging, , 
+
+National Institute on Aging, https://ror.org/049v75w11, P50AG005136, U01AG006781
+
+## Footnotes
+
+*   [https://www.synapse.org/#!Synapse:syn31512863](https://www.synapse.org/#!Synapse:syn31512863) 
+
+*   [https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas) 
+
+*   Received April 18, 2025.
+*   Revision received April 18, 2025.
+*   Accepted April 22, 2025.
+
+
+*   © 2025, Posted by Cold Spring Harbor Laboratory
+
+The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.
+
+## References
+
+1.  1.Niu, H., Álvarez-Álvarez, I., Guillén-Grima, F. & Aguinaga-Ontoso, I. Prevalence and incidence of Alzheimer’s disease in Europe: A meta-analysis. Neurologia 32, 523– 532 (2017).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.nrl.2016.02.016&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=27130306&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+2.  2.Beam, C. R. et al. Differences Between Women and Men in Incidence Rates of Dementia and Alzheimer’s Disease. J Alzheimers Dis 64, 1077–1083 (2018).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.3233/JAD-180141&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=30010124&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+3.  3.Liu, C.-C., Li, C.-Y., Sun, Y. & Hu, S. C. Gender and Age Differences and the Trend in the Incidence and Prevalence of Dementia and Alzheimer’s Disease in Taiwan: A 7-Year National Population-Based Study. Biomed Res Int 2019, 5378540 (2019).
+    
+    
+
+4.  4.Barnes, L. L. et al. Sex differences in the clinical manifestations of Alzheimer disease pathology. Arch Gen Psychiatry 62, 685–691 (2005).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1001/archpsyc.62.6.685&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=15939846&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000229628400013&link_type=ISI) 
+
+5.  5.Lin, K. A. et al. Marked gender differences in progression of mild cognitive impairment over 8 years. Alzheimers Dement (N Y*)* 1, 103–110 (2015).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.trci.2015.07.001&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=26451386&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+6.  6.Tifratene, K., Robert, P., Metelkina, A., Pradier, C. & Dartigues, J. F. Progression of mild cognitive impairment to dementia due to AD in clinical settings. Neurology 85, 331–338 (2015).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1212/WNL.0000000000001788&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=26136516&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+7.  7.Hua, X. et al. Sex and age differences in atrophic rates: an ADNI study with n=1368 MRI scans. Neurobiol Aging 31, 1463–1480 (2010).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.neurobiolaging.2010.04.033&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=20620666&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000279991800018&link_type=ISI) 
+
+8.  8.Effects of age, sex, and ethnicity on the association between apolipoprotein E genotype and Alzheimer disease. A meta-analysis. APOE and Alzheimer Disease Meta Analysis Consortium - PubMed. [https://pubmed.ncbi.nlm.nih.gov/9343467/](https://pubmed.ncbi.nlm.nih.gov/9343467/).
+    
+    
+
+9.  9.Altmann, A., Tian, L., Henderson, V. W. & Greicius, M. D. Sex modifies the APOE-related risk of developing Alzheimer disease. Annals of neurology 75, 563–73 (2014).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1002/ana.24135&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=24623176&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+10. 10.Haan, M. N., Shemanski, L., Jagust, W. J., Manolio, T. A. & Kuller, L. The role of APOE epsilon4 in modulating effects of other risk factors for cognitive decline in elderly persons. JAMA 282, 40–46 (1999).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1001/jama.282.1.40&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=10404910&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000081195800027&link_type=ISI) 
+
+11. 11.Sinforiani, E. et al. Impact of gender differences on the outcome of Alzheimer’s disease. Dement Geriatr Cogn Disord 30, 147–154 (2010).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1159/000318842&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=20733307&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+12. 12.Nebel, R. A. et al. Understanding the impact of sex and gender in Alzheimer’s disease: A call to action. Alzheimer’s & Dementia 14, 1171–1183 (2018).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.jalz.2018.04.008&link_type=DOI) 
+
+13. 13.Deming, Y. et al. Sex-specific genetic predictors of Alzheimer’s disease biomarkers. Acta Neuropathol 136, 857–872 (2018).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1007/S00401-018-1881-4&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=29967939&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+14. 14.Dumitrescu, L. et al. Sex differences in the genetic predictors of Alzheimer’s pathology. Brain 142, 2581–2589 (2019).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1093/brain/awz206&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=31497858&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+15. 15.Eissman, J. M. et al. Sex-specific genetic architecture of late-life memory performance. Alzheimer’s & Dementia 20, 1250–1267 (2024).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1002/alz.13507&link_type=DOI) 
+
+16. 16.Eissman, J. M. et al. Sex differences in the genetic architecture of cognitive resilience to Alzheimer’s disease. Brain 145, 2541–2554 (2022).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1093/brain/awac177&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=35552371&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+17. 17.Hohman, T. J. et al. Sex-Specific Association of Apolipoprotein E With Cerebrospinal Fluid Levels of Tau. JAMA Neurology 75, 989–998 (2018).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1001/jamaneurol.2018.0821&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=29801024&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+18. 18.Walters, S. et al. Associations of Sex, Race, and Apolipoprotein E Alleles With Multiple Domains of Cognition Among Older Adults. JAMA Neurol 80, 929–939 (2023).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1001/jamaneurol.2023.2169&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=37459083&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+19. 19.Dumitrescu, L., Mayeda, E. R., Sharman, K., Moore, A. M. & Hohman, T. J. Sex Differences in the Genetic Architecture of Alzheimer’s Disease. Curr Genet Med Rep 7, 13–21 (2019).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1007/s40142-019-0157-1&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=31360619&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+20. 20.Guo, L. et al. Sex specific molecular networks and key drivers of Alzheimer’s disease. Molecular Neurodegeneration 18, 39 (2023).
+    
+    
+
+21. 21.Lopez-Lee, C., Kodama, L. & Gan, L. Sex differences in neurodegeneration: the role of the immune system in humans. Biol Psychiatry S0006–3223(21)00039–1 (2021) doi:10.1016/j.biopsych.2021.01.002.
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.biopsych.2021.01.002&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=33715827&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+22. 22.Wan, Y.-W. et al. Meta-Analysis of the Alzheimer’s Disease Human Brain Transcriptome and Functional Dissection in Mouse Models. Cell Reports 32, 107908 (2020).
+    
+    
+
+23. 23.Cáceres, A. & González, J. R. Female-specific risk of Alzheimer’s disease is associated with tau phosphorylation processes: A transcriptome-wide interaction analysis. Neurobiology of Aging 96, 104–108 (2020).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.neurobiolaging.2020.08.020&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=32977080&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+24. 24.Belonwu, S. A. et al. Sex-Stratified Single-Cell RNA-Seq Analysis Identifies Sex-Specific and Cell Type-Specific Transcriptional Responses in Alzheimer’s Disease Across Two Brain Regions. Mol Neurobiol 59, 276–293 (2022).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1007/s12035-021-02591-8&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=34669146&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+25. 25.Green, G. S. et al. Cellular communities reveal trajectories of brain ageing and Alzheimer’s disease. Nature 633, 634–645 (2024).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s41586-024-07871-6&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=39198642&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+26. 26.Gabitto, M. I. et al. Integrated multimodal cell atlas of Alzheimer’s disease. Nat Neurosci 1–18 (2024) doi:10.1038/s41593-024-01774-5.
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s41593-024-01774-5&link_type=DOI) 
+
+27. 27.Bennett, D. A., Schneider, J. A., Arvanitakis, Z. & Wilson, R. S. Overview and findings from the religious orders study. Current Alzheimer Research 9, 628 (2012).
+    
+    
+
+28. 28.Bennett, D. A. et al. Religious Orders Study and Rush Memory and Aging Project. Journal of Alzheimer’s disease : JAD 64, S161–S189 (2018).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.3233/JAD-179939&link_type=DOI) 
+
+29. 29.Bennett, D. A. et al. Overview and findings from the Rush Memory and Aging Project. Current Alzheimer Research 9, 646 (2012).
+    
+    
+
+30. 30.Hawrylycz, M. et al. SEA-AD is a multimodal cellular atlas and resource for Alzheimer’s disease. Nat Aging 4, 1331–1334 (2024).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s43587-024-00719-8&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=39402332&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+31. 31.Fujita, M. et al. Cell subtype-specific effects of genetic variation in the Alzheimer’s disease brain. Nat Genet 56, 605–614 (2024).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s41588-024-01685-y&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=38514782&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+32. 32.Choudhary, S. & Satija, R. Comparison and evaluation of statistical error models for scRNA-seq. Genome Biology 23, 27 (2022).
+    
+    
+
+33. 33.Jorstad, N. L. et al. Transcriptomic cytoarchitecture reveals principles of human neocortex organization. Science (2023) doi:10.1126/science.adf6812.
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1126/science.adf6812&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=37824655&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+34. 34.Wilson, R. S., Arnold, S. E., Schneider, J. A., Tang, Y. & Bennett, D. A. The relationship between cerebral Alzheimer’s disease pathology and odour identification in old age. J Neurol Neurosurg Psychiatry 78, 30–35 (2007).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoiam5ucCI7czo1OiJyZXNpZCI7czo3OiI3OC8xLzMwIjtzOjQ6ImF0b20iO3M6NDg6Ii9iaW9yeGl2L2Vhcmx5LzIwMjUvMDQvMjIvMjAyNS4wNC4xOC42NDcwNzYuYXRvbSI7fXM6ODoiZnJhZ21lbnQiO3M6MDoiIjt9) 
+
+35. 35.Wilson, R. S. et al. Temporal course and pathologic basis of unawareness of memory loss in dementia. Neurology 85, 984–991 (2015).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1212/WNL.0000000000001935&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=26311746&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+36. 36.He, L. et al. NEBULA is a fast negative binomial mixed model for differential or co-expression analysis of large-scale multi-subject single-cell data. Commun Biol 4, 629 (2021).
+    
+    
+
+37. 37.Korotkevich, G. et al. Fast gene set enrichment analysis. 060012 Preprint doi:10.1101/060012 (2021).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NzoiYmlvcnhpdiI7czo1OiJyZXNpZCI7czo4OiIwNjAwMTJ2MyI7czo0OiJhdG9tIjtzOjQ4OiIvYmlvcnhpdi9lYXJseS8yMDI1LzA0LzIyLzIwMjUuMDQuMTguNjQ3MDc2LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==) 
+
+38. 38.Liberzon, A. et al. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Systems 1, 417–425 (2015).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.cels.2015.12.004&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=26771021&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+39. 39.CellChat for systematic analysis of cell-cell communication from single-cell and spatially resolved transcriptomics | bioRxiv. [https://www.biorxiv.org/content/10.1101/2023.11.05.565674v1](https://www.biorxiv.org/content/10.1101/2023.11.05.565674v1).
+    
+    
+
+40. 40.Information (US), N. C. for B. Chromosome Map. in Genes and Disease [Internet] (National Center for Biotechnology Information (US), 1998).
+    
+    
+
+41. 41.Lyon, M. F. Sex Chromatin and Gene Action in the Mammalian X-Chromosome. Am J Hum Genet 14, 135–148 (1962).
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=14467629&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=A19622963A00006&link_type=ISI) 
+
+42. 42.Carrel, L. & Willard, H. F. X-inactivation profile reveals extensive variability in X-linked gene expression in females. Nature 434, 400–404 (2005).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/nature03479&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=15772666&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000227715100056&link_type=ISI) 
+
+43. 43.Deng, X., Berletch, J. B., Nguyen, D. K. & Disteche, C. M. X chromosome regulation: diverse patterns in development, tissues and disease. Nat Rev Genet 15, 367–378 (2014).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=doi:10.1038/nrg3687&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=24733023&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+44. 44.Tukiainen, T. et al. Landscape of X chromosome inactivation across human tissues. Nature 550, 244–248 (2017).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/nature24265&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=29022598&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+45. 45.Jansen, R. et al. Sex differences in the human peripheral blood transcriptome. BMC Genomics 15, 33 (2014).
+    
+    
+
+46. 46.Melé, M. et al. The human transcriptome across tissues and individuals. Science (New York, N.Y.) 348, 660 (2015).
+    
+    
+
+47. 47.Armoskus, C. et al. Identification of sexually dimorphic genes in the neonatal mouse cortex and hippocampus. Brain Res 1562, 23–38 (2014).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.brainres.2014.03.017&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=24661915&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+48. 48.Peeters, S., et al. Refining the genomic determinants underlying escape from X-chromosome inactivation. NAR Genomics and Bioinformatics 5, lqad052 (2023).
+    
+    
+
+49. 49.Andrews, S. J. et al. The complex genetic architecture of Alzheimer’s disease: novel insights and future directions. eBioMedicine 90, (2023).
+    
+    
+
+50. 50.Mathys, H. et al. Single-cell transcriptomic analysis of Alzheimer’s disease. Nature 570, 332–337 (2019).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s41586-019-1195-2&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=31042697&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+51. 51.Koran, M. E. I., Wagener, M., Hohman, T. J., & for the Alzheimer’s Neuroimaging Initiative. Sex differences in the association between AD biomarkers and cognitive decline. Brain Imaging and Behavior 11, 205–213 (2017).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1007/s11682-016-9523-8&link_type=DOI) 
+
+52. 52.Poon, C. H. et al. Sex Differences between Neuronal Loss and the Early Onset of Amyloid Deposits and Behavioral Consequences in 5xFAD Transgenic Mouse as a Model for Alzheimer’s Disease. Cells 12, 780 (2023).
+    
+    
+
+53. 53.Robert, J. Sex differences in vascular endothelial cells. Atherosclerosis 384, 117278 (2023).
+    
+    
+
+54. 54.Cattaneo, M. G., Banfi, C., Brioschi, M., Lattuada, D. & Vicentini, L. M. Sex-dependent differences in the secretome of human endothelial cells. Biology of Sex Differences 12, 7 (2021).
+    
+    
+
+55. 55.Hartman, R. J. G. et al. Intrinsic transcriptomic sex differences in human endothelial cells at birth and in adults are associated with coronary artery disease targets. Sci Rep 10, 12367 (2020).
+    
+    
+
+56. 56.Wang, Y.-T. et al. Sex-specific modulation of amyloid-β on tau phosphorylation underlies faster tangle accumulation in females. Brain awad397 (2023) doi:10.1093/brain/awad397.
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1093/brain/awad397&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=37988283&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+57. 57.Buckley, R. F. et al. Sex Differences in the Association of Global Amyloid and Regional Tau Deposition Measured by Positron Emission Tomography in Clinically Normal Older Adults. JAMA Neurology 76, 542–551 (2019).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1001/jamaneurol.2018.4693&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=30715078&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+58. 58.Buckley, R. F. et al. Sex Mediates Relationships Between Regional Tau Pathology and Cognitive Decline. Ann Neurol 88, 921–932 (2020).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1002/ana.25878&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=32799367&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+59. 59.Digma, L. A. et al. Women can bear a bigger burden: ante- and post-mortem evidence for reserve in the face of tau. Brain Commun 2, fcaa025 (2020).
+    
+    
+
+60. 60.Rosenbaum, D. M., Rasmussen, S. G. F. & Kobilka, B. K. The structure and function of G-protein-coupled receptors. Nature 459, 356–363 (2009).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/nature08144&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=19458711&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000266243700033&link_type=ISI) 
+
+61. 61.McMillan, D. R., Kayes-Wandover, K. M., Richardson, J. A. & White, P. C. Very large G protein-coupled receptor-1, the largest known cell surface protein, is highly expressed in the developing central nervous system. J Biol Chem 277, 785–792 (2002).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6MzoiamJjIjtzOjU6InJlc2lkIjtzOjk6IjI3Ny8xLzc4NSI7czo0OiJhdG9tIjtzOjQ4OiIvYmlvcnhpdi9lYXJseS8yMDI1LzA0LzIyLzIwMjUuMDQuMTguNjQ3MDc2LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==) 
+
+62. 62.Daich Varela, M., et al. Detailed Clinical, Ophthalmic, and Genetic Characterization of *ADGRV1*-Associated Usher Syndrome. American Journal of Ophthalmology 256, 186–195 (2023).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.ajo.2023.06.026&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=37422204&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+63. 63.Scheel, H., Tomiuk, S. & Hofmann, K. A common protein interaction domain links two recently identified epilepsy genes. Hum Mol Genet 11, 1757–1762 (2002).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1093/hmg/11.15.1757&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=12095917&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000176969800007&link_type=ISI) 
+
+64. 64.Liu, Z. et al. Biallelic ADGRV1 variants are associated with Rolandic epilepsy. Neurol Sci 43, 1365–1374 (2022).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1007/s10072-021-05403-y&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=34160719&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+65. 65.Ebermann, I. et al. GPR98 mutations cause Usher syndrome type 2 in males. Journal of Medical Genetics 46, 277–280 (2009).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6OToiam1lZGdlbmV0IjtzOjU6InJlc2lkIjtzOjg6IjQ2LzQvMjc3IjtzOjQ6ImF0b20iO3M6NDg6Ii9iaW9yeGl2L2Vhcmx5LzIwMjUvMDQvMjIvMjAyNS4wNC4xOC42NDcwNzYuYXRvbSI7fXM6ODoiZnJhZ21lbnQiO3M6MDoiIjt9) 
+
+66. 66.Yang, B.-Z., Zhou, H., Cheng, Z., Kranzler, H. R. & Gelernter, J. Genomewide Gene-by-Sex Interaction Scans Identify ADGRV1 for Sex Differences in Opioid Dependent African Americans. Sci Rep 9, 18070 (2019).
+    
+    
+
+67. 67.Alotaibi, M. M., De Marco, M. & Venneri, A. Sex differences in olfactory cortex neuronal loss in aging. Front Hum Neurosci 17, 1130200 (2023).
+    
+    
+
+68. 68.Liu, Q. et al. Sex differences in the relationship between olfactory and cognitive impairment among subjects with subjective cognitive decline and mild cognitive impairment. Biol Sex Differ 16, 12 (2025).
+    
+    
+
+69. 69.Cho, H. et al. Differential innate immune response programs in neuronal subtypes determine susceptibility to infection in the brain by positive-stranded RNA viruses. Nat Med 19, 458–464 (2013).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/nm.3108&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=23455712&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+70. 70.Qiu, J. et al. LYRM1, a novel gene promotes proliferation and inhibits apoptosis of preadipocytes. Eur J Endocrinol 160, 177–184 (2009).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6MzoiZWplIjtzOjU6InJlc2lkIjtzOjk6IjE2MC8yLzE3NyI7czo0OiJhdG9tIjtzOjQ4OiIvYmlvcnhpdi9lYXJseS8yMDI1LzA0LzIyLzIwMjUuMDQuMTguNjQ3MDc2LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==) 
+
+71. 71.Cao, X.-G. et al. Overexpression of LYRM1 induces mitochondrial impairment in 3T3-L1 adipocytes. Molecular Genetics and Metabolism 101, 395–399 (2010).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.ymgme.2010.08.010&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=20826099&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+72. 72.Saitoh, K. et al. STAP-2 Is a Novel Positive Regulator of TCR-Proximal Signals. The Journal of Immunology 209, 57–68 (2022).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.4049/jimmunol.2101014&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=35725273&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+73. 73.Wilkinson, B., Downey, J. S. & Rudd, C. E. T-cell signalling and immune system disorders. Expert Reviews in Molecular Medicine 7, 1–29 (2005).
+    
+    
+
+74. 74.Kubota, M. et al. Serum antil1lTSTD2 antibody as a biomarker for atherosclerosisl1linduced ischemic stroke and chronic kidney disease. Med Int (Lond*)* 3, 4 (2022).
+    
+    
+
+75. 75.Yuferov, V. et al. A functional haplotype implicated in vulnerability to develop cocaine dependence is associated with reduced PDYN expression in human brain. Neuropsychopharmacology 34, 1185–1197 (2009).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/npp.2008.187&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=18923396&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000264178600011&link_type=ISI) 
+
+76. 76.Clarke, T.-K. et al. Genetic association analyses of PDYN polymorphisms with heroin and cocaine addiction. Genes Brain Behav 11, 415–423 (2012).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1111/j.1601-183X.2012.00785.x&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=22443215&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000304908900005&link_type=ISI) 
+
+77. 77.Moldrich, R. X. et al. Transmembrane protein 50b (C21orf4), a candidate for Down syndrome neurophenotypes, encodes an intracellular membrane protein expressed in the rodent brain. Neuroscience 154, 1255–1266 (2008).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.neuroscience.2008.01.089&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=18541381&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+78. 78.Sun, E., Motolani, A., Campos, L. & Lu, T. The Pivotal Role of NF-kB in the Pathogenesis and Therapeutics of Alzheimer’s Disease. Int J Mol Sci 23, 8972 (2022).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.3390/ijms23168972&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=36012242&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+79. 79. Jong Huat, T., et al. The impact of astrocytic NF-κB on healthy and Alzheimer’s disease brains. Sci Rep 14, 14305 (2024).
+    
+    
+
+80. 80.Hansen, D. V., Hanson, J. E. & Sheng, M. Microglia in Alzheimer’s disease. J Cell Biol 217, 459–472 (2018).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6MzoiamNiIjtzOjU6InJlc2lkIjtzOjk6IjIxNy8yLzQ1OSI7czo0OiJhdG9tIjtzOjQ4OiIvYmlvcnhpdi9lYXJseS8yMDI1LzA0LzIyLzIwMjUuMDQuMTguNjQ3MDc2LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==) 
+
+81. 81.Prater, K. E. et al. Human microglia show unique transcriptional changes in Alzheimer’s disease. Nat Aging 3, 894–907 (2023).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s43587-023-00424-y&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=37248328&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+82. 82.Sun, N. et al. Human microglial state dynamics in Alzheimer’s disease progression. Cell 186, 4386–4403.e29 (2023).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.cell.2023.08.037&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=37774678&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+83. 83.Guo, L., Zhong, M. B., Zhang, L., Zhang, B. & Cai, D. Sex Differences in Alzheimer’s Disease: Insights From the Multiomics Landscape. Biological Psychiatry 91, 61–71 (2022).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.biopsych.2021.02.968&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=33896621&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+84. 84.Cheng, Y., Sun, M., Wang, F., Geng, X. & Wang, F. Identification of Hub Genes Related to Alzheimer’s Disease and Major Depressive Disorder. Am J Alzheimers Dis Other Demen 36, 15333175211046123 (2021).
+    
+    
+
+85. 85.Bamberger, M. E., Harris, M. E., McDonald, D. R., Husemann, J. & Landreth, G. E. A Cell Surface Receptor Complex for Fibrillar β-Amyloid Mediates Microglial Activation. J. Neurosci. 23, 2665–2674 (2003).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6Njoiam5ldXJvIjtzOjU6InJlc2lkIjtzOjk6IjIzLzcvMjY2NSI7czo0OiJhdG9tIjtzOjQ4OiIvYmlvcnhpdi9lYXJseS8yMDI1LzA0LzIyLzIwMjUuMDQuMTguNjQ3MDc2LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==) 
+
+86. 86.Pan, X.-D. et al. Microglial phagocytosis induced by fibrillar β-amyloid is attenuated by oligomeric β-amyloid: implications for Alzheimer’s disease. Mol Neurodegener 6, 45 (2011).
+    
+    
+
+87. 87.Lopez-Lee, C., Torres, E. R. S., Carling, G. & Gan, L. Mechanisms of sex differences in Alzheimer’s disease. Neuron 112, 1208–1221 (2024).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.neuron.2024.01.024&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=38402606&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+88. 88.Davis, E. J. et al. Sex-Specific Association of the X Chromosome With Cognitive Change and Tau Pathology in Aging and Alzheimer Disease. JAMA Neurology 78, 1249–1254 (2021).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1001/jamaneurol.2021.2806&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=34424272&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+89. 89.Gylemo, B., Bensberg, M. & Nestor, C. E. A whole-organism landscape of X-inactivation in humans. 2023.06.26.546519 Preprint at doi:10.1101/2023.06.26.546519 (2024).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NzoiYmlvcnhpdiI7czo1OiJyZXNpZCI7czoxOToiMjAyMy4wNi4yNi41NDY1MTl2MyI7czo0OiJhdG9tIjtzOjQ4OiIvYmlvcnhpdi9lYXJseS8yMDI1LzA0LzIyLzIwMjUuMDQuMTguNjQ3MDc2LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==) 
+
+90. 90.Briton-Jones, C. et al. X INACTIVE SPECIFIC TRANSCRIPT (XIST) AND ANTISENSE TSIX EXPRESSION IN SIBLING EUPLOID HUMAN BLASTOCYSTS: INSIGHTS INTO HUMAN X CHROMOSOME INACTIVATION. Fertility and Sterility 114, e347–e348 (2020).
+    
+    
+
+91. 91.Tomofuji, Y. et al. Quantification of escape from X chromosome inactivation with single-cell omics data reveals heterogeneity across cell types and tissues. Cell Genomics 4, 100625 (2024).
+    
+    
+
+92. 92.Gadek, M. et al. Aging activates escape of the silent X chromosome in the female mouse hippocampus. Science Advances 11, eads8169 (2025).
+    
+    
+
+93. 93.Balaton, B. P., Cotton, A. M. & Brown, C. J. Derivation of consensus inactivation status for X-linked genes from genome-wide studies. Biology of Sex Differences 6, 35 (2015).
+    
+    
+
+94. 94.Shakeri, F., Mohamadynejad, P. & Moghanibashi, M. Identification of ASMTL-AS1 and LINC02604 lncRNAs as novel biomarkers for diagnosis of colorectal cancer. Int J Colorectal Dis 39, 112 (2024).
+    
+    
+
+95. 95.Hou, C., Sun, F. & Sun, M. Long non-coding RNA ASMTL-AS1 deteriorates the oncogenicity of osteosarcoma by decoying microRNA-342–3p and consequently raising ADAM9 expression. Biochemical and Biophysical Research Communications 579, 89–96 (2021).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.bbrc.2021.09.049&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=34597997&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+96. 96.Sun, J. et al. A novel tumor suppressor ASMTL-AS1 regulates the miR-1228-3p/SOX17/β-catenin axis in triple negative breast cancer. Diagnostic Pathology 16, 45 (2021).
+    
+    
+
+97. 97.Lan, Z., Chen, Y., Jin, J., Xu, Y. & Zhu, X. Long Non-coding RNA: Insight Into Mechanisms of Alzheimer’s Disease. Front Mol Neurosci 14, 821002 (2021).
+    
+    
+
+98. 98.Cortini, F., Roma, F. & Villa, C. Emerging roles of long non-coding RNAs in the pathogenesis of Alzheimer’s disease. Ageing Res Rev 50, 19–26 (2019).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.arr.2019.01.001&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=30610928&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+99. 99.Ganesh, V. S. et al. Neurodevelopmental Disorder Caused by Deletion of CHASERR, a lncRNA Gene. New England Journal of Medicine 391, 1511–1518 (2024).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1056/NEJMoa2400718&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=39442041&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+100.100.Cain, A. et al. Multicellular communities are perturbed in the aging human brain and Alzheimer’s disease. Nat Neurosci 26, 1267–1280 (2023).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s41593-023-01356-x&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=37336975&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+101.101.Lau, S.-F., Cao, H., Fu, A. K. Y. & Ip, N. Y. Single-nucleus transcriptome analysis reveals dysregulation of angiogenic endothelial cells and neuroprotective glia in Alzheimer’s disease. Proc Natl Acad Sci U S A 117, 25800–25809 (2020).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoicG5hcyI7czo1OiJyZXNpZCI7czoxMjoiMTE3LzQxLzI1ODAwIjtzOjQ6ImF0b20iO3M6NDg6Ii9iaW9yeGl2L2Vhcmx5LzIwMjUvMDQvMjIvMjAyNS4wNC4xOC42NDcwNzYuYXRvbSI7fXM6ODoiZnJhZ21lbnQiO3M6MDoiIjt9) 
+
+102.102.Morabito, S. et al. Single-nucleus chromatin accessibility and transcriptomic characterization of Alzheimer’s disease. Nat Genet 53, 1143–1155 (2021).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s41588-021-00894-z&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=34239132&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+103.103.Lopez-Lee, C., Torres, E. R. S., Carling, G. & Gan, L. Mechanisms of sex differences in Alzheimer’s disease. Neuron 112, 1208–1221 (2024).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.neuron.2024.01.024&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=38402606&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+104.104.Parker, W. D., Filley, C. M. & Parks, J. K. Cytochrome oxidase deficiency in Alzheimer’s disease. Neurology 40, 1302–1303 (1990).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1212/WNL.40.8.1302&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=2166249&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+105.105.Parker, W. D., Parks, J., Filley, C. M. & Kleinschmidt-DeMasters, B. K. Electron transport chain defects in Alzheimer’s disease brain. Neurology 44, 1090–1096 (1994).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1212/WNL.44.6.1090&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=8208407&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+106.106.Swerdlow, R. H. & Khan, S. M. A ‘mitochondrial cascade hypothesis’ for sporadic Alzheimer’s disease. Med Hypotheses 63, 8–20 (2004).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.mehy.2003.12.045&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=15193340&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000222294200002&link_type=ISI) 
+
+107.107.Aran, K. R. & Singh, S. Mitochondrial dysfunction and oxidative stress in Alzheimer’s disease–A step towards mitochondria based therapeutic strategies. Aging and Health Research 3, 100169 (2023).
+    
+    
+
+108.108.Kuhn, M. K. et al. Amyloid-β Pathology-Specific Cytokine Secretion Suppresses Neuronal Mitochondrial Metabolism. Cell Mol Bioeng 16, 405–421 (2023).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1007/s12195-023-00782-y&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=37811007&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+109.109.David, D. C. et al. Proteomic and functional analyses reveal a mitochondrial dysfunction in P301L tau transgenic mice. J Biol Chem 280, 23802–23814 (2005).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6MzoiamJjIjtzOjU6InJlc2lkIjtzOjEyOiIyODAvMjUvMjM4MDIiO3M6NDoiYXRvbSI7czo0ODoiL2Jpb3J4aXYvZWFybHkvMjAyNS8wNC8yMi8yMDI1LjA0LjE4LjY0NzA3Ni5hdG9tIjt9czo4OiJmcmFnbWVudCI7czowOiIiO30=) 
+
+110.110.Manczak, M. & Reddy, P. H. Abnormal interaction of VDAC1 with amyloid beta and phosphorylated tau causes mitochondrial dysfunction in Alzheimer’s disease. Hum Mol Genet 21, 5131–5146 (2012).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1093/hmg/dds360&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=22926141&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+    
+    [Web of Science](http://biorxiv.org/lookup/external-ref?access_num=000310967900009&link_type=ISI) 
+
+111.111.Rhein, V. et al. Amyloid-beta and tau synergistically impair the oxidative phosphorylation system in triple transgenic Alzheimer’s disease mice. Proc Natl Acad Sci U S A 106, 20057–20062 (2009).
+    
+    [Abstract/FREE Full Text](http://biorxiv.org/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoicG5hcyI7czo1OiJyZXNpZCI7czoxMjoiMTA2LzQ3LzIwMDU3IjtzOjQ6ImF0b20iO3M6NDg6Ii9iaW9yeGl2L2Vhcmx5LzIwMjUvMDQvMjIvMjAyNS4wNC4xOC42NDcwNzYuYXRvbSI7fXM6ODoiZnJhZ21lbnQiO3M6MDoiIjt9) 
+
+112.112.Parodi-Rullán, R. M., Javadov, S. & Fossati, S. Dissecting the Crosstalk between Endothelial Mitochondrial Damage, Vascular Inflammation, and Neurodegeneration in Cerebral Amyloid Angiopathy and Alzheimer’s Disease. Cells 10, 2903 (2021).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.3390/cells10112903&link_type=DOI) 
+
+113.113.Janyou, A. et al. Dihydrocapsaicin Attenuates Blood Brain Barrier and Cerebral Damage in Focal Cerebral Ischemia/Reperfusion via Oxidative Stress and Inflammatory. Sci Rep 7, 10556 (2017).
+    
+    
+
+114.114.Wang, Y. et al. Mitochondrial oxidative stress in brain microvascular endothelial cells: Triggering blood-brain barrier disruption. Mitochondrion 69, 71–82 (2023).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.mito.2023.01.007&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=36709855&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+115.115.Majerova, P. et al. Trafficking of immune cells across the blood-brain barrier is modulated by neurofibrillary pathology in tauopathies. PLoS One 14, e0217216 (2019).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1371/journal.pone.0217216&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=31120951&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+116.116.Blair, L. J. et al. Tau depletion prevents progressive blood-brain barrier damage in a mouse model of tauopathy. Acta Neuropathol Commun 3, 8 (2015).
+    
+    
+
+117.117.Michalicova, A., Majerova, P. & Kovac, A. Tau Protein and Its Role in Blood-Brain Barrier Dysfunction. Front Mol Neurosci 13, 570045 (2020).
+    
+    
+
+118.118.Weber, C. M. & Clyne, A. M. Sex differences in the blood–brain barrier and neurodegenerative diseases. APL Bioeng 5, 011509 (2021).
+    
+    
+
+119.119.Yang, A. C. et al. A human brain vascular atlas reveals diverse mediators of Alzheimer’s risk. Nature 603, 885–892 (2022).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s41586-021-04369-3&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=35165441&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+120.120.Muhl, L. et al. A single-cell transcriptomic inventory of murine smooth muscle cells. Developmental Cell 57, 2426–2443.e6 (2022).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1016/j.devcel.2022.09.015&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=36283392&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+121.121.Mukherjee, S. et al. Cognitive domain harmonization and cocalibration in studies of older adults. Neuropsychology 37, 409–423 (2023).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1037/neu0000835&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=35925737&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom) 
+
+122.122.Mathys, H. et al. Single-cell multiregion dissection of Alzheimer’s disease. Nature 632, 858–868 (2024).
+    
+    [CrossRef](http://biorxiv.org/lookup/external-ref?access_num=10.1038/s41586-024-07606-7&link_type=DOI) 
+    
+    [PubMed](http://biorxiv.org/lookup/external-ref?access_num=39048816&link_type=MED&atom=%2Fbiorxiv%2Fearly%2F2025%2F04%2F22%2F2025.04.18.647076.atom)
