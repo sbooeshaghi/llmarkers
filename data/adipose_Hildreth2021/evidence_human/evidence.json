@@ -718,8 +718,8 @@
       "cell_state": "none",
       "feature_name": "TBET",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000073861",
-      "feature_identifier_type": "ensembl"
+      "feature_identifier": null,
+      "feature_identifier_type": null
     },
     "source": {
       "source_type": "text",
@@ -770,8 +770,8 @@
       "cell_state": "none",
       "feature_name": "PERFORIN",
       "feature_type": "gene",
-      "feature_identifier": "ENSG00000180644",
-      "feature_identifier_type": "ensembl"
+      "feature_identifier": null,
+      "feature_identifier_type": null
     },
     "source": {
       "source_type": "text",
@@ -3474,8 +3474,8 @@
       "cell_state": "obese",
       "feature_name": "IL-33",
       "feature_type": "gene",
-      "feature_identifier": "ENST00000722753",
-      "feature_identifier_type": "ensembl"
+      "feature_identifier": null,
+      "feature_identifier_type": null
     },
     "source": {
       "source_type": "image",
@@ -4150,8 +4150,8 @@
       "cell_state": "obese",
       "feature_name": "EBl3",
       "feature_type": "gene",
-      "feature_identifier": "ENST00000839109",
-      "feature_identifier_type": "ensembl"
+      "feature_identifier": null,
+      "feature_identifier_type": null
     },
     "source": {
       "source_type": "image",
@@ -4417,6 +4417,1098 @@
       "source_type": "image",
       "source_rationale": "IPA of obese immune and nonimmune populations showing common putative upstream regulators. Terms were considered common if implicated in three or more cell types from a lineage. Terms were considered statistically significant if the activation z-score > 2",
       "source_id": "Fig. 8a"
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD40LG",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD40LG",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000102245",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD40LG",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD40LG",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000102245",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "MAF",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "MAF",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000178573",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "MAF",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "MAF",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000178573",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GPR183",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GPR183",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000169508",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GPR183",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GPR183",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000169508",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "IL7R",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "IL7R",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000168685",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "IL7R",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "IL7R",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000168685",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "TP53BP2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "TP53BP2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000143514",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "TP53BP2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "TP53BP2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000143514",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "FOS",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD4 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "FOS",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000170345",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "FOS",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "FOS",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000170345",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CCL4L2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CCL4L2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000275313",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "XCL2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "XCL2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000143185",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "YBX3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "YBX3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000060138",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CRTAM",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CRTAM",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000109943",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CMC1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CMC1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000187118",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD8A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Naive CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD8A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000153563",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "KLRC2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "KLRC2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000205809",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "SOX4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "SOX4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000124766",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD7",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD7",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000173762",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "AREG",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "AREG",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000109321",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD55",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CD55",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000196352",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "KLF2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "CD8 gd T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "KLF2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000127528",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GNLY",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GNLY",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000115523",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "FGFBP2",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "FGFBP2",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000137441",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GZMB",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GZMB",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000100453",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "NKG7",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "NKG7",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000105374",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "KLRD1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "KLRD1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000134539",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GZMH",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "Cytotoxi CD8 T",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GZMH",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000100450",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "KLRB1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "KLRB1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000111796",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CEBPD",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CEBPD",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000221869",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "TLE1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "TLE1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000196781",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "NCR3",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "NCR3",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000204475",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GTF3C1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "GTF3C1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000077235",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "MT2A",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "MAIT",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "MT2A",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000125148",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "HPGD",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "HPGD",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000164120",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CTLA4",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CTLA4",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000163599",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "TIGIT",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "TIGIT",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000181847",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "BATF",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "BATF",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000156127",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CARD16",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "CARD16",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000204397",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
+    }
+  },
+  {
+    "extracted": {
+      "organism": "homo_sapiens",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "PMAIP1",
+      "feature_type": "gene"
+    },
+    "derived": {
+      "organism": "homo_sapiens",
+      "cell_type_id": "T CELL",
+      "cell_type_label": "TREG",
+      "cell_source": "adipose",
+      "cell_state": "none",
+      "feature_name": "PMAIP1",
+      "feature_type": "gene",
+      "feature_identifier": "ENSG00000141682",
+      "feature_identifier_type": "ensembl"
+    },
+    "source": {
+      "source_type": "image",
+      "source_rationale": "none",
+      "source_id": "a, UMAP plot of 36,601 subclustered human adipose effector lymphocytes from Fig. 1. Cluster analysis yields 9 distinct clusters comprising of T cell subsets, ILCs and NK cells. b, Unbiased heatmap of gene expression of the top 6 unique cluster marker genes for each T cell cluster. Cluster identities are shown above the heatmap. Color saturation indicates the strength of expression. c, Violin plots showing RNA expression of additional cluster markers for the indicated T cell populations. d, Representative gating strategy for scRNAseq-defined human WAT T cell populations (CD45+Lin\u2013(CD34+CD19+CD14+): \u03b3\u03b4T cell (\u03b3\u03b4 T): TCR\u03b3\u03b4+V\u03b124-J\u03b118\u2013V\u03b17.2\u2013, NKT cell (NKT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118+V\u03b17.2\u2013, MAIT cell (MAIT): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2+TCR\u03b1\u03b2+, CD8+ T cell (CD8 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1+CD4\u2013, CD4+ T cell (CD4 T): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+, Regulatory T cell (Treg): TCR\u03b3\u03b4\u2013V\u03b124-J\u03b118\u2013V\u03b17.2\u2013TCR\u03b1\u03b2+CD8\u03b1\u2013CD4+FoxP3+. e, Representative histogram of KLRB1 (CD161) expression on human WAT T cell subsets. f, Representative flow cytometry plot of CD8\u03b1 and CD4 expression on human WAT \u03b3\u03b4 T cells. e,f, Data is representative of 4 individual patient samples. g, Density correlation analysis of the indicated T cell subsets with patient BMI. Line of best fit and 95% confidence intervals are shown for each plot. Each point represents an individual patient. Linear regression and two-tailed Pearson Correlation analysis with 95% confidence intervals were conducted. p\u2009<\u20090.05 was considered significant."
     }
   }
 ]
