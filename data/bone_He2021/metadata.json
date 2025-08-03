@@ -1,29 +1,6 @@
 {
   "doi": "https://doi.org/10.1038/s41422-021-00467-z",
   "citation": "He, J., Yan, J., Wang, J. et al. Dissecting human embryonic skeletal stem cell ontogeny by single-cell transcriptomic and functional analyses. Cell Res 31, 742–757 (2021).",
-  "tables": [
-    {
-      "file_id": "",
-      "file_name": "clean_degs.xlsx",
-      "file_type": "xlsx",
-      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41422-021-00467-z/MediaObjects/41422_2021_467_MOESM7_ESM.xlsx",
-      "sheet_name": "Degs human_limb&bone Fig. 1d"
-    },
-    {
-      "file_id": "",
-      "file_name": "clean_degs.xlsx",
-      "file_type": "xlsx",
-      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41422-021-00467-z/MediaObjects/41422_2021_467_MOESM7_ESM.xlsx",
-      "sheet_name": "Degs human long bone Fig. S3b"
-    },
-    {
-      "file_id": "",
-      "file_name": "clean_degs.xlsx",
-      "file_type": "xlsx",
-      "file_uri": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41422-021-00467-z/MediaObjects/41422_2021_467_MOESM7_ESM.xlsx",
-      "sheet_name": "Degs human calvaria Fig. 6b"
-    }
-  ],
   "extract_text_cmd": "cat manuscript.html | pup 'article' | pandoc -f html -t plain > manuscript.txt",
   "css_selector": "article"
 }
