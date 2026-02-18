@@ -1,0 +1,34 @@
+
+   Prepared 24 cell types, 6250 genes (top 300)
+     - ELONGATED SPERMATID: 300 genes
+     - ELONGATING CELL: 300 genes
+     - ENDOTHELIAL CELL: 216 genes
+     - F-PERICYTE: 271 genes
+     - IMMATURE LEYDIG CELL: 244 genes
+     - M-PERICYTE: 300 genes
+     - MACROPHAGE: 300 genes
+     - MEIOTIC SPERMATOCYTE: 255 genes
+     - MYOID CELL: 283 genes
+     - POST-MEIOTIC ROUND SPERMATID: 277 genes
+     - ROUND SPERMATID CELL: 280 genes
+     - SPERMATOCYTE: 274 genes
+     - SPERMATOGONIA CELL: 300 genes
+     - SPERMATOGONIA CELL 1: 78 genes
+     - SPERMATOGONIA CELL 2: 36 genes
+     - SPERMATOGONIA CELL 3: 136 genes
+     - SPERMATOGONIA CELL 4: 300 genes
+     - T CELL: 300 genes
+     - TRANSITIONING SPERMATOGONIAL CELL 3: 300 genes
+     - TRANSITIONING SPERMATOGONIAL CELL 4: 300 genes
+     - TRANSITIONING SPERMATOGONIAL CELL 5: 300 genes
+     - TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1: 300 genes
+     - TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2: 300 genes
+     - TYPE B DIFFERENTIATED SPERMATOGONIAL CELL: 300 genes
+   Estimated input: ~113,500 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 108753 tokens in, 15554 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/testis_Shamis2020/evidence_selected/metrics_top300.json
+   Discarded (not in DEG top 300): POST-MEIOTIC ROUND SPERMATID / CREM
+   Selected 227 markers (1 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/testis_Shamis2020/evidence_selected/selected_top300.json

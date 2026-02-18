@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr select /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_deg/extracted.json -n 30 -s homo_sapiens -a -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_anon_top30.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_anon_top30.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770944610,
+  "num_extractions": 289,
+  "processing_time_sec": 180.98,
+  "input_tokens": 21532,
+  "cached_tokens": 0,
+  "output_tokens": 16939,
+  "total_tokens": 38471,
+  "input_cost": 0.10766,
+  "cached_cost": 0.0,
+  "output_cost": 0.42347500000000005,
+  "total_cost": 0.531135
+}

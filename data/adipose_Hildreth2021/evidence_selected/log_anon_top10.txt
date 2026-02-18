@@ -1,0 +1,41 @@
+
+   Prepared 31 cell types, 310 genes (top 10)
+     - ADIPOCYTE PRECURSOR CELL: 10 genes
+     - B CELL: 10 genes
+     - CD8+ GAMMA DELTA T CELL: 10 genes
+     - CYTOTOXIC CD8+ T CELL: 10 genes
+     - ENDOTHELIAL CELL: 10 genes
+     - IMMATURE NATURAL KILLER CELL: 10 genes
+     - INFLAMMATORY MACROPHAGE: 10 genes
+     - INNATE LYMPHOID CELL: 10 genes
+     - INNATE LYMPHOID CELL 1: 10 genes
+     - INNATE LYMPHOID CELL 2: 10 genes
+     - INNATE LYMPHOID CELL 3: 10 genes
+     - INNATE LYMPHOID PRECURSOR-LIKE CELL: 10 genes
+     - LIPID-ASSOCIATED MACROPHAGE: 10 genes
+     - MATURE NATURAL KILLER CELL: 10 genes
+     - MUCOSAL-ASSOCIATED INVARIANT T CELL: 10 genes
+     - MYELOID-LIKE CELL: 10 genes
+     - NAIVE CD4+ T CELL: 10 genes
+     - NAIVE CD8+ T CELL: 10 genes
+     - NATURAL KILLER-LIKE CELL: 10 genes
+     - NEUTROPHIL: 10 genes
+     - NONCLASSIC MONOCYTE: 10 genes
+     - PERIVASCULAR MACROPHAGE: 10 genes
+     - PREADIPOCYTE: 10 genes
+     - REGULATORY T CELL: 10 genes
+     - SMOOTH MUSCLE CELL: 10 genes
+     - TISSUE RESIDENT NATURAL KILLER CELL: 10 genes
+     - TYPE 1 DENDRITIC CELL: 10 genes
+     - TYPE 1 MONOCYTE: 10 genes
+     - TYPE 2 MONOCYTE: 10 genes
+     - TYPE 2A DENDRITIC CELL: 10 genes
+     - TYPE 2B DENDRITIC CELL: 10 genes
+   Anonymized 31 cell types as CLUSTER 1..31
+   Estimated input: ~6,580 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 6345 tokens in, 11761 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_selected/metrics_anon_top10.json
+   Selected 194 markers (0 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_selected/selected_anon_top10.json

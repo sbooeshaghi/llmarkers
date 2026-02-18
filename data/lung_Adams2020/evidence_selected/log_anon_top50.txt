@@ -1,0 +1,50 @@
+
+   Prepared 38 cell types, 1900 genes (top 50)
+     - ABERRANT BASALOID CELL: 50 genes
+     - ALVEOLAR MACROPHAGE: 50 genes
+     - ALVEOLAR TYPE 1 CELL: 50 genes
+     - ALVEOLAR TYPE 2 CELL: 50 genes
+     - B CELL: 50 genes
+     - BASAL CELL: 50 genes
+     - CILIATED CELL: 50 genes
+     - CLASSICAL MONOCYTE: 50 genes
+     - CLUB CELL: 50 genes
+     - CONVENTIONAL DENDRITIC CELL 1: 50 genes
+     - CONVENTIONAL DENDRITIC CELL 2: 50 genes
+     - CYTOTOXIC T CELL: 50 genes
+     - DENDRITIC CELL LANGERHANS: 50 genes
+     - FIBROBLAST: 50 genes
+     - GOBLET CELL: 50 genes
+     - INNATE LYMPHOID CELL A: 50 genes
+     - INNATE LYMPHOID CELL B: 50 genes
+     - IONOCYTE: 50 genes
+     - LYMPHATIC ENDOTHELIAL CELL: 50 genes
+     - MACROPHAGE: 50 genes
+     - MAST CELL: 50 genes
+     - MATURE DENDRITIC CELL: 50 genes
+     - MESOTHELIAL CELL: 50 genes
+     - MYOFIBROBLAST: 50 genes
+     - NATURAL KILLER CELL: 50 genes
+     - NON-CLASSICAL MONOCYTE: 50 genes
+     - PERICYTE: 50 genes
+     - PLASMA B CELL: 50 genes
+     - PLASMACYTOID DENDRITIC CELL: 50 genes
+     - PULMONARY NEUROENDOCRINE CELL: 50 genes
+     - REGULATORY T CELL: 50 genes
+     - SMOOTH MUSCLE CELL: 50 genes
+     - T CELL: 50 genes
+     - VASCULAR ENDOTHELIAL ARTERIAL: 50 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY A: 50 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY B: 50 genes
+     - VASCULAR ENDOTHELIAL PERIBRONCHIAL: 50 genes
+     - VASCULAR ENDOTHELIAL VENOUS: 50 genes
+   Anonymized 38 cell types as CLUSTER 1..38
+   Estimated input: ~35,200 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 35031 tokens in, 19460 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_anon_top50.json
+   Discarded (not in DEG top 50): CLUSTER 22 / IDO1
+   Discarded (not in DEG top 50): CLUSTER 31 / CTLA4
+   Selected 319 markers (2 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_anon_top50.json

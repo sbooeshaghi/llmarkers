@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr select /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_deg/extracted.json -n 10 -s homo_sapiens -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/selected_top10.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/metrics_top10.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770942888,
+  "num_extractions": 62,
+  "processing_time_sec": 48.91,
+  "input_tokens": 2449,
+  "cached_tokens": 0,
+  "output_tokens": 4174,
+  "total_tokens": 6623,
+  "input_cost": 0.012245,
+  "cached_cost": 0.0,
+  "output_cost": 0.10435,
+  "total_cost": 0.116595
+}

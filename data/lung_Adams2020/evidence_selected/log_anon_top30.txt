@@ -1,0 +1,48 @@
+
+   Prepared 38 cell types, 1140 genes (top 30)
+     - ABERRANT BASALOID CELL: 30 genes
+     - ALVEOLAR MACROPHAGE: 30 genes
+     - ALVEOLAR TYPE 1 CELL: 30 genes
+     - ALVEOLAR TYPE 2 CELL: 30 genes
+     - B CELL: 30 genes
+     - BASAL CELL: 30 genes
+     - CILIATED CELL: 30 genes
+     - CLASSICAL MONOCYTE: 30 genes
+     - CLUB CELL: 30 genes
+     - CONVENTIONAL DENDRITIC CELL 1: 30 genes
+     - CONVENTIONAL DENDRITIC CELL 2: 30 genes
+     - CYTOTOXIC T CELL: 30 genes
+     - DENDRITIC CELL LANGERHANS: 30 genes
+     - FIBROBLAST: 30 genes
+     - GOBLET CELL: 30 genes
+     - INNATE LYMPHOID CELL A: 30 genes
+     - INNATE LYMPHOID CELL B: 30 genes
+     - IONOCYTE: 30 genes
+     - LYMPHATIC ENDOTHELIAL CELL: 30 genes
+     - MACROPHAGE: 30 genes
+     - MAST CELL: 30 genes
+     - MATURE DENDRITIC CELL: 30 genes
+     - MESOTHELIAL CELL: 30 genes
+     - MYOFIBROBLAST: 30 genes
+     - NATURAL KILLER CELL: 30 genes
+     - NON-CLASSICAL MONOCYTE: 30 genes
+     - PERICYTE: 30 genes
+     - PLASMA B CELL: 30 genes
+     - PLASMACYTOID DENDRITIC CELL: 30 genes
+     - PULMONARY NEUROENDOCRINE CELL: 30 genes
+     - REGULATORY T CELL: 30 genes
+     - SMOOTH MUSCLE CELL: 30 genes
+     - T CELL: 30 genes
+     - VASCULAR ENDOTHELIAL ARTERIAL: 30 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY A: 30 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY B: 30 genes
+     - VASCULAR ENDOTHELIAL PERIBRONCHIAL: 30 genes
+     - VASCULAR ENDOTHELIAL VENOUS: 30 genes
+   Anonymized 38 cell types as CLUSTER 1..38
+   Estimated input: ~21,520 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 21532 tokens in, 16939 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_anon_top30.json
+   Selected 289 markers (0 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_anon_top30.json

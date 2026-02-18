@@ -1,0 +1,51 @@
+
+   Prepared 33 cell types, 11735 genes (top 400)
+     - ACTIVATED T CELL: 400 genes
+     - AMACRINE CELL: 400 genes
+     - CHOROID ENDOTHELIAL CELL: 400 genes
+     - CILIARY BODY CELL: 204 genes
+     - CILIARY BODY ENDOTHELIAL CELL: 400 genes
+     - COL9A1-HI CILIARY BODY CELL: 210 genes
+     - CONE PHOTORECEPTOR CELL: 400 genes
+     - CONJUNCTIVAL CELL: 299 genes
+     - CORNEAL FIBROBLAST: 344 genes
+     - CRYAA-HI CILIARY BODY CELL: 177 genes
+     - CYTOTOXIC T CELL: 400 genes
+     - ELF3-HI CORNEAL EPITHELIAL CELL: 362 genes
+     - FIBROBLAST: 400 genes
+     - HORIZONTAL CELL: 400 genes
+     - MEG3-HI FIBROBLAST: 400 genes
+     - MELANOCYTE: 400 genes
+     - MGP-HI FIBROBLAST: 212 genes
+     - MICROGLIA: 400 genes
+     - MONOCYTE: 400 genes
+     - MÜLLER GLIAL CELL: 400 genes
+     - OFF BIPOLAR CELL: 400 genes
+     - ON BIPOLAR CELL: 400 genes
+     - PIGMENTED CILIARY BODY CELL: 352 genes
+     - PUTATIVE STEM CELL: 400 genes
+     - RETINAL GANGLION CELL: 400 genes
+     - RIBOSOMAL GENES-HI FIBROBLAST: 249 genes
+     - ROD BIPOLAR CELL: 400 genes
+     - ROD PHOTORECEPTOR CELL: 400 genes
+     - SCHWANN CELL: 400 genes
+     - SMOOTH MUSCLE CELL: 400 genes
+     - TGFBI-HI CORNEAL EPITHELIAL CELL: 238 genes
+     - UNKNOWN: 400 genes
+     - WIF1-HI FIBROBLAST: 288 genes
+   Estimated input: ~212,230 tokens
+   Splitting into 2 batches to fit context window
+
+   Batch 1/2: 24 cell types, ~155,080 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 147702 tokens in, 14707 tokens out
+
+   Batch 2/2: 9 cell types, ~58,150 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 55289 tokens in, 6592 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/eye_Gautam2021/evidence_selected/metrics_top400.json
+   Discarded (not in DEG top 400): CYTOTOXIC T CELL / PRF1
+   Discarded (not in DEG top 400): MICROGLIA / CX3CR1
+   Selected 322 markers (2 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/eye_Gautam2021/evidence_selected/selected_top400.json

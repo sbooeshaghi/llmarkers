@@ -1,0 +1,20 @@
+
+   Prepared 10 cell types, 400 genes (top 40)
+     - DDX4 AB+: 40 genes
+     - DDX4 AB-: 40 genes
+     - ENDOTHELIAL CELL: 40 genes
+     - GRANULOSA CELL: 40 genes
+     - IMMUNE CELL: 40 genes
+     - MONOCYTE: 40 genes
+     - OOCYTE: 40 genes
+     - PERIVASCULAR CELL: 40 genes
+     - STROMAL CELL: 40 genes
+     - T CELL: 40 genes
+   Anonymized 10 cell types as CLUSTER 1..10
+   Estimated input: ~8,200 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 7534 tokens in, 5608 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/metrics_anon_top40.json
+   Selected 94 markers (0 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/selected_anon_top40.json

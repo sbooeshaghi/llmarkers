@@ -1,0 +1,77 @@
+
+   Prepared 55 cell types, 15877 genes (top 300)
+     - ADIPOCYTE: 300 genes
+     - ADIPOCYTE 1: 300 genes
+     - ADIPOCYTE 2: 200 genes
+     - ADIPOCYTE 3: 275 genes
+     - ADIPOCYTE 4: 300 genes
+     - ADIPOCYTE 5: 300 genes
+     - ADIPOCYTE 6: 265 genes
+     - ADIPOCYTE 7: 254 genes
+     - ADIPOSE STEM AND PROGENITOR CELL: 300 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 1: 300 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 2: 300 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 3: 300 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 4: 300 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 5: 300 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 6: 300 genes
+     - ASDENDRITIC CELL: 300 genes
+     - B CELL: 300 genes
+     - DENDRITIC CELL: 300 genes
+     - DENDRITIC CELL 1: 300 genes
+     - DENDRITIC CELL 2: 300 genes
+     - ENDOMETRIUM: 300 genes
+     - ENDOTHELIUM: 300 genes
+     - ENDOTHELIUM ARTERIOLAR 1: 300 genes
+     - ENDOTHELIUM ARTERIOLAR 2: 300 genes
+     - ENDOTHELIUM STALK 1: 300 genes
+     - ENDOTHELIUM STALK 2: 300 genes
+     - ENDOTHELIUM STALK 3: 300 genes
+     - ENDOTHELIUM VENULAR: 300 genes
+     - LYMPHATIC ENDOTHELIUM: 300 genes
+     - LYMPHATIC ENDOTHELIUM 1: 300 genes
+     - LYMPHATIC ENDOTHELIUM 2: 300 genes
+     - MACROPHAGE: 300 genes
+     - MACROPHAGE 1: 300 genes
+     - MACROPHAGE 2: 300 genes
+     - MACROPHAGE 3: 300 genes
+     - MAST CELL: 300 genes
+     - MESOTHELIUM: 300 genes
+     - MESOTHELIUM 1: 202 genes
+     - MESOTHELIUM 2: 215 genes
+     - MESOTHELIUM 3: 66 genes
+     - MONOCYTE: 300 genes
+     - MONOCYTE 1: 300 genes
+     - MONOCYTE 2: 300 genes
+     - NATURAL KILLER CELL: 300 genes
+     - NEUTROPHIL: 300 genes
+     - PDENDRITIC CELL: 300 genes
+     - PERICYTE: 300 genes
+     - PLASMABLAST: 300 genes
+     - REGULATORY T CELL: 300 genes
+     - SMOOTH MUSCLE CELL: 300 genes
+     - SMOOTH MUSCLE CELLS 1: 300 genes
+     - SMOOTH MUSCLE CELLS 2: 300 genes
+     - T CELL: 300 genes
+     - T CELL 1: 300 genes
+     - T CELL 2: 300 genes
+   Anonymized 55 cell types as CLUSTER 1..55
+   Estimated input: ~286,786 tokens
+   Splitting into 2 batches to fit context window
+
+   Batch 1/2: 29 cell types, ~155,800 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 148840 tokens in, 16321 tokens out
+
+   Batch 2/2: 26 cell types, ~131,986 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 126244 tokens in, 16539 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Emont2022/evidence_selected/metrics_anon_top300.json
+   Discarded (not in DEG top 300): CLUSTER 29 / PDPN
+   Discarded (not in DEG top 300): CLUSTER 3 / PLIN5
+   Discarded (not in DEG top 300): CLUSTER 41 / CD14
+   Discarded (not in DEG top 300): CLUSTER 45 / CXCR2
+   Discarded (not in DEG top 300): CLUSTER 7 / PPARG
+   Selected 549 markers (5 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Emont2022/evidence_selected/selected_anon_top300.json

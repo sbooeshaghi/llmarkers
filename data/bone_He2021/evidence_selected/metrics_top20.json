@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr select /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/bone_He2021/evidence_deg/extracted.json -n 20 -s homo_sapiens -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/bone_He2021/evidence_selected/selected_top20.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/bone_He2021/evidence_selected/metrics_top20.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770942255,
+  "num_extractions": 234,
+  "processing_time_sec": 176.69,
+  "input_tokens": 11660,
+  "cached_tokens": 0,
+  "output_tokens": 15846,
+  "total_tokens": 27506,
+  "input_cost": 0.058300000000000005,
+  "cached_cost": 0.0,
+  "output_cost": 0.39615,
+  "total_cost": 0.45445
+}

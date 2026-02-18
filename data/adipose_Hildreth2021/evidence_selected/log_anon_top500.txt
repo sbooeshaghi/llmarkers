@@ -1,0 +1,49 @@
+
+   Prepared 31 cell types, 15500 genes (top 500)
+     - ADIPOCYTE PRECURSOR CELL: 500 genes
+     - B CELL: 500 genes
+     - CD8+ GAMMA DELTA T CELL: 500 genes
+     - CYTOTOXIC CD8+ T CELL: 500 genes
+     - ENDOTHELIAL CELL: 500 genes
+     - IMMATURE NATURAL KILLER CELL: 500 genes
+     - INFLAMMATORY MACROPHAGE: 500 genes
+     - INNATE LYMPHOID CELL: 500 genes
+     - INNATE LYMPHOID CELL 1: 500 genes
+     - INNATE LYMPHOID CELL 2: 500 genes
+     - INNATE LYMPHOID CELL 3: 500 genes
+     - INNATE LYMPHOID PRECURSOR-LIKE CELL: 500 genes
+     - LIPID-ASSOCIATED MACROPHAGE: 500 genes
+     - MATURE NATURAL KILLER CELL: 500 genes
+     - MUCOSAL-ASSOCIATED INVARIANT T CELL: 500 genes
+     - MYELOID-LIKE CELL: 500 genes
+     - NAIVE CD4+ T CELL: 500 genes
+     - NAIVE CD8+ T CELL: 500 genes
+     - NATURAL KILLER-LIKE CELL: 500 genes
+     - NEUTROPHIL: 500 genes
+     - NONCLASSIC MONOCYTE: 500 genes
+     - PERIVASCULAR MACROPHAGE: 500 genes
+     - PREADIPOCYTE: 500 genes
+     - REGULATORY T CELL: 500 genes
+     - SMOOTH MUSCLE CELL: 500 genes
+     - TISSUE RESIDENT NATURAL KILLER CELL: 500 genes
+     - TYPE 1 DENDRITIC CELL: 500 genes
+     - TYPE 1 MONOCYTE: 500 genes
+     - TYPE 2 MONOCYTE: 500 genes
+     - TYPE 2A DENDRITIC CELL: 500 genes
+     - TYPE 2B DENDRITIC CELL: 500 genes
+   Anonymized 31 cell types as CLUSTER 1..31
+   Estimated input: ~280,000 tokens
+   Splitting into 2 batches to fit context window
+
+   Batch 1/2: 17 cell types, ~154,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 145410 tokens in, 10123 tokens out
+
+   Batch 2/2: 14 cell types, ~127,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 120341 tokens in, 8464 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_selected/metrics_anon_top500.json
+   Discarded (not in DEG top 500): CLUSTER 2 / CD19
+   Selected 314 markers (1 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_selected/selected_anon_top500.json

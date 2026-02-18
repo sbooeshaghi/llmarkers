@@ -1,0 +1,20 @@
+
+   Prepared 10 cell types, 1000 genes (top 100)
+     - DDX4 AB+: 100 genes
+     - DDX4 AB-: 100 genes
+     - ENDOTHELIAL CELL: 100 genes
+     - GRANULOSA CELL: 100 genes
+     - IMMUNE CELL: 100 genes
+     - MONOCYTE: 100 genes
+     - OOCYTE: 100 genes
+     - PERIVASCULAR CELL: 100 genes
+     - STROMAL CELL: 100 genes
+     - T CELL: 100 genes
+   Estimated input: ~19,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 17769 tokens in, 6939 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/metrics_top100.json
+   Discarded (not in DEG top 100): OOCYTE / GDF9
+   Selected 104 markers (1 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/selected_top100.json

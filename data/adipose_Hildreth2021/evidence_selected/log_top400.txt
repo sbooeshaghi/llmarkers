@@ -1,0 +1,49 @@
+
+   Prepared 31 cell types, 12400 genes (top 400)
+     - ADIPOCYTE PRECURSOR CELL: 400 genes
+     - B CELL: 400 genes
+     - CD8+ GAMMA DELTA T CELL: 400 genes
+     - CYTOTOXIC CD8+ T CELL: 400 genes
+     - ENDOTHELIAL CELL: 400 genes
+     - IMMATURE NATURAL KILLER CELL: 400 genes
+     - INFLAMMATORY MACROPHAGE: 400 genes
+     - INNATE LYMPHOID CELL: 400 genes
+     - INNATE LYMPHOID CELL 1: 400 genes
+     - INNATE LYMPHOID CELL 2: 400 genes
+     - INNATE LYMPHOID CELL 3: 400 genes
+     - INNATE LYMPHOID PRECURSOR-LIKE CELL: 400 genes
+     - LIPID-ASSOCIATED MACROPHAGE: 400 genes
+     - MATURE NATURAL KILLER CELL: 400 genes
+     - MUCOSAL-ASSOCIATED INVARIANT T CELL: 400 genes
+     - MYELOID-LIKE CELL: 400 genes
+     - NAIVE CD4+ T CELL: 400 genes
+     - NAIVE CD8+ T CELL: 400 genes
+     - NATURAL KILLER-LIKE CELL: 400 genes
+     - NEUTROPHIL: 400 genes
+     - NONCLASSIC MONOCYTE: 400 genes
+     - PERIVASCULAR MACROPHAGE: 400 genes
+     - PREADIPOCYTE: 400 genes
+     - REGULATORY T CELL: 400 genes
+     - SMOOTH MUSCLE CELL: 400 genes
+     - TISSUE RESIDENT NATURAL KILLER CELL: 400 genes
+     - TYPE 1 DENDRITIC CELL: 400 genes
+     - TYPE 1 MONOCYTE: 400 genes
+     - TYPE 2 MONOCYTE: 400 genes
+     - TYPE 2A DENDRITIC CELL: 400 genes
+     - TYPE 2B DENDRITIC CELL: 400 genes
+   Estimated input: ~224,200 tokens
+   Splitting into 2 batches to fit context window
+
+   Batch 1/2: 22 cell types, ~159,400 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 150721 tokens in, 15086 tokens out
+
+   Batch 2/2: 9 cell types, ~65,800 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 62226 tokens in, 7415 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_selected/metrics_top400.json
+   Discarded (not in DEG top 400): NAIVE CD4+ T CELL / TCF7
+   Discarded (not in DEG top 400): NAIVE CD8+ T CELL / LEF1
+   Selected 333 markers (2 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_selected/selected_top400.json

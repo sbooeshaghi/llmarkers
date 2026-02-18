@@ -1,3 +1,32 @@
+# macOS
 .DS_Store
 ._.DS_Store
 **/._.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+
+# Environment
+**/.env
+
+# Claude Code
+.claude/
+
+# Spec files (manual reference, not used by code)
+**/spec.tsv
+
+# Manuscript contents (license restrictions)
+**/manuscript/manuscript.txt
+**/manuscript/manuscript.html
+**/manuscript/figures/
+**/manuscript/tables/
+
+# Generated databases
+*.db
+
+# Large binary data (biorxiv paper downloads)
+data/biorxiv/meca/

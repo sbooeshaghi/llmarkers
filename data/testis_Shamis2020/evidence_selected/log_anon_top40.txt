@@ -1,0 +1,34 @@
+
+   Prepared 24 cell types, 956 genes (top 40)
+     - ELONGATED SPERMATID: 40 genes
+     - ELONGATING CELL: 40 genes
+     - ENDOTHELIAL CELL: 40 genes
+     - F-PERICYTE: 40 genes
+     - IMMATURE LEYDIG CELL: 40 genes
+     - M-PERICYTE: 40 genes
+     - MACROPHAGE: 40 genes
+     - MEIOTIC SPERMATOCYTE: 40 genes
+     - MYOID CELL: 40 genes
+     - POST-MEIOTIC ROUND SPERMATID: 40 genes
+     - ROUND SPERMATID CELL: 40 genes
+     - SPERMATOCYTE: 40 genes
+     - SPERMATOGONIA CELL: 40 genes
+     - SPERMATOGONIA CELL 1: 40 genes
+     - SPERMATOGONIA CELL 2: 36 genes
+     - SPERMATOGONIA CELL 3: 40 genes
+     - SPERMATOGONIA CELL 4: 40 genes
+     - T CELL: 40 genes
+     - TRANSITIONING SPERMATOGONIAL CELL 3: 40 genes
+     - TRANSITIONING SPERMATOGONIAL CELL 4: 40 genes
+     - TRANSITIONING SPERMATOGONIAL CELL 5: 40 genes
+     - TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1: 40 genes
+     - TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2: 40 genes
+     - TYPE B DIFFERENTIATED SPERMATOGONIAL CELL: 40 genes
+   Anonymized 24 cell types as CLUSTER 1..24
+   Estimated input: ~18,208 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 17401 tokens in, 11813 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/testis_Shamis2020/evidence_selected/metrics_anon_top40.json
+   Selected 188 markers (0 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/testis_Shamis2020/evidence_selected/selected_anon_top40.json

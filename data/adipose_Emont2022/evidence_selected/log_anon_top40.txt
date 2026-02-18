@@ -1,0 +1,66 @@
+
+   Prepared 55 cell types, 2200 genes (top 40)
+     - ADIPOCYTE: 40 genes
+     - ADIPOCYTE 1: 40 genes
+     - ADIPOCYTE 2: 40 genes
+     - ADIPOCYTE 3: 40 genes
+     - ADIPOCYTE 4: 40 genes
+     - ADIPOCYTE 5: 40 genes
+     - ADIPOCYTE 6: 40 genes
+     - ADIPOCYTE 7: 40 genes
+     - ADIPOSE STEM AND PROGENITOR CELL: 40 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 1: 40 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 2: 40 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 3: 40 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 4: 40 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 5: 40 genes
+     - ADIPOSE STEM AND PROGENITOR CELL 6: 40 genes
+     - ASDENDRITIC CELL: 40 genes
+     - B CELL: 40 genes
+     - DENDRITIC CELL: 40 genes
+     - DENDRITIC CELL 1: 40 genes
+     - DENDRITIC CELL 2: 40 genes
+     - ENDOMETRIUM: 40 genes
+     - ENDOTHELIUM: 40 genes
+     - ENDOTHELIUM ARTERIOLAR 1: 40 genes
+     - ENDOTHELIUM ARTERIOLAR 2: 40 genes
+     - ENDOTHELIUM STALK 1: 40 genes
+     - ENDOTHELIUM STALK 2: 40 genes
+     - ENDOTHELIUM STALK 3: 40 genes
+     - ENDOTHELIUM VENULAR: 40 genes
+     - LYMPHATIC ENDOTHELIUM: 40 genes
+     - LYMPHATIC ENDOTHELIUM 1: 40 genes
+     - LYMPHATIC ENDOTHELIUM 2: 40 genes
+     - MACROPHAGE: 40 genes
+     - MACROPHAGE 1: 40 genes
+     - MACROPHAGE 2: 40 genes
+     - MACROPHAGE 3: 40 genes
+     - MAST CELL: 40 genes
+     - MESOTHELIUM: 40 genes
+     - MESOTHELIUM 1: 40 genes
+     - MESOTHELIUM 2: 40 genes
+     - MESOTHELIUM 3: 40 genes
+     - MONOCYTE: 40 genes
+     - MONOCYTE 1: 40 genes
+     - MONOCYTE 2: 40 genes
+     - NATURAL KILLER CELL: 40 genes
+     - NEUTROPHIL: 40 genes
+     - PDENDRITIC CELL: 40 genes
+     - PERICYTE: 40 genes
+     - PLASMABLAST: 40 genes
+     - REGULATORY T CELL: 40 genes
+     - SMOOTH MUSCLE CELL: 40 genes
+     - SMOOTH MUSCLE CELLS 1: 40 genes
+     - SMOOTH MUSCLE CELLS 2: 40 genes
+     - T CELL: 40 genes
+     - T CELL 1: 40 genes
+     - T CELL 2: 40 genes
+   Anonymized 55 cell types as CLUSTER 1..55
+   Estimated input: ~40,600 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 39231 tokens in, 22823 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Emont2022/evidence_selected/metrics_anon_top40.json
+   Discarded (not in DEG top 40): CLUSTER 47 / NOTCH3
+   Selected 396 markers (1 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Emont2022/evidence_selected/selected_anon_top40.json

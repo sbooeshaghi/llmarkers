@@ -1,0 +1,60 @@
+
+   Prepared 38 cell types, 15200 genes (top 400)
+     - ABERRANT BASALOID CELL: 400 genes
+     - ALVEOLAR MACROPHAGE: 400 genes
+     - ALVEOLAR TYPE 1 CELL: 400 genes
+     - ALVEOLAR TYPE 2 CELL: 400 genes
+     - B CELL: 400 genes
+     - BASAL CELL: 400 genes
+     - CILIATED CELL: 400 genes
+     - CLASSICAL MONOCYTE: 400 genes
+     - CLUB CELL: 400 genes
+     - CONVENTIONAL DENDRITIC CELL 1: 400 genes
+     - CONVENTIONAL DENDRITIC CELL 2: 400 genes
+     - CYTOTOXIC T CELL: 400 genes
+     - DENDRITIC CELL LANGERHANS: 400 genes
+     - FIBROBLAST: 400 genes
+     - GOBLET CELL: 400 genes
+     - INNATE LYMPHOID CELL A: 400 genes
+     - INNATE LYMPHOID CELL B: 400 genes
+     - IONOCYTE: 400 genes
+     - LYMPHATIC ENDOTHELIAL CELL: 400 genes
+     - MACROPHAGE: 400 genes
+     - MAST CELL: 400 genes
+     - MATURE DENDRITIC CELL: 400 genes
+     - MESOTHELIAL CELL: 400 genes
+     - MYOFIBROBLAST: 400 genes
+     - NATURAL KILLER CELL: 400 genes
+     - NON-CLASSICAL MONOCYTE: 400 genes
+     - PERICYTE: 400 genes
+     - PLASMA B CELL: 400 genes
+     - PLASMACYTOID DENDRITIC CELL: 400 genes
+     - PULMONARY NEUROENDOCRINE CELL: 400 genes
+     - REGULATORY T CELL: 400 genes
+     - SMOOTH MUSCLE CELL: 400 genes
+     - T CELL: 400 genes
+     - VASCULAR ENDOTHELIAL ARTERIAL: 400 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY A: 400 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY B: 400 genes
+     - VASCULAR ENDOTHELIAL PERIBRONCHIAL: 400 genes
+     - VASCULAR ENDOTHELIAL VENOUS: 400 genes
+   Estimated input: ~274,600 tokens
+   Splitting into 2 batches to fit context window
+
+   Batch 1/2: 22 cell types, ~159,400 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 157645 tokens in, 13970 tokens out
+
+   Batch 2/2: 16 cell types, ~116,200 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 114637 tokens in, 11962 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_top400.json
+   Discarded (not in DEG top 400): CILIATED CELL / FOXJ1
+   Discarded (not in DEG top 400): FIBROBLAST / PDGFRA
+   Discarded (not in DEG top 400): GOBLET CELL / MUC5AC
+   Discarded (not in DEG top 400): PLASMACYTOID DENDRITIC CELL / CLEC4C
+   Discarded (not in DEG top 400): PULMONARY NEUROENDOCRINE CELL / ASCL1
+   Discarded (not in DEG top 400): VASCULAR ENDOTHELIAL CAPILLARY B / HDAC9
+   Selected 392 markers (6 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_top400.json

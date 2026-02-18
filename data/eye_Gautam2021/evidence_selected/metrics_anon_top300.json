@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr select /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/eye_Gautam2021/evidence_deg/extracted.json -n 300 -s homo_sapiens -a -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/eye_Gautam2021/evidence_selected/selected_anon_top300.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/eye_Gautam2021/evidence_selected/metrics_anon_top300.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770944407,
+  "num_extractions": 309,
+  "processing_time_sec": 204.95,
+  "input_tokens": 10847,
+  "cached_tokens": 0,
+  "output_tokens": 1791,
+  "total_tokens": 12638,
+  "input_cost": 0.054235000000000005,
+  "cached_cost": 0.0,
+  "output_cost": 0.044775,
+  "total_cost": 0.09901000000000001
+}

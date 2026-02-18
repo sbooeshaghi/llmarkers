@@ -1,0 +1,52 @@
+
+   Prepared 38 cell types, 7600 genes (top 200)
+     - ABERRANT BASALOID CELL: 200 genes
+     - ALVEOLAR MACROPHAGE: 200 genes
+     - ALVEOLAR TYPE 1 CELL: 200 genes
+     - ALVEOLAR TYPE 2 CELL: 200 genes
+     - B CELL: 200 genes
+     - BASAL CELL: 200 genes
+     - CILIATED CELL: 200 genes
+     - CLASSICAL MONOCYTE: 200 genes
+     - CLUB CELL: 200 genes
+     - CONVENTIONAL DENDRITIC CELL 1: 200 genes
+     - CONVENTIONAL DENDRITIC CELL 2: 200 genes
+     - CYTOTOXIC T CELL: 200 genes
+     - DENDRITIC CELL LANGERHANS: 200 genes
+     - FIBROBLAST: 200 genes
+     - GOBLET CELL: 200 genes
+     - INNATE LYMPHOID CELL A: 200 genes
+     - INNATE LYMPHOID CELL B: 200 genes
+     - IONOCYTE: 200 genes
+     - LYMPHATIC ENDOTHELIAL CELL: 200 genes
+     - MACROPHAGE: 200 genes
+     - MAST CELL: 200 genes
+     - MATURE DENDRITIC CELL: 200 genes
+     - MESOTHELIAL CELL: 200 genes
+     - MYOFIBROBLAST: 200 genes
+     - NATURAL KILLER CELL: 200 genes
+     - NON-CLASSICAL MONOCYTE: 200 genes
+     - PERICYTE: 200 genes
+     - PLASMA B CELL: 200 genes
+     - PLASMACYTOID DENDRITIC CELL: 200 genes
+     - PULMONARY NEUROENDOCRINE CELL: 200 genes
+     - REGULATORY T CELL: 200 genes
+     - SMOOTH MUSCLE CELL: 200 genes
+     - T CELL: 200 genes
+     - VASCULAR ENDOTHELIAL ARTERIAL: 200 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY A: 200 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY B: 200 genes
+     - VASCULAR ENDOTHELIAL PERIBRONCHIAL: 200 genes
+     - VASCULAR ENDOTHELIAL VENOUS: 200 genes
+   Anonymized 38 cell types as CLUSTER 1..38
+   Estimated input: ~137,800 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 136455 tokens in, 20288 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_anon_top200.json
+   Discarded (not in DEG top 200): CLUSTER 14 / PDGFRA
+   Discarded (not in DEG top 200): CLUSTER 26 / S100A8
+   Discarded (not in DEG top 200): CLUSTER 32 / TAGLN
+   Discarded (not in DEG top 200): CLUSTER 7 / FOXJ1
+   Selected 342 markers (4 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_anon_top200.json

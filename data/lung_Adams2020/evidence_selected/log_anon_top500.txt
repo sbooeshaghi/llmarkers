@@ -1,0 +1,64 @@
+
+   Prepared 38 cell types, 19000 genes (top 500)
+     - ABERRANT BASALOID CELL: 500 genes
+     - ALVEOLAR MACROPHAGE: 500 genes
+     - ALVEOLAR TYPE 1 CELL: 500 genes
+     - ALVEOLAR TYPE 2 CELL: 500 genes
+     - B CELL: 500 genes
+     - BASAL CELL: 500 genes
+     - CILIATED CELL: 500 genes
+     - CLASSICAL MONOCYTE: 500 genes
+     - CLUB CELL: 500 genes
+     - CONVENTIONAL DENDRITIC CELL 1: 500 genes
+     - CONVENTIONAL DENDRITIC CELL 2: 500 genes
+     - CYTOTOXIC T CELL: 500 genes
+     - DENDRITIC CELL LANGERHANS: 500 genes
+     - FIBROBLAST: 500 genes
+     - GOBLET CELL: 500 genes
+     - INNATE LYMPHOID CELL A: 500 genes
+     - INNATE LYMPHOID CELL B: 500 genes
+     - IONOCYTE: 500 genes
+     - LYMPHATIC ENDOTHELIAL CELL: 500 genes
+     - MACROPHAGE: 500 genes
+     - MAST CELL: 500 genes
+     - MATURE DENDRITIC CELL: 500 genes
+     - MESOTHELIAL CELL: 500 genes
+     - MYOFIBROBLAST: 500 genes
+     - NATURAL KILLER CELL: 500 genes
+     - NON-CLASSICAL MONOCYTE: 500 genes
+     - PERICYTE: 500 genes
+     - PLASMA B CELL: 500 genes
+     - PLASMACYTOID DENDRITIC CELL: 500 genes
+     - PULMONARY NEUROENDOCRINE CELL: 500 genes
+     - REGULATORY T CELL: 500 genes
+     - SMOOTH MUSCLE CELL: 500 genes
+     - T CELL: 500 genes
+     - VASCULAR ENDOTHELIAL ARTERIAL: 500 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY A: 500 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY B: 500 genes
+     - VASCULAR ENDOTHELIAL PERIBRONCHIAL: 500 genes
+     - VASCULAR ENDOTHELIAL VENOUS: 500 genes
+   Anonymized 38 cell types as CLUSTER 1..38
+   Estimated input: ~343,000 tokens
+   Splitting into 3 batches to fit context window
+
+   Batch 1/3: 17 cell types, ~154,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 151749 tokens in, 10394 tokens out
+
+   Batch 2/3: 17 cell types, ~154,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 151966 tokens in, 10855 tokens out
+
+   Batch 3/3: 4 cell types, ~37,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 36455 tokens in, 3268 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_anon_top500.json
+   Discarded (not in DEG top 500): CLUSTER 14 / PDGFRA
+   Discarded (not in DEG top 500): CLUSTER 24 / ACTA2
+   Discarded (not in DEG top 500): CLUSTER 29 / CLEC4C
+   Discarded (not in DEG top 500): CLUSTER 4 / ETV5
+   Discarded (not in DEG top 500): CLUSTER 7 / FOXJ1
+   Selected 397 markers (5 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_anon_top500.json

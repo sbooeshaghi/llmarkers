@@ -1,0 +1,43 @@
+
+   Prepared 33 cell types, 1650 genes (top 50)
+     - ACTIVATED T CELL: 50 genes
+     - AMACRINE CELL: 50 genes
+     - CHOROID ENDOTHELIAL CELL: 50 genes
+     - CILIARY BODY CELL: 50 genes
+     - CILIARY BODY ENDOTHELIAL CELL: 50 genes
+     - COL9A1-HI CILIARY BODY CELL: 50 genes
+     - CONE PHOTORECEPTOR CELL: 50 genes
+     - CONJUNCTIVAL CELL: 50 genes
+     - CORNEAL FIBROBLAST: 50 genes
+     - CRYAA-HI CILIARY BODY CELL: 50 genes
+     - CYTOTOXIC T CELL: 50 genes
+     - ELF3-HI CORNEAL EPITHELIAL CELL: 50 genes
+     - FIBROBLAST: 50 genes
+     - HORIZONTAL CELL: 50 genes
+     - MEG3-HI FIBROBLAST: 50 genes
+     - MELANOCYTE: 50 genes
+     - MGP-HI FIBROBLAST: 50 genes
+     - MICROGLIA: 50 genes
+     - MONOCYTE: 50 genes
+     - MÜLLER GLIAL CELL: 50 genes
+     - OFF BIPOLAR CELL: 50 genes
+     - ON BIPOLAR CELL: 50 genes
+     - PIGMENTED CILIARY BODY CELL: 50 genes
+     - PUTATIVE STEM CELL: 50 genes
+     - RETINAL GANGLION CELL: 50 genes
+     - RIBOSOMAL GENES-HI FIBROBLAST: 50 genes
+     - ROD BIPOLAR CELL: 50 genes
+     - ROD PHOTORECEPTOR CELL: 50 genes
+     - SCHWANN CELL: 50 genes
+     - SMOOTH MUSCLE CELL: 50 genes
+     - TGFBI-HI CORNEAL EPITHELIAL CELL: 50 genes
+     - UNKNOWN: 50 genes
+     - WIF1-HI FIBROBLAST: 50 genes
+   Estimated input: ~30,700 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 29254 tokens in, 17358 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/eye_Gautam2021/evidence_selected/metrics_top50.json
+   Discarded (not in DEG top 50): ON BIPOLAR CELL / ISL1
+   Selected 260 markers (1 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/eye_Gautam2021/evidence_selected/selected_top50.json

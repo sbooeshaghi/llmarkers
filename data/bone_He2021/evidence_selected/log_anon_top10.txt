@@ -1,0 +1,41 @@
+
+   Prepared 31 cell types, 310 genes (top 10)
+     - BONE MARROW STROMAL CELL: 10 genes
+     - CHONDROBLAST: 10 genes
+     - CHONDROCYTE: 10 genes
+     - CRANIAL NEURAL CREST CELL: 10 genes
+     - EARLY OSTEOPROGENITOR: 10 genes
+     - EMBRYONIC SKELETAL STEM/PROGENITOR CELL: 10 genes
+     - ENDOTHELIAL CELL: 10 genes
+     - EPITHELIAL CELL 1: 10 genes
+     - EPITHELIAL CELL 2: 10 genes
+     - EPITHELIUM: 10 genes
+     - ERYTHROCYTE: 10 genes
+     - LIMB BUD MESENCHYMAL SUBSET 1: 10 genes
+     - LIMB BUD MESENCHYMAL SUBSET 2: 10 genes
+     - LIMB BUD-DERIVED MESENCHYMAL CELL: 10 genes
+     - LIMB BUD-DERIVED MESENCHYMAL CELL 1: 10 genes
+     - LIMB BUD-DERIVED MESENCHYMAL CELL 2: 10 genes
+     - LIMB BUD-DERIVED MESENCHYMAL CELL 3: 10 genes
+     - MACROPHAGE: 10 genes
+     - MIGRATORY CRANIAL NEURAL CREST CELL: 10 genes
+     - MYOBLAST: 10 genes
+     - MYOCYTE: 10 genes
+     - MYOPROGENITOR: 10 genes
+     - NEURAL CREST-DERIVED CELL: 10 genes
+     - OSTEO-CHONDROGENIC PROGENITOR: 10 genes
+     - OSTEOPROGENITOR: 10 genes
+     - PERICHONDRIAL MESENCHYMAL STROMAL CELL: 10 genes
+     - PERICHONDRIAL MESENCHYMAL STROMAL CELL 1: 10 genes
+     - PERICHONDRIAL MESENCHYMAL STROMAL CELL 2: 10 genes
+     - PERICYTE: 10 genes
+     - SCHWANN CELL: 10 genes
+     - VASCULAR LEPTOMENINGEAL CELL: 10 genes
+   Anonymized 31 cell types as CLUSTER 1..31
+   Estimated input: ~6,580 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 6331 tokens in, 12079 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/bone_He2021/evidence_selected/metrics_anon_top10.json
+   Selected 200 markers (0 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/bone_He2021/evidence_selected/selected_anon_top10.json

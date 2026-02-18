@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr select /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Emont2022/evidence_deg/extracted.json -n 20 -s homo_sapiens -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Emont2022/evidence_selected/selected_top20.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Emont2022/evidence_selected/metrics_top20.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770937126,
+  "num_extractions": 327,
+  "processing_time_sec": 219.47,
+  "input_tokens": 20491,
+  "cached_tokens": 0,
+  "output_tokens": 20307,
+  "total_tokens": 40798,
+  "input_cost": 0.102455,
+  "cached_cost": 0.0,
+  "output_cost": 0.507675,
+  "total_cost": 0.61013
+}

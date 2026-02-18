@@ -1,0 +1,49 @@
+
+   Prepared 38 cell types, 3800 genes (top 100)
+     - ABERRANT BASALOID CELL: 100 genes
+     - ALVEOLAR MACROPHAGE: 100 genes
+     - ALVEOLAR TYPE 1 CELL: 100 genes
+     - ALVEOLAR TYPE 2 CELL: 100 genes
+     - B CELL: 100 genes
+     - BASAL CELL: 100 genes
+     - CILIATED CELL: 100 genes
+     - CLASSICAL MONOCYTE: 100 genes
+     - CLUB CELL: 100 genes
+     - CONVENTIONAL DENDRITIC CELL 1: 100 genes
+     - CONVENTIONAL DENDRITIC CELL 2: 100 genes
+     - CYTOTOXIC T CELL: 100 genes
+     - DENDRITIC CELL LANGERHANS: 100 genes
+     - FIBROBLAST: 100 genes
+     - GOBLET CELL: 100 genes
+     - INNATE LYMPHOID CELL A: 100 genes
+     - INNATE LYMPHOID CELL B: 100 genes
+     - IONOCYTE: 100 genes
+     - LYMPHATIC ENDOTHELIAL CELL: 100 genes
+     - MACROPHAGE: 100 genes
+     - MAST CELL: 100 genes
+     - MATURE DENDRITIC CELL: 100 genes
+     - MESOTHELIAL CELL: 100 genes
+     - MYOFIBROBLAST: 100 genes
+     - NATURAL KILLER CELL: 100 genes
+     - NON-CLASSICAL MONOCYTE: 100 genes
+     - PERICYTE: 100 genes
+     - PLASMA B CELL: 100 genes
+     - PLASMACYTOID DENDRITIC CELL: 100 genes
+     - PULMONARY NEUROENDOCRINE CELL: 100 genes
+     - REGULATORY T CELL: 100 genes
+     - SMOOTH MUSCLE CELL: 100 genes
+     - T CELL: 100 genes
+     - VASCULAR ENDOTHELIAL ARTERIAL: 100 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY A: 100 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY B: 100 genes
+     - VASCULAR ENDOTHELIAL PERIBRONCHIAL: 100 genes
+     - VASCULAR ENDOTHELIAL VENOUS: 100 genes
+   Estimated input: ~69,400 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 68973 tokens in, 21467 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_top100.json
+   Discarded (not in DEG top 100): CILIATED CELL / FOXJ1
+   Discarded (not in DEG top 100): CONVENTIONAL DENDRITIC CELL 2 / CD1C
+   Selected 324 markers (2 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_top100.json

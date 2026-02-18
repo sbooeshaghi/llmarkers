@@ -1,0 +1,63 @@
+
+   Prepared 38 cell types, 19000 genes (top 500)
+     - ABERRANT BASALOID CELL: 500 genes
+     - ALVEOLAR MACROPHAGE: 500 genes
+     - ALVEOLAR TYPE 1 CELL: 500 genes
+     - ALVEOLAR TYPE 2 CELL: 500 genes
+     - B CELL: 500 genes
+     - BASAL CELL: 500 genes
+     - CILIATED CELL: 500 genes
+     - CLASSICAL MONOCYTE: 500 genes
+     - CLUB CELL: 500 genes
+     - CONVENTIONAL DENDRITIC CELL 1: 500 genes
+     - CONVENTIONAL DENDRITIC CELL 2: 500 genes
+     - CYTOTOXIC T CELL: 500 genes
+     - DENDRITIC CELL LANGERHANS: 500 genes
+     - FIBROBLAST: 500 genes
+     - GOBLET CELL: 500 genes
+     - INNATE LYMPHOID CELL A: 500 genes
+     - INNATE LYMPHOID CELL B: 500 genes
+     - IONOCYTE: 500 genes
+     - LYMPHATIC ENDOTHELIAL CELL: 500 genes
+     - MACROPHAGE: 500 genes
+     - MAST CELL: 500 genes
+     - MATURE DENDRITIC CELL: 500 genes
+     - MESOTHELIAL CELL: 500 genes
+     - MYOFIBROBLAST: 500 genes
+     - NATURAL KILLER CELL: 500 genes
+     - NON-CLASSICAL MONOCYTE: 500 genes
+     - PERICYTE: 500 genes
+     - PLASMA B CELL: 500 genes
+     - PLASMACYTOID DENDRITIC CELL: 500 genes
+     - PULMONARY NEUROENDOCRINE CELL: 500 genes
+     - REGULATORY T CELL: 500 genes
+     - SMOOTH MUSCLE CELL: 500 genes
+     - T CELL: 500 genes
+     - VASCULAR ENDOTHELIAL ARTERIAL: 500 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY A: 500 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY B: 500 genes
+     - VASCULAR ENDOTHELIAL PERIBRONCHIAL: 500 genes
+     - VASCULAR ENDOTHELIAL VENOUS: 500 genes
+   Estimated input: ~343,000 tokens
+   Splitting into 3 batches to fit context window
+
+   Batch 1/3: 17 cell types, ~154,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 152398 tokens in, 11806 tokens out
+
+   Batch 2/3: 17 cell types, ~154,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 151580 tokens in, 11741 tokens out
+
+   Batch 3/3: 4 cell types, ~37,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 36272 tokens in, 3705 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_top500.json
+   Discarded (not in DEG top 500): CILIATED CELL / FOXJ1
+   Discarded (not in DEG top 500): FIBROBLAST / PDGFRA
+   Discarded (not in DEG top 500): GOBLET CELL / MUC5AC
+   Discarded (not in DEG top 500): GOBLET CELL / SPDEF
+   Discarded (not in DEG top 500): PULMONARY NEUROENDOCRINE CELL / ASCL1
+   Selected 400 markers (5 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_top500.json

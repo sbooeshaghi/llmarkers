@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr select /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_deg/extracted.json -n 200 -s homo_sapiens -a -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_selected/selected_anon_top200.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/adipose_Hildreth2021/evidence_selected/metrics_anon_top200.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770943976,
+  "num_extractions": 316,
+  "processing_time_sec": 198.35,
+  "input_tokens": 106492,
+  "cached_tokens": 0,
+  "output_tokens": 18291,
+  "total_tokens": 124783,
+  "input_cost": 0.53246,
+  "cached_cost": 0.0,
+  "output_cost": 0.45727500000000004,
+  "total_cost": 0.989735
+}

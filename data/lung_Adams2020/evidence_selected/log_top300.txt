@@ -1,0 +1,57 @@
+
+   Prepared 38 cell types, 11400 genes (top 300)
+     - ABERRANT BASALOID CELL: 300 genes
+     - ALVEOLAR MACROPHAGE: 300 genes
+     - ALVEOLAR TYPE 1 CELL: 300 genes
+     - ALVEOLAR TYPE 2 CELL: 300 genes
+     - B CELL: 300 genes
+     - BASAL CELL: 300 genes
+     - CILIATED CELL: 300 genes
+     - CLASSICAL MONOCYTE: 300 genes
+     - CLUB CELL: 300 genes
+     - CONVENTIONAL DENDRITIC CELL 1: 300 genes
+     - CONVENTIONAL DENDRITIC CELL 2: 300 genes
+     - CYTOTOXIC T CELL: 300 genes
+     - DENDRITIC CELL LANGERHANS: 300 genes
+     - FIBROBLAST: 300 genes
+     - GOBLET CELL: 300 genes
+     - INNATE LYMPHOID CELL A: 300 genes
+     - INNATE LYMPHOID CELL B: 300 genes
+     - IONOCYTE: 300 genes
+     - LYMPHATIC ENDOTHELIAL CELL: 300 genes
+     - MACROPHAGE: 300 genes
+     - MAST CELL: 300 genes
+     - MATURE DENDRITIC CELL: 300 genes
+     - MESOTHELIAL CELL: 300 genes
+     - MYOFIBROBLAST: 300 genes
+     - NATURAL KILLER CELL: 300 genes
+     - NON-CLASSICAL MONOCYTE: 300 genes
+     - PERICYTE: 300 genes
+     - PLASMA B CELL: 300 genes
+     - PLASMACYTOID DENDRITIC CELL: 300 genes
+     - PULMONARY NEUROENDOCRINE CELL: 300 genes
+     - REGULATORY T CELL: 300 genes
+     - SMOOTH MUSCLE CELL: 300 genes
+     - T CELL: 300 genes
+     - VASCULAR ENDOTHELIAL ARTERIAL: 300 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY A: 300 genes
+     - VASCULAR ENDOTHELIAL CAPILLARY B: 300 genes
+     - VASCULAR ENDOTHELIAL PERIBRONCHIAL: 300 genes
+     - VASCULAR ENDOTHELIAL VENOUS: 300 genes
+   Estimated input: ~206,200 tokens
+   Splitting into 2 batches to fit context window
+
+   Batch 1/2: 29 cell types, ~157,600 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 155961 tokens in, 18475 tokens out
+
+   Batch 2/2: 9 cell types, ~49,600 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 48804 tokens in, 6873 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/metrics_top300.json
+   Discarded (not in DEG top 300): CILIATED CELL / FOXJ1
+   Discarded (not in DEG top 300): PULMONARY NEUROENDOCRINE CELL / ASCL1
+   Discarded (not in DEG top 300): SMOOTH MUSCLE CELL / TAGLN
+   Selected 371 markers (3 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/lung_Adams2020/evidence_selected/selected_top300.json

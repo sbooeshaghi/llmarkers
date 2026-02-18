@@ -1,0 +1,20 @@
+
+   Prepared 10 cell types, 400 genes (top 40)
+     - DDX4 AB+: 40 genes
+     - DDX4 AB-: 40 genes
+     - ENDOTHELIAL CELL: 40 genes
+     - GRANULOSA CELL: 40 genes
+     - IMMUNE CELL: 40 genes
+     - MONOCYTE: 40 genes
+     - OOCYTE: 40 genes
+     - PERIVASCULAR CELL: 40 genes
+     - STROMAL CELL: 40 genes
+     - T CELL: 40 genes
+   Estimated input: ~8,200 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 7524 tokens in, 6735 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/metrics_top40.json
+   Discarded (not in DEG top 40): GRANULOSA CELL / FOXL2
+   Selected 107 markers (1 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/selected_top40.json

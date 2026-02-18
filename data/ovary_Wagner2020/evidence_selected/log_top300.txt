@@ -1,0 +1,20 @@
+
+   Prepared 10 cell types, 3000 genes (top 300)
+     - DDX4 AB+: 300 genes
+     - DDX4 AB-: 300 genes
+     - ENDOTHELIAL CELL: 300 genes
+     - GRANULOSA CELL: 300 genes
+     - IMMUNE CELL: 300 genes
+     - MONOCYTE: 300 genes
+     - OOCYTE: 300 genes
+     - PERIVASCULAR CELL: 300 genes
+     - STROMAL CELL: 300 genes
+     - T CELL: 300 genes
+   Estimated input: ~55,000 tokens
+   Calling Claude (claude-opus-4-6)...
+   Response: 52084 tokens in, 7239 tokens out
+   Saved metrics to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/metrics_top300.json
+   Discarded (not in DEG top 300): ENDOTHELIAL CELL / PECAM1
+   Selected 115 markers (1 discarded)
+
+💾 Saved to: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/ovary_Wagner2020/evidence_selected/selected_top300.json

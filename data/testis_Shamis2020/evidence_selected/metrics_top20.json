@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr select /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/testis_Shamis2020/evidence_deg/extracted.json -n 20 -s homo_sapiens -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/testis_Shamis2020/evidence_selected/selected_top20.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/testis_Shamis2020/evidence_selected/metrics_top20.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770944010,
+  "num_extractions": 192,
+  "processing_time_sec": 142.83,
+  "input_tokens": 9339,
+  "cached_tokens": 0,
+  "output_tokens": 13268,
+  "total_tokens": 22607,
+  "input_cost": 0.046695,
+  "cached_cost": 0.0,
+  "output_cost": 0.3317,
+  "total_cost": 0.378395
+}
