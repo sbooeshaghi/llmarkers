@@ -28,6 +28,23 @@ __pycache__/
 # Generated databases
 *.db
 
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.bcf
+paper/*.blg
+paper/*.claimsrc
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.pdf
+paper/*.run.xml
+paper/*.synctex.gz
+paper/*.toc
+paper/*.lof
+paper/*.lot
+
 # Large binary data (biorxiv paper downloads)
 data/biorxiv/meca/**
 !data/biorxiv/meca/**/
