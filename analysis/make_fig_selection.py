@@ -4,6 +4,8 @@ Three panels:
   (a) Selection pair F1 vs top-N DEGs (named + anon + upper bound recall)
   (b) Per-dataset comparison of extraction, generation, selection (pair F1)
   (c) Performance vs cost across methods
+
+All methods evaluated against text-sourced human annotations only.
 """
 
 import json
@@ -102,7 +104,8 @@ def upper_bound_recall(hmn_pairs, deg_df, top_n):
 data = {}
 for ds in datasets:
     base = Path(f"../data/{ds}")
-    hmn = load_and_norm(base / "evidence_human" / "extracted.json")
+    hmn_all = load_and_norm(base / "evidence_human" / "extracted.json")
+    hmn = hmn_all[hmn_all["source_type"] == "text"].copy()
     deg = load_and_norm(base / "evidence_deg" / "extracted.json")
     gen = load_and_norm(base / "evidence_generated" / "extracted.json")
     llm = load_and_norm(base / "evidence_llm" / "extracted_txt.json")
@@ -220,7 +223,7 @@ ax.set_title("(a) Selection performance vs. N")
 ax.set_xscale("log")
 ax.set_xticks(N_values)
 ax.set_xticklabels([str(n) for n in N_values], rotation=45)
-ax.set_ylim(0, 0.6)
+ax.set_ylim(0, 0.8)
 ax.legend(fontsize=7.5, loc="upper left")
 ax.grid(True, alpha=0.3)
 
@@ -240,7 +243,7 @@ ax.set_ylabel("Pair F1")
 ax.set_title("(b) Method comparison by dataset")
 ax.set_xticks(x)
 ax.set_xticklabels([short_labels[ds] for ds in datasets], rotation=45, ha="right")
-ax.set_ylim(0, 0.7)
+ax.set_ylim(0, 0.9)
 ax.legend(fontsize=8)
 ax.grid(True, alpha=0.3, axis="y")
 
@@ -288,13 +291,14 @@ for ds in datasets:
 ax.set_xlabel("Cost (USD, 7 datasets)")
 ax.set_ylabel("Mean pair F1")
 ax.set_title("(c) Performance vs. cost")
-ax.set_ylim(0, 0.45)
+ax.set_ylim(0, 0.8)
 ax.legend(fontsize=8)
 ax.grid(True, alpha=0.3)
 
-plt.savefig("figures/fig_llm_curation.pdf", bbox_inches="tight", dpi=150)
-plt.savefig("figures/fig_llm_curation.png", bbox_inches="tight", dpi=150)
-print("Saved figures/fig_llm_curation.pdf")
+plt.savefig("figures/fig_selection_sweep.pdf", bbox_inches="tight", dpi=150)
+plt.savefig("figures/fig_selection_sweep.png", bbox_inches="tight", dpi=150)
+plt.savefig("../figures/fig_selection_sweep.pdf", bbox_inches="tight", dpi=150)
+print("Saved figures/fig_selection_sweep.pdf")
 
 # Print summary
 print(f"\nMethod summary:")
