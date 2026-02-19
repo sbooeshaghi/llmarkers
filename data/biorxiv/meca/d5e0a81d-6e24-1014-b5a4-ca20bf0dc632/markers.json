@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pluripotent stem cells",
+    "group_name": "PLURIPOTENT STEM CELL",
+    "group_id": null,
+    "feature_label": "OCT4",
+    "feature_name": "OCT4",
+    "feature_id": "ENSG00000204531",
+    "source_type": "text",
+    "source_rationale": "OCT4 is a pluripotency TF widely used as a marker of pluripotency, whose expression is both necessary to establish and maintain the pluripotent state and lost when cells exit pluripotency 40.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " pluripotency TF widely used as a marker of pluripotency, whose expression is both necessary to establish and maintain the pluripotent state and lost when cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "OCT4",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pluripotent stem cells",
+    "group_name": "PLURIPOTENT STEM CELL",
+    "group_id": null,
+    "feature_label": "SOX2",
+    "feature_name": "SOX2",
+    "feature_id": "ENSG00000181449",
+    "source_type": "text",
+    "source_rationale": "In a third example, we used an ORACLE-OCT4 pSOX2-driven mCherry-NLS system and confirmed that OCT4 and SOX2 abundances correlate at single-cell level, consistent with the known OCT4-SOX2 cooperativity in pluripotent stem cells.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " pluripotent stem cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "SOX2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "neuroectoderm",
+    "group_name": "NEUROECTODERM",
+    "group_id": null,
+    "feature_label": "SOX1",
+    "feature_name": "SOX1",
+    "feature_id": "ENSG00000182968",
+    "source_type": "text",
+    "source_rationale": "To this end, we selected SOX1, a neuroectoderm TF and fate determinant 44, and designed an endoORACLE-SOX1 reporter.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " neuroectoderm",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " SOX1",
+      "all_verified": true
+    }
+  }
+]

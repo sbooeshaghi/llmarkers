@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "fibroblasts",
+    "group_name": "FIBROBLAST",
+    "group_id": null,
+    "feature_label": "HOX",
+    "feature_name": "HOX",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "The iPS-FIB cell lines with lower CellScore have not silenced the expression HOX family body patterning genes, which are highly expressed in the donor fibroblasts (Figure 6).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " fibroblasts",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " HOX",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "primary hepatocytes",
+    "group_name": "PRIMARY HEPATOCYTE",
+    "group_id": null,
+    "feature_label": "albumin",
+    "feature_name": "ALBUMIN",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "In the microarray expression data, the iHEPs from this study expressed high levels of albumin, like the primary hepatocytes that were used as standards.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " primary hepatocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " albumin",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "iHEP",
+    "group_name": "IHEP",
+    "group_id": null,
+    "feature_label": "albumin",
+    "feature_name": "ALBUMIN",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "In the microarray expression data, the iHEPs from this study expressed high levels of albumin, like the primary hepatocytes that were used as standards.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " iHE",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " albumin",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "iHEP",
+    "group_name": "IHEP",
+    "group_id": null,
+    "feature_label": "alphafetoprotein",
+    "feature_name": "ALPHAFETOPROTEIN",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "However, a high level of alphafetoprotein gene in the iHEP cells shows that they were still immature hepatocytes and had not completely converted to the desired target cell type, primary hepatocytes.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " iHEP",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " alphafetoprotein",
+      "all_verified": true
+    }
+  }
+]

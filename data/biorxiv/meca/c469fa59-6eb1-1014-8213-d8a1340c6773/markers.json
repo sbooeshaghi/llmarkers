@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Epithelial",
+    "group_name": "EPITHELIAL",
+    "group_id": null,
+    "feature_label": "EPCAM",
+    "feature_name": "EPCAM",
+    "feature_id": "ENSG00000119888",
+    "source_type": "text",
+    "source_rationale": "Marker genes for each cluster were identified using differential gene expression analysis (Wilcoxon signed-rank test with Benjamini-Hochberg correction).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": false,
+      "feature_label_reconstructed": "",
+      "all_verified": false
+    }
+  }
+]

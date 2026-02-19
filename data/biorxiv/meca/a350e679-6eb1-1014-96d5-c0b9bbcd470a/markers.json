@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "resistant",
+    "group_name": "RESISTANT",
+    "group_id": null,
+    "feature_label": "MUC2",
+    "feature_name": "MUC2",
+    "feature_id": "ENSG00000198788",
+    "source_type": "text",
+    "source_rationale": "Mechanistic interrogation of responder/non-responder predictions reveals resistance-associated genes, such as MUC2 and SPINK4.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MUC2",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "resistant",
+    "group_name": "RESISTANT",
+    "group_id": null,
+    "feature_label": "SPINK4",
+    "feature_name": "SPINK4",
+    "feature_id": "ENSG00000122711",
+    "source_type": "text",
+    "source_rationale": "Mechanistic interrogation of responder/non-responder predictions reveals resistance-associated genes, such as MUC2 and SPINK4.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " SPINK4",
+      "all_verified": false
+    }
+  }
+]

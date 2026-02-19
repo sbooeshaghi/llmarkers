@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "nucleolus",
+    "group_name": "NUCLEOLUS",
+    "group_id": null,
+    "feature_label": "NOLC1",
+    "feature_name": "NOLC1",
+    "feature_id": "ENSG00000166197",
+    "source_type": "text",
+    "source_rationale": "To confirm that this 3D high-resolution structural and metabolic imaging allows us to resolve and identify the nucleolus, we conducted a validation study in HeLa cells by performing immunofluorescence staining for the nucleolar protein NOLC1 (46, 47) (Fig. 1f).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " nucleolus",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " NOLC1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "nucleolus",
+    "group_name": "NUCLEOLUS",
+    "group_id": null,
+    "feature_label": "fibrillarin",
+    "feature_name": "FIBRILLARIN",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "The primary and secondary antibodies used for CLEM were identical to the ones listed above for standard immunofluorescent staining, with the addition of fibrillarin (Millipore-Sigma Anti-Fibrillarin Antibody, clone 38F3), which is 1:200 diluted in PBSA.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " fibrillarin (Millipore-Sigma Anti-Fibrillarin",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "nuclear lamina",
+    "group_name": "NUCLEAR LAMINA",
+    "group_id": null,
+    "feature_label": "LAMINB1",
+    "feature_name": "LAMINB1",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Given that nucleolar dynamics in the endometrium often involve changes in nucleolar positioning within the nucleus, we further stained the nuclear lamina using an antibody against LAMINB1 (LMNB1), a structural component of the nuclear envelope (Fig. 4d; see Supplementary Fig. S10 for pipeline).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " nuclear lamina",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " LAMINB1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Ki67-positive cells",
+    "group_name": "KI67-POSITIVE CELL",
+    "group_id": null,
+    "feature_label": "Ki67",
+    "feature_name": "KI67",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "To directly assess the proliferative response to progesterone, we evaluated Ki67 expression\u2014a well-established marker of cell proliferation\u2014in organoids derived from both individuals.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Ki67",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Ki67",
+      "all_verified": true
+    }
+  }
+]

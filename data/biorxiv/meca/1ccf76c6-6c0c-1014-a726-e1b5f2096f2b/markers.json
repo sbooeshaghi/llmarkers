@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "female reproductive tract",
+    "group_name": "FEMALE REPRODUCTIVE TRACT",
+    "group_id": null,
+    "feature_label": "Lactobacillus iners",
+    "feature_name": "LACTOBACILLUS INERS",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "The most significantly enriched taxon is Lactobacillus iners, an inhabitant of the female reproductive tract.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " female reproductive tract",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Lactobacillus iners",
+      "all_verified": true
+    }
+  }
+]

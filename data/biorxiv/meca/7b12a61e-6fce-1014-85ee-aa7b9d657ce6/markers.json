@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "activated memory CD4 T cells",
+    "group_name": "ACTIVATED MEMORY CD4 T CELL",
+    "group_id": null,
+    "feature_label": "CD4",
+    "feature_name": "CD4",
+    "feature_id": "ENSG00000010610",
+    "source_type": "text",
+    "source_rationale": "Testing for the higher proportion of activated memory CD4 T cells in MSI-H and MSS STAD requires the smallest sample sizes \u2013 29, 26, 25 samples in each group with 100, 384, and 1,000 cells per sample, respectively (Supplementary Figure 7e).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " activated memory CD4 T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD4",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD8 T cells",
+    "group_name": "CD8 T CELL",
+    "group_id": null,
+    "feature_label": "CD8",
+    "feature_name": "CD8",
+    "feature_id": "ENSG00000153563",
+    "source_type": "text",
+    "source_rationale": "A few other cell types, including CD8 T cells in UCEC (Supplementary Figure 7e) and activated NK cells in COAD (Supplementary Figure 7f), also require fewer than 40 samples per group.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD8 T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD8",
+      "all_verified": true
+    }
+  }
+]

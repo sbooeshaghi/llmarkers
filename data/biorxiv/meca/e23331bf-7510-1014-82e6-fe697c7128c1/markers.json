@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Undifferentiation",
+    "group_name": "UNDIFFERENTIATION",
+    "group_id": null,
+    "feature_label": "KLF4",
+    "feature_name": "KLF4",
+    "feature_id": "ENSG00000136826",
+    "source_type": "text",
+    "source_rationale": "For KLF4, we observed that as the predicted expression increases, the appearance of cells changes from differentiated-like to undifferentiated-like.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " undifferent",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " KLF4",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Undifferentiation",
+    "group_name": "UNDIFFERENTIATION",
+    "group_id": null,
+    "feature_label": "KLF4",
+    "feature_name": "KLF4",
+    "feature_id": "ENSG00000136826",
+    "source_type": "text",
+    "source_rationale": "We observed that the cells show differentiation-like morphology when the predicted expression level of KLF4 is low, and change into the undifferentiation-like morphology as the predicted KLF4 expression level increases, for images within Experiment A (Figure 6C).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " undifferentiation",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " KLF4",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Undifferentiation",
+    "group_name": "UNDIFFERENTIATION",
+    "group_id": null,
+    "feature_label": "CSNK1E",
+    "feature_name": "CSNK1E",
+    "feature_id": "ENSG00000213923",
+    "source_type": "text",
+    "source_rationale": "For images within Experiment B, we also confirmed that as the predicted CSNK1E expression increases, the cells initially change their appearance from built-up-like morphology to undifferentiated-like morphology, until they become larger and the cell boundaries become unclear (Figure 6C).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " undifferent",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CSNK1E",
+      "all_verified": true
+    }
+  }
+]

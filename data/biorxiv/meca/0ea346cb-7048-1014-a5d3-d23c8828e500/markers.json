@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "B-naive",
+    "group_name": "B-NAIVE",
+    "group_id": null,
+    "feature_label": "CD19",
+    "feature_name": "CD19",
+    "feature_id": "ENSG00000177455",
+    "source_type": "text",
+    "source_rationale": "B-naive cell populations (CD19+ and CD27\u2212), were reported to have purities between 90-98%.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "B-naive",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD19",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "B-naive",
+    "group_name": "B-NAIVE",
+    "group_id": null,
+    "feature_label": "CD27",
+    "feature_name": "CD27",
+    "feature_id": "ENSG00000139193",
+    "source_type": "text",
+    "source_rationale": "B-naive cell populations (CD19+ and CD27\u2212), were reported to have purities between 90-98%.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "B-naive",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD27",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "B-memory",
+    "group_name": "B-MEMORY",
+    "group_id": null,
+    "feature_label": "CD19",
+    "feature_name": "CD19",
+    "feature_id": "ENSG00000177455",
+    "source_type": "text",
+    "source_rationale": "B-memory cell populations (CD19+ and CD27+), and B-naive cell populations (CD19+ and CD27\u2212), were reported to have purities between 90-98%.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "B-memory",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD19",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "B-memory",
+    "group_name": "B-MEMORY",
+    "group_id": null,
+    "feature_label": "CD27",
+    "feature_name": "CD27",
+    "feature_id": "ENSG00000139193",
+    "source_type": "text",
+    "source_rationale": "B-memory cell populations (CD19+ and CD27+), and B-naive cell populations (CD19+ and CD27\u2212), were reported to have purities between 90-98%.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "B-memory",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD27",
+      "all_verified": true
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pericyte",
+    "group_name": "PERICYTE",
+    "group_id": null,
+    "feature_label": "COX4I2",
+    "feature_name": "COX4I2",
+    "feature_id": "ENSG00000131055",
+    "source_type": "text",
+    "source_rationale": "As shown in Fig. 2a, all the cell lines demonstrated strong expression of the pericyte marker COX4I2 (Suppl. Table 3).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " pericyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " COX4I2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "callithrix_jacchus",
+    "group_label": "pericyte",
+    "group_name": "PERICYTE",
+    "group_id": null,
+    "feature_label": "COX4I2",
+    "feature_name": "COX4I2",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "As shown in Fig. 2a, all the cell lines demonstrated strong expression of the pericyte marker COX4I2 (Suppl. Table 3).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " pericyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " COX4I2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "callithrix_jacchus",
+    "group_label": "pericyte",
+    "group_name": "PERICYTE",
+    "group_id": null,
+    "feature_label": "COX4I1",
+    "feature_name": "COX4I1",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Based on RNAseq analysis and comparison with marker genes (COX4I1) and expression profiles derived from human scRNAseq analyses [39, 58], we identified these lines as pericyte-derived, mural cells of the microvasculature involved in maintenance of vessel integrity and regulation of vascular integrity [59].",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " pericyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "COX4I1",
+      "all_verified": true
+    }
+  }
+]

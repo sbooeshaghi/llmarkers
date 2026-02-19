@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pathogenic macrophages",
+    "group_name": "PATHOGENIC MACROPHAGE",
+    "group_id": null,
+    "feature_label": "C15orf48",
+    "feature_name": "C15ORF48",
+    "feature_id": "ENSG00000166920",
+    "source_type": "text",
+    "source_rationale": "C15orf48 expression, on the other hand, has been shown to be involved in the mitochondrial stress response (MISTR) and is expressed by pathogenic macrophages in severe COVID-19 (Liao et al., 2020; Clayton et al., 2021).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " pathogenic macrophages",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "C15orf48",
+      "all_verified": true
+    }
+  }
+]

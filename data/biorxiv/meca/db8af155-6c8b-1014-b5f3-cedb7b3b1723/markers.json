@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "mast cell",
+    "group_name": "MAST CELL",
+    "group_id": null,
+    "feature_label": "TPSAB1",
+    "feature_name": "TPSAB1",
+    "feature_id": "ENSG00000172236",
+    "source_type": "text",
+    "source_rationale": "We used the markers proposed in the (Lambrechts et al., 2018) study, but also added a few markers for mast cell (TPSAB1, TPSB2 and CPA3; (Dwyer et al., 2016) Table 1) (Fig. 1B).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " mast cell",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "TPSAB1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "mast cell",
+    "group_name": "MAST CELL",
+    "group_id": null,
+    "feature_label": "TPSB2",
+    "feature_name": "TPSB2",
+    "feature_id": "ENSG00000197253",
+    "source_type": "text",
+    "source_rationale": "We used the markers proposed in the (Lambrechts et al., 2018) study, but also added a few markers for mast cell (TPSAB1, TPSB2 and CPA3; (Dwyer et al., 2016) Table 1) (Fig. 1B).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " mast cell",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " TPSB2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "mast cell",
+    "group_name": "MAST CELL",
+    "group_id": null,
+    "feature_label": "CPA3",
+    "feature_name": "CPA3",
+    "feature_id": "ENSG00000128510",
+    "source_type": "text",
+    "source_rationale": "We used the markers proposed in the (Lambrechts et al., 2018) study, but also added a few markers for mast cell (TPSAB1, TPSB2 and CPA3; (Dwyer et al., 2016) Table 1) (Fig. 1B).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " mast cell",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CPA3",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "cancer cells",
+    "group_name": "CANCER CELLS",
+    "group_id": null,
+    "feature_label": "EPCAM",
+    "feature_name": "EPCAM",
+    "feature_id": "ENSG00000119888",
+    "source_type": "text",
+    "source_rationale": "At least 3 marker genes were required to assign a cluster to the corresponding cell type, except for cancer cells that were annotated only based on the expression of EPCAM.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " cancer cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " EPCAM",
+      "all_verified": true
+    }
+  }
+]

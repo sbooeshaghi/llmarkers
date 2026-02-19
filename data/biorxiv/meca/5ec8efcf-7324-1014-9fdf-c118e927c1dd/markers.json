@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "epithelial",
+    "group_name": "EPITHELIAL",
+    "group_id": null,
+    "feature_label": "GLO1",
+    "feature_name": "GLO1",
+    "feature_id": "ENSG00000124767",
+    "source_type": "text",
+    "source_rationale": "GLO1 expression was found to be significantly higher in tumor epithelial cells compared to normal epithelial cells (Fig. 3C).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " epithelial",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "GLO1",
+      "all_verified": true
+    }
+  }
+]

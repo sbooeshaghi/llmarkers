@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "drosophila_melanogaster",
+    "group_label": "PM2",
+    "group_name": "PM2",
+    "group_id": null,
+    "feature_label": "mitotic marker genes",
+    "feature_name": "MITOTIC MARKER GENES",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Of note, Drosophila blood cluster 'PM2' significantly correlated to 'HC4' in mosquito blood, both of which have been described as proliferating hemocytes that express mitotic marker genes [6,17].",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "PM2",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " mitotic marker genes",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "drosophila_melanogaster",
+    "group_label": "CC2",
+    "group_name": "CC2",
+    "group_id": null,
+    "feature_label": "PPO",
+    "feature_name": "PPO",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "In addition, the 'HC1' cluster identified in the mosquito blood study maps to mature crystal cell cluster 'CC2', and both express high mRNA levels of prophenoloxidases (PPO), which are characteristics of crystal cells or otherwise called oenocytoids [6, 17].",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "CC2",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "PPO",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "drosophila_melanogaster",
+    "group_label": "PM8",
+    "group_name": "PM8",
+    "group_id": null,
+    "feature_label": "peroxiredoxins",
+    "feature_name": "PEROXIREDOXINS",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Interestingly, 'HC1' also highly correlated with 'PM8', a plasmatocyte cluster that is enriched in peroxiredoxins.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "PM8",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " peroxiredoxins",
+      "all_verified": true
+    }
+  }
+]

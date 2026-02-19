@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocyte",
+    "group_name": "MONOCYTE",
+    "group_id": null,
+    "feature_label": "CD14",
+    "feature_name": "CD14",
+    "feature_id": "ENSG00000170458",
+    "source_type": "text",
+    "source_rationale": "To confirm cell identity and validate segmentation boundaries, we performed correlative fluorescence imaging with FITC-conjugated anti-CD14 antibodies and Hoechst nuclear staining (Fig. 1e). All imaged cells exhibited strong CD14 expression and a single, clearly delineated nucleus, confirming their monocyte identity and morphological integrity.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " monocyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD14",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocytes",
+    "group_name": "MONOCYTE",
+    "group_id": null,
+    "feature_label": "HLA-DR",
+    "feature_name": "HLA-DR",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "One promising marker is the expression of HLA-DR on monocytes (mHLA-DR), which correlates with immune suppression and prognosis 16-19.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " monocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "HLA-DR",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocyte",
+    "group_name": "MONOCYTE",
+    "group_id": null,
+    "feature_label": "CD14",
+    "feature_name": "CD14",
+    "feature_id": "ENSG00000170458",
+    "source_type": "text",
+    "source_rationale": "While our monocyte population was enriched based on CD14 expression, it likely included a mixture of classical, intermediate, and non-classical subtypes 43.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " monocyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD14",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocyte",
+    "group_name": "MONOCYTE",
+    "group_id": null,
+    "feature_label": "CD16",
+    "feature_name": "CD16",
+    "feature_id": "ENSG00000203747",
+    "source_type": "text",
+    "source_rationale": "Future studies incorporating CD16-based sorting or transcriptomic validation could refine subtype-specific HT profiles.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD16",
+      "all_verified": false
+    }
+  }
+]

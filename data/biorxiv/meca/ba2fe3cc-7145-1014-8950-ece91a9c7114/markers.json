@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T-cell",
+    "group_name": "T-CELL",
+    "group_id": null,
+    "feature_label": "CD4",
+    "feature_name": "CD4",
+    "feature_id": "ENSG00000010610",
+    "source_type": "text",
+    "source_rationale": "Then, the subset of clusters with high gene activity for T-cell markers (CD4, CD8A, CD3E) and high fraction of cells previously annotated as T-cell was selected.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " T-cell",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD4",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T-cell",
+    "group_name": "T-CELL",
+    "group_id": null,
+    "feature_label": "CD8A",
+    "feature_name": "CD8A",
+    "feature_id": "ENSG00000153563",
+    "source_type": "text",
+    "source_rationale": "Then, the subset of clusters with high gene activity for T-cell markers (CD4, CD8A, CD3E) and high fraction of cells previously annotated as T-cell was selected.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " T-cell",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD8A",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T-cell",
+    "group_name": "T-CELL",
+    "group_id": null,
+    "feature_label": "CD3E",
+    "feature_name": "CD3E",
+    "feature_id": "ENSG00000198851",
+    "source_type": "text",
+    "source_rationale": "Then, the subset of clusters with high gene activity for T-cell markers (CD4, CD8A, CD3E) and high fraction of cells previously annotated as T-cell was selected.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " T-cell",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD3E",
+      "all_verified": true
+    }
+  }
+]

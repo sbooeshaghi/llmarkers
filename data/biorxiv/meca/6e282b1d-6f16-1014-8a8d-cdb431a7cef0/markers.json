@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "oligodendrocytes",
+    "group_name": "OLIGODENDROCYTES",
+    "group_id": null,
+    "feature_label": "MOBP",
+    "feature_name": "MOBP",
+    "feature_id": "ENSG00000168314",
+    "source_type": "text",
+    "source_rationale": "The cellular insight was further illuminated by visualizing the expression of marker genes, such as MOBP for oligodendrocytes, GFAP for astrocytes, and CLDN5 for endothelial cells, distinguishing between control (Figure 4G) and AD conditions (Figure 4H).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " oligodendrocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MOBP",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "astrocytes",
+    "group_name": "ASTROCYTES",
+    "group_id": null,
+    "feature_label": "GFAP",
+    "feature_name": "GFAP",
+    "feature_id": "ENSG00000131095",
+    "source_type": "text",
+    "source_rationale": "The cellular insight was further illuminated by visualizing the expression of marker genes, such as MOBP for oligodendrocytes, GFAP for astrocytes, and CLDN5 for endothelial cells, distinguishing between control (Figure 4G) and AD conditions (Figure 4H).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " astrocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " GFAP",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "endothelial cells",
+    "group_name": "ENDOTHELIAL CELLS",
+    "group_id": null,
+    "feature_label": "CLDN5",
+    "feature_name": "CLDN5",
+    "feature_id": "ENSG00000184113",
+    "source_type": "text",
+    "source_rationale": "The cellular insight was further illuminated by visualizing the expression of marker genes, such as MOBP for oligodendrocytes, GFAP for astrocytes, and CLDN5 for endothelial cells, distinguishing between control (Figure 4G) and AD conditions (Figure 4H).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " endothelial cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CLDN5",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Microglia",
+    "group_name": "MICROGLIA",
+    "group_id": null,
+    "feature_label": "MEF2A",
+    "feature_name": "MEF2A",
+    "feature_id": "ENSG00000068305",
+    "source_type": "text",
+    "source_rationale": "For example, the myocyte-specific enhancer factor 2A (MEF2A) is upregulated in Microglia in Female to establish microglial-specific enhancer profiles32.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Microglia",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "MEF2A",
+      "all_verified": true
+    }
+  }
+]

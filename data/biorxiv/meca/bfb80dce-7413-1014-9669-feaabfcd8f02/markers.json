@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "mus_musculus",
+    "group_label": "1H",
+    "group_name": "1H",
+    "group_id": null,
+    "feature_label": "Sox3",
+    "feature_name": "SOX3",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "These marker gene panels contain canonical markers of neural progenitors, intermediate progenitors / neuroblasts and neurons, including Sox3, Neurod1, and Mef2c in 1H, 24H, and 96H cells, respectively.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " 1H",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Sox3",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "24H",
+    "group_name": "24H",
+    "group_id": null,
+    "feature_label": "Neurod1",
+    "feature_name": "NEUROD1",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "These marker gene panels contain canonical markers of neural progenitors, intermediate progenitors / neuroblasts and neurons, including Sox3, Neurod1, and Mef2c in 1H, 24H, and 96H cells, respectively.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " 24H",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Neurod1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "96H",
+    "group_name": "96H",
+    "group_id": null,
+    "feature_label": "Mef2c",
+    "feature_name": "MEF2C",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "These marker gene panels contain canonical markers of neural progenitors, intermediate progenitors / neuroblasts and neurons, including Sox3, Neurod1, and Mef2c in 1H, 24H, and 96H cells, respectively.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " 96H",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Mef2c",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "E12 1H",
+    "group_name": "E12 1H",
+    "group_id": null,
+    "feature_label": "Crabp2",
+    "feature_name": "CRABP2",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "This E12 1H panel includes Crabp2, which marks a specific early neural progenitor state related to telencephalic regionalization in multiple primate datasets ([37] and [38]).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " E12 1H",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Crabp2",
+      "all_verified": true
+    }
+  }
+]

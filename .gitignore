@@ -29,4 +29,8 @@ __pycache__/
 *.db
 
 # Large binary data (biorxiv paper downloads)
-data/biorxiv/meca/
+data/biorxiv/meca/**
+!data/biorxiv/meca/**/
+!data/biorxiv/meca/**/manuscript.md
+!data/biorxiv/meca/**/markers.json
+!data/biorxiv/meca/**/metrics.json

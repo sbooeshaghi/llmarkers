@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DCIS",
+    "group_name": "DCIS",
+    "group_id": null,
+    "feature_label": "CK5",
+    "feature_name": "CK5",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "CK5 is an immunohistochemistry myoepithelial marker routinely used in the clinic due to its high sensitivity in the detection of DCIS (24).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " DCIS",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CK5",
+      "all_verified": true
+    }
+  }
+]

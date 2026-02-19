@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "plasma cells",
+    "group_name": "PLASMA CELL",
+    "group_id": null,
+    "feature_label": "IgA",
+    "feature_name": "IGA",
+    "feature_id": "ENSG00000105369",
+    "source_type": "text",
+    "source_rationale": "We demonstrated this capability using the GVHD dataset 40, where plasma cells are identified using a unique marker (IgA) instead of the more common CD138 marker.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " plasma cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "IgA",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "plasma cells",
+    "group_name": "PLASMA CELL",
+    "group_id": null,
+    "feature_label": "CD138",
+    "feature_name": "CD138",
+    "feature_id": "ENSG00000115884",
+    "source_type": "text",
+    "source_rationale": "We demonstrated this capability using the GVHD dataset 40, where plasma cells are identified using a unique marker (IgA) instead of the more common CD138 marker.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " plasma cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD138",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "plasma cells",
+    "group_name": "PLASMA CELL",
+    "group_id": null,
+    "feature_label": "CD38",
+    "feature_name": "CD38",
+    "feature_id": "ENSG00000004468",
+    "source_type": "text",
+    "source_rationale": "Despite sharing only the CD38 marker with other datasets (which is not exclusive to plasma cells), our model robustly recognizes plasma cells in the GVHD dataset when trained on all other datasets (Fig. 2g).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " plasma cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD38",
+      "all_verified": true
+    }
+  }
+]

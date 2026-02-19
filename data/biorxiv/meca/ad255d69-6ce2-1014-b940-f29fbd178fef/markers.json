@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "B cells",
+    "group_name": "B CELL",
+    "group_id": null,
+    "feature_label": "B cells",
+    "feature_name": "B CELLS",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Notably, B cells, T cells (CD4/CD8), and natural killer (NK) cells are positioned in adjacent regions, reflecting their shared developmental origin, whereas monocytes (Mono) and granulocyte-macrophage progenitors (GMP) are located further apart, consistent with known hematopoietic differentiation trajectories.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " B cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " B cells",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T cells (CD4/CD8)",
+    "group_name": "T CELL (CD4/CD8)",
+    "group_id": null,
+    "feature_label": "CD4",
+    "feature_name": "CD4",
+    "feature_id": "ENSG00000010610",
+    "source_type": "text",
+    "source_rationale": "Notably, B cells, T cells (CD4/CD8), and natural killer (NK) cells are positioned in adjacent regions, reflecting their shared developmental origin, whereas monocytes (Mono) and granulocyte-macrophage progenitors (GMP) are located further apart, consistent with known hematopoietic differentiation trajectories.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " T cells (CD4/CD8)",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD4",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T cells (CD4/CD8)",
+    "group_name": "T CELL (CD4/CD8)",
+    "group_id": null,
+    "feature_label": "CD8",
+    "feature_name": "CD8",
+    "feature_id": "ENSG00000153563",
+    "source_type": "text",
+    "source_rationale": "Notably, B cells, T cells (CD4/CD8), and natural killer (NK) cells are positioned in adjacent regions, reflecting their shared developmental origin, whereas monocytes (Mono) and granulocyte-macrophage progenitors (GMP) are located further apart, consistent with known hematopoietic differentiation trajectories.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " T cells (CD4/CD8)",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD8",
+      "all_verified": true
+    }
+  }
+]

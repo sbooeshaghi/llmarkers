@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "epithelial cells",
+    "group_name": "EPITHELIAL CELL",
+    "group_id": null,
+    "feature_label": "ACE2",
+    "feature_name": "ACE2",
+    "feature_id": "ENSG00000130234",
+    "source_type": "text",
+    "source_rationale": "Each virus has dozens of spike glycoproteins that bind to ACE2 (receptors) on select cell membranes3,11.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " ACE2",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "epithelial cells",
+    "group_name": "EPITHELIAL CELL",
+    "group_id": null,
+    "feature_label": "TMPRSS2",
+    "feature_name": "TMPRSS2",
+    "feature_id": "ENSG00000184012",
+    "source_type": "text",
+    "source_rationale": "Prior to binding to the ACE2 receptor, the spike is cleaved by the protease, TMPRSS2, which is required for efficient cell entry12.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " TMPRSS2",
+      "all_verified": false
+    }
+  }
+]

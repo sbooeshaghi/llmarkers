@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "erythrocyte",
+    "group_name": "ERYTHROCYTE",
+    "group_id": null,
+    "feature_label": "MALAT1",
+    "feature_name": "MALAT1",
+    "feature_id": "ENSG00000251562",
+    "source_type": "text",
+    "source_rationale": "As expected, MALAT1 is often not detected in large proportions of erythrocyte clusters which do not possess a nucleus.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " erythrocyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MALAT1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "erythroid cells",
+    "group_name": "ERYTHROID CELL",
+    "group_id": null,
+    "feature_label": "hemoglobin genes",
+    "feature_name": "HEMOGLOBIN GENES",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Examples of these genes include hemoglobin genes, which are markers of erythroid cells lacking a nucleus; hepatocyte-associated genes, as hepatocytes were often found to be poor quality; and mitochondrial genes, which are often highly expressed in stressed or dying cells.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " erythroid cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " hemoglobin genes",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "hepatocytes",
+    "group_name": "HEPATOCYTE",
+    "group_id": null,
+    "feature_label": "hepatocyte-associated genes",
+    "feature_name": "HEPATOCYTE-ASSOCIATED GENES",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Examples of these genes include hemoglobin genes, which are markers of erythroid cells lacking a nucleus; hepatocyte-associated genes, as hepatocytes were often found to be poor quality; and mitochondrial genes, which are often highly expressed in stressed or dying cells.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " hepatocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " hepatocyte-associated genes",
+      "all_verified": true
+    }
+  }
+]

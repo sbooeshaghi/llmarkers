@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "neutrophils",
+    "group_name": "NEUTROPHILS",
+    "group_id": null,
+    "feature_label": "RETN",
+    "feature_name": "RETN",
+    "feature_id": "ENSG00000104918",
+    "source_type": "text",
+    "source_rationale": "The RETN gene, one of seven hub genes in the lactate metabolism pathway, was highly expressed in neutrophils and monocytes.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " neutrophils",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " RETN",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocytes",
+    "group_name": "MONOCYTES",
+    "group_id": null,
+    "feature_label": "RETN",
+    "feature_name": "RETN",
+    "feature_id": "ENSG00000104918",
+    "source_type": "text",
+    "source_rationale": "The RETN gene, one of seven hub genes in the lactate metabolism pathway, was highly expressed in neutrophils and monocytes.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " monocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " RETN",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocytes",
+    "group_name": "MONOCYTES",
+    "group_id": null,
+    "feature_label": "MIF",
+    "feature_name": "MIF",
+    "feature_id": "ENSG00000240972",
+    "source_type": "text",
+    "source_rationale": "Further investigation of MIF-related signaling pathways indicated that the MIF gene was involved in monocyte communication in sepsis samples but not in controls.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " mon",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MIF",
+      "all_verified": true
+    }
+  }
+]

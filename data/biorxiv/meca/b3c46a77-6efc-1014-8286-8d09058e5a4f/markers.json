@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "G2",
+    "group_name": "G2",
+    "group_id": null,
+    "feature_label": "FOXM1",
+    "feature_name": "FOXM1",
+    "feature_id": "ENSG00000111206",
+    "source_type": "text",
+    "source_rationale": "FOXM1 is a transcription factor responsible for the induction of cyclin B1 expression during late S and G2 phase (Laoukili et al, 2007).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " G2",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "FOXM1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "S-phase",
+    "group_name": "S-PHASE",
+    "group_id": null,
+    "feature_label": "cyclin A",
+    "feature_name": "CYCLIN A",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Specifically, it has been shown that the promotor of cyclin A contains a repressive element that needs to be relieved before cyclin A is transcribed (Schulze et al, 1995; Zwicker et al, 1995).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " cyclin A",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "S-phase",
+    "group_name": "S-PHASE",
+    "group_id": null,
+    "feature_label": "cyclin E",
+    "feature_name": "CYCLIN E",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Cyclin E and cyclin A are both E2F target genes (Ohtani et al, 1995; Schulze et al, 1995); however cyclin A levels rise later in the cell cycle than cyclin E (Mart\u00ednez-Alonso & Malumbres, 2020).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " cyclin E",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "cyclin E promoter",
+    "group_name": "CYCLIN E PROMOTER",
+    "group_id": null,
+    "feature_label": "E2F7",
+    "feature_name": "E2F7",
+    "feature_id": "ENSG00000165891",
+    "source_type": "text",
+    "source_rationale": "This can be explained by the finding that the repressive E2F7 binds the cyclin E promoter, but not the cyclin A promoter (Di Stefano et al, 2003; Westendorp et al, 2012).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " cyclin E promoter",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " E2F7",
+      "all_verified": true
+    }
+  }
+]

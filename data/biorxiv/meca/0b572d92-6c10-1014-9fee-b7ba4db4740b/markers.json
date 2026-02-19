@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T-helper cell",
+    "group_name": "T-HELPER CELL",
+    "group_id": null,
+    "feature_label": "IL7R",
+    "feature_name": "IL7R",
+    "feature_id": "ENSG00000168685",
+    "source_type": "text",
+    "source_rationale": "For example, the known T-helper cell associated genes, IL7R and STX1216, contained many splice variants, of which several were positively and negatively correlated to their corresponding protein levels (Figure 1C).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " T-helper cell",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " IL7R",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T-helper cell",
+    "group_name": "T-HELPER CELL",
+    "group_id": null,
+    "feature_label": "STX12",
+    "feature_name": "STX12",
+    "feature_id": "ENSG00000117758",
+    "source_type": "text",
+    "source_rationale": "For example, the known T-helper cell associated genes, IL7R and STX1216, contained many splice variants, of which several were positively and negatively correlated to their corresponding protein levels (Figure 1C).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " T-helper cell",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " STX",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Naive CD45RA+ CD4+ T cells",
+    "group_name": "NAIVE CD45RA+ CD4+ T CELL",
+    "group_id": null,
+    "feature_label": "CD45RA",
+    "feature_name": "CD45RA",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Naive CD45RA+ CD4+ T cells were subsequently isolated with magnetic bead separation using the \"Naive CD4+ T Cell Isolation Kit II, human\" (Miltenyi Biotec, Bergisch Gladbach, Germany).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "Naive CD45RA+ CD4+ T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD45RA",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Naive CD45RA+ CD4+ T cells",
+    "group_name": "NAIVE CD45RA+ CD4+ T CELL",
+    "group_id": null,
+    "feature_label": "CD4",
+    "feature_name": "CD4",
+    "feature_id": "ENSG00000010610",
+    "source_type": "text",
+    "source_rationale": "Naive CD45RA+ CD4+ T cells were subsequently isolated with magnetic bead separation using the \"Naive CD4+ T Cell Isolation Kit II, human\" (Miltenyi Biotec, Bergisch Gladbach, Germany).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "Naive CD45RA+ CD4+ T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD4",
+      "all_verified": true
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "NeuNPos",
+    "group_name": "NEUNPOS",
+    "group_id": null,
+    "feature_label": "NeuN",
+    "feature_name": "NEUN",
+    "feature_id": "ENSG00000167281",
+    "source_type": "text",
+    "source_rationale": "Altogether, 293 Total (unsorted), 290 NeuNPos (NeuN+), 286 SOX10Pos (NeuN-/SOX10+), 27 IRF8Pos (NeuN-/SOX10-/IRF8+), 274 DoubleNeg (NeuN-/SOX10-) and 15 TripleNeg (NeuN-/SOX10-/IRF8-) nuclei samples were processed.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "NeuNPos",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "NeuN",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SOX10Pos",
+    "group_name": "SOX10POS",
+    "group_id": null,
+    "feature_label": "SOX10",
+    "feature_name": "SOX10",
+    "feature_id": "ENSG00000100146",
+    "source_type": "text",
+    "source_rationale": "Altogether, 293 Total (unsorted), 290 NeuNPos (NeuN+), 286 SOX10Pos (NeuN-/SOX10+), 27 IRF8Pos (NeuN-/SOX10-/IRF8+), 274 DoubleNeg (NeuN-/SOX10-) and 15 TripleNeg (NeuN-/SOX10-/IRF8-) nuclei samples were processed.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "SOX10Pos",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "SOX10",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "IRF8Pos",
+    "group_name": "IRF8POS",
+    "group_id": null,
+    "feature_label": "IRF8",
+    "feature_name": "IRF8",
+    "feature_id": "ENSG00000140968",
+    "source_type": "text",
+    "source_rationale": "Altogether, 293 Total (unsorted), 290 NeuNPos (NeuN+), 286 SOX10Pos (NeuN-/SOX10+), 27 IRF8Pos (NeuN-/SOX10-/IRF8+), 274 DoubleNeg (NeuN-/SOX10-) and 15 TripleNeg (NeuN-/SOX10-/IRF8-) nuclei samples were processed.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " IRF8Pos",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "IRF8",
+      "all_verified": true
+    }
+  }
+]

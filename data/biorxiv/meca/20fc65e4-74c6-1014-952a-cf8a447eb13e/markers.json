@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "B cells",
+    "group_name": "B CELL",
+    "group_id": null,
+    "feature_label": "EBV ExWAS",
+    "feature_name": "EBV EXWAS",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "As expected, the EBV signature score was enriched in B cells, consistent with the known viral tropism of EBV infection and latency (Fig. 4b,c).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " B cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " EBV signature score was enriched in B cells, consistent with the known viral tropism of EBV",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "conventional dendritic cells",
+    "group_name": "CONVENTIONAL DENDRITIC CELL",
+    "group_id": null,
+    "feature_label": "EBV ExWAS",
+    "feature_name": "EBV EXWAS",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Interestingly, we observed a similar enrichment in subsets of antigen-presenting cells (APCs), particularly conventional dendritic cells (cDCs; Extended Data Fig. 4a,b), though DCs are most likely not directly infected by EBV60.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " conventional dendritic cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " EBV",
+      "all_verified": true
+    }
+  }
+]

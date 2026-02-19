@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD34+ CD38-",
+    "group_name": "CD34+ CD38-",
+    "group_id": null,
+    "feature_label": "CD34",
+    "feature_name": "CD34",
+    "feature_id": "ENSG00000174059",
+    "source_type": "text",
+    "source_rationale": "For the CD34+ CD38-cell populations, we observe a strong visual change in normal karyotype with a FLT3-ITD mutation versus samples from healthy donors and a negligible change when comparing the patients without AML after chemotherapy versus samples from healthy donors.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD34+ CD38-",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD34",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD34+ CD38-",
+    "group_name": "CD34+ CD38-",
+    "group_id": null,
+    "feature_label": "CD99",
+    "feature_name": "CD99",
+    "feature_id": "ENSG00000002586",
+    "source_type": "text",
+    "source_rationale": "Biaxial plots of histone 3 lysine acetylation (H3Kac) expression versus CD99 antigen expression for individual cells in the CD34+ CD38-immunophenotype nodule.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD99 antigen expression for individual cells in the CD34+ CD38",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD99",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD34+ CD38-",
+    "group_name": "CD34+ CD38-",
+    "group_id": null,
+    "feature_label": "H3Kac",
+    "feature_name": "H3KAC",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Biaxial plots of histone 3 lysine acetylation (H3Kac) expression versus CD99 antigen expression for individual cells in the CD34+ CD38-immunophenotype nodule.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD99 antigen expression for individual cells in the CD34+ CD38",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "H3Kac",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD34+",
+    "group_name": "CD34+",
+    "group_id": null,
+    "feature_label": "CD34",
+    "feature_name": "CD34",
+    "feature_id": "ENSG00000174059",
+    "source_type": "text",
+    "source_rationale": "Key visual differences can be seen in CD34+ immunophenotype and CD34+ CD38-immunophenotype and in many other nodes.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD34+",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD34",
+      "all_verified": true
+    }
+  }
+]

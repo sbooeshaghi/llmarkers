@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "A1 astrocytes",
+    "group_name": "A1 ASTROCYTE",
+    "group_id": null,
+    "feature_label": "C3",
+    "feature_name": "C3",
+    "feature_id": "ENSG00000125730",
+    "source_type": "text",
+    "source_rationale": "Reactive astrocytes express specific markers (S100A10 for A2 astrocytes, complement 3 for A1 astrocytes) allowing their identification35, 36.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "A1 astrocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "3",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "A2 astrocytes",
+    "group_name": "A2 ASTROCYTE",
+    "group_id": null,
+    "feature_label": "S100A10",
+    "feature_name": "S100A10",
+    "feature_id": "ENSG00000197747",
+    "source_type": "text",
+    "source_rationale": "Reactive astrocytes express specific markers (S100A10 for A2 astrocytes, complement 3 for A1 astrocytes) allowing their identification35, 36.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "A2 astrocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "S100A10",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "neurotoxic reactive astrocyte",
+    "group_name": "NEUROTOXIC REACTIVE ASTROCYTE",
+    "group_id": null,
+    "feature_label": "C3",
+    "feature_name": "C3",
+    "feature_id": "ENSG00000125730",
+    "source_type": "text",
+    "source_rationale": "We next investigated the effect of infection on astrogliosis by measurement of the expression of complement 3 (C3, a neurotoxic reactive astrocyte marker) and S100A10 (a neuroprotective marker).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " neurotoxic reactive astrocyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "C3",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "A2 reactive astrocytes",
+    "group_name": "A2 REACTIVE ASTROCYTE",
+    "group_id": null,
+    "feature_label": "S100A10",
+    "feature_name": "S100A10",
+    "feature_id": "ENSG00000197747",
+    "source_type": "text",
+    "source_rationale": "Reactive astrocytes express specific markers (S100A10 for A2 astrocytes, complement 3 for A1 astrocytes) allowing their identification35, 36.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "A10 for A2 astrocytes, complement 3 for A1 astrocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "S100A10",
+      "all_verified": true
+    }
+  }
+]

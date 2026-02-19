@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD4+",
+    "group_name": "CD4+",
+    "group_id": null,
+    "feature_label": "CD25",
+    "feature_name": "CD25",
+    "feature_id": "ENSG00000172183",
+    "source_type": "text",
+    "source_rationale": "Specifically, CD4+ and CD8+ T cells were individually assessed by proliferation (CFSE dilution), CD25 expression, and production of IFN-\u03b3 and TNF-\u03b1 using FlowJo and compensation matrices generated using single-color control samples.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD4+",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD25",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD8+",
+    "group_name": "CD8+",
+    "group_id": null,
+    "feature_label": "CD25",
+    "feature_name": "CD25",
+    "feature_id": "ENSG00000172183",
+    "source_type": "text",
+    "source_rationale": "Specifically, CD4+ and CD8+ T cells were individually assessed by proliferation (CFSE dilution), CD25 expression, and production of IFN-\u03b3 and TNF-\u03b1 using FlowJo and compensation matrices generated using single-color control samples.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD8+",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD25",
+      "all_verified": true
+    }
+  }
+]

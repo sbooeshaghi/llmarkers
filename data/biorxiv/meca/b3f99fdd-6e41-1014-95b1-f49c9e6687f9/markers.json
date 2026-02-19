@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "mus_musculus",
+    "group_label": "cell types located in pancreas data sets",
+    "group_name": "CELL TYPES LOCATED IN PANCREAS DATA SETS",
+    "group_id": null,
+    "feature_label": "Ins1",
+    "feature_name": "INS1",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "This analysis establishes an active range between 0 and 2,500 counts per 10,000 unique molecular identifiers as an active range for Ins1 expression in mice, with all expressing cell types located in pancreas data sets.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " cell types located in pancreas data sets",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Ins1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "cell-cycle-associated genes",
+    "group_name": "CELL-CYCLE-ASSOCIATED GENES",
+    "group_id": null,
+    "feature_label": "Pcna",
+    "feature_name": "PCNA",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "As an example, we investigated the correlation of two cell-cycle-associated genes, Mcm5 and Pcna (Fig. 2b), which provides a range for their correlation and an estimate of how often these genes are correlated across tissues.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " cell-cycle-associated genes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Pcna",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "cell-cycle-associated genes",
+    "group_name": "CELL-CYCLE-ASSOCIATED GENES",
+    "group_id": null,
+    "feature_label": "Mcm5",
+    "feature_name": "MCM5",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "As an example, we investigated the correlation of two cell-cycle-associated genes, Mcm5 and Pcna (Fig. 2b), which provides a range for their correlation and an estimate of how often these genes are correlated across tissues.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " cell-cycle-associated genes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Mcm5",
+      "all_verified": true
+    }
+  }
+]

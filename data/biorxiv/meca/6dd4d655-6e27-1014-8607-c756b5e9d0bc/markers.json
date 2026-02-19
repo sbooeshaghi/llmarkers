@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "chlorocebus_aethiops",
+    "group_label": "macrophage",
+    "group_name": "MACROPHAGE",
+    "group_id": null,
+    "feature_label": "MARCO",
+    "feature_name": "MARCO",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "The macrophage analysis was extended by selecting and re-analyzing cells that had either a macrophage or monocyte-like phenotype and further classified to cells with a more tissue-resident phenotype (i.e. alveolar macrophages) or more monocyte-derived phenotype (interstitial macrophages and monocytes) using the expression of MARCO gene (Figure 4A).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " macrophage",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MARCO",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "chlorocebus_aethiops",
+    "group_label": "macrophages",
+    "group_name": "MACROPHAGE",
+    "group_id": null,
+    "feature_label": "CHIT1",
+    "feature_name": "CHIT1",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Within the macrophage population, we saw an upregulation in a small subset of macrophages with markers for fully mature monocyte-derived macrophages such as CHIT1 at 10 dpi (Fig. S6B-C).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " macrophages",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CHIT1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "chlorocebus_aethiops",
+    "group_label": "MARCO-",
+    "group_name": "MARCO-",
+    "group_id": null,
+    "feature_label": "CD63",
+    "feature_name": "CD63",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Along PC2 in the MARCO-cells, we see again the pro-phagocytosis genes associated with the endosomes, as well as migratory genes (CD63).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " MARCO",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD63",
+      "all_verified": true
+    }
+  }
+]

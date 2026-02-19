@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "cycling MKI67+ tumor cells",
+    "group_name": "CYCLING MKI67+ TUMOR CELL",
+    "group_id": null,
+    "feature_label": "MKI67",
+    "feature_name": "MKI67",
+    "feature_id": "ENSG00000148773",
+    "source_type": "text",
+    "source_rationale": "The discrete clusters of cycling MKI67+ tumor cells identified by the dataset authors coincided with cell clusters exhibiting elevated ACTCC across all cancer subtypes.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " cycling MKI67+ tumor cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MKI67",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "cycling MKI67+ tumor cells",
+    "group_name": "CYCLING MKI67+ TUMOR CELL",
+    "group_id": null,
+    "feature_label": "MKI67",
+    "feature_name": "MKI67",
+    "feature_id": "ENSG00000148773",
+    "source_type": "text",
+    "source_rationale": "Cell cycle and proliferation are associated with the malignancy of breast cancer and, marker genes associated with those processes, such as MKI67, are usually used as indicators of prognosis [32,33].",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " MKI67",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MKI67",
+      "all_verified": true
+    }
+  }
+]

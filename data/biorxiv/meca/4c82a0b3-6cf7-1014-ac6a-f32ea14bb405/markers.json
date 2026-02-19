@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "type I",
+    "group_name": "TYPE I",
+    "group_id": null,
+    "feature_label": "ANK1",
+    "feature_name": "ANK1",
+    "feature_id": "ENSG00000029534",
+    "source_type": "text",
+    "source_rationale": "This difference in signal-to-noise ratio is demonstrated when visualizing the ATAC-seq signal at genomic regions active in muscle, such as the ANK1 locus (Fig. 1D) (30).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " ANK1",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "mesenchymal stem cells",
+    "group_name": "MESENCHYMAL STEM CELL",
+    "group_id": null,
+    "feature_label": "ARL15",
+    "feature_name": "ARL15",
+    "feature_id": "ENSG00000185305",
+    "source_type": "text",
+    "source_rationale": "A second locus highlighted by our data is an intronic locus in the ARL15 gene (Fig 4E).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " ARL15",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "mesenchymal stem cells",
+    "group_name": "MESENCHYMAL STEM CELL",
+    "group_id": null,
+    "feature_label": "ITPR2",
+    "feature_name": "ITPR2",
+    "feature_id": "ENSG00000123104",
+    "source_type": "text",
+    "source_rationale": "One locus highlighted by our data is the ITPR2 locus on chromosome 12 (Fig. 4B). This locus contains 22 credible set SNPs, none with a particularly high posterior probability of association (PPA) in the DIAMANTE genetic fine-mapping (maximum across all credible set SNPs = 0.06). Only one SNP (rs7132434; PPA = 0.042) overlaps any of our muscle cell type peak calls (Fig. 4C). This SNP is in a large mesenchymal stem cell ATAC-seq peak, and also overlaps peak calls in smooth muscle and blood, though the chromatin accessibility signal in those cell types is lower in our data.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " mesenchymal stem",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " ITPR2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "type II muscle fibers",
+    "group_name": "TYPE II MUSCLE FIBER",
+    "group_id": null,
+    "feature_label": "NOG",
+    "feature_name": "NOG",
+    "feature_id": "ENSG00000183691",
+    "source_type": "text",
+    "source_rationale": "Biologically, the nearby NOG gene is a particularly compelling candidate target gene of this regulatory element, as its product (noggin) regulates BMP signaling and is involved in muscle growth and maintenance (65\u201370).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " muscle",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " NOG",
+      "all_verified": true
+    }
+  }
+]

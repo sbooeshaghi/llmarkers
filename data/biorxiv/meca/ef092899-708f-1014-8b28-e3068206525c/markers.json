@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD4+ T cells",
+    "group_name": "CD4+ T CELL",
+    "group_id": null,
+    "feature_label": "CD4",
+    "feature_name": "CD4",
+    "feature_id": "ENSG00000010610",
+    "source_type": "text",
+    "source_rationale": "Most CD4+ T cells map to CL0 and CL9 (here, CL is used as an abbreviation for cluster) (Fig 3f).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD4+ T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD4",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD14 monocytes",
+    "group_name": "CD14 MONOCYTE",
+    "group_id": null,
+    "feature_label": "CD14",
+    "feature_name": "CD14",
+    "feature_id": "ENSG00000170458",
+    "source_type": "text",
+    "source_rationale": "SCellBOW maps CD14 monocytes to a single cluster, whereas Scanpy distributes CD14 monocytes across two clusters (CL1 and CL8), wherein CL8 is equally shared with conventional Dendritic Cells (cDC).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD14 monocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD14",
+      "all_verified": true
+    }
+  }
+]

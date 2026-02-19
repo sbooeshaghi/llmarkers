@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "mus_musculus",
+    "group_label": "neutrophil",
+    "group_name": "NEUTROPHIL",
+    "group_id": null,
+    "feature_label": "31 RNAs",
+    "feature_name": "31 RNAS",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Overrepresentation of a neutrophil signature was common to all groups and was the only enriched cell type signature identified from the 31 RNAs common to all tumour groups.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " neutrophil",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " 31 RNAs",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "neutrophil",
+    "group_name": "NEUTROPHIL",
+    "group_id": null,
+    "feature_label": "93 RNAs",
+    "feature_name": "93 RNAS",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "However, an enriched neutrophil signature was also present in the 93 RNAs unique to the KrasG12D Trp53-/- Cdkn2a-/- tumour group, implying that tumour genotype may alter circulating immune cell state to reshape the available biomarker pool.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " neutrophil",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " 93 RNAs",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "hepatocyte",
+    "group_name": "HEPATOCYTE",
+    "group_id": null,
+    "feature_label": "GP2",
+    "feature_name": "GP2",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Cell type overrepresentation analysis based on genes significantly upregulated in pancreatitis GP1 and GP2 identified a predominant immune cell signature in GP1, while GP2 was enriched with a hepatocyte cell signature indicative of effects on the liver (Supplementary Figure 1A).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " hepatocyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " GP2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "ductal lineage",
+    "group_name": "DUCTAL LINEAGE",
+    "group_id": null,
+    "feature_label": "keratin-19",
+    "feature_name": "KERATIN-19",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Following isolation of a clonal cell population positive for the expression of both KRASG12D and the ductal lineage marker keratin-19, and negative for the expression of p53, targeted CRISPR-Cas9 genome editing was used to delete p16INK4A and p19ARF (both protein products of the Cdkn2a gene), and / or SMAD4 expression.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " ductal lineage",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " keratin-19",
+      "all_verified": true
+    }
+  }
+]

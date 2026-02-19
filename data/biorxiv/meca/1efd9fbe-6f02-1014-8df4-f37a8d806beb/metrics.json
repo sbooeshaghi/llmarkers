@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr extract -m /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/biorxiv/meca/1efd9fbe-6f02-1014-8df4-f37a8d806beb/manuscript.md -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/biorxiv/meca/1efd9fbe-6f02-1014-8df4-f37a8d806beb/markers.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/biorxiv/meca/1efd9fbe-6f02-1014-8df4-f37a8d806beb/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770751351,
+  "num_extractions": 18,
+  "processing_time_sec": 32.67,
+  "input_tokens": 23794,
+  "cached_tokens": 0,
+  "output_tokens": 2991,
+  "total_tokens": 26785,
+  "input_cost": 0.11897,
+  "cached_cost": 0.0,
+  "output_cost": 0.07477500000000001,
+  "total_cost": 0.193745
+}

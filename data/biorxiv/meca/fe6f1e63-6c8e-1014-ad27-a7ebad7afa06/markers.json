@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "mesenchymal",
+    "group_name": "MESENCHYMAL",
+    "group_id": null,
+    "feature_label": "SERPINH1",
+    "feature_name": "SERPINH1",
+    "feature_id": "ENSG00000149257",
+    "source_type": "text",
+    "source_rationale": "These included key genes from our previously identified gene signatures associated with mesenchymal transition, such as SERPINH1 (Figure 5F) and MMP24 (Figure 5G).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " mesenchymal",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " SERPINH1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "mesenchymal",
+    "group_name": "MESENCHYMAL",
+    "group_id": null,
+    "feature_label": "MMP24",
+    "feature_name": "MMP24",
+    "feature_id": "ENSG00000125966",
+    "source_type": "text",
+    "source_rationale": "These included key genes from our previously identified gene signatures associated with mesenchymal transition, such as SERPINH1 (Figure 5F) and MMP24 (Figure 5G).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " mesenchymal",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MMP24",
+      "all_verified": true
+    }
+  }
+]

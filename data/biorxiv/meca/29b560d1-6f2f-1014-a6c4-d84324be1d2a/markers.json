@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "mus_musculus",
+    "group_label": "Macrophage, dendritic",
+    "group_name": "MACROPHAGE, DENDRITIC",
+    "group_id": null,
+    "feature_label": "Il1rl1",
+    "feature_name": "IL1RL1",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "In our bulk RNA-seq analysis, we identified three genes, Il1rl1, Rgs16, and Ccr7 as DEGs when naive day 0 and regeneration day 3 were compared.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": ",",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Il1rl1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "Macrophage, dendritic",
+    "group_name": "MACROPHAGE, DENDRITIC",
+    "group_id": null,
+    "feature_label": "Rgs16",
+    "feature_name": "RGS16",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "In our bulk RNA-seq analysis, we identified three genes, Il1rl1, Rgs16, and Ccr7 as DEGs when naive day 0 and regeneration day 3 were compared.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": ",",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Rgs16",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "Macrophage, dendritic",
+    "group_name": "MACROPHAGE, DENDRITIC",
+    "group_id": null,
+    "feature_label": "Ccr7",
+    "feature_name": "CCR7",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Interestingly, many cells within this population contain a high expression of naive T-cell markers like Ccr7 and Nkg7 (13, 53).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": ",",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Ccr7",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "Macrophage, dendritic",
+    "group_name": "MACROPHAGE, DENDRITIC",
+    "group_id": null,
+    "feature_label": "Nkg7",
+    "feature_name": "NKG7",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Interestingly, many cells within this population contain a high expression of naive T-cell markers like Ccr7 and Nkg7 (13, 53).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": ",",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Nkg7",
+      "all_verified": true
+    }
+  }
+]

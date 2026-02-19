@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Invasion",
+    "group_name": "INVASION",
+    "group_id": null,
+    "feature_label": "YBX1",
+    "feature_name": "YBX1",
+    "feature_id": "ENSG00000065978",
+    "source_type": "text",
+    "source_rationale": "A suggestive evidence of such hypothesis, as regards the CancerSEA functional state \"Invasion\", is the location of the two Invasion markers YBX1 (Y-Box Binding Protein 1) and HNRNPM (Heterogeneous Nuclear Ribonucleoprotein M) within the amplified regions of chromosomes 1p and 19p (Figure 4c).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "Invasion",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " YBX1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Invasion",
+    "group_name": "INVASION",
+    "group_id": null,
+    "feature_label": "HNRNPM",
+    "feature_name": "HNRNPM",
+    "feature_id": "ENSG00000099783",
+    "source_type": "text",
+    "source_rationale": "A suggestive evidence of such hypothesis, as regards the CancerSEA functional state \"Invasion\", is the location of the two Invasion markers YBX1 (Y-Box Binding Protein 1) and HNRNPM (Heterogeneous Nuclear Ribonucleoprotein M) within the amplified regions of chromosomes 1p and 19p (Figure 4c).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "Invasion",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " HNRNPM",
+      "all_verified": true
+    }
+  }
+]

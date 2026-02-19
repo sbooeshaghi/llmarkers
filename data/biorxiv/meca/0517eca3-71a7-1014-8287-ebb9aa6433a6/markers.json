@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "basal",
+    "group_name": "BASAL",
+    "group_id": null,
+    "feature_label": "ACE2",
+    "feature_name": "ACE2",
+    "feature_id": "ENSG00000130234",
+    "source_type": "text",
+    "source_rationale": "Notably, the A549 gene expression was highly correlated with the marker genes of the basal and ionocyte lung epithelial lineage cells (22, 23) (see methods, Supp Fig S7A).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " basal",
+      "feature_label_found": false,
+      "feature_label_reconstructed": "",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ionocyte",
+    "group_name": "IONOCYTE",
+    "group_id": null,
+    "feature_label": "ACE2",
+    "feature_name": "ACE2",
+    "feature_id": "ENSG00000130234",
+    "source_type": "text",
+    "source_rationale": "Notably, the A549 gene expression was highly correlated with the marker genes of the basal and ionocyte lung epithelial lineage cells (22, 23) (see methods, Supp Fig S7A).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " ionocyte",
+      "feature_label_found": false,
+      "feature_label_reconstructed": "",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "type II pneumocyte",
+    "group_name": "TYPE II PNEUMOCYTE",
+    "group_id": null,
+    "feature_label": "ACE2",
+    "feature_name": "ACE2",
+    "feature_id": "ENSG00000130234",
+    "source_type": "text",
+    "source_rationale": "One such study intriguingly identified upregulation of the receptor-angiotensin-converting enzyme 2 (ACE2) in the SARS-CoV-2 infected type II pneumocyte population of the lung cells as a potential mechanism facilitating virus infection (19).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " type II pneumocyte",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "ACE2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "type II pneumocyte",
+    "group_name": "TYPE II PNEUMOCYTE",
+    "group_id": null,
+    "feature_label": "TMPRSS2",
+    "feature_name": "TMPRSS2",
+    "feature_id": "ENSG00000184012",
+    "source_type": "text",
+    "source_rationale": "Another study utilized the ACE2 and TMPRSS2 expression information at the single cell level to rank the cells based on their susceptibility to the SARS-CoV-2 infection (20).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " TMPRSS2",
+      "all_verified": false
+    }
+  }
+]
