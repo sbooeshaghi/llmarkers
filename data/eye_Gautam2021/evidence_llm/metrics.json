@@ -1,0 +1,15 @@
+{
+  "command": ".venv/bin/mrkr extract -m data/eye_Gautam2021/manuscript/manuscript.txt -c data/eye_Gautam2021/evidence_deg/extracted.json -o data/eye_Gautam2021/evidence_llm/extracted_txt_rerun.json --metrics data/eye_Gautam2021/evidence_llm/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770743206,
+  "num_extractions": 60,
+  "processing_time_sec": 101.67,
+  "input_tokens": 22769,
+  "cached_tokens": 0,
+  "output_tokens": 10579,
+  "total_tokens": 33348,
+  "input_cost": 0.11384500000000002,
+  "cached_cost": 0.0,
+  "output_cost": 0.264475,
+  "total_cost": 0.37832000000000005
+}

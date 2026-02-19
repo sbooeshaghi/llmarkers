@@ -1,0 +1,15 @@
+{
+  "command": ".venv/bin/mrkr extract -m data/adipose_Hildreth2021/manuscript/manuscript.txt -c data/adipose_Hildreth2021/evidence_deg/extracted.json -o data/adipose_Hildreth2021/evidence_llm/extracted_txt_rerun.json --metrics data/adipose_Hildreth2021/evidence_llm/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770743261,
+  "num_extractions": 71,
+  "processing_time_sec": 157.34,
+  "input_tokens": 28883,
+  "cached_tokens": 0,
+  "output_tokens": 17177,
+  "total_tokens": 46060,
+  "input_cost": 0.14441500000000002,
+  "cached_cost": 0.0,
+  "output_cost": 0.429425,
+  "total_cost": 0.57384
+}

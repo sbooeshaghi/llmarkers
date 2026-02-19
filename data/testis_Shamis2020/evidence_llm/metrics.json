@@ -1,0 +1,15 @@
+{
+  "command": ".venv/bin/mrkr extract -m data/testis_Shamis2020/manuscript/manuscript.txt -c data/testis_Shamis2020/evidence_deg/extracted.json -o data/testis_Shamis2020/evidence_llm/extracted_txt_rerun.json --metrics data/testis_Shamis2020/evidence_llm/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770743295,
+  "num_extractions": 95,
+  "processing_time_sec": 190.74,
+  "input_tokens": 70744,
+  "cached_tokens": 0,
+  "output_tokens": 20998,
+  "total_tokens": 91742,
+  "input_cost": 0.35372000000000003,
+  "cached_cost": 0.0,
+  "output_cost": 0.52495,
+  "total_cost": 0.8786700000000001
+}

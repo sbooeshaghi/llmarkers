@@ -1,0 +1,15 @@
+{
+  "command": ".venv/bin/mrkr extract -m data/adipose_Emont2022/manuscript/manuscript.txt -c data/adipose_Emont2022/evidence_deg/extracted.json -o data/adipose_Emont2022/evidence_llm/extracted_txt_rerun.json --metrics data/adipose_Emont2022/evidence_llm/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770743183,
+  "num_extractions": 40,
+  "processing_time_sec": 79.18,
+  "input_tokens": 19744,
+  "cached_tokens": 0,
+  "output_tokens": 7509,
+  "total_tokens": 27253,
+  "input_cost": 0.09872,
+  "cached_cost": 0.0,
+  "output_cost": 0.187725,
+  "total_cost": 0.286445
+}

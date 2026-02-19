@@ -1,0 +1,15 @@
+{
+  "command": ".venv/bin/mrkr extract -m data/lung_Adams2020/manuscript/manuscript.txt -c data/lung_Adams2020/evidence_deg/extracted.json -o data/lung_Adams2020/evidence_llm/extracted_txt_rerun.json --metrics data/lung_Adams2020/evidence_llm/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770743221,
+  "num_extractions": 55,
+  "processing_time_sec": 116.41,
+  "input_tokens": 47152,
+  "cached_tokens": 0,
+  "output_tokens": 12658,
+  "total_tokens": 59810,
+  "input_cost": 0.23576000000000003,
+  "cached_cost": 0.0,
+  "output_cost": 0.31645,
+  "total_cost": 0.5522100000000001
+}

@@ -1,0 +1,15 @@
+{
+  "command": ".venv/bin/mrkr extract -m data/ovary_Wagner2020/manuscript/manuscript.txt -c data/ovary_Wagner2020/evidence_deg/extracted.json -o data/ovary_Wagner2020/evidence_llm/extracted_txt_rerun.json --metrics data/ovary_Wagner2020/evidence_llm/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770743159,
+  "num_extractions": 35,
+  "processing_time_sec": 54.51,
+  "input_tokens": 26976,
+  "cached_tokens": 0,
+  "output_tokens": 5933,
+  "total_tokens": 32909,
+  "input_cost": 0.13488,
+  "cached_cost": 0.0,
+  "output_cost": 0.148325,
+  "total_cost": 0.28320500000000004
+}

@@ -1,0 +1,15 @@
+{
+  "command": ".venv/bin/mrkr extract -m data/bone_He2021/manuscript/manuscript.txt -c data/bone_He2021/evidence_deg/extracted.json -o data/bone_He2021/evidence_llm/extracted_txt_rerun.json --metrics data/bone_He2021/evidence_llm/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1770743324,
+  "num_extractions": 93,
+  "processing_time_sec": 219.95,
+  "input_tokens": 33056,
+  "cached_tokens": 0,
+  "output_tokens": 25904,
+  "total_tokens": 58960,
+  "input_cost": 0.16528,
+  "cached_cost": 0.0,
+  "output_cost": 0.6476000000000001,
+  "total_cost": 0.81288
+}
