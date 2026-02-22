@@ -72,29 +72,6 @@ def build_groups(df, col="feature_id"):
             groups.setdefault(gn, set()).add(fv)
     return groups
 
-def fill_feature_ids_from_name(df, refs):
-    """Fill missing feature_id values via unambiguous feature_name -> Ensembl mapping."""
-    out = df.copy()
-    out["feature_id"] = out["feature_id"].astype("object")
-    out["feature_name_norm"] = out["feature_name"].astype(str).str.strip().str.upper()
-
-    ref = pd.concat(refs, ignore_index=True)
-    ref = ref.dropna(subset=["feature_name", "feature_id"]).copy()
-    ref["feature_name_norm"] = ref["feature_name"].astype(str).str.strip().str.upper()
-
-    uniq = ref[["feature_name_norm", "feature_id"]].drop_duplicates()
-    counts = uniq.groupby("feature_name_norm")["feature_id"].nunique()
-    one_to_one_names = counts[counts == 1].index
-    name_to_id = (
-        uniq[uniq["feature_name_norm"].isin(one_to_one_names)]
-        .drop_duplicates("feature_name_norm")
-        .set_index("feature_name_norm")["feature_id"]
-    )
-
-    missing = out["feature_id"].isna() | (out["feature_id"] == "")
-    out.loc[missing, "feature_id"] = out.loc[missing, "feature_name_norm"].map(name_to_id)
-    return out.drop(columns=["feature_name_norm"])
-
 def pair_metrics(pairs_a, pairs_b):
     if not pairs_a and not pairs_b:
         return 0, 0, 0
@@ -134,7 +111,6 @@ for ds in datasets:
     deg = load_and_norm(base / "evidence_deg" / "extracted.json")
     gen = load_and_norm(base / "evidence_generated" / "extracted.json")
     llm = load_and_norm(base / "evidence_llm" / "extracted_txt.json")
-    llm = fill_feature_ids_from_name(llm, [hmn_all, deg, gen])
 
     sel, sel_anon = {}, {}
     for n in N_values:
