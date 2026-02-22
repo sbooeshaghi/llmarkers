@@ -17,6 +17,8 @@ from pathlib import Path
 # ── Config ───────────────────────────────────────────────────────────
 fsize = 10
 plt.rcParams.update({"font.size": fsize})
+FIG_DIR = Path(__file__).resolve().parent / "figures"
+FIG_DIR.mkdir(parents=True, exist_ok=True)
 
 datasets = [
     "adipose_Emont2022",
@@ -319,10 +321,9 @@ ax.set_ylim(0, 0.8)
 ax.legend(fontsize=8)
 ax.grid(True, alpha=0.3)
 
-plt.savefig("figures/fig_selection_sweep.pdf", bbox_inches="tight", dpi=150)
-plt.savefig("figures/fig_selection_sweep.png", bbox_inches="tight", dpi=150)
-plt.savefig("../figures/fig_selection_sweep.pdf", bbox_inches="tight", dpi=150)
-print("Saved figures/fig_selection_sweep.pdf")
+plt.savefig(FIG_DIR / "fig_selection_sweep.pdf", bbox_inches="tight", dpi=150)
+plt.savefig(FIG_DIR / "fig_selection_sweep.png", bbox_inches="tight", dpi=150)
+print(f"Saved {FIG_DIR / 'fig_selection_sweep.pdf'}")
 
 # Print summary
 print(f"\nMethod summary:")
