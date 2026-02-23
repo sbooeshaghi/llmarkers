@@ -1,90 +1,134 @@
 # LLMarkers
 
-Data and analysis for "Automatic extraction and evaluation of marker genes".
+Data and analysis for the paper *Automatic extraction and evaluation of marker genes*.
 
-## Motivation
+## Overview
 
-In single-cell biology, marker genes are reported as binary associations, e.g. gene X marks cell type Y. This is practical but lossy---the quantitative evidence behind each marker (fold change, rank, which DEG table it came from) is discarded. When different studies use different names for the same cell type, or the same name for different biology, the binary form makes it hard to tell what a marker actually means.
+LLMarkers studies how marker genes are reported in single-cell studies and how well LLMs can recover them.
 
-## What are LLMarkers?
+The repository has two main parts:
 
-LLMarkers is a benchmark of **1,560 cell type--gene pairs** from seven human scRNA-seq studies across six tissues. Each pair is linked to:
+- A curated benchmark from 7 human scRNA-seq studies
+- A large text-extraction corpus from 504 bioRxiv preprints
 
-- The **sentence or figure** where the authors reported it
-- The **specific DEG table** it was derived from, with fold change and rank
+The benchmark links each marker to its manuscript evidence and DEG context. This makes marker claims auditable and quantitatively grounded.
 
-This lets us ask how strong are the markers that authors choose to highlight? And can LLMs recover them?
+## Core dataset
 
-## Key findings
+LLMarkers benchmark (7 studies):
 
-- Authors select strong markers (median rank 40 in DEG lists), but a simple rank cutoff recovers at best half of them. Marker selection is not reducible to a threshold.
-- LLMs encode real cell type--gene associations, but **generating** or **selecting** markers from DEG lists yields low agreement with author-curated markers (mean pair F1 ~0.2).
-- LLM-based **extraction** from manuscript text recovers author-specific markers with much higher fidelity (mean pair F1 ~0.67).
-- Applied to 504 bioRxiv preprints, extraction yielded 12,501 marker associations across 2,720 cell type names. Clustering on extracted markers recovered known immune cell hierarchies despite variable nomenclature.
+- 1,560 unique (cell type, gene) pairs
+- 168 cell types
+- 641 genes (Ensembl IDs)
 
-## Repository structure
+bioRxiv extraction corpus:
 
-```
+- 504 preprints
+- 12,501 extracted marker records
+- 2,720 unique cell type names
+
+## Repository layout
+
+```text
 data/
-  adipose_Emont2022/       # 7 benchmark datasets
+  adipose_Emont2022/
   adipose_Hildreth2021/
   bone_He2021/
   eye_Gautam2021/
   lung_Adams2020/
   ovary_Wagner2020/
   testis_Shamis2020/
-  biorxiv/                 # 504 bioRxiv preprint extractions
+  biorxiv/
 
-analysis/                  # Jupyter notebooks and scripts
-  benchmark_verification.ipynb   # Table 1: benchmark statistics
-  lfc_comparison.ipynb           # Figures 1-2: marker strength analysis
-  selection_analysis.ipynb       # Figure 3: LLM curation tradeoff
-  gen_strength.ipynb             # Generation analysis
-  llm_extraction_eval.ipynb      # Extraction evaluation
-  biorxiv_celltype_matching.ipynb # bioRxiv clustering analysis
-  biorxiv_summary.ipynb          # bioRxiv summary statistics
-  make_fig_selection.py          # Selection sweep figure
+analysis/
+  benchmark_verification.ipynb
+  lfc_comparison.ipynb
+  selection_analysis.ipynb
+  gen_strength.ipynb
+  llm_extraction_eval.ipynb
+  biorxiv_summary.ipynb
+  biorxiv_celltype_matching.ipynb
+
+paper/
+  main.tex
+
+docs/
+  index.html
+  app.js
+  styles.css
+  llmarkers.sqlite
 ```
 
-## Dataset structure
+## Website
 
-Each benchmark dataset contains:
+The website is a static app in `docs/` that reads `docs/llmarkers.sqlite` directly in the browser.
 
+It includes:
+
+- Summary counters
+- Filters for collection and source type
+- Search over paper title/DOI/cell type/gene/context
+- Table rows with click-to-expand context evidence
+
+### Run locally
+
+From repo root:
+
+```bash
+python3 scripts/build_llmarkers_sqlite.py
+python3 -m http.server 8000 -d docs
 ```
-evidence_human/      # Human-curated markers (text + figure)
-evidence_deg/        # DEG tables from supplementary data
-evidence_llm/        # LLM-extracted markers from manuscript text
-evidence_generated/  # LLM-generated markers (no manuscript)
-evidence_selected/   # LLM-selected markers from top-N DEGs
-evidence_predicted/  # LLM cell type predictions
-manuscript/          # Manuscript text and figures
-metadata.json        # DOI and citation
-spec.tsv             # DEG table → cell type mapping
-```
 
-Evidence files use a shared JSON schema with fields: `organism`, `group_label`, `group_name`, `group_id`, `feature_label`, `feature_name`, `feature_id`, `source_type`, `source_rationale`, `source_id`, `data_id`, and `metrics_*` (rank, log fold change, p-value from the matched DEG entry).
+Open:
 
-## Related repositories
+- `http://localhost:8000`
 
-- [mrkr](https://github.com/sbooeshaghi/mrkr) -- CLI tool for LLM-based marker gene extraction and verification
-- [taln](https://github.com/sbooeshaghi/taln) -- Token alignment library used to verify extracted text against source manuscripts
+## Deploy online (GitHub Pages)
 
-## Website database
+1. Go to repo settings: `https://github.com/sbooeshaghi/llmarkers/settings/pages`
+2. Under **Build and deployment**:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/docs`
+3. Save
 
-Build the website SQLite database:
+Your site will be served at:
+
+- `https://sbooeshaghi.github.io/llmarkers/`
+
+## SQLite build pipeline
+
+Build command:
 
 ```bash
 python3 scripts/build_llmarkers_sqlite.py
 ```
 
-This writes `docs/llmarkers.sqlite` and ingests:
-- The seven benchmark datasets (`data/*/evidence_human/extracted.json`) with DEG-linked marker metrics when available
-- The bioRxiv extraction corpus (`data/biorxiv/meca/*/markers.json`)
+Output:
 
-Preview the site locally:
+- `docs/llmarkers.sqlite`
 
-```bash
-python3 -m http.server 8000 -d docs
-```
+Schema:
 
-Then open `http://localhost:8000`.
+- `papers(paper_id, doi, title, year, license)`
+- `markers(marker_id, paper_id, group_name, feature_name, feature_id, source_type, source_rationale, data_id)`
+- `marker_metrics(marker_id, lfc, p_corr, rank)`
+
+Current ingestion scope:
+
+- Benchmark: `evidence_human/extracted.json` (+ DEG-linked metrics when matched)
+- bioRxiv: `data/biorxiv/meca/*/markers.json`
+
+Note: full DEG tables are not loaded into the website DB. The site is marker-focused by design.
+
+## Data notes
+
+- `source_type` in benchmark includes both `text` and `image`.
+- bioRxiv extraction is text-based, so those rows are `text`.
+- `feature_id` (Ensembl) can be missing when a paper reports aliases/protein markers or unmappable symbols.
+- `Context` in the website is the evidence sentence/snippet used for each marker association.
+
+## Related repositories
+
+- [mrkr](https://github.com/sbooeshaghi/mrkr): LLM extraction and verification CLI
+- [taln](https://github.com/sbooeshaghi/taln): token alignment utilities used in verification
