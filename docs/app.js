@@ -286,7 +286,7 @@ async function init() {
     refreshTable();
 
     el.statusNote.textContent =
-      "This table combines seven LLMarker benchmark studies and 504 bioRxiv extractions. Ensembl IDs may be missing when papers report protein markers, aliases, or gene symbols that cannot be mapped unambiguously.";
+      "This table combines seven LLMarker benchmark studies and 504 bioRxiv extractions. The Context column is the manuscript sentence or snippet used as evidence for each marker association. Ensembl IDs may be missing when papers report protein markers, aliases, or gene symbols that cannot be mapped unambiguously.";
   } catch (err) {
     console.error(err);
     el.statusNote.textContent = `Failed to load database: ${err.message}`;
