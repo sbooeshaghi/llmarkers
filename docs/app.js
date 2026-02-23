@@ -286,7 +286,7 @@ async function init() {
     refreshTable();
 
     el.statusNote.textContent =
-      "Database loaded. Tip: run a local web server (not file://) when previewing this page.";
+      "This table combines seven LLMarker benchmark studies and 504 bioRxiv extractions. Ensembl IDs may be missing when papers report protein markers, aliases, or gene symbols that cannot be mapped unambiguously.";
   } catch (err) {
     console.error(err);
     el.statusNote.textContent = `Failed to load database: ${err.message}`;
