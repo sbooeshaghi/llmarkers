@@ -200,6 +200,17 @@ code,
   text-overflow: ellipsis;
 }
 
+.table-wrap a {
+  color: #1d5f5a;
+  text-decoration: none;
+  border-bottom: 1px solid #9fc8c3;
+}
+
+.table-wrap a:hover {
+  color: #124541;
+  border-bottom-color: #124541;
+}
+
 .note {
   margin-top: 0.6rem;
   color: var(--muted);
