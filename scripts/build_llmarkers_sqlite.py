@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a SQLite database for LLMarker + bioRxiv marker datasets.
+"""Build a SQLite database for LLMarkers + bioRxiv marker datasets.
 
 Schema:
 - papers
@@ -518,7 +518,7 @@ def summarize(conn: sqlite3.Connection) -> dict[str, int]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build LLMarker SQLite database")
+    parser = argparse.ArgumentParser(description="Build LLMarkers SQLite database")
     parser.add_argument(
         "--data-dir",
         type=Path,

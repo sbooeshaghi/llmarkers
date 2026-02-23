@@ -1,4 +1,4 @@
-# LLMarker
+# LLMarkers
 
 Data and analysis for "Automatic extraction and evaluation of marker genes".
 
@@ -6,9 +6,9 @@ Data and analysis for "Automatic extraction and evaluation of marker genes".
 
 In single-cell biology, marker genes are reported as binary associations, e.g. gene X marks cell type Y. This is practical but lossy---the quantitative evidence behind each marker (fold change, rank, which DEG table it came from) is discarded. When different studies use different names for the same cell type, or the same name for different biology, the binary form makes it hard to tell what a marker actually means.
 
-## What is LLMarker?
+## What are LLMarkers?
 
-LLMarker is a benchmark of **1,560 cell type--gene pairs** from seven human scRNA-seq studies across six tissues. Each pair is linked to:
+LLMarkers is a benchmark of **1,560 cell type--gene pairs** from seven human scRNA-seq studies across six tissues. Each pair is linked to:
 
 - The **sentence or figure** where the authors reported it
 - The **specific DEG table** it was derived from, with fold change and rank
