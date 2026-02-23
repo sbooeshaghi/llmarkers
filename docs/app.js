@@ -165,7 +165,7 @@ function renderRows(rows) {
       const doi = row.doi || "";
       const doiUrl = toDoiUrl(doi);
       const rationale = row.source_rationale || "";
-      const paperText = esc(truncate(title || doi, 80));
+      const paperText = esc(title || doi);
       const paperCell = doi
         ? `<a href="${esc(doiUrl)}" target="_blank" rel="noopener">${paperText}</a>`
         : paperText;
