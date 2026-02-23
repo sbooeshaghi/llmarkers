@@ -222,7 +222,14 @@ code,
 
 .context-details summary {
   cursor: pointer;
-  color: #1d5f5a;
+  color: #0f5a54;
+  display: inline-block;
+  padding: 0.18rem 0.5rem;
+  border: 1px solid #87bdb7;
+  border-radius: 999px;
+  background: #e7f4f2;
+  font-size: 0.78rem;
+  font-weight: 600;
   list-style: none;
 }
 
@@ -234,6 +241,12 @@ code,
   content: " \25BE";
   font-size: 0.72rem;
   color: #6d7c75;
+}
+
+.context-details summary:hover {
+  color: #0b4540;
+  border-color: #5fa9a1;
+  background: #d9efec;
 }
 
 .context-details[open] summary::after {
