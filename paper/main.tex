@@ -266,7 +266,7 @@ The precision--recall analysis across all seven datasets yielded similar results
 \begin{figure*}[t]
   \centering
   \includegraphics[width=\textwidth]{fig_llm_curation.pdf}
-  \caption{\textbf{LLM curation tradeoff.} Cost versus fidelity for three LLM marker gene curation approaches across seven datasets, evaluated against text-sourced human annotations. Each point is one dataset; bubble size encodes the number of unique (cell type, gene) pairs produced. Dashed crosshairs mark the method mean on each axis. \textbf{(a)}~Generation from training knowledge. \textbf{(b)}~Selection from top-$N$ DEGs (at each dataset's optimal $N$). In panel (b), black \texttt{x} markers denote the DEG-constrained oracle F1 bound at that same $N$ (the maximum achievable F1 if one could select only the recoverable human markers in the shown DEG pool). \textbf{(c)}~Extraction from manuscript text.}
+  \caption{\textbf{LLM curation tradeoff.} Cost versus fidelity for three LLM marker gene curation approaches across seven datasets, evaluated against text-sourced human annotations. Each point is one dataset; bubble size encodes the number of unique (cell type, gene) pairs produced. Dashed crosshairs mark the method mean on each axis. \textbf{(a)}~Generation from training knowledge. \textbf{(b)}~Selection from top-$N$ DEGs (at each dataset's optimal $N$). In panel (b), black \texttt{x} markers denote the max possible, DEG-constrained, F1 bound at that same $N$ (the maximum achievable F1 if the LLM could select only the recoverable human markers in the n-sized DEG). \textbf{(c)}~Extraction from manuscript text.}
   \label{fig:llm_curation}%
   \claim{fig-llm-curation}{}%
   \source{analysis/selection_analysis.ipynb}%
