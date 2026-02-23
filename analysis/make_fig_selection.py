@@ -48,6 +48,8 @@ short_labels = {
     "testis_Shamis2020": "Shamis",
 }
 N_values = [10, 20, 30, 40, 50, 100, 200, 300, 400, 500]
+LLM_EXTRACTION_PRIMARY = "extracted_txt_rerun.json"
+LLM_EXTRACTION_FALLBACK = "extracted_txt.json"
 
 # ── Helpers ──────────────────────────────────────────────────────────
 def load_and_norm(path):
@@ -114,7 +116,10 @@ for ds in datasets:
     hmn = hmn_all[hmn_all["source_type"] == "text"].copy()
     deg = load_and_norm(base / "evidence_deg" / "extracted.json")
     gen = load_and_norm(base / "evidence_generated" / "extracted.json")
-    llm = load_and_norm(base / "evidence_llm" / "extracted_txt.json")
+    llm_primary = base / "evidence_llm" / LLM_EXTRACTION_PRIMARY
+    llm_fallback = base / "evidence_llm" / LLM_EXTRACTION_FALLBACK
+    llm_path = llm_primary if llm_primary.exists() else llm_fallback
+    llm = load_and_norm(llm_path)
 
     sel, sel_anon = {}, {}
     for n in N_values:
