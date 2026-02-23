@@ -53,6 +53,17 @@ body {
   line-height: 1.45;
 }
 
+.hero p a {
+  color: #1d5f5a;
+  text-decoration: none;
+  border-bottom: 1px solid #9fc8c3;
+}
+
+.hero p a:hover {
+  color: #124541;
+  border-bottom-color: #124541;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
