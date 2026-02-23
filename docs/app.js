@@ -16,7 +16,6 @@ const el = {
   countGenes: document.getElementById("countGenes"),
   collectionFilter: document.getElementById("collectionFilter"),
   sourceTypeFilter: document.getElementById("sourceTypeFilter"),
-  paperFilter: document.getElementById("paperFilter"),
   pageSizeFilter: document.getElementById("pageSizeFilter"),
   searchInput: document.getElementById("searchInput"),
   tableBody: document.querySelector("#markerTable tbody"),
@@ -100,12 +99,6 @@ function buildWhere() {
     params.push(sourceType);
   }
 
-  const paperId = el.paperFilter.value;
-  if (paperId !== "all") {
-    clauses.push("p.paper_id = ?");
-    params.push(Number(paperId));
-  }
-
   const query = el.searchInput.value.trim().toLowerCase();
   if (query) {
     clauses.push(`(
@@ -157,47 +150,6 @@ function loadFilterOptions() {
     opt.textContent = `${row.source_type} (${fmtInt(row.n)})`;
     el.sourceTypeFilter.appendChild(opt);
   }
-
-  refreshPaperFilter();
-}
-
-function refreshPaperFilter() {
-  const collection = el.collectionFilter.value;
-  let where = "";
-  if (collection === "benchmark") {
-    where = `WHERE EXISTS (
-      SELECT 1 FROM markers m
-      WHERE m.paper_id = papers.paper_id
-      AND m.data_id IS NOT NULL
-      AND m.data_id <> ''
-    )`;
-  } else if (collection === "biorxiv") {
-    where = `WHERE NOT EXISTS (
-      SELECT 1 FROM markers m
-      WHERE m.paper_id = papers.paper_id
-      AND m.data_id IS NOT NULL
-      AND m.data_id <> ''
-    )`;
-  }
-
-  const papers = runRows(
-    `SELECT paper_id, title, doi, year FROM papers ${where} ORDER BY year DESC, title ASC`
-  );
-
-  const current = el.paperFilter.value;
-  el.paperFilter.innerHTML = '<option value="all">All</option>';
-
-  for (const paper of papers) {
-    const opt = document.createElement("option");
-    opt.value = String(paper.paper_id);
-    const year = paper.year ? ` (${paper.year})` : "";
-    const title = paper.title || paper.doi || `paper ${paper.paper_id}`;
-    opt.textContent = `${truncate(title, 90)}${year}`;
-    el.paperFilter.appendChild(opt);
-  }
-
-  const found = [...el.paperFilter.options].some((o) => o.value === current);
-  el.paperFilter.value = found ? current : "all";
 }
 
 function renderRows(rows) {
@@ -283,12 +235,10 @@ function wireEvents() {
   };
 
   el.collectionFilter.addEventListener("change", () => {
-    refreshPaperFilter();
     rerenderFromFirstPage();
   });
 
   el.sourceTypeFilter.addEventListener("change", rerenderFromFirstPage);
-  el.paperFilter.addEventListener("change", rerenderFromFirstPage);
 
   el.pageSizeFilter.addEventListener("change", () => {
     state.pageSize = Number(el.pageSizeFilter.value);
