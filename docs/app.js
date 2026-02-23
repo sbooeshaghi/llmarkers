@@ -169,6 +169,11 @@ function renderRows(rows) {
       const paperCell = doi
         ? `<a href="${esc(doiUrl)}" target="_blank" rel="noopener">${paperText}</a>`
         : paperText;
+      const preview = esc(truncate(rationale, 140));
+      const fullContext = esc(rationale);
+      const contextCell = rationale
+        ? `<details class="context-details"><summary>${preview}</summary><div class="context-full">${fullContext}</div></details>`
+        : "";
 
       return `
         <tr>
@@ -177,7 +182,7 @@ function renderRows(rows) {
           <td>${esc(row.group_name)}</td>
           <td>${esc(row.feature_name)}</td>
           <td class="small">${esc(row.feature_id || "")}</td>
-          <td class="rationale" title="${esc(rationale)}">${esc(truncate(rationale, 140))}</td>
+          <td class="rationale">${contextCell}</td>
         </tr>
       `;
     })

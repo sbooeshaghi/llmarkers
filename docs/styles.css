@@ -218,9 +218,33 @@ code,
 
 .rationale {
   max-width: 430px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+}
+
+.context-details summary {
+  cursor: pointer;
+  color: #1d5f5a;
+  list-style: none;
+}
+
+.context-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.context-details summary::after {
+  content: " \25BE";
+  font-size: 0.72rem;
+  color: #6d7c75;
+}
+
+.context-details[open] summary::after {
+  content: " \25B4";
+}
+
+.context-full {
+  margin-top: 0.42rem;
+  color: var(--muted);
+  white-space: normal;
+  line-height: 1.4;
 }
 
 .table-wrap a {
