@@ -318,7 +318,7 @@ Hierarchical clustering within the largest cluster recovered an immune cell hier
 
 That standard hierarchical clustering on text-extracted markers, alone, recovers this known biology indicates that LLM extraction captures genuine molecular signatures from unstructured text. Despite sharing enough markers to cluster together, these sub-populations carry distinct labels across papers. The same principle observed in the benchmark---where marker genes identified the semantically similar cell type label 72\% of the time despite a 15\% exact name match---operates here at corpus scale. Marker genes reveal biological relationships that string matching on names alone would miss. This suggests an approach to overcome the nomenclature problem that motivated this analysis.
 
-At the same time, cross-paper concordance for even well-defined cell types was modest. \claim{biorxiv-monocyte}{Monocytes appeared in 15 papers but shared a mean Jaccard of only 0.06.}\source{analysis/biorxiv_celltype_matching.ipynb} This low concordance is likey caused by the diversity of experimental contexts where the same cell type is discussed, e.g. LPS stimulation, rheumatoid arthritis, HIV vaccine response, AML flow cytometry, interferon signaling, COVID-19 severity, and other settings (Supplementary Table~\ref{tab:monocyte_papers}). Each paper likely reports monocyte markers relevant to the experimental question instead of a basal state molecular profile. 
+At the same time, cross-paper concordance for even well-defined cell types was modest. \claim{biorxiv-monocyte}{Monocytes appeared in 29 papers but shared a mean Jaccard of only 0.063.}\source{analysis/biorxiv_celltype_matching.ipynb} This low concordance is likely caused by diversity in study context, including rheumatoid arthritis, Sjogren's disease, HIV vaccine response, AML, interferon signaling, COVID-19, and other settings (Supplementary Table~\ref{tab:monocyte_papers}). Each paper likely reports monocyte markers relevant to its experimental question instead of a basal monocyte profile. 
 
 Text-extracted markers therefore serve as a linked index across the literature where cell-types can be aligned across papers by finding matching marker genes, independent of the nomenclature used to name the cell type. But complete marker gene profiles require the underlying data---differential expression tables, expression matrices---tied to the experimental context from which they were derived.
 
@@ -331,7 +331,7 @@ Human experts have demonstrated that they have internalized real cell type--gene
 
 Extraction addresses this problem by recovering the marker genes directly from the manuscript---the sentences in which authors state that a gene marks a cell type. Each extraction is verifiable against the text and traceable to a specific sentence. When paired with the DEG table, as in the \texttt{LLMarker} database, the marker can be further quantified. But extraction is not perfect. Text verification is challenging when authors use abbreviations, ad hoc nomenclature, and dense parenthetical styles that can obscure the exact name of a cell type or gene.
 
-The challenge of connecting markers to their context is compounded by highly variable cell type nomenclature. Often the same biological cell type appears under different names across papers, while the same-named cell type can have different markers derived from different experimental contexts. In our analysis, monocytes appeared in 15 papers but shared few markers, because each paper reported whichever monocyte markers were relevant to its experimental question. A binary catalogue that treats these situations as the same may obscure important biological findings.
+The challenge of connecting markers to their context is compounded by highly variable cell type nomenclature. Often the same biological cell type appears under different names across papers, while the same-named cell type can have different markers derived from different experimental contexts. In our analysis, monocytes appeared in 29 papers and had a mean pairwise Jaccard of 0.063, because each paper reported whichever monocyte markers were relevant to its experimental question. A binary catalogue that treats these situations as the same may obscure important biological findings.
 
 Despite these naming issues, binary markers can help bridge the nomenclature gap. Hierarchical clustering on text-extracted markers, without any name standardization, recovered a known immune cell hierarchy from 1,965 distinct cell type names across 346 papers. This demonstrates that even coarse, context-dependent markers are informative enough for identifying which papers studied related cell types despite using different names. In this way, LLM-based marker gene extraction can provide a linked index into the literature (which papers discuss which cell types, supported by which evidence) and a bridge across inconsistent nomenclature.
 
@@ -434,75 +434,45 @@ Several limitations constrain the current work. Our extraction pipeline operates
  
 \begin{table*}[ht!]
   \centering
-  \caption{\textbf{Different marker genes}. Monocyte marker genes extracted from 15 bioRxiv preprints. Each row represents a paper from which three or more monocyte-associated genes were extracted by the LLM pipeline. These 15 papers share a mean pairwise Jaccard similarity of only 0.06, reflecting the diversity of experimental contexts in which monocytes are discussed.}
+  \caption{\textbf{Different marker genes}. Monocyte marker profiles across 29 bioRxiv preprints, restricted to mapped human markers with at least three genes per profile. For papers with multiple monocyte-labeled profiles, we retained the cell type with the most extracted markers (one row per paper). The context column gives a brief study setting (for example tissue, disease, or analysis type). Across these 29 profiles, mean pairwise Jaccard similarity is 0.063, showing strong cross-study heterogeneity.}
   \label{tab:monocyte_papers}%
   \claim{tab-monocyte}{}%
   \source{analysis/biorxiv_celltype_matching.ipynb}%
   \footnotesize
-  \begin{tabular}{@{}l l p{5.5cm} p{6.5cm}@{}}
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}l p{3.6cm} p{2.7cm} p{7.1cm}@{}}
   \toprule
-  Paper & Tissue & Experimental context & Extracted monocyte markers \\
+  Paper & Cell type label & Context & Extracted monocyte markers \\
   \midrule
-  \citep{Lawlor2020}
-    & PBMCs
-    & LPS-activated monocyte inflammatory response
-    & CCL3, CCL4, IL1B, IL6, IL8, MT1F, MT2A, S100A8, S100A9 \\[4pt]
-  \citep{Preglej2025}
-    & Synovium
-    & Monocyte gene regulatory network hub genes in RA
-    & CXCL8, EGR1, FCN1, JAK2, NFKBIZ, TNFAIP3 \\[4pt]
-  \citep{Bachurski2025}
-    & PBMCs
-    & EV-induced surface marker dynamics on monocytes
-    & BCL-2, CD123, CD127, CD14, CD25, PD-L1 \\[4pt]
-  \citep{Shangguan2021}
-    & Blood
-    & Protective genes in monocyte phagocytic response (HIV vaccine)
-    & CD68, CTSD, GAA, IL17RA, SEMA4A \\[4pt]
-  \citep{Shemonti2025}
-    & Blood
-    & Flow cytometry gating panel including monocytes (AML)
-    & CD117, CD34, CD38, CD45, HLA-DR \\[4pt]
-  \citep{Li2021aml}
-    & Blood
-    & Immune infiltration gene expression (AML)
-    & CD52, CLCN5, HAL, ICAM3 \\[4pt]
-  \citep{Yang2019decontx}
-    & PBMCs
-    & Canonical monocyte markers for scRNA-seq method validation
-    & CD14, LYZ, S100A8, S100A9 \\[4pt]
-  \citep{Obolenska2025}
-    & Placenta
-    & Innate immune genes in placental monocytes
-    & LAIR1, S100A8, S100A9 \\[4pt]
-  \citep{Rigby2023}
-    & PBMCs
-    & Interferon-stimulated genes upregulated in monocytes
-    & IFI44, IFIT5, ISG15 \\[4pt]
-  \citep{Gavriilidis2024}
-    & PBMCs
-    & Monocyte-active genes differing by COVID-19 severity
-    & CKAP4, NCF2, PTEN \\[4pt]
-  \citep{Satpathy2019}
-    & Blood
-    & Chromatin accessibility at monocyte gene loci
-    & CD14, CSF1R, TREML4 \\[4pt]
-  \citep{Xu2025pdac}
-    & Pancreas
-    & Dysregulated monocyte genes in PDAC
-    & FLNB, HABP4, KCNN3 \\[4pt]
-  \citep{Alkhadrawi2025}
-    & PBMCs
-    & Benchmark monocyte markers for method evaluation
-    & CD14, LYZ, S100A9 \\[4pt]
-  \citep{Yu2024hcnetlas}
-    & Blood
-    & Hub genes in monocyte cell-type gene network
-    & CD14, S100A8, S100A9 \\[4pt]
-  \citep{Wang2025icc}
-    & Liver
-    & Cell type annotation markers in cholangiocarcinoma
-    & FCN1, S100A8, S100A9 \\[4pt]
+  \citep{Preglej2025} & MONOCYTE & Rheumatoid arthritis & CXCL8, EGR1, FCN1, JAK2, NFKBIZ, TNFAIP3  \\ [4pt]
+  \citep{Urbanski2025biorxiv640483} & ISG+ AP1LOW CLASSICAL MONOCYTES & Sjogren's disease PBMC & IFI44L, IFI6, ISG15, MX1, MX2  \\ [4pt]
+  \citep{Bachurski2025} & MONOCYTE & EV immunomodulation assay & BCL2, CD14, CD25, CD274, IL3RA, IL7R  \\ [4pt]
+  \citep{Imoto2025} & CD14+ MONOCYTE & Method benchmark dataset & CD14, LGALS3, LYZ, S100A8  \\ [4pt]
+  \citep{Wang2020celda} & CD14+ MONOCYTE & Method paper (scRNA) & CD14, S100A12, S100A8, S100A9, VCAN  \\ [4pt]
+  \citep{Wu2022biorxiv520033} & MONOCYTES/\allowbreak MACROPHAGES & Azoospermia testis & APOE, DCN, TIMP3  \\ [4pt]
+  \citep{Shangguan2021} & MONOCYTE & HIV vaccine response & CD68, CTSD, GAA, IL17RA, SEMA4A  \\ [4pt]
+  \citep{Zhao2024} & CD14+ MONOCYTE & Type 2 diabetes PBMC & CD14, CD163, FCN1, LGALS3, MS4A6A, S100A8, S100A9, VCAN  \\ [4pt]
+  \citep{Obolenska2025} & MONOCYTE & Placenta pregnancy & LAIR1, S100A8, S100A9  \\ [4pt]
+  \citep{Rigby2023} & CLASSICAL MONOCYTE & Type I interferon response & CCL2, CCL8, CD169, CXCL10, IFI27, IFI44, IFITM3, OAS2, OAS3, OASL  \\ [4pt]
+  \citep{MariaRanzoni2020biorxiv080259} & MONOCYTE PROGENITORS AND MONOCYTES & Developmental haematopoiesis & CD14, CD33, MPEG1  \\ [4pt]
+  \citep{Asaba2024} & MONOCYTE-MACROPHAGES & COVID-19 BAL fluid & AIM2, APOC1, AVP, BAX, CCL2, CCL3, CD274, CXCL8, FABP4, FOS, GSDMD, IL-6, JUN, MAFB, MARCO, MCL1, MRC1, MSR1, NFE2L2, NRP1, SERPINA1, TIMP1, TLR2, TLR4, TREM2, TREX1, VEGFA  \\ [4pt]
+  \citep{Gavriilidis2024} & MONOCYTE & Severe COVID-19 & CKAP4, NCF2, PTEN  \\ [4pt]
+  \citep{Lawlor2020} & MONOCYTE & Stimulated PBMCs & CCL3, CCL4, CXCL8, IL-6, IL1B, MT1F, MT2A, S100A8, S100A9  \\ [4pt]
+  \citep{Satpathy2019} & MONOCYTE & Immune chromatin atlas & CD14, CSF1R, TREML4  \\ [4pt]
+  \citep{Sherwood2024zika} & MONOCYTES/\allowbreak MACROPHAGES & Zika brain-tumor model & CCR1, CSF2RA, IFNAR1, IFNAR2, TNFRSF1A, TNFRSF1B  \\ [4pt]
+  \citep{Shemonti2025} & MONOCYTE & Flow cytometry method & CD34, CD38, CD45, KIT  \\ [4pt]
+  \citep{Xu2025pdac} & MONOCYTE & Pancreatic cancer (PDAC) & FLNB, HABP4, KCNN3  \\ [4pt]
+  \citep{Baldonado2025biorxiv689843} & CD14+ MONOCYTE & Atopic dermatitis & ARHGEF10, ARL17B, BMP6, ERICH1-AS1, GALNT13, HBB, IFI27, LINC00176, NEBL, PDE4C, PDK4, SLC35F1, ZNF727  \\ [4pt]
+  \citep{Alkhadrawi2025} & MONOCYTE & Feature selection benchmark & CD14, LYZ, S100A9  \\ [4pt]
+  \citep{Yu2024hcnetlas} & MONOCYTE & Disease genetics atlas & CD14, S100A8, S100A9  \\ [4pt]
+  \citep{Wang2025icc} & MONOCYTE & Intrahepatic cholangiocarcinoma & FCN1, S100A8, S100A9  \\ [4pt]
+  \citep{Zhao2022biorxiv494592} & CLASSICAL MONOCYTES & Checkpoint inhibitor toxicity & B2M, CD38, IL15, STAT1  \\ [4pt]
+  \citep{Li2021aml} & MONOCYTE & Acute myeloid leukemia & CD52, CLCN5, HAL, ICAM3  \\ [4pt]
+  \citep{Luo2025biorxiv676755} & CD4+ MONOCYTE & CAR-T solid tumors & CD14, CD16, IL1B, PFKFB4, TNF, TNFSF13  \\ [4pt]
+  \citep{Yang2019decontx} & MONOCYTE & Ambient RNA correction & CD14, LYZ, S100A8, S100A9  \\ [4pt]
+  \citep{Jeong2025biorxiv632256} & DYSFUNCTIONAL CD14 MONOCYTE & ML method benchmark & S100A12, S100A6, S100A8, S100A9, TSPO  \\ [4pt]
+  \citep{Cheng2024glio} & MONOCYTE-DERIVED CELL & Glioblastoma microenvironment & S100A8, S100A9, VCAN  \\ [4pt]
+  \citep{Leach2020biorxiv070839} & LN MONOCYTES & Lung and lymph node & CD14, F13A1, FOLR2, LYVE1, MAF, MAFB, MMP9, S100A8, S100A9, STAB1, TIMD4  \\ [4pt]
   \bottomrule
   \end{tabular}
 \end{table*}
