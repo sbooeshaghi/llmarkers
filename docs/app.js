@@ -155,7 +155,7 @@ function loadFilterOptions() {
 function renderRows(rows) {
   if (!rows.length) {
     el.tableBody.innerHTML =
-      '<tr><td colspan="7" class="small">No rows match the current filters.</td></tr>';
+      '<tr><td colspan="6" class="small">No rows match the current filters.</td></tr>';
     return;
   }
 
@@ -165,11 +165,14 @@ function renderRows(rows) {
       const doi = row.doi || "";
       const doiUrl = toDoiUrl(doi);
       const rationale = row.source_rationale || "";
+      const paperText = esc(truncate(title || doi, 80));
+      const paperCell = doi
+        ? `<a href="${esc(doiUrl)}" target="_blank" rel="noopener">${paperText}</a>`
+        : paperText;
 
       return `
         <tr>
-          <td title="${esc(title)}">${esc(truncate(title, 80))}</td>
-          <td class="doi">${doi ? `<a href="${esc(doiUrl)}" target="_blank" rel="noopener">${esc(doi)}</a>` : ""}</td>
+          <td title="${esc(title || doi)}">${paperCell}</td>
           <td>${row.year ?? ""}</td>
           <td>${esc(row.group_name)}</td>
           <td>${esc(row.feature_name)}</td>
