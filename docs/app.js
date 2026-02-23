@@ -263,7 +263,7 @@ function refreshTable() {
       m.group_name,
       m.feature_name,
       m.feature_id,
-      m.source_rationale,
+      m.source_rationale
     FROM markers m
     JOIN papers p ON p.paper_id = m.paper_id
     ${whereSql}
