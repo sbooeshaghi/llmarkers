@@ -269,7 +269,7 @@ The precision--recall analysis across all seven datasets yielded similar results
   \caption{\textbf{LLM curation tradeoff.} Cost versus fidelity for three LLM marker gene curation approaches across seven datasets, evaluated against text-sourced human annotations. Each point is one dataset; bubble size encodes the number of unique (cell type, gene) pairs produced. Dashed crosshairs mark the method mean on each axis. \textbf{(a)}~Generation from training knowledge. \textbf{(b)}~Selection from top-$N$ DEGs (at each dataset's optimal $N$). In panel (b), black \texttt{x} markers denote the max possible, DEG-constrained, F1 bound at that same $N$ (the maximum achievable F1 if the LLM could select only the recoverable human markers in the n-sized DEG). \textbf{(c)}~Extraction from manuscript text.}
   \label{fig:llm_curation}%
   \claim{fig-llm-curation}{}%
-  \source{analysis/selection_analysis.ipynb}%
+  \source{analysis/make_fig_selection.ipynb}%
   \source{analysis/make_fig_selection.py}%
 \end{figure*}
 
@@ -283,7 +283,7 @@ We first asked whether an LLM could generate marker genes for cell types from tr
 
 The differences between LLM-generated and expert-curated markers can partially be explained by the imprecise nature of cell-type labels. Cell type labels compress a molecular signature into a short name, which is practical, but lossy. So while LLMs struggled to identify specific genes for cell types labelled by author-specific nomenclature, the reverse test suggests that the model encodes genuine cell type--gene associations. Given anonymized gene lists---stripped of cell type names---\claim{gen-prediction}{the model predicted the correct label only 15\% of the time (27 of 181), but 72\% of predictions were semantically related (e.g., ``ROUND SPERMATID'' for ``ROUND SPERMATID CELL'').}\source{analysis/ext_vs_gen.ipynb} Even \texttt{bone} and \texttt{adipose Emont}---the two worst performers in the gene-list prediction task---achieved 67\% semantic accuracy in the reverse direction (18/27 and 30/45, respectively), compared with 4\% and 13\% exact match. A gene list is reasonably informative for the model to recognize a semantically similar cell type to those selected by experts, but the cell type name alone does not specify which genes an expert will choose. Normalizing cell type nomenclature across studies may help narrow the naming gap which may, in turn, improve evaluation of LLM-generated markers.
 
-LLM-based marker gene generation relies entirely on training data, so we asked whether adding study-specific context could improve performance. We gave the model the top $N$ DEGs per cell type---with log fold changes and adjusted $p$-values---and asked it to select markers. We swept $N$ from 10 to 500. Across all runs, the LLM selected pairs that came from the DEG (mean 98\% of pairs were from the DEGs, Table~\ref{tab:llm_curation}). \claim{sel-f1}{At each dataset's optimal $N$, mean pair F1 was 0.16---comparable to generation's 0.17 (Table~\ref{tab:llm_curation}b; Figure~\ref{fig:llm_curation}b).}\source{analysis/selection_analysis.ipynb} \claim{sel-bound-eff}{Even relative to the DEG-constrained maximum at the same dataset-specific operating point, selection reached only 38.4\% of the attainable F1 on average.}\source{analysis/selection_analysis.ipynb} This ceiling reflects the fact that only 50\% of human-curated markers appear in the top 200 DEGs, bounding the performance of any selection method. As a control, we replaced cell type names with anonymous cluster labels and \claim{sel-anon}{the performance was unchanged (mean pair F1~=~0.16), confirming that cell type identity, alone, does not aid selection from ranked gene lists.}\source{analysis/selection_analysis.ipynb}
+LLM-based marker gene generation relies entirely on training data, so we asked whether adding study-specific context could improve performance. We gave the model the top $N$ DEGs per cell type---with log fold changes and adjusted $p$-values---and asked it to select markers. We swept $N$ from 10 to 500. Across all runs, the LLM selected pairs that came from the DEG (mean 98\% of pairs were from the DEGs, Table~\ref{tab:llm_curation}). \claim{sel-f1}{At each dataset's optimal $N$, mean pair F1 was 0.16---comparable to generation's 0.17 (Table~\ref{tab:llm_curation}b; Figure~\ref{fig:llm_curation}b).}\source{analysis/make_fig_selection.ipynb}\source{analysis/make_fig_selection.py} \claim{sel-bound-eff}{Even relative to the DEG-constrained maximum F1 score, at the same dataset-specific $N$, selection reached only 20.2\% of the attainable max on average.}\source{analysis/make_fig_selection.ipynb}\source{analysis/make_fig_selection.py} \claim{sel-top200-cap}{On average, 66.7\% of text-sourced human-curated marker pairs are present within the top 200 DEGs, leaving one-third unrecoverable for any selection constrained to that list.}\source{analysis/make_fig_selection.ipynb}\source{analysis/make_fig_selection.py} As a control, we replaced cell type names with anonymous cluster labels and \claim{sel-anon}{the performance was unchanged (mean pair F1~=~0.16), confirming that cell type identity, alone, does not aid selection from ranked gene lists.}\source{analysis/make_fig_selection.ipynb}\source{analysis/make_fig_selection.py}
 
 Generation and selection require the model to produce markers from its own knowledge. We asked whether LLMs could instead extract markers directly from the manuscript \citep{Booeshaghi_2026}. We built a tool, \texttt{mrkr}, that faciliates the use of LLMs for marker gene extraction. Using \texttt{mrkr}, \claim{ext-results}{we extracted 350 markers across seven datasets, far fewer than generation (1{,}390) or selection (1{,}901 at best $N$). Every extracted phrase matched the manuscript verbatim; 93\% of extractions had both cell type and gene label confirmed within the sentence}\source{analysis/llm_extraction_eval.ipynb} (mismatches arose when the model used a label not present verbatim in the sentence, e.g.\ labeling a cell type ``smooth muscle cells'' when the sentence uses the abbreviation ``SMCs''). Because extraction operates on manuscript text only---not figures---we evaluated it against human curated text-based markers. \claim{ext-text-f1}{Mean pair F1 was 0.67, with precision of 0.71 and recall of 0.71. \texttt{Lung} (pair F1~=~0.80) and \texttt{ovary} (0.78) scored highest; \texttt{bone} scored lowest (0.45).}\source{analysis/llm_extraction_eval.ipynb} The low-scoring dataset likely reflects how the manuscript describes markers. Some authors tend to use dense parenthetical enumerations and gene-range shorthand (e.g.\ ``HOX9--11'') rather than explicit narrative statements to describe markers. The cell type label mismatches reflect inconsistent nomenclature which is contributed by the use of abbreviations, synonyms, and ad hoc naming conventions, making verifications fragile \citep{Booeshaghi_2026} \footnote{The nomenclature challenge likely contributed to the strong performance of LLM cell-type annotation in \citep{Xiao_2025} for broad cell types, which cleanly match standardized ontology terms, and underperformance for novel subtypes, which lose specificity in the ontology mapping process.}. When evaluated against all human annotations---including the 74\% of unique pairs appearing only in figures---\claim{ext-all-f1}{extraction pair F1 dropped to 0.33, because text-based extraction cannot recover markers described only in images.}\source{analysis/llm_extraction_eval.ipynb}
 
@@ -297,7 +297,7 @@ Generation and selection require the model to produce markers from its own knowl
   \source{analysis/biorxiv_celltype_matching.ipynb}%
 \end{figure*}
 
-The three approaches to marker gene curation with LLMs show a tradeoff between fidelity and cost (Figure~\ref{fig:llm_curation}). \claim{method-costs}{Marker gene generation is cheapest (\$2.30 total, \$0.33 per paper) but recovers only canonical markers that overlap modestly with any particular study (the reverse direction---predicting cell type labels from gene lists---is more accurate). Selection costs the most (\$5.24, \$0.75 per paper) yet performs no better, showing that DEG rankings alone cannot substitute for expert reasoning and knowledge. Extraction falls between the two in cost (\$3.77, \$0.54 per paper) while achieving the highest fidelity}\source{analysis/selection_analysis.ipynb}, because it recovers the specific associations that authors chose to highlight---including context-dependent markers that neither generation nor selection has access to. For capturing what a paper claims, extraction is the appropriate approach; generation complements it by surfacing canonical markers that may not appear in any particular manuscript.
+The three approaches to marker gene curation with LLMs show a tradeoff between fidelity and cost when all methods are evaluated against text-sourced human annotations (Figure~\ref{fig:llm_curation}). \claim{method-costs}{Marker gene generation is cheapest (\$2.30 total, \$0.33 per paper) but recovers only canonical markers that overlap modestly with any particular study (the reverse direction---predicting cell type labels from gene lists---is more accurate). Selection costs the most (\$5.94, \$0.85 per paper) yet performs no better, showing that DEG rankings alone cannot substitute for expert reasoning and knowledge. Extraction falls between the two in cost (\$3.77, \$0.54 per paper) while achieving the highest fidelity}\source{analysis/make_fig_selection.ipynb}\source{analysis/make_fig_selection.py}, because it recovers the specific associations that authors chose to highlight---including context-dependent markers that neither generation nor selection has access to. For capturing what a paper claims, extraction is the appropriate approach; generation complements it by surfacing canonical markers that may not appear in any particular manuscript.
 
 
 \subsection{Automated extraction from bioRxiv}
@@ -364,7 +364,8 @@ Several limitations constrain the current work. Our extraction pipeline operates
   \label{tab:llm_curation}%
   \claim{tab-llm-curation}{}%
   \source{analysis/ext_vs_gen.ipynb}%
-  \source{analysis/selection_analysis.ipynb}%
+  \source{analysis/make_fig_selection.ipynb}%
+  \source{analysis/make_fig_selection.py}%
   \source{analysis/llm_extraction_eval.ipynb}%
   \small
   \setlength{\tabcolsep}{4pt}
@@ -494,10 +495,6 @@ Several limitations constrain the current work. Our extraction pipeline operates
     & PBMCs
     & Benchmark monocyte markers for method evaluation
     & CD14, LYZ, S100A9 \\[4pt]
-  \citep{Sun2025espred}
-    & Blood
-    & Estrogen-driven monocyte activation in lupus (SLE)
-    & GPER1, MCP-1, TNF-$\alpha$ \\[4pt]
   \citep{Yu2024hcnetlas}
     & Blood
     & Hub genes in monocyte cell-type gene network
@@ -506,10 +503,6 @@ Several limitations constrain the current work. Our extraction pipeline operates
     & Liver
     & Cell type annotation markers in cholangiocarcinoma
     & FCN1, S100A8, S100A9 \\[4pt]
-  \citep{Lee2023holotomo}
-    & Blood
-    & Monocyte subtype surface markers for label-free classification
-    & CD14, CD16, HLA-DR \\
   \bottomrule
   \end{tabular}
 \end{table*}
@@ -517,7 +510,7 @@ Several limitations constrain the current work. Our extraction pipeline operates
 
 \begin{table*}[ht!]
   \centering
-  \caption{\textbf{Similar marker genes}. Immune sub-cluster paper--celltype pairs from hierarchical clustering of the largest marker gene cluster (Figure~\ref{fig:immune_cluster}). At a Jaccard distance threshold of 0.85, the 61 pairs separated into three sub-clusters corresponding to known immune sub-populations. Each row represents a paper and cell type pair; columns show the paper, the cell type label used by the authors, the tissue studied, the silhouette score, and the marker genes extracted by the \texttt{mrkr extract}. Core genes listed are those appearing in $\geq$40\% of pairs within each sub-cluster. The silhouette score measures how well each pair fits its assigned sub-cluster versus its nearest alternative ($s{=}1$: well-separated; $s{\approx}0$: on the boundary). Several pairs in the cytotoxic effectors sub-cluster---particularly those labeled as NK cells---have low silhouette scores ($s < 0.10$), with the NK cell sub-cluster as their nearest neighbor, reflecting shared markers.}
+  \caption{\textbf{Similar marker genes}. Immune sub-cluster paper--celltype pairs from hierarchical clustering of the largest marker gene cluster (Figure~\ref{fig:immune_cluster}; 25 names, 47 paper--celltype pairs). At a Jaccard distance threshold of 0.85, the largest cluster separates into three sub-clusters corresponding to known immune sub-populations. Each row represents a paper and cell type pair; columns show the paper, the cell type label used by the authors, the tissue studied, the silhouette score, and the marker genes extracted by the \texttt{mrkr extract}. Core genes listed are those appearing in $\geq$40\% of pairs within each sub-cluster. The silhouette score measures how well each pair fits its assigned sub-cluster versus its nearest alternative ($s{=}1$: well-separated; $s{\approx}0$: on the boundary). Several pairs in the cytotoxic effectors sub-cluster---particularly those labeled as NK cells---have low silhouette scores ($s < 0.10$), with the NK cell sub-cluster as their nearest neighbor, reflecting shared markers.}
   \label{tab:immune_subclusters}%
   \claim{tab-immune-subclusters}{}%
   \source{analysis/biorxiv_celltype_matching.ipynb}%
@@ -526,46 +519,40 @@ Several limitations constrain the current work. Our extraction pipeline operates
   \toprule
   Paper & Cell type label & Tissue & Silhouette & Extracted markers \\
   \midrule
-  \multicolumn{5}{l}{\textit{Cytotoxic effectors (24 named cell types, 14 papers; core genes: GNLY, PRF1, NKG7, GZMB, GZMA)}} \\[2pt]
-  \citep{Lawlor2020}         & ACTIVATED MEMORY CELL   & PBMCs     & 0.28 & GNLY, GZMA, GZMB, GZMH, IFNG \\
-  \citep{Kim2024immune}      & ACTIVE NK CELL          & Lung      & 0.13 & IFNG, PRF1, TNF \\
-  \citep{Turiello2025}       & CD4-CTLS                & Multi-tissue & 0.41 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1 \\
-  \citep{Asaba2024}          & CD8 T CELL              & BAL fluid & 0.16 & GZMB, IFNG, PRF1, TBX21 \\
-  \citep{Zhao2024}           & CD8+ T CELL             & PBMCs     & 0.01 & GNLY, GZMK, NKG7 \\
-  \citep{Onfroy2025}         & CD8+ T CELLS            & Skin      & 0.23 & GZMB, IFNG, PRF1 \\
-  \citep{Turiello2025}       & CD8-EM                  & Multi-tissue & 0.41 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1 \\
-  \citep{Yoffe2025}          & CD8.3                   & Lung      & 0.18 & CD16, FGFBP2, GNLY, NKG7, PRF1 \\
-  \citep{Yoffe2025}          & CD8.5                   & Lung      & 0.18 & CD16, FGFBP2, GNLY, NKG7, PRF1 \\
-  \citep{Cheng2024glio}      & CD8T\_GZMB              & Brain     & 0.26 & GZMA, GZMB, PRF1 \\
-  \citep{Heydari2021}        & CLUSTER 2               & PBMCs     & 0.15 & CCL5, CST7, CTSW, GZMA, NKG7 \\
-  \citep{Ma2020}             & CYTOTOXIC               & Liver     & 0.26 & CD94, CST7, CTSW, GNLY, GZMA, GZMB, GZMH, IFNG, KLRB1, KLRK1, NKG7, PRF1 \\
-  \citep{Landeloos2023}      & CYTOTOXIC               & Melanoma  & 0.28 & GNLY, GZMB, PRF1 \\
-  \citep{Zhong2021myeloma}   & CYTOTOXIC PLASMA CELL   & Blood     & 0.21 & CCL4, CCL5, GNLY, GZMA, NKG7 \\
-  \citep{Turiello2025}       & MAIT                    & Multi-tissue & 0.33 & GNLY, GZMA, GZMB, GZMH, GZMK, GZMM, NKG7, PRF1 \\
-  \citep{Imoto2025}          & NATURAL KILLER CELL     & PBMCs     & 0.17 & GNLY, KLRB1, NKG7 \\
-  \citep{Wang2020celda}      & NK CELL                 & PBMCs     & 0.15 & CD94, CST7, GZMA, GZMH, NKG7 \\
-  \citep{Landeloos2023}      & NK CELL                 & Melanoma  & 0.08 & CD56, GNLY, GZMB, PRF1, TRDC, TYROBP \\
-  \citep{Lawlor2020}         & NK CELL                 & PBMCs     & 0.04 & CD16, CD56, GNLY, GZMB, IFNG, KLF2, PRF1 \\
-  \citep{Wang2020celda}      & NK T CELL               & PBMCs     & 0.19 & GNLY, GZMA, GZMH, KLRG1 \\
-  \citep{Turiello2025}       & NK-BRIGHT               & Multi-tissue & 0.27 & GNLY, GZMA, GZMH, GZMK, NKG7, PRF1 \\
-  \citep{Turiello2025}       & NK-DIM                  & Multi-tissue & 0.41 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1 \\
-  \citep{Landeloos2023}      & NKCYTO                  & Melanoma  & 0.17 & CD16, FGFB2, GNLY, GZMB, PRF1 \\
-  \citep{Turiello2025}       & PLATELETS               & Multi-tissue & 0.26 & GNLY, GZMA, GZMM, NKG7 \\
+  \multicolumn{5}{l}{\textit{Cytotoxic effectors (24 paper--celltype pairs, 21 names, 14 papers; core genes: GNLY, PRF1, NKG7, GZMB, GZMA)}} \\[2pt]
+  \citep{Lawlor2020}         & ACTIVATED MEMORY CELL   & PBMCs     & 0.23 & GNLY, GZMA, GZMB, GZMH, IFNG\\
+  \citep{Kim2024immune}      & ACTIVE NK CELL          & Lung      & 0.13 & IFNG, PRF1, TNF\\
+  \citep{Turiello2025}       & CD4-CTLS                & Multi-tissue & 0.38 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1\\
+  \citep{Asaba2024}          & CD8 T CELL              & BAL fluid & 0.20 & GZMB, IFNG, PRF1, TBX21\\
+  \citep{Zhao2024}           & CD8+ T CELL             & PBMCs     & 0.02 & GNLY, GZMK, NKG7\\
+  \citep{Onfroy2025}         & CD8+ T CELLS            & Skin      & 0.23 & GZMB, IFNG, PRF1\\
+  \citep{Turiello2025}       & CD8-EM                  & Multi-tissue & 0.38 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1\\
+  \citep{Yoffe2025}          & CD8.3                   & Lung      & 0.21 & CD16, FGFBP2, GNLY, NKG7, PRF1\\
+  \citep{Yoffe2025}          & CD8.5                   & Lung      & 0.21 & CD16, FGFBP2, GNLY, NKG7, PRF1\\
+  \citep{Cheng2024glio}      & CD8T\_GZMB              & Brain     & 0.27 & GZMA, GZMB, PRF1\\
+  \citep{Heydari2021}        & CLUSTER 2               & PBMCs     & 0.15 & CCL5, CST7, CTSW, GZMA, NKG7\\
+  \citep{Ma2020}             & CYTOTOXIC               & Liver     & 0.19 & CD94, CST7, CTSW, GNLY, GZMA, GZMB, GZMH, IFNG, KLRB1, KLRK1, NKG7, PRF1\\
+  \citep{Landeloos2023}      & CYTOTOXIC               & Melanoma  & 0.21 & GNLY, GZMB, PRF1\\
+  \citep{Zhong2021myeloma}   & CYTOTOXIC PLASMA CELL   & Blood     & 0.15 & CCL4, CCL5, GNLY, GZMA, NKG7\\
+  \citep{Turiello2025}       & MAIT                    & Multi-tissue & 0.33 & GNLY, GZMA, GZMB, GZMH, GZMK, GZMM, NKG7, PRF1\\
+  \citep{Imoto2025}          & NATURAL KILLER CELL     & PBMCs     & 0.08 & GNLY, KLRB1, NKG7\\
+  \citep{Wang2020celda}      & NK CELL                 & PBMCs     & 0.06 & CD94, CST7, GZMA, GZMH, NKG7\\
+  \citep{Landeloos2023}      & NK CELL                 & Melanoma  & -0.01 & CD56, GNLY, GZMB, PRF1, TRDC, TYROBP\\
+  \citep{Lawlor2020}         & NK CELL                 & PBMCs     & 0.06 & CD16, CD56, GNLY, GZMB, IFNG, KLF2, PRF1\\
+  \citep{Wang2020celda}      & NK T CELL               & PBMCs     & 0.12 & GNLY, GZMA, GZMH, KLRG1\\
+  \citep{Turiello2025}       & NK-BRIGHT               & Multi-tissue & 0.27 & GNLY, GZMA, GZMH, GZMK, NKG7, PRF1\\
+  \citep{Turiello2025}       & NK-DIM                  & Multi-tissue & 0.38 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1\\
+  \citep{Landeloos2023}      & NKCYTO                  & Melanoma  & 0.22 & CD16, GNLY, GZMB, PRF1\\
+  \citep{Turiello2025}       & PLATELETS               & Multi-tissue & 0.20 & GNLY, GZMA, GZMM, NKG7\\
   \midrule
-  \multicolumn{5}{l}{\textit{NK cells (9 named cell types, 4 papers; core genes: CD56, CD16, ITGAM, CD27)}} \\[2pt]
-  \citep{Wethington2025}     & CD56DIM NK CELL         & Blood     & 0.20 & CD16, CD45, CD56 \\
-  \citep{Subedi2022}         & CYTOTOXIC NK CELL       & Blood     & 0.49 & CD16, CD27, CD56, ITGAM \\
-  \citep{Duong2025}          & NATURAL KILLER (NK) CELL & Lung     & 0.17 & CD56, CD94, GNLY \\
-  \citep{Duong2025}          & NATURAL KILLER T CELL (NKT) & Lung  & 0.15 & CD3, CD56, CD94, GNLY \\
-  \citep{Kim2024immune}      & NK CELL                 & Lung      & 0.19 & CD56, CD94, KLRF1, XCL1 \\
-  \citep{Subedi2022}         & NK CELL                 & Blood     & 0.05 & CD16, CD3, CD56 \\
-  \citep{Subedi2022}         & PRE-CYTOTOXIC NK CELL   & Blood     & 0.49 & CD16, CD27, CD56, ITGAM \\
-  \citep{Subedi2022}         & REGULATORY NK CELL      & Blood     & 0.49 & CD16, CD27, CD56, ITGAM \\
-  \citep{Subedi2022}         & TOLERANT NK CELL        & Blood     & 0.49 & CD16, CD27, CD56, ITGAM \\
+  \multicolumn{5}{l}{\textit{NK cells (3 paper--celltype pairs, 3 names, 2 papers; core genes: CD56, CD94, GNLY)}} \\[2pt]
+  \citep{Duong2025}          & NATURAL KILLER (NK) CELL & Lung     & 0.66 & CD56, CD94, GNLY\\
+  \citep{Duong2025}          & NATURAL KILLER T CELL (NKT) & Lung  & 0.66 & CD56, CD94, GNLY\\
+  \citep{Kim2024immune}      & NK CELL                 & Lung      & 0.39 & CD56, CD94, KLRF1, XCL1\\
   \midrule
-  \multicolumn{5}{l}{\textit{CD8 T cells (2 named cell types, 2 papers; core genes: CD8A, CD8B, GZMK)}} \\[2pt]
-  \citep{Alkhadrawi2025}     & CD8+ T CELL             & PBMCs     & 1.00 & CD8A, CD8B, GZMK \\
-  \citep{Liao2023}           & CD8+ T-CELL             & Lung      & 1.00 & CD8A, CD8B, GZMK \\
+  \multicolumn{5}{l}{\textit{CD8 T cells (2 paper--celltype pairs, 2 names, 2 papers; core genes: CD8A, CD8B, GZMK)}} \\[2pt]
+  \citep{Alkhadrawi2025}     & CD8+ T CELL             & PBMCs     & 1.00 & CD8A, CD8B, GZMK\\
+  \citep{Liao2023}           & CD8+ T-CELL             & Lung      & 1.00 & CD8A, CD8B, GZMK\\
   \bottomrule
   \end{tabular}
 \end{table*}
@@ -630,7 +617,7 @@ Gene symbols were mapped to Ensembl identifiers using a reference file built fro
 
 \subsection{Cross-paper cell type analysis}
 
-To compare cell types across papers, we constructed a binary marker vector for each (paper, cell type) pair, defined as the set of Ensembl gene IDs associated with that cell type in that paper. \claim{methods-profiles}{Profiles with fewer than three markers were excluded, yielding 1{,}104 pairs across 262 papers.}\source{analysis/biorxiv_celltype_matching.ipynb} All analyses were restricted to human markers.
+To compare cell types across papers, we constructed a binary marker vector for each (paper, cell type) pair, defined as the set of Ensembl gene IDs associated with that cell type in that paper. \claim{methods-profiles}{Profiles with fewer than three markers were excluded, yielding 1{,}039 pairs across 249 papers.}\source{analysis/biorxiv_celltype_matching.ipynb} All analyses were restricted to human markers.
 
 Pairwise Jaccard similarity between pairs was computed using an inverted index: for each gene, we recorded the set of pairs containing it, then computed Jaccard similarity only for pair pairs sharing at least one gene. For each pair, we retained the top 10 most similar cross-paper hits.
 
