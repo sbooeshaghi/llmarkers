@@ -1,7 +1,7 @@
 """Generate Figure 3: LLM marker selection analysis.
 
 Three panels:
-  (a) Selection pair F1 vs top-N DEGs (named + anon + upper bound recall)
+  (a) Selection pair F1 vs top-N DEGs (named + anon + DEG-constrained F1 bound)
   (b) Per-dataset comparison of extraction, generation, selection (pair F1)
   (c) Performance vs cost across methods
 
@@ -95,12 +95,16 @@ def per_celltype_gene_f1(groups_a, groups_b):
         f1s.append(f)
     return np.mean(f1s), len(shared)
 
-def upper_bound_recall(hmn_pairs, deg_df, top_n):
+def upper_bound_pair_f1(hmn_pairs, deg_df, top_n):
     deg_top = deg_df[deg_df["metrics_rank"] <= top_n]
     deg_pairs = build_pairs(deg_top)
     if not hmn_pairs:
         return 0
-    return len(hmn_pairs & deg_pairs) / len(hmn_pairs)
+    overlap = len(hmn_pairs & deg_pairs)
+    if overlap == 0:
+        return 0
+    # Best possible selector is the overlap set itself (precision=1).
+    return 2 * overlap / (len(hmn_pairs) + overlap)
 
 # ── Load data ────────────────────────────────────────────────────────
 data = {}
@@ -137,11 +141,11 @@ for ds in datasets:
             sel_groups = build_groups(sel_dict[n])
             p_prec, p_rec, p_f1 = pair_metrics(sel_pairs, hmn_pairs)
             ct_f1, _ = per_celltype_gene_f1(sel_groups, hmn_groups)
-            ub = upper_bound_recall(hmn_pairs, d["deg"], n)
+            ub_f1 = upper_bound_pair_f1(hmn_pairs, d["deg"], n)
             sweep_rows.append({
                 "dataset": ds, "mode": mode, "N": n,
                 "pair_precision": p_prec, "pair_recall": p_rec, "pair_f1": p_f1,
-                "gene_f1": ct_f1, "upper_bound_recall": ub,
+                "gene_f1": ct_f1, "upper_bound_pair_f1": ub_f1,
             })
 sweep = pd.DataFrame(sweep_rows)
 
@@ -206,8 +210,8 @@ ax.plot(named_mean["N"], named_mean["pair_f1"], "o-", color="tab:blue",
         label="Named", markersize=5, linewidth=1.5)
 ax.plot(anon_mean["N"], anon_mean["pair_f1"], "s-", color="tab:red",
         label="Anonymous", markersize=5, linewidth=1.5)
-ax.plot(named_mean["N"], named_mean["upper_bound_recall"], "^--", color="gray",
-        alpha=0.6, label="Upper bound recall", markersize=5, linewidth=1)
+ax.scatter(named_mean["N"], named_mean["upper_bound_pair_f1"], marker="^", color="black",
+           alpha=0.8, label="DEG-constrained F1 bound", s=35, zorder=6)
 
 # Add generation baseline
 gen_mean_f1 = methods["gen_pair_f1"].mean()
@@ -225,7 +229,7 @@ ax.set_title("(a) Selection performance vs. N")
 ax.set_xscale("log")
 ax.set_xticks(N_values)
 ax.set_xticklabels([str(n) for n in N_values], rotation=45)
-ax.set_ylim(0, 0.8)
+ax.set_ylim(0, 1.0)
 ax.legend(fontsize=7.5, loc="upper left")
 ax.grid(True, alpha=0.3)
 
@@ -245,7 +249,7 @@ ax.set_ylabel("Pair F1")
 ax.set_title("(b) Method comparison by dataset")
 ax.set_xticks(x)
 ax.set_xticklabels([short_labels[ds] for ds in datasets], rotation=45, ha="right")
-ax.set_ylim(0, 0.9)
+ax.set_ylim(0, 1.0)
 ax.legend(fontsize=8)
 ax.grid(True, alpha=0.3, axis="y")
 
@@ -293,7 +297,7 @@ for ds in datasets:
 ax.set_xlabel("Cost (USD, 7 datasets)")
 ax.set_ylabel("Mean pair F1")
 ax.set_title("(c) Performance vs. cost")
-ax.set_ylim(0, 0.8)
+ax.set_ylim(0, 1.0)
 ax.legend(fontsize=8)
 ax.grid(True, alpha=0.3)
 
