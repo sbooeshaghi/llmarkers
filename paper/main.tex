@@ -152,9 +152,9 @@
 \date{}
 \title{\textbf{Automatic extraction and evaluation of marker genes}}
 
-\author[1]{A.~Sina Booeshaghi\thanks{Corresponding author: sinab@berkeley.edu}}
+\author[1]{A.~Sina Booeshaghi\thanks{Co-corresponding author: sinab@berkeley.edu}}
 \author[1]{Nithya Appannagaari}
-\author[1,2,3,4]{Aaron Streets}
+\author[1,2,3,4]{Aaron Streets\thanks{Co-corresponding author: astreets@berkeley.edu}}
 \affil[1]{\small Department of Bioengineering, University of California Berkeley, Berkeley, USA}
 \affil[2]{\small Center for Computational Biology, University of California, Berkeley, USA}
 \affil[3]{\small Biophysics Graduate Group, University of California, Berkeley, USA}
@@ -178,7 +178,7 @@ Cell types were first identified with low-resolution microscopy. Scientists reli
 
 Single-cell RNA sequencing changed how markers are discovered but not how they are reported \citep{Tang_2009,Macosko_2015}. In scRNA-seq, markers are typically identified by ranking genes quantitatively---by fold change and statistical significance---across computationally defined clusters \citep{Stuart_2019,Wolf_2018}. The result is a differential expressed gene (DEG) table where thousands of genes are ordered by how well they distinguish one cluster from the rest. From this table, authors select a handful of genes to highlight as markers. Marker gene expression is quantitative, but the results still report a binary list of marker-gene pairs (e.g. ``gene X marks cell type Y''.) 
 
-This reporting scheme remains widely used because qualitative and binary marker are practical, communicable, and testable. They compress large genomics datasets into concise cell type--gene pairs, enabling resources such as CellMarker, which contains 26{,}915 curated marker pairs from published studies \citep{Hu2022CellMarker}, and PanglaoDB which contains 8,286 markers compiled by over 29 tissues \citep{Franzn_2019}. Their simplicity also enables automated extraction and curation. MarkerGeneBERT processed 3{,}702 studies to compile 7{,}901 cell type--marker pairs in only a few hours \citep{Cheng_2024}.
+This reporting scheme remains widely used because qualitative markers are practical, communicable, and testable. They compress large genomics datasets into concise cell type--gene pairs, enabling resources such as CellMarker, which contains 26{,}915 curated marker pairs from published studies \citep{Hu2022CellMarker}, and PanglaoDB which contains 8,286 markers compiled by over 29 tissues \citep{Franzn_2019}. Their simplicity also enables automated extraction and curation. MarkerGeneBERT processed 3{,}702 studies to compile 7{,}901 cell type--marker pairs in only a few hours \citep{Cheng_2024}.
 
 \begin{table*}[ht!]
   \centering
