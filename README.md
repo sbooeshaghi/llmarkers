@@ -68,3 +68,23 @@ Evidence files use a shared JSON schema with fields: `organism`, `group_label`, 
 
 - [mrkr](https://github.com/sbooeshaghi/mrkr) -- CLI tool for LLM-based marker gene extraction and verification
 - [taln](https://github.com/sbooeshaghi/taln) -- Token alignment library used to verify extracted text against source manuscripts
+
+## Website database
+
+Build the website SQLite database:
+
+```bash
+python3 scripts/build_llmarkers_sqlite.py
+```
+
+This writes `docs/llmarkers.sqlite` and ingests:
+- The seven benchmark datasets (`data/*/evidence_human/extracted.json`) with DEG-linked marker metrics when available
+- The bioRxiv extraction corpus (`data/biorxiv/meca/*/markers.json`)
+
+Preview the site locally:
+
+```bash
+python3 -m http.server 8000 -d docs
+```
+
+Then open `http://localhost:8000`.

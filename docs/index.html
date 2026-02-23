@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LLMarker Database</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>LLMarker Database</h1>
+      <p>
+        This page serves marker-gene records from the seven-study LLMarker benchmark and
+        the bioRxiv extraction corpus. Data are read directly from <code>llmarkers.sqlite</code>
+        in your browser.
+      </p>
+    </section>
+
+    <section class="cards" id="summaryCards">
+      <article class="card"><h2 id="countPapers">-</h2><p>Total papers</p></article>
+      <article class="card"><h2 id="countBenchmarkPapers">-</h2><p>Benchmark papers</p></article>
+      <article class="card"><h2 id="countBiorxivPapers">-</h2><p>bioRxiv papers</p></article>
+      <article class="card"><h2 id="countMarkers">-</h2><p>Marker records</p></article>
+      <article class="card"><h2 id="countCellTypes">-</h2><p>Unique cell types</p></article>
+      <article class="card"><h2 id="countGenes">-</h2><p>Unique genes</p></article>
+    </section>
+
+    <section class="controls">
+      <label>
+        Collection
+        <select id="collectionFilter">
+          <option value="all">All</option>
+          <option value="benchmark">Benchmark</option>
+          <option value="biorxiv">bioRxiv</option>
+        </select>
+      </label>
+
+      <label>
+        Source
+        <select id="sourceTypeFilter">
+          <option value="all">All</option>
+        </select>
+      </label>
+
+      <label>
+        Paper
+        <select id="paperFilter">
+          <option value="all">All</option>
+        </select>
+      </label>
+
+      <label>
+        Rows
+        <select id="pageSizeFilter">
+          <option value="25">25</option>
+          <option value="50" selected>50</option>
+          <option value="100">100</option>
+        </select>
+      </label>
+
+      <label class="search">
+        Search
+        <input id="searchInput" type="text" placeholder="gene, cell type, DOI, or rationale text" />
+      </label>
+    </section>
+
+    <section class="table-wrap">
+      <div class="table-meta">
+        <strong id="tableCount">0 results</strong>
+        <div class="pager">
+          <button id="prevPage" type="button">Previous</button>
+          <span id="pageLabel">Page 1</span>
+          <button id="nextPage" type="button">Next</button>
+        </div>
+      </div>
+
+      <div class="table-scroll">
+        <table id="markerTable">
+          <thead>
+            <tr>
+              <th>Paper</th>
+              <th>DOI</th>
+              <th>Year</th>
+              <th>Cell type</th>
+              <th>Gene</th>
+              <th>Ensembl ID</th>
+              <th>Context</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <p class="note" id="statusNote">Loading database…</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
