@@ -906,7 +906,7 @@
     "group_id": null,
     "feature_label": "HAS1",
     "feature_name": "HAS1",
-    "feature_id": null,
+    "feature_id": "ENSG00000088205",
     "source_type": "text",
     "source_rationale": "While these features are consistent across both cell populations in IPF and control lungs (Fig. 4, A and B), the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
     "source_id": "manuscript.txt",
@@ -981,7 +981,7 @@
     "group_id": null,
     "feature_label": "SPP1",
     "feature_name": "SPP1",
-    "feature_id": null,
+    "feature_id": "ENSG00000154832",
     "source_type": "text",
     "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
     "source_id": "manuscript.txt",
@@ -1006,7 +1006,7 @@
     "group_id": null,
     "feature_label": "LIPA",
     "feature_name": "LIPA",
-    "feature_id": null,
+    "feature_id": "ENSG00000168515",
     "source_type": "text",
     "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
     "source_id": "manuscript.txt",
@@ -1322,56 +1322,6 @@
       "feature_label_found": true,
       "feature_label_reconstructed": "O1D",
       "all_verified": false
-    }
-  },
-  {
-    "organism": "homo_sapiens",
-    "group_label": "fibroblast",
-    "group_name": "FIBROBLAST",
-    "group_id": null,
-    "feature_label": "ITGB1",
-    "feature_name": "ITGB1",
-    "feature_id": "ENSG00000150093",
-    "source_type": "text",
-    "source_rationale": "For fibroblast, we took the cell with the highest expression of ITGB1, which lied at the terminus of fibroblast manifold's tendril as the root cell and calculated the relative distances of all other fibroblast cells.",
-    "source_id": "manuscript.txt",
-    "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
-    "metrics_pcorr": null,
-    "metrics_logfc": null,
-    "metrics_rank": null,
-    "_verification": {
-      "source_rationale_found": true,
-      "source_rationale_method": "exact",
-      "group_label_found": true,
-      "group_label_reconstructed": "roblast",
-      "feature_label_found": true,
-      "feature_label_reconstructed": "GB1",
-      "all_verified": true
-    }
-  },
-  {
-    "organism": "homo_sapiens",
-    "group_label": "myofibroblast",
-    "group_name": "MYOFIBROBLAST",
-    "group_id": null,
-    "feature_label": "MMP11",
-    "feature_name": "MMP11",
-    "feature_id": null,
-    "source_type": "text",
-    "source_rationale": "For myofibroblast, we calculated DPT ordering from all three termini in the myofibroblast manifold using the highest MMP11-expressing cell to represent the IPF-enriched terminus, the furthest control cell to represent the control, and COPD-enriched terminus and the furthest cell from 225I to represent the single-subject-enriched terminus.",
-    "source_id": "manuscript.txt",
-    "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
-    "metrics_pcorr": null,
-    "metrics_logfc": null,
-    "metrics_rank": null,
-    "_verification": {
-      "source_rationale_found": true,
-      "source_rationale_method": "exact",
-      "group_label_found": true,
-      "group_label_reconstructed": "ofibroblast",
-      "feature_label_found": true,
-      "feature_label_reconstructed": "11",
-      "all_verified": true
     }
   }
 ]
