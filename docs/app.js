@@ -15,8 +15,10 @@ const textEncoder = new TextEncoder();
 
 const el = {
   tabHome: document.getElementById("tabHome"),
+  tabMethods: document.getElementById("tabMethods"),
   tabRaw: document.getElementById("tabRaw"),
   panelHome: document.getElementById("panelHome"),
+  panelMethods: document.getElementById("panelMethods"),
   panelRaw: document.getElementById("panelRaw"),
   countPapers: document.getElementById("countPapers"),
   countBenchmarkPapers: document.getElementById("countBenchmarkPapers"),
@@ -42,13 +44,18 @@ const el = {
 };
 
 function setActiveTab(name) {
-  const isHome = name !== "raw";
+  const isHome = name === "home";
+  const isMethods = name === "methods";
+  const isRaw = name === "raw";
   el.tabHome.classList.toggle("is-active", isHome);
-  el.tabRaw.classList.toggle("is-active", !isHome);
+  el.tabMethods.classList.toggle("is-active", isMethods);
+  el.tabRaw.classList.toggle("is-active", isRaw);
   el.tabHome.setAttribute("aria-pressed", String(isHome));
-  el.tabRaw.setAttribute("aria-pressed", String(!isHome));
+  el.tabMethods.setAttribute("aria-pressed", String(isMethods));
+  el.tabRaw.setAttribute("aria-pressed", String(isRaw));
   el.panelHome.hidden = !isHome;
-  el.panelRaw.hidden = isHome;
+  el.panelMethods.hidden = !isMethods;
+  el.panelRaw.hidden = !isRaw;
 }
 
 function fmtInt(value) {
@@ -594,6 +601,7 @@ function wireEvents() {
   };
 
   el.tabHome.addEventListener("click", () => setActiveTab("home"));
+  el.tabMethods.addEventListener("click", () => setActiveTab("methods"));
   el.tabRaw.addEventListener("click", () => setActiveTab("raw"));
 
   el.collectionFilter.addEventListener("change", () => {
