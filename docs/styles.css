@@ -206,14 +206,6 @@ body {
   align-items: end;
 }
 
-.profile-controls label {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  font-size: 0.82rem;
-  color: var(--muted);
-}
-
 .profile-controls input,
 .profile-controls select,
 .profile-controls button {
@@ -245,6 +237,34 @@ body {
 
 .profile-query {
   min-width: 0;
+}
+
+.profile-mode,
+.profile-query {
+  min-width: 0;
+}
+
+.profile-examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.profile-example {
+  border: 1px solid #9fc8c3;
+  background: rgba(255, 255, 255, 0.86);
+  color: #124541;
+  border-radius: 8px;
+  padding: 0.38rem 0.62rem;
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.profile-example:hover {
+  border-color: #0d6f68;
+  background: #e7f4f2;
 }
 
 .profile-meta {

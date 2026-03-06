@@ -44,20 +44,27 @@
         </div>
 
         <div class="profile-controls">
-          <label>
-            Query type
+          <div class="profile-mode">
             <select id="profileQueryMode">
               <option value="text">Text description</option>
               <option value="genes">Genes / Ensembl IDs</option>
             </select>
-          </label>
+          </div>
 
-          <label class="profile-query">
-            Query
+          <div class="profile-query">
             <input id="profileQueryInput" type="text" placeholder="t cells, cytotoxic lymphocytes, stromal fibroblasts" />
-          </label>
+          </div>
 
           <button id="profileQueryButton" type="button">Search profiles</button>
+        </div>
+
+        <div class="profile-examples">
+          <button type="button" class="profile-example" data-mode="text" data-query="t cells">t cells</button>
+          <button type="button" class="profile-example" data-mode="text" data-query="cytotoxic lymphocytes">cytotoxic lymphocytes</button>
+          <button type="button" class="profile-example" data-mode="text" data-query="stromal fibroblasts">stromal fibroblasts</button>
+          <button type="button" class="profile-example" data-mode="genes" data-query="IL7R LTB MALAT1">IL7R LTB MALAT1</button>
+          <button type="button" class="profile-example" data-mode="genes" data-query="NKG7 PRF1 GNLY">NKG7 PRF1 GNLY</button>
+          <button type="button" class="profile-example" data-mode="genes" data-query="ENSG00000168685 ENSG00000105374">Ensembl ID query</button>
         </div>
 
         <div class="profile-meta">
