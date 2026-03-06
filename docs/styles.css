@@ -354,6 +354,10 @@ body {
   font-weight: 700;
 }
 
+.profile-loader[hidden] {
+  display: none;
+}
+
 .rna-spinner {
   position: relative;
   width: 20px;
