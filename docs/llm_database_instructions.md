@@ -4,6 +4,8 @@ Use `llmarkers.sqlite` as the source of truth.
 
 ## Download
 - Download `llmarkers.sqlite` from the repository or website.
+- GitHub link: https://github.com/sbooeshaghi/llmarkers/blob/main/docs/llmarkers.sqlite
+- Direct download: https://raw.githubusercontent.com/sbooeshaghi/llmarkers/main/docs/llmarkers.sqlite
 - Open it with SQLite.
 - Main tables:
   - `papers`: one row per paper
