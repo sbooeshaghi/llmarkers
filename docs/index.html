@@ -31,6 +31,38 @@
       <article class="card"><h2 id="countGenes">-</h2><p>Unique genes</p></article>
     </section>
 
+    <section class="profile-search">
+      <div class="profile-search-head">
+        <h2>Virtual Cell Search</h2>
+        <p>Query literature profiles by natural-language description or by marker genes. This search uses the current Collection filter.</p>
+      </div>
+
+      <div class="profile-controls">
+        <label>
+          Query type
+          <select id="profileQueryMode">
+            <option value="text">Text description</option>
+            <option value="genes">Genes / Ensembl IDs</option>
+          </select>
+        </label>
+
+        <label class="profile-query">
+          Query
+          <input id="profileQueryInput" type="text" placeholder="t cells, cytotoxic lymphocytes, stromal fibroblasts" />
+        </label>
+
+        <button id="profileQueryButton" type="button">Search profiles</button>
+      </div>
+
+      <div class="profile-meta">
+        <strong id="profileQuerySummary">No profile query yet.</strong>
+      </div>
+
+      <div id="profileResults" class="profile-results">
+        <article class="profile-empty">Run a profile query to connect text descriptions and marker sets from the literature.</article>
+      </div>
+    </section>
+
     <section class="controls">
       <label>
         Collection
