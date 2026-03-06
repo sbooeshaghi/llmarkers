@@ -41,6 +41,8 @@ const el = {
   profileQueryMode: document.getElementById("profileQueryMode"),
   profileQueryInput: document.getElementById("profileQueryInput"),
   profileQueryButton: document.getElementById("profileQueryButton"),
+  profileQueryLoader: document.getElementById("profileQueryLoader"),
+  profileQueryLoaderText: document.getElementById("profileQueryLoaderText"),
   profileQuerySummary: document.getElementById("profileQuerySummary"),
   profileResults: document.getElementById("profileResults"),
   profileExamples: Array.from(document.querySelectorAll(".profile-example")),
@@ -615,6 +617,11 @@ function renderProfileResults(results, mode, query) {
     .join("");
 }
 
+function setProfileQueryLoading(isLoading, text = "Running search...") {
+  el.profileQueryLoader.hidden = !isLoading;
+  el.profileQueryLoaderText.textContent = text;
+}
+
 function searchProfilesWithMiniLm(query, candidates, queryEmbedding) {
   return candidates
     .filter((profile) => profile.miniLmTextEmbedding && profile.miniLmContextEmbedding)
@@ -635,12 +642,14 @@ async function searchProfiles() {
   const candidates = state.profiles;
 
   if (!query) {
+    setProfileQueryLoading(false);
     renderProfileResults([], mode, "");
     return;
   }
 
   let results = [];
   if (mode === "genes") {
+    setProfileQueryLoading(true, "Matching marker sets...");
     const querySet = parseGeneQuery(query);
     results = candidates
       .map((profile) => {
@@ -657,8 +666,10 @@ async function searchProfiles() {
         b.sharedMatches.length - a.sharedMatches.length ||
         a.nGenes - b.nGenes
       );
+    setProfileQueryLoading(false);
   } else {
     el.profileQueryButton.disabled = true;
+    setProfileQueryLoading(true, state.miniLmExtractor ? "Embedding and ranking..." : "Loading MiniLM...");
     try {
       el.profileQuerySummary.textContent = state.miniLmExtractor
         ? "Embedding query..."
@@ -671,6 +682,7 @@ async function searchProfiles() {
       results = [];
     } finally {
       el.profileQueryButton.disabled = false;
+      setProfileQueryLoading(false);
     }
   }
 

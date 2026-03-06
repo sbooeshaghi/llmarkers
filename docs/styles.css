@@ -346,6 +346,48 @@ body {
   font-size: 0.82rem;
 }
 
+.profile-loader {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.rna-spinner {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  animation: rna-spin 1.15s linear infinite;
+}
+
+.rna-helix {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 2px solid transparent;
+}
+
+.rna-helix-a {
+  border-top-color: var(--brand);
+  border-left-color: var(--highlight);
+}
+
+.rna-helix-b {
+  inset: 4px;
+  border-right-color: #54b2aa;
+  border-bottom-color: var(--brand);
+}
+
+@keyframes rna-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .profile-results {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
