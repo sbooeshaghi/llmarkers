@@ -669,8 +669,7 @@ async function init() {
     refreshTable();
     searchProfiles();
 
-    el.statusNote.textContent =
-      "This site combines marker-level browsing with profile-level search. Virtual Cell Search uses offline profile embeddings plus a smaller title-and-abstract context signal stored in SQLite, and gene queries against profile marker sets using symbols or Ensembl IDs. The marker table below still exposes the exact evidence sentence for each individual marker record.";
+    el.statusNote.textContent = "Database loaded.";
   } catch (err) {
     console.error(err);
     el.statusNote.textContent = `Failed to load database: ${err.message}`;

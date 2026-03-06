@@ -23,9 +23,9 @@
     </section>
 
     <nav class="tabs" aria-label="Page sections">
-      <button id="tabHome" class="tab is-active" type="button" data-tab="home" aria-pressed="true">Home</button>
+      <button id="tabHome" class="tab is-active" type="button" data-tab="home" aria-pressed="true">Search</button>
+      <button id="tabRaw" class="tab" type="button" data-tab="raw" aria-pressed="false">Data</button>
       <button id="tabMethods" class="tab" type="button" data-tab="methods" aria-pressed="false">Methods</button>
-      <button id="tabRaw" class="tab" type="button" data-tab="raw" aria-pressed="false">Raw Data</button>
     </nav>
 
     <section id="panelHome" class="tab-panel">
@@ -73,6 +73,18 @@
 
     <section id="panelMethods" class="tab-panel" hidden>
       <section class="methods-panel">
+        <article class="method-card method-summary">
+          <h2>About This Site</h2>
+          <p>
+            This site combines marker-level browsing with profile-level search. Virtual Cell Search uses offline profile embeddings stored in SQLite,
+            with a smaller title-and-abstract context signal for text queries, and marker-set overlap for gene queries with symbols or Ensembl IDs.
+          </p>
+          <p>
+            The Data tab exposes the raw marker records directly, including cell-type labels, genes, resolved Ensembl identifiers when available,
+            and evidence text for marker records derived from text.
+          </p>
+        </article>
+
         <article class="method-card">
           <h2>Raw Data Curation</h2>
           <p>
