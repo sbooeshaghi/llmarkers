@@ -199,11 +199,13 @@ function clamp01(value) {
 }
 
 function scoreBadgeStyle(score) {
-  const normalized = clamp01((Number(score) + 1) / 2);
+  const rawScore = Math.max(-1, Math.min(1, Number(score) || 0));
+  const steppedScore = Math.round(rawScore / 0.05) * 0.05;
+  const normalized = clamp01((steppedScore + 1) / 2);
   const hue = 120 * normalized;
-  const saturation = 82;
-  const lightness = 44;
-  const borderLightness = 30;
+  const saturation = 88;
+  const lightness = 38;
+  const borderLightness = 24;
   const textColor = "#ffffff";
   return `--score-bg: hsl(${hue.toFixed(1)} ${saturation}% ${lightness.toFixed(1)}%); --score-fg: ${textColor}; --score-border: hsl(${hue.toFixed(1)} ${saturation}% ${borderLightness.toFixed(1)}%);`;
 }
