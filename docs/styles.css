@@ -189,23 +189,14 @@ body {
 }
 
 .profile-search-head {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: baseline;
+  display: block;
 }
 
 .profile-search-head h2 {
   margin: 0;
   font-size: 1rem;
   letter-spacing: -0.01em;
-}
-
-.profile-search-head p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.82rem;
-  line-height: 1.35;
+  text-align: left;
 }
 
 .profile-controls {
@@ -548,11 +539,6 @@ code,
   .table-scroll {
     max-height: 56vh;
     max-height: 56svh;
-  }
-
-  .profile-search-head {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .tabs {
