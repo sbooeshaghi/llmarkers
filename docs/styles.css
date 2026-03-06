@@ -206,6 +206,10 @@ body {
   align-items: end;
 }
 
+.profile-controls > * {
+  min-width: 0;
+}
+
 .profile-controls input,
 .profile-controls select,
 .profile-controls button {
@@ -214,6 +218,8 @@ body {
 
 .profile-controls input,
 .profile-controls select {
+  display: block;
+  width: 100%;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 0.48rem 0.58rem;
@@ -222,6 +228,7 @@ body {
 }
 
 .profile-controls button {
+  width: 100%;
   border: 1px solid #0d6f68;
   background: #0d6f68;
   color: #fff;
