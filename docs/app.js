@@ -15,11 +15,13 @@ const textEncoder = new TextEncoder();
 
 const el = {
   tabHome: document.getElementById("tabHome"),
-  tabMethods: document.getElementById("tabMethods"),
   tabRaw: document.getElementById("tabRaw"),
+  tabMethods: document.getElementById("tabMethods"),
+  tabAbout: document.getElementById("tabAbout"),
   panelHome: document.getElementById("panelHome"),
-  panelMethods: document.getElementById("panelMethods"),
   panelRaw: document.getElementById("panelRaw"),
+  panelMethods: document.getElementById("panelMethods"),
+  panelAbout: document.getElementById("panelAbout"),
   countPapers: document.getElementById("countPapers"),
   countBenchmarkPapers: document.getElementById("countBenchmarkPapers"),
   countBiorxivPapers: document.getElementById("countBiorxivPapers"),
@@ -46,17 +48,21 @@ const el = {
 
 function setActiveTab(name) {
   const isHome = name === "home";
-  const isMethods = name === "methods";
   const isRaw = name === "raw";
+  const isMethods = name === "methods";
+  const isAbout = name === "about";
   el.tabHome.classList.toggle("is-active", isHome);
-  el.tabMethods.classList.toggle("is-active", isMethods);
   el.tabRaw.classList.toggle("is-active", isRaw);
+  el.tabMethods.classList.toggle("is-active", isMethods);
+  el.tabAbout.classList.toggle("is-active", isAbout);
   el.tabHome.setAttribute("aria-pressed", String(isHome));
-  el.tabMethods.setAttribute("aria-pressed", String(isMethods));
   el.tabRaw.setAttribute("aria-pressed", String(isRaw));
+  el.tabMethods.setAttribute("aria-pressed", String(isMethods));
+  el.tabAbout.setAttribute("aria-pressed", String(isAbout));
   el.panelHome.hidden = !isHome;
-  el.panelMethods.hidden = !isMethods;
   el.panelRaw.hidden = !isRaw;
+  el.panelMethods.hidden = !isMethods;
+  el.panelAbout.hidden = !isAbout;
 }
 
 function fmtInt(value) {
@@ -596,8 +602,9 @@ function wireEvents() {
   };
 
   el.tabHome.addEventListener("click", () => setActiveTab("home"));
-  el.tabMethods.addEventListener("click", () => setActiveTab("methods"));
   el.tabRaw.addEventListener("click", () => setActiveTab("raw"));
+  el.tabMethods.addEventListener("click", () => setActiveTab("methods"));
+  el.tabAbout.addEventListener("click", () => setActiveTab("about"));
 
   el.collectionFilter.addEventListener("change", () => {
     rerenderFromFirstPage();

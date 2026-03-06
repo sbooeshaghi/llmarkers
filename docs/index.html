@@ -14,18 +14,13 @@
   <main class="page">
     <section class="hero">
       <h1>LLMarkers Database</h1>
-      <p>
-        This page serves marker-gene records from the seven-study LLMarkers benchmark and
-        the bioRxiv extraction corpus. Data are read directly from <code>llmarkers.sqlite</code>
-        in your browser. Source code and data pipeline are available in the
-        <a href="https://github.com/sbooeshaghi/llmarkers" target="_blank" rel="noopener">llmarkers GitHub repository</a>.
-      </p>
     </section>
 
     <nav class="tabs" aria-label="Page sections">
       <button id="tabHome" class="tab is-active" type="button" data-tab="home" aria-pressed="true">Search</button>
       <button id="tabRaw" class="tab" type="button" data-tab="raw" aria-pressed="false">Data</button>
       <button id="tabMethods" class="tab" type="button" data-tab="methods" aria-pressed="false">Methods</button>
+      <button id="tabAbout" class="tab" type="button" data-tab="about" aria-pressed="false">About</button>
     </nav>
 
     <section id="panelHome" class="tab-panel">
@@ -80,19 +75,6 @@
 
     <section id="panelMethods" class="tab-panel" hidden>
       <section class="methods-panel">
-        <article class="method-card method-summary">
-          <h2>About This Site</h2>
-          <p>
-            This site combines marker-level browsing with profile-level search. Virtual Cell Search uses offline profile embeddings stored in SQLite,
-            with a smaller title-and-abstract context signal for text queries, and marker-set overlap for gene queries with symbols or Ensembl IDs.
-            Search runs across the full profile database rather than the filtered rows shown in the Data tab.
-          </p>
-          <p>
-            The Data tab exposes the raw marker records directly, including cell-type labels, genes, resolved Ensembl identifiers when available,
-            and evidence text for marker records derived from text.
-          </p>
-        </article>
-
         <article class="method-card">
           <h2>Raw Data Curation</h2>
           <p>
@@ -124,6 +106,35 @@
           <p>
             Gene queries use marker-set overlap instead of text similarity. Users can search with gene symbols or Ensembl identifiers, and the site
             returns the closest paper-cell-type profiles from the local SQLite database without requiring a backend server.
+          </p>
+        </article>
+      </section>
+    </section>
+
+    <section id="panelAbout" class="tab-panel" hidden>
+      <section class="methods-panel">
+        <article class="method-card">
+          <h2>About LLMarkers</h2>
+          <p>
+            This page serves marker-gene records from the seven-study LLMarkers benchmark and the bioRxiv extraction corpus.
+            Data are read directly from <code>llmarkers.sqlite</code> in your browser.
+          </p>
+          <p>
+            Source code and data pipeline are available in the
+            <a href="https://github.com/sbooeshaghi/llmarkers" target="_blank" rel="noopener">llmarkers GitHub repository</a>.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h2>About This Site</h2>
+          <p>
+            This site combines marker-level browsing with profile-level search. Virtual Cell Search uses offline profile embeddings stored in SQLite,
+            with a smaller title-and-abstract context signal for text queries, and marker-set overlap for gene queries with symbols or Ensembl IDs.
+            Search runs across the full profile database rather than the filtered rows shown in the Data tab.
+          </p>
+          <p>
+            The Data tab exposes the raw marker records directly, including cell-type labels, genes, resolved Ensembl identifiers when available,
+            and evidence text for marker records derived from text.
           </p>
         </article>
       </section>
