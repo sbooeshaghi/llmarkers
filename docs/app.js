@@ -496,7 +496,10 @@ function renderProfileResults(results, mode, query, collectionLabel) {
   }
 
   const scoreLabel = mode === "genes" ? "Jaccard" : "Hybrid";
-  el.profileQuerySummary.textContent = `${results.length} profile matches in ${collectionLabel}. Top result ${scoreLabel.toLowerCase()} = ${results[0].score.toFixed(3)}.`;
+  const metricText = mode === "genes"
+    ? `${PROFILE_RESULT_MIN_SCORE.toFixed(1)} Jaccard similarity`
+    : `${PROFILE_RESULT_MIN_SCORE.toFixed(1)} cosine similarity`;
+  el.profileQuerySummary.textContent = `${results.length} matches >= ${metricText} in ${collectionLabel}.`;
 
   el.profileResults.innerHTML = results
     .map((result) => {
