@@ -346,6 +346,10 @@ body {
   gap: 0.7rem;
 }
 
+.method-summary {
+  grid-column: 1 / -1;
+}
+
 .method-card {
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid var(--line);
