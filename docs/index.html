@@ -22,107 +22,116 @@
       </p>
     </section>
 
-    <section class="cards" id="summaryCards">
-      <article class="card"><h2 id="countPapers">-</h2><p>Total papers</p></article>
-      <article class="card"><h2 id="countBenchmarkPapers">-</h2><p>Benchmark papers</p></article>
-      <article class="card"><h2 id="countBiorxivPapers">-</h2><p>bioRxiv papers</p></article>
-      <article class="card"><h2 id="countMarkers">-</h2><p>Marker records</p></article>
-      <article class="card"><h2 id="countCellTypes">-</h2><p>Unique cell types</p></article>
-      <article class="card"><h2 id="countGenes">-</h2><p>Unique genes</p></article>
-    </section>
+    <nav class="tabs" aria-label="Page sections">
+      <button id="tabHome" class="tab is-active" type="button" data-tab="home" aria-pressed="true">Home</button>
+      <button id="tabRaw" class="tab" type="button" data-tab="raw" aria-pressed="false">Raw Data</button>
+    </nav>
 
-    <section class="profile-search">
-      <div class="profile-search-head">
-        <h2>Virtual Cell Search</h2>
-        <p>Query literature profiles by natural-language description or by marker genes. This search uses the current Collection filter.</p>
-      </div>
+    <section id="panelHome" class="tab-panel">
+      <section class="cards" id="summaryCards">
+        <article class="card"><h2 id="countPapers">-</h2><p>Total papers</p></article>
+        <article class="card"><h2 id="countBenchmarkPapers">-</h2><p>Benchmark papers</p></article>
+        <article class="card"><h2 id="countBiorxivPapers">-</h2><p>bioRxiv papers</p></article>
+        <article class="card"><h2 id="countMarkers">-</h2><p>Marker records</p></article>
+        <article class="card"><h2 id="countCellTypes">-</h2><p>Unique cell types</p></article>
+        <article class="card"><h2 id="countGenes">-</h2><p>Unique genes</p></article>
+      </section>
 
-      <div class="profile-controls">
-        <label>
-          Query type
-          <select id="profileQueryMode">
-            <option value="text">Text description</option>
-            <option value="genes">Genes / Ensembl IDs</option>
-          </select>
-        </label>
-
-        <label class="profile-query">
-          Query
-          <input id="profileQueryInput" type="text" placeholder="t cells, cytotoxic lymphocytes, stromal fibroblasts" />
-        </label>
-
-        <button id="profileQueryButton" type="button">Search profiles</button>
-      </div>
-
-      <div class="profile-meta">
-        <strong id="profileQuerySummary">No profile query yet.</strong>
-      </div>
-
-      <div id="profileResults" class="profile-results">
-        <article class="profile-empty">Run a profile query to connect text descriptions and marker sets from the literature.</article>
-      </div>
-    </section>
-
-    <section class="controls">
-      <label>
-        Collection
-        <select id="collectionFilter">
-          <option value="all">All</option>
-          <option value="benchmark">Benchmark</option>
-          <option value="biorxiv">bioRxiv</option>
-        </select>
-      </label>
-
-      <label>
-        Source
-        <select id="sourceTypeFilter">
-          <option value="all">All</option>
-        </select>
-      </label>
-
-      <label>
-        Rows
-        <select id="pageSizeFilter">
-          <option value="25">25</option>
-          <option value="50" selected>50</option>
-          <option value="100">100</option>
-        </select>
-      </label>
-
-      <label class="search">
-        Search
-        <input id="searchInput" type="text" placeholder="gene, cell type, DOI, or rationale text" />
-      </label>
-    </section>
-
-    <section class="table-wrap">
-      <div class="table-meta">
-        <strong id="tableCount">0 results</strong>
-        <div class="pager">
-          <button id="prevPage" type="button">Previous</button>
-          <span id="pageLabel">Page 1</span>
-          <button id="nextPage" type="button">Next</button>
+      <section class="profile-search">
+        <div class="profile-search-head">
+          <h2>Virtual Cell Search</h2>
+          <p>Query literature profiles by natural-language description or by marker genes. This search uses the current Collection filter.</p>
         </div>
-      </div>
 
-      <div class="table-scroll">
-        <table id="markerTable">
-          <thead>
-            <tr>
-              <th>Paper</th>
-              <th>Year</th>
-              <th>Cell type</th>
-              <th>Gene</th>
-              <th>Ensembl ID</th>
-              <th>Context</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
+        <div class="profile-controls">
+          <label>
+            Query type
+            <select id="profileQueryMode">
+              <option value="text">Text description</option>
+              <option value="genes">Genes / Ensembl IDs</option>
+            </select>
+          </label>
+
+          <label class="profile-query">
+            Query
+            <input id="profileQueryInput" type="text" placeholder="t cells, cytotoxic lymphocytes, stromal fibroblasts" />
+          </label>
+
+          <button id="profileQueryButton" type="button">Search profiles</button>
+        </div>
+
+        <div class="profile-meta">
+          <strong id="profileQuerySummary">No profile query yet.</strong>
+        </div>
+
+        <div id="profileResults" class="profile-results">
+          <article class="profile-empty">Run a profile query to connect text descriptions and marker sets from the literature.</article>
+        </div>
+      </section>
+
+      <p class="note" id="statusNote">Loading database…</p>
     </section>
 
-    <p class="note" id="statusNote">Loading database…</p>
+    <section id="panelRaw" class="tab-panel" hidden>
+      <section class="table-wrap">
+        <div class="controls table-controls">
+          <label>
+            Collection
+            <select id="collectionFilter">
+              <option value="all">All</option>
+              <option value="benchmark">Benchmark</option>
+              <option value="biorxiv">bioRxiv</option>
+            </select>
+          </label>
+
+          <label>
+            Source
+            <select id="sourceTypeFilter">
+              <option value="all">All</option>
+            </select>
+          </label>
+
+          <label>
+            Rows
+            <select id="pageSizeFilter">
+              <option value="25">25</option>
+              <option value="50" selected>50</option>
+              <option value="100">100</option>
+            </select>
+          </label>
+
+          <label class="search">
+            Search
+            <input id="searchInput" type="text" placeholder="gene, cell type, DOI, or rationale text" />
+          </label>
+        </div>
+
+        <div class="table-meta">
+          <strong id="tableCount">0 results</strong>
+          <div class="pager">
+            <button id="prevPage" type="button">Previous</button>
+            <span id="pageLabel">Page 1</span>
+            <button id="nextPage" type="button">Next</button>
+          </div>
+        </div>
+
+        <div class="table-scroll">
+          <table id="markerTable">
+            <thead>
+              <tr>
+                <th>Paper</th>
+                <th>Year</th>
+                <th>Cell type</th>
+                <th>Gene</th>
+                <th>Ensembl ID</th>
+                <th>Context</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
   </main>
 
   <script src="app.js"></script>

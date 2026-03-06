@@ -14,6 +14,10 @@ const state = {
 const textEncoder = new TextEncoder();
 
 const el = {
+  tabHome: document.getElementById("tabHome"),
+  tabRaw: document.getElementById("tabRaw"),
+  panelHome: document.getElementById("panelHome"),
+  panelRaw: document.getElementById("panelRaw"),
   countPapers: document.getElementById("countPapers"),
   countBenchmarkPapers: document.getElementById("countBenchmarkPapers"),
   countBiorxivPapers: document.getElementById("countBiorxivPapers"),
@@ -36,6 +40,16 @@ const el = {
   nextPage: document.getElementById("nextPage"),
   statusNote: document.getElementById("statusNote"),
 };
+
+function setActiveTab(name) {
+  const isHome = name !== "raw";
+  el.tabHome.classList.toggle("is-active", isHome);
+  el.tabRaw.classList.toggle("is-active", !isHome);
+  el.tabHome.setAttribute("aria-pressed", String(isHome));
+  el.tabRaw.setAttribute("aria-pressed", String(!isHome));
+  el.panelHome.hidden = !isHome;
+  el.panelRaw.hidden = isHome;
+}
 
 function fmtInt(value) {
   return new Intl.NumberFormat("en-US").format(value ?? 0);
@@ -580,6 +594,9 @@ function wireEvents() {
     refreshTable();
   };
 
+  el.tabHome.addEventListener("click", () => setActiveTab("home"));
+  el.tabRaw.addEventListener("click", () => setActiveTab("raw"));
+
   el.collectionFilter.addEventListener("change", () => {
     rerenderFromFirstPage();
     searchProfiles();
@@ -640,6 +657,7 @@ async function init() {
     loadFilterOptions();
     loadProfiles();
     updateProfilePlaceholder();
+    setActiveTab("home");
     wireEvents();
     refreshTable();
     searchProfiles();

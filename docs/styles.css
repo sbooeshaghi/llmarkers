@@ -64,6 +64,46 @@ body {
   border-bottom-color: #124541;
 }
 
+.tabs {
+  display: inline-flex;
+  align-self: flex-start;
+  gap: 0.35rem;
+  padding: 0.22rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.tab {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 9px;
+  padding: 0.5rem 0.9rem;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--ink);
+  background: rgba(13, 111, 104, 0.08);
+}
+
+.tab.is-active {
+  background: var(--brand);
+  color: #fff;
+}
+
+.tab-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -123,6 +163,14 @@ body {
 
 .controls .search {
   grid-column: span 2;
+}
+
+.table-controls {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .profile-search {
@@ -459,6 +507,10 @@ code,
     flex: 0 0 auto;
   }
 
+  .table-controls {
+    padding: 0.65rem;
+  }
+
   .table-scroll {
     max-height: 56vh;
     max-height: 56svh;
@@ -467,6 +519,15 @@ code,
   .profile-search-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .tab {
+    flex: 1 1 0;
+    text-align: center;
   }
 
   .profile-controls {
@@ -488,6 +549,10 @@ code,
 }
 
 @media (max-width: 640px) {
+  .table-controls {
+    padding: 0.62rem;
+  }
+
   .cards {
     grid-template-columns: 1fr;
   }
