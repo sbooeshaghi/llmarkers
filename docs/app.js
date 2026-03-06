@@ -198,6 +198,15 @@ function clamp01(value) {
   return Math.max(0, Math.min(1, value || 0));
 }
 
+function scoreBadgeStyle(score) {
+  const normalized = clamp01((Number(score) + 1) / 2);
+  const hue = 8 + (137 * normalized);
+  const saturation = 68;
+  const lightness = 92 - (36 * normalized);
+  const textColor = normalized > 0.58 ? "#ffffff" : "#1f2b24";
+  return `--score-bg: hsl(${hue.toFixed(1)} ${saturation}% ${lightness.toFixed(1)}%); --score-fg: ${textColor};`;
+}
+
 function setLoadProgress(key, ratio, text) {
   state.loadProgress[key] = {
     ratio: clamp01(ratio),
@@ -575,7 +584,7 @@ function renderProfileResults(results, mode, query) {
     return;
   }
 
-  const scoreLabel = mode === "genes" ? "Jaccard" : "Hybrid";
+  const scoreLabel = mode === "genes" ? "Jaccard" : "Cos. Sim.";
   const metricText = mode === "genes"
     ? `${PROFILE_RESULT_MIN_SCORE.toFixed(1)} Jaccard similarity`
     : `${PROFILE_RESULT_MIN_SCORE.toFixed(1)} cosine similarity`;
@@ -600,7 +609,7 @@ function renderProfileResults(results, mode, query) {
         <article class="profile-card">
           <div class="profile-card-head">
             <h3>${esc(result.groupName)}</h3>
-            <span class="profile-score">${scoreLabel} ${result.score.toFixed(3)}</span>
+            <span class="profile-score" style="${scoreBadgeStyle(result.score)}">${scoreLabel} ${result.score.toFixed(3)}</span>
           </div>
           <div class="profile-card-meta">
             <span>${esc(result.collection)}</span>
