@@ -28,11 +28,11 @@ const el = {
   panelMethods: document.getElementById("panelMethods"),
   panelAbout: document.getElementById("panelAbout"),
   countPapers: document.getElementById("countPapers"),
-  countBenchmarkPapers: document.getElementById("countBenchmarkPapers"),
-  countBiorxivPapers: document.getElementById("countBiorxivPapers"),
+  countPapersDetail: document.getElementById("countPapersDetail"),
   countMarkers: document.getElementById("countMarkers"),
-  countCellTypes: document.getElementById("countCellTypes"),
-  countGenes: document.getElementById("countGenes"),
+  countMarkersDetail: document.getElementById("countMarkersDetail"),
+  countProfiles: document.getElementById("countProfiles"),
+  countProfilesDetail: document.getElementById("countProfilesDetail"),
   profileQueryMode: document.getElementById("profileQueryMode"),
   profileQueryInput: document.getElementById("profileQueryInput"),
   profileQueryButton: document.getElementById("profileQueryButton"),
@@ -313,36 +313,40 @@ function buildWhere() {
 }
 
 function updateSummaryCards() {
-  el.countPapers.textContent = fmtInt(runScalar("SELECT COUNT(*) AS n FROM papers"));
-  el.countBenchmarkPapers.textContent = fmtInt(
-    runScalar(
-      `SELECT COUNT(*) AS n FROM papers p
-       WHERE EXISTS (
-         SELECT 1 FROM markers m
-         WHERE m.paper_id = p.paper_id
-         AND m.data_id IS NOT NULL
-         AND m.data_id <> ''
-       )`
-    )
+  const totalPapers = runScalar("SELECT COUNT(*) AS n FROM papers");
+  const benchmarkPapers = runScalar(
+    `SELECT COUNT(*) AS n FROM papers p
+     WHERE EXISTS (
+       SELECT 1 FROM markers m
+       WHERE m.paper_id = p.paper_id
+       AND m.data_id IS NOT NULL
+       AND m.data_id <> ''
+     )`
   );
-  el.countBiorxivPapers.textContent = fmtInt(
-    runScalar(
-      `SELECT COUNT(*) AS n FROM papers p
-       WHERE NOT EXISTS (
-         SELECT 1 FROM markers m
-         WHERE m.paper_id = p.paper_id
-         AND m.data_id IS NOT NULL
-         AND m.data_id <> ''
-       )`
-    )
+  const biorxivPapers = runScalar(
+    `SELECT COUNT(*) AS n FROM papers p
+     WHERE NOT EXISTS (
+       SELECT 1 FROM markers m
+       WHERE m.paper_id = p.paper_id
+       AND m.data_id IS NOT NULL
+       AND m.data_id <> ''
+     )`
   );
-  el.countMarkers.textContent = fmtInt(runScalar("SELECT COUNT(*) AS n FROM markers"));
-  el.countCellTypes.textContent = fmtInt(runScalar("SELECT COUNT(DISTINCT group_name) AS n FROM markers"));
-  el.countGenes.textContent = fmtInt(
-    runScalar(
-      "SELECT COUNT(DISTINCT CASE WHEN feature_id IS NOT NULL AND feature_id <> '' THEN feature_id ELSE feature_name END) AS n FROM markers"
-    )
+  const totalMarkers = runScalar("SELECT COUNT(*) AS n FROM markers");
+  const uniqueCellTypes = runScalar("SELECT COUNT(DISTINCT group_name) AS n FROM markers");
+  const uniqueGenes = runScalar(
+    "SELECT COUNT(DISTINCT CASE WHEN feature_id IS NOT NULL AND feature_id <> '' THEN feature_id ELSE feature_name END) AS n FROM markers"
   );
+  const totalProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles");
+  const benchmarkProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles WHERE collection = 'benchmark'");
+  const biorxivProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles WHERE collection = 'biorxiv'");
+
+  el.countPapers.textContent = fmtInt(totalPapers);
+  el.countPapersDetail.textContent = `(${fmtInt(benchmarkPapers)} benchmark, ${fmtInt(biorxivPapers)} bioRxiv)`;
+  el.countMarkers.textContent = fmtInt(totalMarkers);
+  el.countMarkersDetail.textContent = `(${fmtInt(uniqueCellTypes)} cell types, ${fmtInt(uniqueGenes)} genes)`;
+  el.countProfiles.textContent = fmtInt(totalProfiles);
+  el.countProfilesDetail.textContent = `(${fmtInt(benchmarkProfiles)} benchmark, ${fmtInt(biorxivProfiles)} bioRxiv)`;
 }
 
 function loadFilterOptions() {

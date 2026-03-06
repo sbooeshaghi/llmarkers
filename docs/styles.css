@@ -116,7 +116,7 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.62rem;
 }
 
@@ -140,6 +140,11 @@ body {
   color: var(--muted);
   font-size: 0.88rem;
   text-align: center;
+}
+
+.card-detail {
+  font-size: 0.74rem;
+  white-space: nowrap;
 }
 
 .controls {
