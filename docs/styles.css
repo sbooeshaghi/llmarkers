@@ -172,6 +172,8 @@ body {
   overflow: auto;
   flex: 1 1 auto;
   min-height: 0;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
 }
 
 table {
@@ -279,6 +281,26 @@ code,
 }
 
 @media (max-width: 900px) {
+  html,
+  body {
+    height: auto;
+    overflow: auto;
+  }
+
+  .page {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .table-wrap {
+    flex: 0 0 auto;
+  }
+
+  .table-scroll {
+    max-height: 56vh;
+    max-height: 56svh;
+  }
+
   .cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
