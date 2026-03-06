@@ -4,12 +4,16 @@ const PROFILE_EMBED_DIM = 96;
 const DEFAULT_PROFILE_WEIGHT = 0.9;
 const DEFAULT_CONTEXT_WEIGHT = 0.1;
 const PROFILE_RESULT_MIN_SCORE = 0.2;
+const MINILM_MODEL_ID = "onnx-community/all-MiniLM-L6-v2-ONNX";
+const MINILM_MODEL_NAME = "sentence-transformers_all-MiniLM-L6-v2@float16";
 const state = {
   db: null,
   currentPage: 1,
   pageSize: 50,
   totalRows: 0,
   profiles: [],
+  miniLmExtractor: null,
+  miniLmStatus: "idle",
 };
 
 const textEncoder = new TextEncoder();
@@ -204,6 +208,29 @@ function parseJsonArray(value) {
   }
 }
 
+function blobToFloat16Array(blob) {
+  if (!blob) return null;
+  const bytes = blob instanceof Uint8Array ? blob : new Uint8Array(blob);
+  const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+  const out = new Float32Array(bytes.byteLength / 2);
+  for (let i = 0; i < out.length; i += 1) {
+    const uint16 = view.getUint16(i * 2, true);
+    const sign = (uint16 & 0x8000) >> 15;
+    const exponent = (uint16 & 0x7c00) >> 10;
+    const fraction = uint16 & 0x03ff;
+    let value;
+    if (exponent === 0) {
+      value = fraction === 0 ? 0 : (fraction / 1024) * Math.pow(2, -14);
+    } else if (exponent === 0x1f) {
+      value = fraction === 0 ? Infinity : Number.NaN;
+    } else {
+      value = (1 + fraction / 1024) * Math.pow(2, exponent - 15);
+    }
+    out[i] = sign ? -value : value;
+  }
+  return out;
+}
+
 function parseGeneQuery(value) {
   return new Set(
     String(value || "")
@@ -346,6 +373,8 @@ function loadProfiles() {
       pr.evidence_sentences_json,
       pr.text_embedding_json,
       pr.context_embedding_json,
+      emb.text_embedding_blob,
+      emb.context_embedding_blob,
       pr.n_genes,
       pr.n_gene_ids,
       pr.n_sentences,
@@ -354,6 +383,9 @@ function loadProfiles() {
       p.year
     FROM profiles pr
     JOIN papers p ON p.paper_id = pr.paper_id
+    LEFT JOIN profile_embeddings_biomed emb
+      ON emb.profile_id = pr.profile_id
+      AND emb.model_name = '${MINILM_MODEL_NAME}'
     ORDER BY p.year DESC, pr.profile_id`
   );
 
@@ -363,6 +395,8 @@ function loadProfiles() {
     const evidenceSentences = parseJsonArray(row.evidence_sentences_json);
     const embeddingRaw = parseJsonArray(row.text_embedding_json);
     const contextEmbeddingRaw = parseJsonArray(row.context_embedding_json);
+    const miniLmTextEmbedding = blobToFloat16Array(row.text_embedding_blob);
+    const miniLmContextEmbedding = blobToFloat16Array(row.context_embedding_blob);
     const labelTokens = expandedTokenSet(normalizeProfileText(row.group_name).match(/[A-Z0-9]+/g) || []);
     const textTokens = expandedTokenSet(normalizeProfileText(row.text_blob).match(/[A-Z0-9]+/g) || []);
     return {
@@ -380,6 +414,8 @@ function loadProfiles() {
       evidenceSentences,
       embedding: Float32Array.from(embeddingRaw),
       contextEmbedding: Float32Array.from(contextEmbeddingRaw),
+      miniLmTextEmbedding,
+      miniLmContextEmbedding,
       geneTokenSet: new Set([...geneNames, ...geneIds.filter(Boolean)]),
       labelTokenSet: labelTokens,
       textTokenSet: textTokens,
@@ -388,6 +424,38 @@ function loadProfiles() {
       nSentences: Number(row.n_sentences) || evidenceSentences.length,
     };
   });
+}
+
+async function ensureMiniLmExtractor() {
+  if (state.miniLmExtractor) return state.miniLmExtractor;
+  if (state.miniLmStatus === "loading") {
+    while (state.miniLmStatus === "loading") {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+    }
+    return state.miniLmExtractor;
+  }
+
+  state.miniLmStatus = "loading";
+  try {
+    const mod = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1");
+    mod.env.allowLocalModels = false;
+    mod.env.useBrowserCache = true;
+    state.miniLmExtractor = await mod.pipeline("feature-extraction", MINILM_MODEL_ID, {
+      pooling: "mean",
+      normalize: true,
+    });
+    state.miniLmStatus = "ready";
+    return state.miniLmExtractor;
+  } catch (error) {
+    state.miniLmStatus = "failed";
+    throw error;
+  }
+}
+
+async function embedMiniLmQuery(query) {
+  const extractor = await ensureMiniLmExtractor();
+  const output = await extractor(query, { pooling: "mean", normalize: true });
+  return Float32Array.from(output.data ?? output.tolist?.() ?? output);
 }
 
 function renderRows(rows) {
@@ -537,7 +605,49 @@ function renderProfileResults(results, mode, query) {
     .join("");
 }
 
-function searchProfiles() {
+function searchProfilesWithFallback(query, candidates) {
+  const queryVec = embedProfileText(query);
+  const contextQueryVec = embedProfileText(query);
+  const queryTokens = expandedTokenSet(normalizeProfileText(query).match(/[A-Z0-9]+/g) || []);
+  const normalizedQuery = normalizeProfileText(query);
+
+  return candidates
+    .map((profile) => {
+      const profileCosine = cosineSimilarity(queryVec, profile.embedding);
+      const contextCosine = cosineSimilarity(contextQueryVec, profile.contextEmbedding);
+      const labelCoverage = lexicalCoverage(queryTokens, profile.labelTokenSet);
+      const textCoverage = lexicalCoverage(queryTokens, profile.textTokenSet);
+      const labelHit = normalizeProfileText(profile.groupName).includes(normalizedQuery) ? 0.12 : 0;
+      return {
+        ...profile,
+        score:
+          (DEFAULT_PROFILE_WEIGHT * profileCosine) +
+          (DEFAULT_CONTEXT_WEIGHT * contextCosine) +
+          (0.22 * labelCoverage) +
+          (0.05 * textCoverage) +
+          labelHit,
+        sharedMatches: [],
+      };
+    })
+    .filter((profile) => profile.score >= PROFILE_RESULT_MIN_SCORE)
+    .sort((a, b) => b.score - a.score || b.nSentences - a.nSentences || b.nGenes - a.nGenes);
+}
+
+function searchProfilesWithMiniLm(query, candidates, queryEmbedding) {
+  return candidates
+    .filter((profile) => profile.miniLmTextEmbedding && profile.miniLmContextEmbedding)
+    .map((profile) => ({
+      ...profile,
+      score:
+        (DEFAULT_PROFILE_WEIGHT * cosineSimilarity(queryEmbedding, profile.miniLmTextEmbedding)) +
+        (DEFAULT_CONTEXT_WEIGHT * cosineSimilarity(queryEmbedding, profile.miniLmContextEmbedding)),
+      sharedMatches: [],
+    }))
+    .filter((profile) => profile.score >= PROFILE_RESULT_MIN_SCORE)
+    .sort((a, b) => b.score - a.score || b.nSentences - a.nSentences || b.nGenes - a.nGenes);
+}
+
+async function searchProfiles() {
   const query = el.profileQueryInput.value.trim();
   const mode = el.profileQueryMode.value;
   const candidates = state.profiles;
@@ -566,31 +676,20 @@ function searchProfiles() {
         a.nGenes - b.nGenes
       );
   } else {
-    const queryVec = embedProfileText(query);
-    const contextQueryVec = embedProfileText(query);
-    const queryTokens = expandedTokenSet(normalizeProfileText(query).match(/[A-Z0-9]+/g) || []);
-    const normalizedQuery = normalizeProfileText(query);
-
-    results = candidates
-      .map((profile) => {
-        const profileCosine = cosineSimilarity(queryVec, profile.embedding);
-        const contextCosine = cosineSimilarity(contextQueryVec, profile.contextEmbedding);
-        const labelCoverage = lexicalCoverage(queryTokens, profile.labelTokenSet);
-        const textCoverage = lexicalCoverage(queryTokens, profile.textTokenSet);
-        const labelHit = normalizeProfileText(profile.groupName).includes(normalizedQuery) ? 0.12 : 0;
-        return {
-          ...profile,
-          score:
-            (DEFAULT_PROFILE_WEIGHT * profileCosine) +
-            (DEFAULT_CONTEXT_WEIGHT * contextCosine) +
-            (0.22 * labelCoverage) +
-            (0.05 * textCoverage) +
-            labelHit,
-          sharedMatches: [],
-        };
-      })
-      .filter((profile) => profile.score >= PROFILE_RESULT_MIN_SCORE)
-      .sort((a, b) => b.score - a.score || b.nSentences - a.nSentences || b.nGenes - a.nGenes);
+    el.profileQueryButton.disabled = true;
+    try {
+      el.profileQuerySummary.textContent = state.miniLmExtractor
+        ? "Embedding query..."
+        : "Loading MiniLM query model...";
+      const queryEmbedding = await embedMiniLmQuery(query);
+      results = searchProfilesWithMiniLm(query, candidates, queryEmbedding);
+    } catch (error) {
+      console.error("MiniLM query embedding failed; using local fallback.", error);
+      el.profileQuerySummary.textContent = "MiniLM load failed. Using local fallback search.";
+      results = searchProfilesWithFallback(query, candidates);
+    } finally {
+      el.profileQueryButton.disabled = false;
+    }
   }
 
   renderProfileResults(results, mode, query);
