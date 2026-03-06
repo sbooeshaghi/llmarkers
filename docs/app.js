@@ -3,6 +3,7 @@
 const PROFILE_EMBED_DIM = 96;
 const DEFAULT_PROFILE_WEIGHT = 0.9;
 const DEFAULT_CONTEXT_WEIGHT = 0.1;
+const PROFILE_RESULT_MIN_SCORE = 0.2;
 const state = {
   db: null,
   currentPage: 1,
@@ -556,13 +557,12 @@ function searchProfiles() {
           sharedMatches: [...querySet].filter((token) => profile.geneTokenSet.has(token)),
         };
       })
-      .filter((profile) => profile.score > 0)
+      .filter((profile) => profile.score >= PROFILE_RESULT_MIN_SCORE)
       .sort((a, b) =>
         b.score - a.score ||
         b.sharedMatches.length - a.sharedMatches.length ||
         a.nGenes - b.nGenes
-      )
-      .slice(0, 8);
+      );
   } else {
     const queryVec = embedProfileText(query);
     const contextQueryVec = embedProfileText(query);
@@ -587,9 +587,8 @@ function searchProfiles() {
           sharedMatches: [],
         };
       })
-      .filter((profile) => profile.score > 0)
-      .sort((a, b) => b.score - a.score || b.nSentences - a.nSentences || b.nGenes - a.nGenes)
-      .slice(0, 8);
+      .filter((profile) => profile.score >= PROFILE_RESULT_MIN_SCORE)
+      .sort((a, b) => b.score - a.score || b.nSentences - a.nSentences || b.nGenes - a.nGenes);
   }
 
   renderProfileResults(results, mode, query, collectionLabel);
