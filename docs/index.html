@@ -38,6 +38,16 @@
       </article>
     </section>
 
+    <section class="load-strip" id="loadStrip" aria-live="polite">
+      <div class="load-strip-head">
+        <strong id="loadStatusText">Starting page load...</strong>
+        <span id="loadStatusMeta">0%</span>
+      </div>
+      <div class="load-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="loadBarFill" class="load-bar-fill"></div>
+      </div>
+    </section>
+
     <section id="panelHome" class="tab-panel">
       <section class="profile-search">
         <div class="profile-controls">
@@ -72,7 +82,7 @@
         <div id="profileResults" class="profile-results"></div>
       </section>
 
-      <p class="note" id="statusNote">Loading database…</p>
+      <p class="note" id="statusNote">Loading database...</p>
     </section>
 
     <section id="panelMethods" class="tab-panel" hidden>
