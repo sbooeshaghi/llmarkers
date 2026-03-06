@@ -230,12 +230,6 @@ function currentCollection() {
   return el.collectionFilter.value;
 }
 
-function profileMatchesCollection(profile) {
-  const collection = currentCollection();
-  if (collection === "all") return true;
-  return profile.collection === collection;
-}
-
 function buildWhere() {
   const clauses = [];
   const params = [];
@@ -535,8 +529,8 @@ function renderProfileResults(results, mode, query, collectionLabel) {
 function searchProfiles() {
   const query = el.profileQueryInput.value.trim();
   const mode = el.profileQueryMode.value;
-  const candidates = state.profiles.filter(profileMatchesCollection);
-  const collectionLabel = currentCollection() === "all" ? "all collections" : currentCollection();
+  const candidates = state.profiles;
+  const collectionLabel = "all collections";
 
   if (!query) {
     renderProfileResults([], mode, "", collectionLabel);
@@ -606,7 +600,6 @@ function wireEvents() {
 
   el.collectionFilter.addEventListener("change", () => {
     rerenderFromFirstPage();
-    searchProfiles();
   });
 
   el.sourceTypeFilter.addEventListener("change", rerenderFromFirstPage);
