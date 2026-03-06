@@ -452,6 +452,17 @@ async function ensureMiniLmExtractor() {
   }
 }
 
+function warmMiniLmInBackground() {
+  if (state.miniLmExtractor || state.miniLmStatus === "loading" || state.miniLmStatus === "failed") {
+    return;
+  }
+  setTimeout(() => {
+    ensureMiniLmExtractor().catch((error) => {
+      console.error("Background MiniLM warmup failed.", error);
+    });
+  }, 0);
+}
+
 async function embedMiniLmQuery(query) {
   const extractor = await ensureMiniLmExtractor();
   const output = await extractor(query, { pooling: "mean", normalize: true });
@@ -777,6 +788,7 @@ async function init() {
     wireEvents();
     refreshTable();
     searchProfiles();
+    warmMiniLmInBackground();
 
     el.statusNote.textContent = "Database loaded.";
   } catch (err) {
