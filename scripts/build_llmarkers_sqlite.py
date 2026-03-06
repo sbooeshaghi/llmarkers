@@ -387,6 +387,10 @@ def insert_marker(
     group_name = normalize_text(row.get("group_name"))
     feature_name = normalize_text(row.get("feature_name"))
     source_type = normalize_text(row.get("source_type"))
+    source_rationale = normalize_text(row.get("source_rationale")) or None
+
+    if source_type.lower() == "image":
+        source_rationale = None
 
     if not group_name or not feature_name or not source_type:
         return
@@ -409,7 +413,7 @@ def insert_marker(
             feature_name,
             normalize_text(row.get("feature_id")) or None,
             source_type,
-            normalize_text(row.get("source_rationale")) or None,
+            source_rationale,
             normalize_text(row.get("data_id")) or None,
         ),
     )
