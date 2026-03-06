@@ -258,6 +258,13 @@ body {
   gap: 0.45rem;
 }
 
+.profile-examples-label {
+  align-self: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .profile-example {
   border: 1px solid #9fc8c3;
   background: rgba(255, 255, 255, 0.86);
