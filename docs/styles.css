@@ -104,6 +104,10 @@ body {
   flex: 1 1 auto;
 }
 
+.tab-panel[hidden] {
+  display: none;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
