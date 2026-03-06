@@ -475,8 +475,7 @@ function updateProfilePlaceholder() {
 function renderProfileResults(results, mode, query, collectionLabel) {
   if (!query) {
     el.profileQuerySummary.textContent = "No profile query yet.";
-    el.profileResults.innerHTML =
-      '<article class="profile-empty">Run a profile query to connect text descriptions and marker sets from the literature.</article>';
+    el.profileResults.innerHTML = "";
     return;
   }
 
