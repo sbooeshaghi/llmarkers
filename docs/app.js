@@ -200,11 +200,12 @@ function clamp01(value) {
 
 function scoreBadgeStyle(score) {
   const normalized = clamp01((Number(score) + 1) / 2);
-  const hue = 8 + (137 * normalized);
-  const saturation = 68;
-  const lightness = 92 - (36 * normalized);
-  const textColor = normalized > 0.58 ? "#ffffff" : "#1f2b24";
-  return `--score-bg: hsl(${hue.toFixed(1)} ${saturation}% ${lightness.toFixed(1)}%); --score-fg: ${textColor};`;
+  const hue = 120 * normalized;
+  const saturation = 78;
+  const lightness = 88 - (38 * normalized);
+  const borderLightness = Math.max(32, lightness - 18);
+  const textColor = normalized > 0.82 ? "#ffffff" : "#1f2b24";
+  return `--score-bg: hsl(${hue.toFixed(1)} ${saturation}% ${lightness.toFixed(1)}%); --score-fg: ${textColor}; --score-border: hsl(${hue.toFixed(1)} ${saturation}% ${borderLightness.toFixed(1)}%);`;
 }
 
 function setLoadProgress(key, ratio, text) {
