@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LLMarkers MiniLM Prototype</title>
+  <style>
+    body { font-family: "Space Grotesk", sans-serif; margin: 0; padding: 1.5rem; background: #f7f3ea; color: #1f2b24; }
+    main { max-width: 1100px; margin: 0 auto; }
+    .panel { background: #fff; border: 1px solid #d9ddd9; border-radius: 12px; padding: 1rem; margin-top: 1rem; }
+    .row { display: grid; grid-template-columns: 1fr 180px; gap: 0.6rem; }
+    input, button { font: inherit; padding: 0.65rem 0.75rem; border-radius: 8px; border: 1px solid #d9ddd9; }
+    button { background: #0d6f68; color: #fff; border-color: #0d6f68; cursor: pointer; }
+    .muted { color: #52615a; }
+    .result { border-top: 1px solid #ebeeeb; padding-top: 0.75rem; margin-top: 0.75rem; }
+    code { font-family: "IBM Plex Mono", monospace; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+</head>
+<body>
+  <main>
+    <h1>MiniLM Browser Prototype</h1>
+    <p class="muted">This page tests browser-side query embedding with a smaller MiniLM model against precomputed SQLite profile vectors.</p>
+    <section class="panel">
+      <div class="row">
+        <input id="query" type="text" value="cytotoxic lymphocytes" />
+        <button id="run">Run MiniLM query</button>
+      </div>
+      <p id="status" class="muted">Loading...</p>
+      <div id="results"></div>
+    </section>
+  </main>
+  <script type="module" src="minilm_prototype.js"></script>
+</body>
+</html>
