@@ -440,7 +440,7 @@ body {
   border-radius: 999px;
   background: var(--score-bg, var(--brand-soft));
   color: var(--score-fg, var(--brand));
-  border: 1px solid rgba(13, 111, 104, 0.12);
+  border: 1px solid var(--score-border, rgba(13, 111, 104, 0.22));
   font-weight: 700;
   white-space: nowrap;
   font-size: 0.74rem;
