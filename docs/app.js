@@ -481,7 +481,7 @@ function updateProfilePlaceholder() {
   }
 }
 
-function renderProfileResults(results, mode, query, collectionLabel) {
+function renderProfileResults(results, mode, query) {
   if (!query) {
     el.profileQuerySummary.textContent = "";
     el.profileResults.innerHTML = "";
@@ -489,7 +489,7 @@ function renderProfileResults(results, mode, query, collectionLabel) {
   }
 
   if (!results.length) {
-    el.profileQuerySummary.textContent = `No profile matches found in ${collectionLabel}.`;
+    el.profileQuerySummary.textContent = "No profile matches found.";
     el.profileResults.innerHTML =
       '<article class="profile-empty">No profiles matched the current query. Try a broader phrase or a longer gene list.</article>';
     return;
@@ -499,7 +499,7 @@ function renderProfileResults(results, mode, query, collectionLabel) {
   const metricText = mode === "genes"
     ? `${PROFILE_RESULT_MIN_SCORE.toFixed(1)} Jaccard similarity`
     : `${PROFILE_RESULT_MIN_SCORE.toFixed(1)} cosine similarity`;
-  el.profileQuerySummary.textContent = `${results.length} matches >= ${metricText} in ${collectionLabel}.`;
+  el.profileQuerySummary.textContent = `${results.length} matches >= ${metricText}.`;
 
   el.profileResults.innerHTML = results
     .map((result) => {
@@ -541,10 +541,9 @@ function searchProfiles() {
   const query = el.profileQueryInput.value.trim();
   const mode = el.profileQueryMode.value;
   const candidates = state.profiles;
-  const collectionLabel = "all collections";
 
   if (!query) {
-    renderProfileResults([], mode, "", collectionLabel);
+    renderProfileResults([], mode, "");
     return;
   }
 
@@ -594,7 +593,7 @@ function searchProfiles() {
       .sort((a, b) => b.score - a.score || b.nSentences - a.nSentences || b.nGenes - a.nGenes);
   }
 
-  renderProfileResults(results, mode, query, collectionLabel);
+  renderProfileResults(results, mode, query);
 }
 
 function wireEvents() {
