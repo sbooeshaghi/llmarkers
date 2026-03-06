@@ -622,7 +622,7 @@ function renderProfileResults(results, mode, query) {
           <div class="profile-paper">${paperHtml}</div>
           <div class="profile-genes"><strong>Markers:</strong> <code>${esc(genesPreview)}</code></div>
           ${sharedHtml}
-          <div class="profile-evidence"><strong>"Quote":</strong> ${esc(evidence)}</div>
+          <div class="profile-evidence"><strong>Quote:</strong> "${esc(evidence)}"</div>
         </article>
       `;
     })
