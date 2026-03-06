@@ -90,10 +90,25 @@ def extract_year_from_text(value: str | None) -> int | None:
     return int(years[-1])
 
 
-def infer_benchmark_year(dataset_name: str, citation: str | None) -> int | None:
-    year = extract_year_from_text(citation)
-    if year is not None:
-        return year
+def infer_benchmark_year(dataset_name: str, metadata: dict[str, Any]) -> int | None:
+    year_value = metadata.get("year")
+    if year_value is not None:
+        try:
+            return int(str(year_value).strip())
+        except (TypeError, ValueError):
+            pass
+
+    citation = normalize_text(metadata.get("citation"))
+    if citation:
+        for pattern in (
+            r"\((20\d{2}|19\d{2})\)",
+            r",\s*(20\d{2}|19\d{2})\.",
+            r"\b(20\d{2}|19\d{2})\b(?=\.)",
+        ):
+            match = re.search(pattern, citation)
+            if match:
+                return int(match.group(1))
+
     suffix = re.search(r"((?:19|20)\d{2})$", dataset_name)
     if suffix:
         return int(suffix.group(1))
@@ -466,7 +481,7 @@ def ingest_benchmark(conn: sqlite3.Connection, data_dir: Path) -> None:
         title = infer_title_from_citation(citation)
         if title is None:
             title = infer_title_from_manuscript_txt(dataset_dir / "manuscript" / "manuscript.txt")
-        year = infer_benchmark_year(dataset, citation)
+        year = infer_benchmark_year(dataset, metadata)
 
         paper = PaperRecord(doi=doi, title=title, year=year, license=None, abstract=None)
         paper_id = get_or_create_paper(conn, paper)
