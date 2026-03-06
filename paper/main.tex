@@ -161,7 +161,10 @@
 \affil[4]{\small Chan Zuckerberg Biohub -- San Francisco, USA}
 \setlength{\affilsep}{2pt}        % space between affiliation lines
 % Center the affiliation block, but left-align its contents
-% \footnotetext[1]{Co-corresponding authors: sinab@berkeley.edu, astreets@berkeley.edu}
+% \author[1]{Author list\thanks{}}
+% \affil[1]{\small Affiliations}
+% \setlength{\affilsep}{2pt}        % space between affiliation lines
+% % Center the affiliation block, but left-align its contents
 
 
 \begin{document}
@@ -326,6 +329,9 @@ That standard hierarchical clustering on text-extracted markers, alone, recovers
 At the same time, cross-paper concordance for even well-defined cell types was modest. \claim{biorxiv-monocyte}{Monocytes appeared in 29 papers but shared a mean Jaccard of only 0.063.}\source{analysis/biorxiv_celltype_matching.ipynb} This low concordance is likely caused by diversity in study context, including rheumatoid arthritis, Sjogren's disease, HIV vaccine response, AML, interferon signaling, COVID-19, and other settings (Supplementary Table~\ref{tab:monocyte_papers}). Each paper likely reports monocyte markers relevant to its experimental question instead of a basal monocyte profile. 
 
 Text-extracted markers therefore serve as a linked index across the literature where cell-types can be aligned across papers by finding matching marker genes, independent of the nomenclature used to name the cell type. But complete marker gene profiles require the underlying data---differential expression tables, expression matrices---tied to the experimental context from which they were derived.
+
+\subsection{Finding cell type marker genes}
+
 
 \balance
 \section{Discussion}
