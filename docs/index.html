@@ -90,10 +90,10 @@
             Marker Search searches individual cell types by semantic search and marker genes by set inclusion. It uses the notion of a profile: one paper and one cell-type label grouped with all reported marker genes and any supporting text for that pair. The current database contains 3,909 profiles: 180 from the benchmark and 3,729 from bioRxiv.
           </p>
           <p>
-            Text search uses a fixed hybrid rule. For each profile, the site builds one text representation from the cell-type label and supporting sentences, and a second smaller context representation from the paper title and abstract. Query scoring uses 90% weight on profile text and 10% weight on paper context, with small lexical bonuses for direct label overlap.
+            Text search uses a fixed hybrid rule over two stored text fields. The main profile text is built by repeating the cell-type label three times, then appending the paper title and all supporting sentences for that profile. The context text is built from the paper title and abstract alone. Both fields are normalized to uppercase tokens, expanded with token bigrams, hashed into 96-dimensional vectors, and L2-normalized before storage in SQLite.
           </p>
           <p>
-            Gene search uses set overlap instead of text similarity. Users can query with gene symbols or Ensembl identifiers. Profiles are ranked by Jaccard similarity between the query set and the stored marker set. Both text and gene search return every result with score greater than or equal to 0.2.
+            At query time, the site embeds the input text with the same token-and-bigram hash function. The final text score is 0.9 times cosine similarity to the main profile text plus 0.1 times cosine similarity to the title-and-abstract context, with small bonuses for direct token overlap and exact label matches. Gene search uses set overlap instead of text similarity. Users can query with gene symbols or Ensembl identifiers. Profiles are ranked by Jaccard similarity between the query set and the stored marker set. Both text and gene search return every result with score greater than or equal to 0.2.
           </p>
           <p>
             All search runs in the browser against the local SQLite file. No backend server is used for ranking or retrieval.
