@@ -76,7 +76,7 @@
     <section id="panelMethods" class="tab-panel" hidden>
       <section class="methods-panel">
         <article class="method-card">
-          <h2>Raw Data Curation</h2>
+          <h2>Data Curation</h2>
           <p>
             The current SQLite database contains 511 papers, split into 7 benchmark papers and 504 bioRxiv papers. Across those papers,
             the site stores 14,972 marker records. Each record keeps a paper identifier, a cell-type label, a gene name, an optional
@@ -96,7 +96,7 @@
             The Data tab exposes these marker-level rows directly. That view is meant for provenance: which paper a marker came from, which cell type
             it was attached to, whether an Ensembl identifier was resolved, and what text evidence supported the extraction when the source was text.
           </p>
-          <h2>Virtual Cell Search</h2>
+          <h2 class="method-section-break">Marker Search</h2>
           <p>
             Virtual Cell Search does not search individual marker rows. It searches profile objects built from those rows. A profile is one paper and
             one cell-type label grouped with all reported marker genes and any supporting text sentences for that pair. The current database contains
