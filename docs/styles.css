@@ -528,6 +528,26 @@ body {
   min-height: 0;
 }
 
+.table-guide {
+  padding: 0.7rem 0.75rem 0;
+}
+
+.table-guide a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #1d5f5a;
+  text-decoration: none;
+  border-bottom: 1px solid #9fc8c3;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.table-guide a:hover {
+  color: #124541;
+  border-bottom-color: #124541;
+}
+
 .table-meta {
   display: flex;
   justify-content: space-between;
