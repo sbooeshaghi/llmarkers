@@ -51,3 +51,7 @@ WHERE pr.collection = 'biorxiv';
 - `source_rationale` is blank for image-derived markers on purpose.
 - `feature_id` may be blank when no Ensembl mapping was found.
 - `collection` in `profiles` is either `benchmark` or `biorxiv`.
+
+## If this was useful
+- Star the repository: https://github.com/sbooeshaghi/llmarkers
+- Reference the project by linking to the repository until the manuscript is available.
