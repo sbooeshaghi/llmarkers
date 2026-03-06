@@ -10,9 +10,7 @@ Schema:
 from __future__ import annotations
 
 import argparse
-from collections import Counter
 import json
-import math
 import re
 import sqlite3
 from dataclasses import dataclass
@@ -32,9 +30,6 @@ BENCHMARK_DATASETS = [
 ]
 
 DOI_RE = re.compile(r"10\.\d{4,9}/[^\s\"<>]+", re.IGNORECASE)
-TOKEN_RE = re.compile(r"[A-Z0-9]+")
-PROFILE_EMBED_DIM = 96
-PROFILE_LABEL_WEIGHT = 3
 
 
 @dataclass
@@ -252,6 +247,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
         """
         PRAGMA foreign_keys = ON;
 
+        DROP TABLE IF EXISTS profile_embeddings_biomed;
         DROP TABLE IF EXISTS profiles;
         DROP TABLE IF EXISTS marker_metrics;
         DROP TABLE IF EXISTS markers;
@@ -294,8 +290,6 @@ def create_schema(conn: sqlite3.Connection) -> None:
             gene_names_json TEXT NOT NULL,
             gene_ids_json TEXT NOT NULL,
             evidence_sentences_json TEXT NOT NULL,
-            text_embedding_json TEXT NOT NULL,
-            context_embedding_json TEXT NOT NULL,
             n_genes INTEGER NOT NULL,
             n_gene_ids INTEGER NOT NULL,
             n_sentences INTEGER NOT NULL
@@ -531,46 +525,6 @@ def dedupe_keep_order(values: list[str]) -> list[str]:
     return out
 
 
-def normalize_profile_text(value: str) -> str:
-    text = value.upper().replace("+", " PLUS ").replace("-", " MINUS ")
-    text = re.sub(r"[^A-Z0-9\s]", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def profile_tokens(text: str) -> list[str]:
-    tokens = TOKEN_RE.findall(normalize_profile_text(text))
-    if len(tokens) < 2:
-        return tokens
-    bigrams = [f"{tokens[i]}_{tokens[i + 1]}" for i in range(len(tokens) - 1)]
-    return tokens + bigrams
-
-
-def fnv1a_32(text: str) -> int:
-    h = 2166136261
-    for b in text.encode("utf-8"):
-        h ^= b
-        h = (h * 16777619) & 0xFFFFFFFF
-    return h
-
-
-def embed_profile_text(text: str, dim: int = PROFILE_EMBED_DIM) -> list[float]:
-    counts = Counter(profile_tokens(text))
-    vec = [0.0] * dim
-    for token, count in counts.items():
-        base = fnv1a_32(token)
-        weight = 1.0 + math.log(count)
-        for j in range(4):
-            mixed = (base ^ (((j + 1) * 0x9E3779B9) & 0xFFFFFFFF)) & 0xFFFFFFFF
-            idx = mixed % dim
-            sign = 1.0 if ((mixed >> 31) & 1) == 0 else -1.0
-            vec[idx] += sign * weight
-
-    norm = math.sqrt(sum(v * v for v in vec))
-    if norm == 0:
-        return vec
-    return [v / norm for v in vec]
-
-
 def build_profiles(conn: sqlite3.Connection) -> None:
     rows = conn.execute(
         """
@@ -630,12 +584,9 @@ def build_profiles(conn: sqlite3.Connection) -> None:
         gene_names = dedupe_keep_order(bucket["gene_names"])
         gene_ids = dedupe_keep_order(bucket["gene_ids"])
         sentences = dedupe_keep_order(bucket["sentences"])
-        weighted_label = [label] * PROFILE_LABEL_WEIGHT
-        text_parts = weighted_label + ([title] if title else []) + sentences
+        text_parts = [label] + ([title] if title else []) + sentences
         text_blob = " ".join(part for part in text_parts if part)
         paper_context_blob = " ".join(part for part in [title, abstract] if part)
-        embedding = embed_profile_text(text_blob)
-        context_embedding = embed_profile_text(paper_context_blob)
 
         conn.execute(
             """
@@ -648,12 +599,10 @@ def build_profiles(conn: sqlite3.Connection) -> None:
                 gene_names_json,
                 gene_ids_json,
                 evidence_sentences_json,
-                text_embedding_json,
-                context_embedding_json,
                 n_genes,
                 n_gene_ids,
                 n_sentences
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 bucket["paper_id"],
@@ -664,8 +613,6 @@ def build_profiles(conn: sqlite3.Connection) -> None:
                 json.dumps(gene_names),
                 json.dumps(gene_ids),
                 json.dumps(sentences),
-                json.dumps([round(v, 6) for v in embedding]),
-                json.dumps([round(v, 6) for v in context_embedding]),
                 len(gene_names),
                 len(gene_ids),
                 len(sentences),

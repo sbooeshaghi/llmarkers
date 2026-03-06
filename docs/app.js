@@ -1,6 +1,5 @@
 /* global initSqlJs */
 
-const PROFILE_EMBED_DIM = 96;
 const DEFAULT_PROFILE_WEIGHT = 0.9;
 const DEFAULT_CONTEXT_WEIGHT = 0.1;
 const PROFILE_RESULT_MIN_SCORE = 0.2;
@@ -14,9 +13,11 @@ const state = {
   profiles: [],
   miniLmExtractor: null,
   miniLmStatus: "idle",
+  loadProgress: {
+    db: { ratio: 0, text: "Waiting" },
+    model: { ratio: 0, text: "Waiting" },
+  },
 };
-
-const textEncoder = new TextEncoder();
 
 const el = {
   tabHome: document.getElementById("tabHome"),
@@ -33,6 +34,10 @@ const el = {
   countMarkersDetail: document.getElementById("countMarkersDetail"),
   countProfiles: document.getElementById("countProfiles"),
   countProfilesDetail: document.getElementById("countProfilesDetail"),
+  loadStrip: document.getElementById("loadStrip"),
+  loadStatusText: document.getElementById("loadStatusText"),
+  loadStatusMeta: document.getElementById("loadStatusMeta"),
+  loadBarFill: document.getElementById("loadBarFill"),
   profileQueryMode: document.getElementById("profileQueryMode"),
   profileQueryInput: document.getElementById("profileQueryInput"),
   profileQueryButton: document.getElementById("profileQueryButton"),
@@ -116,75 +121,6 @@ function runScalar(sql, params = []) {
   return Number(first[Object.keys(first)[0]]) || 0;
 }
 
-function normalizeProfileText(value) {
-  return String(value || "")
-    .toUpperCase()
-    .replaceAll("+", " PLUS ")
-    .replaceAll("-", " MINUS ")
-    .replace(/[^A-Z0-9\s]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function profileTokens(value) {
-  const normalized = normalizeProfileText(value);
-  const tokens = normalized.match(/[A-Z0-9]+/g) || [];
-  const bigrams = [];
-  for (let i = 0; i < tokens.length - 1; i += 1) {
-    bigrams.push(`${tokens[i]}_${tokens[i + 1]}`);
-  }
-  return tokens.concat(bigrams);
-}
-
-function expandedTokenSet(tokens) {
-  const out = new Set();
-  for (const token of tokens) {
-    if (!token) continue;
-    out.add(token);
-    if (token.length > 4 && token.endsWith("S")) {
-      out.add(token.slice(0, -1));
-    }
-  }
-  return out;
-}
-
-function fnv1a32(text) {
-  const bytes = textEncoder.encode(text);
-  let hash = 0x811c9dc5;
-  for (const byte of bytes) {
-    hash ^= byte;
-    hash = Math.imul(hash, 0x01000193) >>> 0;
-  }
-  return hash >>> 0;
-}
-
-function embedProfileText(text, dim = PROFILE_EMBED_DIM) {
-  const counts = new Map();
-  for (const token of profileTokens(text)) {
-    counts.set(token, (counts.get(token) || 0) + 1);
-  }
-
-  const vec = new Float32Array(dim);
-  for (const [token, count] of counts.entries()) {
-    const base = fnv1a32(token);
-    const weight = 1 + Math.log(count);
-    for (let j = 0; j < 4; j += 1) {
-      const salt = (((j + 1) * 0x9e3779b9) >>> 0);
-      const mixed = (base ^ salt) >>> 0;
-      const idx = mixed % dim;
-      const sign = ((mixed >>> 31) & 1) === 0 ? 1 : -1;
-      vec[idx] += sign * weight;
-    }
-  }
-
-  let norm = 0;
-  for (let i = 0; i < vec.length; i += 1) norm += vec[i] * vec[i];
-  norm = Math.sqrt(norm);
-  if (!norm) return vec;
-  for (let i = 0; i < vec.length; i += 1) vec[i] /= norm;
-  return vec;
-}
-
 function cosineSimilarity(a, b) {
   let dot = 0;
   let an = 0;
@@ -256,9 +192,73 @@ function jaccardSimilarity(a, b) {
   return union ? shared / union : 0;
 }
 
-function lexicalCoverage(queryTokens, profileTokensSet) {
-  if (!queryTokens.size) return 0;
-  return intersectionSize(queryTokens, profileTokensSet) / queryTokens.size;
+function clamp01(value) {
+  return Math.max(0, Math.min(1, value || 0));
+}
+
+function setLoadProgress(key, ratio, text) {
+  state.loadProgress[key] = {
+    ratio: clamp01(ratio),
+    text: text || state.loadProgress[key]?.text || "",
+  };
+  updateLoadUi();
+}
+
+function updateLoadUi() {
+  const db = state.loadProgress.db;
+  const model = state.loadProgress.model;
+  const overall = ((db.ratio || 0) + (model.ratio || 0)) / 2;
+  const dbText = `DB ${Math.round((db.ratio || 0) * 100)}%`;
+  const modelText = `MiniLM ${Math.round((model.ratio || 0) * 100)}%`;
+
+  el.loadStatusText.textContent = `${db.text}. ${model.text}.`;
+  el.loadStatusMeta.textContent = `${dbText} | ${modelText}`;
+  el.loadBarFill.style.width = `${Math.round(overall * 100)}%`;
+  el.loadStrip.querySelector(".load-bar").setAttribute("aria-valuenow", String(Math.round(overall * 100)));
+
+  if (db.ratio >= 1 && model.ratio >= 1 && state.miniLmStatus !== "failed") {
+    el.loadStatusText.textContent = "Database and MiniLM ready.";
+    el.loadStatusMeta.textContent = "100%";
+    window.setTimeout(() => {
+      el.loadStrip.classList.add("is-hidden");
+    }, 1200);
+  }
+}
+
+async function fetchWithProgress(url, onProgress) {
+  const response = await fetch(url, { cache: "no-cache" });
+  if (!response.ok) {
+    throw new Error(`Could not load ${url} (HTTP ${response.status})`);
+  }
+
+  const contentLength = Number(response.headers.get("content-length")) || 0;
+  if (!response.body || !contentLength) {
+    const buffer = await response.arrayBuffer();
+    onProgress?.(1, "Database downloaded");
+    return buffer;
+  }
+
+  const reader = response.body.getReader();
+  const chunks = [];
+  let received = 0;
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    if (value) {
+      chunks.push(value);
+      received += value.length;
+      onProgress?.(received / contentLength, "Downloading database");
+    }
+  }
+
+  const merged = new Uint8Array(received);
+  let offset = 0;
+  for (const chunk of chunks) {
+    merged.set(chunk, offset);
+    offset += chunk.length;
+  }
+  onProgress?.(1, "Database downloaded");
+  return merged.buffer;
 }
 
 function currentCollection() {
@@ -375,8 +375,6 @@ function loadProfiles() {
       pr.gene_names_json,
       pr.gene_ids_json,
       pr.evidence_sentences_json,
-      pr.text_embedding_json,
-      pr.context_embedding_json,
       emb.text_embedding_blob,
       emb.context_embedding_blob,
       pr.n_genes,
@@ -397,12 +395,8 @@ function loadProfiles() {
     const geneNames = parseJsonArray(row.gene_names_json);
     const geneIds = parseJsonArray(row.gene_ids_json);
     const evidenceSentences = parseJsonArray(row.evidence_sentences_json);
-    const embeddingRaw = parseJsonArray(row.text_embedding_json);
-    const contextEmbeddingRaw = parseJsonArray(row.context_embedding_json);
     const miniLmTextEmbedding = blobToFloat16Array(row.text_embedding_blob);
     const miniLmContextEmbedding = blobToFloat16Array(row.context_embedding_blob);
-    const labelTokens = expandedTokenSet(normalizeProfileText(row.group_name).match(/[A-Z0-9]+/g) || []);
-    const textTokens = expandedTokenSet(normalizeProfileText(row.text_blob).match(/[A-Z0-9]+/g) || []);
     return {
       profileId: Number(row.profile_id),
       paperId: Number(row.paper_id),
@@ -416,13 +410,9 @@ function loadProfiles() {
       geneNames,
       geneIds,
       evidenceSentences,
-      embedding: Float32Array.from(embeddingRaw),
-      contextEmbedding: Float32Array.from(contextEmbeddingRaw),
       miniLmTextEmbedding,
       miniLmContextEmbedding,
       geneTokenSet: new Set([...geneNames, ...geneIds.filter(Boolean)]),
-      labelTokenSet: labelTokens,
-      textTokenSet: textTokens,
       nGenes: Number(row.n_genes) || geneNames.length,
       nGeneIds: Number(row.n_gene_ids) || geneIds.length,
       nSentences: Number(row.n_sentences) || evidenceSentences.length,
@@ -440,6 +430,7 @@ async function ensureMiniLmExtractor() {
   }
 
   state.miniLmStatus = "loading";
+  setLoadProgress("model", 0.02, "Starting MiniLM download");
   try {
     const mod = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1");
     mod.env.allowLocalModels = false;
@@ -447,24 +438,28 @@ async function ensureMiniLmExtractor() {
     state.miniLmExtractor = await mod.pipeline("feature-extraction", MINILM_MODEL_ID, {
       pooling: "mean",
       normalize: true,
+      progress_callback: (item) => {
+        const loaded = Number(item?.loaded);
+        const total = Number(item?.total);
+        const rawProgress = Number(item?.progress);
+        let ratio = Number.isFinite(rawProgress)
+          ? (rawProgress > 1 ? rawProgress / 100 : rawProgress)
+          : 0;
+        if (Number.isFinite(loaded) && Number.isFinite(total) && total > 0) {
+          ratio = loaded / total;
+        }
+        const status = item?.status || item?.file || "Loading MiniLM";
+        setLoadProgress("model", Math.max(0.02, clamp01(ratio)), status);
+      },
     });
     state.miniLmStatus = "ready";
+    setLoadProgress("model", 1, "MiniLM ready");
     return state.miniLmExtractor;
   } catch (error) {
     state.miniLmStatus = "failed";
+    setLoadProgress("model", 1, "MiniLM unavailable");
     throw error;
   }
-}
-
-function warmMiniLmInBackground() {
-  if (state.miniLmExtractor || state.miniLmStatus === "loading" || state.miniLmStatus === "failed") {
-    return;
-  }
-  setTimeout(() => {
-    ensureMiniLmExtractor().catch((error) => {
-      console.error("Background MiniLM warmup failed.", error);
-    });
-  }, 0);
 }
 
 async function embedMiniLmQuery(query) {
@@ -620,34 +615,6 @@ function renderProfileResults(results, mode, query) {
     .join("");
 }
 
-function searchProfilesWithFallback(query, candidates) {
-  const queryVec = embedProfileText(query);
-  const contextQueryVec = embedProfileText(query);
-  const queryTokens = expandedTokenSet(normalizeProfileText(query).match(/[A-Z0-9]+/g) || []);
-  const normalizedQuery = normalizeProfileText(query);
-
-  return candidates
-    .map((profile) => {
-      const profileCosine = cosineSimilarity(queryVec, profile.embedding);
-      const contextCosine = cosineSimilarity(contextQueryVec, profile.contextEmbedding);
-      const labelCoverage = lexicalCoverage(queryTokens, profile.labelTokenSet);
-      const textCoverage = lexicalCoverage(queryTokens, profile.textTokenSet);
-      const labelHit = normalizeProfileText(profile.groupName).includes(normalizedQuery) ? 0.12 : 0;
-      return {
-        ...profile,
-        score:
-          (DEFAULT_PROFILE_WEIGHT * profileCosine) +
-          (DEFAULT_CONTEXT_WEIGHT * contextCosine) +
-          (0.22 * labelCoverage) +
-          (0.05 * textCoverage) +
-          labelHit,
-        sharedMatches: [],
-      };
-    })
-    .filter((profile) => profile.score >= PROFILE_RESULT_MIN_SCORE)
-    .sort((a, b) => b.score - a.score || b.nSentences - a.nSentences || b.nGenes - a.nGenes);
-}
-
 function searchProfilesWithMiniLm(query, candidates, queryEmbedding) {
   return candidates
     .filter((profile) => profile.miniLmTextEmbedding && profile.miniLmContextEmbedding)
@@ -699,9 +666,9 @@ async function searchProfiles() {
       const queryEmbedding = await embedMiniLmQuery(query);
       results = searchProfilesWithMiniLm(query, candidates, queryEmbedding);
     } catch (error) {
-      console.error("MiniLM query embedding failed; using local fallback.", error);
-      el.profileQuerySummary.textContent = "MiniLM load failed. Using local fallback search.";
-      results = searchProfilesWithFallback(query, candidates);
+      console.error("MiniLM query embedding failed.", error);
+      el.profileQuerySummary.textContent = "MiniLM query model is unavailable.";
+      results = [];
     } finally {
       el.profileQueryButton.disabled = false;
     }
@@ -771,17 +738,24 @@ function wireEvents() {
 
 async function init() {
   try {
-    el.statusNote.textContent = "Loading SQLite engine...";
-    const SQL = await initSqlJs({
-      locateFile: (file) => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/${file}`,
+    setLoadProgress("db", 0.01, "Preparing database");
+    setLoadProgress("model", 0.01, "Preparing MiniLM");
+    el.statusNote.textContent = "Loading database...";
+
+    const modelWarmup = ensureMiniLmExtractor().catch((error) => {
+      console.error("MiniLM warmup failed.", error);
+      return null;
     });
 
-    el.statusNote.textContent = "Loading database file...";
-    const response = await fetch("llmarkers.sqlite", { cache: "no-cache" });
-    if (!response.ok) {
-      throw new Error(`Could not load llmarkers.sqlite (HTTP ${response.status})`);
-    }
-    const buffer = await response.arrayBuffer();
+    const sqlPromise = initSqlJs({
+      locateFile: (file) => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/${file}`,
+    });
+    const dbFetchPromise = fetchWithProgress("llmarkers.sqlite", (ratio, text) => {
+      setLoadProgress("db", ratio, text);
+    });
+
+    const [SQL, buffer] = await Promise.all([sqlPromise, dbFetchPromise]);
+    setLoadProgress("db", 1, "Database ready");
 
     state.db = new SQL.Database(new Uint8Array(buffer));
     updateSummaryCards();
@@ -792,11 +766,12 @@ async function init() {
     wireEvents();
     refreshTable();
     searchProfiles();
-    warmMiniLmInBackground();
 
     el.statusNote.textContent = "Database loaded.";
+    await modelWarmup;
   } catch (err) {
     console.error(err);
+    setLoadProgress("db", 1, "Database unavailable");
     el.statusNote.textContent = `Failed to load database: ${err.message}`;
   }
 }
