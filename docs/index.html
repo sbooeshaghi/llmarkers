@@ -97,29 +97,29 @@
         <article class="method-card">
           <h2>Data Curation</h2>
           <p>
-            The database contains 511 papers. These include 7 benchmark studies and 504 bioRxiv preprints. Across them, the site stores 14,972 marker records.
+            The database contains 511 papers: 7 benchmark studies and 504 bioRxiv preprints. Across them, the site stores 14,972 marker records.
           </p>
           <p>
-            Each record stores a paper, a cell-type label, a gene, an optional Ensembl identifier, a source type, and optional supporting text. The benchmark records also carry 1,224 rows of differential-expression metadata, including log fold change, corrected p-value, and rank when those values exist on disk.
+            Each marker record stores a paper, a cell-type label, a gene, an optional Ensembl identifier, a source type, and optional supporting text. The benchmark records also carry 1,224 rows of differential-expression metadata, including log fold change, corrected p-value, and rank.
           </p>
           <p>
-            Source type is tracked explicitly. The current build contains 13,355 text-derived records and 1,617 image-derived records. Image-derived markers are kept, but their rationale text is excluded. Ensembl identifiers are added when a marker can be mapped during ingestion. In the current build, 10,836 marker records have a non-empty Ensembl identifier.
+            The current build contains 13,355 text-derived records and 1,617 image-derived records. Image-derived markers are kept, but their rationale text is excluded from the site. Ensembl identifiers are added when a marker can be mapped during ingestion. In the current build, 10,836 marker records have a non-empty Ensembl identifier.
           </p>
           <p>
-            The Data tab shows these rows directly. It is a provenance view. It answers a simple question: which paper reported which marker for which cell type, and what text supports that claim when the source was text.
+            The Data tab shows these rows directly. It is a provenance view of the database on disk: which paper reported which marker for which cell type, and what text supports that claim when the source was text.
           </p>
           <h2 class="method-section-break">Marker Search</h2>
           <p>
-            Marker Search searches individual cell types by semantic search and marker genes by set inclusion. It uses the notion of a profile: one paper and one cell-type label grouped with all reported marker genes and any supporting text for that pair. The current database contains 3,909 profiles: 180 from the benchmark and 3,729 from bioRxiv.
+            Marker Search searches cell-type descriptions by semantic similarity and marker genes by set overlap. The search unit is a profile: one paper and one cell-type label grouped with its reported markers and supporting text. The current database contains 3,909 profiles: 180 from the benchmark and 3,729 from bioRxiv.
           </p>
           <p>
-            Text search uses two stored text fields. For each profile, the main text field is the cell-type label, the paper title, and the supporting sentences attached to that profile. The context field is the paper title and abstract. Both fields are embedded offline with MiniLM and stored in SQLite as float16 vectors.
+            For text search, each profile has two text fields. The first contains the cell-type label, the paper title, and the supporting sentences attached to that profile. The second contains the paper title and abstract. Both are embedded offline with MiniLM and stored in SQLite as float16 vectors.
           </p>
           <p>
-            At query time, the browser embeds the input text with MiniLM through Transformers.js and ONNX Runtime. In the current site, this runs in the browser on CPU with the default q8 model weights. Profiles are scored by 0.9 times cosine similarity to the main profile embedding plus 0.1 times cosine similarity to the title-and-abstract context embedding. Gene search uses set overlap instead of text similarity. Users can query with gene symbols or Ensembl identifiers. Profiles are ranked by Jaccard similarity between the query set and the stored marker set. Both text and gene search return every result with score greater than or equal to 0.2.
+            At query time, the browser embeds the input text with MiniLM through Transformers.js and ONNX Runtime. In the current site this runs in the browser on CPU with q8 model weights. Profiles are scored as 0.9 times cosine similarity to the main profile embedding plus 0.1 times cosine similarity to the title-and-abstract context embedding. Gene search is separate. Users can query with gene symbols or Ensembl identifiers, and profiles are ranked by Jaccard similarity between the query set and the stored marker set. Both text and gene search return results with score greater than or equal to 0.2.
           </p>
           <p>
-            All search runs in the browser against the local SQLite file. No backend server is used for query embedding, ranking, or retrieval.
+            Search runs entirely in the browser against the local SQLite file. No backend server is used for query embedding, ranking, or retrieval.
           </p>
         </article>
       </section>
@@ -130,13 +130,13 @@
         <article class="method-card">
           <h2>About LLMarkers</h2>
           <p>
-            LLMarkers is a literature-linked marker-gene resource. It combines the seven-study benchmark used in the manuscript with a larger corpus of markers extracted from 504 bioRxiv preprints.
+            LLMarkers is a literature-linked marker-gene resource. It combines the seven-study benchmark used in the manuscript with markers extracted from 504 bioRxiv preprints.
           </p>
           <p>
-            This site reads directly from <code>llmarkers.sqlite</code> in the browser. It supports two views of the same data. The Data tab exposes marker-level records. The Search tab groups those records into paper-level cell-type profiles for retrieval by text or genes.
+            This site reads directly from <code>llmarkers.sqlite</code> in the browser. The Data tab exposes marker-level records. The Search tab groups those records into paper-level cell-type profiles that can be queried by text or by genes.
           </p>
           <p>
-            The goal is to keep marker genes tied to their paper, their reported cell type, and their supporting evidence. Source code and the data pipeline are available in the <a href="https://github.com/sbooeshaghi/llmarkers" target="_blank" rel="noopener">llmarkers GitHub repository</a>.
+            The goal is to keep marker genes tied to the paper that reported them, the cell type they were used for, and the text that supports that claim. Source code and the data pipeline are available in the <a href="https://github.com/sbooeshaghi/llmarkers" target="_blank" rel="noopener">llmarkers GitHub repository</a>.
           </p>
         </article>
       </section>
