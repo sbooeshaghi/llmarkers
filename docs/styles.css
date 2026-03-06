@@ -433,9 +433,18 @@ body {
 }
 
 .profile-score {
-  color: var(--brand);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  background: var(--score-bg, var(--brand-soft));
+  color: var(--score-fg, var(--brand));
+  border: 1px solid rgba(13, 111, 104, 0.12);
   font-weight: 700;
   white-space: nowrap;
+  font-size: 0.74rem;
+  line-height: 1;
 }
 
 .profile-genes,
