@@ -340,6 +340,32 @@ body {
   line-height: 1.4;
 }
 
+.methods-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.method-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 1px 0 rgba(31, 43, 36, 0.05);
+}
+
+.method-card h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.method-card p {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .table-wrap {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -541,6 +567,10 @@ code,
   .profile-results {
     grid-template-columns: 1fr;
     max-height: none;
+  }
+
+  .methods-panel {
+    grid-template-columns: 1fr;
   }
 
   .cards {

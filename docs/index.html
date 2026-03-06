@@ -24,6 +24,7 @@
 
     <nav class="tabs" aria-label="Page sections">
       <button id="tabHome" class="tab is-active" type="button" data-tab="home" aria-pressed="true">Home</button>
+      <button id="tabMethods" class="tab" type="button" data-tab="methods" aria-pressed="false">Methods</button>
       <button id="tabRaw" class="tab" type="button" data-tab="raw" aria-pressed="false">Raw Data</button>
     </nav>
 
@@ -68,6 +69,44 @@
       </section>
 
       <p class="note" id="statusNote">Loading database…</p>
+    </section>
+
+    <section id="panelMethods" class="tab-panel" hidden>
+      <section class="methods-panel">
+        <article class="method-card">
+          <h2>Raw Data Curation</h2>
+          <p>
+            LLMarkers stores two linked corpora: the seven-paper benchmark used in the manuscript and a larger bioRxiv extraction corpus.
+            Each marker record is a paper-level claim with a cell-type label, a gene name, an optional Ensembl identifier, a source type,
+            and optional rationale text.
+          </p>
+          <p>
+            For the benchmark papers, marker-level differential expression metrics are added when they exist on disk. These include effect size,
+            corrected p-value, and rank in the differential expression table. For the bioRxiv corpus, the database keeps only the reported marker
+            claims and their extracted rationale text. Image-derived records are retained as markers but their rationale text is excluded.
+          </p>
+          <p>
+            The raw data table in this site exposes the marker-level records directly. It is useful when you want to inspect exactly what was extracted
+            from a paper, which cell type it was attached to, and whether an Ensembl identifier was resolved.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h2>Virtual Cell Search</h2>
+          <p>
+            Virtual Cell Search works on profile objects built from the raw marker records. A profile is one paper and one cell-type label grouped
+            with all reported marker genes and any supporting text sentences stored for that pair.
+          </p>
+          <p>
+            Text queries are compared against two text views of each profile: the local profile text and a smaller paper-context text made from the
+            paper title and abstract. The current site uses a fixed hybrid score with 90% weight on the profile text and 10% weight on paper context.
+          </p>
+          <p>
+            Gene queries use marker-set overlap instead of text similarity. Users can search with gene symbols or Ensembl identifiers, and the site
+            returns the closest paper-cell-type profiles from the local SQLite database without requiring a backend server.
+          </p>
+        </article>
+      </section>
     </section>
 
     <section id="panelRaw" class="tab-panel" hidden>
