@@ -10,7 +10,9 @@ Schema:
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import json
+import math
 import re
 import sqlite3
 from dataclasses import dataclass
@@ -30,6 +32,9 @@ BENCHMARK_DATASETS = [
 ]
 
 DOI_RE = re.compile(r"10\.\d{4,9}/[^\s\"<>]+", re.IGNORECASE)
+TOKEN_RE = re.compile(r"[A-Z0-9]+")
+PROFILE_EMBED_DIM = 96
+PROFILE_LABEL_WEIGHT = 3
 
 
 @dataclass
@@ -38,6 +43,7 @@ class PaperRecord:
     title: str | None
     year: int | None
     license: str | None
+    abstract: str | None = None
 
 
 def normalize_text(value: Any) -> str:
@@ -195,6 +201,7 @@ def parse_biorxiv_xml(xml_path: Path) -> PaperRecord | None:
     title = None
     year = None
     license_text = None
+    abstract = None
 
     for node in root.findall(".//article-id"):
         if node.attrib.get("pub-id-type") == "doi" and node.text:
@@ -221,10 +228,14 @@ def parse_biorxiv_xml(xml_path: Path) -> PaperRecord | None:
         p_text = "".join(p.itertext()).strip() if p is not None else ""
         license_text = href or p_text or None
 
+    abstract_node = root.find(".//abstract")
+    if abstract_node is not None:
+        abstract = normalize_text(" ".join(abstract_node.itertext())) or None
+
     if doi is None:
         return None
 
-    return PaperRecord(doi=doi, title=title, year=year, license=license_text)
+    return PaperRecord(doi=doi, title=title, year=year, license=license_text, abstract=abstract)
 
 
 def find_biorxiv_article_xml(folder: Path) -> Path | None:
@@ -241,6 +252,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
         """
         PRAGMA foreign_keys = ON;
 
+        DROP TABLE IF EXISTS profiles;
         DROP TABLE IF EXISTS marker_metrics;
         DROP TABLE IF EXISTS markers;
         DROP TABLE IF EXISTS papers;
@@ -250,7 +262,8 @@ def create_schema(conn: sqlite3.Connection) -> None:
             doi TEXT UNIQUE,
             title TEXT,
             year INTEGER,
-            license TEXT
+            license TEXT,
+            abstract TEXT
         );
 
         CREATE TABLE markers (
@@ -271,11 +284,31 @@ def create_schema(conn: sqlite3.Connection) -> None:
             rank INTEGER
         );
 
+        CREATE TABLE profiles (
+            profile_id INTEGER PRIMARY KEY,
+            paper_id INTEGER NOT NULL REFERENCES papers(paper_id),
+            collection TEXT NOT NULL,
+            group_name TEXT NOT NULL,
+            text_blob TEXT NOT NULL,
+            paper_context_blob TEXT NOT NULL,
+            gene_names_json TEXT NOT NULL,
+            gene_ids_json TEXT NOT NULL,
+            evidence_sentences_json TEXT NOT NULL,
+            text_embedding_json TEXT NOT NULL,
+            context_embedding_json TEXT NOT NULL,
+            n_genes INTEGER NOT NULL,
+            n_gene_ids INTEGER NOT NULL,
+            n_sentences INTEGER NOT NULL
+        );
+
         CREATE INDEX idx_markers_paper_id ON markers(paper_id);
         CREATE INDEX idx_markers_group_name ON markers(group_name);
         CREATE INDEX idx_markers_feature_id ON markers(feature_id);
         CREATE INDEX idx_markers_source_type ON markers(source_type);
         CREATE INDEX idx_marker_metrics_rank ON marker_metrics(rank);
+        CREATE INDEX idx_profiles_paper_id ON profiles(paper_id);
+        CREATE INDEX idx_profiles_collection ON profiles(collection);
+        CREATE INDEX idx_profiles_group_name ON profiles(group_name);
         """
     )
 
@@ -286,8 +319,8 @@ def get_or_create_paper(conn: sqlite3.Connection, paper: PaperRecord) -> int:
         return int(row[0])
 
     cur = conn.execute(
-        "INSERT INTO papers (doi, title, year, license) VALUES (?, ?, ?, ?)",
-        (paper.doi, paper.title, paper.year, paper.license),
+        "INSERT INTO papers (doi, title, year, license, abstract) VALUES (?, ?, ?, ?, ?)",
+        (paper.doi, paper.title, paper.year, paper.license, paper.abstract),
     )
     return int(cur.lastrowid)
 
@@ -437,7 +470,7 @@ def ingest_benchmark(conn: sqlite3.Connection, data_dir: Path) -> None:
             title = infer_title_from_manuscript_txt(dataset_dir / "manuscript" / "manuscript.txt")
         year = infer_benchmark_year(dataset, citation)
 
-        paper = PaperRecord(doi=doi, title=title, year=year, license=None)
+        paper = PaperRecord(doi=doi, title=title, year=year, license=None, abstract=None)
         paper_id = get_or_create_paper(conn, paper)
 
         human_rows = read_json_list(dataset_dir / "evidence_human" / "extracted.json")
@@ -483,6 +516,159 @@ def ingest_biorxiv(conn: sqlite3.Connection, biorxiv_dir: Path) -> None:
             insert_marker(conn, paper_id, row, metrics=None)
 
 
+def dedupe_keep_order(values: list[str]) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        if not value or value in seen:
+            continue
+        seen.add(value)
+        out.append(value)
+    return out
+
+
+def normalize_profile_text(value: str) -> str:
+    text = value.upper().replace("+", " PLUS ").replace("-", " MINUS ")
+    text = re.sub(r"[^A-Z0-9\s]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def profile_tokens(text: str) -> list[str]:
+    tokens = TOKEN_RE.findall(normalize_profile_text(text))
+    if len(tokens) < 2:
+        return tokens
+    bigrams = [f"{tokens[i]}_{tokens[i + 1]}" for i in range(len(tokens) - 1)]
+    return tokens + bigrams
+
+
+def fnv1a_32(text: str) -> int:
+    h = 2166136261
+    for b in text.encode("utf-8"):
+        h ^= b
+        h = (h * 16777619) & 0xFFFFFFFF
+    return h
+
+
+def embed_profile_text(text: str, dim: int = PROFILE_EMBED_DIM) -> list[float]:
+    counts = Counter(profile_tokens(text))
+    vec = [0.0] * dim
+    for token, count in counts.items():
+        base = fnv1a_32(token)
+        weight = 1.0 + math.log(count)
+        for j in range(4):
+            mixed = (base ^ (((j + 1) * 0x9E3779B9) & 0xFFFFFFFF)) & 0xFFFFFFFF
+            idx = mixed % dim
+            sign = 1.0 if ((mixed >> 31) & 1) == 0 else -1.0
+            vec[idx] += sign * weight
+
+    norm = math.sqrt(sum(v * v for v in vec))
+    if norm == 0:
+        return vec
+    return [v / norm for v in vec]
+
+
+def build_profiles(conn: sqlite3.Connection) -> None:
+    rows = conn.execute(
+        """
+        SELECT
+            p.paper_id,
+            p.title,
+            p.abstract,
+            m.group_name,
+            CASE
+                WHEN COALESCE(m.data_id, '') <> '' THEN 'benchmark'
+                ELSE 'biorxiv'
+            END AS collection,
+            m.feature_name,
+            m.feature_id,
+            m.source_rationale
+        FROM papers AS p
+        JOIN markers AS m ON m.paper_id = p.paper_id
+        ORDER BY p.paper_id, m.group_name, m.marker_id
+        """
+    ).fetchall()
+
+    grouped: dict[tuple[int, str], dict[str, Any]] = {}
+    for paper_id, title, abstract, group_name, collection, feature_name, feature_id, source_rationale in rows:
+        label = normalize_text(group_name)
+        if not label:
+            continue
+
+        key = (int(paper_id), label)
+        bucket = grouped.setdefault(
+            key,
+            {
+                "paper_id": int(paper_id),
+                "title": normalize_text(title),
+                "abstract": normalize_text(abstract),
+                "collection": collection,
+                "group_name": label,
+                "gene_names": [],
+                "gene_ids": [],
+                "sentences": [],
+            },
+        )
+        gene_name = normalize_text(feature_name).upper()
+        gene_id = normalize_text(feature_id).upper()
+        sentence = normalize_text(source_rationale)
+
+        if gene_name:
+            bucket["gene_names"].append(gene_name)
+        if gene_id:
+            bucket["gene_ids"].append(gene_id)
+        if sentence:
+            bucket["sentences"].append(sentence)
+
+    for bucket in grouped.values():
+        label = bucket["group_name"]
+        title = bucket["title"]
+        abstract = bucket["abstract"]
+        gene_names = dedupe_keep_order(bucket["gene_names"])
+        gene_ids = dedupe_keep_order(bucket["gene_ids"])
+        sentences = dedupe_keep_order(bucket["sentences"])
+        weighted_label = [label] * PROFILE_LABEL_WEIGHT
+        text_parts = weighted_label + ([title] if title else []) + sentences
+        text_blob = " ".join(part for part in text_parts if part)
+        paper_context_blob = " ".join(part for part in [title, abstract] if part)
+        embedding = embed_profile_text(text_blob)
+        context_embedding = embed_profile_text(paper_context_blob)
+
+        conn.execute(
+            """
+            INSERT INTO profiles (
+                paper_id,
+                collection,
+                group_name,
+                text_blob,
+                paper_context_blob,
+                gene_names_json,
+                gene_ids_json,
+                evidence_sentences_json,
+                text_embedding_json,
+                context_embedding_json,
+                n_genes,
+                n_gene_ids,
+                n_sentences
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                bucket["paper_id"],
+                bucket["collection"],
+                label,
+                text_blob,
+                paper_context_blob,
+                json.dumps(gene_names),
+                json.dumps(gene_ids),
+                json.dumps(sentences),
+                json.dumps([round(v, 6) for v in embedding]),
+                json.dumps([round(v, 6) for v in context_embedding]),
+                len(gene_names),
+                len(gene_ids),
+                len(sentences),
+            ),
+        )
+
+
 def summarize(conn: sqlite3.Connection) -> dict[str, int]:
     def scalar(query: str) -> int:
         row = conn.execute(query).fetchone()
@@ -514,6 +700,7 @@ def summarize(conn: sqlite3.Connection) -> dict[str, int]:
         ),
         "markers": scalar("SELECT COUNT(*) FROM markers"),
         "marker_metrics": scalar("SELECT COUNT(*) FROM marker_metrics"),
+        "profiles": scalar("SELECT COUNT(*) FROM profiles"),
     }
 
 
@@ -543,6 +730,7 @@ def main() -> None:
         create_schema(conn)
         ingest_benchmark(conn, args.data_dir)
         ingest_biorxiv(conn, args.data_dir / "biorxiv")
+        build_profiles(conn)
         conn.commit()
 
         stats = summarize(conn)
