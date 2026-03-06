@@ -31,6 +31,7 @@ const el = {
   profileQueryButton: document.getElementById("profileQueryButton"),
   profileQuerySummary: document.getElementById("profileQuerySummary"),
   profileResults: document.getElementById("profileResults"),
+  profileExamples: Array.from(document.querySelectorAll(".profile-example")),
   collectionFilter: document.getElementById("collectionFilter"),
   sourceTypeFilter: document.getElementById("sourceTypeFilter"),
   pageSizeFilter: document.getElementById("pageSizeFilter"),
@@ -620,6 +621,14 @@ function wireEvents() {
     updateProfilePlaceholder();
     searchProfiles();
   });
+  for (const button of el.profileExamples) {
+    button.addEventListener("click", () => {
+      el.profileQueryMode.value = button.dataset.mode || "text";
+      el.profileQueryInput.value = button.dataset.query || "";
+      updateProfilePlaceholder();
+      searchProfiles();
+    });
+  }
   el.profileQueryInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
