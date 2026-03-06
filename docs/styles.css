@@ -108,6 +108,12 @@ body {
   display: none;
 }
 
+#panelMethods {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 0.1rem;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
