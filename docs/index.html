@@ -87,7 +87,7 @@
           </p>
           <h2 class="method-section-break">Marker Search</h2>
           <p>
-            Marker Search does not search individual marker rows. It searches profile objects built from those rows. A profile is one paper and one cell-type label grouped with all reported marker genes and any supporting text for that pair. The current database contains 3,909 profiles: 180 from the benchmark and 3,729 from bioRxiv.
+            Marker Search searches individual cell types by semantic search and marker genes by set inclusion. It uses the notion of a profile: one paper and one cell-type label grouped with all reported marker genes and any supporting text for that pair. The current database contains 3,909 profiles: 180 from the benchmark and 3,729 from bioRxiv.
           </p>
           <p>
             Text search uses a fixed hybrid rule. For each profile, the site builds one text representation from the cell-type label and supporting sentences, and a second smaller context representation from the paper title and abstract. Query scoring uses 90% weight on profile text and 10% weight on paper context, with small lexical bonuses for direct label overlap.
