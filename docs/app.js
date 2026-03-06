@@ -475,7 +475,7 @@ function updateProfilePlaceholder() {
 
 function renderProfileResults(results, mode, query, collectionLabel) {
   if (!query) {
-    el.profileQuerySummary.textContent = "No profile query yet.";
+    el.profileQuerySummary.textContent = "";
     el.profileResults.innerHTML = "";
     return;
   }
