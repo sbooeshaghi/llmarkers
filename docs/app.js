@@ -48,7 +48,7 @@ const el = {
   profileExamples: Array.from(document.querySelectorAll(".profile-example")),
   collectionFilter: document.getElementById("collectionFilter"),
   sourceTypeFilter: document.getElementById("sourceTypeFilter"),
-  pageSizeFilter: document.getElementById("pageSizeFilter"),
+  speciesFilter: document.getElementById("speciesFilter"),
   searchInput: document.getElementById("searchInput"),
   tableBody: document.querySelector("#markerTable tbody"),
   tableCount: document.getElementById("tableCount"),
@@ -319,6 +319,12 @@ function buildWhere() {
     params.push(sourceType);
   }
 
+  const species = el.speciesFilter.value;
+  if (species !== "all") {
+    clauses.push("m.organism = ?");
+    params.push(species);
+  }
+
   const query = el.searchInput.value.trim().toLowerCase();
   if (query) {
     clauses.push(`(
@@ -381,6 +387,9 @@ function loadFilterOptions() {
   const sourceTypes = runRows(
     "SELECT source_type, COUNT(*) AS n FROM markers GROUP BY source_type ORDER BY source_type"
   );
+  const organisms = runRows(
+    "SELECT organism, COUNT(*) AS n FROM markers WHERE organism IS NOT NULL AND organism <> '' GROUP BY organism ORDER BY organism"
+  );
 
   el.sourceTypeFilter.innerHTML = '<option value="all">All</option>';
   for (const row of sourceTypes) {
@@ -388,6 +397,14 @@ function loadFilterOptions() {
     opt.value = row.source_type;
     opt.textContent = `${row.source_type} (${fmtInt(row.n)})`;
     el.sourceTypeFilter.appendChild(opt);
+  }
+
+  el.speciesFilter.innerHTML = '<option value="all">All</option>';
+  for (const row of organisms) {
+    const opt = document.createElement("option");
+    opt.value = row.organism;
+    opt.textContent = `${formatOrganism(row.organism)} (${fmtInt(row.n)})`;
+    el.speciesFilter.appendChild(opt);
   }
 }
 
@@ -733,11 +750,7 @@ function wireEvents() {
   });
 
   el.sourceTypeFilter.addEventListener("change", rerenderFromFirstPage);
-
-  el.pageSizeFilter.addEventListener("change", () => {
-    state.pageSize = Number(el.pageSizeFilter.value);
-    rerenderFromFirstPage();
-  });
+  el.speciesFilter.addEventListener("change", rerenderFromFirstPage);
 
   let searchTimer = null;
   el.searchInput.addEventListener("input", () => {
