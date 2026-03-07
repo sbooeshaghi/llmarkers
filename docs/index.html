@@ -100,7 +100,7 @@
             The database contains 511 papers: 7 benchmark studies and 504 bioRxiv preprints. Across them, the site stores 14,972 marker records.
           </p>
           <p>
-            Each marker record stores a paper, a cell-type label, a gene, an optional Ensembl identifier, a source type, and optional supporting text. The benchmark records also carry 1,224 rows of differential-expression metadata, including log fold change, corrected p-value, and rank.
+            Each marker record stores a paper, a species label, a cell-type label, a gene, an optional Ensembl identifier, a source type, and optional supporting text. The benchmark records also carry 1,224 rows of differential-expression metadata, including log fold change, corrected p-value, and rank.
           </p>
           <p>
             The current build contains 13,355 text-derived records and 1,617 image-derived records. Image-derived markers are kept, but their rationale text is excluded from the site. Ensembl identifiers are added when a marker can be mapped during ingestion. In the current build, 10,836 marker records have a non-empty Ensembl identifier.
@@ -176,7 +176,7 @@
 
           <label class="search">
             Search
-            <input id="searchInput" type="text" placeholder="gene, cell type, DOI, or rationale text" />
+            <input id="searchInput" type="text" placeholder="gene, species, cell type, DOI, or quote text" />
           </label>
         </div>
 
@@ -195,6 +195,7 @@
               <tr>
                 <th>Paper</th>
                 <th>Year</th>
+                <th>Species</th>
                 <th>Cell type</th>
                 <th>Gene</th>
                 <th>Ensembl ID</th>

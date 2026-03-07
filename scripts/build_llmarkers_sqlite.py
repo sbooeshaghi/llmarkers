@@ -280,6 +280,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
         CREATE TABLE markers (
             marker_id INTEGER PRIMARY KEY,
             paper_id INTEGER NOT NULL REFERENCES papers(paper_id),
+            organism TEXT,
             group_name TEXT NOT NULL,
             feature_name TEXT NOT NULL,
             feature_id TEXT,
@@ -311,6 +312,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
         );
 
         CREATE INDEX idx_markers_paper_id ON markers(paper_id);
+        CREATE INDEX idx_markers_organism ON markers(organism);
         CREATE INDEX idx_markers_group_name ON markers(group_name);
         CREATE INDEX idx_markers_feature_id ON markers(feature_id);
         CREATE INDEX idx_markers_source_type ON markers(source_type);
@@ -408,16 +410,18 @@ def insert_marker(
         """
         INSERT INTO markers (
             paper_id,
+            organism,
             group_name,
             feature_name,
             feature_id,
             source_type,
             source_rationale,
             data_id
-        ) VALUES (?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             paper_id,
+            normalize_text(row.get("organism")) or None,
             group_name,
             feature_name,
             normalize_text(row.get("feature_id")) or None,
