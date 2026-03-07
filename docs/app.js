@@ -103,6 +103,19 @@ function truncate(value, n = 140) {
   return `${text.slice(0, n - 1)}...`;
 }
 
+function formatOrganism(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  return raw
+    .split("_")
+    .map((part, index) => {
+      const lower = part.toLowerCase();
+      if (index === 0) return lower.charAt(0).toUpperCase() + lower.slice(1);
+      return lower;
+    })
+    .join(" ");
+}
+
 function runRows(sql, params = []) {
   const result = state.db.exec(sql, params);
   if (!result.length) return [];
@@ -311,13 +324,14 @@ function buildWhere() {
     clauses.push(`(
       lower(coalesce(p.title, '')) LIKE ? OR
       lower(coalesce(p.doi, '')) LIKE ? OR
+      lower(coalesce(m.organism, '')) LIKE ? OR
       lower(coalesce(m.group_name, '')) LIKE ? OR
       lower(coalesce(m.feature_name, '')) LIKE ? OR
       lower(coalesce(m.feature_id, '')) LIKE ? OR
       lower(coalesce(m.source_rationale, '')) LIKE ?
     )`);
     const like = `%${query}%`;
-    params.push(like, like, like, like, like, like);
+    params.push(like, like, like, like, like, like, like);
   }
 
   return {
@@ -485,7 +499,7 @@ async function embedMiniLmQuery(query) {
 function renderRows(rows) {
   if (!rows.length) {
     el.tableBody.innerHTML =
-      '<tr><td colspan="6" class="small">No rows match the current filters.</td></tr>';
+      '<tr><td colspan="7" class="small">No rows match the current filters.</td></tr>';
     return;
   }
 
@@ -508,6 +522,7 @@ function renderRows(rows) {
         <tr>
           <td title="${esc(title || doi)}">${paperCell}</td>
           <td>${row.year ?? ""}</td>
+          <td>${esc(formatOrganism(row.organism))}</td>
           <td>${esc(row.group_name)}</td>
           <td>${esc(row.feature_name)}</td>
           <td class="small">${esc(row.feature_id || "")}</td>
@@ -549,6 +564,7 @@ function refreshTable() {
       p.title,
       p.doi,
       p.year,
+      m.organism,
       m.group_name,
       m.feature_name,
       m.feature_id,

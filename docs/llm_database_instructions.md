@@ -49,6 +49,7 @@ WHERE pr.collection = 'biorxiv';
 
 ## Notes
 - `source_rationale` is blank for image-derived markers on purpose.
+- `organism` stores the extracted species label for each marker.
 - `feature_id` may be blank when no Ensembl mapping was found.
 - `collection` in `profiles` is either `benchmark` or `biorxiv`.
 
