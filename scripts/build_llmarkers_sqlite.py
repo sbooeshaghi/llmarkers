@@ -51,6 +51,13 @@ def normalize_key(value: Any) -> str:
     return normalize_text(value).upper()
 
 
+def normalize_organism(value: Any) -> str | None:
+    text = normalize_text(value).lower()
+    if not text:
+        return None
+    return re.sub(r"\s+", "_", text)
+
+
 def normalize_doi(value: str | None) -> str | None:
     if not value:
         return None
@@ -421,7 +428,7 @@ def insert_marker(
         """,
         (
             paper_id,
-            normalize_text(row.get("organism")) or None,
+            normalize_organism(row.get("organism")),
             group_name,
             feature_name,
             normalize_text(row.get("feature_id")) or None,
