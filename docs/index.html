@@ -110,7 +110,7 @@
           </p>
           <h2 class="method-section-break">Marker Search</h2>
           <p>
-            Marker Search searches cell-type descriptions by semantic similarity and marker genes by set overlap. The search unit is a profile: one paper and one cell-type label grouped with its reported markers and supporting text. The current database contains 3,909 profiles: 180 from the benchmark and 3,729 from bioRxiv.
+            Marker Search searches cell-type descriptions by semantic similarity and marker genes by set overlap. The search unit is a profile: one paper, one species, and one cell-type label grouped with its reported markers and supporting text. The current database contains 3,988 profiles: 182 from the benchmark and 3,806 from bioRxiv.
           </p>
           <p>
             For text search, each profile has two text fields. The first contains the cell-type label, the paper title, and the supporting sentences attached to that profile. The second contains the paper title and abstract. Both are embedded offline with MiniLM and stored in SQLite as float16 vectors.
@@ -133,7 +133,7 @@
             LLMarkers is a literature-linked marker-gene resource. It combines the seven-study benchmark used in the manuscript with markers extracted from 504 bioRxiv preprints.
           </p>
           <p>
-            This site reads directly from <code>llmarkers.sqlite</code> in the browser. The Data tab exposes marker-level records. The Search tab groups those records into paper-level cell-type profiles that can be queried by text or by genes.
+            This site reads directly from <code>llmarkers.sqlite</code> in the browser. The Data tab exposes marker-level records. The Search tab groups those records into paper-, species-, and cell-type-level profiles that can be queried by text or by genes.
           </p>
           <p>
             The goal is to keep marker genes tied to the paper that reported them, the cell type they were used for, and the text that supports that claim. Source code and the data pipeline are available in the <a href="https://github.com/sbooeshaghi/llmarkers" target="_blank" rel="noopener">llmarkers GitHub repository</a>.

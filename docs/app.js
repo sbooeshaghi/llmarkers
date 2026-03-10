@@ -414,6 +414,7 @@ function loadProfiles() {
       pr.profile_id,
       pr.paper_id,
       pr.collection,
+      pr.organism,
       pr.group_name,
       pr.text_blob,
       pr.paper_context_blob,
@@ -446,6 +447,7 @@ function loadProfiles() {
       profileId: Number(row.profile_id),
       paperId: Number(row.paper_id),
       collection: row.collection,
+      organism: row.organism || "",
       groupName: row.group_name,
       textBlob: row.text_blob,
       paperContextBlob: row.paper_context_blob || "",
@@ -649,6 +651,7 @@ function renderProfileResults(results, mode, query) {
           </div>
           <div class="profile-card-meta">
             <span>${esc(result.collection)}</span>
+            <span>${esc(formatOrganism(result.organism || ""))}</span>
             <span>${result.year ?? ""}</span>
             <span>${fmtInt(result.nGenes)} genes</span>
           </div>

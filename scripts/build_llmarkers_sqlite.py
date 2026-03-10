@@ -307,6 +307,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
             profile_id INTEGER PRIMARY KEY,
             paper_id INTEGER NOT NULL REFERENCES papers(paper_id),
             collection TEXT NOT NULL,
+            organism TEXT,
             group_name TEXT NOT NULL,
             text_blob TEXT NOT NULL,
             paper_context_blob TEXT NOT NULL,
@@ -326,6 +327,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
         CREATE INDEX idx_marker_metrics_rank ON marker_metrics(rank);
         CREATE INDEX idx_profiles_paper_id ON profiles(paper_id);
         CREATE INDEX idx_profiles_collection ON profiles(collection);
+        CREATE INDEX idx_profiles_organism ON profiles(organism);
         CREATE INDEX idx_profiles_group_name ON profiles(group_name);
         """
     )
@@ -558,6 +560,7 @@ def build_profiles(conn: sqlite3.Connection) -> None:
             p.paper_id,
             p.title,
             p.abstract,
+            m.organism,
             m.group_name,
             CASE
                 WHEN COALESCE(m.data_id, '') <> '' THEN 'benchmark'
@@ -568,17 +571,18 @@ def build_profiles(conn: sqlite3.Connection) -> None:
             m.source_rationale
         FROM papers AS p
         JOIN markers AS m ON m.paper_id = p.paper_id
-        ORDER BY p.paper_id, m.group_name, m.marker_id
+        ORDER BY p.paper_id, m.organism, m.group_name, m.marker_id
         """
     ).fetchall()
 
-    grouped: dict[tuple[int, str], dict[str, Any]] = {}
-    for paper_id, title, abstract, group_name, collection, feature_name, feature_id, source_rationale in rows:
+    grouped: dict[tuple[int, str, str | None], dict[str, Any]] = {}
+    for paper_id, title, abstract, organism, group_name, collection, feature_name, feature_id, source_rationale in rows:
         label = normalize_text(group_name)
         if not label:
             continue
 
-        key = (int(paper_id), label)
+        normalized_organism = normalize_organism(organism)
+        key = (int(paper_id), label, normalized_organism)
         bucket = grouped.setdefault(
             key,
             {
@@ -586,6 +590,7 @@ def build_profiles(conn: sqlite3.Connection) -> None:
                 "title": normalize_text(title),
                 "abstract": normalize_text(abstract),
                 "collection": collection,
+                "organism": normalized_organism,
                 "group_name": label,
                 "gene_names": [],
                 "gene_ids": [],
@@ -619,6 +624,7 @@ def build_profiles(conn: sqlite3.Connection) -> None:
             INSERT INTO profiles (
                 paper_id,
                 collection,
+                organism,
                 group_name,
                 text_blob,
                 paper_context_blob,
@@ -628,11 +634,12 @@ def build_profiles(conn: sqlite3.Connection) -> None:
                 n_genes,
                 n_gene_ids,
                 n_sentences
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 bucket["paper_id"],
                 bucket["collection"],
+                bucket["organism"],
                 label,
                 text_blob,
                 paper_context_blob,
