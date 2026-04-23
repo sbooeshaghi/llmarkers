@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9165878/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 63745,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9165878/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9165878/fullTextXML",
+    "folder": "0123_10.1371_journal.pone.0267704_5a8157f0f3",
+    "n_text_chars": 63745,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "PLOS ONE",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://dx.plos.org/10.1371/journal.pone.0267704"
+        }
+      ],
+      "publisher": "Public Library of Science (PLoS)",
+      "title": "Detection of infiltrating fibroblasts by single-cell transcriptomics in human kidney allografts",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1371/journal.pone.0267704"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9165878"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9165878?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9165878",
+      "pmid": "35657798",
+      "pub_year": "2022",
+      "title": "Detection of infiltrating fibroblasts by single-cell transcriptomics in human kidney allografts."
+    }
+  },
+  "metadata": {
+    "doi": "10.1371/journal.pone.0267704",
+    "preferred_url": "https://doi.org/10.1371/journal.pone.0267704",
+    "publication_title": "Detection of infiltrating fibroblasts by single-cell transcriptomics in human kidney allografts."
+  }
+}

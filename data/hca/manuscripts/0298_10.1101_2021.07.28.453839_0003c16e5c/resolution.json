@@ -1,0 +1,80 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.07.28.453839",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41556-022-00961-5?error=cookies_not_supported&code=df271fd2-a604-47e7-a84e-6cd48c814114",
+      "kind": "html",
+      "n_text_chars": 111317,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41556-022-00961-5",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41556-022-00961-5?error=cookies_not_supported&code=df271fd2-a604-47e7-a84e-6cd48c814114",
+    "folder": "0298_10.1101_2021.07.28.453839_0003c16e5c",
+    "n_text_chars": 111317,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2021.07.28.453839"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Single cell analysis of endometriosis reveals a coordinated transcriptional program driving immunotolerance and angiogenesis across eutopic and ectopic tissues",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2021/07/29/2021.07.28.453839.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2021.07.28.453839"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "Single cell analysis of endometriosis reveals a coordinated transcriptional program driving immunotolerance and angiogenesis across eutopic and ectopic tissues"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2021.07.28.453839",
+    "preferred_url": "https://doi.org/10.1101/2021.07.28.453839",
+    "publication_title": "Single-cell analysis of endometriosis reveals a coordinated transcriptional programme driving immunotolerance and angiogenesis across eutopic and ectopic tissues"
+  }
+}

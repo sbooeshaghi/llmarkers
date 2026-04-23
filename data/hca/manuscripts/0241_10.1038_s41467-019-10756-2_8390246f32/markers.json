@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "mus_musculus",
+    "group_label": "GABAergic neurons",
+    "group_name": "GABAERGIC NEURON",
+    "group_id": null,
+    "feature_label": "Xist",
+    "feature_name": "XIST",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "For DemuxEM-identified singlets, there was a 94.8% agreement between DemuxEM-assigned sample hashtag identities and the expression level of Xist, a transcript predominantly expressed in females (Fig. 2b ).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Xist",
+      "all_verified": false
+    }
+  }
+]

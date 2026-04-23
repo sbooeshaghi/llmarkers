@@ -1,0 +1,104 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6816238/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "205556",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6816238/",
+      "kind": "html",
+      "n_text_chars": 71056,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6816238/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6816238/",
+    "folder": "0176_10.1126_science.aav2501_7c9d3a1bd2",
+    "n_text_chars": 71056,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Science",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://syndication.highwire.org/content/doi/10.1126/science.aav2501"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.science.org/doi/pdf/10.1126/science.aav2501"
+        }
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "title": "Identification of a mesenchymal progenitor cell hierarchy in adipose tissue",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://science.sciencemag.org/content/sci/364/6438/eaav2501.full.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/science.aav2501"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6816238"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6816238?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/science.aav2501"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC6816238",
+      "pmid": "31023895",
+      "pub_year": "2019",
+      "title": "Identification of a mesenchymal progenitor cell hierarchy in adipose tissue."
+    }
+  },
+  "metadata": {
+    "doi": "10.1126/science.aav2501",
+    "preferred_url": "https://doi.org/10.1126/science.aav2501",
+    "publication_title": "Identification of a mesenchymal progenitor cell hierarchy in adipose tissue."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7666104/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "277529",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7666104/",
+      "kind": "html",
+      "n_text_chars": 88587,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7666104/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7666104/",
+    "folder": "0493_10.1161_circulationaha.119.045401_814f085618",
+    "n_text_chars": 88587,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Circulation",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.119.045401"
+        }
+      ],
+      "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+      "title": "Transcriptional and Cellular Diversity of the Human Heart",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1161/CIRCULATIONAHA.119.045401"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7666104"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7666104?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1161/circulationaha.119.045401"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC7666104",
+      "pmid": "32403949",
+      "pub_year": "2020",
+      "title": "Transcriptional and Cellular Diversity of the Human Heart."
+    }
+  },
+  "metadata": {
+    "doi": "10.1161/circulationaha.119.045401",
+    "preferred_url": "https://doi.org/10.1161/circulationaha.119.045401",
+    "publication_title": "Transcriptional and Cellular Diversity of the Human Heart"
+  }
+}

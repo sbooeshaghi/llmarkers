@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5504042/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 30212,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5504042/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5504042/fullTextXML",
+    "folder": "0425_10.1038_s41598-017-05266-4_54c44ec7e0",
+    "n_text_chars": 30212,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Scientific Reports",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41598-017-05266-4.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41598-017-05266-4"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41598-017-05266-4.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell transcriptomics of East-Asian pancreatic islets cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41598-017-05266-4"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5504042"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5504042?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC5504042",
+      "pmid": "28694456",
+      "pub_year": "2017",
+      "title": "Single-cell transcriptomics of East-Asian pancreatic islets cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41598-017-05266-4",
+    "preferred_url": "https://doi.org/10.1038/s41598-017-05266-4",
+    "publication_title": "Single-cell transcriptomics of East-Asian pancreatic islets cells."
+  }
+}

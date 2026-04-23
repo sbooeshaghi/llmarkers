@@ -1,0 +1,98 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8967619/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "196655",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967619/",
+      "kind": "html",
+      "n_text_chars": 49195,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967619/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967619/",
+    "folder": "0346_10.34067_kid.0005522021_6c9059bd87",
+    "n_text_chars": 49195,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Kidney360",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://journals.lww.com/10.34067/KID.0005522021"
+        }
+      ],
+      "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+      "title": "Single-Cell RNA Sequencing of Urinary Cells Reveals Distinct Cellular Diversity in COVID-19\u2013Associated AKI",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.34067/kid.0005522021"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.34067/KID.0005522021"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8967619"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8967619?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.34067/kid.0005522021"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC8967619",
+      "pmid": "35368565",
+      "pub_year": "2022",
+      "title": "Single-Cell RNA Sequencing of Urinary Cells Reveals Distinct Cellular Diversity in COVID-19-Associated AKI."
+    }
+  },
+  "metadata": {
+    "doi": "10.34067/kid.0005522021",
+    "preferred_url": "https://doi.org/10.34067/kid.0005522021",
+    "publication_title": "Single-cell RNA sequencing of urinary cells reveals distinct cellular diversity in COVID-19-associated AKI"
+  }
+}

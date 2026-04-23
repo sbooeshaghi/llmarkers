@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41588-020-0636-z?error=cookies_not_supported&code=c0a1ef9c-1712-43f0-9b89-e2b795c7f1c7",
+      "kind": "html",
+      "n_text_chars": 79376,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41588-020-0636-z",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41588-020-0636-z?error=cookies_not_supported&code=c0a1ef9c-1712-43f0-9b89-e2b795c7f1c7",
+    "folder": "0205_10.1038_s41588-020-0636-z_f39ba80540",
+    "n_text_chars": 79376,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Genetics",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41588-020-0636-z.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41588-020-0636-z"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/s41588-020-0636-z.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Lineage-dependent gene expression programs influence the immune landscape of colorectal cancer",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41588-020-0636-z"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "32451460",
+      "pub_year": "2020",
+      "title": "Lineage-dependent gene expression programs influence the immune landscape of colorectal cancer."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41588-020-0636-z",
+    "preferred_url": "https://doi.org/10.1038/s41588-020-0636-z",
+    "publication_title": "Lineage-dependent gene expression programs influence the immune landscape of colorectal cancer."
+  }
+}

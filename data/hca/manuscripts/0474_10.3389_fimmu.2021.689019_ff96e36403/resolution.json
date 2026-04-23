@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8218877/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 46555,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8218877/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8218877/fullTextXML",
+    "folder": "0474_10.3389_fimmu.2021.689019_ff96e36403",
+    "n_text_chars": 46555,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Frontiers in Immunology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2021.689019/full"
+        }
+      ],
+      "publisher": "Frontiers Media SA",
+      "title": "The Immune Atlas of Human Deciduas With Unexplained Recurrent Pregnancy Loss",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2021.689019/pdf"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2021.689019/pdf"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2021.689019/pdf"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2021.689019/pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3389/fimmu.2021.689019"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8218877"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8218877?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8218877",
+      "pmid": "34168655",
+      "pub_year": "2021",
+      "title": "The Immune Atlas of Human Deciduas With Unexplained Recurrent Pregnancy Loss."
+    }
+  },
+  "metadata": {
+    "doi": "10.3389/fimmu.2021.689019",
+    "preferred_url": "https://doi.org/10.3389/fimmu.2021.689019",
+    "publication_title": "The Immune Atlas of Human Deciduas With Unexplained Recurrent Pregnancy Loss"
+  }
+}

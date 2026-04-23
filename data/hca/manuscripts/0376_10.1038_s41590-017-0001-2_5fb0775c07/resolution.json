@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5884424/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 51799,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5884424/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5884424/fullTextXML",
+    "folder": "0376_10.1038_s41590-017-0001-2_5fb0775c07",
+    "n_text_chars": 51799,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Immunology",
+      "links": [
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41590-017-0001-2"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41590-017-0001-2.pdf"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/s41590-017-0001-2.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell analysis reveals the continuum of human lympho-myeloid progenitor cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://europepmc.org/articles/pmc5884424?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://europepmc.org/articles/pmc5884424?pdf=render"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41590-017-0001-2"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5884424"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5884424?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC5884424",
+      "pmid": "29167569",
+      "pub_year": "2018",
+      "title": "Single-cell analysis reveals the continuum of human lympho-myeloid progenitor cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41590-017-0001-2",
+    "preferred_url": "https://doi.org/10.1038/s41590-017-0001-2",
+    "publication_title": "Single-cell analysis reveals the continuum of human lympho-myeloid progenitor cells"
+  }
+}

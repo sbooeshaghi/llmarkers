@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7228968/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 37473,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7228968/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7228968/fullTextXML",
+    "folder": "0369_10.1038_s41598-020-64929-x_0cb78e8038",
+    "n_text_chars": 37473,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Scientific Reports",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41598-020-64929-x.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41598-020-64929-x"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41598-020-64929-x.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell analysis of childhood leukemia reveals a link between developmental states and ribosomal protein expression as a source of intra-individual heterogeneity",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41598-020-64929-x"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7228968"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7228968?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7228968",
+      "pmid": "32415257",
+      "pub_year": "2020",
+      "title": "Single-cell analysis of childhood leukemia reveals a link between developmental states and ribosomal protein expression as a source of intra-individual heterogeneity."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41598-020-64929-x",
+    "preferred_url": "https://doi.org/10.1038/s41598-020-64929-x",
+    "publication_title": "Single-cell analysis of childhood leukemia reveals a link between developmental states and ribosomal protein expression as a source of intra-individual heterogeneity"
+  }
+}

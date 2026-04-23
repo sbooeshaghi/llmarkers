@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "G2M/S NPC",
+    "group_name": "G2M/S NPC",
+    "group_id": null,
+    "feature_label": "MKI67",
+    "feature_name": "MKI67",
+    "feature_id": "ENSG00000148773",
+    "source_type": "text",
+    "source_rationale": "Expression of genes duplicated in humans projected onto the human whole-lineage SPRING analysis, with the G2M/S phase marker MKI67 shown as a reference.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " G2M/S",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MKI67",
+      "all_verified": true
+    }
+  }
+]

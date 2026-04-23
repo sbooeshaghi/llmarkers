@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6886862/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 27253,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6886862/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6886862/fullTextXML",
+    "folder": "0292_10.1371_journal.pone.0225466_ac5a0b0b14",
+    "n_text_chars": 27253,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "PLOS ONE",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://dx.plos.org/10.1371/journal.pone.0225466"
+        }
+      ],
+      "publisher": "Public Library of Science (PLoS)",
+      "title": "HeLa-CCL2 cell heterogeneity studied by single-cell DNA and RNA sequencing",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0225466&type=printable"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1371/journal.pone.0225466"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6886862"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6886862?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC6886862",
+      "pmid": "31790455",
+      "pub_year": "2019",
+      "title": "HeLa-CCL2 cell heterogeneity studied by single-cell DNA and RNA sequencing."
+    }
+  },
+  "metadata": {
+    "doi": "10.1371/journal.pone.0225466",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6886862",
+    "publication_title": "HeLa-CCL2 cell heterogeneity studied by single-cell DNA and RNA sequencing."
+  }
+}

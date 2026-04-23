@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9240912/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 53637,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9240912/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9240912/fullTextXML",
+    "folder": "0006_10.3389_fcell.2022.835445_847c20f209",
+    "n_text_chars": 53637,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Frontiers in Cell and Developmental Biology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.frontiersin.org/articles/10.3389/fcell.2022.835445/full"
+        }
+      ],
+      "publisher": "Frontiers Media SA",
+      "title": "A Single-Cell Characterization of Human Post-implantation Embryos Cultured In Vitro Delineates Morphogenesis in Primary Syncytialization",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3389/fcell.2022.835445"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9240912"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9240912?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9240912",
+      "pmid": "35784461",
+      "pub_year": "2022",
+      "title": "A Single-Cell Characterization of Human Post-implantation Embryos Cultured <i>In Vitro</i> Delineates Morphogenesis in Primary Syncytialization."
+    }
+  },
+  "metadata": {
+    "doi": "10.3389/fcell.2022.835445",
+    "preferred_url": "https://doi.org/10.3389/fcell.2022.835445",
+    "publication_title": "Single-cell RNA-seq reveals sequential trophoblast transition during human embryo implantation"
+  }
+}

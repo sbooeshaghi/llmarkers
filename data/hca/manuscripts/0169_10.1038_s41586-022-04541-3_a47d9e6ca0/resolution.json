@@ -1,0 +1,104 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9169066/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "299694",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9169066/",
+      "kind": "html",
+      "n_text_chars": 117679,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9169066/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9169066/",
+    "folder": "0169_10.1038_s41586-022-04541-3_a47d9e6ca0",
+    "n_text_chars": 117679,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41586-022-04541-3.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41586-022-04541-3"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41586-022-04541-3.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Human distal lung maps and lineage hierarchies reveal a bipotent progenitor",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41586-022-04541-3"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9169066"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9169066?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41586-022-04541-3"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC9169066",
+      "pmid": "35355018",
+      "pub_year": "2022",
+      "title": "Human distal lung maps and lineage hierarchies reveal a bipotent progenitor."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41586-022-04541-3",
+    "preferred_url": "https://doi.org/10.1038/s41586-022-04541-3",
+    "publication_title": "Human distal lung maps and lineage hierarchies reveal a bipotent progenitor"
+  }
+}

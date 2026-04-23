@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7471510/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 55777,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7471510/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7471510/fullTextXML",
+    "folder": "0033_10.26508_lsa.202000744_340b92b825",
+    "n_text_chars": 55777,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Life Science Alliance",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.26508/lsa.202000744"
+        }
+      ],
+      "publisher": "Life Science Alliance, LLC",
+      "title": "An atlas of human proximal epididymis reveals cell-specific functions and distinct roles for CFTR",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.26508/lsa.202000744"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7471510"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7471510?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7471510",
+      "pmid": "32855272",
+      "pub_year": "2020",
+      "title": "An atlas of human proximal epididymis reveals cell-specific functions and distinct roles for CFTR."
+    }
+  },
+  "metadata": {
+    "doi": "10.26508/lsa.202000744",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7471510",
+    "publication_title": "An atlas of human proximal epididymis reveals cell-specific functions and distinct roles for CFTR."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8016415/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "415950",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8016415/",
+      "kind": "html",
+      "n_text_chars": 105680,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8016415/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8016415/",
+    "folder": "0278_10.1007_s10911-020-09466-z_d1b799dcf6",
+    "n_text_chars": 105680,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Journal of Mammary Gland Biology and Neoplasia",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://link.springer.com/content/pdf/10.1007/s10911-020-09466-z.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://link.springer.com/article/10.1007/s10911-020-09466-z/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://link.springer.com/content/pdf/10.1007/s10911-020-09466-z.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single Cell RNA Sequencing of Human Milk-Derived Cells Reveals Sub-Populations of Mammary Epithelial Cells with Molecular Signatures of Progenitor and Mature States: a Novel, Non-invasive Framework for Investigating Human Lactation Physiology",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Unpaywall",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8016415"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s10911-020-09466-z"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8016415"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8016415?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s10911-020-09466-z"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC8016415",
+      "pmid": "33216249",
+      "pub_year": "2020",
+      "title": "Single Cell RNA Sequencing of Human Milk-Derived Cells Reveals Sub-Populations of Mammary Epithelial Cells with Molecular Signatures of Progenitor and Mature States: a Novel, Non-invasive Framework for Investigating Human Lactation Physiology."
+    }
+  },
+  "metadata": {
+    "doi": "10.1007/s10911-020-09466-z",
+    "preferred_url": "https://doi.org/10.1007/s10911-020-09466-z",
+    "publication_title": "Single Cell RNA Sequencing of Human Milk-Derived Cells Reveals Sub-Populations of Mammary Epithelial Cells with Molecular Signatures of Progenitor and Mature States: a Novel, Non-invasive Framework for Investigating Human Lactation Physiology."
+  }
+}

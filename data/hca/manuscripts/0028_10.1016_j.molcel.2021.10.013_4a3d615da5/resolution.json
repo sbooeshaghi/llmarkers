@@ -1,0 +1,98 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8642316/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "404127",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8642316/",
+      "kind": "html",
+      "n_text_chars": 148026,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8642316/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8642316/",
+    "folder": "0028_10.1016_j.molcel.2021.10.013_4a3d615da5",
+    "n_text_chars": 148026,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Molecular Cell",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S109727652100842X?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S109727652100842X?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "A multi-omic single-cell landscape of human gynecologic malignancies",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.molcel.2021.10.013"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8642316"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8642316?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.molcel.2021.10.013"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC8642316",
+      "pmid": "34739872",
+      "pub_year": "2021",
+      "title": "A multi-omic single-cell landscape of human gynecologic malignancies."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.molcel.2021.10.013",
+    "preferred_url": "https://doi.org/10.1016/j.molcel.2021.10.013",
+    "publication_title": "A multi-omic single-cell landscape of human gynecologic malignancies."
+  }
+}

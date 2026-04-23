@@ -1,0 +1,114 @@
+{
+  "attempts": [
+    {
+      "content_length": "2721",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1550413124001372",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2024.04.017",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "2721",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1550413124001372",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2024.04.017",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "2033",
+      "content_type": "text/xml;charset=UTF-8",
+      "final_url": "https://api.elsevier.com/content/article/PII:S1550413124001372?httpAccept=text/xml",
+      "kind": "xml",
+      "n_text_chars": 107,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1550413124001372?httpAccept=text/xml",
+      "resolved_as": "xml",
+      "source": "crossref-link",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 400: Bad Request",
+      "kind": "html",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1550413124001372?httpAccept=text/plain",
+      "source": "crossref-link",
+      "status": "http_error_400"
+    },
+    {
+      "content_length": "2721",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1550413124001372",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2024.04.017",
+      "resolved_as": "html",
+      "source": "doi-landing",
+      "status": "text_too_short"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0023_10.1016_j.cmet.2024.04.017_8c7684b322",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Metabolism",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1550413124001372?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1550413124001372?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "A human omentum-specific mesothelial-like stromal population inhibits adipogenesis through IGFBP2 secretion",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1550413124001372-fx1_lrg.jpg"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.cmet.2024.04.017"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "38729152",
+      "pub_year": "2024",
+      "title": "A human omentum-specific mesothelial-like stromal population inhibits adipogenesis through IGFBP2 secretion."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.cmet.2024.04.017",
+    "preferred_url": "https://doi.org/10.1016/j.cmet.2024.04.017",
+    "publication_title": "A human omentum-specific mesothelial-like stromal population inhibits adipogenesis through IGFBP2 secretion"
+  }
+}

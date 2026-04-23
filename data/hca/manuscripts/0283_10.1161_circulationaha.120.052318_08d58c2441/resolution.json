@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8300155/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 56870,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8300155/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8300155/fullTextXML",
+    "folder": "0283_10.1161_circulationaha.120.052318_08d58c2441",
+    "n_text_chars": 56870,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Circulation",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.120.052318"
+        }
+      ],
+      "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+      "title": "Integrated Single-Cell Atlas of Endothelial Cells of the Human Lung",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1161/CIRCULATIONAHA.120.052318"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8300155"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8300155?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8300155",
+      "pmid": "34030460",
+      "pub_year": "2021",
+      "title": "Integrated Single-Cell Atlas of Endothelial Cells of the Human Lung."
+    }
+  },
+  "metadata": {
+    "doi": "10.1161/circulationaha.120.052318",
+    "preferred_url": "https://doi.org/10.1161/circulationaha.120.052318",
+    "publication_title": "Integrated Single-Cell Atlas of Endothelial Cells of the Human Lung."
+  }
+}

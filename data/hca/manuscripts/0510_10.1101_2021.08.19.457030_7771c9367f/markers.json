@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pluripotency",
+    "group_name": "PLURIPOTENCY",
+    "group_id": null,
+    "feature_label": "POU5F1",
+    "feature_name": "POU5F1",
+    "feature_id": "ENSG00000204531",
+    "source_type": "text",
+    "source_rationale": "Markers representative of the three groups defining the pseudotime: pluripotency (POU5F1), Neural Ectoderm (LIX1) and Epidermal Ectoderm (PTN).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " pluripotency",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "POU5F1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Neural Ectoderm",
+    "group_name": "NEURAL ECTODERM",
+    "group_id": null,
+    "feature_label": "LIX1",
+    "feature_name": "LIX1",
+    "feature_id": "ENSG00000145721",
+    "source_type": "text",
+    "source_rationale": "Markers representative of the three groups defining the pseudotime: pluripotency (POU5F1), Neural Ectoderm (LIX1) and Epidermal Ectoderm (PTN).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Neural Ectoderm",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "LIX1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Epidermal Ectoderm",
+    "group_name": "EPIDERMAL ECTODERM",
+    "group_id": null,
+    "feature_label": "PTN",
+    "feature_name": "PTN",
+    "feature_id": "ENSG00000105894",
+    "source_type": "text",
+    "source_rationale": "Markers representative of the three groups defining the pseudotime: pluripotency (POU5F1), Neural Ectoderm (LIX1) and Epidermal Ectoderm (PTN).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Epidermal Ectoderm",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "PTN",
+      "all_verified": true
+    }
+  }
+]

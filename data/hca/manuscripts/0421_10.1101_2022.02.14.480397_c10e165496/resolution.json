@@ -1,0 +1,81 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2022.02.14.480397",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.biorxiv.org/content/10.1101/2022.02.14.480397v1",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2022.02.14.480397",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2022.02.14.480397",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0421_10.1101_2022.02.14.480397_c10e165496",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2022.02.14.480397"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Single-cell transcriptomic and proteomic analysis of Parkinson\u2019s disease Brains",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2022/02/14/2022.02.14.480397.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2022.02.14.480397"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2022",
+      "title": "Single-cell transcriptomic and proteomic analysis of Parkinson\u2019s disease Brains"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2022.02.14.480397",
+    "preferred_url": "https://doi.org/10.1101/2022.02.14.480397",
+    "publication_title": "Single-cell transcriptomic and proteomic analysis of Parkinson\u2019s disease Brains"
+  }
+}

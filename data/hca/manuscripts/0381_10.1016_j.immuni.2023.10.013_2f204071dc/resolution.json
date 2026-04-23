@@ -1,0 +1,114 @@
+{
+  "attempts": [
+    {
+      "content_length": "2766",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1074761323004533",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.immuni.2023.10.013",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "2766",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1074761323004533",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.immuni.2023.10.013",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "2001",
+      "content_type": "text/xml;charset=UTF-8",
+      "final_url": "https://api.elsevier.com/content/article/PII:S1074761323004533?httpAccept=text/xml",
+      "kind": "xml",
+      "n_text_chars": 141,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1074761323004533?httpAccept=text/xml",
+      "resolved_as": "xml",
+      "source": "crossref-link",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 400: Bad Request",
+      "kind": "html",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1074761323004533?httpAccept=text/plain",
+      "source": "crossref-link",
+      "status": "http_error_400"
+    },
+    {
+      "content_length": "2766",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1074761323004533",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.immuni.2023.10.013",
+      "resolved_as": "html",
+      "source": "doi-landing",
+      "status": "text_too_short"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0381_10.1016_j.immuni.2023.10.013_2f204071dc",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Immunity",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1074761323004533?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1074761323004533?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Single-cell atlas of healthy human blood unveils age-related loss of NKG2C+GZMB\u2212CD8+ memory T cells and accumulation of type 2 memory T\u00a0cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Unpaywall",
+          "url": "https://digitalcommons.wustl.edu/oa_4/3728"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.immuni.2023.10.013"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "37963457",
+      "pub_year": "2023",
+      "title": "Single-cell atlas of healthy human blood unveils age-related loss of NKG2C<sup>+</sup>GZMB<sup>-</sup>CD8<sup>+</sup> memory T cells and accumulation of type 2 memory T\u00a0cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.immuni.2023.10.013",
+    "preferred_url": "https://doi.org/10.1016/j.immuni.2023.10.013",
+    "publication_title": "Single-cell atlas of healthy human blood unveils age-related loss of NKG2C+GZMB-CD8+ memory T cells and accumulation of type 2 memory T cells"
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "macrophages",
+    "group_name": "MACROPHAGE",
+    "group_id": null,
+    "feature_label": "S100A8",
+    "feature_name": "S100A8",
+    "feature_id": "ENSG00000143546",
+    "source_type": "text",
+    "source_rationale": "MMRd cells showed higher activities of programs with genes in glycolysis (pM03), immune-activating alarmins such as S100A8/9/12 (pM16) and chemokines that attract monocytes and neutrophils (pM20).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "roph",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " S100A8",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "macrophages",
+    "group_name": "MACROPHAGE",
+    "group_id": null,
+    "feature_label": "S100A9",
+    "feature_name": "S100A9",
+    "feature_id": "ENSG00000163220",
+    "source_type": "text",
+    "source_rationale": "MMRd cells showed higher activities of programs with genes in glycolysis (pM03), immune-activating alarmins such as S100A8/9/12 (pM16) and chemokines that attract monocytes and neutrophils (pM20).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "roph",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " S100A9",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "macrophages",
+    "group_name": "MACROPHAGE",
+    "group_id": null,
+    "feature_label": "S100A12",
+    "feature_name": "S100A12",
+    "feature_id": "ENSG00000163221",
+    "source_type": "text",
+    "source_rationale": "MMRd cells showed higher activities of programs with genes in glycolysis (pM03), immune-activating alarmins such as S100A8/9/12 (pM16) and chemokines that attract monocytes and neutrophils (pM20).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "roph",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " S100A12",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CAF subsets",
+    "group_name": "CAF SUBSET",
+    "group_id": null,
+    "feature_label": "INHBA",
+    "feature_name": "INHBA",
+    "feature_id": "ENSG00000122641",
+    "source_type": "text",
+    "source_rationale": "INHBA distinguishes CAFs from fibroblasts in normal tissue.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CAF",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "INHBA",
+      "all_verified": true
+    }
+  }
+]

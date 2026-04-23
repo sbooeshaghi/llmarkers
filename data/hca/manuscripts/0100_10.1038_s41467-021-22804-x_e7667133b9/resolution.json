@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8105337/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 82547,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8105337/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8105337/fullTextXML",
+    "folder": "0100_10.1038_s41467-021-22804-x_e7667133b9",
+    "n_text_chars": 82547,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Communications",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41467-021-22804-x.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41467-021-22804-x"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41467-021-22804-x.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Co-evolution of tumor and immune cells during progression of multiple myeloma",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.nature.com/articles/s41467-021-22804-x.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41467-021-22804-x"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8105337"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8105337?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8105337",
+      "pmid": "33963182",
+      "pub_year": "2021",
+      "title": "Co-evolution of tumor and immune cells during progression of multiple myeloma."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41467-021-22804-x",
+    "preferred_url": "https://doi.org/10.1038/s41467-021-22804-x",
+    "publication_title": "Co-evolution of tumor and immune cells during progression of multiple myeloma."
+  }
+}

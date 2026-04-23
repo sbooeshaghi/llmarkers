@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "2754",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1074761319303346",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.immuni.2019.08.008",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "192185",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/31474513/",
+      "kind": "html",
+      "n_text_chars": 13094,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pubmed.ncbi.nlm.nih.gov/31474513",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/31474513/",
+    "folder": "0399_10.1016_j.immuni.2019.08.008_d590b8282e",
+    "n_text_chars": 13094,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Immunity",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1074761319303346?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1074761319303346?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Single-Cell Analysis of Human Mononuclear Phagocytes Reveals Subset-Defining Markers and Identifies Circulating Inflammatory Dendritic Cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.immuni.2019.08.008"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "31474513",
+      "pub_year": "2019",
+      "title": "Single-Cell Analysis of Human Mononuclear Phagocytes Reveals Subset-Defining Markers and Identifies Circulating Inflammatory Dendritic Cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.immuni.2019.08.008",
+    "preferred_url": "https://doi.org/10.1016/j.immuni.2019.08.008",
+    "publication_title": "Single-cell omics reveal human mononuclear phagocyte heterogeneity and inflammatory DC in health and disease"
+  }
+}

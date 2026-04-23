@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6959356/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 90497,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6959356/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6959356/fullTextXML",
+    "folder": "0190_10.1038_s41467-019-14118-w_eee71dc5ea",
+    "n_text_chars": 90497,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Communications",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41467-019-14118-w.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41467-019-14118-w"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41467-019-14118-w.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Integrated single cell analysis of blood and cerebrospinal fluid leukocytes in multiple sclerosis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.nature.com/articles/s41467-019-14118-w.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41467-019-14118-w"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6959356"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6959356?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC6959356",
+      "pmid": "31937773",
+      "pub_year": "2020",
+      "title": "Integrated single cell analysis of blood and cerebrospinal fluid leukocytes in multiple sclerosis."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41467-019-14118-w",
+    "preferred_url": "https://doi.org/10.1038/s41467-019-14118-w",
+    "publication_title": "Integrated single cell analysis of blood and cerebrospinal fluid leukocytes in multiple sclerosis."
+  }
+}

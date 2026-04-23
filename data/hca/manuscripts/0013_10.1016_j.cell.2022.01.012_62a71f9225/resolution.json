@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8776501/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 302480,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8776501/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8776501/fullTextXML",
+    "folder": "0013_10.1016_j.cell.2022.01.012_62a71f9225",
+    "n_text_chars": 302480,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S0092867422000708?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S0092867422000708?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "A blood atlas of COVID-19 defines hallmarks of disease severity and specificity",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.cell.2022.01.012"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8776501"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8776501?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8776501",
+      "pmid": "35216673",
+      "pub_year": "2022",
+      "title": "A blood atlas of COVID-19 defines hallmarks of disease severity and specificity."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.cell.2022.01.012",
+    "preferred_url": "https://doi.org/10.1016/j.cell.2022.01.012",
+    "publication_title": "A blood atlas of COVID-19 defines hallmarks of disease severity and specificity."
+  }
+}

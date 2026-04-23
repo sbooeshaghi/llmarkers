@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41587-020-0469-4?error=cookies_not_supported&code=a4801111-8951-4aad-a743-946f34b2265e",
+      "kind": "html",
+      "n_text_chars": 80732,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41587-020-0469-4",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41587-020-0469-4?error=cookies_not_supported&code=a4801111-8951-4aad-a743-946f34b2265e",
+    "folder": "0070_10.1038_s41587-020-0469-4_55d6a04187",
+    "n_text_chars": 80732,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Biotechnology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41587-020-0469-4.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41587-020-0469-4"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/s41587-020-0469-4.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Benchmarking single-cell RNA-sequencing protocols for cell atlas projects",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41587-020-0469-4"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "32518403",
+      "pub_year": "2020",
+      "title": "Benchmarking single-cell RNA-sequencing protocols for cell atlas projects."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41587-020-0469-4",
+    "preferred_url": "https://doi.org/10.1038/s41587-020-0469-4",
+    "publication_title": "Benchmarking single-cell RNA-sequencing protocols for cell atlas projects."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8292131/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 57537,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8292131/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8292131/fullTextXML",
+    "folder": "0449_10.1084_jem.20202345_e99c99a876",
+    "n_text_chars": 57537,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Journal of Experimental Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://rupress.org/jem/article-pdf/doi/10.1084/jem.20202345/1775681/jem_20202345.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://rupress.org/jem/article-pdf/doi/10.1084/jem.20202345/1775681/jem_20202345.pdf"
+        }
+      ],
+      "publisher": "Rockefeller University Press",
+      "title": "Single-cell analysis of human skin identifies CD14+ type 3 dendritic cells co-producing IL1B and IL23A in psoriasis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1084/jem.20202345"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8292131"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8292131?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8292131",
+      "pmid": "34279540",
+      "pub_year": "2021",
+      "title": "Single-cell analysis of human skin identifies CD14+ type 3 dendritic cells co-producing IL1B and IL23A in psoriasis."
+    }
+  },
+  "metadata": {
+    "doi": "10.1084/jem.20202345",
+    "preferred_url": "https://doi.org/10.1084/jem.20202345",
+    "publication_title": "Single-cell analysis of human skin identifies CD14+ type 3 dendritic cells co-producing IL1B and IL23A in psoriasis"
+  }
+}

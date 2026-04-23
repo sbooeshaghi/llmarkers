@@ -1,0 +1,75 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.03.01.21252411",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.03.01.21252411",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2021.03.01.21252411",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.03.01.21252411",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0140_10.1101_2021.03.01.21252411_572fc1288d",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2021.03.01.21252411"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Dynamic changes in human single cell transcriptional signatures during fatal sepsis",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2021.03.01.21252411"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "Dynamic changes in human single cell transcriptional signatures during fatal sepsis"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2021.03.01.21252411",
+    "preferred_url": "https://doi.org/10.1101/2021.03.01.21252411",
+    "publication_title": "Dynamic changes in human single cell transcriptional signatures during fatal sepsis"
+  }
+}

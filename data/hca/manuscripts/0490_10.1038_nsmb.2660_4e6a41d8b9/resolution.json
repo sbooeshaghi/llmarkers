@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/nsmb.2660?error=cookies_not_supported&code=5521ce57-0bdc-46c2-84ee-c29010b10094",
+      "kind": "html",
+      "n_text_chars": 83899,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/nsmb.2660",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/nsmb.2660?error=cookies_not_supported&code=5521ce57-0bdc-46c2-84ee-c29010b10094",
+    "folder": "0490_10.1038_nsmb.2660_4e6a41d8b9",
+    "n_text_chars": 83899,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Structural &amp; Molecular Biology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/nsmb.2660.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/nsmb.2660"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/nsmb.2660.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/nsmb.2660"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "23934149",
+      "pub_year": "2013",
+      "title": "Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/nsmb.2660",
+    "preferred_url": "https://doi.org/10.1038/nsmb.2660",
+    "publication_title": "Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells"
+  }
+}

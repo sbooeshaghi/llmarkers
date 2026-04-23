@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8410070/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 42172,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8410070/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8410070/fullTextXML",
+    "folder": "0293_10.1172_jci.insight.150861_5764a5bfad",
+    "n_text_chars": 42172,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "JCI Insight",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://insight.jci.org/articles/view/150861/files/pdf"
+        }
+      ],
+      "publisher": "American Society for Clinical Investigation",
+      "title": "Key molecular alterations in endothelial cells in human glioblastoma uncovered through single-cell RNA sequencing",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "http://insight.jci.org/articles/view/150861/files/pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1172/jci.insight.150861"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8410070"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8410070?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8410070",
+      "pmid": "34228647",
+      "pub_year": "2021",
+      "title": "Key molecular alterations in endothelial cells in human glioblastoma uncovered through single-cell RNA sequencing."
+    }
+  },
+  "metadata": {
+    "doi": "10.1172/jci.insight.150861",
+    "preferred_url": "https://doi.org/10.1172/jci.insight.150861",
+    "publication_title": "Key molecular alterations in endothelial cells in human glioblastoma uncovered through single-cell RNA sequencing."
+  }
+}

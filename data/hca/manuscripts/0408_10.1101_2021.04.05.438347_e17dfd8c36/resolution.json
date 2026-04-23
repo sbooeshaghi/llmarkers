@@ -1,0 +1,81 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.04.05.438347",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.biorxiv.org/content/10.1101/2021.04.05.438347v2.full.pdf",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2021.04.05.438347",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.04.05.438347",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0408_10.1101_2021.04.05.438347_e17dfd8c36",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2021.04.05.438347"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Single-cell sequencing unveils distinct immune microenvironment with CCR6-CCL20 crosstalk in human chronic pancreatitis",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2021/04/06/2021.04.05.438347.1.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2021.04.05.438347"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "Single-cell sequencing unveils distinct immune microenvironment with CCR6-CCL20 crosstalk in human chronic pancreatitis"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2021.04.05.438347",
+    "preferred_url": "https://doi.org/10.1101/2021.04.05.438347",
+    "publication_title": "Single-cell sequencing unveils distinct immune microenvironment with CCR6-CCL20 crosstalk in human chronic pancreatitis"
+  }
+}

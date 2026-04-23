@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7402635/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 50762,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7402635/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7402635/fullTextXML",
+    "folder": "0183_10.1126_sciimmunol.abd1554_52a79b9d12",
+    "n_text_chars": 50762,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Science Immunology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.science.org/doi/pdf/10.1126/sciimmunol.abd1554"
+        }
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "title": "Immunophenotyping of COVID-19 and influenza highlights the role of type I interferons in development of severe COVID-19",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/sciimmunol.abd1554"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7402635"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7402635?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7402635",
+      "pmid": "32651212",
+      "pub_year": "2020",
+      "title": "Immunophenotyping of COVID-19 and influenza highlights the role of type I interferons in development of severe COVID-19."
+    }
+  },
+  "metadata": {
+    "doi": "10.1126/sciimmunol.abd1554",
+    "preferred_url": "https://doi.org/10.1126/sciimmunol.abd1554",
+    "publication_title": "Immunophenotyping of COVID-19 and influenza highlights the role of type I interferons in development of severe COVID-19."
+  }
+}

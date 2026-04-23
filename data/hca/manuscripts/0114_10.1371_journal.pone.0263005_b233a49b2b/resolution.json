@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8791532/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 55527,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8791532/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8791532/fullTextXML",
+    "folder": "0114_10.1371_journal.pone.0263005_b233a49b2b",
+    "n_text_chars": 55527,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "PLOS ONE",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://dx.plos.org/10.1371/journal.pone.0263005"
+        }
+      ],
+      "publisher": "Public Library of Science (PLoS)",
+      "title": "Cryopreservation and post-thaw characterization of dissociated human islet cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1371/journal.pone.0263005"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8791532"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8791532?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8791532",
+      "pmid": "35081145",
+      "pub_year": "2022",
+      "title": "Cryopreservation and post-thaw characterization of dissociated human islet cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1371/journal.pone.0263005",
+    "preferred_url": "https://doi.org/10.1371/journal.pone.0263005",
+    "publication_title": "Cryopreservation and post-thaw characterization of dissociated human islet cells"
+  }
+}

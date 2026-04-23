@@ -1,0 +1,104 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9044136/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "269562",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9044136/",
+      "kind": "html",
+      "n_text_chars": 78566,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9044136/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9044136/",
+    "folder": "0158_10.2337_db21-0830_d021248f76",
+    "n_text_chars": 78566,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Diabetes",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://journals.org/diabetes/diabetes/article-pdf/71/5/1149/673054/db210830.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://diabetesjournals.org/diabetes/article-pdf/71/5/1149/673054/db210830.pdf"
+        }
+      ],
+      "publisher": "American Diabetes Association",
+      "title": "Endothelial Phospholipase C\u03b32 Improves Outcomes of Diabetic Ischemic Limb Rescue Following VEGF Therapy",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://diabetesjournals.org/diabetes/article-pdf/71/5/1149/673054/db210830.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.2337/db21-0830"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9044136"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9044136?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.2337/db21-0830"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC9044136",
+      "pmid": "35192691",
+      "pub_year": "2022",
+      "title": "Endothelial Phospholipase C\u03b32 Improves Outcomes of Diabetic Ischemic Limb Rescue Following VEGF Therapy."
+    }
+  },
+  "metadata": {
+    "doi": "10.2337/db21-0830",
+    "preferred_url": "https://doi.org/10.2337/db21-0830",
+    "publication_title": "Endothelial Phospholipase C\u03b32 Improves Outcomes of Diabetic Ischemic Limb Rescue Following VEGF Therapy"
+  }
+}

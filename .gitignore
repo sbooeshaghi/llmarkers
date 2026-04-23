@@ -52,3 +52,35 @@ data/biorxiv/meca/**
 !data/biorxiv/meca/**/manuscript.md
 !data/biorxiv/meca/**/markers.json
 !data/biorxiv/meca/**/metrics.json
+
+# HCA paper downloads: keep analysis inputs, ignore bulky fetch artifacts
+data/hca/manuscripts/**
+!data/hca/manuscripts/**/
+!data/hca/manuscripts/**/manuscript.md
+!data/hca/manuscripts/**/markers.json
+!data/hca/manuscripts/**/metadata.json
+!data/hca/manuscripts/**/metrics.json
+!data/hca/manuscripts/**/resolution.json
+!data/hca/manuscripts/**/biorxiv_metadata.json
+
+# Generated cross-study intermediate caches
+analysis/results/cross_study_candidate_profile_pairs.tsv
+analysis/results/cross_study_edge_decomposition_review.tsv
+analysis/results/cross_study_edge_driver_evidence.tsv
+analysis/results/cross_study_edge_driver_summary.tsv
+analysis/results/cross_study_edge_skos_summary.tsv
+analysis/results/cross_study_figure4_corpus_summary.tsv
+analysis/results/cross_study_marker_label_alignment.tsv
+analysis/results/cross_study_marker_neighbor_space_compare.tsv
+analysis/results/cross_study_marker_records.tsv
+analysis/results/cross_study_marker_records_standardized.tsv
+analysis/results/cross_study_monocyte_macrophage_pairs.tsv
+analysis/results/cross_study_nearest_label_neighbors.tsv
+analysis/results/cross_study_nearest_marker_neighbors.tsv
+analysis/results/cross_study_nearest_neighbor_jaccard_summary.tsv
+analysis/results/cross_study_paper_pair_jaccard.tsv
+analysis/results/cross_study_profile_summary.tsv
+analysis/results/cross_study_profile_summary_standardized.tsv
+analysis/results/cross_study_same_name_pairs.tsv
+analysis/results/cross_study_top_different_name_matches.tsv
+analysis/results/cross_study_top_same_name_divergent_pairs.tsv

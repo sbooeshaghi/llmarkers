@@ -1,0 +1,92 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7613284/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "244096",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7613284/",
+      "kind": "html",
+      "n_text_chars": 79733,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7613284/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7613284/",
+    "folder": "0304_10.1126_sciimmunol.abg5539_d30f748444",
+    "n_text_chars": 79733,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Science Immunology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.science.org/doi/pdf/10.1126/sciimmunol.abg5539"
+        }
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "title": "Single-cell transcriptional profiling informs efficient reprogramming of human somatic cells to cross-presenting dendritic cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/sciimmunol.abg5539"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7613284"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7613284?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/sciimmunol.abg5539"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC7613284",
+      "pmid": "35245086",
+      "pub_year": "2022",
+      "title": "Single-cell transcriptional profiling informs efficient reprogramming of human somatic cells to cross-presenting dendritic cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1126/sciimmunol.abg5539",
+    "preferred_url": "https://doi.org/10.1126/sciimmunol.abg5539",
+    "publication_title": "Single-cell transcriptional profiling informs efficient reprogramming of human somatic cells to cross-presenting dendritic cells"
+  }
+}

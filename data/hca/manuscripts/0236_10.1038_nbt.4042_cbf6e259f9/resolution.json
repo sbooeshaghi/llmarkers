@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5784859/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 32497,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5784859/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 12,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5784859/fullTextXML",
+    "folder": "0236_10.1038_nbt.4042_cbf6e259f9",
+    "n_text_chars": 32497,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Biotechnology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/nbt.4042.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/nbt.4042"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/doifinder/10.1038/nbt.4042"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/nbt.4042.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Multiplexed droplet single-cell RNA-sequencing using natural genetic variation",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://europepmc.org/articles/pmc5784859?pdf=render"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/nbt.4042"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5784859"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5784859?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC5784859",
+      "pmid": "29227470",
+      "pub_year": "2018",
+      "title": "Multiplexed droplet single-cell RNA-sequencing using natural genetic variation."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/nbt.4042",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5784859/pdf/nihms921103.pdf",
+    "publication_title": "Multiplexing droplet-based single cell RNA-sequencing using genetic barcodes"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2023.08.08.551504",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2023.08.08.551504",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2023.08.08.551504",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2023.08.08.551504",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0231_10.1101_2023.08.08.551504_0d646c9546",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2023.08.08.551504"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Multi-scale spatial mapping of cell populations across anatomical sites in healthy human skin and basal cell carcinoma",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2023/08/09/2023.08.08.551504.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2023.08.08.551504"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/article/PPR/PPR706792"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR706792&type=FILE&fileName=EMS186753-pdf.pdf&mimeType=application/pdf"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2023",
+      "title": "Multi-scale spatial mapping of cell populations across anatomical sites in healthy human skin and basal cell carcinoma"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2023.08.08.551504",
+    "preferred_url": "https://doi.org/10.1101/2023.08.08.551504",
+    "publication_title": "Multi-scale spatial mapping of cell populations across anatomical sites in healthy human skin and basal cell carcinoma"
+  }
+}

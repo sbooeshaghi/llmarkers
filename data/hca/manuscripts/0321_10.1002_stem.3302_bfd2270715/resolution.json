@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7898721/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 69464,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7898721/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 12,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7898721/fullTextXML",
+    "folder": "0321_10.1002_stem.3302_bfd2270715",
+    "n_text_chars": 69464,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Stem Cells",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fstem.3302"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/stem.3302"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/stem.3302"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://academic.oup.com/stmcls/article-pdf/39/2/156/42605049/stmcls_39_2_156.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://academic.oup.com/stmcls/article-pdf/39/2/156/42605049/stmcls_39_2_156.pdf"
+        }
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "title": "Directed induction of alveolar type I cells derived from pluripotent stem cells via Wnt signaling inhibition",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1002/stem.3302"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7898721"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7898721?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7898721",
+      "pmid": "33241896",
+      "pub_year": "2021",
+      "title": "Directed induction of alveolar type I cells derived from pluripotent stem cells via Wnt signaling inhibition."
+    }
+  },
+  "metadata": {
+    "doi": "10.1002/stem.3302",
+    "preferred_url": "https://doi.org/10.1002/stem.3302",
+    "publication_title": "Directed induction of alveolar type I cells derived from pluripotent stem cells via Wnt signaling inhibition."
+  }
+}

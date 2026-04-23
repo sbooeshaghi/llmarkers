@@ -1,0 +1,104 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5033269/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "193209",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5033269/",
+      "kind": "html",
+      "n_text_chars": 47449,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5033269/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5033269/",
+    "folder": "0335_10.2337_db16-0405_ae79f269d3",
+    "n_text_chars": 47449,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Diabetes",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://diabetes.diabetesjournals.org/syndication/doi/10.2337/db16-0405"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://journals.org/diabetes/diabetes/article-pdf/65/10/3028/582233/db160405.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://diabetesjournals.org/diabetes/article-pdf/65/10/3028/582233/db160405.pdf"
+        }
+      ],
+      "publisher": "American Diabetes Association",
+      "title": "Single-Cell Transcriptomics of the Human Endocrine Pancreas",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.2337/db16-0405"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5033269"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5033269?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.2337/db16-0405"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC5033269",
+      "pmid": "27364731",
+      "pub_year": "2016",
+      "title": "Single-Cell Transcriptomics of the Human Endocrine Pancreas."
+    }
+  },
+  "metadata": {
+    "doi": "10.2337/db16-0405",
+    "preferred_url": "https://doi.org/10.2337/db16-0405",
+    "publication_title": "Single-Cell Transcriptomics of the Human Endocrine Pancreas"
+  }
+}

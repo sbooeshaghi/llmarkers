@@ -1,0 +1,81 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.04.28.441762",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.science.org/doi/10.1126/science.abl5197",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2021.04.28.441762",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.04.28.441762",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0113_10.1101_2021.04.28.441762_c83625bbe4",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2021.04.28.441762"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Cross-tissue immune cell analysis reveals tissue-specific adaptations and clonal architecture in humans",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2021/07/20/2021.04.28.441762.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2021.04.28.441762"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "Cross-tissue immune cell analysis reveals tissue-specific adaptations and clonal architecture in humans"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2021.04.28.441762",
+    "preferred_url": "https://doi.org/10.1101/2021.04.28.441762",
+    "publication_title": "Cross-tissue immune cell analysis reveals tissue-specific adaptations and clonal architecture in humans"
+  }
+}

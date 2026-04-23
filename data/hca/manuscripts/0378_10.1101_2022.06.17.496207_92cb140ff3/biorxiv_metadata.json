@@ -1,0 +1,253 @@
+{
+  "doi": "10.1101/2022.06.17.496207",
+  "title": "Single-cell atlas of bronchoalveolar lavage from preschool cystic fibrosis reveals new cell phenotypes",
+  "abstract": "ABSTRACT\nInflammation is a key driver of cystic fibrosis (CF) lung disease, not addressed by current standard care. Improved understanding of the mechanisms leading to aberrant inflammation may assist the development of effective anti-inflammatory therapy. Single-cell RNA sequencing (scRNA-seq) allows profiling of cell composition and function at previously unprecedented resolution. Herein, we seek to use multimodal single-cell analysis to comprehensively define immune cell phenotypes, proportions and functional characteristics in preschool children with CF. We analyzed 42,658 cells from bronchoalveolar lavage of 11 preschool children with CF and a healthy control using scRNA-seq and parallel assessment of 154 cell surface proteins. Validation of cell types identified by scRNA-seq was achieved by assessment of samples by spectral flow cytometry. Analysis of transcriptome expression and cell surface protein expression, combined with functional pathway analysis, revealed 41 immune and epithelial cell populations in BAL. Spectral flow cytometry analysis of over 256,000 cells from a subset of the same patients revealed high correlation in major cell type proportions across the two technologies. Macrophages consisted of 13 functionally distinct sub populations, including previously undescribed populations enriched for markers of vesicle production and regulatory/repair functions. Other novel cell populations included CD4 T cells expressing inflammatory IFNα/β and NFκB signalling genes. Our work provides a comprehensive cellular analysis of the pediatric lower airway in preschool children with CF, reveals novel cell types and provides a reference for investigation of inflammation in early life CF.",
+  "pub_date": "2022-01-01",
+  "authors": [
+    {
+      "given_names": "Jovana",
+      "surname": "Maksimovic",
+      "orcid": "0000-0002-9458-3061",
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Shivanthan",
+      "surname": "Shanthikumar",
+      "orcid": "0000-0001-6000-3180",
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "George",
+      "surname": "Howitt",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Peter F",
+      "surname": "Hickey",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5",
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "William",
+      "surname": "Ho",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Casey",
+      "surname": "Anttila",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Daniel V.",
+      "surname": "Brown",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Anne",
+      "surname": "Senabouth",
+      "orcid": null,
+      "affiliation_ids": [
+        "a7",
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Dominik",
+      "surname": "Kaczorowski",
+      "orcid": null,
+      "affiliation_ids": [
+        "a7",
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Daniela",
+      "surname": "Amann-Zalcenstein",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Joseph E.",
+      "surname": "Powell",
+      "orcid": null,
+      "affiliation_ids": [
+        "a7",
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Sarath C.",
+      "surname": "Ranganathan",
+      "orcid": "0000-0002-6975-0307",
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Alicia",
+      "surname": "Oshlack",
+      "orcid": "0000-0001-9788-5690",
+      "affiliation_ids": [
+        "a1",
+        "a9",
+        "a10"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Melanie R.",
+      "surname": "Neeland",
+      "orcid": "0000-0001-7301-9982",
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a11"
+      ],
+      "corresponding": true,
+      "position": 14
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Computational Biology Program, Peter MacCallum Cancer Centre",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Respiratory Diseases, Murdoch Children’s Research Institute",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Department of Paediatrics, University of Melbourne",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Respiratory and Sleep Medicine, Royal Children’s Hospital",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Cellular Genomics Projects Team, Advanced Technology and Biology Division, WEHI",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Department of Medical Biology, University of Melbourne",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Garvan-Weizmann Centre for Cellular Genomics, Garvan Institute of Medical Research",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "UNSW Cellular Genomics Futures Institute, University of New South Wales",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "Sir Peter MacCallum Department of Oncology, University of Melbourne",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a10",
+      "institution": "School of Mathematics and Statistics, University of Melbourne",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a11",
+      "institution": "Molecular Immunity, Murdoch Children’s Research Institute",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    }
+  ]
+}

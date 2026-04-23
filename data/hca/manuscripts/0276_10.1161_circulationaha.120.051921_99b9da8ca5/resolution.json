@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8055196/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 55215,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8055196/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8055196/fullTextXML",
+    "folder": "0276_10.1161_circulationaha.120.051921_99b9da8ca5",
+    "n_text_chars": 55215,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Circulation",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.120.051921"
+        }
+      ],
+      "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+      "title": "Sex-Specific Control of Human Heart Maturation by the Progesterone Receptor",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1161/CIRCULATIONAHA.120.051921"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8055196"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8055196?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8055196",
+      "pmid": "33682422",
+      "pub_year": "2021",
+      "title": "Sex-Specific Control of Human Heart Maturation by the Progesterone Receptor."
+    }
+  },
+  "metadata": {
+    "doi": "10.1161/circulationaha.120.051921",
+    "preferred_url": "https://doi.org/10.1161/circulationaha.120.051921",
+    "publication_title": "Sex-Specific Control of Human Heart Maturation by the Progesterone Receptor."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/2024.02.05.578886v1",
+      "kind": "html",
+      "n_text_chars": 7032,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1101/2024.02.05.578886",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/2024.02.05.578886v1",
+    "folder": "0456_10.1101_2024.02.05.578886_f63955b1e7",
+    "n_text_chars": 7032,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2024.02.05.578886"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Spatial transcriptomic profiling of human retinoblastoma",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2024/02/08/2024.02.05.578886.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2024.02.05.578886"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2024",
+      "title": "Spatial transcriptomic profiling of human retinoblastoma"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2024.02.05.578886",
+    "preferred_url": "https://doi.org/10.1101/2024.02.05.578886",
+    "publication_title": "Spatial transcriptomic profiling of human retinoblastoma"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7062525/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 47108,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7062525/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7062525/fullTextXML",
+    "folder": "0260_10.1084_jem.20190811_d700cd1f81",
+    "n_text_chars": 47108,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Journal of Experimental Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://rupress.org/jem/article-pdf/doi/10.1084/jem.20190811/1822263/jem_20190811.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://rupress.org/jem/article-pdf/doi/10.1084/jem.20190811/1822263/jem_20190811.pdf"
+        }
+      ],
+      "publisher": "Rockefeller University Press",
+      "title": "Re-evaluation of human BDCA-2+ DC during acute sterile skin inflammation",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://rupress.org/jem/article-pdf/217/3/e20190811/841782/jem_20190811.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1084/jem.20190811"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7062525"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7062525?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7062525",
+      "pmid": "31845972",
+      "pub_year": "2020",
+      "title": "Re-evaluation of human BDCA-2+ DC during acute sterile skin inflammation."
+    }
+  },
+  "metadata": {
+    "doi": "10.1084/jem.20190811",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7062525",
+    "publication_title": "Re-evaluation of human BDCA-2+ DC during acute sterile skin inflammation."
+  }
+}

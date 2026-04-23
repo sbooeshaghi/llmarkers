@@ -1,0 +1,67 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/2024.06.30.601119v1",
+      "kind": "html",
+      "n_text_chars": 30153,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1101/2024.06.30.601119",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/2024.06.30.601119v1",
+    "folder": "0067_10.1101_2024.06.30.601119_18117ee53d",
+    "n_text_chars": 30153,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2024.06.30.601119"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Single-cell analysis of human diversity in circulating immune cells",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2024.06.30.601119"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2024",
+      "title": "Single-cell analysis of human diversity in circulating immune cells"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2024.06.30.601119",
+    "preferred_url": "https://doi.org/10.1101/2024.06.30.601119",
+    "publication_title": "Single-cell analysis of human diversity in circulating immune cells"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "2727",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S2211124721009554",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.celrep.2021.109524",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "170566",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/34380039/",
+      "kind": "html",
+      "n_text_chars": 10898,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pubmed.ncbi.nlm.nih.gov/34380039",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/34380039/",
+    "folder": "0413_10.1016_j.celrep.2021.109524_894f3930a6",
+    "n_text_chars": 10898,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Reports",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S2211124721009554?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S2211124721009554?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Single-cell transcriptome analysis reveals the dynamics of human immune cells during early fetal skin development",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.celrep.2021.109524"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "34380039",
+      "pub_year": "2021",
+      "title": "Single-cell transcriptome analysis reveals the dynamics of human immune cells during early fetal skin development."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.celrep.2021.109524",
+    "preferred_url": "https://doi.org/10.1016/j.celrep.2021.109524",
+    "publication_title": "Single-cell transcriptome analysis reveals the dynamics of human immune cells during early fetal skin development."
+  }
+}

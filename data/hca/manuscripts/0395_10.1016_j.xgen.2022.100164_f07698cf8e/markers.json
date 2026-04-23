@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "M\u00fcller glia",
+    "group_name": "M\u00dcLLER GLIA",
+    "group_id": null,
+    "feature_label": "LHX2",
+    "feature_name": "LHX2",
+    "feature_id": "ENSG00000106689",
+    "source_type": "text",
+    "source_rationale": "We speculate that this TF could be LHX2, given its robust expression in M\u00fcller glia by our scRNA-seq data ( Figure 6 E) as well as data from animal models.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Muller glia",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " LHX2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "bipolar and amacrine cells",
+    "group_name": "BIPOLAR AND AMACRINE CELL",
+    "group_id": null,
+    "feature_label": "NEUROD4",
+    "feature_name": "NEUROD4",
+    "feature_id": "ENSG00000123307",
+    "source_type": "text",
+    "source_rationale": "We thus compared all neuroD and neurogenin family members using our scRNA-seq data, which revealed only NEUROD4 to be specific to bipolar and amacrine cells ( Figure 6 G), consistent with its role in specifying these cell types during development.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " bipolar and amacrine cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " NEUROD4",
+      "all_verified": true
+    }
+  }
+]

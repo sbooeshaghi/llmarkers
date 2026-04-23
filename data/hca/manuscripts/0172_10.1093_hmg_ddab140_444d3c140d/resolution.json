@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8330894/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 48546,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8330894/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8330894/fullTextXML",
+    "folder": "0172_10.1093_hmg_ddab140_444d3c140d",
+    "n_text_chars": 48546,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Human Molecular Genetics",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "am",
+          "intended_application": "syndication",
+          "url": "http://academic.oup.com/hmg/advance-article-pdf/doi/10.1093/hmg/ddab140/38706472/ddab140.pdf"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://academic.oup.com/hmg/article-pdf/30/16/1543/39351963/ddab140.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://academic.oup.com/hmg/article-pdf/30/16/1543/39351963/ddab140.pdf"
+        }
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "title": "Human photoreceptor cells from different macular subregions have distinct transcriptional profiles",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1093/hmg/ddab140"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8330894"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8330894?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8330894",
+      "pmid": "34014299",
+      "pub_year": "2021",
+      "title": "Human photoreceptor cells from different macular subregions have distinct transcriptional profiles."
+    }
+  },
+  "metadata": {
+    "doi": "10.1093/hmg/ddab140",
+    "preferred_url": "https://doi.org/10.1093/hmg/ddab140",
+    "publication_title": "Human photoreceptor cells from different macular subregions have distinct transcriptional profiles"
+  }
+}

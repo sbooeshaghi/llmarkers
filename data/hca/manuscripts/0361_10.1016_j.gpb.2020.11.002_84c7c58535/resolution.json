@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8602400/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 55827,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8602400/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 12,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8602400/fullTextXML",
+    "folder": "0361_10.1016_j.gpb.2020.11.002_84c7c58535",
+    "n_text_chars": 55827,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Genomics, Proteomics &amp; Bioinformatics",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1672022921000036?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1672022921000036?httpAccept=text/plain"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://academic.oup.com/gpb/article-pdf/19/2/208/57582238/gpb_19_2_208.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://academic.oup.com/gpb/article-pdf/19/2/208/57582238/gpb_19_2_208.pdf"
+        }
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "title": "Single-Cell Immune Landscape of Human Recurrent Miscarriage",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.1016/j.gpb.2020.11.002"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.gpb.2020.11.002"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8602400"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8602400?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8602400",
+      "pmid": "33482359",
+      "pub_year": "2021",
+      "title": "Single-cell Immune Landscape of Human Recurrent Miscarriage."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.gpb.2020.11.002",
+    "preferred_url": "https://doi.org/10.1016/j.gpb.2020.11.002",
+    "publication_title": "Single-cell Immune Landscape of Human Recurrent Miscarriage"
+  }
+}

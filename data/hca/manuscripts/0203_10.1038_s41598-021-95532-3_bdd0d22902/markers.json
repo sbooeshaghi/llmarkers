@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD8",
+    "group_name": "CD8",
+    "group_id": null,
+    "feature_label": "CCL5",
+    "feature_name": "CCL5",
+    "feature_id": "ENSG00000271503",
+    "source_type": "text",
+    "source_rationale": "With this increased resolution, we found that these NM T cells were primarily CD8 positive and expressed genes encoding CCL5 and interferon gamma, TNF, PRF, granzymes, and killer-like receptors that are important for T cell effector function and antiviral activity.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD8",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CCL5",
+      "all_verified": true
+    }
+  }
+]

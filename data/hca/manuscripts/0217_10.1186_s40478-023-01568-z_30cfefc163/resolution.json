@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10204264/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 70266,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10204264/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10204264/fullTextXML",
+    "folder": "0217_10.1186_s40478-023-01568-z_30cfefc163",
+    "n_text_chars": 70266,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Acta Neuropathologica Communications",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/content/pdf/10.1186/s40478-023-01568-z.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/article/10.1186/s40478-023-01568-z/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://link.springer.com/content/pdf/10.1186/s40478-023-01568-z.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Brain matters: unveiling the distinct contributions of region, age, and sex to glia diversity and\u00a0CNS function",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://actaneurocomms.biomedcentral.com/counter/pdf/10.1186/s40478-023-01568-z"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s40478-023-01568-z"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10204264"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10204264?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC10204264",
+      "pmid": "37217978",
+      "pub_year": "2023",
+      "title": "Brain matters: unveiling the distinct contributions of region, age, and sex to glia diversity and\u00a0CNS function."
+    }
+  },
+  "metadata": {
+    "doi": "10.1186/s40478-023-01568-z",
+    "preferred_url": "https://doi.org/10.1186/s40478-023-01568-z",
+    "publication_title": "Brain matters: unveiling the distinct contributions of region, age, and sex to glia diversity and CNS function"
+  }
+}

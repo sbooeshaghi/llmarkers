@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8353162/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 61583,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8353162/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8353162/fullTextXML",
+    "folder": "0308_10.1242_dev.199711_724ab19d33",
+    "n_text_chars": 61583,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Development",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "am",
+          "intended_application": "syndication",
+          "url": "http://journals.biologists.com/dev/article-pdf/doi/10.1242/dev.199711/2089560/dev199711.pdf"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://journals.biologists.com/dev/article-pdf/doi/10.1242/dev.199711/2100987/dev199711.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://journals.biologists.com/dev/article-pdf/doi/10.1242/dev.199711/2100987/dev199711.pdf"
+        }
+      ],
+      "publisher": "The Company of Biologists",
+      "title": "Single-cell transcriptome profiling of the human developing spinal cord reveals a conserved genetic programme with human-specific features",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.1242/dev.199711"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1242/dev.199711"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8353162"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8353162",
+      "pmid": "34351410",
+      "pub_year": "2021",
+      "title": "Single-cell transcriptome profiling of the human developing spinal cord reveals a conserved genetic programme with human-specific features."
+    }
+  },
+  "metadata": {
+    "doi": "10.1242/dev.199711",
+    "preferred_url": "https://doi.org/10.1242/dev.199711",
+    "publication_title": "Single-cell transcriptome profiling of the human developing spinal cord reveals a conserved genetic programme with human-specific features."
+  }
+}

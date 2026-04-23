@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8762313/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 33540,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8762313/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8762313/fullTextXML",
+    "folder": "0355_10.3389_fgene.2021.745483_5f4326fce7",
+    "n_text_chars": 33540,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Frontiers in Genetics",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.frontiersin.org/articles/10.3389/fgene.2021.745483/full"
+        }
+      ],
+      "publisher": "Frontiers Media SA",
+      "title": "Single-Cell RNA-Seq of Bone Marrow Cells in Aplastic Anemia",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3389/fgene.2021.745483"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8762313"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8762313?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8762313",
+      "pmid": "35046994",
+      "pub_year": "2021",
+      "title": "Single-Cell RNA-Seq of Bone Marrow Cells in Aplastic Anemia."
+    }
+  },
+  "metadata": {
+    "doi": "10.3389/fgene.2021.745483",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8762313",
+    "publication_title": "Single-Cell RNA-Seq of Bone Marrow Cells in Aplastic Anemia"
+  }
+}

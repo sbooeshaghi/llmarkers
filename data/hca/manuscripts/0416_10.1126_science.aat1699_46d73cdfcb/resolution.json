@@ -1,0 +1,98 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6104812/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "197650",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6104812/",
+      "kind": "html",
+      "n_text_chars": 40643,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6104812/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6104812/",
+    "folder": "0416_10.1126_science.aat1699_46d73cdfcb",
+    "n_text_chars": 40643,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Science",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://syndication.highwire.org/content/doi/10.1126/science.aat1699"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.science.org/doi/pdf/10.1126/science.aat1699"
+        }
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "title": "Single-cell transcriptomes from human kidneys reveal the cellular identity of renal tumors",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/science.aat1699"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6104812"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6104812?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/science.aat1699"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC6104812",
+      "pmid": "30093597",
+      "pub_year": "2018",
+      "title": "Single-cell transcriptomes from human kidneys reveal the cellular identity of renal tumors."
+    }
+  },
+  "metadata": {
+    "doi": "10.1126/science.aat1699",
+    "preferred_url": "https://doi.org/10.1126/science.aat1699",
+    "publication_title": "Single-cell transcriptomes from human kidneys reveal the cellular identity of renal tumors."
+  }
+}

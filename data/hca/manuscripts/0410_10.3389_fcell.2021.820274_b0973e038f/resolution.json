@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8883837/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 61673,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8883837/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 8,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8883837/fullTextXML",
+    "folder": "0410_10.3389_fcell.2021.820274_b0973e038f",
+    "n_text_chars": 61673,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Frontiers in Cell and Developmental Biology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.frontiersin.org/articles/10.3389/fcell.2021.820274/full"
+        }
+      ],
+      "publisher": "Frontiers Media SA",
+      "title": "Single-Cell Sequencing Unveils the Heterogeneity of Nonimmune Cells in Chronic Apical Periodontitis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3389/fcell.2021.820274"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8883837"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8883837?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8883837",
+      "pmid": "35237614",
+      "pub_year": "2021",
+      "title": "Single-Cell Sequencing Unveils the Heterogeneity of Nonimmune Cells in Chronic Apical Periodontitis."
+    }
+  },
+  "metadata": {
+    "doi": "10.3389/fcell.2021.820274",
+    "preferred_url": "https://doi.org/10.3389/fcell.2021.820274",
+    "publication_title": "Single-Cell Sequencing Unveils the Heterogeneity of Nonimmune Cells in Chronic Apical Periodontitis."
+  }
+}

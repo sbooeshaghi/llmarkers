@@ -1,0 +1,73 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/2022.10.24.513598v2",
+      "kind": "html",
+      "n_text_chars": 17237,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1101/2022.10.24.513598",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/2022.10.24.513598v2",
+    "folder": "0461_10.1101_2022.10.24.513598_7706771889",
+    "n_text_chars": 17237,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2022.10.24.513598"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Spatially resolved human kidney multi-omics single cell atlas highlights the key role of the fibrotic microenvironment in kidney disease progression",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2022/10/26/2022.10.24.513598.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2022.10.24.513598"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2022",
+      "title": "Spatially resolved human kidney multi-omics single cell atlas highlights the key role of the fibrotic microenvironment in kidney disease progression"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2022.10.24.513598",
+    "preferred_url": "https://doi.org/10.1101/2022.10.24.513598",
+    "publication_title": "Spatially resolved human kidney multi-omics single cell atlas highlights the key role of the fibrotic microenvironment in kidney disease progression"
+  }
+}

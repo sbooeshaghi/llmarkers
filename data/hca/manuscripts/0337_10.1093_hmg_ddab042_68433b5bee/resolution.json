@@ -1,0 +1,94 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1093/hmg/ddab042",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://academic.oup.com/hmg/article/30/5/370/6131713",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "pdf",
+      "requested_url": "http://academic.oup.com/hmg/advance-article-pdf/doi/10.1093/hmg/ddab042/36809490/ddab042.pdf",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "pdf",
+      "requested_url": "http://academic.oup.com/hmg/article-pdf/30/5/370/37775634/ddab042.pdf",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1093/hmg/ddab042",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0337_10.1093_hmg_ddab042_68433b5bee",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Human Molecular Genetics",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "am",
+          "intended_application": "syndication",
+          "url": "http://academic.oup.com/hmg/advance-article-pdf/doi/10.1093/hmg/ddab042/36809490/ddab042.pdf"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://academic.oup.com/hmg/article-pdf/30/5/370/37775634/ddab042.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://academic.oup.com/hmg/article-pdf/30/5/370/37775634/ddab042.pdf"
+        }
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "title": "Integrative analyses of scRNA-seq and scATAC-seq reveal CXCL14 as a key regulator of lymph node metastasis in breast cancer",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1093/hmg/ddab042"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "33564857",
+      "pub_year": "2021",
+      "title": "Integrative analyses of scRNA-seq and scATAC-seq reveal CXCL14 as a key regulator of lymph node metastasis in breast cancer."
+    }
+  },
+  "metadata": {
+    "doi": "10.1093/hmg/ddab042",
+    "preferred_url": "https://doi.org/10.1093/hmg/ddab042",
+    "publication_title": "Integrative analyses of scRNA-seq and scATAC-seq reveal CXCL14 as a key regulator of lymph node metastasis in breast cancer."
+  }
+}

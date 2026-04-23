@@ -1,0 +1,229 @@
+{
+  "doi": "10.1101/2021.08.19.457030",
+  "title": "Village in a dish: a model system for population-scale hiPSC studies",
+  "abstract": "Abstract\nThe mechanisms by which DNA alleles contribute to disease risk, drug response, and other human phenotypes are highly context-specific, varying across cell types and under different conditions. Human induced pluripotent stem cells (hiPSCs) are uniquely suited to study these context-dependent effects, but to do so requires cell lines from hundreds or potentially thousands of individuals. Village cultures, where multiple hiPSC lines are cultured and differentiated together in a single dish, provide an elegant solution for scaling hiPSC experiments to the necessary sample sizes required for population-scale studies. Here, we show the utility of village models, demonstrating how cells can be assigned back to a donor line using single cell sequencing, and addressing whether line-specific signaling alters the transcriptional profiles of companion lines in a village culture. We generated single cell RNA sequence data from hiPSC lines cultured independently (uni-culture) and in villages at three independent sites. We show that the transcriptional profiles of hiPSC lines are highly consistent between uni- and village cultures for both fresh (0.46 < R < 0.88) and cryopreserved samples (0.46 < R < 0.62). Using a mixed linear model framework, we estimate that the proportion of transcriptional variation across cells is predominantly due to donor effects, with minimal evidence of variation due to culturing in a village system. We demonstrate that the genetic, epigenetic or hiPSC line-specific effects on gene expression are consistent whether the lines are uni- or village-cultured (0.82 < R < 0.94). Finally, we identify the consistency in the landscape of cell states between uni- and village-culture systems. Collectively, we demonstrate that village methods can be effectively used to detect hiPSC line-specific effects including sensitive dynamics of cell states.",
+  "pub_date": "2021-01-01",
+  "authors": [
+    {
+      "given_names": "Drew R.",
+      "surname": "Neavin",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Angela M.",
+      "surname": "Steinmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Han Sheng",
+      "surname": "Chiu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Maciej S.",
+      "surname": "Daniszewski",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Cátia",
+      "surname": "Moutinho",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Chia-Ling",
+      "surname": "Chan",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Mubarika",
+      "surname": "Tyebally",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Vikkitharan",
+      "surname": "Gnanasambandapillai",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Chuan E.",
+      "surname": "Lam",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Uyen",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Damián",
+      "surname": "Hernández",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Grace E.",
+      "surname": "Lidgerwood",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Alex W.",
+      "surname": "Hewitt",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Alice",
+      "surname": "Pébay",
+      "orcid": "0000-0002-7408-9453",
+      "affiliation_ids": [
+        "a3",
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Nathan J.",
+      "surname": "Palpant",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Joseph E.",
+      "surname": "Powell",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a7"
+      ],
+      "corresponding": true,
+      "position": 16
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Garvan-Weizmann Centre for Cellular Genomics, Garvan Institute of Medical Research",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Institute for Molecular Bioscience, University of Queensland",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Department of Anatomy and Physiology, the University of Melbourne",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Wicking Dementia Research and Education Centre, University of Tasmania",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "School of Medicine, Menzies Institute for Medical Research, University of Tasmania",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Department of Surgery, Royal Melbourne Hospital, the University of Melbourne",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "UNSW Cellular Genomics Futures Institute, School of Medical Sciences, University of New South Wales",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41593-020-0621-y?error=cookies_not_supported&code=2243116f-a1fa-4ae8-bfe4-8142553aada7",
+      "kind": "html",
+      "n_text_chars": 95513,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41593-020-0621-y",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41593-020-0621-y?error=cookies_not_supported&code=2243116f-a1fa-4ae8-bfe4-8142553aada7",
+    "folder": "0441_10.1038_s41593-020-0621-y_a3edefca60",
+    "n_text_chars": 95513,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Neuroscience",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41593-020-0621-y.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41593-020-0621-y"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/s41593-020-0621-y.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-nucleus transcriptomics of the prefrontal cortex in major depressive disorder implicates oligodendrocyte precursor cells and excitatory neurons",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2019/03/15/384479.full.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41593-020-0621-y"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "32341540",
+      "pub_year": "2020",
+      "title": "Single-nucleus transcriptomics of the prefrontal cortex in major depressive disorder implicates oligodendrocyte precursor cells and excitatory neurons."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41593-020-0621-y",
+    "preferred_url": "https://doi.org/10.1038/s41593-020-0621-y",
+    "publication_title": "Single-nucleus transcriptomics of the prefrontal cortex in major depressive disorder implicates oligodendrocyte precursor cells and excitatory neurons."
+  }
+}

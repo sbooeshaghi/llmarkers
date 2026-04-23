@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "neuronal",
+    "group_name": "NEURONAL",
+    "group_id": null,
+    "feature_label": "SNAP25",
+    "feature_name": "SNAP25",
+    "feature_id": "ENSG00000132639",
+    "source_type": "text",
+    "source_rationale": "At days 30 and 52, four additional dominant cell types were identified, two of which appeared to be neuronal, and two non-neuronal (characterized by expression and lack of the pan-neuronal markers SNAP25 and SYT1, respectively).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "uronal (characterized by expression and lack of the pan-neuronal",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " SNAP25",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "neuronal",
+    "group_name": "NEURONAL",
+    "group_id": null,
+    "feature_label": "SYT1",
+    "feature_name": "SYT1",
+    "feature_id": "ENSG00000067715",
+    "source_type": "text",
+    "source_rationale": "At days 30 and 52, four additional dominant cell types were identified, two of which appeared to be neuronal, and two non-neuronal (characterized by expression and lack of the pan-neuronal markers SNAP25 and SYT1, respectively).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "uronal (characterized by expression and lack of the pan-neuronal",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " SYT1",
+      "all_verified": true
+    }
+  }
+]

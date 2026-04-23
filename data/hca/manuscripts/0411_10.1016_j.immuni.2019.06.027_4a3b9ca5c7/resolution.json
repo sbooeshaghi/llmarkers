@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "2739",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1074761319302973",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.immuni.2019.06.027",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "171135",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/31402260/",
+      "kind": "html",
+      "n_text_chars": 10874,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pubmed.ncbi.nlm.nih.gov/31402260",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/31402260/",
+    "folder": "0411_10.1016_j.immuni.2019.06.027_4a3b9ca5c7",
+    "n_text_chars": 10874,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Immunity",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1074761319302973?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1074761319302973?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Single-Cell Survey of Human Lymphatics Unveils Marked Endothelial Cell Heterogeneity and Mechanisms of Homing for Neutrophils",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.immuni.2019.06.027"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "31402260",
+      "pub_year": "2019",
+      "title": "Single-Cell Survey of Human Lymphatics Unveils Marked Endothelial Cell Heterogeneity and Mechanisms of Homing for Neutrophils."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.immuni.2019.06.027",
+    "preferred_url": "https://doi.org/10.1016/j.immuni.2019.06.027",
+    "publication_title": "Single-Cell Survey of Human Lymphatics Unveils Marked Endothelial Cell Heterogeneity and Mechanisms of Homing for Neutrophils"
+  }
+}

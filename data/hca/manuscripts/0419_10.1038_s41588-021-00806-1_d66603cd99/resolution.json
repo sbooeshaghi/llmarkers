@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41588-021-00806-1?error=cookies_not_supported&code=198843c2-899e-4097-8cda-92d647aff4ce",
+      "kind": "html",
+      "n_text_chars": 89941,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41588-021-00806-1",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41588-021-00806-1?error=cookies_not_supported&code=198843c2-899e-4097-8cda-92d647aff4ce",
+    "folder": "0419_10.1038_s41588-021-00806-1_d66603cd99",
+    "n_text_chars": 89941,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Genetics",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41588-021-00806-1.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41588-021-00806-1"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41588-021-00806-1.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell transcriptomic analyses provide insights into the developmental origins of neuroblastoma",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41588-021-00806-1"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "33767450",
+      "pub_year": "2021",
+      "title": "Single-cell transcriptomic analyses provide insights into the developmental origins of neuroblastoma."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41588-021-00806-1",
+    "preferred_url": "https://doi.org/10.1038/s41588-021-00806-1",
+    "publication_title": "Single-cell transcriptomic analyses provide insights into the developmental origins of neuroblastoma."
+  }
+}

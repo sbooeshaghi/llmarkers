@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/nature25980?error=cookies_not_supported&code=8e59a01a-6eb2-4dee-923c-56473a9ea090",
+      "kind": "html",
+      "n_text_chars": 64749,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/nature25980",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 6,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/nature25980?error=cookies_not_supported&code=8e59a01a-6eb2-4dee-923c-56473a9ea090",
+    "folder": "0352_10.1038_nature25980_27cde67bed",
+    "n_text_chars": 64749,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/nature25980.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/nature25980"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/doifinder/10.1038/nature25980"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/nature25980.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "A single-cell RNA-seq survey of the developmental landscape of the human prefrontal cortex",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/nature25980"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "29539641",
+      "pub_year": "2018",
+      "title": "A single-cell RNA-seq survey of the developmental landscape of the human prefrontal cortex."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/nature25980",
+    "preferred_url": "https://doi.org/10.1038/nature25980",
+    "publication_title": "A single-cell RNA-seq survey of the developmental landscape of the human prefrontal cortex."
+  }
+}

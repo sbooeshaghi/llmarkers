@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DA-related neurons",
+    "group_name": "DA-RELATED NEURON",
+    "group_id": null,
+    "feature_label": "RIT2",
+    "feature_name": "RIT2",
+    "feature_id": "ENSG00000152214",
+    "source_type": "text",
+    "source_rationale": "By combining immunostaining and validating against the datasets from independent cohorts, we identified three molecularly distinct subtypes of DA-related neurons, including a RIT2 -enriched population, in human aged SN.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " DA-related neurons",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " RIT2",
+      "all_verified": true
+    }
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "doi": "10.1101/2021.03.02.433590",
+  "title": "A single-cell atlas of breast cancer cell lines to study tumour heterogeneity and drug response",
+  "abstract": "ABSTRACT\nBreast cancer patient stratification is mainly driven by tumour receptor status and histological grading and subtyping, with about twenty percent of patients for which absence of any actionable biomarkers results in no clear therapeutic intervention. Cancer cells within the same tumour have heterogeneous phenotypes and exhibit dynamic plasticity. However, how to evaluate such heterogeneity and its impact on outcome and drug response is still unclear. Here, we transcriptionally profiled 35,276 individual cells from 32 breast cancer cell lines covering all main breast cancer subtypes to yield a breast cancer cell line atlas. We found high degree of heterogeneity in the expression of clinically relevant biomarkers across individual cells within the same cell line; such heterogeneity is non-genetic and dynamic. We computationally mapped single cell transcriptional profiles of patients’ tumour biopsies to the atlas to determine their composition in terms of cell lines. Each tumour was found to be heterogenous and composed of multiple cell lines mostly, but not exclusively, of the same subtype. We then trained an algorithm on the atlas to determine cell line composition from bulk gene expression profiles of tumour biopsies, thus providing a novel approach to patient stratification. Finally, we linked results from large-scale in vitro drug screening1,2 to the single cell data to computationally predict responses to more than 450 anticancer agents starting from single-cell transcriptional profiles. We thus found that transcriptional heterogeneity enables cells with differential drug sensitivity to co-exist in the same population. Our work provides a unique resource and a novel framework to determine tumour heterogeneity and drug response in breast cancer patients.",
+  "pub_date": "2021-01-01",
+  "authors": [
+    {
+      "given_names": "G",
+      "surname": "Gambardella",
+      "orcid": "0000-0001-7517-1347",
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "G",
+      "surname": "Viscido",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "B",
+      "surname": "Tumaini",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "A",
+      "surname": "Isacchi",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "R",
+      "surname": "Bosotti",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "D",
+      "surname": "di Bernardo",
+      "orcid": "0000-0002-1911-7407",
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": true,
+      "position": 6
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Telethon Institute of Genetics and Medicine",
+      "department": null,
+      "city": null,
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "University of Naples Federico II, Department of Chemical Materials and Industrial Engineering",
+      "department": null,
+      "city": null,
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "NMSsrl, Nerviano Medical Sciences",
+      "department": null,
+      "city": null,
+      "country": "Italy",
+      "ror": null
+    }
+  ]
+}

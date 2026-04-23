@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "FOXN4+ cells",
+    "group_name": "FOXN4+ CELL",
+    "group_id": null,
+    "feature_label": "FOXN4",
+    "feature_name": "FOXN4",
+    "feature_id": "ENSG00000139445",
+    "source_type": "text",
+    "source_rationale": "We detected SARS-CoV-2 transcripts in all major cell types and found the proportion of infected cells to be highest in FOXN4+ cells ( Figure S2 A); however, very few FOXN4+ cells were detected ( Figure 2 A).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " FOXN4+ cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " FOXN4",
+      "all_verified": true
+    }
+  }
+]

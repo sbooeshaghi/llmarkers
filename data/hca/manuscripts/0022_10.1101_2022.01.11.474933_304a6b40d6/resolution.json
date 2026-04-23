@@ -1,0 +1,92 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2022.01.11.474933",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/2022.01.11.474933v2",
+      "kind": "html",
+      "n_text_chars": 13584,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1101/2022.01.11.474933",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/2022.01.11.474933v2",
+    "folder": "0022_10.1101_2022.01.11.474933_304a6b40d6",
+    "n_text_chars": 13584,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2022.01.11.474933"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "A human fetal lung cell atlas uncovers proximal-distal gradients of differentiation and key regulators of epithelial fates",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2022/09/30/2022.01.11.474933.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2022.01.11.474933"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/article/PPR/PPR441072"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR441072&type=FILE&fileName=EMS155164-pdf.pdf&mimeType=application/pdf"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2022",
+      "title": "A human fetal lung cell atlas uncovers proximal-distal gradients of differentiation and key regulators of epithelial fates"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2022.01.11.474933",
+    "preferred_url": "https://doi.org/10.1101/2022.01.11.474933",
+    "publication_title": "A human fetal lung cell atlas uncovers proximal-distal gradients of differentiation and key regulators of epithelial fates"
+  }
+}

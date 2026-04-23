@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41586-019-1654-9?error=cookies_not_supported&code=feea0136-dd8b-4cfc-89c6-d40dc4183335",
+      "kind": "html",
+      "n_text_chars": 147841,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41586-019-1654-9",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41586-019-1654-9?error=cookies_not_supported&code=feea0136-dd8b-4cfc-89c6-d40dc4183335",
+    "folder": "0244_10.1038_s41586-019-1654-9_7c485e5190",
+    "n_text_chars": 147841,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41586-019-1654-9.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41586-019-1654-9"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41586-019-1654-9.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Organoid single-cell genomic atlas uncovers human-specific features of brain development",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2019/06/27/685057.full.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41586-019-1654-9"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "31619793",
+      "pub_year": "2019",
+      "title": "Organoid single-cell genomic atlas uncovers human-specific features of brain development."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41586-019-1654-9",
+    "preferred_url": "https://doi.org/10.1038/s41586-019-1654-9",
+    "publication_title": "Organoid single-cell genomic atlas uncovers human-specific features of brain development"
+  }
+}

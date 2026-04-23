@@ -1,0 +1,108 @@
+{
+  "attempts": [
+    {
+      "content_length": "2757",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S009167492030556X",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.jaci.2020.03.041",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "2757",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S009167492030556X",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.jaci.2020.03.041",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "1906",
+      "content_type": "text/xml;charset=UTF-8",
+      "final_url": "https://api.elsevier.com/content/article/PII:S009167492030556X?httpAccept=text/xml",
+      "kind": "xml",
+      "n_text_chars": 137,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S009167492030556X?httpAccept=text/xml",
+      "resolved_as": "xml",
+      "source": "crossref-link",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 400: Bad Request",
+      "kind": "html",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S009167492030556X?httpAccept=text/plain",
+      "source": "crossref-link",
+      "status": "http_error_400"
+    },
+    {
+      "content_length": "2757",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S009167492030556X",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.jaci.2020.03.041",
+      "resolved_as": "html",
+      "source": "doi-landing",
+      "status": "text_too_short"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0424_10.1016_j.jaci.2020.03.041_814783dafa",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Journal of Allergy and Clinical Immunology",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S009167492030556X?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S009167492030556X?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Single-cell transcriptomics combined with interstitial fluid proteomics defines cell type\u2013specific immune regulation in atopic dermatitis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.jaci.2020.03.041"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "32344053",
+      "pub_year": "2020",
+      "title": "Single-cell transcriptomics combined with interstitial fluid proteomics defines cell type-specific immune regulation in atopic dermatitis."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.jaci.2020.03.041",
+    "preferred_url": "https://doi.org/10.1016/j.jaci.2020.03.041",
+    "publication_title": "Single-cell transcriptomics combined with interstitial fluid proteomics defines cell type-specific immune regulation in atopic dermatitis."
+  }
+}

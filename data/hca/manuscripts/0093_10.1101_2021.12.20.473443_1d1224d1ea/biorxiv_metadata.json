@@ -1,0 +1,317 @@
+{
+  "doi": "10.1101/2021.12.20.473443",
+  "title": "Cellular development and evolution of the mammalian cerebellum",
+  "abstract": "The expansion of the neocortex, one of the hallmarks of mammalian evolution1,2, was accompanied by an increase in the number of cerebellar neurons3. However, little is known about the evolution of the cellular programs underlying cerebellum development in mammals. In this study, we generated single-nucleus RNA-sequencing data for ∼400,000 cells to trace the development of the cerebellum from early neurogenesis to adulthood in human, mouse, and the marsupial opossum. Our cross-species analyses revealed that the cellular composition and differentiation dynamics throughout cerebellum development are largely conserved, except for human Purkinje cells. Global transcriptome profiles, conserved cell state markers, and gene expression trajectories across neuronal differentiation show that the cerebellar cell type-defining programs have been overall preserved for at least 160 million years. However, we also discovered differences. We identified 3,586 genes that either gained or lost expression in cerebellar cells in one of the species, and 541 genes that evolved new expression trajectories during neuronal differentiation. The potential functional relevance of these cross-species differences is highlighted by the diverged expression patterns of several human disease-associated genes. Altogether, our study reveals shared and lineage-specific programs governing the cellular development of the mammalian cerebellum, and expands our understanding of the evolution of mammalian organ development.",
+  "pub_date": "2021-01-01",
+  "authors": [
+    {
+      "given_names": "Mari",
+      "surname": "Sepp",
+      "orcid": "0000-0003-1733-8385",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Kevin",
+      "surname": "Leiss",
+      "orcid": "0000-0002-5955-6076",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Ioannis",
+      "surname": "Sarropoulos",
+      "orcid": "0000-0002-2242-0562",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Florent",
+      "surname": "Murat",
+      "orcid": "0000-0003-2116-2511",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Konstantin",
+      "surname": "Okonechnikov",
+      "orcid": "0000-0002-3409-2340",
+      "affiliation_ids": [
+        "a2",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Piyush",
+      "surname": "Joshi",
+      "orcid": "0000-0002-5631-336X",
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Evgeny",
+      "surname": "Leushkin",
+      "orcid": "0000-0001-5959-6943",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Noe",
+      "surname": "Mbengue",
+      "orcid": "0000-0002-7173-5181",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Céline",
+      "surname": "Schneider",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Julia",
+      "surname": "Schmidt",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Nils",
+      "surname": "Trost",
+      "orcid": "0000-0002-5171-018X",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Lisa",
+      "surname": "Spänig",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Peter",
+      "surname": "Giere",
+      "orcid": "0000-0002-5570-0085",
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Philipp",
+      "surname": "Khaitovich",
+      "orcid": "0000-0002-4305-0054",
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Steven",
+      "surname": "Lisgo",
+      "orcid": "0000-0001-5186-3971",
+      "affiliation_ids": [
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Miklós",
+      "surname": "Palkovits",
+      "orcid": null,
+      "affiliation_ids": [
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Lena M.",
+      "surname": "Kutscher",
+      "orcid": "0000-0002-1130-4582",
+      "affiliation_ids": [
+        "a2",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Simon",
+      "surname": "Anders",
+      "orcid": "0000-0003-4868-1805",
+      "affiliation_ids": [
+        "a1",
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Margarida",
+      "surname": "Cardoso-Moreira",
+      "orcid": "0000-0001-6639-3597",
+      "affiliation_ids": [
+        "a10"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Stefan M.",
+      "surname": "Pfister",
+      "orcid": "0000-0002-5447-5322",
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a11"
+      ],
+      "corresponding": true,
+      "position": 20
+    },
+    {
+      "given_names": "Henrik",
+      "surname": "Kaessmann",
+      "orcid": "0000-0001-7563-839X",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 21
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Center for Molecular Biology of Heidelberg University (ZMBH), DKFZ-ZMBH Alliance",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Hopp-Children’s Cancer Center Heidelberg (KiTZ)",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Division of Pediatric Neurooncology, German Cancer Research Center (DKFZ) and German Cancer Consortium (DKTK)",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Developmental Origins of Pediatric Cancer Junior Group, German Cancer Research Center (DKFZ) and German Cancer Consortium (DKTK)",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Museum für Naturkunde Berlin, Leibniz Institute for Research on Evolution and Biodiversity Science at the Humboldt University Berlin",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Center for Neurobiology and Brain Restoration, Skolkovo Institute of Science and Technology",
+      "department": null,
+      "city": null,
+      "country": "Russia",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Biosciences Institute, Newcastle University",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Human Brain Tissue Bank, Semmelweis University",
+      "department": null,
+      "city": null,
+      "country": "Hungary",
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "BioQuant, Heidelberg University",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a10",
+      "institution": "Evolutionary Developmental Biology Laboratory, Francis Crick Institute",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a11",
+      "institution": "Department of Pediatric Hematology and Oncology, Heidelberg University Hospital",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    }
+  ]
+}

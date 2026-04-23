@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10728019/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 48089,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10728019/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10728019/fullTextXML",
+    "folder": "0420_10.1111_cas.15979_052ebae233",
+    "n_text_chars": 48089,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cancer Science",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/cas.15979"
+        }
+      ],
+      "publisher": "Wiley",
+      "title": "Single\u2010cell transcriptomic analysis of gingivo\u2010buccal oral cancer reveals two dominant cellular programs",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/cas.15979"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1111/cas.15979"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10728019"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10728019?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC10728019",
+      "pmid": "37792582",
+      "pub_year": "2023",
+      "title": "Single-cell transcriptomic analysis of gingivo-buccal oral cancer reveals two dominant cellular programs."
+    }
+  },
+  "metadata": {
+    "doi": "10.1111/cas.15979",
+    "preferred_url": "https://doi.org/10.1111/cas.15979",
+    "publication_title": "Single-cell transcriptomic analysis of gingivo-buccal oral cancer reveals two dominant cellular programs."
+  }
+}

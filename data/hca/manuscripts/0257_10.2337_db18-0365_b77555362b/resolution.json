@@ -1,0 +1,101 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.2337/db18-0365",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.2337/db18-0365",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "http://diabetes.diabetesjournals.org/syndication/doi/10.2337/db18-0365",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "<urlopen error [Errno 61] Connection refused>",
+      "kind": "pdf",
+      "requested_url": "https://journals.org/diabetes/diabetes/article-pdf/67/9/1783/541281/db180365.pdf",
+      "source": "crossref-link",
+      "status": "fetch_error"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://diabetesjournals.org/diabetes/article-pdf/67/9/1783/541281/db180365.pdf",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.2337/db18-0365",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 6,
+  "final": {
+    "folder": "0257_10.2337_db18-0365_b77555362b",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Diabetes",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://diabetes.diabetesjournals.org/syndication/doi/10.2337/db18-0365"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://journals.org/diabetes/diabetes/article-pdf/67/9/1783/541281/db180365.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://diabetesjournals.org/diabetes/article-pdf/67/9/1783/541281/db180365.pdf"
+        }
+      ],
+      "publisher": "American Diabetes Association",
+      "title": "Pseudotime Ordering of Single Human \u03b2-Cells Reveals States of Insulin Production and Unfolded Protein Response",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.2337/db18-0365"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "29950394",
+      "pub_year": "2018",
+      "title": "Pseudotime Ordering of Single Human \u03b2-Cells Reveals States of Insulin Production and Unfolded Protein Response."
+    }
+  },
+  "metadata": {
+    "doi": "10.2337/db18-0365",
+    "preferred_url": "https://doi.org/10.2337/db18-0365",
+    "publication_title": "Pseudotime Ordering of Single Human \u03b2-Cells Reveals States of Insulin Production and Unfolded Protein Response."
+  }
+}

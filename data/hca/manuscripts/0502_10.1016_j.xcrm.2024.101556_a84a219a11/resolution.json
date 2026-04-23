@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11148807/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 87888,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11148807/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11148807/fullTextXML",
+    "folder": "0502_10.1016_j.xcrm.2024.101556_a84a219a11",
+    "n_text_chars": 87888,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Reports Medicine",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S2666379124002489?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S2666379124002489?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Transcriptomic and spatial dissection of human ex\u00a0vivo right atrial tissue reveals proinflammatory microvascular changes in ischemic heart disease",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.cell.com/article/S2666379124002489/pdf"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.cell.com/article/S2666379124002489/pdf"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.cell.com/article/S2666379124002489/pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.xcrm.2024.101556"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC11148807"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC11148807?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC11148807",
+      "pmid": "38776872",
+      "pub_year": "2024",
+      "title": "Transcriptomic and spatial dissection of human ex\u00a0vivo right atrial tissue reveals proinflammatory microvascular changes in ischemic heart disease."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.xcrm.2024.101556",
+    "preferred_url": "https://doi.org/10.1016/j.xcrm.2024.101556",
+    "publication_title": "Transcriptomic and spatial dissection of human ex\u00a0vivo right atrial tissue reveals proinflammatory microvascular changes in ischemic heart disease."
+  }
+}

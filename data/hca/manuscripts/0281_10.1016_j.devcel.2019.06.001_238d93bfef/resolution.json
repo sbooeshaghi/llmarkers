@@ -1,0 +1,104 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6684316/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "305841",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6684316/",
+      "kind": "html",
+      "n_text_chars": 96954,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6684316/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6684316/",
+    "folder": "0281_10.1016_j.devcel.2019.06.001_238d93bfef",
+    "n_text_chars": 96954,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Developmental Cell",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1534580719304861?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1534580719304861?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "In\u00a0Vivo Developmental Trajectories of Human Podocyte Inform In\u00a0Vitro Differentiation of Pluripotent Stem Cell-Derived Podocytes",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.1016/j.devcel.2019.06.001"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.devcel.2019.06.001"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6684316"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6684316?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.devcel.2019.06.001"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC6684316",
+      "pmid": "31265809",
+      "pub_year": "2019",
+      "title": "In\u00a0Vivo Developmental Trajectories of Human Podocyte Inform In\u00a0Vitro Differentiation of Pluripotent Stem Cell-Derived Podocytes."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.devcel.2019.06.001",
+    "preferred_url": "https://doi.org/10.1016/j.devcel.2019.06.001",
+    "publication_title": "In VivoDevelopmental Trajectories of Human PodocyteInformIn VitroDifferentiation of Pluripotent Stem Cell-Derived Podocytes"
+  }
+}

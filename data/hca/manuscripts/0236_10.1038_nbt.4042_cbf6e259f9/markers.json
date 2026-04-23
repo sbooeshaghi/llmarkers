@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "NK cells",
+    "group_name": "NK CELL",
+    "group_id": null,
+    "feature_label": "DIP2A",
+    "feature_name": "DIP2A",
+    "feature_id": "ENSG00000160305",
+    "source_type": "text",
+    "source_rationale": "Among other cell type-specific local eQTLs are CD52 , a gene ubiquitously expressed in leukocytes that only has eQTLs in monocyte populations, and DIP2A , a gene with an eQTL only in NK cells that is associated with immune response to vaccination in peripheral blood 35 .",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " NK cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " DIP2A",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocyte populations",
+    "group_name": "MONOCYTE POPULATION",
+    "group_id": null,
+    "feature_label": "CD52",
+    "feature_name": "CD52",
+    "feature_id": "ENSG00000169442",
+    "source_type": "text",
+    "source_rationale": "Among other cell type-specific local eQTLs are CD52 , a gene ubiquitously expressed in leukocytes that only has eQTLs in monocyte populations, and DIP2A , a gene with an eQTL only in NK cells that is associated with immune response to vaccination in peripheral blood 35 .",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " monocyte populations",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD52",
+      "all_verified": true
+    }
+  }
+]

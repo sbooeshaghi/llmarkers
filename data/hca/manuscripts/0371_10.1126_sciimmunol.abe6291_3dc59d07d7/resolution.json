@@ -1,0 +1,88 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1126/sciimmunol.abe6291",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1126/sciimmunol.abe6291",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1126/sciimmunol.abe6291",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.science.org/doi/pdf/10.1126/sciimmunol.abe6291",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1126/sciimmunol.abe6291",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0371_10.1126_sciimmunol.abe6291_3dc59d07d7",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Science Immunology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://syndication.highwire.org/content/doi/10.1126/sciimmunol.abe6291"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.science.org/doi/pdf/10.1126/sciimmunol.abe6291"
+        }
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "title": "Single-cell analysis of human B cell maturation predicts how antibody class switching shapes selection dynamics",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/sciimmunol.abe6291"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "33579751",
+      "pub_year": "2021",
+      "title": "Single-cell analysis of human B cell maturation predicts how antibody class switching shapes selection dynamics."
+    }
+  },
+  "metadata": {
+    "doi": "10.1126/sciimmunol.abe6291",
+    "preferred_url": "https://doi.org/10.1126/sciimmunol.abe6291",
+    "publication_title": "Single-cell analysis of human B cell maturation predicts how antibody class switching shapes selection dynamics."
+  }
+}

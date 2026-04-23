@@ -1,0 +1,156 @@
+{
+  "doi": "10.1101/2024.02.02.578633",
+  "title": "Spatial transcriptomics of healthy and fibrotic human liver at single-cell resolution",
+  "abstract": "AbstractSingle-cell RNA sequencing (scRNA-seq) has advanced our understanding of cell types and their heterogeneity within the human liver, but the spatial organization at single-cell resolution has not yet been described. Here we apply multiplexed error robust fluorescent in situ hybridization (MERFISH) to map the zonal distribution of hepatocytes, resolve subsets of macrophage and mesenchymal populations, and investigate the relationship between hepatocyte ploidy and gene expression within the healthy human liver. We next integrated spatial information from MERFISH with the more complete transcriptome produced by single-nucleus RNA sequencing (snRNA-seq), revealing zonally enriched receptor-ligand interactions. Finally, analysis of fibrotic liver samples identified two hepatocyte populations that are not restricted to zonal distribution and expand with injury. Together these spatial maps of the healthy and fibrotic liver provide a deeper understanding of the cellular and spatial remodeling that drives disease which, in turn, could provide new avenues for intervention and further study.",
+  "pub_date": "2024-01-01",
+  "authors": [
+    {
+      "given_names": "Brianna",
+      "surname": "Watson",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Biplab",
+      "surname": "Paul",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Liat",
+      "surname": "Amir-Zilberstein",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Asa",
+      "surname": "Segerstolpe",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Raza Ur",
+      "surname": "Rahman",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Angela",
+      "surname": "Shih",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Jacques",
+      "surname": "Deguine",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Ramnik J.",
+      "surname": "Xavier",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Jeffrey R.",
+      "surname": "Moffitt",
+      "orcid": "0000-0002-3836-3101",
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a4"
+      ],
+      "corresponding": true,
+      "position": 9
+    },
+    {
+      "given_names": "Alan C.",
+      "surname": "Mullen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3",
+        "a4"
+      ],
+      "corresponding": true,
+      "position": 10
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Program in Cellular and Molecular Medicine, Boston Children’s Hospital",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Department of Microbiology, Blavatnik Institute, Harvard Medical School",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Division of Gastroenterology, University of Massachusetts Chan Medical School",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Broad Institute",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Massachusetts General Hospital",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    }
+  ]
+}

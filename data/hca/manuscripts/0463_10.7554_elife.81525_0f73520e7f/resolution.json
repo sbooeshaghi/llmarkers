@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9897724/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 62015,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9897724/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 12,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9897724/fullTextXML",
+    "folder": "0463_10.7554_elife.81525_0f73520e7f",
+    "n_text_chars": 62015,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "eLife",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://cdn.elifesciences.org/articles/81525/elife-81525-v2.pdf"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://cdn.elifesciences.org/articles/81525/elife-81525-v2.xml"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://elifesciences.org/articles/81525"
+        }
+      ],
+      "publisher": "eLife Sciences Publications, Ltd",
+      "title": "Spatially resolved transcriptomics reveals pro-inflammatory fibroblast involved in lymphocyte recruitment through CXCL8 and CXCL10",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.7554/elife.81525"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.7554/eLife.81525"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9897724"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9897724?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9897724",
+      "pmid": "36648332",
+      "pub_year": "2023",
+      "title": "Spatially resolved transcriptomics reveals pro-inflammatory fibroblast involved in lymphocyte recruitment through CXCL8 and CXCL10."
+    }
+  },
+  "metadata": {
+    "doi": "10.7554/elife.81525",
+    "preferred_url": "https://doi.org/10.7554/elife.81525",
+    "publication_title": "Spatially resolved transcriptomics reveals pro-inflammatory fibroblast involved in lymphocyte recruitment through CXCL8 and CXCL10"
+  }
+}

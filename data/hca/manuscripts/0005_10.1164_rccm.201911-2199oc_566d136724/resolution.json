@@ -1,0 +1,87 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1164/rccm.201911-2199oc",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1164/rccm.201911-2199oc",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "pdf",
+      "requested_url": "https://academic.oup.com/ajrccm/article-pdf/202/12/1636/67177262/ajrccm_202_12_1636.pdf",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1164/rccm.201911-2199oc",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0005_10.1164_rccm.201911-2199oc_566d136724",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "American Journal of Respiratory and Critical Care Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://academic.oup.com/ajrccm/article-pdf/202/12/1636/67177262/ajrccm_202_12_1636.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://academic.oup.com/ajrccm/article-pdf/202/12/1636/67177262/ajrccm_202_12_1636.pdf"
+        }
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "title": "A Single-Cell Atlas of the Human Healthy Airways",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Unpaywall",
+          "url": "https://hal.science/hal-02992314"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1164/rccm.201911-2199OC"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "32726565",
+      "pub_year": "2020",
+      "title": "A Single-Cell Atlas of the Human Healthy Airways."
+    }
+  },
+  "metadata": {
+    "doi": "10.1164/rccm.201911-2199oc",
+    "preferred_url": "https://doi.org/10.1164/rccm.201911-2199oc",
+    "publication_title": "A Single-Cell Atlas of the Human Healthy Airways."
+  }
+}

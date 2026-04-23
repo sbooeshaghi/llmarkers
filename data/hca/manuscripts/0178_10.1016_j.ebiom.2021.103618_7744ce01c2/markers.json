@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Cluster 0",
+    "group_name": "CLUSTER 0",
+    "group_id": null,
+    "feature_label": "DNAJB1",
+    "feature_name": "DNAJB1",
+    "feature_id": "ENSG00000132002",
+    "source_type": "text",
+    "source_rationale": "For example, expression of DNAJB1 was significantly associated with Cluster 0, a cluster predominant in fibroblasts from painful sites in end-stage.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Cluster 0",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " DNAJB1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Cluster 1",
+    "group_name": "CLUSTER 1",
+    "group_id": null,
+    "feature_label": "RARRES1",
+    "feature_name": "RARRES1",
+    "feature_id": "ENSG00000118849",
+    "source_type": "text",
+    "source_rationale": "Expression of RARRES1 and TYPMS were significantly associated with Cluster 1 and Cluster 6 respectively, clusters predominant in fibroblasts from non-painful sites in early OA.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Cluster 1",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " RARRES1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Cluster 6",
+    "group_name": "CLUSTER 6",
+    "group_id": null,
+    "feature_label": "TYPMS",
+    "feature_name": "TYPMS",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "Expression of RARRES1 and TYPMS were significantly associated with Cluster 1 and Cluster 6 respectively, clusters predominant in fibroblasts from non-painful sites in early OA.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Cluster 6",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " TYPMS",
+      "all_verified": true
+    }
+  }
+]

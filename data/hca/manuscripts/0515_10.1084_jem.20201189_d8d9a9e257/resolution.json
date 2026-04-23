@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7876551/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 40126,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7876551/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7876551/fullTextXML",
+    "folder": "0515_10.1084_jem.20201189_d8d9a9e257",
+    "n_text_chars": 40126,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Journal of Experimental Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://rupress.org/jem/article-pdf/doi/10.1084/jem.20201189/1823460/jem_20201189.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://rupress.org/jem/article-pdf/doi/10.1084/jem.20201189/1823460/jem_20201189.pdf"
+        }
+      ],
+      "publisher": "Rockefeller University Press",
+      "title": "\u03b1\u03b2\u03b3\u03b4 T cells play a vital role in fetal human skin development and immunity",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1084/jem.20201189"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7876551"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7876551?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7876551",
+      "pmid": "33561194",
+      "pub_year": "2021",
+      "title": "\u03b1\u03b2\u03b3\u03b4 T cells play a vital role in fetal human skin development and immunity."
+    }
+  },
+  "metadata": {
+    "doi": "10.1084/jem.20201189",
+    "preferred_url": "https://doi.org/10.1084/jem.20201189",
+    "publication_title": "\u03b1\u03b2\u03b3\u03b4 T cells play a vital role in fetal human skin development and immunity."
+  }
+}

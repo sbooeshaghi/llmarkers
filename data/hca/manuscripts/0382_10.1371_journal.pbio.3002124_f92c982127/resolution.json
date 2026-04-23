@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10234541/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 74981,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10234541/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10234541/fullTextXML",
+    "folder": "0382_10.1371_journal.pbio.3002124_f92c982127",
+    "n_text_chars": 74981,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "PLOS Biology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://dx.plos.org/10.1371/journal.pbio.3002124"
+        }
+      ],
+      "publisher": "Public Library of Science (PLoS)",
+      "title": "Single-cell atlas of the human neonatal small intestine affected by necrotizing enterocolitis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1371/journal.pbio.3002124"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10234541"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10234541?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC10234541",
+      "pmid": "37205711",
+      "pub_year": "2023",
+      "title": "Single-cell atlas of the human neonatal small intestine affected by necrotizing enterocolitis."
+    }
+  },
+  "metadata": {
+    "doi": "10.1371/journal.pbio.3002124",
+    "preferred_url": "https://doi.org/10.1371/journal.pbio.3002124",
+    "publication_title": "Single-cell atlas of the human neonatal small intestine affected by necrotizing enterocolitis"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "2707",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1550413120301248",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2020.03.009",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.sciencedirect.com/science/article/pii/S1550413120301248",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "1963",
+      "content_type": "text/xml;charset=UTF-8",
+      "final_url": "https://api.elsevier.com/content/article/PII:S1550413120301248?httpAccept=text/xml",
+      "kind": "xml",
+      "n_text_chars": 93,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1550413120301248?httpAccept=text/xml",
+      "resolved_as": "xml",
+      "source": "crossref-link",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 429: Too Many Requests",
+      "kind": "html",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1550413120301248?httpAccept=text/plain",
+      "source": "crossref-link",
+      "status": "http_error_429"
+    },
+    {
+      "content_length": "2707",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1550413120301248",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2020.03.009",
+      "resolved_as": "html",
+      "source": "doi-landing",
+      "status": "text_too_short"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0320_10.1016_j.cmet.2020.03.009_e23bec690d",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Metabolism",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1550413120301248?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1550413120301248?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Single-Cell RNA Sequencing Maps Endothelial Metabolic Plasticity in Pathological Angiogenesis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.cmet.2020.03.009"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "32268117",
+      "pub_year": "2020",
+      "title": "Single-Cell RNA Sequencing Maps Endothelial Metabolic Plasticity in Pathological Angiogenesis."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.cmet.2020.03.009",
+    "preferred_url": "https://doi.org/10.1016/j.cmet.2020.03.009",
+    "publication_title": "Single-Cell RNA Sequencing Maps Endothelial Metabolic Plasticity in Pathological Angiogenesis."
+  }
+}

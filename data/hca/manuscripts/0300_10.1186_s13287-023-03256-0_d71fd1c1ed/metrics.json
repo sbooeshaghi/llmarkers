@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/.venv/bin/mrkr extract -m /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/hca/manuscripts/0300_10.1186_s13287-023-03256-0_d71fd1c1ed/manuscript.md -s homo_sapiens -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/hca/manuscripts/0300_10.1186_s13287-023-03256-0_d71fd1c1ed/markers.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/hca/manuscripts/0300_10.1186_s13287-023-03256-0_d71fd1c1ed/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1776466260,
+  "num_extractions": 50,
+  "processing_time_sec": 94.96,
+  "input_tokens": 25709,
+  "cached_tokens": 0,
+  "output_tokens": 9571,
+  "total_tokens": 35280,
+  "input_cost": 0.12854500000000002,
+  "cached_cost": 0.0,
+  "output_cost": 0.23927500000000002,
+  "total_cost": 0.36782000000000004
+}

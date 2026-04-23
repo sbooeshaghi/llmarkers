@@ -1,0 +1,73 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/2022.05.18.492547v1",
+      "kind": "html",
+      "n_text_chars": 7988,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1101/2022.05.18.492547",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/2022.05.18.492547v1",
+    "folder": "0484_10.1101_2022.05.18.492547_796dd444d3",
+    "n_text_chars": 7988,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2022.05.18.492547"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "The regulatory landscapes of human ovarian ageing",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2022/05/19/2022.05.18.492547.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2022.05.18.492547"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2022",
+      "title": "The regulatory landscapes of human ovarian ageing"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2022.05.18.492547",
+    "preferred_url": "https://doi.org/10.1101/2022.05.18.492547",
+    "publication_title": "The regulatory landscapes of human ovarian ageing"
+  }
+}

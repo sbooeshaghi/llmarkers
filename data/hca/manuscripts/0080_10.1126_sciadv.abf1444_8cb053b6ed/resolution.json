@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8121433/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 89176,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8121433/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8121433/fullTextXML",
+    "folder": "0080_10.1126_sciadv.abf1444_8cb053b6ed",
+    "n_text_chars": 89176,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Science Advances",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://syndication.highwire.org/content/doi/10.1126/sciadv.abf1444"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.science.org/doi/pdf/10.1126/sciadv.abf1444"
+        }
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "title": "Cardiac cell type\u2013specific gene regulatory programs and disease risk association",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.1126/sciadv.abf1444"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/sciadv.abf1444"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8121433"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8121433?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8121433",
+      "pmid": "33990324",
+      "pub_year": "2021",
+      "title": "Cardiac cell type-specific gene regulatory programs and disease risk association."
+    }
+  },
+  "metadata": {
+    "doi": "10.1126/sciadv.abf1444",
+    "preferred_url": "https://doi.org/10.1126/sciadv.abf1444",
+    "publication_title": "Cardiac cell type-specific gene regulatory programs and disease risk association."
+  }
+}

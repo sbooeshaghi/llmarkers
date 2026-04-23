@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8099699/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 100502,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8099699/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8099699/fullTextXML",
+    "folder": "0511_10.1016_j.jcmgh.2020.12.014_7220e03ee7",
+    "n_text_chars": 100502,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cellular and Molecular Gastroenterology and Hepatology",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S2352345X20302137?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S2352345X20302137?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "scRNA-Seq Reveals New Enteric Nervous System Roles for GDNF, NRTN, and TBX3",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "http://www.cmghjournal.org/article/S2352345X20302137/pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.jcmgh.2020.12.014"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8099699"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8099699?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8099699",
+      "pmid": "33444816",
+      "pub_year": "2021",
+      "title": "scRNA-Seq Reveals New Enteric Nervous System Roles for GDNF, NRTN, and TBX3."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.jcmgh.2020.12.014",
+    "preferred_url": "https://doi.org/10.1016/j.jcmgh.2020.12.014",
+    "publication_title": "scRNA-Seq Reveals New Enteric Nervous System Roles for GDNF, NRTN, and TBX3"
+  }
+}

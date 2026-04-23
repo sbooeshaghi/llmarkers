@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "FTL + MDM",
+    "group_name": "FTL + MDM",
+    "group_id": null,
+    "feature_label": "FTL",
+    "feature_name": "FTL",
+    "feature_id": "ENSG00000087086",
+    "source_type": "text",
+    "source_rationale": "Among the most strongly differentially expressed genes (DEGs) between the two MDM clusters was FTL (in MDM-c2); we thus labeled MDM-c2 as FTL + MDM, and the remainder MDM-c1.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " FTL + MDM",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " FTL",
+      "all_verified": true
+    }
+  }
+]

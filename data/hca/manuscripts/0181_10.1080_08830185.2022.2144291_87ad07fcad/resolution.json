@@ -1,0 +1,68 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1080/08830185.2022.2144291",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.tandfonline.com/doi/pdf/10.1080/08830185.2022.2144291",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1080/08830185.2022.2144291",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 3,
+  "final": {
+    "folder": "0181_10.1080_08830185.2022.2144291_87ad07fcad",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "International Reviews of Immunology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.tandfonline.com/doi/pdf/10.1080/08830185.2022.2144291"
+        }
+      ],
+      "publisher": "Informa UK Limited",
+      "title": "Immune cell profiling of preeclamptic pregnant and postpartum women by single-cell RNA sequencing",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1080/08830185.2022.2144291"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "36369864",
+      "pub_year": "2024",
+      "title": "Immune cell profiling of preeclamptic pregnant and postpartum women by single-cell RNA sequencing."
+    }
+  },
+  "metadata": {
+    "doi": "10.1080/08830185.2022.2144291",
+    "preferred_url": "https://doi.org/10.1080/08830185.2022.2144291",
+    "publication_title": "Immune cell profiling of preeclamptic pregnant and postpartum women by single-cell RNA sequencing"
+  }
+}

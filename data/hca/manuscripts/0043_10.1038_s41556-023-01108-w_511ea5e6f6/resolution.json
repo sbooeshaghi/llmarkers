@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41556-023-01108-w?error=cookies_not_supported&code=7fa1826c-d120-44f2-9eba-6b7da59679a1",
+      "kind": "html",
+      "n_text_chars": 125645,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41556-023-01108-w",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41556-023-01108-w?error=cookies_not_supported&code=7fa1826c-d120-44f2-9eba-6b7da59679a1",
+    "folder": "0043_10.1038_s41556-023-01108-w_511ea5e6f6",
+    "n_text_chars": 125645,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Cell Biology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41556-023-01108-w.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41556-023-01108-w"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41556-023-01108-w.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "A single-cell transcriptome atlas profiles early organogenesis in human embryos",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2022/08/27/2021.11.30.470583.full.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41556-023-01108-w"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "36928764",
+      "pub_year": "2023",
+      "title": "A single-cell transcriptome atlas profiles early organogenesis in human embryos."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41556-023-01108-w",
+    "preferred_url": "https://doi.org/10.1038/s41556-023-01108-w",
+    "publication_title": "A single-cell transcriptome atlas profiles early organogenesis in human embryos"
+  }
+}

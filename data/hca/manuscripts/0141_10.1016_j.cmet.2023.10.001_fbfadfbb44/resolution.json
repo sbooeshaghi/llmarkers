@@ -1,0 +1,114 @@
+{
+  "attempts": [
+    {
+      "content_length": "2751",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1550413123003704",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2023.10.001",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "2751",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1550413123003704",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2023.10.001",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "1993",
+      "content_type": "text/xml;charset=UTF-8",
+      "final_url": "https://api.elsevier.com/content/article/PII:S1550413123003704?httpAccept=text/xml",
+      "kind": "xml",
+      "n_text_chars": 137,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1550413123003704?httpAccept=text/xml",
+      "resolved_as": "xml",
+      "source": "crossref-link",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 400: Bad Request",
+      "kind": "html",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1550413123003704?httpAccept=text/plain",
+      "source": "crossref-link",
+      "status": "http_error_400"
+    },
+    {
+      "content_length": "2751",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1550413123003704",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2023.10.001",
+      "resolved_as": "html",
+      "source": "doi-landing",
+      "status": "text_too_short"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0141_10.1016_j.cmet.2023.10.001_fbfadfbb44",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Metabolism",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1550413123003704?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1550413123003704?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Dynamic scRNA-seq of live human pancreatic slices reveals functional endocrine cell neogenesis through an intermediate ducto-acinar stage",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "http://www.cell.com/article/S1550413123003704/pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.cmet.2023.10.001"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "37898119",
+      "pub_year": "2023",
+      "title": "Dynamic scRNA-seq of live human pancreatic slices reveals functional endocrine cell neogenesis through an intermediate ducto-acinar stage."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.cmet.2023.10.001",
+    "preferred_url": "https://doi.org/10.1016/j.cmet.2023.10.001",
+    "publication_title": "Dynamic scRNA-seq of live human pancreatic slices reveals functional endocrine cell neogenesis through an intermediate ducto-acinar stage."
+  }
+}

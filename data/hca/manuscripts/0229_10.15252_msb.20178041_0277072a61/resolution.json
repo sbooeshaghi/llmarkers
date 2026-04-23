@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5852373/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 117898,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5852373/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5852373/fullTextXML",
+    "folder": "0229_10.15252_msb.20178041_0277072a61",
+    "n_text_chars": 117898,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Molecular Systems Biology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.15252/msb.20178041"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/full-xml/10.15252/msb.20178041"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.embopress.org/doi/pdf/10.15252/msb.20178041"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Molecular transitions in early progenitors during human cord blood hematopoiesis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.15252/msb.20178041"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5852373"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC5852373?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC5852373",
+      "pmid": "29545397",
+      "pub_year": "2018",
+      "title": "Molecular transitions in early progenitors during human cord blood hematopoiesis."
+    }
+  },
+  "metadata": {
+    "doi": "10.15252/msb.20178041",
+    "preferred_url": "https://doi.org/10.15252/msb.20178041",
+    "publication_title": "Molecular transitions in early progenitors during human cord blood hematopoiesis"
+  }
+}

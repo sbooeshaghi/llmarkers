@@ -1,0 +1,104 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6745503/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "259642",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6745503/",
+      "kind": "html",
+      "n_text_chars": 76720,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6745503/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6745503/",
+    "folder": "0045_10.15252_embj.2018100811_a99bb4a451",
+    "n_text_chars": 76720,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "The EMBO Journal",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.15252/embj.2018100811"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/full-xml/10.15252/embj.2018100811"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.embopress.org/doi/pdf/10.15252/embj.2018100811"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "A single\u2010cell transcriptome atlas of the adult human retina",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.15252/embj.2018100811"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6745503"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6745503?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.15252/embj.2018100811"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC6745503",
+      "pmid": "31436334",
+      "pub_year": "2019",
+      "title": "A single-cell transcriptome atlas of the adult human retina."
+    }
+  },
+  "metadata": {
+    "doi": "10.15252/embj.2018100811",
+    "preferred_url": "https://doi.org/10.15252/embj.2018100811",
+    "publication_title": "A single\u2010cell transcriptome atlas of the adult human retina"
+  }
+}

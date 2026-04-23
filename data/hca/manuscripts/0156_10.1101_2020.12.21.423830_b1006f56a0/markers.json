@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "NKT cells",
+    "group_name": "NKT CELL",
+    "group_id": null,
+    "feature_label": "IFNG",
+    "feature_name": "IFNG",
+    "feature_id": "ENSG00000111537",
+    "source_type": "text",
+    "source_rationale": "One notable exception to this observation is the gene IFNG, which encodes the type II IFN cytokine IFN-\u03b3. IFN-\u03b3 is a crucial mediator of antiviral immunity (Kang et al., 2018), but shows an expression pattern that is almost exclusive to NKT cells in the IAV-infected condition ([Fig. 1H](423830v1_fig1.tif), bottom).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "NKT cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " IFNG",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocytes",
+    "group_name": "MONOCYTE",
+    "group_id": null,
+    "feature_label": "CXCL8",
+    "feature_name": "CXCL8",
+    "feature_id": "ENSG00000169429",
+    "source_type": "text",
+    "source_rationale": "For example, CXCL8, which encodes IL-8, an important mediator of the inflammatory response (Bickel, 1993), is more highly expressed with increasing African ancestry following IAV infection only in monocytes (lfsr = 0.051 in monocytes and lfsr > 0.25 in all other cell types) ([Fig. 2C](423830v1_fig2.tif), top).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " monocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CXCL8",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD4+ T cells",
+    "group_name": "CD4+ T CELL",
+    "group_id": null,
+    "feature_label": "OAS1",
+    "feature_name": "OAS1",
+    "feature_id": "ENSG00000089127",
+    "source_type": "text",
+    "source_rationale": "In OAS1, the top cis SNP across cell types (rs10774671) is an IAV-specific response eQTL ([Fig. 3B](423830v1_fig3.tif), top: mock-infected lfsr = 0.81, bottom: IAV-infected lfsr = 1.5\u00d710\u221212 in CD4+ T cells) that lies within a Neanderthal-derived haplotype (Sams et al., 2016) and that has been associated with higher OAS1 enzymatic activity (Bonnevie-Nielsen et al., 2005) and susceptibility to different viruses from the Flaviviridae family (El Awady et al., 2011; Kwon et al., 2013; Lim et al., 2009).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD4+ T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " OAS1",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "na\u00efve CD8+ T cells",
+    "group_name": "NA\u00cfVE CD8+ T CELL",
+    "group_id": null,
+    "feature_label": "IFNGR2",
+    "feature_name": "IFNGR2",
+    "feature_id": "ENSG00000159128",
+    "source_type": "text",
+    "source_rationale": "For example, the Crohn's disease-susceptibility risk variant rs2284553 colocalized with IFNGR2, the gene encoding the beta chain of the IFN-\u03b3 receptor, in na\u00efve CD8+ T cells ([Fig. S5A](423830v1_figS5.tif)).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " naive CD8+ T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " IFNGR2",
+      "all_verified": true
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "AP1",
+    "group_name": "AP1",
+    "group_id": null,
+    "feature_label": "ANXA8",
+    "feature_name": "ANXA8",
+    "feature_id": "ENSG00000265190",
+    "source_type": "text",
+    "source_rationale": "AP1 cells were distinguished by high ANXA8 levels.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "AP1",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " ANXA8",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "BA1",
+    "group_name": "BA1",
+    "group_id": null,
+    "feature_label": "KRT14",
+    "feature_name": "KRT14",
+    "feature_id": "ENSG00000186847",
+    "source_type": "text",
+    "source_rationale": "For example, BA1 cells were enriched for KRT14/17 and contractility genes/gene sets, suggesting the K14 hi K17 hi BA1 cells identified by CyTOF encompass the contractile BA subtypes identified by scRNA-seq.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " BA1",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " KRT14",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "BA1",
+    "group_name": "BA1",
+    "group_id": null,
+    "feature_label": "KRT17",
+    "feature_name": "KRT17",
+    "feature_id": "ENSG00000128422",
+    "source_type": "text",
+    "source_rationale": "For example, BA1 cells were enriched for KRT14/17 and contractility genes/gene sets, suggesting the K14 hi K17 hi BA1 cells identified by CyTOF encompass the contractile BA subtypes identified by scRNA-seq.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " BA1",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " KRT17",
+      "all_verified": true
+    }
+  }
+]

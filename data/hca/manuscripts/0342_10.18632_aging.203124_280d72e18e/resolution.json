@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8221309/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 36048,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8221309/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8221309/fullTextXML",
+    "folder": "0342_10.18632_aging.203124_280d72e18e",
+    "n_text_chars": 36048,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Aging",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.aging-us.com/lookup/doi/10.18632/aging.203124"
+        }
+      ],
+      "publisher": "Impact Journals, LLC",
+      "title": "Single-cell RNA sequencing of human femoral head in vivo",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.18632/aging.203124"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8221309"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8221309?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8221309",
+      "pmid": "34111027",
+      "pub_year": "2021",
+      "title": "Single-cell RNA sequencing of human femoral head <i><i>in vivo</i></i>."
+    }
+  },
+  "metadata": {
+    "doi": "10.18632/aging.203124",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8221309",
+    "publication_title": "Single-cell RNA sequencing of human femoral head"
+  }
+}

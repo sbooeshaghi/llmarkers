@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "2714",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1934590917300784",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.stem.2017.03.007",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(17)30078-4",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "1968",
+      "content_type": "text/xml;charset=UTF-8",
+      "final_url": "https://api.elsevier.com/content/article/PII:S1934590917300784?httpAccept=text/xml",
+      "kind": "xml",
+      "n_text_chars": 100,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1934590917300784?httpAccept=text/xml",
+      "resolved_as": "xml",
+      "source": "crossref-link",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 400: Bad Request",
+      "kind": "html",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S1934590917300784?httpAccept=text/plain",
+      "source": "crossref-link",
+      "status": "http_error_400"
+    },
+    {
+      "content_length": "2714",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1934590917300784",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.stem.2017.03.007",
+      "resolved_as": "html",
+      "source": "doi-landing",
+      "status": "text_too_short"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0323_10.1016_j.stem.2017.03.007_9dcb748045",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Stem Cell",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1934590917300784?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1934590917300784?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Single-Cell RNA-Seq Analysis Maps Development of Human Germline Cells and Gonadal Niche Interactions",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.stem.2017.03.007"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "28457750",
+      "pub_year": "2017",
+      "title": "Single-Cell RNA-Seq Analysis Maps Development of Human Germline Cells and Gonadal Niche Interactions."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.stem.2017.03.007",
+    "preferred_url": "https://doi.org/10.1016/j.stem.2017.03.007",
+    "publication_title": "Single-Cell RNA-Seq Analysis Maps Development of Human Germline Cells and Gonadal- Niche Interactions"
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Tregs",
+    "group_name": "TREG",
+    "group_id": null,
+    "feature_label": "C5AR2",
+    "feature_name": "C5AR2",
+    "feature_id": "ENSG00000134830",
+    "source_type": "text",
+    "source_rationale": "We also observed upregulation of C5AR2, which has been shown to promote peripherally induced Tregs in human and murine models.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " Tregs",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " C5AR2",
+      "all_verified": true
+    }
+  }
+]

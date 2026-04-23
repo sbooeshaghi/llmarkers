@@ -1,0 +1,80 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.09.28.462103",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/2021.09.28.462103v1",
+      "kind": "html",
+      "n_text_chars": 6904,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://www.biorxiv.org/content/10.1101/2021.09.28.462103v1",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/2021.09.28.462103v1",
+    "folder": "0447_10.1101_2021.09.28.462103_95ffe27ace",
+    "n_text_chars": 6904,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2021.09.28.462103"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Single-nucleus transcriptomic atlas of spinal cord neuron in human",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2021/09/30/2021.09.28.462103.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2021.09.28.462103"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "Single-nucleus transcriptomic atlas of spinal cord neuron in human"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2021.09.28.462103",
+    "preferred_url": "https://doi.org/10.1101/2021.09.28.462103",
+    "publication_title": "Single-nucleus transcriptomic atlas of spinal cord neuron in human"
+  }
+}

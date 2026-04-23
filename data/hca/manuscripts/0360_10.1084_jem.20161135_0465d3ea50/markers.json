@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "non-DCs",
+    "group_name": "NON-DCS",
+    "group_id": null,
+    "feature_label": "CD172a",
+    "feature_name": "CD172A",
+    "feature_id": "ENSG00000198053",
+    "source_type": "text",
+    "source_rationale": "The third group of cells does not express genes associated with cDC differentiation (P > 0.1; Fisher's exact test) and instead is characterized by CSF-R, CD172a, CD11c, and IRF8 expression (non-DCs; Fig. 1 e ).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "non-DCs",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD172a",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "non-DCs",
+    "group_name": "NON-DCS",
+    "group_id": null,
+    "feature_label": "IRF8",
+    "feature_name": "IRF8",
+    "feature_id": "ENSG00000140968",
+    "source_type": "text",
+    "source_rationale": "The third group of cells does not express genes associated with cDC differentiation (P > 0.1; Fisher's exact test) and instead is characterized by CSF-R, CD172a, CD11c, and IRF8 expression (non-DCs; Fig. 1 e ).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "non-DCs",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " IRF8",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Plasmacytoid DCs",
+    "group_name": "PLASMACYTOID DC",
+    "group_id": null,
+    "feature_label": "CD303",
+    "feature_name": "CD303",
+    "feature_id": "ENSG00000198178",
+    "source_type": "text",
+    "source_rationale": "Plasmacytoid DCs (pDCs) are specialized to produce type I IFN and can be identified by expression of BDCA-2/CD303 ( Colonna et al., 2004 ).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "Plasmacytoid DCs",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "CD303",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SPI1",
+    "group_name": "SPI1",
+    "group_id": null,
+    "feature_label": "SPI1",
+    "feature_name": "SPI1",
+    "feature_id": "ENSG00000066336",
+    "source_type": "text",
+    "source_rationale": "SPI1, which is required for the development of all DCs, is expressed by both subsets of pre-cDCs ( Fig. 2 d ).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "SPI1",
+      "feature_label_found": true,
+      "feature_label_reconstructed": "SPI1",
+      "all_verified": true
+    }
+  }
+]

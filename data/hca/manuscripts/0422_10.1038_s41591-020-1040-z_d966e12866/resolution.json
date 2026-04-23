@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41591-020-1040-z?error=cookies_not_supported&code=66824cc4-fd01-41aa-8a5e-6067107be662",
+      "kind": "html",
+      "n_text_chars": 90356,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41591-020-1040-z",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41591-020-1040-z?error=cookies_not_supported&code=66824cc4-fd01-41aa-8a5e-6067107be662",
+    "folder": "0422_10.1038_s41591-020-1040-z_d966e12866",
+    "n_text_chars": 90356,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41591-020-1040-z.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41591-020-1040-z"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41591-020-1040-z.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell transcriptomic atlas of the human endometrium during the menstrual cycle",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41591-020-1040-z"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "32929266",
+      "pub_year": "2020",
+      "title": "Single-cell transcriptomic atlas of the human endometrium during the menstrual cycle."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41591-020-1040-z",
+    "preferred_url": "https://doi.org/10.1038/s41591-020-1040-z",
+    "publication_title": "Single-cell transcriptomic atlas of the human endometrium during the menstrual cycle."
+  }
+}

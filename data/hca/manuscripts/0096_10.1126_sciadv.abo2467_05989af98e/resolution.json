@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10104466/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 87657,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10104466/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10104466/fullTextXML",
+    "folder": "0096_10.1126_sciadv.abo2467_05989af98e",
+    "n_text_chars": 87657,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Science Advances",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.science.org/doi/pdf/10.1126/sciadv.abo2467"
+        }
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "title": "Characterization of altered molecular mechanisms in Parkinson\u2019s disease through cell type\u2013resolved multiomics analyses",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.1126/sciadv.abo2467"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/sciadv.abo2467"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10104466"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10104466?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC10104466",
+      "pmid": "37058563",
+      "pub_year": "2023",
+      "title": "Characterization of altered molecular mechanisms in Parkinson's disease through cell type-resolved multiomics analyses."
+    }
+  },
+  "metadata": {
+    "doi": "10.1126/sciadv.abo2467",
+    "preferred_url": "https://doi.org/10.1126/sciadv.abo2467",
+    "publication_title": "Characterization of altered molecular mechanisms in Parkinson's disease through cell type-resolved multiomics analyses"
+  }
+}

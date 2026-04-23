@@ -1,0 +1,98 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4697386/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "254382",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4697386/",
+      "kind": "html",
+      "n_text_chars": 97179,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4697386/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4697386/",
+    "folder": "0167_10.1073_pnas.1520760112_985a5e340f",
+    "n_text_chars": 97179,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Proceedings of the National Academy of Sciences",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://www.pnas.org/syndication/doi/10.1073/pnas.1520760112"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://pnas.org/doi/pdf/10.1073/pnas.1520760112"
+        }
+      ],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "title": "Human cerebral organoids recapitulate gene expression programs of fetal neocortex development",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1073/pnas.1520760112"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC4697386"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC4697386?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1073/pnas.1520760112"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC4697386",
+      "pmid": "26644564",
+      "pub_year": "2015",
+      "title": "Human cerebral organoids recapitulate gene expression programs of fetal neocortex development."
+    }
+  },
+  "metadata": {
+    "doi": "10.1073/pnas.1520760112",
+    "preferred_url": "https://doi.org/10.1073/pnas.1520760112",
+    "publication_title": "Human cerebral organoids recapitulate gene expression programs of fetal neocortex development"
+  }
+}

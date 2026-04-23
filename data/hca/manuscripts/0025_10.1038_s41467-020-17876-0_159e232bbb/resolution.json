@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7442652/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 41613,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7442652/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7442652/fullTextXML",
+    "folder": "0025_10.1038_s41467-020-17876-0_159e232bbb",
+    "n_text_chars": 41613,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Communications",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41467-020-17876-0.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41467-020-17876-0"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41467-020-17876-0.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "A single-cell atlas of the human substantia nigra reveals cell-specific pathways associated with neurological disorders",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41467-020-17876-0"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7442652"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7442652?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7442652",
+      "pmid": "32826893",
+      "pub_year": "2020",
+      "title": "A single-cell atlas of the human substantia nigra reveals cell-specific pathways associated with neurological disorders."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41467-020-17876-0",
+    "preferred_url": "https://doi.org/10.1038/s41467-020-17876-0",
+    "publication_title": "A single-cell atlas of the human substantia nigra reveals cell-specific pathways associated with neurological disorders."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7720616/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 110918,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7720616/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7720616/fullTextXML",
+    "folder": "0414_10.1186_s13059-020-02210-0_30c1533a3e",
+    "n_text_chars": 110918,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Genome Biology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://link.springer.com/content/pdf/10.1186/s13059-020-02210-0.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://link.springer.com/article/10.1186/s13059-020-02210-0/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://link.springer.com/content/pdf/10.1186/s13059-020-02210-0.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell transcriptome profiling of an adult human cell atlas of 15 major organs",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-020-02210-0"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s13059-020-02210-0"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7720616"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7720616?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7720616",
+      "pmid": "33287869",
+      "pub_year": "2020",
+      "title": "Single-cell transcriptome profiling of an adult human cell atlas of 15 major organs."
+    }
+  },
+  "metadata": {
+    "doi": "10.1186/s13059-020-02210-0",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7720616",
+    "publication_title": "Single-cell transcriptome profiling of an adult human cell atlas of 15 major organs."
+  }
+}

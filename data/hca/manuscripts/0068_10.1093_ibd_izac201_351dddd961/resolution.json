@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9890215/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 46265,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9890215/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9890215/fullTextXML",
+    "folder": "0068_10.1093_ibd_izac201_351dddd961",
+    "n_text_chars": 46265,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Inflammatory Bowel Diseases",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "am",
+          "intended_application": "syndication",
+          "url": "https://academic.oup.com/ibdjournal/advance-article-pdf/doi/10.1093/ibd/izac201/46378508/izac201.pdf"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://academic.oup.com/ibdjournal/article-pdf/29/2/274/49005737/izac201.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://academic.oup.com/ibdjournal/article-pdf/29/2/274/49005737/izac201.pdf"
+        }
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "title": "Assessing Cellular and Transcriptional Diversity of Ileal Mucosa Among Treatment-Na\u00efve and Treated Crohn\u2019s Disease",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1093/ibd/izac201"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9890215"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9890215?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9890215",
+      "pmid": "36206201",
+      "pub_year": "2023",
+      "title": "Assessing Cellular and Transcriptional Diversity of Ileal Mucosa Among Treatment-Na\u00efve and Treated Crohn's Disease."
+    }
+  },
+  "metadata": {
+    "doi": "10.1093/ibd/izac201",
+    "preferred_url": "https://doi.org/10.1093/ibd/izac201",
+    "publication_title": "Assessing Cellular and Transcriptional Diversity of Ileal Mucosa Among Treatment-Na\u00efve and Treated Crohn's Disease"
+  }
+}

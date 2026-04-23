@@ -1,0 +1,284 @@
+{
+  "doi": "10.1101/2023.08.08.551504",
+  "title": "Multi-scale spatial mapping of cell populations across anatomical sites in healthy human skin and basal cell carcinoma",
+  "abstract": "AbstractOur understanding of how human skin cells differ according to anatomical site and tumour formation is limited. To address this we have created a multi-scale spatial atlas of healthy skin and basal cell carcinoma (BCC), incorporating in vivo optical coherence tomography, single cell RNA sequencing, spatial global transcriptional profiling and in situ sequencing. Computational spatial deconvolution and projection revealed the localisation of distinct cell populations to specific tissue contexts. Although cell populations were conserved between healthy anatomical sites and in BCC, mesenchymal cell populations including fibroblasts and pericytes retained signatures of developmental origin. Spatial profiling and in silico lineage tracing support a hair follicle origin for BCC and demonstrate that cancer-associated fibroblasts are an expansion of a POSTN+ subpopulation associated with hair follicles in healthy skin. RGS5+ pericytes are also expanded in BCC suggesting a role in vascular remodelling. We propose that the identity of mesenchymal cell populations is regulated by signals emanating from adjacent structures and that these signals are repurposed to promote the expansion of skin cancer stroma. The resource we have created is publicly available in an interactive format for the research community.\n\nSignificance statement\nSingle cells RNA sequencing has revolutionised cell biology, enabling high resolution analysis of cell types and states within human tissues. Here, we report a comprehensive spatial atlas of adult human skin across different anatomical sites and basal cell carcinoma (BCC) - the most common form of skin cancer - encompassing in vivo optical coherence tomography, single cell RNA sequencing, global spatial transcriptomic profiling and in situ sequencing. In combination these modalities have allowed us to assemble a comprehensive nuclear-resolution atlas of cellular identity in health and disease.",
+  "pub_date": "2023-01-01",
+  "authors": [
+    {
+      "given_names": "Clarisse",
+      "surname": "Ganier",
+      "orcid": "0000-0003-1143-7905",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Pavel",
+      "surname": "Mazin",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Gabriel",
+      "surname": "Herrera-Oropeza",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Xinyi",
+      "surname": "Du-Harpur",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Matthew",
+      "surname": "Blakeley",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Jeyrroy",
+      "surname": "Gabriel",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Alexander",
+      "surname": "Predeus",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Batuhan",
+      "surname": "Cakir",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Martin",
+      "surname": "Prete",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Nasrat",
+      "surname": "Harun",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Jean-Francois",
+      "surname": "Darrigrand",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Alexander",
+      "surname": "Haiser",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Saranya",
+      "surname": "Wyles",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Tanya",
+      "surname": "Shaw",
+      "orcid": "0000-0001-6187-368X",
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Sarah A.",
+      "surname": "Teichmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Muzlifah",
+      "surname": "Haniffa",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a7",
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Fiona M.",
+      "surname": "Watt",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a10"
+      ],
+      "corresponding": true,
+      "position": 17
+    },
+    {
+      "given_names": "Magnus D.",
+      "surname": "Lynch",
+      "orcid": "0000-0001-9151-5154",
+      "affiliation_ids": [
+        "a1",
+        "a11"
+      ],
+      "corresponding": true,
+      "position": 18
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Centre for Gene Therapy and Regenerative Medicine, King’s College London, Guy’s Hospital",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Wellcome Sanger Institute, Wellcome Genome Campus",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Centre for Developmental Neurobiology, Institute of Psychiatry, Psychology and Neuroscience, King’s College London",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "The Francis Crick Institute",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Department of Dermatology, Mayo Clinic",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Centre for Inflammation Biology & Cancer Immunology, King’s College London",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Biosciences Institute, Newcastle University",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Theory of Condensed Matter Group, Cavendish Laboratory, University of Cambridge",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "Department of Dermatology and NIHR Newcastle Biomedical Research Centre, Newcastle Hospitals NHS Foundation Trust",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a10",
+      "institution": "Directors’ Unit, EMBL",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a11",
+      "institution": "St John’s Institute of Dermatology, King’s College London",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41593-019-0539-4?error=cookies_not_supported&code=68a57c40-eab4-427e-9cc9-e28d734b497c",
+      "kind": "html",
+      "n_text_chars": 101732,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41593-019-0539-4",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41593-019-0539-4?error=cookies_not_supported&code=68a57c40-eab4-427e-9cc9-e28d734b497c",
+    "folder": "0037_10.1038_s41593-019-0539-4_24ef44df9e",
+    "n_text_chars": 101732,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Neuroscience",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41593-019-0539-4.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41593-019-0539-4"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/s41593-019-0539-4.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "A single-cell atlas of entorhinal cortex from individuals with Alzheimer\u2019s disease reveals cell-type-specific gene expression regulation",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41593-019-0539-4"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "31768052",
+      "pub_year": "2019",
+      "title": "A single-cell atlas of entorhinal cortex from individuals with Alzheimer's disease reveals cell-type-specific gene expression regulation."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41593-019-0539-4",
+    "preferred_url": "https://doi.org/10.1038/s41593-019-0539-4",
+    "publication_title": "A single-cell atlas of entorhinal cortex from individuals with Alzheimer's disease reveals cell-type-specific gene expression regulation."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.01.22.21250336",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.medrxiv.org/content/10.1101/2021.01.22.21250336v1.full-text",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2021.01.22.21250336",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.01.22.21250336",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0437_10.1101_2021.01.22.21250336_e963bc0939",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2021.01.22.21250336"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Single nuclei profiling identifies cell specific markers of skeletal muscle aging, sarcopenia and senescence",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.medrxiv.org/content/medrxiv/early/2021/01/26/2021.01.22.21250336.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2021.01.22.21250336"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "Single nuclei profiling identifies cell specific markers of skeletal muscle aging, sarcopenia and senescence"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2021.01.22.21250336",
+    "preferred_url": "https://doi.org/10.1101/2021.01.22.21250336",
+    "publication_title": "Single nuclei profiling identifies cell specific markers of skeletal muscle aging, sarcopenia and senescence"
+  }
+}

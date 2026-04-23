@@ -1,0 +1,344 @@
+{
+  "doi": "10.1101/2023.11.07.566105",
+  "title": "Integrated multi-omics single cell atlas of the human retina",
+  "abstract": "AbstractSingle-cell sequencing has revolutionized the scale and resolution of molecular profiling of tissues and organs. Here, we present an integrated multimodal reference atlas of the most accessible portion of the mammalian central nervous system, the retina. We compiled around 2.4 million cells from 55 donors, including 1.4 million unpublished data points, to create a comprehensive human retina cell atlas (HRCA) of transcriptome and chromatin accessibility, unveiling over 110 types. Engaging the retina community, we annotated each cluster, refined the Cell Ontology for the retina, identified distinct marker genes, and characterized cis-regulatory elements and gene regulatory networks (GRNs) for these cell types. Our analysis uncovered intriguing differences in transcriptome, chromatin, and GRNs across cell types. In addition, we modeled changes in gene expression and chromatin openness across gender and age. This integrated atlas also enabled the fine-mapping of GWAS and eQTL variants. Accessible through interactive browsers, this multimodal cross-donor and cross-lab HRCA, can facilitate a better understanding of retinal function and pathology.",
+  "pub_date": "2023-01-01",
+  "authors": [
+    {
+      "given_names": "Jin",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Jun",
+      "surname": "Wang",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Ignacio L",
+      "surname": "Ibarra",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Xuesen",
+      "surname": "Cheng",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Malte D",
+      "surname": "Luecken",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Jiaxiong",
+      "surname": "Lu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Aboozar",
+      "surname": "Monavarfeshani",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Wenjun",
+      "surname": "Yan",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Yiqiao",
+      "surname": "Zheng",
+      "orcid": "0000-0003-4133-0439",
+      "affiliation_ids": [
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Zhen",
+      "surname": "Zuo",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Samantha Lynn",
+      "surname": "Zayas Colborn",
+      "orcid": null,
+      "affiliation_ids": [
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Berenice Sarahi",
+      "surname": "Cortez",
+      "orcid": null,
+      "affiliation_ids": [
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Leah A",
+      "surname": "Owen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Nicholas M",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Karthik",
+      "surname": "Shekhar",
+      "orcid": "0000-0003-4349-6600",
+      "affiliation_ids": [
+        "a10"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Joshua R",
+      "surname": "Sanes",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "J Timothy",
+      "surname": "Stout",
+      "orcid": null,
+      "affiliation_ids": [
+        "a11"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Shiming",
+      "surname": "Chen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a7",
+        "a12"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Yumei",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Margaret M",
+      "surname": "DeAngelis",
+      "orcid": null,
+      "affiliation_ids": [
+        "a13"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Fabian J",
+      "surname": "Theis",
+      "orcid": "0000-0002-2419-1943",
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": true,
+      "position": 21
+    },
+    {
+      "given_names": "Rui",
+      "surname": "Chen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a5"
+      ],
+      "corresponding": true,
+      "position": 22
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Department of Molecular and Human Genetics, Baylor College of Medicine",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Human Genome Sequencing Center, Baylor College of Medicine",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Institute of Computational Biology, Helmholtz Zentrum München, G, erman Research Center for Environmental Health",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Institute of Lung Health & Immunity, Helmholtz Munich; Member of the German Center for Lung Research (DZL)",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Department of Biochemistry and Molecular Biology, Baylor College of Medicine",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Center for Brain Science and Department of Molecular and Cellular Biology, Harvard University",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Department of Ophthalmology and Visual Sciences, Washington University in St Louis",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Lions Eye Bank of Texas, Baylor College of Medicine",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "John A. Moran Eye Center, Department of Ophthalmology and Visual Sciences, University of Utah",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a10",
+      "institution": "Department of Chemical and Biomolecular Engineering; Helen Wills Neuroscience Institute; Center for Computational Biology; California Institute for Quantitative Biosciences, University of California",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a11",
+      "institution": "Department of Ophthalmology, Cullen Eye Institute, Baylor College of Medicine",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a12",
+      "institution": "Department of Developmental Biology, Washington University in St Louis",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a13",
+      "institution": "Department of Ophthalmology, Ross Eye Institute, Jacobs School of Medicine and Biomedical Sciences, State University of New York at Buffalo",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "choroid plexus",
+    "group_name": "CHOROID PLEXUS",
+    "group_id": null,
+    "feature_label": "IFITM3",
+    "feature_name": "IFITM3",
+    "feature_id": "ENSG00000142089",
+    "source_type": "text",
+    "source_rationale": "We observed a broad upregulation of the antiviral defence gene IFITM3 across choroid and glia limitans barrier cells in patients with COVID-19, consistent with potential SARS-CoV-2 infection.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " choroid",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " IFITM3",
+      "all_verified": true
+    }
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6765272/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 27307,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6765272/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6765272/fullTextXML",
+    "folder": "0488_10.1073_pnas.1908706116_5dfd6c0233",
+    "n_text_chars": 27307,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Proceedings of the National Academy of Sciences",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://www.pnas.org/syndication/doi/10.1073/pnas.1908706116"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://pnas.org/doi/pdf/10.1073/pnas.1908706116"
+        }
+      ],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "title": "The single-cell transcriptomic landscape of early human diabetic nephropathy",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1073/pnas.1908706116"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6765272"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6765272?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC6765272",
+      "pmid": "31506348",
+      "pub_year": "2019",
+      "title": "The single-cell transcriptomic landscape of early human diabetic nephropathy."
+    }
+  },
+  "metadata": {
+    "doi": "10.1073/pnas.1908706116",
+    "preferred_url": "https://doi.org/10.1073/pnas.1908706116",
+    "publication_title": "The single-cell transcriptomic landscape of early human diabetic nephropathy"
+  }
+}

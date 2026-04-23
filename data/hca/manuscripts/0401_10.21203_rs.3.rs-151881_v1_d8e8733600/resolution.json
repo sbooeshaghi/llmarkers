@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.researchsquare.com/article/rs-151881/v1",
+      "kind": "html",
+      "n_text_chars": 41238,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.21203/rs.3.rs-151881/v1",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.researchsquare.com/article/rs-151881/v1",
+    "folder": "0401_10.21203_rs.3.rs-151881_v1_d8e8733600",
+    "n_text_chars": 41238,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.researchsquare.com/article/rs-151881/v1"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.researchsquare.com/article/rs-151881/v1.html"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell profiling of human subventricular zone progenitors identifies SFRP1 as a target for stimulating progenitor activation",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.researchsquare.com/article/rs-151881/latest.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-151881/v1"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "Single-cell profiling of human subventricular zone progenitors identifies SFRP1 as a target for stimulating progenitor activation"
+    }
+  },
+  "metadata": {
+    "doi": "10.21203/rs.3.rs-151881/v1",
+    "preferred_url": "https://doi.org/10.21203/rs.3.rs-151881/v1",
+    "publication_title": "Single-cell profiling of human subventricular zone progenitors identifies SFRP1 as a target for stimulating progenitor activation"
+  }
+}

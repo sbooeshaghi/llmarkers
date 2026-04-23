@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8085501/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 39673,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8085501/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8085501/fullTextXML",
+    "folder": "0003_10.3389_fimmu.2021.645988_480a5ea7f6",
+    "n_text_chars": 39673,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Frontiers in Immunology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2021.645988/full"
+        }
+      ],
+      "publisher": "Frontiers Media SA",
+      "title": "A Partial Picture of the Single-Cell Transcriptomics of Human IgA Nephropathy",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2021.645988/pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3389/fimmu.2021.645988"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8085501"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8085501?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8085501",
+      "pmid": "33936064",
+      "pub_year": "2021",
+      "title": "A Partial Picture of the Single-Cell Transcriptomics of Human IgA Nephropathy."
+    }
+  },
+  "metadata": {
+    "doi": "10.3389/fimmu.2021.645988",
+    "preferred_url": "https://doi.org/10.3389/fimmu.2021.645988",
+    "publication_title": "A Partial Picture of the Single-Cell Transcriptomics of Human IgA Nephropathy"
+  }
+}

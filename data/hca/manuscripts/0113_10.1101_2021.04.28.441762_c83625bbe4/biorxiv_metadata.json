@@ -1,0 +1,398 @@
+{
+  "doi": "10.1101/2021.04.28.441762",
+  "title": "Cross-tissue immune cell analysis reveals tissue-specific adaptations and clonal architecture in humans",
+  "abstract": "Abstract\nDespite their crucial role in health and disease, our knowledge of immune cells within human tissues remains limited. Here, we surveyed the immune compartment of 15 tissues of six deceased adult donors by single-cell RNA sequencing and paired VDJ sequencing. To systematically resolve immune cell heterogeneity across tissues, we developed CellTypist, a machine learning tool for rapid and precise cell type annotation. Using this approach, combined with detailed curation, we determined the tissue distribution of 45 finely phenotyped immune cell types and states, revealing hitherto unappreciated tissue-specific features and clonal architecture of T and B cells. In summary, our multi-tissue approach lays the foundation for identifying highly resolved immune cell types by leveraging a common reference dataset, tissue-integrated expression analysis and antigen receptor sequencing.\nOne Sentence Summary\nWe provide an immune cell atlas, including antigen receptor repertoire profiling, across lymphoid and non-lymphoid human tissues.",
+  "pub_date": "2021-01-01",
+  "authors": [
+    {
+      "given_names": "C",
+      "surname": "Domínguez Conde",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "C",
+      "surname": "Xu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "LB",
+      "surname": "Jarvis",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "T",
+      "surname": "Gomes",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "SK",
+      "surname": "Howlett",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "DB",
+      "surname": "Rainbow",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "O",
+      "surname": "Suchanek",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "HW",
+      "surname": "King",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "L",
+      "surname": "Mamanova",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "K",
+      "surname": "Polanski",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "N",
+      "surname": "Huang",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "ES",
+      "surname": "Fasouli",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "KT",
+      "surname": "Mahbubani",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "M",
+      "surname": "Prete",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "L",
+      "surname": "Tuck",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "N",
+      "surname": "Richoz",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "ZK",
+      "surname": "Tuong",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "L",
+      "surname": "Campos",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "HS",
+      "surname": "Mousa",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "EJ",
+      "surname": "Needham",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "S",
+      "surname": "Pritchard",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "T",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "R",
+      "surname": "Elmentaite",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "J",
+      "surname": "Park",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "DK",
+      "surname": "Menon",
+      "orcid": null,
+      "affiliation_ids": [
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "OA",
+      "surname": "Bayraktar",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "LK",
+      "surname": "James",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "KB",
+      "surname": "Meyer",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "MR",
+      "surname": "Clatworthy",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "K",
+      "surname": "Saeb-Parsy",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": true,
+      "position": 30
+    },
+    {
+      "given_names": "JL",
+      "surname": "Jones",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": true,
+      "position": 31
+    },
+    {
+      "given_names": "SA",
+      "surname": "Teichmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a8"
+      ],
+      "corresponding": true,
+      "position": 32
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Wellcome Sanger Institute, Wellcome Genome Campus",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Department of Clinical Neurosciences, University of Cambridge",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Molecular Immunity Unit, Department of Medicine, University of Cambridge",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Centre for Immunobiology, Blizard Institute, Queen Mary University of London",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Department of Surgery, University of Cambridge and NIHR Cambridge Biomedical Research Centre",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "West Suffolk Hospital NHS Trust",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Department of Anaesthesia, University of Cambridge",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Theory of Condensed Matter, Cavendish Laboratory, Department of Physics, University of Cambridge",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    }
+  ]
+}

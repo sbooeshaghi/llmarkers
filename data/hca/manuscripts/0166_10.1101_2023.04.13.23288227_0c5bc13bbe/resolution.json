@@ -1,0 +1,93 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2023.04.13.23288227",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2023.04.13.23288227",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2023.04.13.23288227",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2023.04.13.23288227",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0166_10.1101_2023.04.13.23288227_0c5bc13bbe",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2023.04.13.23288227"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Human SARS-CoV-2 challenge resolves local and systemic response dynamics",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.medrxiv.org/content/medrxiv/early/2023/04/25/2023.04.13.23288227.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2023.04.13.23288227"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/article/PPR/PPR650216"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR650216&type=FILE&fileName=EMS174756-pdf.pdf&mimeType=application/pdf"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2023",
+      "title": "Human SARS-CoV-2 challenge resolves local and systemic response dynamics"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2023.04.13.23288227",
+    "preferred_url": "https://doi.org/10.1101/2023.04.13.23288227",
+    "publication_title": "Human SARS-CoV-2 challenge resolves local and systemic response dynamics"
+  }
+}

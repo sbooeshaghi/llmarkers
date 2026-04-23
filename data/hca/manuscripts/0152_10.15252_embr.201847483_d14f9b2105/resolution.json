@@ -1,0 +1,104 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6446205/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "223330",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6446205/",
+      "kind": "html",
+      "n_text_chars": 66348,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6446205/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6446205/",
+    "folder": "0152_10.15252_embr.201847483_d14f9b2105",
+    "n_text_chars": 66348,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "EMBO reports",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.15252/embr.201847483"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/full-xml/10.15252/embr.201847483"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.embopress.org/doi/pdf/10.15252/embr.201847483"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Reporter\u2010based fate mapping in human kidney organoids confirms nephron lineage relationships and reveals synchronous nephron formation",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.15252/embr.201847483"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6446205"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6446205?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.15252/embr.201847483"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC6446205",
+      "pmid": "30858339",
+      "pub_year": "2019",
+      "title": "Reporter-based fate mapping in human kidney organoids confirms nephron lineage relationships and reveals synchronous nephron formation."
+    }
+  },
+  "metadata": {
+    "doi": "10.15252/embr.201847483",
+    "preferred_url": "https://doi.org/10.15252/embr.201847483",
+    "publication_title": "Reporter-based fate mapping in human kidney organoids confirms nephron lineage relationships and reveals synchronous nephron formation."
+  }
+}

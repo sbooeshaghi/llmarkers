@@ -1,0 +1,92 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2021.03.09.21253155",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "190135",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/34354210/",
+      "kind": "html",
+      "n_text_chars": 13197,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pubmed.ncbi.nlm.nih.gov/34354210",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/34354210/",
+    "folder": "0202_10.1101_2021.03.09.21253155_14ff4e9eec",
+    "n_text_chars": 13197,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2021.03.09.21253155"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "High-resolution epigenome analysis in nasal samples derived from children with respiratory viral infections reveals striking changes upon SARS-CoV-2 infection",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.medrxiv.org/content/medrxiv/early/2021/03/11/2021.03.09.21253155.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2021.03.09.21253155"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/article/PPR/PPR296726"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR296726&type=FILE&fileName=EMS119403-pdf.pdf&mimeType=application/pdf"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "High-resolution epigenome analysis in nasal samples derived from children with respiratory viral infections reveals striking changes upon SARS-CoV-2 infection"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2021.03.09.21253155",
+    "preferred_url": "https://doi.org/10.1101/2021.03.09.21253155",
+    "publication_title": "High-resolution epigenome analysis in nasal samples derived from children with respiratory viral infections reveals striking changes upon SARS-CoV-2 infection."
+  }
+}

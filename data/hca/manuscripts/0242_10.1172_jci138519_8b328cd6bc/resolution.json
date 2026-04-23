@@ -1,0 +1,92 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7810477/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "292403",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7810477/",
+      "kind": "html",
+      "n_text_chars": 93695,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7810477/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7810477/",
+    "folder": "0242_10.1172_jci138519_8b328cd6bc",
+    "n_text_chars": 93695,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Journal of Clinical Investigation",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.jci.org/articles/view/138519/files/pdf"
+        }
+      ],
+      "publisher": "American Society for Clinical Investigation",
+      "title": "Oleic acid restores suppressive defects in tissue-resident FOXP3 Tregs from patients with multiple sclerosis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1172/JCI138519"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7810477"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7810477?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1172/jci138519"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC7810477",
+      "pmid": "33170805",
+      "pub_year": "2021",
+      "title": "Oleic acid restores suppressive defects in tissue-resident FOXP3 Tregs from patients with multiple sclerosis."
+    }
+  },
+  "metadata": {
+    "doi": "10.1172/jci138519",
+    "preferred_url": "https://doi.org/10.1172/jci138519",
+    "publication_title": "Oleic acid restores suppressive defects in tissue-resident FOXP3 Tregs from patients with multiple sclerosis."
+  }
+}

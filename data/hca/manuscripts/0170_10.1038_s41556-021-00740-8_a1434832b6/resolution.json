@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41556-021-00740-8?error=cookies_not_supported&code=516c31e4-9d64-4456-9457-60556aff45d2",
+      "kind": "html",
+      "n_text_chars": 112816,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41556-021-00740-8",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41556-021-00740-8?error=cookies_not_supported&code=516c31e4-9d64-4456-9457-60556aff45d2",
+    "folder": "0170_10.1038_s41556-021-00740-8_a1434832b6",
+    "n_text_chars": 112816,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Cell Biology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41556-021-00740-8.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41556-021-00740-8"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41556-021-00740-8.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Human melanocyte development and melanoma dedifferentiation at single-cell resolution",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2020/11/17/2020.05.25.115287.full.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41556-021-00740-8"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "34475532",
+      "pub_year": "2021",
+      "title": "Human melanocyte development and melanoma dedifferentiation at single-cell resolution."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41556-021-00740-8",
+    "preferred_url": "https://doi.org/10.1038/s41556-021-00740-8",
+    "publication_title": "Human melanocyte development and melanoma dedifferentiation at single-cell resolution."
+  }
+}

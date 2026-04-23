@@ -1,0 +1,288 @@
+{
+  "doi": "10.1101/2023.03.17.533161",
+  "title": "Cell type-specific and disease-associated eQTL in the human lung",
+  "abstract": "Abstract\nCommon genetic variants confer substantial risk for chronic lung diseases, including pulmonary fibrosis (PF). Defining the genetic control of gene expression in a cell-type-specific and context-dependent manner is critical for understanding the mechanisms through which genetic variation influences complex traits and disease pathobiology. To this end, we performed single-cell RNA-sequencing of lung tissue from 67 PF and 49 unaffected donors. Employing a pseudo-bulk approach, we mapped expression quantitative trait loci (eQTL) across 38 cell types, observing both shared and cell type-specific regulatory effects. Further, we identified disease-interaction eQTL and demonstrated that this class of associations is more likely to be cell-type specific and linked to cellular dysregulation in PF. Finally, we connected PF risk variants to their regulatory targets in disease-relevant cell types. These results indicate that cellular context determines the impact of genetic variation on gene expression, and implicates context-specific eQTL as key regulators of lung homeostasis and disease.",
+  "pub_date": "2023-01-01",
+  "authors": [
+    {
+      "given_names": "Heini M",
+      "surname": "Natri",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Christina B",
+      "surname": "Del Azodi",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Lance",
+      "surname": "Peter",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Chase J",
+      "surname": "Taylor",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Sagrika",
+      "surname": "Chugh",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Robert",
+      "surname": "Kendle",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Mei-i",
+      "surname": "Chung",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "David K",
+      "surname": "Flaherty",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Brittany K",
+      "surname": "Matlock",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Carla L",
+      "surname": "Calvi",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Timothy S",
+      "surname": "Blackwell",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4",
+        "a7",
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Lorraine B",
+      "surname": "Ware",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4",
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Matthew",
+      "surname": "Bacchetta",
+      "orcid": null,
+      "affiliation_ids": [
+        "a10"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Rajat",
+      "surname": "Walia",
+      "orcid": null,
+      "affiliation_ids": [
+        "a11"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Ciara M",
+      "surname": "Shaver",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Jonathan A",
+      "surname": "Kropski",
+      "orcid": "0000-0002-8923-1344",
+      "affiliation_ids": [
+        "a4",
+        "a7",
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Davis J",
+      "surname": "McCarthy",
+      "orcid": "0000-0002-2218-6833",
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Nicholas E",
+      "surname": "Banovich",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": true,
+      "position": 18
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Translational Genomics Research Institute (TGen)",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "St. Vincent’s Institute of Medical Research",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Melbourne Integrative Genomics, University of Melbourne",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Division of Allergy, Pulmonary and Critical Care Medicine, Department of Medicine, Vanderbilt University Medical Center",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "School of Mathematics and Statistics, Faculty of Science, University of Melbourne",
+      "department": null,
+      "city": null,
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Flow Cytometry Shared Resource, Vanderbilt University Medical Center",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Department of Cell and Developmental Biology, Vanderbilt University",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Department of Veterans Affairs Medical Center",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "Department of Pathology, Microbiology and Immunology, Vanderbilt University Medical Center",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a10",
+      "institution": "Department of Cardiac Surgery, Vanderbilt University Medical Center",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a11",
+      "institution": "Department of Thoracic Disease and Transplantation, Norton Thoracic Institute",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    }
+  ]
+}

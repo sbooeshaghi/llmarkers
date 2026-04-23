@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7646563/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 48835,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7646563/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7646563/fullTextXML",
+    "folder": "0059_10.1080_22221751.2020.1826361_4a743eba8f",
+    "n_text_chars": 48835,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Emerging Microbes &amp; Infections",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.tandfonline.com/doi/pdf/10.1080/22221751.2020.1826361"
+        }
+      ],
+      "publisher": "Informa UK Limited",
+      "title": "An atlas of immune cell exhaustion in HIV-infected individuals revealed by single-cell transcriptomics",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1080/22221751.2020.1826361"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7646563"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7646563?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7646563",
+      "pmid": "32954948",
+      "pub_year": "2020",
+      "title": "An atlas of immune cell exhaustion in HIV-infected individuals revealed by single-cell transcriptomics."
+    }
+  },
+  "metadata": {
+    "doi": "10.1080/22221751.2020.1826361",
+    "preferred_url": "https://doi.org/10.1080/22221751.2020.1826361",
+    "publication_title": "An atlas of immune cell exhaustion in HIV-infected individuals revealed by single-cell transcriptomics."
+  }
+}

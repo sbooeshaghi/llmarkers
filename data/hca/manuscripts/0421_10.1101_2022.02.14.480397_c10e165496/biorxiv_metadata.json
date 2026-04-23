@@ -1,0 +1,237 @@
+{
+  "doi": "10.1101/2022.02.14.480397",
+  "title": "Single-cell transcriptomic and proteomic analysis of Parkinson’s disease Brains",
+  "abstract": "Abstract\nParkinson’s disease (PD) is a prevalent neurodegenerative disorder where recent evidence suggests pathogenesis may be mediated by inflammatory processes. The molecular architecture of the disease remains to be fully elucidated. We performed single-nucleus transcriptomics and unbiased proteomics using postmortem tissue obtained from the prefrontal cortex of 12 individuals with late-stage PD and age-matched controls. We analyzed ∼80,000 nuclei and identified eight major cell types, including brain-resident T cells, each with distinct transcriptional changes in line with the known genetics of PD. By analyzing Lewy body pathology in the same postmortem tissue, we found that α-synuclein pathology is inversely correlated with chaperone expression in excitatory neurons. Examining cell-cell interactions, we found a selective abatement of neuron-astrocyte interactions and enhanced neuroinflammation. Proteomic analyses of the same brains identified synaptic proteins in prefrontal cortex that were preferentially downregulated in PD. Strikingly, comparing this dataset to a regionally similar published analysis for Alzheimer’s disease (AD), we found no common differentially expressed genes in neurons, but identified many shared differentially expressed genes in glial cells, suggesting that disease etiology in PD and AD are likely distinct. These data are presented as a resource for interrogating the molecular and cellular basis of PD and other neurodegenerative diseases.\nOne Sentence Summary\nWe provide an extensive single cell analysis profiling nearly 80,000 brain nuclei from prefrontal cortex of late-stage Parkinson’s disease brains, demonstrate that α-synuclein pathology is inversely correlated with chaperone expression in excitatory neurons, found a selective abatement of neuron-astrocyte interactions with enhanced neuroinflammation, and augmented the study with proteomic analysis and cross-comparisons with Alzheimer’s disease datasets, providing valuable insights into the pathways of neurodegeneration and a deep definition of the underlying molecular pathology for Parkinson’s disease.",
+  "pub_date": "2022-01-01",
+  "authors": [
+    {
+      "given_names": "Biqing",
+      "surname": "Zhu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Jae-Min",
+      "surname": "Park",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Sarah",
+      "surname": "Coffey",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "I-Uen",
+      "surname": "Hsu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "TuKiet T.",
+      "surname": "Lam",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Pallavi P.",
+      "surname": "Gopal",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Stephen D.",
+      "surname": "Ginsberg",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6",
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Jiawei",
+      "surname": "Wang",
+      "orcid": "0000-0003-2627-4897",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Chang",
+      "surname": "Su",
+      "orcid": null,
+      "affiliation_ids": [
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Hongyu",
+      "surname": "Zhao",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "David A.",
+      "surname": "Hafler",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a9",
+        "a10",
+        "a11"
+      ],
+      "corresponding": true,
+      "position": 11
+    },
+    {
+      "given_names": "Sreeganga S.",
+      "surname": "Chandra",
+      "orcid": "0000-0001-9035-1733",
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a11"
+      ],
+      "corresponding": true,
+      "position": 12
+    },
+    {
+      "given_names": "Le",
+      "surname": "Zhang",
+      "orcid": "0000-0002-4860-831X",
+      "affiliation_ids": [
+        "a2",
+        "a11"
+      ],
+      "corresponding": true,
+      "position": 13
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Program of Computational Biology and Bioinformatics, Yale University",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Department of Neurology, Yale University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Department of Neuroscience, Yale University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Department of Molecular Biophysics and Biochemistry and Keck MS & Proteomics Resource, Yale University",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Department of Pathology, Yale University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Center for Dementia Research, Nathan Kline Institute",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Departments of Psychiatry and Neuroscience & Physiology, NYU Neuroscience Institute, New York University Grossman School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Department of Biostatistics, Yale School of Public Health",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "Department of Immunobiology, Yale University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a10",
+      "institution": "Broad Institute of MIT and Harvard",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a11",
+      "institution": "Aligning Science Across Parkinson’s (ASAP) Collaborative Research Network",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    }
+  ]
+}

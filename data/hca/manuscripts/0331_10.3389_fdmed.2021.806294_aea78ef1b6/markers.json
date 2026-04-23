@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSCs",
+    "group_name": "HSC",
+    "group_id": null,
+    "feature_label": "CD34",
+    "feature_name": "CD34",
+    "feature_id": "ENSG00000174059",
+    "source_type": "text",
+    "source_rationale": "The characterization of dental pulp residential cells in our study has revealed that the dental pulp harbors HSCs as characterized by the expression of CD34.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " HSCs",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD34",
+      "all_verified": true
+    }
+  }
+]

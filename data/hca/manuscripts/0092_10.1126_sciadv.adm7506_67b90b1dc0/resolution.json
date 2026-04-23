@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10997207/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 77276,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10997207/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10997207/fullTextXML",
+    "folder": "0092_10.1126_sciadv.adm7506_67b90b1dc0",
+    "n_text_chars": 77276,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Science Advances",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.science.org/doi/pdf/10.1126/sciadv.adm7506"
+        }
+      ],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "title": "Cellular atlas of the human ovary using morphologically guided spatial transcriptomics and single-cell sequencing",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.1126/sciadv.adm7506"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/sciadv.adm7506"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10997207"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10997207?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC10997207",
+      "pmid": "38578993",
+      "pub_year": "2024",
+      "title": "Cellular atlas of the human ovary using morphologically guided spatial transcriptomics and single-cell sequencing."
+    }
+  },
+  "metadata": {
+    "doi": "10.1126/sciadv.adm7506",
+    "preferred_url": "https://doi.org/10.1126/sciadv.adm7506",
+    "publication_title": "Cellular atlas of the human ovary using morphologically guided spatial transcriptomics and single-cell sequencing"
+  }
+}

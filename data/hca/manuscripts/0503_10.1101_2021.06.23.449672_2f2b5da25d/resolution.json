@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/2021.06.23.449672v2",
+      "kind": "html",
+      "n_text_chars": 13942,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1101/2021.06.23.449672",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/2021.06.23.449672v2",
+    "folder": "0503_10.1101_2021.06.23.449672_2f2b5da25d",
+    "n_text_chars": 13942,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2021.06.23.449672"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Cardiovascular disease causes proinflammatory microvascular changes in the human right atrium",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2022/12/27/2021.06.23.449672.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2021.06.23.449672"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/article/PPR/PPR361033"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR361033&type=FILE&fileName=EMS159100-pdf.pdf&mimeType=application/pdf"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2021",
+      "title": "Cardiovascular disease causes proinflammatory microvascular changes in the human right atrium"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2021.06.23.449672",
+    "preferred_url": "https://doi.org/10.1101/2021.06.23.449672",
+    "publication_title": "Cardiovascular disease causes proinflammatory microvascular changes in the human right atrium"
+  }
+}

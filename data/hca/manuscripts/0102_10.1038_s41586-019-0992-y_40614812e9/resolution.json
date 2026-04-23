@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41586-019-0992-y?error=cookies_not_supported&code=a15e504d-6346-4b4b-88d9-963f59317b8d",
+      "kind": "html",
+      "n_text_chars": 111855,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41586-019-0992-y",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41586-019-0992-y?error=cookies_not_supported&code=a15e504d-6346-4b4b-88d9-963f59317b8d",
+    "folder": "0102_10.1038_s41586-019-0992-y_40614812e9",
+    "n_text_chars": 111855,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41586-019-0992-y.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41586-019-0992-y"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41586-019-0992-y.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Colonic epithelial cell diversity in health and inflammatory bowel disease",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://ora.ox.ac.uk/objects/uuid:f390c44f-9acb-4d1d-a178-976173f4e9d5/download_file?safe_filename=SI%2BGuide.pdf&file_format=application%2Fpdf&type_of_work=Journal+article"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41586-019-0992-y"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "30814735",
+      "pub_year": "2019",
+      "title": "Colonic epithelial cell diversity in health and inflammatory bowel disease."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41586-019-0992-y",
+    "preferred_url": "https://doi.org/10.1038/s41586-019-0992-y",
+    "publication_title": "Colonic epithelial cell diversity in health and inflammatory bowel disease."
+  }
+}

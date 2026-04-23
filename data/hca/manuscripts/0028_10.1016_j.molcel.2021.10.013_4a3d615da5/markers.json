@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "19-Endometrial cancer",
+    "group_name": "19-ENDOMETRIAL CANCER",
+    "group_id": null,
+    "feature_label": "MAFB",
+    "feature_name": "MAFB",
+    "feature_id": "ENSG00000204103",
+    "source_type": "text",
+    "source_rationale": "Of note, we found MAFB to be enriched in the 19-Endometrial cancer subclone of the Patient 6 tumor relative to the 34-Endometrial cancer subclone.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " 19-Endometrial cancer",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " MAFB",
+      "all_verified": true
+    }
+  }
+]

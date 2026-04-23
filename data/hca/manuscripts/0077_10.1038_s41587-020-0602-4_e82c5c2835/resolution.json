@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41587-020-0602-4?error=cookies_not_supported&code=5d9f9136-3f38-447b-839c-dc88a093a71b",
+      "kind": "html",
+      "n_text_chars": 86935,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41587-020-0602-4",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41587-020-0602-4?error=cookies_not_supported&code=5d9f9136-3f38-447b-839c-dc88a093a71b",
+    "folder": "0077_10.1038_s41587-020-0602-4_e82c5c2835",
+    "n_text_chars": 86935,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Biotechnology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41587-020-0602-4.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://www.nature.com/articles/s41587-020-0602-4"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.nature.com/articles/s41587-020-0602-4.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "COVID-19 severity correlates with airway epithelium\u2013immune cell interactions identified by single-cell analysis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41587-020-0602-4"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "32591762",
+      "pub_year": "2020",
+      "title": "COVID-19 severity correlates with airway epithelium-immune cell interactions identified by single-cell analysis."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41587-020-0602-4",
+    "preferred_url": "https://doi.org/10.1038/s41587-020-0602-4",
+    "publication_title": "COVID-19 severity correlates with airway epithelium-immune cell interactions identified by single-cell analysis."
+  }
+}

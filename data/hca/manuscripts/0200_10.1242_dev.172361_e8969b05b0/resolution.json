@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6432662/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 48906,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6432662/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6432662/fullTextXML",
+    "folder": "0200_10.1242_dev.172361_e8969b05b0",
+    "n_text_chars": 48906,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Development",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://syndication.highwire.org/content/doi/10.1242/dev.172361"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://journals.biologists.com/dev/article-pdf/doi/10.1242/dev.172361/3479155/dev172361.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://journals.biologists.com/dev/article-pdf/doi/10.1242/dev.172361/3479155/dev172361.pdf"
+        }
+      ],
+      "publisher": "The Company of Biologists",
+      "title": "Kidney micro-organoids in suspension culture as a scalable source of human pluripotent stem cell-derived kidney cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1242/dev.172361"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6432662"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC6432662",
+      "pmid": "30846463",
+      "pub_year": "2019",
+      "title": "Kidney micro-organoids in suspension culture as a scalable source of human pluripotent stem cell-derived kidney cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1242/dev.172361",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6432662",
+    "publication_title": "Kidney micro-organoids in suspension culture as a scalable source of human pluripotent stem cell-derived kidney cells."
+  }
+}

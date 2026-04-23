@@ -1,0 +1,304 @@
+{
+  "doi": "10.1101/2024.09.10.612293",
+  "title": "A cell and transcriptome atlas of human arterial vasculature",
+  "abstract": "SummaryContiguous arterial segments show different propensities for different vascular pathologies, yet mechanisms explaining these fundamental differences remain unknown. We sought to build a transcriptomic, cellular, and spatial atlas of human arterial cells across multiple different arterial segments to understand these underlying differences.\nAnalysis of multiple isogenic arterial segments from healthy donors reveals a significant stereotyped pattern of cell type-specific segmental heterogeneity in healthy arteries. Combining single cell analysis with spatial transcriptomic data reveals cellular heterogeneity not captured by commonly used cell-type marker genes. Determinants of arterial transcriptomic identities are predominantly encoded in fibroblasts and smooth muscle cells (SMC), and their differentially expressed genes are particularly enriched for different vascular disease-associated genetic risk- loci and risk-genes. Adventitial fibroblast-specific heterogeneity in gene expression coincides with a disproportionally large number of vascular disease genetic signals, suggesting a previously unrecognized role for this cell type in disease risk. Adult arterial cells from different segments cluster not by anatomical proximity, but by embryonic origin. Global regulon analysis of disease related segment-specific gene expression program in fibroblast and SMC enriches for binding sites of transcription factors that are developmental master regulators whose expression persists into adulthood, suggesting an important functional role of the same developmental master regulators in adult gene expression and disease. Lastly, non-coding transcriptomes across arterial cells contain extensive variation in lncRNAs expressed in cell type- and segment-specific patterns, rivaling heterogeneity in protein coding transcriptomes. Differentially expressed LncRNA demonstrate enrichment for non-coding genetic signals for vascular diseases, suggesting a potential global role of segmental specific LncRNAs in regulating inherited human vascular disease risk.",
+  "pub_date": "2025-01-01",
+  "authors": [
+    {
+      "given_names": "Quanyi",
+      "surname": "Zhao",
+      "orcid": "0000-0001-9849-4528",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Albert",
+      "surname": "Pedroza",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Disha",
+      "surname": "Sharma",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Wenduo",
+      "surname": "Gu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Alex",
+      "surname": "Dalal",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Chad",
+      "surname": "Weldy",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "William",
+      "surname": "Jackson",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Daniel Yuhang",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Yana",
+      "surname": "Ryan",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Trieu",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Rohan",
+      "surname": "Shad",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Brian T.",
+      "surname": "Palmisano",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "João P.",
+      "surname": "Monteiro",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Matthew",
+      "surname": "Worssam",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Alexa",
+      "surname": "Berezwitz",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Meghana",
+      "surname": "Iyer",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Huitong",
+      "surname": "Shi",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Ramendra",
+      "surname": "Kundu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Lasemahang",
+      "surname": "Limbu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Juyong Brian",
+      "surname": "Kim",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Anshul",
+      "surname": "Kundaje",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Michael",
+      "surname": "Fischbein",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Robert",
+      "surname": "Wirka",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Thomas",
+      "surname": "Quertermous",
+      "orcid": "0000-0002-7645-9067",
+      "affiliation_ids": [
+        "a1",
+        "a3"
+      ],
+      "corresponding": true,
+      "position": 24
+    },
+    {
+      "given_names": "Paul",
+      "surname": "Cheng",
+      "orcid": "0000-0003-3429-2702",
+      "affiliation_ids": [
+        "a1",
+        "a3"
+      ],
+      "corresponding": true,
+      "position": 25
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Division of Cardiovascular Medicine, Stanford University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Department of Cardiothoracic Surgery, Stanford University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Cardiovascular Institute, Stanford University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Department of Genetics, Stanford University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Division of Cardiology, Departments of Medicine and Cell Biology and Physiology, McAllister Heart Institute, University of North Carolina",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    }
+  ]
+}

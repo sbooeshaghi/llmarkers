@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8287557/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 46862,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8287557/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8287557/fullTextXML",
+    "folder": "0446_10.1186_s13073-021-00933-8_a1bc5f6475",
+    "n_text_chars": 46862,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Genome Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/content/pdf/10.1186/s13073-021-00933-8.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/article/10.1186/s13073-021-00933-8/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://link.springer.com/content/pdf/10.1186/s13073-021-00933-8.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-nucleus transcriptome analysis of human brain immune response in patients with severe COVID-19",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://genomemedicine.biomedcentral.com/counter/pdf/10.1186/s13073-021-00933-8"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s13073-021-00933-8"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8287557"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8287557?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8287557",
+      "pmid": "34281603",
+      "pub_year": "2021",
+      "title": "Single-nucleus transcriptome analysis of human brain immune response in patients with severe COVID-19."
+    }
+  },
+  "metadata": {
+    "doi": "10.1186/s13073-021-00933-8",
+    "preferred_url": "https://doi.org/10.1186/s13073-021-00933-8",
+    "publication_title": "Single-nucleus transcriptome analysis of human brain immune response in patients with severe COVID-19."
+  }
+}

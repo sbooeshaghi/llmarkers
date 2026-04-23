@@ -1,0 +1,249 @@
+{
+  "doi": "10.1101/759902",
+  "title": "Single Cell RNA-seq reveals ectopic and aberrant lung resident cell populations in Idiopathic Pulmonary Fibrosis",
+  "abstract": "Abstract\nWe provide a single cell atlas of Idiopathic Pulmonary Fibrosis (IPF), a fatal interstitial lung disease, focusing on resident lung cell populations. By profiling 312,928 cells from 32 IPF, 29 healthy control and 18 chronic obstructive pulmonary disease (COPD) lungs, we demonstrate that IPF is characterized by changes in discrete subpopulations of cells in the three major parenchymal compartments: the epithelium, endothelium and stroma. Among epithelial cells, we identify a novel population of IPF enriched aberrant basaloid cells that co-express basal epithelial markers, mesenchymal markers, senescence markers, developmental transcription factors and are located at the edge of myofibroblast foci in the IPF lung. Among vascular endothelial cells in the in IPF lung parenchyma we identify an expanded cell population transcriptomically identical to vascular endothelial cells normally restricted to the bronchial circulation. We confirm the presence of both populations by immunohistochemistry and independent datasets. Among stromal cells we identify fibroblasts and myofibroblasts in both control and IPF lungs and leverage manifold-based algorithms diffusion maps and diffusion pseudotime to infer the origins of the activated IPF myofibroblast. Our work provides a comprehensive catalogue of the aberrant cellular transcriptional programs in IPF, demonstrates a new framework for analyzing complex disease with scRNAseq, and provides the largest lung disease single-cell atlas to date.",
+  "pub_date": "2019-01-01",
+  "authors": [
+    {
+      "given_names": "Taylor S.",
+      "surname": "Adams",
+      "orcid": "0000-0003-4280-9070",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Jonas C.",
+      "surname": "Schupp",
+      "orcid": "0000-0002-7714-8076",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Sergio",
+      "surname": "Poli",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Ehab A.",
+      "surname": "Ayaub",
+      "orcid": "0000-0002-2580-1846",
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Nir",
+      "surname": "Neumark",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Farida",
+      "surname": "Ahangari",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Sarah G.",
+      "surname": "Chu",
+      "orcid": "0000-0002-6325-3633",
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Benjamin A.",
+      "surname": "Raby",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Giuseppe",
+      "surname": "DeIuliis",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Michael",
+      "surname": "Januszyk",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Qiaonan",
+      "surname": "Duan",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Heather A.",
+      "surname": "Arnett",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Asim",
+      "surname": "Siddiqui",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "George R.",
+      "surname": "Washko",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Robert",
+      "surname": "Homer",
+      "orcid": "0000-0002-2055-5885",
+      "affiliation_ids": [
+        "a6",
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Xiting",
+      "surname": "Yan",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Ivan O.",
+      "surname": "Rosas",
+      "orcid": "0000-0003-4622-618X",
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": true,
+      "position": 17
+    },
+    {
+      "given_names": "Naftali",
+      "surname": "Kaminski",
+      "orcid": "0000-0001-5917-4601",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": true,
+      "position": 18
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Section of Pulmonary, Critical Care and Sleep Medicine, Yale School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Division of Pulmonary and Critical Care Medicine, Brigham and Women’s Hospital, Harvard Medical School",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Division of Pulmonary Medicine, Boston’s Children Hospital, Harvard Medical School",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Channing Division of Network Medicine, Brigham and Women’s Hospital, Harvard Medical School",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "NuMedii, Inc.",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Department of Pathology, Yale School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Pathology and Laboratory Medicine Service and VA CT HealthCare System",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    }
+  ]
+}

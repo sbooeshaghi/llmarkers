@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8356387/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 60608,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8356387/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8356387/fullTextXML",
+    "folder": "0509_10.1186_s13073-021-00941-8_26def488c5",
+    "n_text_chars": 60608,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Genome Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/content/pdf/10.1186/s13073-021-00941-8.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/article/10.1186/s13073-021-00941-8/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://link.springer.com/content/pdf/10.1186/s13073-021-00941-8.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Using single-nucleus RNA-sequencing to interrogate transcriptomic profiles of archived human pancreatic islets",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://genomemedicine.biomedcentral.com/track/pdf/10.1186/s13073-021-00941-8"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s13073-021-00941-8"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8356387"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8356387?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8356387",
+      "pmid": "34376240",
+      "pub_year": "2021",
+      "title": "Using single-nucleus RNA-sequencing to interrogate transcriptomic profiles of archived human pancreatic islets."
+    }
+  },
+  "metadata": {
+    "doi": "10.1186/s13073-021-00941-8",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8356387",
+    "publication_title": "Using single-nucleus RNA-sequencing to interrogate transcriptomic profiles of archived human pancreatic islets."
+  }
+}

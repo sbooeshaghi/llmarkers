@@ -1,0 +1,81 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1165/rcmb.2021-0555oc",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1165/rcmb.2021-0555OC",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "pdf",
+      "requested_url": "https://academic.oup.com/ajrcmb/article-pdf/67/6/708/66440640/ajrcmb_67_6_708.pdf",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1165/rcmb.2021-0555oc",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0066_10.1165_rcmb.2021-0555oc_9f9f0ea998",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "American Journal of Respiratory Cell and Molecular Biology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://academic.oup.com/ajrcmb/article-pdf/67/6/708/66440640/ajrcmb_67_6_708.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://academic.oup.com/ajrcmb/article-pdf/67/6/708/66440640/ajrcmb_67_6_708.pdf"
+        }
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "title": "Anomalous Epithelial Variations and Ectopic Inflammatory Response in Chronic Obstructive Pulmonary Disease",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1165/rcmb.2021-0555OC"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "36108172",
+      "pub_year": "2022",
+      "title": "Anomalous Epithelial Variations and Ectopic Inflammatory Response in Chronic Obstructive Pulmonary Disease."
+    }
+  },
+  "metadata": {
+    "doi": "10.1165/rcmb.2021-0555oc",
+    "preferred_url": "https://doi.org/10.1165/rcmb.2021-0555oc",
+    "publication_title": "Anomalous Epithelial Variations and Ectopic Inflammatory Response in Chronic Obstructive Pulmonary Disease"
+  }
+}

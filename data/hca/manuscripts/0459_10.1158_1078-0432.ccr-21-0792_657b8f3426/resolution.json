@@ -1,0 +1,87 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1158/1078-0432.ccr-21-0792",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://aacrjournals.org/clincancerres/article/27/23/6529/675021/Spatially-Distinct-Reprogramming-of-the-Tumor",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "pdf",
+      "requested_url": "https://aacrjournals.org/clincancerres/article-pdf/27/23/6529/3015682/6529.pdf",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1158/1078-0432.ccr-21-0792",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0459_10.1158_1078-0432.ccr-21-0792_657b8f3426",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Clinical Cancer Research",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://aacrjournals.org/clincancerres/article-pdf/27/23/6529/3015682/6529.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://aacrjournals.org/clincancerres/article-pdf/27/23/6529/3015682/6529.pdf"
+        }
+      ],
+      "publisher": "American Association for Cancer Research (AACR)",
+      "title": "Spatially Distinct Reprogramming of the Tumor Microenvironment Based On Tumor Invasion in Diffuse-Type Gastric Cancers",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://aacrjournals.org/clincancerres/article-pdf/27/23/6529/3015682/6529.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1158/1078-0432.CCR-21-0792"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "34385296",
+      "pub_year": "2021",
+      "title": "Spatially Distinct Reprogramming of the Tumor Microenvironment Based On Tumor Invasion in Diffuse-Type Gastric Cancers."
+    }
+  },
+  "metadata": {
+    "doi": "10.1158/1078-0432.ccr-21-0792",
+    "preferred_url": "https://doi.org/10.1158/1078-0432.ccr-21-0792",
+    "publication_title": "Spatially Distinct Reprogramming of the Tumor Microenvironment Based On Tumor Invasion in Diffuse-Type Gastric Cancers."
+  }
+}

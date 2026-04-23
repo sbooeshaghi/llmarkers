@@ -1,0 +1,235 @@
+{
+  "doi": "10.1101/2023.05.01.538871",
+  "title": "A human omentum-specific mesothelial-like stromal population inhibits adipogenesis through IGFBP2 secretion",
+  "abstract": "Abstract\nAdipose tissue plasticity is orchestrated by molecularly and functionally diverse cells within the stromal vascular fraction (SVF). While several mouse and human adipose SVF cellular subpopulations have now been identified, we still lack an understanding of the cellular and functional variability of adipose stem and progenitor cell (ASPC) populations across human fat depots. To address this, we performed single-cell and bulk RNA-seq analyses of >30 Lin–SVF samples across four human adipose depots, revealing two ubiquitous hASPC subpopulations with distinct proliferative and adipogenic properties but also depot- and BMI-dependent proportions. Furthermore, we identified an omental-specific, high IGFBP2- expressing stromal population that transitions between mesothelial and mesenchymal cell states and inhibits hASPC adipogenesis through IGFBP2 secretion. Our analyses highlight the molecular and cellular uniqueness of different adipose niches while our discovery of an anti-adipogenic IGFBP2+ omental-specific population provides a new rationale for the biomedically relevant, limited adipogenic capacity of omental hASPCs.",
+  "pub_date": "2023-01-01",
+  "authors": [
+    {
+      "given_names": "Radiana",
+      "surname": "Ferrero",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Pernille Yde",
+      "surname": "Rainer",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Julie",
+      "surname": "Russeil",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Magda",
+      "surname": "Zachara",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Joern",
+      "surname": "Pezoldt",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Guido",
+      "surname": "van Mierlo",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Vincent",
+      "surname": "Gardeux",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Wouter",
+      "surname": "Saelens",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "Alpern",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Lucie",
+      "surname": "Favre",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Styliani",
+      "surname": "Mantziari",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Tobias",
+      "surname": "Zingg",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Nelly",
+      "surname": "Pitteloud",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Michel",
+      "surname": "Suter",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Maurice",
+      "surname": "Matter",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4",
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Carles",
+      "surname": "Canto",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Bart",
+      "surname": "Deplancke",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": true,
+      "position": 17
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Laboratory of Systems Biology and Genetics, Institute of Bioengineering, School of Life Sciences, Ecole Polytechnique Fédérale de Lausanne (EPFL)",
+      "department": null,
+      "city": null,
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Swiss Institute of Bioinformatics",
+      "department": null,
+      "city": null,
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Department of Endocrinology, Diabetology and Metabolism, University Hospital of Lausanne (CHUV)",
+      "department": null,
+      "city": null,
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Department of Visceral Surgery, University Hospital of Lausanne (CHUV)",
+      "department": null,
+      "city": null,
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Faculty of Biology and Medicine, University of Lausanne",
+      "department": null,
+      "city": null,
+      "country": "Switzerland",
+      "ror": null
+    }
+  ]
+}

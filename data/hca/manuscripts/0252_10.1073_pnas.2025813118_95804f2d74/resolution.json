@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8403833/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 57569,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8403833/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8403833/fullTextXML",
+    "folder": "0252_10.1073_pnas.2025813118_95804f2d74",
+    "n_text_chars": 57569,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Proceedings of the National Academy of Sciences",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://www.pnas.org/syndication/doi/10.1073/pnas.2025813118"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://pnas.org/doi/pdf/10.1073/pnas.2025813118"
+        }
+      ],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "title": "Pro-inflammatory T helper 17 directly harms oligodendrocytes in neuroinflammation",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.pnas.org/content/pnas/118/34/e2025813118.full.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1073/pnas.2025813118"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8403833"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8403833?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8403833",
+      "pmid": "34417310",
+      "pub_year": "2021",
+      "title": "Pro-inflammatory T helper 17 directly harms oligodendrocytes in neuroinflammation."
+    }
+  },
+  "metadata": {
+    "doi": "10.1073/pnas.2025813118",
+    "preferred_url": "https://doi.org/10.1073/pnas.2025813118",
+    "publication_title": "Pro-inflammatory T helper 17 directly harms oligodendrocytes in neuroinflammation"
+  }
+}

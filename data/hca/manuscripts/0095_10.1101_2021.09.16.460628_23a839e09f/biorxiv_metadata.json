@@ -1,0 +1,203 @@
+{
+  "doi": "10.1101/2021.09.16.460628",
+  "title": "Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified by scRNA-seq",
+  "abstract": "Abstract\nFallopian tube (FT) homeostasis requires dynamic regulation of heterogeneous cell populations and is disrupted in infertility and ovarian cancer. Here we applied single-cell RNAseq to profile 53,376 FT cells from 3 healthy pre-menopausal subjects. The resulting cell atlas contains 12 major cell types representing epithelial, stromal and immune compartments. Re-clustering of epithelial cells identified 4 ciliated and 6 non-ciliated secretory epithelial subtypes, two of which represent potential progenitor pools: one leading to mature secretory cells, while the other contributing to either ciliated cells or one of the stromal cell types. To understand how FT cell numbers and states change in a disease state, we analyzed ~15,000 cells from a hydrosalpinx sample and observed shifts in epithelial and stromal populations, and cell type-specific changes in extracellular matrix and TGF-β signaling, underscoring fibrosis pathophysiology. This resource is expected to facilitate future studies to understand fallopian tube homeostasis in normal development and disease.",
+  "pub_date": "2021-01-01",
+  "authors": [
+    {
+      "given_names": "Nicole D",
+      "surname": "Ulrich",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Yu-chi",
+      "surname": "Shen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Qianyi",
+      "surname": "Ma",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Kun",
+      "surname": "Yang",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "D Ford",
+      "surname": "Hannum",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Andrea",
+      "surname": "Jones",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Jordan",
+      "surname": "Machlin",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "John F",
+      "surname": "Randolph",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Yolanda R",
+      "surname": "Smith",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Samantha B",
+      "surname": "Schon",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Ariella",
+      "surname": "Shikanov",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Erica E.",
+      "surname": "Marsh",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Jun Z",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2",
+        "a4"
+      ],
+      "corresponding": true,
+      "position": 13
+    },
+    {
+      "given_names": "Sue",
+      "surname": "Hammoud",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a3",
+        "a6"
+      ],
+      "corresponding": true,
+      "position": 14
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Department of Obstetrics and Gynecology, University of Michigan",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Department of Human Genetics, University of Michigan",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Cellular and Molecular Biology Program, University of Michigan",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Department of Computational Medicine and Bioinformatics, University of Michigan",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Department of Biomedical Engineering, University of Michigan",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Department of Urology, University of Michigan",
+      "department": null,
+      "city": null,
+      "country": null,
+      "ror": null
+    }
+  ]
+}

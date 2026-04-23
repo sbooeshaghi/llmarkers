@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4784001/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 44358,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4784001/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4784001/fullTextXML",
+    "folder": "0433_10.15252_embr.201540946_1830154973",
+    "n_text_chars": 44358,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "EMBO reports",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.15252/embr.201540946"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/full-xml/10.15252/embr.201540946"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.embopress.org/doi/pdf/10.15252/embr.201540946"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single\u2010cell transcriptomes reveal characteristic features of human pancreatic islet cell types",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.15252/embr.201540946"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC4784001"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC4784001?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC4784001",
+      "pmid": "26691212",
+      "pub_year": "2016",
+      "title": "Single-cell transcriptomes reveal characteristic features of human pancreatic islet cell types."
+    }
+  },
+  "metadata": {
+    "doi": "10.15252/embr.201540946",
+    "preferred_url": "https://doi.org/10.15252/embr.201540946",
+    "publication_title": "Single-cell transcriptomes reveal characteristic features of human pancreatic islet cell types."
+  }
+}

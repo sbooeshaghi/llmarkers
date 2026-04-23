@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8214680/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 57746,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8214680/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8214680/fullTextXML",
+    "folder": "0367_10.1073_pnas.2103240118_fda266512b",
+    "n_text_chars": 57746,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Proceedings of the National Academy of Sciences",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "http://www.pnas.org/syndication/doi/10.1073/pnas.2103240118"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://pnas.org/doi/pdf/10.1073/pnas.2103240118"
+        }
+      ],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "title": "Single-cell analyses of renal cell cancers reveal insights into tumor microenvironment, cell of origin, and therapy response",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.1073/pnas.2103240118"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1073/pnas.2103240118"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8214680"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8214680?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8214680",
+      "pmid": "34099557",
+      "pub_year": "2021",
+      "title": "Single-cell analyses of renal cell cancers reveal insights into tumor microenvironment, cell of origin, and therapy response."
+    }
+  },
+  "metadata": {
+    "doi": "10.1073/pnas.2103240118",
+    "preferred_url": "https://doi.org/10.1073/pnas.2103240118",
+    "publication_title": "Single-cell analyses of renal cell cancers reveal insights into tumor microenvironment, cell of origin, and therapy response."
+  }
+}

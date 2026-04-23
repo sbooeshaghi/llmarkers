@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8492318/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 59394,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8492318/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8492318/fullTextXML",
+    "folder": "0103_10.1172_jci.insight.151621_2faf375c31",
+    "n_text_chars": 59394,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "JCI Insight",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://insight.jci.org/articles/view/151621/files/pdf"
+        }
+      ],
+      "publisher": "American Society for Clinical Investigation",
+      "title": "Combinatorial transcription factor profiles predict mature and functional human islet \u03b1 and \u03b2 cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "http://insight.jci.org/articles/view/151621/files/pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1172/jci.insight.151621"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8492318"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8492318?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8492318",
+      "pmid": "34428183",
+      "pub_year": "2021",
+      "title": "Combinatorial transcription factor profiles predict mature and functional human islet \u03b1 and \u03b2 cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.1172/jci.insight.151621",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8492318",
+    "publication_title": "Combinatorial transcription factor profiles predict mature and functional human islet \u03b1 and \u03b2 cells."
+  }
+}

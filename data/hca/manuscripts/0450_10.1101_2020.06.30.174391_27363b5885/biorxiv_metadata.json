@@ -1,0 +1,326 @@
+{
+  "doi": "10.1101/2020.06.30.174391",
+  "title": "Spatial and single-cell transcriptional landscape of human cerebellar development",
+  "abstract": "ABSTRACT\nCerebellar development and function require precise regulation of molecular and cellular programs to coordinate motor functions and integrate network signals required for cognition and emotional regulation. However, molecular understanding of human cerebellar development is limited. Here, we combined spatially resolved and single-cell transcriptomics to systematically map the molecular, cellular, and spatial composition of early and mid-gestational human cerebellum. This enabled us to transcriptionally profile major cell types and examine the dynamics of gene expression within cell types and lineages across development. The resulting ‘Developmental Cell Atlas of the Human Cerebellum’ demonstrates that the molecular organization of the cerebellar anlage reflects cytoarchitecturally distinct regions and developmentally transient cell types that are insufficiently captured in bulk transcriptional profiles. By mapping disease genes onto cell types, we implicate the dysregulation of specific cerebellar cell types, especially Purkinje cells, in pediatric and adult neurological disorders. These data provide a critical resource for understanding human cerebellar development with implications for the cellular basis of cerebellar diseases.",
+  "pub_date": "2020-01-01",
+  "authors": [
+    {
+      "given_names": "Kimberly A.",
+      "surname": "Aldinger",
+      "orcid": "0000-0002-5406-8911",
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Zach",
+      "surname": "Thomson",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Parthiv",
+      "surname": "Haldipur",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Mei",
+      "surname": "Deng",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Andrew E.",
+      "surname": "Timms",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Matthew",
+      "surname": "Hirano",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Gabriel",
+      "surname": "Santpere",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6",
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Charles",
+      "surname": "Roco",
+      "orcid": null,
+      "affiliation_ids": [
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Alexander B.",
+      "surname": "Rosenberg",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Belen",
+      "surname": "Lorente-Galdos",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Forrest O.",
+      "surname": "Gulden",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Diana",
+      "surname": "O’Day",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Lynne M.",
+      "surname": "Overman",
+      "orcid": null,
+      "affiliation_ids": [
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Steven N.",
+      "surname": "Lisgo",
+      "orcid": null,
+      "affiliation_ids": [
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Paula",
+      "surname": "Alexandre",
+      "orcid": null,
+      "affiliation_ids": [
+        "a10"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Nenad",
+      "surname": "Sestan",
+      "orcid": null,
+      "affiliation_ids": [
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Dan",
+      "surname": "Doherty",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "William B.",
+      "surname": "Dobyns",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a3",
+        "a11"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Georg",
+      "surname": "Seelig",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5",
+        "a12"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Ian A.",
+      "surname": "Glass",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Kathleen J.",
+      "surname": "Millen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a3"
+      ],
+      "corresponding": true,
+      "position": 21
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Center for Integrative Brain Research, Seattle Children’s Research Institute",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Brotman Baty Institute for Precision Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Department of Pediatrics, University of Washington",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Center for Developmental Biology and Regenerative Medicine, Seattle Children’s Research Institute",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Department of Electrical and Computer Engineering, University of Washington",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Department of Neuroscience and Kavli Institute for Neuroscience, Yale School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Neurogenomics Group, Research Programme on Biomedical Informatics, Hospital del Mar Medical Research Institute, Department of Experimental and Health Sciences, Universitat Pompeu Fabra",
+      "department": null,
+      "city": null,
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Department of Bioengineering, University of Washington",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "Biosciences Institute, Faculty of Medical Sciences, Newcastle University, Newcastle upon Tyne",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a10",
+      "institution": "University College London Great Ormond Street Institute of Child Health",
+      "department": null,
+      "city": null,
+      "country": "UK",
+      "ror": null
+    },
+    {
+      "id": "a11",
+      "institution": "Department of Neurology, University of Washington",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a12",
+      "institution": "Paul G. Allen School of Computer Science and Engineering, University of Washington",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    }
+  ]
+}

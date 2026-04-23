@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9512889/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 59658,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9512889/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9512889/fullTextXML",
+    "folder": "0046_10.1007_s00018-022-04559-w_6919bd92ba",
+    "n_text_chars": 59658,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cellular and Molecular Life Sciences",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/content/pdf/10.1007/s00018-022-04559-w.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/article/10.1007/s00018-022-04559-w/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://link.springer.com/content/pdf/10.1007/s00018-022-04559-w.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "A single-cell transcriptomic atlas of the human ciliary body",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://link.springer.com/content/pdf/10.1007/s00018-022-04559-w.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s00018-022-04559-w"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9512889"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9512889?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9512889",
+      "pmid": "36163311",
+      "pub_year": "2022",
+      "title": "A single-cell transcriptomic atlas of the human ciliary body."
+    }
+  },
+  "metadata": {
+    "doi": "10.1007/s00018-022-04559-w",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9512889",
+    "publication_title": "A single-cell transcriptomic atlas of the human ciliary body"
+  }
+}

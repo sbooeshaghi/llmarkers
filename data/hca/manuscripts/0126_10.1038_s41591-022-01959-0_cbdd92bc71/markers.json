@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CAR-Tregs",
+    "group_name": "CAR-TREG",
+    "group_id": null,
+    "feature_label": "FOXP3",
+    "feature_name": "FOXP3",
+    "feature_id": "ENSG00000049768",
+    "source_type": "text",
+    "source_rationale": "Summary of CAR-Treg representation in infusion product cells of this dataset (n=28 biologically independent samples with \u2265100 cells) as well as b, an independent set of axi-cel infusion products (n=24 biologically independent samples). Shown are a u-map representation of cells colored by FOXP3 expression (left) and the fraction of identified CAR-Tregs (out of all CAR-T cells) stratified by product and response (right).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CAR-Tregs",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " FOXP3",
+      "all_verified": true
+    }
+  }
+]

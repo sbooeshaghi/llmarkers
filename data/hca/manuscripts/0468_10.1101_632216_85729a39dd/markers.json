@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD4+ T cells",
+    "group_name": "CD4+ T CELL",
+    "group_id": null,
+    "feature_label": "CD4",
+    "feature_name": "CD4",
+    "feature_id": "ENSG00000010610",
+    "source_type": "text",
+    "source_rationale": "As expected, methods had more difficulty in distinguishing transcriptionally related cell types, such as CD4+ T cells, cytotoxic T cells, and natural killer (NK) cells ([Fig. 5a,b](632216v2_fig5.tif), Supplementary Fig. 1[1](632216v2_fig1.tif)).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD4+ T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD4",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD14+ monocytes",
+    "group_name": "CD14+ MONOCYTE",
+    "group_id": null,
+    "feature_label": "CD14",
+    "feature_name": "CD14",
+    "feature_id": "ENSG00000170458",
+    "source_type": "text",
+    "source_rationale": "Generally, most methods were able to successfully recover the abundant cell types in PBMCs, i.e., CD4+ T helper cells, cytotoxic T cells, NK cells, B cells, and CD14+ monocytes, but varied in the relative abundance of cell types.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD14+ monocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD14",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16+ monocytes",
+    "group_name": "CD16+ MONOCYTE",
+    "group_id": null,
+    "feature_label": "CD16",
+    "feature_name": "CD16",
+    "feature_id": "ENSG00000203747",
+    "source_type": "text",
+    "source_rationale": "For example, in several libraries such as Smart-seq2 and CEL-Seq2, the undetected dendritic cells were grouped with the CD14+ or CD16+ monocytes (Supplementary Fig. 13c,d).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD16+ monocytes",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD16",
+      "all_verified": true
+    }
+  }
+]

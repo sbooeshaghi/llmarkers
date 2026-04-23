@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8523170/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 75952,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8523170/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 12,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8523170/fullTextXML",
+    "folder": "0221_10.7554_elife.69603_ab573a325d",
+    "n_text_chars": 75952,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "eLife",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://cdn.elifesciences.org/articles/69603/elife-69603-v2.pdf"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://cdn.elifesciences.org/articles/69603/elife-69603-v2.xml"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://elifesciences.org/articles/69603"
+        }
+      ],
+      "publisher": "eLife Sciences Publications, Ltd",
+      "title": "Modelling the impact of decidual senescence on embryo implantation in human endometrial assembloids",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.7554/elife.69603"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.7554/eLife.69603"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8523170"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8523170?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8523170",
+      "pmid": "34487490",
+      "pub_year": "2021",
+      "title": "Modelling the impact of decidual senescence on embryo implantation in human endometrial assembloids."
+    }
+  },
+  "metadata": {
+    "doi": "10.7554/elife.69603",
+    "preferred_url": "https://doi.org/10.7554/elife.69603",
+    "publication_title": "Modelling the impact of decidual senescence on embryo implantation in human endometrial assembloids."
+  }
+}

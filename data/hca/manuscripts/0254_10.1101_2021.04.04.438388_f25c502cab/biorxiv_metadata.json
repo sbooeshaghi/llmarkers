@@ -1,0 +1,186 @@
+{
+  "doi": "10.1101/2021.04.04.438388",
+  "title": "Profiling of transcribed cis-regulatory elements in single cells",
+  "abstract": "Abstract\nProfiling of cis-regulatory elements (CREs, mostly promoters and enhancers) in single cells allows the interrogation of the cell-type and cell-state-specific contexts of gene regulation and genetic predisposition to diseases. Here we demonstrate single-cell RNA-5′end-sequencing (sc-end5-seq) methods can detect transcribed CREs (tCREs), enabling simultaneous quantification of gene expression and enhancer activities in a single assay at no extra cost. We showed enhancer RNAs can be detected using sc-end5-seq methods with either random or oligo(dT) priming. To analyze tCREs in single cells, we developed SCAFE (Single Cell Analysis of Five-prime Ends) to identify genuine tCREs and analyze their activities (https://github.com/chung-lab/scafe). As compared to accessible CRE (aCRE, based on chromatin accessibility), tCREs are more accurate in predicting CRE interactions by co-activity, more sensitive in detecting shifts in alternative promoter usage and more enriched in diseases heritability. Our results highlight additional dimensions within sc-end5-seq data which can be used for interrogating gene regulation and disease heritability.",
+  "pub_date": "2021-01-01",
+  "authors": [
+    {
+      "given_names": "Jonathan",
+      "surname": "Moody",
+      "orcid": "0000-0001-9261-711X",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Tsukasa",
+      "surname": "Kouno",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Akari",
+      "surname": "Suzuki",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Youtaro",
+      "surname": "Shibayama",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Chikashi",
+      "surname": "Terao",
+      "orcid": "0000-0002-6452-4095",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Jen-Chien",
+      "surname": "Chang",
+      "orcid": "0000-0002-6986-8479",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Fernando",
+      "surname": "López-Redondo",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Chi Wai",
+      "surname": "Yip",
+      "orcid": "0000-0003-3327-5695",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Jessica",
+      "surname": "Severin",
+      "orcid": "0000-0003-1274-208X",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Hiroyuki",
+      "surname": "Suetsugu",
+      "orcid": "0000-0001-9359-0561",
+      "affiliation_ids": [
+        "a1",
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Yoshinari",
+      "surname": "Ando",
+      "orcid": "0000-0002-8128-6201",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Kazuhiko",
+      "surname": "Yamamoto",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Piero",
+      "surname": "Carninci",
+      "orcid": "0000-0001-7202-7243",
+      "affiliation_ids": [
+        "a1",
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Jay W.",
+      "surname": "Shin",
+      "orcid": "0000-0003-4037-3533",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": true,
+      "position": 14
+    },
+    {
+      "given_names": "Chung-Chau",
+      "surname": "Hon",
+      "orcid": "0000-0002-3741-7577",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": true,
+      "position": 15
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "RIKEN Center for Integrative Medical Sciences",
+      "department": null,
+      "city": null,
+      "country": "Japan",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Department of Orthopaedic Surgery, Graduate School of Medical Sciences, Kyushu University",
+      "department": null,
+      "city": null,
+      "country": "Japan",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Human Technopole",
+      "department": null,
+      "city": null,
+      "country": "Italy",
+      "ror": null
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1096/fj.202300601rrr",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1096/fj.202300601RRR",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://faseb.onlinelibrary.wiley.com/doi/pdf/10.1096/fj.202300601RRR",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1096/fj.202300601rrr",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0312_10.1096_fj.202300601rrr_fa5c693aaa",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "The FASEB Journal",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://faseb.onlinelibrary.wiley.com/doi/pdf/10.1096/fj.202300601RRR"
+        }
+      ],
+      "publisher": "Wiley",
+      "title": "Single nucleus and spatial transcriptomic profiling of healthy human hamstring tendon",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1096/fj.202300601RRR"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "38742770",
+      "pub_year": "2024",
+      "title": "Single nucleus and spatial transcriptomic profiling of healthy human hamstring tendon."
+    }
+  },
+  "metadata": {
+    "doi": "10.1096/fj.202300601rrr",
+    "preferred_url": "https://doi.org/10.1096/fj.202300601rrr",
+    "publication_title": "Single nucleus and spatial transcriptomic profiling of healthy human hamstring tendon"
+  }
+}

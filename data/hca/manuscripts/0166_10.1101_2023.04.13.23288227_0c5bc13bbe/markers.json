@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "APR+ ciliated cells",
+    "group_name": "APR+ CILIATED CELL",
+    "group_id": null,
+    "feature_label": "SAA1",
+    "feature_name": "SAA1",
+    "feature_id": "ENSG00000173432",
+    "source_type": "text",
+    "source_rationale": "In addition to the above-mentioned interferon-stimulated, infected, and hyper-infected clusters, we detect a relatively abundant subset of ciliated cells with high expression of acute-phase response (APR) genes such as SAA1.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " ciliated cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " SAA1",
+      "all_verified": true
+    }
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2025.06.19.660575",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2025.06.19.660575",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2025.06.19.660575",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2025.06.19.660575",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0091_10.1101_2025.06.19.660575_df9b499d76",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2025.06.19.660575"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "Cellular and molecular landscapes of human tendons across the lifespan revealed by spatial and single-cell transcriptomics",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2025.06.19.660575"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2025",
+      "title": "Cellular and molecular landscapes of human tendons across the lifespan revealed by spatial and single-cell transcriptomics"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2025.06.19.660575",
+    "preferred_url": "https://doi.org/10.1101/2025.06.19.660575",
+    "publication_title": "Cellular and molecular landscapes of human tendons across the lifespan revealed by spatial and single-cell transcriptomics"
+  }
+}

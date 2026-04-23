@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7232010/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 56338,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7232010/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7232010/fullTextXML",
+    "folder": "0273_10.15252_embj.20105114_43aa56d0ae",
+    "n_text_chars": 56338,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "The EMBO Journal",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.15252/embj.20105114"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://onlinelibrary.wiley.com/doi/full-xml/10.15252/embj.20105114"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.embopress.org/doi/pdf/10.15252/embj.20105114"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "<scp>SARS</scp>\n                    \u2010CoV\u20102 receptor\n                    <scp>ACE</scp>\n                    2 and\n                    <scp>TMPRSS</scp>\n                    2 are primarily expressed in bronchial transient secretory cells",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.15252/embj.20105114"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7232010"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC7232010?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC7232010",
+      "pmid": "32246845",
+      "pub_year": "2020",
+      "title": "SARS-CoV-2 receptor ACE2 and TMPRSS2 are primarily expressed in bronchial transient secretory cells."
+    }
+  },
+  "metadata": {
+    "doi": "10.15252/embj.20105114",
+    "preferred_url": "https://doi.org/10.15252/embj.20105114",
+    "publication_title": "SARS\u2010CoV\u20102 receptor ACE2 and TMPRSS2 are primarily expressed in bronchial transient secretory cells"
+  }
+}

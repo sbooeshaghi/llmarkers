@@ -1,0 +1,80 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/235499",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://link.springer.com/article/10.1186/s13073-019-0615-0?error=cookies_not_supported&code=4845822b-2af4-4efe-85b8-b983f0d0a0de",
+      "kind": "html",
+      "n_text_chars": 71773,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-019-0615-0",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://link.springer.com/article/10.1186/s13073-019-0615-0?error=cookies_not_supported&code=4845822b-2af4-4efe-85b8-b983f0d0a0de",
+    "folder": "0290_10.1101_235499_566cff6e3c",
+    "n_text_chars": 71773,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/235499"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "High throughput single cell RNA-seq of developing mouse kidney and human kidney organoids reveals a roadmap for recreating the kidney",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2017/12/22/235499.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/235499"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2017",
+      "title": "High throughput single cell RNA-seq of developing mouse kidney and human kidney organoids reveals a roadmap for recreating the kidney"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/235499",
+    "preferred_url": "https://doi.org/10.1101/235499",
+    "publication_title": "High throughput single cell RNA-seq of developing mouse kidney and human kidney\norganoids reveals a roadmap for recreating the kidney"
+  }
+}

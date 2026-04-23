@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8771561/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 78692,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8771561/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8771561/fullTextXML",
+    "folder": "0339_10.7150_thno.65694_e762e5f2bb",
+    "n_text_chars": 78692,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Theranostics",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.thno.org/v12p1074.htm"
+        }
+      ],
+      "publisher": "Ivyspring International Publisher",
+      "title": "Single-cell RNA landscape of the osteoimmunology microenvironment in periodontitis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.thno.org/v12p1074.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.7150/thno.65694"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8771561"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8771561?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8771561",
+      "pmid": "35154475",
+      "pub_year": "2022",
+      "title": "Single-cell RNA landscape of the osteoimmunology microenvironment in periodontitis."
+    }
+  },
+  "metadata": {
+    "doi": "10.7150/thno.65694",
+    "preferred_url": "https://doi.org/10.7150/thno.65694",
+    "publication_title": "Single-cell RNA landscape of the osteoimmunology microenvironment in periodontitis"
+  }
+}

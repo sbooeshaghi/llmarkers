@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "2701",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1934590921001193",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.stem.2021.03.013",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "content_length": "154944",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/33831365/",
+      "kind": "html",
+      "n_text_chars": 12203,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pubmed.ncbi.nlm.nih.gov/33831365",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/33831365/",
+    "folder": "0079_10.1016_j.stem.2021.03.013_9aad618fc4",
+    "n_text_chars": 12203,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Stem Cell",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1934590921001193?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S1934590921001193?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "Capturing human trophoblast development with naive pluripotent stem cells in\u00a0vitro",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.stem.2021.03.013"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "33831365",
+      "pub_year": "2021",
+      "title": "Capturing human trophoblast development with naive pluripotent stem cells in\u00a0vitro."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.stem.2021.03.013",
+    "preferred_url": "https://doi.org/10.1016/j.stem.2021.03.013",
+    "publication_title": "Capturing human trophoblast development with naive pluripotent stem cells in\u00a0vitro."
+  }
+}

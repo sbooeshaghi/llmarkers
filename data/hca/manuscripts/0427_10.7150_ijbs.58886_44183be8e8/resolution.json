@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8315026/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 37247,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8315026/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8315026/fullTextXML",
+    "folder": "0427_10.7150_ijbs.58886_44183be8e8",
+    "n_text_chars": 37247,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "International Journal of Biological Sciences",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.ijbs.com/v17p2590.htm"
+        }
+      ],
+      "publisher": "Ivyspring International Publisher",
+      "title": "Single-cell transcriptomics reveals heterogeneous progression and EGFR activation in pancreatic adenosquamous carcinoma",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.7150/ijbs.58886"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8315026"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8315026?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8315026",
+      "pmid": "34326696",
+      "pub_year": "2021",
+      "title": "Single-cell transcriptomics reveals heterogeneous progression and EGFR activation in pancreatic adenosquamous carcinoma."
+    }
+  },
+  "metadata": {
+    "doi": "10.7150/ijbs.58886",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8315026",
+    "publication_title": "Single-cell transcriptomics reveals heterogeneous progression and EGFR activation in pancreatic adenosquamous carcinoma."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5826275/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 89457,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5826275/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5826275/fullTextXML",
+    "folder": "0150_10.7554_elife.32303.001_8cf97c9b67",
+    "n_text_chars": 89457,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "publisher": "eLife Sciences Publications, Ltd",
+      "title": "Abstract",
+      "type": "component"
+    },
+    "europepmc": {}
+  },
+  "metadata": {
+    "doi": "10.7554/elife.32303.001",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5826275",
+    "publication_title": "Extreme heterogeneity of influenza virus infection in single cells"
+  }
+}

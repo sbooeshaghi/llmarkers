@@ -1,0 +1,94 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1177/00220345221076069",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1177/00220345221076069",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "pdf",
+      "requested_url": "https://journals.sagepub.com/doi/pdf/10.1177/00220345221076069",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "xml",
+      "requested_url": "https://journals.sagepub.com/doi/full-xml/10.1177/00220345221076069",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1177/00220345221076069",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0499_10.1177_00220345221076069_706b5a73e7",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Journal of Dental Research",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/00220345221076069"
+        },
+        {
+          "content_type": "application/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://journals.sagepub.com/doi/full-xml/10.1177/00220345221076069"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/00220345221076069"
+        }
+      ],
+      "publisher": "SAGE Publications",
+      "title": "Transcriptomic Mapping of Human Parotid Gland at Single-Cell Resolution",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1177/00220345221076069"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "35220796",
+      "pub_year": "2022",
+      "title": "Transcriptomic Mapping of Human Parotid Gland at Single-Cell Resolution."
+    }
+  },
+  "metadata": {
+    "doi": "10.1177/00220345221076069",
+    "preferred_url": "https://doi.org/10.1177/00220345221076069",
+    "publication_title": "Transcriptomic Mapping of Human Parotid Gland at Single-Cell Resolution."
+  }
+}

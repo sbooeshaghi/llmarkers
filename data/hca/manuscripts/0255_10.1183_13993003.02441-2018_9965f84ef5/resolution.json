@@ -1,0 +1,110 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 404: Not Found",
+      "kind": "xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8025672/fullTextXML",
+      "source": "europepmc-xml",
+      "status": "http_error_404"
+    },
+    {
+      "content_length": "234624",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8025672/",
+      "kind": "html",
+      "n_text_chars": 64679,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8025672/",
+      "resolved_as": "html",
+      "source": "pmc-html",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8025672/",
+    "folder": "0255_10.1183_13993003.02441-2018_9965f84ef5",
+    "n_text_chars": 64679,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "pmc-html",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "European Respiratory Journal",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1183/13993003.02441-2018"
+        }
+      ],
+      "publisher": "European Respiratory Society (ERS)",
+      "title": "Proliferating SPP1/MERTK-expressing macrophages in idiopathic pulmonary fibrosis",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://erj.ersjournals.com/content/erj/54/2/1802441.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://erj.ersjournals.com/content/erj/54/2/1802441.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://erj.ersjournals.com/content/erj/54/2/1802441.full.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1183/13993003.02441-2018"
+        },
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8025672"
+        },
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8025672?pdf=render"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1183/13993003.02441-2018"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "PMC8025672",
+      "pmid": "31221805",
+      "pub_year": "2019",
+      "title": "Proliferating SPP1/MERTK-expressing macrophages in idiopathic pulmonary fibrosis."
+    }
+  },
+  "metadata": {
+    "doi": "10.1183/13993003.02441-2018",
+    "preferred_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8025672",
+    "publication_title": "Proliferating SPP1/MERTK-expressing macrophages in idiopathic pulmonary fibrosis"
+  }
+}

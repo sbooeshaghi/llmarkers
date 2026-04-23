@@ -1,0 +1,81 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1158/1078-0432.ccr-20-3418",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://aacrjournals.org/clincancerres/article/27/10/2947/665670/Adaptive-Natural-Killer-Cells-Facilitate-Effector",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "pdf",
+      "requested_url": "https://aacrjournals.org/clincancerres/article-pdf/27/10/2947/3083275/2947.pdf",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1158/1078-0432.ccr-20-3418",
+      "source": "doi-landing",
+      "status": "http_error_403"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "folder": "0218_10.1158_1078-0432.ccr-20-3418_dadc4f0aa3",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Clinical Cancer Research",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://aacrjournals.org/clincancerres/article-pdf/27/10/2947/3083275/2947.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://aacrjournals.org/clincancerres/article-pdf/27/10/2947/3083275/2947.pdf"
+        }
+      ],
+      "publisher": "American Association for Cancer Research (AACR)",
+      "title": "Adaptive Natural Killer Cells Facilitate Effector Functions of Daratumumab in Multiple Myeloma",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1158/1078-0432.CCR-20-3418"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "33602683",
+      "pub_year": "2021",
+      "title": "Adaptive Natural Killer Cells Facilitate Effector Functions of Daratumumab in Multiple Myeloma."
+    }
+  },
+  "metadata": {
+    "doi": "10.1158/1078-0432.ccr-20-3418",
+    "preferred_url": "https://doi.org/10.1158/1078-0432.ccr-20-3418",
+    "publication_title": "Adaptive Natural Killer Cells Facilitate Effector Functions of Daratumumab in Multiple Myeloma"
+  }
+}

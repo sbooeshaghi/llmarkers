@@ -1,0 +1,109 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8477535/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 76383,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8477535/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8477535/fullTextXML",
+    "folder": "0347_10.1186_s12943-021-01419-2_236ba26890",
+    "n_text_chars": 76383,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Molecular Cancer",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/content/pdf/10.1186/s12943-021-01419-2.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/article/10.1186/s12943-021-01419-2/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://link.springer.com/content/pdf/10.1186/s12943-021-01419-2.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell RNA sequencing reveals markers of disease progression in primary cutaneous T-cell lymphoma",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://molecular-cancer.biomedcentral.com/track/pdf/10.1186/s12943-021-01419-2"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://molecular-cancer.biomedcentral.com/track/pdf/10.1186/s12943-021-01419-2"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://molecular-cancer.biomedcentral.com/track/pdf/10.1186/s12943-021-01419-2"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s12943-021-01419-2"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8477535"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8477535?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8477535",
+      "pmid": "34583709",
+      "pub_year": "2021",
+      "title": "Single-cell RNA sequencing reveals markers of disease progression in primary cutaneous T-cell lymphoma."
+    }
+  },
+  "metadata": {
+    "doi": "10.1186/s12943-021-01419-2",
+    "preferred_url": "https://doi.org/10.1186/s12943-021-01419-2",
+    "publication_title": "Single-cell RNA sequencing reveals markers of disease progression in primary cutaneous T-cell lymphoma"
+  }
+}

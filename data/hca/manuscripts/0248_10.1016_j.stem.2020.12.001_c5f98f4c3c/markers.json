@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "U.Cortical",
+    "group_name": "U.CORTICAL",
+    "group_id": null,
+    "feature_label": "RET",
+    "feature_name": "RET",
+    "feature_id": "ENSG00000165731",
+    "source_type": "text",
+    "source_rationale": "The largest UE subcluster, identified as cortical UE (U.Cortical), exhibited low RET and high AQP2 expression.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "U.Cortical",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " RET",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "U.Cortical",
+    "group_name": "U.CORTICAL",
+    "group_id": null,
+    "feature_label": "AQP2",
+    "feature_name": "AQP2",
+    "feature_id": "ENSG00000167580",
+    "source_type": "text",
+    "source_rationale": "The largest UE subcluster, identified as cortical UE (U.Cortical), exhibited low RET and high AQP2 expression.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": "U.Cortical",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " AQP2",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "ureteric tips",
+    "group_name": "URETERIC TIP",
+    "group_id": null,
+    "feature_label": "RET",
+    "feature_name": "RET",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "The invading ureteric bud (UB) gives rise to proliferating RET + ureteric tips.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " ureteric tips",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " RET",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "nephron progenitor population",
+    "group_name": "NEPHRON PROGENITOR POPULATION",
+    "group_id": null,
+    "feature_label": "SIX2",
+    "feature_name": "SIX2",
+    "feature_id": "ENSG00000170577",
+    "source_type": "text",
+    "source_rationale": "All epithelial cell types within the nephron arise from a SIX2 expressing progenitor population.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " nephron progenitor population",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " SIX2",
+      "all_verified": true
+    }
+  }
+]

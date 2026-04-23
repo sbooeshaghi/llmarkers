@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://link.springer.com/article/10.1007/s00395-021-00897-1?error=cookies_not_supported&code=3fd91bc8-30df-40ea-9e60-806fab3957a9",
+      "kind": "html",
+      "n_text_chars": 30126,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1007/s00395-021-00897-1",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://link.springer.com/article/10.1007/s00395-021-00897-1?error=cookies_not_supported&code=3fd91bc8-30df-40ea-9e60-806fab3957a9",
+    "folder": "0268_10.1007_s00395-021-00897-1_9d51738bc0",
+    "n_text_chars": 30126,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Basic Research in Cardiology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/content/pdf/10.1007/s00395-021-00897-1.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://link.springer.com/article/10.1007/s00395-021-00897-1/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://link.springer.com/content/pdf/10.1007/s00395-021-00897-1.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Resolving the intertwining of inflammation and fibrosis in human heart failure at single-cell level",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s00395-021-00897-1"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "34601654",
+      "pub_year": "2021",
+      "title": "Resolving the intertwining of inflammation and fibrosis in human heart failure at single-cell level."
+    }
+  },
+  "metadata": {
+    "doi": "10.1007/s00395-021-00897-1",
+    "preferred_url": "https://doi.org/10.1007/s00395-021-00897-1",
+    "publication_title": "Resolving the intertwining of inflammation and fibrosis in human heart failure at single-cell level."
+  }
+}

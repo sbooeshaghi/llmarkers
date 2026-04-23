@@ -1,0 +1,185 @@
+{
+  "doi": "10.1101/2021.04.05.438347",
+  "title": "Single-cell sequencing unveils distinct immune microenvironment with CCR6-CCL20 crosstalk in human chronic pancreatitis",
+  "abstract": "ABSTRACT\n\nObjective\nChronic pancreatitis (CP) is a potentially fatal disease of the exocrine pancreas, with no specific or effective approved therapies. Due to difficulty in accessing pancreas tissues, little is known about local immune responses or pathogenesis in human CP. We sought to characterize pancreas immune responses using tissues derived from patients with different etiologies of CP and non-CP organ donors in order to identify key signaling molecules associated with human CP.\n\nDesign\nWe performed single-cell level cellular indexing of transcriptomes and epitopes by sequencing (CITE-Seq) and T cell receptor sequencing of pancreatic immune cells isolated from organ donors, hereditary, and idiopathic CP patients who underwent total pancreatectomy. We validated gene expression data by performing flow cytometry and functional assay in the second CP patient cohort.\n\nResults\nDeep single-cell sequencing revealed distinct immune characteristics and significantly enriched CCR6+ CD4+ T cells in hereditary compared with idiopathic CP. In hereditary CP, a reduction in T cell clonality was observed due to the increased CD4+ T (Th) cells that replaced tissue-resident CD8+ T cells. Shared TCR clonotype analysis among T cell lineages also unveiled unique interactions between CCR6+ Th and Th1 subsets, and TCR clustering analysis showed unique common antigen binding motifs in hereditary CP. In addition, we observed a significant upregulation of the CCR6 ligand (CCL20) among monocytes in hereditary CP as compared with those in idiopathic CP. The functional significance of CCR6 expression in CD4+ T cells was confirmed by flow cytometry and chemotaxis assay.\n\nConclusion\nSingle-cell sequencing with pancreatic immune cells in human CP highlights pancreas-specific immune crosstalk through the CCR6-CCL20 axis that might be leveraged as a potential future target in human hereditary CP.\n\nSignificance of this study\n\nWhat is already known about this subject?\n\nChronic pancreatitis (CP) is considered an irreversible fibroinflammatory pancreatic disease and remains a major source of morbidity among gastrointestinal diseases with no active approved therapy.\nInflammation is a known hallmark and contributor to CP pathogenesis. However, little is known about local immune responses in human CP especially with different etiologies.\n\n\n\nWhat are the new findings?\n\nSingle-cell RNA sequencing of pancreatic immune cells from CP patients and organ donors revealed distinct immune transcriptomic features in CP versus non-diseased controls and hereditary versus idiopathic CP.\nSingle-cell T cell receptor sequencing unveiled pancreas-specific clonal expansion in CD8+ T cells and CD4+ T cells-driven unique TCR repertoire changes in hereditary CP.\nWe identified that the CCR6-CCL20 axis was significantly upregulated in hereditary CP compared with controls or idiopathic CP suggesting a potential future target for human hereditary CP.\n\n\n\nHow might it impact on clinical practice in the foreseeable future?\n\nThe results of this study will improve our understanding of CP heterogeneity and identify distinct immune responses in different types of human CP that could provide novel conceptual directions for therapeutic strategies in treating hereditary and idiopathic CP.\nThe CCR6-CCL20 axis found in hereditary CP could be a potential novel targetable signaling pathways in the treatment of hereditary CP.",
+  "pub_date": "2021-01-01",
+  "authors": [
+    {
+      "given_names": "Bomi",
+      "surname": "Lee",
+      "orcid": "0000-0003-4401-6533",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Hong",
+      "surname": "Namkoong",
+      "orcid": "0000-0002-0816-0426",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Yan",
+      "surname": "Yang",
+      "orcid": "0000-0003-0295-7669",
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Huang",
+      "surname": "Huang",
+      "orcid": "0000-0002-8377-4823",
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "David",
+      "surname": "Heller",
+      "orcid": "0000-0002-0461-8524",
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Gregory L.",
+      "surname": "Szot",
+      "orcid": "0000-0002-3921-049X",
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Mark M.",
+      "surname": "Davis",
+      "orcid": "0000-0001-6868-657X",
+      "affiliation_ids": [
+        "a3",
+        "a6",
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Stephen J.",
+      "surname": "Pandol",
+      "orcid": "0000-0003-0818-6017",
+      "affiliation_ids": [
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Melena D.",
+      "surname": "Bellin",
+      "orcid": "0000-0002-7324-4837",
+      "affiliation_ids": [
+        "a4",
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Aida",
+      "surname": "Habtezion",
+      "orcid": "0000-0002-4473-006X",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": true,
+      "position": 10
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Division of Gastroenterology and Hepatology, School of Medicine, Stanford University",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Stanford Center for Genomics and Personalized Medicine, School of Medicine, Stanford University",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Department of Microbiology and Immunology, School of Medicine, Stanford University",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Department of Surgery, Schulze Diabetes Institute, University of Minnesota Medical Center",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Division of Transplantation Department of Surgery, University of California",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Institute for Immunity, Transplantation and Infection, Stanford University",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Howard Hughes Medical Institute, Stanford University",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Department of Medicine, Cedars Sinai Medical Center",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "Department of Pediatrics, University of Minnesota Medical Center and Masonic Children’s Hospital",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    }
+  ]
+}

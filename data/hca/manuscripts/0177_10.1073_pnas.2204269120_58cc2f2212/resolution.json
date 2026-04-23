@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9910620/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 49518,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9910620/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9910620/fullTextXML",
+    "folder": "0177_10.1073_pnas.2204269120_58cc2f2212",
+    "n_text_chars": 49518,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Proceedings of the National Academy of Sciences",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://pnas.org/doi/pdf/10.1073/pnas.2204269120"
+        }
+      ],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "title": "Identification of a unique subset of tissue-resident memory CD4\n            <sup>+</sup>\n            T cells in Crohn\u2019s disease",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Unpaywall",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9910620"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1073/pnas.2204269120"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9910620"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9910620?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9910620",
+      "pmid": "36574662",
+      "pub_year": "2023",
+      "title": "Identification of a unique subset of tissue-resident memory CD4<sup>+</sup> T cells in Crohn's disease."
+    }
+  },
+  "metadata": {
+    "doi": "10.1073/pnas.2204269120",
+    "preferred_url": "https://doi.org/10.1073/pnas.2204269120",
+    "publication_title": "Identification of a unique subset of tissue-resident memory CD4+ T cells in Crohn\u2019s disease"
+  }
+}

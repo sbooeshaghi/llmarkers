@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8966383/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 49290,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8966383/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8966383/fullTextXML",
+    "folder": "0074_10.3389_fimmu.2022.846281_c0060ff2e9",
+    "n_text_chars": 49290,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Frontiers in Immunology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2022.846281/full"
+        }
+      ],
+      "publisher": "Frontiers Media SA",
+      "title": "CD90 Marks a Mesenchymal Program in Human Thymic Epithelial Cells In Vitro and In Vivo",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3389/fimmu.2022.846281"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8966383"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC8966383?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC8966383",
+      "pmid": "35371075",
+      "pub_year": "2022",
+      "title": "CD90 Marks a Mesenchymal Program in Human Thymic Epithelial Cells <i>In Vitro</i> and <i>In Vivo</i>."
+    }
+  },
+  "metadata": {
+    "doi": "10.3389/fimmu.2022.846281",
+    "preferred_url": "https://doi.org/10.3389/fimmu.2022.846281",
+    "publication_title": "CD90 Marks a Mesenchymal Program in Human Thymic Epithelial Cells In Vitro and In Vivo"
+  }
+}

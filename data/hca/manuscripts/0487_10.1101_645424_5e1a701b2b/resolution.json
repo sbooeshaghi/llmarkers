@@ -1,0 +1,80 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/645424",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/645424v1",
+      "kind": "html",
+      "n_text_chars": 6810,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://www.biorxiv.org/content/10.1101/645424v1",
+      "resolved_as": "html",
+      "source": "publication-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/645424v1",
+    "folder": "0487_10.1101_645424_5e1a701b2b",
+    "n_text_chars": 6810,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "publication-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/645424"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "The Single Cell Transcriptomic Landscape of Early Human Diabetic Nephropathy",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2019/05/24/645424.full.pdf"
+        },
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/645424"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2019",
+      "title": "The Single Cell Transcriptomic Landscape of Early Human Diabetic Nephropathy"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/645424",
+    "preferred_url": "https://doi.org/10.1101/645424",
+    "publication_title": "The Single Cell Transcriptomic Landscape of Early Human Diabetic Nephropathy"
+  }
+}

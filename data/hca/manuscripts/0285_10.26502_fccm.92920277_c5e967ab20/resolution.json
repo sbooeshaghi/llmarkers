@@ -1,0 +1,71 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9555339/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 44391,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9555339/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 8,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9555339/fullTextXML",
+    "folder": "0285_10.26502_fccm.92920277_c5e967ab20",
+    "n_text_chars": 44391,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cardiology and Cardiovascular Medicine",
+      "publisher": "Fortune Journals",
+      "title": "Single Nucleus RNA-sequencing Reveals Altered Intercellular Communication and Dendritic Cell Activation in Nonobstructive Hypertrophic Cardiomyopathy",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.26502/fccm.92920277"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9555339"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9555339?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9555339",
+      "pmid": "36237479",
+      "pub_year": "2022",
+      "title": "Single Nucleus RNA-sequencing Reveals Altered Intercellular Communication and Dendritic Cell Activation in Nonobstructive Hypertrophic Cardiomyopathy."
+    }
+  },
+  "metadata": {
+    "doi": "10.26502/fccm.92920277",
+    "preferred_url": "https://doi.org/10.26502/fccm.92920277",
+    "publication_title": "Single Nucleus RNA-sequencing Reveals Altered Intercellular Communication and Dendritic Cell Activation in Nonobstructive Hypertrophic Cardiomyopathy."
+  }
+}

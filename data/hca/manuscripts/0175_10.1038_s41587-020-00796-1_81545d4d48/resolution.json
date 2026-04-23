@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41587-020-00796-1?error=cookies_not_supported&code=e6d4ffa2-c183-4150-add2-57fc7c1a5809",
+      "kind": "html",
+      "n_text_chars": 93578,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41587-020-00796-1",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41587-020-00796-1?error=cookies_not_supported&code=e6d4ffa2-c183-4150-add2-57fc7c1a5809",
+    "folder": "0175_10.1038_s41587-020-00796-1_81545d4d48",
+    "n_text_chars": 93578,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Biotechnology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41587-020-00796-1.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41587-020-00796-1"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/s41587-020-00796-1.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Hypertension delays viral clearance and exacerbates airway hyperinflammation in patients with COVID-19",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.nature.com/articles/s41587-020-00796-1.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41587-020-00796-1"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "33361824",
+      "pub_year": "2021",
+      "title": "Hypertension delays viral clearance and exacerbates airway hyperinflammation in patients with COVID-19."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41587-020-00796-1",
+    "preferred_url": "https://doi.org/10.1038/s41587-020-00796-1",
+    "publication_title": "Hypertension delays viral clearance and exacerbates airway hyperinflammation in patients with COVID-19"
+  }
+}

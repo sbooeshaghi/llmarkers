@@ -1,0 +1,77 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "FAPs",
+    "group_name": "FAPS",
+    "group_id": null,
+    "feature_label": "PDGFRA",
+    "feature_name": "PDGFRA",
+    "feature_id": "ENSG00000134853",
+    "source_type": "text",
+    "source_rationale": "We first examined PDGFRA+ FAPs.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " FAPs",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " PDGFRA",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "satellite cells",
+    "group_name": "SATELLITE CELL",
+    "group_id": null,
+    "feature_label": "Pax7",
+    "feature_name": "PAX7",
+    "feature_id": "ENSG00000009709",
+    "source_type": "text",
+    "source_rationale": "However, within SCs, which were Pax7+, we observed several distinct subclusters, possibly defining functional subgroups for this cell type.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " Pax7",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD34+ nuclei",
+    "group_name": "CD34+ NUCLEI",
+    "group_id": null,
+    "feature_label": "CD34",
+    "feature_name": "CD34",
+    "feature_id": "ENSG00000174059",
+    "source_type": "text",
+    "source_rationale": "For CD34+ nuclei, we identified two main cell types.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " CD34+ nuclei",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD34",
+      "all_verified": true
+    }
+  }
+]

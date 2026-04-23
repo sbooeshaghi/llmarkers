@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10905351/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 63037,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10905351/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10905351/fullTextXML",
+    "folder": "0165_10.1111_cpr.13557_b323e8d65a",
+    "n_text_chars": 63037,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Proliferation",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/cpr.13557"
+        }
+      ],
+      "publisher": "Wiley",
+      "title": "High\u2010resolution single\u2010cell transcriptomic survey of cardiomyocytes from patients with hypertrophic cardiomyopathy",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "doi",
+          "site": "Unpaywall",
+          "url": "https://doi.org/10.1111/cpr.13557"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1111/cpr.13557"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10905351"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC10905351?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC10905351",
+      "pmid": "37766635",
+      "pub_year": "2024",
+      "title": "High-resolution single-cell transcriptomic survey of cardiomyocytes from patients with hypertrophic cardiomyopathy."
+    }
+  },
+  "metadata": {
+    "doi": "10.1111/cpr.13557",
+    "preferred_url": "https://doi.org/10.1111/cpr.13557",
+    "publication_title": "High-resolution single-cell transcriptomic survey of cardiomyocytes from patients with hypertrophic cardiomyopathy"
+  }
+}

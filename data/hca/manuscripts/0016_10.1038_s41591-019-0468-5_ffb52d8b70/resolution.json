@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/s41591-019-0468-5?error=cookies_not_supported&code=479ec568-b88f-4cb7-9b51-332158fbd591",
+      "kind": "html",
+      "n_text_chars": 100405,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/s41591-019-0468-5",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/s41591-019-0468-5?error=cookies_not_supported&code=479ec568-b88f-4cb7-9b51-332158fbd591",
+    "folder": "0016_10.1038_s41591-019-0468-5_ffb52d8b70",
+    "n_text_chars": 100405,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41591-019-0468-5.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/s41591-019-0468-5"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/s41591-019-0468-5.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "A cellular census of human lungs identifies novel cell states in health and in asthma",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41591-019-0468-5"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "31209336",
+      "pub_year": "2019",
+      "title": "A cellular census of human lungs identifies novel cell states in health and in asthma."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/s41591-019-0468-5",
+    "preferred_url": "https://doi.org/10.1038/s41591-019-0468-5",
+    "publication_title": "A cellular census of human lungs identifies novel cell states in health and in asthma."
+  }
+}

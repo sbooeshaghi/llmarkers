@@ -1,0 +1,97 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6599345/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 52373,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6599345/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 11,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6599345/fullTextXML",
+    "folder": "0279_10.1186_s12860-019-0199-y_bf14d4299c",
+    "n_text_chars": 52373,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "BMC Molecular and Cell Biology",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://link.springer.com/content/pdf/10.1186/s12860-019-0199-y.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://link.springer.com/article/10.1186/s12860-019-0199-y/fulltext.html"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://link.springer.com/content/pdf/10.1186/s12860-019-0199-y.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single cell RNA-Seq reveals pre-cDCs fate determined by transcription factor combinatorial dose",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://bmcmolcellbiol.biomedcentral.com/track/pdf/10.1186/s12860-019-0199-y.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s12860-019-0199-y"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6599345"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC6599345?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC6599345",
+      "pmid": "31253076",
+      "pub_year": "2019",
+      "title": "Single cell RNA-Seq reveals pre-cDCs fate determined by transcription factor combinatorial dose."
+    }
+  },
+  "metadata": {
+    "doi": "10.1186/s12860-019-0199-y",
+    "preferred_url": "https://doi.org/10.1186/s12860-019-0199-y",
+    "publication_title": "Single cell RNA-Seq reveals pre-cDCs fate determined by transcription factor combinatorial dose"
+  }
+}

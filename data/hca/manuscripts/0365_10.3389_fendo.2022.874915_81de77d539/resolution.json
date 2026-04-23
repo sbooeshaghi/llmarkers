@@ -1,0 +1,79 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9066803/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 32893,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9066803/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 9,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9066803/fullTextXML",
+    "folder": "0365_10.3389_fendo.2022.874915_81de77d539",
+    "n_text_chars": 32893,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Frontiers in Endocrinology",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://www.frontiersin.org/articles/10.3389/fendo.2022.874915/full"
+        }
+      ],
+      "publisher": "Frontiers Media SA",
+      "title": "Single-Cell RNA Sequencing of Human Corpus Cavernosum Reveals Cellular Heterogeneity Landscapes in Erectile Dysfunction",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3389/fendo.2022.874915"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9066803"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9066803?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9066803",
+      "pmid": "35518933",
+      "pub_year": "2022",
+      "title": "Single-Cell RNA Sequencing of Human Corpus Cavernosum Reveals Cellular Heterogeneity Landscapes in Erectile Dysfunction."
+    }
+  },
+  "metadata": {
+    "doi": "10.3389/fendo.2022.874915",
+    "preferred_url": "https://doi.org/10.3389/fendo.2022.874915",
+    "publication_title": "Single-Cell RNA Sequencing of Human Corpus Cavernosum Reveals Cellular Heterogeneity Landscapes in Erectile Dysfunction"
+  }
+}

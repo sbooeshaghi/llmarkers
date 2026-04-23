@@ -1,0 +1,103 @@
+{
+  "attempts": [
+    {
+      "content_length": "2686",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S155041311630434X",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2016.08.018",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://www.cell.com/cell-metabolism/pdf/S1550-4131(16)30434-X.pdf",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "1945",
+      "content_type": "text/xml;charset=UTF-8",
+      "final_url": "https://api.elsevier.com/content/article/PII:S155041311630434X?httpAccept=text/xml",
+      "kind": "xml",
+      "n_text_chars": 72,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S155041311630434X?httpAccept=text/xml",
+      "resolved_as": "xml",
+      "source": "crossref-link",
+      "status": "text_too_short"
+    },
+    {
+      "error": "HTTP Error 400: Bad Request",
+      "kind": "html",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S155041311630434X?httpAccept=text/plain",
+      "source": "crossref-link",
+      "status": "http_error_400"
+    },
+    {
+      "content_length": "2686",
+      "content_type": "text/html;charset=UTF-8",
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S155041311630434X",
+      "kind": "html",
+      "n_text_chars": 11,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1016/j.cmet.2016.08.018",
+      "resolved_as": "html",
+      "source": "doi-landing",
+      "status": "text_too_short"
+    }
+  ],
+  "candidate_count": 5,
+  "final": {
+    "folder": "0258_10.1016_j.cmet.2016.08.018_815d450ecd",
+    "status": "unresolved"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Cell Metabolism",
+      "links": [
+        {
+          "content_type": "text/xml",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S155041311630434X?httpAccept=text/xml"
+        },
+        {
+          "content_type": "text/plain",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "https://api.elsevier.com/content/article/PII:S155041311630434X?httpAccept=text/plain"
+        }
+      ],
+      "publisher": "Elsevier BV",
+      "title": "RNA Sequencing of Single Human Islet Cells Reveals Type 2 Diabetes Genes",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.cmet.2016.08.018"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "27667665",
+      "pub_year": "2016",
+      "title": "RNA Sequencing of Single Human Islet Cells Reveals Type 2 Diabetes Genes."
+    }
+  },
+  "metadata": {
+    "doi": "10.1016/j.cmet.2016.08.018",
+    "preferred_url": "https://doi.org/10.1016/j.cmet.2016.08.018",
+    "publication_title": "RNA Sequencing of Single Human Islet Cells Reveals Type 2 Diabetes Genes"
+  }
+}

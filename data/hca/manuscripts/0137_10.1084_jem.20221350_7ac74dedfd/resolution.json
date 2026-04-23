@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9827523/fullTextXML",
+      "kind": "xml",
+      "n_text_chars": 81100,
+      "raw_path": "manuscript.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9827523/fullTextXML",
+      "resolved_as": "xml",
+      "source": "europepmc-xml",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 10,
+  "final": {
+    "content_type": "application/xml",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9827523/fullTextXML",
+    "folder": "0137_10.1084_jem.20221350_7ac74dedfd",
+    "n_text_chars": 81100,
+    "raw_path": "manuscript.xml",
+    "resolved_as": "xml",
+    "source": "europepmc-xml",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Journal of Experimental Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "syndication",
+          "url": "https://rupress.org/jem/article-pdf/doi/10.1084/jem.20221350/1446232/jem_20221350.pdf"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://rupress.org/jem/article-pdf/doi/10.1084/jem.20221350/1446232/jem_20221350.pdf"
+        }
+      ],
+      "publisher": "Rockefeller University Press",
+      "title": "Distinct fibroblast progenitor subpopulation expedites regenerative mucosal healing by immunomodulation",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "html",
+          "site": "Unpaywall",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9827523"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1084/jem.20221350"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9827523"
+        },
+        {
+          "availability": "Open access",
+          "document_style": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC9827523?pdf=render"
+        }
+      ],
+      "in_pmc": "Y",
+      "is_open_access": "Y",
+      "journal": "",
+      "pmcid": "PMC9827523",
+      "pmid": "36584405",
+      "pub_year": "2023",
+      "title": "Distinct fibroblast progenitor subpopulation expedites regenerative mucosal healing by immunomodulation."
+    }
+  },
+  "metadata": {
+    "doi": "10.1084/jem.20221350",
+    "preferred_url": "https://doi.org/10.1084/jem.20221350",
+    "publication_title": "Distinct fibroblast progenitor subpopulation expedites regenerative mucosal healing by immunomodulation."
+  }
+}

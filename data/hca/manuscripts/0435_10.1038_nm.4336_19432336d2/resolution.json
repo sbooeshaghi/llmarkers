@@ -1,0 +1,91 @@
+{
+  "attempts": [
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=\"UTF-8\"",
+      "final_url": "https://www.nature.com/articles/nm.4336?error=cookies_not_supported&code=2b700178-fead-408d-bb45-bbabdb97ebf7",
+      "kind": "html",
+      "n_text_chars": 96876,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1038/nm.4336",
+      "resolved_as": "html",
+      "source": "preferred-url",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 6,
+  "final": {
+    "content_type": "text/html; charset=\"UTF-8\"",
+    "final_url": "https://www.nature.com/articles/nm.4336?error=cookies_not_supported&code=2b700178-fead-408d-bb45-bbabdb97ebf7",
+    "folder": "0435_10.1038_nm.4336_19432336d2",
+    "n_text_chars": 96876,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "preferred-url",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "Nature Medicine",
+      "links": [
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/nm.4336.pdf"
+        },
+        {
+          "content_type": "text/html",
+          "content_version": "vor",
+          "intended_application": "text-mining",
+          "url": "http://www.nature.com/articles/nm.4336"
+        },
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/doifinder/10.1038/nm.4336"
+        },
+        {
+          "content_type": "application/pdf",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "http://www.nature.com/articles/nm.4336.pdf"
+        }
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "title": "Single-cell transcriptomics uncovers distinct molecular signatures of stem cells in chronic myeloid leukemia",
+      "type": "journal-article"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "pdf",
+          "site": "Unpaywall",
+          "url": "https://www.nature.com/articles/nm.4336.pdf"
+        },
+        {
+          "availability": "Subscription required",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/nm.4336"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "28504724",
+      "pub_year": "2017",
+      "title": "Single-cell transcriptomics uncovers distinct molecular signatures of stem cells in chronic myeloid leukemia."
+    }
+  },
+  "metadata": {
+    "doi": "10.1038/nm.4336",
+    "preferred_url": "https://doi.org/10.1038/nm.4336",
+    "publication_title": "Single-cell transcriptomics uncovers distinct molecular signatures of stem cells in chronic myeloid leukemia"
+  }
+}

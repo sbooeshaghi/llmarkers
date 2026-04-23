@@ -1,0 +1,311 @@
+{
+  "doi": "10.1101/632216",
+  "title": "Systematic comparative analysis of single cell RNA-sequencing methods",
+  "abstract": "ABSTRACT\nA multitude of single-cell RNA sequencing methods have been developed in recent years, with dramatic advances in scale and power, and enabling major discoveries and large scale cell mapping efforts. However, these methods have not been systematically and comprehensively benchmarked. Here, we directly compare seven methods for single cell and/or single nucleus profiling from three types of samples – cell lines, peripheral blood mononuclear cells and brain tissue – generating 36 libraries in six separate experiments in a single center. To analyze these datasets, we developed and applied scumi, a flexible computational pipeline that can be used for any scRNA-seq method. We evaluated the methods for both basic performance and for their ability to recover known biological information in the samples. Our study will help guide experiments with the methods in this study as well as serve as a benchmark for future studies and for computational algorithm development.",
+  "pub_date": "2019-01-01",
+  "authors": [
+    {
+      "given_names": "Jiarui",
+      "surname": "Ding",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Xian",
+      "surname": "Adiconis",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Sean K.",
+      "surname": "Simmons",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Monika S.",
+      "surname": "Kowalczyk",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Cynthia C.",
+      "surname": "Hession",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Nemanja D.",
+      "surname": "Marjanovic",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Travis K.",
+      "surname": "Hughes",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Marc H.",
+      "surname": "Wadsworth",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Tyler",
+      "surname": "Burks",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Lan T.",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "John Y. H.",
+      "surname": "Kwon",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Boaz",
+      "surname": "Barak",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "William",
+      "surname": "Ge",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Amanda J.",
+      "surname": "Kedaigle",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Shaina",
+      "surname": "Carroll",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Shuqiang",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Nir",
+      "surname": "Hacohen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Orit",
+      "surname": "Rozenblatt-Rosen",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Alex K.",
+      "surname": "Shalek",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Alexandra-Chloé",
+      "surname": "Villani",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a6",
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Aviv",
+      "surname": "Regev",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a4",
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Joshua Z.",
+      "surname": "Levin",
+      "orcid": "0000-0002-0170-3598",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": true,
+      "position": 22
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Broad Institute of MIT & Harvard",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Institute for Medical Engineering & Science, Dept. of Chemistry",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Ragon Institute of MGH",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Koch Institute of Integrative Cancer Research",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "McGovern Institute for Brain Research and Department of Brain & Cognitive Sciences",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Center for Cancer Research, Dept. of Medicine, Massachusetts General Hospital",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Center for Immunology and Inflammatory Diseases, Massachusetts General Hospital",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "Howard Hughes Medical Institute, Dept. of Biology",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    }
+  ]
+}

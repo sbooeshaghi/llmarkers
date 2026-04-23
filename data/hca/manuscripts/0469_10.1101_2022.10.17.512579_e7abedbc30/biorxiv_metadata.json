@@ -1,0 +1,371 @@
+{
+  "doi": "10.1101/2022.10.17.512579",
+  "title": "Targeting the Immune-Fibrosis Axis in Myocardial Infarction and Heart Failure",
+  "abstract": "AbstractCardiac fibrosis is causally linked to heart failure pathogenesis and adverse clinical outcomes. However, the precise fibroblast populations that drive fibrosis in the human heart and the mechanisms that govern their emergence remain incompletely defined. Here, we performed Cellular Indexing of Transcriptomes and Epitomes by sequencing (CITE-seq) in 22 explanted human hearts from healthy donors, acute myocardial infarction (MI), and chronic ischemic and non-ischemic cardiomyopathy patients. We identified a fibroblast trajectory marked by fibroblast activator protein (FAP) and periostin (POSTN) expression that was independent of myofibroblasts, peaked early after MI, remained elevated in chronic heart failure, and displayed a transcriptional signature consistent with fibrotic activity. We assessed the applicability of cardiac fibrosis models and demonstrated that mouse MI, angiotensin II/phenylephrine infusion, and pressure overload models were superior compared to cultured human heart and dermal fibroblasts in recapitulating cardiac fibroblast diversity including pathogenic cell states. Ligand-receptor analysis and spatial transcriptomics predicted interactions between macrophages, T cells, and fibroblasts within spatially defined niches. CCR2+ monocyte and macrophage states were the dominant source of ligands targeting fibroblasts. Inhibition of IL-1β signaling to cardiac fibroblasts was sufficient to suppress fibrosis, emergence, and maturation of FAP+POSTN+ fibroblasts. Herein, we identify a human fibroblast trajectory marked by FAP and POSTN expression that is associated with cardiac fibrosis and identify macrophage-fibroblast crosstalk mediated by IL-1β signaling as a key regulator of pathologic fibroblast differentiation and fibrosis.",
+  "pub_date": "2022-01-01",
+  "authors": [
+    {
+      "given_names": "Junedh M.",
+      "surname": "Amrute",
+      "orcid": "0000-0002-6851-0168",
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Xin",
+      "surname": "Luo",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Vinay",
+      "surname": "Penna",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Andrea",
+      "surname": "Bredemeyer",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Tracy",
+      "surname": "Yamawaki",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Gyu Seong",
+      "surname": "Heo",
+      "orcid": null,
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Sally",
+      "surname": "Shi",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Andrew",
+      "surname": "Koenig",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Steven",
+      "surname": "Yang",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Farid",
+      "surname": "Kadyrov",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Cameran",
+      "surname": "Jones",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Christoph",
+      "surname": "Kuppe",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Benjamin",
+      "surname": "Kopecky",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Sikander",
+      "surname": "Hayat",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Pan",
+      "surname": "Ma",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Guoshai",
+      "surname": "Feng",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Yuriko",
+      "surname": "Terada",
+      "orcid": null,
+      "affiliation_ids": [
+        "a7"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Angela",
+      "surname": "Fu",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Milena",
+      "surname": "Furtado",
+      "orcid": null,
+      "affiliation_ids": [
+        "a8"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "Kreisel",
+      "orcid": null,
+      "affiliation_ids": [
+        "a7",
+        "a9"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Nathan O.",
+      "surname": "Stitziel",
+      "orcid": "0000-0002-4963-8211",
+      "affiliation_ids": [
+        "a10",
+        "a11"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Chi-Ming",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "a2"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Rafael",
+      "surname": "Kramann",
+      "orcid": null,
+      "affiliation_ids": [
+        "a5",
+        "a6"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Yongjian",
+      "surname": "Liu",
+      "orcid": "0000-0002-1118-1535",
+      "affiliation_ids": [
+        "a4"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Brandon",
+      "surname": "Ason",
+      "orcid": null,
+      "affiliation_ids": [
+        "a3"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Kory J.",
+      "surname": "Lavine",
+      "orcid": null,
+      "affiliation_ids": [
+        "a1",
+        "a9",
+        "a12"
+      ],
+      "corresponding": true,
+      "position": 26
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "a1",
+      "institution": "Center for Cardiovascular Research, Division of Cardiology, Department of Medicine, Washington University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a2",
+      "institution": "Genome Analysis Unit, Amgen Discovery Research, Amgen Inc.",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a3",
+      "institution": "Department of Cardiometabolic Disorders, Amgen Discovery Research, Amgen Inc.",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a4",
+      "institution": "Mallinckrodt Institute of Radiology, Washington University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a5",
+      "institution": "Institute of Experimental Medicine and Systems Biology, RWTH Aachen University",
+      "department": null,
+      "city": null,
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "a6",
+      "institution": "Department of Internal Medicine, Erasmus Medical Center",
+      "department": null,
+      "city": null,
+      "country": "The Netherlands",
+      "ror": null
+    },
+    {
+      "id": "a7",
+      "institution": "Division of Cardiothoracic Surgery, Department of Surgery, Washington University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a8",
+      "institution": "The Jackson Laboratory, Bar Harbor",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a9",
+      "institution": "Department of Pathology and Immunology, Washington University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a10",
+      "institution": "Department of Genetics, Washington University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a11",
+      "institution": "McDonnell Genome Institute, Washington University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    },
+    {
+      "id": "a12",
+      "institution": "Department of Developmental Biology, Washington University School of Medicine",
+      "department": null,
+      "city": null,
+      "country": "USA",
+      "ror": null
+    }
+  ]
+}

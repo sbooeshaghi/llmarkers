@@ -1,0 +1,102 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "epithelial cells",
+    "group_name": "EPITHELIAL CELL",
+    "group_id": null,
+    "feature_label": "EpCAM",
+    "feature_name": "EPCAM",
+    "feature_id": "ENSG00000119888",
+    "source_type": "text",
+    "source_rationale": "Consistently, FACS shows that CD45 + cell depletion of another ascites sample increased the overall proportion of non-immune (CD45 \u2212 ) cells from 0.75% to 29.4% and increased the proportion of EpCAM + cells from 0.17% to 4.9% (Extended Data Fig. 4c ).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " EpCAM",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "immune cells",
+    "group_name": "IMMUNE CELL",
+    "group_id": null,
+    "feature_label": "CD45",
+    "feature_name": "CD45",
+    "feature_id": "ENSG00000081237",
+    "source_type": "text",
+    "source_rationale": "Because in some tumor specimens the proportion of malignant cells is relatively low and that of immune cells is particularly high, we considered strategies to deplete CD45 + immune cells as a way to both enrich for epithelial cells without specific markers and to maintain any stromal cells.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " immune cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD45",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "monocytes/macrophages",
+    "group_name": "MONOCYTES/MACROPHAGES",
+    "group_id": null,
+    "feature_label": "CD14",
+    "feature_name": "CD14",
+    "feature_id": "ENSG00000170458",
+    "source_type": "text",
+    "source_rationale": "Specifically, expression of CD24 on tumor cells has been shown to relate to ovarian cancer invasiveness and expression of CD14 identifies monocytes/macrophages.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " monocytes/macrophages",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD14",
+      "all_verified": true
+    }
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "tumor cells",
+    "group_name": "TUMOR CELL",
+    "group_id": null,
+    "feature_label": "CD24",
+    "feature_name": "CD24",
+    "feature_id": "ENSG00000272398",
+    "source_type": "text",
+    "source_rationale": "Specifically, expression of CD24 on tumor cells has been shown to relate to ovarian cancer invasiveness and expression of CD14 identifies monocytes/macrophages.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " tumor cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD24",
+      "all_verified": true
+    }
+  }
+]

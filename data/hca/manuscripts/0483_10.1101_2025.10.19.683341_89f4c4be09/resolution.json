@@ -1,0 +1,88 @@
+{
+  "attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2025.10.19.683341",
+      "source": "preferred-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://doi.org/10.1101/2025.10.19.683341",
+      "source": "publication-url",
+      "status": "http_error_403"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "kind": "html",
+      "requested_url": "https://syndication.highwire.org/content/doi/10.1101/2025.10.19.683341",
+      "source": "crossref-link",
+      "status": "http_error_403"
+    },
+    {
+      "content_length": "",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.biorxiv.org/content/10.1101/2025.10.19.683341v3",
+      "kind": "html",
+      "n_text_chars": 9575,
+      "raw_path": "manuscript.html",
+      "requested_url": "https://doi.org/10.1101/2025.10.19.683341",
+      "resolved_as": "html",
+      "source": "doi-landing",
+      "status": "fetched",
+      "text_path": "manuscript.md"
+    }
+  ],
+  "candidate_count": 4,
+  "final": {
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.biorxiv.org/content/10.1101/2025.10.19.683341v3",
+    "folder": "0483_10.1101_2025.10.19.683341_89f4c4be09",
+    "n_text_chars": 9575,
+    "raw_path": "manuscript.html",
+    "resolved_as": "html",
+    "source": "doi-landing",
+    "status": "resolved",
+    "text_path": "manuscript.md"
+  },
+  "lookups": {
+    "crossref": {
+      "container_title": "",
+      "links": [
+        {
+          "content_type": "unspecified",
+          "content_version": "vor",
+          "intended_application": "similarity-checking",
+          "url": "https://syndication.highwire.org/content/doi/10.1101/2025.10.19.683341"
+        }
+      ],
+      "publisher": "openRxiv",
+      "title": "The normal human lymph node cell classification and landscape defined by high-dimensional spatial proteomics",
+      "type": "posted-content"
+    },
+    "europepmc": {
+      "full_text_urls": [
+        {
+          "availability": "Free",
+          "document_style": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2025.10.19.683341"
+        }
+      ],
+      "in_pmc": "N",
+      "is_open_access": "N",
+      "journal": "",
+      "pmcid": "",
+      "pmid": "",
+      "pub_year": "2025",
+      "title": "The normal human lymph node cell classification and landscape defined by high-dimensional spatial proteomic"
+    }
+  },
+  "metadata": {
+    "doi": "10.1101/2025.10.19.683341",
+    "preferred_url": "https://doi.org/10.1101/2025.10.19.683341",
+    "publication_title": "The normal human lymph node cell classification and landscape defined by high-dimensional spatial proteomic"
+  }
+}
