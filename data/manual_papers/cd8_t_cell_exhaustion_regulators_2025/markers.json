@@ -1,0 +1,27 @@
+[
+  {
+    "organism": "mus_musculus",
+    "group_label": "naive T cells",
+    "group_name": "NAIVE T CELL",
+    "group_id": null,
+    "feature_label": "TCF1",
+    "feature_name": "TCF1",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "The transcription factor TCF1 is highly expressed in naive T cells and is downregulated during the primary immune response.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": true,
+      "group_label_reconstructed": " naive T cells",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " TCF1",
+      "all_verified": true
+    }
+  }
+]

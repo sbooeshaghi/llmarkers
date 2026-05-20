@@ -1,6 +1,7 @@
 # LLMarkers database guide for an LLM
 
 Use `llmarkers.sqlite` as the source of truth.
+The raw JSON marker-record schema is documented in `docs/marker_record_schema.md`.
 
 ## Download
 - Download `llmarkers.sqlite` from the repository or website.

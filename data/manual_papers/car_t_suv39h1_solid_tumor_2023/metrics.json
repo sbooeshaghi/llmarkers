@@ -1,0 +1,15 @@
+{
+  "command": "/Users/sinabooeshaghi/projects/markergeneextraction/mrkr/mrkr/cli.py extract -m /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/manual_papers/car_t_suv39h1_solid_tumor_2023/manuscript.md -s homo_sapiens -o /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/manual_papers/car_t_suv39h1_solid_tumor_2023/markers.json --metrics /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/data/manual_papers/car_t_suv39h1_solid_tumor_2023/metrics.json -v",
+  "model": "claude-opus-4-6",
+  "created_at": 1778606814,
+  "num_extractions": 33,
+  "processing_time_sec": 64.25,
+  "input_tokens": 80853,
+  "cached_tokens": 0,
+  "output_tokens": 6436,
+  "total_tokens": 87289,
+  "input_cost": 0.40426500000000004,
+  "cached_cost": 0.0,
+  "output_cost": 0.16090000000000002,
+  "total_cost": 0.565165
+}

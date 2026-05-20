@@ -1,0 +1,52 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "TH1 cells",
+    "group_name": "TH1 CELLS",
+    "group_id": null,
+    "feature_label": "IFN\u03b3",
+    "feature_name": "IFN\u0393",
+    "feature_id": "ENSG00000111537",
+    "source_type": "text",
+    "source_rationale": "They produce IFN\u03b3 when stimulated.",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " IFNg",
+      "all_verified": false
+    }
+  },
+  {
+    "organism": "mus_musculus",
+    "group_label": "exTRM cell",
+    "group_name": "EXTRM CELL",
+    "group_id": null,
+    "feature_label": "CD43",
+    "feature_name": "CD43",
+    "feature_id": null,
+    "source_type": "text",
+    "source_rationale": "In mice, these cells may retain elevated expression of CD43 (detected by antibody clone 1B11).",
+    "source_id": "manuscript.md",
+    "data_id": null,
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_verification": {
+      "source_rationale_found": true,
+      "source_rationale_method": "exact",
+      "group_label_found": false,
+      "group_label_reconstructed": "",
+      "feature_label_found": true,
+      "feature_label_reconstructed": " CD43",
+      "all_verified": false
+    }
+  }
+]

@@ -40,12 +40,17 @@ analysis/build_cross_study_gene_id_caches.py
 analysis/build_same_label_partial_review.py
 analysis/build_tcell_program_summary.py
 analysis/build_tcell_story_report.py
-analysis/cross_study_gene_space.py
 analysis/ctp_corpus_analysis_lib.py
 analysis/evaluate_partition_pair_benchmark.py
 analysis/hca_extraction_eda.py
 analysis/restore_same_label_partial_review_from_markdown.py
 analysis/tcell_ctp_contained_analysis.ipynb
+
+# Superseded figure prototypes kept out of the committed paper pipeline
+analysis/build_fig2_benchmark_signal.py
+analysis/build_fig3_llm_recovery.py
+analysis/build_tcell_profile_graph_comparison.py
+analysis/build_tcell_tree_comparison.py
 
 # Manuscript contents (license restrictions)
 **/manuscript/manuscript.txt
@@ -57,6 +62,21 @@ analysis/tcell_ctp_contained_analysis.ipynb
 *.db
 
 # LaTeX build artifacts
+/main.aux
+/main.bbl
+/main.bcf
+/main.blg
+/main.claimsrc
+/main.fdb_latexmk
+/main.fls
+/main.log
+/main.out
+/main.pdf
+/main.run.xml
+/main.synctex.gz
+/main.toc
+/main.lof
+/main.lot
 paper/*.aux
 paper/*.bbl
 paper/*.bcf
@@ -104,6 +124,10 @@ data/hca/manuscripts/**
 !data/hca/manuscripts/**/metrics.json
 !data/hca/manuscripts/**/resolution.json
 !data/hca/manuscripts/**/biorxiv_metadata.json
+
+# Manually added papers: keep derived marker records, not full article text
+data/manual_papers/**/manuscript.md
+data/manual_papers/run_mrkr_all.sh
 
 # Generated cross-study intermediate caches
 analysis/results/cross_study_candidate_profile_pairs.tsv
@@ -167,11 +191,79 @@ analysis/results/tcell_story_label_family_summary.tsv
 analysis/results/tcell_story_report.md
 
 # Generated exploratory figures
+analysis/figures/biorxiv_immune_cluster.pdf
+analysis/figures/biorxiv_immune_cluster.png
 analysis/figures/cross_study_pairwise_jaccard.pdf
 analysis/figures/cross_study_pairwise_jaccard.png
 analysis/figures/ctp_corpus_summary.pdf
 analysis/figures/ctp_corpus_summary.png
+analysis/figures/fig5_cluster_prototypes.pdf
+analysis/figures/fig5_cluster_prototypes.png
+analysis/figures/fig5_nomenclature_weights.pdf
+analysis/figures/fig5_nomenclature_weights.png
+analysis/figures/fig_all_methods.pdf
+analysis/figures/fig_benchmark_evidence_scale.pdf
+analysis/figures/fig_benchmark_frac_shared.pdf
+analysis/figures/fig_benchmark_signal.pdf
+analysis/figures/fig_benchmark_signal.png
+analysis/figures/fig_benchmark_text_image.pdf
+analysis/figures/fig_cross_study_joint_distribution.pdf
+analysis/figures/fig_cross_study_joint_distribution.png
+analysis/figures/fig_fscore_topn.pdf
+analysis/figures/fig_gen_comparison.pdf
+analysis/figures/fig_gen_fscore_topn.pdf
+analysis/figures/fig_gen_optimal_n.pdf
+analysis/figures/fig_gen_rank_cdf.pdf
+analysis/figures/fig_gen_rank_cdf_perdataset.pdf
+analysis/figures/fig_gen_rank_lfc_boxplot.pdf
 analysis/figures/hca_extraction_qc.pdf
 analysis/figures/hca_extraction_qc.png
+analysis/figures/fig_llm_curation.pdf
+analysis/figures/fig_llm_curation.png
+analysis/figures/fig_llm_recovery.pdf
+analysis/figures/fig_llm_recovery.png
+analysis/figures/fig_marker_selection.pdf
+analysis/figures/fig_marker_selection.png
+analysis/figures/fig_marker_stability.pdf
+analysis/figures/fig_marker_stability.png
+analysis/figures/fig_myeloid_profile_graph_comparison*.pdf
+analysis/figures/fig_myeloid_profile_graph_comparison*.png
+analysis/figures/fig_named_vs_anon.pdf
+analysis/figures/fig_optimal_n.pdf
+analysis/figures/fig_rank_cdf.pdf
+analysis/figures/fig_rank_lfc_boxplot.pdf
+analysis/figures/fig_selection_sweep.pdf
+analysis/figures/fig_selection_sweep.png
+analysis/figures/fig_tcell_marker_cluster_summary.pdf
+analysis/figures/fig_tcell_marker_cluster_summary.png
+analysis/figures/fig_tcell_marker_hierarchy.pdf
+analysis/figures/fig_tcell_marker_hierarchy.png
+analysis/figures/fig_tcell_profile_graph_comparison.pdf
+analysis/figures/fig_tcell_profile_graph_comparison.png
+analysis/figures/fig_tcell_tree_comparison.pdf
+analysis/figures/fig_tcell_tree_comparison.png
+analysis/figures/fig_volcano_permtest.pdf
+analysis/figures/marker_stability_within_vs_outside*.pdf
+analysis/figures/marker_stability_within_vs_outside*.png
+analysis/figures/marker_strength_*.pdf
+analysis/figures/marker_strength_*.png
 analysis/figures/tcell_ctp_similarity_heatmaps.pdf
 analysis/figures/tcell_ctp_similarity_heatmaps.png
+
+# Generated prototype result tables superseded by the current figure scripts
+analysis/results/cross_study_neighborhood_overlap_at_k.tsv
+analysis/results/fig3_llm_recovery.tsv
+analysis/results/fig5_cluster_gene_coverage_purity.tsv
+analysis/results/fig5_exact_tcell_marker_subclusters.tsv
+analysis/results/fig5_marker_cluster_summary.tsv
+analysis/results/fig5_nomenclature_pair_scores.tsv
+analysis/results/marker_stability_prototype_examples.md
+analysis/results/marker_stability_prototype_scores.tsv
+analysis/results/tcell_marker_hierarchy_clusters.tsv
+analysis/results/tcell_marker_hierarchy_gene_scores.tsv
+analysis/results/tcell_marker_hierarchy_profiles.tsv
+analysis/results/tcell_marker_hierarchy_programs.tsv
+analysis/results/tcell_marker_hierarchy_report.md
+
+# Local TeX preview wrappers
+paper/src/fig_paper_celltype_joint_preview.tex

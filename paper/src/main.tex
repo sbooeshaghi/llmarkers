@@ -7,13 +7,14 @@
 \usepackage{microtype}
 \usepackage{graphicx}
 \graphicspath{{../../analysis/figures/}}
+\usepackage{xcolor}
 \usepackage{booktabs} % for professional tables
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{rotating}
 
 \usepackage{tikz}
-\usetikzlibrary{positioning}
+\usetikzlibrary{arrows.meta,calc,matrix,positioning,shapes.geometric}
 \usepackage{titlesec}
 
 \usepackage{mathtools}
@@ -177,7 +178,7 @@
 % Marker genes are a common shorthand for identifying cell types. By saying gene X is a marker for cell type Y, scientists communicate practical and testable hypotheses about cells. This binary format is useful for building databases and training models, but its lossy. When used for reporting markers from quantitative assays like single-cell RNA seq, it discards all of the experimental and statistical evidence underlying the marker. To measure this information loss, we built \texttt{LLMarkers}, a benchmark of 1{,}560 cell type--gene pairs extracted from the text and figures of seven single-cell RNA-seq studies, each linked to the differential expression gene (DEG) table from which the marker was derived. We find that marker selection is not reducible to a rank threshold on DEGs. We test whether large language models (LLMs) have sufficient domain knowledge to aid scientists find marker genes. We found that LLMs cannot recover study-specific markers through zero-shot generation or DEG selection. In contrast, LLMs reliably extract markers from the manuscript text that describes them. We developed \texttt{mrkr}, a tool for automated marker extraction and verification with LLMs, and applied it to 504 bioRxiv preprints, extracting 12{,}501 marker associations across 2{,}720 cell types. Clustering extracted marker profiles recovered known immune cell hierarchies across 249 papers despite variable cell-type nomenclature. LLM-based text extraction offers a practical way to curate marker genes while preserving provenance, quantitative evidence, and experimental context, and we release these markers through \texttt{LLMarkersDB}, an open-source database of literature-linked markers.
 
 % Narrative spine: Marker genes are the practical language of cell types; atlas building needs them reconciled across studies without losing context; LLMarkers measures that problem and LLM extraction provides a path forward.
-Marker genes are a practical language for cell types, but in single-cell genomics they are usually reported as isolated cell type--gene pairs that discard the experimental comparison that gave them meaning. This makes cell atlases hard to unify across studies, especially in tissues such as the immune system where related populations are named differently across experimental contexts. We asked whether large language models (LLMs) can recover that missing context from papers. We built \texttt{LLMarkers}, a benchmark of 1{,}560 reported markers from seven single-cell RNA-seq studies, each linked to the sentence or figure where it was reported and to its supporting differential expression comparison. Reported markers were not recoverable by rank threshold alone, but LLM-based text extraction outperformed zero-shot generation and DEG-based marker selection at recovering reported markers and linking them to supporting data. Applied to 504 bioRxiv preprints, this approach yielded 12{,}501 contextualized marker associations, recovered known immune hierarchies, and exposed shared and divergent cell states across studies. We release these records through \texttt{LLMarkersDB} for cross-study atlas building.
+Marker genes are how biologists talk about cell types. In single-cell genomics, markers are discovered from quantitative comparisons but reported as simple cell type--gene pairs. This shorthand is useful, but it loses the context needed to compare markers across studies. We asked whether large language models (LLMs) can recover that context from papers. We built \texttt{LLMarkers}, a benchmark of 1{,}560 reported markers from seven single-cell RNA-seq studies, linking each marker to its source text or figure and to its supporting differential expression comparison. Author-reported markers were enriched among strong differential expression signals, but no simple rank threshold recovered them. LLM-based text extraction recovered reported markers more faithfully than marker generation from cell type names or marker selection from DEG lists. We applied \texttt{mrkr} to 504 bioRxiv preprints and 434 Human Cell Atlas-linked publications, extracting 32{,}621 marker associations from 855 papers. These marker profiles connected different cell type names with shared marker evidence and showed cases where the same name was supported by different markers. We release these records through \texttt{LLMarkersDB} for cross-study atlas building.
 
 \end{abstract}
 
@@ -213,13 +214,17 @@ In this study, we investigate whether large language models can help unify cell-
 % Narrative spine: Motivate LLMarkers as the structure needed to measure information loss in binary marker reporting.
 To understand the information loss that arises when marker genes are reported as binary cell type--gene pairs, we assembled \texttt{LLMarkers}, a benchmark that links each reported marker to the paper evidence in which it appears and to the differential expression comparison from which it was drawn. This benchmark lets us compare author-reported markers to the underlying data and evaluate LLM-based generation, selection, and extraction.
 
+\input{figures/fig_paper_celltype_joint}
+
 \begin{figure*}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{fig_marker_selection.pdf}
-  \caption{\textbf{Marker gene selection across all seven datasets.} From left to right: cumulative distribution of DEG ranks for discussed markers from images and text; log fold change distributions for discussed markers; per-cell-type mean log-fold change of text-sourced versus image-sourced markers (each point is one cell type, diagonal is $y = x$); optimal number of markers (by F-score) for each dataset.}
+  \includegraphics[width=\textwidth]{fig_marker_recovery.pdf}
+  \caption{\textbf{Marker recovery from differential expression and LLM curation.} \textbf{A}. Summary of the seven studies in the \texttt{LLMarkers} benchmark. \textbf{B}. Optimal DEG rank cutoff and F-score for recovering reported markers from text and images; dashed lines show source-specific means. \textbf{C}. F-score for marker generation from cell type names, marker selection from DEGs, marker extraction from manuscript text, and the stricter extraction task requiring the correct data source. Each point is one benchmark study; black bars show method means. Gray lines connect pair-level extraction to the same extraction evaluated as a (data source, cell type, gene) triple.}
   \label{fig:marker_selection}%
+  \label{fig:llm_curation}%
   \claim{fig-marker-selection}{}%
-  \source{analysis/lfc_comparison.ipynb}%
+  \claim{fig-llm-curation}{}%
+  \source{analysis/build_fig2_marker_recovery.py}%
 \end{figure*}
 
 % Narrative spine: Define the benchmark before asking what it reveals.
@@ -243,16 +248,6 @@ Using \texttt{LLMarkers}, we next asked whether the markers authors report can b
 
 To understand this pattern, we first compared author-reported markers with their underlying differential expression statistics. We matched each human-curated marker to its entry in the corresponding DEG table, extracted the LFC, and ranked markers by expression strength. \claim{expert-matched}{Across all seven datasets, 303 text and 763 image markers could be matched to DEG entries. All were statistically significant, but their fold changes varied (median LFC 1.19, IQR 0.66--2.00).}\source{analysis/gen_strength.ipynb} In the \texttt{adipose (Hildreth)} dataset (Figure~\ref{fig:hildreth_detail}), discussed markers---from both images and text---had widely varying LFCs in aggregate (top row). This spread was largely cell type-specific: some populations, such as mature natural killer cells, had markedly higher LFCs than others, and the same relative pattern was visible for both text- and image-derived markers (middle rows).
 
-\begin{figure*}[ht!]
-  \centering
-  \includegraphics[width=\textwidth]{fig_hildreth_detail.pdf}
-  \caption{\textbf{Marker gene selection strength for \citep{Hildreth2021}}. Top row shows log fold change distributions (left) and cumulative rank distributions (right) for discussed markers from images (blue) and text (orange). Middle row shows per-cell-type log-fold change distributions for image (blue) and text (orange) discussed markers. Bottom row shows precision--recall curves for image and text markers, and F-score as a function of the top-$N$ DEG threshold.}
-  \label{fig:hildreth_detail}%
-  \claim{fig-hildreth-detail}{}%
-  \source{analysis/lfc_comparison.ipynb}%
-\end{figure*}
-
-
 % Narrative spine: Test the obvious alternative hypothesis that a simple top-N DEG rule could stand in for expert judgment.
 Because discussed markers were highly ranked by LFC, we asked whether a simple rank cutoff could substitute for expert curation. We computed precision--recall curves by treating the top $N$ DEGs as predicted markers and the human-curated set as truth, sweeping $N$ from 1 to 20{,}000. For the \texttt{Hildreth} dataset, the F-score (the harmonic mean of precision and recall) peaked at $N = 61$ for image markers and $N = 41$ for text markers (Figure~\ref{fig:hildreth_detail}, bottom row)---beyond this point, adding more DEGs diluted precision faster than it improved recall. The markers discussed in \texttt{Hildreth} were strong, but strength alone did not fully explain their selection.
 
@@ -261,16 +256,6 @@ The same pattern held across all seven datasets (Figure~\ref{fig:marker_selectio
 
 % Narrative spine: Convert the distributions into the key take-home: rank thresholds recover only part of what experts actually choose to report.
 The precision--recall analysis across all seven datasets yielded similar results. \claim{expert-optimal-n}{The optimal $N$ averaged 76 for image markers and 60 for text markers, with peak F-scores of 0.51 and 0.44, respectively (Figure~\ref{fig:marker_selection}, last right).}\source{analysis/lfc_comparison.ipynb} In other words, a naive strategy of selecting the top 60--76 DEGs per cell type recovers at best about half of the markers that domain experts chose to highlight, confirming that marker selection is not reducible to a rank threshold alone. Authors likely did not simply pick the most differentially expressed genes; marker selection also reflects biological knowledge, prior literature, and protein-level validation.
-
-
-\begin{figure*}[t]
-  \centering
-  \includegraphics[width=\textwidth]{fig_llm_curation.pdf}
-  \caption{\textbf{LLM curation tradeoff.} Cost versus fidelity for three LLM marker gene curation approaches across seven datasets, evaluated against text-sourced human annotations. Each point is one dataset; bubble size encodes the number of unique (cell type, gene) pairs produced. Dashed crosshairs mark the method mean on each axis. \textbf{(a)}~Generation from training knowledge. \textbf{(b)}~Selection from top-$N$ DEGs (at each dataset's optimal $N$). In panel (b), black \texttt{x} markers denote the max possible, DEG-constrained, F1 bound at that same $N$ (the maximum achievable F1 if the LLM could select only the recoverable human markers in the n-sized DEG). \textbf{(c)}~Extraction from manuscript text.}
-  \label{fig:llm_curation}%
-  \claim{fig-llm-curation}{}%
-  \source{analysis/selection_analysis.ipynb}%
-\end{figure*}
 
 % Narrative spine: Since rank alone fails, compare LLM approaches under increasing access to study-specific context.
 \subsection{LLM marker curation}
@@ -299,45 +284,42 @@ The low-scoring dataset likely reflects how the manuscript describes markers. So
 \begin{figure*}[ht!]
   \centering
   \includegraphics[width=\textwidth]{fig_cross_study_unification.pdf}
-  \caption{\textbf{Cross-study marker unification.} Top: corpus summary for the human-curated benchmark, bioRxiv preprints, and HCA publications after filtering to analysis-ready marker records and profiles with at least three mapped marker gene IDs. Middle left: cross-paper pairs stratified by whether they share an exact cell type label and at least one marker gene. Middle center: exact label agreement among nearest neighbors in marker space. Middle right: marker overlap among nearest neighbors in label space. Bottom left: manual review of ambiguous cross-paper pairs, separating cases where shared or partially shared marker profiles support the same name, a context distinction, or remain unresolved. Bottom middle and right: reviewed examples where marker profiles expose different labels with identical genes, or same labels with different marker profiles.}
+  \vspace{0.5em}
+  \includegraphics[width=\textwidth]{fig_marker_program_resolution.pdf}
+  \caption{\textbf{Cross-study marker unification.} \textbf{A}. Paper-celltype marker profiles were compared by cell type label relation and mapped marker-gene overlap across papers; the adjacent marginal shows the Jaccard similarity distribution within the partial marker-overlap column. \textbf{B}. Directed nearest-neighbor summaries comparing marker-neighbor label relations with label-neighbor marker-gene relations. \textbf{C}. Mean overlap between each profile's top 10 marker-gene neighbors and top 10 label neighbors, compared with a random cross-paper baseline. \textbf{D}. Exact cell type labels scored by how coherently their profiles group in marker-gene space. \textbf{E}. Marker-gene clusters scored by how coherently their profiles group in label-token space. \textbf{F}. Gene-level F1 scores comparing recurrence within TREG-labeled profiles with recurrence within a matched marker-defined cluster. Counts beneath categories denote profile pairs, top-neighbor ties, or profiles. Shaded regions in \textbf{F} indicate genes enriched in the marker cluster, enriched in the label group, high in both, or weak in both.}
   \label{fig:cross_study_unification}%
   \claim{fig-cross-study-unification}{}%
-  \source{analysis/cross_study.ipynb}%
+  \source{analysis/build_fig4_joint_distribution.py}%
+  \source{analysis/build_fig5_nomenclature_weights.py}%
 \end{figure*}
 % Narrative spine: Summarize the tradeoff and make the causal conclusion explicit: extraction works because it has access to the paper's claimed context.
 The three approaches to marker gene curation with LLMs show a tradeoff between fidelity and cost when all methods are evaluated against text-sourced human annotations (Figure~\ref{fig:llm_curation}). \claim{method-costs}{Marker gene generation is cheapest (\$2.30 total, \$0.33 per paper) but recovers only canonical markers that overlap modestly with any particular study (the reverse direction---predicting cell type labels from gene lists---is more accurate). Selection costs the most (\$5.94, \$0.85 per paper) yet performs no better, showing that DEG rankings alone cannot substitute for expert reasoning and manuscript context. Extraction falls between the two in cost (\$3.77, \$0.54 per paper) while achieving the highest fidelity}\source{analysis/selection_analysis.ipynb}, because it recovers the specific associations that authors chose to highlight and links them to the study-specific source from which they were curated. For capturing what a paper claims, and tying those claims back to a concrete source in the study, extraction is the appropriate approach; generation complements it by surfacing canonical markers that may not appear in any particular manuscript.
 
 
-% Narrative spine: Having shown that extraction works on the benchmark, test whether it scales to a broader literature corpus and reveals cross-paper structure.
-\subsection{Automated extraction from bioRxiv}
+% Narrative spine: Having shown that extraction works on the benchmark, test whether extracted marker profiles can be compared across corpora.
+\subsection{Unifying cross-study markers}
 
-% Narrative spine: Motivate the corpus analysis as a test of scale and of whether marker profiles can bridge inconsistent cell type names.
-LLMs effectively extracted marker genes and LLM-generated cell-type labels showed that marker genes carry enough signal to identify cell types independent of their names. We therefore asked whether extraction could scale to a large corpus and whether the resulting marker genes could be used to resolve ambiguous cell-type labels across papers (Figure~\ref{fig:cross_study_unification}). We ran \texttt{mrkr extract} on 504 bioRxiv preprints retrieved from bioRxiv (see Methods for selection criteria). Each paper was converted from JATS~XML to markdown and processed with text-only extraction.
-All extracted records are available through an interactive browser at \url{https://sbooeshaghi.github.io/llmarkers/}.
+% Narrative spine: Move from faithful extraction within papers to comparable marker profiles across papers.
+LLM-based marker extraction was the most effective way to recover the marker claims that authors made in individual papers, but its broader value depends on whether those claims can be compared across studies. We therefore used \texttt{mrkr} to apply the same text-extraction, verification, and gene-mapping workflow to two larger literature corpora: 504 bioRxiv preprints and 434 publications linked to Human Cell Atlas studies. Together with the human-curated benchmark, these records define paper-level marker profiles: sets of mapped human marker genes associated with a cell type label in a specific paper (Figure~\ref{fig:cross_study_unification}). This converts isolated marker claims into machine-readable records that can be compared across papers, allowing us to ask when two studies appear to describe the same cell type, a related cell state, or different biology under the same name.
 
 % Narrative spine: Establish corpus-scale yield and verification before interpreting the extracted markers biologically.
-\claim{biorxiv-totals}{Of the 504 papers, 421 (84\%) yielded at least one marker gene--cell type association; the LLM did not identify marker gene claims in the remaining 83 papers. Across the 421 papers, \texttt{mrkr} extracted 12{,}501 marker gene--cell type associations covering 3{,}906 unique genes, 2{,}720 unique cell type names, and 11{,}231 unique (cell type, gene) pairs.}\source{analysis/biorxiv_summary.ipynb} Human markers were most prevalent (71\%), followed by mouse (19\%), with 18 additional species appearing at lower frequency. \claim{biorxiv-verification}{All 12{,}501 extractions were verified as verbatim substrings of their manuscripts. Of these, 89\% of cell-type marker gene pairs were fully verified, meaning that the cell type label and gene label were both confirmed within the extracted text (Methods). The 11\% partial failures were almost entirely cell-type label mismatches (10\%), where the cell type could not be aligned within the extracted sentence, typically because the model normalized the name differently than how it appeared in the manuscript.}\source{analysis/biorxiv_summary.ipynb}
+Across the two larger corpora, \texttt{mrkr} extracted 32{,}621 marker associations from 855 papers. In the bioRxiv corpus, 421 of 504 papers (84\%) yielded at least one marker gene--cell type association, producing 12{,}501 marker associations across 2{,}720 cell type names. Human markers were most prevalent (71\%), followed by mouse (19\%), with 18 additional species appearing at lower frequency. In the HCA-linked corpus, 434 publications yielded 20{,}120 marker associations across 3{,}640 cell type names. As expected for HCA-linked studies, these records were mostly human (95\%), with mouse accounting for most of the remaining records. All source rationales in both corpora were verified as exact substrings of their manuscripts. Both the cell type label and gene label were confirmed within the extracted sentence for 89\% of bioRxiv records and 93\% of HCA-linked records; most partial failures were cell type label mismatches, typically because the model normalized a label differently from how it appeared in the manuscript.
 
-% Narrative spine: Show that corpus-scale extraction is operationally feasible rather than just conceptually possible.
-\claim{biorxiv-cost}{The total cost was \$92 for all 504 papers (\$0.18 per paper on average), consuming 6.6M input tokens and 2.4M output tokens. The summed per-paper processing time was 367.6 minutes (43.9 seconds per paper on average).}\source{analysis/biorxiv_summary.ipynb}
+For cross-study comparison, we restricted to human markers that were verified in the manuscript text and mapped to Ensembl gene IDs. After deduplication and filtering, the bioRxiv corpus contributed 7{,}153 analysis-ready records and 954 paper-level profiles with at least three marker genes, while the HCA-linked publications contributed 16{,}986 records and 2{,}397 profiles (Figure~\ref{fig:cross_study_unification}). These profiles span 1{,}876 bioRxiv cell type names and 3{,}640 HCA-linked cell type names.
 
-% Narrative spine: Normalize genes so marker profiles can be compared across papers on a common identifier space.
-To enable consistent cross-paper comparison, we mapped extracted gene symbols to Ensembl identifiers using a reference built from Ensembl GRCh38.114 (Methods) and restricted our analyses to mapped human markers only. \claim{biorxiv-mapping}{Of the 8{,}921 human markers across 358 papers, 8{,}395 (94\%) mapped to Ensembl identifiers. Restricting to mapped entries yielded 2{,}566 unique Ensembl IDs across 1{,}965 unique cell type names from 346 papers.}\source{analysis/biorxiv_celltype_matching.ipynb} The unmapped entries included protein names (CD3, KI67) and Unicode variants of Greek-letter gene names (IFN$\gamma$, IL1$\beta$).
+% Narrative spine: Show that label normalization and marker overlap are related but not interchangeable.
+We first asked how often cell type labels and marker genes agree across papers. Exact label matches and marker overlap were both uncommon, but they were not interchangeable. Most profile pairs shared neither a label nor a marker gene (70.6\%; 202{,}593 pairs). Marker-only matches were more frequent than label-only matches: 22.1\% of pairs (63{,}321) shared at least one marker gene without sharing a cell type label, whereas only 2.3\% (6{,}615) shared a label without sharing any marker gene (Figure~\ref{fig:cross_study_unification}). This shows the basic limitation of name-based atlas unification. Ontologies remain essential for organizing cell type names, but marker profiles add evidence that can connect studies with different labels and distinguish shared labels supported by different marker evidence.
 
-% Narrative spine: Quantify the nomenclature problem directly by showing how many differently named profiles share substantial marker overlap.
-The 8{,}395 mapped human markers use 1{,}965 distinct cell type names for what is likely a far smaller number of biological cell types, many of which may be related or identical across studies. To quantify this nomenclature heterogeneity, we computed pairwise Jaccard similarity between the marker gene sets of all mapped human cell types across papers. \claim{biorxiv-clusters}{Among cross-paper cell-type pairs with different names, 182 pairs exceeded a Jaccard threshold of 0.5, and 651 exceeded 0.3. These include abbreviation variants (``SMC'' and ``smooth muscle cell'' sharing ACTA2, CNN1, MYH11, TAGLN), plural forms (``B~cell'' and ``B~cells''), and biologically equivalent labels (``mesenchymal stem cell,'' ``MSCs,'' and ``IMSCs'' all referring to the same lineage). At a Jaccard threshold of 0.4, connected component analysis grouped these into 43 clusters, 22 of which contained three or more distinct names.}\source{analysis/biorxiv_celltype_matching.ipynb}
+% Narrative spine: Compare marker-based neighbors with name-based neighbors to show what each representation misses.
+We next compared profiles by nearest-neighbor matching in both marker space and label space, where each marker profile is represented as a binary marker-gene vector. Among marker-neighbor pairs, only 6.0\% (200 pairs) had the same exact cell type label and 4.7\% (157 pairs) had mixed label matches; the remaining 89.3\% (2{,}979 pairs) connected profiles with different labels despite shared marker evidence (Figure~\ref{fig:cross_study_unification}). In the reverse direction, label-neighbor pairs had exact marker agreement in only 2.1\% of cases (70 pairs), while 42.4\% (1{,}421 pairs) showed partial marker overlap and 55.5\% (1{,}860 pairs) shared no marker genes. Marker profiles therefore connect related cell populations that name matching misses, while label matching alone can group profiles supported by different marker evidence.
 
-% Narrative spine: Validate that the marker-based groupings are not arbitrary by contrasting within-cluster and between-cluster similarity.
-As expected from the Jaccard-based grouping, within-cluster similarity far exceeded between-cluster similarity \claim{biorxiv-cluster-quality}{(mean pairwise Jaccard 0.35 vs.\ 0.004).}\source{analysis/biorxiv_celltype_matching.ipynb} Silhouette analysis---an independent measure of cluster quality---revealed a size--quality tradeoff: small clusters of 2--5 cell types achieved silhouette scores of 0.4--0.6, while the largest cluster scored near zero, indicating that transitive linkage had merged distinct cell types.
+% Narrative spine: Use manual review to show that the useful object is the marker graph linked back to manuscript evidence.
+Shared marker genes do not immediately imply that two papers describe the same cell type. They suggest that the profiles are related and that the relationship can be interpreted by returning to the source text. To study the utility of connecting marker profiles to manuscript evidence, we manually reviewed ambiguous profile pairs nominated by the marker graph. Identical marker profiles with different labels usually reflected context rather than simple name differences, while same-named profiles with partial marker overlap could reflect either the same cell type or a context-specific state (Figure~\ref{fig:cross_study_unification}). This was also apparent for monocyte-labeled profiles, which showed low cross-study concordance across 29 bioRxiv preprints (Supplementary Table~\ref{tab:monocyte_papers}). This linked view lets us see where labels can be merged, where shared marker programs cross naming boundaries, and where the same label is used in different biological contexts.
 
-% Narrative spine: Show a concrete biological example where extracted marker profiles recover recognizable immune structure across papers.
-Hierarchical clustering within the largest cluster recovered an immune cell hierarchy. At a Jaccard distance threshold of 0.85, the 47 paper--celltype pairs separated into 20 sub-clusters. The three largest biologically interpretable sub-clusters correspond to cytotoxic effectors (GNLY, PRF1, NKG7; 24 pairs), NK/NKT-associated cells (KLRD1/CD94, NCAM1/CD56, GNLY; 3 pairs), and CD8 T~cells (CD8B, GZMK, CD8A; 2 pairs) (Supplementary Table~\ref{tab:immune_subclusters}). Per-pair silhouette scores show that the separation is imperfect. NK/NKT-associated cells contain cytotoxic effector genes (GNLY, GZMB, PRF1) alongside canonical NK markers (CD94, CD56) and had near zero silhouette scores indicating that they sit on the boundary between the cytotoxic effector and NK/CD8 sub-clusters.
+% Narrative spine: Use a concrete T-cell example to show how marker overlap becomes biological interpretation only after returning to source context.
+T cell profiles give a concrete example. A liver cancer study used CCR7, LEF1, SELL, and TCF7 as ``well-defined naïve T cell markers'' \citep{Ma2020}. The marker graph matched that profile to a Treg.1 profile from a lung cancer study because the same four genes were reported there, but the source text described Treg.1 as having ``elevated expression of naïve markers'' \citep{Yoffe2025}. This is not a merge between naïve T cells and regulatory T cells. It is evidence for a naive-like state program that appears within a regulatory T-cell subtype, and it illustrates why cross-study unification needs both marker overlap and the manuscript context that explains it.
 
-% Narrative spine: Interpret the clustering result as evidence that markers can bridge inconsistent names by carrying biological relationships across papers.
-That standard hierarchical clustering on text-extracted markers, alone, recovers this known biology indicates that LLM extraction captures genuine molecular signatures from unstructured text. Despite sharing enough markers to cluster together, these sub-populations carry distinct labels across papers. The same principle observed in the benchmark---where marker genes identified the semantically similar cell type label 72\% of the time despite a 15\% exact name match---operates here at corpus scale. Marker genes reveal biological relationships that string matching on names alone would miss. This suggests an approach to overcome the nomenclature problem that motivated this analysis.
-
-% Narrative spine: Balance the positive clustering result by showing that even same-named cell types can diverge across study contexts.
-At the same time, cross-paper concordance for even well-defined cell types was modest. \claim{biorxiv-monocyte}{Monocytes appeared in 29 papers but shared a mean Jaccard of only 0.063.}\source{analysis/biorxiv_celltype_matching.ipynb} This low concordance is likely caused by diversity in study context, including rheumatoid arthritis, Sjogren's disease, HIV vaccine response, AML, interferon signaling, COVID-19, and other settings (Supplementary Table~\ref{tab:monocyte_papers}). Each paper likely reports monocyte markers relevant to its experimental question instead of a basal monocyte profile.
+The inverse ambiguity appeared for profiles with the same label. Two papers both reported macrophages and shared CD14 and FCGR3A, but the nonshared markers changed the interpretation. In a head-and-neck cancer atlas, C1QB marked macrophage clusters with macrophage signatures and little enrichment for classical monocyte signatures \citep{Kroehling2025hnscc}; in a COVID-19 nasopharyngeal atlas, VCAN appeared in the reported macrophage profile \citep{Ziegler2021covid}. The shared genes support a broad macrophage match, while C1QB and VCAN point to different myeloid-state programs. Marker profiles are useful not because they replace names, but because they show when a shared name is supported by the same evidence and when it carries study-specific state information.
 
 % Narrative spine: End the corpus analysis on the right scope: extracted markers are a literature index, not a substitute for the underlying quantitative data.
 Text-extracted markers therefore serve as a linked index across the literature where cell-types can be aligned across papers by finding matching marker genes, independent of the nomenclature used to name the cell type. But complete marker gene profiles require the underlying data---differential expression tables, expression matrices---tied to the experimental context from which they were derived.
@@ -353,6 +335,7 @@ These extracted markers can also be used to search the literature. We compiled t
 
 % TODO ADD MCP
 
+\clearpage
 \balance
 % Narrative spine: Re-state the paper's central claim, then explain why extraction succeeds where ranking, generation, and selection fail.
 \section{Discussion}
@@ -391,14 +374,14 @@ Several limitations constrain the current work. Our extraction pipeline operates
 
 \section{Supplementary Material}
 
-% \begin{figure*}[ht!]
-%   \centering
-%   \includegraphics[width=\textwidth]{fig_gen_comparison.pdf}
-%   \caption{Comparison of LLM-generated markers with expert-curated markers across all seven datasets. \textbf{(a)}~Cumulative distribution of DEG ranks for image-sourced (blue), text-sourced (orange), and generated (green) markers. \textbf{(b)}~Log fold change distributions by marker source. \textbf{(c)}~Per-cell-type mean LFC for generated versus human-curated markers. \textbf{(d)}~Precision--recall curves for the top-$N$ DEG threshold, treating generated markers as truth. \textbf{(e)}~F-score as a function of top-$N$ threshold. \textbf{(f)}~Optimal $N$ per dataset for image, text, and generated marker sets.}
-%   \label{fig:gen_comparison}%
-%   \claim{fig-gen-comparison}{}%
-%   \source{analysis/gen_strength.ipynb}%
-% \end{figure*}
+\begin{figure*}[ht!]
+  \centering
+  \includegraphics[width=\textwidth]{fig_hildreth_detail.pdf}
+  \caption{\textbf{Marker gene selection strength for \citep{Hildreth2021}}. Top row shows log fold change distributions (left) and cumulative rank distributions (right) for discussed markers from images (blue) and text (orange). Middle row shows per-cell-type log-fold change distributions for image (blue) and text (orange) discussed markers. Bottom row shows precision--recall curves for image and text markers, and F-score as a function of the top-$N$ DEG threshold.}
+  \label{fig:hildreth_detail}%
+  \claim{fig-hildreth-detail}{}%
+  \source{analysis/lfc_comparison.ipynb}%
+\end{figure*}
 
 \begin{table*}[ht!]
   \centering
@@ -548,52 +531,39 @@ Several limitations constrain the current work. Our extraction pipeline operates
 
 \begin{table*}[ht!]
   \centering
-  \caption{\textbf{Similar marker genes}. Immune sub-cluster paper--celltype pairs from hierarchical clustering of the largest marker gene cluster (25 names, 47 paper--celltype pairs). At a Jaccard distance threshold of 0.85, the largest cluster separates into 20 sub-clusters; this table reports the three biologically interpretable immune sub-populations. Each row represents a paper and cell type pair; columns show the paper, the cell type label used by the authors, the tissue studied, the silhouette score, and the marker genes extracted by the \texttt{mrkr extract}. Core genes listed are those appearing in $\geq$40\% of pairs within each sub-cluster. The silhouette score measures how well each pair fits its assigned sub-cluster versus its nearest alternative ($s{=}1$: well-separated; $s{\approx}0$: on the boundary). Several pairs in the cytotoxic effectors sub-cluster---particularly those labeled as NK cells---have low silhouette scores ($s < 0.10$), with the NK cell sub-cluster as their nearest neighbor, reflecting shared markers.}
-  \label{tab:immune_subclusters}%
-  \claim{tab-immune-subclusters}{}%
-  \source{analysis/biorxiv_celltype_matching.ipynb}%
+  \caption{\textbf{Similar marker genes}. Reviewed exact marker-profile neighborhoods from the cross-study marker graph. Nodes are paper-level marker profiles, and profiles were connected when they came from different papers and shared the same mapped human marker genes ($J=1$). Each block shows one marker program nominated by the graph, the cell type labels attached to that program, and the biological interpretation assigned after reviewing the linked manuscript context. These annotations are source-grounded interpretations of marker-profile neighborhoods rather than formal ontology assertions.}
+  \label{tab:similar_marker_profiles}%
+  \claim{tab-similar-marker-profiles}{}%
+  \source{analysis/cross_study.ipynb}%
+  \source{analysis/results/cross_study_row3_name_judgment_diff_labels_j1.tsv}%
+  \source{analysis/results/cross_study_context_comparison_review_anchored.md}%
   \footnotesize
-  \begin{tabular}{@{}l l l r p{5.2cm}@{}}
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}l p{3.1cm} p{2.6cm} p{3.6cm} p{4.9cm}@{}}
   \toprule
-  Paper & Cell type label & Tissue & Silhouette & Extracted markers \\
+  Paper & Cell type label & Context & Reviewed role & Marker profile \\
   \midrule
-  \multicolumn{5}{l}{\textit{Cytotoxic effectors (24 paper--celltype pairs, 21 names, 14 papers; core genes: GNLY, PRF1, NKG7, GZMB, GZMA)}} \\[2pt]
-  \citep{Lawlor2020}         & ACTIVATED MEMORY CELL   & PBMCs     & 0.23 & GNLY, GZMA, GZMB, GZMH, IFNG\\
-  \citep{Kim2024immune}      & ACTIVE NK CELL          & Lung      & 0.13 & IFNG, PRF1, TNF\\
-  \citep{Turiello2025}       & CD4-CTLS                & Multi-tissue & 0.38 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1\\
-  \citep{Asaba2024}          & CD8 T CELL              & BAL fluid & 0.20 & GZMB, IFNG, PRF1, TBX21\\
-  \citep{Zhao2024}           & CD8+ T CELL             & PBMCs     & 0.02 & GNLY, GZMK, NKG7\\
-  \citep{Onfroy2025}         & CD8+ T CELLS            & Skin      & 0.23 & GZMB, IFNG, PRF1\\
-  \citep{Turiello2025}       & CD8-EM                  & Multi-tissue & 0.38 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1\\
-  \citep{Yoffe2025}          & CD8.3                   & Lung      & 0.21 & CD16, FGFBP2, GNLY, NKG7, PRF1\\
-  \citep{Yoffe2025}          & CD8.5                   & Lung      & 0.21 & CD16, FGFBP2, GNLY, NKG7, PRF1\\
-  \citep{Cheng2024glio}      & CD8T\_GZMB              & Brain     & 0.27 & GZMA, GZMB, PRF1\\
-  \citep{Heydari2021}        & CLUSTER 2               & PBMCs     & 0.15 & CCL5, CST7, CTSW, GZMA, NKG7\\
-  \citep{Ma2020}             & CYTOTOXIC               & Liver     & 0.19 & CD94, CST7, CTSW, GNLY, GZMA, GZMB, GZMH, IFNG, KLRB1, KLRK1, NKG7, PRF1\\
-  \citep{Landeloos2023}      & CYTOTOXIC               & Melanoma  & 0.21 & GNLY, GZMB, PRF1\\
-  \citep{Zhong2021myeloma}   & CYTOTOXIC PLASMA CELL   & Blood     & 0.15 & CCL4, CCL5, GNLY, GZMA, NKG7\\
-  \citep{Turiello2025}       & MAIT                    & Multi-tissue & 0.33 & GNLY, GZMA, GZMB, GZMH, GZMK, GZMM, NKG7, PRF1\\
-  \citep{Imoto2025}          & NATURAL KILLER CELL     & PBMCs     & 0.08 & GNLY, KLRB1, NKG7\\
-  \citep{Wang2020celda}      & NK CELL                 & PBMCs     & 0.06 & CD94, CST7, GZMA, GZMH, NKG7\\
-  \citep{Landeloos2023}      & NK CELL                 & Melanoma  & -0.01 & CD56, GNLY, GZMB, PRF1, TRDC, TYROBP\\
-  \citep{Lawlor2020}         & NK CELL                 & PBMCs     & 0.06 & CD16, CD56, GNLY, GZMB, IFNG, KLF2, PRF1\\
-  \citep{Wang2020celda}      & NK T CELL               & PBMCs     & 0.12 & GNLY, GZMA, GZMH, KLRG1\\
-  \citep{Turiello2025}       & NK-BRIGHT               & Multi-tissue & 0.27 & GNLY, GZMA, GZMH, GZMK, NKG7, PRF1\\
-  \citep{Turiello2025}       & NK-DIM                  & Multi-tissue & 0.38 & GNLY, GZMA, GZMB, GZMH, GZMM, NKG7, PRF1\\
-  \citep{Landeloos2023}      & NKCYTO                  & Melanoma  & 0.22 & CD16, GNLY, GZMB, PRF1\\
-  \citep{Turiello2025}       & PLATELETS               & Multi-tissue & 0.20 & GNLY, GZMA, GZMM, NKG7\\
+  \multicolumn{5}{@{}l}{\textit{Naive-like T-cell state program (core genes: TCF7, CCR7, LEF1, SELL)}} \\[2pt]
+  \citep{Ma2020}        & NAÏVE T CELL   & Liver cancer & Naive T-cell label & TCF7, CCR7, LEF1, SELL \\
+  \citep{Kim2024immune} & TN             & Lung cancer immune-checkpoint study & Abbreviated naive-like label & TCF7, CCR7, LEF1, SELL \\
+  \citep{Kim2024immune} & TCM            & Lung cancer immune-checkpoint study & Central-memory label sharing resting markers & TCF7, CCR7, LEF1, SELL \\
+  \citep{Yoffe2025}     & TREG.1         & Preinvasive lung cancer & Regulatory T-cell subtype with elevated naive markers & TCF7, CCR7, LEF1, SELL \\
+  \citep{Boland2020uc}  & NAÏVE/MEMORY   & Ulcerative colitis & Broader naive/memory annotation & TCF7, CCR7, LEF1, SELL \\
   \midrule
-  \multicolumn{5}{l}{\textit{NK cells (3 paper--celltype pairs, 3 names, 2 papers; core genes: CD56, CD94, GNLY)}} \\[2pt]
-  \citep{Duong2025}          & NATURAL KILLER (NK) CELL & Lung     & 0.66 & CD56, CD94, GNLY\\
-  \citep{Duong2025}          & NATURAL KILLER T CELL (NKT) & Lung  & 0.66 & CD56, CD94, GNLY\\
-  \citep{Kim2024immune}      & NK CELL                 & Lung      & 0.39 & CD56, CD94, KLRF1, XCL1\\
+  \multicolumn{5}{@{}l}{\textit{Inflammatory/alarmin myeloid program (core genes: S100A8, S100A9, S100A12)}} \\[2pt]
+  \citep{Dominguez2022celltypist} & CLASSICAL  & Cross-tissue immune atlas & Classical monocyte label & S100A8, S100A9, S100A12 \\
+  \citep{Werba2023pdac}           & MDSC       & Pancreatic cancer after chemotherapy & Suppressive/immature myeloid label & S100A8, S100A9, S100A12 \\
+  \citep{Pelka2021crc}            & MACROPHAGE & Colorectal cancer immune hubs & Macrophage/disease-program label & S100A8, S100A9, S100A12 \\
   \midrule
-  \multicolumn{5}{l}{\textit{CD8 T cells (2 paper--celltype pairs, 2 names, 2 papers; core genes: CD8A, CD8B, GZMK)}} \\[2pt]
-  \citep{Alkhadrawi2025}     & CD8+ T CELL             & PBMCs     & 1.00 & CD8A, CD8B, GZMK\\
-  \citep{Liao2023}           & CD8+ T-CELL             & Lung      & 1.00 & CD8A, CD8B, GZMK\\
+  \multicolumn{5}{@{}l}{\textit{Complement/CD163 macrophage program (core genes: C1QB, C1QC, CD163)}} \\[2pt]
+  \citep{Liu2022skin}   & MAC3       & Chronic inflammatory skin disease & Study-specific macrophage cluster & C1QB, C1QC, CD163 \\
+  \citep{Kong2023crohn} & MACROPHAGE & Crohn disease immune atlas & Classical macrophage label & C1QB, C1QC, CD163 \\
   \bottomrule
   \end{tabular}
 \end{table*}
+
+
+\input{tables/tcell_marker_clusters}
 
 
 \clearpage
