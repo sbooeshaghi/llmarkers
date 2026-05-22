@@ -17,6 +17,11 @@ the manuscript figures and supplementary tables.
 | Supplementary Hildreth figure | `fig:hildreth_detail` | `analysis/figures/fig_hildreth_detail.pdf` | `analysis/lfc_comparison.ipynb` |
 | Supplementary T-cell cluster table | `tab:tcell_marker_clusters` | `paper/src/tables/tcell_marker_clusters.tex` | `analysis/build_tcell_marker_cluster_latex_table.py` |
 
+Standalone poster/slide wrappers are kept in
+`paper/src/figures/standalone/`. Run
+`scripts/render_paper_standalone_figures.sh` from the repository root to render
+the standalone PDFs into `paper/src/figures/standalone/build/`.
+
 ## Figure Structure
 
 1. **Figure 1: marker claims are underspecified by labels alone.**
@@ -40,7 +45,13 @@ Paper figure sources:
 - `analysis/build_fig4_joint_distribution.py`
 - `analysis/build_fig5_nomenclature_weights.py`
 - `analysis/cross_study_gene_space.py`
+- `paper/src/figures/fig_paper_celltype_joint_body.tex`
 - `paper/src/figures/fig_paper_celltype_joint.tex`
+- `paper/src/figures/standalone/fig1_paper_celltype_joint.tex`
+- `paper/src/figures/standalone/fig2_marker_recovery.tex`
+- `paper/src/figures/standalone/fig3_cross_study_unification.tex`
+- `paper/src/figures/standalone/figs1_hildreth_detail.tex`
+- `scripts/render_paper_standalone_figures.sh`
 
 Current helper scripts used by the figure/table pipeline:
 
