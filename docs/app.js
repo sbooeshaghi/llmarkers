@@ -93,6 +93,7 @@ function esc(value) {
 
 function toDoiUrl(doi) {
   if (!doi) return "";
+  if (!/^10\.\d{4,9}\//i.test(String(doi).trim())) return "";
   return `https://doi.org/${doi}`;
 }
 
@@ -297,20 +298,9 @@ function buildWhere() {
   const params = [];
 
   const collection = currentCollection();
-  if (collection === "biorxiv") {
-    clauses.push(`NOT EXISTS (
-      SELECT 1 FROM markers mx
-      WHERE mx.paper_id = p.paper_id
-      AND mx.data_id IS NOT NULL
-      AND mx.data_id <> ''
-    )`);
-  } else if (collection === "benchmark") {
-    clauses.push(`EXISTS (
-      SELECT 1 FROM markers mx
-      WHERE mx.paper_id = p.paper_id
-      AND mx.data_id IS NOT NULL
-      AND mx.data_id <> ''
-    )`);
+  if (collection !== "all") {
+    clauses.push("m.collection = ?");
+    params.push(collection);
   }
 
   const sourceType = el.sourceTypeFilter.value;
@@ -348,24 +338,9 @@ function buildWhere() {
 
 function updateSummaryCards() {
   const totalPapers = runScalar("SELECT COUNT(*) AS n FROM papers");
-  const benchmarkPapers = runScalar(
-    `SELECT COUNT(*) AS n FROM papers p
-     WHERE EXISTS (
-       SELECT 1 FROM markers m
-       WHERE m.paper_id = p.paper_id
-       AND m.data_id IS NOT NULL
-       AND m.data_id <> ''
-     )`
-  );
-  const biorxivPapers = runScalar(
-    `SELECT COUNT(*) AS n FROM papers p
-     WHERE NOT EXISTS (
-       SELECT 1 FROM markers m
-       WHERE m.paper_id = p.paper_id
-       AND m.data_id IS NOT NULL
-       AND m.data_id <> ''
-     )`
-  );
+  const benchmarkPapers = runScalar("SELECT COUNT(DISTINCT paper_id) AS n FROM markers WHERE collection = 'benchmark'");
+  const biorxivPapers = runScalar("SELECT COUNT(DISTINCT paper_id) AS n FROM markers WHERE collection = 'biorxiv'");
+  const hcaPapers = runScalar("SELECT COUNT(DISTINCT paper_id) AS n FROM markers WHERE collection = 'hca'");
   const totalMarkers = runScalar("SELECT COUNT(*) AS n FROM markers");
   const uniqueCellTypes = runScalar("SELECT COUNT(DISTINCT group_name) AS n FROM markers");
   const uniqueGenes = runScalar(
@@ -374,13 +349,14 @@ function updateSummaryCards() {
   const totalProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles");
   const benchmarkProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles WHERE collection = 'benchmark'");
   const biorxivProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles WHERE collection = 'biorxiv'");
+  const hcaProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles WHERE collection = 'hca'");
 
   el.countPapers.textContent = fmtInt(totalPapers);
-  el.countPapersDetail.textContent = `(${fmtInt(benchmarkPapers)} benchmark, ${fmtInt(biorxivPapers)} bioRxiv)`;
+  el.countPapersDetail.textContent = `(${fmtInt(benchmarkPapers)} benchmark, ${fmtInt(biorxivPapers)} bioRxiv, ${fmtInt(hcaPapers)} HCA; overlaps possible)`;
   el.countMarkers.textContent = fmtInt(totalMarkers);
   el.countMarkersDetail.textContent = `(${fmtInt(uniqueCellTypes)} cell types, ${fmtInt(uniqueGenes)} genes)`;
   el.countProfiles.textContent = fmtInt(totalProfiles);
-  el.countProfilesDetail.textContent = `(${fmtInt(benchmarkProfiles)} benchmark, ${fmtInt(biorxivProfiles)} bioRxiv)`;
+  el.countProfilesDetail.textContent = `(${fmtInt(benchmarkProfiles)} benchmark, ${fmtInt(biorxivProfiles)} bioRxiv, ${fmtInt(hcaProfiles)} HCA)`;
 }
 
 function loadFilterOptions() {
@@ -529,7 +505,7 @@ function renderRows(rows) {
       const doiUrl = toDoiUrl(doi);
       const rationale = row.source_rationale || "";
       const paperText = esc(title || doi);
-      const paperCell = doi
+      const paperCell = doiUrl
         ? `<a href="${esc(doiUrl)}" target="_blank" rel="noopener">${paperText}</a>`
         : paperText;
       const fullContext = esc(rationale);
@@ -632,7 +608,7 @@ function renderProfileResults(results, mode, query) {
     .map((result) => {
       const doiUrl = toDoiUrl(result.doi);
       const paperText = esc(result.title || result.doi || `Paper ${result.paperId}`);
-      const paperHtml = result.doi
+      const paperHtml = doiUrl
         ? `<a href="${esc(doiUrl)}" target="_blank" rel="noopener">${paperText}</a>`
         : paperText;
       const evidence = result.evidenceSentences.length

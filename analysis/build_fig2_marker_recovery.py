@@ -327,12 +327,6 @@ def plot_summary_table(ax: plt.Axes, summary: pd.DataFrame) -> None:
 def plot_cutoff_panel(ax: plt.Axes, cutoffs: pd.DataFrame) -> None:
     ax.set_xlim(0, max(180, cutoffs["optimal_n"].max() + 15))
     ax.set_ylim(0, 1.0)
-    for source_type in ["image", "text"]:
-        source_cutoffs = cutoffs[cutoffs["source_type"] == source_type]
-        mean_n = source_cutoffs["optimal_n"].mean()
-        mean_f1 = source_cutoffs["best_f1"].mean()
-        ax.axvline(mean_n, color=MEAN_LINE_COLORS[source_type], linestyle=(0, (3, 2)), linewidth=1.0, zorder=1)
-        ax.axhline(mean_f1, color=MEAN_LINE_COLORS[source_type], linestyle=(0, (3, 2)), linewidth=1.0, zorder=1)
 
     label_offsets = {
         ("Emont", "image"): (4, 0.010),
@@ -418,7 +412,6 @@ def plot_llm_panel(ax: plt.Axes, results: pd.DataFrame) -> None:
     ax.set_ylabel("F-score")
     ax.set_ylim(0, 1.0)
     ax.set_xlim(-0.55, len(METHODS) - 0.45)
-    ax.axhline(0.5, color="#D0D0D0", linewidth=0.8, zorder=0)
     ax.tick_params(axis="x", length=0)
     ax.text(-0.13, 1.09, "C", transform=ax.transAxes, fontsize=11, fontweight="bold", va="top")
 

@@ -1,0 +1,388 @@
+\RequirePackage{fix-cm}
+\documentclass[final]{article}
+
+\usepackage[paperwidth=36in,paperheight=48in,top=0.7in,bottom=0.55in,left=0.7in,right=0.7in]{geometry}
+\usepackage{graphicx}
+\graphicspath{{../analysis/figures/}{figures/}}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,matrix,positioning,shapes.geometric}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.18in}
+\setlength{\columnsep}{0.55in}
+
+\definecolor{berkeleyblue}{HTML}{003262}
+\definecolor{berkeleygold}{HTML}{FDB515}
+\definecolor{textgray}{HTML}{222222}
+\definecolor{mutedgray}{HTML}{666666}
+\definecolor{boxbg}{HTML}{F7F8FA}
+\definecolor{linegray}{HTML}{C7CCD1}
+\definecolor{softblue}{HTML}{E7EEF7}
+\definecolor{softgold}{HTML}{FFF4D6}
+\definecolor{problemline}{HTML}{B85C5C}
+\definecolor{problembg}{HTML}{FFF4F2}
+\definecolor{benchmarkline}{HTML}{B08A00}
+\definecolor{benchmarkbg}{HTML}{FFF9E8}
+\definecolor{atlasline}{HTML}{3A7D44}
+\definecolor{atlasbg}{HTML}{F0F8F0}
+
+\newcommand{\TitleFont}{\fontsize{76}{84}\selectfont}
+\newcommand{\AuthorFont}{\fontsize{34}{40}\selectfont}
+\newcommand{\AffilFont}{\fontsize{24}{30}\selectfont}
+\newcommand{\SectionFont}{\fontsize{31}{36}\selectfont\bfseries}
+\newcommand{\CompactSectionFont}{\fontsize{24}{28}\selectfont\bfseries}
+\newcommand{\BodyFont}{\fontsize{22}{28}\selectfont}
+\newcommand{\SmallBodyFont}{\fontsize{19}{24}\selectfont}
+\newcommand{\TinyBodyFont}{\fontsize{16}{20}\selectfont}
+\newcommand{\TableFont}{\fontsize{15}{18}\selectfont}
+\newcommand{\RefFont}{\fontsize{14}{17}\selectfont}
+\newcommand{\PosterCorpusRefFont}{\fontsize{3.00}{3.25}\selectfont}
+\newcommand{\CalloutFont}{\fontsize{32}{39}\selectfont}
+\newcommand{\CorpusReferencesBoxHeight}{7.40in}
+\newcommand{\ProblemTopBoxHeight}{6.75in}
+\newcommand{\ProblemBottomBoxHeight}{5.90in}
+\newcommand{\ProblemDbBoxHeight}{1.25in}
+\newcommand{\BenchmarkTopBoxHeight}{7.20in}
+\newcommand{\BenchmarkBottomBoxHeight}{7.20in}
+\newcommand{\AtlasTopBoxHeight}{4.60in}
+\newcommand{\AtlasBottomBoxHeight}{9.80in}
+\newcommand{\postercenter}[1]{%
+  {\centering #1\par}%
+}
+
+\newcommand{\posterbox}[2]{%
+  \vspace{0.18in}%
+  \begingroup
+  \setlength{\fboxsep}{0.22in}%
+  \setlength{\fboxrule}{1.2pt}%
+  \noindent\fcolorbox{berkeleyblue!28}{boxbg}{%
+    \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      {\centering\SectionFont\color{berkeleyblue}#1\par}\vspace{0.12in}
+      {\BodyFont\justifying #2\par}
+    \end{minipage}%
+  }%
+  \endgroup
+}
+
+\newcommand{\posterboxfixed}[3]{%
+  \vspace{0.18in}%
+  \begingroup
+  \setlength{\fboxsep}{0.22in}%
+  \setlength{\fboxrule}{1.2pt}%
+  \noindent\fcolorbox{berkeleyblue!28}{boxbg}{%
+    \begin{minipage}[t][#2][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      {\centering\SectionFont\color{berkeleyblue}#1\par}\vspace{0.12in}
+      {\BodyFont\justifying #3\par}
+    \end{minipage}%
+  }%
+  \endgroup
+}
+
+\newcommand{\posterboxfixedcolor}[5]{%
+  \vspace{0.18in}%
+  \begingroup
+  \setlength{\fboxsep}{0.22in}%
+  \setlength{\fboxrule}{1.4pt}%
+  \noindent\fcolorbox{#3}{#4}{%
+    \begin{minipage}[t][#2][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      {\centering\SectionFont\color{#3}#1\par}\vspace{0.12in}
+      {\BodyFont\justifying #5\par}
+    \end{minipage}%
+  }%
+  \endgroup
+}
+
+\newcommand{\posterboxfixedcolorcompact}[5]{%
+  \vspace{0.12in}%
+  \begingroup
+  \setlength{\fboxsep}{0.16in}%
+  \setlength{\fboxrule}{1.4pt}%
+  \noindent\fcolorbox{#3}{#4}{%
+    \begin{minipage}[t][#2][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      {\centering\CompactSectionFont\color{#3}#1\par}\vspace{0.07in}
+      {\TinyBodyFont\justifying #5\par}
+    \end{minipage}%
+  }%
+  \endgroup
+}
+
+\newcommand{\figurebox}[2]{%
+  \posterbox{#1}{%
+    \postercenter{\includegraphics[width=\linewidth]{#2}}
+  }%
+}
+
+\newcommand{\tikzfigurebox}[2]{%
+  \posterbox{#1}{%
+    \postercenter{\resizebox{\linewidth}{!}{\input{#2}}}
+  }%
+}
+
+\newcommand{\llmarkersBenchmarkTable}{%
+  \begingroup
+  \fontsize{9.8}{11.2}\selectfont
+  \renewcommand{\arraystretch}{1.08}
+  \setlength{\tabcolsep}{0.040in}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{@{}l rrr rrrr rrrr r@{}}
+    \toprule
+     & \multicolumn{3}{c}{\textbf{Overall}} & \multicolumn{4}{c}{\textbf{Text}} & \multicolumn{4}{c}{\textbf{Image}} & \textbf{DEG} \\
+    \cmidrule(lr){2-4} \cmidrule(lr){5-8} \cmidrule(lr){9-12} \cmidrule(lr){13-13}
+    \textbf{Dataset} & \textbf{CTs} & \textbf{Genes} & \textbf{Pairs} & \textbf{CTs} & \textbf{Genes} & \textbf{Pairs} & \textbf{\%DEG} & \textbf{CTs} & \textbf{Genes} & \textbf{Pairs} & \textbf{\%DEG} & \textbf{Pairs} \\
+    \midrule
+    Adipose (Emont)    &  45 & 105 &   346 &  20 &  23 &   30 &  80 &  44 & 104 &  344 &  39 & 43{,}471 \\
+    Adipose (Hildreth) &  31 & 141 &   234 &  21 &  53 &   66 &  92 &  31 & 124 &  207 &  96 & 46{,}357 \\
+    Bone (He)          &  27 &  75 &   370 &  26 &  69 &   98 &  53 &  24 &  29 &  309 &  13 &  5{,}382 \\
+    Eye (Gautam)       &  32 &  94 &   251 &  12 &  22 &   24 &  88 &  28 &  82 &  235 &  49 & 24{,}998 \\
+    Lung (Adams)       &  20 & 124 &   135 &   6 &  33 &   33 &  97 &  20 &  99 &  109 &  97 & 34{,}760 \\
+    Ovary (Wagner)     &   7 &  62 &    58 &   7 &  46 &   37 &  89 &   6 &  54 &   41 &  80 & 14{,}357 \\
+    Testis (Shamis)    &  19 & 125 &   171 &  15 &  91 &  123 &  78 &  11 &  59 &   64 &  94 &  9{,}663 \\
+    \midrule
+    \textbf{Total}     & \textbf{168} & \textbf{641} & \textbf{1{,}560} & \textbf{100} & \textbf{305} & \textbf{409} & \textbf{78} & \textbf{151} & \textbf{495} & \textbf{1{,}304} & \textbf{53} & \textbf{169{,}687} \\
+    \bottomrule
+  \end{tabular}
+  }%
+  \endgroup
+}
+
+\newcommand{\corpusSummaryTable}{%
+  \begingroup
+  \fontsize{12.5}{15}\selectfont
+  \renewcommand{\arraystretch}{1.18}
+  \setlength{\tabcolsep}{0.045in}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{@{}lrrrrr@{}}
+    \toprule
+    \textbf{Corpus} & \textbf{Input papers} & \textbf{Marker records} & \textbf{Human profiles} & \textbf{Non-human profiles} & \textbf{Analyzed profiles} \\
+    \midrule
+    bioRxiv preprints & 504 & 7,153 & 1,015 (70.7\%) & 420 (29.3\%) & 954 \\
+    HCA-linked papers & 434 & 16,986 & 2,443 (96.2\%) & 97 (3.8\%) & 2,397 \\
+    \midrule
+    \textbf{Total} & \textbf{938} & \textbf{24,139} & \textbf{3,458 (87.0\%)} & \textbf{517 (13.0\%)} & \textbf{3,351} \\
+    \bottomrule
+  \end{tabular}
+  }%
+  \endgroup
+}
+
+\newcommand{\figTwoPanelB}{%
+  \includegraphics[width=0.50\linewidth,trim=300pt 4pt 305pt 4pt,clip]{fig_marker_recovery.pdf}%
+}
+
+\newcommand{\figTwoPanelC}{%
+  \includegraphics[width=0.50\linewidth,trim=575pt 4pt 2pt 4pt,clip]{fig_marker_recovery.pdf}%
+}
+
+\newcommand{\annotationCalloutBridge}{%
+  \postercenter{%
+    \begin{tikzpicture}
+      \node[
+        draw=berkeleygold!85!black,
+        fill=berkeleygold!18,
+        rounded corners=6pt,
+        line width=2.4pt,
+        inner xsep=0.24in,
+        inner ysep=0.17in,
+        align=center,
+        minimum width=0.37\linewidth
+      ] (callout) {\mbox{\CalloutFont\bfseries Share your favorite cell-type markers}};
+      \draw[-{Latex[length=18pt,width=14pt]}, draw=berkeleygold!85!black, line width=3.0pt]
+        (callout.west) .. controls +(-1.4in,-0.05in) and +(-1.4in,0.28in) .. ($(callout.south)+(-7.8in,-0.44in)$);
+      \draw[-{Latex[length=18pt,width=14pt]}, draw=berkeleygold!85!black, line width=3.0pt]
+        (callout.east) .. controls +(1.4in,-0.05in) and +(1.4in,0.28in) .. ($(callout.south)+(7.8in,-0.44in)$);
+    \end{tikzpicture}%
+  }%
+}
+
+\newcommand{\posterref}[3]{%
+  \par\noindent
+  \begingroup
+  \setbox0=\vbox{%
+    \hsize=\linewidth
+    \hangindent=1.10em\hangafter=1
+    {\bfseries #1} #2 {\color{mutedgray}#3}\par
+  }%
+  \box0
+  \endgroup
+}
+
+\newcommand{\posterCorpusReferences}{%
+  \vspace{0.12in}%
+  \begingroup
+  \setlength{\fboxsep}{0.12in}%
+  \setlength{\fboxrule}{1.0pt}%
+  \noindent\fcolorbox{berkeleyblue!28}{boxbg}{%
+    \begin{minipage}[t][\CorpusReferencesBoxHeight][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      {\centering\fontsize{11}{13}\selectfont\bfseries\color{berkeleyblue}References\par}
+      \vspace{0.025in}
+      {\PosterCorpusRefFont
+      \setlength{\columnsep}{0.030in}
+      \setlength{\parskip}{0.3pt}
+      \begin{multicols}{11}
+      \input{tables/corpus_references_poster}
+      \end{multicols}}
+    \end{minipage}%
+  }%
+  \endgroup
+}
+
+\begin{document}
+\pagecolor{white}
+\color{textgray}
+
+{\color{berkeleyblue}\rule{\linewidth}{8pt}}
+\vspace{0.18in}
+
+{\TitleFont\bfseries Automated extraction and evaluation of cell-type marker genes\par}
+\vspace{0.18in}
+{\AuthorFont \underline{A. Sina Booeshaghi}$^{1}$, Nithya Appannagaari$^{1}$, Allon Wagner$^{1}$ \& Aaron Streets$^{1}$\par}
+\vspace{0.08in}
+{\AffilFont $^{1}$ University of California Berkeley, Berkeley, California USA\par}
+
+\vspace{0.25in}
+
+\begin{minipage}[t]{0.32\linewidth}
+  \posterboxfixedcolor{Cell types are underspecified}{\ProblemTopBoxHeight}{problemline}{problembg}{%
+    {\SmallBodyFont Marker genes give cell type labels meaning, but labels and markers do not always describe the same cells. Literature-extracted profiles reveal the failure modes: different names with the same markers, the same name with different markers, and partial overlaps that may reflect subtype, state, or context.\par}
+
+    \vspace{0.22in}
+    \postercenter{%
+      \begingroup
+      \setlength{\fboxsep}{0.025in}%
+      \setlength{\fboxrule}{0.45pt}%
+      \fcolorbox{black!65}{white}{%
+        \resizebox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{!}{%
+          \input{../paper/src/figures/fig_paper_celltype_joint_body}%
+        }%
+      }%
+      \endgroup
+    }
+    \vspace{0.06in}
+    {\TinyBodyFont\justifying\textbf{Figure 1.} Each node is a reported marker profile from a paper. Edges compare cell type labels or marker-gene overlap, and the joint distribution summarizes where labels and genes agree, partially overlap, or disagree.\par}
+  }
+
+  \posterboxfixedcolor{The \texttt{LLMarkers} dataset}{\ProblemBottomBoxHeight}{problemline}{problembg}{%
+    {\SmallBodyFont We built \texttt{LLMarkers}, a human-curated benchmark of 2{,}528 reported markers from seven scRNA-seq studies. It contains 168 cell types, 641 Ensembl-mapped genes, and 1{,}560 unique cell type--gene pairs linked to source evidence and differentially expressed gene (DEG) comparisons. Most pairs were figure-only (74\%), with 16\% text-only and 10\% in both.\par}
+
+    \vspace{0.20in}
+    \postercenter{\llmarkersBenchmarkTable}
+    \vspace{0.07in}
+    {\TinyBodyFont\justifying\textbf{Table 1.} \texttt{LLMarkers} contains reported marker profiles from seven single-cell RNA-seq papers, split by source modality and DEG-table overlap.\par}
+  }
+
+  \posterboxfixedcolorcompact{\texttt{LLMarkersDB} enables text-searchable markers}{\ProblemDbBoxHeight}{problemline}{problembg}{%
+    \texttt{LLMarkersDB} embeds source sentences and paper context with \texttt{sentence-transformers/all-MiniLM-L6-v2} and retrieves profiles by cosine similarity. Profiles also store Ensembl gene IDs, enabling exact gene lookup and Jaccard gene-set search across papers. Search the database at \href{https://sina.bio/llmarkers}{sina.bio/llmarkers}.
+  }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
+  \posterboxfixedcolor{Evaluating expert marker curation}{\BenchmarkTopBoxHeight}{benchmarkline}{benchmarkbg}{%
+    {\SmallBodyFont Using \texttt{LLMarkers}, we asked how expert-reported markers relate to differential expression rank. We swept the top $N$ ranked differentially expressed genes (DEGs) as predicted markers. Reported markers were enriched among strong DEGs, but rank cutoffs recovered only about half of them (mean peak F1: 0.41 text, 0.50 image).\par}
+
+    \vspace{0.20in}
+    \postercenter{%
+      \begingroup
+      \setlength{\fboxsep}{0.025in}%
+      \setlength{\fboxrule}{0.45pt}%
+      \fcolorbox{black!65}{white}{\figTwoPanelB}%
+      \endgroup
+    }
+    \vspace{0.06in}
+    {\TinyBodyFont\justifying\textbf{Figure 2.} Each point is one \texttt{LLMarkers} dataset and reporting modality. The x-axis is the optimal number of ranked DEGs and the y-axis is the F1 score at that cutoff.\par}
+  }
+
+  \posterboxfixedcolor{Evaluating LLM marker curation}{\BenchmarkBottomBoxHeight}{benchmarkline}{benchmarkbg}{%
+    {\SmallBodyFont We tested whether \texttt{claude-opus-4-6} could produce machine-readable marker records with structured cell type, gene, source sentence, and data ID fields. Extraction performed best (mean F1 0.67 for cell type--gene recovery; 0.58 when the correct data source was also required), outperforming generation (0.34) and selection (0.16).\par}
+
+    \vspace{0.19in}
+    \noindent
+    \begin{minipage}[t]{0.42\linewidth}
+      \vspace{0pt}
+      {\TinyBodyFont
+      {\centering\textbf{LLM curation tasks}\par}
+      \vspace{0.05in}
+      \raggedright
+      \textbf{Generation:} LLM proposes marker genes from cell type names only.\par
+      \vspace{0.05in}
+      \textbf{Selection:} LLM chooses markers from ranked DEG tables.\par
+      \vspace{0.05in}
+      \textbf{Extraction:} LLM reads manuscript text and extracts reported marker claims with source provenance.\par
+      \vspace{0.05in}
+      \textbf{Extraction + data linkage:} Also recovers the supporting DEG data ID.\par}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.54\linewidth}
+      \vspace{0pt}
+      \postercenter{%
+        \begingroup
+        \setlength{\fboxsep}{0.025in}%
+        \setlength{\fboxrule}{0.45pt}%
+        \fcolorbox{black!65}{white}{%
+          \includegraphics[width=0.90\linewidth,trim=575pt 4pt 2pt 4pt,clip]{fig_marker_recovery.pdf}%
+        }%
+        \endgroup
+      }
+    \end{minipage}
+    \par\vspace{0.32in}
+    {\fontsize{16}{17.5}\selectfont\justifying\textbf{Figure 3.} F1 scores for LLM marker curation tasks. Each point is one \texttt{LLMarkers} dataset; black bars show method means. Extraction was also evaluated by requiring recovery of the correct data source.\par}
+  }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
+  \posterboxfixedcolor{Large-scale marker gene curation with LLMs}{\AtlasTopBoxHeight}{atlasline}{atlasbg}{%
+    {\SmallBodyFont Because extraction performed best, we built \texttt{mrkr}, a tool that extracts marker claims, verifies supporting text, and maps human genes to Ensembl IDs. We ran it on 504 bioRxiv preprints and 434 HCA-linked publications. After filtering: 24{,}139 records and 3{,}351 profiles.\par}
+
+    \vspace{0.20in}
+    \postercenter{\corpusSummaryTable}
+    \vspace{0.07in}
+    {\TinyBodyFont\justifying\textbf{Table 2.} Large-scale \texttt{mrkr} extraction on CC-BY/CC0 bioRxiv preprints selected by human- and marker-gene search terms, and deduplicated publications linked to human HCA projects. Human and non-human percentages summarize verified profiles before the final human Ensembl-ID analysis filter.\par}
+  }
+
+  \posterboxfixedcolor{Resolving cell type underspecification}{\AtlasBottomBoxHeight}{atlasline}{atlasbg}{%
+    {\SmallBodyFont We used the large-scale corpus to return to the ambiguity in Figure 1. Each profile was encoded as a binary Ensembl gene vector and compared across papers by label and marker-gene Jaccard similarity. We then scored genes by coverage and purity within label- and marker-defined groups to nominate stable cell-type markers and context-dependent state markers.\par}
+
+    \vspace{0.14in}
+    \postercenter{%
+      \begingroup
+      \setlength{\fboxsep}{0.025in}%
+      \setlength{\fboxrule}{0.45pt}%
+      \fcolorbox{black!65}{white}{%
+        \begin{minipage}{\dimexpr0.90\linewidth-2\fboxsep-2\fboxrule\relax}
+          \centering
+          \includegraphics[width=\linewidth]{fig_cross_study_unification.pdf}\par
+          \vspace{0.08in}
+          \includegraphics[width=\linewidth]{fig_marker_program_resolution.pdf}\par
+        \end{minipage}%
+      }%
+      \endgroup
+    }
+    \vspace{0.06in}
+    {\TinyBodyFont\justifying\textbf{Figure 4.} (A) Cross-paper profile pairs classified by label relation and marker-gene Jaccard. (B) Marker-neighbor and label-neighbor bar plots show how often one representation preserves the other. (C) Observed marker-label neighborhood overlap compared with random pairs. (D) Label groups $\rightarrow$ marker genes. (E) Marker-gene groups $\rightarrow$ labels. (F) Coverage-purity F1 compares label- and marker-defined gene programs.\par}
+  }
+\end{minipage}
+
+\vspace{0.20in}
+
+\annotationCalloutBridge
+
+\vspace{-0.16in}
+
+\posterbox{Surveying markers at CSHL AI in Biology 2026}{%
+  {\SmallBodyFont\justifying This survey collects expert marker knowledge for cell-type labels in our \texttt{LLMarkersDB}. We will compare responses with \texttt{LLMarkersDB} to map synonyms, identify canonical markers, and flag context-dependent cell states.\par}
+  \vspace{0.18in}
+  \input{tables/immune_celltype_prompt}
+}
+
+\posterCorpusReferences
+
+\vspace{0.04in}
+{\color{berkeleyblue}\rule{\linewidth}{4pt}}
+
+\end{document}

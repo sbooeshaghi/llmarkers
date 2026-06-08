@@ -30,6 +30,7 @@ The raw JSON marker-record schema is documented in `docs/marker_record_schema.md
 ## Example questions
 - Which papers report `IL7R` for T cells?
 - Which marker genes were reported for monocytes in bioRxiv papers?
+- Which HCA-linked papers report macrophage markers?
 - Which benchmark markers have Ensembl IDs and DEG ranks?
 - Which profiles match a given gene list?
 
@@ -45,14 +46,14 @@ WHERE upper(m.feature_name) = 'IL7R';
 SELECT p.doi, pr.group_name, pr.gene_names_json, pr.evidence_sentences_json
 FROM profiles pr
 JOIN papers p ON p.paper_id = pr.paper_id
-WHERE pr.collection = 'biorxiv';
+WHERE pr.collection = 'hca';
 ```
 
 ## Notes
 - `source_rationale` is blank for image-derived markers on purpose.
 - `organism` stores the extracted species label for each marker.
 - `feature_id` may be blank when no Ensembl mapping was found.
-- `collection` in `profiles` is either `benchmark` or `biorxiv`.
+- `collection` in `markers` and `profiles` is one of `benchmark`, `biorxiv`, or `hca`.
 
 ## If this was useful
 - Star the repository: https://github.com/sbooeshaghi/llmarkers

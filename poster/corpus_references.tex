@@ -1,0 +1,55 @@
+\RequirePackage{fix-cm}
+\documentclass[final]{article}
+
+\usepackage[paperwidth=36in,paperheight=48in,margin=0.62in]{geometry}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.8pt}
+\setlength{\columnsep}{0.34in}
+\sloppy
+
+\definecolor{berkeleyblue}{HTML}{003262}
+\definecolor{mutedgray}{HTML}{555555}
+\definecolor{rulegray}{HTML}{C7CCD1}
+
+\newcommand{\TitleFont}{\fontsize{40}{46}\selectfont}
+\newcommand{\MetaFont}{\fontsize{12}{15}\selectfont}
+\newcommand{\RefFont}{\fontsize{6.4}{7.5}\selectfont}
+\newcommand{\SectionFont}{\fontsize{10.5}{12.0}\selectfont\bfseries}
+
+\newcommand{\corpussection}[2]{%
+  \par\smallskip
+  {\SectionFont\color{berkeleyblue}#1\par}
+  {\MetaFont\color{mutedgray}#2\par}
+  \vspace{2pt}%
+}
+
+\newcommand{\corpusref}[5]{%
+  \noindent\hangindent=0.9em\hangafter=1
+  {\bfseries #1.} {\color{mutedgray}#2.} \if\relax\detokenize{#3}\relax\else #3. \fi\textit{#4}. {\color{mutedgray}#5}.\par
+}
+
+\begin{document}
+
+{\TitleFont\bfseries\color{berkeleyblue}LLMarkers Corpus References\par}
+\vspace{0.08in}
+{\MetaFont\color{mutedgray}
+References were generated from local extracted-paper metadata and manuscript files in
+\texttt{data/biorxiv/meca} and \texttt{data/hca/manuscripts}. Entries correspond to papers
+with extracted \texttt{markers.json} files.\par}
+\vspace{0.08in}
+{\color{rulegray}\rule{\linewidth}{1.2pt}}
+\vspace{0.08in}
+
+{\RefFont
+\begin{multicols}{4}
+\input{tables/corpus_references_body}
+\end{multicols}
+}
+
+\end{document}

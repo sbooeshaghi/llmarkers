@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a SQLite database for LLMarkers + bioRxiv marker datasets.
+"""Build a SQLite database for LLMarkers, bioRxiv, and HCA marker datasets.
 
 Schema:
 - papers
@@ -173,6 +173,7 @@ def infer_title_from_manuscript_txt(path: Path) -> str | None:
             continue
         if line.startswith("-"):
             continue
+        line = re.sub(r"^#+\s*", "", line).strip()
         low = line.lower()
         if any(low.startswith(prefix) for prefix in skip_prefixes):
             continue
@@ -183,6 +184,37 @@ def infer_title_from_manuscript_txt(path: Path) -> str | None:
         return line
 
     return None
+
+
+def infer_abstract_from_manuscript_txt(path: Path) -> str | None:
+    if not path.exists():
+        return None
+
+    lines = path.read_text(encoding="utf-8", errors="ignore").splitlines()
+    start = None
+    for idx, line in enumerate(lines):
+        text = line.strip().lower()
+        if text in {"abstract", "## abstract", "# abstract"}:
+            start = idx + 1
+            break
+    if start is None:
+        return None
+
+    chunks: list[str] = []
+    for line in lines[start:]:
+        text = line.strip()
+        if text.startswith("## ") and chunks:
+            break
+        if not text or text.lower() == "abstract":
+            continue
+        if text.startswith("!["):
+            break
+        chunks.append(text)
+        if len(" ".join(chunks)) > 1800:
+            break
+
+    abstract = re.sub(r"\s+", " ", " ".join(chunks)).strip()
+    return abstract[:2000] if abstract else None
 
 
 def read_json_list(path: Path) -> list[dict[str, Any]]:
@@ -264,6 +296,32 @@ def find_biorxiv_article_xml(folder: Path) -> Path | None:
     return xml_files[0] if xml_files else None
 
 
+def parse_biorxiv_folder_metadata(folder: Path) -> PaperRecord | None:
+    manuscript_path = folder / "manuscript.md"
+    title = infer_title_from_manuscript_txt(manuscript_path)
+    abstract = infer_abstract_from_manuscript_txt(manuscript_path)
+    doi = None
+
+    text_sources = [
+        title,
+        abstract,
+        manuscript_path.read_text(encoding="utf-8", errors="ignore")[:5000] if manuscript_path.exists() else "",
+    ]
+    for text in text_sources:
+        doi = normalize_doi(text)
+        if doi:
+            break
+
+    # Current extracted MECA folders keep only markdown, markers, and metrics.
+    # When a DOI is not present in cached markdown, use the stable folder id as
+    # the paper key so bioRxiv profiles remain included in the searchable DB.
+    if doi is None:
+        doi = f"biorxiv:{folder.name}"
+
+    year = extract_year_from_text(abstract) or extract_year_from_text(title)
+    return PaperRecord(doi=doi, title=title, year=year, license=None, abstract=abstract)
+
+
 def create_schema(conn: sqlite3.Connection) -> None:
     conn.executescript(
         """
@@ -287,6 +345,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
         CREATE TABLE markers (
             marker_id INTEGER PRIMARY KEY,
             paper_id INTEGER NOT NULL REFERENCES papers(paper_id),
+            collection TEXT NOT NULL,
             organism TEXT,
             group_name TEXT NOT NULL,
             feature_name TEXT NOT NULL,
@@ -320,6 +379,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
         );
 
         CREATE INDEX idx_markers_paper_id ON markers(paper_id);
+        CREATE INDEX idx_markers_collection ON markers(collection);
         CREATE INDEX idx_markers_organism ON markers(organism);
         CREATE INDEX idx_markers_group_name ON markers(group_name);
         CREATE INDEX idx_markers_feature_id ON markers(feature_id);
@@ -402,6 +462,7 @@ def insert_marker(
     conn: sqlite3.Connection,
     paper_id: int,
     row: dict[str, Any],
+    collection: str,
     metrics: tuple[Any, Any, Any] | None = None,
 ) -> None:
     group_name = normalize_text(row.get("group_name"))
@@ -419,6 +480,7 @@ def insert_marker(
         """
         INSERT INTO markers (
             paper_id,
+            collection,
             organism,
             group_name,
             feature_name,
@@ -426,10 +488,11 @@ def insert_marker(
             source_type,
             source_rationale,
             data_id
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             paper_id,
+            collection,
             normalize_organism(row.get("organism")),
             group_name,
             feature_name,
@@ -515,7 +578,7 @@ def ingest_benchmark(conn: sqlite3.Connection, data_dir: Path) -> None:
             if metrics is None and feature_name:
                 metrics = deg_by_name.get((data_id, group_name, feature_name))
 
-            insert_marker(conn, paper_id, row, metrics=metrics)
+            insert_marker(conn, paper_id, row, collection="benchmark", metrics=metrics)
 
 
 def ingest_biorxiv(conn: sqlite3.Connection, biorxiv_dir: Path) -> None:
@@ -529,17 +592,74 @@ def ingest_biorxiv(conn: sqlite3.Connection, biorxiv_dir: Path) -> None:
             continue
 
         article_xml = find_biorxiv_article_xml(folder)
-        if article_xml is None:
-            continue
-
-        paper = parse_biorxiv_xml(article_xml)
+        paper = parse_biorxiv_xml(article_xml) if article_xml is not None else None
+        if paper is None:
+            paper = parse_biorxiv_folder_metadata(folder)
         if paper is None:
             continue
 
         paper_id = get_or_create_paper(conn, paper)
         marker_rows = read_json_list(markers_path)
         for row in marker_rows:
-            insert_marker(conn, paper_id, row, metrics=None)
+            insert_marker(conn, paper_id, row, collection="biorxiv", metrics=None)
+
+
+def parse_hca_metadata(folder: Path) -> PaperRecord | None:
+    metadata = read_json_object_relaxed(folder / "metadata.json")
+    resolution = read_json_object_relaxed(folder / "resolution.json")
+
+    doi = normalize_doi(metadata.get("doi") or metadata.get("doi_url") or metadata.get("preferred_url"))
+    if doi is None:
+        dedup_key = normalize_text(metadata.get("dedup_key"))
+        if dedup_key.lower().startswith("doi:"):
+            doi = normalize_doi(dedup_key[4:])
+    if doi is None:
+        return None
+
+    title = normalize_text(metadata.get("publication_title")) or None
+    year = extract_year_from_text(normalize_text(metadata.get("publication_title")))
+
+    lookups = resolution.get("lookups") if isinstance(resolution, dict) else None
+    if isinstance(lookups, dict):
+        europepmc = lookups.get("europepmc")
+        if isinstance(europepmc, dict):
+            title = title or normalize_text(europepmc.get("title")) or None
+            pub_year = normalize_text(europepmc.get("pub_year"))
+            if pub_year.isdigit():
+                year = int(pub_year)
+
+        crossref = lookups.get("crossref")
+        if isinstance(crossref, dict):
+            crossref_title = crossref.get("title")
+            if isinstance(crossref_title, list) and crossref_title:
+                title = title or normalize_text(crossref_title[0]) or None
+            else:
+                title = title or normalize_text(crossref_title) or None
+            if year is None:
+                year = extract_year_from_text(json.dumps(crossref))
+
+    title = title or infer_title_from_manuscript_txt(folder / "manuscript.md")
+
+    return PaperRecord(doi=doi, title=title, year=year, license=None, abstract=None)
+
+
+def ingest_hca(conn: sqlite3.Connection, manuscripts_dir: Path) -> None:
+    if not manuscripts_dir.exists():
+        return
+
+    for folder in sorted(p for p in manuscripts_dir.iterdir() if p.is_dir()):
+        markers_path = folder / "markers.json"
+        if not markers_path.exists():
+            continue
+
+        paper = parse_hca_metadata(folder)
+        if paper is None:
+            continue
+
+        paper_id = get_or_create_paper(conn, paper)
+        marker_rows = read_json_list(markers_path)
+        for row in marker_rows:
+            insert_marker(conn, paper_id, row, collection="hca", metrics=None)
 
 
 def dedupe_keep_order(values: list[str]) -> list[str]:
@@ -560,29 +680,26 @@ def build_profiles(conn: sqlite3.Connection) -> None:
             p.paper_id,
             p.title,
             p.abstract,
+            m.collection,
             m.organism,
             m.group_name,
-            CASE
-                WHEN COALESCE(m.data_id, '') <> '' THEN 'benchmark'
-                ELSE 'biorxiv'
-            END AS collection,
             m.feature_name,
             m.feature_id,
             m.source_rationale
         FROM papers AS p
         JOIN markers AS m ON m.paper_id = p.paper_id
-        ORDER BY p.paper_id, m.organism, m.group_name, m.marker_id
+        ORDER BY p.paper_id, m.collection, m.organism, m.group_name, m.marker_id
         """
     ).fetchall()
 
-    grouped: dict[tuple[int, str, str | None], dict[str, Any]] = {}
-    for paper_id, title, abstract, organism, group_name, collection, feature_name, feature_id, source_rationale in rows:
+    grouped: dict[tuple[int, str, str, str | None], dict[str, Any]] = {}
+    for paper_id, title, abstract, collection, organism, group_name, feature_name, feature_id, source_rationale in rows:
         label = normalize_text(group_name)
         if not label:
             continue
 
         normalized_organism = normalize_organism(organism)
-        key = (int(paper_id), label, normalized_organism)
+        key = (int(paper_id), collection, label, normalized_organism)
         bucket = grouped.setdefault(
             key,
             {
@@ -653,6 +770,17 @@ def build_profiles(conn: sqlite3.Connection) -> None:
         )
 
 
+def drop_markerless_papers(conn: sqlite3.Connection) -> None:
+    conn.execute(
+        """
+        DELETE FROM papers
+        WHERE paper_id NOT IN (
+            SELECT DISTINCT paper_id FROM markers
+        )
+        """
+    )
+
+
 def summarize(conn: sqlite3.Connection) -> dict[str, int]:
     def scalar(query: str) -> int:
         row = conn.execute(query).fetchone()
@@ -666,19 +794,27 @@ def summarize(conn: sqlite3.Connection) -> dict[str, int]:
             WHERE EXISTS (
                 SELECT 1 FROM markers m
                 WHERE m.paper_id = p.paper_id
-                AND m.data_id IS NOT NULL
-                AND m.data_id <> ''
+                AND m.collection = 'benchmark'
             )
             """
         ),
         "biorxiv_papers": scalar(
             """
             SELECT COUNT(*) FROM papers p
-            WHERE NOT EXISTS (
+            WHERE EXISTS (
                 SELECT 1 FROM markers m
                 WHERE m.paper_id = p.paper_id
-                AND m.data_id IS NOT NULL
-                AND m.data_id <> ''
+                AND m.collection = 'biorxiv'
+            )
+            """
+        ),
+        "hca_papers": scalar(
+            """
+            SELECT COUNT(*) FROM papers p
+            WHERE EXISTS (
+                SELECT 1 FROM markers m
+                WHERE m.paper_id = p.paper_id
+                AND m.collection = 'hca'
             )
             """
         ),
@@ -714,6 +850,8 @@ def main() -> None:
         create_schema(conn)
         ingest_benchmark(conn, args.data_dir)
         ingest_biorxiv(conn, args.data_dir / "biorxiv")
+        ingest_hca(conn, args.data_dir / "hca" / "manuscripts")
+        drop_markerless_papers(conn)
         build_profiles(conn)
         conn.commit()
 

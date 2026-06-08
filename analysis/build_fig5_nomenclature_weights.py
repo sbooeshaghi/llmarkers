@@ -14,7 +14,7 @@ from scipy.sparse import csr_matrix
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score, roc_auc_score
 
-from build_marker_stability_prototype import build_records
+from build_marker_stability_prototype import assign_neighborhood, build_records
 from build_fig5_cluster_prototypes import (
     MARKER_CLUSTER_JACCARD,
     connected_components as marker_connected_components,
@@ -30,7 +30,19 @@ from build_myeloid_profile_graph_comparison import (
     marker_sets as myeloid_marker_sets,
     summarize_components as summarize_myeloid_components,
 )
-from build_tcell_marker_cluster_summary import connected_components, label_relation, label_tokens, normalize_label
+from build_tcell_marker_cluster_summary import (
+    JACCARD_THRESHOLD as TCELL_MARKER_CLUSTER_JACCARD,
+    build_name_to_ids as build_tcell_name_to_ids,
+    component_memberships as tcell_component_memberships,
+    connected_components,
+    label_relation,
+    label_tokens,
+    marker_sets as tcell_marker_sets,
+    module_gene_rows as tcell_module_gene_rows,
+    normalize_label,
+    summarize_components as summarize_tcell_components,
+)
+from build_tcell_marker_hierarchy import profile_module_scores
 from cross_study_gene_space import REPO_ROOT, RESULTS_DIR, build_profile_summary, split_marker_text
 
 
@@ -97,11 +109,14 @@ MYELOID_GENE_WEIGHTS_PATH = RESULTS_DIR / "fig5_myeloid_nomenclature_gene_weight
 MYELOID_PAIR_SCORES_PATH = RESULTS_DIR / "fig5_myeloid_nomenclature_pair_scores.tsv"
 MYELOID_LABEL_TOKEN_SCORES_PATH = RESULTS_DIR / "fig5_myeloid_nomenclature_label_token_scores.tsv"
 MYELOID_LABEL_SILHOUETTE_PATH = RESULTS_DIR / "fig5_myeloid_nomenclature_label_silhouette_scores.tsv"
+TCELL_GENE_F1_CLUSTER_TABLE_PATH = RESULTS_DIR / "tcell_gene_f1_ratio_by_cluster.tsv"
+TCELL_GENE_F1_GENE_SUMMARY_PATH = RESULTS_DIR / "tcell_gene_f1_ratio_gene_summary.tsv"
 REPORT_PATH = RESULTS_DIR / "fig5_nomenclature_weights_report.md"
 FIGURE_PATH = FIGURE_DIR / "fig5_nomenclature_weights.pdf"
 FIGURE_PNG_PATH = FIGURE_DIR / "fig5_nomenclature_weights.png"
 MAIN_FIGURE_PATH = FIGURE_DIR / "fig_marker_program_resolution.pdf"
 MAIN_FIGURE_PNG_PATH = FIGURE_DIR / "fig_marker_program_resolution.png"
+TCELL_GENE_F1_PSEUDOCOUNT = 0.02
 EXAMPLE_GROUPS = [
     {
         "key": "TREG",
@@ -701,6 +716,216 @@ def group_gene_scores(
     )
 
 
+def profile_uid(row: pd.Series) -> str:
+    return f"{row['source_corpus']}|{row['paper_id']}|{row['cell_type']}"
+
+
+def build_tcell_marker_groups(
+    profiles_df: pd.DataFrame,
+    id_to_name: dict[str, str],
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    tcell_df = profiles_df.copy()
+    tcell_df["neighborhood"] = tcell_df["cell_type"].map(assign_neighborhood)
+    tcell_df = tcell_df.loc[tcell_df["neighborhood"].eq("T cell")].copy().reset_index(drop=True)
+    if tcell_df.empty:
+        return pd.DataFrame(), pd.DataFrame()
+
+    profile_gene_sets = tcell_marker_sets(tcell_df)
+    gene_vocab = sorted(set().union(*profile_gene_sets)) if profile_gene_sets else []
+    records_df = build_records()
+    name_to_ids = build_tcell_name_to_ids(records_df)
+    module_genes_df = tcell_module_gene_rows(name_to_ids, set(gene_vocab))
+    module_scores_df = profile_module_scores(profile_gene_sets, module_genes_df)
+    tcell_df["profile_index"] = np.arange(len(tcell_df))
+    tcell_df = tcell_df.merge(module_scores_df, on="profile_index", how="left")
+
+    components, edges = connected_components(
+        profile_gene_sets,
+        tcell_df["paper_key"].tolist(),
+        threshold=TCELL_MARKER_CLUSTER_JACCARD,
+    )
+    summary_df = summarize_tcell_components(tcell_df, profile_gene_sets, id_to_name, components, edges)
+    membership_df = tcell_component_memberships(tcell_df, components, summary_df)
+    return summary_df, membership_df
+
+
+def build_tcell_label_gene_reference(
+    profiles_df: pd.DataFrame,
+    tcell_membership_df: pd.DataFrame,
+    id_to_name: dict[str, str],
+    min_label_profiles: int = MIN_LABEL_PROFILE_COUNT,
+) -> pd.DataFrame:
+    if tcell_membership_df.empty:
+        return pd.DataFrame()
+
+    uid_to_profile_idx = profiles_df.set_index("profile_uid")["profile_idx"].astype(int).to_dict()
+    membership_df = tcell_membership_df.copy()
+    membership_df["profile_uid"] = membership_df.apply(profile_uid, axis=1)
+    tcell_profile_indices = set(membership_df["profile_uid"].map(uid_to_profile_idx).dropna().astype(int))
+    tcell_df = profiles_df.loc[profiles_df["profile_idx"].isin(tcell_profile_indices)].copy()
+    label_counts = tcell_df["normalized_cell_type"].value_counts()
+    eligible_labels = label_counts.loc[label_counts >= min_label_profiles].index.tolist()
+
+    label_tables = []
+    for label in eligible_labels:
+        label_profile_indices = set(
+            profiles_df.loc[profiles_df["normalized_cell_type"].eq(label), "profile_idx"].astype(int)
+        )
+        scores_df = group_gene_scores(
+            profiles_df,
+            label_profile_indices,
+            id_to_name,
+            f"label {label}",
+        )
+        if scores_df.empty:
+            continue
+        scores_df["label_group"] = label
+        label_tables.append(scores_df)
+
+    if not label_tables:
+        return pd.DataFrame()
+
+    all_scores = pd.concat(label_tables, ignore_index=True)
+    best_rows = (
+        all_scores.sort_values(
+            ["coverage_purity_hmean", "coverage", "purity", "n_profiles_group"],
+            ascending=[False, False, False, False],
+        )
+        .drop_duplicates("gene_id")
+        .rename(
+            columns={
+                "label_group": "best_label_group",
+                "coverage_purity_hmean": "best_label_f1",
+                "coverage": "best_label_coverage",
+                "purity": "best_label_purity",
+                "n_profiles_group": "best_label_n_profiles",
+            }
+        )
+    )
+    return best_rows[
+        [
+            "gene_id",
+            "gene_name",
+            "best_label_group",
+            "best_label_f1",
+            "best_label_coverage",
+            "best_label_purity",
+            "best_label_n_profiles",
+        ]
+    ]
+
+
+def marker_to_label_ratio(marker_f1: float, label_f1: float) -> float:
+    if label_f1 == 0:
+        return np.inf if marker_f1 > 0 else 1.0
+    return marker_f1 / label_f1
+
+
+def marker_to_label_log2_ratio(marker_f1: float, label_f1: float) -> float:
+    return float(
+        np.log2(
+            (marker_f1 + TCELL_GENE_F1_PSEUDOCOUNT)
+            / (label_f1 + TCELL_GENE_F1_PSEUDOCOUNT)
+        )
+    )
+
+
+def classify_tcell_gene_shift(marker_f1: float, label_f1: float) -> str:
+    if marker_f1 >= 0.25 and label_f1 >= 0.25:
+        return "high in both"
+    if marker_f1 >= 0.12 and marker_f1 >= label_f1 * 1.5:
+        return "marker-cluster enriched"
+    if label_f1 >= 0.12 and label_f1 >= marker_f1 * 1.5:
+        return "label enriched"
+    return "weak or similar"
+
+
+def build_tcell_gene_f1_tables(
+    profiles_df: pd.DataFrame,
+    id_to_name: dict[str, str],
+    tcell_summary_df: pd.DataFrame,
+    tcell_membership_df: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    if tcell_summary_df.empty or tcell_membership_df.empty:
+        return pd.DataFrame(), pd.DataFrame()
+
+    uid_to_profile_idx = profiles_df.set_index("profile_uid")["profile_idx"].astype(int).to_dict()
+    membership_df = tcell_membership_df.copy()
+    membership_df["profile_uid"] = membership_df.apply(profile_uid, axis=1)
+    membership_df["global_profile_idx"] = membership_df["profile_uid"].map(uid_to_profile_idx)
+    membership_df = membership_df.dropna(subset=["global_profile_idx"])
+    membership_df["global_profile_idx"] = membership_df["global_profile_idx"].astype(int)
+
+    label_reference_df = build_tcell_label_gene_reference(
+        profiles_df,
+        membership_df,
+        id_to_name,
+    )
+    label_reference = label_reference_df.set_index("gene_id").to_dict("index") if not label_reference_df.empty else {}
+    summary_by_component = tcell_summary_df.set_index("component").to_dict("index")
+
+    rows = []
+    for component, component_df in membership_df.groupby("component", sort=True):
+        profile_indices = set(component_df["global_profile_idx"].astype(int))
+        marker_scores = group_gene_scores(
+            profiles_df,
+            profile_indices,
+            id_to_name,
+            f"T-cell marker cluster C{component}",
+        )
+        if marker_scores.empty:
+            continue
+        summary = summary_by_component.get(component, {})
+        for row in marker_scores.itertuples(index=False):
+            label_ref = label_reference.get(row.gene_id, {})
+            best_label_f1 = float(label_ref.get("best_label_f1", 0.0) or 0.0)
+            marker_f1 = float(row.coverage_purity_hmean)
+            rows.append(
+                {
+                    "component": int(component),
+                    "dominant_program": summary.get("dominant_program"),
+                    "n_profiles_cluster": int(row.n_profiles_group),
+                    "n_papers_cluster": summary.get("papers"),
+                    "n_labels_cluster": summary.get("labels"),
+                    "top_labels": summary.get("top_labels"),
+                    "core_marker_genes": summary.get("core_marker_genes"),
+                    "gene_id": row.gene_id,
+                    "gene_name": row.gene_name,
+                    "marker_cluster_f1": marker_f1,
+                    "marker_cluster_coverage": row.coverage,
+                    "marker_cluster_purity": row.purity,
+                    "marker_cluster_gene_count": int(row.n_profiles_with_gene_in_group),
+                    "global_gene_count": int(row.n_profiles_with_gene_global),
+                    "best_label_f1": best_label_f1,
+                    "best_label_group": label_ref.get("best_label_group"),
+                    "best_label_coverage": label_ref.get("best_label_coverage", 0.0),
+                    "best_label_purity": label_ref.get("best_label_purity", 0.0),
+                    "best_label_n_profiles": label_ref.get("best_label_n_profiles", 0),
+                    "marker_to_label_f1_ratio": marker_to_label_ratio(marker_f1, best_label_f1),
+                    "log2_marker_to_label_f1_ratio": marker_to_label_log2_ratio(marker_f1, best_label_f1),
+                    "shift_class": classify_tcell_gene_shift(marker_f1, best_label_f1),
+                }
+            )
+
+    cluster_gene_df = pd.DataFrame(rows)
+    if cluster_gene_df.empty:
+        return cluster_gene_df, pd.DataFrame()
+    cluster_gene_df = cluster_gene_df.sort_values(
+        ["component", "log2_marker_to_label_f1_ratio", "marker_cluster_f1"],
+        ascending=[True, False, False],
+    )
+    gene_summary_df = (
+        cluster_gene_df.sort_values(
+            ["marker_cluster_f1", "log2_marker_to_label_f1_ratio"],
+            ascending=[False, False],
+        )
+        .drop_duplicates("gene_id")
+        .sort_values(["log2_marker_to_label_f1_ratio", "marker_cluster_f1"], ascending=[False, False])
+        .reset_index(drop=True)
+    )
+    return cluster_gene_df, gene_summary_df
+
+
 def select_marker_cluster_for_label(
     marker_cluster_summary_df: pd.DataFrame,
     label: str,
@@ -899,6 +1124,178 @@ def add_group_gene_f1_panel(
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_linewidth(0.5)
     ax.spines["bottom"].set_linewidth(0.5)
+
+
+def add_tcell_gene_f1_panel(
+    ax,
+    gene_summary_df: pd.DataFrame,
+    title: str,
+) -> None:
+    ax.set_title(title, loc="left", fontsize=8.2, fontweight="bold", pad=5)
+    if gene_summary_df.empty:
+        ax.text(0.5, 0.5, "No T-cell genes to compare", ha="center", va="center", fontsize=7.0)
+        ax.axis("off")
+        return
+
+    colors = {
+        "marker-cluster enriched": "#7fbf7b",
+        "label enriched": "#ef8a62",
+        "high in both": "#67a9cf",
+        "weak or similar": "#d9d9d9",
+    }
+    plot_df = gene_summary_df.loc[
+        gene_summary_df["marker_cluster_f1"].ge(0.08)
+        | gene_summary_df["best_label_f1"].ge(0.08)
+    ].copy()
+    if plot_df.empty:
+        plot_df = gene_summary_df.copy()
+    plot_df["delta_marker_minus_label"] = plot_df["marker_cluster_f1"] - plot_df["best_label_f1"]
+    plot_df["min_f1"] = plot_df[["marker_cluster_f1", "best_label_f1"]].min(axis=1)
+
+    for shift_class, group_df in plot_df.groupby("shift_class", sort=False):
+        ax.scatter(
+            group_df["best_label_f1"],
+            group_df["marker_cluster_f1"],
+            s=18,
+            color=colors.get(shift_class, "#d9d9d9"),
+            edgecolor="#222222",
+            linewidth=0.35,
+            alpha=0.9,
+            label=shift_class,
+            zorder=2,
+        )
+    ax.plot([0, 1], [0, 1], color="#777777", linewidth=0.65, linestyle="--", zorder=1)
+
+    marker_extreme_df = (
+        plot_df.loc[
+            plot_df["shift_class"].eq("marker-cluster enriched")
+            & plot_df["marker_cluster_f1"].ge(0.12)
+        ]
+        .sort_values("delta_marker_minus_label", ascending=False)
+        .head(8)
+    )
+    label_extreme_df = (
+        plot_df.loc[plot_df["shift_class"].eq("label enriched")]
+        .sort_values("delta_marker_minus_label", ascending=True)
+        .head(4)
+    )
+    shared_extreme_df = (
+        plot_df.loc[plot_df["shift_class"].eq("high in both")]
+        .sort_values(["min_f1", "marker_cluster_f1"], ascending=[False, False])
+        .head(5)
+    )
+    shared_marker_extreme_df = (
+        plot_df.loc[plot_df["shift_class"].eq("high in both")]
+        .sort_values("marker_cluster_f1", ascending=False)
+        .head(1)
+    )
+    extreme_df = (
+        pd.concat(
+            [marker_extreme_df, label_extreme_df, shared_extreme_df, shared_marker_extreme_df],
+            ignore_index=True,
+        )
+        .drop_duplicates("gene_id")
+    )
+    if not extreme_df.empty:
+        ax.scatter(
+            extreme_df["best_label_f1"],
+            extreme_df["marker_cluster_f1"],
+            s=42,
+            facecolors="none",
+            edgecolor="#111111",
+            linewidth=0.85,
+            alpha=1.0,
+            zorder=4,
+        )
+
+    label_genes = [
+        "SELL",
+        "CCR7",
+        "HAVCR2",
+        "PRF1",
+        "GZMB",
+        "ZNF683",
+        "CD3G",
+        "FOXP3",
+        "CD3D",
+        "BATF",
+        "TNFRSF4",
+        "TNFRSF9",
+        "CD8B",
+    ]
+    label_genes = [gene for gene in label_genes if gene in set(extreme_df["gene_name"])]
+    label_df = plot_df.loc[plot_df["gene_name"].isin(label_genes)].copy()
+    label_df["label_order"] = label_df["gene_name"].map({gene: idx for idx, gene in enumerate(label_genes)})
+    label_df = label_df.sort_values("label_order")
+    label_positions = {
+        "SELL": (0.31, 0.74),
+        "CD3G": (0.39, 0.70),
+        "CCR7": (0.31, 0.60),
+        "HAVCR2": (0.31, 0.50),
+        "GZMB": (0.31, 0.38),
+        "PRF1": (0.31, 0.27),
+        "ZNF683": (0.31, 0.16),
+        "FOXP3": (0.69, 0.49),
+        "CD3D": (0.69, 0.60),
+        "TNFRSF4": (0.58, 0.28),
+        "BATF": (0.58, 0.20),
+        "TNFRSF9": (0.58, 0.12),
+        "CD8B": (0.58, 0.04),
+    }
+    for idx, row in enumerate(label_df.itertuples(index=False)):
+        text_x, text_y = label_positions.get(
+            row.gene_name,
+            (
+                min(0.95, row.best_label_f1 + 0.16),
+                min(0.96, max(0.04, row.marker_cluster_f1 + (0.07 if idx % 2 == 0 else -0.07))),
+            ),
+        )
+        ax.annotate(
+            row.gene_name,
+            (row.best_label_f1, row.marker_cluster_f1),
+            xytext=(text_x, text_y),
+            textcoords="data",
+            ha="left",
+            va="center",
+            fontsize=5.6,
+            bbox={
+                "boxstyle": "round,pad=0.12",
+                "facecolor": "white",
+                "edgecolor": "none",
+                "alpha": 0.85,
+            },
+            arrowprops={
+                "arrowstyle": "-",
+                "linewidth": 0.35,
+                "color": "#555555",
+                "shrinkA": 2.5,
+                "shrinkB": 2.5,
+            },
+            annotation_clip=False,
+            zorder=5,
+        )
+
+    ax.set_xlim(-0.03, 1.03)
+    ax.set_ylim(-0.03, 1.03)
+    ax.set_aspect("equal", adjustable="box")
+    ax.set_xlabel("Best F1 in repeated T-cell label", fontsize=7.0)
+    ax.set_ylabel("Best F1 in T-cell marker cluster", fontsize=7.0)
+    ax.tick_params(axis="x", labelsize=6.0, length=2, width=0.5)
+    ax.tick_params(axis="y", labelsize=6.0, length=2, width=0.5)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_linewidth(0.5)
+    ax.spines["bottom"].set_linewidth(0.5)
+    ax.legend(
+        loc="upper center",
+        bbox_to_anchor=(0.5, -0.24),
+        ncol=2,
+        frameon=False,
+        fontsize=5.4,
+        handlelength=1.1,
+        columnspacing=0.8,
+        handletextpad=0.35,
+    )
 
 
 def run_nomenclature_model(
@@ -1443,6 +1840,16 @@ def main() -> None:
         marker_cluster_summary_df,
         marker_cluster_membership_df,
     )
+    tcell_marker_summary_df, tcell_marker_membership_df = build_tcell_marker_groups(
+        profiles_df,
+        id_to_name,
+    )
+    tcell_gene_f1_cluster_df, tcell_gene_f1_summary_df = build_tcell_gene_f1_tables(
+        profiles_df,
+        id_to_name,
+        tcell_marker_summary_df,
+        tcell_marker_membership_df,
+    )
     example_results = []
     label_group_gene_score_tables = []
     marker_group_gene_score_tables = []
@@ -1525,6 +1932,8 @@ def main() -> None:
     label_group_gene_scores_df.to_csv(LABEL_GROUP_GENE_SCORES_PATH, sep="\t", index=False)
     marker_group_gene_scores_df.to_csv(MARKER_GROUP_GENE_SCORES_PATH, sep="\t", index=False)
     group_gene_f1_comparison_df.to_csv(GROUP_GENE_F1_COMPARISON_PATH, sep="\t", index=False)
+    tcell_gene_f1_cluster_df.to_csv(TCELL_GENE_F1_CLUSTER_TABLE_PATH, sep="\t", index=False)
+    tcell_gene_f1_summary_df.to_csv(TCELL_GENE_F1_GENE_SUMMARY_PATH, sep="\t", index=False)
     myeloid_gene_weights_df.to_csv(MYELOID_GENE_WEIGHTS_PATH, sep="\t", index=False)
     myeloid_pair_df.to_csv(MYELOID_PAIR_SCORES_PATH, sep="\t", index=False)
     myeloid_label_token_df.to_csv(MYELOID_LABEL_TOKEN_SCORES_PATH, sep="\t", index=False)
@@ -1636,18 +2045,17 @@ def main() -> None:
         high_n=1,
         low_n=1,
     )
-    add_group_gene_f1_panel(
+    add_tcell_gene_f1_panel(
         main_axes[2],
-        example_results[0]["f1_scores"],
-        "TREG gene F1 shifts",
-        max_labels_each_side=3,
+        tcell_gene_f1_summary_df,
+        "T-cell gene F1 shifts",
     )
     main_axes[0].set_box_aspect(1)
     main_axes[1].set_box_aspect(1)
     main_axes[2].set_aspect("equal", adjustable="box")
     for axis, panel_label in zip(main_axes, ["D", "E", "F"], strict=False):
         legend = axis.get_legend()
-        if legend is not None:
+        if legend is not None and panel_label != "F":
             legend.remove()
         add_panel_label(axis, panel_label, x=-0.18, y=1.14)
 
@@ -1667,6 +2075,8 @@ def main() -> None:
     print(f"Label-derived example genes scored: {len(label_group_gene_scores_df):,}")
     print(f"Marker-derived example genes scored: {len(marker_group_gene_scores_df):,}")
     print(f"Label/marker example gene F1 scores compared: {len(group_gene_f1_comparison_df):,}")
+    print(f"T-cell marker groups: {len(tcell_marker_summary_df):,}")
+    print(f"T-cell marker/label gene F1 scores compared: {len(tcell_gene_f1_cluster_df):,}")
     print(f"Myeloid C1-C3 profiles: {len(myeloid_profiles_df):,}")
     print(f"Myeloid C1-C3 shared-gene profile pairs: {len(myeloid_pair_df):,}")
     print(f"Myeloid C1-C3 label-linked fraction: {myeloid_pair_df['label_linked'].mean():.3f}")
@@ -1688,6 +2098,8 @@ def main() -> None:
     print(f"Wrote {LABEL_GROUP_GENE_SCORES_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {MARKER_GROUP_GENE_SCORES_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {GROUP_GENE_F1_COMPARISON_PATH.relative_to(REPO_ROOT)}")
+    print(f"Wrote {TCELL_GENE_F1_CLUSTER_TABLE_PATH.relative_to(REPO_ROOT)}")
+    print(f"Wrote {TCELL_GENE_F1_GENE_SUMMARY_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {MYELOID_GENE_WEIGHTS_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {MYELOID_PAIR_SCORES_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {MYELOID_LABEL_TOKEN_SCORES_PATH.relative_to(REPO_ROOT)}")

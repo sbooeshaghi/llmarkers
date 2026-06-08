@@ -1,0 +1,237 @@
+partition	coverage_threshold	method	rank	gene_id	gene_name	role	pair_constraints_covered	new_pair_constraints_covered_greedy	n_on_groups	n_groups	mean_on_group_coverage	global_profile_count	on_groups
+broad_neighborhoods	0.05	greedy_set_cover	1	ENSG00000100450	GZMH	not_tested	12	12.0	2	8	0.06546118951612903	31	NK cell; T cell
+broad_neighborhoods	0.05	greedy_set_cover	2	ENSG00000140968	IRF8	not_tested	12	8.0	2	8	0.07566220823498558	21	B cell; dendritic cell
+broad_neighborhoods	0.05	greedy_set_cover	3	ENSG00000203747	FCGR3A	not_tested	12	4.0	2	8	0.14738598442714126	58	NK cell; monocyte/macrophage
+broad_neighborhoods	0.05	greedy_set_cover	4	ENSG00000007908	SELE	not_tested	7	2.0	1	8	0.06666666666666667	15	endothelial
+broad_neighborhoods	0.05	greedy_set_cover	5	ENSG00000004468	CD38	not_tested	7	1.0	1	8	0.13978494623655913	35	B cell
+broad_neighborhoods	0.05	greedy_set_cover	6	ENSG00000011465	DCN	not_tested	7	1.0	1	8	0.16	57	fibroblast/stromal
+broad_neighborhoods	0.05	ilp_minimum	1	ENSG00000139193	CD27	exchangeable_in_minimum_panels	12		2	8	0.10752688172043011	43	B cell; NK cell
+broad_neighborhoods	0.05	ilp_minimum	2	ENSG00000168542	COL3A1	exchangeable_in_minimum_panels	7		1	8	0.10666666666666667	35	fibroblast/stromal
+broad_neighborhoods	0.05	ilp_minimum	3	ENSG00000198788	MUC2	exchangeable_in_minimum_panels	7		1	8	0.08870967741935484	14	epithelial
+broad_neighborhoods	0.05	ilp_minimum	4	ENSG00000261371	PECAM1	exchangeable_in_minimum_panels	7		1	8	0.3333333333333333	52	endothelial
+broad_neighborhoods	0.05	ilp_minimum	5	ENSG00000274221	CCL3	exchangeable_in_minimum_panels	12		2	8	0.07794374702049897	47	NK cell; monocyte/macrophage
+broad_neighborhoods	0.05	ilp_minimum	6	ENSG00000275302	CCL4	exchangeable_in_minimum_panels	12		2	8	0.07768397177419355	55	NK cell; T cell
+broad_neighborhoods	0.1	greedy_set_cover	1	ENSG00000004468	CD38	not_tested	7	7.0	1	8	0.13978494623655913	35	B cell
+broad_neighborhoods	0.1	greedy_set_cover	2	ENSG00000011465	DCN	not_tested	7	6.0	1	8	0.16	57	fibroblast/stromal
+broad_neighborhoods	0.1	greedy_set_cover	3	ENSG00000073282	TP63	not_tested	7	5.0	1	8	0.10483870967741936	34	epithelial
+broad_neighborhoods	0.1	greedy_set_cover	4	ENSG00000081059	TCF7	not_tested	7	4.0	1	8	0.10546875	43	T cell
+broad_neighborhoods	0.1	greedy_set_cover	5	ENSG00000100453	GZMB	not_tested	7	3.0	1	8	0.14516129032258066	66	NK cell
+broad_neighborhoods	0.1	greedy_set_cover	6	ENSG00000110799	VWF	not_tested	7	2.0	1	8	0.25333333333333335	32	endothelial
+broad_neighborhoods	0.1	greedy_set_cover	7	ENSG00000129226	CD68	not_tested	7	1.0	1	8	0.11330049261083744	39	monocyte/macrophage
+broad_neighborhoods	0.1	ilp_minimum	1	ENSG00000168542	COL3A1	exchangeable_in_minimum_panels	7		1	8	0.10666666666666667	35	fibroblast/stromal
+broad_neighborhoods	0.1	ilp_minimum	2	ENSG00000177455	CD19	exchangeable_in_minimum_panels	7		1	8	0.25806451612903225	32	B cell
+broad_neighborhoods	0.1	ilp_minimum	3	ENSG00000177575	CD163	exchangeable_in_minimum_panels	7		1	8	0.10837438423645321	60	monocyte/macrophage
+broad_neighborhoods	0.1	ilp_minimum	4	ENSG00000186847	KRT14	exchangeable_in_minimum_panels	7		1	8	0.1532258064516129	41	epithelial
+broad_neighborhoods	0.1	ilp_minimum	5	ENSG00000197992	CLEC9A	exchangeable_in_minimum_panels	7		1	8	0.2682926829268293	20	dendritic cell
+broad_neighborhoods	0.1	ilp_minimum	6	ENSG00000198851	CD3E	exchangeable_in_minimum_panels	7		1	8	0.1015625	37	T cell
+broad_neighborhoods	0.1	ilp_minimum	7	ENSG00000261371	PECAM1	exchangeable_in_minimum_panels	7		1	8	0.3333333333333333	52	endothelial
+broad_neighborhoods	0.2	greedy_set_cover	1	ENSG00000105369	CD79A	not_tested	4	4.0	1	5	0.26881720430107525	31	B cell
+broad_neighborhoods	0.2	greedy_set_cover	2	ENSG00000105374	NKG7	not_tested	4	3.0	1	5	0.20967741935483872	52	NK cell
+broad_neighborhoods	0.2	greedy_set_cover	3	ENSG00000110799	VWF	not_tested	4	2.0	1	5	0.25333333333333335	32	endothelial
+broad_neighborhoods	0.2	greedy_set_cover	4	ENSG00000158481	CD1C	not_tested	4	1.0	1	5	0.2682926829268293	27	dendritic cell
+broad_neighborhoods	0.2	ilp_minimum	1	ENSG00000177455	CD19	exchangeable_in_minimum_panels	4		1	5	0.25806451612903225	32	B cell
+broad_neighborhoods	0.2	ilp_minimum	2	ENSG00000197992	CLEC9A	exchangeable_in_minimum_panels	4		1	5	0.2682926829268293	20	dendritic cell
+broad_neighborhoods	0.2	ilp_minimum	3	ENSG00000203747	FCGR3A	exchangeable_in_minimum_panels	4		1	5	0.22580645161290322	58	NK cell
+broad_neighborhoods	0.2	ilp_minimum	4	ENSG00000261371	PECAM1	exchangeable_in_minimum_panels	4		1	5	0.3333333333333333	52	endothelial
+reported_exact_labels_min5	0.05	greedy_set_cover	1	ENSG00000107796	ACTA2	not_tested	826	826.0	14	73	0.3279478458049887	94	BASAL; CARDIOMYOCYTE; CLUSTER 3; CLUSTER 7; EC; FB 1; FB 2; MESENCHYMAL; MYOFIBROBLAST; MYOFIBROBLASTS; PERICYTE; PERICYTES; SMC; SMOOTH MUSCLE CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	2	ENSG00000129226	CD68	not_tested	520	408.0	8	73	0.15577729263074092	39	CLUSTER 4; IMMUNE CELL; MAC 2; MACROPHAGE; MACROPHAGES; MICROGLIA; MONOCYTE; MYELOID CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	3	ENSG00000271503	CCL5	not_tested	576	301.0	9	73	0.11929863651999877	43	CD 4 T CELL; CD 8 T CELL; CLUSTER 2; CLUSTER 3; CLUSTER 4; CLUSTER 7; DC; NK CELL; NK CELLS
+reported_exact_labels_min5	0.05	greedy_set_cover	4	ENSG00000174059	CD34	not_tested	520	254.0	8	73	0.17856116584564863	38	EC; ENDOTHELIAL; ENDOTHELIAL CELL; FB 1; FIBROBLAST; HSC; LYMPHOCYTE; STEM CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	5	ENSG00000165092	ALDH1A1	not_tested	462	176.0	7	73	0.15819906910132472	19	ALPHA CELL; ASTROCYTES; CELL; CLUSTER 0; CLUSTER 1; CLUSTER 3; HSC
+reported_exact_labels_min5	0.05	greedy_set_cover	6	ENSG00000125398	SOX9	not_tested	402	128.0	6	73	0.24126984126984122	52	ASTROCYTES; C 1; DUCTAL CELL; EPITHELIAL CELL; OPC; STEM CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	7	ENSG00000177455	CD19	not_tested	276	104.0	4	73	0.34791666666666665	32	B CELL; B CELLS; MEMORY B CELL; PLASMA CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	8	ENSG00000168685	IL7R	not_tested	520	84.0	8	73	0.13817768435125247	71	CD 4 T CELL; CD 8 T CELL; CLUSTER 4; MYELOID CELL; NK CELL; T CELL; T CELLS; TREG
+reported_exact_labels_min5	0.05	greedy_set_cover	9	ENSG00000113721	PDGFRB	not_tested	576	70.0	9	73	0.2471157939548744	46	FIBROBLAST; MESENCHYMAL; MYOFIBROBLAST; PC; PERICYTE; PERICYTES; PODOCYTE; SMOOTH MUSCLE CELL; STEM CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	10	ENSG00000157404	KIT	not_tested	340	56.0	5	73	0.20865800865800868	42	CLUSTER 4; LYMPHOCYTE; MAST CELL; MELANOCYTE; TUFT CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	11	ENSG00000160307	S100B	not_tested	340	47.0	5	73	0.10496031746031745	20	ASTROCYTE; CLUSTER 3; CLUSTER 5; NK CELL; OLIGODENDROCYTE
+reported_exact_labels_min5	0.05	greedy_set_cover	12	ENSG00000139329	LUM	not_tested	462	36.0	7	73	0.17242552193291108	31	C 1; CLUSTER 0; CLUSTER 3; DENDRITIC CELL; FIBROBLAST; FIBROBLASTS; MESENCHYMAL
+reported_exact_labels_min5	0.05	greedy_set_cover	13	ENSG00000136826	KLF4	not_tested	340	30.0	5	73	0.17774853801169593	25	CDC 2; CLUSTER 2; ENDOTHELIAL; GOBLET CELL; MAC 2
+reported_exact_labels_min5	0.05	greedy_set_cover	14	ENSG00000204983	PRSS1	not_tested	210	22.0	3	73	0.17619047619047615	4	ACINAR CELL; BETA CELL; IMMUNE CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	15	ENSG00000162992	NEUROD1	not_tested	210	16.0	3	73	0.2922305764411028	15	CELL; ENTEROENDOCRINE CELL; EXCITATORY NEURON
+reported_exact_labels_min5	0.05	greedy_set_cover	16	ENSG00000186847	KRT14	not_tested	276	12.0	4	73	0.2631578947368421	41	BASAL; BASAL CELL; CLUSTER 2; EPITHELIAL CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	17	ENSG00000169710	FASN	not_tested	210	10.0	3	73	0.17037037037037037	4	ADIPOCYTE; CLUSTER 5; MEMORY B CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	18	ENSG00000163017	ACTG2	not_tested	402	9.0	6	73	0.23644179894179898	14	CLUSTER 0; CLUSTER 1; MYOFIBROBLAST; MYOFIBROBLASTS; SMC; SMOOTH MUSCLE CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	19	ENSG00000090382	LYZ	not_tested	276	8.0	4	73	0.26249999999999996	40	AT 2; GOBLET CELL; MONOCYTE; MYELOID CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	20	ENSG00000140968	IRF8	not_tested	210	6.0	3	73	0.2383838383838384	21	B CELL; CDC 1; DC
+reported_exact_labels_min5	0.05	greedy_set_cover	21	ENSG00000011465	DCN	not_tested	402	4.0	6	73	0.24192397265419577	57	C 1; CD 4 T CELL; CLUSTER 5; FIBROBLAST; FIBROBLASTS; MACROPHAGES
+reported_exact_labels_min5	0.05	greedy_set_cover	22	ENSG00000117318	ID3	not_tested	340	4.0	5	73	0.12250000000000001	18	ASTROCYTES; BETA CELL; CLUSTER 3; PLASMA CELL; T CELLS
+reported_exact_labels_min5	0.05	greedy_set_cover	23	ENSG00000164120	HPGD	not_tested	142	4.0	2	73	0.13333333333333333	4	HEPATOCYTE; MAST CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	24	ENSG00000106483	SFRP4	not_tested	276	3.0	4	73	0.17774122807017545	9	CLUSTER 2; FB 1; FB 2; MYOFIBROBLAST
+reported_exact_labels_min5	0.05	greedy_set_cover	25	ENSG00000026508	CD44	not_tested	520	2.0	8	73	0.12133581502776548	51	ASTROCYTE; ASTROCYTES; CD 4 T CELL; CLUSTER 2; CLUSTER 3; CLUSTER 5; IMMUNE CELL; T CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	26	ENSG00000075213	SEMA3A	not_tested	142	2.0	2	73	0.17142857142857143	3	PODOCYTE; SMC
+reported_exact_labels_min5	0.05	greedy_set_cover	27	ENSG00000121904	CSMD2	not_tested	142	2.0	2	73	0.2	2	EXCITATORY NEURON; OPC
+reported_exact_labels_min5	0.05	greedy_set_cover	28	ENSG00000159216	RUNX1	not_tested	276	2.0	4	73	0.17738095238095236	14	HSC; IMMUNE CELL; MICROGLIA; TUFT CELL
+reported_exact_labels_min5	0.05	greedy_set_cover	29	ENSG00000000971	CFH	not_tested	142	1.0	2	73	0.07142857142857142	6	ENDOTHELIAL CELL; PERICYTE
+reported_exact_labels_min5	0.05	greedy_set_cover	30	ENSG00000022355	GABRA1	not_tested	72	1.0	1	73	0.2	2	DELTA CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	1	ENSG00000107796	ACTA2	not_tested	780	780.0	13	73	0.34676434676434675	94	BASAL; CARDIOMYOCYTE; CLUSTER 7; EC; FB 1; FB 2; MESENCHYMAL; MYOFIBROBLAST; MYOFIBROBLASTS; PERICYTE; PERICYTES; SMC; SMOOTH MUSCLE CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	2	ENSG00000125398	SOX9	not_tested	402	324.0	6	73	0.24126984126984122	52	ASTROCYTES; C 1; DUCTAL CELL; EPITHELIAL CELL; OPC; STEM CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	3	ENSG00000019582	CD74	not_tested	402	257.0	6	73	0.18148148148148147	31	CLUSTER 5; CLUSTER 7; LYMPHOCYTE; MAC 2; MICROGLIA; MYELOID CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	4	ENSG00000100453	GZMB	not_tested	402	220.0	6	73	0.16218671679197993	66	CLUSTER 2; CLUSTER 7; DC; IMMUNE CELL; NK CELL; NK CELLS
+reported_exact_labels_min5	0.1	greedy_set_cover	5	ENSG00000139329	LUM	not_tested	402	176.0	6	73	0.1872742200328407	31	C 1; CLUSTER 0; DENDRITIC CELL; FIBROBLAST; FIBROBLASTS; MESENCHYMAL
+reported_exact_labels_min5	0.1	greedy_set_cover	6	ENSG00000168685	IL7R	not_tested	340	148.0	5	73	0.1770691434468524	71	CD 4 T CELL; MYELOID CELL; T CELL; T CELLS; TREG
+reported_exact_labels_min5	0.1	greedy_set_cover	7	ENSG00000170458	CD14	not_tested	340	128.0	5	73	0.2901724137931035	63	MACROPHAGE; MACROPHAGES; MONOCYTE; MYELOID CELL; TUFT CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	8	ENSG00000174059	CD34	not_tested	462	112.0	7	73	0.19421768707482992	38	EC; ENDOTHELIAL; ENDOTHELIAL CELL; FB 1; HSC; LYMPHOCYTE; STEM CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	9	ENSG00000177455	CD19	not_tested	276	100.0	4	73	0.34791666666666665	32	B CELL; B CELLS; MEMORY B CELL; PLASMA CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	10	ENSG00000204103	MAFB	not_tested	276	84.0	4	73	0.25275689223057646	29	ALPHA CELL; BETA CELL; CELL; PODOCYTE
+reported_exact_labels_min5	0.1	greedy_set_cover	11	ENSG00000113721	PDGFRB	not_tested	576	46.0	9	73	0.2471157939548744	46	FIBROBLAST; MESENCHYMAL; MYOFIBROBLAST; PC; PERICYTE; PERICYTES; PODOCYTE; SMOOTH MUSCLE CELL; STEM CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	12	ENSG00000113088	GZMK	not_tested	276	40.0	4	73	0.20441176470588235	49	CD 4 T CELL; CD 8 T CELL; CLUSTER 3; T CELLS
+reported_exact_labels_min5	0.1	greedy_set_cover	13	ENSG00000136826	KLF4	not_tested	276	36.0	4	73	0.20902777777777778	25	CDC 2; ENDOTHELIAL; GOBLET CELL; MAC 2
+reported_exact_labels_min5	0.1	greedy_set_cover	14	ENSG00000135821	GLUL	not_tested	210	31.0	3	73	0.21944444444444444	15	ASTROCYTE; ASTROCYTES; HEPATOCYTE
+reported_exact_labels_min5	0.1	greedy_set_cover	15	ENSG00000157404	KIT	not_tested	276	27.0	4	73	0.23809523809523808	42	LYMPHOCYTE; MAST CELL; MELANOCYTE; TUFT CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	16	ENSG00000162992	NEUROD1	not_tested	210	22.0	3	73	0.2922305764411028	15	CELL; ENTEROENDOCRINE CELL; EXCITATORY NEURON
+reported_exact_labels_min5	0.1	greedy_set_cover	17	ENSG00000140968	IRF8	not_tested	210	16.0	3	73	0.2383838383838384	21	B CELL; CDC 1; DC
+reported_exact_labels_min5	0.1	greedy_set_cover	18	ENSG00000186847	KRT14	not_tested	210	14.0	3	73	0.3333333333333333	41	BASAL; BASAL CELL; EPITHELIAL CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	19	ENSG00000197249	SERPINA1	not_tested	210	12.0	3	73	0.16842105263157894	8	AT 2; CELL; DELTA CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	20	ENSG00000163017	ACTG2	not_tested	340	10.0	5	73	0.2694444444444445	14	CLUSTER 0; MYOFIBROBLAST; MYOFIBROBLASTS; SMC; SMOOTH MUSCLE CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	21	ENSG00000204983	PRSS1	not_tested	210	9.0	3	73	0.17619047619047615	4	ACINAR CELL; BETA CELL; IMMUNE CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	22	ENSG00000100097	LGALS1	not_tested	210	7.0	3	73	0.1619047619047619	13	DENDRITIC CELL; MEMORY B CELL; OLIGODENDROCYTE
+reported_exact_labels_min5	0.1	greedy_set_cover	23	ENSG00000136244	IL6	not_tested	210	5.0	3	73	0.15873015873015872	36	CLUSTER 1; FIBROBLASTS; MACROPHAGES
+reported_exact_labels_min5	0.1	greedy_set_cover	24	ENSG00000026508	CD44	not_tested	340	4.0	5	73	0.15517961570593147	51	ASTROCYTE; ASTROCYTES; CLUSTER 2; CLUSTER 5; IMMUNE CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	25	ENSG00000090382	LYZ	not_tested	276	3.0	4	73	0.26249999999999996	40	AT 2; GOBLET CELL; MONOCYTE; MYELOID CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	26	ENSG00000101335	MYL9	not_tested	210	3.0	3	73	0.17037037037037037	22	PERICYTES; SMC; SMOOTH MUSCLE CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	27	ENSG00000115232	ITGA4	not_tested	210	3.0	3	73	0.1503267973856209	12	CD 4 T CELL; CD 8 T CELL; HSC
+reported_exact_labels_min5	0.1	greedy_set_cover	28	ENSG00000185664	PMEL	not_tested	142	3.0	2	73	0.369047619047619	15	ENTEROCYTE; MELANOCYTE
+reported_exact_labels_min5	0.1	greedy_set_cover	29	ENSG00000090339	ICAM1	not_tested	142	2.0	2	73	0.17142857142857143	28	DUCTAL CELL; EC
+reported_exact_labels_min5	0.1	greedy_set_cover	30	ENSG00000004468	CD38	not_tested	210	1.0	3	73	0.21666666666666667	35	LYMPHOCYTE; PC; PLASMA CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	31	ENSG00000004799	PDK4	not_tested	142	1.0	2	73	0.10818713450292397	6	CARDIOMYOCYTE; CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	32	ENSG00000004848	ARX	not_tested	210	1.0	3	73	0.34001670843776105	12	ALPHA CELL; CELL; ENTEROENDOCRINE CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	33	ENSG00000010610	CD4	not_tested	210	1.0	3	73	0.29389650597080935	30	CD 4 T CELL; IMMUNE CELL; T CELL
+reported_exact_labels_min5	0.1	greedy_set_cover	34	ENSG00000011600	TYROBP	not_tested	142	1.0	2	73	0.2833333333333333	17	MACROPHAGES; NK CELLS
+reported_exact_labels_min5	0.1	greedy_set_cover	35	ENSG00000062282	DGAT2	not_tested	72	1.0	1	73	0.2	6	ADIPOCYTE
+reported_exact_labels_min5	0.2	greedy_set_cover	1	ENSG00000107796	ACTA2	not_tested	472	472.0	8	67	0.4751984126984127	94	CLUSTER 7; FB 2; MYOFIBROBLAST; MYOFIBROBLASTS; PERICYTE; PERICYTES; SMC; SMOOTH MUSCLE CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	2	ENSG00000125398	SOX9	not_tested	252	220.0	4	67	0.2785714285714286	52	DUCTAL CELL; EPITHELIAL CELL; OPC; STEM CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	3	ENSG00000157404	KIT	not_tested	252	204.0	4	67	0.23809523809523808	42	LYMPHOCYTE; MAST CELL; MELANOCYTE; TUFT CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	4	ENSG00000108821	COL1A1	not_tested	310	156.0	5	67	0.3323152709359606	61	FB 1; FB 2; FIBROBLAST; MESENCHYMAL; MYOFIBROBLASTS
+reported_exact_labels_min5	0.2	greedy_set_cover	5	ENSG00000275302	CCL4	not_tested	252	140.0	4	67	0.2	55	CD 8 T CELL; CLUSTER 7; MAC 2; NK CELLS
+reported_exact_labels_min5	0.2	greedy_set_cover	6	ENSG00000170458	CD14	not_tested	252	129.0	4	67	0.3377155172413793	63	MACROPHAGE; MACROPHAGES; MONOCYTE; TUFT CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	7	ENSG00000105369	CD79A	not_tested	192	117.0	3	67	0.4611111111111111	31	B CELL; B CELLS; PLASMA CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	8	ENSG00000115263	GCG	not_tested	192	108.0	3	67	0.46073517126148705	15	ALPHA CELL; CELL; ENTEROENDOCRINE CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	9	ENSG00000179776	CDH5	not_tested	192	99.0	3	67	0.3904761904761905	28	EC; ENDOTHELIAL; HSC
+reported_exact_labels_min5	0.2	greedy_set_cover	10	ENSG00000010610	CD4	not_tested	130	62.0	2	67	0.3487394957983193	30	CD 4 T CELL; IMMUNE CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	11	ENSG00000049768	FOXP3	not_tested	130	58.0	2	67	0.4666666666666667	33	T CELLS; TREG
+reported_exact_labels_min5	0.2	greedy_set_cover	12	ENSG00000073282	TP63	not_tested	130	54.0	2	67	0.5	34	BASAL; BASAL CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	13	ENSG00000106236	NPTX2	not_tested	130	50.0	2	67	0.25	8	BETA CELL; EXCITATORY NEURON
+reported_exact_labels_min5	0.2	greedy_set_cover	14	ENSG00000110436	SLC1A2	not_tested	130	46.0	2	67	0.29166666666666663	10	ASTROCYTE; ASTROCYTES
+reported_exact_labels_min5	0.2	greedy_set_cover	15	ENSG00000112715	VEGFA	not_tested	130	42.0	2	67	0.3142857142857143	23	DC; PODOCYTE
+reported_exact_labels_min5	0.2	greedy_set_cover	16	ENSG00000112964	GHR	not_tested	130	38.0	2	67	0.2	2	DELTA CELL; PC
+reported_exact_labels_min5	0.2	greedy_set_cover	17	ENSG00000139329	LUM	not_tested	130	34.0	2	67	0.26666666666666666	31	CLUSTER 0; FIBROBLASTS
+reported_exact_labels_min5	0.2	greedy_set_cover	18	ENSG00000158481	CD1C	not_tested	130	30.0	2	67	0.5444444444444444	27	CDC 2; MYELOID CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	19	ENSG00000163586	FABP1	not_tested	130	26.0	2	67	0.26666666666666666	8	ENTEROCYTE; HEPATOCYTE
+reported_exact_labels_min5	0.2	greedy_set_cover	20	ENSG00000169710	FASN	not_tested	130	22.0	2	67	0.2	4	ADIPOCYTE; MEMORY B CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	21	ENSG00000019582	CD74	not_tested	252	14.0	4	67	0.21944444444444447	31	CLUSTER 7; LYMPHOCYTE; MAC 2; MICROGLIA
+reported_exact_labels_min5	0.2	greedy_set_cover	22	ENSG00000105374	NKG7	not_tested	130	10.0	2	67	0.3875	52	NK CELL; NK CELLS
+reported_exact_labels_min5	0.2	greedy_set_cover	23	ENSG00000113721	PDGFRB	not_tested	310	9.0	5	67	0.3378571428571429	46	MESENCHYMAL; MYOFIBROBLAST; PC; PERICYTE; PERICYTES
+reported_exact_labels_min5	0.2	greedy_set_cover	24	ENSG00000167286	CD3D	not_tested	130	9.0	2	67	0.45	38	T CELL; T CELLS
+reported_exact_labels_min5	0.2	greedy_set_cover	25	ENSG00000197992	CLEC9A	not_tested	130	8.0	2	67	0.5090909090909091	20	CDC 1; DC
+reported_exact_labels_min5	0.2	greedy_set_cover	26	ENSG00000016490	CLCA1	not_tested	66	6.0	1	67	0.25	5	GOBLET CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	27	ENSG00000092054	MYH7	not_tested	66	5.0	1	67	0.2222222222222222	9	CARDIOMYOCYTE
+reported_exact_labels_min5	0.2	greedy_set_cover	28	ENSG00000165092	ALDH1A1	not_tested	192	5.0	3	67	0.24444444444444446	19	ALPHA CELL; CLUSTER 0; HSC
+reported_exact_labels_min5	0.2	greedy_set_cover	29	ENSG00000173546	CSPG4	not_tested	130	5.0	2	67	0.5428571428571429	14	OPC; PERICYTE
+reported_exact_labels_min5	0.2	greedy_set_cover	30	ENSG00000115386	REG1A	not_tested	66	4.0	1	67	0.42857142857142855	6	ACINAR CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	31	ENSG00000012124	CD22	not_tested	130	3.0	2	67	0.2	9	B CELLS; MEMORY B CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	32	ENSG00000117724	CENPF	not_tested	66	3.0	1	67	0.2222222222222222	10	CLUSTER 5
+reported_exact_labels_min5	0.2	greedy_set_cover	33	ENSG00000203747	FCGR3A	not_tested	192	3.0	3	67	0.24444444444444446	58	MACROPHAGES; MYELOID CELL; NK CELLS
+reported_exact_labels_min5	0.2	greedy_set_cover	34	ENSG00000001626	CFTR	not_tested	66	2.0	1	67	0.4	11	DUCTAL CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	35	ENSG00000101335	MYL9	not_tested	130	2.0	2	67	0.2	22	PERICYTES; SMC
+reported_exact_labels_min5	0.2	greedy_set_cover	36	ENSG00000106483	SFRP4	not_tested	130	2.0	2	67	0.26666666666666666	9	FB 1; FB 2
+reported_exact_labels_min5	0.2	greedy_set_cover	37	ENSG00000121351	IAPP	not_tested	130	2.0	2	67	0.35789473684210527	10	BETA CELL; CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	38	ENSG00000122852	SFTPA1	not_tested	66	2.0	1	67	0.2	7	AT 2
+reported_exact_labels_min5	0.2	greedy_set_cover	39	ENSG00000135821	GLUL	not_tested	130	2.0	2	67	0.26666666666666666	15	ASTROCYTES; HEPATOCYTE
+reported_exact_labels_min5	0.2	greedy_set_cover	40	ENSG00000004399	PLXND1	not_tested	66	1.0	1	67	0.2	2	ENDOTHELIAL
+reported_exact_labels_min5	0.2	greedy_set_cover	41	ENSG00000004468	CD38	not_tested	192	1.0	3	67	0.21666666666666667	35	LYMPHOCYTE; PC; PLASMA CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	42	ENSG00000064300	NGFR	not_tested	66	1.0	1	67	0.2857142857142857	12	BASAL CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	43	ENSG00000077498	TYR	not_tested	66	1.0	1	67	0.42857142857142855	11	MELANOCYTE
+reported_exact_labels_min5	0.2	greedy_set_cover	44	ENSG00000102837	OLFM4	not_tested	66	1.0	1	67	0.42857142857142855	14	STEM CELL
+reported_exact_labels_min5	0.2	greedy_set_cover	45	ENSG00000123560	PLP1	not_tested	66	1.0	1	67	0.5714285714285714	24	OLIGODENDROCYTE
+reported_exact_labels_min5	0.2	greedy_set_cover	46	ENSG00000126353	CCR7	not_tested	130	1.0	2	67	0.27647058823529413	70	CD 4 T CELL; T CELLS
+reported_exact_labels_min5	0.2	greedy_set_cover	47	ENSG00000129226	CD68	not_tested	130	1.0	2	67	0.30344827586206896	39	MAC 2; MACROPHAGE
+reported_exact_labels_min5	0.2	ilp_minimum	1	ENSG00000010610	CD4	essential_in_minimum_panels	130		2	67	0.3487394957983193	30	CD 4 T CELL; IMMUNE CELL
+reported_exact_labels_min5	0.2	ilp_minimum	2	ENSG00000011465	DCN	essential_in_minimum_panels	130		2	67	0.47413793103448276	57	FIBROBLAST; FIBROBLASTS
+reported_exact_labels_min5	0.2	ilp_minimum	3	ENSG00000019582	CD74	exchangeable_in_minimum_panels	252		4	67	0.21944444444444447	31	CLUSTER 7; LYMPHOCYTE; MAC 2; MICROGLIA
+reported_exact_labels_min5	0.2	ilp_minimum	4	ENSG00000105369	CD79A	exchangeable_in_minimum_panels	192		3	67	0.4611111111111111	31	B CELL; B CELLS; PLASMA CELL
+reported_exact_labels_min5	0.2	ilp_minimum	5	ENSG00000107796	ACTA2	essential_in_minimum_panels	472		8	67	0.4751984126984127	94	CLUSTER 7; FB 2; MYOFIBROBLAST; MYOFIBROBLASTS; PERICYTE; PERICYTES; SMC; SMOOTH MUSCLE CELL
+reported_exact_labels_min5	0.2	ilp_minimum	6	ENSG00000108821	COL1A1	essential_in_minimum_panels	310		5	67	0.3323152709359606	61	FB 1; FB 2; FIBROBLAST; MESENCHYMAL; MYOFIBROBLASTS
+reported_exact_labels_min5	0.2	ilp_minimum	7	ENSG00000112715	VEGFA	exchangeable_in_minimum_panels	130		2	67	0.3142857142857143	23	DC; PODOCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	8	ENSG00000115263	GCG	essential_in_minimum_panels	192		3	67	0.46073517126148705	15	ALPHA CELL; CELL; ENTEROENDOCRINE CELL
+reported_exact_labels_min5	0.2	ilp_minimum	9	ENSG00000125398	SOX9	exchangeable_in_minimum_panels	252		4	67	0.2785714285714286	52	DUCTAL CELL; EPITHELIAL CELL; OPC; STEM CELL
+reported_exact_labels_min5	0.2	ilp_minimum	10	ENSG00000133392	MYH11	exchangeable_in_minimum_panels	192		3	67	0.5111111111111112	39	MYOFIBROBLASTS; SMC; SMOOTH MUSCLE CELL
+reported_exact_labels_min5	0.2	ilp_minimum	11	ENSG00000134460	IL2RA	exchangeable_in_minimum_panels	130		2	67	0.33333333333333337	36	MEMORY B CELL; TREG
+reported_exact_labels_min5	0.2	ilp_minimum	12	ENSG00000134853	PDGFRA	essential_in_minimum_panels	252		4	67	0.46625615763546796	58	FIBROBLAST; MESENCHYMAL; OPC; PC
+reported_exact_labels_min5	0.2	ilp_minimum	13	ENSG00000135821	GLUL	essential_in_minimum_panels	130		2	67	0.26666666666666666	15	ASTROCYTES; HEPATOCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	14	ENSG00000143248	RGS5	exchangeable_in_minimum_panels	252		4	67	0.3428571428571428	27	PC; PERICYTE; PERICYTES; SMC
+reported_exact_labels_min5	0.2	ilp_minimum	15	ENSG00000152583	SPARCL1	exchangeable_in_minimum_panels	66		1	67	0.25	7	ASTROCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	16	ENSG00000153563	CD8A	exchangeable_in_minimum_panels	130		2	67	0.2850877192982456	33	CD 8 T CELL; T CELL
+reported_exact_labels_min5	0.2	ilp_minimum	17	ENSG00000157404	KIT	exchangeable_in_minimum_panels	252		4	67	0.23809523809523808	42	LYMPHOCYTE; MAST CELL; MELANOCYTE; TUFT CELL
+reported_exact_labels_min5	0.2	ilp_minimum	18	ENSG00000158481	CD1C	exchangeable_in_minimum_panels	130		2	67	0.5444444444444444	27	CDC 2; MYELOID CELL
+reported_exact_labels_min5	0.2	ilp_minimum	19	ENSG00000162493	PDPN	exchangeable_in_minimum_panels	130		2	67	0.24285714285714285	24	BASAL CELL; PERICYTES
+reported_exact_labels_min5	0.2	ilp_minimum	20	ENSG00000162992	NEUROD1	essential_in_minimum_panels	130		2	67	0.3857142857142857	15	ENTEROENDOCRINE CELL; EXCITATORY NEURON
+reported_exact_labels_min5	0.2	ilp_minimum	21	ENSG00000163508	EOMES	exchangeable_in_minimum_panels	130		2	67	0.225	41	CD 8 T CELL; NK CELL
+reported_exact_labels_min5	0.2	ilp_minimum	22	ENSG00000163586	FABP1	exchangeable_in_minimum_panels	130		2	67	0.26666666666666666	8	ENTEROCYTE; HEPATOCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	23	ENSG00000168685	IL7R	exchangeable_in_minimum_panels	130		2	67	0.24705882352941178	71	CD 4 T CELL; T CELLS
+reported_exact_labels_min5	0.2	ilp_minimum	24	ENSG00000169710	FASN	exchangeable_in_minimum_panels	130		2	67	0.2	4	ADIPOCYTE; MEMORY B CELL
+reported_exact_labels_min5	0.2	ilp_minimum	25	ENSG00000170458	CD14	exchangeable_in_minimum_panels	252		4	67	0.3377155172413793	63	MACROPHAGE; MACROPHAGES; MONOCYTE; TUFT CELL
+reported_exact_labels_min5	0.2	ilp_minimum	26	ENSG00000170476	MZB1	exchangeable_in_minimum_panels	130		2	67	0.2875	12	PC; PLASMA CELL
+reported_exact_labels_min5	0.2	ilp_minimum	27	ENSG00000174059	CD34	exchangeable_in_minimum_panels	192		3	67	0.26666666666666666	38	ENDOTHELIAL; HSC; LYMPHOCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	28	ENSG00000175426	PCSK1	exchangeable_in_minimum_panels	130		2	67	0.30000000000000004	7	BETA CELL; DELTA CELL
+reported_exact_labels_min5	0.2	ilp_minimum	29	ENSG00000177575	CD163	exchangeable_in_minimum_panels	130		2	67	0.2896551724137931	60	MAC 2; MACROPHAGE
+reported_exact_labels_min5	0.2	ilp_minimum	30	ENSG00000183734	ASCL2	exchangeable_in_minimum_panels	66		1	67	0.5714285714285714	9	STEM CELL
+reported_exact_labels_min5	0.2	ilp_minimum	31	ENSG00000185507	IRF7	exchangeable_in_minimum_panels	130		2	67	0.2	14	CLUSTER 0; DUCTAL CELL
+reported_exact_labels_min5	0.2	ilp_minimum	32	ENSG00000185664	PMEL	exchangeable_in_minimum_panels	66		1	67	0.5714285714285714	15	MELANOCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	33	ENSG00000186847	KRT14	exchangeable_in_minimum_panels	130		2	67	0.42857142857142855	41	BASAL; BASAL CELL
+reported_exact_labels_min5	0.2	ilp_minimum	34	ENSG00000196189	SEMA4A	exchangeable_in_minimum_panels	66		1	67	0.2	6	B CELLS
+reported_exact_labels_min5	0.2	ilp_minimum	35	ENSG00000196628	TCF4	exchangeable_in_minimum_panels	66		1	67	0.2222222222222222	12	CLUSTER 5
+reported_exact_labels_min5	0.2	ilp_minimum	36	ENSG00000197249	SERPINA1	exchangeable_in_minimum_panels	130		2	67	0.2	8	AT 2; DELTA CELL
+reported_exact_labels_min5	0.2	ilp_minimum	37	ENSG00000197616	MYH6	exchangeable_in_minimum_panels	66		1	67	0.2222222222222222	11	CARDIOMYOCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	38	ENSG00000197971	MBP	exchangeable_in_minimum_panels	66		1	67	0.42857142857142855	18	OLIGODENDROCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	39	ENSG00000197992	CLEC9A	exchangeable_in_minimum_panels	130		2	67	0.5090909090909091	20	CDC 1; DC
+reported_exact_labels_min5	0.2	ilp_minimum	40	ENSG00000198788	MUC2	exchangeable_in_minimum_panels	66		1	67	0.875	14	GOBLET CELL
+reported_exact_labels_min5	0.2	ilp_minimum	41	ENSG00000203747	FCGR3A	exchangeable_in_minimum_panels	192		3	67	0.24444444444444446	58	MACROPHAGES; MYELOID CELL; NK CELLS
+reported_exact_labels_min5	0.2	ilp_minimum	42	ENSG00000204103	MAFB	exchangeable_in_minimum_panels	130		2	67	0.3721804511278195	29	CELL; PODOCYTE
+reported_exact_labels_min5	0.2	ilp_minimum	43	ENSG00000204983	PRSS1	exchangeable_in_minimum_panels	66		1	67	0.2857142857142857	4	ACINAR CELL
+reported_exact_labels_min5	0.2	ilp_minimum	44	ENSG00000261371	PECAM1	exchangeable_in_minimum_panels	130		2	67	0.5142857142857142	52	EC; ENDOTHELIAL
+tcell_marker_clusters	0.05	greedy_set_cover	1	ENSG00000113088	GZMK	not_tested	12	12.0	3	7	0.245906432748538	49	C3; C4; C7
+tcell_marker_clusters	0.05	greedy_set_cover	2	ENSG00000073861	TBX21	not_tested	10	5.0	2	7	0.18055555555555555	19	C5; C7
+tcell_marker_clusters	0.05	greedy_set_cover	3	ENSG00000089692	LAG3	not_tested	10	3.0	2	7	0.17147707979626486	41	C2; C3
+tcell_marker_clusters	0.05	greedy_set_cover	4	ENSG00000010610	CD4	not_tested	10	1.0	2	7	0.4201388888888889	30	C1; C5
+tcell_marker_clusters	0.05	ilp_minimum	1	ENSG00000089692	LAG3	exchangeable_in_minimum_panels	10		2	7	0.17147707979626486	41	C2; C3
+tcell_marker_clusters	0.05	ilp_minimum	2	ENSG00000113088	GZMK	exchangeable_in_minimum_panels	12		3	7	0.245906432748538	49	C3; C4; C7
+tcell_marker_clusters	0.05	ilp_minimum	3	ENSG00000163508	EOMES	exchangeable_in_minimum_panels	10		2	7	0.3055555555555556	41	C5; C7
+tcell_marker_clusters	0.05	ilp_minimum	4	ENSG00000168685	IL7R	exchangeable_in_minimum_panels	12		4	7	0.166728270609319	71	C1; C2; C4; C5
+tcell_marker_clusters	0.1	greedy_set_cover	1	ENSG00000073861	TBX21	not_tested	10	10.0	2	7	0.18055555555555555	19	C5; C7
+tcell_marker_clusters	0.1	greedy_set_cover	2	ENSG00000105374	NKG7	not_tested	10	6.0	2	7	0.2771929824561403	52	C3; C4
+tcell_marker_clusters	0.1	greedy_set_cover	3	ENSG00000081059	TCF7	not_tested	10	3.0	2	7	0.3993055555555556	43	C1; C5
+tcell_marker_clusters	0.1	greedy_set_cover	4	ENSG00000049768	FOXP3	not_tested	6	1.0	1	7	0.45161290322580644	33	C2
+tcell_marker_clusters	0.1	greedy_set_cover	5	ENSG00000100450	GZMH	not_tested	10	1.0	2	7	0.6842105263157895	31	C3; C7
+tcell_marker_clusters	0.1	ilp_minimum	1	ENSG00000163508	EOMES	exchangeable_in_minimum_panels	10		2	7	0.3055555555555556	41	C5; C7
+tcell_marker_clusters	0.1	ilp_minimum	2	ENSG00000168685	IL7R	exchangeable_in_minimum_panels	10		2	7	0.2517361111111111	71	C1; C5
+tcell_marker_clusters	0.1	ilp_minimum	3	ENSG00000181847	TIGIT	exchangeable_in_minimum_panels	6		1	7	0.5806451612903226	38	C2
+tcell_marker_clusters	0.1	ilp_minimum	4	ENSG00000198851	CD3E	exchangeable_in_minimum_panels	10		2	7	0.788888888888889	37	C4; C5
+tcell_marker_clusters	0.1	ilp_minimum	5	ENSG00000203747	FCGR3A	exchangeable_in_minimum_panels	6		1	7	0.15789473684210525	58	C3
+tcell_marker_clusters	0.2	greedy_set_cover	1	ENSG00000100450	GZMH	not_tested	10	10.0	2	7	0.6842105263157895	31	C3; C7
+tcell_marker_clusters	0.2	greedy_set_cover	2	ENSG00000168685	IL7R	not_tested	10	6.0	2	7	0.2517361111111111	71	C1; C5
+tcell_marker_clusters	0.2	greedy_set_cover	3	ENSG00000198851	CD3E	not_tested	10	3.0	2	7	0.788888888888889	37	C4; C5
+tcell_marker_clusters	0.2	greedy_set_cover	4	ENSG00000049768	FOXP3	not_tested	6	1.0	1	7	0.45161290322580644	33	C2
+tcell_marker_clusters	0.2	greedy_set_cover	5	ENSG00000073861	TBX21	not_tested	6	1.0	1	7	0.25	19	C7
+tcell_marker_clusters	0.2	ilp_minimum	1	ENSG00000137441	FGFBP2	exchangeable_in_minimum_panels	6		1	7	0.21052631578947367	11	C3
+tcell_marker_clusters	0.2	ilp_minimum	2	ENSG00000168685	IL7R	essential_in_minimum_panels	10		2	7	0.2517361111111111	71	C1; C5
+tcell_marker_clusters	0.2	ilp_minimum	3	ENSG00000198851	CD3E	essential_in_minimum_panels	10		2	7	0.788888888888889	37	C4; C5
+tcell_marker_clusters	0.2	ilp_minimum	4	ENSG00000213949	ITGA1	exchangeable_in_minimum_panels	6		1	7	0.5	21	C6
+tcell_marker_clusters	0.2	ilp_minimum	5	ENSG00000275302	CCL4	exchangeable_in_minimum_panels	6		1	7	1.0	55	C7
+myeloid_marker_clusters	0.05	greedy_set_cover	1	ENSG00000038427	VCAN	not_tested	6	6.0	2	5	0.13636363636363635	27	C1; C3
+myeloid_marker_clusters	0.05	greedy_set_cover	2	ENSG00000129226	CD68	not_tested	6	3.0	2	5	0.3181818181818182	39	C2; C3
+myeloid_marker_clusters	0.05	greedy_set_cover	3	ENSG00000095917	TPSD1	not_tested	4	1.0	1	5	0.1	1	C4
+myeloid_marker_clusters	0.05	ilp_minimum	1	ENSG00000177575	CD163	exchangeable_in_minimum_panels	6		2	5	0.45454545454545453	60	C2; C3
+myeloid_marker_clusters	0.05	ilp_minimum	2	ENSG00000197253	TPSB2	exchangeable_in_minimum_panels	4		1	5	0.9	11	C4
+myeloid_marker_clusters	0.05	ilp_minimum	3	ENSG00000204472	AIF1	exchangeable_in_minimum_panels	6		2	5	0.13636363636363635	13	C1; C3
+myeloid_marker_clusters	0.1	greedy_set_cover	1	ENSG00000170458	CD14	not_tested	6	6.0	2	5	0.6590909090909092	63	C1; C3
+myeloid_marker_clusters	0.1	greedy_set_cover	2	ENSG00000177575	CD163	not_tested	6	3.0	2	5	0.45454545454545453	60	C2; C3
+myeloid_marker_clusters	0.1	greedy_set_cover	3	ENSG00000095917	TPSD1	not_tested	4	1.0	1	5	0.1	1	C4
+myeloid_marker_clusters	0.1	ilp_minimum	1	ENSG00000170458	CD14	essential_in_minimum_panels	6		2	5	0.6590909090909092	63	C1; C3
+myeloid_marker_clusters	0.1	ilp_minimum	2	ENSG00000177575	CD163	essential_in_minimum_panels	6		2	5	0.45454545454545453	60	C2; C3
+myeloid_marker_clusters	0.1	ilp_minimum	3	ENSG00000197992	CLEC9A	exchangeable_in_minimum_panels	4		1	5	1.0	20	C5
+myeloid_marker_clusters	0.2	greedy_set_cover	1	ENSG00000170458	CD14	not_tested	6	6.0	2	5	0.6590909090909092	63	C1; C3
+myeloid_marker_clusters	0.2	greedy_set_cover	2	ENSG00000177575	CD163	not_tested	6	3.0	2	5	0.45454545454545453	60	C2; C3
+myeloid_marker_clusters	0.2	greedy_set_cover	3	ENSG00000123685	BATF3	not_tested	4	1.0	1	5	0.42857142857142855	7	C5
+myeloid_marker_clusters	0.2	ilp_minimum	1	ENSG00000170458	CD14	essential_in_minimum_panels	6		2	5	0.6590909090909092	63	C1; C3
+myeloid_marker_clusters	0.2	ilp_minimum	2	ENSG00000177575	CD163	essential_in_minimum_panels	6		2	5	0.45454545454545453	60	C2; C3
+myeloid_marker_clusters	0.2	ilp_minimum	3	ENSG00000197253	TPSB2	exchangeable_in_minimum_panels	4		1	5	0.9	11	C4

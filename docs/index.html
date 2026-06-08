@@ -97,20 +97,20 @@
         <article class="method-card">
           <h2>Data Curation</h2>
           <p>
-            The database contains 511 papers: 7 benchmark studies and 504 bioRxiv preprints. Across them, the site stores 14,972 marker records.
+            The database contains 860 distinct papers across the benchmark, bioRxiv, and Human Cell Atlas-linked collections. Across them, the site stores 35,092 marker records.
           </p>
           <p>
-            Each marker record stores a paper, a species label, a cell-type label, a gene, an optional Ensembl identifier, a source type, and optional supporting text. The benchmark records also carry 1,224 rows of differential-expression metadata, including log fold change, corrected p-value, and rank.
+            Each marker record stores a collection, a paper, a species label, a cell-type label, a gene, an optional Ensembl identifier, a source type, and optional supporting text. The benchmark records also carry 1,224 rows of differential-expression metadata, including log fold change, corrected p-value, and rank.
           </p>
           <p>
-            The current build contains 13,355 text-derived records and 1,617 image-derived records. Image-derived markers are kept, but their rationale text is excluded from the site. Ensembl identifiers are added when a marker can be mapped during ingestion. In the current build, 10,836 marker records have a non-empty Ensembl identifier.
+            The current build contains 33,475 text-derived records and 1,617 image-derived records. Image-derived markers are kept, but their rationale text is excluded from the site. Ensembl identifiers are added when a marker can be mapped during ingestion. In the current build, 29,747 marker records have a non-empty Ensembl identifier.
           </p>
           <p>
             The Data tab shows these rows directly. It is a provenance view of the database on disk: which paper reported which marker for which cell type, and what text supports that claim when the source was text.
           </p>
           <h2 class="method-section-break">Marker Search</h2>
           <p>
-            Marker Search searches cell-type descriptions by semantic similarity and marker genes by set overlap. The search unit is a profile: one paper, one species, and one cell-type label grouped with its reported markers and supporting text. The current database contains 3,988 profiles: 182 from the benchmark and 3,806 from bioRxiv.
+            Marker Search searches cell-type descriptions by semantic similarity and marker genes by set overlap. The search unit is a profile: one paper, one species, and one cell-type label grouped with its reported markers and supporting text. The current database contains 10,132 profiles: 183 from the benchmark, 3,805 from bioRxiv, and 6,144 from HCA-linked papers.
           </p>
           <p>
             For text search, each profile has two text fields. The first contains the cell-type label, the paper title, and the supporting sentences attached to that profile. The second contains the paper title and abstract. Both are embedded offline with MiniLM and stored in SQLite as float16 vectors.
@@ -130,7 +130,7 @@
         <article class="method-card">
           <h2>About LLMarkers</h2>
           <p>
-            LLMarkers is a literature-linked marker-gene resource. It combines the seven-study benchmark used in the manuscript with markers extracted from 504 bioRxiv preprints.
+            LLMarkers is a literature-linked marker-gene resource. It combines the seven-study benchmark used in the manuscript with markers extracted from 421 bioRxiv preprints and 434 Human Cell Atlas-linked publications.
           </p>
           <p>
             This site reads directly from <code>llmarkers.sqlite</code> in the browser. The Data tab exposes marker-level records. The Search tab groups those records into paper-, species-, and cell-type-level profiles that can be queried by text or by genes.
@@ -155,6 +155,7 @@
               <option value="all">All</option>
               <option value="benchmark">Benchmark</option>
               <option value="biorxiv">bioRxiv</option>
+              <option value="hca">HCA</option>
             </select>
           </label>
 

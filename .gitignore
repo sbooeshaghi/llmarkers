@@ -60,6 +60,20 @@ analysis/build_tcell_tree_comparison.py
 
 # Generated databases
 *.db
+analysis/cache/
+
+# Lean build artifacts
+formal/.lake/
+
+# Poster LaTeX build artifacts
+poster/*.aux
+poster/*.bbl
+poster/*.blg
+poster/*.fdb_latexmk
+poster/*.fls
+poster/*.log
+poster/*.out
+poster/*.pdf
 
 # LaTeX build artifacts
 /main.aux

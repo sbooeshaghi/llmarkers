@@ -1,0 +1,83 @@
+\begingroup
+\TinyBodyFont
+\renewcommand{\arraystretch}{1.30}
+\setlength{\tabcolsep}{0.055in}
+\newcommand{\blankSyn}{\textcolor{linegray}{\rule{1.35in}{0.7pt}}}
+\newcommand{\blankGene}{\textcolor{linegray}{\rule{3.75in}{0.7pt}}}
+\newcommand{\PromptSet}[1]{%
+  \textbf{#1} & \blankSyn & \blankGene \\
+              & \blankSyn & \blankGene \\
+              & \blankSyn & \blankGene \\
+  \addlinespace[0.04in]
+}
+\newcommand{\BeginPromptTable}{%
+\begin{tabular}[t]{@{}p{2.65in}p{1.45in}p{3.95in}@{}}
+\toprule
+\textbf{Cell type} & \textbf{Synonym} & \textbf{Markers (gene/protein/other)} \\
+\midrule
+}
+\newcommand{\EndPromptTable}{%
+\bottomrule
+\end{tabular}
+}
+
+\BeginPromptTable
+\PromptSet{Naive T cell}
+\PromptSet{Central memory T}
+\PromptSet{Effector memory T}
+\PromptSet{Tissue resident T}
+\PromptSet{Effector CD8 T}
+\PromptSet{Cytotoxic T cell}
+\PromptSet{Exhausted T cell}
+\PromptSet{Pre-exhausted T}
+\PromptSet{Terminally exhausted T}
+\PromptSet{Dysfunctional T}
+\PromptSet{Proliferating T}
+\PromptSet{Stem-like T cell}
+\EndPromptTable
+\hfill
+\BeginPromptTable
+\PromptSet{Regulatory T cell}
+\PromptSet{Activated Treg}
+\PromptSet{Naive-like Treg}
+\PromptSet{Follicular helper T}
+\PromptSet{Th1}
+\PromptSet{Th2}
+\PromptSet{Th17}
+\PromptSet{Gamma delta T}
+\PromptSet{MAIT}
+\PromptSet{Natural killer cell}
+\PromptSet{NKT cell}
+\PromptSet{T/NK cell}
+\EndPromptTable
+\hfill
+\BeginPromptTable
+\PromptSet{B cell}
+\PromptSet{Naive B cell}
+\PromptSet{Memory B cell}
+\PromptSet{Plasma cell}
+\PromptSet{Plasmablast}
+\PromptSet{CD14+ monocyte}
+\PromptSet{CD16+ monocyte}
+\PromptSet{Classical monocyte}
+\PromptSet{Non-classical monocyte}
+\PromptSet{Inflammatory monocyte}
+\PromptSet{Neutrophil}
+\PromptSet{Mast cell}
+\EndPromptTable
+\hfill
+\BeginPromptTable
+\PromptSet{Macrophage}
+\PromptSet{Inflammatory mac.}
+\PromptSet{Tissue resident mac.}
+\PromptSet{Alveolar macrophage}
+\PromptSet{Kupffer cell}
+\PromptSet{Microglia}
+\PromptSet{Dendritic cell}
+\PromptSet{cDC1}
+\PromptSet{cDC2}
+\PromptSet{pDC}
+\PromptSet{Langerhans cell}
+\PromptSet{Megakaryocyte}
+\EndPromptTable
+\endgroup

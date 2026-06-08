@@ -1,0 +1,17 @@
+fraction	n_profiles	ontology_relation
+0.05555555555555555	1	different_branch
+0.05555555555555555	1	label_unmapped
+0.16666666666666666	3	marker_is_ancestor
+0.1111111111111111	2	marker_is_descendant
+0.2222222222222222	4	same_term
+0.3888888888888889	7	shared_parent
+0.05555555555555555	1	label_context_vs_full:both_unmapped
+0.1111111111111111	2	label_context_vs_full:marker_is_ancestor
+0.7777777777777778	14	label_context_vs_full:same_term
+0.05555555555555555	1	label_context_vs_full:shared_parent
+0.05555555555555555	1	marker_context_vs_full:different_branch
+0.05555555555555555	1	marker_context_vs_full:label_unmapped
+0.16666666666666666	3	marker_context_vs_full:marker_is_ancestor
+0.05555555555555555	1	marker_context_vs_full:marker_is_descendant
+0.2777777777777778	5	marker_context_vs_full:same_term
+0.3888888888888889	7	marker_context_vs_full:shared_parent

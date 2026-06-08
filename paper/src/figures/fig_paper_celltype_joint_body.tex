@@ -5,51 +5,6 @@
   >=Latex
 ]
 
-% Data lists. Node IDs avoid punctuation so TikZ anchors remain simple.
-\def\pctnodes{%
-  TregMS/A/Pfive/{R1}/{Regulatory T}/{FOXP3, CTLA4}/110,
-  TregAtlas/A/Psix/{R2}/{Regulatory T}/{FOXP3, CTLA4}/160,
-  TregNEC/A/Pseven/{R3}/{Regulatory T}/{SELL, CCR7, SOCS1, CTLA4, TIGIT, ICOS, TNFRSF4, IL2RA}/65,
-  SadeB/B/Pone/{B}/{CD8\_B}/{CD38, HAVCR2, ENTPD1, PDCD1, BATF, LAG3, CTLA4, PTPN6}/25,
-  KrishnaExh/B/Pthree/{KE}/{CD8A+ Exh.}/{PDCD1, LAG3, HAVCR2, TOX}/-5,
-  WuExh/B/Ptwo/{EX}/{Exhausted T}/{PDCD1, CTLA4, HAVCR2, LAG3, TIGIT, PRDM1, TBX21, EOMES, IL2RB, IL7R}/-35,
-  TregAdeno/A/Ptwo/{R4}/{Regulatory T}/{CD39, CD73}/-175,
-  LopezK4/C/Pfour/{K4}/{CD4-C2-KLF2}/{KLF2}/-85,
-  LopezK8/C/Pfour/{K8}/{CD8-C2-KLF2}/{KLF2}/-125%
-}
-
-\def\labeledges{%
-  TregMS/TregAtlas/strict,
-  TregMS/TregNEC/strict,
-  TregAtlas/TregNEC/strict,
-  TregMS/TregAdeno/strict,
-  TregAtlas/TregAdeno/strict,
-  TregNEC/TregAdeno/strict,
-  SadeB/KrishnaExh/related,
-  KrishnaExh/WuExh/related,
-  SadeB/LopezK8/related,
-  KrishnaExh/LopezK8/related,
-  LopezK4/LopezK8/related%
-}
-
-\def\geneedges{%
-  TregMS/TregAtlas/strict/no/1.00,
-  TregMS/TregNEC/partial/no/0.11,
-  TregAtlas/TregNEC/partial/no/0.11,
-  TregMS/SadeB/partial/no/0.11,
-  TregMS/WuExh/partial/no/0.09,
-  TregAtlas/SadeB/partial/no/0.11,
-  TregAtlas/WuExh/partial/no/0.09,
-  TregNEC/SadeB/partial/no/0.07,
-  TregNEC/WuExh/partial/no/0.12,
-  TregAdeno/SadeB/partial/no/0.11,
-  SadeB/WuExh/partial/no/0.29,
-  SadeB/KrishnaExh/partial/no/0.33,
-  KrishnaExh/WuExh/partial/no/0.27,
-  LopezK4/LopezK8/strict/no/1.00%
-}
-\def\subsetYes{yes}
-
 % Colors.
 \definecolor{tierStrict}{HTML}{1D9E75}
 \definecolor{tierPartial}{HTML}{BA7517}
@@ -74,10 +29,14 @@
 \definecolor{paperEightStroke}{HTML}{735443}
 \definecolor{paperNineFill}{HTML}{CFE0DD}
 \definecolor{paperNineStroke}{HTML}{42645F}
+\definecolor{paperTenFill}{HTML}{D7E7B8}
+\definecolor{paperTenStroke}{HTML}{526B27}
 \definecolor{neutralLight}{HTML}{F1EFE8}
 \definecolor{neutralMid}{HTML}{B4B2A9}
 \definecolor{mutedText}{HTML}{888780}
 \definecolor{attentionRed}{HTML}{B33A3A}
+\definecolor{sameLabelDiffMarkers}{HTML}{0072B2}
+\definecolor{diffLabelsSameMarkers}{HTML}{B83280}
 
 \tikzset{
   panel title/.style={font=\sffamily\small\bfseries, text=black},
@@ -93,6 +52,7 @@
   row Pseven/.style={fill=paperSevenFill!55, draw=paperSevenStroke},
   row Peight/.style={fill=paperEightFill!55, draw=paperEightStroke},
   row Pnine/.style={fill=paperNineFill!55, draw=paperNineStroke},
+  row Pten/.style={fill=paperTenFill!55, draw=paperTenStroke},
   pct circle/.style={circle, line width=0.8pt, minimum size=16pt, inner sep=0pt, font=\ttfamily\footnotesize\bfseries, align=center},
   pct Pone/.style={fill=paperOneFill, draw=paperOneStroke},
   pct Ptwo/.style={fill=paperTwoFill, draw=paperTwoStroke},
@@ -103,6 +63,7 @@
   pct Pseven/.style={fill=paperSevenFill, draw=paperSevenStroke},
   pct Peight/.style={fill=paperEightFill, draw=paperEightStroke},
   pct Pnine/.style={fill=paperNineFill, draw=paperNineStroke},
+  pct Pten/.style={fill=paperTenFill, draw=paperTenStroke},
   edge strict/.style={draw=tierStrict, line width=2.0pt, line cap=round},
   edge partial/.style={draw=tierPartial, line width=1.65pt, dash pattern=on 5pt off 3pt, line cap=round},
   edge related/.style={draw=tierPartial, line width=1.65pt, dash pattern=on 5pt off 3pt, line cap=round},
@@ -117,148 +78,274 @@
 \newcommand{\profilebadge}[2]{%
   \tikz[baseline=(profileid.base)]{\node[pct circle, pct #1, scale=0.62, transform shape] (profileid) {#2};}%
 }
-\newcommand{\labelcell}[3]{\parbox[t]{\linewidth}{\raggedright\profilebadge{#2}{#3}\hspace{2.0pt}\fontsize{5.05}{5.35}\selectfont #1}}
+\newcommand{\labelcell}[3]{\parbox[t]{\linewidth}{\raggedright\profilebadge{#2}{#3}\hspace{2.0pt}\fontsize{5.05}{5.35}\selectfont ``#1''}}
 \newcommand{\markercell}[1]{\parbox[t]{\linewidth}{\raggedright\fontsize{4.95}{5.25}\selectfont #1}}
 \newcommand{\sharedmarker}[1]{{\bfseries #1}}
 \newcommand{\heatentry}[2]{#1\\[-0.2pt]{\mdseries\fontsize{3.75}{4.0}\selectfont (#2)}}
-
-\path[use as bounding box] (-0.25, 0.45) rectangle (19.20, -6.94);
-\fill[white] (-0.25, 0.45) rectangle (19.20, -6.94);
-
-\newcommand{\DefineProfileCoords}[4]{%
-  \foreach \id/\group/\paper/\display/\ctype/\genes/\angle in \pctnodes {%
-    \coordinate (#1-\id) at ({#2 + #4*cos(\angle)}, {#3 + #4*sin(\angle)});
-  }%
+\newcommand{\binarycell}[3]{%
+  \ifnum#3=1
+    \node[rectangle, draw=black!55, line width=0.28pt, fill=black!82, text=white,
+      minimum width=0.30cm, minimum height=0.30cm, inner sep=0pt,
+      font=\sffamily\fontsize{4.9}{5.1}\selectfont\bfseries] at (#1, #2) {1};%
+  \else
+    \node[rectangle, draw=black!45, line width=0.28pt, fill=white, text=black,
+      minimum width=0.30cm, minimum height=0.30cm, inner sep=0pt,
+      font=\sffamily\fontsize{4.9}{5.1}\selectfont] at (#1, #2) {0};%
+  \fi
+}
+\newcommand{\idcheck}[2]{%
+  \draw[draw=tierStrict, line width=0.65pt, line cap=round, line join=round]
+    ({#1-0.060}, {#2-0.005}) -- ({#1-0.018}, {#2-0.050}) -- ({#1+0.078}, {#2+0.060});%
+}
+\newcommand{\idcheckstar}[2]{%
+  \idcheck{#1}{#2}%
+  \node[font=\sffamily\fontsize{4.1}{4.3}\selectfont\bfseries, text=tierStrict, anchor=base] at ({#1+0.105}, {#2+0.070}) {*};%
+}
+\newcommand{\idxmark}[2]{%
+  \draw[draw=attentionRed, line width=0.65pt, line cap=round]
+    ({#1-0.060}, {#2-0.060}) -- ({#1+0.060}, {#2+0.060})
+    ({#1-0.060}, {#2+0.060}) -- ({#1+0.060}, {#2-0.060});%
 }
 
-\newcommand{\DrawProfileNodes}[1]{%
-  \foreach \id/\group/\paper/\display/\ctype/\genes/\angle in \pctnodes {%
-    \node[pct circle, pct \paper] at (#1-\id) {\display};
-  }%
+\path[use as bounding box] (-0.25, 0.45) rectangle (18.25, -7.12);
+\fill[white] (-0.25, 0.45) rectangle (18.25, -7.12);
+
+% Panel A: local-to-global marker matrix schematic.
+\node[panel title] at (1.15, 0) {Annotation Problem};
+
+\def\mx{0.20}
+\def\myone{-0.90}
+\def\mytwo{-2.20}
+\def\mypool{-4.04}
+\def\rowh{0.36}
+\def\cellw{0.34}
+\def\labelw{0.42}
+\def\colbase{0.76}
+\def\statusx{2.08}
+
+\node[font=\sffamily\tiny\bfseries, rotate=90, anchor=center] at ({\mx-0.20}, {\myone-0.5*\rowh}) {Study 1};
+\foreach \i/\g in {0/g1,1/g2,2/g3,3/g4} {
+  \node[font=\sffamily\fontsize{4.4}{4.6}\selectfont] at ({\mx+\colbase+\i*\cellw}, {\myone+0.34}) {\g};
+}
+\foreach \r/\lab/\a/\b/\c/\d in {0/$A_1$/1/0/0/0,1/$B_1$/0/1/0/0} {
+  \node[font=\sffamily\fontsize{4.7}{4.9}\selectfont, anchor=east] at ({\mx+\labelw}, {\myone-\r*\rowh}) {\lab};
+  \binarycell{\mx+\colbase+0*\cellw}{\myone-\r*\rowh}{\a}
+  \binarycell{\mx+\colbase+1*\cellw}{\myone-\r*\rowh}{\b}
+  \binarycell{\mx+\colbase+2*\cellw}{\myone-\r*\rowh}{\c}
+  \binarycell{\mx+\colbase+3*\cellw}{\myone-\r*\rowh}{\d}
+  \idcheck{\mx+\statusx}{\myone-\r*\rowh}
 }
 
-\newcommand{\DrawLabelEdges}[1]{%
-  \foreach \u/\v/\tier in \labeledges {%
-    \draw[edge \tier] (#1-\u) -- (#1-\v);
-  }%
+\node[font=\sffamily\tiny\bfseries, rotate=90, anchor=center] at ({\mx-0.20}, {\mytwo-1.0*\rowh}) {Study 2};
+\foreach \i/\g in {0/g1,1/g2,2/g3,3/g4} {
+  \node[font=\sffamily\fontsize{4.4}{4.6}\selectfont] at ({\mx+\colbase+\i*\cellw}, {\mytwo+0.34}) {\g};
+}
+\foreach \r/\lab/\a/\b/\c/\d in {0/$A_2$/0/0/1/0,1/$C_2$/1/0/0/1,2/$D_2$/0/1/0/0} {
+  \node[font=\sffamily\fontsize{4.7}{4.9}\selectfont, anchor=east] at ({\mx+\labelw}, {\mytwo-\r*\rowh}) {\lab};
+  \binarycell{\mx+\colbase+0*\cellw}{\mytwo-\r*\rowh}{\a}
+  \binarycell{\mx+\colbase+1*\cellw}{\mytwo-\r*\rowh}{\b}
+  \binarycell{\mx+\colbase+2*\cellw}{\mytwo-\r*\rowh}{\c}
+  \binarycell{\mx+\colbase+3*\cellw}{\mytwo-\r*\rowh}{\d}
+  \idcheck{\mx+\statusx}{\mytwo-\r*\rowh}
 }
 
-\newcommand{\DrawGeneEdges}[1]{%
-  \foreach \u/\v/\tier/\subsetflag/\jacc in \geneedges {%
-    \pgfmathsetmacro{\edgeWidth}{0.65 + 2.0*\jacc}%
-    \draw[edge \tier, line width=\edgeWidth pt] (#1-\u) -- (#1-\v);
-    \edef\subsetFlagExpanded{\subsetflag}%
-    \ifx\subsetFlagExpanded\subsetYes
-      \path (#1-\u) -- node[pos=0.5, subset glyph] {$\subset$} (#1-\v);
-    \fi
-  }%
+\draw[-Latex, line width=0.55pt, draw=black!70] ({\mx+1.15}, -3.28) -- ({\mx+1.15}, -3.52);
+
+\node[font=\sffamily\tiny\bfseries, rotate=90, anchor=center] at ({\mx-0.20}, {\mypool-2.0*\rowh}) {Pooled atlas};
+\foreach \i/\g in {0/g1,1/g2,2/g3,3/g4} {
+  \node[font=\sffamily\fontsize{4.4}{4.6}\selectfont] at ({\mx+\colbase+\i*\cellw}, {\mypool+0.34}) {\g};
 }
+\foreach \r/\lab/\a/\b/\c/\d in {0/$A_1$/1/0/0/0,1/$A_2$/0/0/1/0,2/$B_1$/0/1/0/0,3/$D_2$/0/1/0/0,4/$C_2$/1/0/0/1} {
+  \node[font=\sffamily\fontsize{4.7}{4.9}\selectfont, anchor=east] at ({\mx+\labelw}, {\mypool-\r*\rowh}) {\lab};
+  \binarycell{\mx+\colbase+0*\cellw}{\mypool-\r*\rowh}{\a}
+  \binarycell{\mx+\colbase+1*\cellw}{\mypool-\r*\rowh}{\b}
+  \binarycell{\mx+\colbase+2*\cellw}{\mypool-\r*\rowh}{\c}
+  \binarycell{\mx+\colbase+3*\cellw}{\mypool-\r*\rowh}{\d}
+}
+\idcheck{\mx+\statusx}{\mypool-0*\rowh}
+\idcheck{\mx+\statusx}{\mypool-1*\rowh}
+\idxmark{\mx+\statusx}{\mypool-2*\rowh}
+\idxmark{\mx+\statusx}{\mypool-3*\rowh}
+\idcheck{\mx+\statusx}{\mypool-4*\rowh}
+\draw[draw=sameLabelDiffMarkers, line width=0.55pt, rounded corners=0.8pt]
+  ({\mx-0.08}, {\mypool+0.18}) rectangle
+  ({\mx+\colbase+3.5*\cellw}, {\mypool-1*\rowh-0.18});
+\draw[draw=diffLabelsSameMarkers, line width=0.55pt, rounded corners=0.8pt]
+  ({\mx-0.08}, {\mypool-2*\rowh+0.18}) rectangle
+  ({\mx+\colbase+3.5*\cellw}, {\mypool-3*\rowh-0.18});
+\idcheck{0.16}{-5.90}
+\node[font=\sffamily\tiny, text=black!70, align=left, anchor=west] at (0.30, -5.90)
+  {Identifiable};
+\idxmark{0.16}{-6.23}
+\node[font=\sffamily\tiny, text=black!70, align=left, anchor=west] at (0.30, -6.23)
+  {Unidentifiable};
+\node[font=\sffamily\fontsize{4.1}{4.3}\selectfont, text=sameLabelDiffMarkers, align=left, anchor=west] at (0.04, -6.54)
+  {same label, different markers};
+\node[font=\sffamily\fontsize{4.1}{4.3}\selectfont, text=diffLabelsSameMarkers, align=left, anchor=west] at (0.04, -6.78)
+  {different labels, same markers};
 
-% Panel A: paper-celltype profile rows.
-\node[panel title, anchor=west] at (0.22, 0) {Paper Markers};
+% Panel B: paper-celltype profile rows.
+\node[panel title] at (5.45, 0) {Study Markers};
 
-\node[anchor=north west, inner sep=0pt] at (0, -0.38) {%
+\node[anchor=north west, inner sep=0pt] at (2.68, -0.38) {%
 \begingroup
 \setlength{\tabcolsep}{1.6pt}
 \setlength{\cmidrulewidth}{0.16pt}
 \renewcommand{\arraystretch}{0.98}
 \fontsize{5.4}{5.75}\selectfont
-\begin{tabular}{@{}p{1.18cm}p{2.02cm}p{1.72cm}@{}}
+\begin{tabular}{@{}p{1.18cm}p{2.70cm}p{1.72cm}@{}}
 \toprule
-\textbf{Paper} & \textbf{Cell type label} & \textbf{Marker list} \\
+\textbf{Paper} & \textbf{Reported cell type} & \textbf{Reported markers} \\
 \midrule
-\papercell{paperOneStroke}{Sade-Feldman 2018}
-  & \labelcell{CD8\_B}{Pone}{B}
-  & \markercell{CD38, \sharedmarker{HAVCR2}\\\sharedmarker{ENTPD1}, \sharedmarker{PDCD1}\\BATF, \sharedmarker{LAG3}\\\sharedmarker{CTLA4}, PTPN6} \\
+\papercell{paperOneStroke}{DecontX 2019}
+  & \labelcell{Monocyte}{Pone}{D}
+  & \markercell{\sharedmarker{LYZ}, \sharedmarker{S100A8}\\\sharedmarker{S100A9}, \sharedmarker{CD14}} \\
 \specialrule{0.16pt}{1pt}{1pt}
-\papercell{paperFiveStroke}{Schafflick 2020}
-  & \labelcell{Regulatory T cells}{Pfive}{R1}
-  & \markercell{\sharedmarker{FOXP3}, \sharedmarker{CTLA4}} \\
+\papercell{paperTwoStroke}{HCNetlas 2024}
+  & \labelcell{Monocyte}{Ptwo}{H}
+  & \markercell{\sharedmarker{S100A8}, \sharedmarker{S100A9}\\\sharedmarker{CD14}} \\
 \specialrule{0.16pt}{1pt}{1pt}
-\papercell{paperThreeStroke}{Krishna 2021}
-  & \labelcell{CD8A+ Exhausted}{Pthree}{KE}
-  & \markercell{\sharedmarker{PDCD1}, \sharedmarker{LAG3}\\\sharedmarker{HAVCR2}, TOX} \\
+\papercell{paperTenStroke}{Leach 2020}
+  & \labelcell{Monocytes}{Pten}{M}
+  & \markercell{\sharedmarker{S100A8}, \sharedmarker{S100A9}\\\sharedmarker{CD14}} \\
 \specialrule{0.16pt}{1pt}{1pt}
-\papercell{paperSixStroke}{Dominguez Conde 2022}
-  & \labelcell{Regulatory T cells}{Psix}{R2}
-  & \markercell{\sharedmarker{FOXP3}, \sharedmarker{CTLA4}} \\
+\papercell{paperThreeStroke}{IFN response 2023}
+  & \labelcell{Monocyte}{Pthree}{I}
+  & \markercell{ISG15, IFI44\\IFIT5} \\
 \specialrule{0.16pt}{1pt}{1pt}
-\papercell{paperSevenStroke}{Egozi 2023}
-  & \labelcell{Regulatory T cells}{Pseven}{R3}
-  & \markercell{SELL, CCR7\\SOCS1, \sharedmarker{CTLA4}\\\sharedmarker{TIGIT}, ICOS\\TNFRSF4, IL2RA} \\
+\papercell{paperFourStroke}{Human liver 2022}
+  & \labelcell{Inflammatory macrophages}{Pfour}{L}
+  & \markercell{\sharedmarker{LYZ}, \sharedmarker{S100A8}\\\sharedmarker{S100A9}} \\
 \specialrule{0.16pt}{1pt}{1pt}
-\papercell{paperFourStroke}{Lopez-Cobo 2024}
-  & \labelcell{CD4-C2-KLF2}{Pfour}{K4}
-  & \markercell{\sharedmarker{KLF2}} \\
-\cmidrule(l{0pt}r{0pt}){2-3}
-  & \labelcell{CD8-C2-KLF2}{Pfour}{K8}
-  & \markercell{\sharedmarker{KLF2}} \\
+\papercell{paperFiveStroke}{Dominguez Conde 2022}
+  & \labelcell{Classical}{Pfive}{C}
+  & \markercell{\sharedmarker{S100A8}, \sharedmarker{S100A9}\\\sharedmarker{S100A12}} \\
 \specialrule{0.16pt}{1pt}{1pt}
-\papercell{paperTwoStroke}{Wu 2026}
-  & \labelcell{Exhausted T}{Ptwo}{EX}
-  & \markercell{\sharedmarker{PDCD1}, \sharedmarker{CTLA4}\\\sharedmarker{HAVCR2}, \sharedmarker{LAG3}\\\sharedmarker{TIGIT}, PRDM1\\TBX21, EOMES\\IL2RB, IL7R} \\
-\cmidrule(l{0pt}r{0pt}){2-3}
-  & \labelcell{Regulatory T cells}{Ptwo}{R4}
-  & \markercell{\sharedmarker{CD39}, CD73} \\
+\papercell{paperSixStroke}{Peng 2023}
+  & \labelcell{MDSC}{Psix}{P}
+  & \markercell{\sharedmarker{S100A8}, \sharedmarker{S100A9}\\\sharedmarker{S100A12}} \\
+\specialrule{0.16pt}{1pt}{1pt}
+\papercell{paperSevenStroke}{Pelka 2021}
+  & \labelcell{Macrophage}{Pseven}{R}
+  & \markercell{\sharedmarker{S100A8}, \sharedmarker{S100A9}\\\sharedmarker{S100A12}} \\
+\specialrule{0.16pt}{1pt}{1pt}
+\papercell{paperEightStroke}{Glioblastoma 2023}
+  & \labelcell{Macrophage}{Peight}{G1}
+  & \markercell{CD68} \\
+\specialrule{0.16pt}{1pt}{1pt}
+\papercell{paperNineStroke}{Synovium 2024}
+  & \labelcell{Macrophage}{Pnine}{G2}
+  & \markercell{CD68} \\
 \bottomrule
 \end{tabular}
 \endgroup
 };
 
-% Panel B: two graphs with shared node positions.
-\node[panel title] at (7.68, 0) {Celltype Labels};
-\node[panel title] at (12.17, 0) {Marker Genes};
+% Panel C: real example pooled marker matrix.
+\node[panel title] at (11.48, 0) {Pooled Atlas};
 
-\DefineProfileCoords{lg}{7.68}{-2.72}{1.78}
-\DefineProfileCoords{gg}{12.17}{-2.72}{1.78}
-\DrawLabelEdges{lg}
-\DrawGeneEdges{gg}
-\DrawProfileNodes{lg}
-\DrawProfileNodes{gg}
+\def\gx{10.10}
+\def\gy{-1.39}
+\def\mcw{0.33}
+\def\mrh{0.42}
+\def\rowidshift{0.45}
+\def\realstatusx{\gx+9.05*\mcw}
 
-% Edge legend and reading guide.
-\draw[edge strict] (7.00, -5.65) -- (7.55, -5.65);
-\node[anchor=west, font=\sffamily\scriptsize] at (7.67, -5.65) {exact match};
-\draw[edge partial] (9.20, -5.65) -- (9.75, -5.65);
-\node[anchor=west, font=\sffamily\scriptsize] at (9.87, -5.65) {partial match};
+\foreach \c/\gene in {0/LYZ,1/S100A8,2/S100A9,3/CD14,4/S100A12,5/ISG15,6/IFI44,7/IFIT5,8/CD68} {
+  \node[font=\sffamily\fontsize{4.55}{4.8}\selectfont, rotate=58, anchor=west]
+    at ({\gx+\c*\mcw-0.03}, {\gy+0.19}) {\gene};
+}
 
-% Panel C: joint relation map.
-\node[panel title] at (16.95, 0) {Joint Distribution};
+\foreach \r/\paper/\id/\a/\b/\c/\d/\e/\f/\g/\h/\i in {
+  0/Pone/D/1/1/1/1/0/0/0/0/0,
+  1/Ptwo/H/0/1/1/1/0/0/0/0/0,
+  2/Pten/M/0/1/1/1/0/0/0/0/0,
+  3/Pthree/I/0/0/0/0/0/1/1/1/0,
+  4/Pfour/L/1/1/1/0/0/0/0/0/0,
+  5/Pfive/C/0/1/1/0/1/0/0/0/0,
+  6/Psix/P/0/1/1/0/1/0/0/0/0,
+  7/Pseven/R/0/1/1/0/1/0/0/0/0,
+  8/Peight/G1/0/0/0/0/0/0/0/0/1,
+  9/Pnine/G2/0/0/0/0/0/0/0/0/1%
+} {
+  \node[pct circle, pct \paper, scale=0.56, transform shape] at ({\gx-\rowidshift}, {\gy-\r*\mrh}) {\id};
+  \binarycell{\gx+0*\mcw}{\gy-\r*\mrh}{\a}
+  \binarycell{\gx+1*\mcw}{\gy-\r*\mrh}{\b}
+  \binarycell{\gx+2*\mcw}{\gy-\r*\mrh}{\c}
+  \binarycell{\gx+3*\mcw}{\gy-\r*\mrh}{\d}
+  \binarycell{\gx+4*\mcw}{\gy-\r*\mrh}{\e}
+  \binarycell{\gx+5*\mcw}{\gy-\r*\mrh}{\f}
+  \binarycell{\gx+6*\mcw}{\gy-\r*\mrh}{\g}
+  \binarycell{\gx+7*\mcw}{\gy-\r*\mrh}{\h}
+  \binarycell{\gx+8*\mcw}{\gy-\r*\mrh}{\i}
+}
+\idcheck{\realstatusx}{\gy-0*\mrh}
+\idxmark{\realstatusx}{\gy-1*\mrh}
+\idxmark{\realstatusx}{\gy-2*\mrh}
+\idcheck{\realstatusx}{\gy-3*\mrh}
+\idcheck{\realstatusx}{\gy-4*\mrh}
+\idxmark{\realstatusx}{\gy-5*\mrh}
+\idxmark{\realstatusx}{\gy-6*\mrh}
+\idxmark{\realstatusx}{\gy-7*\mrh}
+\idxmark{\realstatusx}{\gy-8*\mrh}
+\idxmark{\realstatusx}{\gy-9*\mrh}
 
-\def\hx{16.00}
+\draw[draw=sameLabelDiffMarkers, line width=0.75pt, rounded corners=1.2pt]
+  ({\gx-\rowidshift-0.24}, {\gy+0.23}) rectangle ({\gx+8.5*\mcw}, {\gy-3*\mrh-0.23});
+\draw[draw=diffLabelsSameMarkers, line width=0.75pt, rounded corners=1.2pt]
+  ({\gx-\rowidshift-0.24}, {\gy-5*\mrh+0.23}) rectangle ({\gx+8.5*\mcw}, {\gy-7*\mrh-0.23});
+\idcheck{\gx-\rowidshift-0.12}{\gy-10.0*\mrh}
+\node[anchor=west, font=\sffamily\tiny, text=black!70] at ({\gx-\rowidshift+0.03}, {\gy-10.0*\mrh}) {Identifiable};
+\idxmark{\gx-\rowidshift-0.12}{\gy-10.52*\mrh}
+\node[anchor=west, font=\sffamily\tiny, text=black!70] at ({\gx-\rowidshift+0.03}, {\gy-10.52*\mrh}) {Unidentifiable};
+\node[anchor=west, font=\sffamily\tiny, text=sameLabelDiffMarkers] at ({\gx-\rowidshift-0.20}, {\gy-11.15*\mrh}) {same label, different markers};
+\node[anchor=west, font=\sffamily\tiny, text=diffLabelsSameMarkers] at ({\gx-\rowidshift-0.20}, {\gy-11.67*\mrh}) {different labels, same markers};
+
+% Panel D: joint relation map.
+\node[panel title] at (15.95, 0) {Label-Marker Agreement};
+
+\def\hx{15.00}
 \def\hy{-2.02}
 \def\cw{1.12}
 \def\hi{0.035}
-\node[font=\sffamily\scriptsize\itshape, rotate=90] at (14.62, {\hy - \cw}) {Celltype Labels};
-\node[font=\sffamily\scriptsize\itshape, align=center] at ({\hx + \cw}, -0.92) {Marker Genes$^*$};
+\node[font=\sffamily\scriptsize\itshape, rotate=90] at (13.72, {\hy - \cw}) {Reported Labels};
+\node[font=\sffamily\scriptsize\itshape, align=center] at ({\hx + \cw}, -0.92) {Marker Identifiability$^*$};
 \node[font=\sffamily\tiny, align=center] at ({\hx + 0*\cw}, -1.24) {Exact\\{\tiny $\scriptstyle J=1$}};
 \node[font=\sffamily\tiny, align=center] at ({\hx + 1*\cw}, -1.24) {Partial\\{\tiny $\scriptstyle 0<J<1$}};
 \node[font=\sffamily\tiny, align=center] at ({\hx + 2*\cw}, -1.24) {None\\{\tiny $\scriptstyle J=0$}};
-\node[font=\sffamily\tiny, align=right, anchor=east] at (15.50, {\hy - 0*\cw}) {Exact};
-\node[font=\sffamily\tiny, align=right, anchor=east] at (15.50, {\hy - 1*\cw}) {Partial};
-\node[font=\sffamily\tiny, align=right, anchor=east] at (15.50, {\hy - 2*\cw}) {Different};
+\node[font=\sffamily\tiny, align=right, anchor=east] at (14.48, {\hy - 0*\cw}) {Exact};
+\node[font=\sffamily\tiny, align=right, anchor=east] at (14.48, {\hy - 1*\cw}) {Partial};
+\node[font=\sffamily\tiny, align=right, anchor=east] at (14.48, {\hy - 2*\cw}) {Different};
 
 \node[heat cell, fill=tierStrictLight!55] at ({\hx + 0*\cw}, {\hy - 0*\cw}) {\heatentry{Same\\profile}{1}};
-\node[heat cell, fill=tierPartialLight!35] at ({\hx + 1*\cw}, {\hy - 0*\cw}) {\heatentry{Same label,\\partial genes}{2}};
-\node[heat cell, fill=tierPartialLight!35] at ({\hx + 2*\cw}, {\hy - 0*\cw}) {\heatentry{Same label,\\no genes}{3}};
-\node[heat cell, fill=tierPartialLight!35] at ({\hx + 0*\cw}, {\hy - 1*\cw}) {\heatentry{Partial label,\\same genes}{1}};
-\node[heat cell, fill=tierPartialLight!35] at ({\hx + 1*\cw}, {\hy - 1*\cw}) {\heatentry{Partial label,\\partial genes}{2}};
-\node[heat cell, fill=tierPartialLight!35] at ({\hx + 2*\cw}, {\hy - 1*\cw}) {\heatentry{Partial label,\\no genes}{2}};
-\node[heat cell, fill=tierPartialLight!35] at ({\hx + 0*\cw}, {\hy - 2*\cw}) {\heatentry{Diff. label,\\same genes}{0}};
-\node[heat cell, fill=tierPartialLight!35] at ({\hx + 1*\cw}, {\hy - 2*\cw}) {\heatentry{Diff. label,\\partial genes}{8}};
-\node[heat cell, fill=neutralMid!35] at ({\hx + 2*\cw}, {\hy - 2*\cw}) {\heatentry{Diff.\\profile}{17}};
-\draw[draw=attentionRed, line width=1.0pt]
-  ({\hx + 0.5*\cw}, {\hy + 0.5*\cw}) rectangle
-  ({\hx + 1.5*\cw}, {\hy - 2.5*\cw});
+\node[heat cell, fill=sameLabelDiffMarkers!16] at ({\hx + 1*\cw}, {\hy - 0*\cw}) {\heatentry{Same label,\\partial genes}{1}};
+\node[heat cell, fill=sameLabelDiffMarkers!16] at ({\hx + 2*\cw}, {\hy - 0*\cw}) {\heatentry{Same label,\\no genes}{4}};
+\node[heat cell, fill=diffLabelsSameMarkers!16] at ({\hx + 0*\cw}, {\hy - 1*\cw}) {\heatentry{Partial label,\\same genes}{1}};
+\node[heat cell, fill=white] at ({\hx + 1*\cw}, {\hy - 1*\cw}) {\heatentry{Partial label,\\partial genes}{2}};
+\node[heat cell, fill=white] at ({\hx + 2*\cw}, {\hy - 1*\cw}) {\heatentry{Partial label,\\no genes}{3}};
+\node[heat cell, fill=diffLabelsSameMarkers!16] at ({\hx + 0*\cw}, {\hy - 2*\cw}) {\heatentry{Diff. label,\\same genes}{3}};
+\node[heat cell, fill=white] at ({\hx + 1*\cw}, {\hy - 2*\cw}) {\heatentry{Diff. label,\\partial genes}{14}};
+\node[heat cell, fill=neutralMid!35] at ({\hx + 2*\cw}, {\hy - 2*\cw}) {\heatentry{Diff.\\profile}{16}};
+\draw[draw=attentionRed, line width=1.0pt, line join=round]
+  ({\hx + 0.5*\cw}, {\hy - 0.5*\cw}) --
+  ({\hx + 2.5*\cw}, {\hy - 0.5*\cw}) --
+  ({\hx + 2.5*\cw}, {\hy - 1.5*\cw}) --
+  ({\hx + 1.5*\cw}, {\hy - 1.5*\cw}) --
+  ({\hx + 1.5*\cw}, {\hy - 2.5*\cw}) --
+  ({\hx + 0.5*\cw}, {\hy - 2.5*\cw}) -- cycle;
 
 \node[font=\sffamily\tiny\itshape, align=center] at ({\hx + \cw}, {\hy - 2.82*\cw})
   {*$\scriptstyle J=|G_1\cap G_2|/|G_1\cup G_2|$};
 \def\legy{\hy - 3.12*\cw}
-\def\legx{15.68}
+\def\legx{14.78}
 \draw[fill=tierStrictLight!55, draw=black!35, line width=0.35pt] (\legx, \legy) rectangle ++(0.13, 0.13);
-\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy + 0.065}) {likely same cell type};
-\draw[fill=tierPartialLight!35, draw=black!35, line width=0.35pt] (\legx, {\legy - 0.22}) rectangle ++(0.13, 0.13);
-\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.155}) {context clarifies cell type vs. state};
-\draw[fill=neutralMid!35, draw=black!35, line width=0.35pt] (\legx, {\legy - 0.44}) rectangle ++(0.13, 0.13);
-\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.375}) {likely different cell type};
+\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy + 0.065}) {same profile};
+\draw[fill=sameLabelDiffMarkers!16, draw=black!35, line width=0.35pt] (\legx, {\legy - 0.20}) rectangle ++(0.13, 0.13);
+\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.135}) {same label, different markers};
+\draw[fill=diffLabelsSameMarkers!16, draw=black!35, line width=0.35pt] (\legx, {\legy - 0.40}) rectangle ++(0.13, 0.13);
+\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.335}) {alias / naming variation};
+\draw[fill=white, draw=attentionRed, line width=0.55pt] (\legx, {\legy - 0.60}) rectangle ++(0.13, 0.13);
+\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.535}) {context clarifies identifiability};
+\draw[fill=neutralMid!35, draw=black!35, line width=0.35pt] (\legx, {\legy - 0.80}) rectangle ++(0.13, 0.13);
+\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.735}) {different profile};
 \end{tikzpicture}

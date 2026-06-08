@@ -1,0 +1,5 @@
+source	comparison	k	profiles	mean_overlap_at_k	median_overlap_at_k	mean_jaccard_at_k	mean_marker_jaccard_to_neighbors	median_marker_jaccard_to_neighbors	mean_ontology_similarity_to_neighbors
+Label	Observed	1	6	0.6666666666666666	1.0	0.6666666666666666	0.25	0.25	0.3194444444444444
+Label	Random	1	6	0.0	0.0	0.0	0.0	0.0	0.1685185185185185
+Ontology	Observed	1	14	0.5	0.5	0.5	0.11951144094001236	0.050865800865800864	0.3333333333333333
+Ontology	Random	1	14	0.0	0.0	0.0	0.0	0.0	0.15558647701504844

@@ -1,0 +1,59 @@
+\begin{table*}[ht!]
+  \centering
+  \caption{\textbf{T-cell marker-cluster gene F1 ratios}. Top genes from each T-cell marker-gene cluster, ranked by marker-cluster F1. Marker-cluster F1 measures each gene's coverage and purity within a marker-derived T-cell cluster relative to all profiles. Best label F1 is the best coverage--purity F1 for the same gene across repeated exact T-cell labels. The ratio therefore asks whether a gene is better explained by marker-gene neighborhoods than by repeated cell type labels alone.}
+  \label{tab:tcell_gene_f1_ratios}%
+  \claim{tab-tcell-gene-f1-ratios}{}%
+  \source{analysis/build_fig5_nomenclature_weights.py}%
+  \source{analysis/build_tcell_gene_f1_latex_table.py}%
+  \source{analysis/results/tcell_gene_f1_ratio_by_cluster.tsv}%
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{@{}l l l r r r l@{}}
+  \toprule
+  Cluster & Program & Gene & Marker F1 & Label F1 & Ratio & Best repeated label \\
+  \midrule
+  C1 & Naive/memory & \textit{SELL} & 0.63 & 0.08 & 7.4 & CD 4 T CELL \\
+   &  & \textit{TCF7} & 0.59 & 0.09 & 6.7 & NAIVE T CELL \\
+   &  & \textit{CCR7} & 0.57 & 0.14 & 4.1 & CD 4 T CELL \\
+   &  & \textit{LEF1} & 0.40 & 0.12 & 3.3 & CD 4 T CELL \\
+   &  & \textit{IL7R} & 0.17 & 0.11 & 1.5 & CD 4 T CELL \\
+  \addlinespace[2pt]
+  C2 & Exhaustion & \textit{CTLA4} & 0.53 & 0.34 & 1.6 & TREG \\
+   &  & \textit{TIGIT} & 0.52 & 0.30 & 1.7 & TREG \\
+   &  & \textit{FOXP3} & 0.44 & 0.46 & 1.0 & TREG \\
+   &  & \textit{HAVCR2} & 0.36 & 0.04 & 8.1 & TREG \\
+   &  & \textit{PDCD1} & 0.27 & 0.16 & 1.8 & CD 8 T CELL \\
+  \addlinespace[2pt]
+  C3 & Cytotoxic & \textit{GZMB} & 0.31 & 0.02 & 12.4 & CD 8 T CELL \\
+   &  & \textit{PRF1} & 0.30 & 0.02 & 14.9 & T CELL \\
+   &  & \textit{GZMH} & 0.28 & 0.09 & 3.2 & CD 8 T CELL \\
+   &  & \textit{FGFBP2} & 0.27 & 0.00 & $\infty$ & -- \\
+   &  & \textit{GZMK} & 0.24 & 0.16 & 1.5 & CD 8 T CELL \\
+  \addlinespace[2pt]
+  C4 & Other & \textit{CD3G} & 0.65 & 0.26 & 2.5 & T CELL \\
+   &  & \textit{CD3D} & 0.57 & 0.50 & 1.1 & T CELL \\
+   &  & \textit{CD3E} & 0.46 & 0.43 & 1.1 & T CELL \\
+   &  & \textit{TRAC} & 0.36 & 0.22 & 1.6 & T CELL \\
+   &  & \textit{TRBC1} & 0.12 & 0.05 & 2.4 & T CELL \\
+  \addlinespace[2pt]
+  C5 & Other & \textit{CD8A} & 0.38 & 0.25 & 1.5 & T CELL \\
+   &  & \textit{CD4} & 0.36 & 0.30 & 1.2 & CD 4 T CELL \\
+   &  & \textit{CD3E} & 0.30 & 0.43 & 0.7 & T CELL \\
+   &  & \textit{CD2} & 0.26 & 0.27 & 1.0 & T CELL \\
+   &  & \textit{TRBC2} & 0.18 & 0.10 & 1.8 & T CELL \\
+  \addlinespace[2pt]
+  C6 & Residency & \textit{ZNF683} & 0.29 & 0.00 & $\infty$ & -- \\
+   &  & \textit{ITGAE} & 0.23 & 0.05 & 4.3 & CD 8 T CELL \\
+   &  & \textit{CD69} & 0.18 & 0.11 & 1.7 & CD 4 T CELL \\
+   &  & \textit{ITGA1} & 0.16 & 0.06 & 2.9 & CD 8 T CELL \\
+   &  & \textit{CXCR6} & 0.14 & 0.05 & 2.8 & CD 8 T CELL \\
+  \addlinespace[2pt]
+  C7 & Cytotoxic & \textit{GZMH} & 0.23 & 0.09 & 2.6 & CD 8 T CELL \\
+   &  & \textit{KLRG1} & 0.20 & 0.12 & 1.6 & CD 4 T CELL \\
+   &  & \textit{IFNG} & 0.16 & 0.03 & 4.9 & CD 8 T CELL \\
+   &  & \textit{CCL4} & 0.14 & 0.09 & 1.6 & CD 8 T CELL \\
+   &  & \textit{GZMA} & 0.13 & 0.11 & 1.2 & CD 8 T CELL \\
+  \addlinespace[2pt]
+  \bottomrule
+  \end{tabular}
+\end{table*}
