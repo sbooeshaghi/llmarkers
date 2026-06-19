@@ -1,0 +1,32 @@
+digraph span {
+  rankdir=BT;
+  node [shape=box, style=filled, fontname="Helvetica", fontsize=10];
+  edge [color="#777777"];
+  "def:marker-family-axioms" [label="(1) \\normalfont Fix a gene set G, a\nstudy, partition, target group t,\nand pairwise marker sets M(t,h),\nwhere h is one group being\ncompared against t. Let C be the\nset of gro…", fillcolor="#90CAF9"];
+  "thm:marker-axiom-representation" [label="(2) If F satisfies the neutral-\nelement, pairwise-agreement, and\nconjunctive-comparison properties\nabove, then for every finite set C\nof groups being compared against\nthe tar…", fillcolor="#66BB6A"];
+  "def:comparison-family-marker" [label="(3) Let C\\subseteq\nK_{s,p}\\setminus\\{t\\} be the\ngroups that target t must be\ndistinguished from. We call C the\ncomparison set. The marker set for\ntarget group t against C is…", fillcolor="#90CAF9"];
+  "thm:pairwise-recurrence-marker" [label="(4) A gene g is a marker for target\ngroup t against the groups in C if\nand only if g is a pairwise marker\nfor t against every group in C.", fillcolor="#66BB6A"];
+  "cor:pairwise-reporting-reusable" [label="(5) If a study reports M_{s,p}(t,h)\nfor each pairwise target--\ncomparison contrast in a\npartition, then a later user can\nreconstruct M_{s,p}(t;C) for any\nset C of comparison…", fillcolor="#BEE3BF"];
+  "prop:cell-type-marker-recurrence" [label="(6) A gene g is a marker for the\nmarker-defined cell type claim I\nif and only if g is a marker for\nevery scoped local group in I:\ng\\in M(I) \\Longleftrightarrow\n\\forall i\\in…", fillcolor="#A5D6A7"];
+  "prop:comparison-family-monotonicity" [label="(7) If C_{\\mathrm{local}}\\subseteq\nC_{\\mathrm{global}}, then\nM_{s,p}(t;C_{\\mathrm{global}})\n\\subseteq\nM_{s,p}(t;C_{\\mathrm{local}}).", fillcolor="#A5D6A7"];
+  "prop:type-state-scope-inclusion" [label="(8) If C_{\\mathrm{state}}\\subseteq\nC_{\\mathrm{type}}, then\nM_{s,p}(t;C_{\\mathrm{type}})\n\\subseteq\nM_{s,p}(t;C_{\\mathrm{state}}).", fillcolor="#A5D6A7"];
+  "prop:hierarchical-marker-inclusion" [label="(9) Let C_{\\mathrm{parent}} be a broad\ncomparison set and let\nC_{\\mathrm{child}}\\subseteq\nC_{\\mathrm{parent}} be the local\ncomparison set induced by a\nrefinement of that par…", fillcolor="#A5D6A7"];
+  "prop:one-vs-background-decomposition" [label="(10) If B is a background set and\nweights w_h satisfy \\sum_{h\\in\nB}w_h=1, then\n\\mu(s,p,t,g)-\\sum_{h\\in\nB}w_h\\mu(s,p,h,g) = \\sum_{h\\in\nB}w_h(\\mu(s,p,t,g)-\\mu(s,p,h,g)).", fillcolor="#A5D6A7"];
+  "prop:pair-coverage-aggregation" [label="(11) Suppose a collection of local\nexperiments covers every required\npairwise comparison in a global\ncomparison set, and suppose the\nsame marker panel separates each\ncovered…", fillcolor="#A5D6A7"];
+  "prop:experiment-coverage-lower-bound" [label="(12) Let k be the number of global cell\ntypes, let m be the number of\nlocal experiments, and suppose\neach experiment contributes at\nmost q ordered distinct comparison\npairs a…", fillcolor="#A5D6A7"];
+  "prop:experiment-overlap-correction" [label="(13) Let P_i be the set of ordered\ndistinct comparison pairs\ncontributed by study i. Adding a\nnew study contributes only the\npairs not already observed:\n|P_{\\mathrm{old}}\\cup…", fillcolor="#A5D6A7"];
+  "prop:flat-projection-loss" [label="(14) Flattening a scoped marker claim\nto a cell type--gene pair,\n(t,C,g)\\mapsto(t,g). is not\ninjective in the comparison set.", fillcolor="#A5D6A7"];
+  "prop:marker-panel-information-bound" [label="(15) If a panel S separates all\nprofiles in a finite universe K,\nthen |K|≤ 2^{|S|}.", fillcolor="#A5D6A7"];
+  "def:comparison-family-marker" -> "cor:pairwise-reporting-reusable" [color="#555555"];
+  "def:comparison-family-marker" -> "prop:cell-type-marker-recurrence" [color="#555555"];
+  "def:comparison-family-marker" -> "prop:comparison-family-monotonicity" [color="#555555"];
+  "def:comparison-family-marker" -> "prop:hierarchical-marker-inclusion" [color="#555555"];
+  "def:comparison-family-marker" -> "prop:one-vs-background-decomposition" [color="#555555"];
+  "def:comparison-family-marker" -> "prop:type-state-scope-inclusion" [color="#555555"];
+  "def:comparison-family-marker" -> "thm:pairwise-recurrence-marker" [color="#555555"];
+  "def:marker-family-axioms" -> "def:comparison-family-marker" [color="#555555"];
+  "def:marker-family-axioms" -> "thm:marker-axiom-representation" [color="#555555"];
+  "prop:pair-coverage-aggregation" -> "prop:experiment-coverage-lower-bound" [color="#555555"];
+  legend [shape=plaintext, margin=0, label=<<table border="0" cellborder="0" cellspacing="3" cellpadding="1"><tr><td align="left" colspan="2"><font point-size="10"><b>legend</b></font></td></tr><tr><td align="left" colspan="2" border="1" color="#777777" bgcolor="#90CAF9" cellpadding="5">definition</td></tr><tr><td align="left" colspan="2" border="1" color="#777777" bgcolor="#66BB6A" cellpadding="5">theorem</td></tr><tr><td align="left" colspan="2" border="1" color="#777777" bgcolor="#A5D6A7" cellpadding="5">proposition</td></tr><tr><td align="left" colspan="2" border="1" color="#777777" bgcolor="#BEE3BF" cellpadding="5">corollary</td></tr><tr><td colspan="2" height="7"></td></tr><tr><td align="center" cellpadding="2"><font color="#555555" point-size="9">&#9650;<br/>&#9474;</font></td><td align="left" cellpadding="3">statement dep</td></tr></table>>];
+  "prop:marker-panel-information-bound" -> legend [style=invis, arrowhead=none, weight=20];
+}

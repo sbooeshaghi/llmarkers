@@ -1,0 +1,668 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Adipo",
+    "group_name": "ADIPO",
+    "group_id": "CL:0002521",
+    "feature_label": "ADIPOQ",
+    "feature_name": "ADIPOQ",
+    "feature_id": "ENSG00000181092",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication). Based on previously described markers from Emont et al (PMID: 35296864).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 2627,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "subcutaneous adipocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0002521",
+    "_cap_ontology_term": "subcutaneous adipocyte",
+    "_cap_category_full_name": "connective tissue cell",
+    "_cap_category_ontology_term_id": "CL:0002320",
+    "_cap_category_ontology_term": "connective tissue cell",
+    "_cap_synonyms": [
+      "subcutaneous fat cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-022-04518-2"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-022-04518-2"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "EndoCs",
+    "group_name": "ENDOCS",
+    "group_id": "CL:0000115",
+    "feature_label": "SHANK3",
+    "feature_name": "SHANK3",
+    "feature_id": "ENSG00000251322",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 5703,
+    "_cap_label_color": "#dba757",
+    "_cap_label_full_name": "endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000115",
+    "_cap_ontology_term": "endothelial cell",
+    "_cap_category_full_name": "eukaryotic cell",
+    "_cap_category_ontology_term_id": "CL:0000255",
+    "_cap_category_ontology_term": "eukaryotic cell",
+    "_cap_synonyms": [
+      "endotheliocyte"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Macro",
+    "group_name": "MACRO",
+    "group_id": "CL:0000235",
+    "feature_label": "MS4A4A",
+    "feature_name": "MS4A4A",
+    "feature_id": "ENSG00000110079",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 2457,
+    "_cap_label_color": "#c7db57",
+    "_cap_label_full_name": "macrophage",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000235",
+    "_cap_ontology_term": "macrophage",
+    "_cap_category_full_name": "myeloid cell",
+    "_cap_category_ontology_term_id": "CL:0000763",
+    "_cap_category_ontology_term": "myeloid cell",
+    "_cap_synonyms": [
+      "histiocyte"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Macro",
+    "group_name": "MACRO",
+    "group_id": "CL:0000235",
+    "feature_label": "CD163",
+    "feature_name": "CD163",
+    "feature_id": "ENSG00000177575",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 2457,
+    "_cap_label_color": "#c7db57",
+    "_cap_label_full_name": "macrophage",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000235",
+    "_cap_ontology_term": "macrophage",
+    "_cap_category_full_name": "myeloid cell",
+    "_cap_category_ontology_term_id": "CL:0000763",
+    "_cap_category_ontology_term": "myeloid cell",
+    "_cap_synonyms": [
+      "histiocyte"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Peri",
+    "group_name": "PERI",
+    "group_id": "CL:0000669",
+    "feature_label": "STEAP4",
+    "feature_name": "STEAP4",
+    "feature_id": "ENSG00000127954",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication). Based on previously described markers from Emont et al (PMID: 35296864).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 875,
+    "_cap_label_color": "#7fdb57",
+    "_cap_label_full_name": "pericyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000669",
+    "_cap_ontology_term": "pericyte",
+    "_cap_category_full_name": "mural cell",
+    "_cap_category_ontology_term_id": "CL:0008034",
+    "_cap_category_ontology_term": "mural cell",
+    "_cap_synonyms": [
+      "adventitial reticular cell",
+      "pericyte cell",
+      "adventitial cell",
+      "pericyte of Rouget",
+      "cell of Rouget",
+      "ARC"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-022-04518-2"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-022-04518-2"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "APCs",
+    "group_name": "APCS",
+    "group_id": "CL:0009099",
+    "feature_label": "PDGFRA",
+    "feature_name": "PDGFRA",
+    "feature_id": "ENSG00000134853",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication). Based on previously described markers from Emont et al (PMID: 35296864).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 5036,
+    "_cap_label_color": "#57db77",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "fibro/adipogenic progenitor",
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-022-04518-2"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-022-04518-2"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SMCs",
+    "group_name": "SMCS",
+    "group_id": "CL:0000192",
+    "feature_label": "MYOCD",
+    "feature_name": "MYOCD",
+    "feature_id": "ENSG00000141052",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication). Based on previously described markers from Emont et al (PMID: 35296864).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1153,
+    "_cap_label_color": "#57dbbf",
+    "_cap_label_full_name": "smooth muscle cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000192",
+    "_cap_ontology_term": "smooth muscle cell",
+    "_cap_category_full_name": "muscle cell",
+    "_cap_category_ontology_term_id": "CL:0000187",
+    "_cap_category_ontology_term": "muscle cell",
+    "_cap_synonyms": [
+      "SMCs",
+      "non-striated muscle cell",
+      "myocytes",
+      " smooth muscle",
+      "smooth muscle fiber"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-022-04518-2"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-022-04518-2"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Bcells",
+    "group_name": "BCELLS",
+    "group_id": "CL:0000236",
+    "feature_label": "MS4A1",
+    "feature_name": "MS4A1",
+    "feature_id": "ENSG00000156738",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication). Based on previously described markers from Emont et al (PMID: 35296864).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 60,
+    "_cap_label_color": "#57afdb",
+    "_cap_label_full_name": "B cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000236",
+    "_cap_ontology_term": "B cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "B lymphocyte",
+      "B-lymphocyte",
+      "B-cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-022-04518-2"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-022-04518-2"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Mono",
+    "group_name": "MONO",
+    "group_id": "CL:0000576",
+    "feature_label": "ITGAX",
+    "feature_name": "ITGAX",
+    "feature_id": "ENSG00000140678",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 375,
+    "_cap_label_color": "#5767db",
+    "_cap_label_full_name": "monocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000576",
+    "_cap_ontology_term": "monocyte",
+    "_cap_category_full_name": "myeloid cell",
+    "_cap_category_ontology_term_id": "CL:0000763",
+    "_cap_category_ontology_term": "myeloid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Mono",
+    "group_name": "MONO",
+    "group_id": "CL:0000576",
+    "feature_label": "MS4A4A",
+    "feature_name": "MS4A4A",
+    "feature_id": "ENSG00000110079",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 375,
+    "_cap_label_color": "#5767db",
+    "_cap_label_full_name": "monocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000576",
+    "_cap_ontology_term": "monocyte",
+    "_cap_category_full_name": "myeloid cell",
+    "_cap_category_ontology_term_id": "CL:0000763",
+    "_cap_category_ontology_term": "myeloid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "LECs",
+    "group_name": "LECS",
+    "group_id": "CL:0002138",
+    "feature_label": "SHANK3",
+    "feature_name": "SHANK3",
+    "feature_id": "ENSG00000251322",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 206,
+    "_cap_label_color": "#8f57db",
+    "_cap_label_full_name": "endothelial cell of lymphatic vessel",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0002138",
+    "_cap_ontology_term": "endothelial cell of lymphatic vessel",
+    "_cap_category_full_name": "endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000115",
+    "_cap_category_ontology_term": "endothelial cell",
+    "_cap_synonyms": [
+      "LEC",
+      "lymphatic endothelial cell"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "LECs",
+    "group_name": "LECS",
+    "group_id": "CL:0002138",
+    "feature_label": "ELF3",
+    "feature_name": "ELF3",
+    "feature_id": "ENSG00000163435",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 206,
+    "_cap_label_color": "#8f57db",
+    "_cap_label_full_name": "endothelial cell of lymphatic vessel",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0002138",
+    "_cap_ontology_term": "endothelial cell of lymphatic vessel",
+    "_cap_category_full_name": "endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000115",
+    "_cap_category_ontology_term": "endothelial cell",
+    "_cap_synonyms": [
+      "LEC",
+      "lymphatic endothelial cell"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Tcells",
+    "group_name": "TCELLS",
+    "group_id": "CL:0000084",
+    "feature_label": "IL7R",
+    "feature_name": "IL7R",
+    "feature_id": "ENSG00000168685",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication). Based on previously described markers from Emont et al (PMID: 35296864).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 570,
+    "_cap_label_color": "#d757db",
+    "_cap_label_full_name": "T cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000084",
+    "_cap_ontology_term": "T cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "immature T cell",
+      "T lymphocyte",
+      "T-lymphocyte",
+      "mature T cell",
+      "T-cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-022-04518-2"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-022-04518-2"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "MastCs",
+    "group_name": "MASTCS",
+    "group_id": "CL:0000097",
+    "feature_label": "CPA3",
+    "feature_name": "CPA3",
+    "feature_id": "ENSG00000128510",
+    "source_type": "cap",
+    "source_rationale": "Marker genes for each cell population in the human WAT dataset (Fig. 1K of publication). Based on previously described markers from Emont et al (PMID: 35296864).",
+    "source_id": "https://celltype.info/project/861/dataset/2709/labelset/author_cell_type",
+    "data_id": "CAP:861:2709",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "861",
+    "_cap_dataset_id": "2709",
+    "_cap_dataset_name": "Reinisch MHUO 2025 \u2014 abdominal subcutaneous adipose tissue",
+    "_cap_dataset_url": "https://celltype.info/project/861/dataset/2709",
+    "_cap_cell_count": 19186,
+    "_cap_gene_count": 16620,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "subcutaneous abdominal adipose tissue"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 124,
+    "_cap_label_color": "#db5797",
+    "_cap_label_full_name": "mast cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000097",
+    "_cap_ontology_term": "mast cell",
+    "_cap_category_full_name": "myeloid cell",
+    "_cap_category_ontology_term_id": "CL:0000763",
+    "_cap_category_ontology_term": "myeloid cell",
+    "_cap_synonyms": [
+      "tissue basophil",
+      "mastocyte",
+      "histaminocyte",
+      "labrocyte"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-022-04518-2"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-022-04518-2"
+    ],
+    "_cap_marker_role": "canonical"
+  }
+]

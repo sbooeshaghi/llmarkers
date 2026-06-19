@@ -11,7 +11,7 @@ from scipy.sparse import coo_matrix
 
 from build_marker_stability_prototype import assign_neighborhood, build_records
 from cross_study_gene_space import REPO_ROOT, RESULTS_DIR, build_profile_summary, split_marker_text
-from build_tcell_marker_cluster_summary import normalize_label
+from marker_label_utils import normalize_label
 
 
 SUMMARY_PATH = RESULTS_DIR / "marker_identifiability_partition_summary.tsv"
@@ -473,7 +473,7 @@ def write_report(summary_df: pd.DataFrame, selected_df: pd.DataFrame, duplicate_
     lines = [
         "# Marker Identifiability Analysis",
         "",
-        "This analysis applies the Lean formalization in `formal/MarkerIdentifiability/Basic.lean` to the LLMarkers reported-marker matrix.",
+        "This analysis applies the Lean formalization in `analysis/formal/MarkerIdentifiability/Basic.lean` to the LLMarkers reported-marker matrix.",
         "For each partition, a gene is turned on for a group if it is reported in at least the stated fraction of profiles in that group.",
         "The Lean theorem gives the information lower bound: if `k` induced binary signatures are separated by binary markers, any separating panel needs at least `ceil(log2(k))` marker coordinates.",
         "",

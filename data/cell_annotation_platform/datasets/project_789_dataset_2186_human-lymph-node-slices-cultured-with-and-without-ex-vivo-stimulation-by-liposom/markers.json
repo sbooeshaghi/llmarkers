@@ -1,0 +1,4840 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "SELL",
+    "feature_name": "SELL",
+    "feature_id": "ENSG00000188404",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "ID2",
+    "feature_name": "ID2",
+    "feature_id": "ENSG00000115738",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "IL7R",
+    "feature_name": "IL7R",
+    "feature_id": "ENSG00000168685",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "KLRB1",
+    "feature_name": "KLRB1",
+    "feature_id": "ENSG00000111796",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "IL4I1",
+    "feature_name": "IL4I1",
+    "feature_id": "ENSG00000104951",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "CD200R1",
+    "feature_name": "CD200R1",
+    "feature_id": "ENSG00000163606",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "XCL2",
+    "feature_name": "XCL2",
+    "feature_id": "ENSG00000143185",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "XCL1",
+    "feature_name": "XCL1",
+    "feature_id": "ENSG00000143184",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "LINC00299",
+    "feature_name": "LINC00299",
+    "feature_id": "ENSG00000236790",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "SELL+ID2hi ILC",
+    "group_name": "SELL+ID2HI ILC",
+    "group_id": "CL:0001072",
+    "feature_label": "KIT",
+    "feature_name": "KIT",
+    "feature_id": "ENSG00000157404",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC1 in Azimuth tonsil dataset, including some NCAM1, NCR1, EOMES however also some expression of IL23R, RORC, AHR characteristic of ILC3, and GATA3 characteristic of ILC2. Had highest expression of SELL and ID2 in the ILCs which has been associated with more naive ILCs (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 11747,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001072",
+    "_cap_ontology_term": "CD34-negative, CD117-positive innate lymphoid cell, human",
+    "_cap_category_full_name": "immature innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001082",
+    "_cap_category_ontology_term": "immature innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ILC3",
+    "group_name": "ILC3",
+    "group_id": "CL:0001078",
+    "feature_label": "KIT",
+    "feature_name": "KIT",
+    "feature_id": "ENSG00000157404",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC3 (NKp44+ and NKp44-) in Azimuth tonsil dataset, low level NCR2 (NKp44) but similar to NK cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 19910,
+    "_cap_label_color": "#db8b57",
+    "_cap_label_full_name": "Group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001078",
+    "_cap_ontology_term": "Group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ILC3",
+    "group_name": "ILC3",
+    "group_id": "CL:0001078",
+    "feature_label": "IL4I1",
+    "feature_name": "IL4I1",
+    "feature_id": "ENSG00000104951",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC3 (NKp44+ and NKp44-) in Azimuth tonsil dataset, low level NCR2 (NKp44) but similar to NK cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 19910,
+    "_cap_label_color": "#db8b57",
+    "_cap_label_full_name": "Group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001078",
+    "_cap_ontology_term": "Group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ILC3",
+    "group_name": "ILC3",
+    "group_id": "CL:0001078",
+    "feature_label": "IL7R",
+    "feature_name": "IL7R",
+    "feature_id": "ENSG00000168685",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC3 (NKp44+ and NKp44-) in Azimuth tonsil dataset, low level NCR2 (NKp44) but similar to NK cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 19910,
+    "_cap_label_color": "#db8b57",
+    "_cap_label_full_name": "Group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001078",
+    "_cap_ontology_term": "Group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ILC3",
+    "group_name": "ILC3",
+    "group_id": "CL:0001078",
+    "feature_label": "CCR6",
+    "feature_name": "CCR6",
+    "feature_id": "ENSG00000112486",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC3 (NKp44+ and NKp44-) in Azimuth tonsil dataset, low level NCR2 (NKp44) but similar to NK cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 19910,
+    "_cap_label_color": "#db8b57",
+    "_cap_label_full_name": "Group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001078",
+    "_cap_ontology_term": "Group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ILC3",
+    "group_name": "ILC3",
+    "group_id": "CL:0001078",
+    "feature_label": "IL23R",
+    "feature_name": "IL23R",
+    "feature_id": "ENSG00000162594",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC3 (NKp44+ and NKp44-) in Azimuth tonsil dataset, low level NCR2 (NKp44) but similar to NK cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 19910,
+    "_cap_label_color": "#db8b57",
+    "_cap_label_full_name": "Group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001078",
+    "_cap_ontology_term": "Group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ILC3",
+    "group_name": "ILC3",
+    "group_id": "CL:0001078",
+    "feature_label": "AHR",
+    "feature_name": "AHR",
+    "feature_id": "ENSG00000106546",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC3 (NKp44+ and NKp44-) in Azimuth tonsil dataset, low level NCR2 (NKp44) but similar to NK cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 19910,
+    "_cap_label_color": "#db8b57",
+    "_cap_label_full_name": "Group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001078",
+    "_cap_ontology_term": "Group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ILC3",
+    "group_name": "ILC3",
+    "group_id": "CL:0001078",
+    "feature_label": "RORC",
+    "feature_name": "RORC",
+    "feature_id": "ENSG00000143365",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with ILC3 (NKp44+ and NKp44-) in Azimuth tonsil dataset, low level NCR2 (NKp44) but similar to NK cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 19910,
+    "_cap_label_color": "#db8b57",
+    "_cap_label_full_name": "Group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001078",
+    "_cap_ontology_term": "Group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HLA-DRhi_ILC3",
+    "group_name": "HLA-DRHI_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "HLA-DRA",
+    "feature_name": "HLA-DRA",
+    "feature_id": "ENSG00000204287",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with NKp44- ILC3 in Azimuth tonsil dataset, high expression of HLA-DR and subpopulation of ILC3 with high HLA-DR has been described (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 7623,
+    "_cap_label_color": "#dbb757",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HLA-DRhi_ILC3",
+    "group_name": "HLA-DRHI_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "KIT",
+    "feature_name": "KIT",
+    "feature_id": "ENSG00000157404",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with NKp44- ILC3 in Azimuth tonsil dataset, high expression of HLA-DR and subpopulation of ILC3 with high HLA-DR has been described (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 7623,
+    "_cap_label_color": "#dbb757",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HLA-DRhi_ILC3",
+    "group_name": "HLA-DRHI_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "RORC",
+    "feature_name": "RORC",
+    "feature_id": "ENSG00000143365",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with NKp44- ILC3 in Azimuth tonsil dataset, high expression of HLA-DR and subpopulation of ILC3 with high HLA-DR has been described (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 7623,
+    "_cap_label_color": "#dbb757",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HLA-DRhi_ILC3",
+    "group_name": "HLA-DRHI_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "IL23R",
+    "feature_name": "IL23R",
+    "feature_id": "ENSG00000162594",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with NKp44- ILC3 in Azimuth tonsil dataset, high expression of HLA-DR and subpopulation of ILC3 with high HLA-DR has been described (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 7623,
+    "_cap_label_color": "#dbb757",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HLA-DRhi_ILC3",
+    "group_name": "HLA-DRHI_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "SGIP1",
+    "feature_name": "SGIP1",
+    "feature_id": "ENSG00000118473",
+    "source_type": "cap",
+    "source_rationale": "Top differential gene expression mapped most with NKp44- ILC3 in Azimuth tonsil dataset, high expression of HLA-DR and subpopulation of ILC3 with high HLA-DR has been described (see DOI)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 7623,
+    "_cap_label_color": "#dbb757",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/ni.3368; DOI: 10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/ni.3368",
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD25+IL22+_ILC3",
+    "group_name": "CD25+IL22+_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "IL22",
+    "feature_name": "IL22",
+    "feature_id": "ENSG00000127318",
+    "source_type": "cap",
+    "source_rationale": "High expression of IL22 and IL2RA in addition to canonical ILC marker genes (IL4I1, KIT, AHR)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 23496,
+    "_cap_label_color": "#d3db57",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD25+IL22+_ILC3",
+    "group_name": "CD25+IL22+_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "IL2RA",
+    "feature_name": "IL2RA",
+    "feature_id": "ENSG00000134460",
+    "source_type": "cap",
+    "source_rationale": "High expression of IL22 and IL2RA in addition to canonical ILC marker genes (IL4I1, KIT, AHR)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 23496,
+    "_cap_label_color": "#d3db57",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD25+IL22+_ILC3",
+    "group_name": "CD25+IL22+_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "IL4I1",
+    "feature_name": "IL4I1",
+    "feature_id": "ENSG00000104951",
+    "source_type": "cap",
+    "source_rationale": "High expression of IL22 and IL2RA in addition to canonical ILC marker genes (IL4I1, KIT, AHR)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 23496,
+    "_cap_label_color": "#d3db57",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD25+IL22+_ILC3",
+    "group_name": "CD25+IL22+_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "IL7R",
+    "feature_name": "IL7R",
+    "feature_id": "ENSG00000168685",
+    "source_type": "cap",
+    "source_rationale": "High expression of IL22 and IL2RA in addition to canonical ILC marker genes (IL4I1, KIT, AHR)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 23496,
+    "_cap_label_color": "#d3db57",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD25+IL22+_ILC3",
+    "group_name": "CD25+IL22+_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "ACTB",
+    "feature_name": "ACTB",
+    "feature_id": "ENSG00000075624",
+    "source_type": "cap",
+    "source_rationale": "High expression of IL22 and IL2RA in addition to canonical ILC marker genes (IL4I1, KIT, AHR)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 23496,
+    "_cap_label_color": "#d3db57",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD25+IL22+_ILC3",
+    "group_name": "CD25+IL22+_ILC3",
+    "group_id": "CL:0001071",
+    "feature_label": "FCER1G",
+    "feature_name": "FCER1G",
+    "feature_id": "ENSG00000158869",
+    "source_type": "cap",
+    "source_rationale": "High expression of IL22 and IL2RA in addition to canonical ILC marker genes (IL4I1, KIT, AHR)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 23496,
+    "_cap_label_color": "#d3db57",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.celrep.2017.09.070"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T_cells",
+    "group_name": "T_CELLS",
+    "group_id": "CL:0000084",
+    "feature_label": "CD3D",
+    "feature_name": "CD3D",
+    "feature_id": "ENSG00000167286",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 5505,
+    "_cap_label_color": "#a7db57",
+    "_cap_label_full_name": "T cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000084",
+    "_cap_ontology_term": "T cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T_cells",
+    "group_name": "T_CELLS",
+    "group_id": "CL:0000084",
+    "feature_label": "TRAC",
+    "feature_name": "TRAC",
+    "feature_id": "ENSG00000277734",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 5505,
+    "_cap_label_color": "#a7db57",
+    "_cap_label_full_name": "T cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000084",
+    "_cap_ontology_term": "T cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "T_cells",
+    "group_name": "T_CELLS",
+    "group_id": "CL:0000084",
+    "feature_label": "CD27",
+    "feature_name": "CD27",
+    "feature_id": "ENSG00000139193",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 5505,
+    "_cap_label_color": "#a7db57",
+    "_cap_label_full_name": "T cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000084",
+    "_cap_ontology_term": "T cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16hi_NK_cells",
+    "group_name": "CD16HI_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "NCAM1",
+    "feature_name": "NCAM1",
+    "feature_id": "ENSG00000149294",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed higher CD16 expression that the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 in both subsets also suggest ontology term CL:0000939 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 15005,
+    "_cap_label_color": "#7bdb57",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16hi_NK_cells",
+    "group_name": "CD16HI_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "FCGR3A",
+    "feature_name": "FCGR3A",
+    "feature_id": "ENSG00000203747",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed higher CD16 expression that the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 in both subsets also suggest ontology term CL:0000939 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 15005,
+    "_cap_label_color": "#7bdb57",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16hi_NK_cells",
+    "group_name": "CD16HI_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "KRLF1",
+    "feature_name": "KRLF1",
+    "feature_id": null,
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed higher CD16 expression that the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 in both subsets also suggest ontology term CL:0000939 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 15005,
+    "_cap_label_color": "#7bdb57",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16hi_NK_cells",
+    "group_name": "CD16HI_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "NKG7",
+    "feature_name": "NKG7",
+    "feature_id": "ENSG00000105374",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed higher CD16 expression that the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 in both subsets also suggest ontology term CL:0000939 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 15005,
+    "_cap_label_color": "#7bdb57",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16hi_NK_cells",
+    "group_name": "CD16HI_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "EOMES",
+    "feature_name": "EOMES",
+    "feature_id": "ENSG00000163508",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed higher CD16 expression that the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 in both subsets also suggest ontology term CL:0000939 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 15005,
+    "_cap_label_color": "#7bdb57",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16hi_NK_cells",
+    "group_name": "CD16HI_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "KLRB1",
+    "feature_name": "KLRB1",
+    "feature_id": "ENSG00000111796",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed higher CD16 expression that the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 in both subsets also suggest ontology term CL:0000939 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 15005,
+    "_cap_label_color": "#7bdb57",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Plasma_cells",
+    "group_name": "PLASMA_CELLS",
+    "group_id": "CL:0000786",
+    "feature_label": "IGHG1",
+    "feature_name": "IGHG1",
+    "feature_id": "ENSG00000211896",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 504,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "plasma cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000786",
+    "_cap_ontology_term": "plasma cell",
+    "_cap_category_full_name": "antibody secreting cell",
+    "_cap_category_ontology_term_id": "CL:0000946",
+    "_cap_category_ontology_term": "antibody secreting cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Plasma_cells",
+    "group_name": "PLASMA_CELLS",
+    "group_id": "CL:0000786",
+    "feature_label": "CD27",
+    "feature_name": "CD27",
+    "feature_id": "ENSG00000139193",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 504,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "plasma cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000786",
+    "_cap_ontology_term": "plasma cell",
+    "_cap_category_full_name": "antibody secreting cell",
+    "_cap_category_ontology_term_id": "CL:0000946",
+    "_cap_category_ontology_term": "antibody secreting cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Plasma_cells",
+    "group_name": "PLASMA_CELLS",
+    "group_id": "CL:0000786",
+    "feature_label": "SOX5",
+    "feature_name": "SOX5",
+    "feature_id": "ENSG00000134532",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 504,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "plasma cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000786",
+    "_cap_ontology_term": "plasma cell",
+    "_cap_category_full_name": "antibody secreting cell",
+    "_cap_category_ontology_term_id": "CL:0000946",
+    "_cap_category_ontology_term": "antibody secreting cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Plasma_cells",
+    "group_name": "PLASMA_CELLS",
+    "group_id": "CL:0000786",
+    "feature_label": "PRDM1",
+    "feature_name": "PRDM1",
+    "feature_id": "ENSG00000057657",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 504,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "plasma cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000786",
+    "_cap_ontology_term": "plasma cell",
+    "_cap_category_full_name": "antibody secreting cell",
+    "_cap_category_ontology_term_id": "CL:0000946",
+    "_cap_category_ontology_term": "antibody secreting cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Plasma_cells",
+    "group_name": "PLASMA_CELLS",
+    "group_id": "CL:0000786",
+    "feature_label": "XBP1",
+    "feature_name": "XBP1",
+    "feature_id": "ENSG00000249947",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 504,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "plasma cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000786",
+    "_cap_ontology_term": "plasma cell",
+    "_cap_category_full_name": "antibody secreting cell",
+    "_cap_category_ontology_term_id": "CL:0000946",
+    "_cap_category_ontology_term": "antibody secreting cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Plasma_cells",
+    "group_name": "PLASMA_CELLS",
+    "group_id": "CL:0000786",
+    "feature_label": "SLAMF7",
+    "feature_name": "SLAMF7",
+    "feature_id": "ENSG00000026751",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 504,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "plasma cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000786",
+    "_cap_ontology_term": "plasma cell",
+    "_cap_category_full_name": "antibody secreting cell",
+    "_cap_category_ontology_term_id": "CL:0000946",
+    "_cap_category_ontology_term": "antibody secreting cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Plasma_cells",
+    "group_name": "PLASMA_CELLS",
+    "group_id": "CL:0000786",
+    "feature_label": "MZB1",
+    "feature_name": "MZB1",
+    "feature_id": "ENSG00000170476",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 504,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "plasma cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000786",
+    "_cap_ontology_term": "plasma cell",
+    "_cap_category_full_name": "antibody secreting cell",
+    "_cap_category_ontology_term_id": "CL:0000946",
+    "_cap_category_ontology_term": "antibody secreting cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16low_NK_cells",
+    "group_name": "CD16LOW_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "NCAM1",
+    "feature_name": "NCAM1",
+    "feature_id": "ENSG00000149294",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed lower CD16 expression than the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 between two subsets also suggest that ontology term CL:0000938 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset.",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 9562,
+    "_cap_label_color": "#57db8b",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16low_NK_cells",
+    "group_name": "CD16LOW_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "KRLF1",
+    "feature_name": "KRLF1",
+    "feature_id": null,
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed lower CD16 expression than the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 between two subsets also suggest that ontology term CL:0000938 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset.",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 9562,
+    "_cap_label_color": "#57db8b",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16low_NK_cells",
+    "group_name": "CD16LOW_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "NKG7",
+    "feature_name": "NKG7",
+    "feature_id": "ENSG00000105374",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed lower CD16 expression than the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 between two subsets also suggest that ontology term CL:0000938 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset.",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 9562,
+    "_cap_label_color": "#57db8b",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16low_NK_cells",
+    "group_name": "CD16LOW_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "KLRD1",
+    "feature_name": "KLRD1",
+    "feature_id": "ENSG00000134539",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed lower CD16 expression than the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 between two subsets also suggest that ontology term CL:0000938 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset.",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 9562,
+    "_cap_label_color": "#57db8b",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16low_NK_cells",
+    "group_name": "CD16LOW_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "EOMES",
+    "feature_name": "EOMES",
+    "feature_id": "ENSG00000163508",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed lower CD16 expression than the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 between two subsets also suggest that ontology term CL:0000938 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset.",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 9562,
+    "_cap_label_color": "#57db8b",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "CD16low_NK_cells",
+    "group_name": "CD16LOW_NK_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "KLRB1",
+    "feature_name": "KLRB1",
+    "feature_id": "ENSG00000111796",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated as a natural killer cell by canonical gene expression, but displayed lower CD16 expression than the other natural killer cell subset within the dataset. Similar transcript levels of NCAM1 between two subsets also suggest that ontology term CL:0000938 would not be more appropriate in this case. Standard accepted NK subsets, and described in tonsil Azimuth dataset.",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 9562,
+    "_cap_label_color": "#57db8b",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "HSPA1A",
+    "feature_name": "HSPA1A",
+    "feature_id": "ENSG00000204389",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "HSPA1B",
+    "feature_name": "HSPA1B",
+    "feature_id": "ENSG00000204388",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "HSPH1",
+    "feature_name": "HSPH1",
+    "feature_id": "ENSG00000120694",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "HSPB1",
+    "feature_name": "HSPB1",
+    "feature_id": "ENSG00000106211",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "IL7R",
+    "feature_name": "IL7R",
+    "feature_id": "ENSG00000168685",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "ZBTB16",
+    "feature_name": "ZBTB16",
+    "feature_id": "ENSG00000109906",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "KIT",
+    "feature_name": "KIT",
+    "feature_id": "ENSG00000157404",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "AHR",
+    "feature_name": "AHR",
+    "feature_id": "ENSG00000106546",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "HSPhi_ILC",
+    "group_name": "HSPHI_ILC",
+    "group_id": "CL:0001065",
+    "feature_label": "ID2",
+    "feature_name": "ID2",
+    "feature_id": "ENSG00000115738",
+    "source_type": "cap",
+    "source_rationale": "Top differentially expressed genes included a range of HSP (HSPA1A, HSPA1B, HSPH1,) in addition to canonical ILC markers such as IL7R, ZBTB16. Likely to result from processing of lymph node via embedding in molten agar",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1989,
+    "_cap_label_color": "#57dbb7",
+    "_cap_label_full_name": "innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001065",
+    "_cap_ontology_term": "innate lymphoid cell",
+    "_cap_category_full_name": "lymphocyte",
+    "_cap_category_ontology_term_id": "CL:0000542",
+    "_cap_category_ontology_term": "lymphocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "B_cells",
+    "group_name": "B_CELLS",
+    "group_id": "CL:0000236",
+    "feature_label": "MS4A1",
+    "feature_name": "MS4A1",
+    "feature_id": "ENSG00000156738",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 4343,
+    "_cap_label_color": "#57d3db",
+    "_cap_label_full_name": "B cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000236",
+    "_cap_ontology_term": "B cell",
+    "_cap_category_full_name": "lymphocyte of B lineage",
+    "_cap_category_ontology_term_id": "CL:0000945",
+    "_cap_category_ontology_term": "lymphocyte of B lineage",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "B_cells",
+    "group_name": "B_CELLS",
+    "group_id": "CL:0000236",
+    "feature_label": "IGHM",
+    "feature_name": "IGHM",
+    "feature_id": "ENSG00000211899",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 4343,
+    "_cap_label_color": "#57d3db",
+    "_cap_label_full_name": "B cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000236",
+    "_cap_ontology_term": "B cell",
+    "_cap_category_full_name": "lymphocyte of B lineage",
+    "_cap_category_ontology_term_id": "CL:0000945",
+    "_cap_category_ontology_term": "lymphocyte of B lineage",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "doi.org/10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.ebiom.2025.106036"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Monocytes_Macrophages",
+    "group_name": "MONOCYTES_MACROPHAGES",
+    "group_id": "CL:0000113",
+    "feature_label": "CD68",
+    "feature_name": "CD68",
+    "feature_id": "ENSG00000129226",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated based on expression of CD68, CD74, CD14, FCGR3A, mixed markers of macrophages and monocytes",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 347,
+    "_cap_label_color": "#57a7db",
+    "_cap_label_full_name": "mononuclear phagocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000113",
+    "_cap_ontology_term": "mononuclear phagocyte",
+    "_cap_category_full_name": "mononuclear leukocyte",
+    "_cap_category_ontology_term_id": "CL:0000842",
+    "_cap_category_ontology_term": "mononuclear leukocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Monocytes_Macrophages",
+    "group_name": "MONOCYTES_MACROPHAGES",
+    "group_id": "CL:0000113",
+    "feature_label": "C1QA",
+    "feature_name": "C1QA",
+    "feature_id": "ENSG00000173372",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated based on expression of CD68, CD74, CD14, FCGR3A, mixed markers of macrophages and monocytes",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 347,
+    "_cap_label_color": "#57a7db",
+    "_cap_label_full_name": "mononuclear phagocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000113",
+    "_cap_ontology_term": "mononuclear phagocyte",
+    "_cap_category_full_name": "mononuclear leukocyte",
+    "_cap_category_ontology_term_id": "CL:0000842",
+    "_cap_category_ontology_term": "mononuclear leukocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Monocytes_Macrophages",
+    "group_name": "MONOCYTES_MACROPHAGES",
+    "group_id": "CL:0000113",
+    "feature_label": "CD74",
+    "feature_name": "CD74",
+    "feature_id": "ENSG00000019582",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated based on expression of CD68, CD74, CD14, FCGR3A, mixed markers of macrophages and monocytes",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 347,
+    "_cap_label_color": "#57a7db",
+    "_cap_label_full_name": "mononuclear phagocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000113",
+    "_cap_ontology_term": "mononuclear phagocyte",
+    "_cap_category_full_name": "mononuclear leukocyte",
+    "_cap_category_ontology_term_id": "CL:0000842",
+    "_cap_category_ontology_term": "mononuclear leukocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Monocytes_Macrophages",
+    "group_name": "MONOCYTES_MACROPHAGES",
+    "group_id": "CL:0000113",
+    "feature_label": "HLA-DRA",
+    "feature_name": "HLA-DRA",
+    "feature_id": "ENSG00000204287",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated based on expression of CD68, CD74, CD14, FCGR3A, mixed markers of macrophages and monocytes",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 347,
+    "_cap_label_color": "#57a7db",
+    "_cap_label_full_name": "mononuclear phagocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000113",
+    "_cap_ontology_term": "mononuclear phagocyte",
+    "_cap_category_full_name": "mononuclear leukocyte",
+    "_cap_category_ontology_term_id": "CL:0000842",
+    "_cap_category_ontology_term": "mononuclear leukocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "IL2RA+CXCL8+_ILC",
+    "group_name": "IL2RA+CXCL8+_ILC",
+    "group_id": "CL:0001071",
+    "feature_label": "CXCL8",
+    "feature_name": "CXCL8",
+    "feature_id": "ENSG00000169429",
+    "source_type": "cap",
+    "source_rationale": "Many shared canonical markers with ILC (IL7R, KIT, AHR) but with high CXCL8 expression",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 2749,
+    "_cap_label_color": "#577bdb",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "IL2RA+CXCL8+_ILC",
+    "group_name": "IL2RA+CXCL8+_ILC",
+    "group_id": "CL:0001071",
+    "feature_label": "IL7R",
+    "feature_name": "IL7R",
+    "feature_id": "ENSG00000168685",
+    "source_type": "cap",
+    "source_rationale": "Many shared canonical markers with ILC (IL7R, KIT, AHR) but with high CXCL8 expression",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 2749,
+    "_cap_label_color": "#577bdb",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "IL2RA+CXCL8+_ILC",
+    "group_name": "IL2RA+CXCL8+_ILC",
+    "group_id": "CL:0001071",
+    "feature_label": "IL4I",
+    "feature_name": "IL4I",
+    "feature_id": null,
+    "source_type": "cap",
+    "source_rationale": "Many shared canonical markers with ILC (IL7R, KIT, AHR) but with high CXCL8 expression",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 2749,
+    "_cap_label_color": "#577bdb",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "IL2RA+CXCL8+_ILC",
+    "group_name": "IL2RA+CXCL8+_ILC",
+    "group_id": "CL:0001071",
+    "feature_label": "AHR",
+    "feature_name": "AHR",
+    "feature_id": "ENSG00000106546",
+    "source_type": "cap",
+    "source_rationale": "Many shared canonical markers with ILC (IL7R, KIT, AHR) but with high CXCL8 expression",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 2749,
+    "_cap_label_color": "#577bdb",
+    "_cap_label_full_name": "group 3 innate lymphoid cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001071",
+    "_cap_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_category_full_name": "group 3 innate lymphoid cell",
+    "_cap_category_ontology_term_id": "CL:0001071",
+    "_cap_category_ontology_term": "group 3 innate lymphoid cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Stromal_cells",
+    "group_name": "STROMAL_CELLS",
+    "group_id": "CL:0000499",
+    "feature_label": "CO1A2",
+    "feature_name": "CO1A2",
+    "feature_id": null,
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of collagens, SOX5 and PDPN (gp38)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1310,
+    "_cap_label_color": "#5f57db",
+    "_cap_label_full_name": "stromal cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000499",
+    "_cap_ontology_term": "stromal cell",
+    "_cap_category_full_name": "connective tissue cell",
+    "_cap_category_ontology_term_id": "CL:0002320",
+    "_cap_category_ontology_term": "connective tissue cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3; DOI: 10.1084/jem.20210790"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3",
+      "10.1084/jem.20210790"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Stromal_cells",
+    "group_name": "STROMAL_CELLS",
+    "group_id": "CL:0000499",
+    "feature_label": "COL3A1",
+    "feature_name": "COL3A1",
+    "feature_id": "ENSG00000168542",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of collagens, SOX5 and PDPN (gp38)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1310,
+    "_cap_label_color": "#5f57db",
+    "_cap_label_full_name": "stromal cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000499",
+    "_cap_ontology_term": "stromal cell",
+    "_cap_category_full_name": "connective tissue cell",
+    "_cap_category_ontology_term_id": "CL:0002320",
+    "_cap_category_ontology_term": "connective tissue cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3; DOI: 10.1084/jem.20210790"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3",
+      "10.1084/jem.20210790"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Stromal_cells",
+    "group_name": "STROMAL_CELLS",
+    "group_id": "CL:0000499",
+    "feature_label": "CCL19",
+    "feature_name": "CCL19",
+    "feature_id": "ENSG00000172724",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of collagens, SOX5 and PDPN (gp38)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1310,
+    "_cap_label_color": "#5f57db",
+    "_cap_label_full_name": "stromal cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000499",
+    "_cap_ontology_term": "stromal cell",
+    "_cap_category_full_name": "connective tissue cell",
+    "_cap_category_ontology_term_id": "CL:0002320",
+    "_cap_category_ontology_term": "connective tissue cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3; DOI: 10.1084/jem.20210790"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3",
+      "10.1084/jem.20210790"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Stromal_cells",
+    "group_name": "STROMAL_CELLS",
+    "group_id": "CL:0000499",
+    "feature_label": "CXCL14",
+    "feature_name": "CXCL14",
+    "feature_id": "ENSG00000145824",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of collagens, SOX5 and PDPN (gp38)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1310,
+    "_cap_label_color": "#5f57db",
+    "_cap_label_full_name": "stromal cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000499",
+    "_cap_ontology_term": "stromal cell",
+    "_cap_category_full_name": "connective tissue cell",
+    "_cap_category_ontology_term_id": "CL:0002320",
+    "_cap_category_ontology_term": "connective tissue cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3; DOI: 10.1084/jem.20210790"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3",
+      "10.1084/jem.20210790"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Stromal_cells",
+    "group_name": "STROMAL_CELLS",
+    "group_id": "CL:0000499",
+    "feature_label": "CLU",
+    "feature_name": "CLU",
+    "feature_id": "ENSG00000120885",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of collagens, SOX5 and PDPN (gp38)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1310,
+    "_cap_label_color": "#5f57db",
+    "_cap_label_full_name": "stromal cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000499",
+    "_cap_ontology_term": "stromal cell",
+    "_cap_category_full_name": "connective tissue cell",
+    "_cap_category_ontology_term_id": "CL:0002320",
+    "_cap_category_ontology_term": "connective tissue cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3; DOI: 10.1084/jem.20210790"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3",
+      "10.1084/jem.20210790"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Stromal_cells",
+    "group_name": "STROMAL_CELLS",
+    "group_id": "CL:0000499",
+    "feature_label": "SOX5",
+    "feature_name": "SOX5",
+    "feature_id": "ENSG00000134532",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of collagens, SOX5 and PDPN (gp38)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1310,
+    "_cap_label_color": "#5f57db",
+    "_cap_label_full_name": "stromal cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000499",
+    "_cap_ontology_term": "stromal cell",
+    "_cap_category_full_name": "connective tissue cell",
+    "_cap_category_ontology_term_id": "CL:0002320",
+    "_cap_category_ontology_term": "connective tissue cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3; DOI: 10.1084/jem.20210790"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3",
+      "10.1084/jem.20210790"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pDC",
+    "group_name": "PDC",
+    "group_id": "CL:0000784",
+    "feature_label": "HLA-DRA",
+    "feature_name": "HLA-DRA",
+    "feature_id": "ENSG00000204287",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers, including a known expression of GZMB",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1651,
+    "_cap_label_color": "#8b57db",
+    "_cap_label_full_name": "plasmacytoid dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000784",
+    "_cap_ontology_term": "plasmacytoid dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pDC",
+    "group_name": "PDC",
+    "group_id": "CL:0000784",
+    "feature_label": "CD74",
+    "feature_name": "CD74",
+    "feature_id": "ENSG00000019582",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers, including a known expression of GZMB",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1651,
+    "_cap_label_color": "#8b57db",
+    "_cap_label_full_name": "plasmacytoid dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000784",
+    "_cap_ontology_term": "plasmacytoid dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pDC",
+    "group_name": "PDC",
+    "group_id": "CL:0000784",
+    "feature_label": "IL3RA",
+    "feature_name": "IL3RA",
+    "feature_id": "ENSG00000185291",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers, including a known expression of GZMB",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1651,
+    "_cap_label_color": "#8b57db",
+    "_cap_label_full_name": "plasmacytoid dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000784",
+    "_cap_ontology_term": "plasmacytoid dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pDC",
+    "group_name": "PDC",
+    "group_id": "CL:0000784",
+    "feature_label": "LILRA4",
+    "feature_name": "LILRA4",
+    "feature_id": "ENSG00000239961",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers, including a known expression of GZMB",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1651,
+    "_cap_label_color": "#8b57db",
+    "_cap_label_full_name": "plasmacytoid dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000784",
+    "_cap_ontology_term": "plasmacytoid dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pDC",
+    "group_name": "PDC",
+    "group_id": "CL:0000784",
+    "feature_label": "TCF4",
+    "feature_name": "TCF4",
+    "feature_id": "ENSG00000196628",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers, including a known expression of GZMB",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1651,
+    "_cap_label_color": "#8b57db",
+    "_cap_label_full_name": "plasmacytoid dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000784",
+    "_cap_ontology_term": "plasmacytoid dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "pDC",
+    "group_name": "PDC",
+    "group_id": "CL:0000784",
+    "feature_label": "IRF4",
+    "feature_name": "IRF4",
+    "feature_id": "ENSG00000137265",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated given expression of canoncial markers, including a known expression of GZMB",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1651,
+    "_cap_label_color": "#8b57db",
+    "_cap_label_full_name": "plasmacytoid dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000784",
+    "_cap_ontology_term": "plasmacytoid dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Mast_cells",
+    "group_name": "MAST_CELLS",
+    "group_id": "CL:0000097",
+    "feature_label": "TPSB2",
+    "feature_name": "TPSB2",
+    "feature_id": "ENSG00000197253",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of tryptase genes (canonical markers)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 563,
+    "_cap_label_color": "#b757db",
+    "_cap_label_full_name": "mast cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000097",
+    "_cap_ontology_term": "mast cell",
+    "_cap_category_full_name": "myeloid leukocyte",
+    "_cap_category_ontology_term_id": "CL:0000766",
+    "_cap_category_ontology_term": "myeloid leukocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Mast_cells",
+    "group_name": "MAST_CELLS",
+    "group_id": "CL:0000097",
+    "feature_label": "TPSAB1",
+    "feature_name": "TPSAB1",
+    "feature_id": "ENSG00000172236",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of tryptase genes (canonical markers)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 563,
+    "_cap_label_color": "#b757db",
+    "_cap_label_full_name": "mast cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000097",
+    "_cap_ontology_term": "mast cell",
+    "_cap_category_full_name": "myeloid leukocyte",
+    "_cap_category_ontology_term_id": "CL:0000766",
+    "_cap_category_ontology_term": "myeloid leukocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Mast_cells",
+    "group_name": "MAST_CELLS",
+    "group_id": "CL:0000097",
+    "feature_label": "SIGLEC6",
+    "feature_name": "SIGLEC6",
+    "feature_id": "ENSG00000105492",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of tryptase genes (canonical markers)",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 563,
+    "_cap_label_color": "#b757db",
+    "_cap_label_full_name": "mast cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000097",
+    "_cap_ontology_term": "mast cell",
+    "_cap_category_full_name": "myeloid leukocyte",
+    "_cap_category_ontology_term_id": "CL:0000766",
+    "_cap_category_ontology_term": "myeloid leukocyte",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DC",
+    "group_name": "DC",
+    "group_id": "CL:0001056",
+    "feature_label": "HLA-DRA",
+    "feature_name": "HLA-DRA",
+    "feature_id": "ENSG00000204287",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of many DC markers and antigen presentation molecules",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1867,
+    "_cap_label_color": "#db57d3",
+    "_cap_label_full_name": "human dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001056",
+    "_cap_ontology_term": "human dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DC",
+    "group_name": "DC",
+    "group_id": "CL:0001056",
+    "feature_label": "CD74",
+    "feature_name": "CD74",
+    "feature_id": "ENSG00000019582",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of many DC markers and antigen presentation molecules",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1867,
+    "_cap_label_color": "#db57d3",
+    "_cap_label_full_name": "human dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001056",
+    "_cap_ontology_term": "human dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DC",
+    "group_name": "DC",
+    "group_id": "CL:0001056",
+    "feature_label": "LAMP3",
+    "feature_name": "LAMP3",
+    "feature_id": "ENSG00000078081",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of many DC markers and antigen presentation molecules",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1867,
+    "_cap_label_color": "#db57d3",
+    "_cap_label_full_name": "human dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001056",
+    "_cap_ontology_term": "human dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DC",
+    "group_name": "DC",
+    "group_id": "CL:0001056",
+    "feature_label": "IDO1",
+    "feature_name": "IDO1",
+    "feature_id": "ENSG00000131203",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of many DC markers and antigen presentation molecules",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1867,
+    "_cap_label_color": "#db57d3",
+    "_cap_label_full_name": "human dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001056",
+    "_cap_ontology_term": "human dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DC",
+    "group_name": "DC",
+    "group_id": "CL:0001056",
+    "feature_label": "CD86",
+    "feature_name": "CD86",
+    "feature_id": "ENSG00000114013",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of many DC markers and antigen presentation molecules",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1867,
+    "_cap_label_color": "#db57d3",
+    "_cap_label_full_name": "human dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001056",
+    "_cap_ontology_term": "human dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DC",
+    "group_name": "DC",
+    "group_id": "CL:0001056",
+    "feature_label": "BATF3",
+    "feature_name": "BATF3",
+    "feature_id": "ENSG00000123685",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of many DC markers and antigen presentation molecules",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1867,
+    "_cap_label_color": "#db57d3",
+    "_cap_label_full_name": "human dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001056",
+    "_cap_ontology_term": "human dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DC",
+    "group_name": "DC",
+    "group_id": "CL:0001056",
+    "feature_label": "CD1C",
+    "feature_name": "CD1C",
+    "feature_id": "ENSG00000158481",
+    "source_type": "cap",
+    "source_rationale": "This cell type was annotated due to expression of many DC markers and antigen presentation molecules",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 1867,
+    "_cap_label_color": "#db57d3",
+    "_cap_label_full_name": "human dendritic cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0001056",
+    "_cap_ontology_term": "human dendritic cell",
+    "_cap_category_full_name": "dendritic cell",
+    "_cap_category_ontology_term_id": "CL:0000451",
+    "_cap_category_ontology_term": "dendritic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.immuni.2024.01.006"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Proliferating_cells",
+    "group_name": "PROLIFERATING_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "MKI67",
+    "feature_name": "MKI67",
+    "feature_id": "ENSG00000148773",
+    "source_type": "cap",
+    "source_rationale": "This cluster had the highest expression of MKI67 but most closely mapped to the natural killer clusters, so likely to be a subset of these cells, including expression of granulysin (GNLY) and KLRB1",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 483,
+    "_cap_label_color": "#db57a7",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Proliferating_cells",
+    "group_name": "PROLIFERATING_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "TOP2A",
+    "feature_name": "TOP2A",
+    "feature_id": "ENSG00000131747",
+    "source_type": "cap",
+    "source_rationale": "This cluster had the highest expression of MKI67 but most closely mapped to the natural killer clusters, so likely to be a subset of these cells, including expression of granulysin (GNLY) and KLRB1",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 483,
+    "_cap_label_color": "#db57a7",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Proliferating_cells",
+    "group_name": "PROLIFERATING_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "H2AFZ",
+    "feature_name": "H2AFZ",
+    "feature_id": "ENSG00000164032",
+    "source_type": "cap",
+    "source_rationale": "This cluster had the highest expression of MKI67 but most closely mapped to the natural killer clusters, so likely to be a subset of these cells, including expression of granulysin (GNLY) and KLRB1",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 483,
+    "_cap_label_color": "#db57a7",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Proliferating_cells",
+    "group_name": "PROLIFERATING_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "TUBA1B",
+    "feature_name": "TUBA1B",
+    "feature_id": "ENSG00000123416",
+    "source_type": "cap",
+    "source_rationale": "This cluster had the highest expression of MKI67 but most closely mapped to the natural killer clusters, so likely to be a subset of these cells, including expression of granulysin (GNLY) and KLRB1",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 483,
+    "_cap_label_color": "#db57a7",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Proliferating_cells",
+    "group_name": "PROLIFERATING_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "GNLY",
+    "feature_name": "GNLY",
+    "feature_id": "ENSG00000115523",
+    "source_type": "cap",
+    "source_rationale": "This cluster had the highest expression of MKI67 but most closely mapped to the natural killer clusters, so likely to be a subset of these cells, including expression of granulysin (GNLY) and KLRB1",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 483,
+    "_cap_label_color": "#db57a7",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Proliferating_cells",
+    "group_name": "PROLIFERATING_CELLS",
+    "group_id": "CL:0000824",
+    "feature_label": "KLRB1",
+    "feature_name": "KLRB1",
+    "feature_id": "ENSG00000111796",
+    "source_type": "cap",
+    "source_rationale": "This cluster had the highest expression of MKI67 but most closely mapped to the natural killer clusters, so likely to be a subset of these cells, including expression of granulysin (GNLY) and KLRB1",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 483,
+    "_cap_label_color": "#db57a7",
+    "_cap_label_full_name": "mature natural killer cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000824",
+    "_cap_ontology_term": "mature natural killer cell",
+    "_cap_category_full_name": "natural killer cell",
+    "_cap_category_ontology_term_id": "CL:0000623",
+    "_cap_category_ontology_term": "natural killer cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Endothelial_cells",
+    "group_name": "ENDOTHELIAL_CELLS",
+    "group_id": "CL:0000115",
+    "feature_label": "PECAM1",
+    "feature_name": "PECAM1",
+    "feature_id": "ENSG00000261371",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of PECAM1, PROX1 and LYVE1 indicating mixture of blood endothelial and lymphatic endothelial cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 643,
+    "_cap_label_color": "#db577b",
+    "_cap_label_full_name": "endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000115",
+    "_cap_ontology_term": "endothelial cell",
+    "_cap_category_full_name": "eukaryotic cell",
+    "_cap_category_ontology_term_id": "CL:0000255",
+    "_cap_category_ontology_term": "eukaryotic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Endothelial_cells",
+    "group_name": "ENDOTHELIAL_CELLS",
+    "group_id": "CL:0000115",
+    "feature_label": "LYVE1",
+    "feature_name": "LYVE1",
+    "feature_id": "ENSG00000133800",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of PECAM1, PROX1 and LYVE1 indicating mixture of blood endothelial and lymphatic endothelial cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 643,
+    "_cap_label_color": "#db577b",
+    "_cap_label_full_name": "endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000115",
+    "_cap_ontology_term": "endothelial cell",
+    "_cap_category_full_name": "eukaryotic cell",
+    "_cap_category_ontology_term_id": "CL:0000255",
+    "_cap_category_ontology_term": "eukaryotic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Endothelial_cells",
+    "group_name": "ENDOTHELIAL_CELLS",
+    "group_id": "CL:0000115",
+    "feature_label": "PROX1",
+    "feature_name": "PROX1",
+    "feature_id": "ENSG00000117707",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of PECAM1, PROX1 and LYVE1 indicating mixture of blood endothelial and lymphatic endothelial cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 643,
+    "_cap_label_color": "#db577b",
+    "_cap_label_full_name": "endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000115",
+    "_cap_ontology_term": "endothelial cell",
+    "_cap_category_full_name": "eukaryotic cell",
+    "_cap_category_ontology_term_id": "CL:0000255",
+    "_cap_category_ontology_term": "eukaryotic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Endothelial_cells",
+    "group_name": "ENDOTHELIAL_CELLS",
+    "group_id": "CL:0000115",
+    "feature_label": "PLVAP",
+    "feature_name": "PLVAP",
+    "feature_id": "ENSG00000130300",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of PECAM1, PROX1 and LYVE1 indicating mixture of blood endothelial and lymphatic endothelial cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 643,
+    "_cap_label_color": "#db577b",
+    "_cap_label_full_name": "endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000115",
+    "_cap_ontology_term": "endothelial cell",
+    "_cap_category_full_name": "eukaryotic cell",
+    "_cap_category_ontology_term_id": "CL:0000255",
+    "_cap_category_ontology_term": "eukaryotic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Endothelial_cells",
+    "group_name": "ENDOTHELIAL_CELLS",
+    "group_id": "CL:0000115",
+    "feature_label": "CD74",
+    "feature_name": "CD74",
+    "feature_id": "ENSG00000019582",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of PECAM1, PROX1 and LYVE1 indicating mixture of blood endothelial and lymphatic endothelial cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 643,
+    "_cap_label_color": "#db577b",
+    "_cap_label_full_name": "endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000115",
+    "_cap_ontology_term": "endothelial cell",
+    "_cap_category_full_name": "eukaryotic cell",
+    "_cap_category_ontology_term_id": "CL:0000255",
+    "_cap_category_ontology_term": "eukaryotic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Endothelial_cells",
+    "group_name": "ENDOTHELIAL_CELLS",
+    "group_id": "CL:0000115",
+    "feature_label": "AQP1",
+    "feature_name": "AQP1",
+    "feature_id": "ENSG00000240583",
+    "source_type": "cap",
+    "source_rationale": "Relative lack of PTPRC compared to other subsets, expression of PECAM1, PROX1 and LYVE1 indicating mixture of blood endothelial and lymphatic endothelial cells",
+    "source_id": "https://celltype.info/project/789/dataset/2186/labelset/final annotation",
+    "data_id": "CAP:789:2186",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "789",
+    "_cap_dataset_id": "2186",
+    "_cap_dataset_name": "Human lymph node slices cultured with and without ex vivo stimulation by liposomal TLR4 and QS-21 adjuvant",
+    "_cap_dataset_url": "https://celltype.info/project/789/dataset/2186",
+    "_cap_cell_count": 109297,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "cystic lymph node"
+    ],
+    "_cap_labelset_name": "final annotation",
+    "_cap_label_count": 643,
+    "_cap_label_color": "#db577b",
+    "_cap_label_full_name": "endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000115",
+    "_cap_ontology_term": "endothelial cell",
+    "_cap_category_full_name": "eukaryotic cell",
+    "_cap_category_ontology_term_id": "CL:0000255",
+    "_cap_category_ontology_term": "eukaryotic cell",
+    "_cap_synonyms": [
+      "unknown"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41556-022-00866-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41556-022-00866-3"
+    ],
+    "_cap_marker_role": "reported"
+  }
+]

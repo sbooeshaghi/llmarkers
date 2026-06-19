@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 
 from build_marker_stability_prototype import assign_neighborhood, build_records
-from build_tcell_marker_cluster_summary import normalize_label
 from cross_study_gene_space import REPO_ROOT, RESULTS_DIR, build_profile_summary, split_marker_text
+from marker_label_utils import normalize_label
 
 
 PAIR_SUMMARY_PATH = RESULTS_DIR / "local_global_marker_pair_summary.tsv"

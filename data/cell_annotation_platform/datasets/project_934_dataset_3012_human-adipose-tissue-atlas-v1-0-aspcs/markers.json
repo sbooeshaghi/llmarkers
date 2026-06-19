@@ -1,0 +1,1042 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ASPCs",
+    "group_name": "ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "PDGFRA",
+    "feature_name": "PDGFRA",
+    "feature_id": "ENSG00000134853",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are pan-ASPC markers broadly expressed across all adipose stromal and progenitor cell subpopulations. Together these markers define the ASPC compartment encompassing DPP4\u207a, EPHA3\u207a, IGFBP2\u207a, PPARG\u207a, and TENM2\u207a subtypes.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl2_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl2_cell_types",
+    "_cap_label_count": 225219,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "ASPCs",
+    "group_name": "ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "DCN",
+    "feature_name": "DCN",
+    "feature_id": "ENSG00000011465",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are pan-ASPC markers broadly expressed across all adipose stromal and progenitor cell subpopulations. Together these markers define the ASPC compartment encompassing DPP4\u207a, EPHA3\u207a, IGFBP2\u207a, PPARG\u207a, and TENM2\u207a subtypes.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl2_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl2_cell_types",
+    "_cap_label_count": 225219,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "IGFBP2\u207a ASPCs",
+    "group_name": "IGFBP2\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "PDGFRA",
+    "feature_name": "PDGFRA",
+    "feature_id": "ENSG00000134853",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. IGFBP2 (insulin-like growth factor binding protein 2) shows enriched expression in this specific subpopulation and marks a depot-restricted population found exclusively in visceral adipose tissue (AVAT), distinguishing IGFBP2\u207a ASPCs from other ASPC subtypes present across depots. Together these markers identify a visceral-specific ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 6475,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.cmet.2024.04.017"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.cmet.2024.04.017"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "IGFBP2\u207a ASPCs",
+    "group_name": "IGFBP2\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "DCN",
+    "feature_name": "DCN",
+    "feature_id": "ENSG00000011465",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. IGFBP2 (insulin-like growth factor binding protein 2) shows enriched expression in this specific subpopulation and marks a depot-restricted population found exclusively in visceral adipose tissue (AVAT), distinguishing IGFBP2\u207a ASPCs from other ASPC subtypes present across depots. Together these markers identify a visceral-specific ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 6475,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.cmet.2024.04.017"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.cmet.2024.04.017"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "IGFBP2\u207a ASPCs",
+    "group_name": "IGFBP2\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "IGFBP2",
+    "feature_name": "IGFBP2",
+    "feature_id": "ENSG00000115457",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. IGFBP2 (insulin-like growth factor binding protein 2) shows enriched expression in this specific subpopulation and marks a depot-restricted population found exclusively in visceral adipose tissue (AVAT), distinguishing IGFBP2\u207a ASPCs from other ASPC subtypes present across depots. Together these markers identify a visceral-specific ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 6475,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1016/j.cmet.2024.04.017"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.cmet.2024.04.017"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "EPHA3\u207a ASPCs",
+    "group_name": "EPHA3\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "PDGFRA",
+    "feature_name": "PDGFRA",
+    "feature_id": "ENSG00000134853",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. EPHA3 (ephrin type-A receptor 3) is the defining marker of this subpopulation, distinguishing EPHA3\u207a ASPCs from other ASPC subtypes. This population resembles an adipogenesis-regulatory cell population previously reported in mice. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 16091,
+    "_cap_label_color": "#b9db57",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01433-4"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01433-4"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "EPHA3\u207a ASPCs",
+    "group_name": "EPHA3\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "DCN",
+    "feature_name": "DCN",
+    "feature_id": "ENSG00000011465",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. EPHA3 (ephrin type-A receptor 3) is the defining marker of this subpopulation, distinguishing EPHA3\u207a ASPCs from other ASPC subtypes. This population resembles an adipogenesis-regulatory cell population previously reported in mice. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 16091,
+    "_cap_label_color": "#b9db57",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01433-4"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01433-4"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "EPHA3\u207a ASPCs",
+    "group_name": "EPHA3\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "EPHA3",
+    "feature_name": "EPHA3",
+    "feature_id": "ENSG00000044524",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. EPHA3 (ephrin type-A receptor 3) is the defining marker of this subpopulation, distinguishing EPHA3\u207a ASPCs from other ASPC subtypes. This population resembles an adipogenesis-regulatory cell population previously reported in mice. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 16091,
+    "_cap_label_color": "#b9db57",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01433-4"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01433-4"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "TENM2\u207a ASPCs",
+    "group_name": "TENM2\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "DCN",
+    "feature_name": "DCN",
+    "feature_id": "ENSG00000011465",
+    "source_type": "cap",
+    "source_rationale": "DCN (decorin) is a stromal/fibroblast marker broadly expressed in connective tissue. TENM2 (teneurin-2) is a transmembrane protein involved in neural circuit organization and cell-cell signaling. SLC22A3 is an organic cation transporter with enriched expression in specific stromal subpopulations. ITGA6 (integrin alpha-6) marks cells associated with basement membrane adhesion and has been found enriched in fibroblasts surrounding peripheral nerves in tendon and muscle, suggesting a perineural identity. Together, these markers characterize a stromal/ASPC subpopulation with perineural localization, here referred to as TENM2\u207a ASPCs.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 1285,
+    "_cap_label_color": "#57db94",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1152/ajpcell.00838.2025"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1152/ajpcell.00838.2025"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "TENM2\u207a ASPCs",
+    "group_name": "TENM2\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "TENM2",
+    "feature_name": "TENM2",
+    "feature_id": "ENSG00000145934",
+    "source_type": "cap",
+    "source_rationale": "DCN (decorin) is a stromal/fibroblast marker broadly expressed in connective tissue. TENM2 (teneurin-2) is a transmembrane protein involved in neural circuit organization and cell-cell signaling. SLC22A3 is an organic cation transporter with enriched expression in specific stromal subpopulations. ITGA6 (integrin alpha-6) marks cells associated with basement membrane adhesion and has been found enriched in fibroblasts surrounding peripheral nerves in tendon and muscle, suggesting a perineural identity. Together, these markers characterize a stromal/ASPC subpopulation with perineural localization, here referred to as TENM2\u207a ASPCs.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 1285,
+    "_cap_label_color": "#57db94",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1152/ajpcell.00838.2025"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1152/ajpcell.00838.2025"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "TENM2\u207a ASPCs",
+    "group_name": "TENM2\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "SLC22A3",
+    "feature_name": "SLC22A3",
+    "feature_id": "ENSG00000146477",
+    "source_type": "cap",
+    "source_rationale": "DCN (decorin) is a stromal/fibroblast marker broadly expressed in connective tissue. TENM2 (teneurin-2) is a transmembrane protein involved in neural circuit organization and cell-cell signaling. SLC22A3 is an organic cation transporter with enriched expression in specific stromal subpopulations. ITGA6 (integrin alpha-6) marks cells associated with basement membrane adhesion and has been found enriched in fibroblasts surrounding peripheral nerves in tendon and muscle, suggesting a perineural identity. Together, these markers characterize a stromal/ASPC subpopulation with perineural localization, here referred to as TENM2\u207a ASPCs.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 1285,
+    "_cap_label_color": "#57db94",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1152/ajpcell.00838.2025"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1152/ajpcell.00838.2025"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "TENM2\u207a ASPCs",
+    "group_name": "TENM2\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "ITGA6",
+    "feature_name": "ITGA6",
+    "feature_id": "ENSG00000091409",
+    "source_type": "cap",
+    "source_rationale": "DCN (decorin) is a stromal/fibroblast marker broadly expressed in connective tissue. TENM2 (teneurin-2) is a transmembrane protein involved in neural circuit organization and cell-cell signaling. SLC22A3 is an organic cation transporter with enriched expression in specific stromal subpopulations. ITGA6 (integrin alpha-6) marks cells associated with basement membrane adhesion and has been found enriched in fibroblasts surrounding peripheral nerves in tendon and muscle, suggesting a perineural identity. Together, these markers characterize a stromal/ASPC subpopulation with perineural localization, here referred to as TENM2\u207a ASPCs.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 1285,
+    "_cap_label_color": "#57db94",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1152/ajpcell.00838.2025"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1152/ajpcell.00838.2025"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "PPARG\u207a ASPCs",
+    "group_name": "PPARG\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "PDGFRA",
+    "feature_name": "PDGFRA",
+    "feature_id": "ENSG00000134853",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. PPARG (peroxisome proliferator-activated receptor gamma) shows enriched expression in this specific subpopulation, distinguishing PPARG\u207a ASPCs from other ASPC subtypes. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 138000,
+    "_cap_label_color": "#5784db",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "PPARG\u207a ASPCs",
+    "group_name": "PPARG\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "DCN",
+    "feature_name": "DCN",
+    "feature_id": "ENSG00000011465",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. PPARG (peroxisome proliferator-activated receptor gamma) shows enriched expression in this specific subpopulation, distinguishing PPARG\u207a ASPCs from other ASPC subtypes. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 138000,
+    "_cap_label_color": "#5784db",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "PPARG\u207a ASPCs",
+    "group_name": "PPARG\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "PPARG",
+    "feature_name": "PPARG",
+    "feature_id": "ENSG00000132170",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. PPARG (peroxisome proliferator-activated receptor gamma) shows enriched expression in this specific subpopulation, distinguishing PPARG\u207a ASPCs from other ASPC subtypes. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 138000,
+    "_cap_label_color": "#5784db",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DPP4\u207a ASPCs",
+    "group_name": "DPP4\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "PDGFRA",
+    "feature_name": "PDGFRA",
+    "feature_id": "ENSG00000134853",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. DPP4 (dipeptidyl peptidase 4), CD55 (decay accelerating factor), and PI16 (peptidase inhibitor 16) show enriched expression in this specific subpopulation, together distinguishing DPP4\u207a ASPCs from other ASPC subtypes. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 63368,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DPP4\u207a ASPCs",
+    "group_name": "DPP4\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "DCN",
+    "feature_name": "DCN",
+    "feature_id": "ENSG00000011465",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. DPP4 (dipeptidyl peptidase 4), CD55 (decay accelerating factor), and PI16 (peptidase inhibitor 16) show enriched expression in this specific subpopulation, together distinguishing DPP4\u207a ASPCs from other ASPC subtypes. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 63368,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DPP4\u207a ASPCs",
+    "group_name": "DPP4\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "DPP4",
+    "feature_name": "DPP4",
+    "feature_id": "ENSG00000197635",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. DPP4 (dipeptidyl peptidase 4), CD55 (decay accelerating factor), and PI16 (peptidase inhibitor 16) show enriched expression in this specific subpopulation, together distinguishing DPP4\u207a ASPCs from other ASPC subtypes. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 63368,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DPP4\u207a ASPCs",
+    "group_name": "DPP4\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "CD55",
+    "feature_name": "CD55",
+    "feature_id": "ENSG00000196352",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. DPP4 (dipeptidyl peptidase 4), CD55 (decay accelerating factor), and PI16 (peptidase inhibitor 16) show enriched expression in this specific subpopulation, together distinguishing DPP4\u207a ASPCs from other ASPC subtypes. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 63368,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "DPP4\u207a ASPCs",
+    "group_name": "DPP4\u207a ASPCS",
+    "group_id": "CL:0009099",
+    "feature_label": "PI16",
+    "feature_name": "PI16",
+    "feature_id": "ENSG00000164530",
+    "source_type": "cap",
+    "source_rationale": "PDGFRA and DCN (decorin) are general ASPC/stromal markers broadly expressed across adipose stromal and progenitor cell populations. DPP4 (dipeptidyl peptidase 4), CD55 (decay accelerating factor), and PI16 (peptidase inhibitor 16) show enriched expression in this specific subpopulation, together distinguishing DPP4\u207a ASPCs from other ASPC subtypes. Together these markers identify a distinct ASPC subpopulation within the broader stromal compartment.",
+    "source_id": "https://celltype.info/project/934/dataset/3012/labelset/lvl3_cell_types",
+    "data_id": "CAP:934:3012",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "934",
+    "_cap_dataset_id": "3012",
+    "_cap_dataset_name": "Human Adipose Tissue Atlas v1.0 \u2014 ASPCs",
+    "_cap_dataset_url": "https://celltype.info/project/934/dataset/3012",
+    "_cap_cell_count": 225219,
+    "_cap_gene_count": 32159,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "visceral abdominal adipose tissue",
+      "subcutaneous abdominal adipose tissue",
+      "subcutaneous adipose tissue",
+      "adipose tissue"
+    ],
+    "_cap_labelset_name": "lvl3_cell_types",
+    "_cap_label_count": 63368,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "fibro/adipogenic progenitor cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0009099",
+    "_cap_ontology_term": "fibro/adipogenic progenitor cell",
+    "_cap_category_full_name": "progenitor cell",
+    "_cap_category_ontology_term_id": "CL:0011026",
+    "_cap_category_ontology_term": "progenitor cell",
+    "_cap_synonyms": [
+      "mesenchymal stem cell of adipose tissue",
+      "preadipocyte"
+    ],
+    "_cap_rationale_dois": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s42255-025-01296-9"
+    ],
+    "_cap_marker_role": "canonical"
+  }
+]

@@ -1,0 +1,586 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Type I muscle cell",
+    "group_name": "TYPE I MUSCLE CELL",
+    "group_id": "CL:0002211",
+    "feature_label": "MYH7",
+    "feature_name": "MYH7",
+    "feature_id": "ENSG00000092054",
+    "source_type": "cap",
+    "source_rationale": "The expression of myosin heavy chain 7 is a canonical marker for Type 1 muscle fibers. Due to expression of MYH7 the cluster was annotated as type I muscle cell.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 26484,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "type I muscle cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0002211",
+    "_cap_ontology_term": "type I muscle cell",
+    "_cap_category_full_name": "slow muscle cell",
+    "_cap_category_ontology_term_id": "CL:0000189",
+    "_cap_category_ontology_term": "slow muscle cell",
+    "_cap_synonyms": [
+      "intermediate muscle fiber",
+      "slow-twitch muscle fiber",
+      "type 1 muscle cell",
+      "slow twitch muscle fiber",
+      "type I muscle fiber",
+      "slow twitch fiber",
+      "type 1 muscle fiber",
+      "slow twitch muscle cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1161/CIRCRESAHA.123.323161",
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.26508/lsa.202201806",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1161/CIRCRESAHA.123.323161",
+      "10.1038/s41586-024-07348-6",
+      "10.18632/aging.204435",
+      "10.26508/lsa.202201806",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Type IIa muscle cell",
+    "group_name": "TYPE IIA MUSCLE CELL",
+    "group_id": "CL:0002214",
+    "feature_label": "MYH2",
+    "feature_name": "MYH2",
+    "feature_id": "ENSG00000125414",
+    "source_type": "cap",
+    "source_rationale": "The expression of myosin heavy chain 2 is a canonical marker for Type IIa muscle fibers. Due to expression of MYH2 the cluster was annotated as type IIa muscle cell.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 18941,
+    "_cap_label_color": "#d3db57",
+    "_cap_label_full_name": "type IIa muscle cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0002214",
+    "_cap_ontology_term": "type IIa muscle cell",
+    "_cap_category_full_name": "type II muscle cell",
+    "_cap_category_ontology_term_id": "CL:0002212",
+    "_cap_category_ontology_term": "type II muscle cell",
+    "_cap_synonyms": [
+      "type 2a muscle fiber",
+      "type IIa muscle fiber",
+      "fast twitch A",
+      "fatigue resistant fast twitch muscle cell",
+      "type 2a muscle cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-024-07348-6",
+      "10.18632/aging.204435",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Senescent muscle cell",
+    "group_name": "SENESCENT MUSCLE CELL",
+    "group_id": "CL:0008002",
+    "feature_label": "CDKN1A",
+    "feature_name": "CDKN1A",
+    "feature_id": "ENSG00000124762",
+    "source_type": "cap",
+    "source_rationale": "The cell cluster was annotated as \"Senescent muscle cell\" due to the expression of markers previously associated with senescence (LRRK2, CDKN1A, COL19A1) by Perez et al 2022. The cell cluster \"Senescent muscle cell\" is labelled as muscle cell due to the expression of MYH1, MYH2 and MYH7, which is why subtype has not been defined.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1551,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "skeletal muscle fiber",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0008002",
+    "_cap_ontology_term": "skeletal muscle fiber",
+    "_cap_category_full_name": "myotube",
+    "_cap_category_ontology_term_id": "CL:0002372",
+    "_cap_category_ontology_term": "myotube",
+    "_cap_synonyms": [
+      "skeletal muscle cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.18632/aging.204435",
+      "10.1038/s41586-024-07348-6",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Senescent muscle cell",
+    "group_name": "SENESCENT MUSCLE CELL",
+    "group_id": "CL:0008002",
+    "feature_label": "LRRK2",
+    "feature_name": "LRRK2",
+    "feature_id": "ENSG00000188906",
+    "source_type": "cap",
+    "source_rationale": "The cell cluster was annotated as \"Senescent muscle cell\" due to the expression of markers previously associated with senescence (LRRK2, CDKN1A, COL19A1) by Perez et al 2022. The cell cluster \"Senescent muscle cell\" is labelled as muscle cell due to the expression of MYH1, MYH2 and MYH7, which is why subtype has not been defined.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1551,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "skeletal muscle fiber",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0008002",
+    "_cap_ontology_term": "skeletal muscle fiber",
+    "_cap_category_full_name": "myotube",
+    "_cap_category_ontology_term_id": "CL:0002372",
+    "_cap_category_ontology_term": "myotube",
+    "_cap_synonyms": [
+      "skeletal muscle cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.18632/aging.204435",
+      "10.1038/s41586-024-07348-6",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Senescent muscle cell",
+    "group_name": "SENESCENT MUSCLE CELL",
+    "group_id": "CL:0008002",
+    "feature_label": "COL19A1",
+    "feature_name": "COL19A1",
+    "feature_id": "ENSG00000082293",
+    "source_type": "cap",
+    "source_rationale": "The cell cluster was annotated as \"Senescent muscle cell\" due to the expression of markers previously associated with senescence (LRRK2, CDKN1A, COL19A1) by Perez et al 2022. The cell cluster \"Senescent muscle cell\" is labelled as muscle cell due to the expression of MYH1, MYH2 and MYH7, which is why subtype has not been defined.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1551,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "skeletal muscle fiber",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0008002",
+    "_cap_ontology_term": "skeletal muscle fiber",
+    "_cap_category_full_name": "myotube",
+    "_cap_category_ontology_term_id": "CL:0002372",
+    "_cap_category_ontology_term": "myotube",
+    "_cap_synonyms": [
+      "skeletal muscle cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.18632/aging.204435",
+      "10.1038/s41586-024-07348-6",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Senescent muscle cell",
+    "group_name": "SENESCENT MUSCLE CELL",
+    "group_id": "CL:0008002",
+    "feature_label": "MYH1",
+    "feature_name": "MYH1",
+    "feature_id": "ENSG00000109061",
+    "source_type": "cap",
+    "source_rationale": "The cell cluster was annotated as \"Senescent muscle cell\" due to the expression of markers previously associated with senescence (LRRK2, CDKN1A, COL19A1) by Perez et al 2022. The cell cluster \"Senescent muscle cell\" is labelled as muscle cell due to the expression of MYH1, MYH2 and MYH7, which is why subtype has not been defined.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1551,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "skeletal muscle fiber",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0008002",
+    "_cap_ontology_term": "skeletal muscle fiber",
+    "_cap_category_full_name": "myotube",
+    "_cap_category_ontology_term_id": "CL:0002372",
+    "_cap_category_ontology_term": "myotube",
+    "_cap_synonyms": [
+      "skeletal muscle cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.18632/aging.204435",
+      "10.1038/s41586-024-07348-6",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Senescent muscle cell",
+    "group_name": "SENESCENT MUSCLE CELL",
+    "group_id": "CL:0008002",
+    "feature_label": "MYH2",
+    "feature_name": "MYH2",
+    "feature_id": "ENSG00000125414",
+    "source_type": "cap",
+    "source_rationale": "The cell cluster was annotated as \"Senescent muscle cell\" due to the expression of markers previously associated with senescence (LRRK2, CDKN1A, COL19A1) by Perez et al 2022. The cell cluster \"Senescent muscle cell\" is labelled as muscle cell due to the expression of MYH1, MYH2 and MYH7, which is why subtype has not been defined.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1551,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "skeletal muscle fiber",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0008002",
+    "_cap_ontology_term": "skeletal muscle fiber",
+    "_cap_category_full_name": "myotube",
+    "_cap_category_ontology_term_id": "CL:0002372",
+    "_cap_category_ontology_term": "myotube",
+    "_cap_synonyms": [
+      "skeletal muscle cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.18632/aging.204435",
+      "10.1038/s41586-024-07348-6",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Senescent muscle cell",
+    "group_name": "SENESCENT MUSCLE CELL",
+    "group_id": "CL:0008002",
+    "feature_label": "MYH7",
+    "feature_name": "MYH7",
+    "feature_id": "ENSG00000092054",
+    "source_type": "cap",
+    "source_rationale": "The cell cluster was annotated as \"Senescent muscle cell\" due to the expression of markers previously associated with senescence (LRRK2, CDKN1A, COL19A1) by Perez et al 2022. The cell cluster \"Senescent muscle cell\" is labelled as muscle cell due to the expression of MYH1, MYH2 and MYH7, which is why subtype has not been defined.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1551,
+    "_cap_label_color": "#57db5f",
+    "_cap_label_full_name": "skeletal muscle fiber",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0008002",
+    "_cap_ontology_term": "skeletal muscle fiber",
+    "_cap_category_full_name": "myotube",
+    "_cap_category_ontology_term_id": "CL:0002372",
+    "_cap_category_ontology_term": "myotube",
+    "_cap_synonyms": [
+      "skeletal muscle cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.18632/aging.204435",
+      "10.1038/s41586-024-07348-6",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "unknown",
+    "group_name": "UNKNOWN",
+    "group_id": "unknown",
+    "feature_label": "NA",
+    "feature_name": "NA",
+    "feature_id": "ENSG00000047597",
+    "source_type": "cap",
+    "source_rationale": "The unknown clusters is most likely a cluster of myocytes, but do not show a clear expression profile, which has made it quite difficult to subcluster the cells. In the final atlas these nuclei will hopefully cluster with enough other cells to distinguish their origin, but for now we chose to label these cells as unknown.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1284,
+    "_cap_label_color": "#57d3db",
+    "_cap_label_full_name": "unknown",
+    "_cap_ontology_term_exists": false,
+    "_cap_ontology_term_id": "unknown",
+    "_cap_ontology_term": "unknown",
+    "_cap_category_full_name": "NA",
+    "_cap_category_ontology_term_id": "NA",
+    "_cap_category_ontology_term": "NA",
+    "_cap_synonyms": [
+      "NA"
+    ],
+    "_cap_rationale_dois": [
+      "NA"
+    ],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Type IIx muscle cell",
+    "group_name": "TYPE IIX MUSCLE CELL",
+    "group_id": "CL:4052026",
+    "feature_label": "MYH1",
+    "feature_name": "MYH1",
+    "feature_id": "ENSG00000109061",
+    "source_type": "cap",
+    "source_rationale": "The expression of myosin heavy chain 1 is a canonical marker for Type IIX muscle fibers. Due to expression of MYH1 the cluster was annotated as type IIX muscle cell.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 4073,
+    "_cap_label_color": "#5f57db",
+    "_cap_label_full_name": "type IIx muscle cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:4052026",
+    "_cap_ontology_term": "type IIx muscle cell",
+    "_cap_category_full_name": "type II muscle cell",
+    "_cap_category_ontology_term_id": "CL:0002212",
+    "_cap_category_ontology_term": "type II muscle cell",
+    "_cap_synonyms": [
+      "type 2x muscle fiber",
+      "type 2x muscle cell",
+      "type 2x fiber",
+      "type IIx muscle fiber"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s43587-024-00613-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-024-07348-6",
+      "10.18632/aging.204435",
+      "10.1038/s43587-024-00613-3"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Myotendinous junction nucleus",
+    "group_name": "MYOTENDINOUS JUNCTION NUCLEUS",
+    "group_id": "CL:0008046",
+    "feature_label": "COL22A1",
+    "feature_name": "COL22A1",
+    "feature_id": "ENSG00000169436",
+    "source_type": "cap",
+    "source_rationale": "Myotendinous junction myonuclei have previously been reported to exhibit enrichment in Collagen Type XXII Alpha 1 Chain. Due to expression of COL22A1 the cluster was annotated as myotendinous junction myonuclei.",
+    "source_id": "https://celltype.info/project/909/dataset/2913/labelset/author_cell_type",
+    "data_id": "CAP:909:2913",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "909",
+    "_cap_dataset_id": "2913",
+    "_cap_dataset_name": "snRNAseq on trained and untrained human skeletal muscle from healthy donors",
+    "_cap_dataset_url": "https://celltype.info/project/909/dataset/2913",
+    "_cap_cell_count": 52597,
+    "_cap_gene_count": 31087,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "vastus lateralis"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 264,
+    "_cap_label_color": "#db57d3",
+    "_cap_label_full_name": "extrafusal muscle fiber",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0008046",
+    "_cap_ontology_term": "extrafusal muscle fiber",
+    "_cap_category_full_name": "skeletal muscle fiber",
+    "_cap_category_ontology_term_id": "CL:0008002",
+    "_cap_category_ontology_term": "skeletal muscle fiber",
+    "_cap_synonyms": [
+      "myofibra extrafusalis"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-024-07348-6",
+      "https://doi.org/10.18632/aging.204435",
+      "https://doi.org/10.1038/s41467-020-18789-8"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-024-07348-6",
+      "10.18632/aging.204435",
+      "10.1038/s41467-020-18789-8"
+    ],
+    "_cap_marker_role": "canonical"
+  }
+]

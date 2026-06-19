@@ -3,7 +3,12 @@
 This prototype is the manuscript-facing version of the Lean-derived marker identifiability analysis.
 The formal claim is that local separation within papers does not imply global atlas-scale separation.
 
-Figure: `analysis/figures/fig3_local_global_marker_identifiability.pdf`
+Manuscript wrapper: `docs/paper/src/figures/fig3_cross_study_unification.tex`
+Manuscript body: `docs/paper/src/figures/fig3_cross_study_unification_body.tex`
+
+Panel PDFs: `analysis/figures/fig3_panel_a_joint_distribution.pdf` through `analysis/figures/fig3_panel_f_cap_local_global_recovery.pdf`.
+
+Legacy composite: `analysis/figures/fig3_local_global_marker_identifiability.pdf` when `LLMARKERS_WRITE_LEGACY_FIGURES=1`.
 
 ## Summary
 

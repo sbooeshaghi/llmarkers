@@ -13,6 +13,7 @@ __pycache__/
 
 # Environment
 **/.env
+.mplconfig/
 
 # Claude Code
 .claude/
@@ -22,18 +23,18 @@ __pycache__/
 
 # Local reference notes and cloned repositories used during drafting
 docs/*.pdf
-docs/cell2sentence.md
+docs/notes/cell2sentence.md
 docs/hca/
-docs/hce-classification.md
-docs/marker_panel_sequence_design_note.md
-docs/vercel_ai_sdk_tracing_note.md
-docs/cell2sentence/
-docs/hce-classification/
+docs/notes/hce-classification.md
+docs/notes/marker_panel_sequence_design_note.md
+docs/notes/vercel_ai_sdk_tracing_note.md
+docs/notes/cell2sentence/
+docs/notes/hce-classification/
 docs/jats/
 docs/mx/
 
 # Local CTP prototype, developed separately from the paper repo
-parct/
+archive/parct/
 
 # Exploratory analysis drafts that are not part of the committed figure pipeline
 analysis/build_cross_study_gene_id_caches.py
@@ -63,17 +64,17 @@ analysis/build_tcell_tree_comparison.py
 analysis/cache/
 
 # Lean build artifacts
-formal/.lake/
+analysis/formal/.lake/
 
 # Poster LaTeX build artifacts
-poster/*.aux
-poster/*.bbl
-poster/*.blg
-poster/*.fdb_latexmk
-poster/*.fls
-poster/*.log
-poster/*.out
-poster/*.pdf
+docs/poster/*.aux
+docs/poster/*.bbl
+docs/poster/*.blg
+docs/poster/*.fdb_latexmk
+docs/poster/*.fls
+docs/poster/*.log
+docs/poster/*.out
+docs/poster/*.pdf
 
 # LaTeX build artifacts
 /main.aux
@@ -91,36 +92,36 @@ poster/*.pdf
 /main.toc
 /main.lof
 /main.lot
-paper/*.aux
-paper/*.bbl
-paper/*.bcf
-paper/*.blg
-paper/*.claimsrc
-paper/*.fdb_latexmk
-paper/*.fls
-paper/*.log
-paper/*.out
-paper/*.pdf
-paper/*.run.xml
-paper/*.synctex.gz
-paper/*.toc
-paper/*.lof
-paper/*.lot
-paper/**/*.aux
-paper/**/*.bbl
-paper/**/*.bcf
-paper/**/*.blg
-paper/**/*.claimsrc
-paper/**/*.fdb_latexmk
-paper/**/*.fls
-paper/**/*.log
-paper/**/*.out
-paper/**/*.pdf
-paper/**/*.run.xml
-paper/**/*.synctex.gz
-paper/**/*.toc
-paper/**/*.lof
-paper/**/*.lot
+docs/paper/*.aux
+docs/paper/*.bbl
+docs/paper/*.bcf
+docs/paper/*.blg
+docs/paper/*.claimsrc
+docs/paper/*.fdb_latexmk
+docs/paper/*.fls
+docs/paper/*.log
+docs/paper/*.out
+docs/paper/*.pdf
+docs/paper/*.run.xml
+docs/paper/*.synctex.gz
+docs/paper/*.toc
+docs/paper/*.lof
+docs/paper/*.lot
+docs/paper/**/*.aux
+docs/paper/**/*.bbl
+docs/paper/**/*.bcf
+docs/paper/**/*.blg
+docs/paper/**/*.claimsrc
+docs/paper/**/*.fdb_latexmk
+docs/paper/**/*.fls
+docs/paper/**/*.log
+docs/paper/**/*.out
+docs/paper/**/*.pdf
+docs/paper/**/*.run.xml
+docs/paper/**/*.synctex.gz
+docs/paper/**/*.toc
+docs/paper/**/*.lof
+docs/paper/**/*.lot
 
 # Large binary data (biorxiv paper downloads)
 data/biorxiv/meca/**
@@ -138,6 +139,10 @@ data/hca/manuscripts/**
 !data/hca/manuscripts/**/metrics.json
 !data/hca/manuscripts/**/resolution.json
 !data/hca/manuscripts/**/biorxiv_metadata.json
+
+# CAP source downloads: keep normalized JSON/TSV inputs, not large binary downloads
+data/cell_annotation_platform/anndata/*.h5ad
+data/cell_annotation_platform/**/*.zip
 
 # Manually added papers: keep derived marker records, not full article text
 data/manual_papers/**/manuscript.md
@@ -280,4 +285,4 @@ analysis/results/tcell_marker_hierarchy_programs.tsv
 analysis/results/tcell_marker_hierarchy_report.md
 
 # Local TeX preview wrappers
-paper/src/fig_paper_celltype_joint_preview.tex
+docs/paper/src/fig_paper_celltype_joint_preview.tex

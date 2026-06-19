@@ -1,0 +1,970 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_LRRC7-hi",
+    "group_name": "OLIGO_LRRC7-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "ST18",
+    "feature_name": "ST18",
+    "feature_id": "ENSG00000147488",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and LRRC7",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 84591,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte LRRC7+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_LRRC7-hi",
+    "group_name": "OLIGO_LRRC7-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "MOG",
+    "feature_name": "MOG",
+    "feature_id": "ENSG00000137345",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and LRRC7",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 84591,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte LRRC7+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_LRRC7-hi",
+    "group_name": "OLIGO_LRRC7-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "MOBP",
+    "feature_name": "MOBP",
+    "feature_id": "ENSG00000168314",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and LRRC7",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 84591,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte LRRC7+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_LRRC7-hi",
+    "group_name": "OLIGO_LRRC7-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "LRRC7",
+    "feature_name": "LRRC7",
+    "feature_id": "ENSG00000033122",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and LRRC7",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 84591,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte LRRC7+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_non_specific",
+    "group_name": "OLIGO_NON_SPECIFIC",
+    "group_id": "CL:0000128",
+    "feature_label": "ST18",
+    "feature_name": "ST18",
+    "feature_id": "ENSG00000147488",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 28871,
+    "_cap_label_color": "#b9db57",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_non_specific",
+    "group_name": "OLIGO_NON_SPECIFIC",
+    "group_id": "CL:0000128",
+    "feature_label": "MOG",
+    "feature_name": "MOG",
+    "feature_id": "ENSG00000137345",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 28871,
+    "_cap_label_color": "#b9db57",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_non_specific",
+    "group_name": "OLIGO_NON_SPECIFIC",
+    "group_id": "CL:0000128",
+    "feature_label": "MOBP",
+    "feature_name": "MOBP",
+    "feature_id": "ENSG00000168314",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 28871,
+    "_cap_label_color": "#b9db57",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_RBFOX1-hi",
+    "group_name": "OLIGO_RBFOX1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "ST18",
+    "feature_name": "ST18",
+    "feature_id": "ENSG00000147488",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and RBFOX1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 98521,
+    "_cap_label_color": "#57db94",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte RBFOX1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_RBFOX1-hi",
+    "group_name": "OLIGO_RBFOX1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "MOG",
+    "feature_name": "MOG",
+    "feature_id": "ENSG00000137345",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and RBFOX1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 98521,
+    "_cap_label_color": "#57db94",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte RBFOX1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_RBFOX1-hi",
+    "group_name": "OLIGO_RBFOX1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "MOBP",
+    "feature_name": "MOBP",
+    "feature_id": "ENSG00000168314",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and RBFOX1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 98521,
+    "_cap_label_color": "#57db94",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte RBFOX1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_RBFOX1-hi",
+    "group_name": "OLIGO_RBFOX1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "RBFOX1",
+    "feature_name": "RBFOX1",
+    "feature_id": "ENSG00000078328",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and RBFOX1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 98521,
+    "_cap_label_color": "#57db94",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte RBFOX1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_SVEP1-hi",
+    "group_name": "OLIGO_SVEP1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "ST18",
+    "feature_name": "ST18",
+    "feature_id": "ENSG00000147488",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and SVEP1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 62216,
+    "_cap_label_color": "#5784db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte SVEP1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_SVEP1-hi",
+    "group_name": "OLIGO_SVEP1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "MOG",
+    "feature_name": "MOG",
+    "feature_id": "ENSG00000137345",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and SVEP1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 62216,
+    "_cap_label_color": "#5784db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte SVEP1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_SVEP1-hi",
+    "group_name": "OLIGO_SVEP1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "MOBP",
+    "feature_name": "MOBP",
+    "feature_id": "ENSG00000168314",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and SVEP1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 62216,
+    "_cap_label_color": "#5784db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte SVEP1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_SVEP1-hi",
+    "group_name": "OLIGO_SVEP1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "RBFOX1",
+    "feature_name": "RBFOX1",
+    "feature_id": "ENSG00000078328",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and SVEP1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 62216,
+    "_cap_label_color": "#5784db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte SVEP1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_SVEP1-hi",
+    "group_name": "OLIGO_SVEP1-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "SVEP1",
+    "feature_name": "SVEP1",
+    "feature_id": "ENSG00000165124",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and SVEP1",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 62216,
+    "_cap_label_color": "#5784db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte SVEP1+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_NAV2-hi",
+    "group_name": "OLIGO_NAV2-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "ST18",
+    "feature_name": "ST18",
+    "feature_id": "ENSG00000147488",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and NAV2",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 3841,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte NAV2+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_NAV2-hi",
+    "group_name": "OLIGO_NAV2-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "MOG",
+    "feature_name": "MOG",
+    "feature_id": "ENSG00000137345",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and NAV2",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 3841,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte NAV2+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_NAV2-hi",
+    "group_name": "OLIGO_NAV2-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "MOBP",
+    "feature_name": "MOBP",
+    "feature_id": "ENSG00000168314",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and NAV2",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 3841,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte NAV2+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "OLIGO_NAV2-hi",
+    "group_name": "OLIGO_NAV2-HI",
+    "group_id": "CL:0000128",
+    "feature_label": "NAV2",
+    "feature_name": "NAV2",
+    "feature_id": "ENSG00000166833",
+    "source_type": "cap",
+    "source_rationale": "An oligodendrocyte sub class that expresses ST18 and NAV2",
+    "source_id": "https://celltype.info/project/621/dataset/1487/labelset/author_cell_type",
+    "data_id": "CAP:621:1487",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1487",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - oligodendrocytes",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1487",
+    "_cap_cell_count": 278040,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 3841,
+    "_cap_label_color": "#c957db",
+    "_cap_label_full_name": "oligodendrocyte",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000128",
+    "_cap_ontology_term": "oligodendrocyte",
+    "_cap_category_full_name": "myelinating glial cell",
+    "_cap_category_ontology_term_id": "CL:4023154",
+    "_cap_category_ontology_term": "myelinating glial cell",
+    "_cap_synonyms": [
+      "oligodendrocyte NAV2+"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1016/j.neuron.2022.03.008"
+    ],
+    "_cap_marker_role": "canonical"
+  }
+]

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -14,6 +15,14 @@ RESULTS_DIR = REPO_ROOT / "analysis" / "results"
 
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+
+PANEL_A_PATH = FIGURE_DIR / "fig2_panel_a_benchmark_summary.pdf"
+PANEL_A_PNG_PATH = FIGURE_DIR / "fig2_panel_a_benchmark_summary.png"
+PANEL_B_PATH = FIGURE_DIR / "fig2_panel_b_optimal_deg_cutoff.pdf"
+PANEL_B_PNG_PATH = FIGURE_DIR / "fig2_panel_b_optimal_deg_cutoff.png"
+PANEL_C_PATH = FIGURE_DIR / "fig2_panel_c_llm_recovery.pdf"
+PANEL_C_PNG_PATH = FIGURE_DIR / "fig2_panel_c_llm_recovery.png"
+WRITE_LEGACY_FIGURES = os.environ.get("LLMARKERS_WRITE_LEGACY_FIGURES") == "1"
 
 DATASETS = [
     ("adipose_Emont2022", "Emont"),
@@ -245,26 +254,15 @@ def format_percent(value: object) -> str:
 
 def plot_summary_table(ax: plt.Axes, summary: pd.DataFrame) -> None:
     ax.axis("off")
-    ax.text(-0.05, 1.04, "A", transform=ax.transAxes, fontsize=11, fontweight="bold", va="top")
     ax.text(
-        0.0,
+        0.5,
         1.02,
         "LLMarkers benchmark",
         transform=ax.transAxes,
-        ha="left",
+        ha="center",
         va="top",
         fontsize=10.0,
         fontweight="bold",
-    )
-    ax.text(
-        0.0,
-        0.93,
-        "7 single-cell studies",
-        transform=ax.transAxes,
-        ha="left",
-        va="top",
-        fontsize=7.8,
-        color="#444444",
     )
 
     columns = [
@@ -370,7 +368,6 @@ def plot_cutoff_panel(ax: plt.Axes, cutoffs: pd.DataFrame) -> None:
     ax.set_xlabel("Optimal number of DEGs")
     ax.set_ylabel("F-score at optimum")
     ax.legend(frameon=False, loc="upper right", handletextpad=0.4)
-    ax.text(-0.13, 1.09, "B", transform=ax.transAxes, fontsize=11, fontweight="bold", va="top")
 
 
 def plot_llm_panel(ax: plt.Axes, results: pd.DataFrame) -> None:
@@ -413,7 +410,22 @@ def plot_llm_panel(ax: plt.Axes, results: pd.DataFrame) -> None:
     ax.set_ylim(0, 1.0)
     ax.set_xlim(-0.55, len(METHODS) - 0.45)
     ax.tick_params(axis="x", length=0)
-    ax.text(-0.13, 1.09, "C", transform=ax.transAxes, fontsize=11, fontweight="bold", va="top")
+
+
+def save_single_panel(
+    pdf_path: Path,
+    png_path: Path,
+    draw,
+    figsize: tuple[float, float],
+    adjust: dict[str, float] | None = None,
+) -> None:
+    fig, ax = plt.subplots(figsize=figsize)
+    draw(ax)
+    if adjust is not None:
+        fig.subplots_adjust(**adjust)
+    fig.savefig(pdf_path, bbox_inches="tight")
+    fig.savefig(png_path, bbox_inches="tight", dpi=300)
+    plt.close(fig)
 
 
 def main() -> None:
@@ -429,20 +441,48 @@ def main() -> None:
     cutoffs = build_cutoff_results()
     llm_results = build_llm_results()
 
-    fig, axes = plt.subplots(
-        1,
-        3,
-        figsize=(12.8, 3.35),
-        gridspec_kw={"width_ratios": [1.12, 1.04, 1.20]},
-    )
-    plot_summary_table(axes[0], summary)
-    plot_cutoff_panel(axes[1], cutoffs)
-    plot_llm_panel(axes[2], llm_results)
-    fig.subplots_adjust(left=0.04, right=0.99, bottom=0.22, top=0.93, wspace=0.36)
+    if WRITE_LEGACY_FIGURES:
+        fig, axes = plt.subplots(
+            1,
+            3,
+            figsize=(12.8, 3.35),
+            gridspec_kw={"width_ratios": [1.12, 1.04, 1.20]},
+        )
+        plot_summary_table(axes[0], summary)
+        plot_cutoff_panel(axes[1], cutoffs)
+        plot_llm_panel(axes[2], llm_results)
+        fig.subplots_adjust(left=0.04, right=0.99, bottom=0.22, top=0.93, wspace=0.36)
 
-    fig.savefig(FIGURE_DIR / "fig_marker_recovery.pdf", bbox_inches="tight")
-    fig.savefig(FIGURE_DIR / "fig_marker_recovery.png", bbox_inches="tight", dpi=240)
-    print(f"saved {FIGURE_DIR / 'fig_marker_recovery.pdf'}")
+        fig.savefig(FIGURE_DIR / "fig_marker_recovery.pdf", bbox_inches="tight")
+        fig.savefig(FIGURE_DIR / "fig_marker_recovery.png", bbox_inches="tight", dpi=240)
+        plt.close(fig)
+
+    save_single_panel(
+        PANEL_A_PATH,
+        PANEL_A_PNG_PATH,
+        lambda ax: plot_summary_table(ax, summary),
+        figsize=(4.1, 3.35),
+        adjust={"left": 0.02, "right": 0.98, "bottom": 0.08, "top": 0.95},
+    )
+    save_single_panel(
+        PANEL_B_PATH,
+        PANEL_B_PNG_PATH,
+        lambda ax: plot_cutoff_panel(ax, cutoffs),
+        figsize=(3.9, 3.35),
+        adjust={"left": 0.17, "right": 0.98, "bottom": 0.22, "top": 0.94},
+    )
+    save_single_panel(
+        PANEL_C_PATH,
+        PANEL_C_PNG_PATH,
+        lambda ax: plot_llm_panel(ax, llm_results),
+        figsize=(4.3, 3.35),
+        adjust={"left": 0.14, "right": 0.98, "bottom": 0.22, "top": 0.94},
+    )
+    if WRITE_LEGACY_FIGURES:
+        print(f"saved {FIGURE_DIR / 'fig_marker_recovery.pdf'}")
+    print(f"saved {PANEL_A_PATH}")
+    print(f"saved {PANEL_B_PATH}")
+    print(f"saved {PANEL_C_PATH}")
     print(cutoffs[["study", "source_type", "optimal_n", "best_f1"]].to_string(index=False))
     print(llm_results[[col for col, _, _ in METHODS]].mean().to_string(float_format=lambda value: f"{value:.3f}"))
 

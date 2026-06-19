@@ -1,8 +1,9 @@
 from __future__ import annotations
 
 import math
+import os
+from collections import Counter, defaultdict
 from collections.abc import Callable
-from collections import defaultdict
 from itertools import combinations
 from pathlib import Path
 
@@ -11,8 +12,10 @@ import numpy as np
 import pandas as pd
 from matplotlib.patches import Patch, Rectangle
 
+from build_cap_llmarkers_comparison import build_cap_human_profiles, marker_relation as cap_marker_relation
 from build_local_global_marker_analysis import build_profiles, jaccard
 from cross_study_gene_space import REPO_ROOT, RESULTS_DIR
+from marker_label_utils import label_relation, normalize_label
 
 
 FIGURE_DIR = REPO_ROOT / "analysis" / "figures"
@@ -20,16 +23,36 @@ FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 
 FIGURE_PATH = FIGURE_DIR / "fig3_local_global_marker_identifiability.pdf"
 FIGURE_PNG_PATH = FIGURE_DIR / "fig3_local_global_marker_identifiability.png"
+MANUSCRIPT_WRAPPER_PATH = REPO_ROOT / "docs" / "paper" / "src" / "figures" / "fig3_cross_study_unification.tex"
+MANUSCRIPT_BODY_PATH = REPO_ROOT / "docs" / "paper" / "src" / "figures" / "fig3_cross_study_unification_body.tex"
+WRITE_LEGACY_FIGURES = os.environ.get("LLMARKERS_WRITE_LEGACY_FIGURES") == "1"
 PANEL_A_PATH = FIGURE_DIR / "fig3_panel_a_joint_distribution.pdf"
 PANEL_A_PNG_PATH = FIGURE_DIR / "fig3_panel_a_joint_distribution.png"
 PANEL_B_PATH = FIGURE_DIR / "fig3_panel_b_nomenclature_examples.pdf"
 PANEL_B_PNG_PATH = FIGURE_DIR / "fig3_panel_b_nomenclature_examples.png"
 PANEL_C_PATH = FIGURE_DIR / "fig3_panel_c_local_global_recovery.pdf"
 PANEL_C_PNG_PATH = FIGURE_DIR / "fig3_panel_c_local_global_recovery.png"
+PANEL_D_PATH = FIGURE_DIR / "fig3_panel_d_cap_joint_distribution.pdf"
+PANEL_D_PNG_PATH = FIGURE_DIR / "fig3_panel_d_cap_joint_distribution.png"
+PANEL_E_PATH = FIGURE_DIR / "fig3_panel_e_cap_nomenclature_examples.pdf"
+PANEL_E_PNG_PATH = FIGURE_DIR / "fig3_panel_e_cap_nomenclature_examples.png"
+PANEL_F_PATH = FIGURE_DIR / "fig3_panel_f_cap_local_global_recovery.pdf"
+PANEL_F_PNG_PATH = FIGURE_DIR / "fig3_panel_f_cap_local_global_recovery.png"
 REPORT_PATH = RESULTS_DIR / "fig3_local_global_marker_identifiability_report.md"
 PAIR_VALUES_PATH = RESULTS_DIR / "fig3_local_global_pair_values_sample.tsv"
 PAIR_SUMMARY_PATH = RESULTS_DIR / "fig3_local_global_pair_summary.tsv"
 LABEL_LOCAL_GLOBAL_PATH = RESULTS_DIR / "fig3_label_local_global_marker_recovery.tsv"
+CAP_LABEL_LOCAL_GLOBAL_PATH = RESULTS_DIR / "fig3_cap_label_local_global_marker_recovery.tsv"
+CAP_ONTOLOGY_LOCAL_GLOBAL_PATH = RESULTS_DIR / "fig3_cap_ontology_local_global_marker_recovery.tsv"
+CAP_JOINT_DISTRIBUTION_PATH = RESULTS_DIR / "fig3_cap_cross_project_label_marker_joint_distribution.tsv"
+CAP_ONTOLOGY_JOINT_DISTRIBUTION_PATH = RESULTS_DIR / "fig3_cap_cross_project_ontology_marker_joint_distribution.tsv"
+GLOBAL_RECOVERY_NULL_SUMMARY_PATH = RESULTS_DIR / "fig3_global_recovery_permutation_summary.tsv"
+GLOBAL_RECOVERY_NULL_DRAWS_PATH = RESULTS_DIR / "fig3_global_recovery_permutation_draws.tsv"
+GLOBAL_RECOVERY_PROFILE_VALUES_PATH = RESULTS_DIR / "fig3_global_recovery_profile_values.tsv"
+SAME_LABEL_JACCARD_VALUES_PATH = RESULTS_DIR / "fig3_same_label_marker_jaccard_values.tsv"
+SAME_LABEL_JACCARD_SUMMARY_PATH = RESULTS_DIR / "fig3_same_label_marker_jaccard_summary.tsv"
+CAP_LABEL_DISAGREEMENT_SAME_PATH = RESULTS_DIR / "fig3_cap_same_label_weak_marker_examples.tsv"
+CAP_LABEL_DISAGREEMENT_DIFFERENT_PATH = RESULTS_DIR / "fig3_cap_different_label_shared_marker_examples.tsv"
 LABEL_DISAGREEMENT_SAME_PATH = RESULTS_DIR / "fig3_same_label_weak_marker_examples.tsv"
 LABEL_DISAGREEMENT_DIFFERENT_PATH = RESULTS_DIR / "fig3_different_label_shared_marker_examples.tsv"
 
@@ -95,8 +118,8 @@ def require_tables() -> tuple[
     missing = [str(path.relative_to(REPO_ROOT)) for path in required if not path.exists()]
     if missing:
         raise FileNotFoundError(
-            "Missing prerequisite outputs. Run build_local_global_marker_analysis.py and "
-            f"build_marker_identifiability_analysis.py first. Missing: {', '.join(missing)}"
+            "Missing prerequisite outputs. Run analysis/build_local_global_marker_analysis.py and "
+            f"analysis/build_marker_identifiability_analysis.py first. Missing: {', '.join(missing)}"
         )
     return (
         pd.read_csv(LOCAL_GLOBAL_PAPER_PATH, sep="\t"),
@@ -271,7 +294,7 @@ def format_percent(value: float) -> str:
     return f"{value:.1f}%"
 
 
-def add_panel_title(ax: plt.Axes, title: str) -> None:
+def add_panel_title(ax: plt.Axes, title: str, subtitle: str | None = None) -> None:
     ax.text(
         0.5,
         1.04,
@@ -283,13 +306,25 @@ def add_panel_title(ax: plt.Axes, title: str) -> None:
         fontweight="bold",
         clip_on=False,
     )
+    if subtitle:
+        ax.text(
+            0.5,
+            1.005,
+            subtitle,
+            transform=ax.transAxes,
+            ha="center",
+            va="bottom",
+            fontsize=5.7,
+            color="#4d4d4d",
+            clip_on=False,
+        )
 
 
-def plot_joint_distribution(ax: plt.Axes, joint_df: pd.DataFrame) -> None:
+def plot_joint_distribution(ax: plt.Axes, joint_df: pd.DataFrame, subtitle: str | None = None) -> None:
     ax.set_axis_off()
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
-    add_panel_title(ax, "Label-Marker Agreement")
+    add_panel_title(ax, "Label-Marker Agreement", subtitle)
 
     label_order = ["Exact", "Partial", "Different"]
     marker_order = ["Exact", "Partial", "None"]
@@ -309,8 +344,8 @@ def plot_joint_distribution(ax: plt.Axes, joint_df: pd.DataFrame) -> None:
 
     x0 = 0.24
     y0 = 0.25
-    table_w = 0.66
-    table_h = 0.54
+    table_w = 0.60
+    table_h = 0.60
     cell_w = table_w / 3
     cell_h = table_h / 3
 
@@ -433,31 +468,239 @@ def plot_joint_distribution(ax: plt.Axes, joint_df: pd.DataFrame) -> None:
         ("#ffffff", "context clarifies identifiability", colors["context"]),
         (colors["different_profile"], "different profile", "black"),
     ]
-    legend_x = x0 + 0.02
-    legend_y = 0.145
-    legend_dy = 0.031
+    legend_x = x0 + 0.015
+    legend_y = 0.158
+    legend_dy = 0.029
+    legend_box = 0.026
     for idx, (fill, label, edge) in enumerate(legend_items):
         lx = legend_x
         ly = legend_y - idx * legend_dy
         ax.add_patch(
             Rectangle(
-                (lx, ly - 0.014),
-                0.022,
-                0.022,
+                (lx, ly - legend_box * 0.58),
+                legend_box,
+                legend_box,
                 facecolor=fill,
                 edgecolor=edge if label == "context clarifies identifiability" else "black",
                 linewidth=0.55 if label == "context clarifies identifiability" else 0.25,
             )
         )
         ax.text(
-            lx + 0.032,
+            lx + 0.037,
             ly - 0.003,
             label,
             ha="left",
             va="center",
-            fontsize=4.2,
+            fontsize=5.8,
             color=edge if edge != "black" else "black",
         )
+
+
+def plot_global_recovery_permutation_test(
+    ax: plt.Axes,
+    summary_row: pd.Series,
+    draws_df: pd.DataFrame,
+    subtitle: str | None = None,
+) -> None:
+    add_panel_title(ax, "Global Recovery vs Random", subtitle)
+    resource_draws = draws_df.loc[draws_df["resource"].eq(summary_row["resource"])].copy()
+    draws = resource_draws["mean_label_recovery"].to_numpy(dtype=float)
+    observed = float(summary_row["observed_mean_label_recovery"])
+    null_mean = float(summary_row["null_mean_label_recovery"])
+    null_q025 = float(summary_row["null_q025_label_recovery"])
+    null_q975 = float(summary_row["null_q975_label_recovery"])
+    p_value = float(summary_row["empirical_p_ge"])
+    lift = float(summary_row["recovery_lift"])
+
+    rng = np.random.default_rng(1)
+    jitter = rng.normal(0, 0.035, size=len(draws))
+    ax.scatter(draws, jitter, s=5, color="#bdbdbd", edgecolor="none", alpha=0.35, zorder=1)
+    ax.hlines(0, null_q025, null_q975, color="#6f6f6f", linewidth=4.5, alpha=0.8, zorder=2)
+    ax.scatter([null_mean], [0], s=28, facecolor="white", edgecolor="black", linewidth=0.8, zorder=4)
+    ax.scatter([observed], [1], s=44, facecolor="#d55e00", edgecolor="black", linewidth=0.7, zorder=5)
+    ax.plot([null_mean, observed], [0, 1], color="#9a9a9a", linewidth=0.6, linestyle="--", zorder=0)
+    ax.text(
+        observed,
+        1.13,
+        f"{observed:.2f}",
+        ha="center",
+        va="bottom",
+        fontsize=5.4,
+        color="#8d3328",
+    )
+    ax.text(
+        null_mean,
+        -0.16,
+        f"{null_mean:.2f}",
+        ha="center",
+        va="top",
+        fontsize=5.2,
+        color="#555555",
+    )
+    p_text = f"p={p_value:.3f}" if p_value >= 0.001 else "p<0.001"
+    ax.text(
+        0.98,
+        0.88,
+        f"{lift:.1f}x lift\n{p_text}",
+        transform=ax.transAxes,
+        ha="right",
+        va="top",
+        fontsize=6.2,
+        fontweight="bold",
+    )
+    ax.text(
+        0.98,
+        0.08,
+        f"{int(summary_row['n_labels'])} labels\n{int(summary_row['n_profiles'])} profiles",
+        transform=ax.transAxes,
+        ha="right",
+        va="bottom",
+        fontsize=5.2,
+    )
+    ax.set_xlabel("Mean label-level global recovery", fontsize=5.8)
+    ax.set_yticks([0, 1])
+    ax.set_yticklabels(["Random", "Observed"], fontsize=5.8)
+    ax.tick_params(axis="x", labelsize=5.3, length=2)
+    ax.tick_params(axis="y", length=0)
+    ax.spines["left"].set_visible(False)
+    ax.set_xlim(0, max(0.62, observed * 1.22, float(np.nanmax(draws)) * 1.2))
+    ax.set_ylim(-0.35, 1.35)
+    ax.set_box_aspect(1)
+
+
+def build_same_label_marker_jaccard_distribution(
+    profiles_df: pd.DataFrame,
+    resource: str,
+    context_col: str,
+    label_col: str = "normalized_cell_type",
+    max_random_pairs: int = 100_000,
+    max_plot_pairs: int = 8_000,
+    seed: int = 11,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    rng = np.random.default_rng(seed)
+    profiles = profiles_df.loc[profiles_df[label_col].fillna("").astype(str).str.strip().ne("")].copy()
+    profiles = profiles.reset_index(drop=True)
+    rows = list(profiles.itertuples(index=False))
+
+    same_label_values: list[float] = []
+    labels_with_pairs: set[str] = set()
+    for label, label_df in profiles.groupby(label_col, sort=True):
+        if len(label_df) < 2 or label_df[context_col].nunique() < 2:
+            continue
+        for row_a, row_b in combinations(label_df.itertuples(index=False), 2):
+            if getattr(row_a, context_col) == getattr(row_b, context_col):
+                continue
+            _shared, _union, value = jaccard(row_a.marker_set, row_b.marker_set)
+            same_label_values.append(value)
+            labels_with_pairs.add(str(label))
+
+    random_values: list[float] = []
+    n_profiles = len(rows)
+    attempts = 0
+    max_attempts = max_random_pairs * 8
+    while len(random_values) < max_random_pairs and attempts < max_attempts:
+        attempts += 1
+        idx_a, idx_b = rng.integers(0, n_profiles, size=2)
+        if idx_a == idx_b:
+            continue
+        row_a = rows[int(idx_a)]
+        row_b = rows[int(idx_b)]
+        if getattr(row_a, context_col) == getattr(row_b, context_col):
+            continue
+        if getattr(row_a, label_col) == getattr(row_b, label_col):
+            continue
+        _shared, _union, value = jaccard(row_a.marker_set, row_b.marker_set)
+        random_values.append(value)
+
+    value_rows = []
+    for comparison, values in [
+        ("Same label", same_label_values),
+        ("Random different labels", random_values),
+    ]:
+        arr = np.asarray(values, dtype=float)
+        if len(arr) > max_plot_pairs:
+            arr = rng.choice(arr, size=max_plot_pairs, replace=False)
+        value_rows.extend(
+            {"resource": resource, "comparison": comparison, "marker_jaccard": float(value)}
+            for value in arr
+        )
+
+    summary_rows = []
+    for comparison, values in [
+        ("Same label", same_label_values),
+        ("Random different labels", random_values),
+    ]:
+        arr = np.asarray(values, dtype=float)
+        summary_rows.append(
+            {
+                "resource": resource,
+                "comparison": comparison,
+                "n_pairs": len(arr),
+                "n_labels_with_pairs": len(labels_with_pairs) if comparison == "Same label" else np.nan,
+                "mean_jaccard": float(arr.mean()) if len(arr) else np.nan,
+                "median_jaccard": float(np.median(arr)) if len(arr) else np.nan,
+                "q25_jaccard": float(np.quantile(arr, 0.25)) if len(arr) else np.nan,
+                "q75_jaccard": float(np.quantile(arr, 0.75)) if len(arr) else np.nan,
+                "pct_jaccard_eq_0": float((arr == 0).mean()) if len(arr) else np.nan,
+                "pct_jaccard_gt_0": float((arr > 0).mean()) if len(arr) else np.nan,
+                "pct_jaccard_ge_0_25": float((arr >= 0.25).mean()) if len(arr) else np.nan,
+                "pct_jaccard_eq_1": float((arr == 1).mean()) if len(arr) else np.nan,
+            }
+        )
+
+    return pd.DataFrame(value_rows), pd.DataFrame(summary_rows)
+
+
+def plot_same_label_marker_jaccard_swarm(
+    ax: plt.Axes,
+    values_df: pd.DataFrame,
+    summary_df: pd.DataFrame,
+    resource: str,
+    subtitle: str | None = None,
+    title: str | None = "Same-Label Marker Sharing",
+    same_tick_label: str = "Same\nlabel",
+    set_square: bool = True,
+) -> None:
+    if title:
+        add_panel_title(ax, title, subtitle)
+    order = ["Random different labels", "Same label"]
+    labels = ["Random\ndiff. labels", same_tick_label]
+    colors = {
+        "Random different labels": "#B83280",
+        "Same label": "#2f6f4e",
+    }
+    rng = np.random.default_rng(19)
+    for idx, comparison in enumerate(order):
+        subset = values_df.loc[
+            values_df["resource"].eq(resource) & values_df["comparison"].eq(comparison),
+            "marker_jaccard",
+        ].to_numpy(dtype=float)
+        sample_n = min(650, len(subset))
+        sample = rng.choice(subset, size=sample_n, replace=False) if len(subset) else np.asarray([])
+        x = rng.normal(idx, 0.075, size=len(sample))
+        ax.scatter(
+            x,
+            sample,
+            s=6,
+            facecolor=colors[comparison],
+            edgecolor="none",
+            alpha=0.28 if comparison.startswith("Random") else 0.42,
+            rasterized=True,
+        )
+        summary_row = summary_df.loc[
+            summary_df["resource"].eq(resource) & summary_df["comparison"].eq(comparison)
+        ].iloc[0]
+        mean = float(summary_row["mean_jaccard"])
+        ax.scatter([idx], [mean], s=38, facecolor="white", edgecolor="black", linewidth=0.8, zorder=5)
+    ax.set_xticks([0, 1])
+    ax.set_xticklabels(labels, fontsize=5.8)
+    ax.set_xlim(-0.48, 1.48)
+    ax.set_ylim(-0.03, 1.03)
+    ax.set_ylabel("Marker gene set Jaccard", fontsize=5.8)
+    ax.tick_params(axis="y", labelsize=5.4, length=2)
+    ax.tick_params(axis="x", length=0)
+    if set_square:
+        ax.set_box_aspect(1)
 
 
 def plot_local_global_similarity(ax: plt.Axes, values_by_comparison: dict[str, np.ndarray]) -> None:
@@ -546,11 +789,438 @@ def build_label_local_global_recovery(liftover_df: pd.DataFrame) -> pd.DataFrame
     return summary
 
 
-def plot_label_local_global_recovery(ax: plt.Axes, label_recovery_df: pd.DataFrame) -> None:
+def normalize_marker_relation_for_plot(relation: str) -> str:
+    return "None" if relation in {"Different", "None"} else relation
+
+
+def cap_profiles_with_ontology_terms(cap_profiles_df: pd.DataFrame) -> pd.DataFrame:
+    profiles = cap_profiles_df.copy()
+    ontology_terms = profiles["cap_ontology_term"].fillna("").astype(str).str.strip()
+    ontology_ids = profiles["cap_ontology_term_id"].fillna("").astype(str).str.strip()
+    profiles = profiles.loc[ontology_terms.ne("") & ontology_ids.str.startswith("CL:")].copy()
+    profiles["cell_type"] = profiles["cap_ontology_term"]
+    profiles["normalized_cell_type"] = profiles["cap_ontology_term"].map(normalize_label)
+    return profiles
+
+
+def build_cap_cross_project_joint_distribution(
+    cap_profiles_df: pd.DataFrame,
+    output_path: Path = CAP_JOINT_DISTRIBUTION_PATH,
+) -> pd.DataFrame:
+    rows = list(cap_profiles_df.itertuples(index=False))
+    counts: dict[tuple[str, str], int] = defaultdict(int)
+    total = 0
+    for idx_a, idx_b in combinations(range(len(rows)), 2):
+        row_a = rows[idx_a]
+        row_b = rows[idx_b]
+        if row_a.project_id == row_b.project_id:
+            continue
+        _shared, _union, value = jaccard(row_a.marker_set, row_b.marker_set)
+        label_rel = label_relation(row_a.normalized_cell_type, row_b.normalized_cell_type)
+        marker_rel = normalize_marker_relation_for_plot(cap_marker_relation(value))
+        counts[(label_rel, marker_rel)] += 1
+        total += 1
+
+    out_rows = []
+    for label_rel in ["Exact", "Partial", "Different"]:
+        for marker_rel in ["Exact", "Partial", "None"]:
+            pairs = counts[(label_rel, marker_rel)]
+            out_rows.append(
+                {
+                    "label_relation": label_rel,
+                    "marker_relation": marker_rel,
+                    "pairs": pairs,
+                    "fraction": pairs / total if total else np.nan,
+                    "percent": 100 * pairs / total if total else np.nan,
+                }
+            )
+    out = pd.DataFrame(out_rows)
+    out.to_csv(output_path, sep="\t", index=False)
+    return out
+
+
+def build_global_recovery_permutation_test(
+    profiles_df: pd.DataFrame,
+    resource: str,
+    label_basis: str,
+    local_context_col: str,
+    comparison_context_col: str,
+    min_profiles: int,
+    n_permutations: int = 1000,
+    seed: int = 17,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    profiles = profiles_df.loc[profiles_df["normalized_cell_type"].ne("")].copy().reset_index(drop=True)
+    marker_sets = list(profiles["marker_set"])
+    labels = list(profiles["normalized_cell_type"])
+    local_contexts = list(profiles[local_context_col])
+    comparison_contexts = list(profiles[comparison_context_col])
+
+    local_gene_counts: dict[str, Counter] = {}
+    label_to_indices: dict[str, list[int]] = defaultdict(list)
+    for context, context_df in profiles.groupby(local_context_col, sort=False):
+        local_gene_counts[context] = Counter(
+            gene_id for marker_set in context_df["marker_set"] for gene_id in marker_set
+        )
+    for idx, label in enumerate(labels):
+        label_to_indices[label].append(idx)
+
+    eligible_labels = {
+        label
+        for label, indices in label_to_indices.items()
+        if len(indices) >= min_profiles
+        and len({comparison_contexts[idx] for idx in indices}) >= 2
+    }
+
+    profile_records = []
+    for idx, row in enumerate(profiles.itertuples(index=False)):
+        label = labels[idx]
+        if label not in eligible_labels:
+            continue
+        markers = marker_sets[idx]
+        local_private = {
+            gene_id
+            for gene_id in markers
+            if local_gene_counts[local_contexts[idx]][gene_id] == 1
+        }
+        if not local_private:
+            continue
+        comparison_indices = [
+            other_idx
+            for other_idx in label_to_indices[label]
+            if comparison_contexts[other_idx] != comparison_contexts[idx]
+        ]
+        if not comparison_indices:
+            continue
+        comparison_union: set[str] = set()
+        for other_idx in comparison_indices:
+            comparison_union |= marker_sets[other_idx]
+        observed = len(local_private & comparison_union) / len(local_private)
+        background_indices = np.asarray(
+            [
+                other_idx
+                for other_idx in range(len(profiles))
+                if comparison_contexts[other_idx] != comparison_contexts[idx]
+            ],
+            dtype=int,
+        )
+        if len(background_indices) == 0:
+            continue
+        profile_records.append(
+            {
+                "resource": resource,
+                "label_basis": label_basis,
+                "profile_idx": idx,
+                "normalized_cell_type": label,
+                "cell_type": row.cell_type,
+                "context_uid": getattr(row, "context_uid", ""),
+                "comparison_context": comparison_contexts[idx],
+                "n_local_markers": len(local_private),
+                "n_comparison_profiles": len(comparison_indices),
+                "observed_global_recovery": observed,
+                "local_private_set": local_private,
+                "background_indices": background_indices,
+            }
+        )
+
+    profile_df_internal = pd.DataFrame(profile_records)
+    if profile_df_internal.empty:
+        raise ValueError(f"No eligible profiles for global recovery permutation test: {resource}")
+
+    observed_by_label = (
+        profile_df_internal.groupby("normalized_cell_type")["observed_global_recovery"]
+        .mean()
+        .rename("label_mean_observed_global_recovery")
+    )
+    observed_statistic = float(observed_by_label.mean())
+
+    rng = np.random.default_rng(seed)
+    draw_rows = []
+    internal_rows = list(profile_df_internal.itertuples(index=False))
+    for permutation in range(n_permutations):
+        label_to_values: dict[str, list[float]] = defaultdict(list)
+        for record in internal_rows:
+            background_indices = record.background_indices
+            n_draw = min(int(record.n_comparison_profiles), len(background_indices))
+            sampled = rng.choice(background_indices, size=n_draw, replace=False)
+            sampled_union: set[str] = set()
+            for sampled_idx in sampled:
+                sampled_union |= marker_sets[int(sampled_idx)]
+            value = len(record.local_private_set & sampled_union) / len(record.local_private_set)
+            label_to_values[record.normalized_cell_type].append(value)
+        label_means = [float(np.mean(values)) for values in label_to_values.values()]
+        draw_rows.append(
+            {
+                "resource": resource,
+                "label_basis": label_basis,
+                "permutation": permutation,
+                "mean_label_recovery": float(np.mean(label_means)),
+                "median_label_recovery": float(np.median(label_means)),
+            }
+        )
+
+    draws_df = pd.DataFrame(draw_rows)
+    null_values = draws_df["mean_label_recovery"].to_numpy(dtype=float)
+    p_ge = (1 + int((null_values >= observed_statistic).sum())) / (n_permutations + 1)
+    summary_df = pd.DataFrame(
+        [
+            {
+                "resource": resource,
+                "label_basis": label_basis,
+                "n_profiles": len(profile_df_internal),
+                "n_labels": profile_df_internal["normalized_cell_type"].nunique(),
+                "n_permutations": n_permutations,
+                "observed_mean_label_recovery": observed_statistic,
+                "observed_median_label_recovery": float(observed_by_label.median()),
+                "null_mean_label_recovery": float(null_values.mean()),
+                "null_median_label_recovery": float(np.median(null_values)),
+                "null_q025_label_recovery": float(np.quantile(null_values, 0.025)),
+                "null_q975_label_recovery": float(np.quantile(null_values, 0.975)),
+                "recovery_lift": observed_statistic / float(null_values.mean()) if null_values.mean() else np.nan,
+                "empirical_p_ge": p_ge,
+            }
+        ]
+    )
+    profile_df = profile_df_internal.drop(columns=["local_private_set", "background_indices"])
+    return summary_df, draws_df, profile_df
+
+
+def build_label_local_global_recovery_from_profiles(
+    profiles_df: pd.DataFrame,
+    output_path: Path,
+    min_profiles: int = 3,
+) -> pd.DataFrame:
+    context_gene_counts: dict[str, Counter] = {}
+    label_to_rows: dict[str, list[object]] = defaultdict(list)
+
+    for context_uid, context_df in profiles_df.groupby("context_uid", sort=False):
+        context_gene_counts[context_uid] = Counter(
+            gene_id for marker_set in context_df["marker_set"] for gene_id in marker_set
+        )
+    for row in profiles_df.itertuples(index=False):
+        if row.normalized_cell_type:
+            label_to_rows[row.normalized_cell_type].append(row)
+
+    profile_rows = []
+    for row in profiles_df.itertuples(index=False):
+        local_private = {
+            gene_id
+            for gene_id in row.marker_set
+            if context_gene_counts[row.context_uid][gene_id] == 1
+        }
+        same_label_other_project_union: set[str] = set()
+        same_label_other_project_profiles = 0
+        for other in label_to_rows.get(row.normalized_cell_type, []):
+            if other.project_id == row.project_id:
+                continue
+            same_label_other_project_profiles += 1
+            same_label_other_project_union |= other.marker_set
+        if not same_label_other_project_profiles:
+            continue
+        profile_rows.append(
+            {
+                "normalized_cell_type": row.normalized_cell_type,
+                "cell_type": row.cell_type,
+                "project_id": row.project_id,
+                "local_private_fraction": len(local_private) / len(row.marker_set) if row.marker_set else np.nan,
+                "local_private_fraction_recovered_by_same_label_other_projects": (
+                    len(local_private & same_label_other_project_union) / len(local_private)
+                    if local_private
+                    else np.nan
+                ),
+                "marker_fraction_recovered_by_same_label_other_projects": (
+                    len(row.marker_set & same_label_other_project_union) / len(row.marker_set)
+                    if row.marker_set
+                    else np.nan
+                ),
+            }
+        )
+
+    profile_df = pd.DataFrame(profile_rows).dropna(
+        subset=[
+            "local_private_fraction",
+            "local_private_fraction_recovered_by_same_label_other_projects",
+            "marker_fraction_recovered_by_same_label_other_projects",
+        ]
+    )
+    if profile_df.empty:
+        out = pd.DataFrame(
+            columns=[
+                "normalized_cell_type",
+                "n_profiles",
+                "n_papers",
+                "mean_local_marker_specificity",
+                "median_local_marker_specificity",
+                "mean_global_recovery_of_local_markers",
+                "median_global_recovery_of_local_markers",
+                "mean_global_recovery_of_all_markers",
+                "median_global_recovery_of_all_markers",
+                "local_to_global_gap",
+            ]
+        )
+        out.to_csv(output_path, sep="\t", index=False)
+        return out
+
+    summary = (
+        profile_df.groupby("normalized_cell_type", sort=True)
+        .agg(
+            n_profiles=("cell_type", "size"),
+            n_papers=("project_id", "nunique"),
+            mean_local_marker_specificity=("local_private_fraction", "mean"),
+            median_local_marker_specificity=("local_private_fraction", "median"),
+            mean_global_recovery_of_local_markers=(
+                "local_private_fraction_recovered_by_same_label_other_projects",
+                "mean",
+            ),
+            median_global_recovery_of_local_markers=(
+                "local_private_fraction_recovered_by_same_label_other_projects",
+                "median",
+            ),
+            mean_global_recovery_of_all_markers=(
+                "marker_fraction_recovered_by_same_label_other_projects",
+                "mean",
+            ),
+            median_global_recovery_of_all_markers=(
+                "marker_fraction_recovered_by_same_label_other_projects",
+                "median",
+            ),
+        )
+        .reset_index()
+    )
+    summary = summary.loc[summary["n_profiles"].ge(min_profiles)].copy()
+    summary["local_to_global_gap"] = (
+        summary["mean_local_marker_specificity"]
+        - summary["mean_global_recovery_of_local_markers"]
+    )
+    summary.to_csv(output_path, sep="\t", index=False)
+    return summary
+
+
+def build_label_disagreement_examples_from_profiles(
+    profiles_df: pd.DataFrame,
+    same_output_path: Path,
+    different_output_path: Path,
+    min_same_profiles: int = 3,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    rows = list(profiles_df.itertuples(index=False))
+    label_values: dict[str, list[float]] = defaultdict(list)
+    label_projects: dict[str, set[str]] = defaultdict(set)
+    label_profile_counts: Counter[str] = Counter()
+    for row in rows:
+        if row.normalized_cell_type and is_interpretable_label(row.normalized_cell_type):
+            label_profile_counts[row.normalized_cell_type] += 1
+            label_projects[row.normalized_cell_type].add(row.project_id)
+
+    gene_to_indices: dict[str, list[int]] = defaultdict(list)
+    for idx, row in enumerate(rows):
+        if not row.normalized_cell_type or not is_interpretable_label(row.normalized_cell_type):
+            continue
+        for gene_id in row.marker_set:
+            gene_to_indices[gene_id].append(idx)
+
+    candidate_pairs: set[tuple[int, int]] = set()
+    for indices in gene_to_indices.values():
+        if len(indices) < 2:
+            continue
+        for left, right in combinations(indices, 2):
+            if left > right:
+                left, right = right, left
+            candidate_pairs.add((left, right))
+
+    pair_records: dict[tuple[str, str], dict[str, object]] = {}
+    same_label_seen: set[tuple[int, int]] = set()
+    for left, right in combinations(range(len(rows)), 2):
+        row_a = rows[left]
+        row_b = rows[right]
+        if row_a.project_id == row_b.project_id:
+            continue
+        if row_a.normalized_cell_type != row_b.normalized_cell_type:
+            continue
+        if not is_interpretable_label(row_a.normalized_cell_type):
+            continue
+        _shared, _union, value = jaccard(row_a.marker_set, row_b.marker_set)
+        label_values[row_a.normalized_cell_type].append(value)
+        same_label_seen.add((left, right))
+
+    same_rows = []
+    for label, values in label_values.items():
+        if label_profile_counts[label] < min_same_profiles:
+            continue
+        arr = np.asarray(values, dtype=float)
+        same_rows.append(
+            {
+                "normalized_cell_type": label,
+                "n_profiles": label_profile_counts[label],
+                "n_papers": len(label_projects[label]),
+                "n_pairs": len(arr),
+                "pct_jaccard_eq_0": float((arr == 0).mean()),
+                "mean_jaccard": float(arr.mean()),
+                "median_jaccard": float(np.median(arr)),
+            }
+        )
+    same = pd.DataFrame(same_rows)
+    if not same.empty:
+        same["score"] = same["pct_jaccard_eq_0"] * np.log1p(same["n_profiles"])
+        same = same.sort_values(["score", "n_profiles"], ascending=[False, False]).head(6)
+        same = same[
+            [
+                "normalized_cell_type",
+                "n_profiles",
+                "n_papers",
+                "n_pairs",
+                "pct_jaccard_eq_0",
+                "mean_jaccard",
+                "median_jaccard",
+            ]
+        ].copy()
+    same.to_csv(same_output_path, sep="\t", index=False)
+
+    for left, right in candidate_pairs:
+        row_a = rows[left]
+        row_b = rows[right]
+        if row_a.project_id == row_b.project_id:
+            continue
+        if row_a.normalized_cell_type == row_b.normalized_cell_type:
+            continue
+        label_pair = tuple(sorted([row_a.normalized_cell_type, row_b.normalized_cell_type]))
+        shared, union, value = jaccard(row_a.marker_set, row_b.marker_set)
+        if shared < 3:
+            continue
+        existing = pair_records.get(label_pair)
+        if existing is None or (value, shared) > (existing["max_jaccard"], existing["max_shared_genes"]):
+            pair_records[label_pair] = {
+                "label_a": label_pair[0],
+                "label_b": label_pair[1],
+                "max_jaccard": float(value),
+                "max_shared_genes": int(shared),
+                "max_union_genes": int(union),
+                "n_pairs_with_shared_marker": 0,
+                "example_label_a": row_a.cell_type,
+                "example_label_b": row_b.cell_type,
+            }
+        pair_records[label_pair]["n_pairs_with_shared_marker"] += 1
+
+    different = pd.DataFrame(pair_records.values())
+    if not different.empty:
+        different = different.loc[different["n_pairs_with_shared_marker"].ge(1)].copy()
+        different = different.sort_values(
+            ["max_jaccard", "max_shared_genes", "n_pairs_with_shared_marker"],
+            ascending=[False, False, False],
+        ).head(6)
+    different.to_csv(different_output_path, sep="\t", index=False)
+    return same, different
+
+
+def plot_label_local_global_recovery(
+    ax: plt.Axes,
+    label_recovery_df: pd.DataFrame,
+    subtitle: str | None = None,
+    label_positions: dict[str, tuple[float, float]] | None = None,
+) -> None:
     df = label_recovery_df.copy()
-    add_panel_title(ax, "Globally Identifiable Markers")
+    add_panel_title(ax, "Globally Identifiable Markers", subtitle)
     immune_terms = {
         "T CELL",
+        "REGULATORY T CELL",
         "TREG",
         "B CELL",
         "B CELLS",
@@ -559,20 +1229,25 @@ def plot_label_local_global_recovery(ax: plt.Axes, label_recovery_df: pd.DataFra
         "MACROPHAGE",
         "MONOCYTE",
         "DENDRITIC CELL",
+        "CONVENTIONAL DENDRITIC CELL",
+        "PLASMACYTOID DENDRITIC CELL",
         "NK CELL",
         "MAST CELL",
         "PLASMA CELL",
+        "NEUTROPHIL",
+        "CD 4 POSITIVE ALPHA BETA REGULATORY T CELL",
+        "CD 14 LOW CD 16 POSITIVE MONOCYTE",
         "CDC 1",
         "CDC 2",
+        "PDC",
+        "NEUTROPHILS",
+        "MACROPHAGES MONOCYTES",
+        "CD 4 TREG",
+        "CD 14 CD 16 MONOCYTES",
+        "CONVENTIONAL DENDRITIC CELLS",
     }
     df["is_immune"] = df["normalized_cell_type"].isin(immune_terms)
     df["point_size"] = 12 + 2.0 * np.sqrt(df["n_profiles"])
-
-    ax.axhspan(0.5, 1.0, 0.5, 1.0, color="#edf6ec", zorder=0)
-    ax.axhspan(0.0, 0.5, 0.5, 1.0, color="#f6ece8", zorder=0)
-    ax.axvspan(0.0, 0.5, color="#f3f3f3", zorder=-1)
-    ax.axhline(0.5, color="#9a9a9a", linewidth=0.65, linestyle="--", zorder=1)
-    ax.axvline(0.5, color="#9a9a9a", linewidth=0.65, linestyle="--", zorder=1)
 
     other = df.loc[~df["is_immune"]]
     immune = df.loc[df["is_immune"]]
@@ -599,23 +1274,24 @@ def plot_label_local_global_recovery(ax: plt.Axes, label_recovery_df: pd.DataFra
         label="Immune labels",
     )
 
-    label_positions = {
-        "T CELL": (0.56, 0.88),
-        "TREG": (0.52, 0.77),
-        "B CELL": (0.53, 0.69),
-        "MACROPHAGE": (0.53, 0.61),
-        "MONOCYTE": (0.52, 0.43),
-        "DENDRITIC CELL": (0.36, 0.08),
-        "CLUSTER 1": (0.34, 0.18),
-        "CD 4 T CELL": (0.26, 0.55),
-        "CD 8 T CELL": (0.29, 0.47),
-    }
+    if label_positions is None:
+        label_positions = {
+            "T CELL": (0.56, 0.88),
+            "TREG": (0.52, 0.77),
+            "B CELL": (0.53, 0.69),
+            "MACROPHAGE": (0.53, 0.61),
+            "MONOCYTE": (0.52, 0.43),
+            "DENDRITIC CELL": (0.36, 0.08),
+            "CLUSTER 1": (0.34, 0.18),
+            "CD 4 T CELL": (0.26, 0.55),
+            "CD 8 T CELL": (0.29, 0.47),
+        }
     for label, (text_x, text_y) in label_positions.items():
         rows = df.loc[df["normalized_cell_type"].eq(label)]
         if rows.empty:
             continue
         row = rows.iloc[0]
-        display = label.title().replace("Cd ", "CD ").replace("Treg", "Treg")
+        display = compact_label(label)
         ax.annotate(
             display,
             xy=(
@@ -817,6 +1493,30 @@ def compact_label(label: str) -> str:
         "CD 8 T CELL": "CD8 T",
         "CD 8 GZMK": "CD8 GZMK",
         "TAM MRC 1": "TAM MRC1",
+        "BEST 4 EPITHELIAL": "BEST4 epithelial",
+        "COLONOCYTES BEST 4": "BEST4 colonocytes",
+        "COLONOCYTES BEST4": "BEST4 colonocytes",
+        "INTERSTITIAL MPH PERIVASCULAR": "Interstitial Mph",
+        "PVMAC": "PvMac",
+        "B CELLS": "B cells",
+        "MACROPHAGES MONOCYTES": "Mac./mono.",
+        "CD 4 TREG": "CD4 Treg",
+        "CD 14 CD 16 MONOCYTES": "CD14/CD16 mono.",
+        "LYMPHATIC ENDOTHELIUM": "Lymph. endo.",
+        "CONVENTIONAL DENDRITIC CELLS": "Conv. DCs",
+        "NEUTROPHILS": "Neutrophils",
+        "NEUTROPHIL": "Neutrophil",
+        "ENTEROCYTES": "Enterocytes",
+        "PDC": "pDC",
+        "PLASMACYTOID DENDRITIC CELL": "pDC",
+        "CONVENTIONAL DENDRITIC CELL": "cDC",
+        "CD 4 POSITIVE ALPHA BETA REGULATORY T CELL": "CD4 Treg",
+        "CD 14 LOW CD 16 POSITIVE MONOCYTE": "CD14low/CD16 mono.",
+        "CDC 1": "cDC1",
+        "CDC 2": "cDC2",
+        "DC 2": "DC2",
+        "CDC 2 B": "cDC2B",
+        "TYPE 2 CDCS": "type 2 cDCs",
     }
     if label in replacements:
         return replacements[label]
@@ -923,71 +1623,39 @@ def plot_labeling_disagreement_examples(
     ax: plt.Axes,
     same_df: pd.DataFrame,
     different_df: pd.DataFrame,
+    values_df: pd.DataFrame,
+    summary_df: pd.DataFrame,
+    resource: str,
+    subtitle: str | None = None,
+    same_tick_label: str = "Same\nlabel",
 ) -> None:
     ax.set_axis_off()
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
-    add_panel_title(ax, "Inconsistent Pairwise Labels")
+    add_panel_title(ax, "Inconsistent Pairwise Labels", subtitle)
     ax.text(
         0.02,
-        0.91,
-        "Same label pairs with $J=0$",
+        0.89,
+        "Same-label marker sharing",
         ha="left",
         va="center",
         fontsize=6.0,
         fontweight="bold",
     )
-    bar_left = 0.34
-    bar_width = 0.46
-    y_start = 0.84
-    row_h = 0.055
-    same_plot = same_df.sort_values("pct_jaccard_eq_0", ascending=True)
-    for idx, row in enumerate(same_plot.itertuples(index=False)):
-        y = y_start - idx * row_h
-        value = float(row.pct_jaccard_eq_0)
-        zero_pairs = int(round(value * int(row.n_pairs)))
-        ax.text(0.02, y, compact_label(row.normalized_cell_type), ha="left", va="center", fontsize=5.7)
-        ax.add_patch(
-            Rectangle(
-                (bar_left, y - 0.014),
-                bar_width,
-                0.028,
-                facecolor="#efefef",
-                edgecolor="none",
-            )
-        )
-        ax.add_patch(
-            Rectangle(
-                (bar_left, y - 0.014),
-                bar_width * value,
-                0.028,
-                facecolor="#8a8a8a",
-                edgecolor="black",
-                linewidth=0.25,
-            )
-        )
-        ax.text(
-            bar_left + bar_width + 0.025,
-            y,
-            f"{100 * value:.0f}% ({zero_pairs}/{int(row.n_pairs)})",
-            ha="left",
-            va="center",
-            fontsize=5.0,
-        )
-    ax.text(bar_left, 0.49, "0", ha="center", va="top", fontsize=4.8)
-    ax.text(bar_left + bar_width, 0.49, "100%", ha="center", va="top", fontsize=4.8)
-    ax.text(
-        bar_left + bar_width / 2,
-        0.45,
-        "% cross-paper profile pairs",
-        ha="center",
-        va="top",
-        fontsize=4.9,
+    swarm_ax = ax.inset_axes([0.12, 0.51, 0.76, 0.32])
+    plot_same_label_marker_jaccard_swarm(
+        swarm_ax,
+        values_df,
+        summary_df,
+        resource,
+        title=None,
+        same_tick_label=same_tick_label,
+        set_square=False,
     )
 
     ax.text(
         0.02,
-        0.37,
+        0.40,
         "Different labels, high marker overlap",
         ha="left",
         va="center",
@@ -995,16 +1663,16 @@ def plot_labeling_disagreement_examples(
         fontweight="bold",
     )
     table_x = 0.02
-    table_y = 0.305
-    col_x = [table_x, 0.52, 0.72, 0.92]
+    table_y = 0.335
+    col_x = [table_x, 0.58, 0.78, 0.95]
     ax.text(col_x[0], table_y, "Reported labels", ha="left", va="bottom", fontsize=5.1, fontweight="bold")
     ax.text(col_x[1], table_y, "J", ha="center", va="bottom", fontsize=5.1, fontweight="bold")
-    ax.text(col_x[2], table_y, "Shared/union", ha="center", va="bottom", fontsize=4.9, fontweight="bold")
+    ax.text(col_x[2], table_y, "Shared", ha="center", va="bottom", fontsize=4.9, fontweight="bold")
     ax.text(col_x[3], table_y, "Pairs", ha="center", va="bottom", fontsize=4.9, fontweight="bold")
     ax.plot([0.02, 0.98], [table_y - 0.01, table_y - 0.01], color="black", linewidth=0.45)
 
-    y_start = 0.265
-    row_h = 0.049
+    y_start = 0.295
+    row_h = 0.046
     diff_plot = different_df.sort_values(
         ["max_jaccard", "max_shared_genes", "n_pairs_with_shared_marker"],
         ascending=[False, False, False],
@@ -1023,7 +1691,7 @@ def plot_labeling_disagreement_examples(
                     zorder=-1,
                 )
             )
-        ax.text(col_x[0], y, label, ha="left", va="center", fontsize=4.8)
+        ax.text(col_x[0], y, label, ha="left", va="center", fontsize=4.5)
         ax.text(col_x[1], y, f"{float(row.max_jaccard):.2f}", ha="center", va="center", fontsize=4.8)
         ax.text(
             col_x[2],
@@ -1231,7 +1899,14 @@ def write_report(
                 "This prototype is the manuscript-facing version of the Lean-derived marker identifiability analysis.",
                 "The formal claim is that local separation within papers does not imply global atlas-scale separation.",
                 "",
-                f"Figure: `{FIGURE_PATH.relative_to(REPO_ROOT)}`",
+                f"Manuscript wrapper: `{MANUSCRIPT_WRAPPER_PATH.relative_to(REPO_ROOT)}`",
+                f"Manuscript body: `{MANUSCRIPT_BODY_PATH.relative_to(REPO_ROOT)}`",
+                "",
+                "Panel PDFs: `analysis/figures/fig3_panel_a_joint_distribution.pdf` through "
+                "`analysis/figures/fig3_panel_f_cap_local_global_recovery.pdf`.",
+                "",
+                f"Legacy composite: `{FIGURE_PATH.relative_to(REPO_ROOT)}` "
+                "when `LLMARKERS_WRITE_LEGACY_FIGURES=1`.",
                 "",
                 "## Summary",
                 "",
@@ -1283,6 +1958,60 @@ def main() -> None:
     label_recovery_df = build_label_local_global_recovery(liftover_df)
     same_label_examples_df, different_label_examples_df = build_label_disagreement_examples(label_df)
     summary = make_summary(paper_df, liftover_df, label_df, transfer_summary_df, joint_df, ident_summary_df, selected_df)
+    cap_profiles_df, _cap_records_df, _cap_id_to_name = build_cap_human_profiles()
+    cap_ontology_profiles_df = cap_profiles_with_ontology_terms(cap_profiles_df)
+    cap_joint_df = build_cap_cross_project_joint_distribution(cap_profiles_df, CAP_JOINT_DISTRIBUTION_PATH)
+    build_cap_cross_project_joint_distribution(
+        cap_ontology_profiles_df,
+        CAP_ONTOLOGY_JOINT_DISTRIBUTION_PATH,
+    )
+    cap_ontology_recovery_df = build_label_local_global_recovery_from_profiles(
+        cap_ontology_profiles_df,
+        CAP_ONTOLOGY_LOCAL_GLOBAL_PATH,
+        min_profiles=3,
+    )
+    llmarkers_profiles_df, _llmarkers_id_to_name = build_profiles()
+    llmarkers_jaccard_values_df, llmarkers_jaccard_summary_df = build_same_label_marker_jaccard_distribution(
+        llmarkers_profiles_df,
+        resource="LLMarkers",
+        context_col="paper_uid",
+        max_random_pairs=100_000,
+        seed=17,
+    )
+    cap_jaccard_values_df, cap_jaccard_summary_df = build_same_label_marker_jaccard_distribution(
+        cap_profiles_df,
+        resource="CAP labels",
+        context_col="project_id",
+        max_random_pairs=100_000,
+        seed=23,
+    )
+    same_label_jaccard_values_df = pd.concat(
+        [llmarkers_jaccard_values_df, cap_jaccard_values_df],
+        ignore_index=True,
+    )
+    same_label_jaccard_summary_df = pd.concat(
+        [llmarkers_jaccard_summary_df, cap_jaccard_summary_df],
+        ignore_index=True,
+    )
+    same_label_jaccard_values_df.to_csv(SAME_LABEL_JACCARD_VALUES_PATH, sep="\t", index=False)
+    same_label_jaccard_summary_df.to_csv(SAME_LABEL_JACCARD_SUMMARY_PATH, sep="\t", index=False)
+    cap_same_label_examples_df, cap_different_label_examples_df = build_label_disagreement_examples_from_profiles(
+        cap_profiles_df,
+        CAP_LABEL_DISAGREEMENT_SAME_PATH,
+        CAP_LABEL_DISAGREEMENT_DIFFERENT_PATH,
+        min_same_profiles=3,
+    )
+    cap_label_positions = {
+        "REGULATORY T CELL": (0.50, 0.91),
+        "NEUTROPHIL": (0.50, 0.82),
+        "PLASMACYTOID DENDRITIC CELL": (0.50, 0.73),
+        "CONVENTIONAL DENDRITIC CELL": (0.50, 0.64),
+        "B CELL": (0.50, 0.55),
+        "MONOCYTE": (0.26, 0.66),
+        "MACROPHAGE": (0.25, 0.53),
+        "T CELL": (0.25, 0.40),
+        "DENDRITIC CELL": (0.25, 0.28),
+    }
 
     plt.rcParams.update(
         {
@@ -1301,43 +2030,111 @@ def main() -> None:
     save_panel(
         PANEL_B_PATH,
         PANEL_B_PNG_PATH,
-        lambda ax: plot_labeling_disagreement_examples(ax, same_label_examples_df, different_label_examples_df),
+        lambda ax: plot_labeling_disagreement_examples(
+            ax,
+            same_label_examples_df,
+            different_label_examples_df,
+            same_label_jaccard_values_df,
+            same_label_jaccard_summary_df,
+            "LLMarkers",
+        ),
     )
     save_panel(
         PANEL_C_PATH,
         PANEL_C_PNG_PATH,
         lambda ax: plot_label_local_global_recovery(ax, label_recovery_df),
     )
-
-    fig = plt.figure(figsize=(10.6, 3.65))
-    gs = fig.add_gridspec(
-        1,
-        3,
-        width_ratios=[1.0, 1.0, 1.0],
-        wspace=0.55,
+    save_panel(
+        PANEL_D_PATH,
+        PANEL_D_PNG_PATH,
+        lambda ax: plot_joint_distribution(ax, cap_joint_df, "CAP human profiles, cross-project"),
     )
-    axes = [
-        fig.add_subplot(gs[0, 0]),
-        fig.add_subplot(gs[0, 1]),
-        fig.add_subplot(gs[0, 2]),
-    ]
-    plot_joint_distribution(axes[0], joint_df)
-    plot_labeling_disagreement_examples(axes[1], same_label_examples_df, different_label_examples_df)
-    plot_label_local_global_recovery(axes[2], label_recovery_df)
+    save_panel(
+        PANEL_E_PATH,
+        PANEL_E_PNG_PATH,
+        lambda ax: plot_labeling_disagreement_examples(
+            ax,
+            cap_same_label_examples_df,
+            cap_different_label_examples_df,
+            same_label_jaccard_values_df,
+            same_label_jaccard_summary_df,
+            "CAP labels",
+            "CAP human profiles, cross-project",
+        ),
+    )
+    save_panel(
+        PANEL_F_PATH,
+        PANEL_F_PNG_PATH,
+        lambda ax: plot_label_local_global_recovery(
+            ax,
+            cap_ontology_recovery_df,
+            "CAP ontology terms, cross-project",
+            label_positions=cap_label_positions,
+        ),
+    )
 
-    for letter, ax in zip("ABC", axes, strict=True):
-        ax.text(-0.14, 1.07, letter, transform=ax.transAxes, fontsize=12, fontweight="bold", ha="left", va="bottom")
+    if WRITE_LEGACY_FIGURES:
+        fig = plt.figure(figsize=(10.4, 7.2))
+        gs = fig.add_gridspec(
+            2,
+            3,
+            width_ratios=[1.0, 1.22, 1.04],
+            hspace=0.28,
+            wspace=0.50,
+        )
+        axes = [
+            fig.add_subplot(gs[0, 0]),
+            fig.add_subplot(gs[0, 1]),
+            fig.add_subplot(gs[0, 2]),
+            fig.add_subplot(gs[1, 0]),
+            fig.add_subplot(gs[1, 1]),
+            fig.add_subplot(gs[1, 2]),
+        ]
+        plot_joint_distribution(axes[0], joint_df, "LLMarkers extracted corpus")
+        plot_labeling_disagreement_examples(
+            axes[1],
+            same_label_examples_df,
+            different_label_examples_df,
+            same_label_jaccard_values_df,
+            same_label_jaccard_summary_df,
+            "LLMarkers",
+            "LLMarkers extracted corpus",
+        )
+        plot_label_local_global_recovery(axes[2], label_recovery_df, "LLMarkers extracted corpus")
+        plot_joint_distribution(axes[3], cap_joint_df, "CAP human profiles, cross-project")
+        plot_labeling_disagreement_examples(
+            axes[4],
+            cap_same_label_examples_df,
+            cap_different_label_examples_df,
+            same_label_jaccard_values_df,
+            same_label_jaccard_summary_df,
+            "CAP labels",
+            "CAP human profiles, cross-project",
+        )
+        plot_label_local_global_recovery(
+            axes[5],
+            cap_ontology_recovery_df,
+            "CAP ontology terms, cross-project",
+            label_positions=cap_label_positions,
+        )
 
-    fig.savefig(FIGURE_PATH, bbox_inches="tight")
-    fig.savefig(FIGURE_PNG_PATH, bbox_inches="tight", dpi=300)
-    plt.close(fig)
+        for letter, ax in zip("ABCDEF", axes, strict=True):
+            ax.text(-0.14, 1.07, letter, transform=ax.transAxes, fontsize=12, fontweight="bold", ha="left", va="bottom")
+
+        fig.savefig(FIGURE_PATH, bbox_inches="tight")
+        fig.savefig(FIGURE_PNG_PATH, bbox_inches="tight", dpi=300)
+        plt.close(fig)
     write_report(summary, label_df, transfer_label_df, selected_df)
 
-    print(f"Wrote {FIGURE_PATH.relative_to(REPO_ROOT)}")
-    print(f"Wrote {FIGURE_PNG_PATH.relative_to(REPO_ROOT)}")
+    if WRITE_LEGACY_FIGURES:
+        print(f"Wrote {FIGURE_PATH.relative_to(REPO_ROOT)}")
+        print(f"Wrote {FIGURE_PNG_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {PANEL_A_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {PANEL_B_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {PANEL_C_PATH.relative_to(REPO_ROOT)}")
+    print(f"Wrote {PANEL_D_PATH.relative_to(REPO_ROOT)}")
+    print(f"Wrote {PANEL_E_PATH.relative_to(REPO_ROOT)}")
+    print(f"Wrote {PANEL_F_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {REPORT_PATH.relative_to(REPO_ROOT)}")
 
 

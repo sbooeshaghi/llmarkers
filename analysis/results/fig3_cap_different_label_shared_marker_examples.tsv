@@ -1,0 +1,7 @@
+label_a	label_b	max_jaccard	max_shared_genes	max_union_genes	n_pairs_with_shared_marker	example_label_a	example_label_b
+CDC 2	DC 2	0.75	3	4	3	DC2	cDC2
+MAST CELL	MAST CELLS	0.75	3	4	2	Mast cells	Mast_cell
+BEST 4 EPITHELIAL	COLONOCYTES BEST 4	0.75	3	4	2	BEST4+ epithelial	Colonocytes BEST4
+INTERSTITIAL MPH PERIVASCULAR	PVMS	0.6666666666666666	4	6	5	Interstitial Mph perivascular	PVMs
+CDC 2	CDC 2 B	0.6	3	5	15	cDC2	cDC2B
+CDC 2	TYPE 2 CDCS	0.6	3	5	4	Type 2 cDCs	cDC2

@@ -1,6 +1,6 @@
 # Marker Identifiability Analysis
 
-This analysis applies the Lean formalization in `formal/MarkerIdentifiability/Basic.lean` to the LLMarkers reported-marker matrix.
+This analysis applies the Lean formalization in `analysis/formal/MarkerIdentifiability/Basic.lean` to the LLMarkers reported-marker matrix.
 For each partition, a gene is turned on for a group if it is reported in at least the stated fraction of profiles in that group.
 The Lean theorem gives the information lower bound: if `k` induced binary signatures are separated by binary markers, any separating panel needs at least `ceil(log2(k))` marker coordinates.
 

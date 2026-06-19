@@ -1,0 +1,24 @@
+\begin{table*}[ht!]
+  \centering
+  \caption{\textbf{T-cell marker-gene clusters}. Marker-derived T-cell profile clusters used in the T-cell marker-profile analysis. Profiles are paper-level cell type marker profiles, and clusters are connected components of cross-paper profiles with marker-gene Jaccard similarity $\geq 0.5$. Reported labels are shown verbatim after normalization only for sorting. Label-pair percentages summarize exact, partial, and different reported-label relations across cross-paper profile pairs within each marker-gene cluster.}
+  \label{tab:tcell_marker_clusters}%
+  \claim{tab-tcell-marker-clusters}{}%
+  \source{analysis/build_tcell_marker_cluster_summary.py}%
+  \source{analysis/results/tcell_marker_cluster_summary.tsv}%
+  \source{analysis/results/tcell_marker_cluster_membership.tsv}%
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}l r r p{2.7cm} p{8.0cm} r@{}}
+  \toprule
+  Cluster & Profiles & Papers & Core marker genes & Reported labels & Exact / Partial / Diff. \\
+  \midrule
+  C1 & 32 & 24 & CCR7; SELL; TCF7 & CD4\_1; CD4\_3; CD4.9; CD4 + AND CD8 + T RM CELL; CD4+ MEMORY CELL; CD4 + NAIVE; CD4 NAIVE BLOOD; CD4 + NAIVE/CENTRAL MEMORY (NV/CM); CD4+ T CELL; CD8.2; CD8\_4; CD8 NAIVE BLOOD; CD8+ T CELL; CEFX-SPECIFIC BRAIN METASTASIS-INFILTRATING PD-1+ CD8+ T CELL; CENTRAL MEMORY T CELL; CLUSTER 2 CD4+ T CELL; CSF-UNEXPANDED T CELL; MEMORY CD4+ T CELL; NAIVE CD4+ T CELL; NAIVE OR TCM CELL; NAIVE T CELL; NAIVE T CELL; NAIVE T CELLS; NAIVE T CELLS OR TCMS; T CELL; TCM; TN; TREG.1 & 1\% / 47\% / 52\% \\ [3pt]
+  C2 & 31 & 27 & CTLA4; TIGIT & CD4.10; CD4.4; CD4\_5; CD4+ T CELL; CD4+ T REG; CD4 + TREG; CD8\_0; CD8+ EXHAUSTED T CELL (TEXH); CD8+ PROLIFERATING T CELL; CD8 T CELL; CD8+ T CELL SUBCLUSTER; CTLA4+ CD8+ T CELL; EXHAUSTED CD8+ T CELL; EXHAUSTED CD8 T CELL; EXHAUSTED T CELL; EXHAUSTED T-CELL, T-REGULATORY CELL; EXHAUSTION-LIKE CD8+ CAR-T CELL; FOXP3 CD4+ TREG; REGULATORY T CELL; REGULATORY T CELL (TREG); TREG; TREG SUBSET & 10\% / 37\% / 53\% \\ [3pt]
+  C3 & 19 & 16 & GZMB; PRF1 & ACTIVATED/EFFECTOR T CELL; CD4-CTLS; CD4 + EFFECTOR; CD8.3; CD8.5; CD8+ CYTOTOXIC T CELL; CD8 GZMH; CD8-GZMK; CD8 MEMORY BLOOD; CD8+ T CELLS; CD8 TRM; CLUSTER 4 T CELL; CYTOTOXIC T CELL; GZMH+ CD8+ T CELL; LN T CELL; MAIT; MEMORY CD8+ T CELL; RECIPIENT T CELL & 1\% / 40\% / 60\% \\ [3pt]
+  C4 & 15 & 14 & CD3D; CD3E; CD3G & CD4 AND CD8 T CELLS; T CELL; T-CELL; T CELLS & 63\% / 2\% / 35\% \\ [3pt]
+  C5 & 9 & 8 & CD8A; CD3E; CD4 & CD4+ AND CD8+ T CELL; T CELL; T-CELL; T CELL CLUSTER & 60\% / 37\% / 3\% \\ [3pt]
+  C6 & 4 & 4 & CD69; ITGAE; CXCR6; ZNF683; ITGA1 & CD4+ TISSUE RESIDENT MEMORY T CELL (TRM); CD8.4; CD8+ T CELL; TISSUE RESIDENT MEMORY T (TRM) CELL & 0\% / 67\% / 33\% \\ [3pt]
+  C7 & 4 & 3 & CCL4; GZMA; IFNG; GZMH; PRF1; CCL5; CCL3; EOMES & CD4.7; CD8+GZMB; CD8+GZMK; EFFECTOR CD8+ T CELLS & 0\% / 100\% / 0\% \\ [3pt]
+  \bottomrule
+  \end{tabular}
+\end{table*}

@@ -1,0 +1,724 @@
+[
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Venule_postcapillary",
+    "group_name": "VENULE_POSTCAPILLARY",
+    "group_id": "CL:1000414",
+    "feature_label": "PKHD1L1",
+    "feature_name": "PKHD1L1",
+    "feature_id": "ENSG00000205038",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses PKHD1L1 and MMRN1",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1779,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "endothelial cell of venule",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:1000414",
+    "_cap_ontology_term": "endothelial cell of venule",
+    "_cap_category_full_name": "blood vessel endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000071",
+    "_cap_category_ontology_term": "blood vessel endothelial cell",
+    "_cap_synonyms": [
+      "endothelial cell of postcapillary venule"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Venule_postcapillary",
+    "group_name": "VENULE_POSTCAPILLARY",
+    "group_id": "CL:1000414",
+    "feature_label": "MMRN1",
+    "feature_name": "MMRN1",
+    "feature_id": "ENSG00000138722",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses PKHD1L1 and MMRN1",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 1779,
+    "_cap_label_color": "#db5f57",
+    "_cap_label_full_name": "endothelial cell of venule",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:1000414",
+    "_cap_ontology_term": "endothelial cell of venule",
+    "_cap_category_full_name": "blood vessel endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000071",
+    "_cap_category_ontology_term": "blood vessel endothelial cell",
+    "_cap_synonyms": [
+      "endothelial cell of postcapillary venule"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Capillary_fenestrated",
+    "group_name": "CAPILLARY_FENESTRATED",
+    "group_id": "CL:0000666",
+    "feature_label": "PLVAP",
+    "feature_name": "PLVAP",
+    "feature_id": "ENSG00000130300",
+    "source_type": "cap",
+    "source_rationale": "An endothelial sub class that expresses PLVAP, CA4, and BTNL9",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 2007,
+    "_cap_label_color": "#dbd057",
+    "_cap_label_full_name": "fenestrated endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000666",
+    "_cap_ontology_term": "fenestrated endothelial cell",
+    "_cap_category_full_name": "endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000115",
+    "_cap_category_ontology_term": "endothelial cell",
+    "_cap_synonyms": [
+      "fenestrated capillary endothelial cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Capillary_fenestrated",
+    "group_name": "CAPILLARY_FENESTRATED",
+    "group_id": "CL:0000666",
+    "feature_label": "CA4",
+    "feature_name": "CA4",
+    "feature_id": "ENSG00000167434",
+    "source_type": "cap",
+    "source_rationale": "An endothelial sub class that expresses PLVAP, CA4, and BTNL9",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 2007,
+    "_cap_label_color": "#dbd057",
+    "_cap_label_full_name": "fenestrated endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000666",
+    "_cap_ontology_term": "fenestrated endothelial cell",
+    "_cap_category_full_name": "endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000115",
+    "_cap_category_ontology_term": "endothelial cell",
+    "_cap_synonyms": [
+      "fenestrated capillary endothelial cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Capillary_fenestrated",
+    "group_name": "CAPILLARY_FENESTRATED",
+    "group_id": "CL:0000666",
+    "feature_label": "BTNL9",
+    "feature_name": "BTNL9",
+    "feature_id": "ENSG00000165810",
+    "source_type": "cap",
+    "source_rationale": "An endothelial sub class that expresses PLVAP, CA4, and BTNL9",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 2007,
+    "_cap_label_color": "#dbd057",
+    "_cap_label_full_name": "fenestrated endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000666",
+    "_cap_ontology_term": "fenestrated endothelial cell",
+    "_cap_category_full_name": "endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000115",
+    "_cap_category_ontology_term": "endothelial cell",
+    "_cap_synonyms": [
+      "fenestrated capillary endothelial cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Capillary",
+    "group_name": "CAPILLARY",
+    "group_id": "CL:0002144",
+    "feature_label": "BTNL9",
+    "feature_name": "BTNL9",
+    "feature_id": "ENSG00000165810",
+    "source_type": "cap",
+    "source_rationale": "An endothelial sub class that expresses BTNL9 but not PLVAP or CA4.",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 11111,
+    "_cap_label_color": "#75db57",
+    "_cap_label_full_name": "capillary endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0002144",
+    "_cap_ontology_term": "capillary endothelial cell",
+    "_cap_category_full_name": "squamous endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0002653",
+    "_cap_category_ontology_term": "squamous endothelial cell",
+    "_cap_synonyms": [
+      "capillary endothelial cell"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Vein/Venule",
+    "group_name": "VEIN/VENULE",
+    "group_id": "CL:0000071",
+    "feature_label": "CDH11",
+    "feature_name": "CDH11",
+    "feature_id": "ENSG00000140937",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses CDH11",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 9481,
+    "_cap_label_color": "#57dbaa",
+    "_cap_label_full_name": "blood vessel endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000071",
+    "_cap_ontology_term": "blood vessel endothelial cell",
+    "_cap_category_full_name": "endothelial cell of vascular tree",
+    "_cap_category_ontology_term_id": "CL:0002139",
+    "_cap_category_ontology_term": "endothelial cell of vascular tree",
+    "_cap_synonyms": [
+      "venous endothelial cell",
+      " venular endothelial cell"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Vein/Venule",
+    "group_name": "VEIN/VENULE",
+    "group_id": "CL:0000071",
+    "feature_label": "PECAM1",
+    "feature_name": "PECAM1",
+    "feature_id": "ENSG00000261371",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses CDH11",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 9481,
+    "_cap_label_color": "#57dbaa",
+    "_cap_label_full_name": "blood vessel endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000071",
+    "_cap_ontology_term": "blood vessel endothelial cell",
+    "_cap_category_full_name": "endothelial cell of vascular tree",
+    "_cap_category_ontology_term_id": "CL:0002139",
+    "_cap_category_ontology_term": "endothelial cell of vascular tree",
+    "_cap_synonyms": [
+      "venous endothelial cell",
+      " venular endothelial cell"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Vein/Venule",
+    "group_name": "VEIN/VENULE",
+    "group_id": "CL:0000071",
+    "feature_label": "FLT1",
+    "feature_name": "FLT1",
+    "feature_id": "ENSG00000102755",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses CDH11",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 9481,
+    "_cap_label_color": "#57dbaa",
+    "_cap_label_full_name": "blood vessel endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000071",
+    "_cap_ontology_term": "blood vessel endothelial cell",
+    "_cap_category_full_name": "endothelial cell of vascular tree",
+    "_cap_category_ontology_term_id": "CL:0002139",
+    "_cap_category_ontology_term": "endothelial cell of vascular tree",
+    "_cap_synonyms": [
+      "venous endothelial cell",
+      " venular endothelial cell"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Venule_POSTN+",
+    "group_name": "VENULE_POSTN+",
+    "group_id": "CL:1000414",
+    "feature_label": "POSTN",
+    "feature_name": "POSTN",
+    "feature_id": "ENSG00000133110",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses POSTN",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 3366,
+    "_cap_label_color": "#579bdb",
+    "_cap_label_full_name": "endothelial cell of venule",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:1000414",
+    "_cap_ontology_term": "endothelial cell of venule",
+    "_cap_category_full_name": "blood vessel endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000071",
+    "_cap_category_ontology_term": "blood vessel endothelial cell",
+    "_cap_synonyms": [
+      "POSTN+ endothelial cell of venule"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1073/pnas.2306153120"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1073/pnas.2306153120"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Artery/Arteriole",
+    "group_name": "ARTERY/ARTERIOLE",
+    "group_id": "CL:0000071",
+    "feature_label": "VEGFC",
+    "feature_name": "VEGFC",
+    "feature_id": "ENSG00000150630",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses VEGFC and PCSK5",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 6580,
+    "_cap_label_color": "#8557db",
+    "_cap_label_full_name": "blood vessel endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000071",
+    "_cap_ontology_term": "blood vessel endothelial cell",
+    "_cap_category_full_name": "endothelial cell of vascular tree",
+    "_cap_category_ontology_term_id": "CL:0002139",
+    "_cap_category_ontology_term": "endothelial cell of vascular tree",
+    "_cap_synonyms": [
+      "arterial endothelial cell",
+      " arteriolar endothelial cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-021-04369-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-021-04369-3"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Artery/Arteriole",
+    "group_name": "ARTERY/ARTERIOLE",
+    "group_id": "CL:0000071",
+    "feature_label": "PCSK5",
+    "feature_name": "PCSK5",
+    "feature_id": "ENSG00000099139",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses VEGFC and PCSK5",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 6580,
+    "_cap_label_color": "#8557db",
+    "_cap_label_full_name": "blood vessel endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000071",
+    "_cap_ontology_term": "blood vessel endothelial cell",
+    "_cap_category_full_name": "endothelial cell of vascular tree",
+    "_cap_category_ontology_term_id": "CL:0002139",
+    "_cap_category_ontology_term": "endothelial cell of vascular tree",
+    "_cap_synonyms": [
+      "arterial endothelial cell",
+      " arteriolar endothelial cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-021-04369-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-021-04369-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Artery/Arteriole",
+    "group_name": "ARTERY/ARTERIOLE",
+    "group_id": "CL:0000071",
+    "feature_label": "PECAM1",
+    "feature_name": "PECAM1",
+    "feature_id": "ENSG00000261371",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses VEGFC and PCSK5",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 6580,
+    "_cap_label_color": "#8557db",
+    "_cap_label_full_name": "blood vessel endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000071",
+    "_cap_ontology_term": "blood vessel endothelial cell",
+    "_cap_category_full_name": "endothelial cell of vascular tree",
+    "_cap_category_ontology_term_id": "CL:0002139",
+    "_cap_category_ontology_term": "endothelial cell of vascular tree",
+    "_cap_synonyms": [
+      "arterial endothelial cell",
+      " arteriolar endothelial cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-021-04369-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-021-04369-3"
+    ],
+    "_cap_marker_role": "canonical"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Artery/Arteriole",
+    "group_name": "ARTERY/ARTERIOLE",
+    "group_id": "CL:0000071",
+    "feature_label": "FLT1",
+    "feature_name": "FLT1",
+    "feature_id": "ENSG00000102755",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses VEGFC and PCSK5",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 6580,
+    "_cap_label_color": "#8557db",
+    "_cap_label_full_name": "blood vessel endothelial cell",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:0000071",
+    "_cap_ontology_term": "blood vessel endothelial cell",
+    "_cap_category_full_name": "endothelial cell of vascular tree",
+    "_cap_category_ontology_term_id": "CL:0002139",
+    "_cap_category_ontology_term": "endothelial cell of vascular tree",
+    "_cap_synonyms": [
+      "arterial endothelial cell",
+      " arteriolar endothelial cell"
+    ],
+    "_cap_rationale_dois": [
+      "https://doi.org/10.1038/s41586-021-04369-3"
+    ],
+    "_cap_rationale_dois_normalized": [
+      "10.1038/s41586-021-04369-3"
+    ],
+    "_cap_marker_role": "reported"
+  },
+  {
+    "organism": "homo_sapiens",
+    "group_label": "Venule_dysfunction",
+    "group_name": "VENULE_DYSFUNCTION",
+    "group_id": "CL:1000414",
+    "feature_label": "TMSB10",
+    "feature_name": "TMSB10",
+    "feature_id": "ENSG00000034510",
+    "source_type": "cap",
+    "source_rationale": "An endothelial cell sub class that expresses TMSB10",
+    "source_id": "https://celltype.info/project/621/dataset/1490/labelset/author_cell_type",
+    "data_id": "CAP:621:1490",
+    "metrics_pcorr": null,
+    "metrics_logfc": null,
+    "metrics_rank": null,
+    "_cap_project_id": "621",
+    "_cap_dataset_id": "1490",
+    "_cap_dataset_name": "snRNA-seq of human optic nerve and optic nerve head - endothelial cells",
+    "_cap_dataset_url": "https://celltype.info/project/621/dataset/1490",
+    "_cap_cell_count": 34934,
+    "_cap_gene_count": 36406,
+    "_cap_organisms": [
+      "Homo sapiens"
+    ],
+    "_cap_tissues": [
+      "optic disc",
+      "cranial nerve II"
+    ],
+    "_cap_labelset_name": "author_cell_type",
+    "_cap_label_count": 610,
+    "_cap_label_color": "#db57c0",
+    "_cap_label_full_name": "endothelial cell of venule",
+    "_cap_ontology_term_exists": true,
+    "_cap_ontology_term_id": "CL:1000414",
+    "_cap_ontology_term": "endothelial cell of venule",
+    "_cap_category_full_name": "blood vessel endothelial cell",
+    "_cap_category_ontology_term_id": "CL:0000071",
+    "_cap_category_ontology_term": "blood vessel endothelial cell",
+    "_cap_synonyms": [
+      "dysfunctional endothelial cell of venule"
+    ],
+    "_cap_rationale_dois": [],
+    "_cap_rationale_dois_normalized": [],
+    "_cap_marker_role": "canonical"
+  }
+]

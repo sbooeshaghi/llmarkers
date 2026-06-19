@@ -1,0 +1,401 @@
+{
+  "schema": "span/1",
+  "generated_by": "manual",
+  "summary": {
+    "paper_objects": 16,
+    "lean_nodes": 70,
+    "entries": 16,
+    "coherent": 16,
+    "paper_half": 0,
+    "lean_half": 0,
+    "incoherent": 0,
+    "fully_formalized_matches": 16
+  },
+  "kind_compat": "Curated alignment between the supplementary marker-gene note and analysis/formal/MarkerIdentifiability/Basic.lean.",
+  "entries": [
+    {
+      "id": "align:marker-family-axioms",
+      "kind": "definition",
+      "title": "Desired marker gene properties",
+      "paper_ids": [
+        "def:marker-family-axioms"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.MarkerFamilyAxioms"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.MarkerFamilyAxioms"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:marker-axiom-representation",
+      "kind": "theorem",
+      "title": "The axioms force the intersection rule",
+      "paper_ids": [
+        "thm:marker-axiom-representation"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.markerFamilyAxioms_mem_iff_all_pairwise",
+        "MarkerIdentifiability.markerFamilyAxioms_eq_iInter_pairwise",
+        "MarkerIdentifiability.markerFamilyAxioms_unique"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.markerFamilyAxioms_mem_iff_all_pairwise",
+        "MarkerIdentifiability.markerFamilyAxioms_eq_iInter_pairwise",
+        "MarkerIdentifiability.markerFamilyAxioms_unique"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:comparison-family-marker",
+      "kind": "definition",
+      "title": "Marker against a set of groups",
+      "paper_ids": [
+        "def:comparison-family-marker"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.LocalPairwiseContrast",
+        "MarkerIdentifiability.PairwiseContrastMarker",
+        "MarkerIdentifiability.PairwiseMarkerGenes",
+        "MarkerIdentifiability.ContrastFamilyMarker",
+        "MarkerIdentifiability.ContrastFamilyMarkerGenes",
+        "MarkerIdentifiability.contrastFamilyMarkerGenes_satisfies_markerFamilyAxioms"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.LocalPairwiseContrast",
+        "MarkerIdentifiability.PairwiseContrastMarker",
+        "MarkerIdentifiability.PairwiseMarkerGenes",
+        "MarkerIdentifiability.ContrastFamilyMarker",
+        "MarkerIdentifiability.ContrastFamilyMarkerGenes",
+        "MarkerIdentifiability.contrastFamilyMarkerGenes_satisfies_markerFamilyAxioms"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:pairwise-recurrence-marker",
+      "kind": "theorem",
+      "title": "Pairwise recurrence defines a marker",
+      "paper_ids": [
+        "thm:pairwise-recurrence-marker"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.mem_contrastFamilyMarkerGenes_iff_mem_all_pairwiseMarkerGenes",
+        "MarkerIdentifiability.contrastFamilyMarkerGenes_eq_iInter_pairwiseMarkerGenes"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.mem_contrastFamilyMarkerGenes_iff_mem_all_pairwiseMarkerGenes",
+        "MarkerIdentifiability.contrastFamilyMarkerGenes_eq_iInter_pairwiseMarkerGenes"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:pairwise-reporting-reusable",
+      "kind": "corollary",
+      "title": "Pairwise reporting is reusable",
+      "paper_ids": [
+        "cor:pairwise-reporting-reusable"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.contrastFamilyMarkerGenes_eq_iInter_pairwiseMarkerGenes"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.contrastFamilyMarkerGenes_eq_iInter_pairwiseMarkerGenes"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:marker-defined-cell-type",
+      "kind": "proposition",
+      "title": "Cell type markers recur across local instances",
+      "paper_ids": [
+        "prop:cell-type-marker-recurrence"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.ScopedLocalGroup",
+        "MarkerIdentifiability.ScopedLocalGroup.Valid",
+        "MarkerIdentifiability.ScopedLocalGroup.markerGenes",
+        "MarkerIdentifiability.SharedMarkerGenes",
+        "MarkerIdentifiability.MarkerDefinedCellType",
+        "MarkerIdentifiability.mem_sharedMarkerGenes_iff_mem_all_instance_markerGenes",
+        "MarkerIdentifiability.sharedMarkerGenes_subset_of_instances_subset",
+        "MarkerIdentifiability.mem_markerDefinedCellType_markers_iff_mem_all_instances",
+        "MarkerIdentifiability.markerDefinedCellType_markers_subset_instance_markerGenes"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.ScopedLocalGroup",
+        "MarkerIdentifiability.ScopedLocalGroup.Valid",
+        "MarkerIdentifiability.ScopedLocalGroup.markerGenes",
+        "MarkerIdentifiability.SharedMarkerGenes",
+        "MarkerIdentifiability.MarkerDefinedCellType",
+        "MarkerIdentifiability.mem_sharedMarkerGenes_iff_mem_all_instance_markerGenes",
+        "MarkerIdentifiability.sharedMarkerGenes_subset_of_instances_subset",
+        "MarkerIdentifiability.mem_markerDefinedCellType_markers_iff_mem_all_instances",
+        "MarkerIdentifiability.markerDefinedCellType_markers_subset_instance_markerGenes"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:comparison-family-monotonicity",
+      "kind": "proposition",
+      "title": "Restriction to a local comparison set",
+      "paper_ids": [
+        "prop:comparison-family-monotonicity"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.contrastFamilyMarker_subset",
+        "MarkerIdentifiability.markerComparisonFamilies_downward_closed"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.contrastFamilyMarker_subset",
+        "MarkerIdentifiability.markerComparisonFamilies_downward_closed"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:type-state-scope-inclusion",
+      "kind": "proposition",
+      "title": "Type-scope markers restrict to state scope",
+      "paper_ids": [
+        "prop:type-state-scope-inclusion"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.TypeStateComparisonScope",
+        "MarkerIdentifiability.CellTypeScopeMarker",
+        "MarkerIdentifiability.CellStateScopeMarker",
+        "MarkerIdentifiability.CellTypeScopeMarkerGenes",
+        "MarkerIdentifiability.CellStateScopeMarkerGenes",
+        "MarkerIdentifiability.cellTypeScopeMarker_implies_cellStateScopeMarker",
+        "MarkerIdentifiability.cellTypeScopeMarkerGenes_subset_cellStateScopeMarkerGenes"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.TypeStateComparisonScope",
+        "MarkerIdentifiability.CellTypeScopeMarker",
+        "MarkerIdentifiability.CellStateScopeMarker",
+        "MarkerIdentifiability.CellTypeScopeMarkerGenes",
+        "MarkerIdentifiability.CellStateScopeMarkerGenes",
+        "MarkerIdentifiability.cellTypeScopeMarker_implies_cellStateScopeMarker",
+        "MarkerIdentifiability.cellTypeScopeMarkerGenes_subset_cellStateScopeMarkerGenes"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:hierarchical-marker-inclusion",
+      "kind": "proposition",
+      "title": "Hierarchical marker inclusion",
+      "paper_ids": [
+        "prop:hierarchical-marker-inclusion"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.HierarchicalComparisonScope",
+        "MarkerIdentifiability.hierarchical_parent_marker_implies_child_marker",
+        "MarkerIdentifiability.hierarchical_parent_markerGenes_subset_child_markerGenes"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.HierarchicalComparisonScope",
+        "MarkerIdentifiability.hierarchical_parent_marker_implies_child_marker",
+        "MarkerIdentifiability.hierarchical_parent_markerGenes_subset_child_markerGenes"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:one-vs-background-decomposition",
+      "kind": "proposition",
+      "title": "One-vs-background decomposition",
+      "paper_ids": [
+        "prop:one-vs-background-decomposition"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.LocalBackgroundContrast",
+        "MarkerIdentifiability.localBackgroundContrast_eq_weighted_pairwise"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.LocalBackgroundContrast",
+        "MarkerIdentifiability.localBackgroundContrast_eq_weighted_pairwise"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:pair-coverage-aggregation",
+      "kind": "proposition",
+      "title": "Pair coverage supports aggregation",
+      "paper_ids": [
+        "prop:pair-coverage-aggregation"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.PairCovered",
+        "MarkerIdentifiability.separatesOn_of_pairCovered_experiments",
+        "MarkerIdentifiability.AdmissiblePairCovered",
+        "MarkerIdentifiability.separatesAdmissibleOn_of_pairCovered_experiments",
+        "MarkerIdentifiability.not_pairCertifiable_of_not_observed"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.PairCovered",
+        "MarkerIdentifiability.separatesOn_of_pairCovered_experiments",
+        "MarkerIdentifiability.AdmissiblePairCovered",
+        "MarkerIdentifiability.separatesAdmissibleOn_of_pairCovered_experiments",
+        "MarkerIdentifiability.not_pairCertifiable_of_not_observed"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:experiment-coverage-lower-bound",
+      "kind": "proposition",
+      "title": "Experiment coverage lower bound",
+      "paper_ids": [
+        "prop:experiment-coverage-lower-bound"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.ExperimentPairCapacityAtMost",
+        "MarkerIdentifiability.offDiag_subset_experimentPairUnion_of_pairCovered",
+        "MarkerIdentifiability.pairCovered_offDiag_card_le_experiments_mul_pairCapacity",
+        "MarkerIdentifiability.pairCovered_global_orderedPair_count_le_experiments_mul_pairCapacity",
+        "MarkerIdentifiability.pairCovered_global_orderedPair_count_le_of_card_eq"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.ExperimentPairCapacityAtMost",
+        "MarkerIdentifiability.offDiag_subset_experimentPairUnion_of_pairCovered",
+        "MarkerIdentifiability.pairCovered_offDiag_card_le_experiments_mul_pairCapacity",
+        "MarkerIdentifiability.pairCovered_global_orderedPair_count_le_experiments_mul_pairCapacity",
+        "MarkerIdentifiability.pairCovered_global_orderedPair_count_le_of_card_eq"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:experiment-overlap-correction",
+      "kind": "proposition",
+      "title": "Overlap subtracts duplicated comparisons",
+      "paper_ids": [
+        "prop:experiment-overlap-correction"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.ObservedPairSet",
+        "MarkerIdentifiability.observedPairSet_insert",
+        "MarkerIdentifiability.observedPairSet_insert_card_eq_add_sub_overlap",
+        "MarkerIdentifiability.offDiag_inter_offDiag_eq",
+        "MarkerIdentifiability.two_experiment_pair_union_card_eq_add_sub_shared"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.ObservedPairSet",
+        "MarkerIdentifiability.observedPairSet_insert",
+        "MarkerIdentifiability.observedPairSet_insert_card_eq_add_sub_overlap",
+        "MarkerIdentifiability.offDiag_inter_offDiag_eq",
+        "MarkerIdentifiability.two_experiment_pair_union_card_eq_add_sub_shared"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:flat-projection-loss",
+      "kind": "proposition",
+      "title": "Flat projections lose comparison context",
+      "paper_ids": [
+        "prop:flat-projection-loss"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.ScopedContrastClaim",
+        "MarkerIdentifiability.ScopedContrastClaim.flatProjection",
+        "MarkerIdentifiability.flatProjection_forgets_comparisons",
+        "MarkerIdentifiability.sameLabel_does_not_force_sameOn"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.ScopedContrastClaim",
+        "MarkerIdentifiability.ScopedContrastClaim.flatProjection",
+        "MarkerIdentifiability.flatProjection_forgets_comparisons",
+        "MarkerIdentifiability.sameLabel_does_not_force_sameOn"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:marker-panel-information-bound",
+      "kind": "proposition",
+      "title": "Binary marker-panel information bound",
+      "paper_ids": [
+        "prop:marker-panel-information-bound"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.signature_injective_of_separates",
+        "MarkerIdentifiability.card_le_two_pow_of_separates",
+        "MarkerIdentifiability.card_le_two_pow_of_separatesOn",
+        "MarkerIdentifiability.IsMinimumSeparatingSet",
+        "MarkerIdentifiability.EssentialGene",
+        "MarkerIdentifiability.ExchangeableGene",
+        "MarkerIdentifiability.TwoByTwoExample.minimum_sets_not_unique"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.signature_injective_of_separates",
+        "MarkerIdentifiability.card_le_two_pow_of_separates",
+        "MarkerIdentifiability.card_le_two_pow_of_separatesOn",
+        "MarkerIdentifiability.IsMinimumSeparatingSet",
+        "MarkerIdentifiability.EssentialGene",
+        "MarkerIdentifiability.ExchangeableGene",
+        "MarkerIdentifiability.TwoByTwoExample.minimum_sets_not_unique"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:score-thresholding-preserves-scope",
+      "kind": "proposition",
+      "title": "Thresholding scores preserves comparison scope",
+      "paper_ids": [
+        "prop:score-thresholding-preserves-scope"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.PairwiseMarkerScore",
+        "MarkerIdentifiability.ScorePairwiseMarker",
+        "MarkerIdentifiability.ScorePairwiseMarkerGenes",
+        "MarkerIdentifiability.ScoreFamilyMarker",
+        "MarkerIdentifiability.ScoreFamilyMarkerGenes",
+        "MarkerIdentifiability.scoreFamilyMarkerGenes_satisfies_markerFamilyAxioms",
+        "MarkerIdentifiability.mem_scoreFamilyMarkerGenes_iff_mem_all_pairwiseMarkerGenes",
+        "MarkerIdentifiability.scoreFamilyMarkerGenes_eq_iInter_pairwiseMarkerGenes",
+        "MarkerIdentifiability.scoreFamilyMarkerGenes_antitone_threshold"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.PairwiseMarkerScore",
+        "MarkerIdentifiability.ScorePairwiseMarker",
+        "MarkerIdentifiability.ScorePairwiseMarkerGenes",
+        "MarkerIdentifiability.ScoreFamilyMarker",
+        "MarkerIdentifiability.ScoreFamilyMarkerGenes",
+        "MarkerIdentifiability.scoreFamilyMarkerGenes_satisfies_markerFamilyAxioms",
+        "MarkerIdentifiability.mem_scoreFamilyMarkerGenes_iff_mem_all_pairwiseMarkerGenes",
+        "MarkerIdentifiability.scoreFamilyMarkerGenes_eq_iInter_pairwiseMarkerGenes",
+        "MarkerIdentifiability.scoreFamilyMarkerGenes_antitone_threshold"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    }
+  ],
+  "paper": "docs/paper/src/supplementary-note.tex",
+  "lean": "analysis/formal"
+}

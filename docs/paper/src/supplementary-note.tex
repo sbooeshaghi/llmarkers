@@ -1,0 +1,413 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{authblk}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\emergencystretch=3em
+\begin{document}
+
+\date{}
+\title{\textbf{Supplementary Note}\\Marker genes are not self-contained definitions of cell type}
+\author[1]{A.~Sina Booeshaghi\textsuperscript{\textdagger}}
+\author[1]{Nithya Appannagaari}
+\author[2,3,4]{Allon Wagner\textsuperscript{\textdagger}}
+\author[1,3,4]{Aaron Streets\textsuperscript{\textdagger}}
+\affil[1]{\small Department of Bioengineering, University of California Berkeley, Berkeley, CA, USA}
+\affil[2]{\small Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, Berkeley, CA, USA}
+\affil[3]{\small Department of Molecular and Cell Biology, University of California, Berkeley, CA, USA}
+\affil[4]{\small Center for Computational Biology, University of California, Berkeley, CA, USA}
+\setlength{\affilsep}{2pt}
+\maketitle
+\footnotetext[2]{Co-corresponding authors: A.~Sina Booeshaghi (sinab@berkeley.edu), Allon Wagner (allonwag@berkeley.edu), and Aaron Streets (astreets@berkeley.edu).}
+
+Marker genes are often stored as cell type--gene pairs. That format is practical, but incomplete. In a single-cell experiment, a gene is called a marker because it distinguishes a target population from other populations in that experiment: sibling clusters, disease-specific subsets, a one-vs-rest background, or an atlas-level set of cell types. Changing those comparison groups can change whether the gene is a marker. This note formalizes that point, and related ones, with Lean. We assume that marker calls are binary, as is common when genes are selected for follow-up experiments, and that markers are evaluated through pairwise comparisons between cell groups, a standard differential-expression workflow \citep{Robinson_2009}. Under these assumptions, a marker gene is a gene that distinguishes a target population from every population in a specified comparison set. Dropping the binary assumption changes how marker genes are scored, ranked, or thresholded, but it does not change the requirement that a marker specify the target and comparison set.
+
+\section{Desired Marker Gene Properties}
+
+Before defining a marker, we first state the properties a useful marker-gene rule should have. Importantly, a marker is a gene that must distinguish one target group from other groups. A target group can be a cell type, a cell state, a tissue compartment, a disease stratum, or any other grouping used for marker analysis.
+
+\begin{definition}[Desired marker gene properties]\label{def:marker-family-axioms}
+\normalfont
+Fix a gene set $G$, a single-cell study, a partition of cells in that study, a target group $t$, and pairwise marker sets $M(t,h)$, where $h$ is one non-target group being compared against $t$. Let $C$ be the set of groups that $t$ must be distinguished from, and let $F(C)$ be the marker genes assigned to $t$ for that task. We require:
+\begin{enumerate}
+  \item \textbf{Context.} A marker is tied to a target and to the groups the target is being distinguished from, not to a gene or target--gene pair alone.
+  \item \textbf{Valid comparison.} A biological marker compares the target to at least one other group and does not compare the target to itself. The empty set is only the mathematical base case: $F(\varnothing)=G$.
+  \item \textbf{Pairwise agreement.} If the target is compared to one group, the rule gives the usual pairwise marker set: $F(\{h\})=M(t,h)$.
+  \item \textbf{All required comparisons.} If the target is compared to two sets of groups, a marker must work for both tasks:
+\[
+  F(C_1\cup C_2)=F(C_1)\cap F(C_2).
+\]
+  \item \textbf{No rescue by averaging.} Adding required comparison groups makes the marker rule stricter, not easier; it cannot rescue a gene that already failed one required pairwise contrast.
+\end{enumerate}
+\end{definition}
+
+\begin{theorem}[The axioms force the intersection rule]\label{thm:marker-axiom-representation}
+If $F$ satisfies the base-case, pairwise-agreement, and all-required-comparisons properties above, then for every finite set $C$ of groups being compared against the target,
+\[
+  F(C)=\bigcap_{h\in C}M(t,h).
+\]
+Equivalently,
+\[
+  g\in F(C)
+  \quad\Longleftrightarrow\quad
+  \forall h\in C,\; g\in M(t,h).
+\]
+\end{theorem}
+
+\begin{proof}
+Build $C$ by adding one group at a time. The one-group axiom gives the marker set for one comparison, and the union axiom intersects this set with the marker set for the comparisons already added. The empty-set axiom supplies the base case. The Lean proof also shows uniqueness: any two marker rules satisfying these properties agree on every finite comparison set.
+\end{proof}
+
+\section{Marker Comparisons Define Cell Types and States}
+
+Fix a study $s$ and a partition $p$ of the cells in that study. The partition may be a clustering, a set of annotated cell types, disease strata, tissue compartments, or any other grouping used for marker analysis. Let $K_{s,p}$ be the finite set of groups in the partition, and let $G$ be the set of genes. For a target group $t\in K_{s,p}$ and a comparison group $h\in K_{s,p}$, write
+\[
+  M_{s,p}(t,h)\subseteq G
+\]
+for the pairwise marker set: the genes called as markers for $t$ against $h$ by the study's chosen differential-expression or marker-calling rule. At the contrast level, this can be implemented by, for example, a mean-expression profile $\mu$ and a threshold $\tau$:
+\[
+  g\in M_{s,p}(t,h)
+  \quad\Longleftrightarrow\quad
+  \tau < \mu(s,p,t,g)-\mu(s,p,h,g).
+\]
+The formalization uses this contrast model when it is useful, but the definition below only requires the pairwise marker sets.
+
+\begin{definition}[Marker against a set of groups]\label{def:comparison-family-marker}
+Let $C\subseteq K_{s,p}\setminus\{t\}$ be the groups that target $t$ must be distinguished from. We call $C$ the comparison set. The marker set for target group $t$ against $C$ is
+\[
+  M_{s,p}(t;C)=\bigcap_{h\in C}M_{s,p}(t,h).
+\]
+Thus
+\[
+  g\in M_{s,p}(t;C)
+  \quad\Longleftrightarrow\quad
+  \forall h\in C,\; g\in M_{s,p}(t,h).
+\]
+\end{definition}
+
+A marker gene therefore has five coordinates: study, partition, target group, comparison set, and gene. A flat cell type--gene pair is a shortened record that forgets the study, partition, and the groups the target was compared against.
+
+\paragraph{Example.}
+Consider a study partition containing a T-cell cluster, a B-cell cluster, and a CD4 T-cell cluster. A gene such as \texttt{TRAC} may mark the T-cell cluster against B cells, but fail to distinguish that same cluster from the CD4 T-cell cluster. It is therefore a marker for the smaller task ``distinguish this cluster from B cells,'' not automatically for the larger task ``distinguish this cluster from B cells and CD4 T cells.''
+
+\begin{theorem}[Pairwise recurrence defines a marker]\label{thm:pairwise-recurrence-marker}
+A gene $g$ is a marker for target group $t$ against the groups in $C$ if and only if $g$ is a pairwise marker for $t$ against every group in $C$.
+\end{theorem}
+
+\begin{proof}
+By definition, $M_{s,p}(t;C)$ is the intersection of the pairwise marker sets $M_{s,p}(t,h)$ over $h\in C$. Membership in an intersection is equivalent to membership in every set being intersected. The Lean proof formalizes both the membership statement and the set-equality statement for markers against a comparison set.
+\end{proof}
+
+This theorem is the marker-gene definition used in the paper. A marker gene is not a property of $(t,g)$ alone. It depends on $(s,p,t,C,g)$, where $C$ records the groups the target was compared against. The set $C$ can be broad, such as all atlas cell types; local, such as immune populations in blood; or task-specific, such as a set of biologically confusable neighbors. These are different marker definitions.
+
+\begin{corollary}[Pairwise reporting is reusable]\label{cor:pairwise-reporting-reusable}
+If a study reports $M_{s,p}(t,h)$ for each pairwise target--comparison contrast in a partition, then a later user can reconstruct $M_{s,p}(t;C)$ for any set $C$ of comparison groups contained in that partition by taking an intersection.
+\end{corollary}
+
+\begin{proof}
+Apply the theorem to the desired comparison set $C$:
+\[
+  M_{s,p}(t;C)=\bigcap_{h\in C}M_{s,p}(t,h).
+\]
+No new marker call is needed once the pairwise sets have been retained.
+\end{proof}
+
+\paragraph{Example.}
+If $M(t,\text{B cell})=\{\texttt{TRAC},\texttt{CD3D},\texttt{GZMB}\}$ and $M(t,\text{CD4 T cell})=\{\texttt{GZMB}\}$, then the marker set for $t$ against both B cells and CD4 T cells is $\{\texttt{GZMB}\}$. The genes that do not recur across all requested pairwise contrasts are not markers for that task.
+
+The same construction gives a marker-based definition of a cell type. Let $I$ be a nonempty finite set of local marker instances, where each element
+\[
+  i=(s_i,p_i,t_i,C_i)
+\]
+records a study, partition, target group, and comparison set. The marker genes for the cell type represented by $I$ are
+\[
+  M(I)=\bigcap_{i\in I} M_{s_i,p_i}(t_i;C_i).
+\]
+This is not a complete biological definition of cell type. It formalizes the part of a cell type that can be supported by marker genes.
+
+\begin{proposition}[Cell type markers recur across local instances]\label{prop:cell-type-marker-recurrence}
+A gene $g$ is a marker for the marker-defined cell type $I$ if and only if $g$ is a marker for every local marker instance in $I$:
+\[
+  g\in M(I)
+  \quad\Longleftrightarrow\quad
+  \forall i\in I,\; g\in M_{s_i,p_i}(t_i;C_i).
+\]
+\end{proposition}
+
+\begin{proof}
+By definition, $M(I)$ is the intersection of the marker sets for the local instances in $I$. Membership in that intersection is equivalent to membership in every local marker set.
+\end{proof}
+
+Adding more local instances makes the definition stricter: if $I_{\mathrm{local}}\subseteq I_{\mathrm{global}}$, then $M(I_{\mathrm{global}})\subseteq M(I_{\mathrm{local}})$. Thus a marker that defines a cell type across many studies also works for any restricted subset of those studies, but a marker that works in one local instance need not define the cell type globally.
+
+\paragraph{Example.}
+A gene that marks monocytes in every blood, lung, and tumor myeloid comparison in a corpus is a marker for that cross-study monocyte definition. A gene that marks monocytes only in stimulated blood may still be a valid local marker, but it is not a marker for the broader definition unless it recurs across the other local instances.
+
+\section{Consequences of Comparison-Defined Markers}
+
+Once markers and cell types include their comparison sets, the main question is how they change when comparison groups are added or removed.
+
+\subsection{Local and Global Markers}
+
+\begin{proposition}[Restriction to a local comparison set]\label{prop:comparison-family-monotonicity}
+If $C_{\mathrm{local}}\subseteq C_{\mathrm{global}}$, then
+\[
+  M_{s,p}(t;C_{\mathrm{global}})
+  \subseteq
+  M_{s,p}(t;C_{\mathrm{local}}).
+\]
+\end{proposition}
+
+\begin{proof}
+If $g$ is in $M_{s,p}(t;C_{\mathrm{global}})$, then $g$ belongs to every pairwise marker set indexed by $C_{\mathrm{global}}$. Since every element of $C_{\mathrm{local}}$ is also in $C_{\mathrm{global}}$, $g$ belongs to every pairwise marker set indexed by $C_{\mathrm{local}}$. Hence $g\in M_{s,p}(t;C_{\mathrm{local}})$.
+\end{proof}
+
+Comparison sets are ordered by inclusion, but marker validity moves in the opposite direction: broad marker definitions imply local marker definitions. The converse does not hold in general. A gene may distinguish a target from a local set of groups and fail after more groups are added. The Lean file includes explicit examples at the contrast level, after adding a comparison cell type, and after pooling locally separable studies into a non-separable atlas comparison.
+
+\paragraph{Example.}
+A monocyte marker may separate monocytes from lymphocytes in a blood-only partition. The same gene may fail as a global myeloid marker once macrophages and dendritic cells are added to the comparison set. The local marker can be valid even when the broader atlas marker is not.
+
+\subsection{Cell Types and Cell States}
+
+The same definition clarifies the distinction between a cell type and a cell state. They are not separate kinds of markers. They are markers evaluated against different comparison sets. For a fixed target group $t$, let $C_{\mathrm{type}}$ be a broad comparison set and let $C_{\mathrm{state}}\subseteq C_{\mathrm{type}}$ be a restricted set determined by a parent cell type, condition, tissue, or perturbation.
+
+\begin{proposition}[Type markers restrict to state markers]\label{prop:type-state-scope-inclusion}
+If $C_{\mathrm{state}}\subseteq C_{\mathrm{type}}$, then
+\[
+  M_{s,p}(t;C_{\mathrm{type}})
+  \subseteq
+  M_{s,p}(t;C_{\mathrm{state}}).
+\]
+\end{proposition}
+
+\begin{proof}
+This is the comparison-set monotonicity result with the local set equal to $C_{\mathrm{state}}$ and the broader set equal to $C_{\mathrm{type}}$.
+\end{proof}
+
+Thus a state marker is local to a restricted biological context, while a type marker is broader. When the target itself changes, for example from T cells to activated T cells, no implication is asserted without an additional parent--child target map. The point is that type and state labels both require the target and comparison set; neither is determined by a gene name alone.
+
+\paragraph{Example.}
+\texttt{IFNG} may mark an activated T-cell state relative to resting or exhausted T cells, but fail as a T-cell type marker against broader immune populations. Conversely, \texttt{CD3D} may support a broad T-cell type without distinguishing activated from resting T-cell states.
+
+\subsection{Hierarchy}
+
+\begin{proposition}[Hierarchical marker inclusion]\label{prop:hierarchical-marker-inclusion}
+Let $C_{\mathrm{parent}}$ be a broad comparison set and let $C_{\mathrm{child}}\subseteq C_{\mathrm{parent}}$ be the comparison set used after a parent group is refined into a child context. Then
+\[
+  M_{s,p}(t;C_{\mathrm{parent}})
+  \subseteq
+  M_{s,p}(t;C_{\mathrm{child}}).
+\]
+\end{proposition}
+
+\begin{proof}
+This is the previous result with $C_{\mathrm{local}}=C_{\mathrm{child}}$ and $C_{\mathrm{global}}=C_{\mathrm{parent}}$.
+\end{proof}
+
+Thus a marker valid at a broad parent comparison level remains valid after restricting to a child comparison set, but a child-specific marker need not remain valid in the parent or atlas-wide comparison. This gives a precise meaning to hierarchy-specific markers: they are local markers that do not lift to the parent comparison set, aligning with the view that reference cell trees better preserve hierarchical relationships than flat atlases \citep{Domcke2023ReferenceCellTree}.
+
+\paragraph{Example.}
+A broad immune marker that separates immune cells from epithelial and stromal cells remains valid when a child comparison asks only a subset of those broad contrasts. By contrast, a naive T-cell marker such as \texttt{CCR7} may distinguish a child subtype from related T-cell states without serving as a marker for the whole parent immune-cell definition.
+
+The same framework captures cell lineage. A lineage tree supplies nested targets and nested comparison sets: a parent node is evaluated against broader alternatives, while a child node can be evaluated against its siblings or other descendants of the same parent. Markers are therefore parent-level, child-specific, or lineage-restricted depending on the comparisons in which they recur. This is compatible with evolutionary and lineage-aware terminology proposals for cell types \citep{Zhu2026RationalTerminology} and with hierarchical annotation frameworks that classify immune cells through an ontology rather than through absolute marker lists \citep{Beltz2026ImmuneHierarchy}.
+
+\subsection{One-vs-Background Contrasts}
+
+\begin{proposition}[One-vs-background decomposition]\label{prop:one-vs-background-decomposition}
+If $B$ is a background set and weights $w_h$ satisfy $\sum_{h\in B}w_h=1$, then
+\[
+  \mu(s,p,t,g)-\sum_{h\in B}w_h\mu(s,p,h,g)
+  =
+  \sum_{h\in B}w_h\left(\mu(s,p,t,g)-\mu(s,p,h,g)\right).
+\]
+\end{proposition}
+
+\begin{proof}
+Expand the right-hand side and distribute the weighted sum. The corresponding Lean proof states that any normalized one-vs-background contrast equals a weighted sum of pairwise contrasts.
+\end{proof}
+
+A one-vs-background mean contrast is therefore a weighted summary of pairwise mean contrasts. The same reasoning applies to $k$-vs-background mean contrasts after replacing the target mean by a weighted mean over the $k$ target groups. This explains why ordinary one-vs-all marker lists are not equivalent to pairwise reports. In standard cell-level tests, the background is implicitly weighted by the number of cells in each non-target group, so abundant groups can dominate the contrast. Equal-weight backgrounds reduce this abundance effect, but they are still averages. They do not record whether the gene distinguished the target from each individual comparison group.
+
+This decomposition is only for the mean or effect-size contrast. A pooled one-vs-all $t$-statistic is not generally a weighted sum of pairwise $t$-statistics, and it cannot generally be reconstructed from pairwise $t$-statistics, $p$-values, or binary marker calls alone. We return to this in the final section: pooled variance-aware tests can be recomputed only when the report preserves group-level sufficient statistics, such as means, variances, and sample sizes, together with the chosen test model.
+
+\paragraph{Example.}
+Suppose a gene has mean 10 in the target, mean 0 in an easy comparison group, and mean 9 in a hard comparison group. With threshold 5, it passes the easy pairwise contrast and fails the hard pairwise contrast. A one-vs-all average can still pass if the easy group dominates the background, or fail if the hard group dominates. The pairwise report preserves which distinction failed.
+
+\subsection{Aggregation Across Studies}
+
+\begin{proposition}[Pair coverage supports aggregation]\label{prop:pair-coverage-aggregation}
+Suppose a collection of local experiments covers every required pairwise comparison in a global comparison set, and suppose the same marker panel separates each covered local experiment. Then the marker panel separates the global set.
+\end{proposition}
+
+\begin{proof}
+Take any two distinct groups in the global set. Pair coverage says that this pair appears together in some observed experiment. Since the marker panel separates every observed experiment, it separates that pair. Because the pair was arbitrary, the panel separates the global set. The Lean proof also covers the version where only some biological comparisons are considered relevant.
+\end{proof}
+
+The same definition identifies what must be observed before local marker evidence can support an atlas-level marker. The negative statement is equally important: if a pair never appears together in any observed experiment, those experiments alone cannot certify a marker for that pair. In atlas building, aggregation is limited by pairwise coverage, not only by label harmonization.
+
+\begin{proposition}[Experiment coverage lower bound]\label{prop:experiment-coverage-lower-bound}
+Target direction matters: a marker for $A$ against $B$ is not the same marker as a marker for $B$ against $A$. Let $k$ be the number of global cell types, let $m$ be the number of local experiments, and suppose each experiment contributes at most $q$ ordered distinct target--comparison pairs among those global cell types. If the experiments cover every ordered distinct global pair, then
+\[
+  k^2-k \leq m q.
+\]
+\end{proposition}
+
+\begin{proof}
+There are $k^2-k$ ordered distinct pairs among $k$ global cell types. Pair coverage places every such pair in the union of the pairs observed inside the local experiments. If each experiment contributes at most $q$ such pairs, then the union contains at most $mq$ pairs.
+\end{proof}
+
+\begin{proposition}[Overlap subtracts duplicated comparisons]\label{prop:experiment-overlap-correction}
+Let $P_i$ be the set of ordered distinct comparison pairs contributed by study $i$. Adding a new study contributes only the pairs not already observed:
+\[
+  \left|P_{\mathrm{old}}\cup P_{\mathrm{new}}\right|
+  =
+  \left|P_{\mathrm{old}}\right|
+  +
+  \left|P_{\mathrm{new}}\right|
+  -
+  \left|P_{\mathrm{old}}\cap P_{\mathrm{new}}\right|.
+\]
+For two studies observing $r_1$ and $r_2$ relevant cell types and sharing $s$ of them, the unordered version is
+\[
+  \binom{r_1}{2}+\binom{r_2}{2}-\binom{s}{2}.
+\]
+\end{proposition}
+
+\begin{proof}
+The observed comparison set is a union of pair sets, so the equality is ordinary inclusion--exclusion. In the two-study case, duplicated unordered comparisons are exactly the pairs among the $s$ shared cell types. The Lean formalization proves the ordered version.
+\end{proof}
+
+If each local experiment observes at most $r$ relevant cell types and all within-experiment pairs are biologically relevant, then one may take $q=r^2-r$. Ignoring target direction gives the usual unordered-pair reading: about $\binom{k}{2}/\binom{r}{2}$ experiments are needed in the best case. Table~\ref{tab:experiment-coverage-scale} gives illustrative lower bounds and shows the candidate marker-gene pool $G$ for scale.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{llrrrr}
+\toprule
+Atlas scale & Species & Genes $G$ & Cell classes $k$ & Classes/study $r$ & Studies \\
+\midrule
+Worm neuronal scale & \textit{C. elegans} & $\sim$20{,}000 & 118 & 20 & 37 \\
+Coarse mouse scale & \textit{M. musculus} & $\sim$22{,}000 & 300 & 20 & 237 \\
+Coarse human scale & \textit{H. sapiens} & $\sim$20{,}000 & 400 & 20 & 420 \\
+Finer human scale & \textit{H. sapiens} & $\sim$20{,}000 & 1{,}000 & 20 & 2{,}629 \\
+\bottomrule
+\end{tabular}
+\caption{Illustrative best-case lower bounds for pairwise marker coverage. Gene counts are rounded candidate marker-gene pools and are shown for scale; the coverage lower bound in this table is determined by the number of global cell classes $k$ and the maximum number of relevant cell classes per local study $r$. These study counts are optimistic because they assume that each study contributes every within-study pair and that different studies cover non-overlapping pairs.}
+\label{tab:experiment-coverage-scale}
+\end{table}
+
+\noindent\emph{Overlap note.}
+With $r=20$, a study contains $\binom{20}{2}=190$ unordered within-study pairs. If another $r=20$ study shares $s=10$ cell types, then $\binom{10}{2}=45$ pairs are duplicated and the new study contributes at most $145$ new unordered pairs. If it shares $s=15$ cell types, then $105$ pairs are duplicated and at most $85$ are new.
+
+\paragraph{Example.}
+If one study compares cell types $A$ and $B$, and another compares $B$ and $C$, then the local evidence does not by itself certify a marker that separates $A$ from $C$. An atlas-level marker for $\{A,B,C\}$ requires evidence for every required pair, or an explicit decision that some missing pair is not biologically relevant for the definition.
+
+\subsection{Why Flat Marker Tables Lose Information}
+
+\begin{proposition}[Flat projections lose comparison context]\label{prop:flat-projection-loss}
+Flattening a complete marker definition to a cell type--gene pair,
+\[
+  (t,C,g)\mapsto(t,g).
+\]
+is not injective in the comparison set.
+\end{proposition}
+
+\begin{proof}
+Two marker definitions with the same target and gene but different comparison sets have the same flat projection. The Lean proof includes this as an explicit example.
+\end{proof}
+
+Labels introduce a second projection. A label map can assign the same label to two groups even when their marker signatures differ. The Lean file also proves that label equality alone does not force marker equality. This is why a database entry such as ``T cell--TRAC'' is useful as an index into evidence, but not sufficient as a marker definition.
+
+\paragraph{Example.}
+The flat entry ``T cell--\texttt{TRAC}'' could mean that \texttt{TRAC} distinguished T cells from B cells, from all non-T immune cells, or from a broader atlas background. Those definitions have the same flat projection, but they are not the same marker.
+
+\section{Marker Panels}
+
+The main text focuses on single genes because follow-up experiments often require choosing individual markers. The same logic applies to marker panels used for annotation or sorting: a panel is useful only relative to the groups it is meant to separate.
+
+\begin{proposition}[Binary marker-panel information bound]\label{prop:marker-panel-information-bound}
+If a panel $S$ separates all profiles in a finite universe $K$, then
+\[
+  |K|\leq 2^{|S|}.
+\]
+\end{proposition}
+
+\begin{proof}
+A panel $S$ separates a set of profiles when every distinct pair differs on at least one gene in $S$. Therefore the binary signatures on $S$ are injective, and there are only $2^{|S|}$ possible signatures.
+\end{proof}
+
+The formalization also covers marker panels rather than single genes. It proves this information bound and includes a two-cell, two-gene example showing that minimum separating panels need not be unique. It therefore distinguishes essential genes, which occur in every minimum panel, from exchangeable genes, which occur in some but not all minimum panels.
+
+This bound is separate from the experiment-coverage bound above. The coverage bound asks whether the required comparisons were observed. The marker-panel bound asks whether the available genes provide enough binary signatures to distinguish the profiles being compared.
+
+\paragraph{Example.}
+Three binary marker genes can encode at most eight distinct marker signatures. If an atlas needs to distinguish more than eight binary profiles, then either more markers, non-binary measurements, or additional contextual information is required.
+
+\section{Dropping the Binary Marker Assumption}
+
+The binary assumption in this note is an assumption about the reported marker call, not about gene expression or differential expression itself. In practice, a pairwise comparison often produces a real-valued statistic: an effect size, test statistic, posterior probability, stability score, or calibrated marker score. For a fixed target, write $q(h,g)$ for the score of gene $g$ against comparison group $h$. This score can include variance, uncertainty, or stability. The formal result only requires that the score be evaluated for each pairwise comparison before thresholding. A binary marker call is then obtained by a decision rule, for example by choosing a threshold $\tau$ and declaring
+\[
+  M_{\tau}(t,h)=\{g\in G:q(h,g)\geq \tau\}.
+\]
+
+\begin{proposition}[Thresholding scores preserves comparison sets]\label{prop:score-thresholding-preserves-scope}
+For a fixed threshold $\tau$ and comparison set $C$,
+\[
+  M_{\tau}(t;C)
+  =
+  \{g\in G:\forall h\in C,\; q(h,g)\geq \tau\}
+  =
+  \bigcap_{h\in C} M_{\tau}(t,h).
+\]
+If $\tau_1\leq \tau_2$, then
+\[
+  M_{\tau_2}(t;C)\subseteq M_{\tau_1}(t;C).
+\]
+\end{proposition}
+
+\begin{proof}
+The first equality is the same marker rule applied after thresholding each pairwise score. The second statement follows because a gene that clears a higher threshold in every required comparison also clears any lower threshold in those comparisons. The Lean proof covers arbitrary real-valued pairwise score functions.
+\end{proof}
+
+For variance-aware tests, the reusable object is not the pairwise $t$-statistic itself. It is the set of summaries needed to recompute the statistic under a chosen model. For example, suppose that for each group $h$ and gene $g$ we retain the sample size $n_h$, mean $\bar{x}_{h,g}$, and sample variance $s^2_{h,g}$ for the observational unit used by the test. For a background set $B$, these determine
+\[
+  N_B=\sum_{h\in B}n_h,\qquad
+  \bar{x}_{B,g}=\frac{1}{N_B}\sum_{h\in B} n_h\bar{x}_{h,g},
+\]
+and the pooled background variance
+\[
+  s^2_{B,g}
+  =
+  \frac{
+    \sum_{h\in B}(n_h-1)s^2_{h,g}
+    +
+    \sum_{h\in B}n_h(\bar{x}_{h,g}-\bar{x}_{B,g})^2
+  }{N_B-1}.
+\]
+Thus a target-vs-background Welch-style statistic can be recomputed from retained summaries as
+\[
+  \frac{\bar{x}_{t,g}-\bar{x}_{B,g}}
+       {\sqrt{s^2_{t,g}/n_t+s^2_{B,g}/N_B}},
+\]
+with the corresponding degrees of freedom determined by the same summaries. Other statistical models require their own sufficient summaries, but the principle is the same: retaining means, variances, and sample sizes enables future pooled tests, whereas retaining only pairwise $t$-statistics, $p$-values, or binary marker calls does not.
+
+Thus dropping the binary assumption changes the statistical layer: it changes how marker evidence is scored, ranked, calibrated, thresholded, and propagated with uncertainty. It does not change the marker definition. A marker still requires a target and a comparison set. Retaining pairwise scores and sufficient summaries is more reusable than retaining only binary calls because downstream analyses can choose a different threshold or recompute a specified pooled test without losing the comparison context.
+
+\section{Conclusion}
+
+The definition of a marker gene is a gene that distinguishes a target group from every group in a specified comparison set. The comparison set is part of the definition. This is why pairwise marker context should be retained for each partition in a single-cell study. Pairwise marker calls can be recombined into future local, hierarchical, or atlas-level marker sets; if future users need pooled statistical tests, the report should also retain sufficient summaries such as means, variances, and sample sizes. One-vs-all lists and flat cell type--gene tables generally cannot support either reuse case on their own.
+
+\newpage
+\bibliographystyle{unsrtnat}
+\bibliography{../references}
+\end{document}
