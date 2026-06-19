@@ -1,8 +1,7 @@
 # Paper Figure Manifest
 
-This manifest records manuscript-facing figure inputs and cleanup decisions. A
-file listed here as active should stay in the main tree. Superseded outputs are
-kept under `archive/` rather than deleted.
+This manifest records manuscript-facing figure inputs. A file listed here as
+active should stay in the main tree.
 
 ## Active Manuscript Dependencies
 
@@ -80,32 +79,10 @@ Shared upstream tables used by Figure 3:
 - `analysis/build_fig3_local_global_marker_identifiability.py`
 - `analysis/build_cap_liver_local_global_deg.py`
 - `analysis/build_cap_llmarkers_comparison.py`
+- `analysis/build_marker_corpus.py`
 - `analysis/build_local_global_marker_analysis.py`
 - `analysis/build_marker_identifiability_analysis.py`
 - `analysis/cross_study_gene_space.py`
 - `analysis/scripts/ingest_cap_datasets.py`
 - `analysis/scripts/render_paper_standalone_figures.sh`
 - `analysis/formal/`
-
-## Legacy And Archive Rules
-
-- Do not archive raw manuscript markdown, marker JSON, DEG tables, metadata, or
-  reviewed evidence files.
-- Do not archive `analysis/formal/`; the Lean formalization is an active support
-  artifact.
-- Keep data ingestion scripts active even when large source downloads are
-  ignored by git.
-- Legacy composite figures are not included directly in `main.tex`. Recreate
-  them only when needed with `LLMARKERS_WRITE_LEGACY_FIGURES=1`.
-- Superseded panels and prototype outputs should move to `archive/` with a
-  README entry that records why they are not manuscript dependencies.
-
-## Current Archive Pass
-
-The 2026-06-13 cleanup pass archives:
-
-- the old Figure 3 six-panel monolith superseded by the LaTeX wrapper and
-  panel PDFs;
-- old CAP liver diagnostic composites superseded by Figure 3 panels G-I;
-- old-lettered exploratory Figure 3 null/Jaccard panels;
-- the standalone prototype same-label Jaccard distribution script and outputs.

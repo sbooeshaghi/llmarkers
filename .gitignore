@@ -33,8 +33,8 @@ docs/notes/hce-classification/
 docs/jats/
 docs/mx/
 
-# Local CTP prototype, developed separately from the paper repo
-archive/parct/
+# Local scratch directories not part of this repository
+archive/
 
 # Exploratory analysis drafts that are not part of the committed figure pipeline
 analysis/build_cross_study_gene_id_caches.py
@@ -47,7 +47,7 @@ analysis/hca_extraction_eda.py
 analysis/restore_same_label_partial_review_from_markdown.py
 analysis/tcell_ctp_contained_analysis.ipynb
 
-# Superseded figure prototypes kept out of the committed paper pipeline
+# Exploratory figure drafts kept out of the committed paper pipeline
 analysis/build_fig2_benchmark_signal.py
 analysis/build_fig3_llm_recovery.py
 analysis/build_tcell_profile_graph_comparison.py
@@ -216,10 +216,6 @@ analysis/figures/cross_study_pairwise_jaccard.pdf
 analysis/figures/cross_study_pairwise_jaccard.png
 analysis/figures/ctp_corpus_summary.pdf
 analysis/figures/ctp_corpus_summary.png
-analysis/figures/fig5_cluster_prototypes.pdf
-analysis/figures/fig5_cluster_prototypes.png
-analysis/figures/fig5_nomenclature_weights.pdf
-analysis/figures/fig5_nomenclature_weights.png
 analysis/figures/fig_all_methods.pdf
 analysis/figures/fig_benchmark_evidence_scale.pdf
 analysis/figures/fig_benchmark_frac_shared.pdf
@@ -269,15 +265,14 @@ analysis/figures/marker_strength_*.png
 analysis/figures/tcell_ctp_similarity_heatmaps.pdf
 analysis/figures/tcell_ctp_similarity_heatmaps.png
 
-# Generated prototype result tables superseded by the current figure scripts
+# Generated exploratory result tables not used by the manuscript build
 analysis/results/cross_study_neighborhood_overlap_at_k.tsv
 analysis/results/fig3_llm_recovery.tsv
 analysis/results/fig5_cluster_gene_coverage_purity.tsv
 analysis/results/fig5_exact_tcell_marker_subclusters.tsv
 analysis/results/fig5_marker_cluster_summary.tsv
-analysis/results/fig5_nomenclature_pair_scores.tsv
-analysis/results/marker_stability_prototype_examples.md
-analysis/results/marker_stability_prototype_scores.tsv
+analysis/results/marker_corpus_examples.md
+analysis/results/marker_corpus_scores.tsv
 analysis/results/tcell_marker_hierarchy_clusters.tsv
 analysis/results/tcell_marker_hierarchy_gene_scores.tsv
 analysis/results/tcell_marker_hierarchy_profiles.tsv

@@ -28,7 +28,6 @@ docs/poster/               Poster source and poster-specific tables
 docs/notes/                Related design notes and schema documentation
 analysis/scripts/          Data ingestion, export, and database build scripts
 analysis/formal/           Lean formalization of marker identifiability claims
-archive/                   Superseded artifacts kept for provenance
 ```
 
 ## Manuscript Figure Pipeline
@@ -47,13 +46,7 @@ uv run --locked python analysis/build_cap_liver_local_global_deg.py
 bash analysis/scripts/render_paper_standalone_figures.sh
 ```
 
-Figure dependencies and archive decisions are tracked in
-`docs/paper/figure_manifest.md`. Legacy composite PDFs that are no longer included
-directly in the manuscript can be regenerated for poster/back-compat use with:
-
-```bash
-LLMARKERS_WRITE_LEGACY_FIGURES=1 uv run --locked python analysis/build_fig3_local_global_marker_identifiability.py
-```
+Figure dependencies are tracked in `docs/paper/figure_manifest.md`.
 
 The CAP liver panels require two large AnnData files that are not tracked in
 git. Download instructions, byte counts, and SHA-256 checksums are in

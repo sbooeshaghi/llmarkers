@@ -42,7 +42,6 @@ SUBSAMPLING_REPS = int(os.environ.get("CAP_LIVER_SUBSAMPLING_REPS", "50"))
 SUBSAMPLING_FRACTION = float(os.environ.get("CAP_LIVER_SUBSAMPLING_FRACTION", "0.8"))
 SUBSAMPLING_MAX_PER_CELL_TYPE = int(os.environ.get("CAP_LIVER_SUBSAMPLING_MAX_PER_CELL_TYPE", "10000"))
 SUBSAMPLING_SEED = int(os.environ.get("CAP_LIVER_SUBSAMPLING_SEED", "1440"))
-WRITE_LEGACY_FIGURES = os.environ.get("LLMARKERS_WRITE_LEGACY_FIGURES") == "1"
 
 # CAP ontology columns show that these local myeloid labels map onto the broad
 # author labels used in the all-cells liver atlas.
@@ -483,18 +482,12 @@ def write_outputs(
         subsampling_summary_df.to_csv(RECOVERY_SUBSAMPLING_SUMMARY_PATH, sep="\t", index=False)
 
     plot_summary(summary_df, marker_df, subsampling_summary_df)
-    if WRITE_LEGACY_FIGURES:
-        plot_retrieval(summary_df)
-
     print(f"Wrote {summary_path.relative_to(REPO_ROOT)}")
     print(f"Wrote {marker_path.relative_to(REPO_ROOT)}")
     print(f"Wrote {top_path.relative_to(REPO_ROOT)}")
     if subsampling_df is not None and subsampling_summary_df is not None:
         print(f"Wrote {RECOVERY_SUBSAMPLING_PATH.relative_to(REPO_ROOT)}")
         print(f"Wrote {RECOVERY_SUBSAMPLING_SUMMARY_PATH.relative_to(REPO_ROOT)}")
-    if WRITE_LEGACY_FIGURES:
-        print(f"Wrote analysis/figures/cap_liver_local_global_marker_lift.pdf")
-        print(f"Wrote analysis/figures/cap_liver_local_global_marker_retrieval.pdf")
 
 
 def plot_summary(
@@ -510,27 +503,6 @@ def plot_summary(
     ]
     y = np.arange(len(label_order))
     ordered = summary_df.set_index("local_label").loc[label_order]
-
-    if WRITE_LEGACY_FIGURES:
-        fig, axes = plt.subplots(1, 3, figsize=(13.5, 4.6), gridspec_kw={"width_ratios": [1.15, 1.15, 1.0]})
-        draw_marker_recovery_panel(
-            axes[0],
-            ordered,
-            y,
-            display_label_order,
-            show_ylabels=True,
-            subsampling_summary_df=subsampling_summary_df,
-        )
-        draw_de_stability_panel(axes[1], ordered, y, display_label_order, show_ylabels=False)
-        draw_marker_retrieval_panel(axes[2], ordered, y, display_label_order, show_ylabels=False)
-
-        for axis in axes:
-            style_axis(axis)
-
-        fig.tight_layout(w_pad=1.4)
-        for ext in ("pdf", "png"):
-            fig.savefig(FIGURES_DIR / f"cap_liver_local_global_marker_lift.{ext}", dpi=300, bbox_inches="tight")
-        plt.close(fig)
 
     save_single_panel(
         PANEL_G_PATH,
@@ -713,62 +685,6 @@ def save_single_panel(
         fig.subplots_adjust(**adjust)
     fig.savefig(pdf_path)
     fig.savefig(png_path, dpi=300)
-    plt.close(fig)
-
-
-def plot_retrieval(summary_df: pd.DataFrame) -> None:
-    ordered = summary_df.sort_values("global_label").copy()
-    label_order = ordered["local_label"].tolist()
-    y = np.arange(len(label_order))
-
-    fig, axes = plt.subplots(1, 2, figsize=(8.6, 4.4), sharey=True)
-    metric_specs = [
-        ("average_precision", "Average precision", 0.62),
-        ("max_f1", "Maximum F1", 1.0),
-    ]
-    for ax, (metric, title, xmax) in zip(axes, metric_specs):
-        local_col = f"local_reported_{metric}"
-        global_col = f"global_recovery_of_local_reported_{metric}"
-        for i, row in enumerate(ordered.itertuples(index=False)):
-            local_value = getattr(row, local_col)
-            global_value = getattr(row, global_col)
-            ax.plot([global_value, local_value], [i, i], color="#B0B0B0", linewidth=1.0, zorder=1)
-        ax.scatter(
-            ordered[global_col],
-            y,
-            facecolor="black",
-            edgecolor="black",
-            linewidth=0.75,
-            s=34,
-            label="global DE",
-            zorder=3,
-        )
-        ax.scatter(
-            ordered[local_col],
-            y,
-            facecolor="white",
-            edgecolor="black",
-            linewidth=0.75,
-            s=34,
-            label="local DE",
-            zorder=2,
-        )
-        ax.set_yticks(y)
-        if metric == "average_precision":
-            ax.set_yticklabels(label_order, fontsize=8)
-        else:
-            ax.tick_params(labelleft=False)
-        ax.invert_yaxis()
-        ax.set_xlim(0, xmax)
-        ax.set_xlabel(title)
-        ax.set_title(title, fontsize=10, weight="bold")
-        ax.spines["top"].set_visible(False)
-        ax.spines["right"].set_visible(False)
-    axes[0].legend(frameon=False, fontsize=8, loc="lower right")
-
-    fig.tight_layout(w_pad=1.2)
-    for ext in ("pdf", "png"):
-        fig.savefig(FIGURES_DIR / f"cap_liver_local_global_marker_retrieval.{ext}", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 

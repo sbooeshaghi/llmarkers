@@ -30,8 +30,8 @@ DATASETS = {
 MIN_MARKERS = 3
 EPS = 1e-6
 
-SCORES_PATH = RESULTS_DIR / "marker_stability_prototype_scores.tsv"
-REPORT_PATH = RESULTS_DIR / "marker_stability_prototype_examples.md"
+SCORES_PATH = RESULTS_DIR / "marker_corpus_scores.tsv"
+REPORT_PATH = RESULTS_DIR / "marker_corpus_examples.md"
 FIGURES_DIR = REPO_ROOT / "analysis" / "figures"
 PLOT_PATH = FIGURES_DIR / "marker_strength_coverage_purity.pdf"
 PLOT_PNG_PATH = FIGURES_DIR / "marker_strength_coverage_purity.png"
@@ -770,9 +770,9 @@ def write_report(
     ]
 
     report = [
-        "# Marker Stability Prototype",
+        "# Marker Corpus Summary",
         "",
-        "This prototype estimates how strongly a reported gene functions as a marker for each literature-defined cell-type neighborhood.",
+        "This report estimates how strongly a reported gene functions as a marker for each literature-defined cell-type neighborhood.",
         "",
         "## Assumptions",
         "",
@@ -780,7 +780,7 @@ def write_report(
         "- Inputs are regenerated from raw `markers.json` files in `data/biorxiv/meca` and `data/hca/manuscripts`.",
         "- Rows are restricted to human markers with a mapped gene ID and source verification.",
         f"- Profiles with fewer than {MIN_MARKERS} markers are excluded.",
-        "- Cell-type neighborhoods are assigned with explicit regular expressions over reported labels. This is a prototype, not an ontology mapping.",
+        "- Cell-type neighborhoods are assigned with explicit regular expressions over reported labels, not ontology mapping.",
         "- Stability here means stability of literature reporting across papers, not invariant expression across all cells or conditions.",
         "- Candidate labels are restricted to two categories: `putative cell-type marker` and `putative cell-state marker`. Weak or underpowered rows are left unlabeled.",
         "",
@@ -789,7 +789,7 @@ def write_report(
         f"- Analysis-ready marker rows: {len(records_df):,}",
         f"- Marker profiles before size filtering: {len(profiles_df):,}",
         f"- Marker profiles with at least {MIN_MARKERS} markers: {len(filtered_profiles_df):,}",
-        f"- Profiles assigned to a prototype neighborhood: {filtered_profiles_df['neighborhood'].ne('').sum():,}",
+        f"- Profiles assigned to a neighborhood: {filtered_profiles_df['neighborhood'].ne('').sum():,}",
         "",
         "## Diagnostic Plot",
         "",

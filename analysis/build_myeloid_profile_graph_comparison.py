@@ -13,7 +13,7 @@ from matplotlib.colors import BoundaryNorm, ListedColormap
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch, Rectangle
 
-from build_marker_stability_prototype import build_records
+from build_marker_corpus import build_records
 from cross_study_gene_space import REPO_ROOT, RESULTS_DIR, build_profile_summary, split_marker_text
 from marker_label_utils import connected_components, label_relation, normalize_label
 

@@ -92,7 +92,7 @@ def classify_record(record: Any) -> str:
     if ("cell_type" in record or "cell_type_label" in record) and (
         "gene" in record or "feature" in record or "feature_label" in record
     ):
-        return "legacy_flat"
+        return "flat_v0"
 
     return "unknown"
 
@@ -188,7 +188,7 @@ def normalize_nested(record: dict[str, Any]) -> dict[str, Any]:
     }
 
     out = ordered_with_extras(record, values)
-    out["_legacy_record"] = {
+    out["_source_record"] = {
         "extracted": extracted,
         "derived": derived,
         "source": source,
@@ -196,7 +196,7 @@ def normalize_nested(record: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
-def normalize_legacy_flat(record: dict[str, Any]) -> dict[str, Any]:
+def normalize_flat_v0(record: dict[str, Any]) -> dict[str, Any]:
     source = record.get("source") if isinstance(record.get("source"), dict) else {}
     group_label = (
         record.get("group_label")
@@ -225,11 +225,11 @@ def normalize_legacy_flat(record: dict[str, Any]) -> dict[str, Any]:
 
     out = ordered_with_extras(record, values)
     if source:
-        out["_legacy_source"] = source
+        out["_source"] = source
     if "cell_source" in record:
-        out["_legacy_cell_source"] = record.get("cell_source")
+        out["_source_cell_source"] = record.get("cell_source")
     if "cell_state" in record:
-        out["_legacy_cell_state"] = record.get("cell_state")
+        out["_source_cell_state"] = record.get("cell_state")
     return out
 
 
@@ -239,8 +239,8 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         return normalize_flat(record)
     if kind == "nested":
         return normalize_nested(record)
-    if kind == "legacy_flat":
-        return normalize_legacy_flat(record)
+    if kind == "flat_v0":
+        return normalize_flat_v0(record)
     raise ValueError(f"Cannot normalize record classified as {kind}")
 
 
@@ -273,7 +273,7 @@ def analyze_file(path: Path) -> dict[str, Any]:
     for record in records:
         kind = classify_record(record)
         result["counts"][kind] += 1
-        if kind in {"nested", "legacy_flat", "flat_missing_keys"}:
+        if kind in {"nested", "flat_v0", "flat_missing_keys"}:
             result["write_needed"] = True
         if isinstance(record, dict):
             for field in CANONICAL_FIELDS:
@@ -299,7 +299,7 @@ def migrate_file(path: Path) -> bool:
             migrated.append(record)
             continue
         kind = classify_record(record)
-        if kind in {"flat", "flat_missing_keys", "nested", "legacy_flat"}:
+        if kind in {"flat", "flat_missing_keys", "nested", "flat_v0"}:
             new_record = normalize_record(record)
             migrated.append(new_record)
             if new_record != record:

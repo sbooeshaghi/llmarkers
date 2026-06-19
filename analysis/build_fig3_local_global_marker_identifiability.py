@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import math
-import os
 from collections import Counter, defaultdict
 from collections.abc import Callable
 from itertools import combinations
@@ -21,11 +20,8 @@ from marker_label_utils import label_relation, normalize_label
 FIGURE_DIR = REPO_ROOT / "analysis" / "figures"
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 
-FIGURE_PATH = FIGURE_DIR / "fig3_local_global_marker_identifiability.pdf"
-FIGURE_PNG_PATH = FIGURE_DIR / "fig3_local_global_marker_identifiability.png"
 MANUSCRIPT_WRAPPER_PATH = REPO_ROOT / "docs" / "paper" / "src" / "figures" / "fig3_cross_study_unification.tex"
 MANUSCRIPT_BODY_PATH = REPO_ROOT / "docs" / "paper" / "src" / "figures" / "fig3_cross_study_unification_body.tex"
-WRITE_LEGACY_FIGURES = os.environ.get("LLMARKERS_WRITE_LEGACY_FIGURES") == "1"
 PANEL_A_PATH = FIGURE_DIR / "fig3_panel_a_joint_distribution.pdf"
 PANEL_A_PNG_PATH = FIGURE_DIR / "fig3_panel_a_joint_distribution.png"
 PANEL_B_PATH = FIGURE_DIR / "fig3_panel_b_nomenclature_examples.pdf"
@@ -1896,7 +1892,7 @@ def write_report(
             [
                 "# Figure 3 Local-Global Marker Identifiability",
                 "",
-                "This prototype is the manuscript-facing version of the Lean-derived marker identifiability analysis.",
+                "This report summarizes the manuscript-facing Lean-derived marker identifiability analysis.",
                 "The formal claim is that local separation within papers does not imply global atlas-scale separation.",
                 "",
                 f"Manuscript wrapper: `{MANUSCRIPT_WRAPPER_PATH.relative_to(REPO_ROOT)}`",
@@ -1904,9 +1900,6 @@ def write_report(
                 "",
                 "Panel PDFs: `analysis/figures/fig3_panel_a_joint_distribution.pdf` through "
                 "`analysis/figures/fig3_panel_f_cap_local_global_recovery.pdf`.",
-                "",
-                f"Legacy composite: `{FIGURE_PATH.relative_to(REPO_ROOT)}` "
-                "when `LLMARKERS_WRITE_LEGACY_FIGURES=1`.",
                 "",
                 "## Summary",
                 "",
@@ -2073,62 +2066,8 @@ def main() -> None:
         ),
     )
 
-    if WRITE_LEGACY_FIGURES:
-        fig = plt.figure(figsize=(10.4, 7.2))
-        gs = fig.add_gridspec(
-            2,
-            3,
-            width_ratios=[1.0, 1.22, 1.04],
-            hspace=0.28,
-            wspace=0.50,
-        )
-        axes = [
-            fig.add_subplot(gs[0, 0]),
-            fig.add_subplot(gs[0, 1]),
-            fig.add_subplot(gs[0, 2]),
-            fig.add_subplot(gs[1, 0]),
-            fig.add_subplot(gs[1, 1]),
-            fig.add_subplot(gs[1, 2]),
-        ]
-        plot_joint_distribution(axes[0], joint_df, "LLMarkers extracted corpus")
-        plot_labeling_disagreement_examples(
-            axes[1],
-            same_label_examples_df,
-            different_label_examples_df,
-            same_label_jaccard_values_df,
-            same_label_jaccard_summary_df,
-            "LLMarkers",
-            "LLMarkers extracted corpus",
-        )
-        plot_label_local_global_recovery(axes[2], label_recovery_df, "LLMarkers extracted corpus")
-        plot_joint_distribution(axes[3], cap_joint_df, "CAP human profiles, cross-project")
-        plot_labeling_disagreement_examples(
-            axes[4],
-            cap_same_label_examples_df,
-            cap_different_label_examples_df,
-            same_label_jaccard_values_df,
-            same_label_jaccard_summary_df,
-            "CAP labels",
-            "CAP human profiles, cross-project",
-        )
-        plot_label_local_global_recovery(
-            axes[5],
-            cap_ontology_recovery_df,
-            "CAP ontology terms, cross-project",
-            label_positions=cap_label_positions,
-        )
-
-        for letter, ax in zip("ABCDEF", axes, strict=True):
-            ax.text(-0.14, 1.07, letter, transform=ax.transAxes, fontsize=12, fontweight="bold", ha="left", va="bottom")
-
-        fig.savefig(FIGURE_PATH, bbox_inches="tight")
-        fig.savefig(FIGURE_PNG_PATH, bbox_inches="tight", dpi=300)
-        plt.close(fig)
     write_report(summary, label_df, transfer_label_df, selected_df)
 
-    if WRITE_LEGACY_FIGURES:
-        print(f"Wrote {FIGURE_PATH.relative_to(REPO_ROOT)}")
-        print(f"Wrote {FIGURE_PNG_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {PANEL_A_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {PANEL_B_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {PANEL_C_PATH.relative_to(REPO_ROOT)}")

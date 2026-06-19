@@ -7,7 +7,7 @@ from itertools import combinations
 import numpy as np
 import pandas as pd
 
-from build_marker_stability_prototype import assign_neighborhood, build_records
+from build_marker_corpus import assign_neighborhood, build_records
 from cross_study_gene_space import REPO_ROOT, RESULTS_DIR, build_profile_summary, split_marker_text
 from marker_label_utils import normalize_label
 

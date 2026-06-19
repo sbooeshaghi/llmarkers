@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -22,7 +21,8 @@ PANEL_B_PATH = FIGURE_DIR / "fig2_panel_b_optimal_deg_cutoff.pdf"
 PANEL_B_PNG_PATH = FIGURE_DIR / "fig2_panel_b_optimal_deg_cutoff.png"
 PANEL_C_PATH = FIGURE_DIR / "fig2_panel_c_llm_recovery.pdf"
 PANEL_C_PNG_PATH = FIGURE_DIR / "fig2_panel_c_llm_recovery.png"
-WRITE_LEGACY_FIGURES = os.environ.get("LLMARKERS_WRITE_LEGACY_FIGURES") == "1"
+POSTER_FIGURE_PATH = FIGURE_DIR / "fig_marker_recovery.pdf"
+POSTER_FIGURE_PNG_PATH = FIGURE_DIR / "fig_marker_recovery.png"
 
 DATASETS = [
     ("adipose_Emont2022", "Emont"),
@@ -441,21 +441,20 @@ def main() -> None:
     cutoffs = build_cutoff_results()
     llm_results = build_llm_results()
 
-    if WRITE_LEGACY_FIGURES:
-        fig, axes = plt.subplots(
-            1,
-            3,
-            figsize=(12.8, 3.35),
-            gridspec_kw={"width_ratios": [1.12, 1.04, 1.20]},
-        )
-        plot_summary_table(axes[0], summary)
-        plot_cutoff_panel(axes[1], cutoffs)
-        plot_llm_panel(axes[2], llm_results)
-        fig.subplots_adjust(left=0.04, right=0.99, bottom=0.22, top=0.93, wspace=0.36)
+    fig, axes = plt.subplots(
+        1,
+        3,
+        figsize=(12.8, 3.35),
+        gridspec_kw={"width_ratios": [1.12, 1.04, 1.20]},
+    )
+    plot_summary_table(axes[0], summary)
+    plot_cutoff_panel(axes[1], cutoffs)
+    plot_llm_panel(axes[2], llm_results)
+    fig.subplots_adjust(left=0.04, right=0.99, bottom=0.22, top=0.93, wspace=0.36)
 
-        fig.savefig(FIGURE_DIR / "fig_marker_recovery.pdf", bbox_inches="tight")
-        fig.savefig(FIGURE_DIR / "fig_marker_recovery.png", bbox_inches="tight", dpi=240)
-        plt.close(fig)
+    fig.savefig(POSTER_FIGURE_PATH, bbox_inches="tight")
+    fig.savefig(POSTER_FIGURE_PNG_PATH, bbox_inches="tight", dpi=240)
+    plt.close(fig)
 
     save_single_panel(
         PANEL_A_PATH,
@@ -478,8 +477,7 @@ def main() -> None:
         figsize=(4.3, 3.35),
         adjust={"left": 0.14, "right": 0.98, "bottom": 0.22, "top": 0.94},
     )
-    if WRITE_LEGACY_FIGURES:
-        print(f"saved {FIGURE_DIR / 'fig_marker_recovery.pdf'}")
+    print(f"saved {POSTER_FIGURE_PATH}")
     print(f"saved {PANEL_A_PATH}")
     print(f"saved {PANEL_B_PATH}")
     print(f"saved {PANEL_C_PATH}")
