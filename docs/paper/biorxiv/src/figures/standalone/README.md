@@ -12,7 +12,7 @@ bash analysis/scripts/render_paper_standalone_figures.sh
 Outputs are written to:
 
 ```text
-docs/paper/src/figures/standalone/build/
+docs/paper/biorxiv/src/figures/standalone/build/
 ```
 
 The wrappers are intentionally thin. Figure 1 imports the shared TikZ body used

@@ -5,17 +5,17 @@ active should stay in the main tree.
 
 ## Active Manuscript Dependencies
 
-`docs/paper/src/main.tex` imports thin LaTeX wrappers from `docs/paper/src/figures/`.
+`docs/paper/biorxiv/src/main.tex` imports thin LaTeX wrappers from `docs/paper/biorxiv/src/figures/`.
 
 | Role | Paper reference | LaTeX wrapper/body | Figure artifacts | Source |
 | --- | --- | --- | --- | --- |
-| Figure 1 | `fig:paper_celltype_joint` | `docs/paper/src/figures/fig_paper_celltype_joint.tex`, `docs/paper/src/figures/fig_paper_celltype_joint_body.tex` | TikZ in body file | `docs/notes/fig1.md` |
-| Figure 2 | `fig:marker_selection`, `fig:llm_curation` | `docs/paper/src/figures/fig2_marker_recovery.tex`, `docs/paper/src/figures/fig2_marker_recovery_body.tex` | `analysis/figures/fig2_panel_a_benchmark_summary.pdf`, `analysis/figures/fig2_panel_b_optimal_deg_cutoff.pdf`, `analysis/figures/fig2_panel_c_llm_recovery.pdf` | `analysis/build_fig2_marker_recovery.py` |
-| Figure 3 A-F | `fig:cross_study_unification` | `docs/paper/src/figures/fig3_cross_study_unification.tex`, `docs/paper/src/figures/fig3_cross_study_unification_body.tex` | `analysis/figures/fig3_panel_a_joint_distribution.pdf` through `analysis/figures/fig3_panel_f_cap_local_global_recovery.pdf` | `analysis/build_fig3_local_global_marker_identifiability.py` |
+| Figure 1 | `fig:paper_celltype_joint` | `docs/paper/biorxiv/src/figures/fig_paper_celltype_joint.tex`, `docs/paper/biorxiv/src/figures/fig_paper_celltype_joint_body.tex` | TikZ in body file | `docs/notes/fig1.md` |
+| Figure 2 | `fig:marker_selection`, `fig:llm_curation` | `docs/paper/biorxiv/src/figures/fig2_marker_recovery.tex`, `docs/paper/biorxiv/src/figures/fig2_marker_recovery_body.tex` | `analysis/figures/fig2_panel_a_benchmark_summary.pdf`, `analysis/figures/fig2_panel_b_optimal_deg_cutoff.pdf`, `analysis/figures/fig2_panel_c_llm_recovery.pdf` | `analysis/build_fig2_marker_recovery.py` |
+| Figure 3 A-F | `fig:cross_study_unification` | `docs/paper/biorxiv/src/figures/fig3_cross_study_unification.tex`, `docs/paper/biorxiv/src/figures/fig3_cross_study_unification_body.tex` | `analysis/figures/fig3_panel_a_joint_distribution.pdf` through `analysis/figures/fig3_panel_f_cap_local_global_recovery.pdf` | `analysis/build_fig3_local_global_marker_identifiability.py` |
 | Figure 3 G-I | `fig:cross_study_unification` | same wrapper/body as Figure 3 A-F | `analysis/figures/fig3_panel_g_cap_liver_reported_marker_recovery.pdf`, `analysis/figures/fig3_panel_h_cap_liver_de_stability.pdf`, `analysis/figures/fig3_panel_i_cap_liver_marker_retrieval.pdf` | `analysis/build_cap_liver_local_global_deg.py` |
-| Supplementary Hildreth figure | `fig:hildreth_detail` | `docs/paper/src/figures/figs1_hildreth_detail.tex` | `analysis/figures/fig_hildreth_detail.pdf` | `analysis/lfc_comparison.ipynb` |
-| Supplementary benchmark table | `tab:benchmark` | inline in `docs/paper/src/main.tex` | table source in manuscript tree | benchmark curation notebooks |
-| Supplementary LLM curation table | `tab:llm_curation` | inline in `docs/paper/src/main.tex` | table source in manuscript tree | `analysis/build_fig2_marker_recovery.py` |
+| Supplementary Hildreth figure | `fig:hildreth_detail` | `docs/paper/biorxiv/src/figures/figs1_hildreth_detail.tex` | `analysis/figures/fig_hildreth_detail.pdf` | `analysis/lfc_comparison.ipynb` |
+| Supplementary benchmark table | `tab:benchmark` | inline in `docs/paper/biorxiv/src/main.tex` | table source in manuscript tree | benchmark curation notebooks |
+| Supplementary LLM curation table | `tab:llm_curation` | inline in `docs/paper/biorxiv/src/main.tex` | table source in manuscript tree | `analysis/build_fig2_marker_recovery.py` |
 
 Render standalone figure wrappers with:
 
@@ -23,7 +23,7 @@ Render standalone figure wrappers with:
 bash analysis/scripts/render_paper_standalone_figures.sh
 ```
 
-Outputs are written to `docs/paper/src/figures/standalone/build/`, which is ignored
+Outputs are written to `docs/paper/biorxiv/src/figures/standalone/build/`, which is ignored
 as LaTeX build output.
 
 ## Active Figure Result Files

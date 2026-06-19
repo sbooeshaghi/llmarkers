@@ -21,8 +21,8 @@ from marker_label_utils import label_relation, normalize_label
 FIGURE_DIR = REPO_ROOT / "analysis" / "figures"
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 
-MANUSCRIPT_WRAPPER_PATH = REPO_ROOT / "docs" / "paper" / "src" / "figures" / "fig3_cross_study_unification.tex"
-MANUSCRIPT_BODY_PATH = REPO_ROOT / "docs" / "paper" / "src" / "figures" / "fig3_cross_study_unification_body.tex"
+MANUSCRIPT_WRAPPER_PATH = REPO_ROOT / "docs" / "paper" / "biorxiv" / "src" / "figures" / "fig3_cross_study_unification.tex"
+MANUSCRIPT_BODY_PATH = REPO_ROOT / "docs" / "paper" / "biorxiv" / "src" / "figures" / "fig3_cross_study_unification_body.tex"
 PANEL_A_PATH = FIGURE_DIR / "fig3_panel_a_joint_distribution.pdf"
 PANEL_A_PNG_PATH = FIGURE_DIR / "fig3_panel_a_joint_distribution.png"
 PANEL_B_PATH = FIGURE_DIR / "fig3_panel_b_nomenclature_examples.pdf"
