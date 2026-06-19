@@ -80,7 +80,9 @@ Shared upstream tables used by Figure 3:
 - `analysis/build_cap_liver_local_global_deg.py`
 - `analysis/build_cap_llmarkers_comparison.py`
 - `analysis/build_marker_corpus.py`
+- `analysis/build_hca_extraction_summary.py`
 - `analysis/build_local_global_marker_analysis.py`
+- `analysis/build_local_global_marker_lift.py`
 - `analysis/build_marker_identifiability_analysis.py`
 - `analysis/cross_study_gene_space.py`
 - `analysis/scripts/ingest_cap_datasets.py`

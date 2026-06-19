@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import math
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 
@@ -19,9 +18,6 @@ SELECTED_GENES_PATH = RESULTS_DIR / "marker_identifiability_selected_genes.tsv"
 DUPLICATE_SIGNATURES_PATH = RESULTS_DIR / "marker_identifiability_duplicate_signatures.tsv"
 PAIR_CONSTRAINTS_PATH = RESULTS_DIR / "marker_identifiability_pair_constraints.tsv"
 REPORT_PATH = RESULTS_DIR / "marker_identifiability_report.md"
-
-TCELL_MEMBERSHIP_PATH = RESULTS_DIR / "tcell_marker_cluster_membership.tsv"
-MYELOID_MEMBERSHIP_PATH = RESULTS_DIR / "myeloid_marker_cluster_membership.tsv"
 
 COVERAGE_THRESHOLDS = [0.05, 0.10, 0.20]
 ILP_MAX_CONSTRAINTS = 6000
@@ -67,31 +63,8 @@ def load_profiles() -> tuple[pd.DataFrame, dict[str, str]]:
     return profiles_df, id_to_name
 
 
-def profile_uid(row: pd.Series) -> str:
-    return f"{row['source_corpus']}|{row['paper_id']}|{row['cell_type']}"
-
-
-def add_marker_cluster_partitions(profiles_df: pd.DataFrame) -> pd.DataFrame:
-    df = profiles_df.copy()
-    df["tcell_marker_cluster"] = pd.NA
-    df["myeloid_marker_cluster"] = pd.NA
-    for path, col in [
-        (TCELL_MEMBERSHIP_PATH, "tcell_marker_cluster"),
-        (MYELOID_MEMBERSHIP_PATH, "myeloid_marker_cluster"),
-    ]:
-        if not path.exists():
-            continue
-        membership_df = pd.read_csv(path, sep="\t")
-        membership_df["profile_uid"] = membership_df.apply(profile_uid, axis=1)
-        mapping = {
-            row.profile_uid: f"C{int(row.component)}" for row in membership_df.itertuples(index=False)
-        }
-        df[col] = df["profile_uid"].map(mapping)
-    return df
-
-
 def partition_specs(profiles_df: pd.DataFrame) -> list[PartitionSpec]:
-    specs = [
+    return [
         PartitionSpec(
             name="broad_neighborhoods",
             group_col="neighborhood",
@@ -105,25 +78,6 @@ def partition_specs(profiles_df: pd.DataFrame) -> list[PartitionSpec]:
             source="normalized reported cell type label",
         ),
     ]
-    if profiles_df["tcell_marker_cluster"].notna().any():
-        specs.append(
-            PartitionSpec(
-                name="tcell_marker_clusters",
-                group_col="tcell_marker_cluster",
-                min_group_profiles=3,
-                source="T-cell marker-derived clusters",
-            )
-        )
-    if profiles_df["myeloid_marker_cluster"].notna().any():
-        specs.append(
-            PartitionSpec(
-                name="myeloid_marker_clusters",
-                group_col="myeloid_marker_cluster",
-                min_group_profiles=3,
-                source="myeloid marker-derived clusters",
-            )
-        )
-    return specs
 
 
 def grouped_profiles(profiles_df: pd.DataFrame, spec: PartitionSpec) -> pd.DataFrame:
@@ -518,7 +472,6 @@ def write_report(summary_df: pd.DataFrame, selected_df: pd.DataFrame, duplicate_
 
 def main() -> None:
     profiles_df, id_to_name = load_profiles()
-    profiles_df = add_marker_cluster_partitions(profiles_df)
     global_gene_counts = Counter(gene_id for marker_set in profiles_df["marker_set"] for gene_id in marker_set)
 
     summary_rows = []

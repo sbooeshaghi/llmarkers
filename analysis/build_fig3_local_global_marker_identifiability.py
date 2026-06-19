@@ -3,6 +3,7 @@ from __future__ import annotations
 import math
 from collections import Counter, defaultdict
 from collections.abc import Callable
+from datetime import datetime, timezone
 from itertools import combinations
 from pathlib import Path
 
@@ -51,6 +52,12 @@ CAP_LABEL_DISAGREEMENT_SAME_PATH = RESULTS_DIR / "fig3_cap_same_label_weak_marke
 CAP_LABEL_DISAGREEMENT_DIFFERENT_PATH = RESULTS_DIR / "fig3_cap_different_label_shared_marker_examples.tsv"
 LABEL_DISAGREEMENT_SAME_PATH = RESULTS_DIR / "fig3_same_label_weak_marker_examples.tsv"
 LABEL_DISAGREEMENT_DIFFERENT_PATH = RESULTS_DIR / "fig3_different_label_shared_marker_examples.tsv"
+PDF_METADATA = {
+    "Creator": "llmarkers analysis/build_fig3_local_global_marker_identifiability.py",
+    "Producer": "llmarkers analysis/build_fig3_local_global_marker_identifiability.py",
+    "CreationDate": datetime(2026, 1, 1, tzinfo=timezone.utc),
+    "ModDate": datetime(2026, 1, 1, tzinfo=timezone.utc),
+}
 
 LOCAL_GLOBAL_PAPER_PATH = RESULTS_DIR / "local_global_paper_marker_summary.tsv"
 LOCAL_GLOBAL_LIFTOVER_PATH = RESULTS_DIR / "local_global_profile_marker_liftover.tsv"
@@ -73,8 +80,6 @@ ROLE_COLORS = {
 
 PARTITION_LABELS = {
     "reported_exact_labels_min5": "Exact labels\n(67 signatures)",
-    "tcell_marker_clusters": "T-cell\nclusters",
-    "myeloid_marker_clusters": "Myeloid\nclusters",
 }
 
 LABELS_TO_ANNOTATE = [
@@ -98,8 +103,6 @@ def require_tables() -> tuple[
     pd.DataFrame,
     pd.DataFrame,
     pd.DataFrame,
-    pd.DataFrame,
-    pd.DataFrame,
 ]:
     required = [
         LOCAL_GLOBAL_PAPER_PATH,
@@ -107,7 +110,6 @@ def require_tables() -> tuple[
         LOCAL_GLOBAL_LABEL_PATH,
         LOCAL_GLOBAL_TRANSFER_LABEL_PATH,
         LOCAL_GLOBAL_TRANSFER_SUMMARY_PATH,
-        JOINT_DISTRIBUTION_PATH,
         IDENTIFIABILITY_SUMMARY_PATH,
         IDENTIFIABILITY_SELECTED_PATH,
     ]
@@ -115,6 +117,7 @@ def require_tables() -> tuple[
     if missing:
         raise FileNotFoundError(
             "Missing prerequisite outputs. Run analysis/build_local_global_marker_analysis.py and "
+            "analysis/build_local_global_marker_lift.py and "
             f"analysis/build_marker_identifiability_analysis.py first. Missing: {', '.join(missing)}"
         )
     return (
@@ -123,7 +126,6 @@ def require_tables() -> tuple[
         pd.read_csv(LOCAL_GLOBAL_LABEL_PATH, sep="\t"),
         pd.read_csv(LOCAL_GLOBAL_TRANSFER_LABEL_PATH, sep="\t"),
         pd.read_csv(LOCAL_GLOBAL_TRANSFER_SUMMARY_PATH, sep="\t"),
-        pd.read_csv(JOINT_DISTRIBUTION_PATH, sep="\t", keep_default_na=False),
         pd.read_csv(IDENTIFIABILITY_SUMMARY_PATH, sep="\t"),
         pd.read_csv(IDENTIFIABILITY_SELECTED_PATH, sep="\t"),
     )
@@ -787,6 +789,42 @@ def build_label_local_global_recovery(liftover_df: pd.DataFrame) -> pd.DataFrame
 
 def normalize_marker_relation_for_plot(relation: str) -> str:
     return "None" if relation in {"Different", "None"} else relation
+
+
+def build_cross_paper_joint_distribution(
+    profiles_df: pd.DataFrame,
+    output_path: Path = JOINT_DISTRIBUTION_PATH,
+) -> pd.DataFrame:
+    rows = list(profiles_df.itertuples(index=False))
+    counts: dict[tuple[str, str], int] = defaultdict(int)
+    total = 0
+    for idx_a, idx_b in combinations(range(len(rows)), 2):
+        row_a = rows[idx_a]
+        row_b = rows[idx_b]
+        if row_a.paper_uid == row_b.paper_uid:
+            continue
+        _shared, _union, value = jaccard(row_a.marker_set, row_b.marker_set)
+        label_rel = label_relation(row_a.normalized_cell_type, row_b.normalized_cell_type)
+        marker_rel = normalize_marker_relation_for_plot(cap_marker_relation(value))
+        counts[(label_rel, marker_rel)] += 1
+        total += 1
+
+    out_rows = []
+    for label_rel in ["Exact", "Partial", "Different"]:
+        for marker_rel in ["Exact", "Partial", "None"]:
+            pairs = counts[(label_rel, marker_rel)]
+            out_rows.append(
+                {
+                    "label_relation": label_rel,
+                    "marker_relation": marker_rel,
+                    "pairs": pairs,
+                    "fraction": pairs / total if total else np.nan,
+                    "percent": 100 * pairs / total if total else np.nan,
+                }
+            )
+    out = pd.DataFrame(out_rows)
+    out.to_csv(output_path, sep="\t", index=False)
+    return out
 
 
 def cap_profiles_with_ontology_terms(cap_profiles_df: pd.DataFrame) -> pd.DataFrame:
@@ -1932,7 +1970,7 @@ def save_panel(
 ) -> None:
     fig, ax = plt.subplots(figsize=figsize)
     draw(ax)
-    fig.savefig(pdf_path, bbox_inches="tight")
+    fig.savefig(pdf_path, bbox_inches="tight", metadata=PDF_METADATA)
     fig.savefig(png_path, bbox_inches="tight", dpi=300)
     plt.close(fig)
 
@@ -1944,10 +1982,11 @@ def main() -> None:
         label_df,
         transfer_label_df,
         transfer_summary_df,
-        joint_df,
         ident_summary_df,
         selected_df,
     ) = require_tables()
+    llmarkers_profiles_df, _llmarkers_id_to_name = build_profiles()
+    joint_df = build_cross_paper_joint_distribution(llmarkers_profiles_df, JOINT_DISTRIBUTION_PATH)
     label_recovery_df = build_label_local_global_recovery(liftover_df)
     same_label_examples_df, different_label_examples_df = build_label_disagreement_examples(label_df)
     summary = make_summary(paper_df, liftover_df, label_df, transfer_summary_df, joint_df, ident_summary_df, selected_df)
@@ -1963,7 +2002,6 @@ def main() -> None:
         CAP_ONTOLOGY_LOCAL_GLOBAL_PATH,
         min_profiles=3,
     )
-    llmarkers_profiles_df, _llmarkers_id_to_name = build_profiles()
     llmarkers_jaccard_values_df, llmarkers_jaccard_summary_df = build_same_label_marker_jaccard_distribution(
         llmarkers_profiles_df,
         resource="LLMarkers",

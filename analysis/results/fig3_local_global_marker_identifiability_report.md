@@ -13,7 +13,7 @@ Panel PDFs: `analysis/figures/fig3_panel_a_joint_distribution.pdf` through `anal
 | claim | value |
 | --- | --- |
 | Same reported label with non-identical marker sets | 5,575/5,620 pairs (99.2%) |
-| Different reported labels sharing marker genes | 102,445 cross-study pairs |
+| Different reported labels sharing marker genes | 102,513 cross-study pairs |
 | Papers usually contain locally distinguishable reported-marker profiles | 88.8% |
 | Median local problem size | 5 profiles, 4 genes |
 | Median same-label marker liftover across papers | 0.333 |
@@ -101,12 +101,4 @@ Panel PDFs: `analysis/figures/fig3_panel_a_joint_distribution.pdf` through `anal
 | reported_exact_labels_min5 | MAFB | exchangeable_in_minimum_panels | CELL; PODOCYTE | 0.372 |
 | reported_exact_labels_min5 | PRSS1 | exchangeable_in_minimum_panels | ACINAR CELL | 0.286 |
 | reported_exact_labels_min5 | PECAM1 | exchangeable_in_minimum_panels | EC; ENDOTHELIAL | 0.514 |
-| tcell_marker_clusters | FGFBP2 | exchangeable_in_minimum_panels | C3 | 0.211 |
-| tcell_marker_clusters | IL7R | essential_in_minimum_panels | C1; C5 | 0.252 |
-| tcell_marker_clusters | CD3E | essential_in_minimum_panels | C4; C5 | 0.789 |
-| tcell_marker_clusters | ITGA1 | exchangeable_in_minimum_panels | C6 | 0.500 |
-| tcell_marker_clusters | CCL4 | exchangeable_in_minimum_panels | C7 | 1.000 |
-| myeloid_marker_clusters | CD14 | essential_in_minimum_panels | C1; C3 | 0.659 |
-| myeloid_marker_clusters | CD163 | essential_in_minimum_panels | C2; C3 | 0.455 |
-| myeloid_marker_clusters | TPSB2 | exchangeable_in_minimum_panels | C4 | 0.900 |
 

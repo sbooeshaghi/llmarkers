@@ -2,9 +2,7 @@ from __future__ import annotations
 
 import math
 from collections import Counter, defaultdict
-from pathlib import Path
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
@@ -17,10 +15,10 @@ PAPER_LIFT_PATH = RESULTS_DIR / "local_global_marker_transfer_lift_by_paper.tsv"
 LABEL_LIFT_PATH = RESULTS_DIR / "local_global_marker_transfer_lift_by_label.tsv"
 SUMMARY_PATH = RESULTS_DIR / "local_global_marker_transfer_lift_summary.tsv"
 REPORT_PATH = RESULTS_DIR / "local_global_marker_transfer_lift_report.md"
-FIGURE_PATH = REPO_ROOT / "analysis" / "figures" / "fig_local_global_marker_lift.pdf"
-FIGURE_PNG_PATH = REPO_ROOT / "analysis" / "figures" / "fig_local_global_marker_lift.png"
 
 MIN_COMPARISON_PROFILES = 2
+TSV_FLOAT_FORMAT = "%.12g"
+TSV_NA_REP = "NA"
 
 RELATION_LABELS = {
     "same_exact_label": "Same reported label",
@@ -56,6 +54,12 @@ def marker_recall(marker_set: set[str], comparison_set: set[str]) -> float:
     if not marker_set:
         return np.nan
     return len(marker_set & comparison_set) / len(marker_set)
+
+
+def marker_names(gene_ids: list[str], id_to_name: dict[str, str]) -> str:
+    if not gene_ids:
+        return "NA"
+    return "; ".join(id_to_name.get(gene_id, gene_id) for gene_id in gene_ids[:40])
 
 
 def expected_union_recall(marker_set: set[str], background_prevalence: dict[str, float], n_draws: int) -> float:
@@ -187,8 +191,8 @@ def build_profile_lift() -> tuple[pd.DataFrame, pd.DataFrame]:
                         "union_recall_lift": safe_ratio(observed_union, expected_union),
                         "n_recovered_markers": len(recovered),
                         "n_unrecovered_markers": len(unrecovered),
-                        "recovered_marker_names": "; ".join(id_to_name.get(gene_id, gene_id) for gene_id in recovered[:40]),
-                        "unrecovered_marker_names": "; ".join(id_to_name.get(gene_id, gene_id) for gene_id in unrecovered[:40]),
+                        "recovered_marker_names": marker_names(recovered, id_to_name),
+                        "unrecovered_marker_names": marker_names(unrecovered, id_to_name),
                     }
                 )
 
@@ -446,106 +450,8 @@ def write_report(
     REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def plot_scatter(ax: plt.Axes, lift_df: pd.DataFrame, relation: str, title: str) -> None:
-    df = lift_df.loc[
-        lift_df["relation"].eq(relation)
-        & lift_df["marker_scope"].eq("all_reported_markers")
-        & (lift_df["n_comparison_profiles"] >= MIN_COMPARISON_PROFILES)
-    ].copy()
-    df = df.replace([np.inf, -np.inf], np.nan).dropna(subset=["expected_union_recall", "observed_union_recall", "union_recall_lift"])
-    if df.empty:
-        ax.set_axis_off()
-        return
-    lift = df["union_recall_lift"].clip(lower=0, upper=5)
-    sc = ax.scatter(
-        df["expected_union_recall"],
-        df["observed_union_recall"],
-        c=lift,
-        cmap="viridis",
-        s=10,
-        alpha=0.72,
-        linewidth=0,
-    )
-    ax.plot([0, 1], [0, 1], color="#777777", linewidth=0.7, linestyle="--")
-    ax.set_xlim(-0.02, 1.02)
-    ax.set_ylim(-0.02, 1.02)
-    ax.set_aspect("equal", adjustable="box")
-    ax.set_title(title, fontsize=9, fontweight="bold")
-    ax.set_xlabel("Expected marker recovery")
-    ax.set_ylabel("Observed marker recovery")
-    median_lift = df["union_recall_lift"].median()
-    ax.text(
-        0.04,
-        0.94,
-        f"median lift = {median_lift:.2f}x",
-        transform=ax.transAxes,
-        ha="left",
-        va="top",
-        fontsize=7,
-    )
-    return sc
-
-
-def plot_lift_distribution(ax: plt.Axes, lift_df: pd.DataFrame) -> None:
-    eligible = lift_df.loc[lift_df["n_comparison_profiles"] >= MIN_COMPARISON_PROFILES].copy()
-    eligible = eligible.replace([np.inf, -np.inf], np.nan).dropna(subset=["union_recall_lift"])
-    order = [
-        ("same_exact_label", "all_reported_markers"),
-        ("same_exact_label", "local_private_markers"),
-        ("same_broad_neighborhood", "all_reported_markers"),
-        ("same_broad_neighborhood", "local_private_markers"),
-    ]
-    labels = [
-        "Same label\nall",
-        "Same label\nlocal-only",
-        "Same lineage\nall",
-        "Same lineage\nlocal-only",
-    ]
-    rng = np.random.default_rng(11)
-    for idx, (relation, marker_scope) in enumerate(order, start=1):
-        values = eligible.loc[
-            eligible["relation"].eq(relation)
-            & eligible["marker_scope"].eq(marker_scope),
-            "union_recall_lift",
-        ].dropna()
-        values = values.loc[values > 0]
-        if values.empty:
-            continue
-        log_values = np.log2(values)
-        x = idx + rng.uniform(-0.16, 0.16, size=len(log_values))
-        ax.scatter(x, log_values, s=5, alpha=0.20, color="#4a4a4a", linewidth=0)
-        q1, med, q3 = np.quantile(log_values, [0.25, 0.5, 0.75])
-        ax.plot([idx - 0.24, idx + 0.24], [med, med], color="#b33630", linewidth=1.4)
-        ax.add_patch(
-            plt.Rectangle(
-                (idx - 0.18, q1),
-                0.36,
-                q3 - q1,
-                facecolor="#d9d9d9",
-                edgecolor="#333333",
-                linewidth=0.6,
-                alpha=0.75,
-            )
-        )
-    ax.axhline(0, color="#777777", linewidth=0.8, linestyle="--")
-    ax.set_xticks(range(1, len(labels) + 1), labels, rotation=20, ha="right")
-    ax.tick_params(axis="x", labelsize=7)
-    ax.set_ylabel("log2 lift\n(observed / expected)")
-    ax.set_title("Marker transfer lift", fontsize=9, fontweight="bold")
-
-
-def plot_figure(lift_df: pd.DataFrame) -> None:
-    FIGURE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    fig, axes = plt.subplots(1, 3, figsize=(10.2, 3.3), constrained_layout=True)
-    sc = plot_scatter(axes[0], lift_df, "same_exact_label", "Same reported label")
-    plot_scatter(axes[1], lift_df, "same_broad_neighborhood", "Same broad lineage")
-    plot_lift_distribution(axes[2], lift_df)
-    if sc is not None:
-        cbar = fig.colorbar(sc, ax=axes[:2], shrink=0.72, pad=0.02)
-        cbar.set_label("Lift, clipped at 5x")
-    fig.savefig(FIGURE_PATH)
-    fig.savefig(FIGURE_PNG_PATH, dpi=250)
-    plt.close(fig)
+def write_tsv(df: pd.DataFrame, path) -> None:
+    df.to_csv(path, sep="\t", index=False, float_format=TSV_FLOAT_FORMAT, na_rep=TSV_NA_REP)
 
 
 def main() -> None:
@@ -553,19 +459,16 @@ def main() -> None:
     lift_df, paper_df = build_profile_lift()
     label_df = build_label_summary(lift_df)
     summary_df = build_summary(lift_df)
-    lift_df.to_csv(PROFILE_LIFT_PATH, sep="\t", index=False)
-    paper_df.to_csv(PAPER_LIFT_PATH, sep="\t", index=False)
-    label_df.to_csv(LABEL_LIFT_PATH, sep="\t", index=False)
-    summary_df.to_csv(SUMMARY_PATH, sep="\t", index=False)
+    write_tsv(lift_df, PROFILE_LIFT_PATH)
+    write_tsv(paper_df, PAPER_LIFT_PATH)
+    write_tsv(label_df, LABEL_LIFT_PATH)
+    write_tsv(summary_df, SUMMARY_PATH)
     write_report(lift_df, paper_df, label_df, summary_df)
-    plot_figure(lift_df)
     print(f"Wrote {PROFILE_LIFT_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {PAPER_LIFT_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {LABEL_LIFT_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {SUMMARY_PATH.relative_to(REPO_ROOT)}")
     print(f"Wrote {REPORT_PATH.relative_to(REPO_ROOT)}")
-    print(f"Wrote {FIGURE_PATH.relative_to(REPO_ROOT)}")
-    print(f"Wrote {FIGURE_PNG_PATH.relative_to(REPO_ROOT)}")
 
 
 if __name__ == "__main__":

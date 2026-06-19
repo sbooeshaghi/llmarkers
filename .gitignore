@@ -36,23 +36,6 @@ docs/mx/
 # Local scratch directories not part of this repository
 archive/
 
-# Exploratory analysis drafts that are not part of the committed figure pipeline
-analysis/build_cross_study_gene_id_caches.py
-analysis/build_same_label_partial_review.py
-analysis/build_tcell_program_summary.py
-analysis/build_tcell_story_report.py
-analysis/ctp_corpus_analysis_lib.py
-analysis/evaluate_partition_pair_benchmark.py
-analysis/hca_extraction_eda.py
-analysis/restore_same_label_partial_review_from_markdown.py
-analysis/tcell_ctp_contained_analysis.ipynb
-
-# Exploratory figure drafts kept out of the committed paper pipeline
-analysis/build_fig2_benchmark_signal.py
-analysis/build_fig3_llm_recovery.py
-analysis/build_tcell_profile_graph_comparison.py
-analysis/build_tcell_tree_comparison.py
-
 # Manuscript contents (license restrictions)
 **/manuscript/manuscript.txt
 **/manuscript/manuscript.html
@@ -144,10 +127,6 @@ data/hca/manuscripts/**
 data/cell_annotation_platform/anndata/*.h5ad
 data/cell_annotation_platform/**/*.zip
 
-# Manually added papers: keep derived marker records, not full article text
-data/manual_papers/**/manuscript.md
-data/manual_papers/run_mrkr_all.sh
-
 # Generated cross-study intermediate caches
 analysis/results/cross_study_candidate_profile_pairs.tsv
 analysis/results/cross_study_edge_decomposition_review.tsv
@@ -196,18 +175,10 @@ analysis/results/hca_extraction_species_summary.tsv
 analysis/results/hca_extraction_status_summary.tsv
 analysis/results/hca_extraction_top_unmapped_human.tsv
 
-# Generated partition and T-cell exploratory outputs
+# Generated partition exploratory outputs
 analysis/results/partition_pair_benchmark_pairs.tsv
 analysis/results/partition_pair_benchmark_report.md
 analysis/results/partition_pair_benchmark_summary.tsv
-analysis/results/tcell_ctp_axis_bridge.tsv
-analysis/results/tcell_program_profiles.tsv
-analysis/results/tcell_program_summary.md
-analysis/results/tcell_program_summary.tsv
-analysis/results/tcell_story_focus_pairs.tsv
-analysis/results/tcell_story_focus_profiles.tsv
-analysis/results/tcell_story_label_family_summary.tsv
-analysis/results/tcell_story_report.md
 
 # Generated exploratory figures
 analysis/figures/biorxiv_immune_cluster.pdf
@@ -241,36 +212,17 @@ analysis/figures/fig_marker_selection.pdf
 analysis/figures/fig_marker_selection.png
 analysis/figures/fig_marker_stability.pdf
 analysis/figures/fig_marker_stability.png
-analysis/figures/fig_myeloid_profile_graph_comparison*.pdf
-analysis/figures/fig_myeloid_profile_graph_comparison*.png
 analysis/figures/fig_named_vs_anon.pdf
 analysis/figures/fig_optimal_n.pdf
 analysis/figures/fig_rank_cdf.pdf
 analysis/figures/fig_rank_lfc_boxplot.pdf
 analysis/figures/fig_selection_sweep.pdf
 analysis/figures/fig_selection_sweep.png
-analysis/figures/fig_tcell_marker_cluster_summary.pdf
-analysis/figures/fig_tcell_marker_cluster_summary.png
-analysis/figures/fig_tcell_marker_hierarchy.pdf
-analysis/figures/fig_tcell_marker_hierarchy.png
-analysis/figures/fig_tcell_profile_graph_comparison.pdf
-analysis/figures/fig_tcell_profile_graph_comparison.png
-analysis/figures/fig_tcell_tree_comparison.pdf
-analysis/figures/fig_tcell_tree_comparison.png
 analysis/figures/fig_volcano_permtest.pdf
 analysis/figures/marker_stability_within_vs_outside*.pdf
 analysis/figures/marker_stability_within_vs_outside*.png
 analysis/figures/marker_strength_*.pdf
 analysis/figures/marker_strength_*.png
-analysis/figures/tcell_ctp_similarity_heatmaps.pdf
-analysis/figures/tcell_ctp_similarity_heatmaps.png
-
-# Generated exploratory result tables not used by the manuscript build
-analysis/results/cross_study_neighborhood_overlap_at_k.tsv
-analysis/results/fig3_llm_recovery.tsv
-analysis/results/fig5_cluster_gene_coverage_purity.tsv
-analysis/results/fig5_exact_tcell_marker_subclusters.tsv
-analysis/results/fig5_marker_cluster_summary.tsv
 analysis/results/marker_corpus_examples.md
 analysis/results/marker_corpus_scores.tsv
 analysis/results/tcell_marker_hierarchy_clusters.tsv
