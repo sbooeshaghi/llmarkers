@@ -12,7 +12,7 @@ REPO_ROOT = ANALYSIS_DIR.parent
 HCA_DIR = REPO_ROOT / "data" / "hca"
 MANUSCRIPT_DIR = HCA_DIR / "manuscripts"
 MANIFEST_PATH = HCA_DIR / "manuscripts_manifest.tsv"
-RESULTS_DIR = ANALYSIS_DIR / "results"
+RESULTS_DIR = ANALYSIS_DIR / "artifacts"
 FIGURES_DIR = ANALYSIS_DIR / "figures"
 
 
@@ -617,7 +617,7 @@ def main() -> None:
         unresolved_df=unresolved_df,
     )
 
-    print("Wrote HCA extraction summary to analysis/results and analysis/figures")
+    print("Wrote HCA extraction summary to analysis/artifacts and analysis/figures")
     print()
     print(pd.DataFrame([metrics]).to_string(index=False))
 

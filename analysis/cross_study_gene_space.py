@@ -10,7 +10,7 @@ import pandas as pd
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-RESULTS_DIR = REPO_ROOT / "analysis" / "results"
+RESULTS_DIR = REPO_ROOT / "analysis" / "artifacts"
 
 
 # A small explicit alias table is enough here because the primary representation is gene ID.

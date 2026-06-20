@@ -6,7 +6,7 @@ quick inspection.
 Run from the repository root:
 
 ```sh
-bash analysis/scripts/render_paper_standalone_figures.sh
+bash analysis/render_paper_standalone_figures.sh
 ```
 
 Outputs are written to:

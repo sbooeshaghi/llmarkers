@@ -68,13 +68,13 @@ Records may include additional underscore-prefixed fields such as `_verification
 Run the audit without modifying files:
 
 ```bash
-python3 analysis/scripts/migrate_marker_records.py
+python3 analysis/migrate_marker_records.py
 ```
 
 Rewrite migratable marker files in place:
 
 ```bash
-python3 analysis/scripts/migrate_marker_records.py --write
+python3 analysis/migrate_marker_records.py --write
 ```
 
 The migrator only scans marker-like JSON files under `data/`, including `markers.json`, `extracted.json`, `extracted_txt.json`, `extracted_txt_rerun.json`, `bu_extracted.json`, and `selected*.json`.

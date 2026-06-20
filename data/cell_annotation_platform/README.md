@@ -58,31 +58,31 @@ The current mapping logic only assigns Ensembl IDs for `homo_sapiens` CAP record
 Download CAP-JSON files and regenerate all normalized outputs:
 
 ```bash
-uv run --locked python analysis/scripts/ingest_cap_datasets.py
+uv run --locked python analysis/ingest_cap_datasets.py
 ```
 
 Refresh the manifest from the live CAP datasets page before rebuilding:
 
 ```bash
-uv run --locked python analysis/scripts/ingest_cap_datasets.py --refresh-manifest
+uv run --locked python analysis/ingest_cap_datasets.py --refresh-manifest
 ```
 
 Refresh only the manifest:
 
 ```bash
-uv run --locked python analysis/scripts/ingest_cap_datasets.py --refresh-manifest --manifest-only
+uv run --locked python analysis/ingest_cap_datasets.py --refresh-manifest --manifest-only
 ```
 
 Normalize files already present on disk without network access:
 
 ```bash
-uv run --locked python analysis/scripts/ingest_cap_datasets.py --no-download
+uv run --locked python analysis/ingest_cap_datasets.py --no-download
 ```
 
 Use a different gene map:
 
 ```bash
-uv run --locked python analysis/scripts/ingest_cap_datasets.py --gene-map /path/to/gmap.txt
+uv run --locked python analysis/ingest_cap_datasets.py --gene-map /path/to/gmap.txt
 ```
 
 ## Current Ingest Summary

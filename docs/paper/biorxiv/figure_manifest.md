@@ -20,7 +20,7 @@ active should stay in the main tree.
 Render standalone figure wrappers with:
 
 ```bash
-bash analysis/scripts/render_paper_standalone_figures.sh
+bash analysis/render_paper_standalone_figures.sh
 ```
 
 Outputs are written to `docs/paper/biorxiv/src/figures/standalone/build/`, which is ignored
@@ -30,48 +30,48 @@ as LaTeX build output.
 
 Figure 2:
 
-- `analysis/results/fig2_benchmark_summary.tsv`
-- `analysis/results/fig2_optimal_deg_cutoff.tsv`
-- `analysis/results/fig2_llm_recovery.tsv`
+- `analysis/artifacts/fig2_benchmark_summary.tsv`
+- `analysis/artifacts/fig2_optimal_deg_cutoff.tsv`
+- `analysis/artifacts/fig2_llm_recovery.tsv`
 
 Figure 3 A-F:
 
-- `analysis/results/cross_study_label_marker_joint_distribution.tsv`
-- `analysis/results/fig3_different_label_shared_marker_examples.tsv`
-- `analysis/results/fig3_same_label_weak_marker_examples.tsv`
-- `analysis/results/fig3_label_local_global_marker_recovery.tsv`
-- `analysis/results/fig3_same_label_marker_jaccard_values.tsv`
-- `analysis/results/fig3_same_label_marker_jaccard_summary.tsv`
-- `analysis/results/fig3_cap_cross_project_label_marker_joint_distribution.tsv`
-- `analysis/results/fig3_cap_cross_project_ontology_marker_joint_distribution.tsv`
-- `analysis/results/fig3_cap_different_label_shared_marker_examples.tsv`
-- `analysis/results/fig3_cap_same_label_weak_marker_examples.tsv`
-- `analysis/results/fig3_cap_ontology_local_global_marker_recovery.tsv`
-- `analysis/results/fig3_global_recovery_permutation_draws.tsv`
-- `analysis/results/fig3_global_recovery_permutation_summary.tsv`
-- `analysis/results/fig3_global_recovery_profile_values.tsv`
-- `analysis/results/fig3_local_global_marker_identifiability_report.md`
+- `analysis/artifacts/cross_study_label_marker_joint_distribution.tsv`
+- `analysis/artifacts/fig3_different_label_shared_marker_examples.tsv`
+- `analysis/artifacts/fig3_same_label_weak_marker_examples.tsv`
+- `analysis/artifacts/fig3_label_local_global_marker_recovery.tsv`
+- `analysis/artifacts/fig3_same_label_marker_jaccard_values.tsv`
+- `analysis/artifacts/fig3_same_label_marker_jaccard_summary.tsv`
+- `analysis/artifacts/fig3_cap_cross_project_label_marker_joint_distribution.tsv`
+- `analysis/artifacts/fig3_cap_cross_project_ontology_marker_joint_distribution.tsv`
+- `analysis/artifacts/fig3_cap_different_label_shared_marker_examples.tsv`
+- `analysis/artifacts/fig3_cap_same_label_weak_marker_examples.tsv`
+- `analysis/artifacts/fig3_cap_ontology_local_global_marker_recovery.tsv`
+- `analysis/artifacts/fig3_global_recovery_permutation_draws.tsv`
+- `analysis/artifacts/fig3_global_recovery_permutation_summary.tsv`
+- `analysis/artifacts/fig3_global_recovery_profile_values.tsv`
+- `analysis/artifacts/fig3_local_global_marker_identifiability_report.md`
 
 Figure 3 G-I:
 
-- `analysis/results/cap_liver_local_global_deg_summary.tsv`
-- `analysis/results/cap_liver_local_global_reported_marker_ranks.tsv`
-- `analysis/results/cap_liver_local_global_top_degs.tsv`
-- `analysis/results/cap_liver_local_global_recovery_subsampling.tsv`
-- `analysis/results/cap_liver_local_global_recovery_subsampling_summary.tsv`
+- `analysis/artifacts/cap_liver_local_global_deg_summary.tsv`
+- `analysis/artifacts/cap_liver_local_global_reported_marker_ranks.tsv`
+- `analysis/artifacts/cap_liver_local_global_top_degs.tsv`
+- `analysis/artifacts/cap_liver_local_global_recovery_subsampling.tsv`
+- `analysis/artifacts/cap_liver_local_global_recovery_subsampling_summary.tsv`
 
 Shared upstream tables used by Figure 3:
 
-- `analysis/results/fig3_local_global_pair_summary.tsv`
-- `analysis/results/fig3_local_global_pair_values_sample.tsv`
-- `analysis/results/local_global_label_coherence_summary.tsv`
-- `analysis/results/local_global_marker_pair_summary.tsv`
-- `analysis/results/local_global_paper_marker_summary.tsv`
-- `analysis/results/local_global_profile_marker_liftover.tsv`
-- `analysis/results/local_global_marker_transfer_lift_by_label.tsv`
-- `analysis/results/local_global_marker_transfer_lift_summary.tsv`
-- `analysis/results/marker_identifiability_partition_summary.tsv`
-- `analysis/results/marker_identifiability_selected_genes.tsv`
+- `analysis/artifacts/fig3_local_global_pair_summary.tsv`
+- `analysis/artifacts/fig3_local_global_pair_values_sample.tsv`
+- `analysis/artifacts/local_global_label_coherence_summary.tsv`
+- `analysis/artifacts/local_global_marker_pair_summary.tsv`
+- `analysis/artifacts/local_global_paper_marker_summary.tsv`
+- `analysis/artifacts/local_global_profile_marker_liftover.tsv`
+- `analysis/artifacts/local_global_marker_transfer_lift_by_label.tsv`
+- `analysis/artifacts/local_global_marker_transfer_lift_summary.tsv`
+- `analysis/artifacts/marker_identifiability_partition_summary.tsv`
+- `analysis/artifacts/marker_identifiability_selected_genes.tsv`
 
 ## Active Sources To Keep
 
@@ -85,6 +85,6 @@ Shared upstream tables used by Figure 3:
 - `analysis/build_local_global_marker_lift.py`
 - `analysis/build_marker_identifiability_analysis.py`
 - `analysis/cross_study_gene_space.py`
-- `analysis/scripts/ingest_cap_datasets.py`
-- `analysis/scripts/render_paper_standalone_figures.sh`
+- `analysis/ingest_cap_datasets.py`
+- `analysis/render_paper_standalone_figures.sh`
 - `analysis/formal/`

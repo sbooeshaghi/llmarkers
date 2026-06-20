@@ -20,13 +20,13 @@ uv run --locked python analysis/build_fig2_marker_recovery.py
 ## Repository Layout
 
 ```text
-analysis/                  Analysis code, scripts, formalization, results, and figures
+analysis/                  Analysis code, data-processing scripts, formalization, and figures
+analysis/artifacts/        Generated TSV, Markdown, and table artifacts
 data/                      Benchmark, bioRxiv, HCA, CAP, and manual-paper inputs
 docs/                      Static browser, papers, and related notes
 docs/paper/biorxiv/        Active bioRxiv manuscript, supplement, figures, and manifest
 docs/paper/submissions/    Venue-specific submission packages
 docs/notes/                Related design notes and schema documentation
-analysis/scripts/          Data ingestion, export, and database build scripts
 analysis/formal/           Lean formalization of marker identifiability claims
 ```
 
@@ -45,7 +45,7 @@ uv run --locked python analysis/build_marker_identifiability_analysis.py
 uv run --locked python analysis/build_cap_llmarkers_comparison.py
 uv run --locked python analysis/build_fig3_local_global_marker_identifiability.py
 uv run --locked python analysis/build_cap_liver_local_global_deg.py
-bash analysis/scripts/render_paper_standalone_figures.sh
+bash analysis/render_paper_standalone_figures.sh
 ```
 
 Figure dependencies are tracked in `docs/paper/biorxiv/figure_manifest.md`.
@@ -87,8 +87,8 @@ The static marker browser in `docs/` reads `docs/llmarkers.sqlite` in the
 browser.
 
 ```bash
-uv run --locked python analysis/scripts/build_llmarkers_sqlite.py
-uv run --locked python analysis/scripts/export_minilm_embeddings.py
+uv run --locked python analysis/build_llmarkers_sqlite.py
+uv run --locked python analysis/export_minilm_embeddings.py
 python3 -m http.server 8000 -d docs
 ```
 

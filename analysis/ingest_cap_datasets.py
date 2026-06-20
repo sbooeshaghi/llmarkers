@@ -16,7 +16,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[1]
 CAP_DIR = REPO_ROOT / "data" / "cell_annotation_platform"
 DEFAULT_MANIFEST = CAP_DIR / "cap-datasets.json"
 DEFAULT_OUT_DIR = CAP_DIR / "datasets"

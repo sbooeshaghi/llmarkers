@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CAP_DIR = REPO_ROOT / "data" / "cell_annotation_platform"
 ANNDATA_DIR = CAP_DIR / "anndata"
-RESULTS_DIR = REPO_ROOT / "analysis" / "results"
+RESULTS_DIR = REPO_ROOT / "analysis" / "artifacts"
 FIGURES_DIR = REPO_ROOT / "analysis" / "figures"
 PANEL_G_PATH = FIGURES_DIR / "fig3_panel_g_cap_liver_reported_marker_recovery.pdf"
 PANEL_G_PNG_PATH = FIGURES_DIR / "fig3_panel_g_cap_liver_reported_marker_recovery.png"

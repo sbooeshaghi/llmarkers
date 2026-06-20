@@ -10,7 +10,7 @@ import pandas as pd
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = REPO_ROOT / "data"
 FIGURE_DIR = REPO_ROOT / "analysis" / "figures"
-RESULTS_DIR = REPO_ROOT / "analysis" / "results"
+RESULTS_DIR = REPO_ROOT / "analysis" / "artifacts"
 
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)

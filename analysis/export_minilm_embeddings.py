@@ -56,7 +56,7 @@ def stored_model_name(model: str, override: str | None, revision: str | None) ->
 
 def main() -> None:
     args = parse_args()
-    repo_root = Path(__file__).resolve().parents[2]
+    repo_root = Path(__file__).resolve().parents[1]
     db_path = args.db or repo_root / 'docs' / 'llmarkers.sqlite'
     if not db_path.exists():
         raise FileNotFoundError(db_path)
