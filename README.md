@@ -22,10 +22,9 @@ uv run --locked python analysis/build_fig2_marker_recovery.py
 ```text
 analysis/                  Analysis code, scripts, formalization, results, and figures
 data/                      Benchmark, bioRxiv, HCA, CAP, and manual-paper inputs
-docs/                      Static browser, papers, poster, and related notes
+docs/                      Static browser, papers, and related notes
 docs/paper/biorxiv/        Active bioRxiv manuscript, supplement, figures, and manifest
 docs/paper/submissions/    Venue-specific submission packages
-docs/poster/               Poster source and poster-specific tables
 docs/notes/                Related design notes and schema documentation
 analysis/scripts/          Data ingestion, export, and database build scripts
 analysis/formal/           Lean formalization of marker identifiability claims

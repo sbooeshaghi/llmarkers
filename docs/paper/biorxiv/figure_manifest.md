@@ -9,7 +9,7 @@ active should stay in the main tree.
 
 | Role | Paper reference | LaTeX wrapper/body | Figure artifacts | Source |
 | --- | --- | --- | --- | --- |
-| Figure 1 | `fig:paper_celltype_joint` | `docs/paper/biorxiv/src/figures/fig_paper_celltype_joint.tex`, `docs/paper/biorxiv/src/figures/fig_paper_celltype_joint_body.tex` | TikZ in body file | `docs/notes/fig1.md` |
+| Figure 1 | `fig:paper_celltype_joint` | `docs/paper/biorxiv/src/figures/fig_paper_celltype_joint.tex`, `docs/paper/biorxiv/src/figures/fig_paper_celltype_joint_body.tex` | TikZ in body file | `docs/paper/biorxiv/src/figures/fig_paper_celltype_joint_body.tex` |
 | Figure 2 | `fig:marker_selection`, `fig:llm_curation` | `docs/paper/biorxiv/src/figures/fig2_marker_recovery.tex`, `docs/paper/biorxiv/src/figures/fig2_marker_recovery_body.tex` | `analysis/figures/fig2_panel_a_benchmark_summary.pdf`, `analysis/figures/fig2_panel_b_optimal_deg_cutoff.pdf`, `analysis/figures/fig2_panel_c_llm_recovery.pdf` | `analysis/build_fig2_marker_recovery.py` |
 | Figure 3 A-F | `fig:cross_study_unification` | `docs/paper/biorxiv/src/figures/fig3_cross_study_unification.tex`, `docs/paper/biorxiv/src/figures/fig3_cross_study_unification_body.tex` | `analysis/figures/fig3_panel_a_joint_distribution.pdf` through `analysis/figures/fig3_panel_f_cap_local_global_recovery.pdf` | `analysis/build_fig3_local_global_marker_identifiability.py` |
 | Figure 3 G-I | `fig:cross_study_unification` | same wrapper/body as Figure 3 A-F | `analysis/figures/fig3_panel_g_cap_liver_reported_marker_recovery.pdf`, `analysis/figures/fig3_panel_h_cap_liver_de_stability.pdf`, `analysis/figures/fig3_panel_i_cap_liver_marker_retrieval.pdf` | `analysis/build_cap_liver_local_global_deg.py` |

@@ -1,7 +1,7 @@
 # Standalone Paper Figures
 
-These files render paper figures independently from `main.tex` for posters,
-slides, and quick inspection.
+These files render paper figures independently from `main.tex` for slides and
+quick inspection.
 
 Run from the repository root:
 
