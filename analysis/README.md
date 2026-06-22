@@ -11,4 +11,4 @@ This directory contains the active analysis code, generated artifacts, figures, 
 - `*.sh`: helper shell entry points.
 - `*.ipynb`: exploratory notebooks retained for provenance.
 
-Run Python scripts from the repository root so paths such as `analysis/artifacts/` and `docs/paper/biorxiv/src/` resolve as written. The notebooks were authored inside this directory and use notebook-local paths such as `figures/...`; run them with `analysis/` as the working directory if regenerating notebook-only artifacts.
+Run Python scripts from the repository root so paths such as `analysis/artifacts/` and `docs/paper/biorxiv/` resolve as written. The notebooks were authored inside this directory and use notebook-local paths such as `figures/...`; run them with `analysis/` as the working directory if regenerating notebook-only artifacts.

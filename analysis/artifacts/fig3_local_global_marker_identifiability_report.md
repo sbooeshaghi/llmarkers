@@ -3,8 +3,8 @@
 This report summarizes the manuscript-facing Lean-derived marker identifiability analysis.
 The formal claim is that local separation within papers does not imply global atlas-scale separation.
 
-Manuscript wrapper: `docs/paper/biorxiv/src/figures/fig3_cross_study_unification.tex`
-Manuscript body: `docs/paper/biorxiv/src/figures/fig3_cross_study_unification_body.tex`
+Manuscript wrapper: `docs/paper/biorxiv/tex-figures/fig3_cross_study_unification.tex`
+Manuscript body: `docs/paper/biorxiv/tex-figures/fig3_cross_study_unification_body.tex`
 
 Panel PDFs: `analysis/figures/fig3_panel_a_joint_distribution.pdf` through `analysis/figures/fig3_panel_f_cap_local_global_recovery.pdf`.
 
@@ -101,4 +101,3 @@ Panel PDFs: `analysis/figures/fig3_panel_a_joint_distribution.pdf` through `anal
 | reported_exact_labels_min5 | MAFB | exchangeable_in_minimum_panels | CELL; PODOCYTE | 0.372 |
 | reported_exact_labels_min5 | PRSS1 | exchangeable_in_minimum_panels | ACINAR CELL | 0.286 |
 | reported_exact_labels_min5 | PECAM1 | exchangeable_in_minimum_panels | EC; ENDOTHELIAL | 0.514 |
-

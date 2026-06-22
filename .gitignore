@@ -105,6 +105,8 @@ docs/paper/**/*.synctex.gz
 docs/paper/**/*.toc
 docs/paper/**/*.lof
 docs/paper/**/*.lot
+!docs/paper/biorxiv/main.pdf
+!docs/paper/biorxiv/supplementary-note.pdf
 
 # Large binary data (biorxiv paper downloads)
 data/biorxiv/meca/**
