@@ -9,6 +9,7 @@ __pycache__/
 *.pyo
 .mpl-cache/
 .venv/
+.r-lib/
 *.egg-info/
 
 # Environment
@@ -44,6 +45,7 @@ archive/
 
 # Generated databases
 *.db
+*.sqlite
 analysis/cache/
 
 # Lean build artifacts
@@ -181,6 +183,25 @@ analysis/artifacts/hca_extraction_top_unmapped_human.tsv
 analysis/artifacts/partition_pair_benchmark_pairs.tsv
 analysis/artifacts/partition_pair_benchmark_report.md
 analysis/artifacts/partition_pair_benchmark_summary.tsv
+
+# Generated markerfmt DE comparison scratch inputs
+analysis/artifacts/markerfmt_cap_de/cap_scanpy_de_input.h5ad
+analysis/artifacts/markerfmt_cap_de/mpl-cache/
+analysis/artifacts/markerfmt_cap_de/seurat_input/
+analysis/artifacts/markerfmt_cap_de/*.sqlite
+
+# Generated marker-context statement and embedding scratch artifacts
+analysis/artifacts/marker_context/statement_shards/
+analysis/artifacts/marker_context/statement_worker_batches/
+analysis/artifacts/marker_context/*_embedding_batches/
+analysis/artifacts/marker_context/*_embeddings.npz
+analysis/artifacts/marker_context/*_marker_embeddings.npz
+analysis/artifacts/marker_context/*_profile_embedding_centroids.npz
+analysis/artifacts/marker_context/*_embedding_records.tsv
+analysis/artifacts/marker_context/llmarkers_context_statement_llm_records.tsv
+analysis/artifacts/marker_context/llmarkers_context_statement_llm_outputs.jsonl
+analysis/artifacts/marker_context/llmarkers_context_statement_openai_batch_requests.jsonl
+!analysis/artifacts/marker_context/llmarkers_context_statement_llm_records.tsv.gz
 
 # Generated exploratory figures
 analysis/figures/biorxiv_immune_cluster.pdf

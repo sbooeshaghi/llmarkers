@@ -28,6 +28,7 @@ docs/paper/biorxiv/        Active bioRxiv manuscript, supplement, figures, and m
 docs/paper/submissions/    Venue-specific submission packages
 docs/notes/                Related design notes and schema documentation
 analysis/formal/           Lean formalization of marker identifiability claims
+tools/                     Prototype marker contrast format adapters
 ```
 
 ## Manuscript Figure Pipeline
@@ -80,6 +81,14 @@ uv run --locked python analysis/build_hca_extraction_summary.py
 Large CAP AnnData downloads are intentionally ignored by git. Their source
 URLs, checksums, and expected filenames are recorded in
 `data/cell_annotation_platform/anndata/README.md`.
+
+The LLM-normalized marker context statements are committed as a compressed
+artifact at
+`analysis/artifacts/marker_context/llmarkers_context_statement_llm_records.tsv.gz`.
+The uncompressed statement table, shard outputs, OpenAI batch requests, and
+embedding matrices are regenerated scratch artifacts and are ignored by git.
+See `analysis/artifacts/marker_context/README.md` for the context-embedding
+and investigation commands.
 
 ## Website
 
