@@ -1341,6 +1341,133 @@ theorem not_pairCertifiable_of_not_observed [DecidableEq Cell] [DecidableEq Gene
   exact hunobserved ⟨E, hE, hc₁E, hc₂E⟩
 
 /--
+A reported pairwise marker predicate. The first group is the target, the second
+group is the comparison/background group, and the gene is the proposed marker.
+Different statistical pipelines can instantiate this predicate in different
+ways; the results below only use the reported pairwise relation.
+-/
+abbrev PairwiseMarkerPredicate (Group Gene : Type) := Group → Group → Gene → Prop
+
+/--
+The local comparison family available for each target group. In a study, this
+is the list of target-versus-background groups that were actually reported for
+that target.
+-/
+abbrev LocalComparisonFamily (Group : Type) := Group → Finset Group
+
+/--
+A gene is a local family marker for a target when it is a pairwise marker
+against every reported comparison group in that target's local family.
+-/
+def LocalFamilyMarker {Group Gene : Type}
+    (pairwise : PairwiseMarkerPredicate Group Gene)
+    (comparisons : LocalComparisonFamily Group)
+    (target : Group) (gene : Gene) : Prop :=
+  ∀ comparison : Group, comparison ∈ comparisons target →
+    pairwise target comparison gene
+
+/--
+A recurrent local marker for label `L` is a gene that is a local family marker
+for every observed target group carrying label `L`.
+-/
+def RecurrentLocalMarker {Group Label Gene : Type}
+    (label : Group → Label) (targets : Finset Group)
+    (comparisons : LocalComparisonFamily Group)
+    (pairwise : PairwiseMarkerPredicate Group Gene)
+    (L : Label) (gene : Gene) : Prop :=
+  ∀ target : Group, target ∈ targets → label target = L →
+    LocalFamilyMarker pairwise comparisons target gene
+
+/--
+A certified global marker for label `L` is a gene that marks every observed
+target group carrying `L` against every group in the chosen global background
+that does not carry `L`.
+-/
+def CertifiedGlobalMarker {Group Label Gene : Type}
+    (label : Group → Label) (targets background : Finset Group)
+    (pairwise : PairwiseMarkerPredicate Group Gene)
+    (L : Label) (gene : Gene) : Prop :=
+  ∀ target : Group, target ∈ targets → label target = L →
+    ∀ comparison : Group, comparison ∈ background → label comparison ≠ L →
+      pairwise target comparison gene
+
+/--
+The target-background pair coverage needed to turn recurrent local marker
+evidence into a certified global marker. For every target instance carrying
+label `L`, every required global background group with a different label must
+appear in that target's reported local comparison family.
+-/
+def TargetBackgroundPairCovered {Group Label : Type}
+    (label : Group → Label) (targets background : Finset Group)
+    (comparisons : LocalComparisonFamily Group) (L : Label) : Prop :=
+  ∀ target : Group, target ∈ targets → label target = L →
+    ∀ comparison : Group, comparison ∈ background → label comparison ≠ L →
+      comparison ∈ comparisons target
+
+/--
+If a global marker has already been certified, then it is recurrent locally for
+any reported local comparison families that are contained in the same global
+background and exclude groups with the target label.
+-/
+theorem certifiedGlobalMarker_implies_recurrentLocalMarker
+    {Group Label Gene : Type}
+    {label : Group → Label} {targets background : Finset Group}
+    {comparisons : LocalComparisonFamily Group}
+    {pairwise : PairwiseMarkerPredicate Group Gene}
+    {L : Label} {gene : Gene}
+    (hlocal :
+      ∀ target : Group, target ∈ targets → label target = L →
+        ∀ comparison : Group, comparison ∈ comparisons target →
+          comparison ∈ background ∧ label comparison ≠ L)
+    (hglobal :
+      CertifiedGlobalMarker label targets background pairwise L gene) :
+    RecurrentLocalMarker label targets comparisons pairwise L gene := by
+  intro target htarget hlabel comparison hcomparison
+  exact hglobal target htarget hlabel comparison
+    (hlocal target htarget hlabel comparison hcomparison).1
+    (hlocal target htarget hlabel comparison hcomparison).2
+
+/--
+Recurrent local evidence certifies a global marker exactly when the reported
+local comparison families cover all target-background pairs required by the
+global marker statement.
+-/
+theorem certifiedGlobalMarker_of_recurrentLocalMarker_pairCovered
+    {Group Label Gene : Type}
+    {label : Group → Label} {targets background : Finset Group}
+    {comparisons : LocalComparisonFamily Group}
+    {pairwise : PairwiseMarkerPredicate Group Gene}
+    {L : Label} {gene : Gene}
+    (hcover : TargetBackgroundPairCovered label targets background comparisons L)
+    (hrecurrent :
+      RecurrentLocalMarker label targets comparisons pairwise L gene) :
+    CertifiedGlobalMarker label targets background pairwise L gene := by
+  intro target htarget hlabel comparison hcomparison hcomparison_label
+  exact hrecurrent target htarget hlabel comparison
+    (hcover target htarget hlabel comparison hcomparison hcomparison_label)
+
+/--
+When local comparison families are exactly the required target-background
+comparisons, recurrent local markers and certified global markers coincide.
+-/
+theorem recurrentLocalMarker_iff_certifiedGlobalMarker_of_exact_pairCoverage
+    {Group Label Gene : Type}
+    {label : Group → Label} {targets background : Finset Group}
+    {comparisons : LocalComparisonFamily Group}
+    {pairwise : PairwiseMarkerPredicate Group Gene}
+    {L : Label} {gene : Gene}
+    (hlocal :
+      ∀ target : Group, target ∈ targets → label target = L →
+        ∀ comparison : Group, comparison ∈ comparisons target →
+          comparison ∈ background ∧ label comparison ≠ L)
+    (hcover : TargetBackgroundPairCovered label targets background comparisons L) :
+    RecurrentLocalMarker label targets comparisons pairwise L gene ↔
+      CertifiedGlobalMarker label targets background pairwise L gene := by
+  constructor
+  · exact certifiedGlobalMarker_of_recurrentLocalMarker_pairCovered hcover
+  · exact certifiedGlobalMarker_implies_recurrentLocalMarker hlocal
+
+/--
 A context-specific marker is valid for a restricted comparison family but not
 for a broader comparison family that contains it.
 -/
@@ -1453,6 +1580,115 @@ theorem sameLabel_does_not_force_sameOn :
   · intro hsame
     have h := hsame true (by simp)
     norm_num [X] at h
+
+/-!
+Local recurrence without target-background pair coverage does not identify a
+global marker. The same target label can have a marker in every reported local
+comparison, while the gene fails against an unreported global background group.
+-/
+namespace RecurrentLocalNotGlobalExample
+
+inductive Group
+  | target
+  | localBackground
+  | unseenBackground
+  deriving DecidableEq
+
+inductive Label
+  | targetLabel
+  | backgroundLabel
+  deriving DecidableEq
+
+inductive ExampleGene
+  | marker
+  deriving DecidableEq
+
+def label : Group → Label
+  | Group.target => Label.targetLabel
+  | Group.localBackground => Label.backgroundLabel
+  | Group.unseenBackground => Label.backgroundLabel
+
+def targets : Finset Group := {Group.target}
+
+def background : Finset Group := {Group.localBackground, Group.unseenBackground}
+
+def comparisons : LocalComparisonFamily Group
+  | Group.target => {Group.localBackground}
+  | Group.localBackground => ∅
+  | Group.unseenBackground => ∅
+
+def goodPairwise : PairwiseMarkerPredicate Group ExampleGene
+  | Group.target, Group.localBackground, ExampleGene.marker => True
+  | Group.target, Group.unseenBackground, ExampleGene.marker => True
+  | _, _, _ => False
+
+def badPairwise : PairwiseMarkerPredicate Group ExampleGene
+  | Group.target, Group.localBackground, ExampleGene.marker => True
+  | Group.target, Group.unseenBackground, ExampleGene.marker => False
+  | _, _, _ => False
+
+theorem recurrent_good :
+    RecurrentLocalMarker label targets comparisons goodPairwise
+      Label.targetLabel ExampleGene.marker := by
+  intro tgt htarget _hlabel comparison hcomparison
+  have htarget_eq : tgt = Group.target := by
+    simpa [targets] using htarget
+  subst tgt
+  have hcomparison_eq : comparison = Group.localBackground := by
+    simpa [comparisons] using hcomparison
+  subst comparison
+  simp [goodPairwise]
+
+theorem recurrent_bad :
+    RecurrentLocalMarker label targets comparisons badPairwise
+      Label.targetLabel ExampleGene.marker := by
+  intro tgt htarget _hlabel comparison hcomparison
+  have htarget_eq : tgt = Group.target := by
+    simpa [targets] using htarget
+  subst tgt
+  have hcomparison_eq : comparison = Group.localBackground := by
+    simpa [comparisons] using hcomparison
+  subst comparison
+  simp [badPairwise]
+
+theorem good_certifiedGlobal :
+    CertifiedGlobalMarker label targets background goodPairwise
+      Label.targetLabel ExampleGene.marker := by
+  intro tgt htarget _hlabel comparison hcomparison _hcomparison_label
+  have htarget_eq : tgt = Group.target := by
+    simpa [targets] using htarget
+  subst tgt
+  have hcomparison_cases :
+      comparison = Group.localBackground ∨ comparison = Group.unseenBackground := by
+    simpa [background] using hcomparison
+  rcases hcomparison_cases with rfl | rfl <;> simp [goodPairwise]
+
+theorem bad_not_certifiedGlobal :
+    ¬ CertifiedGlobalMarker label targets background badPairwise
+      Label.targetLabel ExampleGene.marker := by
+  intro hglobal
+  have hbad := hglobal Group.target (by simp [targets]) rfl
+    Group.unseenBackground (by simp [background]) (by simp [label])
+  simp [badPairwise] at hbad
+
+theorem not_pairCovered :
+    ¬ TargetBackgroundPairCovered label targets background comparisons
+      Label.targetLabel := by
+  intro hcover
+  have hunseen := hcover Group.target (by simp [targets]) rfl
+    Group.unseenBackground (by simp [background]) (by simp [label])
+  simp [comparisons] at hunseen
+
+theorem recurrentLocal_does_not_certify_global_without_pairCoverage :
+    RecurrentLocalMarker label targets comparisons badPairwise
+      Label.targetLabel ExampleGene.marker ∧
+      ¬ CertifiedGlobalMarker label targets background badPairwise
+        Label.targetLabel ExampleGene.marker ∧
+      ¬ TargetBackgroundPairCovered label targets background comparisons
+        Label.targetLabel := by
+  exact ⟨recurrent_bad, bad_not_certifiedGlobal, not_pairCovered⟩
+
+end RecurrentLocalNotGlobalExample
 
 /--
 An ontology- or label-derived comparison family is the subset of a group

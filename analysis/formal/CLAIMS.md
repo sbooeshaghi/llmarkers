@@ -103,6 +103,13 @@ in the available corpus, not necessarily "not expressed."
    than an aggregated one-vs-rest differential-expression test, which can be
    lossy.
 
+16. **Recurrent local markers versus certified global markers.** A gene can
+   recur as a local marker for the same label across studies without being a
+   certified global marker. The equivalence holds only when the reported local
+   comparison families cover every target-background pair required by the
+   global marker statement. Thus a machine-readable marker report needs the
+   target, comparison group, and pairwise result, not only `(label, gene)`.
+
 ## Claims We Can Make With LLMarkers
 
 These are empirical claims supported by applying the formal definitions to the
@@ -124,6 +131,8 @@ LLMarkers matrix.
   comparison set.
 - We can identify labels whose profiles are locally distinguishable within
   papers but globally underspecified across papers.
+- We can distinguish recurrent local evidence from certified global evidence by
+  auditing target-background pair coverage.
 
 ## Claims We Should Not Make Without Additional Evidence
 
