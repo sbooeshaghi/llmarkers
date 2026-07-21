@@ -47,6 +47,7 @@ archive/
 *.db
 *.sqlite
 analysis/cache/
+analysis/artifacts/mrkr_benchmark_v1/**/log.txt
 
 # Lean build artifacts
 analysis/formal/.lake/

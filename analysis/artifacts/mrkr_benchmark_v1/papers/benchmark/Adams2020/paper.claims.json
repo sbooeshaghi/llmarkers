@@ -1,0 +1,1342 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim:e4b1b943b17e30c0653d",
+      "span_literal": "In addition to epithelial markers, these cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express other established basal markers such as KRT5 and KRT15 (9).",
+      "span_offset": [
+        8942,
+        9128
+      ],
+      "summary": "Aberrant basaloid cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express KRT5 and KRT15.",
+      "terms": [
+        {
+          "normalized_label": "aberrant basaloid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            35,
+            46
+          ],
+          "sub_span": "these cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TP63",
+          "provenance": "explicit",
+          "sub_offset": [
+            78,
+            82
+          ],
+          "sub_span": "TP63",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KRT17",
+          "provenance": "explicit",
+          "sub_offset": [
+            84,
+            89
+          ],
+          "sub_span": "KRT17",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LAMB3",
+          "provenance": "explicit",
+          "sub_offset": [
+            91,
+            96
+          ],
+          "sub_span": "LAMB3",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LAMC2",
+          "provenance": "explicit",
+          "sub_offset": [
+            102,
+            107
+          ],
+          "sub_span": "LAMC2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "KRT5",
+          "provenance": "explicit",
+          "sub_offset": [
+            167,
+            171
+          ],
+          "sub_span": "KRT5",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "KRT15",
+          "provenance": "explicit",
+          "sub_offset": [
+            176,
+            181
+          ],
+          "sub_span": "KRT15",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0bbceb305f7f156279c9",
+      "span_literal": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "span_offset": [
+        9129,
+        9582
+      ],
+      "summary": "Aberrant basaloid cells express epithelial-mesenchymal transition markers VIM, CDH2, FN1, COL1A1, TNC, and HMGA2, senescence-related genes CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15, and the highest expression of matrix metallopeptidase 7 (MMP7) and EPHB2.",
+      "terms": [
+        {
+          "normalized_label": "aberrant basaloid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            11
+          ],
+          "sub_span": "These cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "VIM",
+          "provenance": "explicit",
+          "sub_offset": [
+            79,
+            82
+          ],
+          "sub_span": "VIM",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDH2",
+          "provenance": "explicit",
+          "sub_offset": [
+            84,
+            88
+          ],
+          "sub_span": "CDH2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FN1",
+          "provenance": "explicit",
+          "sub_offset": [
+            90,
+            93
+          ],
+          "sub_span": "FN1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "COL1A1",
+          "provenance": "explicit",
+          "sub_offset": [
+            95,
+            101
+          ],
+          "sub_span": "COL1A1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TNC",
+          "provenance": "explicit",
+          "sub_offset": [
+            103,
+            106
+          ],
+          "sub_span": "TNC",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "HMGA2",
+          "provenance": "explicit",
+          "sub_offset": [
+            112,
+            117
+          ],
+          "sub_span": "HMGA2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDKN1A",
+          "provenance": "explicit",
+          "sub_offset": [
+            159,
+            165
+          ],
+          "sub_span": "CDKN1A",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDKN2A",
+          "provenance": "explicit",
+          "sub_offset": [
+            167,
+            173
+          ],
+          "sub_span": "CDKN2A",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CCND1",
+          "provenance": "explicit",
+          "sub_offset": [
+            175,
+            180
+          ],
+          "sub_span": "CCND1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CCND2",
+          "provenance": "explicit",
+          "sub_offset": [
+            182,
+            187
+          ],
+          "sub_span": "CCND2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MDM2",
+          "provenance": "explicit",
+          "sub_offset": [
+            189,
+            193
+          ],
+          "sub_span": "MDM2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GDF15",
+          "provenance": "explicit",
+          "sub_offset": [
+            199,
+            204
+          ],
+          "sub_span": "GDF15",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MMP7",
+          "provenance": "explicit",
+          "sub_offset": [
+            381,
+            385
+          ],
+          "sub_span": "MMP7",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EPHB2",
+          "provenance": "explicit",
+          "sub_offset": [
+            442,
+            447
+          ],
+          "sub_span": "EPHB2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4c5ef580608a4d9dda75",
+      "span_literal": "When assessed by transcription factor motif enrichment, the cells exhibit high levels of expression and evidence of downstream activation of SOX9 (Fig. 2C, top), a transcription factor critical to distal airway development (16) and repair (17).",
+      "span_offset": [
+        9583,
+        9827
+      ],
+      "summary": "Aberrant basaloid cells exhibit high levels of expression and downstream activation of SOX9.",
+      "terms": [
+        {
+          "normalized_label": "aberrant basaloid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            56,
+            65
+          ],
+          "sub_span": "the cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX9",
+          "provenance": "explicit",
+          "sub_offset": [
+            141,
+            145
+          ],
+          "sub_span": "SOX9",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2baf1d886c7a8b438953",
+      "span_literal": "A fifth VE population is best distinguished by its expression of COL15A1.",
+      "span_offset": [
+        13075,
+        13148
+      ],
+      "summary": "Peribronchial vascular endothelial cells are best distinguished by expression of COL15A1.",
+      "terms": [
+        {
+          "normalized_label": "peribronchial vascular endothelial cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            2,
+            21
+          ],
+          "sub_span": "fifth VE population",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "COL15A1",
+          "provenance": "explicit",
+          "sub_offset": [
+            65,
+            72
+          ],
+          "sub_span": "COL15A1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4cd9accdf73deeb60baf",
+      "span_literal": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "span_offset": [
+        15900,
+        16149
+      ],
+      "summary": "Smooth muscle cells are characterized by expression of DES, ACTG2, and PLN in the lung.",
+      "terms": [
+        {
+          "normalized_label": "smooth muscle cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            176,
+            195
+          ],
+          "sub_span": "smooth muscle cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DES",
+          "provenance": "explicit",
+          "sub_offset": [
+            197,
+            200
+          ],
+          "sub_span": "DES",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ACTG2",
+          "provenance": "explicit",
+          "sub_offset": [
+            202,
+            207
+          ],
+          "sub_span": "ACTG2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PLN",
+          "provenance": "explicit",
+          "sub_offset": [
+            213,
+            216
+          ],
+          "sub_span": "PLN",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "lung",
+          "provenance": "explicit",
+          "sub_offset": [
+            58,
+            62
+          ],
+          "sub_span": "lung",
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:845a6b12392c356738d1",
+      "span_literal": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "span_offset": [
+        15900,
+        16149
+      ],
+      "summary": "Pericytes are characterized by expression of RGS5 and COX4I2 in the lung.",
+      "terms": [
+        {
+          "normalized_label": "pericyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            221,
+            230
+          ],
+          "sub_span": "pericytes",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "RGS5",
+          "provenance": "explicit",
+          "sub_offset": [
+            232,
+            236
+          ],
+          "sub_span": "RGS5",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "COX4I2",
+          "provenance": "explicit",
+          "sub_offset": [
+            241,
+            247
+          ],
+          "sub_span": "COX4I2",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "lung",
+          "provenance": "explicit",
+          "sub_offset": [
+            58,
+            62
+          ],
+          "sub_span": "lung",
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:97a91dff65115a93ccb9",
+      "span_literal": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "span_offset": [
+        16150,
+        16418
+      ],
+      "summary": "Fibroblasts are characterized by expression of CD34, FBN1, FBLN2, and VIT in the lung.",
+      "terms": [
+        {
+          "normalized_label": "fibroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            73
+          ],
+          "sub_span": "fibroblasts",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD34",
+          "provenance": "explicit",
+          "sub_offset": [
+            106,
+            110
+          ],
+          "sub_span": "CD34",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FBN1",
+          "provenance": "explicit",
+          "sub_offset": [
+            112,
+            116
+          ],
+          "sub_span": "FBN1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FBLN2",
+          "provenance": "explicit",
+          "sub_offset": [
+            118,
+            123
+          ],
+          "sub_span": "FBLN2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "VIT",
+          "provenance": "explicit",
+          "sub_offset": [
+            129,
+            132
+          ],
+          "sub_span": "VIT",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "lung",
+          "provenance": "explicit",
+          "sub_offset": [
+            248,
+            252
+          ],
+          "sub_span": "lung",
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:384d967d9d779efd7c25",
+      "span_literal": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "span_offset": [
+        16150,
+        16418
+      ],
+      "summary": "Myofibroblasts consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8 in the lung.",
+      "terms": [
+        {
+          "normalized_label": "myofibroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            137,
+            151
+          ],
+          "sub_span": "myofibroblasts",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYLK",
+          "provenance": "explicit",
+          "sub_offset": [
+            178,
+            182
+          ],
+          "sub_span": "MYLK",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NEBL",
+          "provenance": "explicit",
+          "sub_offset": [
+            184,
+            188
+          ],
+          "sub_span": "NEBL",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYO10",
+          "provenance": "explicit",
+          "sub_offset": [
+            190,
+            195
+          ],
+          "sub_span": "MYO10",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYO1D",
+          "provenance": "explicit",
+          "sub_offset": [
+            197,
+            202
+          ],
+          "sub_span": "MYO1D",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "RYR2",
+          "provenance": "explicit",
+          "sub_offset": [
+            204,
+            208
+          ],
+          "sub_span": "RYR2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ITGA8",
+          "provenance": "explicit",
+          "sub_offset": [
+            214,
+            219
+          ],
+          "sub_span": "ITGA8",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "lung",
+          "provenance": "explicit",
+          "sub_offset": [
+            248,
+            252
+          ],
+          "sub_span": "lung",
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:5786dd5481080a385408",
+      "span_literal": "the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+      "span_offset": [
+        16528,
+        16781
+      ],
+      "summary": "The idiopathic pulmonary fibrosis myofibroblast phenotype is enriched with ACTA2 in the lung.",
+      "terms": [
+        {
+          "normalized_label": "myofibroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            24,
+            37
+          ],
+          "sub_span": "myofibroblast",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ACTA2",
+          "provenance": "explicit",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "sub_span": "ACTA2",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "lung",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:48c5290b7d1e786dc15e",
+      "span_literal": "the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+      "span_offset": [
+        16528,
+        16781
+      ],
+      "summary": "The idiopathic pulmonary fibrosis fibroblast phenotype exhibits increased expression of HAS1, HAS2, FBN1, and CXCL14 in the lung.",
+      "terms": [
+        {
+          "normalized_label": "fibroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            27,
+            37
+          ],
+          "sub_span": "fibroblast",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "HAS1",
+          "provenance": "explicit",
+          "sub_offset": [
+            175,
+            179
+          ],
+          "sub_span": "HAS1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "HAS2",
+          "provenance": "explicit",
+          "sub_offset": [
+            181,
+            185
+          ],
+          "sub_span": "HAS2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FBN1",
+          "provenance": "explicit",
+          "sub_offset": [
+            187,
+            191
+          ],
+          "sub_span": "FBN1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CXCL14",
+          "provenance": "explicit",
+          "sub_offset": [
+            224,
+            230
+          ],
+          "sub_span": "CXCL14",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "lung",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:efc08084a6af4e3a0e1c",
+      "span_literal": "SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "span_offset": [
+        20778,
+        21029
+      ],
+      "summary": "The profibrotic idiopathic pulmonary fibrosis macrophage archetype shows increasing expression of SPP1, lipoprotein lipase, LIPA, SPARC, GPC4, PALLD, CTSK, and MMP9 along its trajectory.",
+      "terms": [
+        {
+          "normalized_label": "profibrotic macrophage",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SPP1",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "SPP1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "lipoprotein lipase",
+          "provenance": "explicit",
+          "sub_offset": [
+            31,
+            49
+          ],
+          "sub_span": "lipoprotein lipase",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LIPA",
+          "provenance": "explicit",
+          "sub_offset": [
+            54,
+            58
+          ],
+          "sub_span": "LIPA",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SPARC",
+          "provenance": "explicit",
+          "sub_offset": [
+            164,
+            169
+          ],
+          "sub_span": "SPARC",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GPC4",
+          "provenance": "explicit",
+          "sub_offset": [
+            171,
+            175
+          ],
+          "sub_span": "GPC4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PALLD",
+          "provenance": "explicit",
+          "sub_offset": [
+            177,
+            182
+          ],
+          "sub_span": "PALLD",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CTSK",
+          "provenance": "explicit",
+          "sub_offset": [
+            184,
+            188
+          ],
+          "sub_span": "CTSK",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MMP9",
+          "provenance": "explicit",
+          "sub_offset": [
+            194,
+            198
+          ],
+          "sub_span": "MMP9",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6a271e0b8a4dd81f5543",
+      "span_literal": "At the terminus of the IPF archetype, macrophage start expressing CSF1, suggesting the possibility of an autocrine feedback loop for recruitment and activation.",
+      "span_offset": [
+        21030,
+        21190
+      ],
+      "summary": "At the terminus of the idiopathic pulmonary fibrosis archetype, profibrotic macrophage cells start expressing CSF1.",
+      "terms": [
+        {
+          "normalized_label": "profibrotic macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            38,
+            48
+          ],
+          "sub_span": "macrophage",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CSF1",
+          "provenance": "explicit",
+          "sub_offset": [
+            66,
+            70
+          ],
+          "sub_span": "CSF1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:306ec975e7d20bffce52",
+      "span_literal": "while they express some of the most typical airway basal cell markers (TP63, KRT17, and LAMB3 LAMC2), they seem to have lost others (KRT5 and KRT15) (9) and express SOX9, a transcription factor critical to distal airway development and repair (16, 17).",
+      "span_offset": [
+        29411,
+        29663
+      ],
+      "summary": "Aberrant basaloid cells express the airway basal cell markers TP63, KRT17, LAMB3, and LAMC2, have lost expression of KRT5 and KRT15, and express SOX9.",
+      "terms": [
+        {
+          "normalized_label": "aberrant basaloid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            6,
+            10
+          ],
+          "sub_span": "they",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TP63",
+          "provenance": "explicit",
+          "sub_offset": [
+            71,
+            75
+          ],
+          "sub_span": "TP63",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KRT17",
+          "provenance": "explicit",
+          "sub_offset": [
+            77,
+            82
+          ],
+          "sub_span": "KRT17",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LAMB3",
+          "provenance": "explicit",
+          "sub_offset": [
+            88,
+            93
+          ],
+          "sub_span": "LAMB3",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LAMC2",
+          "provenance": "explicit",
+          "sub_offset": [
+            94,
+            99
+          ],
+          "sub_span": "LAMC2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "KRT5",
+          "provenance": "explicit",
+          "sub_offset": [
+            133,
+            137
+          ],
+          "sub_span": "KRT5",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "KRT15",
+          "provenance": "explicit",
+          "sub_offset": [
+            142,
+            147
+          ],
+          "sub_span": "KRT15",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX9",
+          "provenance": "explicit",
+          "sub_offset": [
+            165,
+            169
+          ],
+          "sub_span": "SOX9",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "basal cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "comparison"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:376840d811ec40830efa",
+      "span_literal": "Third, these cells seem to be undergoing EMT, they express mesenchymal markers (COL1A1, CDH2, and HMGA2) and have lost the expression MIR205HG, a gene containing mir-205 and a gatekeeper against EMT (28).",
+      "span_offset": [
+        29664,
+        29868
+      ],
+      "summary": "Aberrant basaloid cells express mesenchymal markers COL1A1, CDH2, and HMGA2 and have lost expression of MIR205HG.",
+      "terms": [
+        {
+          "normalized_label": "aberrant basaloid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            18
+          ],
+          "sub_span": "these cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "COL1A1",
+          "provenance": "explicit",
+          "sub_offset": [
+            80,
+            86
+          ],
+          "sub_span": "COL1A1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDH2",
+          "provenance": "explicit",
+          "sub_offset": [
+            88,
+            92
+          ],
+          "sub_span": "CDH2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "HMGA2",
+          "provenance": "explicit",
+          "sub_offset": [
+            98,
+            103
+          ],
+          "sub_span": "HMGA2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "MIR205HG",
+          "provenance": "explicit",
+          "sub_offset": [
+            134,
+            142
+          ],
+          "sub_span": "MIR205HG",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7972c4b165155c021624",
+      "span_literal": "Fourth, they express multiple markers of senescence (CDKN1A, CDKN2A, MDM2, and GDF15) (11, 12).",
+      "span_offset": [
+        29869,
+        29964
+      ],
+      "summary": "Aberrant basaloid cells express multiple markers of senescence including CDKN1A, CDKN2A, MDM2, and GDF15.",
+      "terms": [
+        {
+          "normalized_label": "aberrant basaloid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            8,
+            12
+          ],
+          "sub_span": "they",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDKN1A",
+          "provenance": "explicit",
+          "sub_offset": [
+            53,
+            59
+          ],
+          "sub_span": "CDKN1A",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDKN2A",
+          "provenance": "explicit",
+          "sub_offset": [
+            61,
+            67
+          ],
+          "sub_span": "CDKN2A",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MDM2",
+          "provenance": "explicit",
+          "sub_offset": [
+            69,
+            73
+          ],
+          "sub_span": "MDM2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GDF15",
+          "provenance": "explicit",
+          "sub_offset": [
+            79,
+            84
+          ],
+          "sub_span": "GDF15",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b54f0ba62f77079f1c02",
+      "span_literal": "Last, these cells are the highest expressers of genes implicated in the pathogenesis of IPF such as AVB6 (14), MMP7 (13), GDF15 (12), and EPHB2 (15).",
+      "span_offset": [
+        29965,
+        30114
+      ],
+      "summary": "Aberrant basaloid cells are the highest expressers of AVB6, MMP7, GDF15, and EPHB2 among all profiled cell types.",
+      "terms": [
+        {
+          "normalized_label": "aberrant basaloid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            6,
+            17
+          ],
+          "sub_span": "these cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "AVB6",
+          "provenance": "explicit",
+          "sub_offset": [
+            100,
+            104
+          ],
+          "sub_span": "AVB6",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MMP7",
+          "provenance": "explicit",
+          "sub_offset": [
+            111,
+            115
+          ],
+          "sub_span": "MMP7",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GDF15",
+          "provenance": "explicit",
+          "sub_offset": [
+            122,
+            127
+          ],
+          "sub_span": "GDF15",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EPHB2",
+          "provenance": "explicit",
+          "sub_offset": [
+            138,
+            143
+          ],
+          "sub_span": "EPHB2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:76415f34ab2e1bfca759",
+      "span_literal": "This population consistently expresses other genes associated with muscle like MYLK, NEBL, MYO10, and MYO1D, suggesting that the pathological phenotype observed in IPF is an extended, disease-related feature of this population, rather than the result of transdifferentiation from a discrete cellular population.",
+      "span_offset": [
+        35454,
+        35765
+      ],
+      "summary": "Myofibroblasts consistently express muscle-associated genes MYLK, NEBL, MYO10, and MYO1D in the lung.",
+      "terms": [
+        {
+          "normalized_label": "myofibroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            15
+          ],
+          "sub_span": "This population",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYLK",
+          "provenance": "explicit",
+          "sub_offset": [
+            79,
+            83
+          ],
+          "sub_span": "MYLK",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NEBL",
+          "provenance": "explicit",
+          "sub_offset": [
+            85,
+            89
+          ],
+          "sub_span": "NEBL",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYO10",
+          "provenance": "explicit",
+          "sub_offset": [
+            91,
+            96
+          ],
+          "sub_span": "MYO10",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYO1D",
+          "provenance": "explicit",
+          "sub_offset": [
+            102,
+            107
+          ],
+          "sub_span": "MYO1D",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "lung",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7bfde9717e18207e5cbc",
+      "span_literal": "IHC staining of aberrant basaloid cells in IPF lungs: epithelial cells covering fibroblast foci are p63+ KRT17+ basaloid cells staining COX2-, p21-, and HMGA2-positive, while basal cells in bronchi do not.",
+      "span_offset": [
+        12075,
+        12280
+      ],
+      "summary": "Aberrant basaloid cells in idiopathic pulmonary fibrosis lungs are positive for TP63, KRT17, PTGS2, CDKN1A, and HMGA2.",
+      "terms": [
+        {
+          "normalized_label": "aberrant basaloid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            25,
+            39
+          ],
+          "sub_span": "basaloid cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TP63",
+          "provenance": "explicit",
+          "sub_offset": [
+            100,
+            104
+          ],
+          "sub_span": "p63+",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KRT17",
+          "provenance": "explicit",
+          "sub_offset": [
+            105,
+            111
+          ],
+          "sub_span": "KRT17+",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PTGS2",
+          "provenance": "explicit",
+          "sub_offset": [
+            136,
+            141
+          ],
+          "sub_span": "COX2-",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDKN1A",
+          "provenance": "explicit",
+          "sub_offset": [
+            143,
+            147
+          ],
+          "sub_span": "p21-",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "HMGA2",
+          "provenance": "explicit",
+          "sub_offset": [
+            153,
+            167
+          ],
+          "sub_span": "HMGA2-positive",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "basal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            175,
+            197
+          ],
+          "sub_span": "basal cells in bronchi",
+          "term_type": "comparison"
+        },
+        {
+          "normalized_label": "lung",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    }
+  ],
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "schema_version": "mrkr.claims.v1",
+  "source": {
+    "id": "benchmark/Adams2020",
+    "sha256": "sha256:3270b940288ce4d932206a1d32efb0efc1bde7b94c1a7c11f41d354bbc236f47"
+  }
+}

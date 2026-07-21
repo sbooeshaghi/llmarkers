@@ -82,6 +82,78 @@ Large CAP AnnData downloads are intentionally ignored by git. Their source
 URLs, checksums, and expected filenames are recorded in
 `data/cell_annotation_platform/anndata/README.md`.
 
+## Source-Grounded Corpus
+
+[`mrkr`](https://github.com/sbooeshaghi/mrkr) converts one manuscript into a
+validated `paper.onto.json`. This file links exact source evidence to marker
+genes, target cell types, stated comparisons, tissues, and ontology terms.
+LLMarkers owns the corpus runner and normalized database built from those files.
+The default runner expects a sibling `mrkr` checkout. Use `--mrkr-cwd` to point
+to another checkout. The runner fingerprints the complete `mrkr` package,
+prompt, gene map, project file, and lockfile in each status record.
+
+The validated benchmark was produced with the revision recorded in
+`analysis/mrkr.lock`. Reproduce that tool environment with:
+
+```bash
+git clone https://github.com/sbooeshaghi/mrkr.git ../mrkr
+git -C ../mrkr checkout c40afd5f457a8c6e48f2495de767a039f41014a3
+uv sync --project ../mrkr --locked
+```
+
+Source manifests include the organism explicitly. The packaged gene map and
+the current corpus runner support `homo_sapiens`; another organism requires a
+versioned species-specific map in `mrkr`.
+
+Inspect the fixed seven-paper benchmark without making API calls:
+
+```bash
+uv run --locked python analysis/mine_corpus.py \
+  --manifest analysis/benchmark_sources.tsv \
+  --out analysis/artifacts/mrkr_benchmark_v1 \
+  --dry-run
+```
+
+Run one paper before increasing the scope:
+
+```bash
+uv run --locked python analysis/mine_corpus.py \
+  --manifest analysis/benchmark_sources.tsv \
+  --out analysis/artifacts/mrkr_benchmark_v1 \
+  --limit 1 --jobs 1
+```
+
+Successful runs write a portable `onto_manifest.tsv`. Build a database without
+ontology hierarchy expansion as follows. Here, `--exact-only` means that the
+closure table contains identity edges only; unresolved and coarse term records
+remain available for audit.
+
+```bash
+uv run --locked python analysis/build_claim_db.py \
+  --manifest analysis/artifacts/mrkr_benchmark_v1/onto_manifest.tsv \
+  --out analysis/artifacts/mrkr_benchmark_v1/claims.sqlite \
+  --exact-only
+```
+
+The source manifest, generated ontology manifest, artifact hashes, organism,
+`mrkr` source fingerprint, and validation status are separate parts of the
+audit trail. The validated claim and onto JSON files are durable semantic
+artifacts. The SQLite file is derived and can be rebuilt.
+
+The benchmark manuscript text is not redistributed because of source-license
+restrictions. A clone can validate the committed artifact hashes and rebuild
+the database. Re-extraction and source-span validation require the manuscript
+files listed in `analysis/benchmark_sources.tsv`.
+
+The database includes `marker_evidence` and `profile_markers` views. For
+example, this query returns source evidence for one marker:
+
+```sql
+SELECT paper_key, target_label, gene_symbol, direction, span_literal
+FROM marker_evidence
+WHERE gene_symbol = 'CD3D';
+```
+
 The LLM-normalized marker context statements are committed as a compressed
 artifact at
 `analysis/artifacts/marker_context/llmarkers_context_statement_llm_records.tsv.gz`.

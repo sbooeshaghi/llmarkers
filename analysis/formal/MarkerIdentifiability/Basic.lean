@@ -735,6 +735,976 @@ theorem contrastFamilyMarkerGenes_eq_iInter_pairwiseMarkerGenes
   simp [ContrastFamilyMarkerGenes, PairwiseMarkerGenes, ContrastFamilyMarker]
 
 /--
+An abstract marker panel is a hitting set for pairwise marker sets. The panel
+need not contain a gene that works against every comparison; instead, each
+comparison must be covered by at least one selected gene.
+-/
+def HitsPairwiseMarkerSets {Group Gene : Type}
+    (pairwise : Group → Set Gene) (comparisons : Finset Group)
+    (panel : Finset Gene) : Prop :=
+  ∀ comparison : Group, comparison ∈ comparisons →
+    ∃ gene : Gene, gene ∈ panel ∧ gene ∈ pairwise comparison
+
+/--
+An abstract marker-panel rule assigns a validity predicate to each finite
+comparison family and selected gene panel after pairwise marker sets have been
+fixed.
+
+The axioms say that the empty comparison family is neutral, a singleton
+comparison family is covered exactly when the panel intersects that pairwise
+marker set, and coverage of a union of comparison families is conjunctive.
+-/
+structure MarkerPanelAxioms {Group Gene : Type} [DecidableEq Group]
+    (pairwise : Group → Set Gene)
+    (panelRule : Finset Group → Finset Gene → Prop) : Prop where
+  empty_neutral : ∀ panel : Finset Gene, panelRule ∅ panel
+  singleton_agreement :
+    ∀ comparison : Group, ∀ panel : Finset Gene,
+      panelRule {comparison} panel ↔
+        ∃ gene : Gene, gene ∈ panel ∧ gene ∈ pairwise comparison
+  union_conjunctive :
+    ∀ C D : Finset Group, ∀ panel : Finset Gene,
+      panelRule (C ∪ D) panel ↔ panelRule C panel ∧ panelRule D panel
+
+/--
+The marker-panel axioms force the hitting-set representation: a panel is valid
+for a comparison family exactly when it hits every pairwise marker set indexed
+by that family.
+-/
+theorem markerPanelAxioms_iff_hitsPairwiseMarkerSets
+    {Group Gene : Type} [DecidableEq Group]
+    {pairwise : Group → Set Gene}
+    {panelRule : Finset Group → Finset Gene → Prop}
+    (haxioms : MarkerPanelAxioms pairwise panelRule)
+    (comparisons : Finset Group) (panel : Finset Gene) :
+    panelRule comparisons panel ↔
+      HitsPairwiseMarkerSets pairwise comparisons panel := by
+  refine Finset.induction_on comparisons ?empty ?insert
+  · constructor
+    · intro _hpanel comparison hcomparison
+      simp at hcomparison
+    · intro _hhits
+      exact haxioms.empty_neutral panel
+  · intro comparison comparisons hnotMem ih
+    have hinsert :
+        (insert comparison comparisons : Finset Group) =
+          ({comparison} : Finset Group) ∪ comparisons := by
+      ext h
+      simp [Finset.mem_insert]
+    rw [hinsert, haxioms.union_conjunctive, haxioms.singleton_agreement, ih]
+    constructor
+    · intro hcovered candidate hcandidate
+      rcases hcovered with ⟨hsingleton, hrest⟩
+      rcases Finset.mem_insert.mp hcandidate with rfl | hcandidate
+      · exact hsingleton
+      · exact hrest candidate hcandidate
+    · intro hhits
+      constructor
+      · exact hhits comparison (by simp)
+      · intro candidate hcandidate
+        exact hhits candidate (by simp [hcandidate])
+
+/--
+The hitting-set marker-panel rule satisfies the abstract marker-panel axioms.
+-/
+theorem hitsPairwiseMarkerSets_satisfies_markerPanelAxioms
+    {Group Gene : Type} [DecidableEq Group]
+    {pairwise : Group → Set Gene} :
+    MarkerPanelAxioms pairwise
+      (fun comparisons : Finset Group => HitsPairwiseMarkerSets pairwise comparisons) := by
+  refine ⟨?empty, ?singleton, ?union⟩
+  · intro panel comparison hcomparison
+    simp at hcomparison
+  · intro comparison panel
+    constructor
+    · intro hpanel
+      exact hpanel comparison (by simp)
+    · intro hhit candidate hcandidate
+      have hcandidate_eq : candidate = comparison := by
+        simpa using hcandidate
+      subst candidate
+      exact hhit
+  · intro C D panel
+    constructor
+    · intro hpanel
+      constructor
+      · intro comparison hcomparison
+        exact hpanel comparison (by simp [hcomparison])
+      · intro comparison hcomparison
+        exact hpanel comparison (by simp [hcomparison])
+    · intro hpanel comparison hcomparison
+      rcases Finset.mem_union.mp hcomparison with hcomparison | hcomparison
+      · exact hpanel.1 comparison hcomparison
+      · exact hpanel.2 comparison hcomparison
+
+/--
+For fixed pairwise marker sets, any marker-panel rule satisfying the axioms is
+unique.
+-/
+theorem markerPanelAxioms_unique
+    {Group Gene : Type} [DecidableEq Group]
+    {pairwise : Group → Set Gene}
+    {panelRule₁ panelRule₂ : Finset Group → Finset Gene → Prop}
+    (hpanelRule₁ : MarkerPanelAxioms pairwise panelRule₁)
+    (hpanelRule₂ : MarkerPanelAxioms pairwise panelRule₂) :
+    panelRule₁ = panelRule₂ := by
+  funext comparisons panel
+  apply propext
+  rw [markerPanelAxioms_iff_hitsPairwiseMarkerSets hpanelRule₁,
+    markerPanelAxioms_iff_hitsPairwiseMarkerSets hpanelRule₂]
+
+/--
+A target-specific marker panel covers a comparison family when every comparison
+group has at least one selected gene that is a pairwise marker for the target
+against that comparison group.
+-/
+def ContrastFamilyMarkerPanel {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (study : Study) (partition : Partition) (target : Group)
+    (comparisons : Finset Group) (panel : Finset Gene) : Prop :=
+  ∀ comparison : Group, comparison ∈ comparisons →
+    ∃ gene : Gene, gene ∈ panel ∧
+      PairwiseContrastMarker μ threshold study partition target comparison gene
+
+/--
+The concrete target-specific marker panel definition is exactly the hitting-set
+condition over the corresponding pairwise marker-gene sets.
+-/
+theorem contrastFamilyMarkerPanel_iff_hitsPairwiseMarkerSets
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {panel : Finset Gene} :
+    ContrastFamilyMarkerPanel μ threshold study partition target comparisons panel ↔
+      HitsPairwiseMarkerSets
+        (fun comparison : Group =>
+          PairwiseMarkerGenes μ threshold study partition target comparison)
+        comparisons panel := by
+  constructor
+  · intro hpanel comparison hcomparison
+    rcases hpanel comparison hcomparison with ⟨gene, hgene_panel, hgene_marker⟩
+    exact ⟨gene, hgene_panel, hgene_marker⟩
+  · intro hhits comparison hcomparison
+    rcases hhits comparison hcomparison with ⟨gene, hgene_panel, hgene_marker⟩
+    exact ⟨gene, hgene_panel, hgene_marker⟩
+
+/--
+The concrete target-specific marker-panel definition satisfies the abstract
+marker-panel axioms.
+-/
+theorem contrastFamilyMarkerPanel_satisfies_markerPanelAxioms
+    {Study Partition Group Gene : Type} [DecidableEq Group]
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group} :
+    MarkerPanelAxioms
+      (fun comparison : Group =>
+        PairwiseMarkerGenes μ threshold study partition target comparison)
+      (fun comparisons : Finset Group =>
+        ContrastFamilyMarkerPanel μ threshold study partition target comparisons) := by
+  refine ⟨?empty, ?singleton, ?union⟩
+  · intro panel comparison hcomparison
+    simp at hcomparison
+  · intro comparison panel
+    rw [contrastFamilyMarkerPanel_iff_hitsPairwiseMarkerSets]
+    exact (hitsPairwiseMarkerSets_satisfies_markerPanelAxioms).singleton_agreement comparison panel
+  · intro C D panel
+    repeat rw [contrastFamilyMarkerPanel_iff_hitsPairwiseMarkerSets]
+    exact (hitsPairwiseMarkerSets_satisfies_markerPanelAxioms).union_conjunctive C D panel
+
+/--
+The empty comparison family is covered by every marker panel. Biologically this
+is a degenerate case: no alternatives have been specified.
+-/
+theorem contrastFamilyMarkerPanel_empty_comparisons
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {panel : Finset Gene} :
+    ContrastFamilyMarkerPanel μ threshold study partition target ∅ panel := by
+  intro comparison hcomparison
+  simp at hcomparison
+
+/--
+An empty marker panel cannot cover a nonempty comparison family.
+-/
+theorem not_contrastFamilyMarkerPanel_empty_panel_of_nonempty_comparisons
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group}
+    (hcomparisons : comparisons.Nonempty) :
+    ¬ ContrastFamilyMarkerPanel μ threshold study partition target comparisons
+      (∅ : Finset Gene) := by
+  intro hpanel
+  rcases hcomparisons with ⟨comparison, hcomparison⟩
+  rcases hpanel comparison hcomparison with ⟨gene, hgene_panel, _hgene_marker⟩
+  simp at hgene_panel
+
+/--
+Adding genes to a covering marker panel preserves coverage.
+-/
+theorem contrastFamilyMarkerPanel_mono_genes
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {panel largerPanel : Finset Gene}
+    (hsubset : panel ⊆ largerPanel)
+    (hpanel :
+      ContrastFamilyMarkerPanel μ threshold study partition target comparisons panel) :
+    ContrastFamilyMarkerPanel μ threshold study partition target comparisons largerPanel := by
+  intro comparison hcomparison
+  rcases hpanel comparison hcomparison with ⟨gene, hgene_panel, hgene_marker⟩
+  exact ⟨gene, hsubset hgene_panel, hgene_marker⟩
+
+/--
+Restricting the comparison family preserves panel coverage.
+-/
+theorem contrastFamilyMarkerPanel_subset_comparisons
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {Local Global : Finset Group} {panel : Finset Gene}
+    (hsubset : Local ⊆ Global)
+    (hglobal :
+      ContrastFamilyMarkerPanel μ threshold study partition target Global panel) :
+    ContrastFamilyMarkerPanel μ threshold study partition target Local panel := by
+  intro comparison hlocal
+  exact hglobal comparison (hsubset hlocal)
+
+/--
+Marker panels are monotone in selected genes and antitone in comparison scope:
+a larger panel that covers a broader comparison family also covers every
+restricted comparison family.
+-/
+theorem contrastFamilyMarkerPanel_antitone_comparisons_mono_genes
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {Local Global : Finset Group} {panel largerPanel : Finset Gene}
+    (hLocal : Local ⊆ Global) (hPanel : panel ⊆ largerPanel)
+    (hglobal :
+      ContrastFamilyMarkerPanel μ threshold study partition target Global panel) :
+    ContrastFamilyMarkerPanel μ threshold study partition target Local largerPanel :=
+  contrastFamilyMarkerPanel_mono_genes hPanel
+    (contrastFamilyMarkerPanel_subset_comparisons hLocal hglobal)
+
+/-!
+## Comparison difficulty
+
+The marker definitions above treat a comparison family as a finite set of
+constraints. That is the right logical object: adding comparisons can only add
+constraints, and restricting comparisons can only remove constraints.
+
+Empirically, however, two comparison families with the same or even smaller
+cardinality need not be equally easy. A smaller family can contain only close
+biological neighbors, while a larger family can contain mostly distant groups.
+The following definitions add an optional difficulty layer without changing the
+marker definition itself.
+-/
+
+/--
+A comparison-difficulty score assigns a nonnegative burden to asking whether a
+target group can be distinguished from a comparison group. Larger values can be
+used for biologically closer or otherwise harder comparisons.
+-/
+abbrev ComparisonDifficulty (Group : Type) := Group → Group → ℝ
+
+/--
+The total difficulty burden of a target's comparison family.
+-/
+def ComparisonFamilyBurden {Group : Type}
+    (difficulty : ComparisonDifficulty Group) (target : Group)
+    (comparisons : Finset Group) : ℝ :=
+  comparisons.sum (fun comparison => difficulty target comparison)
+
+/--
+The empty comparison family has no comparison burden.
+-/
+theorem comparisonFamilyBurden_empty {Group : Type}
+    (difficulty : ComparisonDifficulty Group) (target : Group) :
+    ComparisonFamilyBurden difficulty target ∅ = 0 := by
+  simp [ComparisonFamilyBurden]
+
+/--
+Adding one comparison adds exactly that comparison's difficulty burden.
+-/
+theorem comparisonFamilyBurden_insert {Group : Type} [DecidableEq Group]
+    {difficulty : ComparisonDifficulty Group} {target comparison : Group}
+    {comparisons : Finset Group}
+    (hnotMem : comparison ∉ comparisons) :
+    ComparisonFamilyBurden difficulty target (insert comparison comparisons) =
+      difficulty target comparison + ComparisonFamilyBurden difficulty target comparisons := by
+  simp [ComparisonFamilyBurden, hnotMem]
+
+/--
+For nonnegative difficulty scores, enlarging a comparison family cannot decrease
+the total comparison burden.
+-/
+theorem comparisonFamilyBurden_mono {Group : Type}
+    {difficulty : ComparisonDifficulty Group} {target : Group}
+    {Local Global : Finset Group}
+    (hsubset : Local ⊆ Global)
+    (hnonneg : ∀ comparison : Group, comparison ∈ Global →
+      0 ≤ difficulty target comparison) :
+    ComparisonFamilyBurden difficulty target Local ≤
+      ComparisonFamilyBurden difficulty target Global := by
+  exact Finset.sum_le_sum_of_subset_of_nonneg hsubset
+    (by
+      intro comparison hglobal _hnotLocal
+      exact hnonneg comparison hglobal)
+
+/--
+The high-similarity or high-difficulty part of a comparison family. This can be
+used to model close-neighbor contrasts such as immune-cell comparisons inside a
+pre-sorted immune dataset.
+-/
+noncomputable def HardComparisonFamily {Group : Type}
+    (similarity : Group → Group → ℝ) (target : Group) (cutoff : ℝ)
+    (comparisons : Finset Group) : Finset Group :=
+  comparisons.filter (fun comparison => cutoff ≤ similarity target comparison)
+
+/--
+The hard-comparison family is a subset of the original comparison family.
+-/
+theorem hardComparisonFamily_subset {Group : Type}
+    {similarity : Group → Group → ℝ} {target : Group} {cutoff : ℝ}
+    {comparisons : Finset Group} :
+    HardComparisonFamily similarity target cutoff comparisons ⊆ comparisons := by
+  intro comparison hcomparison
+  exact (Finset.mem_filter.mp hcomparison).1
+
+/--
+A panel that covers the full comparison family also covers any hard-neighbor
+subfamily induced by a similarity threshold.
+-/
+theorem contrastFamilyMarkerPanel_hardComparisonFamily
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold cutoff : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {panel : Finset Gene}
+    {similarity : Group → Group → ℝ}
+    (hpanel :
+      ContrastFamilyMarkerPanel μ threshold study partition target comparisons panel) :
+    ContrastFamilyMarkerPanel μ threshold study partition target
+      (HardComparisonFamily similarity target cutoff comparisons) panel :=
+  contrastFamilyMarkerPanel_subset_comparisons hardComparisonFamily_subset hpanel
+
+namespace ComparisonDifficultyExample
+
+/--
+A toy comparison universe: one target, one close neighbor, and two distant
+neighbors.
+-/
+inductive Group where
+  | target
+  | close
+  | distant₁
+  | distant₂
+  deriving DecidableEq
+
+open Group
+
+def smallCloseFamily : Finset Group := {close}
+
+def largerDistantFamily : Finset Group := {distant₁, distant₂}
+
+def difficulty : ComparisonDifficulty Group
+  | target, close => 10
+  | target, distant₁ => 1
+  | target, distant₂ => 1
+  | _, _ => 0
+
+/--
+The close-neighbor family has fewer comparisons than the distant-neighbor
+family.
+-/
+theorem smallCloseFamily_has_fewer_comparisons :
+    smallCloseFamily.card < largerDistantFamily.card := by
+  native_decide
+
+/--
+The close-neighbor family nevertheless has higher total difficulty burden. This
+formalizes the Hildreth-style point: narrowing the comparison family can remove
+easy distant comparisons while retaining harder nearby comparisons.
+-/
+theorem smallCloseFamily_has_larger_burden :
+    ComparisonFamilyBurden difficulty target largerDistantFamily <
+      ComparisonFamilyBurden difficulty target smallCloseFamily := by
+  simp [ComparisonFamilyBurden, smallCloseFamily, largerDistantFamily, difficulty]
+  norm_num
+
+end ComparisonDifficultyExample
+
+/--
+A singleton marker panel covers a comparison family exactly when its one gene is
+a strict comparison-family marker for that family.
+-/
+theorem singleton_contrastFamilyMarkerPanel_iff_contrastFamilyMarker
+    {Study Partition Group Gene : Type} [DecidableEq Gene]
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {gene : Gene} :
+    ContrastFamilyMarkerPanel μ threshold study partition target comparisons
+      ({gene} : Finset Gene) ↔
+      ContrastFamilyMarker μ threshold study partition target comparisons gene := by
+  constructor
+  · intro hpanel comparison hcomparison
+    rcases hpanel comparison hcomparison with ⟨gene', hgene'_panel, hgene'_marker⟩
+    have hgene' : gene' = gene := by
+      simpa using hgene'_panel
+    subst gene'
+    exact hgene'_marker
+  · intro hmarker comparison hcomparison
+    exact ⟨gene, by simp, hmarker comparison hcomparison⟩
+
+/--
+Any selected strict comparison-family marker is enough to make a panel cover
+the comparison family.
+-/
+theorem contrastFamilyMarkerPanel_of_mem_contrastFamilyMarkerGenes
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {panel : Finset Gene} {gene : Gene}
+    (hgene_panel : gene ∈ panel)
+    (hgene_marker :
+      gene ∈ ContrastFamilyMarkerGenes μ threshold study partition target comparisons) :
+    ContrastFamilyMarkerPanel μ threshold study partition target comparisons panel := by
+  intro comparison hcomparison
+  exact ⟨gene, hgene_panel, hgene_marker comparison hcomparison⟩
+
+/--
+Every nonempty panel whose genes are all strict comparison-family markers covers
+the comparison family.
+-/
+theorem contrastFamilyMarkerPanel_of_nonempty_subset_contrastFamilyMarkerGenes
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {panel : Finset Gene}
+    (hpanel_nonempty : panel.Nonempty)
+    (hpanel_subset :
+      ∀ gene : Gene, gene ∈ panel →
+        gene ∈ ContrastFamilyMarkerGenes μ threshold study partition target comparisons) :
+    ContrastFamilyMarkerPanel μ threshold study partition target comparisons panel := by
+  rcases hpanel_nonempty with ⟨gene, hgene_panel⟩
+  exact contrastFamilyMarkerPanel_of_mem_contrastFamilyMarkerGenes hgene_panel
+    (hpanel_subset gene hgene_panel)
+
+/--
+A minimum target-specific marker panel is a covering panel with minimum
+cardinality among all covering panels for the same target and comparison family.
+-/
+def IsMinimumContrastFamilyMarkerPanel {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (study : Study) (partition : Partition) (target : Group)
+    (comparisons : Finset Group) (panel : Finset Gene) : Prop :=
+  ContrastFamilyMarkerPanel μ threshold study partition target comparisons panel ∧
+    ∀ otherPanel : Finset Gene,
+      ContrastFamilyMarkerPanel μ threshold study partition target comparisons otherPanel →
+        panel.card ≤ otherPanel.card
+
+/--
+An essential panel gene is present in every minimum marker panel for a target
+and comparison family.
+-/
+def EssentialPanelGene {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (study : Study) (partition : Partition) (target : Group)
+    (comparisons : Finset Group) (gene : Gene) : Prop :=
+  ∀ panel : Finset Gene,
+    IsMinimumContrastFamilyMarkerPanel μ threshold study partition target comparisons panel →
+      gene ∈ panel
+
+/--
+An exchangeable panel gene is present in at least one, but not every, minimum
+marker panel for a target and comparison family.
+-/
+def ExchangeablePanelGene {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (study : Study) (partition : Partition) (target : Group)
+    (comparisons : Finset Group) (gene : Gene) : Prop :=
+  (∃ panel : Finset Gene,
+    IsMinimumContrastFamilyMarkerPanel μ threshold study partition target comparisons panel ∧
+      gene ∈ panel) ∧
+    ¬ EssentialPanelGene μ threshold study partition target comparisons gene
+
+/--
+A redundant panel gene is absent from every minimum marker panel for a target
+and comparison family.
+-/
+def RedundantForMinimumMarkerPanel {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (study : Study) (partition : Partition) (target : Group)
+    (comparisons : Finset Group) (gene : Gene) : Prop :=
+  ∀ panel : Finset Gene,
+    IsMinimumContrastFamilyMarkerPanel μ threshold study partition target comparisons panel →
+      gene ∉ panel
+
+/--
+An exchangeable panel gene is not essential by definition.
+-/
+theorem exchangeablePanelGene_not_essential
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {gene : Gene}
+    (h : ExchangeablePanelGene μ threshold study partition target comparisons gene) :
+    ¬ EssentialPanelGene μ threshold study partition target comparisons gene :=
+  h.2
+
+/--
+An exchangeable panel gene is witnessed by at least one minimum marker panel
+that contains it.
+-/
+theorem exchangeablePanelGene_mem_some_minimum
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {gene : Gene}
+    (h : ExchangeablePanelGene μ threshold study partition target comparisons gene) :
+    ∃ panel : Finset Gene,
+      IsMinimumContrastFamilyMarkerPanel μ threshold study partition target comparisons panel ∧
+        gene ∈ panel :=
+  h.1
+
+/-!
+Panel performance with positive and negative contexts
+
+The target-specific marker-panel definition above is a validity condition: every
+intended comparison is covered by at least one gene in the selected panel. For
+practical marker design, one also wants to quantify the tradeoff incurred by
+adding genes. The following definitions separate target sensitivity from
+off-target hits.
+-/
+
+/--
+A panel hits a context when at least one selected gene belongs to that context's
+marker set.
+-/
+def PanelHits {Context Gene : Type}
+    (markerSets : Context → Set Gene) (panel : Finset Gene)
+    (context : Context) : Prop :=
+  ∃ gene : Gene, gene ∈ panel ∧ gene ∈ markerSets context
+
+/--
+The contexts hit by a marker panel.
+-/
+noncomputable def CoveredContexts {Context Gene : Type} [DecidableEq Context]
+    (markerSets : Context → Set Gene) (contexts : Finset Context)
+    (panel : Finset Gene) : Finset Context := by
+  classical
+  exact contexts.filter (fun context => PanelHits markerSets panel context)
+
+/--
+The contexts avoided by a marker panel.
+-/
+noncomputable def AvoidedContexts {Context Gene : Type} [DecidableEq Context]
+    (markerSets : Context → Set Gene) (contexts : Finset Context)
+    (panel : Finset Gene) : Finset Context := by
+  classical
+  exact contexts.filter (fun context => ¬ PanelHits markerSets panel context)
+
+/--
+Target coverage count. Dividing by the number of positive contexts gives
+sensitivity.
+-/
+noncomputable def PanelCoverageCount {Context Gene : Type} [DecidableEq Context]
+    (markerSets : Context → Set Gene) (contexts : Finset Context)
+    (panel : Finset Gene) : Nat :=
+  (CoveredContexts markerSets contexts panel).card
+
+/--
+Off-target hit count. Dividing by the number of negative contexts gives the
+off-target hit rate, and one minus that rate gives specificity.
+-/
+noncomputable def PanelOffTargetHitCount {Context Gene : Type} [DecidableEq Context]
+    (markerSets : Context → Set Gene) (contexts : Finset Context)
+    (panel : Finset Gene) : Nat :=
+  PanelCoverageCount markerSets contexts panel
+
+/--
+Specificity count: the number of negative contexts not hit by the panel.
+-/
+noncomputable def PanelSpecificityCount {Context Gene : Type} [DecidableEq Context]
+    (markerSets : Context → Set Gene) (contexts : Finset Context)
+    (panel : Finset Gene) : Nat :=
+  (AvoidedContexts markerSets contexts panel).card
+
+/--
+The contexts newly covered by adding a gene to an existing panel.
+-/
+noncomputable def MarginalCoverageContexts {Context Gene : Type} [DecidableEq Context]
+    (markerSets : Context → Set Gene) (contexts : Finset Context)
+    (panel : Finset Gene) (gene : Gene) : Finset Context := by
+  classical
+  exact contexts.filter
+    (fun context => ¬ PanelHits markerSets panel context ∧ gene ∈ markerSets context)
+
+/--
+The marginal coverage gain from adding a gene to an existing panel.
+-/
+noncomputable def MarginalCoverageCount {Context Gene : Type} [DecidableEq Context]
+    (markerSets : Context → Set Gene) (contexts : Finset Context)
+    (panel : Finset Gene) (gene : Gene) : Nat :=
+  (MarginalCoverageContexts markerSets contexts panel gene).card
+
+/--
+Adding genes preserves a hit.
+-/
+theorem panelHits_mono_genes {Context Gene : Type}
+    {markerSets : Context → Set Gene} {panel largerPanel : Finset Gene}
+    {context : Context}
+    (hsubset : panel ⊆ largerPanel)
+    (hhit : PanelHits markerSets panel context) :
+    PanelHits markerSets largerPanel context := by
+  rcases hhit with ⟨gene, hgene_panel, hgene_marker⟩
+  exact ⟨gene, hsubset hgene_panel, hgene_marker⟩
+
+/--
+Adding genes can only increase target coverage.
+-/
+theorem coveredContexts_mono_genes {Context Gene : Type} [DecidableEq Context]
+    {markerSets : Context → Set Gene} {contexts : Finset Context}
+    {panel largerPanel : Finset Gene}
+    (hsubset : panel ⊆ largerPanel) :
+    CoveredContexts markerSets contexts panel ⊆
+      CoveredContexts markerSets contexts largerPanel := by
+  classical
+  intro context hcontext
+  simp [CoveredContexts] at hcontext ⊢
+  exact ⟨hcontext.1, panelHits_mono_genes hsubset hcontext.2⟩
+
+/--
+Adding genes can only increase the number of covered positive contexts.
+-/
+theorem panelCoverageCount_mono_genes {Context Gene : Type} [DecidableEq Context]
+    {markerSets : Context → Set Gene} {contexts : Finset Context}
+    {panel largerPanel : Finset Gene}
+    (hsubset : panel ⊆ largerPanel) :
+    PanelCoverageCount markerSets contexts panel ≤
+      PanelCoverageCount markerSets contexts largerPanel := by
+  exact Finset.card_le_card (coveredContexts_mono_genes hsubset)
+
+/--
+Adding genes can only increase the number of off-target contexts hit.
+-/
+theorem panelOffTargetHitCount_mono_genes {Context Gene : Type} [DecidableEq Context]
+    {markerSets : Context → Set Gene} {contexts : Finset Context}
+    {panel largerPanel : Finset Gene}
+    (hsubset : panel ⊆ largerPanel) :
+    PanelOffTargetHitCount markerSets contexts panel ≤
+      PanelOffTargetHitCount markerSets contexts largerPanel :=
+  panelCoverageCount_mono_genes hsubset
+
+/--
+Adding genes can only decrease the number of avoided negative contexts.
+-/
+theorem panelSpecificityCount_antitone_genes {Context Gene : Type} [DecidableEq Context]
+    {markerSets : Context → Set Gene} {contexts : Finset Context}
+    {panel largerPanel : Finset Gene}
+    (hsubset : panel ⊆ largerPanel) :
+    PanelSpecificityCount markerSets contexts largerPanel ≤
+      PanelSpecificityCount markerSets contexts panel := by
+  classical
+  apply Finset.card_le_card
+  intro context hcontext
+  simp [AvoidedContexts] at hcontext ⊢
+  refine ⟨hcontext.1, ?_⟩
+  intro hhit
+  exact hcontext.2 (panelHits_mono_genes hsubset hhit)
+
+/--
+Marginal coverage has diminishing returns: if one panel is contained in a
+larger panel, then adding the same gene to the larger panel can cover no more
+new contexts than adding it to the smaller panel.
+-/
+theorem marginalCoverageCount_antitone_panel
+    {Context Gene : Type} [DecidableEq Context]
+    {markerSets : Context → Set Gene} {contexts : Finset Context}
+    {panel largerPanel : Finset Gene} {gene : Gene}
+    (hsubset : panel ⊆ largerPanel) :
+    MarginalCoverageCount markerSets contexts largerPanel gene ≤
+      MarginalCoverageCount markerSets contexts panel gene := by
+  classical
+  apply Finset.card_le_card
+  intro context hcontext
+  simp [MarginalCoverageContexts] at hcontext ⊢
+  refine ⟨hcontext.1, ?_, hcontext.2.2⟩
+  intro hhit
+  exact hcontext.2.1 (panelHits_mono_genes hsubset hhit)
+
+/--
+A marker panel is feasible when it covers at least a requested number of
+positive contexts while hitting at most a requested number of negative contexts.
+-/
+def SensitivitySpecificityFeasiblePanel {Context Gene : Type} [DecidableEq Context]
+    (positiveMarkerSets negativeMarkerSets : Context → Set Gene)
+    (positiveContexts negativeContexts : Finset Context)
+    (minPositiveCoverage maxOffTargetHits : Nat)
+    (panel : Finset Gene) : Prop :=
+  PanelCoverageCount positiveMarkerSets positiveContexts panel ≥ minPositiveCoverage ∧
+    PanelOffTargetHitCount negativeMarkerSets negativeContexts panel ≤ maxOffTargetHits
+
+/--
+Among feasible panels, a minimum feasible panel has minimum cardinality.
+-/
+def IsMinimumFeasiblePanel {Context Gene : Type} [DecidableEq Context]
+    (positiveMarkerSets negativeMarkerSets : Context → Set Gene)
+    (positiveContexts negativeContexts : Finset Context)
+    (minPositiveCoverage maxOffTargetHits : Nat)
+    (panel : Finset Gene) : Prop :=
+  SensitivitySpecificityFeasiblePanel positiveMarkerSets negativeMarkerSets
+    positiveContexts negativeContexts minPositiveCoverage maxOffTargetHits panel ∧
+    ∀ otherPanel : Finset Gene,
+      SensitivitySpecificityFeasiblePanel positiveMarkerSets negativeMarkerSets
+        positiveContexts negativeContexts minPositiveCoverage maxOffTargetHits otherPanel →
+        panel.card ≤ otherPanel.card
+
+/--
+Weak Pareto dominance for marker panels: the first panel has at least as much
+positive coverage, no more off-target hits, and no more genes than the second.
+-/
+def PanelWeaklyDominates {Context Gene : Type} [DecidableEq Context]
+    (positiveMarkerSets negativeMarkerSets : Context → Set Gene)
+    (positiveContexts negativeContexts : Finset Context)
+    (better worse : Finset Gene) : Prop :=
+  PanelCoverageCount positiveMarkerSets positiveContexts worse ≤
+    PanelCoverageCount positiveMarkerSets positiveContexts better ∧
+  PanelOffTargetHitCount negativeMarkerSets negativeContexts better ≤
+    PanelOffTargetHitCount negativeMarkerSets negativeContexts worse ∧
+  better.card ≤ worse.card
+
+/--
+Strict Pareto dominance improves at least one of coverage, off-target hits, or
+panel size while being no worse on the others.
+-/
+def PanelStrictlyDominates {Context Gene : Type} [DecidableEq Context]
+    (positiveMarkerSets negativeMarkerSets : Context → Set Gene)
+    (positiveContexts negativeContexts : Finset Context)
+    (better worse : Finset Gene) : Prop :=
+  PanelWeaklyDominates positiveMarkerSets negativeMarkerSets
+    positiveContexts negativeContexts better worse ∧
+  (PanelCoverageCount positiveMarkerSets positiveContexts worse <
+      PanelCoverageCount positiveMarkerSets positiveContexts better ∨
+    PanelOffTargetHitCount negativeMarkerSets negativeContexts better <
+      PanelOffTargetHitCount negativeMarkerSets negativeContexts worse ∨
+    better.card < worse.card)
+
+/--
+A Pareto-optimal marker panel is not strictly dominated by another panel.
+-/
+def ParetoOptimalMarkerPanel {Context Gene : Type} [DecidableEq Context]
+    (positiveMarkerSets negativeMarkerSets : Context → Set Gene)
+    (positiveContexts negativeContexts : Finset Context)
+    (panel : Finset Gene) : Prop :=
+  ¬ ∃ otherPanel : Finset Gene,
+    PanelStrictlyDominates positiveMarkerSets negativeMarkerSets
+      positiveContexts negativeContexts otherPanel panel
+
+/--
+A panel is drawn from a finite candidate gene universe when every selected gene
+belongs to that universe. This is the finite optimization problem used by
+marker-panel selection tools.
+-/
+def PanelWithinGeneUniverse {Gene : Type}
+    (candidateGenes panel : Finset Gene) : Prop :=
+  panel ⊆ candidateGenes
+
+/--
+Pareto optimality restricted to a finite candidate gene universe.
+-/
+def ParetoOptimalMarkerPanelIn {Context Gene : Type} [DecidableEq Context]
+    (candidateGenes : Finset Gene)
+    (positiveMarkerSets negativeMarkerSets : Context → Set Gene)
+    (positiveContexts negativeContexts : Finset Context)
+    (panel : Finset Gene) : Prop :=
+  PanelWithinGeneUniverse candidateGenes panel ∧
+    ¬ ∃ otherPanel : Finset Gene,
+      PanelWithinGeneUniverse candidateGenes otherPanel ∧
+        PanelStrictlyDominates positiveMarkerSets negativeMarkerSets
+          positiveContexts negativeContexts otherPanel panel
+
+/--
+Full positive coverage is the strict marker-panel validity target expressed as a
+coverage constraint: every positive context is hit.
+-/
+def FullPositiveCoveragePanel {Context Gene : Type} [DecidableEq Context]
+    (positiveMarkerSets : Context → Set Gene)
+    (positiveContexts : Finset Context)
+    (panel : Finset Gene) : Prop :=
+  PanelCoverageCount positiveMarkerSets positiveContexts panel =
+    positiveContexts.card
+
+/--
+Full positive coverage is exactly the target-specific marker-panel condition
+when positive contexts are the comparison groups and each context's marker set
+is its pairwise marker-gene set.
+-/
+theorem contrastFamilyMarkerPanel_iff_fullPositiveCoveragePanel
+    {Study Partition Group Gene : Type} [DecidableEq Group]
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    {comparisons : Finset Group} {panel : Finset Gene} :
+    ContrastFamilyMarkerPanel μ threshold study partition target comparisons panel ↔
+      FullPositiveCoveragePanel
+        (fun comparison : Group =>
+          PairwiseMarkerGenes μ threshold study partition target comparison)
+        comparisons panel := by
+  rw [contrastFamilyMarkerPanel_iff_hitsPairwiseMarkerSets]
+  simp [HitsPairwiseMarkerSets, FullPositiveCoveragePanel, PanelCoverageCount,
+    CoveredContexts, PanelHits, Finset.card_filter_eq_iff]
+
+/--
+An optimal feasible marker panel is a candidate-universe panel satisfying the
+requested sensitivity/specificity constraints that is not strictly dominated by
+another feasible panel from the same candidate universe.
+-/
+def ParetoOptimalFeasibleMarkerPanelIn {Context Gene : Type} [DecidableEq Context]
+    (candidateGenes : Finset Gene)
+    (positiveMarkerSets negativeMarkerSets : Context → Set Gene)
+    (positiveContexts negativeContexts : Finset Context)
+    (minPositiveCoverage maxOffTargetHits : Nat)
+    (panel : Finset Gene) : Prop :=
+  PanelWithinGeneUniverse candidateGenes panel ∧
+  SensitivitySpecificityFeasiblePanel positiveMarkerSets negativeMarkerSets
+    positiveContexts negativeContexts minPositiveCoverage maxOffTargetHits panel ∧
+  ¬ ∃ otherPanel : Finset Gene,
+    PanelWithinGeneUniverse candidateGenes otherPanel ∧
+    SensitivitySpecificityFeasiblePanel positiveMarkerSets negativeMarkerSets
+      positiveContexts negativeContexts minPositiveCoverage maxOffTargetHits otherPanel ∧
+    PanelStrictlyDominates positiveMarkerSets negativeMarkerSets
+      positiveContexts negativeContexts otherPanel panel
+
+/--
+If a feasible marker panel is weakly dominated by another panel, then the
+dominating panel is also feasible for the same sensitivity/specificity
+constraints. Thus dominated feasible panels can be discarded without losing
+feasibility.
+-/
+theorem feasiblePanel_of_weaklyDominates
+    {Context Gene : Type} [DecidableEq Context]
+    {positiveMarkerSets negativeMarkerSets : Context → Set Gene}
+    {positiveContexts negativeContexts : Finset Context}
+    {minPositiveCoverage maxOffTargetHits : Nat}
+    {better worse : Finset Gene}
+    (hdom :
+      PanelWeaklyDominates positiveMarkerSets negativeMarkerSets
+        positiveContexts negativeContexts better worse)
+    (hfeasible :
+      SensitivitySpecificityFeasiblePanel positiveMarkerSets negativeMarkerSets
+        positiveContexts negativeContexts minPositiveCoverage maxOffTargetHits worse) :
+    SensitivitySpecificityFeasiblePanel positiveMarkerSets negativeMarkerSets
+      positiveContexts negativeContexts minPositiveCoverage maxOffTargetHits better := by
+  constructor
+  · exact le_trans hfeasible.1 hdom.1
+  · exact le_trans hdom.2.1 hfeasible.2
+
+/--
+A feasible panel that is strictly dominated by another panel is not
+Pareto-optimal.
+-/
+theorem not_paretoOptimalMarkerPanel_of_strictlyDominated
+    {Context Gene : Type} [DecidableEq Context]
+    {positiveMarkerSets negativeMarkerSets : Context → Set Gene}
+    {positiveContexts negativeContexts : Finset Context}
+    {better worse : Finset Gene}
+    (hdom :
+      PanelStrictlyDominates positiveMarkerSets negativeMarkerSets
+        positiveContexts negativeContexts better worse) :
+    ¬ ParetoOptimalMarkerPanel positiveMarkerSets negativeMarkerSets
+      positiveContexts negativeContexts worse := by
+  intro hpareto
+  exact hpareto ⟨better, hdom⟩
+
+/--
+If a panel is strictly dominated by another panel in the same finite candidate
+gene universe, then it is not Pareto-optimal in that candidate universe.
+-/
+theorem not_paretoOptimalMarkerPanelIn_of_strictlyDominated
+    {Context Gene : Type} [DecidableEq Context]
+    {candidateGenes : Finset Gene}
+    {positiveMarkerSets negativeMarkerSets : Context → Set Gene}
+    {positiveContexts negativeContexts : Finset Context}
+    {better worse : Finset Gene}
+    (hbetter : PanelWithinGeneUniverse candidateGenes better)
+    (hdom :
+      PanelStrictlyDominates positiveMarkerSets negativeMarkerSets
+        positiveContexts negativeContexts better worse) :
+    ¬ ParetoOptimalMarkerPanelIn candidateGenes positiveMarkerSets negativeMarkerSets
+      positiveContexts negativeContexts worse := by
+  intro hpareto
+  exact hpareto.2 ⟨better, hbetter, hdom⟩
+
+/--
+If a feasible panel is strictly dominated by another feasible panel in the same
+finite candidate universe, then it is not an optimal feasible marker panel.
+-/
+theorem not_paretoOptimalFeasibleMarkerPanelIn_of_feasible_strictlyDominated
+    {Context Gene : Type} [DecidableEq Context]
+    {candidateGenes : Finset Gene}
+    {positiveMarkerSets negativeMarkerSets : Context → Set Gene}
+    {positiveContexts negativeContexts : Finset Context}
+    {minPositiveCoverage maxOffTargetHits : Nat}
+    {better worse : Finset Gene}
+    (hbetter : PanelWithinGeneUniverse candidateGenes better)
+    (hbetter_feasible :
+      SensitivitySpecificityFeasiblePanel positiveMarkerSets negativeMarkerSets
+        positiveContexts negativeContexts minPositiveCoverage maxOffTargetHits better)
+    (hdom :
+      PanelStrictlyDominates positiveMarkerSets negativeMarkerSets
+        positiveContexts negativeContexts better worse) :
+    ¬ ParetoOptimalFeasibleMarkerPanelIn candidateGenes positiveMarkerSets negativeMarkerSets
+      positiveContexts negativeContexts minPositiveCoverage maxOffTargetHits worse := by
+  intro hpareto
+  exact hpareto.2.2 ⟨better, hbetter, hbetter_feasible, hdom⟩
+
+/-!
+Marker panels can exist even when the strict marker-gene set is empty. This is
+the practical difference between a single marker that must work against every
+comparison and a multi-gene panel that can cover different comparisons with
+different genes.
+-/
+namespace MarkerPanelNoStrictMarkerExample
+
+inductive Comparison
+  | h₁
+  | h₂
+  deriving DecidableEq, Fintype
+
+inductive ExampleGene
+  | g₁
+  | g₂
+  deriving DecidableEq, Fintype
+
+def pairwise : Comparison → Set ExampleGene
+  | Comparison.h₁ => {ExampleGene.g₁}
+  | Comparison.h₂ => {ExampleGene.g₂}
+
+def comparisons : Finset Comparison := {Comparison.h₁, Comparison.h₂}
+
+def panel : Finset ExampleGene := {ExampleGene.g₁, ExampleGene.g₂}
+
+theorem panel_covers_pairwise_sets :
+    HitsPairwiseMarkerSets pairwise comparisons panel := by
+  intro comparison hcomparison
+  fin_cases comparison <;> simp [panel, pairwise]
+
+theorem strict_marker_set_empty :
+    (⋂ comparison : {h // h ∈ comparisons}, pairwise comparison.1) =
+      (∅ : Set ExampleGene) := by
+  ext gene
+  fin_cases gene <;> simp [comparisons, pairwise]
+
+theorem panel_without_strict_marker :
+    HitsPairwiseMarkerSets pairwise comparisons panel ∧
+      (⋂ comparison : {h // h ∈ comparisons}, pairwise comparison.1) =
+        (∅ : Set ExampleGene) :=
+  ⟨panel_covers_pairwise_sets, strict_marker_set_empty⟩
+
+end MarkerPanelNoStrictMarkerExample
+
+/--
 A scoped local group is the local object that can instantiate a cell type claim:
 a study, a partition of that study, a target group in the partition, and the
 comparison family against which that target is being distinguished.
@@ -811,6 +1781,53 @@ theorem sharedMarkerGenes_subset_of_instances_subset
   exact hglobal localGroup (hsubset hlocal)
 
 /--
+A marker panel is shared across a family of scoped local groups when it covers
+the comparison family for every local group in that family.
+-/
+def SharedMarkerPanel {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (instances : Finset (ScopedLocalGroup Study Partition Group))
+    (panel : Finset Gene) : Prop :=
+  ∀ localGroup : ScopedLocalGroup Study Partition Group, localGroup ∈ instances →
+    ContrastFamilyMarkerPanel μ threshold localGroup.study localGroup.partition
+      localGroup.target localGroup.comparisons panel
+
+/--
+Adding more local instances makes a shared marker-panel claim harder. A panel
+that covers a broader cross-study family of scoped local groups also covers any
+restricted subfamily.
+-/
+theorem sharedMarkerPanel_of_instances_subset
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {Local Global : Finset (ScopedLocalGroup Study Partition Group)}
+    {panel : Finset Gene}
+    (hsubset : Local ⊆ Global)
+    (hglobal : SharedMarkerPanel μ threshold Global panel) :
+    SharedMarkerPanel μ threshold Local panel := by
+  intro localGroup hlocal
+  exact hglobal localGroup (hsubset hlocal)
+
+/--
+A singleton shared marker panel is exactly a shared single marker gene.
+-/
+theorem sharedMarkerPanel_singleton_iff_mem_sharedMarkerGenes
+    {Study Partition Group Gene : Type} [DecidableEq Gene]
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {instances : Finset (ScopedLocalGroup Study Partition Group)} {gene : Gene} :
+    SharedMarkerPanel μ threshold instances ({gene} : Finset Gene) ↔
+      gene ∈ SharedMarkerGenes μ threshold instances := by
+  constructor
+  · intro hpanel localGroup hlocal
+    change ContrastFamilyMarker μ threshold localGroup.study localGroup.partition
+      localGroup.target localGroup.comparisons gene
+    rw [← singleton_contrastFamilyMarkerPanel_iff_contrastFamilyMarker]
+    exact hpanel localGroup hlocal
+  · intro hshared localGroup hlocal
+    rw [singleton_contrastFamilyMarkerPanel_iff_contrastFamilyMarker]
+    exact hshared localGroup hlocal
+
+/--
 A marker-defined cell type claim consists of a nonempty finite family of scoped
 local groups, all valid in the sense that the target is not a comparison group,
 and the marker genes shared across those local instances.
@@ -839,6 +1856,35 @@ theorem mem_markerDefinedCellType_markers_iff_mem_all_instances
           localGroup.target localGroup.comparisons gene := by
   rw [cellType.markers_eq_shared]
   rfl
+
+/--
+A marker-panel-defined cell type consists of a nonempty finite family of scoped
+local groups and a finite marker panel that covers the comparison family for
+each local group. This is the panel-valued analogue of `MarkerDefinedCellType`.
+-/
+structure MarkerPanelDefinedCellType {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ) where
+  instances : Finset (ScopedLocalGroup Study Partition Group)
+  instances_nonempty : instances.Nonempty
+  instances_valid :
+    ∀ localGroup : ScopedLocalGroup Study Partition Group, localGroup ∈ instances →
+      ScopedLocalGroup.Valid localGroup
+  panel : Finset Gene
+  panel_covers : SharedMarkerPanel μ threshold instances panel
+
+/--
+If the panel defining a marker-panel-defined cell type is a singleton, then its
+gene is shared by every scoped local instance.
+-/
+theorem markerPanelDefinedCellType_singleton_gene_shared
+    {Study Partition Group Gene : Type} [DecidableEq Gene]
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    (cellType : MarkerPanelDefinedCellType μ threshold) {gene : Gene}
+    (hpanel : cellType.panel = ({gene} : Finset Gene)) :
+    gene ∈ SharedMarkerGenes μ threshold cellType.instances := by
+  rw [← sharedMarkerPanel_singleton_iff_mem_sharedMarkerGenes]
+  rw [← hpanel]
+  exact cellType.panel_covers
 
 /--
 Every marker of a marker-defined cell type is a marker for each scoped local
@@ -901,6 +1947,17 @@ def MarkerComparisonFamilies {Study Partition Group Gene : Type}
   {C | ContrastFamilyMarker μ threshold study partition target C gene}
 
 /--
+For a fixed target, panel, study, partition, and threshold, the comparison
+families over which a panel is valid form a downward-closed set in the
+comparison-family poset.
+-/
+def MarkerPanelComparisonFamilies {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (study : Study) (partition : Partition) (target : Group) (panel : Finset Gene) :
+    Set (Finset Group) :=
+  {C | ContrastFamilyMarkerPanel μ threshold study partition target C panel}
+
+/--
 Restricting the comparison family gives a weaker marker claim. A gene that marks
 a target against a broad family also marks that target against any local subset
 of comparisons, such as blood immune populations or a disease-specific panel.
@@ -928,6 +1985,21 @@ theorem markerComparisonFamilies_downward_closed {Study Partition Group Gene : T
     (hLocal : ComparisonFamilyLE Local Global) :
     Local ∈ MarkerComparisonFamilies μ threshold study partition target gene :=
   contrastFamilyMarker_subset hLocal hGlobal
+
+/--
+The marker-panel comparison-family set is downward closed in the
+comparison-family poset.
+-/
+theorem markerPanelComparisonFamilies_downward_closed
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group} {panel : Finset Gene}
+    {Local Global : Finset Group}
+    (hGlobal : Global ∈
+      MarkerPanelComparisonFamilies μ threshold study partition target panel)
+    (hLocal : ComparisonFamilyLE Local Global) :
+    Local ∈ MarkerPanelComparisonFamilies μ threshold study partition target panel :=
+  contrastFamilyMarkerPanel_subset_comparisons hLocal hGlobal
 
 /--
 A hierarchical comparison scope records the relationship between a broader
@@ -971,6 +2043,21 @@ theorem hierarchical_parent_markerGenes_subset_child_markerGenes
       ContrastFamilyMarkerGenes μ threshold study partition target scope.child := by
   intro gene hparent
   exact hierarchical_parent_marker_implies_child_marker scope hparent
+
+/--
+A marker panel for a target over a parent/global comparison scope is
+automatically a marker panel for the same target over any child/local scope
+inside that parent.
+-/
+theorem hierarchical_parent_markerPanel_implies_child_markerPanel
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    (scope : HierarchicalComparisonScope Group) {panel : Finset Gene}
+    (hparent :
+      ContrastFamilyMarkerPanel μ threshold study partition target scope.parent panel) :
+    ContrastFamilyMarkerPanel μ threshold study partition target scope.child panel :=
+  contrastFamilyMarkerPanel_subset_comparisons scope.child_subset_parent hparent
 
 /--
 The type/state distinction can be represented as a distinction in comparison
@@ -1030,6 +2117,29 @@ def CellStateScopeMarkerGenes {Study Partition Group Gene : Type}
     scope.cellStateComparisons
 
 /--
+A marker-panel claim at cell-type scope: the target is distinguished from the
+broader cell-type comparison family by at least one selected gene per
+comparison.
+-/
+def CellTypeScopeMarkerPanel {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (study : Study) (partition : Partition) (target : Group)
+    (scope : TypeStateComparisonScope Group) (panel : Finset Gene) : Prop :=
+  ContrastFamilyMarkerPanel μ threshold study partition target
+    scope.cellTypeComparisons panel
+
+/--
+A marker-panel claim at cell-state scope: the target is distinguished only from
+the restricted local state/context comparison family by the selected panel.
+-/
+def CellStateScopeMarkerPanel {Study Partition Group Gene : Type}
+    (μ : LocalMeanProfile Study Partition Group Gene) (threshold : ℝ)
+    (study : Study) (partition : Partition) (target : Group)
+    (scope : TypeStateComparisonScope Group) (panel : Finset Gene) : Prop :=
+  ContrastFamilyMarkerPanel μ threshold study partition target
+    scope.cellStateComparisons panel
+
+/--
 For a fixed target, any marker valid at the broader cell-type comparison scope
 is valid at the restricted cell-state scope.
 -/
@@ -1057,6 +2167,20 @@ theorem cellTypeScopeMarkerGenes_subset_cellStateScopeMarkerGenes
       CellStateScopeMarkerGenes μ threshold study partition target scope := by
   intro gene htype
   exact cellTypeScopeMarker_implies_cellStateScopeMarker scope htype
+
+/--
+For a fixed target, any marker panel valid at the broader cell-type comparison
+scope is valid at the restricted cell-state scope.
+-/
+theorem cellTypeScopeMarkerPanel_implies_cellStateScopeMarkerPanel
+    {Study Partition Group Gene : Type}
+    {μ : LocalMeanProfile Study Partition Group Gene} {threshold : ℝ}
+    {study : Study} {partition : Partition} {target : Group}
+    (scope : TypeStateComparisonScope Group) {panel : Finset Gene}
+    (htype :
+      CellTypeScopeMarkerPanel μ threshold study partition target scope panel) :
+    CellStateScopeMarkerPanel μ threshold study partition target scope panel :=
+  contrastFamilyMarkerPanel_subset_comparisons scope.state_subset_type htype
 
 /--
 Necessary and sufficient condition for a comparison-family marker: a gene marks
@@ -1466,6 +2590,107 @@ theorem recurrentLocalMarker_iff_certifiedGlobalMarker_of_exact_pairCoverage
   constructor
   · exact certifiedGlobalMarker_of_recurrentLocalMarker_pairCovered hcover
   · exact certifiedGlobalMarker_implies_recurrentLocalMarker hlocal
+
+/--
+A marker panel is a local family panel for a target when every reported
+comparison group in that target's local family is covered by at least one gene
+in the panel.
+-/
+def LocalFamilyMarkerPanel {Group Gene : Type}
+    (pairwise : PairwiseMarkerPredicate Group Gene)
+    (comparisons : LocalComparisonFamily Group)
+    (target : Group) (panel : Finset Gene) : Prop :=
+  ∀ comparison : Group, comparison ∈ comparisons target →
+    ∃ gene : Gene, gene ∈ panel ∧ pairwise target comparison gene
+
+/--
+A recurrent local marker panel for label `L` covers every reported local
+comparison family for every observed target group carrying label `L`.
+-/
+def RecurrentLocalMarkerPanel {Group Label Gene : Type}
+    (label : Group → Label) (targets : Finset Group)
+    (comparisons : LocalComparisonFamily Group)
+    (pairwise : PairwiseMarkerPredicate Group Gene)
+    (L : Label) (panel : Finset Gene) : Prop :=
+  ∀ target : Group, target ∈ targets → label target = L →
+    LocalFamilyMarkerPanel pairwise comparisons target panel
+
+/--
+A certified global marker panel for label `L` covers every observed target group
+carrying `L` against every group in the chosen global background whose label is
+not `L`.
+-/
+def CertifiedGlobalMarkerPanel {Group Label Gene : Type}
+    (label : Group → Label) (targets background : Finset Group)
+    (pairwise : PairwiseMarkerPredicate Group Gene)
+    (L : Label) (panel : Finset Gene) : Prop :=
+  ∀ target : Group, target ∈ targets → label target = L →
+    ∀ comparison : Group, comparison ∈ background → label comparison ≠ L →
+      ∃ gene : Gene, gene ∈ panel ∧ pairwise target comparison gene
+
+/--
+If a global marker panel has already been certified, then it is recurrent
+locally for any reported local comparison families contained in the same global
+background and excluding groups with the target label.
+-/
+theorem certifiedGlobalMarkerPanel_implies_recurrentLocalMarkerPanel
+    {Group Label Gene : Type}
+    {label : Group → Label} {targets background : Finset Group}
+    {comparisons : LocalComparisonFamily Group}
+    {pairwise : PairwiseMarkerPredicate Group Gene}
+    {L : Label} {panel : Finset Gene}
+    (hlocal :
+      ∀ target : Group, target ∈ targets → label target = L →
+        ∀ comparison : Group, comparison ∈ comparisons target →
+          comparison ∈ background ∧ label comparison ≠ L)
+    (hglobal :
+      CertifiedGlobalMarkerPanel label targets background pairwise L panel) :
+    RecurrentLocalMarkerPanel label targets comparisons pairwise L panel := by
+  intro target htarget hlabel comparison hcomparison
+  exact hglobal target htarget hlabel comparison
+    (hlocal target htarget hlabel comparison hcomparison).1
+    (hlocal target htarget hlabel comparison hcomparison).2
+
+/--
+Recurrent local marker-panel evidence certifies a global marker panel when the
+reported local comparison families cover all target-background pairs required by
+the global marker-panel statement.
+-/
+theorem certifiedGlobalMarkerPanel_of_recurrentLocalMarkerPanel_pairCovered
+    {Group Label Gene : Type}
+    {label : Group → Label} {targets background : Finset Group}
+    {comparisons : LocalComparisonFamily Group}
+    {pairwise : PairwiseMarkerPredicate Group Gene}
+    {L : Label} {panel : Finset Gene}
+    (hcover : TargetBackgroundPairCovered label targets background comparisons L)
+    (hrecurrent :
+      RecurrentLocalMarkerPanel label targets comparisons pairwise L panel) :
+    CertifiedGlobalMarkerPanel label targets background pairwise L panel := by
+  intro target htarget hlabel comparison hcomparison hcomparison_label
+  exact hrecurrent target htarget hlabel comparison
+    (hcover target htarget hlabel comparison hcomparison hcomparison_label)
+
+/--
+When local comparison families are exactly the required target-background
+comparisons, recurrent local marker panels and certified global marker panels
+coincide.
+-/
+theorem recurrentLocalMarkerPanel_iff_certifiedGlobalMarkerPanel_of_exact_pairCoverage
+    {Group Label Gene : Type}
+    {label : Group → Label} {targets background : Finset Group}
+    {comparisons : LocalComparisonFamily Group}
+    {pairwise : PairwiseMarkerPredicate Group Gene}
+    {L : Label} {panel : Finset Gene}
+    (hlocal :
+      ∀ target : Group, target ∈ targets → label target = L →
+        ∀ comparison : Group, comparison ∈ comparisons target →
+          comparison ∈ background ∧ label comparison ≠ L)
+    (hcover : TargetBackgroundPairCovered label targets background comparisons L) :
+    RecurrentLocalMarkerPanel label targets comparisons pairwise L panel ↔
+      CertifiedGlobalMarkerPanel label targets background pairwise L panel := by
+  constructor
+  · exact certifiedGlobalMarkerPanel_of_recurrentLocalMarkerPanel_pairCovered hcover
+  · exact certifiedGlobalMarkerPanel_implies_recurrentLocalMarkerPanel hlocal
 
 /--
 A context-specific marker is valid for a restricted comparison family but not

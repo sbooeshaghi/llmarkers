@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v9
+        with:
+          enable-cache: true
+      - run: uv sync --locked --group dev
+      - run: uv run --locked pytest -q
+      - run: >-
+          uv run --locked ruff check
+          analysis/mine_corpus.py
+          analysis/build_claim_db.py
+          tests
