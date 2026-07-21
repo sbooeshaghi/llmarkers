@@ -28,7 +28,6 @@ docs/paper/biorxiv/        Active bioRxiv manuscript, supplement, figures, and m
 docs/paper/submissions/    Venue-specific submission packages
 docs/notes/                Related design notes and schema documentation
 analysis/formal/           Lean formalization of marker identifiability claims
-tools/                     Prototype marker contrast format adapters
 ```
 
 ## Manuscript Figure Pipeline
