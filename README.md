@@ -97,7 +97,7 @@ The validated benchmark was produced with the revision recorded in
 
 ```bash
 git clone https://github.com/sbooeshaghi/mrkr.git ../mrkr
-git -C ../mrkr checkout c40afd5f457a8c6e48f2495de767a039f41014a3
+git -C ../mrkr checkout 7333a108caa83d3d649f15076d40b541bdf63905
 uv sync --project ../mrkr --locked
 ```
 
