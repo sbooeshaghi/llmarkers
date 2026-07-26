@@ -1,7 +1,7 @@
 \begin{figure*}[ht!]
   \centering
   \input{tex-figures/fig2_marker_recovery_body}
-  \caption{\textbf{Reported markers are not fully recovered from DEG rank but can be extracted from source text.} \textbf{A}. Summary of the seven studies in the \texttt{LLMarkers} benchmark. \textbf{B}. Optimal DEG rank cutoff and F-score for recovering reported markers from text and images. \textbf{C}. F-score for marker generation from cell type names, marker selection from DEGs, and joint extraction from manuscript text and candidate DEG sources. The same extraction was scored by exact cell type--gene pairs and exact \texttt{data\_id}--cell type--gene triples. Each point is one benchmark study; black bars show method means. Gray lines connect the two extraction scores for the same dataset.}
+  \caption{\textbf{Reported markers are not fully recovered by DEG rank but can be extracted from source text.} \textbf{A}. Cell types, marker genes, cell type--gene pairs, and tissues represented in the seven-study \texttt{LLMarkers} benchmark. \textbf{B}. Optimal DEG cutoff and corresponding F1 for recovering markers reported in text or images. \textbf{C}. F1 for generation from cell type names, selection from ranked DEGs, and joint extraction from manuscript text and candidate DEG sources. Extraction was scored as exact cell type--gene pairs and as exact \texttt{data\_id}--cell type--gene triples. Each point represents one study; black bars show study means, and gray lines join extraction scores from the same study.}
   \label{fig:marker_selection}%
   \label{fig:llm_curation}%
   \claim{fig-marker-selection}{}%
