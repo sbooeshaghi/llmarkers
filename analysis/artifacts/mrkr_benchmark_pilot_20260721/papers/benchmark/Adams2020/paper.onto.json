@@ -1,0 +1,1604 @@
+{
+  "schema_version": "mrkr.onto.v1",
+  "source": {
+    "id": "benchmark/Adams2020",
+    "sha256": "sha256:3270b940288ce4d932206a1d32efb0efc1bde7b94c1a7c11f41d354bbc236f47"
+  },
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "claims": [
+    {
+      "claim_id": "claim:21c968e7b26ccea751fc",
+      "span_literal": "these cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express other established basal markers such as KRT5 and KRT15 (9).",
+      "span_offset": [
+        8977,
+        9128
+      ],
+      "summary": "In Homo sapiens, aberrant basaloid cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express KRT5 and KRT15.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "these cells",
+          "sub_offset": [
+            0,
+            11
+          ],
+          "normalized_label": "aberrant basaloid cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "TP63",
+          "sub_offset": [
+            43,
+            47
+          ],
+          "normalized_label": "TP63",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000073282",
+          "exact": true
+        },
+        {
+          "sub_span": "KRT17",
+          "sub_offset": [
+            49,
+            54
+          ],
+          "normalized_label": "KRT17",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000128422",
+          "exact": true
+        },
+        {
+          "sub_span": "LAMB3",
+          "sub_offset": [
+            56,
+            61
+          ],
+          "normalized_label": "LAMB3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000196878",
+          "exact": true
+        },
+        {
+          "sub_span": "LAMC2",
+          "sub_offset": [
+            67,
+            72
+          ],
+          "normalized_label": "LAMC2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000058085",
+          "exact": true
+        },
+        {
+          "sub_span": "KRT5",
+          "sub_offset": [
+            132,
+            136
+          ],
+          "normalized_label": "KRT5",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000186081",
+          "exact": true
+        },
+        {
+          "sub_span": "KRT15",
+          "sub_offset": [
+            141,
+            146
+          ],
+          "normalized_label": "KRT15",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000171346",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0bbceb305f7f156279c9",
+      "span_literal": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "span_offset": [
+        9129,
+        9582
+      ],
+      "summary": "In Homo sapiens, aberrant basaloid cells express epithelial-mesenchymal transition markers VIM, CDH2, FN1, COL1A1, TNC, and HMGA2, senescence-related genes CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15, and the highest expression of matrix metallopeptidase 7 (MMP7) and EPHB2.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "These cells",
+          "sub_offset": [
+            0,
+            11
+          ],
+          "normalized_label": "aberrant basaloid cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "VIM",
+          "sub_offset": [
+            79,
+            82
+          ],
+          "normalized_label": "VIM",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000026025",
+          "exact": true
+        },
+        {
+          "sub_span": "CDH2",
+          "sub_offset": [
+            84,
+            88
+          ],
+          "normalized_label": "CDH2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000170558",
+          "exact": true
+        },
+        {
+          "sub_span": "FN1",
+          "sub_offset": [
+            90,
+            93
+          ],
+          "normalized_label": "FN1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000115414",
+          "exact": true
+        },
+        {
+          "sub_span": "COL1A1",
+          "sub_offset": [
+            95,
+            101
+          ],
+          "normalized_label": "COL1A1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000108821",
+          "exact": true
+        },
+        {
+          "sub_span": "TNC",
+          "sub_offset": [
+            103,
+            106
+          ],
+          "normalized_label": "TNC",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000041982",
+          "exact": true
+        },
+        {
+          "sub_span": "HMGA2",
+          "sub_offset": [
+            112,
+            117
+          ],
+          "normalized_label": "HMGA2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000149948",
+          "exact": true
+        },
+        {
+          "sub_span": "CDKN1A",
+          "sub_offset": [
+            159,
+            165
+          ],
+          "normalized_label": "CDKN1A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000124762",
+          "exact": true
+        },
+        {
+          "sub_span": "CDKN2A",
+          "sub_offset": [
+            167,
+            173
+          ],
+          "normalized_label": "CDKN2A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000147889",
+          "exact": true
+        },
+        {
+          "sub_span": "CCND1",
+          "sub_offset": [
+            175,
+            180
+          ],
+          "normalized_label": "CCND1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000110092",
+          "exact": true
+        },
+        {
+          "sub_span": "CCND2",
+          "sub_offset": [
+            182,
+            187
+          ],
+          "normalized_label": "CCND2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000118971",
+          "exact": true
+        },
+        {
+          "sub_span": "MDM2",
+          "sub_offset": [
+            189,
+            193
+          ],
+          "normalized_label": "MDM2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000135679",
+          "exact": true
+        },
+        {
+          "sub_span": "GDF15",
+          "sub_offset": [
+            199,
+            204
+          ],
+          "normalized_label": "GDF15",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000130513",
+          "exact": true
+        },
+        {
+          "sub_span": "MMP7",
+          "sub_offset": [
+            381,
+            385
+          ],
+          "normalized_label": "MMP7",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000137673",
+          "exact": true
+        },
+        {
+          "sub_span": "EPHB2",
+          "sub_offset": [
+            442,
+            447
+          ],
+          "normalized_label": "EPHB2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000133216",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4c5ef580608a4d9dda75",
+      "span_literal": "When assessed by transcription factor motif enrichment, the cells exhibit high levels of expression and evidence of downstream activation of SOX9 (Fig. 2C, top), a transcription factor critical to distal airway development (16) and repair (17).",
+      "span_offset": [
+        9583,
+        9827
+      ],
+      "summary": "In Homo sapiens, aberrant basaloid cells exhibit high levels of expression and downstream activation of SOX9.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "the cells",
+          "sub_offset": [
+            56,
+            65
+          ],
+          "normalized_label": "aberrant basaloid cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "SOX9",
+          "sub_offset": [
+            141,
+            145
+          ],
+          "normalized_label": "SOX9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000125398",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2baf1d886c7a8b438953",
+      "span_literal": "A fifth VE population is best distinguished by its expression of COL15A1.",
+      "span_offset": [
+        13075,
+        13148
+      ],
+      "summary": "In Homo sapiens, peribronchial vascular endothelial cells are distinguished by expression of COL15A1.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "fifth VE population",
+          "sub_offset": [
+            2,
+            21
+          ],
+          "normalized_label": "peribronchial vascular endothelial cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000071",
+          "exact": false
+        },
+        {
+          "sub_span": "COL15A1",
+          "sub_offset": [
+            65,
+            72
+          ],
+          "normalized_label": "COL15A1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000204291",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4cd9accdf73deeb60baf",
+      "span_literal": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "span_offset": [
+        15900,
+        16149
+      ],
+      "summary": "In Homo sapiens, smooth muscle cells are characterized by DES, ACTG2, and PLN expression.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "smooth muscle cells",
+          "sub_offset": [
+            176,
+            195
+          ],
+          "normalized_label": "smooth muscle cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000192",
+          "exact": true
+        },
+        {
+          "sub_span": "DES",
+          "sub_offset": [
+            197,
+            200
+          ],
+          "normalized_label": "DES",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000175084",
+          "exact": true
+        },
+        {
+          "sub_span": "ACTG2",
+          "sub_offset": [
+            202,
+            207
+          ],
+          "normalized_label": "ACTG2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000163017",
+          "exact": true
+        },
+        {
+          "sub_span": "PLN",
+          "sub_offset": [
+            213,
+            216
+          ],
+          "normalized_label": "PLN",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000198523",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:845a6b12392c356738d1",
+      "span_literal": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "span_offset": [
+        15900,
+        16149
+      ],
+      "summary": "In Homo sapiens, pericytes are characterized by RGS5 and COX4I2 expression.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "pericytes",
+          "sub_offset": [
+            221,
+            230
+          ],
+          "normalized_label": "pericyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000669",
+          "exact": true
+        },
+        {
+          "sub_span": "RGS5",
+          "sub_offset": [
+            232,
+            236
+          ],
+          "normalized_label": "RGS5",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000143248",
+          "exact": true
+        },
+        {
+          "sub_span": "COX4I2",
+          "sub_offset": [
+            241,
+            247
+          ],
+          "normalized_label": "COX4I2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000131055",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:97a91dff65115a93ccb9",
+      "span_literal": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "span_offset": [
+        16150,
+        16418
+      ],
+      "summary": "In Homo sapiens, fibroblasts are characterized by expression of CD34, FBN1, FBLN2, and VIT.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "fibroblasts",
+          "sub_offset": [
+            62,
+            73
+          ],
+          "normalized_label": "fibroblast",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000057",
+          "exact": true
+        },
+        {
+          "sub_span": "CD34",
+          "sub_offset": [
+            106,
+            110
+          ],
+          "normalized_label": "CD34",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000174059",
+          "exact": true
+        },
+        {
+          "sub_span": "FBN1",
+          "sub_offset": [
+            112,
+            116
+          ],
+          "normalized_label": "FBN1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000166147",
+          "exact": true
+        },
+        {
+          "sub_span": "FBLN2",
+          "sub_offset": [
+            118,
+            123
+          ],
+          "normalized_label": "FBLN2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000163520",
+          "exact": true
+        },
+        {
+          "sub_span": "VIT",
+          "sub_offset": [
+            129,
+            132
+          ],
+          "normalized_label": "VIT",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000205221",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:384d967d9d779efd7c25",
+      "span_literal": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "span_offset": [
+        16150,
+        16418
+      ],
+      "summary": "In Homo sapiens, myofibroblasts consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "myofibroblasts",
+          "sub_offset": [
+            137,
+            151
+          ],
+          "normalized_label": "myofibroblast",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000186",
+          "exact": true
+        },
+        {
+          "sub_span": "MYLK",
+          "sub_offset": [
+            178,
+            182
+          ],
+          "normalized_label": "MYLK",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000065534",
+          "exact": true
+        },
+        {
+          "sub_span": "NEBL",
+          "sub_offset": [
+            184,
+            188
+          ],
+          "normalized_label": "NEBL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000078114",
+          "exact": true
+        },
+        {
+          "sub_span": "MYO10",
+          "sub_offset": [
+            190,
+            195
+          ],
+          "normalized_label": "MYO10",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000145555",
+          "exact": true
+        },
+        {
+          "sub_span": "MYO1D",
+          "sub_offset": [
+            197,
+            202
+          ],
+          "normalized_label": "MYO1D",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000176658",
+          "exact": true
+        },
+        {
+          "sub_span": "RYR2",
+          "sub_offset": [
+            204,
+            208
+          ],
+          "normalized_label": "RYR2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000198626",
+          "exact": true
+        },
+        {
+          "sub_span": "ITGA8",
+          "sub_offset": [
+            214,
+            219
+          ],
+          "normalized_label": "ITGA8",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000077943",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:5786dd5481080a385408",
+      "span_literal": "the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+      "span_offset": [
+        16528,
+        16781
+      ],
+      "summary": "In Homo sapiens, the idiopathic pulmonary fibrosis myofibroblast phenotype is enriched with ACTA2, and the fibroblast phenotype exhibits increased expression of HAS1, HAS2, FBN1, and CXCL14.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "myofibroblast phenotype",
+          "sub_offset": [
+            24,
+            47
+          ],
+          "normalized_label": "myofibroblast",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000186",
+          "exact": true
+        },
+        {
+          "sub_span": "ACTA2",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "normalized_label": "ACTA2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000107796",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:48c5290b7d1e786dc15e",
+      "span_literal": "the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+      "span_offset": [
+        16528,
+        16781
+      ],
+      "summary": "In Homo sapiens, the idiopathic pulmonary fibrosis fibroblast phenotype exhibits increased expression of HAS1, HAS2, FBN1, and CXCL14.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "fibroblast phenotype",
+          "sub_offset": [
+            27,
+            47
+          ],
+          "normalized_label": "fibroblast",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000057",
+          "exact": true
+        },
+        {
+          "sub_span": "HAS1",
+          "sub_offset": [
+            175,
+            179
+          ],
+          "normalized_label": "HAS1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000105509",
+          "exact": true
+        },
+        {
+          "sub_span": "HAS2",
+          "sub_offset": [
+            181,
+            185
+          ],
+          "normalized_label": "HAS2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000170961",
+          "exact": true
+        },
+        {
+          "sub_span": "FBN1",
+          "sub_offset": [
+            187,
+            191
+          ],
+          "normalized_label": "FBN1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000166147",
+          "exact": true
+        },
+        {
+          "sub_span": "CXCL14",
+          "sub_offset": [
+            224,
+            230
+          ],
+          "normalized_label": "CXCL14",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000145824",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:efc08084a6af4e3a0e1c",
+      "span_literal": "SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "span_offset": [
+        20778,
+        21029
+      ],
+      "summary": "In Homo sapiens, the profibrotic idiopathic pulmonary fibrosis macrophage archetype shows increasing expression of SPP1, LIPA, SPARC, GPC4, PALLD, CTSK, and MMP9 along its trajectory.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "profibrotic macrophage",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:0000235",
+          "exact": false
+        },
+        {
+          "sub_span": "SPP1",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "SPP1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000118785",
+          "exact": true
+        },
+        {
+          "sub_span": "LIPA",
+          "sub_offset": [
+            54,
+            58
+          ],
+          "normalized_label": "LIPA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000107798",
+          "exact": true
+        },
+        {
+          "sub_span": "SPARC",
+          "sub_offset": [
+            164,
+            169
+          ],
+          "normalized_label": "SPARC",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000113140",
+          "exact": true
+        },
+        {
+          "sub_span": "GPC4",
+          "sub_offset": [
+            171,
+            175
+          ],
+          "normalized_label": "GPC4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000076716",
+          "exact": true
+        },
+        {
+          "sub_span": "PALLD",
+          "sub_offset": [
+            177,
+            182
+          ],
+          "normalized_label": "PALLD",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000129116",
+          "exact": true
+        },
+        {
+          "sub_span": "CTSK",
+          "sub_offset": [
+            184,
+            188
+          ],
+          "normalized_label": "CTSK",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000143387",
+          "exact": true
+        },
+        {
+          "sub_span": "MMP9",
+          "sub_offset": [
+            194,
+            198
+          ],
+          "normalized_label": "MMP9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000100985",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6a271e0b8a4dd81f5543",
+      "span_literal": "At the terminus of the IPF archetype, macrophage start expressing CSF1, suggesting the possibility of an autocrine feedback loop for recruitment and activation.",
+      "span_offset": [
+        21030,
+        21190
+      ],
+      "summary": "In Homo sapiens, the profibrotic macrophage at the terminus of the idiopathic pulmonary fibrosis archetype starts expressing CSF1.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "macrophage",
+          "sub_offset": [
+            38,
+            48
+          ],
+          "normalized_label": "profibrotic macrophage",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000235",
+          "exact": false
+        },
+        {
+          "sub_span": "CSF1",
+          "sub_offset": [
+            66,
+            70
+          ],
+          "normalized_label": "CSF1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000184371",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:306ec975e7d20bffce52",
+      "span_literal": "while they express some of the most typical airway basal cell markers (TP63, KRT17, and LAMB3 LAMC2), they seem to have lost others (KRT5 and KRT15) (9) and express SOX9, a transcription factor critical to distal airway development and repair (16, 17).",
+      "span_offset": [
+        29411,
+        29663
+      ],
+      "summary": "In Homo sapiens, aberrant basaloid cells express the airway basal cell markers TP63, KRT17, LAMB3, and LAMC2, have lost KRT5 and KRT15, and express SOX9.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "they",
+          "sub_offset": [
+            6,
+            10
+          ],
+          "normalized_label": "aberrant basaloid cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "TP63",
+          "sub_offset": [
+            71,
+            75
+          ],
+          "normalized_label": "TP63",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000073282",
+          "exact": true
+        },
+        {
+          "sub_span": "KRT17",
+          "sub_offset": [
+            77,
+            82
+          ],
+          "normalized_label": "KRT17",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000128422",
+          "exact": true
+        },
+        {
+          "sub_span": "LAMB3",
+          "sub_offset": [
+            88,
+            93
+          ],
+          "normalized_label": "LAMB3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000196878",
+          "exact": true
+        },
+        {
+          "sub_span": "LAMC2",
+          "sub_offset": [
+            94,
+            99
+          ],
+          "normalized_label": "LAMC2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000058085",
+          "exact": true
+        },
+        {
+          "sub_span": "KRT5",
+          "sub_offset": [
+            133,
+            137
+          ],
+          "normalized_label": "KRT5",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000186081",
+          "exact": true
+        },
+        {
+          "sub_span": "KRT15",
+          "sub_offset": [
+            142,
+            147
+          ],
+          "normalized_label": "KRT15",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000171346",
+          "exact": true
+        },
+        {
+          "sub_span": "SOX9",
+          "sub_offset": [
+            165,
+            169
+          ],
+          "normalized_label": "SOX9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000125398",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:69da80215a53375263d2",
+      "span_literal": "these cells seem to be undergoing EMT, they express mesenchymal markers (COL1A1, CDH2, and HMGA2) and have lost the expression MIR205HG, a gene containing mir-205 and a gatekeeper against EMT (28).",
+      "span_offset": [
+        29671,
+        29868
+      ],
+      "summary": "In Homo sapiens, aberrant basaloid cells express mesenchymal markers COL1A1, CDH2, and HMGA2 and have lost expression of MIR205HG.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "these cells",
+          "sub_offset": [
+            0,
+            11
+          ],
+          "normalized_label": "aberrant basaloid cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "COL1A1",
+          "sub_offset": [
+            73,
+            79
+          ],
+          "normalized_label": "COL1A1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000108821",
+          "exact": true
+        },
+        {
+          "sub_span": "CDH2",
+          "sub_offset": [
+            81,
+            85
+          ],
+          "normalized_label": "CDH2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000170558",
+          "exact": true
+        },
+        {
+          "sub_span": "HMGA2",
+          "sub_offset": [
+            91,
+            96
+          ],
+          "normalized_label": "HMGA2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000149948",
+          "exact": true
+        },
+        {
+          "sub_span": "MIR205HG",
+          "sub_offset": [
+            127,
+            135
+          ],
+          "normalized_label": "MIR205HG",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000230937",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:aa0aef8f4f7342950c96",
+      "span_literal": "they express multiple markers of senescence (CDKN1A, CDKN2A, MDM2, and GDF15) (11, 12).",
+      "span_offset": [
+        29877,
+        29964
+      ],
+      "summary": "In Homo sapiens, aberrant basaloid cells express multiple markers of senescence including CDKN1A, CDKN2A, MDM2, and GDF15.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "they",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "aberrant basaloid cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "CDKN1A",
+          "sub_offset": [
+            45,
+            51
+          ],
+          "normalized_label": "CDKN1A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000124762",
+          "exact": true
+        },
+        {
+          "sub_span": "CDKN2A",
+          "sub_offset": [
+            53,
+            59
+          ],
+          "normalized_label": "CDKN2A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000147889",
+          "exact": true
+        },
+        {
+          "sub_span": "MDM2",
+          "sub_offset": [
+            61,
+            65
+          ],
+          "normalized_label": "MDM2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000135679",
+          "exact": true
+        },
+        {
+          "sub_span": "GDF15",
+          "sub_offset": [
+            71,
+            76
+          ],
+          "normalized_label": "GDF15",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000130513",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:76415f34ab2e1bfca759",
+      "span_literal": "This population consistently expresses other genes associated with muscle like MYLK, NEBL, MYO10, and MYO1D, suggesting that the pathological phenotype observed in IPF is an extended, disease-related feature of this population, rather than the result of transdifferentiation from a discrete cellular population.",
+      "span_offset": [
+        35454,
+        35765
+      ],
+      "summary": "In Homo sapiens, myofibroblasts consistently express MYLK, NEBL, MYO10, and MYO1D.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "This population",
+          "sub_offset": [
+            0,
+            15
+          ],
+          "normalized_label": "myofibroblast",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000186",
+          "exact": true
+        },
+        {
+          "sub_span": "MYLK",
+          "sub_offset": [
+            79,
+            83
+          ],
+          "normalized_label": "MYLK",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000065534",
+          "exact": true
+        },
+        {
+          "sub_span": "NEBL",
+          "sub_offset": [
+            85,
+            89
+          ],
+          "normalized_label": "NEBL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000078114",
+          "exact": true
+        },
+        {
+          "sub_span": "MYO10",
+          "sub_offset": [
+            91,
+            96
+          ],
+          "normalized_label": "MYO10",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000145555",
+          "exact": true
+        },
+        {
+          "sub_span": "MYO1D",
+          "sub_offset": [
+            102,
+            107
+          ],
+          "normalized_label": "MYO1D",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000176658",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d80bb1a8e04600bc3c81",
+      "span_literal": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "span_offset": [
+        15900,
+        16149
+      ],
+      "summary": "In Homo sapiens, myofibroblasts and fibroblasts are characterized by PDGFRB expression.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "myofibroblasts",
+          "sub_offset": [
+            16,
+            30
+          ],
+          "normalized_label": "myofibroblast",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000186",
+          "exact": true
+        },
+        {
+          "sub_span": "PDGFRB",
+          "sub_offset": [
+            118,
+            124
+          ],
+          "normalized_label": "PDGFRB",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000113721",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:e5349c64043805720331",
+      "span_literal": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "span_offset": [
+        15900,
+        16149
+      ],
+      "summary": "In Homo sapiens, fibroblasts are characterized by PDGFRB expression.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "fibroblasts",
+          "sub_offset": [
+            19,
+            30
+          ],
+          "normalized_label": "fibroblast",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000057",
+          "exact": true
+        },
+        {
+          "sub_span": "PDGFRB",
+          "sub_offset": [
+            118,
+            124
+          ],
+          "normalized_label": "PDGFRB",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000113721",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "provider": "anthropic",
+    "model": "claude-opus-4-6",
+    "response_id": "msg_011CdG13Di2TMhhiESS7X7Lr",
+    "prompt_template_sha256": "sha256:66b1b55ad4f3af47640e539051c622169cac2c87c093368764ba84c6db786749",
+    "organism": {
+      "key": "homo_sapiens",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "preparation": {
+      "raw_claims": 18,
+      "retained_claims": 18,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": []
+    }
+  },
+  "grounding": {
+    "genes": {
+      "provider": "offline-gene-map",
+      "organism": "homo_sapiens",
+      "sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+      "canonical_sha256": "sha256:8f73b5fb49d2944ebe885bf930ea38c55bf1f1759139caeaebd7e10155ff1a83"
+    },
+    "organism": {
+      "provider": "NCBI Taxonomy",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "ontology_service": {
+      "provider": "OLS4",
+      "endpoint": "https://www.ebi.ac.uk/ols4/api/v2/tag_text",
+      "queries": [
+        {
+          "query": "aberrant basaloid cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:09.112164+00:00",
+          "response_sha256": "sha256:6e064f98ef699ff3c07bee85b967367a7eee0ddab9b21c1a0011333b8354b7cf",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "peribronchial vascular endothelial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:10.045487+00:00",
+          "response_sha256": "sha256:16c834826ff0cc11d2c365fd0edc45bc2fe727d28cbeccc23d7604581bf687b6",
+          "ontology_term": "CL:0000071",
+          "exact": false
+        },
+        {
+          "query": "smooth muscle cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:11.078271+00:00",
+          "response_sha256": "sha256:c7e1cafe5e09c6ee6bf08da5b8d463c0159e5450dc7d4297d9c7c99e5c952f26",
+          "ontology_term": "CL:0000192",
+          "exact": true
+        },
+        {
+          "query": "pericyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:13.792884+00:00",
+          "response_sha256": "sha256:bfdf7e7de74487f5a935cecfda61ee818acc6a7ff88bfe83bfd16bf5a2e7bea4",
+          "ontology_term": "CL:0000669",
+          "exact": true
+        },
+        {
+          "query": "fibroblast",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:14.737536+00:00",
+          "response_sha256": "sha256:bed1bffe9f2068bd597989c89ccf9d87ef69e28bda5f660218114795eb3472c0",
+          "ontology_term": "CL:0000057",
+          "exact": true
+        },
+        {
+          "query": "myofibroblast",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:15.406474+00:00",
+          "response_sha256": "sha256:b0313f5e8cddf32372aa87f3b97f6ad8fe201fcdb919a3f166db10be63a56c4c",
+          "ontology_term": "CL:0000186",
+          "exact": true
+        },
+        {
+          "query": "profibrotic macrophage",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:16.340760+00:00",
+          "response_sha256": "sha256:b5f4dce931f9d4b710f26f57fcac265a8bb8caecfa8cbbaee025e70b9e6ed86d",
+          "ontology_term": "CL:0000235",
+          "exact": false
+        }
+      ]
+    }
+  }
+}

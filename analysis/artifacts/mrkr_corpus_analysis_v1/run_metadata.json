@@ -1,0 +1,38 @@
+{
+  "context_metrics": {
+    "fraction_positive_within_label_spearman": 0.6344827586206897,
+    "labels_with_correlation": 145.0,
+    "linear_intercept": 0.1034524860169616,
+    "linear_slope": 0.32182072809588014,
+    "median_within_label_spearman": 0.11153583325171841,
+    "pairs": 10437.0,
+    "pearson_p": 3.84536940174896e-53,
+    "pearson_r": 0.14937440232429477,
+    "spearman_p": 7.533296419838205e-65,
+    "spearman_rho": 0.16532566045578315,
+    "within_label_pearson_p": 6.113182894605353e-51,
+    "within_label_pearson_r": 0.14617272799265868
+  },
+  "created_at": "2026-07-24T23:03:11.720663+00:00",
+  "database": "../mrkr_build/corpus_onto_v2/claims.sqlite",
+  "database_sha256": "sha256:18d3e7627a2f3620163895e8428d1e149ff89cdb0eb6c636739383ec364f981e",
+  "label_profiles": 3454,
+  "minimum_markers": 3,
+  "ontology_audit": {
+    "current_exact_target_mappings": 536,
+    "full_span_only_target_mappings": 130,
+    "observed_target_mappings": 3355,
+    "semantic_exact_target_mappings": 406
+  },
+  "ontology_audit_path": "analysis/artifacts/mrkr_corpus_analysis_v1/cell_ontology_label_audit.tsv",
+  "ontology_audit_sha256": "sha256:033a2123f0a8d5bf73b9abeed29c9c9ffbd49529ddc21c146d6c3d0474dca422",
+  "ontology_profiles": 1086,
+  "random_seed": 20260722,
+  "same_label_pairs": 10437,
+  "same_ontology_pairs": 9082,
+  "schema_version": "llmarkers.mrkr-corpus-analysis.v1",
+  "source_manifest": "../mrkr_build/corpus_onto_v2/source_manifest.tsv",
+  "source_manifest_sha256": "sha256:52752bdbb09cd4f491f8c1897b7ee7aeef4dcb6ec5a140aa6362258f69585520",
+  "stable_identifier_alias_pairs": 248,
+  "stable_identifier_alias_terms": 12
+}

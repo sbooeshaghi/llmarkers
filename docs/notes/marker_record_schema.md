@@ -1,6 +1,13 @@
-# LLMarkers Marker Record Schema
+# Legacy LLMarkers Marker Record Schema
 
-LLMarkers stores marker evidence as one JSON object per reported marker association. The canonical on-disk format is flat so it can be loaded directly into tables, notebooks, and SQLite without preserving a separate tree representation. The base schema ends at `data_id`; differential-expression metrics may be included when available.
+The original LLMarkers benchmark stores one JSON object per reported marker association. These flat
+files remain immutable migration inputs because the published analyses and provenance notebooks read
+them directly. The audited, source-specific representation is documented in
+[`benchmark_evidence_schema.md`](benchmark_evidence_schema.md). It separates text claims, image
+claims, and quantitative DEG profiles while preserving every flat source row.
+
+The legacy base schema ends at `data_id`; differential-expression metrics may be included when
+available.
 
 ```json
 {
@@ -63,7 +70,7 @@ LLMarkers stores marker evidence as one JSON object per reported marker associat
 
 Records may include additional underscore-prefixed fields such as `_verification` or `_original_group_name`. These fields are not part of the minimal marker schema, but they preserve audit information needed by extraction analyses.
 
-## Migration
+## Legacy audit
 
 Run the audit without modifying files:
 
@@ -71,10 +78,6 @@ Run the audit without modifying files:
 python3 analysis/migrate_marker_records.py
 ```
 
-Rewrite migratable marker files in place:
-
-```bash
-python3 analysis/migrate_marker_records.py --write
-```
-
 The migrator only scans marker-like JSON files under `data/`, including `markers.json`, `extracted.json`, `extracted_txt.json`, `extracted_txt_rerun.json`, `bu_extracted.json`, and `selected*.json`.
+Do not use its in-place write mode on the benchmark ground truth. Use
+`analysis/build_benchmark_evidence.py` to create and reconcile the derived representation.

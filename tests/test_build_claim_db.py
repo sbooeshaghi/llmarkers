@@ -25,6 +25,11 @@ def onto_document():
                 "organism": "homo_sapiens",
                 "sha256": "sha256:map",
             },
+            "organism": {
+                "provider": "NCBI Taxonomy",
+                "label": "Homo sapiens",
+                "ontology_term": "NCBITaxon:9606",
+            },
             "ontology_service": {
                 "provider": "OLS4",
                 "endpoint": "https://example.test/ols",
@@ -36,8 +41,17 @@ def onto_document():
                 "claim_id": "claim:one",
                 "span_literal": "Macrophages express CD14 in blood.",
                 "span_offset": [0, 36],
-                "summary": "macrophage expresses CD14 in blood.",
+                "summary": "In Homo sapiens, macrophage expresses CD14 in blood.",
                 "terms": [
+                    {
+                        "sub_span": None,
+                        "sub_offset": None,
+                        "normalized_label": "Homo sapiens",
+                        "term_type": "organism",
+                        "provenance": "implicit",
+                        "ontology_term": "NCBITaxon:9606",
+                        "exact": True,
+                    },
                     {
                         "sub_span": "Macrophages",
                         "sub_offset": [0, 11],
@@ -92,12 +106,21 @@ def test_database_retains_claim_terms_and_unresolved_labels(tmp_path):
             "homo_sapiens"
         )
         assert connection.execute("SELECT COUNT(*) FROM claims").fetchone()[0] == 1
-        assert connection.execute("SELECT COUNT(*) FROM terms").fetchone()[0] == 3
+        assert connection.execute("SELECT COUNT(*) FROM terms").fetchone()[0] == 4
         assert connection.execute("SELECT COUNT(*) FROM marker_evidence").fetchone()[0] == 1
         tissue = connection.execute(
             "SELECT normalized_label, ontology_term FROM terms WHERE term_type='tissue'"
         ).fetchone()
         assert tissue == ("blood", None)
+        organism = connection.execute(
+            "SELECT normalized_label, ontology_term FROM terms "
+            "WHERE term_type='organism'"
+        ).fetchone()
+        assert organism == ("Homo sapiens", "NCBITaxon:9606")
+        marker_organism = connection.execute(
+            "SELECT organism_label, organism_curie FROM marker_evidence"
+        ).fetchone()
+        assert marker_organism == ("Homo sapiens", "NCBITaxon:9606")
         profile = connection.execute(
             "SELECT target_label, target_curie, target_exact FROM profiles"
         ).fetchone()

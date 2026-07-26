@@ -1,0 +1,122 @@
+{
+  "candidate_data_ids": [
+    "ALL-Supplementary_Data_S6-aba1983_data_s6",
+    "ALL_COPD_CTRL-Supplementary_Data_S9-aba1983_data_s9",
+    "ALL_IPF_COPD-Supplementary_Data_S10-aba1983_data_s10",
+    "ALL_IPF_CTRL-Supplementary_Data_S8-aba1983_data_s8",
+    "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+    "LYMPHOID-Supplementary_Data_S5-aba1983_data_s5",
+    "MYELOID-Supplementary_Data_S4-aba1983_data_s4",
+    "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+  ],
+  "elapsed_seconds": 31.160613166000076,
+  "links": [
+    {
+      "claim_id": "claim:21c968e7b26ccea751fc",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+      "reason": "Aberrant basaloid cell markers are best supported by the epithelial subtype DEG source (S2), which includes ABERRANT BASALOID CELL among epithelial populations."
+    },
+    {
+      "claim_id": "claim:0bbceb305f7f156279c9",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+      "reason": "Aberrant basaloid cell EMT/senescence/IPF markers are from the epithelial subtype analysis containing ABERRANT BASALOID CELL."
+    },
+    {
+      "claim_id": "claim:4c5ef580608a4d9dda75",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+      "reason": "SOX9 expression in aberrant basaloid cells is supported by the epithelial subtype DEG source containing this cell type."
+    },
+    {
+      "claim_id": "claim:2baf1d886c7a8b438953",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+      "reason": "Peribronchial vascular endothelial cell (VASCULAR ENDOTHELIAL PERIBRONCHIAL) is in the stromal subtype DEG source."
+    },
+    {
+      "claim_id": "claim:4cd9accdf73deeb60baf",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+      "reason": "Smooth muscle cell markers DES, ACTG2, PLN are from the stromal subtype DEG source containing SMOOTH MUSCLE CELL."
+    },
+    {
+      "claim_id": "claim:845a6b12392c356738d1",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+      "reason": "Pericyte markers RGS5 and COX4I2 are from the stromal subtype DEG source containing PERICYTE."
+    },
+    {
+      "claim_id": "claim:97a91dff65115a93ccb9",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+      "reason": "Fibroblast markers CD34, FBN1, FBLN2, VIT are from the stromal subtype DEG source containing FIBROBLAST."
+    },
+    {
+      "claim_id": "claim:384d967d9d779efd7c25",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+      "reason": "Myofibroblast markers MYLK, NEBL, MYO10, MYO1D, RYR2, ITGA8 are from the stromal subtype DEG source containing MYOFIBROBLAST."
+    },
+    {
+      "claim_id": "claim:5786dd5481080a385408",
+      "data_id": "ALL_IPF_CTRL-Supplementary_Data_S8-aba1983_data_s8",
+      "reason": "IPF myofibroblast phenotype enriched with ACTA2 refers to IPF vs control differential expression; S8 contains MYOFIBROBLAST in IPF vs CTRL comparison."
+    },
+    {
+      "claim_id": "claim:48c5290b7d1e786dc15e",
+      "data_id": "ALL_IPF_CTRL-Supplementary_Data_S8-aba1983_data_s8",
+      "reason": "IPF fibroblast phenotype with increased HAS1, HAS2, FBN1, CXCL14 refers to IPF vs control DE; S8 contains FIBROBLAST in IPF vs CTRL comparison."
+    },
+    {
+      "claim_id": "claim:efc08084a6af4e3a0e1c",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4",
+      "reason": "Profibrotic macrophage trajectory genes are best supported by the myeloid subtype DEG source containing MACROPHAGE."
+    },
+    {
+      "claim_id": "claim:6a271e0b8a4dd81f5543",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4",
+      "reason": "CSF1 expression at terminus of IPF macrophage archetype is supported by the myeloid subtype DEG source containing MACROPHAGE."
+    },
+    {
+      "claim_id": "claim:306ec975e7d20bffce52",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+      "reason": "Aberrant basaloid cell markers (TP63, KRT17, etc.) are from the epithelial subtype DEG source containing ABERRANT BASALOID CELL."
+    },
+    {
+      "claim_id": "claim:69da80215a53375263d2",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+      "reason": "Aberrant basaloid cell mesenchymal markers and MIR205HG loss are from the epithelial subtype DEG source."
+    },
+    {
+      "claim_id": "claim:aa0aef8f4f7342950c96",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+      "reason": "Aberrant basaloid cell senescence markers are from the epithelial subtype DEG source containing ABERRANT BASALOID CELL."
+    },
+    {
+      "claim_id": "claim:76415f34ab2e1bfca759",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+      "reason": "Myofibroblast muscle-related gene expression (MYLK, NEBL, MYO10, MYO1D) is from the stromal subtype DEG source."
+    },
+    {
+      "claim_id": "claim:d80bb1a8e04600bc3c81",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+      "reason": "PDGFRB characterizing myofibroblasts is from the stromal subtype DEG source containing MYOFIBROBLAST."
+    },
+    {
+      "claim_id": "claim:e5349c64043805720331",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+      "reason": "PDGFRB characterizing fibroblasts is from the stromal subtype DEG source containing FIBROBLAST."
+    }
+  ],
+  "model": "claude-opus-4-6",
+  "paper_id": "Adams2020",
+  "schema_version": "mrkr.deg-linkage.v1",
+  "source": {
+    "benchmark_deg": {
+      "path": "analysis/artifacts/benchmark_evidence_v1/papers/Adams2020/primary/deg.profiles.json",
+      "sha256": "sha256:43564aeebaf0e50a10e5f13b34fae614e9c8300e396b040bd2f7303ccd2ba3de"
+    },
+    "mrkr_claims": {
+      "path": "analysis/artifacts/mrkr_benchmark_pilot_20260721/papers/benchmark/Adams2020/paper.onto.json",
+      "sha256": "sha256:6a20fb2fc0202adb13eacd8dcac980a8f1128c3d6b40aa67aaec323bf52cce0e"
+    }
+  },
+  "usage": {
+    "input_tokens": 7553,
+    "output_tokens": 1738
+  }
+}

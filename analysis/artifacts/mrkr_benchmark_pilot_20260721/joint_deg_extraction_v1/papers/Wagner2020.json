@@ -1,0 +1,1087 @@
+{
+  "schema_version": "mrkr.joint-deg-extraction.v1",
+  "paper_id": "Wagner2020",
+  "model": "claude-opus-4-6",
+  "response_id": "msg_011CdGA6rmrPkaHWgqWvjW12",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 26508,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 5675,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "elapsed_seconds": 58.93767285346985,
+  "raw_extractions": [
+    {
+      "organism": "homo_sapiens",
+      "group_label": "oocyte markers GDF9, ZP3, FIGLA, and OOSP2",
+      "group_name": "OOCYTE",
+      "feature_label": "GDF9",
+      "feature_name": "GDF9",
+      "source_rationale": "The smallest population expressed the typical oocyte markers GDF9, ZP3, FIGLA, and OOSP2 (Fig. 2d, Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "oocyte markers GDF9, ZP3, FIGLA, and OOSP2",
+      "group_name": "OOCYTE",
+      "feature_label": "ZP3",
+      "feature_name": "ZP3",
+      "source_rationale": "The smallest population expressed the typical oocyte markers GDF9, ZP3, FIGLA, and OOSP2 (Fig. 2d, Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "oocyte markers GDF9, ZP3, FIGLA, and OOSP2",
+      "group_name": "OOCYTE",
+      "feature_label": "FIGLA",
+      "feature_name": "FIGLA",
+      "source_rationale": "The smallest population expressed the typical oocyte markers GDF9, ZP3, FIGLA, and OOSP2 (Fig. 2d, Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "oocyte markers GDF9, ZP3, FIGLA, and OOSP2",
+      "group_name": "OOCYTE",
+      "feature_label": "OOSP2",
+      "feature_name": "OOSP2",
+      "source_rationale": "The smallest population expressed the typical oocyte markers GDF9, ZP3, FIGLA, and OOSP2 (Fig. 2d, Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "CD69",
+      "feature_name": "CD69",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "ITGB2",
+      "feature_name": "ITGB2",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "CD2",
+      "feature_name": "CD2",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "CD3G",
+      "feature_name": "CD3G",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "CD8A",
+      "feature_name": "CD8A",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "CD14",
+      "feature_name": "CD14",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "HLA-DRA",
+      "feature_name": "HLA-DRA",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "B2M",
+      "feature_name": "B2M",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immune cells",
+      "group_name": "IMMUNE CELL",
+      "feature_label": "HLA-DQB1",
+      "feature_name": "HLA-DQB1",
+      "source_rationale": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Endothelial cells",
+      "group_name": "ENDOTHELIAL CELL",
+      "feature_label": "CDH5",
+      "feature_name": "CDH5",
+      "source_rationale": "Endothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Endothelial cells",
+      "group_name": "ENDOTHELIAL CELL",
+      "feature_label": "VWF",
+      "feature_name": "VWF",
+      "source_rationale": "Endothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF.",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Granulosa cells",
+      "group_name": "GRANULOSA CELL",
+      "feature_label": "FOXL2",
+      "feature_name": "FOXL2",
+      "source_rationale": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-Mullerian hormone (AMH).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Granulosa cells",
+      "group_name": "GRANULOSA CELL",
+      "feature_label": "AMH",
+      "feature_name": "AMH",
+      "source_rationale": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-Mullerian hormone (AMH).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cells",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "MYH11",
+      "feature_name": "MYH11",
+      "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN, with enriched gene signatures associated with both pericytes and smooth muscle cells23 (Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cells",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "MCAM",
+      "feature_name": "MCAM",
+      "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN, with enriched gene signatures associated with both pericytes and smooth muscle cells23 (Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cells",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "RGS5",
+      "feature_name": "RGS5",
+      "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN, with enriched gene signatures associated with both pericytes and smooth muscle cells23 (Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cells",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "RERGL",
+      "feature_name": "RERGL",
+      "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN, with enriched gene signatures associated with both pericytes and smooth muscle cells23 (Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cells",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "TAGLN",
+      "feature_name": "TAGLN",
+      "source_rationale": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN, with enriched gene signatures associated with both pericytes and smooth muscle cells23 (Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "stromal cells",
+      "group_name": "STROMAL CELL",
+      "feature_label": "PDGFRA",
+      "feature_name": "PDGFRA",
+      "source_rationale": "There were no striking differences in gene expression between stromal cells but rather a shared expression of diverse mesodermal lineage markers (e.g., PDGFRA and DCN) and extracellular matrix proteins (e.g., COL1A1 and COL6A1) (Fig. 2d, Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "stromal cells",
+      "group_name": "STROMAL CELL",
+      "feature_label": "DCN",
+      "feature_name": "DCN",
+      "source_rationale": "There were no striking differences in gene expression between stromal cells but rather a shared expression of diverse mesodermal lineage markers (e.g., PDGFRA and DCN) and extracellular matrix proteins (e.g., COL1A1 and COL6A1) (Fig. 2d, Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "stromal cells",
+      "group_name": "STROMAL CELL",
+      "feature_label": "COL1A1",
+      "feature_name": "COL1A1",
+      "source_rationale": "There were no striking differences in gene expression between stromal cells but rather a shared expression of diverse mesodermal lineage markers (e.g., PDGFRA and DCN) and extracellular matrix proteins (e.g., COL1A1 and COL6A1) (Fig. 2d, Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "stromal cells",
+      "group_name": "STROMAL CELL",
+      "feature_label": "COL6A1",
+      "feature_name": "COL6A1",
+      "source_rationale": "There were no striking differences in gene expression between stromal cells but rather a shared expression of diverse mesodermal lineage markers (e.g., PDGFRA and DCN) and extracellular matrix proteins (e.g., COL1A1 and COL6A1) (Fig. 2d, Supplementary Data 1).",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cells",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "MCAM",
+      "feature_name": "MCAM",
+      "source_rationale": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+      "data_id": "Supplementary Dataset 2#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cells",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "TAGLN",
+      "feature_name": "TAGLN",
+      "source_rationale": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+      "data_id": "Supplementary Dataset 2#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cells",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "ACTA2",
+      "feature_name": "ACTA2",
+      "source_rationale": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+      "data_id": "Supplementary Dataset 2#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "DDX4 Ab+",
+      "group_name": "DDX4 AB+",
+      "feature_label": "MCAM",
+      "feature_name": "MCAM",
+      "source_rationale": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+      "data_id": "Supplementary Dataset 2#Variable genes Orig.Ident"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "DDX4 Ab+",
+      "group_name": "DDX4 AB+",
+      "feature_label": "TAGLN",
+      "feature_name": "TAGLN",
+      "source_rationale": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+      "data_id": "Supplementary Dataset 2#Variable genes Orig.Ident"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "DDX4 Ab+",
+      "group_name": "DDX4 AB+",
+      "feature_label": "ACTA2",
+      "feature_name": "ACTA2",
+      "source_rationale": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+      "data_id": "Supplementary Dataset 2#Variable genes Orig.Ident"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Ab- cells",
+      "group_name": "DDX4 AB-",
+      "feature_label": "DCN",
+      "feature_name": "DCN",
+      "source_rationale": "The top 25 highly expressed genes in the Ab- cells included stromal cell markers, such as DCN and PDGFRA (Supplementary Data 2).",
+      "data_id": "Supplementary Dataset 2#Variable genes Orig.Ident"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Ab- cells",
+      "group_name": "DDX4 AB-",
+      "feature_label": "PDGFRA",
+      "feature_name": "PDGFRA",
+      "source_rationale": "The top 25 highly expressed genes in the Ab- cells included stromal cell markers, such as DCN and PDGFRA (Supplementary Data 2).",
+      "data_id": "Supplementary Dataset 2#Variable genes Orig.Ident"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cluster",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "MCAM",
+      "feature_name": "MCAM",
+      "source_rationale": "We chose two highly expressed markers from the perivascular cluster, MCAM and RGS5 (Fig. 5a), and carried out a co-staining with DDX4.",
+      "data_id": "Supplementary Dataset 2#Variable genes clusters"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perivascular cluster",
+      "group_name": "PERIVASCULAR CELL",
+      "feature_label": "RGS5",
+      "feature_name": "RGS5",
+      "source_rationale": "We chose two highly expressed markers from the perivascular cluster, MCAM and RGS5 (Fig. 5a), and carried out a co-staining with DDX4.",
+      "data_id": "Supplementary Dataset 2#Variable genes clusters"
+    }
+  ],
+  "inputs": {
+    "manuscript_path": "data/ovary_Wagner2020/manuscript/manuscript.txt",
+    "manuscript_sha256": "sha256:08cdc5bfa6aba463df4d7ad2b9a8ea962283ab845094bfb22d1d00c49bef0d5b",
+    "benchmark_text_sha256": "sha256:b90e259cfddbc6e8decaa54b86d0dfdacc0b2bdb4955d122d771cf81a7da5a86",
+    "benchmark_deg_sha256": "sha256:1b621f85d5e518ddfffbc2dc18a0b44057eef26a762277fb4f686d86ccee79d5",
+    "gene_map_sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+    "prompt_sha256": "sha256:a944caa18a6d7e5424b02c275823e6239615f6dd9bcea132b585f96ab164457b",
+    "candidate_data_ids": [
+      "Supplementary Dataset 1#Variable genes clusters",
+      "Supplementary Dataset 2#Variable genes Orig.Ident",
+      "Supplementary Dataset 2#Variable genes clusters"
+    ]
+  },
+  "claims_document": {
+    "schema_version": "mrkr.claims.v1",
+    "source": {
+      "id": "manuscript.txt",
+      "sha256": "sha256:08cdc5bfa6aba463df4d7ad2b9a8ea962283ab845094bfb22d1d00c49bef0d5b"
+    },
+    "producer": {
+      "name": "mrkr",
+      "version": "0.4.0"
+    },
+    "claims": [
+      {
+        "claim_id": "claim:5810a89c2a9accf69046",
+        "span_literal": "The smallest population expressed the typical oocyte markers GDF9, ZP3, FIGLA, and OOSP2 (Fig. 2d, Supplementary Data 1).",
+        "span_offset": [
+          10265,
+          10386
+        ],
+        "summary": "In Homo sapiens, OOCYTE is marked by GDF9. In Homo sapiens, OOCYTE is marked by ZP3. In Homo sapiens, OOCYTE is marked by FIGLA. In Homo sapiens, OOCYTE is marked by OOSP2.",
+        "terms": [
+          {
+            "sub_span": "oocyte markers GDF9, ZP3, FIGLA, and OOSP2",
+            "sub_offset": [
+              46,
+              88
+            ],
+            "normalized_label": "OOCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "GDF9",
+            "sub_offset": [
+              61,
+              65
+            ],
+            "normalized_label": "GDF9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ZP3",
+            "sub_offset": [
+              67,
+              70
+            ],
+            "normalized_label": "ZP3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FIGLA",
+            "sub_offset": [
+              72,
+              77
+            ],
+            "normalized_label": "FIGLA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "OOSP2",
+            "sub_offset": [
+              83,
+              88
+            ],
+            "normalized_label": "OOSP2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:f9ad45277c63b10f5170",
+        "span_literal": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+        "span_offset": [
+          10387,
+          10610
+        ],
+        "summary": "In Homo sapiens, IMMUNE CELL is marked by CD69. In Homo sapiens, IMMUNE CELL is marked by ITGB2. In Homo sapiens, IMMUNE CELL is marked by CD2. In Homo sapiens, IMMUNE CELL is marked by CD3G. In Homo sapiens, IMMUNE CELL is marked by CD8A. In Homo sapiens, IMMUNE CELL is marked by CD14. In Homo sapiens, IMMUNE CELL is marked by HLA-DRA. In Homo sapiens, IMMUNE CELL is marked by B2M. In Homo sapiens, IMMUNE CELL is marked by HLA-DQB1.",
+        "terms": [
+          {
+            "sub_span": "immune cells",
+            "sub_offset": [
+              4,
+              16
+            ],
+            "normalized_label": "IMMUNE CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD69",
+            "sub_offset": [
+              70,
+              74
+            ],
+            "normalized_label": "CD69",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ITGB2",
+            "sub_offset": [
+              79,
+              84
+            ],
+            "normalized_label": "ITGB2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CD2",
+            "sub_offset": [
+              131,
+              134
+            ],
+            "normalized_label": "CD2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CD3G",
+            "sub_offset": [
+              136,
+              140
+            ],
+            "normalized_label": "CD3G",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CD8A",
+            "sub_offset": [
+              146,
+              150
+            ],
+            "normalized_label": "CD8A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CD14",
+            "sub_offset": [
+              190,
+              194
+            ],
+            "normalized_label": "CD14",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "HLA-DRA",
+            "sub_offset": [
+              196,
+              203
+            ],
+            "normalized_label": "HLA-DRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "B2M",
+            "sub_offset": [
+              205,
+              208
+            ],
+            "normalized_label": "B2M",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "HLA-DQB1",
+            "sub_offset": [
+              214,
+              222
+            ],
+            "normalized_label": "HLA-DQB1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:710031ec6fde247767c3",
+        "span_literal": "Endothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF.",
+        "span_offset": [
+          10611,
+          10738
+        ],
+        "summary": "In Homo sapiens, ENDOTHELIAL CELL is marked by CDH5. In Homo sapiens, ENDOTHELIAL CELL is marked by VWF.",
+        "terms": [
+          {
+            "sub_span": "Endothelial cells",
+            "sub_offset": [
+              0,
+              17
+            ],
+            "normalized_label": "ENDOTHELIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CDH5",
+            "sub_offset": [
+              113,
+              117
+            ],
+            "normalized_label": "CDH5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "VWF",
+            "sub_offset": [
+              123,
+              126
+            ],
+            "normalized_label": "VWF",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:3c3d204d4175919a6ccf",
+        "span_literal": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-Mullerian hormone (AMH).",
+        "span_offset": [
+          10739,
+          10868
+        ],
+        "summary": "In Homo sapiens, GRANULOSA CELL is marked by FOXL2. In Homo sapiens, GRANULOSA CELL is marked by AMH.",
+        "terms": [
+          {
+            "sub_span": "Granulosa cells",
+            "sub_offset": [
+              0,
+              15
+            ],
+            "normalized_label": "GRANULOSA CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "FOXL2",
+            "sub_offset": [
+              90,
+              95
+            ],
+            "normalized_label": "FOXL2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "AMH",
+            "sub_offset": [
+              124,
+              127
+            ],
+            "normalized_label": "AMH",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:4df9272e38903b4e5d17",
+        "span_literal": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN, with enriched gene signatures associated with both pericytes and smooth muscle cells23 (Supplementary Data 1).",
+        "span_offset": [
+          10869,
+          11099
+        ],
+        "summary": "In Homo sapiens, PERIVASCULAR CELL is marked by MYH11. In Homo sapiens, PERIVASCULAR CELL is marked by MCAM. In Homo sapiens, PERIVASCULAR CELL is marked by RGS5. In Homo sapiens, PERIVASCULAR CELL is marked by RERGL. In Homo sapiens, PERIVASCULAR CELL is marked by TAGLN.",
+        "terms": [
+          {
+            "sub_span": "perivascular cells",
+            "sub_offset": [
+              53,
+              71
+            ],
+            "normalized_label": "PERIVASCULAR CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MYH11",
+            "sub_offset": [
+              83,
+              88
+            ],
+            "normalized_label": "MYH11",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MCAM",
+            "sub_offset": [
+              90,
+              94
+            ],
+            "normalized_label": "MCAM",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "RGS5",
+            "sub_offset": [
+              96,
+              100
+            ],
+            "normalized_label": "RGS5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "RERGL",
+            "sub_offset": [
+              102,
+              107
+            ],
+            "normalized_label": "RERGL",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TAGLN",
+            "sub_offset": [
+              113,
+              118
+            ],
+            "normalized_label": "TAGLN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:47b0ab908059d8911ee3",
+        "span_literal": "There were no striking differences in gene expression between stromal cells but rather a shared expression of diverse mesodermal lineage markers (e.g., PDGFRA and DCN) and extracellular matrix proteins (e.g., COL1A1 and COL6A1) (Fig. 2d, Supplementary Data 1).",
+        "span_offset": [
+          11163,
+          11423
+        ],
+        "summary": "In Homo sapiens, STROMAL CELL is marked by PDGFRA. In Homo sapiens, STROMAL CELL is marked by DCN. In Homo sapiens, STROMAL CELL is marked by COL1A1. In Homo sapiens, STROMAL CELL is marked by COL6A1.",
+        "terms": [
+          {
+            "sub_span": "stromal cells",
+            "sub_offset": [
+              62,
+              75
+            ],
+            "normalized_label": "STROMAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PDGFRA",
+            "sub_offset": [
+              152,
+              158
+            ],
+            "normalized_label": "PDGFRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "DCN",
+            "sub_offset": [
+              163,
+              166
+            ],
+            "normalized_label": "DCN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "COL1A1",
+            "sub_offset": [
+              209,
+              215
+            ],
+            "normalized_label": "COL1A1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "COL6A1",
+            "sub_offset": [
+              220,
+              226
+            ],
+            "normalized_label": "COL6A1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:7992374968906b248957",
+        "span_literal": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+        "span_offset": [
+          18436,
+          18563
+        ],
+        "summary": "In Homo sapiens, PERIVASCULAR CELL is marked by MCAM. In Homo sapiens, PERIVASCULAR CELL is marked by TAGLN. In Homo sapiens, PERIVASCULAR CELL is marked by ACTA2.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "PERIVASCULAR CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MCAM",
+            "sub_offset": [
+              104,
+              108
+            ],
+            "normalized_label": "MCAM",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TAGLN",
+            "sub_offset": [
+              110,
+              115
+            ],
+            "normalized_label": "TAGLN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ACTA2",
+            "sub_offset": [
+              121,
+              126
+            ],
+            "normalized_label": "ACTA2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:4b2ce97002a847088deb",
+        "span_literal": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+        "span_offset": [
+          18436,
+          18563
+        ],
+        "summary": "In Homo sapiens, DDX4 AB+ is marked by MCAM. In Homo sapiens, DDX4 AB+ is marked by TAGLN. In Homo sapiens, DDX4 AB+ is marked by ACTA2.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "DDX4 AB+",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MCAM",
+            "sub_offset": [
+              104,
+              108
+            ],
+            "normalized_label": "MCAM",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TAGLN",
+            "sub_offset": [
+              110,
+              115
+            ],
+            "normalized_label": "TAGLN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ACTA2",
+            "sub_offset": [
+              121,
+              126
+            ],
+            "normalized_label": "ACTA2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:2d4d58709a30c5471397",
+        "span_literal": "The top 25 highly expressed genes in the Ab- cells included stromal cell markers, such as DCN and PDGFRA (Supplementary Data 2).",
+        "span_offset": [
+          18564,
+          18692
+        ],
+        "summary": "In Homo sapiens, DDX4 AB- is marked by DCN. In Homo sapiens, DDX4 AB- is marked by PDGFRA.",
+        "terms": [
+          {
+            "sub_span": "Ab- cells",
+            "sub_offset": [
+              41,
+              50
+            ],
+            "normalized_label": "DDX4 AB-",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "DCN",
+            "sub_offset": [
+              90,
+              93
+            ],
+            "normalized_label": "DCN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PDGFRA",
+            "sub_offset": [
+              98,
+              104
+            ],
+            "normalized_label": "PDGFRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:1163c6a08c9a9690809c",
+        "span_literal": "We chose two highly expressed markers from the perivascular cluster, MCAM and RGS5 (Fig. 5a), and carried out a co-staining with DDX4.",
+        "span_offset": [
+          21959,
+          22093
+        ],
+        "summary": "In Homo sapiens, PERIVASCULAR CELL is marked by MCAM. In Homo sapiens, PERIVASCULAR CELL is marked by RGS5.",
+        "terms": [
+          {
+            "sub_span": "perivascular cluster",
+            "sub_offset": [
+              47,
+              67
+            ],
+            "normalized_label": "PERIVASCULAR CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MCAM",
+            "sub_offset": [
+              69,
+              73
+            ],
+            "normalized_label": "MCAM",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "RGS5",
+            "sub_offset": [
+              78,
+              82
+            ],
+            "normalized_label": "RGS5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      }
+    ]
+  },
+  "links": {
+    "claim:5810a89c2a9accf69046": "Supplementary Dataset 1#Variable genes clusters",
+    "claim:f9ad45277c63b10f5170": "Supplementary Dataset 1#Variable genes clusters",
+    "claim:710031ec6fde247767c3": "Supplementary Dataset 1#Variable genes clusters",
+    "claim:3c3d204d4175919a6ccf": "Supplementary Dataset 1#Variable genes clusters",
+    "claim:4df9272e38903b4e5d17": "Supplementary Dataset 1#Variable genes clusters",
+    "claim:47b0ab908059d8911ee3": "Supplementary Dataset 1#Variable genes clusters",
+    "claim:7992374968906b248957": "Supplementary Dataset 2#Variable genes clusters",
+    "claim:4b2ce97002a847088deb": "Supplementary Dataset 2#Variable genes Orig.Ident",
+    "claim:2d4d58709a30c5471397": "Supplementary Dataset 2#Variable genes Orig.Ident",
+    "claim:1163c6a08c9a9690809c": "Supplementary Dataset 2#Variable genes clusters"
+  },
+  "link_origins": {
+    "claim:5810a89c2a9accf69046": "model",
+    "claim:f9ad45277c63b10f5170": "model",
+    "claim:710031ec6fde247767c3": "model",
+    "claim:3c3d204d4175919a6ccf": "model",
+    "claim:4df9272e38903b4e5d17": "model",
+    "claim:47b0ab908059d8911ee3": "model",
+    "claim:7992374968906b248957": "model",
+    "claim:4b2ce97002a847088deb": "model",
+    "claim:2d4d58709a30c5471397": "model",
+    "claim:1163c6a08c9a9690809c": "model"
+  },
+  "validation": {
+    "preparation": {
+      "raw_claims": 36,
+      "retained_claims": 36,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": [],
+      "strict_exclusions": [],
+      "strictly_grounded_claims": 36
+    },
+    "validation": {
+      "valid": true,
+      "n_claims": 10,
+      "n_errors": 0,
+      "errors": [],
+      "n_warnings": 0,
+      "warnings": []
+    }
+  }
+}

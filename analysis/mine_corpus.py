@@ -23,12 +23,17 @@ CORPUS_GLOBS = {
     "biorxiv": "data/biorxiv/meca/*/manuscript.md",
     "hca": "data/hca/manuscripts/*/manuscript.md",
 }
+CORPUS_ORGANISMS = {
+    "biorxiv": "homo_sapiens",
+    "hca": "homo_sapiens",
+}
 DEFAULT_MRKR_PROJECT = REPO.parent / "mrkr"
 DEFAULT_MRKR_COMMAND = "uv run --project . --locked mrkr"
 SOURCE_MANIFEST_SCHEMA = "llmarkers.source-manifest.v2"
 ONTO_MANIFEST_SCHEMA = "llmarkers.onto-manifest.v2"
 STATUS_SCHEMA = "llmarkers.corpus-status.v1"
 RUN_SCHEMA = "llmarkers.corpus-run.v1"
+SOURCE_SNAPSHOT_SCHEMA = "llmarkers.source-snapshot.v1"
 
 
 @dataclass(frozen=True)
@@ -94,42 +99,47 @@ def write_json_atomic(path: Path, value: object) -> None:
         raise
 
 
-def paper_organism(paper_dir: Path) -> str | None:
-    marker_path = paper_dir / "markers.json"
-    if not marker_path.exists():
-        return None
-    try:
-        records = json.loads(marker_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-    if isinstance(records, dict):
-        records = records.get("markers", [])
-    organisms = {
-        (record.get("organism") or "").lower()
-        for record in records
-        if isinstance(record, dict)
-    }
-    normalized = {
-        {"human": "homo_sapiens", "homo sapiens": "homo_sapiens"}.get(
-            organism, organism
-        )
-        for organism in organisms
-        if organism
-    }
-    return next(iter(normalized)) if len(normalized) == 1 else None
-
-
 def enumerate_papers(collections: list[str]) -> list[Paper]:
+    """Enumerate source manuscripts without consulting prior extraction outputs."""
+
     papers: list[Paper] = []
     for collection in collections:
+        organism = CORPUS_ORGANISMS[collection]
         for manuscript in sorted(REPO.glob(CORPUS_GLOBS[collection])):
-            organism = paper_organism(manuscript.parent)
-            if organism != "homo_sapiens":
-                continue
             papers.append(
                 Paper(manuscript.parent.name, collection, organism, manuscript)
             )
     return papers
+
+
+def source_set_sha256(papers: list[Paper]) -> str:
+    digest = hashlib.sha256()
+    for paper in sorted(papers, key=lambda item: item.key):
+        digest.update(paper.key.encode("utf-8"))
+        digest.update(b"\0")
+        digest.update(paper.organism.encode("utf-8"))
+        digest.update(b"\0")
+        digest.update(sha256_file(paper.manuscript).encode("ascii"))
+        digest.update(b"\0")
+    return "sha256:" + digest.hexdigest()
+
+
+def write_source_snapshot(out: Path, papers: list[Paper]) -> Path:
+    rows = [
+        f"# schema: {SOURCE_SNAPSHOT_SCHEMA}\n",
+        "paper_id\tcollection\torganism\tmanuscript\tsource_sha256\n",
+    ]
+    for paper in sorted(papers, key=lambda item: item.key):
+        rows.append(
+            f"{paper.paper_id}\t{paper.collection}\t{paper.organism}\t"
+            f"{display_path(paper.manuscript)}\t{sha256_file(paper.manuscript)}\n"
+        )
+    destination = out / "source_manifest.tsv"
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    temporary = destination.with_suffix(".tsv.tmp")
+    temporary.write_text("".join(rows), encoding="utf-8")
+    os.replace(temporary, destination)
+    return destination
 
 
 def load_manifest(path: Path) -> list[Paper]:
@@ -229,10 +239,29 @@ def run_command(command: list[str], *, cwd: Path, log, timeout: int) -> None:
     )
 
 
-def reusable_claims(destination: Path, paper: Paper, source_sha256: str) -> Path | None:
-    """Return a source-matched canonical claim document from an interrupted run."""
+def reusable_claims(
+    destination: Path,
+    paper: Paper,
+    source_sha256: str,
+    mrkr_source_sha256: str,
+) -> Path | None:
+    """Return a source-matched, previously accepted claim document."""
 
-    for name in ("paper.claims.json", "paper.claims.rejected.json"):
+    status_path = destination / "status.json"
+    if not status_path.is_file():
+        return None
+    try:
+        status = json.loads(status_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if (
+        status.get("schema_version") != STATUS_SCHEMA
+        or status.get("source_sha256") != source_sha256
+        or status.get("mrkr_source_sha256") != mrkr_source_sha256
+    ):
+        return None
+
+    for name in ("paper.claims.json",):
         candidate = destination / name
         if not candidate.is_file():
             continue
@@ -244,6 +273,10 @@ def reusable_claims(destination: Path, paper: Paper, source_sha256: str) -> Path
             document.get("schema_version") == "mrkr.claims.v1"
             and document.get("source", {}).get("id") == paper.key
             and document.get("source", {}).get("sha256") == source_sha256
+            and document.get("producer", {}).get("name") == "mrkr"
+            and str(
+                document.get("extraction", {}).get("prompt_template_sha256", "")
+            ).startswith("sha256:")
         ):
             return candidate
     return None
@@ -264,13 +297,16 @@ def run_paper(
     destination.mkdir(parents=True, exist_ok=True)
     source_sha = sha256_file(paper.manuscript)
     started = utc_now()
-    reusable = reusable_claims(destination, paper, source_sha)
+    reusable = reusable_claims(
+        destination, paper, source_sha, mrkr_source_sha256
+    )
 
     with tempfile.TemporaryDirectory(prefix="mrkr-", dir=destination) as temporary:
         temporary_path = Path(temporary)
         claims = temporary_path / "paper.claims.json"
         onto = temporary_path / "paper.onto.json"
         metrics = temporary_path / "metrics.json"
+        response = temporary_path / "response.json"
         log_path = temporary_path / "log.txt"
         try:
             with log_path.open("w", encoding="utf-8") as log:
@@ -286,6 +322,9 @@ def run_paper(
                             metrics,
                             {"reused_claims": True, "source": reusable.name},
                         )
+                    prior_response = destination / "response.json"
+                    if prior_response.is_file():
+                        shutil.copy2(prior_response, response)
                     run_command(
                         mrkr_command
                         + [
@@ -309,8 +348,12 @@ def run_paper(
                             str(claims),
                             "--source-id",
                             paper.key,
+                            "--organism",
+                            paper.organism,
                             "--metrics",
                             str(metrics),
+                            "--response",
+                            str(response),
                         ],
                         cwd=mrkr_cwd,
                         log=log,
@@ -340,7 +383,13 @@ def run_paper(
                     timeout=120,
                 )
 
-            for name in ("paper.claims.json", "paper.onto.json", "metrics.json", "log.txt"):
+            for name in (
+                "paper.claims.json",
+                "paper.onto.json",
+                "metrics.json",
+                "response.json",
+                "log.txt",
+            ):
                 source = temporary_path / name
                 if source.exists():
                     os.replace(source, destination / name)
@@ -354,11 +403,13 @@ def run_paper(
             )
             if onto_document.get("source", {}).get("id") != paper.key:
                 raise ValueError("paper.onto.json source.id does not match the corpus key")
-            artifact_names = (
+            artifact_names = [
                 "paper.claims.json",
                 "paper.onto.json",
                 "metrics.json",
-            )
+            ]
+            if (destination / "response.json").is_file():
+                artifact_names.append("response.json")
             status = {
                 "schema_version": STATUS_SCHEMA,
                 "status": "complete",
@@ -487,6 +538,7 @@ def main() -> int:
     if not mrkr_cwd.is_dir():
         raise FileNotFoundError(f"mrkr working directory not found: {mrkr_cwd}")
     mrkr_source_sha256 = sha256_mrkr_source(mrkr_cwd)
+    selected_source_sha256 = source_set_sha256(papers)
 
     out = args.out.resolve()
     complete_before = sum(
@@ -494,9 +546,12 @@ def main() -> int:
         for paper in papers
     )
     print(f"papers: {len(papers)}; complete: {complete_before}; pending: {len(papers) - complete_before}")
+    print(f"source set: {selected_source_sha256}")
     if args.dry_run:
         print("dry-run: no files were changed")
         return 0
+
+    source_snapshot = write_source_snapshot(out, papers)
 
     counts = {"complete": 0, "skip": 0, "failed": 0}
     with ThreadPoolExecutor(max_workers=args.jobs) as executor:
@@ -522,6 +577,9 @@ def main() -> int:
         "finished_at": utc_now(),
         "mrkr_command": command,
         "mrkr_source_sha256": mrkr_source_sha256,
+        "source_set_sha256": selected_source_sha256,
+        "source_snapshot": display_path(source_snapshot),
+        "source_snapshot_sha256": sha256_file(source_snapshot),
         "source_manifest_sha256": (
             sha256_file(args.manifest) if args.manifest else None
         ),

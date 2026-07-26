@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -21,8 +22,6 @@ PANEL_B_PATH = FIGURE_DIR / "fig2_panel_b_optimal_deg_cutoff.pdf"
 PANEL_B_PNG_PATH = FIGURE_DIR / "fig2_panel_b_optimal_deg_cutoff.png"
 PANEL_C_PATH = FIGURE_DIR / "fig2_panel_c_llm_recovery.pdf"
 PANEL_C_PNG_PATH = FIGURE_DIR / "fig2_panel_c_llm_recovery.png"
-POSTER_FIGURE_PATH = FIGURE_DIR / "fig_marker_recovery.pdf"
-POSTER_FIGURE_PNG_PATH = FIGURE_DIR / "fig_marker_recovery.png"
 
 DATASETS = [
     ("adipose_Emont2022", "Emont"),
@@ -41,11 +40,26 @@ EXTRACTION_FALLBACK = "extracted_txt.json"
 SOURCE_COLORS = {"image": "#4C78A8", "text": "#F58518"}
 MEAN_LINE_COLORS = {"image": "#A7C7E7", "text": "#F4C28B"}
 METHODS = [
-    ("gen_pair_f1", "Generation\nnames only", "#E8913A"),
-    ("sel_pair_f1", "Selection\nDEGs only", "#5B8DC9"),
-    ("ext_pair_f1", "Extraction\ntext pair", "#5AAE61"),
-    ("ext_data_f1", "Extraction\n+ data source", "#3A7F49"),
+    ("gen_pair_f1", "Generation\ncell type names", "#E8913A"),
+    ("sel_pair_f1", "Selection\nDEGs", "#5B8DC9"),
+    ("joint_pair_f1", "Extraction\ncell type + gene", "#5AAE61"),
+    (
+        "joint_triple_f1",
+        "Extraction\n+ data ID",
+        "#3A7F49",
+    ),
 ]
+
+JOINT_RESULTS_PATH = (
+    RESULTS_DIR
+    / "mrkr_benchmark_pilot_20260721"
+    / "joint_deg_extraction_v1"
+    / "joint_extraction_papers.tsv"
+)
+BENCHMARK_ROOT = RESULTS_DIR / "benchmark_evidence_v1" / "papers"
+DATASET_TO_PAPER = {
+    dataset: dataset.split("_", 1)[1] for dataset, _short_name in DATASETS
+}
 
 
 def clean_text(value: object) -> str:
@@ -66,6 +80,46 @@ def load_records(path: Path) -> pd.DataFrame:
     df["feature_id"] = df["feature_id"].map(clean_text)
     df["source_type"] = df["source_type"].map(clean_text).str.lower()
     return df
+
+
+def human_records(df: pd.DataFrame) -> pd.DataFrame:
+    if "organism" not in df:
+        return df.copy()
+    organism = (
+        df["organism"].fillna("").astype(str).str.casefold().str.replace("_", " ")
+    )
+    return df[organism.isin({"homo sapiens", "human"})].copy()
+
+
+def benchmark_human_text_facts(
+    dataset: str,
+) -> tuple[set[tuple[str, str]], set[tuple[str, str, str]]]:
+    paper_id = DATASET_TO_PAPER[dataset]
+    path = BENCHMARK_ROOT / paper_id / "primary" / "text.claims.json"
+    document = json.loads(path.read_text(encoding="utf-8"))
+    pairs: set[tuple[str, str]] = set()
+    triples: set[tuple[str, str, str]] = set()
+    for claim in document["claims"]:
+        organism = next(
+            term for term in claim["terms"] if term["term_type"] == "organism"
+        )
+        if organism.get("ontology_term") != "NCBITaxon:9606":
+            continue
+        target = next(
+            term for term in claim["terms"] if term["term_type"] == "celltype"
+        )
+        label = clean_upper(
+            target.get("legacy_normalized_label") or target.get("normalized_label")
+        )
+        data_id = clean_text(claim["evidence"].get("data_id"))
+        for gene in claim["terms"]:
+            gene_id = clean_text(gene.get("ontology_term"))
+            if gene["term_type"] != "gene" or not gene_id:
+                continue
+            pairs.add((label, gene_id))
+            if data_id:
+                triples.add((data_id, label, gene_id))
+    return pairs, triples
 
 
 def key_frame(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
@@ -170,17 +224,16 @@ def build_llm_results() -> pd.DataFrame:
     rows = []
     for dataset, short_name in DATASETS:
         base = DATA_DIR / dataset
-        human = load_records(base / "evidence_human" / "extracted.json")
-        human_text = human[human["source_type"] == "text"].copy()
-        generated = load_records(base / "evidence_generated" / "extracted.json")
+        generated = human_records(
+            load_records(base / "evidence_generated" / "extracted.json")
+        )
         extraction_path = base / "evidence_llm" / EXTRACTION_PRIMARY
         if not extraction_path.exists():
             extraction_path = base / "evidence_llm" / EXTRACTION_FALLBACK
-        extracted = load_records(extraction_path)
-        deg = load_records(base / "evidence_deg" / "extracted.json")
+        extracted = human_records(load_records(extraction_path))
+        deg = human_records(load_records(base / "evidence_deg" / "extracted.json"))
 
-        truth_pairs = key_set(human_text, ["group_name", "feature_id"])
-        truth_triples = key_set(human_text, ["data_id", "group_name", "feature_id"])
+        truth_pairs, truth_triples = benchmark_human_text_facts(dataset)
 
         gen_precision, gen_recall, gen_f1 = pair_metrics(
             key_set(generated, ["group_name", "feature_id"]),
@@ -192,7 +245,7 @@ def build_llm_results() -> pd.DataFrame:
             path = base / "evidence_selected" / f"selected_top{n}.json"
             if not path.exists():
                 continue
-            selected = load_records(path)
+            selected = human_records(load_records(path))
             precision, recall, f1 = pair_metrics(
                 key_set(selected, ["group_name", "feature_id"]),
                 truth_pairs,
@@ -237,7 +290,44 @@ def build_llm_results() -> pd.DataFrame:
         )
     results = pd.DataFrame(rows)
     results.to_csv(RESULTS_DIR / "fig2_llm_recovery.tsv", sep="\t", index=False)
-    return results
+
+    paper_to_study = {
+        dataset.split("_", 1)[1]: short_name for dataset, short_name in DATASETS
+    }
+    joint = pd.read_csv(JOINT_RESULTS_PATH, sep="\t")
+    joint["study"] = joint["paper_id"].map(paper_to_study)
+    if joint["study"].isna().any():
+        missing = joint.loc[joint["study"].isna(), "paper_id"].tolist()
+        raise ValueError(f"unknown joint-extraction papers: {missing}")
+    joint = joint.rename(
+        columns={
+            "pair_precision": "joint_pair_precision",
+            "pair_recall": "joint_pair_recall",
+            "pair_f1": "joint_pair_f1",
+            "triple_precision": "joint_triple_precision",
+            "triple_recall": "joint_triple_recall",
+            "triple_f1": "joint_triple_f1",
+        }
+    )
+    merged = results.merge(
+        joint[
+            [
+                "study",
+                "joint_pair_precision",
+                "joint_pair_recall",
+                "joint_pair_f1",
+                "joint_triple_precision",
+                "joint_triple_recall",
+                "joint_triple_f1",
+            ]
+        ],
+        on="study",
+        validate="one_to_one",
+    )
+    merged.to_csv(
+        RESULTS_DIR / "fig2_llm_recovery_current.tsv", sep="\t", index=False
+    )
+    return merged
 
 
 def format_int(value: object) -> str:
@@ -392,12 +482,21 @@ def plot_llm_panel(ax: plt.Axes, results: pd.DataFrame) -> None:
             linewidth=1.4,
             zorder=4,
         )
-        ax.text(method_idx, mean_value + 0.035, f"{mean_value:.2f}", ha="center", va="bottom", fontsize=7.5)
+        ax.text(
+            method_idx,
+            mean_value + 0.035,
+            f"{mean_value:.2f}",
+            ha="center",
+            va="bottom",
+            fontsize=7.5,
+            zorder=5,
+            bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.4},
+        )
 
     for row_idx, row in results.iterrows():
         ax.plot(
             [2 + jitter[row_idx], 3 + jitter[row_idx]],
-            [row["ext_pair_f1"], row["ext_data_f1"]],
+            [row["joint_pair_f1"], row["joint_triple_f1"]],
             color="#9A9A9A",
             linewidth=0.7,
             alpha=0.8,
@@ -441,21 +540,6 @@ def main() -> None:
     cutoffs = build_cutoff_results()
     llm_results = build_llm_results()
 
-    fig, axes = plt.subplots(
-        1,
-        3,
-        figsize=(12.8, 3.35),
-        gridspec_kw={"width_ratios": [1.12, 1.04, 1.20]},
-    )
-    plot_summary_table(axes[0], summary)
-    plot_cutoff_panel(axes[1], cutoffs)
-    plot_llm_panel(axes[2], llm_results)
-    fig.subplots_adjust(left=0.04, right=0.99, bottom=0.22, top=0.93, wspace=0.36)
-
-    fig.savefig(POSTER_FIGURE_PATH, bbox_inches="tight")
-    fig.savefig(POSTER_FIGURE_PNG_PATH, bbox_inches="tight", dpi=240)
-    plt.close(fig)
-
     save_single_panel(
         PANEL_A_PATH,
         PANEL_A_PNG_PATH,
@@ -477,7 +561,6 @@ def main() -> None:
         figsize=(4.3, 3.35),
         adjust={"left": 0.14, "right": 0.98, "bottom": 0.22, "top": 0.94},
     )
-    print(f"saved {POSTER_FIGURE_PATH}")
     print(f"saved {PANEL_A_PATH}")
     print(f"saved {PANEL_B_PATH}")
     print(f"saved {PANEL_C_PATH}")

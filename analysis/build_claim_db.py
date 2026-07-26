@@ -12,7 +12,7 @@ import tempfile
 from pathlib import Path
 
 
-SCHEMA_VERSION = "llmarkers.claim-db.v2"
+SCHEMA_VERSION = "llmarkers.claim-db.v3"
 ONTO_SCHEMA = "mrkr.onto.v1"
 ONTO_MANIFEST_SCHEMA = "llmarkers.onto-manifest.v2"
 
@@ -76,6 +76,9 @@ def load_onto(
     grounded_organism = document.get("grounding", {}).get("genes", {}).get("organism")
     if grounded_organism != organism:
         raise ValueError(f"{path}: grounding organism does not match the manifest")
+    organism_grounding = document.get("grounding", {}).get("organism", {})
+    if not str(organism_grounding.get("ontology_term", "")).startswith("NCBITaxon:"):
+        raise ValueError(f"{path}: missing NCBI Taxonomy grounding")
     return document
 
 
@@ -112,7 +115,7 @@ def create_schema(connection: sqlite3.Connection) -> None:
           term_key TEXT PRIMARY KEY,
           claim_key TEXT NOT NULL REFERENCES claims(claim_key),
           ordinal INTEGER NOT NULL,
-          term_type TEXT NOT NULL CHECK(term_type IN ('gene','celltype','comparison','tissue')),
+          term_type TEXT NOT NULL CHECK(term_type IN ('gene','celltype','comparison','tissue','organism')),
           normalized_label TEXT NOT NULL,
           sub_span TEXT,
           sub_start INTEGER,
@@ -153,13 +156,17 @@ def create_schema(connection: sqlite3.Connection) -> None:
           PRIMARY KEY(curie, ancestor_curie)
         );
         CREATE VIEW marker_evidence AS
-          SELECT c.paper_key, c.claim_key, target.normalized_label AS target_label,
+          SELECT c.paper_key, c.claim_key,
+                 organism.normalized_label AS organism_label,
+                 organism.ontology_term AS organism_curie,
+                 target.normalized_label AS target_label,
                  target.ontology_term AS target_curie, target.exact AS target_exact,
                  gene.normalized_label AS gene_symbol, gene.ontology_term AS gene_curie,
                  gene.exact AS gene_exact, gene.direction,
                  c.span_literal, c.summary
           FROM claims c
           JOIN terms target ON target.claim_key = c.claim_key AND target.term_type = 'celltype'
+          JOIN terms organism ON organism.claim_key = c.claim_key AND organism.term_type = 'organism'
           JOIN terms gene ON gene.claim_key = c.claim_key AND gene.term_type = 'gene';
         CREATE VIEW profile_markers AS
           SELECT DISTINCT p.profile_key, m.gene_symbol, m.gene_curie, m.direction
@@ -252,8 +259,20 @@ def insert_document(
         )
 
         targets = [term for term in claim["terms"] if term["term_type"] == "celltype"]
+        organisms = [
+            term for term in claim["terms"] if term["term_type"] == "organism"
+        ]
         if len(targets) != 1:
             raise ValueError(f"{onto_path}: {claim_id} has {len(targets)} target cell types")
+        if len(organisms) != 1:
+            raise ValueError(f"{onto_path}: {claim_id} has {len(organisms)} organisms")
+        organism_grounding = document["grounding"]["organism"]
+        if (
+            organisms[0].get("normalized_label") != organism_grounding.get("label")
+            or organisms[0].get("ontology_term")
+            != organism_grounding.get("ontology_term")
+        ):
+            raise ValueError(f"{onto_path}: {claim_id} organism does not match metadata")
         target = targets[0]
         profile_key = "profile:" + stable_key(
             paper_key,

@@ -9,9 +9,11 @@ cd "$ROOT_DIR"
 mkdir -p "$BUILD_DIR"
 
 figures=(
+  fig1_mrkr_overview
   fig1_paper_celltype_joint
   fig2_marker_recovery
-  fig3_cross_study_unification
+  fig3_mrkr_corpus_reuse
+  fig4_cap_partition
   figs1_hildreth_detail
 )
 

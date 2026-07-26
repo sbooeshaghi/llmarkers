@@ -1,0 +1,1347 @@
+{
+  "schema_version": "mrkr.onto.v1",
+  "source": {
+    "id": "benchmark/Wagner2020",
+    "sha256": "sha256:08cdc5bfa6aba463df4d7ad2b9a8ea962283ab845094bfb22d1d00c49bef0d5b"
+  },
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "claims": [
+    {
+      "claim_id": "claim:f2a313a4ee0800f876db",
+      "span_literal": "The smallest population expressed the typical oocyte markers GDF9, ZP3, FIGLA, and OOSP2",
+      "span_offset": [
+        10265,
+        10353
+      ],
+      "summary": "In Homo sapiens, oocytes express the typical markers GDF9, ZP3, FIGLA, and OOSP2 in the ovarian cortex.",
+      "terms": [
+        {
+          "sub_span": "oocyte",
+          "sub_offset": [
+            46,
+            52
+          ],
+          "normalized_label": "oocyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000023",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "GDF9",
+          "sub_offset": [
+            61,
+            65
+          ],
+          "normalized_label": "GDF9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000164404",
+          "exact": true
+        },
+        {
+          "sub_span": "ZP3",
+          "sub_offset": [
+            67,
+            70
+          ],
+          "normalized_label": "ZP3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000188372",
+          "exact": true
+        },
+        {
+          "sub_span": "FIGLA",
+          "sub_offset": [
+            72,
+            77
+          ],
+          "normalized_label": "FIGLA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000183733",
+          "exact": true
+        },
+        {
+          "sub_span": "OOSP2",
+          "sub_offset": [
+            83,
+            88
+          ],
+          "normalized_label": "OOSP2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000149507",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:21211be8d9593cece5ea",
+      "span_literal": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "span_offset": [
+        10387,
+        10610
+      ],
+      "summary": "In Homo sapiens, immune cells in the ovarian cortex express tissue-resident markers CD69 and ITGB2, as well as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "terms": [
+        {
+          "sub_span": "immune cells",
+          "sub_offset": [
+            4,
+            16
+          ],
+          "normalized_label": "immune cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000738",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CD69",
+          "sub_offset": [
+            70,
+            74
+          ],
+          "normalized_label": "CD69",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000110848",
+          "exact": true
+        },
+        {
+          "sub_span": "ITGB2",
+          "sub_offset": [
+            79,
+            84
+          ],
+          "normalized_label": "ITGB2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000160255",
+          "exact": true
+        },
+        {
+          "sub_span": "CD14",
+          "sub_offset": [
+            190,
+            194
+          ],
+          "normalized_label": "CD14",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000170458",
+          "exact": true
+        },
+        {
+          "sub_span": "HLA-DRA",
+          "sub_offset": [
+            196,
+            203
+          ],
+          "normalized_label": "HLA-DRA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000204287",
+          "exact": true
+        },
+        {
+          "sub_span": "B2M",
+          "sub_offset": [
+            205,
+            208
+          ],
+          "normalized_label": "B2M",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000166710",
+          "exact": true
+        },
+        {
+          "sub_span": "HLA-DQB1",
+          "sub_offset": [
+            214,
+            222
+          ],
+          "normalized_label": "HLA-DQB1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000179344",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:fd62d6437c45d506e252",
+      "span_literal": "The immune cells expressed tissue-resident immune cell markers (e.g., CD69 and ITGB2) as well as mixed gene signatures of T-cells (CD2, CD3G, and CD8A) and antigen-presenting cells, such as CD14, HLA-DRA, B2M, and HLA-DQB1.",
+      "span_offset": [
+        10387,
+        10610
+      ],
+      "summary": "In Homo sapiens, T cells in the ovarian cortex express CD2, CD3G, and CD8A.",
+      "terms": [
+        {
+          "sub_span": "T-cells",
+          "sub_offset": [
+            122,
+            129
+          ],
+          "normalized_label": "T cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000084",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CD2",
+          "sub_offset": [
+            131,
+            134
+          ],
+          "normalized_label": "CD2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000116824",
+          "exact": true
+        },
+        {
+          "sub_span": "CD3G",
+          "sub_offset": [
+            136,
+            140
+          ],
+          "normalized_label": "CD3G",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000160654",
+          "exact": true
+        },
+        {
+          "sub_span": "CD8A",
+          "sub_offset": [
+            146,
+            150
+          ],
+          "normalized_label": "CD8A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000153563",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9a801f8f411824e07864",
+      "span_literal": "Endothelial cells could be identified based on the expression of strong endothelial markers such as VE-cadherin (CDH5) and VWF.",
+      "span_offset": [
+        10611,
+        10738
+      ],
+      "summary": "In Homo sapiens, endothelial cells in the ovarian cortex are identified by expression of CDH5 (VE-cadherin) and VWF.",
+      "terms": [
+        {
+          "sub_span": "Endothelial cells",
+          "sub_offset": [
+            0,
+            17
+          ],
+          "normalized_label": "endothelial cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000115",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CDH5",
+          "sub_offset": [
+            113,
+            117
+          ],
+          "normalized_label": "CDH5",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000179776",
+          "exact": true
+        },
+        {
+          "sub_span": "VWF",
+          "sub_offset": [
+            123,
+            126
+          ],
+          "normalized_label": "VWF",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000110799",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2e8c8b7f7d26050e4583",
+      "span_literal": "Granulosa cells were identified based on the expression of typical granulosa cell markers FOXL2 and anti-Mullerian hormone (AMH).",
+      "span_offset": [
+        10739,
+        10868
+      ],
+      "summary": "In Homo sapiens, granulosa cells in the ovarian cortex are identified by expression of FOXL2 and anti-M\u00fcllerian hormone (AMH).",
+      "terms": [
+        {
+          "sub_span": "Granulosa cells",
+          "sub_offset": [
+            0,
+            15
+          ],
+          "normalized_label": "granulosa cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000501",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "FOXL2",
+          "sub_offset": [
+            90,
+            95
+          ],
+          "normalized_label": "FOXL2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000183770",
+          "exact": true
+        },
+        {
+          "sub_span": "AMH",
+          "sub_offset": [
+            124,
+            127
+          ],
+          "normalized_label": "AMH",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000104899",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a28be245420c692cff86",
+      "span_literal": "Around 10% of ovarian cortex cells were annotated as perivascular cells expressing MYH11, MCAM, RGS5, RERGL, and TAGLN, with enriched gene signatures associated with both pericytes and smooth muscle cells23",
+      "span_offset": [
+        10869,
+        11075
+      ],
+      "summary": "In Homo sapiens, perivascular cells in the ovarian cortex express MYH11, MCAM, RGS5, RERGL, and TAGLN.",
+      "terms": [
+        {
+          "sub_span": "perivascular cells",
+          "sub_offset": [
+            53,
+            71
+          ],
+          "normalized_label": "perivascular cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:4033054",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ovarian cortex",
+          "sub_offset": [
+            14,
+            28
+          ],
+          "normalized_label": "ovarian cortex",
+          "term_type": "tissue",
+          "provenance": "explicit",
+          "ontology_term": "UBERON:0013191",
+          "exact": true
+        },
+        {
+          "sub_span": "MYH11",
+          "sub_offset": [
+            83,
+            88
+          ],
+          "normalized_label": "MYH11",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000133392",
+          "exact": true
+        },
+        {
+          "sub_span": "MCAM",
+          "sub_offset": [
+            90,
+            94
+          ],
+          "normalized_label": "MCAM",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000076706",
+          "exact": true
+        },
+        {
+          "sub_span": "RGS5",
+          "sub_offset": [
+            96,
+            100
+          ],
+          "normalized_label": "RGS5",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000143248",
+          "exact": true
+        },
+        {
+          "sub_span": "RERGL",
+          "sub_offset": [
+            102,
+            107
+          ],
+          "normalized_label": "RERGL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000111404",
+          "exact": true
+        },
+        {
+          "sub_span": "TAGLN",
+          "sub_offset": [
+            113,
+            118
+          ],
+          "normalized_label": "TAGLN",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000149591",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:54da7183f460914f9abd",
+      "span_literal": "a shared expression of diverse mesodermal lineage markers (e.g., PDGFRA and DCN) and extracellular matrix proteins (e.g., COL1A1 and COL6A1)",
+      "span_offset": [
+        11250,
+        11390
+      ],
+      "summary": "In Homo sapiens, stromal cells in the ovarian cortex express mesodermal lineage markers PDGFRA and DCN, and extracellular matrix proteins COL1A1 and COL6A1.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "stromal cell",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:0000499",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PDGFRA",
+          "sub_offset": [
+            65,
+            71
+          ],
+          "normalized_label": "PDGFRA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000134853",
+          "exact": true
+        },
+        {
+          "sub_span": "DCN",
+          "sub_offset": [
+            76,
+            79
+          ],
+          "normalized_label": "DCN",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000011465",
+          "exact": true
+        },
+        {
+          "sub_span": "COL1A1",
+          "sub_offset": [
+            122,
+            128
+          ],
+          "normalized_label": "COL1A1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000108821",
+          "exact": true
+        },
+        {
+          "sub_span": "COL6A1",
+          "sub_offset": [
+            133,
+            139
+          ],
+          "normalized_label": "COL6A1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000142156",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f383f03a16c6da5dcfba",
+      "span_literal": "The OSC markers DDX4, DAZL, and DPPA3 were found in the oocytes only",
+      "span_offset": [
+        14333,
+        14401
+      ],
+      "summary": "In Homo sapiens, DDX4, DAZL, and DPPA3 are expressed in oocytes only in the ovarian cortex.",
+      "terms": [
+        {
+          "sub_span": "oocytes",
+          "sub_offset": [
+            56,
+            63
+          ],
+          "normalized_label": "oocyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000023",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "DDX4",
+          "sub_offset": [
+            16,
+            20
+          ],
+          "normalized_label": "DDX4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000152670",
+          "exact": true
+        },
+        {
+          "sub_span": "DAZL",
+          "sub_offset": [
+            22,
+            26
+          ],
+          "normalized_label": "DAZL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000092345",
+          "exact": true
+        },
+        {
+          "sub_span": "DPPA3",
+          "sub_offset": [
+            32,
+            37
+          ],
+          "normalized_label": "DPPA3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000187569",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b8ef2a0d7466bcc9c983",
+      "span_literal": "DDX4 (a.k.a. VASA) is a cytoplasmic RNA helicase specifically expressed in the germline and commonly used as a marker for germ cells including oocytes in adult ovaries",
+      "span_offset": [
+        6510,
+        6677
+      ],
+      "summary": "In Homo sapiens, DDX4 (also known as VASA) is specifically expressed in germ cells including oocytes in adult ovaries.",
+      "terms": [
+        {
+          "sub_span": "germ cells",
+          "sub_offset": [
+            122,
+            132
+          ],
+          "normalized_label": "germ cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000586",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "DDX4",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "DDX4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000152670",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d5be69952dc274dbaa81",
+      "span_literal": "Isolated OSCs were shown to express germline markers (e.g., DAZL, PRDM1, and IFITM3), proliferate in vitro and give rise to oocytes in a xeno-transplantation model13.",
+      "span_offset": [
+        6833,
+        6999
+      ],
+      "summary": "In Homo sapiens, oogonial stem cells were reported to express the germline markers DAZL, PRDM1, and IFITM3.",
+      "terms": [
+        {
+          "sub_span": "OSCs",
+          "sub_offset": [
+            9,
+            13
+          ],
+          "normalized_label": "oogonial stem cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "DAZL",
+          "sub_offset": [
+            60,
+            64
+          ],
+          "normalized_label": "DAZL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000092345",
+          "exact": true
+        },
+        {
+          "sub_span": "PRDM1",
+          "sub_offset": [
+            66,
+            71
+          ],
+          "normalized_label": "PRDM1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000057657",
+          "exact": true
+        },
+        {
+          "sub_span": "IFITM3",
+          "sub_offset": [
+            77,
+            83
+          ],
+          "normalized_label": "IFITM3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000142089",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f3b48eb0bc8b43833983",
+      "span_literal": "The top 25 highly expressed genes in Ab+ cells included several known perivascular marker genes such as MCAM, TAGLN, and ACTA2.",
+      "span_offset": [
+        18436,
+        18563
+      ],
+      "summary": "In Homo sapiens, DDX4 antibody-positive cells identified as perivascular cells highly express the perivascular marker genes MCAM, TAGLN, and ACTA2.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "perivascular cell",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:4033054",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MCAM",
+          "sub_offset": [
+            104,
+            108
+          ],
+          "normalized_label": "MCAM",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000076706",
+          "exact": true
+        },
+        {
+          "sub_span": "TAGLN",
+          "sub_offset": [
+            110,
+            115
+          ],
+          "normalized_label": "TAGLN",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000149591",
+          "exact": true
+        },
+        {
+          "sub_span": "ACTA2",
+          "sub_offset": [
+            121,
+            126
+          ],
+          "normalized_label": "ACTA2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000107796",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:305dc9e419836340bbbf",
+      "span_literal": "The top 25 highly expressed genes in the Ab- cells included stromal cell markers, such as DCN and PDGFRA",
+      "span_offset": [
+        18564,
+        18668
+      ],
+      "summary": "In Homo sapiens, DDX4 antibody-negative cells identified as stromal cells highly express the stromal cell markers DCN and PDGFRA.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "stromal cell",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:0000499",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "DCN",
+          "sub_offset": [
+            90,
+            93
+          ],
+          "normalized_label": "DCN",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000011465",
+          "exact": true
+        },
+        {
+          "sub_span": "PDGFRA",
+          "sub_offset": [
+            98,
+            104
+          ],
+          "normalized_label": "PDGFRA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000134853",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a3bc4a85f71ce08e7391",
+      "span_literal": "Theca cells are acquired during secondary follicle stage and they express STAR and CYP17A1, enabling them to synthesize androgens39.",
+      "span_offset": [
+        37243,
+        37375
+      ],
+      "summary": "In Homo sapiens, theca cells express STAR and CYP17A1, enabling them to synthesize androgens.",
+      "terms": [
+        {
+          "sub_span": "Theca cells",
+          "sub_offset": [
+            0,
+            11
+          ],
+          "normalized_label": "theca cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000503",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "STAR",
+          "sub_offset": [
+            74,
+            78
+          ],
+          "normalized_label": "STAR",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000147465",
+          "exact": true
+        },
+        {
+          "sub_span": "CYP17A1",
+          "sub_offset": [
+            83,
+            90
+          ],
+          "normalized_label": "CYP17A1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000148795",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d3639415df0fdfef6234",
+      "span_literal": "Androgens are further converted to estrogens by CYP19A1 in granulosa cells39.",
+      "span_offset": [
+        37376,
+        37453
+      ],
+      "summary": "In Homo sapiens, granulosa cells express CYP19A1, which converts androgens to estrogens.",
+      "terms": [
+        {
+          "sub_span": "granulosa cells",
+          "sub_offset": [
+            59,
+            74
+          ],
+          "normalized_label": "granulosa cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000501",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CYP19A1",
+          "sub_offset": [
+            48,
+            55
+          ],
+          "normalized_label": "CYP19A1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000137869",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c4ea4831154a23085196",
+      "span_literal": "the expression profile of the detected oocytes lacks markers of oocytes from antral follicles, such as NTF4, GPD1, and LCP217.",
+      "span_offset": [
+        35642,
+        35768
+      ],
+      "summary": "In Homo sapiens, oocytes from primordial follicles in the ovarian cortex lack expression of antral follicle oocyte markers NTF4, GPD1, and LCP2.",
+      "terms": [
+        {
+          "sub_span": "oocytes",
+          "sub_offset": [
+            39,
+            46
+          ],
+          "normalized_label": "oocyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000023",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "NTF4",
+          "sub_offset": [
+            103,
+            107
+          ],
+          "normalized_label": "NTF4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000225950",
+          "exact": true
+        },
+        {
+          "sub_span": "GPD1",
+          "sub_offset": [
+            109,
+            113
+          ],
+          "normalized_label": "GPD1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000167588",
+          "exact": true
+        },
+        {
+          "sub_span": "LCP2",
+          "sub_offset": [
+            119,
+            123
+          ],
+          "normalized_label": "LCP2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000043462",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:631e216a45801cd0f984",
+      "span_literal": "lacked known markers of antral granulosa cells such as CYP19A1 and FSHR.",
+      "span_offset": [
+        35931,
+        36003
+      ],
+      "summary": "In Homo sapiens, cortical granulosa cells from primordial follicles lack expression of antral granulosa cell markers CYP19A1 and FSHR.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "granulosa cell",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:0000501",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CYP19A1",
+          "sub_offset": [
+            55,
+            62
+          ],
+          "normalized_label": "CYP19A1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000137869",
+          "exact": true
+        },
+        {
+          "sub_span": "FSHR",
+          "sub_offset": [
+            67,
+            71
+          ],
+          "normalized_label": "FSHR",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000170820",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:fbbf62fc214adf56e626",
+      "span_literal": "Fetal mitotic FGCs showed a high expression of the pluripotency genes PRDM14, POU5F1, NANOG, and LIN28A, but none of these markers were found in the adult cells",
+      "span_offset": [
+        31518,
+        31678
+      ],
+      "summary": "In Homo sapiens, fetal mitotic fetal germ cells show high expression of the pluripotency genes PRDM14, POU5F1, NANOG, and LIN28A.",
+      "terms": [
+        {
+          "sub_span": "mitotic FGCs",
+          "sub_offset": [
+            6,
+            18
+          ],
+          "normalized_label": "mitotic fetal germ cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000586",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PRDM14",
+          "sub_offset": [
+            70,
+            76
+          ],
+          "normalized_label": "PRDM14",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000147596",
+          "exact": true
+        },
+        {
+          "sub_span": "POU5F1",
+          "sub_offset": [
+            78,
+            84
+          ],
+          "normalized_label": "POU5F1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000204531",
+          "exact": true
+        },
+        {
+          "sub_span": "NANOG",
+          "sub_offset": [
+            86,
+            91
+          ],
+          "normalized_label": "NANOG",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000111704",
+          "exact": true
+        },
+        {
+          "sub_span": "LIN28A",
+          "sub_offset": [
+            97,
+            103
+          ],
+          "normalized_label": "LIN28A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000131914",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "provider": "anthropic",
+    "model": "claude-opus-4-6",
+    "response_id": "msg_011CdG1FJzc4SsS7Mz94LWcg",
+    "prompt_template_sha256": "sha256:66b1b55ad4f3af47640e539051c622169cac2c87c093368764ba84c6db786749",
+    "organism": {
+      "key": "homo_sapiens",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "preparation": {
+      "raw_claims": 18,
+      "retained_claims": 17,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [
+        {
+          "raw_index": 15,
+          "reason": "no_marker_gene"
+        }
+      ],
+      "excluded_terms": []
+    }
+  },
+  "grounding": {
+    "genes": {
+      "provider": "offline-gene-map",
+      "organism": "homo_sapiens",
+      "sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+      "canonical_sha256": "sha256:8f73b5fb49d2944ebe885bf930ea38c55bf1f1759139caeaebd7e10155ff1a83"
+    },
+    "organism": {
+      "provider": "NCBI Taxonomy",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "ontology_service": {
+      "provider": "OLS4",
+      "endpoint": "https://www.ebi.ac.uk/ols4/api/v2/tag_text",
+      "queries": [
+        {
+          "query": "oocyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:38.346249+00:00",
+          "response_sha256": "sha256:c5e8e4a3102d440c495b8f51cd59996f901fdc035a8b0cbaa6e340f358cec0ef",
+          "ontology_term": "CL:0000023",
+          "exact": true
+        },
+        {
+          "query": "immune cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:39.021184+00:00",
+          "response_sha256": "sha256:fc2182d6e1736d06a1850cf821c73c883ccd43fd79f1985bc5f17a010bd1f8c4",
+          "ontology_term": "CL:0000738",
+          "exact": true
+        },
+        {
+          "query": "T cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:40.807665+00:00",
+          "response_sha256": "sha256:1ffc379beecb8e505103d495d9307637530e647c1e5ab9ad4034000603c587c3",
+          "ontology_term": "CL:0000084",
+          "exact": true
+        },
+        {
+          "query": "endothelial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:41.486243+00:00",
+          "response_sha256": "sha256:0e9579ba57f9ee3f936bc3c51526ea85324a1f1ef3023cfc86d10c64e3331bf2",
+          "ontology_term": "CL:0000115",
+          "exact": true
+        },
+        {
+          "query": "granulosa cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:42.166010+00:00",
+          "response_sha256": "sha256:b9f10dfd1b4f1e175504a62c2d379576d1d6ee2b569068f39287f485d58a7b92",
+          "ontology_term": "CL:0000501",
+          "exact": true
+        },
+        {
+          "query": "perivascular cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:42.910442+00:00",
+          "response_sha256": "sha256:ae8dd5f838128b457ac1d0b2cde4eb7fffd9298e81ec992686d8d0215958758f",
+          "ontology_term": "CL:4033054",
+          "exact": true
+        },
+        {
+          "query": "ovarian cortex",
+          "ontology": "uberon",
+          "retrieved_at": "2026-07-21T22:39:43.584160+00:00",
+          "response_sha256": "sha256:e73cb744898d6173129e0da5db93e83199bdb3541a5b8e5d5197bd7c5258f734",
+          "ontology_term": "UBERON:0013191",
+          "exact": true
+        },
+        {
+          "query": "stromal cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:44.262407+00:00",
+          "response_sha256": "sha256:0ad2f92856089cfdffcd8c00753006593dd2dd8ceb7511358ee650ab3849c6ad",
+          "ontology_term": "CL:0000499",
+          "exact": true
+        },
+        {
+          "query": "germ cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:45.003993+00:00",
+          "response_sha256": "sha256:ee24d9e8125e9bbc38d954c169528db1669e7fe18add3240005a7100a9244ef2",
+          "ontology_term": "CL:0000586",
+          "exact": true
+        },
+        {
+          "query": "oogonial stem cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:45.689872+00:00",
+          "response_sha256": "sha256:5809126855acef6070b11b7ef2017eb490b308750ad78138b88f84a871f99626",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "theca cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:46.359031+00:00",
+          "response_sha256": "sha256:ae51afc27995a02082e9598973f21007353db1d21f223039ebb3ed6ef700eaf1",
+          "ontology_term": "CL:0000503",
+          "exact": true
+        },
+        {
+          "query": "mitotic fetal germ cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:39:47.098742+00:00",
+          "response_sha256": "sha256:ef863e52b5d712969d0d59e20b7609483868acbcb963e5cc43b04115e0ce25c2",
+          "ontology_term": "CL:0000586",
+          "exact": false
+        }
+      ]
+    }
+  }
+}

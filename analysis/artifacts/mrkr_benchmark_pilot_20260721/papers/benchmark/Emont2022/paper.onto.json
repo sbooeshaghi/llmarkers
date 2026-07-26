@@ -1,0 +1,1039 @@
+{
+  "schema_version": "mrkr.onto.v1",
+  "source": {
+    "id": "benchmark/Emont2022",
+    "sha256": "sha256:6626bba73517058996a3624dbc3f0598db4ea599163134a22371b4a0c7355146"
+  },
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "claims": [
+    {
+      "claim_id": "claim:1b3c65e582a54632908b",
+      "span_literal": "We identified six distinct subpopulations of human ASPCs (see Supplementary Note 1) in subclustered scRNA-seq and sNuc-seq samples, all of which express the common marker gene PDGFRA",
+      "span_offset": [
+        9783,
+        9965
+      ],
+      "summary": "In Homo sapiens, adipose stem and progenitor cells express the common marker gene PDGFRA.",
+      "terms": [
+        {
+          "sub_span": "ASPCs",
+          "sub_offset": [
+            51,
+            56
+          ],
+          "normalized_label": "adipose stem and progenitor cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000837",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PDGFRA",
+          "sub_offset": [
+            176,
+            182
+          ],
+          "normalized_label": "PDGFRA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000134853",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0cdca4730b79b9dcaa97",
+      "span_literal": "mASPC2 and hASPC2 are characterized by high expression of Aldh1a3 and ALDH1A3, respectively",
+      "span_offset": [
+        10200,
+        10291
+      ],
+      "summary": "In Homo sapiens, adipose stem and progenitor cell 2 is characterized by high expression of ALDH1A3.",
+      "terms": [
+        {
+          "sub_span": "hASPC2",
+          "sub_offset": [
+            11,
+            17
+          ],
+          "normalized_label": "adipose stem and progenitor cell 2",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000837",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ALDH1A3",
+          "sub_offset": [
+            70,
+            77
+          ],
+          "normalized_label": "ALDH1A3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000184254",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:19f715c336fcf3d7cf0c",
+      "span_literal": "mASPC4 and hASPC4 express Epha3 and EPHA3, respectively",
+      "span_offset": [
+        10442,
+        10497
+      ],
+      "summary": "In Homo sapiens, adipose stem and progenitor cell 4 expresses EPHA3.",
+      "terms": [
+        {
+          "sub_span": "hASPC4",
+          "sub_offset": [
+            11,
+            17
+          ],
+          "normalized_label": "adipose stem and progenitor cell 4",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000837",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "EPHA3",
+          "sub_offset": [
+            36,
+            41
+          ],
+          "normalized_label": "EPHA3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000044524",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d040b8a9115a51d35bb6",
+      "span_literal": "multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+)",
+      "span_offset": [
+        6350,
+        6530
+      ],
+      "summary": "In Homo sapiens white adipose tissue, macrophages are marked by CD14, natural killer cells by CD96, mast cells by CPA3, and neutrophils by CSF3R.",
+      "terms": [
+        {
+          "sub_span": "macrophages",
+          "sub_offset": [
+            38,
+            49
+          ],
+          "normalized_label": "macrophage",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000235",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CD14",
+          "sub_offset": [
+            51,
+            55
+          ],
+          "normalized_label": "CD14",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000170458",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:68fc91d5738e339ba112",
+      "span_literal": "multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+)",
+      "span_offset": [
+        6350,
+        6530
+      ],
+      "summary": "In Homo sapiens white adipose tissue, natural killer cells are marked by CD96.",
+      "terms": [
+        {
+          "sub_span": "natural killer (NK) cells",
+          "sub_offset": [
+            101,
+            126
+          ],
+          "normalized_label": "natural killer cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000623",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CD96",
+          "sub_offset": [
+            128,
+            132
+          ],
+          "normalized_label": "CD96",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000153283",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9cff276bfd99539a2f17",
+      "span_literal": "multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+)",
+      "span_offset": [
+        6350,
+        6530
+      ],
+      "summary": "In Homo sapiens white adipose tissue, mast cells are marked by CPA3.",
+      "terms": [
+        {
+          "sub_span": "mast cells",
+          "sub_offset": [
+            136,
+            146
+          ],
+          "normalized_label": "mast cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000097",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CPA3",
+          "sub_offset": [
+            148,
+            152
+          ],
+          "normalized_label": "CPA3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000163751",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:73a634a1b771e9a6b92e",
+      "span_literal": "multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+)",
+      "span_offset": [
+        6350,
+        6530
+      ],
+      "summary": "In Homo sapiens white adipose tissue, neutrophils are marked by CSF3R.",
+      "terms": [
+        {
+          "sub_span": "neutrophils",
+          "sub_offset": [
+            160,
+            171
+          ],
+          "normalized_label": "neutrophil",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000775",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CSF3R",
+          "sub_offset": [
+            173,
+            178
+          ],
+          "normalized_label": "CSF3R",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000119535",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:abde83b18ae84fc14ee9",
+      "span_literal": "DC subpopulations 1 and 2 resemble previously reported CLEC9A+ and CD1C+ populations from blood, respectively",
+      "span_offset": [
+        6642,
+        6751
+      ],
+      "summary": "In Homo sapiens, dendritic cell subpopulation 1 is marked by CLEC9A and dendritic cell subpopulation 2 is marked by CD1C.",
+      "terms": [
+        {
+          "sub_span": "DC subpopulations 1",
+          "sub_offset": [
+            0,
+            19
+          ],
+          "normalized_label": "dendritic cell subpopulation 1",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CLEC9A",
+          "sub_offset": [
+            55,
+            61
+          ],
+          "normalized_label": "CLEC9A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000197992",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a1adfb6667e208712c60",
+      "span_literal": "DC subpopulations 1 and 2 resemble previously reported CLEC9A+ and CD1C+ populations from blood, respectively",
+      "span_offset": [
+        6642,
+        6751
+      ],
+      "summary": "In Homo sapiens, dendritic cell subpopulation 2 is marked by CD1C.",
+      "terms": [
+        {
+          "sub_span": "DC subpopulations 1 and 2",
+          "sub_offset": [
+            0,
+            25
+          ],
+          "normalized_label": "dendritic cell subpopulation 2",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CD1C",
+          "sub_offset": [
+            67,
+            71
+          ],
+          "normalized_label": "CD1C",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000158481",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1ec8ec1ed35ee812041a",
+      "span_literal": "CTLA4+ human regulatory T cells",
+      "span_offset": [
+        6866,
+        6897
+      ],
+      "summary": "In Homo sapiens, regulatory T cells are marked by CTLA4.",
+      "terms": [
+        {
+          "sub_span": "human regulatory T cells",
+          "sub_offset": [
+            7,
+            31
+          ],
+          "normalized_label": "regulatory T cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000815",
+          "exact": true
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            7,
+            12
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CTLA4",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "CTLA4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000163599",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0515a5080f6a882d6691",
+      "span_literal": "Some of the visceral samples included cells that appeared to be endometrial in origin (PRLR+), probably owing to endometriosis.",
+      "span_offset": [
+        1840,
+        1967
+      ],
+      "summary": "In Homo sapiens, endometrial cells are marked by PRLR.",
+      "terms": [
+        {
+          "sub_span": "endometrial",
+          "sub_offset": [
+            64,
+            75
+          ],
+          "normalized_label": "endometrial cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PRLR",
+          "sub_offset": [
+            87,
+            91
+          ],
+          "normalized_label": "PRLR",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000113494",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:47f2ecd831b8d2694010",
+      "span_literal": "the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3",
+      "span_offset": [
+        16298,
+        16387
+      ],
+      "summary": "In Homo sapiens, adipocyte subpopulation hAd3 most highly expresses adiponectin and CFD (adipsin).",
+      "terms": [
+        {
+          "sub_span": "hAd3",
+          "sub_offset": [
+            85,
+            89
+          ],
+          "normalized_label": "adipocyte subpopulation hAd3",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CFD",
+          "sub_offset": [
+            51,
+            54
+          ],
+          "normalized_label": "CFD",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000197766",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:87cd93c20c2c20d98cc8",
+      "span_literal": "genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5",
+      "span_offset": [
+        16393,
+        16499
+      ],
+      "summary": "In Homo sapiens, adipocyte subpopulation hAd5 most highly expresses insulin signalling genes INSR, IRS1, and IRS2.",
+      "terms": [
+        {
+          "sub_span": "hAd5",
+          "sub_offset": [
+            102,
+            106
+          ],
+          "normalized_label": "adipocyte subpopulation hAd5",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "INSR",
+          "sub_offset": [
+            53,
+            57
+          ],
+          "normalized_label": "INSR",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000171105",
+          "exact": true
+        },
+        {
+          "sub_span": "IRS1",
+          "sub_offset": [
+            59,
+            63
+          ],
+          "normalized_label": "IRS1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000169047",
+          "exact": true
+        },
+        {
+          "sub_span": "IRS2",
+          "sub_offset": [
+            68,
+            72
+          ],
+          "normalized_label": "IRS2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000185950",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:35fee82c07d848949326",
+      "span_literal": "hAd3 was associated with 'triglyceride biosynthesis' and included higher expression of DGAT2, SREBF1 and PNPLA3",
+      "span_offset": [
+        17104,
+        17215
+      ],
+      "summary": "In Homo sapiens, adipocyte subpopulation hAd3 has higher expression of DGAT2, SREBF1, and PNPLA3.",
+      "terms": [
+        {
+          "sub_span": "hAd3",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "adipocyte subpopulation hAd3",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "DGAT2",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "normalized_label": "DGAT2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000062282",
+          "exact": true
+        },
+        {
+          "sub_span": "SREBF1",
+          "sub_offset": [
+            94,
+            100
+          ],
+          "normalized_label": "SREBF1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000072310",
+          "exact": true
+        },
+        {
+          "sub_span": "PNPLA3",
+          "sub_offset": [
+            105,
+            111
+          ],
+          "normalized_label": "PNPLA3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000100344",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:67dacdf6771700d3de81",
+      "span_literal": "The hAd4 cluster expresses the highest amounts of several fatty acid desaturases, including ELOVL5 and FADS3",
+      "span_offset": [
+        17241,
+        17349
+      ],
+      "summary": "In Homo sapiens, adipocyte subpopulation hAd4 expresses the highest amounts of ELOVL5 and FADS3.",
+      "terms": [
+        {
+          "sub_span": "hAd4",
+          "sub_offset": [
+            4,
+            8
+          ],
+          "normalized_label": "adipocyte subpopulation hAd4",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ELOVL5",
+          "sub_offset": [
+            92,
+            98
+          ],
+          "normalized_label": "ELOVL5",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000012660",
+          "exact": true
+        },
+        {
+          "sub_span": "FADS3",
+          "sub_offset": [
+            103,
+            108
+          ],
+          "normalized_label": "FADS3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000221968",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b54019d153a9a1747cfc",
+      "span_literal": "One particularly notable adipocyte subpopulation is hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A",
+      "span_offset": [
+        19264,
+        19429
+      ],
+      "summary": "In Homo sapiens, adipocyte subpopulation hAd6 selectively expresses EBF2, ESRRG, and PPARGC1A.",
+      "terms": [
+        {
+          "sub_span": "hAd6",
+          "sub_offset": [
+            52,
+            56
+          ],
+          "normalized_label": "adipocyte subpopulation hAd6",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "EBF2",
+          "sub_offset": [
+            141,
+            145
+          ],
+          "normalized_label": "EBF2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000221818",
+          "exact": true
+        },
+        {
+          "sub_span": "ESRRG",
+          "sub_offset": [
+            147,
+            152
+          ],
+          "normalized_label": "ESRRG",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000196482",
+          "exact": true
+        },
+        {
+          "sub_span": "PPARGC1A",
+          "sub_offset": [
+            157,
+            165
+          ],
+          "normalized_label": "PPARGC1A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000109819",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:40dc2500926fbbc1dc70",
+      "span_literal": "Expression of adipocyte marker ADIPOQ and specific marker genes for each adipocyte subpopulation.",
+      "span_offset": [
+        14157,
+        14254
+      ],
+      "summary": "In Homo sapiens, adipocytes are marked by ADIPOQ.",
+      "terms": [
+        {
+          "sub_span": "adipocyte",
+          "sub_offset": [
+            14,
+            23
+          ],
+          "normalized_label": "adipocyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000136",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ADIPOQ",
+          "sub_offset": [
+            31,
+            37
+          ],
+          "normalized_label": "ADIPOQ",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000181092",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "provider": "anthropic",
+    "model": "claude-opus-4-6",
+    "response_id": "msg_011CdG13DJiM9SdZMyvJUapw",
+    "prompt_template_sha256": "sha256:66b1b55ad4f3af47640e539051c622169cac2c87c093368764ba84c6db786749",
+    "organism": {
+      "key": "homo_sapiens",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "preparation": {
+      "raw_claims": 17,
+      "retained_claims": 17,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": []
+    }
+  },
+  "grounding": {
+    "genes": {
+      "provider": "offline-gene-map",
+      "organism": "homo_sapiens",
+      "sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+      "canonical_sha256": "sha256:8f73b5fb49d2944ebe885bf930ea38c55bf1f1759139caeaebd7e10155ff1a83"
+    },
+    "organism": {
+      "provider": "NCBI Taxonomy",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "ontology_service": {
+      "provider": "OLS4",
+      "endpoint": "https://www.ebi.ac.uk/ols4/api/v2/tag_text",
+      "queries": [
+        {
+          "query": "adipose stem and progenitor cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:38.940410+00:00",
+          "response_sha256": "sha256:8de730e61d099713d1e0569f86344ef6b441f2f72d3bb6ab2dfbabb64bae1a13",
+          "ontology_term": "CL:0000837",
+          "exact": false
+        },
+        {
+          "query": "adipose stem and progenitor cell 2",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:39.914946+00:00",
+          "response_sha256": "sha256:77d8096946e0c3560aa7ecb971b69320819f987bd017a0e96da3972dbff7b2df",
+          "ontology_term": "CL:0000837",
+          "exact": false
+        },
+        {
+          "query": "adipose stem and progenitor cell 4",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:40.966570+00:00",
+          "response_sha256": "sha256:6811bf51d7d6117c16983d37ddd19c49abd2007a368ce9f9737e815924553329",
+          "ontology_term": "CL:0000837",
+          "exact": false
+        },
+        {
+          "query": "macrophage",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:41.881607+00:00",
+          "response_sha256": "sha256:e870ee8d8dfffeff1fbdcc35a71cfbdaeca35f416bcfc5d4193d92ab78de589d",
+          "ontology_term": "CL:0000235",
+          "exact": true
+        },
+        {
+          "query": "natural killer cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:42.937246+00:00",
+          "response_sha256": "sha256:579c242c94c91001b9300cddb9e6abadfb2ed2d90a101f13c17d91ff9aae1fba",
+          "ontology_term": "CL:0000623",
+          "exact": true
+        },
+        {
+          "query": "mast cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:44.197750+00:00",
+          "response_sha256": "sha256:abe740786405f45686487fe4cf820df04928487feb8738425c02cdbb49352417",
+          "ontology_term": "CL:0000097",
+          "exact": true
+        },
+        {
+          "query": "neutrophil",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:45.176114+00:00",
+          "response_sha256": "sha256:ed0756b910ded21e9d9a929326c32917f64a29ea813618253b3e24fcffa41ab5",
+          "ontology_term": "CL:0000775",
+          "exact": true
+        },
+        {
+          "query": "dendritic cell subpopulation 1",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:46.115191+00:00",
+          "response_sha256": "sha256:f23a6c1a9984af1cc82489b4f4c45b6640ad470b68f533953ba69c67ccdacab9",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "query": "dendritic cell subpopulation 2",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:49.088885+00:00",
+          "response_sha256": "sha256:4c451cc34cf93b7afd32270f8ebdd984248a4487a3e936f87cebb19e30ff3130",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "query": "regulatory T cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:52.866984+00:00",
+          "response_sha256": "sha256:2ea0b32c670f668e31e0c3e4837a9f33b378c0e06d6ac776d39667b0d53d64bc",
+          "ontology_term": "CL:0000815",
+          "exact": true
+        },
+        {
+          "query": "endometrial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:53.773236+00:00",
+          "response_sha256": "sha256:0e727ecc2f08a2c3983670bf3058e6f99d25177cf12a8f5a310e44d582a61f75",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "adipocyte subpopulation hAd3",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:54.827550+00:00",
+          "response_sha256": "sha256:d2494df615769532a315a0904401c1a95d2f946fc9e76221b7de22330c9b527c",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "query": "adipocyte subpopulation hAd5",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:58.383061+00:00",
+          "response_sha256": "sha256:c7c89292d2ac6e724ed3eb52c317fcfe15824eadffa90d6bf847dd3968e58242",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "query": "adipocyte subpopulation hAd4",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:36:59.372087+00:00",
+          "response_sha256": "sha256:ec797bd8a2a9708d00912087f48fab1a61916dd14934e451c4fd676fe0bfc837",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "query": "adipocyte subpopulation hAd6",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:00.445568+00:00",
+          "response_sha256": "sha256:57a7746df0cefed9e38e5ea24ce7182bb3c10308b28c3fb00462dbb0da412693",
+          "ontology_term": "CL:0000136",
+          "exact": false
+        },
+        {
+          "query": "adipocyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:37:01.447330+00:00",
+          "response_sha256": "sha256:c6fb3ce4540e3971c9f567885ed8514c8223eba0bd79e94a51e9012aa5d9aaa1",
+          "ontology_term": "CL:0000136",
+          "exact": true
+        }
+      ]
+    }
+  }
+}

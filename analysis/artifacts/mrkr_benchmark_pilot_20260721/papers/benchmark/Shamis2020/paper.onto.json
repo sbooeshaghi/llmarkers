@@ -1,0 +1,1970 @@
+{
+  "schema_version": "mrkr.onto.v1",
+  "source": {
+    "id": "benchmark/Shamis2020",
+    "sha256": "sha256:2bd423207fc4388e885db5f568bb1cce9a7b02998cc39be69156d2831d5c221c"
+  },
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "claims": [
+    {
+      "claim_id": "claim:d152ab69b5887814880a",
+      "span_literal": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "span_offset": [
+        28120,
+        28283
+      ],
+      "summary": "In Homo sapiens, spermatogonia state 1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17.",
+      "terms": [
+        {
+          "sub_span": "SPG1",
+          "sub_offset": [
+            14,
+            18
+          ],
+          "normalized_label": "spermatogonia state 1",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MORC1",
+          "sub_offset": [
+            42,
+            47
+          ],
+          "normalized_label": "MORC1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000114487",
+          "exact": true
+        },
+        {
+          "sub_span": "MSL3",
+          "sub_offset": [
+            49,
+            53
+          ],
+          "normalized_label": "MSL3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000005302",
+          "exact": true
+        },
+        {
+          "sub_span": "ZBTB43",
+          "sub_offset": [
+            55,
+            61
+          ],
+          "normalized_label": "ZBTB43",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000169155",
+          "exact": true
+        },
+        {
+          "sub_span": "TSPAN33",
+          "sub_offset": [
+            63,
+            70
+          ],
+          "normalized_label": "TSPAN33",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000158457",
+          "exact": true
+        },
+        {
+          "sub_span": "TCF3",
+          "sub_offset": [
+            72,
+            76
+          ],
+          "normalized_label": "TCF3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000071564",
+          "exact": true
+        },
+        {
+          "sub_span": "FMR1",
+          "sub_offset": [
+            78,
+            82
+          ],
+          "normalized_label": "FMR1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000102081",
+          "exact": true
+        },
+        {
+          "sub_span": "MAGEB2",
+          "sub_offset": [
+            84,
+            90
+          ],
+          "normalized_label": "MAGEB2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000099399",
+          "exact": true
+        },
+        {
+          "sub_span": "CDK17",
+          "sub_offset": [
+            96,
+            101
+          ],
+          "normalized_label": "CDK17",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000059758",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3f29c61852d879985cee",
+      "span_literal": "Interestingly, PIWIL4 is a SPG1-specific marker for all three species (Figures 2D and 2E; Table S3).",
+      "span_offset": [
+        28284,
+        28384
+      ],
+      "summary": "In Homo sapiens, PIWIL4 is a specific marker of spermatogonia state 1.",
+      "terms": [
+        {
+          "sub_span": "SPG1",
+          "sub_offset": [
+            27,
+            31
+          ],
+          "normalized_label": "spermatogonia state 1",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PIWIL4",
+          "sub_offset": [
+            15,
+            21
+          ],
+          "normalized_label": "PIWIL4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000134627",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0ad3bc120cf9b51c2917",
+      "span_literal": "In SPG2 cells, the noncanonical markers enriched in SPG1 (described above) are diminished, whereas certain canonical markers for undifferentiated SPG increase in expression (ZBTB16 [mouse and human] and GFRA1 [all three species]), as do several noncanonical markers (DUSP6, TCF4, and L1TD1 [macaque and human only]) (Figures 2D and 2E [L1TD1 shown]; Table S3).",
+      "span_offset": [
+        28947,
+        29307
+      ],
+      "summary": "In Homo sapiens, spermatogonia state 2 cells show increased expression of ZBTB16, GFRA1, DUSP6, TCF4, and L1TD1.",
+      "terms": [
+        {
+          "sub_span": "SPG2",
+          "sub_offset": [
+            3,
+            7
+          ],
+          "normalized_label": "spermatogonia state 2",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ZBTB16",
+          "sub_offset": [
+            174,
+            180
+          ],
+          "normalized_label": "ZBTB16",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000109906",
+          "exact": true
+        },
+        {
+          "sub_span": "GFRA1",
+          "sub_offset": [
+            203,
+            208
+          ],
+          "normalized_label": "GFRA1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000151892",
+          "exact": true
+        },
+        {
+          "sub_span": "DUSP6",
+          "sub_offset": [
+            267,
+            272
+          ],
+          "normalized_label": "DUSP6",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000139318",
+          "exact": true
+        },
+        {
+          "sub_span": "TCF4",
+          "sub_offset": [
+            274,
+            278
+          ],
+          "normalized_label": "TCF4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000196628",
+          "exact": true
+        },
+        {
+          "sub_span": "L1TD1",
+          "sub_offset": [
+            284,
+            289
+          ],
+          "normalized_label": "L1TD1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000240563",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f992e5f9ad2985faddac",
+      "span_literal": "cells in SPG1 and SPG2 are similar to each other (Figure S2B) and at first glance express many of the well-established markers of undifferentiated SPG (e.g., GFRA1, ZBTB16 (PLZF), ITGA6, ID4, UCHL1, LIN28, DPPA4 (macaque), FGFR3, and UTF1 (human)",
+      "span_offset": [
+        27260,
+        27506
+      ],
+      "summary": "In Homo sapiens, undifferentiated spermatogonia (spermatogonia state 1 and spermatogonia state 2) express GFRA1, ZBTB16, ITGA6, ID4, UCHL1, LIN28, FGFR3, and UTF1.",
+      "terms": [
+        {
+          "sub_span": "undifferentiated SPG",
+          "sub_offset": [
+            130,
+            150
+          ],
+          "normalized_label": "undifferentiated spermatogonia",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "GFRA1",
+          "sub_offset": [
+            158,
+            163
+          ],
+          "normalized_label": "GFRA1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000151892",
+          "exact": true
+        },
+        {
+          "sub_span": "ZBTB16",
+          "sub_offset": [
+            165,
+            171
+          ],
+          "normalized_label": "ZBTB16",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000109906",
+          "exact": true
+        },
+        {
+          "sub_span": "ITGA6",
+          "sub_offset": [
+            180,
+            185
+          ],
+          "normalized_label": "ITGA6",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000091409",
+          "exact": true
+        },
+        {
+          "sub_span": "ID4",
+          "sub_offset": [
+            187,
+            190
+          ],
+          "normalized_label": "ID4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000172201",
+          "exact": true
+        },
+        {
+          "sub_span": "UCHL1",
+          "sub_offset": [
+            192,
+            197
+          ],
+          "normalized_label": "UCHL1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000154277",
+          "exact": true
+        },
+        {
+          "sub_span": "LIN28",
+          "sub_offset": [
+            199,
+            204
+          ],
+          "normalized_label": "LIN28",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000131914",
+          "exact": true
+        },
+        {
+          "sub_span": "FGFR3",
+          "sub_offset": [
+            223,
+            228
+          ],
+          "normalized_label": "FGFR3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000068078",
+          "exact": true
+        },
+        {
+          "sub_span": "UTF1",
+          "sub_offset": [
+            234,
+            238
+          ],
+          "normalized_label": "UTF1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000171794",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:8f3f9750efc6e1ef703e",
+      "span_literal": "Human and macaque SPG3-5 cells share many markers with mouse SPG3, such as DMRT1, KIT, STRA8, SOHLH1, and SOHLH2",
+      "span_offset": [
+        33447,
+        33559
+      ],
+      "summary": "In Homo sapiens, differentiating spermatogonia states 3-5 express DMRT1, KIT, STRA8, SOHLH1, and SOHLH2.",
+      "terms": [
+        {
+          "sub_span": "SPG3-5",
+          "sub_offset": [
+            18,
+            24
+          ],
+          "normalized_label": "differentiating spermatogonia states 3-5",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "Human",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "DMRT1",
+          "sub_offset": [
+            75,
+            80
+          ],
+          "normalized_label": "DMRT1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000137090",
+          "exact": true
+        },
+        {
+          "sub_span": "KIT",
+          "sub_offset": [
+            82,
+            85
+          ],
+          "normalized_label": "KIT",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000157404",
+          "exact": true
+        },
+        {
+          "sub_span": "STRA8",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "normalized_label": "STRA8",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000146857",
+          "exact": true
+        },
+        {
+          "sub_span": "SOHLH1",
+          "sub_offset": [
+            94,
+            100
+          ],
+          "normalized_label": "SOHLH1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000165643",
+          "exact": true
+        },
+        {
+          "sub_span": "SOHLH2",
+          "sub_offset": [
+            106,
+            112
+          ],
+          "normalized_label": "SOHLH2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000120669",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:8a60d907c448bc5b87b3",
+      "span_literal": "Cells in macaque and human SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1, and KIT (unannotated in macaque), indicating that this population is actively proliferating",
+      "span_offset": [
+        34199,
+        34395
+      ],
+      "summary": "In Homo sapiens, spermatogonia state 4 cells express MKI67, PCNA, DMRT1, DMRTB1, and KIT.",
+      "terms": [
+        {
+          "sub_span": "SPG4",
+          "sub_offset": [
+            27,
+            31
+          ],
+          "normalized_label": "spermatogonia state 4",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            21,
+            26
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MKI67",
+          "sub_offset": [
+            59,
+            64
+          ],
+          "normalized_label": "MKI67",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000148773",
+          "exact": true
+        },
+        {
+          "sub_span": "PCNA",
+          "sub_offset": [
+            66,
+            70
+          ],
+          "normalized_label": "PCNA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000132646",
+          "exact": true
+        },
+        {
+          "sub_span": "DMRT1",
+          "sub_offset": [
+            90,
+            95
+          ],
+          "normalized_label": "DMRT1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000137090",
+          "exact": true
+        },
+        {
+          "sub_span": "DMRTB1",
+          "sub_offset": [
+            97,
+            103
+          ],
+          "normalized_label": "DMRTB1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000143006",
+          "exact": true
+        },
+        {
+          "sub_span": "KIT",
+          "sub_offset": [
+            109,
+            112
+          ],
+          "normalized_label": "KIT",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000157404",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d6f832a32260c2c1b5f3",
+      "span_literal": "SPG6 cells turn off DMRT1 while maintaining DMRTB1 (not annotated in macaque), a specific signature of mouse type B SPG",
+      "span_offset": [
+        35644,
+        35763
+      ],
+      "summary": "In Homo sapiens, spermatogonia state 6 cells turn off DMRT1 while maintaining DMRTB1.",
+      "terms": [
+        {
+          "sub_span": "SPG6",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "spermatogonia state 6",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "DMRT1",
+          "sub_offset": [
+            20,
+            25
+          ],
+          "normalized_label": "DMRT1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative",
+          "ontology_term": "ENSG00000137090",
+          "exact": true
+        },
+        {
+          "sub_span": "DMRTB1",
+          "sub_offset": [
+            44,
+            50
+          ],
+          "normalized_label": "DMRTB1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000143006",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:386492815e8c688210e6",
+      "span_literal": "They also begin to express many markers previously identified in mouse preleptotene spermatocytes: TEX101, LY6K, and established meiotic genes, such as SYCP2/3, SYCE1/2, MEIOB, PRDM9, SPATA22, and DNAJB11",
+      "span_offset": [
+        36342,
+        36546
+      ],
+      "summary": "In Homo sapiens, spermatogonia state 6 cells begin to express TEX101, LY6K, SYCP2, SYCP3, SYCE1, SYCE2, MEIOB, PRDM9, SPATA22, and DNAJB11.",
+      "terms": [
+        {
+          "sub_span": "They",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "spermatogonia state 6",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "TEX101",
+          "sub_offset": [
+            99,
+            105
+          ],
+          "normalized_label": "TEX101",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000131126",
+          "exact": true
+        },
+        {
+          "sub_span": "LY6K",
+          "sub_offset": [
+            107,
+            111
+          ],
+          "normalized_label": "LY6K",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000160886",
+          "exact": true
+        },
+        {
+          "sub_span": "SYCP2",
+          "sub_offset": [
+            152,
+            157
+          ],
+          "normalized_label": "SYCP2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000196074",
+          "exact": true
+        },
+        {
+          "sub_span": "SYCE1",
+          "sub_offset": [
+            161,
+            166
+          ],
+          "normalized_label": "SYCE1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000171772",
+          "exact": true
+        },
+        {
+          "sub_span": "MEIOB",
+          "sub_offset": [
+            170,
+            175
+          ],
+          "normalized_label": "MEIOB",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000162039",
+          "exact": true
+        },
+        {
+          "sub_span": "PRDM9",
+          "sub_offset": [
+            177,
+            182
+          ],
+          "normalized_label": "PRDM9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000164256",
+          "exact": true
+        },
+        {
+          "sub_span": "SPATA22",
+          "sub_offset": [
+            184,
+            191
+          ],
+          "normalized_label": "SPATA22",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000141255",
+          "exact": true
+        },
+        {
+          "sub_span": "DNAJB11",
+          "sub_offset": [
+            197,
+            204
+          ],
+          "normalized_label": "DNAJB11",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000090520",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:ac7e175ff61c02da8e2e",
+      "span_literal": "Consistent with our single-cell RNA-seq (scRNA-seq) data predictions, the protein markers co-localize with UCHL1+ SPG cells lining the basement membrane of the human testis",
+      "span_offset": [
+        30263,
+        30435
+      ],
+      "summary": "In Homo sapiens, UCHL1 is a marker of undifferentiated spermatogonia in the testis.",
+      "terms": [
+        {
+          "sub_span": "SPG cells",
+          "sub_offset": [
+            114,
+            123
+          ],
+          "normalized_label": "undifferentiated spermatogonia",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            160,
+            165
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "UCHL1",
+          "sub_offset": [
+            107,
+            112
+          ],
+          "normalized_label": "UCHL1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000154277",
+          "exact": true
+        },
+        {
+          "sub_span": "testis",
+          "sub_offset": [
+            166,
+            172
+          ],
+          "normalized_label": "testis",
+          "term_type": "tissue",
+          "provenance": "explicit",
+          "ontology_term": "UBERON:0000473",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:8eb46741df281bea41ac",
+      "span_literal": "but less so with cKIT+ differentiating SPG",
+      "span_offset": [
+        30478,
+        30520
+      ],
+      "summary": "In Homo sapiens, KIT is a marker of differentiating spermatogonia.",
+      "terms": [
+        {
+          "sub_span": "differentiating SPG",
+          "sub_offset": [
+            23,
+            42
+          ],
+          "normalized_label": "differentiating spermatogonia",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "cKIT",
+          "sub_offset": [
+            17,
+            21
+          ],
+          "normalized_label": "KIT",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000157404",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2d23adb89c4bc32a38f5",
+      "span_literal": "One of the most abundant populations captured in primates was peritubular myoid cells, defined by the expression of MYH11, ACTA2, collagens, laminins, versican (VCAN), and fibronectin",
+      "span_offset": [
+        66301,
+        66484
+      ],
+      "summary": "In Homo sapiens, peritubular myoid cells are defined by the expression of MYH11, ACTA2, and VCAN.",
+      "terms": [
+        {
+          "sub_span": "peritubular myoid cells",
+          "sub_offset": [
+            62,
+            85
+          ],
+          "normalized_label": "peritubular myoid cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0002481",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MYH11",
+          "sub_offset": [
+            116,
+            121
+          ],
+          "normalized_label": "MYH11",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000133392",
+          "exact": true
+        },
+        {
+          "sub_span": "ACTA2",
+          "sub_offset": [
+            123,
+            128
+          ],
+          "normalized_label": "ACTA2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000107796",
+          "exact": true
+        },
+        {
+          "sub_span": "VCAN",
+          "sub_offset": [
+            161,
+            165
+          ],
+          "normalized_label": "VCAN",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000038427",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0b1916b781ec6a979663",
+      "span_literal": "The somatic compartment also contains endothelial cells (VWF, NOSTRIN, AQP1, CD34 [human]) and pericytes (MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3)",
+      "span_offset": [
+        70825,
+        70980
+      ],
+      "summary": "In Homo sapiens, endothelial cells express VWF, NOSTRIN, AQP1, and CD34, while pericytes express MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3.",
+      "terms": [
+        {
+          "sub_span": "endothelial cells",
+          "sub_offset": [
+            38,
+            55
+          ],
+          "normalized_label": "endothelial cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000115",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "VWF",
+          "sub_offset": [
+            57,
+            60
+          ],
+          "normalized_label": "VWF",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000110799",
+          "exact": true
+        },
+        {
+          "sub_span": "NOSTRIN",
+          "sub_offset": [
+            62,
+            69
+          ],
+          "normalized_label": "NOSTRIN",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000163072",
+          "exact": true
+        },
+        {
+          "sub_span": "AQP1",
+          "sub_offset": [
+            71,
+            75
+          ],
+          "normalized_label": "AQP1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000240583",
+          "exact": true
+        },
+        {
+          "sub_span": "CD34",
+          "sub_offset": [
+            77,
+            81
+          ],
+          "normalized_label": "CD34",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000174059",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:caf048f75733b487601c",
+      "span_literal": "The somatic compartment also contains endothelial cells (VWF, NOSTRIN, AQP1, CD34 [human]) and pericytes (MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3)",
+      "span_offset": [
+        70825,
+        70980
+      ],
+      "summary": "In Homo sapiens, pericytes express MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3.",
+      "terms": [
+        {
+          "sub_span": "pericytes",
+          "sub_offset": [
+            95,
+            104
+          ],
+          "normalized_label": "pericyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000669",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MCAM",
+          "sub_offset": [
+            106,
+            110
+          ],
+          "normalized_label": "MCAM",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000076706",
+          "exact": true
+        },
+        {
+          "sub_span": "RGS5",
+          "sub_offset": [
+            112,
+            116
+          ],
+          "normalized_label": "RGS5",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000143248",
+          "exact": true
+        },
+        {
+          "sub_span": "PDGFRB",
+          "sub_offset": [
+            118,
+            124
+          ],
+          "normalized_label": "PDGFRB",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000113721",
+          "exact": true
+        },
+        {
+          "sub_span": "NG2",
+          "sub_offset": [
+            126,
+            129
+          ],
+          "normalized_label": "NG2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000173546",
+          "exact": true
+        },
+        {
+          "sub_span": "CCL2",
+          "sub_offset": [
+            131,
+            135
+          ],
+          "normalized_label": "CCL2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000108691",
+          "exact": true
+        },
+        {
+          "sub_span": "ABCC9",
+          "sub_offset": [
+            137,
+            142
+          ],
+          "normalized_label": "ABCC9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000069431",
+          "exact": true
+        },
+        {
+          "sub_span": "NOTCH3",
+          "sub_offset": [
+            148,
+            154
+          ],
+          "normalized_label": "NOTCH3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000074181",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:bfdcb8638f1e539ad9be",
+      "span_literal": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins)",
+      "span_offset": [
+        71559,
+        71871
+      ],
+      "summary": "In Homo sapiens, muscular pericytes express MCAM, CRIP1, CRIP2, RERGL, ADIRF, and MYL9, while fibroblastic pericytes express STEAP4, GUCY1A1, ITGA1, CD36, and CD44.",
+      "terms": [
+        {
+          "sub_span": "m-pericytes",
+          "sub_offset": [
+            110,
+            121
+          ],
+          "normalized_label": "muscular pericyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000669",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MCAM",
+          "sub_offset": [
+            123,
+            127
+          ],
+          "normalized_label": "MCAM",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000076706",
+          "exact": true
+        },
+        {
+          "sub_span": "RERGL",
+          "sub_offset": [
+            158,
+            163
+          ],
+          "normalized_label": "RERGL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000111404",
+          "exact": true
+        },
+        {
+          "sub_span": "ADIRF",
+          "sub_offset": [
+            165,
+            170
+          ],
+          "normalized_label": "ADIRF",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000148671",
+          "exact": true
+        },
+        {
+          "sub_span": "MYL9",
+          "sub_offset": [
+            197,
+            201
+          ],
+          "normalized_label": "MYL9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000101335",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a6e26bd17167a690f052",
+      "span_literal": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins)",
+      "span_offset": [
+        71559,
+        71871
+      ],
+      "summary": "In Homo sapiens, fibroblastic pericytes express STEAP4, GUCY1A1, ITGA1, CD36, and CD44.",
+      "terms": [
+        {
+          "sub_span": "f-pericytes",
+          "sub_offset": [
+            232,
+            243
+          ],
+          "normalized_label": "fibroblastic pericyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000669",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "STEAP4",
+          "sub_offset": [
+            245,
+            251
+          ],
+          "normalized_label": "STEAP4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000127954",
+          "exact": true
+        },
+        {
+          "sub_span": "ITGA1",
+          "sub_offset": [
+            264,
+            269
+          ],
+          "normalized_label": "ITGA1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000213949",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:23a60ca7668cf021fbf0",
+      "span_literal": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69)",
+      "span_offset": [
+        72386,
+        72574
+      ],
+      "summary": "In Homo sapiens, macrophages express CD163, HLA-DRA, LYZ, and TYROBP, while T cells express CD3D, TRAC, TRBC2, and CD69.",
+      "terms": [
+        {
+          "sub_span": "macrophages",
+          "sub_offset": [
+            68,
+            79
+          ],
+          "normalized_label": "macrophage",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000235",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CD163",
+          "sub_offset": [
+            81,
+            86
+          ],
+          "normalized_label": "CD163",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000177575",
+          "exact": true
+        },
+        {
+          "sub_span": "HLA-DRA",
+          "sub_offset": [
+            88,
+            95
+          ],
+          "normalized_label": "HLA-DRA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000204287",
+          "exact": true
+        },
+        {
+          "sub_span": "LYZ",
+          "sub_offset": [
+            106,
+            109
+          ],
+          "normalized_label": "LYZ",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000090382",
+          "exact": true
+        },
+        {
+          "sub_span": "TYROBP",
+          "sub_offset": [
+            115,
+            121
+          ],
+          "normalized_label": "TYROBP",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000011600",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:8295deb4e365244f4ff5",
+      "span_literal": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69)",
+      "span_offset": [
+        72386,
+        72574
+      ],
+      "summary": "In Homo sapiens, T cells express CD3D, TRAC, TRBC2, and CD69.",
+      "terms": [
+        {
+          "sub_span": "T cells",
+          "sub_offset": [
+            151,
+            158
+          ],
+          "normalized_label": "T cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000084",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CD3D",
+          "sub_offset": [
+            160,
+            164
+          ],
+          "normalized_label": "CD3D",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000167286",
+          "exact": true
+        },
+        {
+          "sub_span": "TRAC",
+          "sub_offset": [
+            166,
+            170
+          ],
+          "normalized_label": "TRAC",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000277734",
+          "exact": true
+        },
+        {
+          "sub_span": "TRBC2",
+          "sub_offset": [
+            172,
+            177
+          ],
+          "normalized_label": "TRBC2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000211772",
+          "exact": true
+        },
+        {
+          "sub_span": "CD69",
+          "sub_offset": [
+            183,
+            187
+          ],
+          "normalized_label": "CD69",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000110848",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b5eac575fdf530c68266",
+      "span_literal": "we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16)",
+      "span_offset": [
+        81694,
+        81866
+      ],
+      "summary": "In Homo sapiens, undifferentiated spermatogonia state 1 is marked by TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16.",
+      "terms": [
+        {
+          "sub_span": "SPG1",
+          "sub_offset": [
+            82,
+            86
+          ],
+          "normalized_label": "undifferentiated spermatogonia state 1",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "TSPAN33",
+          "sub_offset": [
+            88,
+            95
+          ],
+          "normalized_label": "TSPAN33",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000158457",
+          "exact": true
+        },
+        {
+          "sub_span": "PIWIL4",
+          "sub_offset": [
+            97,
+            103
+          ],
+          "normalized_label": "PIWIL4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000134627",
+          "exact": true
+        },
+        {
+          "sub_span": "CDK17",
+          "sub_offset": [
+            105,
+            110
+          ],
+          "normalized_label": "CDK17",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000059758",
+          "exact": true
+        },
+        {
+          "sub_span": "MORC1",
+          "sub_offset": [
+            112,
+            117
+          ],
+          "normalized_label": "MORC1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000114487",
+          "exact": true
+        },
+        {
+          "sub_span": "ID4",
+          "sub_offset": [
+            119,
+            122
+          ],
+          "normalized_label": "ID4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000172201",
+          "exact": true
+        },
+        {
+          "sub_span": "ZBTB16",
+          "sub_offset": [
+            128,
+            134
+          ],
+          "normalized_label": "ZBTB16",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000109906",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d541436b5ab2ee9ea3fd",
+      "span_literal": "we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16)",
+      "span_offset": [
+        81694,
+        81866
+      ],
+      "summary": "In Homo sapiens, undifferentiated spermatogonia state 2 is marked by L1TD1, ID4, GFRA1, and ZBTB16.",
+      "terms": [
+        {
+          "sub_span": "SPG2",
+          "sub_offset": [
+            136,
+            140
+          ],
+          "normalized_label": "undifferentiated spermatogonia state 2",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "L1TD1",
+          "sub_offset": [
+            142,
+            147
+          ],
+          "normalized_label": "L1TD1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000240563",
+          "exact": true
+        },
+        {
+          "sub_span": "ID4",
+          "sub_offset": [
+            119,
+            122
+          ],
+          "normalized_label": "ID4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000172201",
+          "exact": true
+        },
+        {
+          "sub_span": "GFRA1",
+          "sub_offset": [
+            154,
+            159
+          ],
+          "normalized_label": "GFRA1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000151892",
+          "exact": true
+        },
+        {
+          "sub_span": "ZBTB16",
+          "sub_offset": [
+            128,
+            134
+          ],
+          "normalized_label": "ZBTB16",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000109906",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2ce6ec9a5c9e4b1fe876",
+      "span_literal": "SPG6 includes type B spermatogonial cells transitioning to preleptotene spermatocytes based on the expression of conserved meiotic genes, such as PRDM9, ZCWPW1, and REC8.",
+      "span_offset": [
+        85277,
+        85447
+      ],
+      "summary": "In Homo sapiens, spermatogonia state 6 expresses the conserved meiotic genes PRDM9, ZCWPW1, and REC8.",
+      "terms": [
+        {
+          "sub_span": "SPG6",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "spermatogonia state 6",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PRDM9",
+          "sub_offset": [
+            146,
+            151
+          ],
+          "normalized_label": "PRDM9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000164256",
+          "exact": true
+        },
+        {
+          "sub_span": "ZCWPW1",
+          "sub_offset": [
+            153,
+            159
+          ],
+          "normalized_label": "ZCWPW1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000078487",
+          "exact": true
+        },
+        {
+          "sub_span": "REC8",
+          "sub_offset": [
+            165,
+            169
+          ],
+          "normalized_label": "REC8",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000100918",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "provider": "anthropic",
+    "model": "claude-opus-4-6",
+    "response_id": "msg_011CdFzu2uRTKDC6q8WvFcxd",
+    "prompt_template_sha256": "sha256:66b1b55ad4f3af47640e539051c622169cac2c87c093368764ba84c6db786749",
+    "organism": {
+      "key": "homo_sapiens",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "preparation": {
+      "raw_claims": 20,
+      "retained_claims": 20,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": []
+    }
+  },
+  "grounding": {
+    "genes": {
+      "provider": "offline-gene-map",
+      "organism": "homo_sapiens",
+      "sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+      "canonical_sha256": "sha256:8f73b5fb49d2944ebe885bf930ea38c55bf1f1759139caeaebd7e10155ff1a83"
+    },
+    "organism": {
+      "provider": "NCBI Taxonomy",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "ontology_service": {
+      "provider": "OLS4",
+      "endpoint": "https://www.ebi.ac.uk/ols4/api/v2/tag_text",
+      "queries": [
+        {
+          "query": "spermatogonia state 1",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:31.232461+00:00",
+          "response_sha256": "sha256:2e06282a39f43d77edcf089ca046501d2b6068dde70f78e83aac0d0db2a15240",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "spermatogonia state 2",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:32.050038+00:00",
+          "response_sha256": "sha256:6c4d0dc3dea099eea3573021500b605b6cb0e3e2b53eae703ce3cd6849078e87",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "undifferentiated spermatogonia",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:33.019361+00:00",
+          "response_sha256": "sha256:ed9364a0325cdc26349cef74fea5470059a33a445acbfccf4349c780e12deccb",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "differentiating spermatogonia states 3-5",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:34.008343+00:00",
+          "response_sha256": "sha256:9fa6a8a10603a6a5628dd8c27ce793c839ea7feeff638797d060c67057caf8fe",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "differentiating spermatogonia state 3-5",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:34.903040+00:00",
+          "response_sha256": "sha256:594501c8c8aa902524c6e9654102dd83a34f97f37b604059b0eeb83f0d065c84",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "spermatogonia state 4",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:37.530446+00:00",
+          "response_sha256": "sha256:b816dae74e00c9d20b226d358f66e1707dbb8fa3c24c6114f597f1c4f100587c",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "spermatogonia state 6",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:38.483042+00:00",
+          "response_sha256": "sha256:affcfb89a47db673e9aafc86a18c5f9ffaf8d7dfe9b625519c6abbfed5820911",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "testis",
+          "ontology": "uberon",
+          "retrieved_at": "2026-07-21T22:35:39.400869+00:00",
+          "response_sha256": "sha256:807b4fea8ce4c0508f4f296a425da5fd1e7c58228d8ec594753fc362ef1234f8",
+          "ontology_term": "UBERON:0000473",
+          "exact": true
+        },
+        {
+          "query": "testi",
+          "ontology": "uberon",
+          "retrieved_at": "2026-07-21T22:35:40.248223+00:00",
+          "response_sha256": "sha256:dcc687d00b12926f460412ab40491dcf9d19c6110cb31127c96bfa1ea57c8a05",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "differentiating spermatogonia",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:41.198039+00:00",
+          "response_sha256": "sha256:70c8e940ebfcdaf06d438c956c65246051db5d4af3a1fc8ff8c963ca8db29359",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "peritubular myoid cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:42.013514+00:00",
+          "response_sha256": "sha256:73bf5770ab4c1d01c0b93aacd032b3290559e35191d5a4f995493860a6018081",
+          "ontology_term": "CL:0002481",
+          "exact": true
+        },
+        {
+          "query": "endothelial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:42.874910+00:00",
+          "response_sha256": "sha256:0e9579ba57f9ee3f936bc3c51526ea85324a1f1ef3023cfc86d10c64e3331bf2",
+          "ontology_term": "CL:0000115",
+          "exact": true
+        },
+        {
+          "query": "pericyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:43.819925+00:00",
+          "response_sha256": "sha256:bfdf7e7de74487f5a935cecfda61ee818acc6a7ff88bfe83bfd16bf5a2e7bea4",
+          "ontology_term": "CL:0000669",
+          "exact": true
+        },
+        {
+          "query": "muscular pericyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:44.533586+00:00",
+          "response_sha256": "sha256:a0b2c8663bbcac86c6fad6c5a4d14173d2271e14fffcbe08a8f4810ad11e6124",
+          "ontology_term": "CL:0000669",
+          "exact": false
+        },
+        {
+          "query": "fibroblastic pericyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:45.260821+00:00",
+          "response_sha256": "sha256:3425514553d7fe463ed4364d212e3096a44957adece9175d8ec61f7edf15bb44",
+          "ontology_term": "CL:0000669",
+          "exact": false
+        },
+        {
+          "query": "macrophage",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:46.271246+00:00",
+          "response_sha256": "sha256:e870ee8d8dfffeff1fbdcc35a71cfbdaeca35f416bcfc5d4193d92ab78de589d",
+          "ontology_term": "CL:0000235",
+          "exact": true
+        },
+        {
+          "query": "T cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:51.156743+00:00",
+          "response_sha256": "sha256:1ffc379beecb8e505103d495d9307637530e647c1e5ab9ad4034000603c587c3",
+          "ontology_term": "CL:0000084",
+          "exact": true
+        },
+        {
+          "query": "undifferentiated spermatogonia state 1",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:52.205415+00:00",
+          "response_sha256": "sha256:8a22da61853b9b18e3a778a7d22fdb88399551b49a1adf54848a532033a47b8b",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "undifferentiated spermatogonia state 2",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:35:53.256505+00:00",
+          "response_sha256": "sha256:22125c61d494d4724af5679847667932ec9ec2feae4952a6daf0c17f48e83261",
+          "ontology_term": null,
+          "exact": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# schema: llmarkers.benchmark-evidence-sources.v1
+# paper_id	record_set	role	kind	manuscript	path
+Adams2020	primary	ground_truth	human	../data/lung_Adams2020/manuscript/manuscript.txt	../data/lung_Adams2020/evidence_human/extracted.json
+Adams2020	primary	supporting_data	deg	../data/lung_Adams2020/manuscript/manuscript.txt	../data/lung_Adams2020/evidence_deg/extracted.json
+Emont2022	primary	ground_truth	human	../data/adipose_Emont2022/manuscript/manuscript.txt	../data/adipose_Emont2022/evidence_human/extracted.json
+Emont2022	primary	supporting_data	deg	../data/adipose_Emont2022/manuscript/manuscript.txt	../data/adipose_Emont2022/evidence_deg/extracted.json
+Emont2022	backup	archive	human	../data/adipose_Emont2022/manuscript/manuscript.txt	../data/adipose_Emont2022/evidence_human/bu_extracted.json
+Gautam2021	primary	ground_truth	human	../data/eye_Gautam2021/manuscript/manuscript.txt	../data/eye_Gautam2021/evidence_human/extracted.json
+Gautam2021	primary	supporting_data	deg	../data/eye_Gautam2021/manuscript/manuscript.txt	../data/eye_Gautam2021/evidence_deg/extracted.json
+He2021	primary	ground_truth	human	../data/bone_He2021/manuscript/manuscript.txt	../data/bone_He2021/evidence_human/extracted.json
+He2021	primary	supporting_data	deg	../data/bone_He2021/manuscript/manuscript.txt	../data/bone_He2021/evidence_deg/extracted.json
+Hildreth2021	primary	ground_truth	human	../data/adipose_Hildreth2021/manuscript/manuscript.txt	../data/adipose_Hildreth2021/evidence_human/extracted.json
+Hildreth2021	primary	supporting_data	deg	../data/adipose_Hildreth2021/manuscript/manuscript.txt	../data/adipose_Hildreth2021/evidence_deg/extracted.json
+Shamis2020	primary	ground_truth	human	../data/testis_Shamis2020/manuscript/manuscript.txt	../data/testis_Shamis2020/evidence_human/extracted.json
+Shamis2020	primary	supporting_data	deg	../data/testis_Shamis2020/manuscript/manuscript.txt	../data/testis_Shamis2020/evidence_deg/extracted.json
+Wagner2020	primary	ground_truth	human	../data/ovary_Wagner2020/manuscript/manuscript.txt	../data/ovary_Wagner2020/evidence_human/extracted.json
+Wagner2020	primary	supporting_data	deg	../data/ovary_Wagner2020/manuscript/manuscript.txt	../data/ovary_Wagner2020/evidence_deg/extracted.json

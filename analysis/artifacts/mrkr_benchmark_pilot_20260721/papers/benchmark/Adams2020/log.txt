@@ -1,0 +1,13 @@
+Extracted 18 marker claims: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/analysis/artifacts/mrkr_benchmark_organism_pilot_v2_20260721/papers/benchmark/Adams2020/mrkr-w9etu38_/paper.claims.json
+Grounded 18 claims; resolved 101/107 terms: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/analysis/artifacts/mrkr_benchmark_organism_pilot_v2_20260721/papers/benchmark/Adams2020/mrkr-w9etu38_/paper.onto.json
+WARNING term.grounding_unresolved at claims[0].terms[1]: term is present but has no stable identifier
+WARNING term.grounding_unresolved at claims[1].terms[1]: term is present but has no stable identifier
+WARNING term.grounding_unresolved at claims[2].terms[1]: term is present but has no stable identifier
+WARNING term.grounding_coarse at claims[3].terms[1]: term is grounded to a broader concept
+WARNING term.label_missing_summary at claims[10].terms[1].normalized_label: normalized label should occur in the claim summary
+WARNING term.grounding_coarse at claims[10].terms[1]: term is grounded to a broader concept
+WARNING term.grounding_coarse at claims[11].terms[1]: term is grounded to a broader concept
+WARNING term.grounding_unresolved at claims[12].terms[1]: term is present but has no stable identifier
+WARNING term.grounding_unresolved at claims[13].terms[1]: term is present but has no stable identifier
+WARNING term.grounding_unresolved at claims[14].terms[1]: term is present but has no stable identifier
+Valid: 18 claims; 10 warnings

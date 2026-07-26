@@ -1,0 +1,7 @@
+comparison	metric	labels	estimate	uncertainty_95_lower	uncertainty_95_upper	uncertainty_method
+same_label	any_shared_marker	312	0.5632247884278818	0.5161309513811684	0.6091309971778278	label bootstrap
+same_label	marker_jaccard	312	0.16735744825406457	0.1444342515654358	0.1908173317471449	label bootstrap
+same_label	mean_directional_recovery	312	0.25195210984795896	0.2235813122109432	0.2809409010765276	label bootstrap
+matched_different_label	any_shared_marker	312	0.019029932217212907	0.009626023199135072	0.03188869146845425	matched-draw quantiles
+matched_different_label	marker_jaccard	312	0.0025521810957981643	0.0010550718355750613	0.004548913072780735	matched-draw quantiles
+matched_different_label	mean_directional_recovery	312	0.0047847786531152086	0.0020877507476469432	0.008588392750174612	matched-draw quantiles

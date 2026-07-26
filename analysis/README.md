@@ -1,14 +1,21 @@
 # Analysis
 
-This directory contains the active analysis code, generated artifacts, figures, formal Lean model, and data-processing scripts.
+This directory contains the code and outputs required by the current
+manuscript.
 
 ## Layout
 
-- `figures/`: generated manuscript and analysis figures.
-- `artifacts/`: generated TSV, Markdown, and table artifacts.
+- `figures/`: generated manuscript figure panels.
+- `artifacts/`: generated result tables, reports, and validated corpus files.
 - `formal/`: Lean formalization for marker identifiability.
-- `*.py`: figure, table, report, data-ingestion, and database generation scripts.
+- `*.py`: benchmark, corpus, CAP, figure, and data-ingestion scripts.
 - `*.sh`: helper shell entry points.
-- `*.ipynb`: exploratory notebooks retained for provenance.
+- `*.ipynb`: benchmark notebooks cited by the manuscript.
 
-Run Python scripts from the repository root so paths such as `analysis/artifacts/` and `docs/paper/biorxiv/` resolve as written. The notebooks were authored inside this directory and use notebook-local paths such as `figures/...`; run them with `analysis/` as the working directory if regenerating notebook-only artifacts.
+The active figure and result dependencies are listed in
+`docs/paper/biorxiv/figure_manifest.md`. Run Python scripts from the repository
+root so paths such as `analysis/artifacts/` and `docs/paper/biorxiv/` resolve as
+written. Run the notebooks with `analysis/` as the working directory.
+
+Exploratory analyses and superseded manuscript pipelines are kept outside the
+versioned tree under the local `archive/` directory.

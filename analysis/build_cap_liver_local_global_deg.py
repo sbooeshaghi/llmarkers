@@ -4,7 +4,6 @@ import json
 import math
 import os
 import re
-from collections import Counter
 from pathlib import Path
 
 import anndata as ad
@@ -557,7 +556,7 @@ def draw_marker_recovery_panel(
         facecolor="white",
         edgecolor="black",
         linewidth=0.55,
-        label="local DE",
+        label="local myeloid DE",
     )
     ax.barh(
         y + height / 2,
@@ -566,21 +565,20 @@ def draw_marker_recovery_panel(
         facecolor="black",
         edgecolor="black",
         linewidth=0.55,
-        label="global DE",
+        label="all-cell DE",
     )
     if subsampling_summary_df is not None and not subsampling_summary_df.empty:
         interval_lookup = subsampling_summary_df.set_index(["local_label", "context"])
         for row_idx, row in enumerate(ordered.itertuples(index=False)):
             local_label = ordered.index[row_idx]
-            for context, y_value, observed_col in [
-                ("local", y[row_idx] - height / 2, "local_reported_recovery_top100"),
-                ("global", y[row_idx] + height / 2, "global_recovery_of_local_reported_top100"),
+            for context, y_value in [
+                ("local", y[row_idx] - height / 2),
+                ("global", y[row_idx] + height / 2),
             ]:
                 key = (local_label, context)
                 if key not in interval_lookup.index:
                     continue
                 interval = interval_lookup.loc[key]
-                observed = float(getattr(row, observed_col))
                 low = max(0.0, float(interval["q025"]))
                 high = min(1.0, float(interval["q975"]))
                 cap_half_height = height * 0.23
@@ -617,9 +615,9 @@ def draw_de_stability_panel(
     ax.set_yticklabels(label_order if show_ylabels else [], fontsize=7.2)
     ax.invert_yaxis()
     ax.set_xlim(0, 1)
-    ax.set_xlabel("Jaccard(top 100 local DE,\ntop 100 global DE)", fontsize=8)
+    ax.set_xlabel("Jaccard(top 100 local myeloid DE,\ntop 100 all-cell DE)", fontsize=8)
     ax.tick_params(axis="both", labelsize=7.2)
-    ax.set_title("Local vs Global DE Stability", fontsize=title_size, weight="bold")
+    ax.set_title("DE Rank Stability", fontsize=title_size, weight="bold")
     style_axis(ax)
 
 
@@ -648,7 +646,7 @@ def draw_marker_retrieval_panel(
         edgecolor="black",
         linewidth=0.75,
         s=24,
-        label="global DE",
+        label="all-cell DE",
         zorder=3,
     )
     ax.scatter(
@@ -658,7 +656,7 @@ def draw_marker_retrieval_panel(
         edgecolor="black",
         linewidth=0.75,
         s=24,
-        label="local DE",
+        label="local myeloid DE",
         zorder=2,
     )
     ax.set_yticks(y)

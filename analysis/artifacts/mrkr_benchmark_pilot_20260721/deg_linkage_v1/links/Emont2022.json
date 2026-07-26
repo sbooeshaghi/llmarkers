@@ -1,0 +1,115 @@
+{
+  "candidate_data_ids": [
+    "Supplementary Table 1#ASPC markers",
+    "Supplementary Table 1#adipocyte markers",
+    "Supplementary Table 1#all markers",
+    "Supplementary Table 1#immune markers",
+    "Supplementary Table 1#mesothelial markers",
+    "Supplementary Table 1#vascular markers"
+  ],
+  "elapsed_seconds": 23.717129749999913,
+  "links": [
+    {
+      "claim_id": "claim:1b3c65e582a54632908b",
+      "data_id": "Supplementary Table 1#ASPC markers",
+      "reason": "PDGFRA is a common marker for all ASPCs; the ASPC markers source contains DEGs for all six ASPC subpopulations."
+    },
+    {
+      "claim_id": "claim:0cdca4730b79b9dcaa97",
+      "data_id": "Supplementary Table 1#ASPC markers",
+      "reason": "ALDH1A3 characterizes ADIPOSE STEM AND PROGENITOR CELL 2, which is listed in the ASPC markers source."
+    },
+    {
+      "claim_id": "claim:19f715c336fcf3d7cf0c",
+      "data_id": "Supplementary Table 1#ASPC markers",
+      "reason": "EPHA3 marks ADIPOSE STEM AND PROGENITOR CELL 4, listed in the ASPC markers source."
+    },
+    {
+      "claim_id": "claim:d040b8a9115a51d35bb6",
+      "data_id": "Supplementary Table 1#all markers",
+      "reason": "CD14 marks macrophages at the broad cell-type level; the all markers source contains MACROPHAGE as a category."
+    },
+    {
+      "claim_id": "claim:68fc91d5738e339ba112",
+      "data_id": "Supplementary Table 1#all markers",
+      "reason": "CD96 marks natural killer cells at the broad level; NATURAL KILLER CELL is in the all markers source."
+    },
+    {
+      "claim_id": "claim:9cff276bfd99539a2f17",
+      "data_id": "Supplementary Table 1#all markers",
+      "reason": "CPA3 marks mast cells at the broad level; MAST CELL is in the all markers source."
+    },
+    {
+      "claim_id": "claim:73a634a1b771e9a6b92e",
+      "data_id": "Supplementary Table 1#all markers",
+      "reason": "CSF3R marks neutrophils at the broad level; NEUTROPHIL is in the all markers source."
+    },
+    {
+      "claim_id": "claim:abde83b18ae84fc14ee9",
+      "data_id": "Supplementary Table 1#immune markers",
+      "reason": "CLEC9A marks dendritic cell subpopulation 1, corresponding to DENDRITIC CELL 1 in the immune markers source."
+    },
+    {
+      "claim_id": "claim:a1adfb6667e208712c60",
+      "data_id": "Supplementary Table 1#immune markers",
+      "reason": "CD1C marks dendritic cell subpopulation 2, corresponding to DENDRITIC CELL 2 in the immune markers source."
+    },
+    {
+      "claim_id": "claim:1ec8ec1ed35ee812041a",
+      "data_id": "Supplementary Table 1#immune markers",
+      "reason": "CTLA4 marks regulatory T cells; REGULATORY T CELL is listed in the immune markers source."
+    },
+    {
+      "claim_id": "claim:0515a5080f6a882d6691",
+      "data_id": "Supplementary Table 1#all markers",
+      "reason": "PRLR marks endometrial cells; ENDOMETRIUM is listed in the all markers source."
+    },
+    {
+      "claim_id": "claim:47f2ecd831b8d2694010",
+      "data_id": "Supplementary Table 1#adipocyte markers",
+      "reason": "CFD is highly expressed in hAd3, corresponding to ADIPOCYTE 3 in the adipocyte markers source."
+    },
+    {
+      "claim_id": "claim:87cd93c20c2c20d98cc8",
+      "data_id": "Supplementary Table 1#adipocyte markers",
+      "reason": "INSR, IRS1, IRS2 are most highly expressed in hAd5, corresponding to ADIPOCYTE 5 in the adipocyte markers source."
+    },
+    {
+      "claim_id": "claim:35fee82c07d848949326",
+      "data_id": "Supplementary Table 1#adipocyte markers",
+      "reason": "DGAT2, SREBF1, PNPLA3 are higher in hAd3, corresponding to ADIPOCYTE 3 in the adipocyte markers source."
+    },
+    {
+      "claim_id": "claim:67dacdf6771700d3de81",
+      "data_id": "Supplementary Table 1#adipocyte markers",
+      "reason": "ELOVL5 and FADS3 are highest in hAd4, corresponding to ADIPOCYTE 4 in the adipocyte markers source."
+    },
+    {
+      "claim_id": "claim:b54019d153a9a1747cfc",
+      "data_id": "Supplementary Table 1#adipocyte markers",
+      "reason": "EBF2, ESRRG, PPARGC1A are selectively expressed in hAd6, corresponding to ADIPOCYTE 6 in the adipocyte markers source."
+    },
+    {
+      "claim_id": "claim:40dc2500926fbbc1dc70",
+      "data_id": "Supplementary Table 1#all markers",
+      "reason": "ADIPOQ is a general adipocyte marker; ADIPOCYTE is listed in the all markers source at the broad cell-type level."
+    }
+  ],
+  "model": "claude-opus-4-6",
+  "paper_id": "Emont2022",
+  "schema_version": "mrkr.deg-linkage.v1",
+  "source": {
+    "benchmark_deg": {
+      "path": "analysis/artifacts/benchmark_evidence_v1/papers/Emont2022/primary/deg.profiles.json",
+      "sha256": "sha256:98d012707ded194f758771c7847c1ae80246ad56094544fb35fee16773c6a32f"
+    },
+    "mrkr_claims": {
+      "path": "analysis/artifacts/mrkr_benchmark_pilot_20260721/papers/benchmark/Emont2022/paper.onto.json",
+      "sha256": "sha256:fd8d348426263882d0e9fe25a8044a0a571cd39f2206e8ae95401529536f7e27"
+    }
+  },
+  "usage": {
+    "input_tokens": 3903,
+    "output_tokens": 1311
+  }
+}

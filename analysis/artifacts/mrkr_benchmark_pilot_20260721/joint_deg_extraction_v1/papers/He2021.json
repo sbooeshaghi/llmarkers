@@ -1,0 +1,2249 @@
+{
+  "schema_version": "mrkr.joint-deg-extraction.v1",
+  "paper_id": "He2021",
+  "model": "claude-opus-4-6",
+  "response_id": "msg_011CdG9YSf8KnLPG76ksgzCt",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 32588,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 16096,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "elapsed_seconds": 149.5713541507721,
+  "raw_extractions": [
+    {
+      "organism": "homo_sapiens",
+      "group_label": "limb bud mesenchymal subsets (LBM1-3)",
+      "group_name": "LIMB BUD-DERIVED MESENCHYMAL CELL 1",
+      "feature_label": "PRRX1",
+      "feature_name": "PRRX1",
+      "source_rationale": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3), which differentially expressed PDGFRA, reflecting mesenchymal progenitors at different maturation stages (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "limb bud mesenchymal subsets (LBM1-3)",
+      "group_name": "LIMB BUD-DERIVED MESENCHYMAL CELL 1",
+      "feature_label": "PDGFRA",
+      "feature_name": "PDGFRA",
+      "source_rationale": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3), which differentially expressed PDGFRA, reflecting mesenchymal progenitors at different maturation stages (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteo-chondrogenic progenitors",
+      "group_name": "OSTEO-CHONDROGENIC PROGENITOR",
+      "feature_label": "PRRX1",
+      "feature_name": "PRRX1",
+      "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteo-chondrogenic progenitors",
+      "group_name": "OSTEO-CHONDROGENIC PROGENITOR",
+      "feature_label": "SOX9",
+      "feature_name": "SOX9",
+      "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteo-chondrogenic progenitors",
+      "group_name": "OSTEO-CHONDROGENIC PROGENITOR",
+      "feature_label": "PDGFRA",
+      "feature_name": "PDGFRA",
+      "source_rationale": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "epithelial cells",
+      "group_name": "EPITHELIAL CELL 1",
+      "feature_label": "EPCAM",
+      "feature_name": "EPCAM",
+      "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15) and GYPA+ erythrocytes (cluster 13) were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9), CDH5+ endothelial cells (cluster 11) and CD68+ macrophages (cluster 12) were found in both samples (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "erythrocytes",
+      "group_name": "ERYTHROCYTE",
+      "feature_label": "GYPA",
+      "feature_name": "GYPA",
+      "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15) and GYPA+ erythrocytes (cluster 13) were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9), CDH5+ endothelial cells (cluster 11) and CD68+ macrophages (cluster 12) were found in both samples (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoprogenitors",
+      "group_name": "MYOPROGENITOR",
+      "feature_label": "SIX1",
+      "feature_name": "SIX1",
+      "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15) and GYPA+ erythrocytes (cluster 13) were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9), CDH5+ endothelial cells (cluster 11) and CD68+ macrophages (cluster 12) were found in both samples (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "endothelial cells",
+      "group_name": "ENDOTHELIAL CELL",
+      "feature_label": "CDH5",
+      "feature_name": "CDH5",
+      "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15) and GYPA+ erythrocytes (cluster 13) were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9), CDH5+ endothelial cells (cluster 11) and CD68+ macrophages (cluster 12) were found in both samples (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophages",
+      "group_name": "MACROPHAGE",
+      "feature_label": "CD68",
+      "feature_name": "CD68",
+      "source_rationale": "EPCAM+ epithelial cells (clusters 14 and 15) and GYPA+ erythrocytes (cluster 13) were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9), CDH5+ endothelial cells (cluster 11) and CD68+ macrophages (cluster 12) were found in both samples (Fig. 1c-e).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteoprogenitors",
+      "group_name": "OSTEOPROGENITOR",
+      "feature_label": "RUNX2",
+      "feature_name": "RUNX2",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perichondrial mesenchymal stromal cells",
+      "group_name": "PERICHONDRIAL MESENCHYMAL STROMAL CELL",
+      "feature_label": "OSR2",
+      "feature_name": "OSR2",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "perichondrial mesenchymal stromal cells",
+      "group_name": "PERICHONDRIAL MESENCHYMAL STROMAL CELL",
+      "feature_label": "NOV",
+      "feature_name": "NOV",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "chondroblasts",
+      "group_name": "CHONDROBLAST",
+      "feature_label": "SOX9",
+      "feature_name": "SOX9",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "chondrocytes",
+      "group_name": "CHONDROCYTE",
+      "feature_label": "SOX9",
+      "feature_name": "SOX9",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myocytes",
+      "group_name": "MYOCYTE",
+      "feature_label": "MYOG",
+      "feature_name": "MYOG",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Schwann cells",
+      "group_name": "SCHWANN CELL",
+      "feature_label": "SOX10",
+      "feature_name": "SOX10",
+      "source_rationale": "In contrast, RUNX2+ osteoprogenitors (cluster 5), OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6), SOX9+ chondroblasts and chondrocytes (clusters 7 and 8), MYOG+ myocytes (cluster 10), as well as SOX10+ Schwann cells (cluster 16) were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Epithelium 1",
+      "group_name": "EPITHELIAL CELL 1",
+      "feature_label": "FGF8",
+      "feature_name": "FGF8",
+      "source_rationale": "Of the two epithelial subsets (Fig. 2a), only cluster 9 (corresponds to Epithelium 1, Fig. 1c, d) highly expressed AER marker FGF8, consistent with previous study in mouse embryos.",
+      "data_id": "Supplementary Table S1#Degs human_limb&bone Fig. 1d"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "bone marrow stromal cells",
+      "group_name": "BONE MARROW STROMAL CELL",
+      "feature_label": "CXCL12",
+      "feature_name": "CXCL12",
+      "source_rationale": "Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "bone marrow stromal cells",
+      "group_name": "BONE MARROW STROMAL CELL",
+      "feature_label": "PDGFRA",
+      "feature_name": "PDGFRA",
+      "source_rationale": "Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "limb bud-derived mesenchymal cells",
+      "group_name": "LIMB BUD-DERIVED MESENCHYMAL CELL",
+      "feature_label": "TWIST2",
+      "feature_name": "TWIST2",
+      "source_rationale": "Cluster 2 highly expressed limb bud mesenchymal genes such as TWIST2 (Supplementary information, Fig. S3a, b and Table S1), which functions as an inhibitor of osteoblastic differentiation, reminiscent of limb bud-derived mesenchymal cells (LBDMCs).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "embryonic skeletal stem/progenitor cells",
+      "group_name": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+      "feature_label": "GAS2",
+      "feature_name": "GAS2",
+      "source_rationale": "Cluster 3 highly expressed GAS2 and localized in the center of all OCLC subsets (Fig. 3a; Supplementary information, Fig. S3a, b and Table S1).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "eSSPCs",
+      "group_name": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+      "feature_label": "CADM1",
+      "feature_name": "CADM1",
+      "source_rationale": "Interestingly, we found that the cell adhesion molecule CADM1 was preferentially expressed in eSSPCs (Fig. 4a).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "eSSPCs",
+      "group_name": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+      "feature_label": "PDPN",
+      "feature_name": "PDPN",
+      "source_rationale": "Interestingly, we found that PDPN was differentially expressed in eSSPCs (PDPN+) and Schwann cells (PDPN^(-)) (Fig. 4a).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "eSSPCs",
+      "group_name": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+      "feature_label": "FOXP1",
+      "feature_name": "FOXP1",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "eSSPCs",
+      "group_name": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+      "feature_label": "FOXP2",
+      "feature_name": "FOXP2",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "eSSPCs",
+      "group_name": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+      "feature_label": "GAS2",
+      "feature_name": "GAS2",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Schwann cells",
+      "group_name": "SCHWANN CELL",
+      "feature_label": "SOX2",
+      "feature_name": "SOX2",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Schwann cells",
+      "group_name": "SCHWANN CELL",
+      "feature_label": "SOX10",
+      "feature_name": "SOX10",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Schwann cells",
+      "group_name": "SCHWANN CELL",
+      "feature_label": "MPZ",
+      "feature_name": "MPZ",
+      "source_rationale": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "data_id": "Supplementary Table S1#Degs human long bone Fig. S3b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cranial neural crest (NC) cells",
+      "group_name": "CRANIAL NEURAL CREST CELL",
+      "feature_label": "NGFR",
+      "feature_name": "NGFR",
+      "source_rationale": "In addition to previously identified osteoprogenitor, PMSC, chondroblast and chondrocyte subsets (Fig. 3a, clusters 4-7), the OCP subset as revealed by integrated analysis (Fig. 1c) was subdivided into 3 subsets (clusters 1-3). Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
+      "data_id": null
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cranial neural crest (NC) cells",
+      "group_name": "CRANIAL NEURAL CREST CELL",
+      "feature_label": "NGFR",
+      "feature_name": "NGFR",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cranial neural crest (NC) cells",
+      "group_name": "CRANIAL NEURAL CREST CELL",
+      "feature_label": "NES",
+      "feature_name": "NES",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "vascular leptomeningeal cells",
+      "group_name": "VASCULAR LEPTOMENINGEAL CELL",
+      "feature_label": "GJA1",
+      "feature_name": "GJA1",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "vascular leptomeningeal cells",
+      "group_name": "VASCULAR LEPTOMENINGEAL CELL",
+      "feature_label": "SLC6A13",
+      "feature_name": "SLC6A13",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "vascular leptomeningeal cells",
+      "group_name": "VASCULAR LEPTOMENINGEAL CELL",
+      "feature_label": "PTGDS",
+      "feature_name": "PTGDS",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "migratory NC (mig_NC) cells",
+      "group_name": "MIGRATORY CRANIAL NEURAL CREST CELL",
+      "feature_label": "GJA1",
+      "feature_name": "GJA1",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "migratory NC (mig_NC) cells",
+      "group_name": "MIGRATORY CRANIAL NEURAL CREST CELL",
+      "feature_label": "BMP4",
+      "feature_name": "BMP4",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "neural crest-derived cells",
+      "group_name": "NEURAL CREST-DERIVED CELL",
+      "feature_label": "BMP4",
+      "feature_name": "BMP4",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "neural crest-derived cells",
+      "group_name": "NEURAL CREST-DERIVED CELL",
+      "feature_label": "FOXC2",
+      "feature_name": "FOXC2",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteoprogenitors",
+      "group_name": "OSTEOPROGENITOR",
+      "feature_label": "RUNX2",
+      "feature_name": "RUNX2",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteoprogenitors",
+      "group_name": "OSTEOPROGENITOR",
+      "feature_label": "DLX5",
+      "feature_name": "DLX5",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteoprogenitors",
+      "group_name": "OSTEOPROGENITOR",
+      "feature_label": "CLEC11A",
+      "feature_name": "CLEC11A",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "PMSC subsets",
+      "group_name": "PERICHONDRIAL MESENCHYMAL STROMAL CELL 1",
+      "feature_label": "OSR2",
+      "feature_name": "OSR2",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "PMSC subsets",
+      "group_name": "PERICHONDRIAL MESENCHYMAL STROMAL CELL 1",
+      "feature_label": "POSTN",
+      "feature_name": "POSTN",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "chondrocytes",
+      "group_name": "CHONDROCYTE",
+      "feature_label": "SOX9",
+      "feature_name": "SOX9",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "chondrocytes",
+      "group_name": "CHONDROCYTE",
+      "feature_label": "COL9A2",
+      "feature_name": "COL9A2",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "pericytes",
+      "group_name": "PERICYTE",
+      "feature_label": "PDGFRB",
+      "feature_name": "PDGFRB",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "pericytes",
+      "group_name": "PERICYTE",
+      "feature_label": "MCAM",
+      "feature_name": "MCAM",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "pericytes",
+      "group_name": "PERICYTE",
+      "feature_label": "ACTA2",
+      "feature_name": "ACTA2",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoblasts",
+      "group_name": "MYOBLAST",
+      "feature_label": "MYF5",
+      "feature_name": "MYF5",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "endothelial cells",
+      "group_name": "ENDOTHELIAL CELL",
+      "feature_label": "CDH5",
+      "feature_name": "CDH5",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophages",
+      "group_name": "MACROPHAGE",
+      "feature_label": "CD68",
+      "feature_name": "CD68",
+      "source_rationale": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS, and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC2; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A; (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteoprogenitors",
+      "group_name": "OSTEOPROGENITOR",
+      "feature_label": "COL1A1",
+      "feature_name": "COL1A1",
+      "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A, a recently identified osteogenic factor that promotes the maintenance of adult skeleton.",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteoprogenitors",
+      "group_name": "OSTEOPROGENITOR",
+      "feature_label": "PRRX2",
+      "feature_name": "PRRX2",
+      "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A, a recently identified osteogenic factor that promotes the maintenance of adult skeleton.",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "osteoprogenitors",
+      "group_name": "OSTEOPROGENITOR",
+      "feature_label": "CLEC11A",
+      "feature_name": "CLEC11A",
+      "source_rationale": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A, a recently identified osteogenic factor that promotes the maintenance of adult skeleton.",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "NCDC",
+      "group_name": "NEURAL CREST-DERIVED CELL",
+      "feature_label": "CADM1",
+      "feature_name": "CADM1",
+      "source_rationale": "Although no calvarial subset highly resembled long bone eSSPC at the transcriptome level, we found that NCDC shared similar phenotypic markers to long bone eSSPC (PDGFRA^(low/-)PDPN+CADM1+) (Fig. 6d), which located in between mig_NC cells and osteoprogenitors (Fig. 6a).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "NCDC",
+      "group_name": "NEURAL CREST-DERIVED CELL",
+      "feature_label": "PDPN",
+      "feature_name": "PDPN",
+      "source_rationale": "Although no calvarial subset highly resembled long bone eSSPC at the transcriptome level, we found that NCDC shared similar phenotypic markers to long bone eSSPC (PDGFRA^(low/-)PDPN+CADM1+) (Fig. 6d), which located in between mig_NC cells and osteoprogenitors (Fig. 6a).",
+      "data_id": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+    }
+  ],
+  "inputs": {
+    "manuscript_path": "data/bone_He2021/manuscript/manuscript.txt",
+    "manuscript_sha256": "sha256:262d9a53fe6b9f9c45bc748c22f82fe40238405b9b285c02464f9fdbc2d77d82",
+    "benchmark_text_sha256": "sha256:78250d545b9ce00b59e423f925e213aa30d57347819fb27119319ff3c814600b",
+    "benchmark_deg_sha256": "sha256:54d9a07bfc9049837d791f921ffab57bc0758e81a945ad0a7b7e2446feb397b9",
+    "gene_map_sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+    "prompt_sha256": "sha256:173e9425e36422d5b50a7ee493d63393fe808d64c5033065f6699cfcf1b7c77d",
+    "candidate_data_ids": [
+      "Supplementary Table S1#Degs human calvaria Fig. 6b",
+      "Supplementary Table S1#Degs human long bone Fig. S3b",
+      "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+      "Supplementary Table S1#Degs mouse_E11.5 Fig. S2c",
+      "Supplementary Table S1#Degs mouse_E15.5 Fig. S3d"
+    ]
+  },
+  "claims_document": {
+    "schema_version": "mrkr.claims.v1",
+    "source": {
+      "id": "manuscript.txt",
+      "sha256": "sha256:262d9a53fe6b9f9c45bc748c22f82fe40238405b9b285c02464f9fdbc2d77d82"
+    },
+    "producer": {
+      "name": "mrkr",
+      "version": "0.4.0"
+    },
+    "claims": [
+      {
+        "claim_id": "claim:401a596378030b1355ea",
+        "span_literal": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3), which differentially expressed PDGFRA, reflecting mesenchymal progenitors at different maturation stages (Fig. 1c-e).",
+        "span_offset": [
+          10748,
+          10978
+        ],
+        "summary": "In Homo sapiens, LIMB BUD-DERIVED MESENCHYMAL CELL 1 is marked by PRRX1. In Homo sapiens, LIMB BUD-DERIVED MESENCHYMAL CELL 1 is marked by PDGFRA.",
+        "terms": [
+          {
+            "sub_span": "limb bud mesenchymal subsets (LBM1-3)",
+            "sub_offset": [
+              22,
+              59
+            ],
+            "normalized_label": "LIMB BUD-DERIVED MESENCHYMAL CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PRRX1",
+            "sub_offset": [
+              15,
+              20
+            ],
+            "normalized_label": "PRRX1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PDGFRA",
+            "sub_offset": [
+              144,
+              150
+            ],
+            "normalized_label": "PDGFRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:38e7301ae06956281ce0",
+        "span_literal": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones (Fig. 1c-e).",
+        "span_offset": [
+          10981,
+          11257
+        ],
+        "summary": "In Homo sapiens, OSTEO-CHONDROGENIC PROGENITOR is marked by PRRX1. In Homo sapiens, OSTEO-CHONDROGENIC PROGENITOR is marked by SOX9. In Homo sapiens, OSTEO-CHONDROGENIC PROGENITOR is marked by PDGFRA.",
+        "terms": [
+          {
+            "sub_span": "osteo-chondrogenic progenitors",
+            "sub_offset": [
+              197,
+              227
+            ],
+            "normalized_label": "OSTEO-CHONDROGENIC PROGENITOR",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PRRX1",
+            "sub_offset": [
+              124,
+              129
+            ],
+            "normalized_label": "PRRX1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SOX9",
+            "sub_offset": [
+              144,
+              148
+            ],
+            "normalized_label": "SOX9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PDGFRA",
+            "sub_offset": [
+              174,
+              180
+            ],
+            "normalized_label": "PDGFRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:85edd9b41b14b9cc6733",
+        "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+        "span_offset": [
+          11260,
+          11537
+        ],
+        "summary": "In Homo sapiens, EPITHELIAL CELL 1 is marked by EPCAM.",
+        "terms": [
+          {
+            "sub_span": "epithelial cells",
+            "sub_offset": [
+              7,
+              23
+            ],
+            "normalized_label": "EPITHELIAL CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "EPCAM",
+            "sub_offset": [
+              0,
+              5
+            ],
+            "normalized_label": "EPCAM",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:5857a14c8f0fe98ce707",
+        "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+        "span_offset": [
+          11260,
+          11537
+        ],
+        "summary": "In Homo sapiens, ERYTHROCYTE is marked by GYPA.",
+        "terms": [
+          {
+            "sub_span": "erythrocytes",
+            "sub_offset": [
+              57,
+              69
+            ],
+            "normalized_label": "ERYTHROCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "GYPA",
+            "sub_offset": [
+              51,
+              55
+            ],
+            "normalized_label": "GYPA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:a53e7cfa065f52ec377e",
+        "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+        "span_offset": [
+          11260,
+          11537
+        ],
+        "summary": "In Homo sapiens, MYOPROGENITOR is marked by SIX1.",
+        "terms": [
+          {
+            "sub_span": "myoprogenitors",
+            "sub_offset": [
+              132,
+              146
+            ],
+            "normalized_label": "MYOPROGENITOR",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SIX1",
+            "sub_offset": [
+              126,
+              130
+            ],
+            "normalized_label": "SIX1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:e4fd97a715f3691c81fa",
+        "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+        "span_offset": [
+          11260,
+          11537
+        ],
+        "summary": "In Homo sapiens, ENDOTHELIAL CELL is marked by CDH5.",
+        "terms": [
+          {
+            "sub_span": "endothelial cells",
+            "sub_offset": [
+              168,
+              185
+            ],
+            "normalized_label": "ENDOTHELIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CDH5",
+            "sub_offset": [
+              162,
+              166
+            ],
+            "normalized_label": "CDH5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:bb726c228b0031b21ac7",
+        "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+        "span_offset": [
+          11260,
+          11537
+        ],
+        "summary": "In Homo sapiens, MACROPHAGE is marked by CD68.",
+        "terms": [
+          {
+            "sub_span": "macrophages",
+            "sub_offset": [
+              211,
+              222
+            ],
+            "normalized_label": "MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD68",
+            "sub_offset": [
+              205,
+              209
+            ],
+            "normalized_label": "CD68",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:a8a92982238114e5b837",
+        "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+        "span_offset": [
+          11538,
+          11889
+        ],
+        "summary": "In Homo sapiens, OSTEOPROGENITOR is marked by RUNX2.",
+        "terms": [
+          {
+            "sub_span": "osteoprogenitors",
+            "sub_offset": [
+              20,
+              36
+            ],
+            "normalized_label": "OSTEOPROGENITOR",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "RUNX2",
+            "sub_offset": [
+              13,
+              18
+            ],
+            "normalized_label": "RUNX2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:d7fde078bd346e5db09b",
+        "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+        "span_offset": [
+          11538,
+          11889
+        ],
+        "summary": "In Homo sapiens, PERICHONDRIAL MESENCHYMAL STROMAL CELL is marked by OSR2. In Homo sapiens, PERICHONDRIAL MESENCHYMAL STROMAL CELL is marked by NOV.",
+        "terms": [
+          {
+            "sub_span": "perichondrial mesenchymal stromal cells",
+            "sub_offset": [
+              62,
+              101
+            ],
+            "normalized_label": "PERICHONDRIAL MESENCHYMAL STROMAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "OSR2",
+            "sub_offset": [
+              52,
+              56
+            ],
+            "normalized_label": "OSR2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "NOV",
+            "sub_offset": [
+              57,
+              60
+            ],
+            "normalized_label": "NOV",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:499c7759d49c4b0dc278",
+        "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+        "span_offset": [
+          11538,
+          11889
+        ],
+        "summary": "In Homo sapiens, CHONDROBLAST is marked by SOX9.",
+        "terms": [
+          {
+            "sub_span": "chondroblasts",
+            "sub_offset": [
+              136,
+              149
+            ],
+            "normalized_label": "CHONDROBLAST",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SOX9",
+            "sub_offset": [
+              130,
+              134
+            ],
+            "normalized_label": "SOX9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:22cb9836e61726a4f3e3",
+        "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+        "span_offset": [
+          11538,
+          11889
+        ],
+        "summary": "In Homo sapiens, CHONDROCYTE is marked by SOX9.",
+        "terms": [
+          {
+            "sub_span": "chondrocytes",
+            "sub_offset": [
+              154,
+              166
+            ],
+            "normalized_label": "CHONDROCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SOX9",
+            "sub_offset": [
+              130,
+              134
+            ],
+            "normalized_label": "SOX9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:165ed13f6a320d90915d",
+        "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+        "span_offset": [
+          11538,
+          11889
+        ],
+        "summary": "In Homo sapiens, MYOCYTE is marked by MYOG.",
+        "terms": [
+          {
+            "sub_span": "myocytes",
+            "sub_offset": [
+              195,
+              203
+            ],
+            "normalized_label": "MYOCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MYOG",
+            "sub_offset": [
+              189,
+              193
+            ],
+            "normalized_label": "MYOG",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:1cbaadee30a9516b6bfb",
+        "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+        "span_offset": [
+          11538,
+          11889
+        ],
+        "summary": "In Homo sapiens, SCHWANN CELL is marked by SOX10.",
+        "terms": [
+          {
+            "sub_span": "Schwann cells",
+            "sub_offset": [
+              238,
+              251
+            ],
+            "normalized_label": "SCHWANN CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SOX10",
+            "sub_offset": [
+              231,
+              236
+            ],
+            "normalized_label": "SOX10",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:32e9c89a9d80b7711b45",
+        "span_literal": "Of the two epithelial subsets (Fig. 2a), only cluster 9 (corresponds to Epithelium 1, Fig. 1c, d) highly expressed AER marker FGF8, consistent with previous study in mouse embryos.",
+        "span_offset": [
+          12937,
+          13117
+        ],
+        "summary": "In Homo sapiens, EPITHELIAL CELL 1 is marked by FGF8.",
+        "terms": [
+          {
+            "sub_span": "Epithelium 1",
+            "sub_offset": [
+              72,
+              84
+            ],
+            "normalized_label": "EPITHELIAL CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "FGF8",
+            "sub_offset": [
+              126,
+              130
+            ],
+            "normalized_label": "FGF8",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:6dbb9713e713db3b40d4",
+        "span_literal": "Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
+        "span_offset": [
+          19368,
+          19502
+        ],
+        "summary": "In Homo sapiens, BONE MARROW STROMAL CELL is marked by CXCL12. In Homo sapiens, BONE MARROW STROMAL CELL is marked by PDGFRA.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "BONE MARROW STROMAL CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CXCL12",
+            "sub_offset": [
+              27,
+              33
+            ],
+            "normalized_label": "CXCL12",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PDGFRA",
+            "sub_offset": [
+              38,
+              44
+            ],
+            "normalized_label": "PDGFRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:d68a9e24a639eed3c96a",
+        "span_literal": "Cluster 2 highly expressed limb bud mesenchymal genes such as TWIST2 (Supplementary information, Fig. S3a, b and Table S1), which functions as an inhibitor of osteoblastic differentiation,74 reminiscent of limb bud-derived mesenchymal cells (LBDMCs).",
+        "span_offset": [
+          19511,
+          19761
+        ],
+        "summary": "In Homo sapiens, LIMB BUD-DERIVED MESENCHYMAL CELL is marked by TWIST2.",
+        "terms": [
+          {
+            "sub_span": "limb bud-derived mesenchymal cells",
+            "sub_offset": [
+              206,
+              240
+            ],
+            "normalized_label": "LIMB BUD-DERIVED MESENCHYMAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "TWIST2",
+            "sub_offset": [
+              62,
+              68
+            ],
+            "normalized_label": "TWIST2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:6565dd98dd435bdcbdc4",
+        "span_literal": "Cluster 3 highly expressed GAS2 and localized in the center of all OCLC subsets (Fig. 3a; Supplementary information, Fig. S3a, b and Table S1).",
+        "span_offset": [
+          19762,
+          19905
+        ],
+        "summary": "In Homo sapiens, EMBRYONIC SKELETAL STEM/PROGENITOR CELL is marked by GAS2.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "GAS2",
+            "sub_offset": [
+              27,
+              31
+            ],
+            "normalized_label": "GAS2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:8b4a0c9aa005477e80d5",
+        "span_literal": "Interestingly, we found that the cell adhesion molecule CADM1 was preferentially expressed in eSSPCs (Fig. 4a).",
+        "span_offset": [
+          25080,
+          25191
+        ],
+        "summary": "In Homo sapiens, EMBRYONIC SKELETAL STEM/PROGENITOR CELL is marked by CADM1.",
+        "terms": [
+          {
+            "sub_span": "eSSPCs",
+            "sub_offset": [
+              94,
+              100
+            ],
+            "normalized_label": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CADM1",
+            "sub_offset": [
+              56,
+              61
+            ],
+            "normalized_label": "CADM1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:abf10a2ba8f86c141379",
+        "span_literal": "Interestingly, we found that PDPN was differentially expressed in eSSPCs (PDPN+) and Schwann cells (PDPN^(-)) (Fig. 4a).",
+        "span_offset": [
+          25611,
+          25731
+        ],
+        "summary": "In Homo sapiens, EMBRYONIC SKELETAL STEM/PROGENITOR CELL is marked by PDPN.",
+        "terms": [
+          {
+            "sub_span": "eSSPCs",
+            "sub_offset": [
+              66,
+              72
+            ],
+            "normalized_label": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PDPN",
+            "sub_offset": [
+              29,
+              33
+            ],
+            "normalized_label": "PDPN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:4d8a02ac047ef25d21c1",
+        "span_literal": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+        "span_offset": [
+          29487,
+          29698
+        ],
+        "summary": "In Homo sapiens, EMBRYONIC SKELETAL STEM/PROGENITOR CELL is marked by FOXP1. In Homo sapiens, EMBRYONIC SKELETAL STEM/PROGENITOR CELL is marked by FOXP2. In Homo sapiens, EMBRYONIC SKELETAL STEM/PROGENITOR CELL is marked by GAS2.",
+        "terms": [
+          {
+            "sub_span": "eSSPCs",
+            "sub_offset": [
+              67,
+              73
+            ],
+            "normalized_label": "EMBRYONIC SKELETAL STEM/PROGENITOR CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "FOXP1",
+            "sub_offset": [
+              89,
+              94
+            ],
+            "normalized_label": "FOXP1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FOXP2",
+            "sub_offset": [
+              96,
+              101
+            ],
+            "normalized_label": "FOXP2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "GAS2",
+            "sub_offset": [
+              106,
+              110
+            ],
+            "normalized_label": "GAS2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:f68877bea49a0194f465",
+        "span_literal": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+        "span_offset": [
+          29487,
+          29698
+        ],
+        "summary": "In Homo sapiens, SCHWANN CELL is marked by SOX2. In Homo sapiens, SCHWANN CELL is marked by SOX10. In Homo sapiens, SCHWANN CELL is marked by MPZ.",
+        "terms": [
+          {
+            "sub_span": "Schwann cells",
+            "sub_offset": [
+              121,
+              134
+            ],
+            "normalized_label": "SCHWANN CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SOX2",
+            "sub_offset": [
+              150,
+              154
+            ],
+            "normalized_label": "SOX2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SOX10",
+            "sub_offset": [
+              156,
+              161
+            ],
+            "normalized_label": "SOX10",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MPZ",
+            "sub_offset": [
+              166,
+              169
+            ],
+            "normalized_label": "MPZ",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:16616b3cf02204848942",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, CRANIAL NEURAL CREST CELL is marked by NGFR. In Homo sapiens, CRANIAL NEURAL CREST CELL is marked by NES.",
+        "terms": [
+          {
+            "sub_span": "cranial neural crest (NC) cells",
+            "sub_offset": [
+              10,
+              41
+            ],
+            "normalized_label": "CRANIAL NEURAL CREST CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "NGFR",
+            "sub_offset": [
+              4,
+              8
+            ],
+            "normalized_label": "NGFR",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "NES",
+            "sub_offset": [
+              76,
+              79
+            ],
+            "normalized_label": "NES",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:a10c471a6f0b820d1526",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, VASCULAR LEPTOMENINGEAL CELL is marked by GJA1. In Homo sapiens, VASCULAR LEPTOMENINGEAL CELL is marked by SLC6A13. In Homo sapiens, VASCULAR LEPTOMENINGEAL CELL is marked by PTGDS.",
+        "terms": [
+          {
+            "sub_span": "vascular leptomeningeal cells",
+            "sub_offset": [
+              115,
+              144
+            ],
+            "normalized_label": "VASCULAR LEPTOMENINGEAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "GJA1",
+            "sub_offset": [
+              91,
+              95
+            ],
+            "normalized_label": "GJA1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SLC6A13",
+            "sub_offset": [
+              186,
+              193
+            ],
+            "normalized_label": "SLC6A13",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PTGDS",
+            "sub_offset": [
+              198,
+              203
+            ],
+            "normalized_label": "PTGDS",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:bcb9822daa621a1a383e",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, MIGRATORY CRANIAL NEURAL CREST CELL is marked by GJA1. In Homo sapiens, MIGRATORY CRANIAL NEURAL CREST CELL is marked by BMP4.",
+        "terms": [
+          {
+            "sub_span": "migratory NC (mig_NC) cells",
+            "sub_offset": [
+              211,
+              238
+            ],
+            "normalized_label": "MIGRATORY CRANIAL NEURAL CREST CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "GJA1",
+            "sub_offset": [
+              91,
+              95
+            ],
+            "normalized_label": "GJA1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "BMP4",
+            "sub_offset": [
+              270,
+              274
+            ],
+            "normalized_label": "BMP4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:96902c06a68f80a2b2c0",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, NEURAL CREST-DERIVED CELL is marked by BMP4. In Homo sapiens, NEURAL CREST-DERIVED CELL is marked by FOXC2.",
+        "terms": [
+          {
+            "sub_span": "neural crest-derived cells",
+            "sub_offset": [
+              300,
+              326
+            ],
+            "normalized_label": "NEURAL CREST-DERIVED CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "BMP4",
+            "sub_offset": [
+              270,
+              274
+            ],
+            "normalized_label": "BMP4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FOXC2",
+            "sub_offset": [
+              376,
+              381
+            ],
+            "normalized_label": "FOXC2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:1173c98a37523d7a0b47",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, OSTEOPROGENITOR is marked by RUNX2. In Homo sapiens, OSTEOPROGENITOR is marked by DLX5. In Homo sapiens, OSTEOPROGENITOR is marked by CLEC11A.",
+        "terms": [
+          {
+            "sub_span": "osteoprogenitors",
+            "sub_offset": [
+              396,
+              412
+            ],
+            "normalized_label": "OSTEOPROGENITOR",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "RUNX2",
+            "sub_offset": [
+              389,
+              394
+            ],
+            "normalized_label": "RUNX2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "DLX5",
+            "sub_offset": [
+              466,
+              470
+            ],
+            "normalized_label": "DLX5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CLEC11A",
+            "sub_offset": [
+              475,
+              482
+            ],
+            "normalized_label": "CLEC11A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:65180710410947fd2f25",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, PERICHONDRIAL MESENCHYMAL STROMAL CELL 1 is marked by OSR2. In Homo sapiens, PERICHONDRIAL MESENCHYMAL STROMAL CELL 1 is marked by POSTN.",
+        "terms": [
+          {
+            "sub_span": "PMSC subsets",
+            "sub_offset": [
+              506,
+              518
+            ],
+            "normalized_label": "PERICHONDRIAL MESENCHYMAL STROMAL CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "OSR2",
+            "sub_offset": [
+              500,
+              504
+            ],
+            "normalized_label": "OSR2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "POSTN",
+            "sub_offset": [
+              560,
+              565
+            ],
+            "normalized_label": "POSTN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:3076bfaf9f7a474d018b",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, CHONDROCYTE is marked by SOX9. In Homo sapiens, CHONDROCYTE is marked by COL9A2.",
+        "terms": [
+          {
+            "sub_span": "chondrocytes",
+            "sub_offset": [
+              577,
+              589
+            ],
+            "normalized_label": "CHONDROCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SOX9",
+            "sub_offset": [
+              571,
+              575
+            ],
+            "normalized_label": "SOX9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "COL9A2",
+            "sub_offset": [
+              612,
+              618
+            ],
+            "normalized_label": "COL9A2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:399b19ff2496dfaa44b4",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, PERICYTE is marked by PDGFRB. In Homo sapiens, PERICYTE is marked by MCAM. In Homo sapiens, PERICYTE is marked by ACTA2.",
+        "terms": [
+          {
+            "sub_span": "pericytes",
+            "sub_offset": [
+              644,
+              653
+            ],
+            "normalized_label": "PERICYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PDGFRB",
+            "sub_offset": [
+              636,
+              642
+            ],
+            "normalized_label": "PDGFRB",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MCAM",
+            "sub_offset": [
+              676,
+              680
+            ],
+            "normalized_label": "MCAM",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ACTA2",
+            "sub_offset": [
+              685,
+              690
+            ],
+            "normalized_label": "ACTA2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:04278d50687484eb407f",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, MYOBLAST is marked by MYF5.",
+        "terms": [
+          {
+            "sub_span": "myoblasts",
+            "sub_offset": [
+              702,
+              711
+            ],
+            "normalized_label": "MYOBLAST",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MYF5",
+            "sub_offset": [
+              696,
+              700
+            ],
+            "normalized_label": "MYF5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:1b89199f6435b071281e",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, ENDOTHELIAL CELL is marked by CDH5.",
+        "terms": [
+          {
+            "sub_span": "endothelial cells",
+            "sub_offset": [
+              723,
+              740
+            ],
+            "normalized_label": "ENDOTHELIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CDH5",
+            "sub_offset": [
+              717,
+              721
+            ],
+            "normalized_label": "CDH5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:9b20136da57cbe472c96",
+        "span_literal": "(1) NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77; (2) two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)^(79,80); (3) neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281; (4) RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A^(82,83); (5) two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN; (6) SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8); (7) PDGFRB+ pericytes that highly expressed MCAM and ACTA2; (8) MYF5+ myoblasts; (9) CDH5+ endothelial cells and (10) CD68+ macrophages (Fig. 6a, b; Supplementary information, Table S1).",
+        "span_offset": [
+          34101,
+          34919
+        ],
+        "summary": "In Homo sapiens, MACROPHAGE is marked by CD68.",
+        "terms": [
+          {
+            "sub_span": "macrophages",
+            "sub_offset": [
+              756,
+              767
+            ],
+            "normalized_label": "MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD68",
+            "sub_offset": [
+              750,
+              754
+            ],
+            "normalized_label": "CD68",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:b8d6759acf5bb62fdea6",
+        "span_literal": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A, a recently identified osteogenic factor that promotes the maintenance of adult skeleton.",
+        "span_offset": [
+          38482,
+          38641
+        ],
+        "summary": "In Homo sapiens, OSTEOPROGENITOR is marked by COL1A1. In Homo sapiens, OSTEOPROGENITOR is marked by PRRX2. In Homo sapiens, OSTEOPROGENITOR is marked by CLEC11A.",
+        "terms": [
+          {
+            "sub_span": "osteoprogenitors",
+            "sub_offset": [
+              10,
+              26
+            ],
+            "normalized_label": "OSTEOPROGENITOR",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "COL1A1",
+            "sub_offset": [
+              44,
+              50
+            ],
+            "normalized_label": "COL1A1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PRRX2",
+            "sub_offset": [
+              52,
+              57
+            ],
+            "normalized_label": "PRRX2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CLEC11A",
+            "sub_offset": [
+              62,
+              69
+            ],
+            "normalized_label": "CLEC11A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:47e58bd193658a501ea7",
+        "span_literal": "Although no calvarial subset highly resembled long bone eSSPC at the transcriptome level, we found that NCDC shared similar phenotypic markers to long bone eSSPC (PDGFRA^(low/-)PDPN+CADM1+) (Fig. 6d), which located in between mig_NC cells and osteoprogenitors (Fig. 6a).",
+        "span_offset": [
+          37259,
+          37529
+        ],
+        "summary": "In Homo sapiens, NEURAL CREST-DERIVED CELL is marked by CADM1. In Homo sapiens, NEURAL CREST-DERIVED CELL is marked by PDPN.",
+        "terms": [
+          {
+            "sub_span": "NCDC",
+            "sub_offset": [
+              104,
+              108
+            ],
+            "normalized_label": "NEURAL CREST-DERIVED CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CADM1",
+            "sub_offset": [
+              182,
+              187
+            ],
+            "normalized_label": "CADM1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PDPN",
+            "sub_offset": [
+              177,
+              181
+            ],
+            "normalized_label": "PDPN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      }
+    ]
+  },
+  "links": {
+    "claim:401a596378030b1355ea": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:38e7301ae06956281ce0": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:85edd9b41b14b9cc6733": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:5857a14c8f0fe98ce707": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:a53e7cfa065f52ec377e": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:e4fd97a715f3691c81fa": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:bb726c228b0031b21ac7": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:a8a92982238114e5b837": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:d7fde078bd346e5db09b": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:499c7759d49c4b0dc278": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:22cb9836e61726a4f3e3": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:165ed13f6a320d90915d": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:1cbaadee30a9516b6bfb": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:32e9c89a9d80b7711b45": "Supplementary Table S1#Degs human_limb&bone Fig. 1d",
+    "claim:6dbb9713e713db3b40d4": "Supplementary Table S1#Degs human long bone Fig. S3b",
+    "claim:d68a9e24a639eed3c96a": "Supplementary Table S1#Degs human long bone Fig. S3b",
+    "claim:6565dd98dd435bdcbdc4": "Supplementary Table S1#Degs human long bone Fig. S3b",
+    "claim:8b4a0c9aa005477e80d5": "Supplementary Table S1#Degs human long bone Fig. S3b",
+    "claim:abf10a2ba8f86c141379": "Supplementary Table S1#Degs human long bone Fig. S3b",
+    "claim:4d8a02ac047ef25d21c1": "Supplementary Table S1#Degs human long bone Fig. S3b",
+    "claim:f68877bea49a0194f465": "Supplementary Table S1#Degs human long bone Fig. S3b",
+    "claim:16616b3cf02204848942": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:a10c471a6f0b820d1526": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:bcb9822daa621a1a383e": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:96902c06a68f80a2b2c0": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:1173c98a37523d7a0b47": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:65180710410947fd2f25": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:3076bfaf9f7a474d018b": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:399b19ff2496dfaa44b4": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:04278d50687484eb407f": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:1b89199f6435b071281e": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:9b20136da57cbe472c96": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:b8d6759acf5bb62fdea6": "Supplementary Table S1#Degs human calvaria Fig. 6b",
+    "claim:47e58bd193658a501ea7": "Supplementary Table S1#Degs human calvaria Fig. 6b"
+  },
+  "link_origins": {
+    "claim:401a596378030b1355ea": "model",
+    "claim:38e7301ae06956281ce0": "model",
+    "claim:85edd9b41b14b9cc6733": "model",
+    "claim:5857a14c8f0fe98ce707": "model",
+    "claim:a53e7cfa065f52ec377e": "model",
+    "claim:e4fd97a715f3691c81fa": "model",
+    "claim:bb726c228b0031b21ac7": "model",
+    "claim:a8a92982238114e5b837": "model",
+    "claim:d7fde078bd346e5db09b": "model",
+    "claim:499c7759d49c4b0dc278": "model",
+    "claim:22cb9836e61726a4f3e3": "model",
+    "claim:165ed13f6a320d90915d": "model",
+    "claim:1cbaadee30a9516b6bfb": "model",
+    "claim:32e9c89a9d80b7711b45": "model",
+    "claim:6dbb9713e713db3b40d4": "model",
+    "claim:d68a9e24a639eed3c96a": "model",
+    "claim:6565dd98dd435bdcbdc4": "model",
+    "claim:8b4a0c9aa005477e80d5": "model",
+    "claim:abf10a2ba8f86c141379": "model",
+    "claim:4d8a02ac047ef25d21c1": "model",
+    "claim:f68877bea49a0194f465": "model",
+    "claim:16616b3cf02204848942": "model",
+    "claim:a10c471a6f0b820d1526": "model",
+    "claim:bcb9822daa621a1a383e": "model",
+    "claim:96902c06a68f80a2b2c0": "model",
+    "claim:1173c98a37523d7a0b47": "model",
+    "claim:65180710410947fd2f25": "model",
+    "claim:3076bfaf9f7a474d018b": "model",
+    "claim:399b19ff2496dfaa44b4": "model",
+    "claim:04278d50687484eb407f": "model",
+    "claim:1b89199f6435b071281e": "model",
+    "claim:9b20136da57cbe472c96": "model",
+    "claim:b8d6759acf5bb62fdea6": "model",
+    "claim:47e58bd193658a501ea7": "model"
+  },
+  "validation": {
+    "preparation": {
+      "raw_claims": 58,
+      "retained_claims": 57,
+      "reanchored_spans": 35,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [
+        {
+          "raw_index": 30,
+          "reason": "no_explicit_marker_gene"
+        }
+      ],
+      "excluded_terms": [
+        {
+          "raw_index": 30,
+          "normalized_label": "NGFR",
+          "reason": "implicit_marker_gene"
+        }
+      ],
+      "strict_exclusions": [],
+      "strictly_grounded_claims": 57
+    },
+    "validation": {
+      "valid": true,
+      "n_claims": 34,
+      "n_errors": 0,
+      "errors": [],
+      "n_warnings": 0,
+      "warnings": []
+    }
+  }
+}
