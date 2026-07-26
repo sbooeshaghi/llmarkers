@@ -1,0 +1,2250 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim:270449f0fe06aa5bbbee",
+      "span_literal": "mNK cells comprised a distinct cluster marked by expression of FCGR3A, FGFBP2, KLRF1 and EOMES",
+      "span_offset": [
+        12729,
+        12823
+      ],
+      "summary": "Mature natural killer cells in white adipose tissue are marked by expression of FCGR3A, FGFBP2, KLRF1, and EOMES.",
+      "terms": [
+        {
+          "normalized_label": "mature natural killer cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            9
+          ],
+          "sub_span": "mNK cells",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000824",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FCGR3A",
+          "provenance": "explicit",
+          "sub_offset": [
+            63,
+            69
+          ],
+          "sub_span": "FCGR3A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000203747",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FGFBP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            71,
+            77
+          ],
+          "sub_span": "FGFBP2",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000137441",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KLRF1",
+          "provenance": "explicit",
+          "sub_offset": [
+            79,
+            84
+          ],
+          "sub_span": "KLRF1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000150045",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EOMES",
+          "provenance": "explicit",
+          "sub_offset": [
+            89,
+            94
+          ],
+          "sub_span": "EOMES",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163508",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9d55f6c38c6bf73cf33d",
+      "span_literal": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56^(bright) immature NK (iNK) cells in human peripheral tissues18",
+      "span_offset": [
+        13141,
+        13315
+      ],
+      "summary": "Immature natural killer cells in white adipose tissue are discerned by expression of IL7R, SELL, and CD2.",
+      "terms": [
+        {
+          "normalized_label": "immature natural killer cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            121,
+            144
+          ],
+          "sub_span": "immature NK (iNK) cells",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000823",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IL7R",
+          "provenance": "explicit",
+          "sub_offset": [
+            56,
+            60
+          ],
+          "sub_span": "IL7R",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000168685",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SELL",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            66
+          ],
+          "sub_span": "SELL",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000188404",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD2",
+          "provenance": "explicit",
+          "sub_offset": [
+            71,
+            74
+          ],
+          "sub_span": "CD2",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000116824",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9f99b7fae6f6b02413b1",
+      "span_literal": "a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+      "span_offset": [
+        13321,
+        13480
+      ],
+      "summary": "Tissue-resident natural killer cells in white adipose tissue are distinguished by expression of CXCR6, KLRC1, and GZMK.",
+      "terms": [
+        {
+          "normalized_label": "tissue-resident natural killer cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            99,
+            130
+          ],
+          "sub_span": "tissue-resident NK (trNK) cells",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000623",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CXCR6",
+          "provenance": "explicit",
+          "sub_offset": [
+            61,
+            66
+          ],
+          "sub_span": "CXCR6",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000172215",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KLRC1",
+          "provenance": "explicit",
+          "sub_offset": [
+            68,
+            73
+          ],
+          "sub_span": "KLRC1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000134545",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GZMK",
+          "provenance": "explicit",
+          "sub_offset": [
+            78,
+            82
+          ],
+          "sub_span": "GZMK",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000113088",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:ed0bc61405f53ae1e459",
+      "span_literal": "Four clusters did not express the NK cell-lineage-associated genes IRF8, EOMES, KLRF1, NCAM1 or PRF1.",
+      "span_offset": [
+        13528,
+        13629
+      ],
+      "summary": "Innate lymphoid cells in white adipose tissue do not express the natural killer cell-lineage-associated genes IRF8, EOMES, KLRF1, NCAM1, or PRF1.",
+      "terms": [
+        {
+          "normalized_label": "innate lymphoid cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "IRF8",
+          "provenance": "explicit",
+          "sub_offset": [
+            67,
+            71
+          ],
+          "sub_span": "IRF8",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000140968",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "EOMES",
+          "provenance": "explicit",
+          "sub_offset": [
+            73,
+            78
+          ],
+          "sub_span": "EOMES",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163508",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "KLRF1",
+          "provenance": "explicit",
+          "sub_offset": [
+            80,
+            85
+          ],
+          "sub_span": "KLRF1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000150045",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "NCAM1",
+          "provenance": "explicit",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "sub_span": "NCAM1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000149294",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "PRF1",
+          "provenance": "explicit",
+          "sub_offset": [
+            96,
+            100
+          ],
+          "sub_span": "PRF1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000180644",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a3ef3420c96fed68ab8d",
+      "span_literal": "these clusters could be distinguished from NK-lineage cells based on CD200R1 and IL7R coexpression",
+      "span_offset": [
+        13639,
+        13737
+      ],
+      "summary": "Innate lymphoid cells in white adipose tissue are distinguished from natural killer-lineage cells based on CD200R1 and IL7R coexpression.",
+      "terms": [
+        {
+          "normalized_label": "innate lymphoid cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": true
+        },
+        {
+          "normalized_label": "natural killer-lineage cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            43,
+            59
+          ],
+          "sub_span": "NK-lineage cells",
+          "term_type": "comparison",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD200R1",
+          "provenance": "explicit",
+          "sub_offset": [
+            69,
+            76
+          ],
+          "sub_span": "CD200R1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163606",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IL7R",
+          "provenance": "explicit",
+          "sub_offset": [
+            81,
+            85
+          ],
+          "sub_span": "IL7R",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000168685",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a43ac2cbf2fac0e8e3a7",
+      "span_literal": "WAT ILC clusters were defined based on differential expression of marker genes: GATA3 and IL1RL1 consistent with ILC2s described in mice and humans",
+      "span_offset": [
+        13931,
+        14078
+      ],
+      "summary": "Type 2 innate lymphoid cells in white adipose tissue are defined by expression of GATA3 and IL1RL1.",
+      "terms": [
+        {
+          "normalized_label": "type 2 innate lymphoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            113,
+            118
+          ],
+          "sub_span": "ILC2s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GATA3",
+          "provenance": "explicit",
+          "sub_offset": [
+            80,
+            85
+          ],
+          "sub_span": "GATA3",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000107485",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IL1RL1",
+          "provenance": "explicit",
+          "sub_offset": [
+            90,
+            96
+          ],
+          "sub_span": "IL1RL1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000115602",
+          "exact": true
+        },
+        {
+          "normalized_label": "white adipose tissue",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue",
+          "ontology_term": "UBERON:0001347",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:dcbd509038faa442d436",
+      "span_literal": "ZNF683 and TBX21 consistent with ILC1s described in mice",
+      "span_offset": [
+        14091,
+        14147
+      ],
+      "summary": "Type 1 innate lymphoid cells in white adipose tissue are defined by expression of ZNF683 and TBX21.",
+      "terms": [
+        {
+          "normalized_label": "type 1 innate lymphoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            33,
+            38
+          ],
+          "sub_span": "ILC1s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZNF683",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "sub_span": "ZNF683",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000176083",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TBX21",
+          "provenance": "explicit",
+          "sub_offset": [
+            11,
+            16
+          ],
+          "sub_span": "TBX21",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000073861",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:455537b82b48de2f5ab6",
+      "span_literal": "CCR6, IL1R1 and IL23R consistent with ILC3s described in mice and humans",
+      "span_offset": [
+        14157,
+        14229
+      ],
+      "summary": "Type 3 innate lymphoid cells in white adipose tissue are defined by expression of CCR6, IL1R1, and IL23R.",
+      "terms": [
+        {
+          "normalized_label": "type 3 innate lymphoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            38,
+            43
+          ],
+          "sub_span": "ILC3s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CCR6",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "CCR6",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000112486",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IL1R1",
+          "provenance": "explicit",
+          "sub_offset": [
+            6,
+            11
+          ],
+          "sub_span": "IL1R1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000115594",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IL23R",
+          "provenance": "explicit",
+          "sub_offset": [
+            16,
+            21
+          ],
+          "sub_span": "IL23R",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000162594",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a13e3c45341e065a361b",
+      "span_literal": "SELL and IL1R1 consistent with circulating ILC precursor cells (ILCPs) found in human blood",
+      "span_offset": [
+        14246,
+        14337
+      ],
+      "summary": "Innate lymphoid cell precursor cells in white adipose tissue are defined by expression of SELL and IL1R1.",
+      "terms": [
+        {
+          "normalized_label": "innate lymphoid cell precursor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            43,
+            70
+          ],
+          "sub_span": "ILC precursor cells (ILCPs)",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SELL",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "SELL",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000188404",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IL1R1",
+          "provenance": "explicit",
+          "sub_offset": [
+            9,
+            14
+          ],
+          "sub_span": "IL1R1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000115594",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b262e4da9ae5ba7bc4ac",
+      "span_literal": "CD200R1 expression could distinguish ILCs from mNK cells",
+      "span_offset": [
+        11969,
+        12025
+      ],
+      "summary": "CD200R1 expression distinguishes innate lymphoid cells from mature natural killer cells in white adipose tissue.",
+      "terms": [
+        {
+          "normalized_label": "innate lymphoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            37,
+            41
+          ],
+          "sub_span": "ILCs",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": true
+        },
+        {
+          "normalized_label": "mature natural killer cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            47,
+            56
+          ],
+          "sub_span": "mNK cells",
+          "term_type": "comparison",
+          "ontology_term": "CL:0000824",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD200R1",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            7
+          ],
+          "sub_span": "CD200R1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163606",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d244fd540f13c922cd20",
+      "span_literal": "TBET^(hi)EOMES^(int)PERFORIN^(hi)CD16+ mNK cells",
+      "span_offset": [
+        17692,
+        17740
+      ],
+      "summary": "Mature natural killer cells in white adipose tissue are defined by TBET-positive and CD16-positive expression.",
+      "terms": [
+        {
+          "normalized_label": "mature natural killer cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            39,
+            48
+          ],
+          "sub_span": "mNK cells",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000824",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TBET",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "TBET",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD16",
+          "provenance": "explicit",
+          "sub_offset": [
+            33,
+            37
+          ],
+          "sub_span": "CD16",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:adac908746f4c92ce57e",
+      "span_literal": "PERFORIN^(int)CD16^(-) trNK cells; and TBET^(lo)EOMES",
+      "span_offset": [
+        17762,
+        17815
+      ],
+      "summary": "Tissue-resident natural killer cells in white adipose tissue are defined by EOMES-high and PERFORIN-intermediate expression and are CD16-negative.",
+      "terms": [
+        {
+          "normalized_label": "tissue-resident natural killer cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            23,
+            33
+          ],
+          "sub_span": "trNK cells",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000623",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EOMES",
+          "provenance": "explicit",
+          "sub_offset": [
+            48,
+            53
+          ],
+          "sub_span": "EOMES",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163508",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PERFORIN",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            8
+          ],
+          "sub_span": "PERFORIN",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "CD16",
+          "provenance": "explicit",
+          "sub_offset": [
+            14,
+            18
+          ],
+          "sub_span": "CD16",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6101ca6bbcdfa6f08f37",
+      "span_literal": "TBET^(lo)EOMES^(lo)PERFORIN^(int)CD16^(-)CD62L^(+/-) iNK cells",
+      "span_offset": [
+        17801,
+        17863
+      ],
+      "summary": "Immature natural killer cells in white adipose tissue are defined by TBET-low, EOMES-low, PERFORIN-intermediate expression and are CD16-negative.",
+      "terms": [
+        {
+          "normalized_label": "immature natural killer cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            53,
+            62
+          ],
+          "sub_span": "iNK cells",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000823",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TBET",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "TBET",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EOMES",
+          "provenance": "explicit",
+          "sub_offset": [
+            9,
+            14
+          ],
+          "sub_span": "EOMES",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163508",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PERFORIN",
+          "provenance": "explicit",
+          "sub_offset": [
+            19,
+            27
+          ],
+          "sub_span": "PERFORIN",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "CD16",
+          "provenance": "explicit",
+          "sub_offset": [
+            33,
+            37
+          ],
+          "sub_span": "CD16",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7d6d649efd2af7ab75ac",
+      "span_literal": "mature CD200R1+ ILC populations did not express PERFORIN or EOMES",
+      "span_offset": [
+        18274,
+        18339
+      ],
+      "summary": "Mature CD200R1-positive innate lymphoid cell populations in white adipose tissue do not express PERFORIN or EOMES.",
+      "terms": [
+        {
+          "normalized_label": "innate lymphoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            16,
+            31
+          ],
+          "sub_span": "ILC populations",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "PERFORIN",
+          "provenance": "explicit",
+          "sub_offset": [
+            48,
+            56
+          ],
+          "sub_span": "PERFORIN",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "EOMES",
+          "provenance": "explicit",
+          "sub_offset": [
+            60,
+            65
+          ],
+          "sub_span": "EOMES",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163508",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD200R1",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            14
+          ],
+          "sub_span": "CD200R1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163606",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7e2f330c1fffbafa41f9",
+      "span_literal": "T-bet, IFN-g and IL-2 expression defined ILC1s",
+      "span_offset": [
+        18481,
+        18527
+      ],
+      "summary": "Type 1 innate lymphoid cells in white adipose tissue are defined by T-bet, interferon-gamma, and interleukin-2 expression.",
+      "terms": [
+        {
+          "normalized_label": "type 1 innate lymphoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            41,
+            46
+          ],
+          "sub_span": "ILC1s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "T-bet",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "T-bet",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000073861",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "interferon-gamma",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            12
+          ],
+          "sub_span": "IFN-g",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "interleukin-2",
+          "provenance": "explicit",
+          "sub_offset": [
+            17,
+            21
+          ],
+          "sub_span": "IL-2",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:517c95ff5484c1685f19",
+      "span_literal": "CRTH2 and IL-13 expression defined ILC2s",
+      "span_offset": [
+        18529,
+        18569
+      ],
+      "summary": "Type 2 innate lymphoid cells in white adipose tissue are defined by CRTH2 and interleukin-13 expression.",
+      "terms": [
+        {
+          "normalized_label": "type 2 innate lymphoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            35,
+            40
+          ],
+          "sub_span": "ILC2s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CRTH2",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "CRTH2",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000183134",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "interleukin-13",
+          "provenance": "explicit",
+          "sub_offset": [
+            10,
+            15
+          ],
+          "sub_span": "IL-13",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:da8fb4f4dfeeb9b99c37",
+      "span_literal": "NKp44, IL-1 receptor type 1 (IL-1R1), CCR6, RORC^(hi) and IL-17A expression defined ILC3s",
+      "span_offset": [
+        18575,
+        18664
+      ],
+      "summary": "Type 3 innate lymphoid cells in white adipose tissue are defined by NKp44, interleukin-1 receptor type 1, CCR6, RORC, and interleukin-17A expression.",
+      "terms": [
+        {
+          "normalized_label": "type 3 innate lymphoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            84,
+            89
+          ],
+          "sub_span": "ILC3s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NKp44",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "NKp44",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "interleukin-1 receptor type 1",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            36
+          ],
+          "sub_span": "IL-1 receptor type 1 (IL-1R1)",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CCR6",
+          "provenance": "explicit",
+          "sub_offset": [
+            38,
+            42
+          ],
+          "sub_span": "CCR6",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000112486",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "RORC",
+          "provenance": "explicit",
+          "sub_offset": [
+            44,
+            48
+          ],
+          "sub_span": "RORC",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000143365",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "interleukin-17A",
+          "provenance": "explicit",
+          "sub_offset": [
+            58,
+            64
+          ],
+          "sub_span": "IL-17A",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c240fb33a784b8ff2a2b",
+      "span_literal": "CD62L, the lack of other mature ILC markers and the absence of cytokine production defined the ILCP-like population",
+      "span_offset": [
+        18708,
+        18823
+      ],
+      "summary": "The innate lymphoid cell precursor-like population in white adipose tissue is defined by CD62L expression.",
+      "terms": [
+        {
+          "normalized_label": "innate lymphoid cell precursor-like cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            95,
+            115
+          ],
+          "sub_span": "ILCP-like population",
+          "term_type": "celltype",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD62L",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "CD62L",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000188404",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d1ca0f80cee4e9c3756e",
+      "span_literal": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s",
+      "span_offset": [
+        24464,
+        24675
+      ],
+      "summary": "Nonclassical monocytes in white adipose tissue are identified based on expression of FCGR3A and HES4.",
+      "terms": [
+        {
+          "normalized_label": "nonclassical monocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            56,
+            61
+          ],
+          "sub_span": "ncMos",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000576",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FCGR3A",
+          "provenance": "explicit",
+          "sub_offset": [
+            85,
+            91
+          ],
+          "sub_span": "FCGR3A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000203747",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "HES4",
+          "provenance": "explicit",
+          "sub_offset": [
+            96,
+            100
+          ],
+          "sub_span": "HES4",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000188290",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7a4c0789600055703f6b",
+      "span_literal": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s",
+      "span_offset": [
+        24464,
+        24675
+      ],
+      "summary": "Mo-1 classical monocytes in white adipose tissue are identified by expression of FCER1A.",
+      "terms": [
+        {
+          "normalized_label": "Mo-1 classical monocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            102,
+            107
+          ],
+          "sub_span": "Mo-1s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000860",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FCER1A",
+          "provenance": "explicit",
+          "sub_offset": [
+            125,
+            131
+          ],
+          "sub_span": "FCER1A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000179639",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:8d5c4b5276201a0ce806",
+      "span_literal": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s",
+      "span_offset": [
+        24464,
+        24675
+      ],
+      "summary": "Mo-2 classical monocytes in white adipose tissue are identified by increased expression of CSF3R, FCAR, and SELL compared with Mo-1 classical monocytes.",
+      "terms": [
+        {
+          "normalized_label": "Mo-2 classical monocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            136,
+            141
+          ],
+          "sub_span": "Mo-2s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000860",
+          "exact": false
+        },
+        {
+          "normalized_label": "Mo-1 classical monocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            102,
+            107
+          ],
+          "sub_span": "Mo-1s",
+          "term_type": "comparison",
+          "ontology_term": "CL:0000860",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CSF3R",
+          "provenance": "explicit",
+          "sub_offset": [
+            170,
+            175
+          ],
+          "sub_span": "CSF3R",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000119535",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FCAR",
+          "provenance": "explicit",
+          "sub_offset": [
+            177,
+            181
+          ],
+          "sub_span": "FCAR",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000186431",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SELL",
+          "provenance": "explicit",
+          "sub_offset": [
+            186,
+            190
+          ],
+          "sub_span": "SELL",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000188404",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:aaa99dee127703417557",
+      "span_literal": "a population of human WAT neutrophils based on expression of THBS1 and S100A12",
+      "span_offset": [
+        25245,
+        25323
+      ],
+      "summary": "Neutrophils in white adipose tissue are identified based on expression of THBS1 and S100A12.",
+      "terms": [
+        {
+          "normalized_label": "neutrophil",
+          "provenance": "explicit",
+          "sub_offset": [
+            26,
+            37
+          ],
+          "sub_span": "neutrophils",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000775",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "THBS1",
+          "provenance": "explicit",
+          "sub_offset": [
+            61,
+            66
+          ],
+          "sub_span": "THBS1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000137801",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "S100A12",
+          "provenance": "explicit",
+          "sub_offset": [
+            71,
+            78
+          ],
+          "sub_span": "S100A12",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163221",
+          "exact": true
+        },
+        {
+          "normalized_label": "white adipose tissue",
+          "provenance": "explicit",
+          "sub_offset": [
+            22,
+            25
+          ],
+          "sub_span": "WAT",
+          "term_type": "tissue",
+          "ontology_term": "UBERON:0001347",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3d20b127b22b7d17bcb7",
+      "span_literal": "TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8",
+      "span_offset": [
+        25570,
+        25636
+      ],
+      "summary": "Lipid-associated macrophages in white adipose tissue express TREM2, CD9, and LPL.",
+      "terms": [
+        {
+          "normalized_label": "lipid-associated macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            30,
+            65
+          ],
+          "sub_span": "lipid-associated macrophages (LAMs)",
+          "term_type": "celltype",
+          "ontology_term": "CL:4033086",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TREM2",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "TREM2",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000095970",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD9",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            10
+          ],
+          "sub_span": "CD9",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000010278",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LPL",
+          "provenance": "explicit",
+          "sub_offset": [
+            15,
+            18
+          ],
+          "sub_span": "LPL",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000175445",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:012911ed4bab1d40095e",
+      "span_literal": "LYVE1, SELENOP and C1Q, expressing PVMs32",
+      "span_offset": [
+        25638,
+        25679
+      ],
+      "summary": "Perivascular macrophages in white adipose tissue express LYVE1, SELENOP, and C1Q.",
+      "terms": [
+        {
+          "normalized_label": "perivascular macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            35,
+            39
+          ],
+          "sub_span": "PVMs",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000881",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LYVE1",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "LYVE1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000133800",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SELENOP",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            14
+          ],
+          "sub_span": "SELENOP",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000250722",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "C1Q",
+          "provenance": "explicit",
+          "sub_offset": [
+            19,
+            22
+          ],
+          "sub_span": "C1Q",
+          "term_type": "gene",
+          "ontology_term": null,
+          "exact": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:769bf6b35210f0f507cc",
+      "span_literal": "an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3",
+      "span_offset": [
+        25685,
+        25789
+      ],
+      "summary": "Inflammatory macrophages in white adipose tissue have high expression of CCL3L1, TNF, and CXCL3.",
+      "terms": [
+        {
+          "normalized_label": "inflammatory macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            19,
+            47
+          ],
+          "sub_span": "inflammatory macrophage (IM)",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000863",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CCL3L1",
+          "provenance": "explicit",
+          "sub_offset": [
+            83,
+            89
+          ],
+          "sub_span": "CCL3L1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000276085",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TNF",
+          "provenance": "explicit",
+          "sub_offset": [
+            91,
+            94
+          ],
+          "sub_span": "TNF",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000204490",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CXCL3",
+          "provenance": "explicit",
+          "sub_offset": [
+            99,
+            104
+          ],
+          "sub_span": "CXCL3",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000163734",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:475cb3b7cf3d80d2aa37",
+      "span_literal": "conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1",
+      "span_offset": [
+        30039,
+        30122
+      ],
+      "summary": "Conventional type 1 dendritic cells in white adipose tissue are defined by expression of IRF8, DPP4, CADM1, and XCR1.",
+      "terms": [
+        {
+          "normalized_label": "conventional type 1 dendritic cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            31
+          ],
+          "sub_span": "conventional type 1 DCs (cDC1s)",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IRF8",
+          "provenance": "explicit",
+          "sub_offset": [
+            57,
+            61
+          ],
+          "sub_span": "IRF8",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000140968",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DPP4",
+          "provenance": "explicit",
+          "sub_offset": [
+            63,
+            67
+          ],
+          "sub_span": "DPP4",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000197635",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CADM1",
+          "provenance": "explicit",
+          "sub_offset": [
+            69,
+            74
+          ],
+          "sub_span": "CADM1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000182985",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "XCR1",
+          "provenance": "explicit",
+          "sub_offset": [
+            79,
+            83
+          ],
+          "sub_span": "XCR1",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000173578",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:fd92027cebe499863e6c",
+      "span_literal": "coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3",
+      "span_offset": [
+        30124,
+        30210
+      ],
+      "summary": "Conventional type 2 dendritic cell subset A in white adipose tissue is defined by expression of CD1C, IRF4, IL7R, and LAMP3.",
+      "terms": [
+        {
+          "normalized_label": "conventional type 2 dendritic cell subset A",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            40
+          ],
+          "sub_span": "coventional type 2 DCs subset A (cDC2As)",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD1C",
+          "provenance": "explicit",
+          "sub_offset": [
+            60,
+            64
+          ],
+          "sub_span": "CD1C",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000158481",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IRF4",
+          "provenance": "explicit",
+          "sub_offset": [
+            66,
+            70
+          ],
+          "sub_span": "IRF4",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000137265",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IL7R",
+          "provenance": "explicit",
+          "sub_offset": [
+            72,
+            76
+          ],
+          "sub_span": "IL7R",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000168685",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LAMP3",
+          "provenance": "explicit",
+          "sub_offset": [
+            81,
+            86
+          ],
+          "sub_span": "LAMP3",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000078081",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d9b2d18640c64ca695ab",
+      "span_literal": "conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A",
+      "span_offset": [
+        30216,
+        30315
+      ],
+      "summary": "Conventional type 2 dendritic cell subset B in white adipose tissue is defined by increased expression of CD1C, IRF4, FCER1A, and CLEC10A.",
+      "terms": [
+        {
+          "normalized_label": "conventional type 2 dendritic cell subset B",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            41
+          ],
+          "sub_span": "conventional type 2 DCs subset B (cDC2Bs)",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD1C",
+          "provenance": "explicit",
+          "sub_offset": [
+            69,
+            73
+          ],
+          "sub_span": "CD1C",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000158481",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "IRF4",
+          "provenance": "explicit",
+          "sub_offset": [
+            75,
+            79
+          ],
+          "sub_span": "IRF4",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000137265",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FCER1A",
+          "provenance": "explicit",
+          "sub_offset": [
+            81,
+            87
+          ],
+          "sub_span": "FCER1A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000179639",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CLEC10A",
+          "provenance": "explicit",
+          "sub_offset": [
+            92,
+            99
+          ],
+          "sub_span": "CLEC10A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000132514",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b306d0675cb32e6c2603",
+      "span_literal": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C",
+      "span_offset": [
+        30720,
+        30787
+      ],
+      "summary": "Conventional type 1 dendritic cells in white adipose tissue are distinguished by expression of DPP4 (CD26) and are CD1C-negative.",
+      "terms": [
+        {
+          "normalized_label": "conventional type 1 dendritic cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            4,
+            9
+          ],
+          "sub_span": "cDC1s",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DPP4",
+          "provenance": "explicit",
+          "sub_offset": [
+            46,
+            50
+          ],
+          "sub_span": "DPP4",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000197635",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "CD1C",
+          "provenance": "explicit",
+          "sub_offset": [
+            63,
+            67
+          ],
+          "sub_span": "CD1C",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000158481",
+          "exact": true
+        },
+        {
+          "normalized_label": "white adipose tissue",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            3
+          ],
+          "sub_span": "WAT",
+          "term_type": "tissue",
+          "ontology_term": "UBERON:0001347",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:286714a5679533a28b1d",
+      "span_literal": "cDC2Bs (CD26^(-)CD1C+CD206+CD14^(hi)FCER1A+CLEC10A",
+      "span_offset": [
+        30898,
+        30948
+      ],
+      "summary": "Conventional type 2 dendritic cell subset B in white adipose tissue is CD26-negative, CD1C-positive, CD206-positive, CD14-high, FCER1A-positive, and CLEC10A-positive.",
+      "terms": [
+        {
+          "normalized_label": "conventional type 2 dendritic cell subset B",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "sub_span": "cDC2Bs",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD1C",
+          "provenance": "explicit",
+          "sub_offset": [
+            16,
+            20
+          ],
+          "sub_span": "CD1C",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000158481",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD206",
+          "provenance": "explicit",
+          "sub_offset": [
+            21,
+            26
+          ],
+          "sub_span": "CD206",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000260314",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FCER1A",
+          "provenance": "explicit",
+          "sub_offset": [
+            36,
+            42
+          ],
+          "sub_span": "FCER1A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000179639",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CLEC10A",
+          "provenance": "explicit",
+          "sub_offset": [
+            43,
+            50
+          ],
+          "sub_span": "CLEC10A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000132514",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b8e6e89dcd2c1f7edc13",
+      "span_literal": "FCER1A+CLEC10A+); cDC2As (CD26^(-)CD1C+CD206",
+      "span_offset": [
+        30934,
+        30978
+      ],
+      "summary": "Conventional type 2 dendritic cell subset A in white adipose tissue is CD26-negative, CD1C-positive, CD206-negative, FCER1A-negative, and CLEC10A-negative.",
+      "terms": [
+        {
+          "normalized_label": "conventional type 2 dendritic cell subset A",
+          "provenance": "explicit",
+          "sub_offset": [
+            18,
+            24
+          ],
+          "sub_span": "cDC2As",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD1C",
+          "provenance": "explicit",
+          "sub_offset": [
+            34,
+            38
+          ],
+          "sub_span": "CD1C",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000158481",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "CD206",
+          "provenance": "explicit",
+          "sub_offset": [
+            39,
+            44
+          ],
+          "sub_span": "CD206",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000260314",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "FCER1A",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "sub_span": "FCER1A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000179639",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "CLEC10A",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            14
+          ],
+          "sub_span": "CLEC10A",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000132514",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:dbbec16d09b34f254339",
+      "span_literal": "with expression of CD9 distinguishing CD206+CD11c+ LAMs, and CD206+CD11c^(-) distinguishing WAT PVMs as described previously",
+      "span_offset": [
+        26577,
+        26701
+      ],
+      "summary": "Lipid-associated macrophages in white adipose tissue are distinguished by expression of CD9, CD206, and CD11c, while perivascular macrophages are CD206-positive and CD11c-negative.",
+      "terms": [
+        {
+          "normalized_label": "lipid-associated macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            51,
+            55
+          ],
+          "sub_span": "LAMs",
+          "term_type": "celltype",
+          "ontology_term": "CL:4033086",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD9",
+          "provenance": "explicit",
+          "sub_offset": [
+            19,
+            22
+          ],
+          "sub_span": "CD9",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000010278",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD206",
+          "provenance": "explicit",
+          "sub_offset": [
+            38,
+            43
+          ],
+          "sub_span": "CD206",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000260314",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD11c",
+          "provenance": "explicit",
+          "sub_offset": [
+            44,
+            49
+          ],
+          "sub_span": "CD11c",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000140678",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c1c63a45a81929f46596",
+      "span_literal": "with expression of CD9 distinguishing CD206+CD11c+ LAMs, and CD206+CD11c^(-) distinguishing WAT PVMs as described previously",
+      "span_offset": [
+        26577,
+        26701
+      ],
+      "summary": "Perivascular macrophages in white adipose tissue are distinguished by CD206-positive and CD11c-negative expression.",
+      "terms": [
+        {
+          "normalized_label": "perivascular macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            96,
+            100
+          ],
+          "sub_span": "PVMs",
+          "term_type": "celltype",
+          "ontology_term": "CL:0000881",
+          "exact": true
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD206",
+          "provenance": "explicit",
+          "sub_offset": [
+            38,
+            43
+          ],
+          "sub_span": "CD206",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000260314",
+          "exact": true
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "CD11c",
+          "provenance": "explicit",
+          "sub_offset": [
+            44,
+            49
+          ],
+          "sub_span": "CD11c",
+          "term_type": "gene",
+          "ontology_term": "ENSG00000140678",
+          "exact": true
+        },
+        {
+          "normalized_label": "lipid-associated macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            51,
+            55
+          ],
+          "sub_span": "LAMs",
+          "term_type": "comparison",
+          "ontology_term": "CL:4033086",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "schema_version": "mrkr.onto.v1",
+  "source": {
+    "id": "benchmark/Hildreth2021",
+    "sha256": "sha256:f48a47501bf95e244deb8f5f7a06b5566de35e388ec5bb302626f8e5f31f9145"
+  },
+  "grounding": {
+    "genes": {
+      "provider": "offline-gene-map",
+      "organism": "homo_sapiens",
+      "sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7"
+    },
+    "ontology_service": {
+      "provider": "OLS4",
+      "endpoint": "https://www.ebi.ac.uk/ols4/api/v2/tag_text",
+      "queries": [
+        {
+          "query": "mature natural killer cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:36.456910+00:00",
+          "response_sha256": "sha256:a6ac21bced3a2a395f91eef456dd6358ce88a3eb847ecdf5fb678699d32f25fa",
+          "ontology_term": "CL:0000824",
+          "exact": true
+        },
+        {
+          "query": "immature natural killer cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:37.201463+00:00",
+          "response_sha256": "sha256:a77edb586d5c9dc145543cfd04220640996b017077b37e297b6949bd05b1a237",
+          "ontology_term": "CL:0000823",
+          "exact": true
+        },
+        {
+          "query": "tissue-resident natural killer cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:37.895911+00:00",
+          "response_sha256": "sha256:e3655fd33ad60b0287ff1c6aca4f7883aa1f229847b3ec5aa35325a1b4480255",
+          "ontology_term": "CL:0000623",
+          "exact": false
+        },
+        {
+          "query": "innate lymphoid cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:38.555032+00:00",
+          "response_sha256": "sha256:bb46e8b32e804b1497443b21367ada507853e4ed02b64dbb3753ad1ece18b306",
+          "ontology_term": "CL:0001065",
+          "exact": true
+        },
+        {
+          "query": "natural killer-lineage cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:39.300443+00:00",
+          "response_sha256": "sha256:14287eb6a32874723a5f44683925b8b04f2399ed847731ac67e9ce8940f70df0",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "type 2 innate lymphoid cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:39.978128+00:00",
+          "response_sha256": "sha256:2dbbee32536a514279881f4a78b8e87d3b4731bccd234d4fb3fc7ea73b2c654c",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "query": "white adipose tissue",
+          "ontology": "uberon",
+          "retrieved_at": "2026-07-21T19:05:40.652344+00:00",
+          "response_sha256": "sha256:8fe39532f56ea554e765b9a94509da7bd72e6fdc8d2f6477d4e5021dd3649ca6",
+          "ontology_term": "UBERON:0001347",
+          "exact": true
+        },
+        {
+          "query": "type 1 innate lymphoid cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:41.396266+00:00",
+          "response_sha256": "sha256:b7ab4e4529e118575db12cadea013426f4f3784fa5ef2bb91012ec498bf89eba",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "query": "type 3 innate lymphoid cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:42.077661+00:00",
+          "response_sha256": "sha256:38fea3077ce7cd7010ba9d9c5b2b67be1a2c83f9e7b4455d62c4f08e713b89d1",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "query": "innate lymphoid cell precursor cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:42.743491+00:00",
+          "response_sha256": "sha256:882320ddcb99c5923ab38925f567710a77074135f88364ae9ee690883966bc2b",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "query": "innate lymphoid cell precursor-like cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:43.492954+00:00",
+          "response_sha256": "sha256:d876789f404ab4a5dde930ba397422441d8e7c7e5094cb9cdc58afbddad11ae8",
+          "ontology_term": "CL:0001065",
+          "exact": false
+        },
+        {
+          "query": "nonclassical monocyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:44.171231+00:00",
+          "response_sha256": "sha256:6756c10025fa91caa40063df7fb594b4a1289539e6cfb3251a7caaf2a3626e3e",
+          "ontology_term": "CL:0000576",
+          "exact": false
+        },
+        {
+          "query": "Mo-1 classical monocyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:44.845121+00:00",
+          "response_sha256": "sha256:2b4c8f3189564fda1070e53a2ee1dc3f998a659299852e90d28d4a1205868bc1",
+          "ontology_term": "CL:0000860",
+          "exact": false
+        },
+        {
+          "query": "Mo-2 classical monocyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:45.590842+00:00",
+          "response_sha256": "sha256:14f1c9e5fe904a794d26b8cd4cc291c6fe9b718913eaade8260a442c62a6ddd6",
+          "ontology_term": "CL:0000860",
+          "exact": false
+        },
+        {
+          "query": "neutrophil",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:46.281531+00:00",
+          "response_sha256": "sha256:ed0756b910ded21e9d9a929326c32917f64a29ea813618253b3e24fcffa41ab5",
+          "ontology_term": "CL:0000775",
+          "exact": true
+        },
+        {
+          "query": "lipid-associated macrophage",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:46.956063+00:00",
+          "response_sha256": "sha256:b704755c534e92989ec569e046368a5f7b58b7fb57070f9a303a21794a6a88a6",
+          "ontology_term": "CL:4033086",
+          "exact": true
+        },
+        {
+          "query": "perivascular macrophage",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:47.728602+00:00",
+          "response_sha256": "sha256:2940c6ede46ae1c04ec56c9d9812d6adf65f6fdd165bf3c57433fc987e3ba037",
+          "ontology_term": "CL:0000881",
+          "exact": true
+        },
+        {
+          "query": "inflammatory macrophage",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:48.375452+00:00",
+          "response_sha256": "sha256:23c744b5db2dbcca0b27f6e7f95b384f6c4bf93664e4226db756ccb3c2ddd160",
+          "ontology_term": "CL:0000863",
+          "exact": true
+        },
+        {
+          "query": "conventional type 1 dendritic cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:49.046319+00:00",
+          "response_sha256": "sha256:5ec3b76eb572b7c7a6e80d6bc8f2423ee9f82dfd6fe836ee54f833e6c5e04dcb",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "query": "conventional type 2 dendritic cell subset A",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:49.784702+00:00",
+          "response_sha256": "sha256:72bf55046a9727e5044813e78efeb332577e6733246b64cd8191b9776087c322",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        },
+        {
+          "query": "conventional type 2 dendritic cell subset B",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T19:05:50.469890+00:00",
+          "response_sha256": "sha256:e737dbccf16619de22f3dbe1e5a268c1de38555acdbe67784911a186683fa494",
+          "ontology_term": "CL:0000451",
+          "exact": false
+        }
+      ]
+    }
+  }
+}

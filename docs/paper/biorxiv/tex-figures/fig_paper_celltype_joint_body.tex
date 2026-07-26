@@ -39,6 +39,7 @@
 \definecolor{diffLabelsSameMarkers}{HTML}{B83280}
 
 \tikzset{
+  panel label/.style={font=\rmfamily\normalsize\bfseries, text=black, anchor=north west, inner sep=0pt},
   panel title/.style={font=\sffamily\small\bfseries, text=black},
   paper box/.style={rounded corners=2pt, line width=0.6pt, minimum width=4.90cm, inner sep=0pt, align=center},
   paper content/.style={font=\sffamily, text width=3.35cm, align=center, inner sep=0pt},
@@ -107,10 +108,11 @@
     ({#1-0.060}, {#2+0.060}) -- ({#1+0.060}, {#2-0.060});%
 }
 
-\path[use as bounding box] (-0.25, 0.45) rectangle (18.25, -7.12);
-\fill[white] (-0.25, 0.45) rectangle (18.25, -7.12);
+\path[use as bounding box] (-0.25, 0.58) rectangle (18.25, -7.12);
+\fill[white] (-0.25, 0.58) rectangle (18.25, -7.12);
 
 % Panel A: local-to-global marker matrix schematic.
+\node[panel label] at (-0.18, 0.55) {A};
 \node[panel title] at (1.15, 0) {Annotation Problem};
 
 \def\mx{0.20}
@@ -184,7 +186,8 @@
 \node[font=\sffamily\fontsize{4.1}{4.3}\selectfont, text=diffLabelsSameMarkers, align=left, anchor=west] at (0.04, -6.78)
   {different labels, same markers};
 
-% Panel B: paper-celltype profile rows.
+% Panel B: reported marker gene panels.
+\node[panel label] at (2.66, 0.55) {B};
 \node[panel title] at (5.45, 0) {Study Markers};
 
 \node[anchor=north west, inner sep=0pt] at (2.68, -0.38) {%
@@ -242,6 +245,7 @@
 };
 
 % Panel C: real example pooled marker matrix.
+\node[panel label] at (9.25, 0.55) {C};
 \node[panel title] at (11.48, 0) {Pooled Atlas};
 
 \def\gx{10.10}
@@ -302,6 +306,7 @@
 \node[anchor=west, font=\sffamily\tiny, text=diffLabelsSameMarkers] at ({\gx-\rowidshift-0.20}, {\gy-11.67*\mrh}) {different labels, same markers};
 
 % Panel D: joint relation map.
+\node[panel label] at (13.65, 0.55) {D};
 \node[panel title] at (15.95, 0) {Label-Marker Agreement};
 
 \def\hx{15.00}
@@ -309,7 +314,7 @@
 \def\cw{1.12}
 \def\hi{0.035}
 \node[font=\sffamily\scriptsize\itshape, rotate=90] at (13.72, {\hy - \cw}) {Reported Labels};
-\node[font=\sffamily\scriptsize\itshape, align=center] at ({\hx + \cw}, -0.92) {Marker Identifiability$^*$};
+\node[font=\sffamily\scriptsize\itshape, align=center] at ({\hx + \cw}, -0.92) {Marker Panel Overlap$^*$};
 \node[font=\sffamily\tiny, align=center] at ({\hx + 0*\cw}, -1.24) {Exact\\{\tiny $\scriptstyle J=1$}};
 \node[font=\sffamily\tiny, align=center] at ({\hx + 1*\cw}, -1.24) {Partial\\{\tiny $\scriptstyle 0<J<1$}};
 \node[font=\sffamily\tiny, align=center] at ({\hx + 2*\cw}, -1.24) {None\\{\tiny $\scriptstyle J=0$}};
@@ -317,7 +322,7 @@
 \node[font=\sffamily\tiny, align=right, anchor=east] at (14.48, {\hy - 1*\cw}) {Partial};
 \node[font=\sffamily\tiny, align=right, anchor=east] at (14.48, {\hy - 2*\cw}) {Different};
 
-\node[heat cell, fill=tierStrictLight!55] at ({\hx + 0*\cw}, {\hy - 0*\cw}) {\heatentry{Same\\profile}{1}};
+\node[heat cell, fill=tierStrictLight!55] at ({\hx + 0*\cw}, {\hy - 0*\cw}) {\heatentry{Same label,\\same genes}{1}};
 \node[heat cell, fill=sameLabelDiffMarkers!16] at ({\hx + 1*\cw}, {\hy - 0*\cw}) {\heatentry{Same label,\\partial genes}{1}};
 \node[heat cell, fill=sameLabelDiffMarkers!16] at ({\hx + 2*\cw}, {\hy - 0*\cw}) {\heatentry{Same label,\\no genes}{4}};
 \node[heat cell, fill=diffLabelsSameMarkers!16] at ({\hx + 0*\cw}, {\hy - 1*\cw}) {\heatentry{Partial label,\\same genes}{1}};
@@ -325,7 +330,7 @@
 \node[heat cell, fill=white] at ({\hx + 2*\cw}, {\hy - 1*\cw}) {\heatentry{Partial label,\\no genes}{3}};
 \node[heat cell, fill=diffLabelsSameMarkers!16] at ({\hx + 0*\cw}, {\hy - 2*\cw}) {\heatentry{Diff. label,\\same genes}{3}};
 \node[heat cell, fill=white] at ({\hx + 1*\cw}, {\hy - 2*\cw}) {\heatentry{Diff. label,\\partial genes}{14}};
-\node[heat cell, fill=neutralMid!35] at ({\hx + 2*\cw}, {\hy - 2*\cw}) {\heatentry{Diff.\\profile}{16}};
+\node[heat cell, fill=neutralMid!35] at ({\hx + 2*\cw}, {\hy - 2*\cw}) {\heatentry{Diff. label,\\no genes}{16}};
 \draw[draw=attentionRed, line width=1.0pt, line join=round]
   ({\hx + 0.5*\cw}, {\hy - 0.5*\cw}) --
   ({\hx + 2.5*\cw}, {\hy - 0.5*\cw}) --
@@ -339,13 +344,13 @@
 \def\legy{\hy - 3.12*\cw}
 \def\legx{14.78}
 \draw[fill=tierStrictLight!55, draw=black!35, line width=0.35pt] (\legx, \legy) rectangle ++(0.13, 0.13);
-\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy + 0.065}) {same profile};
+\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy + 0.065}) {same label and markers};
 \draw[fill=sameLabelDiffMarkers!16, draw=black!35, line width=0.35pt] (\legx, {\legy - 0.20}) rectangle ++(0.13, 0.13);
 \node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.135}) {same label, different markers};
 \draw[fill=diffLabelsSameMarkers!16, draw=black!35, line width=0.35pt] (\legx, {\legy - 0.40}) rectangle ++(0.13, 0.13);
 \node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.335}) {alias / naming variation};
 \draw[fill=white, draw=attentionRed, line width=0.55pt] (\legx, {\legy - 0.60}) rectangle ++(0.13, 0.13);
-\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.535}) {context clarifies identifiability};
+\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.535}) {source evidence is needed};
 \draw[fill=neutralMid!35, draw=black!35, line width=0.35pt] (\legx, {\legy - 0.80}) rectangle ++(0.13, 0.13);
-\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.735}) {different profile};
+\node[anchor=west, font=\sffamily\tiny, text width=2.85cm, align=left] at ({\legx + 0.18}, {\legy - 0.735}) {different label and markers};
 \end{tikzpicture}

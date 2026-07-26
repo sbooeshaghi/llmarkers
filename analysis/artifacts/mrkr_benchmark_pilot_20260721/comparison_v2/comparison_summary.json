@@ -1,0 +1,54 @@
+{
+  "benchmark": {
+    "cross_paper_unique_all_organism_pairs": 1560,
+    "cross_paper_unique_human_pairs": 1550,
+    "human_text_records": 867,
+    "human_text_terms": 469,
+    "within_paper_text_pairs": 401
+  },
+  "candidate_status": {
+    "exact_label_pair": 140,
+    "gene_only": 41,
+    "not_in_text_truth": 75,
+    "same_gene_source_overlap": 64,
+    "same_grounded_pair": 49,
+    "unmapped_gene": 1
+  },
+  "legacy_macro_mean": {
+    "data_f1": 0.6144068389236924,
+    "f1": 0.6853631912356382,
+    "precision": 0.7115209913752735,
+    "recall": 0.7240134819776433
+  },
+  "legacy_truth_scope": {
+    "all_organisms": 1,
+    "human_only": 6
+  },
+  "macro_mean": {
+    "all_pair_f1": 0.1758447608750613,
+    "all_pair_precision": 0.3966168042027348,
+    "all_pair_recall": 0.1280174647140561,
+    "gene_f1": 0.7437816544053888,
+    "gene_precision": 0.7869858452416219,
+    "gene_recall": 0.7606038830110082,
+    "grounded_pair_f1": 0.2778453899592263,
+    "grounded_pair_precision": 0.31565976203975665,
+    "grounded_pair_recall": 0.27162916448630736,
+    "source_gene_f1": 0.6295408818574376,
+    "source_gene_precision": 0.6193279736136879,
+    "source_gene_recall": 0.7269686336176749,
+    "strict_pair_f1": 0.3583339219413552,
+    "strict_pair_precision": 0.3733586350494292,
+    "strict_pair_recall": 0.39728945289358214
+  },
+  "mrkr": {
+    "claims": 153,
+    "exact_span_rate": 1.0,
+    "explicit_pair_rate": 0.916243654822335,
+    "gene_terms": 394,
+    "negative_terms": 24,
+    "positive_mapped_pairs": 327,
+    "positive_terms": 370
+  },
+  "papers": 7
+}

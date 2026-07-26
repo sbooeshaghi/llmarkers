@@ -1,0 +1,19 @@
+code	paper_id	record_set	evidence_type	object_id	source_record_id	source_record_index	target	gene	source_id	detail
+source.duplicate_records	Adams2020	primary	human						data/lung_Adams2020/evidence_human/extracted.json	2 exact duplicate rows preserved
+source.multiple_organisms	Adams2020	primary	human						data/lung_Adams2020/evidence_human/extracted.json	"{""homo_sapiens"":137,""mus musculus"":10}"
+text.anchor_unresolved	Emont2022	primary	text	claim:b533559202abb121aa98			ADIPOSE STEM AND PROGENITOR CELL 4		manuscript.txt	unanchored
+text.anchor_unresolved	Emont2022	primary	text	claim:7763cc722f4afde984d5			ADIPOCYTE 3		manuscript.txt	unanchored
+source.duplicate_records	Emont2022	primary	human						data/adipose_Emont2022/evidence_human/extracted.json	2 exact duplicate rows preserved
+text.anchor_unresolved	Emont2022	backup	text	claim:7d08ff49dc8faa153689			Adipose stem and progenitor cell 4		manuscript.txt	unanchored
+text.anchor_unresolved	Emont2022	backup	text	claim:d93054dc71a8d7f11a28			Adipocyte 3		manuscript.txt	unanchored
+source.duplicate_records	Emont2022	backup	human						data/adipose_Emont2022/evidence_human/bu_extracted.json	2 exact duplicate rows preserved
+text.anchor_unresolved	Gautam2021	primary	text	claim:bbc58ca2638975a1c28e			PIGMENTED CILIARY BODY CELL		manuscript	unanchored
+source.duplicate_records	Gautam2021	primary	human						data/eye_Gautam2021/evidence_human/extracted.json	1 exact duplicate rows preserved
+text.gene_unanchored	He2021	primary	text	claim:3b236a85dec65395ac8c	record:1f996d6276499923e502	39	EMBRYONIC SKELETAL STEM/PROGENITOR CELL	GAS2	manuscript.txt	feature_label is absent from the curated text span
+source.duplicate_records	He2021	primary	human						data/bone_He2021/evidence_human/extracted.json	392 exact duplicate rows preserved
+text.anchor_unresolved	Shamis2020	primary	text	claim:5b19f9b44153b1f0f0c5			TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1		text	unanchored
+text.anchor_unresolved	Shamis2020	primary	text	claim:2f401e2037c8edf207b0			TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2		text	unanchored
+text.anchor_unresolved	Shamis2020	primary	text	claim:3705a0dde794de78ff0a			TYPE B DIFFERENTIATED SPERMATOGONIAL CELL		text	unanchored
+text.anchor_unresolved	Shamis2020	primary	text	claim:cb51e0ea4fbf0bfdb51f			IMMATURE LEYDIG CELL		text	unanchored
+source.duplicate_records	Shamis2020	primary	human						data/testis_Shamis2020/evidence_human/extracted.json	8 exact duplicate rows preserved
+text.anchor_unresolved	Wagner2020	primary	text	claim:8ed918692867d23fd3fc			GRANULOSA CELL		text	unanchored

@@ -1,0 +1,1534 @@
+{
+  "schema_version": "mrkr.claims.v1",
+  "source": {
+    "id": "benchmark/Hildreth2021",
+    "sha256": "sha256:f48a47501bf95e244deb8f5f7a06b5566de35e388ec5bb302626f8e5f31f9145"
+  },
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "claims": [
+    {
+      "claim_id": "claim:270449f0fe06aa5bbbee",
+      "span_literal": "mNK cells comprised a distinct cluster marked by expression of FCGR3A, FGFBP2, KLRF1 and EOMES",
+      "span_offset": [
+        12729,
+        12823
+      ],
+      "summary": "In Homo sapiens white adipose tissue, mature natural killer cells are marked by expression of FCGR3A, FGFBP2, KLRF1, and EOMES.",
+      "terms": [
+        {
+          "sub_span": "mNK cells",
+          "sub_offset": [
+            0,
+            9
+          ],
+          "normalized_label": "mature natural killer cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "FCGR3A",
+          "sub_offset": [
+            63,
+            69
+          ],
+          "normalized_label": "FCGR3A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "FGFBP2",
+          "sub_offset": [
+            71,
+            77
+          ],
+          "normalized_label": "FGFBP2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "KLRF1",
+          "sub_offset": [
+            79,
+            84
+          ],
+          "normalized_label": "KLRF1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "EOMES",
+          "sub_offset": [
+            89,
+            94
+          ],
+          "normalized_label": "EOMES",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9d55f6c38c6bf73cf33d",
+      "span_literal": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56^(bright) immature NK (iNK) cells in human peripheral tissues18",
+      "span_offset": [
+        13141,
+        13315
+      ],
+      "summary": "In Homo sapiens white adipose tissue, immature natural killer cells are discerned by expression of IL7R, SELL, and CD2.",
+      "terms": [
+        {
+          "sub_span": "immature NK (iNK) cells",
+          "sub_offset": [
+            121,
+            144
+          ],
+          "normalized_label": "immature natural killer cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            148,
+            153
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "IL7R",
+          "sub_offset": [
+            56,
+            60
+          ],
+          "normalized_label": "IL7R",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "SELL",
+          "sub_offset": [
+            62,
+            66
+          ],
+          "normalized_label": "SELL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CD2",
+          "sub_offset": [
+            71,
+            74
+          ],
+          "normalized_label": "CD2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9f99b7fae6f6b02413b1",
+      "span_literal": "a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+      "span_offset": [
+        13321,
+        13480
+      ],
+      "summary": "In Homo sapiens white adipose tissue, tissue-resident natural killer cells are distinguished by expression of CXCR6, KLRC1, and GZMK.",
+      "terms": [
+        {
+          "sub_span": "tissue-resident NK (trNK) cells",
+          "sub_offset": [
+            99,
+            130
+          ],
+          "normalized_label": "tissue-resident natural killer cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            148,
+            153
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CXCR6",
+          "sub_offset": [
+            61,
+            66
+          ],
+          "normalized_label": "CXCR6",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "KLRC1",
+          "sub_offset": [
+            68,
+            73
+          ],
+          "normalized_label": "KLRC1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "GZMK",
+          "sub_offset": [
+            78,
+            82
+          ],
+          "normalized_label": "GZMK",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:ed0bc61405f53ae1e459",
+      "span_literal": "Four clusters did not express the NK cell-lineage-associated genes IRF8, EOMES, KLRF1, NCAM1 or PRF1.",
+      "span_offset": [
+        13528,
+        13629
+      ],
+      "summary": "In Homo sapiens white adipose tissue, innate lymphoid cells do not express the natural killer cell-lineage-associated genes IRF8, EOMES, KLRF1, NCAM1, or PRF1.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "innate lymphoid cell",
+          "term_type": "celltype",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "natural killer cell",
+          "term_type": "comparison",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "IRF8",
+          "sub_offset": [
+            67,
+            71
+          ],
+          "normalized_label": "IRF8",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        },
+        {
+          "sub_span": "EOMES",
+          "sub_offset": [
+            73,
+            78
+          ],
+          "normalized_label": "EOMES",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        },
+        {
+          "sub_span": "KLRF1",
+          "sub_offset": [
+            80,
+            85
+          ],
+          "normalized_label": "KLRF1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        },
+        {
+          "sub_span": "NCAM1",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "normalized_label": "NCAM1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        },
+        {
+          "sub_span": "PRF1",
+          "sub_offset": [
+            96,
+            100
+          ],
+          "normalized_label": "PRF1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a3ef3420c96fed68ab8d",
+      "span_literal": "these clusters could be distinguished from NK-lineage cells based on CD200R1 and IL7R coexpression",
+      "span_offset": [
+        13639,
+        13737
+      ],
+      "summary": "In Homo sapiens white adipose tissue, innate lymphoid cells are distinguished from natural killer-lineage cells based on CD200R1 and IL7R coexpression.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "innate lymphoid cell",
+          "term_type": "celltype",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "NK-lineage cells",
+          "sub_offset": [
+            43,
+            59
+          ],
+          "normalized_label": "natural killer cell",
+          "term_type": "comparison",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CD200R1",
+          "sub_offset": [
+            69,
+            76
+          ],
+          "normalized_label": "CD200R1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IL7R",
+          "sub_offset": [
+            81,
+            85
+          ],
+          "normalized_label": "IL7R",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f13acc84570753721013",
+      "span_literal": "GATA3 and IL1RL1 consistent with ILC2s described in mice and humans",
+      "span_offset": [
+        14011,
+        14078
+      ],
+      "summary": "In Homo sapiens white adipose tissue, type 2 innate lymphoid cells are defined by expression of GATA3 and IL1RL1.",
+      "terms": [
+        {
+          "sub_span": "ILC2s",
+          "sub_offset": [
+            33,
+            38
+          ],
+          "normalized_label": "type 2 innate lymphoid cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "humans",
+          "sub_offset": [
+            61,
+            67
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "GATA3",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "GATA3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IL1RL1",
+          "sub_offset": [
+            10,
+            16
+          ],
+          "normalized_label": "IL1RL1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:dcbd509038faa442d436",
+      "span_literal": "ZNF683 and TBX21 consistent with ILC1s described in mice",
+      "span_offset": [
+        14091,
+        14147
+      ],
+      "summary": "In Homo sapiens white adipose tissue, type 1 innate lymphoid cells are defined by expression of ZNF683 and TBX21.",
+      "terms": [
+        {
+          "sub_span": "ILC1s",
+          "sub_offset": [
+            33,
+            38
+          ],
+          "normalized_label": "type 1 innate lymphoid cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "ZNF683",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "normalized_label": "ZNF683",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "TBX21",
+          "sub_offset": [
+            11,
+            16
+          ],
+          "normalized_label": "TBX21",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:455537b82b48de2f5ab6",
+      "span_literal": "CCR6, IL1R1 and IL23R consistent with ILC3s described in mice and humans",
+      "span_offset": [
+        14157,
+        14229
+      ],
+      "summary": "In Homo sapiens white adipose tissue, type 3 innate lymphoid cells are defined by expression of CCR6, IL1R1, and IL23R.",
+      "terms": [
+        {
+          "sub_span": "ILC3s",
+          "sub_offset": [
+            38,
+            43
+          ],
+          "normalized_label": "type 3 innate lymphoid cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "humans",
+          "sub_offset": [
+            66,
+            72
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CCR6",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "CCR6",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IL1R1",
+          "sub_offset": [
+            6,
+            11
+          ],
+          "normalized_label": "IL1R1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IL23R",
+          "sub_offset": [
+            16,
+            21
+          ],
+          "normalized_label": "IL23R",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a13e3c45341e065a361b",
+      "span_literal": "SELL and IL1R1 consistent with circulating ILC precursor cells (ILCPs) found in human blood",
+      "span_offset": [
+        14246,
+        14337
+      ],
+      "summary": "In Homo sapiens white adipose tissue, innate lymphoid cell precursor cells are defined by expression of SELL and IL1R1.",
+      "terms": [
+        {
+          "sub_span": "ILC precursor cells (ILCPs)",
+          "sub_offset": [
+            43,
+            70
+          ],
+          "normalized_label": "innate lymphoid cell precursor cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            80,
+            85
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "SELL",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "SELL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IL1R1",
+          "sub_offset": [
+            9,
+            14
+          ],
+          "normalized_label": "IL1R1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:50bcb8274f70bd513a3d",
+      "span_literal": "Our CD45+-sorted scRNA-seq dataset suggested that CD200R1 expression could distinguish ILCs from mNK cells, similar to previous studies performed in mice and human peripheral blood mononuclear cells (PBMCs)",
+      "span_offset": [
+        11919,
+        12125
+      ],
+      "summary": "In Homo sapiens white adipose tissue, CD200R1 expression distinguishes innate lymphoid cells from mature natural killer cells.",
+      "terms": [
+        {
+          "sub_span": "ILCs",
+          "sub_offset": [
+            87,
+            91
+          ],
+          "normalized_label": "innate lymphoid cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "mNK cells",
+          "sub_offset": [
+            97,
+            106
+          ],
+          "normalized_label": "mature natural killer cell",
+          "term_type": "comparison",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            158,
+            163
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CD200R1",
+          "sub_offset": [
+            50,
+            57
+          ],
+          "normalized_label": "CD200R1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:ffa1c06f65894217b0cf",
+      "span_literal": "ncMos based on expression of FCGR3A and HES4",
+      "span_offset": [
+        24520,
+        24564
+      ],
+      "summary": "In Homo sapiens white adipose tissue, nonclassical monocytes are defined by expression of FCGR3A and HES4.",
+      "terms": [
+        {
+          "sub_span": "ncMos",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "nonclassical monocyte",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "FCGR3A",
+          "sub_offset": [
+            29,
+            35
+          ],
+          "normalized_label": "FCGR3A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "HES4",
+          "sub_offset": [
+            40,
+            44
+          ],
+          "normalized_label": "HES4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:848dfccce4339b86e5aa",
+      "span_literal": "Mo-1s by expression of FCER1A",
+      "span_offset": [
+        24566,
+        24595
+      ],
+      "summary": "In Homo sapiens white adipose tissue, classical monocyte state 1 cells are defined by expression of FCER1A.",
+      "terms": [
+        {
+          "sub_span": "Mo-1s",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "classical monocyte state 1",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "FCER1A",
+          "sub_offset": [
+            23,
+            29
+          ],
+          "normalized_label": "FCER1A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7bf6157e33caa2eb41c9",
+      "span_literal": "Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s",
+      "span_offset": [
+        24600,
+        24675
+      ],
+      "summary": "In Homo sapiens white adipose tissue, classical monocyte state 2 cells are defined by increased expression of CSF3R, FCAR, and SELL compared with classical monocyte state 1 cells.",
+      "terms": [
+        {
+          "sub_span": "Mo-2s",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "classical monocyte state 2",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "Mo-1s",
+          "sub_offset": [
+            70,
+            75
+          ],
+          "normalized_label": "classical monocyte state 1",
+          "term_type": "comparison",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CSF3R",
+          "sub_offset": [
+            34,
+            39
+          ],
+          "normalized_label": "CSF3R",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "FCAR",
+          "sub_offset": [
+            41,
+            45
+          ],
+          "normalized_label": "FCAR",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "SELL",
+          "sub_offset": [
+            50,
+            54
+          ],
+          "normalized_label": "SELL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:aaa99dee127703417557",
+      "span_literal": "a population of human WAT neutrophils based on expression of THBS1 and S100A12",
+      "span_offset": [
+        25245,
+        25323
+      ],
+      "summary": "In Homo sapiens white adipose tissue, neutrophils are defined by expression of THBS1 and S100A12.",
+      "terms": [
+        {
+          "sub_span": "neutrophils",
+          "sub_offset": [
+            26,
+            37
+          ],
+          "normalized_label": "neutrophil",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            16,
+            21
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "white adipose tissue",
+          "term_type": "tissue",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "THBS1",
+          "sub_offset": [
+            61,
+            66
+          ],
+          "normalized_label": "THBS1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "S100A12",
+          "sub_offset": [
+            71,
+            78
+          ],
+          "normalized_label": "S100A12",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3d20b127b22b7d17bcb7",
+      "span_literal": "TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8",
+      "span_offset": [
+        25570,
+        25636
+      ],
+      "summary": "In Homo sapiens white adipose tissue, lipid-associated macrophages are defined by expression of TREM2, CD9, and LPL.",
+      "terms": [
+        {
+          "sub_span": "lipid-associated macrophages (LAMs)",
+          "sub_offset": [
+            30,
+            65
+          ],
+          "normalized_label": "lipid-associated macrophage",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "TREM2",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "TREM2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CD9",
+          "sub_offset": [
+            7,
+            10
+          ],
+          "normalized_label": "CD9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "LPL",
+          "sub_offset": [
+            15,
+            18
+          ],
+          "normalized_label": "LPL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:012911ed4bab1d40095e",
+      "span_literal": "LYVE1, SELENOP and C1Q, expressing PVMs32",
+      "span_offset": [
+        25638,
+        25679
+      ],
+      "summary": "In Homo sapiens white adipose tissue, perivascular macrophages are defined by expression of LYVE1, SELENOP, and C1Q.",
+      "terms": [
+        {
+          "sub_span": "PVMs",
+          "sub_offset": [
+            35,
+            39
+          ],
+          "normalized_label": "perivascular macrophage",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "LYVE1",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "LYVE1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "SELENOP",
+          "sub_offset": [
+            7,
+            14
+          ],
+          "normalized_label": "SELENOP",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "C1Q",
+          "sub_offset": [
+            19,
+            22
+          ],
+          "normalized_label": "C1Q",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:769bf6b35210f0f507cc",
+      "span_literal": "an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3",
+      "span_offset": [
+        25685,
+        25789
+      ],
+      "summary": "In Homo sapiens white adipose tissue, inflammatory macrophages are defined by high expression of CCL3L1, TNF, and CXCL3.",
+      "terms": [
+        {
+          "sub_span": "inflammatory macrophage (IM)",
+          "sub_offset": [
+            19,
+            47
+          ],
+          "normalized_label": "inflammatory macrophage",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "CCL3L1",
+          "sub_offset": [
+            83,
+            89
+          ],
+          "normalized_label": "CCL3L1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "TNF",
+          "sub_offset": [
+            91,
+            94
+          ],
+          "normalized_label": "TNF",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CXCL3",
+          "sub_offset": [
+            99,
+            104
+          ],
+          "normalized_label": "CXCL3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:475cb3b7cf3d80d2aa37",
+      "span_literal": "conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1",
+      "span_offset": [
+        30039,
+        30122
+      ],
+      "summary": "In Homo sapiens white adipose tissue, conventional type 1 dendritic cells are defined by expression of IRF8, DPP4, CADM1, and XCR1.",
+      "terms": [
+        {
+          "sub_span": "conventional type 1 DCs (cDC1s)",
+          "sub_offset": [
+            0,
+            31
+          ],
+          "normalized_label": "conventional type 1 dendritic cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "IRF8",
+          "sub_offset": [
+            57,
+            61
+          ],
+          "normalized_label": "IRF8",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "DPP4",
+          "sub_offset": [
+            63,
+            67
+          ],
+          "normalized_label": "DPP4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CADM1",
+          "sub_offset": [
+            69,
+            74
+          ],
+          "normalized_label": "CADM1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "XCR1",
+          "sub_offset": [
+            79,
+            83
+          ],
+          "normalized_label": "XCR1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:fd92027cebe499863e6c",
+      "span_literal": "coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3",
+      "span_offset": [
+        30124,
+        30210
+      ],
+      "summary": "In Homo sapiens white adipose tissue, conventional type 2 dendritic cell subset A is defined by expression of CD1C, IRF4, IL7R, and LAMP3.",
+      "terms": [
+        {
+          "sub_span": "coventional type 2 DCs subset A (cDC2As)",
+          "sub_offset": [
+            0,
+            40
+          ],
+          "normalized_label": "conventional type 2 dendritic cell subset A",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "CD1C",
+          "sub_offset": [
+            60,
+            64
+          ],
+          "normalized_label": "CD1C",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IRF4",
+          "sub_offset": [
+            66,
+            70
+          ],
+          "normalized_label": "IRF4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IL7R",
+          "sub_offset": [
+            72,
+            76
+          ],
+          "normalized_label": "IL7R",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "LAMP3",
+          "sub_offset": [
+            81,
+            86
+          ],
+          "normalized_label": "LAMP3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d9b2d18640c64ca695ab",
+      "span_literal": "conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A",
+      "span_offset": [
+        30216,
+        30315
+      ],
+      "summary": "In Homo sapiens white adipose tissue, conventional type 2 dendritic cell subset B is defined by increased expression of CD1C, IRF4, FCER1A, and CLEC10A.",
+      "terms": [
+        {
+          "sub_span": "conventional type 2 DCs subset B (cDC2Bs)",
+          "sub_offset": [
+            0,
+            41
+          ],
+          "normalized_label": "conventional type 2 dendritic cell subset B",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "CD1C",
+          "sub_offset": [
+            69,
+            73
+          ],
+          "normalized_label": "CD1C",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IRF4",
+          "sub_offset": [
+            75,
+            79
+          ],
+          "normalized_label": "IRF4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "FCER1A",
+          "sub_offset": [
+            81,
+            87
+          ],
+          "normalized_label": "FCER1A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CLEC10A",
+          "sub_offset": [
+            92,
+            99
+          ],
+          "normalized_label": "CLEC10A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2c3098cf1651f4c603c0",
+      "span_literal": "mature CD200R1+ ILC populations did not express PERFORIN or EOMES",
+      "span_offset": [
+        18274,
+        18339
+      ],
+      "summary": "In Homo sapiens white adipose tissue, mature innate lymphoid cells do not express PRF1 (perforin) or EOMES.",
+      "terms": [
+        {
+          "sub_span": "ILC populations",
+          "sub_offset": [
+            16,
+            31
+          ],
+          "normalized_label": "mature innate lymphoid cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "PERFORIN",
+          "sub_offset": [
+            48,
+            56
+          ],
+          "normalized_label": "PRF1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        },
+        {
+          "sub_span": "EOMES",
+          "sub_offset": [
+            60,
+            65
+          ],
+          "normalized_label": "EOMES",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:87294c49172786c3671f",
+      "span_literal": "cDC2Bs (CD26^(-)CD1C+CD206+CD14^(hi)FCER1A+CLEC10A+)",
+      "span_offset": [
+        30898,
+        30950
+      ],
+      "summary": "In Homo sapiens white adipose tissue, conventional type 2 dendritic cell subset B is characterized by CD1C, MRC1 (CD206), FCER1A, and CLEC10A expression, and lack of DPP4 (CD26) expression.",
+      "terms": [
+        {
+          "sub_span": "cDC2Bs",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "normalized_label": "conventional type 2 dendritic cell subset B",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "CD1C+",
+          "sub_offset": [
+            16,
+            21
+          ],
+          "normalized_label": "CD1C",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CD206+",
+          "sub_offset": [
+            21,
+            27
+          ],
+          "normalized_label": "MRC1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "FCER1A+",
+          "sub_offset": [
+            36,
+            43
+          ],
+          "normalized_label": "FCER1A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CLEC10A+",
+          "sub_offset": [
+            43,
+            51
+          ],
+          "normalized_label": "CLEC10A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CD26^(-)",
+          "sub_offset": [
+            8,
+            16
+          ],
+          "normalized_label": "DPP4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:026ea76dab25137d8fa7",
+      "span_literal": "cDC2As (CD26^(-)CD1C+CD206-CD14^(int)FCER1A^(-)CLEC10A^(-))",
+      "span_offset": [
+        30952,
+        31011
+      ],
+      "summary": "In Homo sapiens white adipose tissue, conventional type 2 dendritic cell subset A is characterized by CD1C expression and lack of DPP4 (CD26), MRC1 (CD206), FCER1A, and CLEC10A expression.",
+      "terms": [
+        {
+          "sub_span": "cDC2As",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "normalized_label": "conventional type 2 dendritic cell subset A",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "CD1C+",
+          "sub_offset": [
+            16,
+            21
+          ],
+          "normalized_label": "CD1C",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CD26^(-)",
+          "sub_offset": [
+            8,
+            16
+          ],
+          "normalized_label": "DPP4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        },
+        {
+          "sub_span": "CD206-",
+          "sub_offset": [
+            21,
+            27
+          ],
+          "normalized_label": "MRC1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        },
+        {
+          "sub_span": "FCER1A^(-)",
+          "sub_offset": [
+            37,
+            47
+          ],
+          "normalized_label": "FCER1A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        },
+        {
+          "sub_span": "CLEC10A^(-)",
+          "sub_offset": [
+            47,
+            58
+          ],
+          "normalized_label": "CLEC10A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:8c27d1089fd9ca5d54d6",
+      "span_literal": "WAT cDC1s were distinguished by expression of DPP4 (CD26) CD26+CD1C^(-)",
+      "span_offset": [
+        30720,
+        30791
+      ],
+      "summary": "In Homo sapiens white adipose tissue, conventional type 1 dendritic cells are distinguished by expression of DPP4 (CD26) and lack of CD1C expression.",
+      "terms": [
+        {
+          "sub_span": "cDC1s",
+          "sub_offset": [
+            4,
+            9
+          ],
+          "normalized_label": "conventional type 1 dendritic cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "DPP4",
+          "sub_offset": [
+            46,
+            50
+          ],
+          "normalized_label": "DPP4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "CD1C^(-)",
+          "sub_offset": [
+            63,
+            71
+          ],
+          "normalized_label": "CD1C",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "negative"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "provider": "anthropic",
+    "model": "claude-opus-4-6",
+    "response_id": "msg_011CdG18GJvqUJ6vjc9hDWBV",
+    "prompt_template_sha256": "sha256:66b1b55ad4f3af47640e539051c622169cac2c87c093368764ba84c6db786749",
+    "organism": {
+      "key": "homo_sapiens",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "preparation": {
+      "raw_claims": 24,
+      "retained_claims": 24,
+      "reanchored_spans": 1,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": []
+    }
+  }
+}

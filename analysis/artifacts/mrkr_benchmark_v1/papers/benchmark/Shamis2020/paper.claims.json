@@ -1,0 +1,1519 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim:d152ab69b5887814880a",
+      "span_literal": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "span_offset": [
+        28120,
+        28283
+      ],
+      "summary": "Spermatogonia state 1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17.",
+      "terms": [
+        {
+          "normalized_label": "spermatogonia state 1",
+          "provenance": "explicit",
+          "sub_offset": [
+            14,
+            18
+          ],
+          "sub_span": "SPG1",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MORC1",
+          "provenance": "explicit",
+          "sub_offset": [
+            42,
+            47
+          ],
+          "sub_span": "MORC1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MSL3",
+          "provenance": "explicit",
+          "sub_offset": [
+            49,
+            53
+          ],
+          "sub_span": "MSL3",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZBTB43",
+          "provenance": "explicit",
+          "sub_offset": [
+            55,
+            61
+          ],
+          "sub_span": "ZBTB43",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TSPAN33",
+          "provenance": "explicit",
+          "sub_offset": [
+            63,
+            70
+          ],
+          "sub_span": "TSPAN33",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TCF3",
+          "provenance": "explicit",
+          "sub_offset": [
+            72,
+            76
+          ],
+          "sub_span": "TCF3",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FMR1",
+          "provenance": "explicit",
+          "sub_offset": [
+            78,
+            82
+          ],
+          "sub_span": "FMR1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MAGEB2",
+          "provenance": "explicit",
+          "sub_offset": [
+            84,
+            90
+          ],
+          "sub_span": "MAGEB2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDK17",
+          "provenance": "explicit",
+          "sub_offset": [
+            96,
+            101
+          ],
+          "sub_span": "CDK17",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3f29c61852d879985cee",
+      "span_literal": "Interestingly, PIWIL4 is a SPG1-specific marker for all three species (Figures 2D and 2E; Table S3).",
+      "span_offset": [
+        28284,
+        28384
+      ],
+      "summary": "PIWIL4 is a specific marker of spermatogonia state 1 conserved across all three species.",
+      "terms": [
+        {
+          "normalized_label": "spermatogonia state 1",
+          "provenance": "explicit",
+          "sub_offset": [
+            27,
+            31
+          ],
+          "sub_span": "SPG1",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PIWIL4",
+          "provenance": "explicit",
+          "sub_offset": [
+            15,
+            21
+          ],
+          "sub_span": "PIWIL4",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0ad3bc120cf9b51c2917",
+      "span_literal": "In SPG2 cells, the noncanonical markers enriched in SPG1 (described above) are diminished, whereas certain canonical markers for undifferentiated SPG increase in expression (ZBTB16 [mouse and human] and GFRA1 [all three species]), as do several noncanonical markers (DUSP6, TCF4, and L1TD1 [macaque and human only]) (Figures 2D and 2E [L1TD1 shown]; Table S3).",
+      "span_offset": [
+        28947,
+        29307
+      ],
+      "summary": "Spermatogonia state 2 cells are marked by increased expression of ZBTB16, GFRA1, DUSP6, TCF4, and L1TD1.",
+      "terms": [
+        {
+          "normalized_label": "spermatogonia state 2",
+          "provenance": "explicit",
+          "sub_offset": [
+            3,
+            7
+          ],
+          "sub_span": "SPG2",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZBTB16",
+          "provenance": "explicit",
+          "sub_offset": [
+            174,
+            180
+          ],
+          "sub_span": "ZBTB16",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GFRA1",
+          "provenance": "explicit",
+          "sub_offset": [
+            203,
+            208
+          ],
+          "sub_span": "GFRA1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DUSP6",
+          "provenance": "explicit",
+          "sub_offset": [
+            267,
+            272
+          ],
+          "sub_span": "DUSP6",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TCF4",
+          "provenance": "explicit",
+          "sub_offset": [
+            274,
+            278
+          ],
+          "sub_span": "TCF4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "L1TD1",
+          "provenance": "explicit",
+          "sub_offset": [
+            284,
+            289
+          ],
+          "sub_span": "L1TD1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0e2f3fa10a69d8946d3a",
+      "span_literal": "Human and macaque SPG3-5 cells share many markers with mouse SPG3, such as DMRT1, KIT, STRA8, SOHLH1, and SOHLH2 (possibly equivalent to A_(aligned)-A1 SPG in mice, A_(pale)-B1 in macaque, and A_(pale)-B in human), but many markers are not restricted to a specific state--rather are broadly expressed in multiple differentiating SPG clusters and are often temporally unaligned across species (Figures 2C, 2D, and S2F, summarized in Figure 2G).",
+      "span_offset": [
+        33447,
+        33890
+      ],
+      "summary": "Differentiating spermatogonia states 3-5 express DMRT1, KIT, STRA8, SOHLH1, and SOHLH2 as markers of differentiation.",
+      "terms": [
+        {
+          "normalized_label": "differentiating spermatogonia states 3-5",
+          "provenance": "explicit",
+          "sub_offset": [
+            18,
+            24
+          ],
+          "sub_span": "SPG3-5",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DMRT1",
+          "provenance": "explicit",
+          "sub_offset": [
+            75,
+            80
+          ],
+          "sub_span": "DMRT1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KIT",
+          "provenance": "explicit",
+          "sub_offset": [
+            82,
+            85
+          ],
+          "sub_span": "KIT",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "STRA8",
+          "provenance": "explicit",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "sub_span": "STRA8",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOHLH1",
+          "provenance": "explicit",
+          "sub_offset": [
+            94,
+            100
+          ],
+          "sub_span": "SOHLH1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOHLH2",
+          "provenance": "explicit",
+          "sub_offset": [
+            106,
+            112
+          ],
+          "sub_span": "SOHLH2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:603c6358697cae65a791",
+      "span_literal": "Cells in macaque and human SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1, and KIT (unannotated in macaque), indicating that this population is actively proliferating and appears to be molecularly analogous to cells transitioning from type A1-4/A_(Intermediate) to B SPG in mouse (Table S3; Figure S2F) (Zhang et al., 2014",
+      "span_offset": [
+        34199,
+        34551
+      ],
+      "summary": "Spermatogonia state 4 cells express MKI67, PCNA, DMRT1, DMRTB1, and KIT as markers of active proliferation.",
+      "terms": [
+        {
+          "normalized_label": "spermatogonia state 4",
+          "provenance": "explicit",
+          "sub_offset": [
+            27,
+            31
+          ],
+          "sub_span": "SPG4",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MKI67",
+          "provenance": "explicit",
+          "sub_offset": [
+            59,
+            64
+          ],
+          "sub_span": "MKI67",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PCNA",
+          "provenance": "explicit",
+          "sub_offset": [
+            66,
+            70
+          ],
+          "sub_span": "PCNA",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DMRT1",
+          "provenance": "explicit",
+          "sub_offset": [
+            90,
+            95
+          ],
+          "sub_span": "DMRT1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DMRTB1",
+          "provenance": "explicit",
+          "sub_offset": [
+            97,
+            103
+          ],
+          "sub_span": "DMRTB1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KIT",
+          "provenance": "explicit",
+          "sub_offset": [
+            109,
+            112
+          ],
+          "sub_span": "KIT",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3952601d64633566ec9b",
+      "span_literal": "The macaque and human SPG5 population continue to express DMRT1 and DMRTB1 (unannotated in monkey) while turning down KIT and turning on STRA8 as well as the meiotic gene REC8 (Table S3; Figure S2F).",
+      "span_offset": [
+        35084,
+        35283
+      ],
+      "summary": "Spermatogonia state 5 cells express DMRT1, DMRTB1, STRA8, and REC8 while downregulating KIT.",
+      "terms": [
+        {
+          "normalized_label": "spermatogonia state 5",
+          "provenance": "explicit",
+          "sub_offset": [
+            22,
+            26
+          ],
+          "sub_span": "SPG5",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DMRT1",
+          "provenance": "explicit",
+          "sub_offset": [
+            58,
+            63
+          ],
+          "sub_span": "DMRT1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DMRTB1",
+          "provenance": "explicit",
+          "sub_offset": [
+            68,
+            74
+          ],
+          "sub_span": "DMRTB1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "KIT",
+          "provenance": "explicit",
+          "sub_offset": [
+            118,
+            121
+          ],
+          "sub_span": "KIT",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "STRA8",
+          "provenance": "explicit",
+          "sub_offset": [
+            137,
+            142
+          ],
+          "sub_span": "STRA8",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "REC8",
+          "provenance": "explicit",
+          "sub_offset": [
+            171,
+            175
+          ],
+          "sub_span": "REC8",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a329a60d4f804830ac81",
+      "span_literal": "SPG6 cells turn off DMRT1 while maintaining DMRTB1 (not annotated in macaque), a specific signature of mouse type B SPG (Zhang et al., 2014; Green et al., 2018",
+      "span_offset": [
+        35644,
+        35803
+      ],
+      "summary": "Spermatogonia state 6 cells turn off DMRT1 while maintaining DMRTB1 expression.",
+      "terms": [
+        {
+          "normalized_label": "spermatogonia state 6",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "SPG6",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "DMRT1",
+          "provenance": "explicit",
+          "sub_offset": [
+            20,
+            25
+          ],
+          "sub_span": "DMRT1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DMRTB1",
+          "provenance": "explicit",
+          "sub_offset": [
+            44,
+            50
+          ],
+          "sub_span": "DMRTB1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0f202643c769ff690a91",
+      "span_literal": "They also begin to express many markers previously identified in mouse preleptotene spermatocytes: TEX101, LY6K, and established meiotic genes, such as SYCP2/3, SYCE1/2, MEIOB, PRDM9, SPATA22, and DNAJB11 (Green et al., 2018",
+      "span_offset": [
+        36342,
+        36566
+      ],
+      "summary": "Spermatogonia state 6 cells begin to express TEX101, LY6K, SYCP2, SYCP3, SYCE1, SYCE2, MEIOB, PRDM9, SPATA22, and DNAJB11 as markers of meiotic entry.",
+      "terms": [
+        {
+          "normalized_label": "spermatogonia state 6",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TEX101",
+          "provenance": "explicit",
+          "sub_offset": [
+            99,
+            105
+          ],
+          "sub_span": "TEX101",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LY6K",
+          "provenance": "explicit",
+          "sub_offset": [
+            107,
+            111
+          ],
+          "sub_span": "LY6K",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SYCP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            152,
+            157
+          ],
+          "sub_span": "SYCP2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SYCE1",
+          "provenance": "explicit",
+          "sub_offset": [
+            161,
+            166
+          ],
+          "sub_span": "SYCE1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MEIOB",
+          "provenance": "explicit",
+          "sub_offset": [
+            170,
+            175
+          ],
+          "sub_span": "MEIOB",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PRDM9",
+          "provenance": "explicit",
+          "sub_offset": [
+            177,
+            182
+          ],
+          "sub_span": "PRDM9",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SPATA22",
+          "provenance": "explicit",
+          "sub_offset": [
+            184,
+            191
+          ],
+          "sub_span": "SPATA22",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DNAJB11",
+          "provenance": "explicit",
+          "sub_offset": [
+            197,
+            204
+          ],
+          "sub_span": "DNAJB11",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1d59275488097113a039",
+      "span_literal": "we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018",
+      "span_offset": [
+        81694,
+        81918
+      ],
+      "summary": "Undifferentiated spermatogonia state 1 is marked by TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16.",
+      "terms": [
+        {
+          "normalized_label": "undifferentiated spermatogonia state 1",
+          "provenance": "explicit",
+          "sub_offset": [
+            82,
+            86
+          ],
+          "sub_span": "SPG1",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TSPAN33",
+          "provenance": "explicit",
+          "sub_offset": [
+            88,
+            95
+          ],
+          "sub_span": "TSPAN33",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PIWIL4",
+          "provenance": "explicit",
+          "sub_offset": [
+            97,
+            103
+          ],
+          "sub_span": "PIWIL4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDK17",
+          "provenance": "explicit",
+          "sub_offset": [
+            105,
+            110
+          ],
+          "sub_span": "CDK17",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MORC1",
+          "provenance": "explicit",
+          "sub_offset": [
+            112,
+            117
+          ],
+          "sub_span": "MORC1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ID4",
+          "provenance": "explicit",
+          "sub_offset": [
+            119,
+            122
+          ],
+          "sub_span": "ID4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZBTB16",
+          "provenance": "explicit",
+          "sub_offset": [
+            128,
+            134
+          ],
+          "sub_span": "ZBTB16",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:ead3f3fe5d59b878c435",
+      "span_literal": "we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018",
+      "span_offset": [
+        81694,
+        81918
+      ],
+      "summary": "Undifferentiated spermatogonia state 2 is marked by L1TD1, ID4, GFRA1, and ZBTB16.",
+      "terms": [
+        {
+          "normalized_label": "undifferentiated spermatogonia state 2",
+          "provenance": "explicit",
+          "sub_offset": [
+            136,
+            140
+          ],
+          "sub_span": "SPG2",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "L1TD1",
+          "provenance": "explicit",
+          "sub_offset": [
+            142,
+            147
+          ],
+          "sub_span": "L1TD1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ID4",
+          "provenance": "explicit",
+          "sub_offset": [
+            119,
+            122
+          ],
+          "sub_span": "ID4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GFRA1",
+          "provenance": "explicit",
+          "sub_offset": [
+            154,
+            159
+          ],
+          "sub_span": "GFRA1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZBTB16",
+          "provenance": "explicit",
+          "sub_offset": [
+            128,
+            134
+          ],
+          "sub_span": "ZBTB16",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3f06be2a1b820dfa1d7f",
+      "span_literal": "One of the most abundant populations captured in primates was peritubular myoid cells, defined by the expression of MYH11, ACTA2, collagens, laminins, versican (VCAN), and fibronectin (Figures 1C, 6A, and S6C; Table S6).",
+      "span_offset": [
+        66301,
+        66521
+      ],
+      "summary": "Peritubular myoid cells are defined by the expression of MYH11, ACTA2, VCAN, and fibronectin.",
+      "terms": [
+        {
+          "normalized_label": "peritubular myoid cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            85
+          ],
+          "sub_span": "peritubular myoid cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYH11",
+          "provenance": "explicit",
+          "sub_offset": [
+            116,
+            121
+          ],
+          "sub_span": "MYH11",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ACTA2",
+          "provenance": "explicit",
+          "sub_offset": [
+            123,
+            128
+          ],
+          "sub_span": "ACTA2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "VCAN",
+          "provenance": "explicit",
+          "sub_offset": [
+            161,
+            165
+          ],
+          "sub_span": "VCAN",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:57c90b691c8024311269",
+      "span_literal": "The somatic compartment also contains endothelial cells (VWF, NOSTRIN, AQP1, CD34 [human]) and pericytes (MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3) (Vanlandewijck et al., 2018; Du et al., 2015",
+      "span_offset": [
+        70825,
+        71025
+      ],
+      "summary": "Endothelial cells are marked by VWF, NOSTRIN, AQP1, and CD34.",
+      "terms": [
+        {
+          "normalized_label": "endothelial cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            38,
+            55
+          ],
+          "sub_span": "endothelial cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "VWF",
+          "provenance": "explicit",
+          "sub_offset": [
+            57,
+            60
+          ],
+          "sub_span": "VWF",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NOSTRIN",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            69
+          ],
+          "sub_span": "NOSTRIN",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "AQP1",
+          "provenance": "explicit",
+          "sub_offset": [
+            71,
+            75
+          ],
+          "sub_span": "AQP1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD34",
+          "provenance": "explicit",
+          "sub_offset": [
+            77,
+            81
+          ],
+          "sub_span": "CD34",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "testis",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0387b756f223f029518a",
+      "span_literal": "The somatic compartment also contains endothelial cells (VWF, NOSTRIN, AQP1, CD34 [human]) and pericytes (MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3) (Vanlandewijck et al., 2018; Du et al., 2015",
+      "span_offset": [
+        70825,
+        71025
+      ],
+      "summary": "Pericytes are marked by MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3 in the testis.",
+      "terms": [
+        {
+          "normalized_label": "pericyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            95,
+            104
+          ],
+          "sub_span": "pericytes",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MCAM",
+          "provenance": "explicit",
+          "sub_offset": [
+            106,
+            110
+          ],
+          "sub_span": "MCAM",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "RGS5",
+          "provenance": "explicit",
+          "sub_offset": [
+            112,
+            116
+          ],
+          "sub_span": "RGS5",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PDGFRB",
+          "provenance": "explicit",
+          "sub_offset": [
+            118,
+            124
+          ],
+          "sub_span": "PDGFRB",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NG2",
+          "provenance": "explicit",
+          "sub_offset": [
+            126,
+            129
+          ],
+          "sub_span": "NG2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CCL2",
+          "provenance": "explicit",
+          "sub_offset": [
+            131,
+            135
+          ],
+          "sub_span": "CCL2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ABCC9",
+          "provenance": "explicit",
+          "sub_offset": [
+            137,
+            142
+          ],
+          "sub_span": "ABCC9",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NOTCH3",
+          "provenance": "explicit",
+          "sub_offset": [
+            148,
+            154
+          ],
+          "sub_span": "NOTCH3",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "testis",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a7279e2a91d9961a8bd2",
+      "span_literal": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+      "span_offset": [
+        71559,
+        71903
+      ],
+      "summary": "Muscular pericytes are marked by MCAM, CRIP1, CRIP2, RERGL, ADIRF, and MYL9 in the testis.",
+      "terms": [
+        {
+          "normalized_label": "muscular pericyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            110,
+            121
+          ],
+          "sub_span": "m-pericytes",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MCAM",
+          "provenance": "explicit",
+          "sub_offset": [
+            123,
+            127
+          ],
+          "sub_span": "MCAM",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "RERGL",
+          "provenance": "explicit",
+          "sub_offset": [
+            158,
+            163
+          ],
+          "sub_span": "RERGL",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ADIRF",
+          "provenance": "explicit",
+          "sub_offset": [
+            165,
+            170
+          ],
+          "sub_span": "ADIRF",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYL9",
+          "provenance": "explicit",
+          "sub_offset": [
+            197,
+            201
+          ],
+          "sub_span": "MYL9",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "testis",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:5c6a6b4256c86a00a49d",
+      "span_literal": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+      "span_offset": [
+        71559,
+        71903
+      ],
+      "summary": "Fibroblastic pericytes are marked by STEAP4, GUCY1A1, ITGA1, and CD36 in the testis.",
+      "terms": [
+        {
+          "normalized_label": "fibroblastic pericyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            232,
+            243
+          ],
+          "sub_span": "f-pericytes",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "STEAP4",
+          "provenance": "explicit",
+          "sub_offset": [
+            245,
+            251
+          ],
+          "sub_span": "STEAP4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ITGA1",
+          "provenance": "explicit",
+          "sub_offset": [
+            264,
+            269
+          ],
+          "sub_span": "ITGA1",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "testis",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:19acf0d063df611cff38",
+      "span_literal": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "span_offset": [
+        72386,
+        72664
+      ],
+      "summary": "Macrophages in the testis are marked by CD163, HLA-DRA, LYZ, and TYROBP.",
+      "terms": [
+        {
+          "normalized_label": "macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            68,
+            79
+          ],
+          "sub_span": "macrophages",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD163",
+          "provenance": "explicit",
+          "sub_offset": [
+            81,
+            86
+          ],
+          "sub_span": "CD163",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "HLA-DRA",
+          "provenance": "explicit",
+          "sub_offset": [
+            88,
+            95
+          ],
+          "sub_span": "HLA-DRA",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LYZ",
+          "provenance": "explicit",
+          "sub_offset": [
+            106,
+            109
+          ],
+          "sub_span": "LYZ",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TYROBP",
+          "provenance": "explicit",
+          "sub_offset": [
+            115,
+            121
+          ],
+          "sub_span": "TYROBP",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "testis",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7126ac701f878090d8ef",
+      "span_literal": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "span_offset": [
+        72386,
+        72664
+      ],
+      "summary": "T cells in the testis are marked by CD3D, TRAC, TRBC2, and CD69.",
+      "terms": [
+        {
+          "normalized_label": "T cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            151,
+            158
+          ],
+          "sub_span": "T cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD3D",
+          "provenance": "explicit",
+          "sub_offset": [
+            160,
+            164
+          ],
+          "sub_span": "CD3D",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TRAC",
+          "provenance": "explicit",
+          "sub_offset": [
+            166,
+            170
+          ],
+          "sub_span": "TRAC",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TRBC2",
+          "provenance": "explicit",
+          "sub_offset": [
+            172,
+            177
+          ],
+          "sub_span": "TRBC2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD69",
+          "provenance": "explicit",
+          "sub_offset": [
+            183,
+            187
+          ],
+          "sub_span": "CD69",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "testis",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4a9a2ff14cd845ddb9f0",
+      "span_literal": "cells in SPG1 and SPG2 are similar to each other (Figure S2B) and at first glance express many of the well-established markers of undifferentiated SPG (e.g., GFRA1, ZBTB16 (PLZF), ITGA6, ID4, UCHL1, LIN28, DPPA4 (macaque), FGFR3, and UTF1 (human) (Figures 2D and S2F; Table S3)",
+      "span_offset": [
+        27260,
+        27537
+      ],
+      "summary": "Undifferentiated spermatogonia states 1 and 2 express well-established markers including GFRA1, ZBTB16, ITGA6, ID4, UCHL1, LIN28, DPPA4, FGFR3, and UTF1.",
+      "terms": [
+        {
+          "normalized_label": "undifferentiated spermatogonia state 1",
+          "provenance": "explicit",
+          "sub_offset": [
+            9,
+            13
+          ],
+          "sub_span": "SPG1",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GFRA1",
+          "provenance": "explicit",
+          "sub_offset": [
+            158,
+            163
+          ],
+          "sub_span": "GFRA1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZBTB16",
+          "provenance": "explicit",
+          "sub_offset": [
+            165,
+            171
+          ],
+          "sub_span": "ZBTB16",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ITGA6",
+          "provenance": "explicit",
+          "sub_offset": [
+            180,
+            185
+          ],
+          "sub_span": "ITGA6",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ID4",
+          "provenance": "explicit",
+          "sub_offset": [
+            187,
+            190
+          ],
+          "sub_span": "ID4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "UCHL1",
+          "provenance": "explicit",
+          "sub_offset": [
+            192,
+            197
+          ],
+          "sub_span": "UCHL1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LIN28",
+          "provenance": "explicit",
+          "sub_offset": [
+            199,
+            204
+          ],
+          "sub_span": "LIN28",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DPPA4",
+          "provenance": "explicit",
+          "sub_offset": [
+            206,
+            211
+          ],
+          "sub_span": "DPPA4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FGFR3",
+          "provenance": "explicit",
+          "sub_offset": [
+            223,
+            228
+          ],
+          "sub_span": "FGFR3",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "UTF1",
+          "provenance": "explicit",
+          "sub_offset": [
+            234,
+            238
+          ],
+          "sub_span": "UTF1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f830d89f614d809364ba",
+      "span_literal": "cells in SPG1 and SPG2 are similar to each other (Figure S2B) and at first glance express many of the well-established markers of undifferentiated SPG (e.g., GFRA1, ZBTB16 (PLZF), ITGA6, ID4, UCHL1, LIN28, DPPA4 (macaque), FGFR3, and UTF1 (human) (Figures 2D and S2F; Table S3)",
+      "span_offset": [
+        27260,
+        27537
+      ],
+      "summary": "Undifferentiated spermatogonia state 2 expresses well-established markers including GFRA1, ZBTB16, ITGA6, ID4, UCHL1, LIN28, DPPA4, FGFR3, and UTF1.",
+      "terms": [
+        {
+          "normalized_label": "undifferentiated spermatogonia state 2",
+          "provenance": "explicit",
+          "sub_offset": [
+            18,
+            22
+          ],
+          "sub_span": "SPG2",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GFRA1",
+          "provenance": "explicit",
+          "sub_offset": [
+            158,
+            163
+          ],
+          "sub_span": "GFRA1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZBTB16",
+          "provenance": "explicit",
+          "sub_offset": [
+            165,
+            171
+          ],
+          "sub_span": "ZBTB16",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ITGA6",
+          "provenance": "explicit",
+          "sub_offset": [
+            180,
+            185
+          ],
+          "sub_span": "ITGA6",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ID4",
+          "provenance": "explicit",
+          "sub_offset": [
+            187,
+            190
+          ],
+          "sub_span": "ID4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "UCHL1",
+          "provenance": "explicit",
+          "sub_offset": [
+            192,
+            197
+          ],
+          "sub_span": "UCHL1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "LIN28",
+          "provenance": "explicit",
+          "sub_offset": [
+            199,
+            204
+          ],
+          "sub_span": "LIN28",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DPPA4",
+          "provenance": "explicit",
+          "sub_offset": [
+            206,
+            211
+          ],
+          "sub_span": "DPPA4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FGFR3",
+          "provenance": "explicit",
+          "sub_offset": [
+            223,
+            228
+          ],
+          "sub_span": "FGFR3",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "UTF1",
+          "provenance": "explicit",
+          "sub_offset": [
+            234,
+            238
+          ],
+          "sub_span": "UTF1",
+          "term_type": "gene"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "preparation": {
+      "excluded_claims": [
+        {
+          "raw_index": 11,
+          "reason": "no_explicit_marker_gene"
+        }
+      ],
+      "excluded_terms": [
+        {
+          "normalized_label": "DLK1",
+          "raw_index": 11,
+          "reason": "implicit_marker_gene"
+        }
+      ],
+      "expanded_gene_shorthand": 0,
+      "raw_claims": 20,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "retained_claims": 19
+    },
+    "recovered_from": "prior canonical model output"
+  },
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "schema_version": "mrkr.claims.v1",
+  "source": {
+    "id": "benchmark/Shamis2020",
+    "sha256": "sha256:2bd423207fc4388e885db5f568bb1cce9a7b02998cc39be69156d2831d5c221c"
+  }
+}

@@ -1,0 +1,1555 @@
+{
+  "schema_version": "mrkr.joint-deg-extraction.v1",
+  "paper_id": "Hildreth2021",
+  "model": "claude-opus-4-6",
+  "response_id": "msg_011CdG9jVy7esP7m1K5k8HGv",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 28418,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 10490,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "elapsed_seconds": 98.57911014556885,
+  "raw_extractions": [
+    {
+      "organism": "homo_sapiens",
+      "group_label": "mNK cells",
+      "group_name": "MATURE NATURAL KILLER CELL",
+      "feature_label": "FCGR3A",
+      "feature_name": "FCGR3A",
+      "source_rationale": "Similar to the CD45+-sorted scRNA-seq dataset, mNK cells comprised a distinct cluster marked by expression of FCGR3A, FGFBP2, KLRF1 and EOMES (Fig. 2b and Extended Data Fig. 3b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "mNK cells",
+      "group_name": "MATURE NATURAL KILLER CELL",
+      "feature_label": "FGFBP2",
+      "feature_name": "FGFBP2",
+      "source_rationale": "Similar to the CD45+-sorted scRNA-seq dataset, mNK cells comprised a distinct cluster marked by expression of FCGR3A, FGFBP2, KLRF1 and EOMES (Fig. 2b and Extended Data Fig. 3b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "mNK cells",
+      "group_name": "MATURE NATURAL KILLER CELL",
+      "feature_label": "KLRF1",
+      "feature_name": "KLRF1",
+      "source_rationale": "Similar to the CD45+-sorted scRNA-seq dataset, mNK cells comprised a distinct cluster marked by expression of FCGR3A, FGFBP2, KLRF1 and EOMES (Fig. 2b and Extended Data Fig. 3b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "mNK cells",
+      "group_name": "MATURE NATURAL KILLER CELL",
+      "feature_label": "EOMES",
+      "feature_name": "EOMES",
+      "source_rationale": "Similar to the CD45+-sorted scRNA-seq dataset, mNK cells comprised a distinct cluster marked by expression of FCGR3A, FGFBP2, KLRF1 and EOMES (Fig. 2b and Extended Data Fig. 3b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "iNK",
+      "group_name": "IMMATURE NATURAL KILLER CELL",
+      "feature_label": "IL7R",
+      "feature_name": "IL7R",
+      "source_rationale": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56bright immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "iNK",
+      "group_name": "IMMATURE NATURAL KILLER CELL",
+      "feature_label": "SELL",
+      "feature_name": "SELL",
+      "source_rationale": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56bright immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "iNK",
+      "group_name": "IMMATURE NATURAL KILLER CELL",
+      "feature_label": "CD2",
+      "feature_name": "CD2",
+      "source_rationale": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56bright immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "trNK",
+      "group_name": "TISSUE RESIDENT NATURAL KILLER CELL",
+      "feature_label": "CXCR6",
+      "feature_name": "CXCR6",
+      "source_rationale": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56bright immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "trNK",
+      "group_name": "TISSUE RESIDENT NATURAL KILLER CELL",
+      "feature_label": "KLRC1",
+      "feature_name": "KLRC1",
+      "source_rationale": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56bright immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "trNK",
+      "group_name": "TISSUE RESIDENT NATURAL KILLER CELL",
+      "feature_label": "GZMK",
+      "feature_name": "GZMK",
+      "source_rationale": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56bright immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILC2s",
+      "group_name": "INNATE LYMPHOID CELL 2",
+      "feature_label": "GATA3",
+      "feature_name": "GATA3",
+      "source_rationale": "WAT ILC clusters were defined based on differential expression of marker genes: GATA3 and IL1RL1 consistent with ILC2s described in mice and humans",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILC2s",
+      "group_name": "INNATE LYMPHOID CELL 2",
+      "feature_label": "IL1RL1",
+      "feature_name": "IL1RL1",
+      "source_rationale": "WAT ILC clusters were defined based on differential expression of marker genes: GATA3 and IL1RL1 consistent with ILC2s described in mice and humans",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILC1s",
+      "group_name": "INNATE LYMPHOID CELL 1",
+      "feature_label": "ZNF683",
+      "feature_name": "ZNF683",
+      "source_rationale": "ZNF683 and TBX21 consistent with ILC1s described in mice",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILC1s",
+      "group_name": "INNATE LYMPHOID CELL 1",
+      "feature_label": "TBX21",
+      "feature_name": "TBX21",
+      "source_rationale": "ZNF683 and TBX21 consistent with ILC1s described in mice",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILC3s",
+      "group_name": "INNATE LYMPHOID CELL 3",
+      "feature_label": "CCR6",
+      "feature_name": "CCR6",
+      "source_rationale": "CCR6, IL1R1 and IL23R consistent with ILC3s described in mice and humans",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILC3s",
+      "group_name": "INNATE LYMPHOID CELL 3",
+      "feature_label": "IL1R1",
+      "feature_name": "IL1R1",
+      "source_rationale": "CCR6, IL1R1 and IL23R consistent with ILC3s described in mice and humans",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILC3s",
+      "group_name": "INNATE LYMPHOID CELL 3",
+      "feature_label": "IL23R",
+      "feature_name": "IL23R",
+      "source_rationale": "CCR6, IL1R1 and IL23R consistent with ILC3s described in mice and humans",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILCP-like",
+      "group_name": "INNATE LYMPHOID PRECURSOR-LIKE CELL",
+      "feature_label": "SELL",
+      "feature_name": "SELL",
+      "source_rationale": "and SELL and IL1R1 consistent with circulating ILC precursor cells (ILCPs) found in human blood",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ILCP-like",
+      "group_name": "INNATE LYMPHOID PRECURSOR-LIKE CELL",
+      "feature_label": "IL1R1",
+      "feature_name": "IL1R1",
+      "source_rationale": "and SELL and IL1R1 consistent with circulating ILC precursor cells (ILCPs) found in human blood",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ncMos",
+      "group_name": "NONCLASSIC MONOCYTE",
+      "feature_label": "FCGR3A",
+      "feature_name": "FCGR3A",
+      "source_rationale": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ncMos",
+      "group_name": "NONCLASSIC MONOCYTE",
+      "feature_label": "HES4",
+      "feature_name": "HES4",
+      "source_rationale": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Mo-1s",
+      "group_name": "TYPE 1 MONOCYTE",
+      "feature_label": "FCER1A",
+      "feature_name": "FCER1A",
+      "source_rationale": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Mo-2s",
+      "group_name": "TYPE 2 MONOCYTE",
+      "feature_label": "CSF3R",
+      "feature_name": "CSF3R",
+      "source_rationale": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Mo-2s",
+      "group_name": "TYPE 2 MONOCYTE",
+      "feature_label": "FCAR",
+      "feature_name": "FCAR",
+      "source_rationale": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "Mo-2s",
+      "group_name": "TYPE 2 MONOCYTE",
+      "feature_label": "SELL",
+      "feature_name": "SELL",
+      "source_rationale": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "neutrophils",
+      "group_name": "NEUTROPHIL",
+      "feature_label": "THBS1",
+      "feature_name": "THBS1",
+      "source_rationale": "The scRNA-seq analysis also identified a population of human WAT neutrophils based on expression of THBS1 and S100A12, which displayed enrichment for the neutrophil gene module compared with other myeloid cell clusters (Fig. 4b and Extended Data Fig. 6b,c,f).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "neutrophils",
+      "group_name": "NEUTROPHIL",
+      "feature_label": "S100A12",
+      "feature_name": "S100A12",
+      "source_rationale": "The scRNA-seq analysis also identified a population of human WAT neutrophils based on expression of THBS1 and S100A12, which displayed enrichment for the neutrophil gene module compared with other myeloid cell clusters (Fig. 4b and Extended Data Fig. 6b,c,f).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "LAMs",
+      "group_name": "LIPID-ASSOCIATED MACROPHAGE",
+      "feature_label": "TREM2",
+      "feature_name": "TREM2",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "LAMs",
+      "group_name": "LIPID-ASSOCIATED MACROPHAGE",
+      "feature_label": "CD9",
+      "feature_name": "CD9",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "LAMs",
+      "group_name": "LIPID-ASSOCIATED MACROPHAGE",
+      "feature_label": "LPL",
+      "feature_name": "LPL",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "PVMs",
+      "group_name": "PERIVASCULAR MACROPHAGE",
+      "feature_label": "LYVE1",
+      "feature_name": "LYVE1",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "PVMs",
+      "group_name": "PERIVASCULAR MACROPHAGE",
+      "feature_label": "SELENOP",
+      "feature_name": "SELENOP",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "PVMs",
+      "group_name": "PERIVASCULAR MACROPHAGE",
+      "feature_label": "C1Q",
+      "feature_name": "C1Q",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "inflammatory macrophage (IM)",
+      "group_name": "INFLAMMATORY MACROPHAGE",
+      "feature_label": "CCL3L1",
+      "feature_name": "CCL3L1",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "inflammatory macrophage (IM)",
+      "group_name": "INFLAMMATORY MACROPHAGE",
+      "feature_label": "TNF",
+      "feature_name": "TNF",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "inflammatory macrophage (IM)",
+      "group_name": "INFLAMMATORY MACROPHAGE",
+      "feature_label": "CXCL3",
+      "feature_name": "CXCL3",
+      "source_rationale": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC1s",
+      "group_name": "TYPE 1 DENDRITIC CELL",
+      "feature_label": "IRF8",
+      "feature_name": "IRF8",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC1s",
+      "group_name": "TYPE 1 DENDRITIC CELL",
+      "feature_label": "DPP4",
+      "feature_name": "DPP4",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC1s",
+      "group_name": "TYPE 1 DENDRITIC CELL",
+      "feature_label": "CADM1",
+      "feature_name": "CADM1",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC1s",
+      "group_name": "TYPE 1 DENDRITIC CELL",
+      "feature_label": "XCR1",
+      "feature_name": "XCR1",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC2As",
+      "group_name": "TYPE 2A DENDRITIC CELL",
+      "feature_label": "CD1C",
+      "feature_name": "CD1C",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC2As",
+      "group_name": "TYPE 2A DENDRITIC CELL",
+      "feature_label": "IRF4",
+      "feature_name": "IRF4",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC2As",
+      "group_name": "TYPE 2A DENDRITIC CELL",
+      "feature_label": "IL7R",
+      "feature_name": "IL7R",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC2As",
+      "group_name": "TYPE 2A DENDRITIC CELL",
+      "feature_label": "LAMP3",
+      "feature_name": "LAMP3",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC2Bs",
+      "group_name": "TYPE 2B DENDRITIC CELL",
+      "feature_label": "CD1C",
+      "feature_name": "CD1C",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC2Bs",
+      "group_name": "TYPE 2B DENDRITIC CELL",
+      "feature_label": "IRF4",
+      "feature_name": "IRF4",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC2Bs",
+      "group_name": "TYPE 2B DENDRITIC CELL",
+      "feature_label": "FCER1A",
+      "feature_name": "FCER1A",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "cDC2Bs",
+      "group_name": "TYPE 2B DENDRITIC CELL",
+      "feature_label": "CLEC10A",
+      "feature_name": "CLEC10A",
+      "source_rationale": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "CD200R1",
+      "group_name": "INNATE LYMPHOID CELL",
+      "feature_label": "CD200R1",
+      "feature_name": "CD200R1",
+      "source_rationale": "Our CD45+-sorted scRNA-seq dataset suggested that CD200R1 expression could distinguish ILCs from mNK cells, similar to previous studies performed in mice and human peripheral blood mononuclear cells (PBMCs).",
+      "data_id": "Supplementary Table 1#Cluster_Markers_CD45PosNeg"
+    }
+  ],
+  "inputs": {
+    "manuscript_path": "data/adipose_Hildreth2021/manuscript/manuscript.txt",
+    "manuscript_sha256": "sha256:f48a47501bf95e244deb8f5f7a06b5566de35e388ec5bb302626f8e5f31f9145",
+    "benchmark_text_sha256": "sha256:b02baf4d1b87855ffa6508c3f4bc3dfe1ba9165eb175486e34174128e1f02c9a",
+    "benchmark_deg_sha256": "sha256:4f142967b6f0b2b6749efc12ee34a1ebacfc9ee0162f2ce1124e341090af146c",
+    "gene_map_sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+    "prompt_sha256": "sha256:4d8abaac075ab4d72d809b5dd52d920a464ffb97d61db2bbc4298e170945f3f6",
+    "candidate_data_ids": [
+      "Supplementary Table 1#Cluster_Markers_CD45PosNeg",
+      "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+      "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs",
+      "Supplementary Table 1#DEG_Celltype_LeanvsObese"
+    ]
+  },
+  "claims_document": {
+    "schema_version": "mrkr.claims.v1",
+    "source": {
+      "id": "manuscript.txt",
+      "sha256": "sha256:f48a47501bf95e244deb8f5f7a06b5566de35e388ec5bb302626f8e5f31f9145"
+    },
+    "producer": {
+      "name": "mrkr",
+      "version": "0.4.0"
+    },
+    "claims": [
+      {
+        "claim_id": "claim:148a7802df3231deeafe",
+        "span_literal": "Similar to the CD45+-sorted scRNA-seq dataset, mNK cells comprised a distinct cluster marked by expression of FCGR3A, FGFBP2, KLRF1 and EOMES (Fig. 2b and Extended Data Fig. 3b,c).",
+        "span_offset": [
+          12682,
+          12862
+        ],
+        "summary": "In Homo sapiens, MATURE NATURAL KILLER CELL is marked by FCGR3A. In Homo sapiens, MATURE NATURAL KILLER CELL is marked by FGFBP2. In Homo sapiens, MATURE NATURAL KILLER CELL is marked by KLRF1. In Homo sapiens, MATURE NATURAL KILLER CELL is marked by EOMES.",
+        "terms": [
+          {
+            "sub_span": "mNK cells",
+            "sub_offset": [
+              47,
+              56
+            ],
+            "normalized_label": "MATURE NATURAL KILLER CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "FCGR3A",
+            "sub_offset": [
+              110,
+              116
+            ],
+            "normalized_label": "FCGR3A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FGFBP2",
+            "sub_offset": [
+              118,
+              124
+            ],
+            "normalized_label": "FGFBP2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "KLRF1",
+            "sub_offset": [
+              126,
+              131
+            ],
+            "normalized_label": "KLRF1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "EOMES",
+            "sub_offset": [
+              136,
+              141
+            ],
+            "normalized_label": "EOMES",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:828c2169eb8e4b360f2c",
+        "span_literal": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56^(bright) immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+        "span_offset": [
+          13141,
+          13480
+        ],
+        "summary": "In Homo sapiens, IMMATURE NATURAL KILLER CELL is marked by IL7R. In Homo sapiens, IMMATURE NATURAL KILLER CELL is marked by SELL. In Homo sapiens, IMMATURE NATURAL KILLER CELL is marked by CD2.",
+        "terms": [
+          {
+            "sub_span": "iNK",
+            "sub_offset": [
+              134,
+              137
+            ],
+            "normalized_label": "IMMATURE NATURAL KILLER CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "IL7R",
+            "sub_offset": [
+              56,
+              60
+            ],
+            "normalized_label": "IL7R",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SELL",
+            "sub_offset": [
+              62,
+              66
+            ],
+            "normalized_label": "SELL",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CD2",
+            "sub_offset": [
+              71,
+              74
+            ],
+            "normalized_label": "CD2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:5b4a6209bc34c431da38",
+        "span_literal": "one cluster of NK-like cells discerned by expression of IL7R, SELL and CD2 similar to previously described CD56^(bright) immature NK (iNK) cells in human peripheral tissues18, and a population of NK-like cells distinguished by expression of CXCR6, KLRC1 and GZMK consistent with tissue-resident NK (trNK) cells described in the human liver",
+        "span_offset": [
+          13141,
+          13480
+        ],
+        "summary": "In Homo sapiens, TISSUE RESIDENT NATURAL KILLER CELL is marked by CXCR6. In Homo sapiens, TISSUE RESIDENT NATURAL KILLER CELL is marked by KLRC1. In Homo sapiens, TISSUE RESIDENT NATURAL KILLER CELL is marked by GZMK.",
+        "terms": [
+          {
+            "sub_span": "trNK",
+            "sub_offset": [
+              299,
+              303
+            ],
+            "normalized_label": "TISSUE RESIDENT NATURAL KILLER CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CXCR6",
+            "sub_offset": [
+              241,
+              246
+            ],
+            "normalized_label": "CXCR6",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "KLRC1",
+            "sub_offset": [
+              248,
+              253
+            ],
+            "normalized_label": "KLRC1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "GZMK",
+            "sub_offset": [
+              258,
+              262
+            ],
+            "normalized_label": "GZMK",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:74d8aed5b0d04ff35a43",
+        "span_literal": "WAT ILC clusters were defined based on differential expression of marker genes: GATA3 and IL1RL1 consistent with ILC2s described in mice and humans",
+        "span_offset": [
+          13931,
+          14078
+        ],
+        "summary": "In Homo sapiens, INNATE LYMPHOID CELL 2 is marked by GATA3. In Homo sapiens, INNATE LYMPHOID CELL 2 is marked by IL1RL1.",
+        "terms": [
+          {
+            "sub_span": "ILC2s",
+            "sub_offset": [
+              113,
+              118
+            ],
+            "normalized_label": "INNATE LYMPHOID CELL 2",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "GATA3",
+            "sub_offset": [
+              80,
+              85
+            ],
+            "normalized_label": "GATA3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IL1RL1",
+            "sub_offset": [
+              90,
+              96
+            ],
+            "normalized_label": "IL1RL1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:81fa0f5132bc5b2d845f",
+        "span_literal": "ZNF683 and TBX21 consistent with ILC1s described in mice",
+        "span_offset": [
+          14091,
+          14147
+        ],
+        "summary": "In Homo sapiens, INNATE LYMPHOID CELL 1 is marked by ZNF683. In Homo sapiens, INNATE LYMPHOID CELL 1 is marked by TBX21.",
+        "terms": [
+          {
+            "sub_span": "ILC1s",
+            "sub_offset": [
+              33,
+              38
+            ],
+            "normalized_label": "INNATE LYMPHOID CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ZNF683",
+            "sub_offset": [
+              0,
+              6
+            ],
+            "normalized_label": "ZNF683",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TBX21",
+            "sub_offset": [
+              11,
+              16
+            ],
+            "normalized_label": "TBX21",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:0893851aa3f0d8231e15",
+        "span_literal": "CCR6, IL1R1 and IL23R consistent with ILC3s described in mice and humans",
+        "span_offset": [
+          14157,
+          14229
+        ],
+        "summary": "In Homo sapiens, INNATE LYMPHOID CELL 3 is marked by CCR6. In Homo sapiens, INNATE LYMPHOID CELL 3 is marked by IL1R1. In Homo sapiens, INNATE LYMPHOID CELL 3 is marked by IL23R.",
+        "terms": [
+          {
+            "sub_span": "ILC3s",
+            "sub_offset": [
+              38,
+              43
+            ],
+            "normalized_label": "INNATE LYMPHOID CELL 3",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CCR6",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "CCR6",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IL1R1",
+            "sub_offset": [
+              6,
+              11
+            ],
+            "normalized_label": "IL1R1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IL23R",
+            "sub_offset": [
+              16,
+              21
+            ],
+            "normalized_label": "IL23R",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:7a663a2936671d4bc2ae",
+        "span_literal": "and SELL and IL1R1 consistent with circulating ILC precursor cells (ILCPs) found in human blood",
+        "span_offset": [
+          14242,
+          14337
+        ],
+        "summary": "In Homo sapiens, INNATE LYMPHOID PRECURSOR-LIKE CELL is marked by SELL. In Homo sapiens, INNATE LYMPHOID PRECURSOR-LIKE CELL is marked by IL1R1.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "INNATE LYMPHOID PRECURSOR-LIKE CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SELL",
+            "sub_offset": [
+              4,
+              8
+            ],
+            "normalized_label": "SELL",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IL1R1",
+            "sub_offset": [
+              13,
+              18
+            ],
+            "normalized_label": "IL1R1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:d5cbf82738d0dd8a013d",
+        "span_literal": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+        "span_offset": [
+          24464,
+          24714
+        ],
+        "summary": "In Homo sapiens, NONCLASSIC MONOCYTE is marked by FCGR3A. In Homo sapiens, NONCLASSIC MONOCYTE is marked by HES4.",
+        "terms": [
+          {
+            "sub_span": "ncMos",
+            "sub_offset": [
+              56,
+              61
+            ],
+            "normalized_label": "NONCLASSIC MONOCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "FCGR3A",
+            "sub_offset": [
+              85,
+              91
+            ],
+            "normalized_label": "FCGR3A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "HES4",
+            "sub_offset": [
+              96,
+              100
+            ],
+            "normalized_label": "HES4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:6aedc9f8268ec255623b",
+        "span_literal": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+        "span_offset": [
+          24464,
+          24714
+        ],
+        "summary": "In Homo sapiens, TYPE 1 MONOCYTE is marked by FCER1A.",
+        "terms": [
+          {
+            "sub_span": "Mo-1s",
+            "sub_offset": [
+              102,
+              107
+            ],
+            "normalized_label": "TYPE 1 MONOCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "FCER1A",
+            "sub_offset": [
+              125,
+              131
+            ],
+            "normalized_label": "FCER1A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:005872e1e033e70c7a85",
+        "span_literal": "Our analysis identified three populations of monocytes: ncMos based on expression of FCGR3A and HES4, Mo-1s by expression of FCER1A and Mo-2s via increased expression of CSF3R, FCAR and SELL, compared with Mo-1s (Fig. 4b and Extended Data Fig. 6b-d).",
+        "span_offset": [
+          24464,
+          24714
+        ],
+        "summary": "In Homo sapiens, TYPE 2 MONOCYTE is marked by CSF3R. In Homo sapiens, TYPE 2 MONOCYTE is marked by FCAR. In Homo sapiens, TYPE 2 MONOCYTE is marked by SELL.",
+        "terms": [
+          {
+            "sub_span": "Mo-2s",
+            "sub_offset": [
+              136,
+              141
+            ],
+            "normalized_label": "TYPE 2 MONOCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CSF3R",
+            "sub_offset": [
+              170,
+              175
+            ],
+            "normalized_label": "CSF3R",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FCAR",
+            "sub_offset": [
+              177,
+              181
+            ],
+            "normalized_label": "FCAR",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SELL",
+            "sub_offset": [
+              186,
+              190
+            ],
+            "normalized_label": "SELL",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:37107853859028a3bf6b",
+        "span_literal": "The scRNA-seq analysis also identified a population of human WAT neutrophils based on expression of THBS1 and S100A12, which displayed enrichment for the neutrophil gene module compared with other myeloid cell clusters (Fig. 4b and Extended Data Fig. 6b,c,f).",
+        "span_offset": [
+          25206,
+          25465
+        ],
+        "summary": "In Homo sapiens, NEUTROPHIL is marked by THBS1. In Homo sapiens, NEUTROPHIL is marked by S100A12.",
+        "terms": [
+          {
+            "sub_span": "neutrophils",
+            "sub_offset": [
+              65,
+              76
+            ],
+            "normalized_label": "NEUTROPHIL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "THBS1",
+            "sub_offset": [
+              100,
+              105
+            ],
+            "normalized_label": "THBS1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "S100A12",
+            "sub_offset": [
+              110,
+              117
+            ],
+            "normalized_label": "S100A12",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:5162c78781bd83693188",
+        "span_literal": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+        "span_offset": [
+          25466,
+          25828
+        ],
+        "summary": "In Homo sapiens, LIPID-ASSOCIATED MACROPHAGE is marked by TREM2. In Homo sapiens, LIPID-ASSOCIATED MACROPHAGE is marked by CD9. In Homo sapiens, LIPID-ASSOCIATED MACROPHAGE is marked by LPL.",
+        "terms": [
+          {
+            "sub_span": "LAMs",
+            "sub_offset": [
+              164,
+              168
+            ],
+            "normalized_label": "LIPID-ASSOCIATED MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "TREM2",
+            "sub_offset": [
+              104,
+              109
+            ],
+            "normalized_label": "TREM2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CD9",
+            "sub_offset": [
+              111,
+              114
+            ],
+            "normalized_label": "CD9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "LPL",
+            "sub_offset": [
+              119,
+              122
+            ],
+            "normalized_label": "LPL",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:301a9ad962af1c56481c",
+        "span_literal": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+        "span_offset": [
+          25466,
+          25828
+        ],
+        "summary": "In Homo sapiens, PERIVASCULAR MACROPHAGE is marked by LYVE1. In Homo sapiens, PERIVASCULAR MACROPHAGE is marked by SELENOP. In Homo sapiens, PERIVASCULAR MACROPHAGE is marked by C1Q.",
+        "terms": [
+          {
+            "sub_span": "PVMs",
+            "sub_offset": [
+              207,
+              211
+            ],
+            "normalized_label": "PERIVASCULAR MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "LYVE1",
+            "sub_offset": [
+              172,
+              177
+            ],
+            "normalized_label": "LYVE1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SELENOP",
+            "sub_offset": [
+              179,
+              186
+            ],
+            "normalized_label": "SELENOP",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "C1Q",
+            "sub_offset": [
+              191,
+              194
+            ],
+            "normalized_label": "C1Q",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:62b4cc6dc529cde7d1c3",
+        "span_literal": "We confirmed the presence of two previously identified macrophage subsets present within the human WAT: TREM2, CD9 and LPL expressing lipid-associated macrophages (LAMs)8, LYVE1, SELENOP and C1Q, expressing PVMs32, and an uncharacterized inflammatory macrophage (IM) population with high expression of CCL3L1, TNF and CXCL3 (Fig. 4b and Extended Data Fig. 6b,c).",
+        "span_offset": [
+          25466,
+          25828
+        ],
+        "summary": "In Homo sapiens, INFLAMMATORY MACROPHAGE is marked by CCL3L1. In Homo sapiens, INFLAMMATORY MACROPHAGE is marked by TNF. In Homo sapiens, INFLAMMATORY MACROPHAGE is marked by CXCL3.",
+        "terms": [
+          {
+            "sub_span": "inflammatory macrophage (IM)",
+            "sub_offset": [
+              238,
+              266
+            ],
+            "normalized_label": "INFLAMMATORY MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CCL3L1",
+            "sub_offset": [
+              302,
+              308
+            ],
+            "normalized_label": "CCL3L1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TNF",
+            "sub_offset": [
+              310,
+              313
+            ],
+            "normalized_label": "TNF",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CXCL3",
+            "sub_offset": [
+              318,
+              323
+            ],
+            "normalized_label": "CXCL3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:118ae778ebc35d7e3704",
+        "span_literal": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+        "span_offset": [
+          29964,
+          30458
+        ],
+        "summary": "In Homo sapiens, TYPE 1 DENDRITIC CELL is marked by IRF8. In Homo sapiens, TYPE 1 DENDRITIC CELL is marked by DPP4. In Homo sapiens, TYPE 1 DENDRITIC CELL is marked by CADM1. In Homo sapiens, TYPE 1 DENDRITIC CELL is marked by XCR1.",
+        "terms": [
+          {
+            "sub_span": "cDC1s",
+            "sub_offset": [
+              100,
+              105
+            ],
+            "normalized_label": "TYPE 1 DENDRITIC CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "IRF8",
+            "sub_offset": [
+              132,
+              136
+            ],
+            "normalized_label": "IRF8",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "DPP4",
+            "sub_offset": [
+              138,
+              142
+            ],
+            "normalized_label": "DPP4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CADM1",
+            "sub_offset": [
+              144,
+              149
+            ],
+            "normalized_label": "CADM1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "XCR1",
+            "sub_offset": [
+              154,
+              158
+            ],
+            "normalized_label": "XCR1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:382ba6b92b2f6f55b839",
+        "span_literal": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+        "span_offset": [
+          29964,
+          30458
+        ],
+        "summary": "In Homo sapiens, TYPE 2A DENDRITIC CELL is marked by CD1C. In Homo sapiens, TYPE 2A DENDRITIC CELL is marked by IRF4. In Homo sapiens, TYPE 2A DENDRITIC CELL is marked by IL7R. In Homo sapiens, TYPE 2A DENDRITIC CELL is marked by LAMP3.",
+        "terms": [
+          {
+            "sub_span": "cDC2As",
+            "sub_offset": [
+              193,
+              199
+            ],
+            "normalized_label": "TYPE 2A DENDRITIC CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD1C",
+            "sub_offset": [
+              220,
+              224
+            ],
+            "normalized_label": "CD1C",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IRF4",
+            "sub_offset": [
+              226,
+              230
+            ],
+            "normalized_label": "IRF4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IL7R",
+            "sub_offset": [
+              232,
+              236
+            ],
+            "normalized_label": "IL7R",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "LAMP3",
+            "sub_offset": [
+              241,
+              246
+            ],
+            "normalized_label": "LAMP3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:9dc01b6168e99df1e7b5",
+        "span_literal": "DC-sorted scRNA-seq analysis identified three distinct WAT DC populations: conventional type 1 DCs (cDC1s) defined by expression of IRF8, DPP4, CADM1 and XCR1, coventional type 2 DCs subset A (cDC2As), via expression of CD1C, IRF4, IL7R and LAMP3, and conventional type 2 DCs subset B (cDC2Bs) by increased expression of CD1C, IRF4, FCER1A and CLEC10A, consistent with the phenotypes of DC subsets recently reported in human blood34 (Fig. 4f, Extended Data Fig. 6b,c and Supplementary Table 4).",
+        "span_offset": [
+          29964,
+          30458
+        ],
+        "summary": "In Homo sapiens, TYPE 2B DENDRITIC CELL is marked by CD1C. In Homo sapiens, TYPE 2B DENDRITIC CELL is marked by IRF4. In Homo sapiens, TYPE 2B DENDRITIC CELL is marked by FCER1A. In Homo sapiens, TYPE 2B DENDRITIC CELL is marked by CLEC10A.",
+        "terms": [
+          {
+            "sub_span": "cDC2Bs",
+            "sub_offset": [
+              286,
+              292
+            ],
+            "normalized_label": "TYPE 2B DENDRITIC CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD1C",
+            "sub_offset": [
+              220,
+              224
+            ],
+            "normalized_label": "CD1C",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IRF4",
+            "sub_offset": [
+              226,
+              230
+            ],
+            "normalized_label": "IRF4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FCER1A",
+            "sub_offset": [
+              333,
+              339
+            ],
+            "normalized_label": "FCER1A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CLEC10A",
+            "sub_offset": [
+              344,
+              351
+            ],
+            "normalized_label": "CLEC10A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      }
+    ]
+  },
+  "links": {
+    "claim:148a7802df3231deeafe": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs",
+    "claim:828c2169eb8e4b360f2c": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs",
+    "claim:5b4a6209bc34c431da38": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs",
+    "claim:74d8aed5b0d04ff35a43": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs",
+    "claim:81fa0f5132bc5b2d845f": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs",
+    "claim:0893851aa3f0d8231e15": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs",
+    "claim:7a663a2936671d4bc2ae": "Supplementary Table 1#Cluster_Markers_Cellype_NK_ILCs",
+    "claim:d5cbf82738d0dd8a013d": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:6aedc9f8268ec255623b": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:005872e1e033e70c7a85": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:37107853859028a3bf6b": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:5162c78781bd83693188": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:301a9ad962af1c56481c": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:62b4cc6dc529cde7d1c3": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:118ae778ebc35d7e3704": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:382ba6b92b2f6f55b839": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi",
+    "claim:9dc01b6168e99df1e7b5": "Supplementary Table 1#Cluster_Markers_Celltype_Myeloi"
+  },
+  "link_origins": {
+    "claim:148a7802df3231deeafe": "model",
+    "claim:828c2169eb8e4b360f2c": "model",
+    "claim:5b4a6209bc34c431da38": "model",
+    "claim:74d8aed5b0d04ff35a43": "model",
+    "claim:81fa0f5132bc5b2d845f": "model",
+    "claim:0893851aa3f0d8231e15": "model",
+    "claim:7a663a2936671d4bc2ae": "model",
+    "claim:d5cbf82738d0dd8a013d": "model",
+    "claim:6aedc9f8268ec255623b": "model",
+    "claim:005872e1e033e70c7a85": "model",
+    "claim:37107853859028a3bf6b": "model",
+    "claim:5162c78781bd83693188": "model",
+    "claim:301a9ad962af1c56481c": "model",
+    "claim:62b4cc6dc529cde7d1c3": "model",
+    "claim:118ae778ebc35d7e3704": "model",
+    "claim:382ba6b92b2f6f55b839": "model",
+    "claim:9dc01b6168e99df1e7b5": "model"
+  },
+  "validation": {
+    "preparation": {
+      "raw_claims": 49,
+      "retained_claims": 49,
+      "reanchored_spans": 6,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": [],
+      "strict_exclusions": [
+        {
+          "reason": "span_not_exact",
+          "span_literal": "Our CD45+-sorted scRNA-seq dataset suggested that CD200R1 expression could distinguish ILCs from mNK cells, similar to previous studies performed in mice and human peripheral blood mononuclear cells (PBMCs)."
+        }
+      ],
+      "strictly_grounded_claims": 48
+    },
+    "validation": {
+      "valid": true,
+      "n_claims": 17,
+      "n_errors": 0,
+      "errors": [],
+      "n_warnings": 0,
+      "warnings": []
+    }
+  }
+}

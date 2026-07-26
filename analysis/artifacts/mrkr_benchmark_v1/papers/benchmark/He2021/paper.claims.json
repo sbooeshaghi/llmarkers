@@ -1,0 +1,1928 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim:a0e1b8fe9402f474e350",
+      "span_literal": "We found three PRRX1+ limb bud mesenchymal subsets (LBM1-3) that mainly exist in 5 WPC limb buds (clusters 1-3), which differentially expressed PDGFRA, reflecting mesenchymal progenitors at different maturation stages (Fig. 1c-e).",
+      "span_offset": [
+        10748,
+        10978
+      ],
+      "summary": "Limb bud mesenchymal subsets express PRRX1 and differentially express PDGFRA, reflecting mesenchymal progenitor cells at different maturation stages in human limb buds.",
+      "terms": [
+        {
+          "normalized_label": "limb bud mesenchymal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            22,
+            59
+          ],
+          "sub_span": "limb bud mesenchymal subsets (LBM1-3)",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "limb bud",
+          "provenance": "explicit",
+          "sub_offset": [
+            87,
+            96
+          ],
+          "sub_span": "limb buds",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PRRX1",
+          "provenance": "explicit",
+          "sub_offset": [
+            15,
+            20
+          ],
+          "sub_span": "PRRX1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PDGFRA",
+          "provenance": "explicit",
+          "sub_offset": [
+            144,
+            150
+          ],
+          "sub_span": "PDGFRA",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:55466ba84a1e3ef731a3",
+      "span_literal": "Notably, cluster 4 is a mesenchymal subset that equally distributed between limb bud and long bone samples, which expressed PRRX1, low level of SOX9 and the highest level of PDGFRA, reminiscent of osteo-chondrogenic progenitors (OCPs) that give rise to long bones (Fig. 1c-e).",
+      "span_offset": [
+        10981,
+        11257
+      ],
+      "summary": "Osteo-chondrogenic progenitors express PRRX1, low levels of SOX9, and the highest level of PDGFRA in human limb buds and long bones.",
+      "terms": [
+        {
+          "normalized_label": "osteo-chondrogenic progenitor",
+          "provenance": "explicit",
+          "sub_offset": [
+            197,
+            234
+          ],
+          "sub_span": "osteo-chondrogenic progenitors (OCPs)",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PRRX1",
+          "provenance": "explicit",
+          "sub_offset": [
+            124,
+            129
+          ],
+          "sub_span": "PRRX1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX9",
+          "provenance": "explicit",
+          "sub_offset": [
+            144,
+            148
+          ],
+          "sub_span": "SOX9",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PDGFRA",
+          "provenance": "explicit",
+          "sub_offset": [
+            174,
+            180
+          ],
+          "sub_span": "PDGFRA",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4d2c86edef2bec903345",
+      "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+      "span_offset": [
+        11260,
+        11537
+      ],
+      "summary": "Epithelial cells are marked by EPCAM in human limb buds.",
+      "terms": [
+        {
+          "normalized_label": "epithelial cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            23
+          ],
+          "sub_span": "epithelial cells",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "limb bud",
+          "provenance": "explicit",
+          "sub_offset": [
+            109,
+            118
+          ],
+          "sub_span": "limb buds",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EPCAM",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "EPCAM",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:16c4495df74cff1c9261",
+      "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+      "span_offset": [
+        11260,
+        11537
+      ],
+      "summary": "Erythrocytes are marked by GYPA in human limb buds.",
+      "terms": [
+        {
+          "normalized_label": "erythrocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            57,
+            69
+          ],
+          "sub_span": "erythrocytes",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "limb bud",
+          "provenance": "explicit",
+          "sub_offset": [
+            109,
+            118
+          ],
+          "sub_span": "limb buds",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GYPA",
+          "provenance": "explicit",
+          "sub_offset": [
+            51,
+            55
+          ],
+          "sub_span": "GYPA",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4f8400f491e76ac30a84",
+      "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+      "span_offset": [
+        11260,
+        11537
+      ],
+      "summary": "Myoprogenitors are marked by SIX1 in human limb buds and long bones.",
+      "terms": [
+        {
+          "normalized_label": "myoprogenitor",
+          "provenance": "explicit",
+          "sub_offset": [
+            132,
+            146
+          ],
+          "sub_span": "myoprogenitors",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SIX1",
+          "provenance": "explicit",
+          "sub_offset": [
+            126,
+            130
+          ],
+          "sub_span": "SIX1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d0dcd24b5f082e355355",
+      "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+      "span_offset": [
+        11260,
+        11537
+      ],
+      "summary": "Endothelial cells are marked by CDH5 in human limb buds and long bones.",
+      "terms": [
+        {
+          "normalized_label": "endothelial cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            168,
+            185
+          ],
+          "sub_span": "endothelial cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDH5",
+          "provenance": "explicit",
+          "sub_offset": [
+            162,
+            166
+          ],
+          "sub_span": "CDH5",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:5c13b593e07ed3434734",
+      "span_literal": "EPCAM+ epithelial cells (clusters 14 and 15)47 and GYPA+ erythrocytes (cluster 13)48 were mainly detected in limb buds, while SIX1+ myoprogenitors (cluster 9),49 CDH5+ endothelial cells (cluster 11)50 and CD68+ macrophages (cluster 12)51 were found in both samples (Fig. 1c-e).",
+      "span_offset": [
+        11260,
+        11537
+      ],
+      "summary": "Macrophages are marked by CD68 in human limb buds and long bones.",
+      "terms": [
+        {
+          "normalized_label": "macrophage",
+          "provenance": "explicit",
+          "sub_offset": [
+            211,
+            222
+          ],
+          "sub_span": "macrophages",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD68",
+          "provenance": "explicit",
+          "sub_offset": [
+            205,
+            209
+          ],
+          "sub_span": "CD68",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:58a5e4ae3fa220f5bd89",
+      "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "span_offset": [
+        11538,
+        11889
+      ],
+      "summary": "Osteoprogenitors are marked by RUNX2 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "osteoprogenitor",
+          "provenance": "explicit",
+          "sub_offset": [
+            20,
+            36
+          ],
+          "sub_span": "osteoprogenitors",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "long bone",
+          "provenance": "explicit",
+          "sub_offset": [
+            291,
+            301
+          ],
+          "sub_span": "long bones",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "RUNX2",
+          "provenance": "explicit",
+          "sub_offset": [
+            13,
+            18
+          ],
+          "sub_span": "RUNX2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3d807f1fec7ec2294356",
+      "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "span_offset": [
+        11538,
+        11889
+      ],
+      "summary": "Perichondrial mesenchymal stromal cells are marked by OSR2 and NOV in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "perichondrial mesenchymal stromal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            120
+          ],
+          "sub_span": "perichondrial mesenchymal stromal cells (PMSCs, cluster 6)",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "long bone",
+          "provenance": "explicit",
+          "sub_offset": [
+            291,
+            301
+          ],
+          "sub_span": "long bones",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "OSR2",
+          "provenance": "explicit",
+          "sub_offset": [
+            52,
+            56
+          ],
+          "sub_span": "OSR2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NOV",
+          "provenance": "explicit",
+          "sub_offset": [
+            57,
+            60
+          ],
+          "sub_span": "NOV",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:94ff4b5118b449507e8c",
+      "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "span_offset": [
+        11538,
+        11889
+      ],
+      "summary": "Chondroblasts are marked by SOX9 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "chondroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            136,
+            149
+          ],
+          "sub_span": "chondroblasts",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "long bone",
+          "provenance": "explicit",
+          "sub_offset": [
+            291,
+            301
+          ],
+          "sub_span": "long bones",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX9",
+          "provenance": "explicit",
+          "sub_offset": [
+            130,
+            134
+          ],
+          "sub_span": "SOX9",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:ece7145f1b47481873b6",
+      "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "span_offset": [
+        11538,
+        11889
+      ],
+      "summary": "Chondrocytes are marked by SOX9 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "chondrocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            154,
+            166
+          ],
+          "sub_span": "chondrocytes",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "long bone",
+          "provenance": "explicit",
+          "sub_offset": [
+            291,
+            301
+          ],
+          "sub_span": "long bones",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX9",
+          "provenance": "explicit",
+          "sub_offset": [
+            130,
+            134
+          ],
+          "sub_span": "SOX9",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2ed2d3787eebe7daa0bc",
+      "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "span_offset": [
+        11538,
+        11889
+      ],
+      "summary": "Myocytes are marked by MYOG in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "myocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            195,
+            203
+          ],
+          "sub_span": "myocytes",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "long bone",
+          "provenance": "explicit",
+          "sub_offset": [
+            291,
+            301
+          ],
+          "sub_span": "long bones",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYOG",
+          "provenance": "explicit",
+          "sub_offset": [
+            189,
+            193
+          ],
+          "sub_span": "MYOG",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:808e9c6a065f38a3af66",
+      "span_literal": "In contrast, RUNX2+ osteoprogenitors (cluster 5),52 OSR2+NOV+ perichondrial mesenchymal stromal cells (PMSCs, cluster 6),^(53,54) SOX9+ chondroblasts and chondrocytes (clusters 7 and 8),55 MYOG+ myocytes (cluster 10),56 as well as SOX10+ Schwann cells (cluster 16)57 were mainly detected in long bones (Fig. 1c-e; Supplementary information, Table S1).",
+      "span_offset": [
+        11538,
+        11889
+      ],
+      "summary": "Schwann cells are marked by SOX10 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "Schwann cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            238,
+            251
+          ],
+          "sub_span": "Schwann cells",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "long bone",
+          "provenance": "explicit",
+          "sub_offset": [
+            291,
+            301
+          ],
+          "sub_span": "long bones",
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX10",
+          "provenance": "explicit",
+          "sub_offset": [
+            231,
+            236
+          ],
+          "sub_span": "SOX10",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7c105632af003e9f4a59",
+      "span_literal": "Cluster 1 highly expressed CXCL12 and PDGFRA (Supplementary information, Fig. S3b and Table S1), which are classical markers of BMSCs.",
+      "span_offset": [
+        19368,
+        19502
+      ],
+      "summary": "Bone marrow stromal cells highly express CXCL12 and PDGFRA as classical markers.",
+      "terms": [
+        {
+          "normalized_label": "bone marrow stromal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            128,
+            133
+          ],
+          "sub_span": "BMSCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CXCL12",
+          "provenance": "explicit",
+          "sub_offset": [
+            27,
+            33
+          ],
+          "sub_span": "CXCL12",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PDGFRA",
+          "provenance": "explicit",
+          "sub_offset": [
+            38,
+            44
+          ],
+          "sub_span": "PDGFRA",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b1f488bfd1e8bf866fc1",
+      "span_literal": "Cluster 2 highly expressed limb bud mesenchymal genes such as TWIST2 (Supplementary information, Fig. S3a, b and Table S1), which functions as an inhibitor of osteoblastic differentiation,74 reminiscent of limb bud-derived mesenchymal cells (LBDMCs).",
+      "span_offset": [
+        19511,
+        19761
+      ],
+      "summary": "Limb bud-derived mesenchymal cells highly express TWIST2 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "limb bud-derived mesenchymal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            206,
+            249
+          ],
+          "sub_span": "limb bud-derived mesenchymal cells (LBDMCs)",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TWIST2",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            68
+          ],
+          "sub_span": "TWIST2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9684f12c16972d7bcbf2",
+      "span_literal": "Cluster 3 highly expressed GAS2 and localized in the center of all OCLC subsets (Fig. 3a; Supplementary information, Fig. S3a, b and Table S1).",
+      "span_offset": [
+        19762,
+        19905
+      ],
+      "summary": "Embryonic skeletal stem/progenitor cells highly express GAS2 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            9
+          ],
+          "sub_span": "Cluster 3",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GAS2",
+          "provenance": "explicit",
+          "sub_offset": [
+            27,
+            31
+          ],
+          "sub_span": "GAS2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b6297c512ca74516af0c",
+      "span_literal": "Importantly, a perichondrial embryonic skeletal stem/progenitor cell (eSSPC) subset was identified, which could self-renew and generate the osteochondral lineage cells, but not adipocytes or hematopoietic stroma. eSSPCs are marked by the adhesion molecule CADM1 and highly enriched with FOXP1/2 transcriptional network.",
+      "span_offset": [
+        1692,
+        2011
+      ],
+      "summary": "Embryonic skeletal stem/progenitor cells are marked by the adhesion molecule CADM1 and are highly enriched with FOXP1 and FOXP2 transcriptional network.",
+      "terms": [
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            213,
+            219
+          ],
+          "sub_span": "eSSPCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CADM1",
+          "provenance": "explicit",
+          "sub_offset": [
+            256,
+            261
+          ],
+          "sub_span": "CADM1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP1",
+          "provenance": "explicit",
+          "sub_offset": [
+            287,
+            292
+          ],
+          "sub_span": "FOXP1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            287,
+            294
+          ],
+          "sub_span": "FOXP1/2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1c1d023f48b9da8ee870",
+      "span_literal": "we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2) were gradually down-regulated, while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation (Fig. 3e).",
+      "span_offset": [
+        22809,
+        23168
+      ],
+      "summary": "Limb bud-derived mesenchymal cells highly express PITX1, HOXA10, CRABP1, and CD24 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "limb bud-derived mesenchymal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            40,
+            46
+          ],
+          "sub_span": "LBDMCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PITX1",
+          "provenance": "explicit",
+          "sub_offset": [
+            54,
+            59
+          ],
+          "sub_span": "PITX1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "HOXA10",
+          "provenance": "explicit",
+          "sub_offset": [
+            61,
+            67
+          ],
+          "sub_span": "HOXA10",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CRABP1",
+          "provenance": "explicit",
+          "sub_offset": [
+            69,
+            75
+          ],
+          "sub_span": "CRABP1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD24",
+          "provenance": "explicit",
+          "sub_offset": [
+            77,
+            81
+          ],
+          "sub_span": "CD24",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0bfbf80f00438322c7ea",
+      "span_literal": "we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2) were gradually down-regulated, while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation (Fig. 3e).",
+      "span_offset": [
+        22809,
+        23168
+      ],
+      "summary": "Embryonic skeletal stem/progenitor cells highly express GAS1, GAS2, SOX4, and SFRP2 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            87,
+            93
+          ],
+          "sub_span": "eSSPCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GAS1",
+          "provenance": "explicit",
+          "sub_offset": [
+            101,
+            105
+          ],
+          "sub_span": "GAS1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX4",
+          "provenance": "explicit",
+          "sub_offset": [
+            109,
+            113
+          ],
+          "sub_span": "SOX4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SFRP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            118,
+            123
+          ],
+          "sub_span": "SFRP2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3e0728ec873b5e5acb27",
+      "span_literal": "we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2) were gradually down-regulated, while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation (Fig. 3e).",
+      "span_offset": [
+        22809,
+        23168
+      ],
+      "summary": "Chondrocytes highly express CNMD, EPYC, COL9A2, and COL11A2 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "chondrocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            193,
+            205
+          ],
+          "sub_span": "chondrocytes",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CNMD",
+          "provenance": "explicit",
+          "sub_offset": [
+            213,
+            217
+          ],
+          "sub_span": "CNMD",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EPYC",
+          "provenance": "explicit",
+          "sub_offset": [
+            219,
+            223
+          ],
+          "sub_span": "EPYC",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "COL9A2",
+          "provenance": "explicit",
+          "sub_offset": [
+            225,
+            231
+          ],
+          "sub_span": "COL9A2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "COL11A2",
+          "provenance": "explicit",
+          "sub_offset": [
+            233,
+            240
+          ],
+          "sub_span": "COL11A2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6bbec8417d1d16f11306",
+      "span_literal": "we found that genes highly expressed in LBDMCs (e.g., PITX1, HOXA10, CRABP1, CD24) and eSSPCs (e.g., GAS1/2, SOX4 and SFRP2) were gradually down-regulated, while genes that highly expressed in chondrocytes (e.g., CNMD, EPYC, COL9A2, COL11A2) and osteoprogenitors (e.g., DLX5, CDH11, OGN and COL1A1/2) were up-regulated upon terminal differentiation (Fig. 3e).",
+      "span_offset": [
+        22809,
+        23168
+      ],
+      "summary": "Osteoprogenitors highly express DLX5, CDH11, OGN, COL1A1, and COL1A2 in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "osteoprogenitor",
+          "provenance": "explicit",
+          "sub_offset": [
+            246,
+            262
+          ],
+          "sub_span": "osteoprogenitors",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DLX5",
+          "provenance": "explicit",
+          "sub_offset": [
+            270,
+            274
+          ],
+          "sub_span": "DLX5",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CDH11",
+          "provenance": "explicit",
+          "sub_offset": [
+            276,
+            281
+          ],
+          "sub_span": "CDH11",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "OGN",
+          "provenance": "explicit",
+          "sub_offset": [
+            283,
+            286
+          ],
+          "sub_span": "OGN",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a74143730a4b04a5703a",
+      "span_literal": "SCENIC analysis showed that eSSPCs were highly enriched with regulons such as FOXP1 and FOXP2 (Fig. 3f; Supplementary information, Table S2).",
+      "span_offset": [
+        23169,
+        23310
+      ],
+      "summary": "Embryonic skeletal stem/progenitor cells are highly enriched with FOXP1 and FOXP2 regulons in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            28,
+            34
+          ],
+          "sub_span": "eSSPCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP1",
+          "provenance": "explicit",
+          "sub_offset": [
+            78,
+            83
+          ],
+          "sub_span": "FOXP1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            88,
+            93
+          ],
+          "sub_span": "FOXP2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2eeb98446281ea964f73",
+      "span_literal": "Interestingly, we found that the cell adhesion molecule CADM1 was preferentially expressed in eSSPCs (Fig. 4a).",
+      "span_offset": [
+        25080,
+        25191
+      ],
+      "summary": "The cell adhesion molecule CADM1 is preferentially expressed in embryonic skeletal stem/progenitor cells.",
+      "terms": [
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            94,
+            100
+          ],
+          "sub_span": "eSSPCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CADM1",
+          "provenance": "explicit",
+          "sub_offset": [
+            56,
+            61
+          ],
+          "sub_span": "CADM1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a1a7c417b53223283304",
+      "span_literal": "Interestingly, we found that PDPN was differentially expressed in eSSPCs (PDPN+) and Schwann cells (PDPN^(-)) (Fig. 4a).",
+      "span_offset": [
+        25611,
+        25731
+      ],
+      "summary": "PDPN is positively expressed in embryonic skeletal stem/progenitor cells and negatively expressed in Schwann cells.",
+      "terms": [
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            66,
+            72
+          ],
+          "sub_span": "eSSPCs",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "Schwann cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            85,
+            98
+          ],
+          "sub_span": "Schwann cells",
+          "term_type": "comparison"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PDPN",
+          "provenance": "explicit",
+          "sub_offset": [
+            29,
+            33
+          ],
+          "sub_span": "PDPN",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f1f8d87a3e709da9af84",
+      "span_literal": "Interestingly, we found that PDPN was differentially expressed in eSSPCs (PDPN+) and Schwann cells (PDPN^(-)) (Fig. 4a).",
+      "span_offset": [
+        25611,
+        25731
+      ],
+      "summary": "Schwann cells do not express PDPN, in contrast to embryonic skeletal stem/progenitor cells.",
+      "terms": [
+        {
+          "normalized_label": "Schwann cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            85,
+            98
+          ],
+          "sub_span": "Schwann cells",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            66,
+            72
+          ],
+          "sub_span": "eSSPCs",
+          "term_type": "comparison"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "PDPN",
+          "provenance": "explicit",
+          "sub_offset": [
+            29,
+            33
+          ],
+          "sub_span": "PDPN",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f1d09a91b53425b2d316",
+      "span_literal": "In contrast, THY1 (CD90), NGFR (CD271), MCAM (CD146) or NT5E (CD73) were hardly detected in eSSPCs (Fig. 4a; Supplementary information, Fig. S4a).",
+      "span_offset": [
+        27771,
+        27917
+      ],
+      "summary": "THY1, NGFR, MCAM, and NT5E are hardly detected in embryonic skeletal stem/progenitor cells.",
+      "terms": [
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            92,
+            98
+          ],
+          "sub_span": "eSSPCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "THY1",
+          "provenance": "explicit",
+          "sub_offset": [
+            13,
+            17
+          ],
+          "sub_span": "THY1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "NGFR",
+          "provenance": "explicit",
+          "sub_offset": [
+            26,
+            30
+          ],
+          "sub_span": "NGFR",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "MCAM",
+          "provenance": "explicit",
+          "sub_offset": [
+            40,
+            44
+          ],
+          "sub_span": "MCAM",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "NT5E",
+          "provenance": "explicit",
+          "sub_offset": [
+            56,
+            60
+          ],
+          "sub_span": "NT5E",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a3d21e18ef1040f572cb",
+      "span_literal": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "span_offset": [
+        29487,
+        29698
+      ],
+      "summary": "Embryonic skeletal stem/progenitor cells express FOXP1, FOXP2, and GAS2 in sorted PDGFRA-low/negative PDPN-positive CADM1-positive cells from human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            67,
+            73
+          ],
+          "sub_span": "eSSPCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP1",
+          "provenance": "explicit",
+          "sub_offset": [
+            89,
+            94
+          ],
+          "sub_span": "FOXP1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            96,
+            101
+          ],
+          "sub_span": "FOXP2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GAS2",
+          "provenance": "explicit",
+          "sub_offset": [
+            106,
+            110
+          ],
+          "sub_span": "GAS2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4016f06e49b1bd2a861d",
+      "span_literal": "Clustering analysis revealed two distinct subsets, including 93.3% eSSPCs that expressed FOXP1, FOXP2 and GAS2, and 6.7% Schwann cells that expressed SOX2, SOX10 and MPZ (Supplementary information, Fig. S5a, b).",
+      "span_offset": [
+        29487,
+        29698
+      ],
+      "summary": "Schwann cells express SOX2, SOX10, and MPZ in sorted PDGFRA-low/negative PDPN-positive CADM1-positive cells from human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "Schwann cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            121,
+            134
+          ],
+          "sub_span": "Schwann cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX2",
+          "provenance": "explicit",
+          "sub_offset": [
+            150,
+            154
+          ],
+          "sub_span": "SOX2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX10",
+          "provenance": "explicit",
+          "sub_offset": [
+            156,
+            161
+          ],
+          "sub_span": "SOX10",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MPZ",
+          "provenance": "explicit",
+          "sub_offset": [
+            166,
+            169
+          ],
+          "sub_span": "MPZ",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:da755f64f1ea88a14cda",
+      "span_literal": "NGFR+ cranial neural crest (NC) cells (cluster 1) that highly expressed NES77",
+      "span_offset": [
+        34105,
+        34182
+      ],
+      "summary": "Cranial neural crest cells are marked by NGFR and highly express NES in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "cranial neural crest cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            6,
+            37
+          ],
+          "sub_span": "cranial neural crest (NC) cells",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "calvaria",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NGFR",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "NGFR",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NES",
+          "provenance": "explicit",
+          "sub_offset": [
+            72,
+            75
+          ],
+          "sub_span": "NES",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0e2bf6464a32c3b9228b",
+      "span_literal": "two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)",
+      "span_offset": [
+        34188,
+        34387
+      ],
+      "summary": "Vascular leptomeningeal cells are marked by GJA1 and highly express SLC6A13 and PTGDS in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "vascular leptomeningeal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            28,
+            57
+          ],
+          "sub_span": "vascular leptomeningeal cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GJA1",
+          "provenance": "explicit",
+          "sub_offset": [
+            4,
+            8
+          ],
+          "sub_span": "GJA1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SLC6A13",
+          "provenance": "explicit",
+          "sub_offset": [
+            99,
+            106
+          ],
+          "sub_span": "SLC6A13",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PTGDS",
+          "provenance": "explicit",
+          "sub_offset": [
+            111,
+            116
+          ],
+          "sub_span": "PTGDS",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d410d0ea9ffce929acba",
+      "span_literal": "two GJA1+ subsets including vascular leptomeningeal cells (cluster 2, VLMCs) that highly expressed SLC6A13 and PTGDS,78 and migratory NC (mig_NC) cells that expressed higher level of BMP4 (cluster 3)",
+      "span_offset": [
+        34188,
+        34387
+      ],
+      "summary": "Migratory neural crest cells are marked by GJA1 and express higher levels of BMP4 in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "migratory neural crest cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            124,
+            151
+          ],
+          "sub_span": "migratory NC (mig_NC) cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GJA1",
+          "provenance": "explicit",
+          "sub_offset": [
+            4,
+            8
+          ],
+          "sub_span": "GJA1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "BMP4",
+          "provenance": "explicit",
+          "sub_offset": [
+            183,
+            187
+          ],
+          "sub_span": "BMP4",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f6d7bfc21aeddf34e86f",
+      "span_literal": "neural crest-derived cells (cluster 4, NCDC) that highly expressed BMP4 and FOXC281",
+      "span_offset": [
+        34401,
+        34484
+      ],
+      "summary": "Neural crest-derived cells highly express BMP4 and FOXC2 in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "neural crest-derived cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            44
+          ],
+          "sub_span": "neural crest-derived cells (cluster 4, NCDC)",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "BMP4",
+          "provenance": "explicit",
+          "sub_offset": [
+            67,
+            71
+          ],
+          "sub_span": "BMP4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXC2",
+          "provenance": "explicit",
+          "sub_offset": [
+            76,
+            81
+          ],
+          "sub_span": "FOXC2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d86a57a20eeff6f9c873",
+      "span_literal": "RUNX2+ osteoprogenitors (cluster 5) that highly expressed osteogenic factors DLX5 and CLEC11A",
+      "span_offset": [
+        34490,
+        34583
+      ],
+      "summary": "Osteoprogenitors are marked by RUNX2 and highly express DLX5 and CLEC11A in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "osteoprogenitor",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            23
+          ],
+          "sub_span": "osteoprogenitors",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "RUNX2",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "RUNX2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "DLX5",
+          "provenance": "explicit",
+          "sub_offset": [
+            77,
+            81
+          ],
+          "sub_span": "DLX5",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CLEC11A",
+          "provenance": "explicit",
+          "sub_offset": [
+            86,
+            93
+          ],
+          "sub_span": "CLEC11A",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:82568680475264217c75",
+      "span_literal": "two OSR2+ PMSC subsets (clusters 6 and 7) that highly expressed POSTN",
+      "span_offset": [
+        34597,
+        34666
+      ],
+      "summary": "Perichondrial mesenchymal stromal cells are marked by OSR2 and highly express POSTN in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "perichondrial mesenchymal stromal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            10,
+            22
+          ],
+          "sub_span": "PMSC subsets",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "OSR2",
+          "provenance": "explicit",
+          "sub_offset": [
+            4,
+            8
+          ],
+          "sub_span": "OSR2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "POSTN",
+          "provenance": "explicit",
+          "sub_offset": [
+            64,
+            69
+          ],
+          "sub_span": "POSTN",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:e3d47d55a19b9481f798",
+      "span_literal": "SOX9+ chondrocytes that highly expressed COL9A2 (cluster 8)",
+      "span_offset": [
+        34672,
+        34731
+      ],
+      "summary": "Chondrocytes are marked by SOX9 and highly express COL9A2 in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "chondrocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            6,
+            18
+          ],
+          "sub_span": "chondrocytes",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX9",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "SOX9",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "COL9A2",
+          "provenance": "explicit",
+          "sub_offset": [
+            41,
+            47
+          ],
+          "sub_span": "COL9A2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f1cb1c36c23951ec5315",
+      "span_literal": "PDGFRB+ pericytes that highly expressed MCAM and ACTA2",
+      "span_offset": [
+        34737,
+        34791
+      ],
+      "summary": "Pericytes are marked by PDGFRB and highly express MCAM and ACTA2 in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "pericyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            8,
+            17
+          ],
+          "sub_span": "pericytes",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PDGFRB",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "sub_span": "PDGFRB",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MCAM",
+          "provenance": "explicit",
+          "sub_offset": [
+            40,
+            44
+          ],
+          "sub_span": "MCAM",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ACTA2",
+          "provenance": "explicit",
+          "sub_offset": [
+            49,
+            54
+          ],
+          "sub_span": "ACTA2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4db4db2300b42d23c5b5",
+      "span_literal": "Calvarial osteoprogenitors highly expressed COL1A1, PRRX2 and CLEC11A, a recently identified osteogenic factor that promotes the maintenance of adult skeleton.",
+      "span_offset": [
+        38482,
+        38641
+      ],
+      "summary": "Calvarial osteoprogenitors highly express COL1A1, PRRX2, and CLEC11A in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "calvarial osteoprogenitor",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            26
+          ],
+          "sub_span": "Calvarial osteoprogenitors",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "calvaria",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "COL1A1",
+          "provenance": "explicit",
+          "sub_offset": [
+            44,
+            50
+          ],
+          "sub_span": "COL1A1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PRRX2",
+          "provenance": "explicit",
+          "sub_offset": [
+            52,
+            57
+          ],
+          "sub_span": "PRRX2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CLEC11A",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            69
+          ],
+          "sub_span": "CLEC11A",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:27d20f3ec89a97049115",
+      "span_literal": "Similar to long bone eSSPC, SCENIC analysis showed that FOXP1/2 regulons were highly enriched in NCDC (Fig. 6g, h; Supplementary information, Fig. S6f and Table S2), although few FOXP1/2 target genes were shared by these two subsets (Fig. 3h; Supplementary information, Fig. S6f).",
+      "span_offset": [
+        38788,
+        39068
+      ],
+      "summary": "FOXP1 and FOXP2 regulons are highly enriched in neural crest-derived cells in human embryonic calvaria, similar to embryonic skeletal stem/progenitor cells in long bones.",
+      "terms": [
+        {
+          "normalized_label": "neural crest-derived cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            97,
+            101
+          ],
+          "sub_span": "NCDC",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "embryonic skeletal stem/progenitor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            11,
+            26
+          ],
+          "sub_span": "long bone eSSPC",
+          "term_type": "comparison"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP1",
+          "provenance": "explicit",
+          "sub_offset": [
+            56,
+            61
+          ],
+          "sub_span": "FOXP1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            56,
+            63
+          ],
+          "sub_span": "FOXP1/2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:003298f0ad15d1740c2d",
+      "span_literal": "Interestingly, the FOXP4 regulon was also enriched in NCDC (Fig. 6g, h), which formed an integrated transcriptional network with FOXP1/2 (Supplementary information, Fig. S6f), suggesting critical roles of FOXP family TFs in NCDC specification.",
+      "span_offset": [
+        39069,
+        39312
+      ],
+      "summary": "The FOXP4 regulon is enriched in neural crest-derived cells in human embryonic calvaria.",
+      "terms": [
+        {
+          "normalized_label": "neural crest-derived cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            54,
+            58
+          ],
+          "sub_span": "NCDC",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP4",
+          "provenance": "explicit",
+          "sub_offset": [
+            19,
+            24
+          ],
+          "sub_span": "FOXP4",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:94b8129b6a8c13a21337",
+      "span_literal": "The BMSC subset highly expressed PDGFRA and CXCL12, but not LEPR or ADIPOQ (data not shown), suggesting their differences with adult mouse BMSCs.",
+      "span_offset": [
+        42395,
+        42540
+      ],
+      "summary": "Bone marrow stromal cells highly express PDGFRA and CXCL12, but do not express LEPR or ADIPOQ in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "bone marrow stromal cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            4,
+            8
+          ],
+          "sub_span": "BMSC",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PDGFRA",
+          "provenance": "explicit",
+          "sub_offset": [
+            33,
+            39
+          ],
+          "sub_span": "PDGFRA",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CXCL12",
+          "provenance": "explicit",
+          "sub_offset": [
+            44,
+            50
+          ],
+          "sub_span": "CXCL12",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "LEPR",
+          "provenance": "explicit",
+          "sub_offset": [
+            60,
+            64
+          ],
+          "sub_span": "LEPR",
+          "term_type": "gene"
+        },
+        {
+          "direction": "negative",
+          "normalized_label": "ADIPOQ",
+          "provenance": "explicit",
+          "sub_offset": [
+            68,
+            74
+          ],
+          "sub_span": "ADIPOQ",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:cd0d4aedf776346de333",
+      "span_literal": "In contrast to FOXP1/2, the FOXP4 regulon activity was enriched in the chondroblast subset (Fig. 3f), suggesting that it is important for chondrogenesis.",
+      "span_offset": [
+        43763,
+        43916
+      ],
+      "summary": "The FOXP4 regulon activity is enriched in the chondroblast subset in human embryonic long bones.",
+      "terms": [
+        {
+          "normalized_label": "chondroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            71,
+            90
+          ],
+          "sub_span": "chondroblast subset",
+          "term_type": "celltype"
+        },
+        {
+          "normalized_label": "long bone",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FOXP4",
+          "provenance": "explicit",
+          "sub_offset": [
+            28,
+            33
+          ],
+          "sub_span": "FOXP4",
+          "term_type": "gene"
+        }
+      ]
+    }
+  ],
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "schema_version": "mrkr.claims.v1",
+  "source": {
+    "id": "benchmark/He2021",
+    "sha256": "sha256:262d9a53fe6b9f9c45bc748c22f82fe40238405b9b285c02464f9fdbc2d77d82"
+  }
+}

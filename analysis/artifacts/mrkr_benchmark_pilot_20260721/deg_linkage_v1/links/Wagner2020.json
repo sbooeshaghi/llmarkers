@@ -1,0 +1,112 @@
+{
+  "candidate_data_ids": [
+    "Supplementary Dataset 1#Variable genes clusters",
+    "Supplementary Dataset 2#Variable genes Orig.Ident",
+    "Supplementary Dataset 2#Variable genes clusters"
+  ],
+  "elapsed_seconds": 25.215008666999893,
+  "links": [
+    {
+      "claim_id": "claim:f2a313a4ee0800f876db",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "Oocyte markers from the initial clustering of ovarian cortex cells; Supplementary Dataset 1 lists variable genes per cluster including OOCYTE."
+    },
+    {
+      "claim_id": "claim:21211be8d9593cece5ea",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "Immune cell markers from the initial broad clustering; Supplementary Dataset 1 includes IMMUNE CELL as a cluster."
+    },
+    {
+      "claim_id": "claim:fd62d6437c45d506e252",
+      "data_id": "Supplementary Dataset 2#Variable genes clusters",
+      "reason": "T cell markers are described in the context of sub-clustering immune cells; Supplementary Dataset 2 has a separate T CELL cluster."
+    },
+    {
+      "claim_id": "claim:9a801f8f411824e07864",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "Endothelial cell markers from the initial clustering; Supplementary Dataset 1 includes ENDOTHELIAL CELL cluster."
+    },
+    {
+      "claim_id": "claim:2e8c8b7f7d26050e4583",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "Granulosa cell markers from the initial clustering; Supplementary Dataset 1 includes GRANULOSA CELL cluster."
+    },
+    {
+      "claim_id": "claim:a28be245420c692cff86",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "Perivascular cell markers from the initial clustering; Supplementary Dataset 1 includes PERIVASCULAR CELL cluster."
+    },
+    {
+      "claim_id": "claim:54da7183f460914f9abd",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "Stromal cell markers from the initial clustering; Supplementary Dataset 1 includes STROMAL CELL cluster."
+    },
+    {
+      "claim_id": "claim:f383f03a16c6da5dcfba",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "OSC markers found only in oocytes; OOCYTE cluster in Supplementary Dataset 1 would contain these genes."
+    },
+    {
+      "claim_id": "claim:b8ef2a0d7466bcc9c983",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "DDX4 as a germ cell/oocyte marker; the OOCYTE cluster in Supplementary Dataset 1 is the closest match for germline expression."
+    },
+    {
+      "claim_id": "claim:d5be69952dc274dbaa81",
+      "data_id": null,
+      "reason": "This claim references prior literature on isolated OSCs, not a DEG comparison from this paper's data."
+    },
+    {
+      "claim_id": "claim:f3b48eb0bc8b43833983",
+      "data_id": "Supplementary Dataset 2#Variable genes Orig.Ident",
+      "reason": "Top genes in DDX4 Ab+ cells; Supplementary Dataset 2 Variable genes by Orig.Ident compares DDX4 AB+ vs DDX4 AB-."
+    },
+    {
+      "claim_id": "claim:305dc9e419836340bbbf",
+      "data_id": "Supplementary Dataset 2#Variable genes Orig.Ident",
+      "reason": "Top genes in DDX4 Ab- cells; Supplementary Dataset 2 Variable genes by Orig.Ident compares DDX4 AB+ vs DDX4 AB-."
+    },
+    {
+      "claim_id": "claim:a3bc4a85f71ce08e7391",
+      "data_id": null,
+      "reason": "Theca cell markers are described from general literature knowledge; no theca cell cluster exists in the candidate sources."
+    },
+    {
+      "claim_id": "claim:d3639415df0fdfef6234",
+      "data_id": null,
+      "reason": "CYP19A1 in granulosa cells is cited as general biology/literature, not from a DEG analysis in this paper's datasets."
+    },
+    {
+      "claim_id": "claim:c4ea4831154a23085196",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "Absence of antral oocyte markers in detected oocytes; OOCYTE cluster in Supplementary Dataset 1 supports this negative finding."
+    },
+    {
+      "claim_id": "claim:631e216a45801cd0f984",
+      "data_id": "Supplementary Dataset 1#Variable genes clusters",
+      "reason": "Absence of antral granulosa markers; GRANULOSA CELL cluster in Supplementary Dataset 1 supports this negative finding."
+    },
+    {
+      "claim_id": "claim:fbbf62fc214adf56e626",
+      "data_id": null,
+      "reason": "Fetal mitotic germ cell pluripotency markers are from external fetal data comparison, not from the DEG sources in this paper."
+    }
+  ],
+  "model": "claude-opus-4-6",
+  "paper_id": "Wagner2020",
+  "schema_version": "mrkr.deg-linkage.v1",
+  "source": {
+    "benchmark_deg": {
+      "path": "analysis/artifacts/benchmark_evidence_v1/papers/Wagner2020/primary/deg.profiles.json",
+      "sha256": "sha256:1b621f85d5e518ddfffbc2dc18a0b44057eef26a762277fb4f686d86ccee79d5"
+    },
+    "mrkr_claims": {
+      "path": "analysis/artifacts/mrkr_benchmark_pilot_20260721/papers/benchmark/Wagner2020/paper.onto.json",
+      "sha256": "sha256:00c569d3752fd39c6bada8b3dad782e1d8eb630964e1fe8b185af5d9a8136bd8"
+    }
+  },
+  "usage": {
+    "input_tokens": 4147,
+    "output_tokens": 1263
+  }
+}

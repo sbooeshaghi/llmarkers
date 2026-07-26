@@ -1,7 +1,0 @@
-partition	source	coverage_threshold	min_group_profiles	n_groups	n_profiles	n_gene_columns	n_distinct_signatures	n_groups_in_duplicate_signatures	all_groups_identifiable_with_all_genes	n_pair_constraints	n_empty_pairs_original	information_lower_bound_log2	greedy_panel_size	ilp_status	ilp_panel_size	ilp_objective
-broad_neighborhoods	assign_neighborhood(cell_type)	0.05	20	8	1004	122	8	0	True	28	0	3	6	optimal	6	6.0
-broad_neighborhoods	assign_neighborhood(cell_type)	0.1	20	8	1004	53	8	0	True	28	0	3	7	optimal	7	7.0
-broad_neighborhoods	assign_neighborhood(cell_type)	0.2	20	8	1004	13	5	4	False	10	0	3	4	optimal	4	4.0
-reported_exact_labels_min5	normalized reported cell type label	0.05	5	73	728	1470	73	0	True	2628	0	7	30	Time limit reached. (HiGHS Status 13: Time limit reached)		
-reported_exact_labels_min5	normalized reported cell type label	0.1	5	73	728	1108	73	0	True	2628	0	7	35	Time limit reached. (HiGHS Status 13: Time limit reached)		
-reported_exact_labels_min5	normalized reported cell type label	0.2	5	73	728	612	67	8	False	2211	0	7	47	optimal	44	43.999999999999986

@@ -1,0 +1,1363 @@
+{
+  "schema_version": "mrkr.joint-deg-extraction.v1",
+  "paper_id": "Adams2020",
+  "model": "claude-opus-4-6",
+  "response_id": "msg_011CdG9CWq6MpxzxSxrjF61i",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 46684,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 10608,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "elapsed_seconds": 101.14999604225159,
+  "raw_extractions": [
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "TP63",
+      "feature_name": "TP63",
+      "source_rationale": "In addition to epithelial markers, these cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express other established basal markers such as KRT5 and KRT15 (9).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "KRT17",
+      "feature_name": "KRT17",
+      "source_rationale": "In addition to epithelial markers, these cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express other established basal markers such as KRT5 and KRT15 (9).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "LAMB3",
+      "feature_name": "LAMB3",
+      "source_rationale": "In addition to epithelial markers, these cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express other established basal markers such as KRT5 and KRT15 (9).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "LAMC2",
+      "feature_name": "LAMC2",
+      "source_rationale": "In addition to epithelial markers, these cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express other established basal markers such as KRT5 and KRT15 (9).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "VIM",
+      "feature_name": "VIM",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "CDH2",
+      "feature_name": "CDH2",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "FN1",
+      "feature_name": "FN1",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "COL1A1",
+      "feature_name": "COL1A1",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "TNC",
+      "feature_name": "TNC",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "HMGA2",
+      "feature_name": "HMGA2",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "CDKN1A",
+      "feature_name": "CDKN1A",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "CDKN2A",
+      "feature_name": "CDKN2A",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "CCND1",
+      "feature_name": "CCND1",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "CCND2",
+      "feature_name": "CCND2",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "MDM2",
+      "feature_name": "MDM2",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "GDF15",
+      "feature_name": "GDF15",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "MMP7",
+      "feature_name": "MMP7",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "EPHB2",
+      "feature_name": "EPHB2",
+      "source_rationale": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "aberrant basaloid cells",
+      "group_name": "ABERRANT BASALOID CELL",
+      "feature_label": "SOX9",
+      "feature_name": "SOX9",
+      "source_rationale": "When assessed by transcription factor motif enrichment, the cells exhibit high levels of expression and evidence of downstream activation of SOX9 (Fig. 2C, top), a transcription factor critical to distal airway development (16) and repair (17).",
+      "data_id": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "pVE",
+      "group_name": "VASCULAR ENDOTHELIAL PERIBRONCHIAL",
+      "feature_label": "COL15A1",
+      "feature_name": "COL15A1",
+      "source_rationale": "A fifth VE population is best distinguished by its expression of COL15A1.",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "smooth muscle cells",
+      "group_name": "SMOOTH MUSCLE CELL",
+      "feature_label": "DES",
+      "feature_name": "DES",
+      "source_rationale": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "smooth muscle cells",
+      "group_name": "SMOOTH MUSCLE CELL",
+      "feature_label": "ACTG2",
+      "feature_name": "ACTG2",
+      "source_rationale": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "smooth muscle cells",
+      "group_name": "SMOOTH MUSCLE CELL",
+      "feature_label": "PLN",
+      "feature_name": "PLN",
+      "source_rationale": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "pericytes",
+      "group_name": "PERICYTE",
+      "feature_label": "RGS5",
+      "feature_name": "RGS5",
+      "source_rationale": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "pericytes",
+      "group_name": "PERICYTE",
+      "feature_label": "COX4I2",
+      "feature_name": "COX4I2",
+      "source_rationale": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "fibroblasts",
+      "group_name": "FIBROBLAST",
+      "feature_label": "CD34",
+      "feature_name": "CD34",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "fibroblasts",
+      "group_name": "FIBROBLAST",
+      "feature_label": "FBN1",
+      "feature_name": "FBN1",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "fibroblasts",
+      "group_name": "FIBROBLAST",
+      "feature_label": "FBLN2",
+      "feature_name": "FBLN2",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "fibroblasts",
+      "group_name": "FIBROBLAST",
+      "feature_label": "VIT",
+      "feature_name": "VIT",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myofibroblasts",
+      "group_name": "MYOFIBROBLAST",
+      "feature_label": "MYLK",
+      "feature_name": "MYLK",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myofibroblasts",
+      "group_name": "MYOFIBROBLAST",
+      "feature_label": "NEBL",
+      "feature_name": "NEBL",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myofibroblasts",
+      "group_name": "MYOFIBROBLAST",
+      "feature_label": "MYO10",
+      "feature_name": "MYO10",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myofibroblasts",
+      "group_name": "MYOFIBROBLAST",
+      "feature_label": "MYO1D",
+      "feature_name": "MYO1D",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myofibroblasts",
+      "group_name": "MYOFIBROBLAST",
+      "feature_label": "RYR2",
+      "feature_name": "RYR2",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myofibroblasts",
+      "group_name": "MYOFIBROBLAST",
+      "feature_label": "ITGA8",
+      "feature_name": "ITGA8",
+      "source_rationale": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myofibroblasts",
+      "group_name": "MYOFIBROBLAST",
+      "feature_label": "ACTA2",
+      "feature_name": "ACTA2",
+      "source_rationale": "While these features are consistent across both cell populations in IPF and control lungs (Fig. 4, A and B), the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "fibroblast",
+      "group_name": "FIBROBLAST",
+      "feature_label": "HAS1",
+      "feature_name": "HAS1",
+      "source_rationale": "While these features are consistent across both cell populations in IPF and control lungs (Fig. 4, A and B), the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "fibroblast",
+      "group_name": "FIBROBLAST",
+      "feature_label": "HAS2",
+      "feature_name": "HAS2",
+      "source_rationale": "While these features are consistent across both cell populations in IPF and control lungs (Fig. 4, A and B), the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "fibroblast",
+      "group_name": "FIBROBLAST",
+      "feature_label": "CXCL14",
+      "feature_name": "CXCL14",
+      "source_rationale": "While these features are consistent across both cell populations in IPF and control lungs (Fig. 4, A and B), the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+      "data_id": "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophage",
+      "group_name": "MACROPHAGE",
+      "feature_label": "SPP1",
+      "feature_name": "SPP1",
+      "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophage",
+      "group_name": "MACROPHAGE",
+      "feature_label": "LIPA",
+      "feature_name": "LIPA",
+      "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophage",
+      "group_name": "MACROPHAGE",
+      "feature_label": "SPARC",
+      "feature_name": "SPARC",
+      "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophage",
+      "group_name": "MACROPHAGE",
+      "feature_label": "GPC4",
+      "feature_name": "GPC4",
+      "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophage",
+      "group_name": "MACROPHAGE",
+      "feature_label": "PALLD",
+      "feature_name": "PALLD",
+      "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophage",
+      "group_name": "MACROPHAGE",
+      "feature_label": "CTSK",
+      "feature_name": "CTSK",
+      "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophage",
+      "group_name": "MACROPHAGE",
+      "feature_label": "MMP9",
+      "feature_name": "MMP9",
+      "source_rationale": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophage",
+      "group_name": "MACROPHAGE",
+      "feature_label": "CSF1",
+      "feature_name": "CSF1",
+      "source_rationale": "At the terminus of the IPF archetype, macrophage start expressing CSF1, suggesting the possibility of an autocrine feedback loop for recruitment and activation.",
+      "data_id": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+    }
+  ],
+  "inputs": {
+    "manuscript_path": "data/lung_Adams2020/manuscript/manuscript.txt",
+    "manuscript_sha256": "sha256:3270b940288ce4d932206a1d32efb0efc1bde7b94c1a7c11f41d354bbc236f47",
+    "benchmark_text_sha256": "sha256:51fa47dc8f7c8b55a9576ce879f6cdf47a9d081d535adc9cd6162ac9d248d0a9",
+    "benchmark_deg_sha256": "sha256:43564aeebaf0e50a10e5f13b34fae614e9c8300e396b040bd2f7303ccd2ba3de",
+    "gene_map_sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+    "prompt_sha256": "sha256:f52b90d14f0b4ccf6ea2ff3915b6718b2427b1133028ad2b2d6206354891b7dc",
+    "candidate_data_ids": [
+      "ALL-Supplementary_Data_S6-aba1983_data_s6",
+      "ALL_COPD_CTRL-Supplementary_Data_S9-aba1983_data_s9",
+      "ALL_IPF_COPD-Supplementary_Data_S10-aba1983_data_s10",
+      "ALL_IPF_CTRL-Supplementary_Data_S8-aba1983_data_s8",
+      "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+      "LYMPHOID-Supplementary_Data_S5-aba1983_data_s5",
+      "MYELOID-Supplementary_Data_S4-aba1983_data_s4",
+      "STROMAL-Supplementary_Data_S3-aba1983_data_s3"
+    ]
+  },
+  "claims_document": {
+    "schema_version": "mrkr.claims.v1",
+    "source": {
+      "id": "manuscript.txt",
+      "sha256": "sha256:3270b940288ce4d932206a1d32efb0efc1bde7b94c1a7c11f41d354bbc236f47"
+    },
+    "producer": {
+      "name": "mrkr",
+      "version": "0.4.0"
+    },
+    "claims": [
+      {
+        "claim_id": "claim:3b62c2ece00a80e54e35",
+        "span_literal": "In addition to epithelial markers, these cells express the basal cell markers TP63, KRT17, LAMB3, and LAMC2 but do not express other established basal markers such as KRT5 and KRT15 (9).",
+        "span_offset": [
+          8942,
+          9128
+        ],
+        "summary": "In Homo sapiens, ABERRANT BASALOID CELL is marked by TP63. In Homo sapiens, ABERRANT BASALOID CELL is marked by KRT17. In Homo sapiens, ABERRANT BASALOID CELL is marked by LAMB3. In Homo sapiens, ABERRANT BASALOID CELL is marked by LAMC2.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "ABERRANT BASALOID CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "TP63",
+            "sub_offset": [
+              78,
+              82
+            ],
+            "normalized_label": "TP63",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "KRT17",
+            "sub_offset": [
+              84,
+              89
+            ],
+            "normalized_label": "KRT17",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "LAMB3",
+            "sub_offset": [
+              91,
+              96
+            ],
+            "normalized_label": "LAMB3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "LAMC2",
+            "sub_offset": [
+              102,
+              107
+            ],
+            "normalized_label": "LAMC2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:8e9c3686242248273280",
+        "span_literal": "These cells express markers of epithelial-mesenchymal transition (EMT) such as VIM, CDH2, FN1, COL1A1, TNC, and HMGA2 (10), senescence-related genes including CDKN1A, CDKN2A, CCND1, CCND2, MDM2, and GDF15 (Fig. 2C, right) (11, 12), and the highest normalized expression levels across all profiled cell types of established IPF-related molecules, such as matrix metallopeptidase 7 (MMP7) (13), combined with a_(V)b6 integrin subunits (14) and EPHB2 (15).",
+        "span_offset": [
+          9129,
+          9582
+        ],
+        "summary": "In Homo sapiens, ABERRANT BASALOID CELL is marked by VIM. In Homo sapiens, ABERRANT BASALOID CELL is marked by CDH2. In Homo sapiens, ABERRANT BASALOID CELL is marked by FN1. In Homo sapiens, ABERRANT BASALOID CELL is marked by COL1A1. In Homo sapiens, ABERRANT BASALOID CELL is marked by TNC. In Homo sapiens, ABERRANT BASALOID CELL is marked by HMGA2. In Homo sapiens, ABERRANT BASALOID CELL is marked by CDKN1A. In Homo sapiens, ABERRANT BASALOID CELL is marked by CDKN2A. In Homo sapiens, ABERRANT BASALOID CELL is marked by CCND1. In Homo sapiens, ABERRANT BASALOID CELL is marked by CCND2. In Homo sapiens, ABERRANT BASALOID CELL is marked by MDM2. In Homo sapiens, ABERRANT BASALOID CELL is marked by GDF15. In Homo sapiens, ABERRANT BASALOID CELL is marked by MMP7. In Homo sapiens, ABERRANT BASALOID CELL is marked by EPHB2.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "ABERRANT BASALOID CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "VIM",
+            "sub_offset": [
+              79,
+              82
+            ],
+            "normalized_label": "VIM",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CDH2",
+            "sub_offset": [
+              84,
+              88
+            ],
+            "normalized_label": "CDH2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FN1",
+            "sub_offset": [
+              90,
+              93
+            ],
+            "normalized_label": "FN1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "COL1A1",
+            "sub_offset": [
+              95,
+              101
+            ],
+            "normalized_label": "COL1A1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TNC",
+            "sub_offset": [
+              103,
+              106
+            ],
+            "normalized_label": "TNC",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "HMGA2",
+            "sub_offset": [
+              112,
+              117
+            ],
+            "normalized_label": "HMGA2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CDKN1A",
+            "sub_offset": [
+              159,
+              165
+            ],
+            "normalized_label": "CDKN1A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CDKN2A",
+            "sub_offset": [
+              167,
+              173
+            ],
+            "normalized_label": "CDKN2A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CCND1",
+            "sub_offset": [
+              175,
+              180
+            ],
+            "normalized_label": "CCND1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CCND2",
+            "sub_offset": [
+              182,
+              187
+            ],
+            "normalized_label": "CCND2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MDM2",
+            "sub_offset": [
+              189,
+              193
+            ],
+            "normalized_label": "MDM2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "GDF15",
+            "sub_offset": [
+              199,
+              204
+            ],
+            "normalized_label": "GDF15",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MMP7",
+            "sub_offset": [
+              381,
+              385
+            ],
+            "normalized_label": "MMP7",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "EPHB2",
+            "sub_offset": [
+              442,
+              447
+            ],
+            "normalized_label": "EPHB2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:ffe73e745908a698d473",
+        "span_literal": "When assessed by transcription factor motif enrichment, the cells exhibit high levels of expression and evidence of downstream activation of SOX9 (Fig. 2C, top), a transcription factor critical to distal airway development (16) and repair (17).",
+        "span_offset": [
+          9583,
+          9827
+        ],
+        "summary": "In Homo sapiens, ABERRANT BASALOID CELL is marked by SOX9.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "ABERRANT BASALOID CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SOX9",
+            "sub_offset": [
+              141,
+              145
+            ],
+            "normalized_label": "SOX9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:8aa8ff6538cd25cf9b88",
+        "span_literal": "A fifth VE population is best distinguished by its expression of COL15A1.",
+        "span_offset": [
+          13075,
+          13148
+        ],
+        "summary": "In Homo sapiens, VASCULAR ENDOTHELIAL PERIBRONCHIAL is marked by COL15A1.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "VASCULAR ENDOTHELIAL PERIBRONCHIAL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "COL15A1",
+            "sub_offset": [
+              65,
+              72
+            ],
+            "normalized_label": "COL15A1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:edc5d79ed35d90c61333",
+        "span_literal": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+        "span_offset": [
+          15900,
+          16149
+        ],
+        "summary": "In Homo sapiens, SMOOTH MUSCLE CELL is marked by DES. In Homo sapiens, SMOOTH MUSCLE CELL is marked by ACTG2. In Homo sapiens, SMOOTH MUSCLE CELL is marked by PLN.",
+        "terms": [
+          {
+            "sub_span": "smooth muscle cells",
+            "sub_offset": [
+              176,
+              195
+            ],
+            "normalized_label": "SMOOTH MUSCLE CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "DES",
+            "sub_offset": [
+              197,
+              200
+            ],
+            "normalized_label": "DES",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ACTG2",
+            "sub_offset": [
+              202,
+              207
+            ],
+            "normalized_label": "ACTG2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PLN",
+            "sub_offset": [
+              213,
+              216
+            ],
+            "normalized_label": "PLN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:6fd4233caebb8132c20e",
+        "span_literal": "To characterize myofibroblasts and fibroblasts in the IPF lung, we first focused on cell populations characterized by PDGFRB expression and then removed cells characterized as smooth muscle cells (DES, ACTG2, and PLN) or pericytes (RGS5 and COX4I2).",
+        "span_offset": [
+          15900,
+          16149
+        ],
+        "summary": "In Homo sapiens, PERICYTE is marked by RGS5. In Homo sapiens, PERICYTE is marked by COX4I2.",
+        "terms": [
+          {
+            "sub_span": "pericytes",
+            "sub_offset": [
+              221,
+              230
+            ],
+            "normalized_label": "PERICYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "RGS5",
+            "sub_offset": [
+              232,
+              236
+            ],
+            "normalized_label": "RGS5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "COX4I2",
+            "sub_offset": [
+              241,
+              247
+            ],
+            "normalized_label": "COX4I2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:b80618e77ca5bb56a5f0",
+        "span_literal": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+        "span_offset": [
+          16150,
+          16418
+        ],
+        "summary": "In Homo sapiens, FIBROBLAST is marked by CD34. In Homo sapiens, FIBROBLAST is marked by FBN1. In Homo sapiens, FIBROBLAST is marked by FBLN2. In Homo sapiens, FIBROBLAST is marked by VIT.",
+        "terms": [
+          {
+            "sub_span": "fibroblasts",
+            "sub_offset": [
+              62,
+              73
+            ],
+            "normalized_label": "FIBROBLAST",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD34",
+            "sub_offset": [
+              106,
+              110
+            ],
+            "normalized_label": "CD34",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FBN1",
+            "sub_offset": [
+              112,
+              116
+            ],
+            "normalized_label": "FBN1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FBLN2",
+            "sub_offset": [
+              118,
+              123
+            ],
+            "normalized_label": "FBLN2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "VIT",
+            "sub_offset": [
+              129,
+              132
+            ],
+            "normalized_label": "VIT",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:79336447ccd97238b839",
+        "span_literal": "This strategy allowed us to identify two stromal populations: fibroblasts, characterized by expression of CD34, FBN1, FBLN2, and VIT and myofibroblasts that consistently express MYLK, NEBL, MYO10, MYO1D, RYR2, and ITGA8, as described in the murine lung (Fig. 4A) (21).",
+        "span_offset": [
+          16150,
+          16418
+        ],
+        "summary": "In Homo sapiens, MYOFIBROBLAST is marked by MYLK. In Homo sapiens, MYOFIBROBLAST is marked by NEBL. In Homo sapiens, MYOFIBROBLAST is marked by MYO10. In Homo sapiens, MYOFIBROBLAST is marked by MYO1D. In Homo sapiens, MYOFIBROBLAST is marked by RYR2. In Homo sapiens, MYOFIBROBLAST is marked by ITGA8.",
+        "terms": [
+          {
+            "sub_span": "myofibroblasts",
+            "sub_offset": [
+              137,
+              151
+            ],
+            "normalized_label": "MYOFIBROBLAST",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MYLK",
+            "sub_offset": [
+              178,
+              182
+            ],
+            "normalized_label": "MYLK",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "NEBL",
+            "sub_offset": [
+              184,
+              188
+            ],
+            "normalized_label": "NEBL",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MYO10",
+            "sub_offset": [
+              190,
+              195
+            ],
+            "normalized_label": "MYO10",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MYO1D",
+            "sub_offset": [
+              197,
+              202
+            ],
+            "normalized_label": "MYO1D",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "RYR2",
+            "sub_offset": [
+              204,
+              208
+            ],
+            "normalized_label": "RYR2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ITGA8",
+            "sub_offset": [
+              214,
+              219
+            ],
+            "normalized_label": "ITGA8",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:19d5a3eb292b3ab31882",
+        "span_literal": "While these features are consistent across both cell populations in IPF and control lungs (Fig. 4, A and B), the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+        "span_offset": [
+          16419,
+          16781
+        ],
+        "summary": "In Homo sapiens, MYOFIBROBLAST is marked by ACTA2.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "MYOFIBROBLAST",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ACTA2",
+            "sub_offset": [
+              196,
+              201
+            ],
+            "normalized_label": "ACTA2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:526d9216786634a956ce",
+        "span_literal": "While these features are consistent across both cell populations in IPF and control lungs (Fig. 4, A and B), the IPF lung contains a myofibroblast phenotype enriched with fibrillar collagens, and ACTA2 (Fig. 4, B to D) and a fibroblast phenotype that exhibits increased expression of HAS1, HAS2, FBN1, and the SHH-induced chemokine, CXCL14 (Fig. 4, B to D) (22).",
+        "span_offset": [
+          16419,
+          16781
+        ],
+        "summary": "In Homo sapiens, FIBROBLAST is marked by HAS1. In Homo sapiens, FIBROBLAST is marked by HAS2. In Homo sapiens, FIBROBLAST is marked by CXCL14.",
+        "terms": [
+          {
+            "sub_span": "fibroblast",
+            "sub_offset": [
+              136,
+              146
+            ],
+            "normalized_label": "FIBROBLAST",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "HAS1",
+            "sub_offset": [
+              284,
+              288
+            ],
+            "normalized_label": "HAS1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "HAS2",
+            "sub_offset": [
+              290,
+              294
+            ],
+            "normalized_label": "HAS2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CXCL14",
+            "sub_offset": [
+              333,
+              339
+            ],
+            "normalized_label": "CXCL14",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:efcd8054a87a59b83f95",
+        "span_literal": "As previously reported (7), we observe both a gradual and sequential shift in associated features along the IPF macrophage archetype as it approached its most extreme terminus (Fig. 5, D and E), SPP1 and cholesterol esterases lipoprotein lipase and LIPA expression steadily increasing in expression relatively early along the trajectory, ECM remodeling genes SPARC, GPC4, PALLD, CTSK, and MMP9 ramping up in expression further along the manifold.",
+        "span_offset": [
+          20583,
+          21029
+        ],
+        "summary": "In Homo sapiens, MACROPHAGE is marked by SPP1. In Homo sapiens, MACROPHAGE is marked by LIPA. In Homo sapiens, MACROPHAGE is marked by SPARC. In Homo sapiens, MACROPHAGE is marked by GPC4. In Homo sapiens, MACROPHAGE is marked by PALLD. In Homo sapiens, MACROPHAGE is marked by CTSK. In Homo sapiens, MACROPHAGE is marked by MMP9.",
+        "terms": [
+          {
+            "sub_span": "macrophage",
+            "sub_offset": [
+              112,
+              122
+            ],
+            "normalized_label": "MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SPP1",
+            "sub_offset": [
+              195,
+              199
+            ],
+            "normalized_label": "SPP1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "LIPA",
+            "sub_offset": [
+              249,
+              253
+            ],
+            "normalized_label": "LIPA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SPARC",
+            "sub_offset": [
+              359,
+              364
+            ],
+            "normalized_label": "SPARC",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "GPC4",
+            "sub_offset": [
+              366,
+              370
+            ],
+            "normalized_label": "GPC4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PALLD",
+            "sub_offset": [
+              372,
+              377
+            ],
+            "normalized_label": "PALLD",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CTSK",
+            "sub_offset": [
+              379,
+              383
+            ],
+            "normalized_label": "CTSK",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MMP9",
+            "sub_offset": [
+              389,
+              393
+            ],
+            "normalized_label": "MMP9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:b02022b97d1d583c9eac",
+        "span_literal": "At the terminus of the IPF archetype, macrophage start expressing CSF1, suggesting the possibility of an autocrine feedback loop for recruitment and activation.",
+        "span_offset": [
+          21030,
+          21190
+        ],
+        "summary": "In Homo sapiens, MACROPHAGE is marked by CSF1.",
+        "terms": [
+          {
+            "sub_span": "macrophage",
+            "sub_offset": [
+              38,
+              48
+            ],
+            "normalized_label": "MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CSF1",
+            "sub_offset": [
+              66,
+              70
+            ],
+            "normalized_label": "CSF1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      }
+    ]
+  },
+  "links": {
+    "claim:3b62c2ece00a80e54e35": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+    "claim:8e9c3686242248273280": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+    "claim:ffe73e745908a698d473": "EPITHELIAL-Supplementary_Data_S2-aba1983_data_s2",
+    "claim:8aa8ff6538cd25cf9b88": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+    "claim:edc5d79ed35d90c61333": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+    "claim:6fd4233caebb8132c20e": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+    "claim:b80618e77ca5bb56a5f0": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+    "claim:79336447ccd97238b839": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+    "claim:19d5a3eb292b3ab31882": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+    "claim:526d9216786634a956ce": "STROMAL-Supplementary_Data_S3-aba1983_data_s3",
+    "claim:efcd8054a87a59b83f95": "MYELOID-Supplementary_Data_S4-aba1983_data_s4",
+    "claim:b02022b97d1d583c9eac": "MYELOID-Supplementary_Data_S4-aba1983_data_s4"
+  },
+  "link_origins": {
+    "claim:3b62c2ece00a80e54e35": "model",
+    "claim:8e9c3686242248273280": "model",
+    "claim:ffe73e745908a698d473": "model",
+    "claim:8aa8ff6538cd25cf9b88": "model",
+    "claim:edc5d79ed35d90c61333": "model",
+    "claim:6fd4233caebb8132c20e": "model",
+    "claim:b80618e77ca5bb56a5f0": "model",
+    "claim:79336447ccd97238b839": "model",
+    "claim:19d5a3eb292b3ab31882": "model",
+    "claim:526d9216786634a956ce": "model",
+    "claim:efcd8054a87a59b83f95": "model",
+    "claim:b02022b97d1d583c9eac": "model"
+  },
+  "validation": {
+    "preparation": {
+      "raw_claims": 47,
+      "retained_claims": 47,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": [],
+      "strict_exclusions": [],
+      "strictly_grounded_claims": 47
+    },
+    "validation": {
+      "valid": true,
+      "n_claims": 12,
+      "n_errors": 0,
+      "errors": [],
+      "n_warnings": 0,
+      "warnings": []
+    }
+  }
+}

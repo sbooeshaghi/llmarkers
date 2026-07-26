@@ -1,0 +1,21 @@
+{
+  "allow_partial": false,
+  "counts": {
+    "complete": 0,
+    "failed": 0,
+    "skip": 7
+  },
+  "finished_at": "2026-07-21T19:06:09.872087+00:00",
+  "mrkr_command": [
+    "uv",
+    "run",
+    "--project",
+    ".",
+    "--locked",
+    "mrkr"
+  ],
+  "mrkr_source_sha256": "sha256:b592ef8e24e15a18f901147129505470406af043c8836d1c1e50d9f3cb0f8ab5",
+  "n_requested": 7,
+  "schema_version": "llmarkers.corpus-run.v1",
+  "source_manifest_sha256": "sha256:1cf277cf3e46bcee1565f2e23ff401796e750f4dfdc12a513fe13f266a1742b3"
+}

@@ -1,0 +1,935 @@
+{
+  "schema_version": "mrkr.claims.v1",
+  "source": {
+    "id": "benchmark/Emont2022",
+    "sha256": "sha256:6626bba73517058996a3624dbc3f0598db4ea599163134a22371b4a0c7355146"
+  },
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "claims": [
+    {
+      "claim_id": "claim:fd9a7ec691a357460471",
+      "span_literal": "all of which express the common marker gene PDGFRA",
+      "span_offset": [
+        9915,
+        9965
+      ],
+      "summary": "All human adipose stem and progenitor cell subpopulations express the common marker gene PDGFRA.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "adipose stem and progenitor cell",
+          "term_type": "celltype",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "PDGFRA",
+          "sub_offset": [
+            44,
+            50
+          ],
+          "normalized_label": "PDGFRA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0728c0ad0b4213a7ed27",
+      "span_literal": "all of which were also Pdgfra+ and some of which correspond well with a particular human subpopulation",
+      "span_offset": [
+        10057,
+        10159
+      ],
+      "summary": "All mouse adipose stem and progenitor cell subpopulations express Pdgfra.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "adipose stem and progenitor cell",
+          "term_type": "celltype",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "Pdgfra+",
+          "sub_offset": [
+            23,
+            30
+          ],
+          "normalized_label": "Pdgfra",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0cdca4730b79b9dcaa97",
+      "span_literal": "mASPC2 and hASPC2 are characterized by high expression of Aldh1a3 and ALDH1A3, respectively",
+      "span_offset": [
+        10200,
+        10291
+      ],
+      "summary": "Human adipose stem and progenitor cell 2 is characterized by high expression of ALDH1A3.",
+      "terms": [
+        {
+          "sub_span": "hASPC2",
+          "sub_offset": [
+            11,
+            17
+          ],
+          "normalized_label": "adipose stem and progenitor cell 2",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "ALDH1A3",
+          "sub_offset": [
+            70,
+            77
+          ],
+          "normalized_label": "ALDH1A3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:491dd01c5539eeeeb54f",
+      "span_literal": "mASPC2 and hASPC2 are characterized by high expression of Aldh1a3 and ALDH1A3, respectively",
+      "span_offset": [
+        10200,
+        10291
+      ],
+      "summary": "Mouse adipose stem and progenitor cell 2 is characterized by high expression of Aldh1a3.",
+      "terms": [
+        {
+          "sub_span": "mASPC2",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "normalized_label": "mouse adipose stem and progenitor cell 2",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "Aldh1a3",
+          "sub_offset": [
+            58,
+            65
+          ],
+          "normalized_label": "Aldh1a3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:19f715c336fcf3d7cf0c",
+      "span_literal": "mASPC4 and hASPC4 express Epha3 and EPHA3, respectively",
+      "span_offset": [
+        10442,
+        10497
+      ],
+      "summary": "Human adipose stem and progenitor cell 4 expresses EPHA3.",
+      "terms": [
+        {
+          "sub_span": "hASPC4",
+          "sub_offset": [
+            11,
+            17
+          ],
+          "normalized_label": "adipose stem and progenitor cell 4",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "EPHA3",
+          "sub_offset": [
+            36,
+            41
+          ],
+          "normalized_label": "EPHA3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:601b5a290c5eb8e312e5",
+      "span_literal": "mASPC4 and hASPC4 express Epha3 and EPHA3, respectively",
+      "span_offset": [
+        10442,
+        10497
+      ],
+      "summary": "Mouse adipose stem and progenitor cell 4 expresses Epha3.",
+      "terms": [
+        {
+          "sub_span": "mASPC4",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "normalized_label": "mouse adipose stem and progenitor cell 4",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "Epha3",
+          "sub_offset": [
+            26,
+            31
+          ],
+          "normalized_label": "Epha3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:dea8ff8598d9cdff85e0",
+      "span_literal": "the previously described Icam1+ committed progenitor, Dpp4+ early progenitor and Cd142+ Areg populations23 cluster together across studies",
+      "span_offset": [
+        10950,
+        11088
+      ],
+      "summary": "The committed progenitor cell is marked by Icam1 expression.",
+      "terms": [
+        {
+          "sub_span": "committed progenitor",
+          "sub_offset": [
+            32,
+            52
+          ],
+          "normalized_label": "committed progenitor cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "Icam1+",
+          "sub_offset": [
+            25,
+            31
+          ],
+          "normalized_label": "Icam1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:16206fb46ca06b2c8378",
+      "span_literal": "the previously described Icam1+ committed progenitor, Dpp4+ early progenitor and Cd142+ Areg populations23 cluster together across studies",
+      "span_offset": [
+        10950,
+        11088
+      ],
+      "summary": "The early progenitor cell is marked by Dpp4 expression.",
+      "terms": [
+        {
+          "sub_span": "early progenitor",
+          "sub_offset": [
+            60,
+            76
+          ],
+          "normalized_label": "early progenitor cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "Dpp4+",
+          "sub_offset": [
+            54,
+            59
+          ],
+          "normalized_label": "Dpp4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:62cea8fa8b5ac5f4cc50",
+      "span_literal": "the previously described Icam1+ committed progenitor, Dpp4+ early progenitor and Cd142+ Areg populations23 cluster together across studies",
+      "span_offset": [
+        10950,
+        11088
+      ],
+      "summary": "The adipogenesis-regulatory cell population is marked by Cd142 expression.",
+      "terms": [
+        {
+          "sub_span": "Cd142+ Areg",
+          "sub_offset": [
+            81,
+            92
+          ],
+          "normalized_label": "adipogenesis-regulatory cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "Cd142+",
+          "sub_offset": [
+            81,
+            87
+          ],
+          "normalized_label": "Cd142",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c2e1761dc292b870708c",
+      "span_literal": "including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+)",
+      "span_offset": [
+        6340,
+        6530
+      ],
+      "summary": "Macrophages in human white adipose tissue are marked by CD14 expression.",
+      "terms": [
+        {
+          "sub_span": "macrophages",
+          "sub_offset": [
+            48,
+            59
+          ],
+          "normalized_label": "macrophage",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CD14+",
+          "sub_offset": [
+            61,
+            66
+          ],
+          "normalized_label": "CD14",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3e34287b2639df73b859",
+      "span_literal": "including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+)",
+      "span_offset": [
+        6340,
+        6530
+      ],
+      "summary": "Natural killer cells in human white adipose tissue are marked by CD96 expression.",
+      "terms": [
+        {
+          "sub_span": "natural killer (NK) cells",
+          "sub_offset": [
+            111,
+            136
+          ],
+          "normalized_label": "natural killer cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CD96+",
+          "sub_offset": [
+            138,
+            143
+          ],
+          "normalized_label": "CD96",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4c1ae0aaa5e7ed710ba5",
+      "span_literal": "including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+)",
+      "span_offset": [
+        6340,
+        6530
+      ],
+      "summary": "Mast cells in human white adipose tissue are marked by CPA3 expression.",
+      "terms": [
+        {
+          "sub_span": "mast cells",
+          "sub_offset": [
+            146,
+            156
+          ],
+          "normalized_label": "mast cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CPA3+",
+          "sub_offset": [
+            158,
+            163
+          ],
+          "normalized_label": "CPA3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d1f4519605a2dd5b90a5",
+      "span_literal": "including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+)",
+      "span_offset": [
+        6340,
+        6530
+      ],
+      "summary": "Neutrophils in human white adipose tissue are marked by CSF3R expression.",
+      "terms": [
+        {
+          "sub_span": "neutrophils",
+          "sub_offset": [
+            170,
+            181
+          ],
+          "normalized_label": "neutrophil",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CSF3R+",
+          "sub_offset": [
+            183,
+            189
+          ],
+          "normalized_label": "CSF3R",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d92818e1a1c727135a0e",
+      "span_literal": "DC subpopulations 1 and 2 resemble previously reported CLEC9A+ and CD1C+ populations from blood, respectively16",
+      "span_offset": [
+        6642,
+        6753
+      ],
+      "summary": "Dendritic cell subpopulation 1 is marked by CLEC9A expression.",
+      "terms": [
+        {
+          "sub_span": "DC subpopulations 1",
+          "sub_offset": [
+            0,
+            19
+          ],
+          "normalized_label": "dendritic cell subpopulation 1",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CLEC9A+",
+          "sub_offset": [
+            55,
+            62
+          ],
+          "normalized_label": "CLEC9A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3fe7b433c93ef7ce19a5",
+      "span_literal": "DC subpopulations 1 and 2 resemble previously reported CLEC9A+ and CD1C+ populations from blood, respectively16",
+      "span_offset": [
+        6642,
+        6753
+      ],
+      "summary": "Dendritic cell subpopulation 2 is marked by CD1C expression.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "dendritic cell subpopulation 2",
+          "term_type": "celltype",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "CD1C+",
+          "sub_offset": [
+            67,
+            72
+          ],
+          "normalized_label": "CD1C",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:23c023e7b32f4c9a5056",
+      "span_literal": "including CTLA4+ human regulatory T cells17",
+      "span_offset": [
+        6856,
+        6899
+      ],
+      "summary": "Human regulatory T cells are marked by CTLA4 expression.",
+      "terms": [
+        {
+          "sub_span": "human regulatory T cells",
+          "sub_offset": [
+            17,
+            41
+          ],
+          "normalized_label": "regulatory T cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CTLA4+",
+          "sub_offset": [
+            10,
+            16
+          ],
+          "normalized_label": "CTLA4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:0515a5080f6a882d6691",
+      "span_literal": "Some of the visceral samples included cells that appeared to be endometrial in origin (PRLR+), probably owing to endometriosis.",
+      "span_offset": [
+        1840,
+        1967
+      ],
+      "summary": "Endometrial cells are marked by PRLR expression.",
+      "terms": [
+        {
+          "sub_span": "endometrial",
+          "sub_offset": [
+            64,
+            75
+          ],
+          "normalized_label": "endometrial cell",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "PRLR+",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "normalized_label": "PRLR",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c9db7881f7217d3557e7",
+      "span_literal": "with the addition of distinct male and female epithelial populations (Dcdc2a+ and Erbb4+, respectively)",
+      "span_offset": [
+        4052,
+        4155
+      ],
+      "summary": "The distinct male epithelial population in mouse adipose tissue is marked by Dcdc2a expression.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "male epithelial cell",
+          "term_type": "celltype",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "Dcdc2a+",
+          "sub_offset": [
+            70,
+            77
+          ],
+          "normalized_label": "Dcdc2a",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:67df9053dc02260f917d",
+      "span_literal": "with the addition of distinct male and female epithelial populations (Dcdc2a+ and Erbb4+, respectively)",
+      "span_offset": [
+        4052,
+        4155
+      ],
+      "summary": "The distinct female epithelial population in mouse adipose tissue is marked by Erbb4 expression.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "female epithelial cell",
+          "term_type": "celltype",
+          "provenance": "implicit"
+        },
+        {
+          "sub_span": "Erbb4+",
+          "sub_offset": [
+            82,
+            88
+          ],
+          "normalized_label": "Erbb4",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:49c23e2d48f5706a8127",
+      "span_literal": "hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A",
+      "span_offset": [
+        19316,
+        19429
+      ],
+      "summary": "Human adipocyte subpopulation 6 selectively expresses EBF2, ESRRG, and PPARGC1A, genes typically associated with thermogenesis.",
+      "terms": [
+        {
+          "sub_span": "hAd6",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "human adipocyte subpopulation 6",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "EBF2",
+          "sub_offset": [
+            89,
+            93
+          ],
+          "normalized_label": "EBF2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "ESRRG",
+          "sub_offset": [
+            95,
+            100
+          ],
+          "normalized_label": "ESRRG",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "PPARGC1A",
+          "sub_offset": [
+            105,
+            113
+          ],
+          "normalized_label": "PPARGC1A",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b1b5ad2717bbc6a73033",
+      "span_literal": "the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3",
+      "span_offset": [
+        16298,
+        16387
+      ],
+      "summary": "Human adipocyte subpopulation 3 most highly expresses adiponectin and adipsin (encoded by CFD).",
+      "terms": [
+        {
+          "sub_span": "hAd3",
+          "sub_offset": [
+            85,
+            89
+          ],
+          "normalized_label": "human adipocyte subpopulation 3",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "CFD",
+          "sub_offset": [
+            51,
+            54
+          ],
+          "normalized_label": "CFD",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:eae71887dddefd5a4c0f",
+      "span_literal": "genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5",
+      "span_offset": [
+        16393,
+        16499
+      ],
+      "summary": "Human adipocyte subpopulation 5 most highly expresses insulin signalling genes INSR, IRS1, and IRS2.",
+      "terms": [
+        {
+          "sub_span": "hAd5",
+          "sub_offset": [
+            102,
+            106
+          ],
+          "normalized_label": "human adipocyte subpopulation 5",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "INSR",
+          "sub_offset": [
+            53,
+            57
+          ],
+          "normalized_label": "INSR",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IRS1",
+          "sub_offset": [
+            59,
+            63
+          ],
+          "normalized_label": "IRS1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "IRS2",
+          "sub_offset": [
+            68,
+            72
+          ],
+          "normalized_label": "IRS2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d899ab39f7e833ca0987",
+      "span_literal": "hAd3 was associated with 'triglyceride biosynthesis' and included higher expression of DGAT2, SREBF1 and PNPLA3",
+      "span_offset": [
+        17104,
+        17215
+      ],
+      "summary": "Human adipocyte subpopulation 3 shows higher expression of DGAT2, SREBF1, and PNPLA3.",
+      "terms": [
+        {
+          "sub_span": "hAd3",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "human adipocyte subpopulation 3",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "DGAT2",
+          "sub_offset": [
+            87,
+            92
+          ],
+          "normalized_label": "DGAT2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "SREBF1",
+          "sub_offset": [
+            94,
+            100
+          ],
+          "normalized_label": "SREBF1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "PNPLA3",
+          "sub_offset": [
+            105,
+            111
+          ],
+          "normalized_label": "PNPLA3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f6b3c1f1cf0d0571e29f",
+      "span_literal": "The hAd4 cluster expresses the highest amounts of several fatty acid desaturases, including ELOVL5 and FADS3",
+      "span_offset": [
+        17241,
+        17349
+      ],
+      "summary": "Human adipocyte subpopulation 4 expresses the highest amounts of fatty acid desaturases including ELOVL5 and FADS3.",
+      "terms": [
+        {
+          "sub_span": "hAd4",
+          "sub_offset": [
+            4,
+            8
+          ],
+          "normalized_label": "human adipocyte subpopulation 4",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "ELOVL5",
+          "sub_offset": [
+            92,
+            98
+          ],
+          "normalized_label": "ELOVL5",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "FADS3",
+          "sub_offset": [
+            103,
+            108
+          ],
+          "normalized_label": "FADS3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:464802fabd18200a8a5c",
+      "span_literal": "with relatively high expression of Prdm16 and Ppargc1a in mAd1B and even higher expression of these genes, as well as expression of Ucp1 and Cidea in mAd1C",
+      "span_offset": [
+        24914,
+        25069
+      ],
+      "summary": "Mouse adipocyte subpopulation 1B, a thermogenic beige adipocyte, shows relatively high expression of Prdm16 and Ppargc1a.",
+      "terms": [
+        {
+          "sub_span": "mAd1B",
+          "sub_offset": [
+            58,
+            63
+          ],
+          "normalized_label": "mouse adipocyte subpopulation 1B",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "Prdm16",
+          "sub_offset": [
+            35,
+            41
+          ],
+          "normalized_label": "Prdm16",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "Ppargc1a",
+          "sub_offset": [
+            46,
+            54
+          ],
+          "normalized_label": "Ppargc1a",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:ab151ca34d8cf7a122e3",
+      "span_literal": "with relatively high expression of Prdm16 and Ppargc1a in mAd1B and even higher expression of these genes, as well as expression of Ucp1 and Cidea in mAd1C",
+      "span_offset": [
+        24914,
+        25069
+      ],
+      "summary": "Mouse adipocyte subpopulation 1C, a thermogenic beige adipocyte, expresses Prdm16, Ppargc1a, Ucp1, and Cidea.",
+      "terms": [
+        {
+          "sub_span": "mAd1C",
+          "sub_offset": [
+            150,
+            155
+          ],
+          "normalized_label": "mouse adipocyte subpopulation 1C",
+          "term_type": "celltype",
+          "provenance": "explicit"
+        },
+        {
+          "sub_span": "Ucp1",
+          "sub_offset": [
+            132,
+            136
+          ],
+          "normalized_label": "Ucp1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        },
+        {
+          "sub_span": "Cidea",
+          "sub_offset": [
+            141,
+            146
+          ],
+          "normalized_label": "Cidea",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "raw_claims": 26,
+    "retained_claims": 26,
+    "reanchored_spans": 0,
+    "excluded_claims": []
+  }
+}

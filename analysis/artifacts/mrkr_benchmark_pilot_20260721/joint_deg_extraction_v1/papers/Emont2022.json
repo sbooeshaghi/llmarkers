@@ -1,0 +1,1186 @@
+{
+  "schema_version": "mrkr.joint-deg-extraction.v1",
+  "paper_id": "Emont2022",
+  "model": "claude-opus-4-6",
+  "response_id": "msg_011CdG9KzaQ8dbfwbKU1SLWk",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 19278,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4672,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "elapsed_seconds": 59.791088342666626,
+  "raw_extractions": [
+    {
+      "organism": "homo_sapiens",
+      "group_label": "ASPCs",
+      "group_name": "ADIPOSE STEM AND PROGENITOR CELL",
+      "feature_label": "PDGFRA",
+      "feature_name": "PDGFRA",
+      "source_rationale": "We identified six distinct subpopulations of human ASPCs (see Supplementary Note 1) in subclustered scRNA-seq and sNuc-seq samples, all of which express the common marker gene PDGFRA (Extended Data Fig. 7a, b).",
+      "data_id": "Supplementary Table 1#all markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hASPC2",
+      "group_name": "ADIPOSE STEM AND PROGENITOR CELL 2",
+      "feature_label": "ALDH1A3",
+      "feature_name": "ALDH1A3",
+      "source_rationale": "For example, mASPC2 and hASPC2 are characterized by high expression of Aldh1a3 and ALDH1A3, respectively, and strongly resemble previously identified early multipotent progenitor cells that reside in the reticular interstitium of the fat pad5.",
+      "data_id": "Supplementary Table 1#ASPC markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hASPC4",
+      "group_name": "ADIPOSE STEM AND PROGENITOR CELL 4",
+      "feature_label": "EPHA3",
+      "feature_name": "EPHA3",
+      "source_rationale": "Similarly, mASPC4 and hASPC4 express Epha3 and EPHA3, respectively, and probably represent the anti-adipogenic 'adipogenesis-regulatory' cells (Aregs) population reported by Schwalie et al.3.",
+      "data_id": "Supplementary Table 1#ASPC markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophages",
+      "group_name": "MACROPHAGE",
+      "feature_label": "CD14",
+      "feature_name": "CD14",
+      "source_rationale": "Analysis of human immune cells from scRNA-seq and sNuc-seq samples again revealed expected cell types, including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+) (Extended Data Fig. 4a, b).",
+      "data_id": "Supplementary Table 1#all markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "natural killer (NK) cells",
+      "group_name": "NATURAL KILLER CELL",
+      "feature_label": "CD96",
+      "feature_name": "CD96",
+      "source_rationale": "Analysis of human immune cells from scRNA-seq and sNuc-seq samples again revealed expected cell types, including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+) (Extended Data Fig. 4a, b).",
+      "data_id": "Supplementary Table 1#all markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "mast cells",
+      "group_name": "MAST CELL",
+      "feature_label": "CPA3",
+      "feature_name": "CPA3",
+      "source_rationale": "Analysis of human immune cells from scRNA-seq and sNuc-seq samples again revealed expected cell types, including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+) (Extended Data Fig. 4a, b).",
+      "data_id": "Supplementary Table 1#all markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "neutrophils",
+      "group_name": "NEUTROPHIL",
+      "feature_label": "CSF3R",
+      "feature_name": "CSF3R",
+      "source_rationale": "Analysis of human immune cells from scRNA-seq and sNuc-seq samples again revealed expected cell types, including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+) (Extended Data Fig. 4a, b).",
+      "data_id": "Supplementary Table 1#all markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "regulatory T cells",
+      "group_name": "REGULATORY T CELL",
+      "feature_label": "CTLA4",
+      "feature_name": "CTLA4",
+      "source_rationale": "Lymphocytes also resemble previously reported B cell, T cell and NK cell populations from human WAT, including CTLA4+ human regulatory T cells17.",
+      "data_id": "Supplementary Table 1#immune markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "adipocyte marker ADIPOQ",
+      "group_name": "ADIPOCYTE",
+      "feature_label": "ADIPOQ",
+      "feature_name": "ADIPOQ",
+      "source_rationale": "Expression of adipocyte marker ADIPOQ and specific marker genes for each adipocyte subpopulation.",
+      "data_id": "Supplementary Table 1#all markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd3",
+      "group_name": "ADIPOCYTE 3",
+      "feature_label": "DGAT2",
+      "feature_name": "DGAT2",
+      "source_rationale": "hAd3 was associated with 'triglyceride biosynthesis' and included higher expression of DGAT2, SREBF1 and PNPLA3 (Extended Data Fig. 9i).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd3",
+      "group_name": "ADIPOCYTE 3",
+      "feature_label": "SREBF1",
+      "feature_name": "SREBF1",
+      "source_rationale": "hAd3 was associated with 'triglyceride biosynthesis' and included higher expression of DGAT2, SREBF1 and PNPLA3 (Extended Data Fig. 9i).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd3",
+      "group_name": "ADIPOCYTE 3",
+      "feature_label": "PNPLA3",
+      "feature_name": "PNPLA3",
+      "source_rationale": "hAd3 was associated with 'triglyceride biosynthesis' and included higher expression of DGAT2, SREBF1 and PNPLA3 (Extended Data Fig. 9i).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd4",
+      "group_name": "ADIPOCYTE 4",
+      "feature_label": "ELOVL5",
+      "feature_name": "ELOVL5",
+      "source_rationale": "The hAd4 cluster expresses the highest amounts of several fatty acid desaturases, including ELOVL5 and FADS3 (Extended Data Fig. 9j), which is particularly interesting in light of the insulin-sensitizing role of unsaturated lipokines such as palmitoleate27.",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd4",
+      "group_name": "ADIPOCYTE 4",
+      "feature_label": "FADS3",
+      "feature_name": "FADS3",
+      "source_rationale": "The hAd4 cluster expresses the highest amounts of several fatty acid desaturases, including ELOVL5 and FADS3 (Extended Data Fig. 9j), which is particularly interesting in light of the insulin-sensitizing role of unsaturated lipokines such as palmitoleate27.",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd6",
+      "group_name": "ADIPOCYTE 6",
+      "feature_label": "EBF2",
+      "feature_name": "EBF2",
+      "source_rationale": "One particularly notable adipocyte subpopulation is hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A (Extended Data Fig. 9l), a surprising finding given that this population is almost exclusively visceral (Fig. 3c, Extended Data Fig. 9a, c).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd6",
+      "group_name": "ADIPOCYTE 6",
+      "feature_label": "ESRRG",
+      "feature_name": "ESRRG",
+      "source_rationale": "One particularly notable adipocyte subpopulation is hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A (Extended Data Fig. 9l), a surprising finding given that this population is almost exclusively visceral (Fig. 3c, Extended Data Fig. 9a, c).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd6",
+      "group_name": "ADIPOCYTE 6",
+      "feature_label": "PPARGC1A",
+      "feature_name": "PPARGC1A",
+      "source_rationale": "One particularly notable adipocyte subpopulation is hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A (Extended Data Fig. 9l), a surprising finding given that this population is almost exclusively visceral (Fig. 3c, Extended Data Fig. 9a, c).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd7",
+      "group_name": "ADIPOCYTE 7",
+      "feature_label": "AGMO",
+      "feature_name": "AGMO",
+      "source_rationale": "We then searched for specific hAd7 marker genes that exhibit this same relationship with HOMA-IR, and identified several (Fig. 4f, g). Of note, AGMO (also called TMEM195) has emerged as a candidate locus in T2D GWAS^(46,47).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd4",
+      "group_name": "ADIPOCYTE 4",
+      "feature_label": "GRIA4",
+      "feature_name": "GRIA4",
+      "source_rationale": "Immunohistochemistry and/or immunofluorescence of markers for hAd4, hAd5, hAd6 and hAd7 in human SAT or VAT identified specific subpopulations of adipocytes at proportions similar to those seen in the single-cell data (Fig. 3c, Extended Data Fig. 9d, e).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd5",
+      "group_name": "ADIPOCYTE 5",
+      "feature_label": "PGAP1",
+      "feature_name": "PGAP1",
+      "source_rationale": "Immunohistochemistry for marker genes of adipocyte subpopulations hAd4, hAd5, hAd6, and hAd7 in human adipose tissue and percentage of positive adipocytes per slide in lean and obese individuals (GRIA4: 5 lean, 5 obese, 2 slides each; PGAP1: 5 lean SAT, 4 obese SAT, 3 lean VAT, 4 obese VAT, 1 slide each; EBF2: 3 lean, 4 obese, 2 slides each; AGMO: 4 lean, 4 obese, 2 slides each).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd3",
+      "group_name": "ADIPOCYTE 3",
+      "feature_label": "CFD",
+      "feature_name": "CFD",
+      "source_rationale": "Thus, the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3, and genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5 (Extended Data Fig. 9f).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd5",
+      "group_name": "ADIPOCYTE 5",
+      "feature_label": "INSR",
+      "feature_name": "INSR",
+      "source_rationale": "Thus, the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3, and genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5 (Extended Data Fig. 9f).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd5",
+      "group_name": "ADIPOCYTE 5",
+      "feature_label": "IRS1",
+      "feature_name": "IRS1",
+      "source_rationale": "Thus, the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3, and genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5 (Extended Data Fig. 9f).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "hAd5",
+      "group_name": "ADIPOCYTE 5",
+      "feature_label": "IRS2",
+      "feature_name": "IRS2",
+      "source_rationale": "Thus, the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3, and genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5 (Extended Data Fig. 9f).",
+      "data_id": "Supplementary Table 1#adipocyte markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "endometrial",
+      "group_name": "ENDOMETRIUM",
+      "feature_label": "PRLR",
+      "feature_name": "PRLR",
+      "source_rationale": "Some of the visceral samples included cells that appeared to be endometrial in origin (PRLR+), probably owing to endometriosis.",
+      "data_id": "Supplementary Table 1#all markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "DC subpopulations 1",
+      "group_name": "DENDRITIC CELL 1",
+      "feature_label": "CLEC9A",
+      "feature_name": "CLEC9A",
+      "source_rationale": "Monocyte subpopulations 1 and 2 resemble classical and non-classical monocytes and DC subpopulations 1 and 2 resemble previously reported CLEC9A+ and CD1C+ populations from blood, respectively16.",
+      "data_id": "Supplementary Table 1#immune markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "DC subpopulations 1 and 2",
+      "group_name": "DENDRITIC CELL 2",
+      "feature_label": "CD1C",
+      "feature_name": "CD1C",
+      "source_rationale": "Monocyte subpopulations 1 and 2 resemble classical and non-classical monocytes and DC subpopulations 1 and 2 resemble previously reported CLEC9A+ and CD1C+ populations from blood, respectively16.",
+      "data_id": "Supplementary Table 1#immune markers"
+    }
+  ],
+  "inputs": {
+    "manuscript_path": "data/adipose_Emont2022/manuscript/manuscript.txt",
+    "manuscript_sha256": "sha256:6626bba73517058996a3624dbc3f0598db4ea599163134a22371b4a0c7355146",
+    "benchmark_text_sha256": "sha256:2528e1c07489345e52df6f7223f5fe1df490173a36216ad72cb988f23e666b4c",
+    "benchmark_deg_sha256": "sha256:98d012707ded194f758771c7847c1ae80246ad56094544fb35fee16773c6a32f",
+    "gene_map_sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+    "prompt_sha256": "sha256:8f5d2356cb6ce53f8eae71094a4388a4a8a0b589fe58ad2fccc3e0ab5dede2c8",
+    "candidate_data_ids": [
+      "Supplementary Table 1#ASPC markers",
+      "Supplementary Table 1#adipocyte markers",
+      "Supplementary Table 1#all markers",
+      "Supplementary Table 1#immune markers",
+      "Supplementary Table 1#mesothelial markers",
+      "Supplementary Table 1#vascular markers"
+    ]
+  },
+  "claims_document": {
+    "schema_version": "mrkr.claims.v1",
+    "source": {
+      "id": "manuscript.txt",
+      "sha256": "sha256:6626bba73517058996a3624dbc3f0598db4ea599163134a22371b4a0c7355146"
+    },
+    "producer": {
+      "name": "mrkr",
+      "version": "0.4.0"
+    },
+    "claims": [
+      {
+        "claim_id": "claim:78d4400af1ef4d76d50d",
+        "span_literal": "We identified six distinct subpopulations of human ASPCs (see Supplementary Note 1) in subclustered scRNA-seq and sNuc-seq samples, all of which express the common marker gene PDGFRA (Extended Data Fig. 7a, b).",
+        "span_offset": [
+          9783,
+          9993
+        ],
+        "summary": "In Homo sapiens, ADIPOSE STEM AND PROGENITOR CELL is marked by PDGFRA.",
+        "terms": [
+          {
+            "sub_span": "ASPCs",
+            "sub_offset": [
+              51,
+              56
+            ],
+            "normalized_label": "ADIPOSE STEM AND PROGENITOR CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PDGFRA",
+            "sub_offset": [
+              176,
+              182
+            ],
+            "normalized_label": "PDGFRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:31a4f006289aa265780c",
+        "span_literal": "For example, mASPC2 and hASPC2 are characterized by high expression of Aldh1a3 and ALDH1A3, respectively, and strongly resemble previously identified early multipotent progenitor cells that reside in the reticular interstitium of the fat pad5.",
+        "span_offset": [
+          10187,
+          10430
+        ],
+        "summary": "In Homo sapiens, ADIPOSE STEM AND PROGENITOR CELL 2 is marked by ALDH1A3.",
+        "terms": [
+          {
+            "sub_span": "hASPC2",
+            "sub_offset": [
+              24,
+              30
+            ],
+            "normalized_label": "ADIPOSE STEM AND PROGENITOR CELL 2",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ALDH1A3",
+            "sub_offset": [
+              83,
+              90
+            ],
+            "normalized_label": "ALDH1A3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:1d43eefdf3a27c6d4b88",
+        "span_literal": "Similarly, mASPC4 and hASPC4 express Epha3 and EPHA3, respectively, and probably represent the anti-adipogenic 'adipogenesis-regulatory' cells (Aregs) population reported by Schwalie et al.3.",
+        "span_offset": [
+          10431,
+          10622
+        ],
+        "summary": "In Homo sapiens, ADIPOSE STEM AND PROGENITOR CELL 4 is marked by EPHA3.",
+        "terms": [
+          {
+            "sub_span": "hASPC4",
+            "sub_offset": [
+              22,
+              28
+            ],
+            "normalized_label": "ADIPOSE STEM AND PROGENITOR CELL 4",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "EPHA3",
+            "sub_offset": [
+              47,
+              52
+            ],
+            "normalized_label": "EPHA3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:ec79087815893b4d03cb",
+        "span_literal": "Analysis of human immune cells from scRNA-seq and sNuc-seq samples again revealed expected cell types, including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+) (Extended Data Fig. 4a, b).",
+        "span_offset": [
+          6237,
+          6558
+        ],
+        "summary": "In Homo sapiens, MACROPHAGE is marked by CD14.",
+        "terms": [
+          {
+            "sub_span": "macrophages",
+            "sub_offset": [
+              151,
+              162
+            ],
+            "normalized_label": "MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD14",
+            "sub_offset": [
+              164,
+              168
+            ],
+            "normalized_label": "CD14",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:c8b1ae8a6d93c32c4c14",
+        "span_literal": "Analysis of human immune cells from scRNA-seq and sNuc-seq samples again revealed expected cell types, including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+) (Extended Data Fig. 4a, b).",
+        "span_offset": [
+          6237,
+          6558
+        ],
+        "summary": "In Homo sapiens, NATURAL KILLER CELL is marked by CD96.",
+        "terms": [
+          {
+            "sub_span": "natural killer (NK) cells",
+            "sub_offset": [
+              214,
+              239
+            ],
+            "normalized_label": "NATURAL KILLER CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD96",
+            "sub_offset": [
+              241,
+              245
+            ],
+            "normalized_label": "CD96",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:6ce8dace47ff167bc6b4",
+        "span_literal": "Analysis of human immune cells from scRNA-seq and sNuc-seq samples again revealed expected cell types, including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+) (Extended Data Fig. 4a, b).",
+        "span_offset": [
+          6237,
+          6558
+        ],
+        "summary": "In Homo sapiens, MAST CELL is marked by CPA3.",
+        "terms": [
+          {
+            "sub_span": "mast cells",
+            "sub_offset": [
+              249,
+              259
+            ],
+            "normalized_label": "MAST CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CPA3",
+            "sub_offset": [
+              261,
+              265
+            ],
+            "normalized_label": "CPA3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:dd0dfe71f60bd76dfe03",
+        "span_literal": "Analysis of human immune cells from scRNA-seq and sNuc-seq samples again revealed expected cell types, including multiple subpopulations of monocytes, macrophages (CD14+), dendritic cells, B and T lymphocytes, and natural killer (NK) cells (CD96+), mast cells (CPA3+), and neutrophils (CSF3R+) (Extended Data Fig. 4a, b).",
+        "span_offset": [
+          6237,
+          6558
+        ],
+        "summary": "In Homo sapiens, NEUTROPHIL is marked by CSF3R.",
+        "terms": [
+          {
+            "sub_span": "neutrophils",
+            "sub_offset": [
+              273,
+              284
+            ],
+            "normalized_label": "NEUTROPHIL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CSF3R",
+            "sub_offset": [
+              286,
+              291
+            ],
+            "normalized_label": "CSF3R",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:56acd492f421566dcdad",
+        "span_literal": "Lymphocytes also resemble previously reported B cell, T cell and NK cell populations from human WAT, including CTLA4+ human regulatory T cells17.",
+        "span_offset": [
+          6755,
+          6900
+        ],
+        "summary": "In Homo sapiens, REGULATORY T CELL is marked by CTLA4.",
+        "terms": [
+          {
+            "sub_span": "regulatory T cells",
+            "sub_offset": [
+              124,
+              142
+            ],
+            "normalized_label": "REGULATORY T CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CTLA4",
+            "sub_offset": [
+              111,
+              116
+            ],
+            "normalized_label": "CTLA4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:af3c353ccb775be63fa6",
+        "span_literal": "Expression of adipocyte marker ADIPOQ and specific marker genes for each adipocyte subpopulation.",
+        "span_offset": [
+          14157,
+          14254
+        ],
+        "summary": "In Homo sapiens, ADIPOCYTE is marked by ADIPOQ.",
+        "terms": [
+          {
+            "sub_span": "adipocyte marker ADIPOQ",
+            "sub_offset": [
+              14,
+              37
+            ],
+            "normalized_label": "ADIPOCYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ADIPOQ",
+            "sub_offset": [
+              31,
+              37
+            ],
+            "normalized_label": "ADIPOQ",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:53a9811ee85516fa1745",
+        "span_literal": "hAd3 was associated with 'triglyceride biosynthesis' and included higher expression of DGAT2, SREBF1 and PNPLA3 (Extended Data Fig. 9i).",
+        "span_offset": [
+          17104,
+          17240
+        ],
+        "summary": "In Homo sapiens, ADIPOCYTE 3 is marked by DGAT2. In Homo sapiens, ADIPOCYTE 3 is marked by SREBF1. In Homo sapiens, ADIPOCYTE 3 is marked by PNPLA3.",
+        "terms": [
+          {
+            "sub_span": "hAd3",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "ADIPOCYTE 3",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "DGAT2",
+            "sub_offset": [
+              87,
+              92
+            ],
+            "normalized_label": "DGAT2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SREBF1",
+            "sub_offset": [
+              94,
+              100
+            ],
+            "normalized_label": "SREBF1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PNPLA3",
+            "sub_offset": [
+              105,
+              111
+            ],
+            "normalized_label": "PNPLA3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:012c61e5581f72152915",
+        "span_literal": "The hAd4 cluster expresses the highest amounts of several fatty acid desaturases, including ELOVL5 and FADS3 (Extended Data Fig. 9j), which is particularly interesting in light of the insulin-sensitizing role of unsaturated lipokines such as palmitoleate27.",
+        "span_offset": [
+          17241,
+          17498
+        ],
+        "summary": "In Homo sapiens, ADIPOCYTE 4 is marked by ELOVL5. In Homo sapiens, ADIPOCYTE 4 is marked by FADS3.",
+        "terms": [
+          {
+            "sub_span": "hAd4",
+            "sub_offset": [
+              4,
+              8
+            ],
+            "normalized_label": "ADIPOCYTE 4",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ELOVL5",
+            "sub_offset": [
+              92,
+              98
+            ],
+            "normalized_label": "ELOVL5",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FADS3",
+            "sub_offset": [
+              103,
+              108
+            ],
+            "normalized_label": "FADS3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:09bdf8c4af78a0cd22f7",
+        "span_literal": "One particularly notable adipocyte subpopulation is hAd6, which selectively expresses genes typically associated with thermogenesis, such as EBF2, ESRRG and PPARGC1A (Extended Data Fig. 9l), a surprising finding given that this population is almost exclusively visceral (Fig. 3c, Extended Data Fig. 9a, c).",
+        "span_offset": [
+          19264,
+          19570
+        ],
+        "summary": "In Homo sapiens, ADIPOCYTE 6 is marked by EBF2. In Homo sapiens, ADIPOCYTE 6 is marked by ESRRG. In Homo sapiens, ADIPOCYTE 6 is marked by PPARGC1A.",
+        "terms": [
+          {
+            "sub_span": "hAd6",
+            "sub_offset": [
+              52,
+              56
+            ],
+            "normalized_label": "ADIPOCYTE 6",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "EBF2",
+            "sub_offset": [
+              141,
+              145
+            ],
+            "normalized_label": "EBF2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ESRRG",
+            "sub_offset": [
+              147,
+              152
+            ],
+            "normalized_label": "ESRRG",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PPARGC1A",
+            "sub_offset": [
+              157,
+              165
+            ],
+            "normalized_label": "PPARGC1A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:ecd8a5e4e2b99b99913e",
+        "span_literal": "We then searched for specific hAd7 marker genes that exhibit this same relationship with HOMA-IR, and identified several (Fig. 4f, g). Of note, AGMO (also called TMEM195) has emerged as a candidate locus in T2D GWAS^(46,47).",
+        "span_offset": [
+          32462,
+          32686
+        ],
+        "summary": "In Homo sapiens, ADIPOCYTE 7 is marked by AGMO.",
+        "terms": [
+          {
+            "sub_span": "hAd7",
+            "sub_offset": [
+              30,
+              34
+            ],
+            "normalized_label": "ADIPOCYTE 7",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "AGMO",
+            "sub_offset": [
+              144,
+              148
+            ],
+            "normalized_label": "AGMO",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:53915b7f6092e2f43a6d",
+        "span_literal": "Immunohistochemistry for marker genes of adipocyte subpopulations hAd4, hAd5, hAd6, and hAd7 in human adipose tissue and percentage of positive adipocytes per slide in lean and obese individuals (GRIA4: 5 lean, 5 obese, 2 slides each; PGAP1: 5 lean SAT, 4 obese SAT, 3 lean VAT, 4 obese VAT, 1 slide each; EBF2: 3 lean, 4 obese, 2 slides each; AGMO: 4 lean, 4 obese, 2 slides each).",
+        "span_offset": [
+          14258,
+          14640
+        ],
+        "summary": "In Homo sapiens, ADIPOCYTE 5 is marked by PGAP1.",
+        "terms": [
+          {
+            "sub_span": "hAd5",
+            "sub_offset": [
+              72,
+              76
+            ],
+            "normalized_label": "ADIPOCYTE 5",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PGAP1",
+            "sub_offset": [
+              235,
+              240
+            ],
+            "normalized_label": "PGAP1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:c6d5946ccae764a9a829",
+        "span_literal": "Thus, the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3, and genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5 (Extended Data Fig. 9f).",
+        "span_offset": [
+          16292,
+          16524
+        ],
+        "summary": "In Homo sapiens, ADIPOCYTE 3 is marked by CFD.",
+        "terms": [
+          {
+            "sub_span": "hAd3",
+            "sub_offset": [
+              91,
+              95
+            ],
+            "normalized_label": "ADIPOCYTE 3",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CFD",
+            "sub_offset": [
+              57,
+              60
+            ],
+            "normalized_label": "CFD",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:71784958b3bcebdf7498",
+        "span_literal": "Thus, the adipokines adiponectin and adipsin (encoded by CFD) are most highly expressed in hAd3, and genes encoding insulin signalling components such as INSR, IRS1 and IRS2 are most highly expressed in hAd5 (Extended Data Fig. 9f).",
+        "span_offset": [
+          16292,
+          16524
+        ],
+        "summary": "In Homo sapiens, ADIPOCYTE 5 is marked by INSR. In Homo sapiens, ADIPOCYTE 5 is marked by IRS1. In Homo sapiens, ADIPOCYTE 5 is marked by IRS2.",
+        "terms": [
+          {
+            "sub_span": "hAd5",
+            "sub_offset": [
+              203,
+              207
+            ],
+            "normalized_label": "ADIPOCYTE 5",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "INSR",
+            "sub_offset": [
+              154,
+              158
+            ],
+            "normalized_label": "INSR",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IRS1",
+            "sub_offset": [
+              160,
+              164
+            ],
+            "normalized_label": "IRS1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "IRS2",
+            "sub_offset": [
+              169,
+              173
+            ],
+            "normalized_label": "IRS2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:77cc32730246add83da3",
+        "span_literal": "Some of the visceral samples included cells that appeared to be endometrial in origin (PRLR+), probably owing to endometriosis.",
+        "span_offset": [
+          1840,
+          1967
+        ],
+        "summary": "In Homo sapiens, ENDOMETRIUM is marked by PRLR.",
+        "terms": [
+          {
+            "sub_span": "endometrial",
+            "sub_offset": [
+              64,
+              75
+            ],
+            "normalized_label": "ENDOMETRIUM",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PRLR",
+            "sub_offset": [
+              87,
+              91
+            ],
+            "normalized_label": "PRLR",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:7451d80f3501328b2f6f",
+        "span_literal": "Monocyte subpopulations 1 and 2 resemble classical and non-classical monocytes and DC subpopulations 1 and 2 resemble previously reported CLEC9A+ and CD1C+ populations from blood, respectively16.",
+        "span_offset": [
+          6559,
+          6754
+        ],
+        "summary": "In Homo sapiens, DENDRITIC CELL 1 is marked by CLEC9A.",
+        "terms": [
+          {
+            "sub_span": "DC subpopulations 1",
+            "sub_offset": [
+              83,
+              102
+            ],
+            "normalized_label": "DENDRITIC CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CLEC9A",
+            "sub_offset": [
+              138,
+              144
+            ],
+            "normalized_label": "CLEC9A",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:a3d85150dbd1b209fb26",
+        "span_literal": "Monocyte subpopulations 1 and 2 resemble classical and non-classical monocytes and DC subpopulations 1 and 2 resemble previously reported CLEC9A+ and CD1C+ populations from blood, respectively16.",
+        "span_offset": [
+          6559,
+          6754
+        ],
+        "summary": "In Homo sapiens, DENDRITIC CELL 2 is marked by CD1C.",
+        "terms": [
+          {
+            "sub_span": "DC subpopulations 1 and 2",
+            "sub_offset": [
+              83,
+              108
+            ],
+            "normalized_label": "DENDRITIC CELL 2",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD1C",
+            "sub_offset": [
+              150,
+              154
+            ],
+            "normalized_label": "CD1C",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      }
+    ]
+  },
+  "links": {
+    "claim:78d4400af1ef4d76d50d": "Supplementary Table 1#all markers",
+    "claim:31a4f006289aa265780c": "Supplementary Table 1#ASPC markers",
+    "claim:1d43eefdf3a27c6d4b88": "Supplementary Table 1#ASPC markers",
+    "claim:ec79087815893b4d03cb": "Supplementary Table 1#all markers",
+    "claim:c8b1ae8a6d93c32c4c14": "Supplementary Table 1#all markers",
+    "claim:6ce8dace47ff167bc6b4": "Supplementary Table 1#all markers",
+    "claim:dd0dfe71f60bd76dfe03": "Supplementary Table 1#all markers",
+    "claim:56acd492f421566dcdad": "Supplementary Table 1#immune markers",
+    "claim:af3c353ccb775be63fa6": "Supplementary Table 1#all markers",
+    "claim:53a9811ee85516fa1745": "Supplementary Table 1#adipocyte markers",
+    "claim:012c61e5581f72152915": "Supplementary Table 1#adipocyte markers",
+    "claim:09bdf8c4af78a0cd22f7": "Supplementary Table 1#adipocyte markers",
+    "claim:ecd8a5e4e2b99b99913e": "Supplementary Table 1#adipocyte markers",
+    "claim:53915b7f6092e2f43a6d": "Supplementary Table 1#adipocyte markers",
+    "claim:c6d5946ccae764a9a829": "Supplementary Table 1#adipocyte markers",
+    "claim:71784958b3bcebdf7498": "Supplementary Table 1#adipocyte markers",
+    "claim:77cc32730246add83da3": "Supplementary Table 1#all markers",
+    "claim:7451d80f3501328b2f6f": "Supplementary Table 1#immune markers",
+    "claim:a3d85150dbd1b209fb26": "Supplementary Table 1#immune markers"
+  },
+  "link_origins": {
+    "claim:78d4400af1ef4d76d50d": "model",
+    "claim:31a4f006289aa265780c": "model",
+    "claim:1d43eefdf3a27c6d4b88": "model",
+    "claim:ec79087815893b4d03cb": "model",
+    "claim:c8b1ae8a6d93c32c4c14": "model",
+    "claim:6ce8dace47ff167bc6b4": "model",
+    "claim:dd0dfe71f60bd76dfe03": "model",
+    "claim:56acd492f421566dcdad": "model",
+    "claim:af3c353ccb775be63fa6": "model",
+    "claim:53a9811ee85516fa1745": "model",
+    "claim:012c61e5581f72152915": "model",
+    "claim:09bdf8c4af78a0cd22f7": "model",
+    "claim:ecd8a5e4e2b99b99913e": "model",
+    "claim:53915b7f6092e2f43a6d": "model",
+    "claim:c6d5946ccae764a9a829": "model",
+    "claim:71784958b3bcebdf7498": "model",
+    "claim:77cc32730246add83da3": "model",
+    "claim:7451d80f3501328b2f6f": "model",
+    "claim:a3d85150dbd1b209fb26": "model"
+  },
+  "validation": {
+    "preparation": {
+      "raw_claims": 27,
+      "retained_claims": 26,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [
+        {
+          "raw_index": 18,
+          "reason": "no_explicit_marker_gene"
+        }
+      ],
+      "excluded_terms": [
+        {
+          "raw_index": 18,
+          "normalized_label": "GRIA4",
+          "reason": "implicit_marker_gene"
+        }
+      ],
+      "strict_exclusions": [],
+      "strictly_grounded_claims": 26
+    },
+    "validation": {
+      "valid": true,
+      "n_claims": 19,
+      "n_errors": 0,
+      "errors": [],
+      "n_warnings": 0,
+      "warnings": []
+    }
+  }
+}

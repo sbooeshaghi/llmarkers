@@ -1,0 +1,9 @@
+comparison	metric	pairs	available_pairs	ontology_terms	estimate	uncertainty_95_lower	uncertainty_95_upper	uncertainty_method
+same_label_same_identifier	any_shared_marker	248	8848	12	0.4916895161290323	0.4314516129032258	0.5524193548387096	pair bootstrap with matched sampling
+same_label_same_identifier	marker_jaccard	248	8848	12	0.1133087429954077	0.09417135878103028	0.13621609413351818	pair bootstrap with matched sampling
+same_label_no_accepted_identifier	any_shared_marker	248	1589	12	0.5411491935483871	0.47973790322580645	0.6008064516129032	pair bootstrap with matched sampling
+same_label_no_accepted_identifier	marker_jaccard	248	1589	12	0.13516898406899178	0.11169325909406061	0.159836601701681	pair bootstrap with matched sampling
+same_identifier_different_label	any_shared_marker	248	248	12	0.45564516129032256	0.39919354838709675	0.5120967741935484	pair bootstrap with matched sampling
+same_identifier_different_label	marker_jaccard	248	248	12	0.08598586442810825	0.07196205830723144	0.10157514947266785	pair bootstrap with matched sampling
+different_identifier_matched_control	any_shared_marker	248	248	12	0.015701612903225803	0.004032258064516129	0.03225806451612903	pair bootstrap with matched sampling
+different_identifier_matched_control	marker_jaccard	248	248	12	0.002276685824936741	0.0002880184331797235	0.0054546629445822985	pair bootstrap with matched sampling

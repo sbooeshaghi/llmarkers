@@ -15,7 +15,6 @@ from cross_study_gene_space import (
     REPO_ROOT,
     RESULTS_DIR,
     build_profile_summary,
-    ids_to_names,
     normalize_text,
     split_marker_text,
     standardize_marker_records,

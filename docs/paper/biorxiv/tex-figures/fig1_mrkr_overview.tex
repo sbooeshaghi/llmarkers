@@ -1,0 +1,11 @@
+\begin{figure*}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+  \input{tex-figures/fig1_mrkr_overview_body}%
+}
+\caption{\textbf{Machine-readable curation of reported marker genes.} A paper states in text that a gene marks a cell type relative to a comparison group. \texttt{mrkr} returns the exact source text, the source terms it contains, and normalized forms for those terms. Validation requires the source text and each quoted source term to match the paper character for character. Here \texttt{cDC1} and \texttt{DNGR-1} pass, whereas \texttt{cDC-1} and \texttt{DNGR1} fail because those strings do not occur in the text. Deterministic grounding then maps the normalized labels to stable identifiers, with genes resolved against Ensembl and cell types against the Cell Ontology. The language model proposes labels in natural language and never emits an identifier. The resulting \texttt{.onto} record retains the exact text, normalized summary, source terms, and grounded identifiers. Blue marks the cell type, orange the marker gene, and teal the comparison group.}
+\label{fig:mrkr_overview}%
+\claim{fig-mrkr-overview}{}%
+\source{docs/paper/biorxiv/tex-figures/fig1_mrkr_overview_body.tex}%
+\source{README.md}%
+\end{figure*}

@@ -1,0 +1,1304 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim:e9dcd8407064ab806f0b",
+      "span_literal": "TRDN was shown to colocalise in VIM + cells in Muller glial cells while NIF3L1 colocalises with PKCA + BPs in RNA FISH experiments.",
+      "span_offset": [
+        13893,
+        14024
+      ],
+      "summary": "TRDN is a marker of Muller glial cells in the retina, as shown by colocalization with VIM-positive cells.",
+      "terms": [
+        {
+          "normalized_label": "Muller glial cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            47,
+            65
+          ],
+          "sub_span": "Muller glial cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TRDN",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "TRDN",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "retina",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c240ca602f7915876bc0",
+      "span_literal": "TRDN was shown to colocalise in VIM + cells in Muller glial cells while NIF3L1 colocalises with PKCA + BPs in RNA FISH experiments.",
+      "span_offset": [
+        13893,
+        14024
+      ],
+      "summary": "NIF3L1 is a marker of bipolar cells in the retina, as shown by colocalization with PKCA-positive bipolar cells.",
+      "terms": [
+        {
+          "normalized_label": "bipolar cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            103,
+            106
+          ],
+          "sub_span": "BPs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NIF3L1",
+          "provenance": "explicit",
+          "sub_offset": [
+            72,
+            78
+          ],
+          "sub_span": "NIF3L1",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "retina",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7e7357cf606acb30097b",
+      "span_literal": "RAB41 was recently shown to localise in cone PRs13.",
+      "span_offset": [
+        14141,
+        14192
+      ],
+      "summary": "RAB41 is a marker of cone photoreceptors in the retina.",
+      "terms": [
+        {
+          "normalized_label": "cone photoreceptor",
+          "provenance": "explicit",
+          "sub_offset": [
+            40,
+            48
+          ],
+          "sub_span": "cone PRs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "RAB41",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "RAB41",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "retina",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6598673380200265ac55",
+      "span_literal": "One of them have high expression of the TGFBI gene than the rest of the cells, and another has high expression of the ELF3 gene (Fig. 3b, Supplementary Fig. 3e).",
+      "span_offset": [
+        19629,
+        19790
+      ],
+      "summary": "TGFBI is highly expressed in one population of corneal epithelial cells. ELF3 is highly expressed in a population of corneal epithelial cells.",
+      "terms": [
+        {
+          "normalized_label": "epithelial cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TGFBI",
+          "provenance": "explicit",
+          "sub_offset": [
+            40,
+            45
+          ],
+          "sub_span": "TGFBI",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "cornea",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ELF3",
+          "provenance": "explicit",
+          "sub_offset": [
+            118,
+            122
+          ],
+          "sub_span": "ELF3",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4c93c81eb03b464819ce",
+      "span_literal": "ANXA1 is a marker of cells undergoing inflammation17 is expressed highly in TGFBI-high epithelial cells (Supplementary Fig. 3e), while ELF3 is expressed in differentiating corneal epithelial cells18.",
+      "span_offset": [
+        19791,
+        19990
+      ],
+      "summary": "ANXA1 is a marker of TGFBI-high epithelial cells undergoing inflammation in the cornea.",
+      "terms": [
+        {
+          "normalized_label": "TGFBI-high epithelial cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            76,
+            103
+          ],
+          "sub_span": "TGFBI-high epithelial cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ANXA1",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "ANXA1",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "cornea",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2116368954258c2a200c",
+      "span_literal": "ANXA1 is a marker of cells undergoing inflammation17 is expressed highly in TGFBI-high epithelial cells (Supplementary Fig. 3e), while ELF3 is expressed in differentiating corneal epithelial cells18.",
+      "span_offset": [
+        19791,
+        19990
+      ],
+      "summary": "ELF3 is expressed in differentiating corneal epithelial cells.",
+      "terms": [
+        {
+          "normalized_label": "differentiating corneal epithelial cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            172,
+            196
+          ],
+          "sub_span": "corneal epithelial cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ELF3",
+          "provenance": "explicit",
+          "sub_offset": [
+            135,
+            139
+          ],
+          "sub_span": "ELF3",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "cornea",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c29da7adaf307ebdc1e7",
+      "span_literal": "They were subdivided into fibroblasts, MEG3-high fibroblasts, MGP-high fibroblasts, WIF1-high fibroblasts and Ribosomal genes high fibroblasts.",
+      "span_offset": [
+        21232,
+        21375
+      ],
+      "summary": "MEG3 is highly expressed in MEG3-high fibroblasts of the iris.",
+      "terms": [
+        {
+          "normalized_label": "MEG3-high fibroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            39,
+            60
+          ],
+          "sub_span": "MEG3-high fibroblasts",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MEG3",
+          "provenance": "explicit",
+          "sub_offset": [
+            39,
+            43
+          ],
+          "sub_span": "MEG3",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:61b245b4f99f23c53d4f",
+      "span_literal": "They were subdivided into fibroblasts, MEG3-high fibroblasts, MGP-high fibroblasts, WIF1-high fibroblasts and Ribosomal genes high fibroblasts.",
+      "span_offset": [
+        21232,
+        21375
+      ],
+      "summary": "MGP is highly expressed in MGP-high fibroblasts of the iris.",
+      "terms": [
+        {
+          "normalized_label": "MGP-high fibroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            82
+          ],
+          "sub_span": "MGP-high fibroblasts",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MGP",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            65
+          ],
+          "sub_span": "MGP",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b2902103696996a5e2bd",
+      "span_literal": "They were subdivided into fibroblasts, MEG3-high fibroblasts, MGP-high fibroblasts, WIF1-high fibroblasts and Ribosomal genes high fibroblasts.",
+      "span_offset": [
+        21232,
+        21375
+      ],
+      "summary": "WIF1 is highly expressed in WIF1-high fibroblasts of the iris.",
+      "terms": [
+        {
+          "normalized_label": "WIF1-high fibroblast",
+          "provenance": "explicit",
+          "sub_offset": [
+            84,
+            105
+          ],
+          "sub_span": "WIF1-high fibroblasts",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "WIF1",
+          "provenance": "explicit",
+          "sub_offset": [
+            84,
+            88
+          ],
+          "sub_span": "WIF1",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:aa6cc1f800463612111e",
+      "span_literal": "They expressed CD9 marker, which is implicated in the signalling of Schwann cells with axon23.",
+      "span_offset": [
+        21712,
+        21806
+      ],
+      "summary": "CD9 is a marker of Schwann cells in the iris stroma.",
+      "terms": [
+        {
+          "normalized_label": "Schwann cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            68,
+            81
+          ],
+          "sub_span": "Schwann cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CD9",
+          "provenance": "explicit",
+          "sub_offset": [
+            15,
+            18
+          ],
+          "sub_span": "CD9",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1317c96083f5ce0366c6",
+      "span_literal": "They had high MYH11 and MYL9 (Supplementary Fig. 3f) expression, which are the canonical markers for SMCs25.",
+      "span_offset": [
+        22125,
+        22233
+      ],
+      "summary": "MYH11 and MYL9 are canonical markers for smooth muscle cells in the iris.",
+      "terms": [
+        {
+          "normalized_label": "smooth muscle cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            101,
+            105
+          ],
+          "sub_span": "SMCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYH11",
+          "provenance": "explicit",
+          "sub_offset": [
+            14,
+            19
+          ],
+          "sub_span": "MYH11",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MYL9",
+          "provenance": "explicit",
+          "sub_offset": [
+            24,
+            28
+          ],
+          "sub_span": "MYL9",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6b5a25abf40ce7c86c19",
+      "span_literal": "They expressed canonical markers involved in pigmentation like MLANA and PMEL (Supplementary Fig. 3f).",
+      "span_offset": [
+        22297,
+        22399
+      ],
+      "summary": "MLANA and PMEL are canonical pigmentation markers expressed in pigmented epithelial cells of the iris.",
+      "terms": [
+        {
+          "normalized_label": "pigmented epithelial cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MLANA",
+          "provenance": "explicit",
+          "sub_offset": [
+            63,
+            68
+          ],
+          "sub_span": "MLANA",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PMEL",
+          "provenance": "explicit",
+          "sub_offset": [
+            73,
+            77
+          ],
+          "sub_span": "PMEL",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6b3a7b89d97d921e9c70",
+      "span_literal": "All three cell types expressed of PAX6 and SIX3, eye field TFs (EFTF).",
+      "span_offset": [
+        24283,
+        24353
+      ],
+      "summary": "PAX6 and SIX3 are expressed in putative stem cells of the iris.",
+      "terms": [
+        {
+          "normalized_label": "putative stem cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PAX6",
+          "provenance": "explicit",
+          "sub_offset": [
+            34,
+            38
+          ],
+          "sub_span": "PAX6",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SIX3",
+          "provenance": "explicit",
+          "sub_offset": [
+            43,
+            47
+          ],
+          "sub_span": "SIX3",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4f7df49fd852e11992e8",
+      "span_literal": "All three cell types expressed of PAX6 and SIX3, eye field TFs (EFTF).",
+      "span_offset": [
+        24283,
+        24353
+      ],
+      "summary": "PAX6 and SIX3 are expressed in COL9A1-high ciliary body cells.",
+      "terms": [
+        {
+          "normalized_label": "COL9A1-high ciliary body cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PAX6",
+          "provenance": "explicit",
+          "sub_offset": [
+            34,
+            38
+          ],
+          "sub_span": "PAX6",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SIX3",
+          "provenance": "explicit",
+          "sub_offset": [
+            43,
+            47
+          ],
+          "sub_span": "SIX3",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a8d0aeeae989cb1f9fc4",
+      "span_literal": "All three cell types expressed of PAX6 and SIX3, eye field TFs (EFTF).",
+      "span_offset": [
+        24283,
+        24353
+      ],
+      "summary": "PAX6 and SIX3 are expressed in pigmented ciliary body cells.",
+      "terms": [
+        {
+          "normalized_label": "pigmented ciliary body cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PAX6",
+          "provenance": "explicit",
+          "sub_offset": [
+            34,
+            38
+          ],
+          "sub_span": "PAX6",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SIX3",
+          "provenance": "explicit",
+          "sub_offset": [
+            43,
+            47
+          ],
+          "sub_span": "SIX3",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b86200ae6518e106dba9",
+      "span_literal": "Putative stem cells have an expression of OTX2, which is another EFTFs (Supplementary Fig. 3f).",
+      "span_offset": [
+        24354,
+        24449
+      ],
+      "summary": "OTX2 is expressed in putative stem cells of the iris as an eye field transcription factor.",
+      "terms": [
+        {
+          "normalized_label": "putative stem cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            19
+          ],
+          "sub_span": "Putative stem cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "OTX2",
+          "provenance": "explicit",
+          "sub_offset": [
+            42,
+            46
+          ],
+          "sub_span": "OTX2",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1874980fd7a6c8b966b3",
+      "span_literal": "COL9A1 high CBCs expressed CPAMD8 (Supplementary Fig. 3f), which plays a role in periocular mesenchyme development27.",
+      "span_offset": [
+        24450,
+        24567
+      ],
+      "summary": "CPAMD8 is expressed in COL9A1-high ciliary body cells.",
+      "terms": [
+        {
+          "normalized_label": "COL9A1-high ciliary body cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            16
+          ],
+          "sub_span": "COL9A1 high CBCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "CPAMD8",
+          "provenance": "explicit",
+          "sub_offset": [
+            27,
+            33
+          ],
+          "sub_span": "CPAMD8",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:f9a59b0d69e1179a49bf",
+      "span_literal": "Midkine, one of the ligands specific to retinal progenitor cells in zebrafish, showed high expression in putative stem cells30.",
+      "span_offset": [
+        28093,
+        28220
+      ],
+      "summary": "Midkine (MDK) shows high expression in putative stem cells of the iris.",
+      "terms": [
+        {
+          "normalized_label": "putative stem cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            105,
+            124
+          ],
+          "sub_span": "putative stem cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MDK",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            7
+          ],
+          "sub_span": "Midkine",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9d8e70e452adcc71ce52",
+      "span_literal": "MAGIC co-expression analysis based on MAGIC imputation revealed WNT receptors ROR1, ROR2, and FZD1 were specific to pigmented CBCs, putative stem cells and COL9A1-high CBCs, respectively.",
+      "span_offset": [
+        28847,
+        29034
+      ],
+      "summary": "ROR1 is specific to pigmented ciliary body cells based on MAGIC co-expression analysis.",
+      "terms": [
+        {
+          "normalized_label": "pigmented ciliary body cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            116,
+            130
+          ],
+          "sub_span": "pigmented CBCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ROR1",
+          "provenance": "explicit",
+          "sub_offset": [
+            78,
+            82
+          ],
+          "sub_span": "ROR1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:608dc91ca0715f3c9f2a",
+      "span_literal": "MAGIC co-expression analysis based on MAGIC imputation revealed WNT receptors ROR1, ROR2, and FZD1 were specific to pigmented CBCs, putative stem cells and COL9A1-high CBCs, respectively.",
+      "span_offset": [
+        28847,
+        29034
+      ],
+      "summary": "ROR2 is specific to putative stem cells based on MAGIC co-expression analysis.",
+      "terms": [
+        {
+          "normalized_label": "putative stem cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            132,
+            151
+          ],
+          "sub_span": "putative stem cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ROR2",
+          "provenance": "explicit",
+          "sub_offset": [
+            84,
+            88
+          ],
+          "sub_span": "ROR2",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3ec0050708dd397ad8f9",
+      "span_literal": "MAGIC co-expression analysis based on MAGIC imputation revealed WNT receptors ROR1, ROR2, and FZD1 were specific to pigmented CBCs, putative stem cells and COL9A1-high CBCs, respectively.",
+      "span_offset": [
+        28847,
+        29034
+      ],
+      "summary": "FZD1 is specific to COL9A1-high ciliary body cells based on MAGIC co-expression analysis.",
+      "terms": [
+        {
+          "normalized_label": "COL9A1-high ciliary body cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            156,
+            172
+          ],
+          "sub_span": "COL9A1-high CBCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FZD1",
+          "provenance": "explicit",
+          "sub_offset": [
+            94,
+            98
+          ],
+          "sub_span": "FZD1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:d9dd3ac5b18074bf2f05",
+      "span_literal": "These cells were also uniquely co-expressed with FGFR1 (Supplementary Fig. 4e).",
+      "span_offset": [
+        29035,
+        29114
+      ],
+      "summary": "FGFR1 is co-expressed in putative stem cells, pigmented ciliary body cells, and COL9A1-high ciliary body cells.",
+      "terms": [
+        {
+          "normalized_label": "putative stem cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "FGFR1",
+          "provenance": "explicit",
+          "sub_offset": [
+            49,
+            54
+          ],
+          "sub_span": "FGFR1",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7f1cfef4f905ab780fd2",
+      "span_literal": "We showed that ACE2 and TMPRSS2, the primary cell surface proteins responsible for entry into human33, are expressed in the cornea's conjunctival cells (Supplementary Fig. 5b, c).",
+      "span_offset": [
+        30861,
+        31040
+      ],
+      "summary": "ACE2 and TMPRSS2 are expressed in conjunctival cells of the cornea.",
+      "terms": [
+        {
+          "normalized_label": "conjunctival cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            133,
+            151
+          ],
+          "sub_span": "conjunctival cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ACE2",
+          "provenance": "explicit",
+          "sub_offset": [
+            15,
+            19
+          ],
+          "sub_span": "ACE2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "TMPRSS2",
+          "provenance": "explicit",
+          "sub_offset": [
+            24,
+            31
+          ],
+          "sub_span": "TMPRSS2",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "cornea",
+          "provenance": "explicit",
+          "sub_offset": [
+            124,
+            130
+          ],
+          "sub_span": "cornea",
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:5fbe51ef582124a9e218",
+      "span_literal": "The TFs that populate melanocytes of Iris included PAX3, MITF and SOX10 (Supplementary Fig. 6e).",
+      "span_offset": [
+        33894,
+        33990
+      ],
+      "summary": "PAX3, MITF, and SOX10 are transcription factors expressed in melanocytes of the iris.",
+      "terms": [
+        {
+          "normalized_label": "melanocyte",
+          "provenance": "explicit",
+          "sub_offset": [
+            22,
+            33
+          ],
+          "sub_span": "melanocytes",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PAX3",
+          "provenance": "explicit",
+          "sub_offset": [
+            51,
+            55
+          ],
+          "sub_span": "PAX3",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "MITF",
+          "provenance": "explicit",
+          "sub_offset": [
+            57,
+            61
+          ],
+          "sub_span": "MITF",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SOX10",
+          "provenance": "explicit",
+          "sub_offset": [
+            66,
+            71
+          ],
+          "sub_span": "SOX10",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "iris",
+          "provenance": "explicit",
+          "sub_offset": [
+            37,
+            41
+          ],
+          "sub_span": "Iris",
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:47758fa9902e99c131f4",
+      "span_literal": "SREBP2 and KLF7 are two TFs present in Module 1 specific to RGCs (Fig. 6e).",
+      "span_offset": [
+        34648,
+        34723
+      ],
+      "summary": "SREBP2 and KLF7 are transcription factors in Module 1 specific to retinal ganglion cells.",
+      "terms": [
+        {
+          "normalized_label": "retinal ganglion cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            60,
+            64
+          ],
+          "sub_span": "RGCs",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SREBP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "sub_span": "SREBP2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KLF7",
+          "provenance": "explicit",
+          "sub_offset": [
+            11,
+            15
+          ],
+          "sub_span": "KLF7",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c70c84bc1b07412afe7f",
+      "span_literal": "We detected the localisation of SREBP2 and KLF7 in RGC cells (Fig. 7b, Supplementary Fig. 7a).",
+      "span_offset": [
+        36570,
+        36664
+      ],
+      "summary": "SREBP2 and KLF7 are localized in retinal ganglion cells.",
+      "terms": [
+        {
+          "normalized_label": "retinal ganglion cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            51,
+            60
+          ],
+          "sub_span": "RGC cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "SREBP2",
+          "provenance": "explicit",
+          "sub_offset": [
+            32,
+            38
+          ],
+          "sub_span": "SREBP2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "KLF7",
+          "provenance": "explicit",
+          "sub_offset": [
+            43,
+            47
+          ],
+          "sub_span": "KLF7",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:5c31724922cbfa369d33",
+      "span_literal": "PBX1 localisation to the INL layer where amacrine cells were located could also be observed.",
+      "span_offset": [
+        36665,
+        36757
+      ],
+      "summary": "PBX1 is localized to the inner nuclear layer where amacrine cells reside in the retina.",
+      "terms": [
+        {
+          "normalized_label": "amacrine cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            41,
+            55
+          ],
+          "sub_span": "amacrine cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "PBX1",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "sub_span": "PBX1",
+          "term_type": "gene"
+        },
+        {
+          "normalized_label": "retina",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "tissue"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3f2efe904d4abe2b65c6",
+      "span_literal": "However, markers like POU4F1 and EBF3, which act as markers for maturing RGC^(41,42), were present in cells (Supplementary Fig. 7j).",
+      "span_offset": [
+        38609,
+        38741
+      ],
+      "summary": "POU4F1 and EBF3 act as markers for maturing retinal ganglion cells.",
+      "terms": [
+        {
+          "normalized_label": "retinal ganglion cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            73,
+            76
+          ],
+          "sub_span": "RGC",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "POU4F1",
+          "provenance": "explicit",
+          "sub_offset": [
+            22,
+            28
+          ],
+          "sub_span": "POU4F1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EBF3",
+          "provenance": "explicit",
+          "sub_offset": [
+            33,
+            37
+          ],
+          "sub_span": "EBF3",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1e07cad66b912470c22c",
+      "span_literal": "Cells expressing ONECUT1, ONECUT2 and EBF3 were designated as RGC precursor cells because ONECUT TFs are expressed in developing RGCs43.",
+      "span_offset": [
+        38742,
+        38878
+      ],
+      "summary": "ONECUT1, ONECUT2, and EBF3 are markers of retinal ganglion cell precursor cells.",
+      "terms": [
+        {
+          "normalized_label": "retinal ganglion cell precursor cell",
+          "provenance": "explicit",
+          "sub_offset": [
+            62,
+            81
+          ],
+          "sub_span": "RGC precursor cells",
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ONECUT1",
+          "provenance": "explicit",
+          "sub_offset": [
+            17,
+            24
+          ],
+          "sub_span": "ONECUT1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ONECUT2",
+          "provenance": "explicit",
+          "sub_offset": [
+            26,
+            33
+          ],
+          "sub_span": "ONECUT2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "EBF3",
+          "provenance": "explicit",
+          "sub_offset": [
+            38,
+            42
+          ],
+          "sub_span": "EBF3",
+          "term_type": "gene"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7a6cfb2d38e4b6f1e2f7",
+      "span_literal": "NR2F1, ZIC1, ZIC2, ZIC4, ZIC5, ELK3 and GLIS3",
+      "span_offset": [
+        43924,
+        43969
+      ],
+      "summary": "NR2F1, ZIC1, ZIC2, ZIC4, ZIC5, ELK3, and GLIS3 are transcription factors expressed in COL9A1-high ciliary body cells, suggesting neural crest origin.",
+      "terms": [
+        {
+          "normalized_label": "COL9A1-high ciliary body cell",
+          "provenance": "implicit",
+          "sub_offset": null,
+          "sub_span": null,
+          "term_type": "celltype"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "NR2F1",
+          "provenance": "explicit",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "sub_span": "NR2F1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZIC1",
+          "provenance": "explicit",
+          "sub_offset": [
+            7,
+            11
+          ],
+          "sub_span": "ZIC1",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZIC2",
+          "provenance": "explicit",
+          "sub_offset": [
+            13,
+            17
+          ],
+          "sub_span": "ZIC2",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZIC4",
+          "provenance": "explicit",
+          "sub_offset": [
+            19,
+            23
+          ],
+          "sub_span": "ZIC4",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ZIC5",
+          "provenance": "explicit",
+          "sub_offset": [
+            25,
+            29
+          ],
+          "sub_span": "ZIC5",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "ELK3",
+          "provenance": "explicit",
+          "sub_offset": [
+            31,
+            35
+          ],
+          "sub_span": "ELK3",
+          "term_type": "gene"
+        },
+        {
+          "direction": "positive",
+          "normalized_label": "GLIS3",
+          "provenance": "explicit",
+          "sub_offset": [
+            40,
+            45
+          ],
+          "sub_span": "GLIS3",
+          "term_type": "gene"
+        }
+      ]
+    }
+  ],
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "schema_version": "mrkr.claims.v1",
+  "source": {
+    "id": "benchmark/Gautam2021",
+    "sha256": "sha256:c631db67eb950e772b881a1b570111c8031dad11ef62c2a5d7a18684d2c4c832"
+  }
+}

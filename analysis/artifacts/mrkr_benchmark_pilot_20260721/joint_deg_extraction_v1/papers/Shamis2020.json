@@ -1,0 +1,2556 @@
+{
+  "schema_version": "mrkr.joint-deg-extraction.v1",
+  "paper_id": "Shamis2020",
+  "model": "claude-opus-4-6",
+  "response_id": "msg_011CdG9uZf9ejSXGZEj6ajs1",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 70278,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 15292,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "elapsed_seconds": 152.63464379310608,
+  "raw_extractions": [
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "TSPAN33",
+      "feature_name": "TSPAN33",
+      "source_rationale": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "MORC1",
+      "feature_name": "MORC1",
+      "source_rationale": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "TCF3",
+      "feature_name": "TCF3",
+      "source_rationale": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "FMR1",
+      "feature_name": "FMR1",
+      "source_rationale": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "MAGEB2",
+      "feature_name": "MAGEB2",
+      "source_rationale": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "CDK17",
+      "feature_name": "CDK17",
+      "source_rationale": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "MSL3",
+      "feature_name": "MSL3",
+      "source_rationale": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "ZBTB43",
+      "feature_name": "ZBTB43",
+      "source_rationale": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "PIWIL4",
+      "feature_name": "PIWIL4",
+      "source_rationale": "Interestingly, PIWIL4 is a SPG1-specific marker for all three species (Figures 2D and 2E; Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "ZBTB16",
+      "feature_name": "ZBTB16",
+      "source_rationale": "In SPG2 cells, the noncanonical markers enriched in SPG1 (described above) are diminished, whereas certain canonical markers for undifferentiated SPG increase in expression (ZBTB16 [mouse and human] and GFRA1 [all three species]), as do several noncanonical markers (DUSP6, TCF4, and L1TD1 [macaque and human only]) (Figures 2D and 2E [L1TD1 shown]; Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "GFRA1",
+      "feature_name": "GFRA1",
+      "source_rationale": "In SPG2 cells, the noncanonical markers enriched in SPG1 (described above) are diminished, whereas certain canonical markers for undifferentiated SPG increase in expression (ZBTB16 [mouse and human] and GFRA1 [all three species]), as do several noncanonical markers (DUSP6, TCF4, and L1TD1 [macaque and human only]) (Figures 2D and 2E [L1TD1 shown]; Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "L1TD1",
+      "feature_name": "L1TD1",
+      "source_rationale": "In SPG2 cells, the noncanonical markers enriched in SPG1 (described above) are diminished, whereas certain canonical markers for undifferentiated SPG increase in expression (ZBTB16 [mouse and human] and GFRA1 [all three species]), as do several noncanonical markers (DUSP6, TCF4, and L1TD1 [macaque and human only]) (Figures 2D and 2E [L1TD1 shown]; Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "DUSP6",
+      "feature_name": "DUSP6",
+      "source_rationale": "In SPG2 cells, the noncanonical markers enriched in SPG1 (described above) are diminished, whereas certain canonical markers for undifferentiated SPG increase in expression (ZBTB16 [mouse and human] and GFRA1 [all three species]), as do several noncanonical markers (DUSP6, TCF4, and L1TD1 [macaque and human only]) (Figures 2D and 2E [L1TD1 shown]; Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "TCF4",
+      "feature_name": "TCF4",
+      "source_rationale": "In SPG2 cells, the noncanonical markers enriched in SPG1 (described above) are diminished, whereas certain canonical markers for undifferentiated SPG increase in expression (ZBTB16 [mouse and human] and GFRA1 [all three species]), as do several noncanonical markers (DUSP6, TCF4, and L1TD1 [macaque and human only]) (Figures 2D and 2E [L1TD1 shown]; Table S3).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoid cells",
+      "group_name": "MYOID CELL",
+      "feature_label": "MYH11",
+      "feature_name": "MYH11",
+      "source_rationale": "One of the most abundant populations captured in primates was peritubular myoid cells, defined by the expression of MYH11, ACTA2, collagens, laminins, versican (VCAN), and fibronectin (Figures 1C, 6A, and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoid cells",
+      "group_name": "MYOID CELL",
+      "feature_label": "ACTA2",
+      "feature_name": "ACTA2",
+      "source_rationale": "One of the most abundant populations captured in primates was peritubular myoid cells, defined by the expression of MYH11, ACTA2, collagens, laminins, versican (VCAN), and fibronectin (Figures 1C, 6A, and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoid cells",
+      "group_name": "MYOID CELL",
+      "feature_label": "VCAN",
+      "feature_name": "VCAN",
+      "source_rationale": "One of the most abundant populations captured in primates was peritubular myoid cells, defined by the expression of MYH11, ACTA2, collagens, laminins, versican (VCAN), and fibronectin (Figures 1C, 6A, and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immature Leydig cells",
+      "group_name": "IMMATURE LEYDIG CELL",
+      "feature_label": "DLK1",
+      "feature_name": "DLK1",
+      "source_rationale": "This population expressed multiple markers previously shown to be restricted to spindle-shaped putative progenitor (Lottrup et al., 2014) or differentiating Leydig cells (Hu et al., 2010; Wang et al., 2003) (DLK1 [unannotated in macaque], IGF1/2, CFD, SFRP, PTCH2, and IGFB3) (Figures 6A and S6C; Table S6), whereas their expression of steroidogenic enzymes (STAR and Cytochrome P450 genes) were very low (data not shown).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "endothelial cells",
+      "group_name": "ENDOTHELIAL CELL",
+      "feature_label": "VWF",
+      "feature_name": "VWF",
+      "source_rationale": "The somatic compartment also contains endothelial cells (VWF, NOSTRIN, AQP1, CD34 [human]) and pericytes (MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3) (Vanlandewijck et al., 2018; Du et al., 2015), which jointly form the mural wall of small blood vessels (Figures 6A and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "endothelial cells",
+      "group_name": "ENDOTHELIAL CELL",
+      "feature_label": "NOSTRIN",
+      "feature_name": "NOSTRIN",
+      "source_rationale": "The somatic compartment also contains endothelial cells (VWF, NOSTRIN, AQP1, CD34 [human]) and pericytes (MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3) (Vanlandewijck et al., 2018; Du et al., 2015), which jointly form the mural wall of small blood vessels (Figures 6A and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "endothelial cells",
+      "group_name": "ENDOTHELIAL CELL",
+      "feature_label": "AQP1",
+      "feature_name": "AQP1",
+      "source_rationale": "The somatic compartment also contains endothelial cells (VWF, NOSTRIN, AQP1, CD34 [human]) and pericytes (MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3) (Vanlandewijck et al., 2018; Du et al., 2015), which jointly form the mural wall of small blood vessels (Figures 6A and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "endothelial cells",
+      "group_name": "ENDOTHELIAL CELL",
+      "feature_label": "CD34",
+      "feature_name": "CD34",
+      "source_rationale": "The somatic compartment also contains endothelial cells (VWF, NOSTRIN, AQP1, CD34 [human]) and pericytes (MCAM, RGS5, PDGFRB, NG2, CCL2, ABCC9, and NOTCH3) (Vanlandewijck et al., 2018; Du et al., 2015), which jointly form the mural wall of small blood vessels (Figures 6A and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophages",
+      "group_name": "MACROPHAGE",
+      "feature_label": "CD163",
+      "feature_name": "CD163",
+      "source_rationale": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophages",
+      "group_name": "MACROPHAGE",
+      "feature_label": "HLA-DRA",
+      "feature_name": "HLA-DRA",
+      "source_rationale": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophages",
+      "group_name": "MACROPHAGE",
+      "feature_label": "LYZ",
+      "feature_name": "LYZ",
+      "source_rationale": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "macrophages",
+      "group_name": "MACROPHAGE",
+      "feature_label": "TYROBP",
+      "feature_name": "TYROBP",
+      "source_rationale": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "T cells",
+      "group_name": "T CELL",
+      "feature_label": "CD3D",
+      "feature_name": "CD3D",
+      "source_rationale": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "T cells",
+      "group_name": "T CELL",
+      "feature_label": "TRAC",
+      "feature_name": "TRAC",
+      "source_rationale": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "T cells",
+      "group_name": "T CELL",
+      "feature_label": "TRBC2",
+      "feature_name": "TRBC2",
+      "source_rationale": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "T cells",
+      "group_name": "T CELL",
+      "feature_label": "CD69",
+      "feature_name": "CD69",
+      "source_rationale": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "m-pericytes",
+      "group_name": "M-PERICYTE",
+      "feature_label": "MCAM",
+      "feature_name": "MCAM",
+      "source_rationale": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "m-pericytes",
+      "group_name": "M-PERICYTE",
+      "feature_label": "MYL9",
+      "feature_name": "MYL9",
+      "source_rationale": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "m-pericytes",
+      "group_name": "M-PERICYTE",
+      "feature_label": "RERGL",
+      "feature_name": "RERGL",
+      "source_rationale": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "m-pericytes",
+      "group_name": "M-PERICYTE",
+      "feature_label": "ADIRF",
+      "feature_name": "ADIRF",
+      "source_rationale": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "f-pericytes",
+      "group_name": "F-PERICYTE",
+      "feature_label": "STEAP4",
+      "feature_name": "STEAP4",
+      "source_rationale": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "f-pericytes",
+      "group_name": "F-PERICYTE",
+      "feature_label": "ITGA1",
+      "feature_name": "ITGA1",
+      "source_rationale": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "TSPAN33",
+      "feature_name": "TSPAN33",
+      "source_rationale": "In these six states (SPG1-SPG6), we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "ID4",
+      "feature_name": "ID4",
+      "source_rationale": "In these six states (SPG1-SPG6), we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG1",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+      "feature_label": "ZBTB16",
+      "feature_name": "ZBTB16",
+      "source_rationale": "In these six states (SPG1-SPG6), we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "ID4",
+      "feature_name": "ID4",
+      "source_rationale": "In these six states (SPG1-SPG6), we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "GFRA1",
+      "feature_name": "GFRA1",
+      "source_rationale": "In these six states (SPG1-SPG6), we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "ZBTB16",
+      "feature_name": "ZBTB16",
+      "source_rationale": "In these six states (SPG1-SPG6), we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG2",
+      "group_name": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+      "feature_label": "L1TD1",
+      "feature_name": "L1TD1",
+      "source_rationale": "In these six states (SPG1-SPG6), we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "PRDM9",
+      "feature_name": "PRDM9",
+      "source_rationale": "Further, SPG6 includes type B spermatogonial cells transitioning to preleptotene spermatocytes based on the expression of conserved meiotic genes, such as PRDM9, ZCWPW1, and REC8.",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "ZCWPW1",
+      "feature_name": "ZCWPW1",
+      "source_rationale": "Further, SPG6 includes type B spermatogonial cells transitioning to preleptotene spermatocytes based on the expression of conserved meiotic genes, such as PRDM9, ZCWPW1, and REC8.",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "REC8",
+      "feature_name": "REC8",
+      "source_rationale": "Further, SPG6 includes type B spermatogonial cells transitioning to preleptotene spermatocytes based on the expression of conserved meiotic genes, such as PRDM9, ZCWPW1, and REC8.",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "PRDM7",
+      "feature_name": "PRDM7",
+      "source_rationale": "However, we identify many genes that are either expressed in all three species (i.e., FMR1NB, ZCWPW1, DPEP3, IQBP1, and CALR), in primates only (BEND2, ZRANB2, PAGE4, ZNFX1, HLTF, and ZBED5), or are singularly expressed in mouse (Swt1, Tgfbr1, Rhox13, PhTF1, and Fmr1), macaque (ZNF850, MAGEB17, ZMYM1, and TCEA1), and human (PRDM7, full VCX family, ERBB3, ERVK13-1, SSX3, and TRIML2) (Table S3A).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "ERBB3",
+      "feature_name": "ERBB3",
+      "source_rationale": "However, we identify many genes that are either expressed in all three species (i.e., FMR1NB, ZCWPW1, DPEP3, IQBP1, and CALR), in primates only (BEND2, ZRANB2, PAGE4, ZNFX1, HLTF, and ZBED5), or are singularly expressed in mouse (Swt1, Tgfbr1, Rhox13, PhTF1, and Fmr1), macaque (ZNF850, MAGEB17, ZMYM1, and TCEA1), and human (PRDM7, full VCX family, ERBB3, ERVK13-1, SSX3, and TRIML2) (Table S3A).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "SSX3",
+      "feature_name": "SSX3",
+      "source_rationale": "However, we identify many genes that are either expressed in all three species (i.e., FMR1NB, ZCWPW1, DPEP3, IQBP1, and CALR), in primates only (BEND2, ZRANB2, PAGE4, ZNFX1, HLTF, and ZBED5), or are singularly expressed in mouse (Swt1, Tgfbr1, Rhox13, PhTF1, and Fmr1), macaque (ZNF850, MAGEB17, ZMYM1, and TCEA1), and human (PRDM7, full VCX family, ERBB3, ERVK13-1, SSX3, and TRIML2) (Table S3A).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "TRIML2",
+      "feature_name": "TRIML2",
+      "source_rationale": "However, we identify many genes that are either expressed in all three species (i.e., FMR1NB, ZCWPW1, DPEP3, IQBP1, and CALR), in primates only (BEND2, ZRANB2, PAGE4, ZNFX1, HLTF, and ZBED5), or are singularly expressed in mouse (Swt1, Tgfbr1, Rhox13, PhTF1, and Fmr1), macaque (ZNF850, MAGEB17, ZMYM1, and TCEA1), and human (PRDM7, full VCX family, ERBB3, ERVK13-1, SSX3, and TRIML2) (Table S3A).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "TEX101",
+      "feature_name": "TEX101",
+      "source_rationale": "They also begin to express many markers previously identified in mouse preleptotene spermatocytes: TEX101, LY6K, and established meiotic genes, such as SYCP2/3, SYCE1/2, MEIOB, PRDM9, SPATA22, and DNAJB11 (Green et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "LY6K",
+      "feature_name": "LY6K",
+      "source_rationale": "They also begin to express many markers previously identified in mouse preleptotene spermatocytes: TEX101, LY6K, and established meiotic genes, such as SYCP2/3, SYCE1/2, MEIOB, PRDM9, SPATA22, and DNAJB11 (Green et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "MEIOB",
+      "feature_name": "MEIOB",
+      "source_rationale": "They also begin to express many markers previously identified in mouse preleptotene spermatocytes: TEX101, LY6K, and established meiotic genes, such as SYCP2/3, SYCE1/2, MEIOB, PRDM9, SPATA22, and DNAJB11 (Green et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "SPATA22",
+      "feature_name": "SPATA22",
+      "source_rationale": "They also begin to express many markers previously identified in mouse preleptotene spermatocytes: TEX101, LY6K, and established meiotic genes, such as SYCP2/3, SYCE1/2, MEIOB, PRDM9, SPATA22, and DNAJB11 (Green et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "DNAJB11",
+      "feature_name": "DNAJB11",
+      "source_rationale": "They also begin to express many markers previously identified in mouse preleptotene spermatocytes: TEX101, LY6K, and established meiotic genes, such as SYCP2/3, SYCE1/2, MEIOB, PRDM9, SPATA22, and DNAJB11 (Green et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG4",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 4",
+      "feature_label": "MKI67",
+      "feature_name": "MKI67",
+      "source_rationale": "Cells in macaque and human SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1, and KIT (unannotated in macaque), indicating that this population is actively proliferating and appears to be molecularly analogous to cells transitioning from type A1-4/A_(Intermediate) to B SPG in mouse (Table S3; Figure S2F) (Zhang et al., 2014).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG4",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 4",
+      "feature_label": "PCNA",
+      "feature_name": "PCNA",
+      "source_rationale": "Cells in macaque and human SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1, and KIT (unannotated in macaque), indicating that this population is actively proliferating and appears to be molecularly analogous to cells transitioning from type A1-4/A_(Intermediate) to B SPG in mouse (Table S3; Figure S2F) (Zhang et al., 2014).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG4",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 4",
+      "feature_label": "DMRT1",
+      "feature_name": "DMRT1",
+      "source_rationale": "Cells in macaque and human SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1, and KIT (unannotated in macaque), indicating that this population is actively proliferating and appears to be molecularly analogous to cells transitioning from type A1-4/A_(Intermediate) to B SPG in mouse (Table S3; Figure S2F) (Zhang et al., 2014).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG4",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 4",
+      "feature_label": "DMRTB1",
+      "feature_name": "DMRTB1",
+      "source_rationale": "Cells in macaque and human SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1, and KIT (unannotated in macaque), indicating that this population is actively proliferating and appears to be molecularly analogous to cells transitioning from type A1-4/A_(Intermediate) to B SPG in mouse (Table S3; Figure S2F) (Zhang et al., 2014).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG4",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 4",
+      "feature_label": "KIT",
+      "feature_name": "KIT",
+      "source_rationale": "Cells in macaque and human SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1, and KIT (unannotated in macaque), indicating that this population is actively proliferating and appears to be molecularly analogous to cells transitioning from type A1-4/A_(Intermediate) to B SPG in mouse (Table S3; Figure S2F) (Zhang et al., 2014).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG5",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 5",
+      "feature_label": "DMRT1",
+      "feature_name": "DMRT1",
+      "source_rationale": "The macaque and human SPG5 population continue to express DMRT1 and DMRTB1 (unannotated in monkey) while turning down KIT and turning on STRA8 as well as the meiotic gene REC8 (Table S3; Figure S2F).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG5",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 5",
+      "feature_label": "DMRTB1",
+      "feature_name": "DMRTB1",
+      "source_rationale": "The macaque and human SPG5 population continue to express DMRT1 and DMRTB1 (unannotated in monkey) while turning down KIT and turning on STRA8 as well as the meiotic gene REC8 (Table S3; Figure S2F).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG5",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 5",
+      "feature_label": "STRA8",
+      "feature_name": "STRA8",
+      "source_rationale": "The macaque and human SPG5 population continue to express DMRT1 and DMRTB1 (unannotated in monkey) while turning down KIT and turning on STRA8 as well as the meiotic gene REC8 (Table S3; Figure S2F).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG5",
+      "group_name": "TRANSITIONING SPERMATOGONIAL CELL 5",
+      "feature_label": "REC8",
+      "feature_name": "REC8",
+      "source_rationale": "The macaque and human SPG5 population continue to express DMRT1 and DMRTB1 (unannotated in monkey) while turning down KIT and turning on STRA8 as well as the meiotic gene REC8 (Table S3; Figure S2F).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "SPG6",
+      "group_name": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+      "feature_label": "DMRTB1",
+      "feature_name": "DMRTB1",
+      "source_rationale": "SPG6 cells turn off DMRT1 while maintaining DMRTB1 (not annotated in macaque), a specific signature of mouse type B SPG (Zhang et al., 2014; Green et al., 2018).",
+      "data_id": "Supplementary Table S3#C. Human Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoid cells",
+      "group_name": "MYOID CELL",
+      "feature_label": "PDGFRA",
+      "feature_name": "PDGFRA",
+      "source_rationale": "Unlike in mouse, primate myoid cells do not express the SSC proliferative factor GDNF but rather express components of other signaling pathways not detected in mouse, such as PDGFRA, EGFR, PTCH1, and PPARA (Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoid cells",
+      "group_name": "MYOID CELL",
+      "feature_label": "EGFR",
+      "feature_name": "EGFR",
+      "source_rationale": "Unlike in mouse, primate myoid cells do not express the SSC proliferative factor GDNF but rather express components of other signaling pathways not detected in mouse, such as PDGFRA, EGFR, PTCH1, and PPARA (Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoid cells",
+      "group_name": "MYOID CELL",
+      "feature_label": "PTCH1",
+      "feature_name": "PTCH1",
+      "source_rationale": "Unlike in mouse, primate myoid cells do not express the SSC proliferative factor GDNF but rather express components of other signaling pathways not detected in mouse, such as PDGFRA, EGFR, PTCH1, and PPARA (Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "myoid cells",
+      "group_name": "MYOID CELL",
+      "feature_label": "PPARA",
+      "feature_name": "PPARA",
+      "source_rationale": "Unlike in mouse, primate myoid cells do not express the SSC proliferative factor GDNF but rather express components of other signaling pathways not detected in mouse, such as PDGFRA, EGFR, PTCH1, and PPARA (Table S6).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immature Leydig cells",
+      "group_name": "IMMATURE LEYDIG CELL",
+      "feature_label": "IGF1",
+      "feature_name": "IGF1",
+      "source_rationale": "This population expressed multiple markers previously shown to be restricted to spindle-shaped putative progenitor (Lottrup et al., 2014) or differentiating Leydig cells (Hu et al., 2010; Wang et al., 2003) (DLK1 [unannotated in macaque], IGF1/2, CFD, SFRP, PTCH2, and IGFB3) (Figures 6A and S6C; Table S6), whereas their expression of steroidogenic enzymes (STAR and Cytochrome P450 genes) were very low (data not shown).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immature Leydig cells",
+      "group_name": "IMMATURE LEYDIG CELL",
+      "feature_label": "CFD",
+      "feature_name": "CFD",
+      "source_rationale": "This population expressed multiple markers previously shown to be restricted to spindle-shaped putative progenitor (Lottrup et al., 2014) or differentiating Leydig cells (Hu et al., 2010; Wang et al., 2003) (DLK1 [unannotated in macaque], IGF1/2, CFD, SFRP, PTCH2, and IGFB3) (Figures 6A and S6C; Table S6), whereas their expression of steroidogenic enzymes (STAR and Cytochrome P450 genes) were very low (data not shown).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    },
+    {
+      "organism": "homo_sapiens",
+      "group_label": "immature Leydig cells",
+      "group_name": "IMMATURE LEYDIG CELL",
+      "feature_label": "PTCH2",
+      "feature_name": "PTCH2",
+      "source_rationale": "This population expressed multiple markers previously shown to be restricted to spindle-shaped putative progenitor (Lottrup et al., 2014) or differentiating Leydig cells (Hu et al., 2010; Wang et al., 2003) (DLK1 [unannotated in macaque], IGF1/2, CFD, SFRP, PTCH2, and IGFB3) (Figures 6A and S6C; Table S6), whereas their expression of steroidogenic enzymes (STAR and Cytochrome P450 genes) were very low (data not shown).",
+      "data_id": "Supplementary Table S6#B.HumanSoma-Markers"
+    }
+  ],
+  "inputs": {
+    "manuscript_path": "data/testis_Shamis2020/manuscript/manuscript.txt",
+    "manuscript_sha256": "sha256:2bd423207fc4388e885db5f568bb1cce9a7b02998cc39be69156d2831d5c221c",
+    "benchmark_text_sha256": "sha256:b79bbbe8f91109ddf42e99d83c559e9143f656acc31eed52616842b68c709f41",
+    "benchmark_deg_sha256": "sha256:89f6c6a3520cbdcddefc225429794c27579f59478b87b5596a99ef6682859ae2",
+    "gene_map_sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+    "prompt_sha256": "sha256:4ce7eecd4a53c4a020183772a5cfb8274312bb1f45cc0f67b043cfa3f3c2b777",
+    "candidate_data_ids": [
+      "Supplementary Table S1#B.HumanTestis-Markers",
+      "Supplementary Table S2#A. Human Clusters1-7 Markers",
+      "Supplementary Table S2#C.Human SPG cluster 1-4 Markers",
+      "Supplementary Table S3#B. Merged analysis",
+      "Supplementary Table S3#C. Human Markers",
+      "Supplementary Table S6#B.HumanSoma-Markers"
+    ]
+  },
+  "claims_document": {
+    "schema_version": "mrkr.claims.v1",
+    "source": {
+      "id": "manuscript.txt",
+      "sha256": "sha256:2bd423207fc4388e885db5f568bb1cce9a7b02998cc39be69156d2831d5c221c"
+    },
+    "producer": {
+      "name": "mrkr",
+      "version": "0.4.0"
+    },
+    "claims": [
+      {
+        "claim_id": "claim:7d4d41d0afc05baafdf5",
+        "span_literal": "Specifically, SPG1 cells are enriched for MORC1, MSL3, ZBTB43, TSPAN33, TCF3, FMR1, MAGEB2, and CDK17 (Figure 2E [TSPAN33, PIWIL4, and MORC1 shown], see Table S3).",
+        "span_offset": [
+          28120,
+          28283
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by TSPAN33. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by MORC1. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by TCF3. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by FMR1. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by MAGEB2. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by CDK17. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by MSL3. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by ZBTB43.",
+        "terms": [
+          {
+            "sub_span": "SPG1",
+            "sub_offset": [
+              14,
+              18
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "TSPAN33",
+            "sub_offset": [
+              63,
+              70
+            ],
+            "normalized_label": "TSPAN33",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MORC1",
+            "sub_offset": [
+              42,
+              47
+            ],
+            "normalized_label": "MORC1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TCF3",
+            "sub_offset": [
+              72,
+              76
+            ],
+            "normalized_label": "TCF3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "FMR1",
+            "sub_offset": [
+              78,
+              82
+            ],
+            "normalized_label": "FMR1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MAGEB2",
+            "sub_offset": [
+              84,
+              90
+            ],
+            "normalized_label": "MAGEB2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CDK17",
+            "sub_offset": [
+              96,
+              101
+            ],
+            "normalized_label": "CDK17",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MSL3",
+            "sub_offset": [
+              49,
+              53
+            ],
+            "normalized_label": "MSL3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ZBTB43",
+            "sub_offset": [
+              55,
+              61
+            ],
+            "normalized_label": "ZBTB43",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:f0663c6331df6572a96f",
+        "span_literal": "Interestingly, PIWIL4 is a SPG1-specific marker for all three species (Figures 2D and 2E; Table S3).",
+        "span_offset": [
+          28284,
+          28384
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by PIWIL4.",
+        "terms": [
+          {
+            "sub_span": "SPG1",
+            "sub_offset": [
+              27,
+              31
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PIWIL4",
+            "sub_offset": [
+              15,
+              21
+            ],
+            "normalized_label": "PIWIL4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:e7a50a4b9309f52fb423",
+        "span_literal": "In SPG2 cells, the noncanonical markers enriched in SPG1 (described above) are diminished, whereas certain canonical markers for undifferentiated SPG increase in expression (ZBTB16 [mouse and human] and GFRA1 [all three species]), as do several noncanonical markers (DUSP6, TCF4, and L1TD1 [macaque and human only]) (Figures 2D and 2E [L1TD1 shown]; Table S3).",
+        "span_offset": [
+          28947,
+          29307
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by ZBTB16. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by GFRA1. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by L1TD1. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by DUSP6. In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by TCF4.",
+        "terms": [
+          {
+            "sub_span": "SPG2",
+            "sub_offset": [
+              3,
+              7
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ZBTB16",
+            "sub_offset": [
+              174,
+              180
+            ],
+            "normalized_label": "ZBTB16",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "GFRA1",
+            "sub_offset": [
+              203,
+              208
+            ],
+            "normalized_label": "GFRA1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "L1TD1",
+            "sub_offset": [
+              284,
+              289
+            ],
+            "normalized_label": "L1TD1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "DUSP6",
+            "sub_offset": [
+              267,
+              272
+            ],
+            "normalized_label": "DUSP6",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TCF4",
+            "sub_offset": [
+              274,
+              278
+            ],
+            "normalized_label": "TCF4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:efb11449ad7e44dd2706",
+        "span_literal": "One of the most abundant populations captured in primates was peritubular myoid cells, defined by the expression of MYH11, ACTA2, collagens, laminins, versican (VCAN), and fibronectin (Figures 1C, 6A, and S6C; Table S6).",
+        "span_offset": [
+          66301,
+          66521
+        ],
+        "summary": "In Homo sapiens, MYOID CELL is marked by MYH11. In Homo sapiens, MYOID CELL is marked by ACTA2. In Homo sapiens, MYOID CELL is marked by VCAN.",
+        "terms": [
+          {
+            "sub_span": "myoid cells",
+            "sub_offset": [
+              74,
+              85
+            ],
+            "normalized_label": "MYOID CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MYH11",
+            "sub_offset": [
+              116,
+              121
+            ],
+            "normalized_label": "MYH11",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ACTA2",
+            "sub_offset": [
+              123,
+              128
+            ],
+            "normalized_label": "ACTA2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "VCAN",
+            "sub_offset": [
+              161,
+              165
+            ],
+            "normalized_label": "VCAN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:4b22641c6ceabd51cc97",
+        "span_literal": "endothelial cells (VWF",
+        "span_offset": [
+          70863,
+          70885
+        ],
+        "summary": "In Homo sapiens, ENDOTHELIAL CELL is marked by VWF.",
+        "terms": [
+          {
+            "sub_span": "endothelial cells",
+            "sub_offset": [
+              0,
+              17
+            ],
+            "normalized_label": "ENDOTHELIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "VWF",
+            "sub_offset": [
+              19,
+              22
+            ],
+            "normalized_label": "VWF",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:304b7c89eb828e11fe26",
+        "span_literal": "endothelial cells (VWF, NOSTRIN",
+        "span_offset": [
+          70863,
+          70894
+        ],
+        "summary": "In Homo sapiens, ENDOTHELIAL CELL is marked by NOSTRIN.",
+        "terms": [
+          {
+            "sub_span": "endothelial cells",
+            "sub_offset": [
+              0,
+              17
+            ],
+            "normalized_label": "ENDOTHELIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "NOSTRIN",
+            "sub_offset": [
+              24,
+              31
+            ],
+            "normalized_label": "NOSTRIN",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:eb3202b35c545b492a2e",
+        "span_literal": "endothelial cells (VWF, NOSTRIN, AQP1",
+        "span_offset": [
+          70863,
+          70900
+        ],
+        "summary": "In Homo sapiens, ENDOTHELIAL CELL is marked by AQP1.",
+        "terms": [
+          {
+            "sub_span": "endothelial cells",
+            "sub_offset": [
+              0,
+              17
+            ],
+            "normalized_label": "ENDOTHELIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "AQP1",
+            "sub_offset": [
+              33,
+              37
+            ],
+            "normalized_label": "AQP1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:9ca4b7af20b1610f7ba4",
+        "span_literal": "endothelial cells (VWF, NOSTRIN, AQP1, CD34",
+        "span_offset": [
+          70863,
+          70906
+        ],
+        "summary": "In Homo sapiens, ENDOTHELIAL CELL is marked by CD34.",
+        "terms": [
+          {
+            "sub_span": "endothelial cells",
+            "sub_offset": [
+              0,
+              17
+            ],
+            "normalized_label": "ENDOTHELIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD34",
+            "sub_offset": [
+              39,
+              43
+            ],
+            "normalized_label": "CD34",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:87f4883fd84ac6d6c40c",
+        "span_literal": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+        "span_offset": [
+          72386,
+          72664
+        ],
+        "summary": "In Homo sapiens, MACROPHAGE is marked by CD163. In Homo sapiens, MACROPHAGE is marked by HLA-DRA. In Homo sapiens, MACROPHAGE is marked by LYZ. In Homo sapiens, MACROPHAGE is marked by TYROBP.",
+        "terms": [
+          {
+            "sub_span": "macrophages",
+            "sub_offset": [
+              68,
+              79
+            ],
+            "normalized_label": "MACROPHAGE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD163",
+            "sub_offset": [
+              81,
+              86
+            ],
+            "normalized_label": "CD163",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "HLA-DRA",
+            "sub_offset": [
+              88,
+              95
+            ],
+            "normalized_label": "HLA-DRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "LYZ",
+            "sub_offset": [
+              106,
+              109
+            ],
+            "normalized_label": "LYZ",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TYROBP",
+            "sub_offset": [
+              115,
+              121
+            ],
+            "normalized_label": "TYROBP",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:dbdb885958a5faad8a09",
+        "span_literal": "Finally, we identified two immune cell types: a major population of macrophages (CD163, HLA-DRA/MAMU-DRA, LYZ, and TYROBP) and a smaller population of T cells (CD3D, TRAC, TRBC2, and CD69) (Figures 6B and S6C; Table S6), a fraction of which express CD8 (23% human, 10% macaque).",
+        "span_offset": [
+          72386,
+          72664
+        ],
+        "summary": "In Homo sapiens, T CELL is marked by CD3D. In Homo sapiens, T CELL is marked by TRAC. In Homo sapiens, T CELL is marked by TRBC2. In Homo sapiens, T CELL is marked by CD69.",
+        "terms": [
+          {
+            "sub_span": "T cells",
+            "sub_offset": [
+              151,
+              158
+            ],
+            "normalized_label": "T CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CD3D",
+            "sub_offset": [
+              160,
+              164
+            ],
+            "normalized_label": "CD3D",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TRAC",
+            "sub_offset": [
+              166,
+              170
+            ],
+            "normalized_label": "TRAC",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TRBC2",
+            "sub_offset": [
+              172,
+              177
+            ],
+            "normalized_label": "TRBC2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "CD69",
+            "sub_offset": [
+              183,
+              187
+            ],
+            "normalized_label": "CD69",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:48238d26461d6121a458",
+        "span_literal": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+        "span_offset": [
+          71559,
+          71903
+        ],
+        "summary": "In Homo sapiens, M-PERICYTE is marked by MCAM. In Homo sapiens, M-PERICYTE is marked by MYL9. In Homo sapiens, M-PERICYTE is marked by RERGL. In Homo sapiens, M-PERICYTE is marked by ADIRF.",
+        "terms": [
+          {
+            "sub_span": "m-pericytes",
+            "sub_offset": [
+              110,
+              121
+            ],
+            "normalized_label": "M-PERICYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MCAM",
+            "sub_offset": [
+              123,
+              127
+            ],
+            "normalized_label": "MCAM",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "MYL9",
+            "sub_offset": [
+              197,
+              201
+            ],
+            "normalized_label": "MYL9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "RERGL",
+            "sub_offset": [
+              158,
+              163
+            ],
+            "normalized_label": "RERGL",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ADIRF",
+            "sub_offset": [
+              165,
+              170
+            ],
+            "normalized_label": "ADIRF",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:7ef718b91cc1304591d8",
+        "span_literal": "We found the testis pericyte population splits into two distinct sub-clusters, which we annotate as muscular (m-pericytes: MCAM [higher expression], CRIP1/2, RERGL, ADIRF [unannotated in macaque], MYL9, and PTM1/2) or fibroblastic (f-pericytes: STEAP4, GUCY1A1/2, ITGA1, CD36/44 (human), collagens, and laminins) (Figures 6B and S6C; Table S6).",
+        "span_offset": [
+          71559,
+          71903
+        ],
+        "summary": "In Homo sapiens, F-PERICYTE is marked by STEAP4. In Homo sapiens, F-PERICYTE is marked by ITGA1.",
+        "terms": [
+          {
+            "sub_span": "f-pericytes",
+            "sub_offset": [
+              232,
+              243
+            ],
+            "normalized_label": "F-PERICYTE",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "STEAP4",
+            "sub_offset": [
+              245,
+              251
+            ],
+            "normalized_label": "STEAP4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ITGA1",
+            "sub_offset": [
+              264,
+              269
+            ],
+            "normalized_label": "ITGA1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:0933268119e79af44d24",
+        "span_literal": "SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4",
+        "span_offset": [
+          81776,
+          81816
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by ID4.",
+        "terms": [
+          {
+            "sub_span": "SPG1",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ID4",
+            "sub_offset": [
+              37,
+              40
+            ],
+            "normalized_label": "ID4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:a055e87a46e10b76a585",
+        "span_literal": "SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16",
+        "span_offset": [
+          81776,
+          81828
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1 is marked by ZBTB16.",
+        "terms": [
+          {
+            "sub_span": "SPG1",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 1",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ZBTB16",
+            "sub_offset": [
+              46,
+              52
+            ],
+            "normalized_label": "ZBTB16",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:8da7eb42ec749a443a94",
+        "span_literal": "SPG2: L1TD1, ID4",
+        "span_offset": [
+          81830,
+          81846
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by ID4.",
+        "terms": [
+          {
+            "sub_span": "SPG2",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ID4",
+            "sub_offset": [
+              13,
+              16
+            ],
+            "normalized_label": "ID4",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:1a31faff4e32ecc996c7",
+        "span_literal": "SPG2: L1TD1, ID4, GFRA1",
+        "span_offset": [
+          81830,
+          81853
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by GFRA1.",
+        "terms": [
+          {
+            "sub_span": "SPG2",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "GFRA1",
+            "sub_offset": [
+              18,
+              23
+            ],
+            "normalized_label": "GFRA1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:7bafd1b66fb8376fe60c",
+        "span_literal": "ZBTB16; SPG2",
+        "span_offset": [
+          81822,
+          81834
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by ZBTB16.",
+        "terms": [
+          {
+            "sub_span": "SPG2",
+            "sub_offset": [
+              8,
+              12
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "ZBTB16",
+            "sub_offset": [
+              0,
+              6
+            ],
+            "normalized_label": "ZBTB16",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:c2bcceca6dc8fa99e373",
+        "span_literal": "SPG2: L1TD1",
+        "span_offset": [
+          81830,
+          81841
+        ],
+        "summary": "In Homo sapiens, TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2 is marked by L1TD1.",
+        "terms": [
+          {
+            "sub_span": "SPG2",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TYPE A UNDIFFERENTIATED SPERMATOGONIAL CELL 2",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "L1TD1",
+            "sub_offset": [
+              6,
+              11
+            ],
+            "normalized_label": "L1TD1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:fddfcc00261a2fe440a5",
+        "span_literal": "Further, SPG6 includes type B spermatogonial cells transitioning to preleptotene spermatocytes based on the expression of conserved meiotic genes, such as PRDM9, ZCWPW1, and REC8.",
+        "span_offset": [
+          85268,
+          85447
+        ],
+        "summary": "In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by PRDM9. In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by ZCWPW1. In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by REC8.",
+        "terms": [
+          {
+            "sub_span": "SPG6",
+            "sub_offset": [
+              9,
+              13
+            ],
+            "normalized_label": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PRDM9",
+            "sub_offset": [
+              155,
+              160
+            ],
+            "normalized_label": "PRDM9",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ZCWPW1",
+            "sub_offset": [
+              162,
+              168
+            ],
+            "normalized_label": "ZCWPW1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "REC8",
+            "sub_offset": [
+              174,
+              178
+            ],
+            "normalized_label": "REC8",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:54500924f0f9eb3a31eb",
+        "span_literal": "However, we identify many genes that are either expressed in all three species (i.e., FMR1NB, ZCWPW1, DPEP3, IQBP1, and CALR), in primates only (BEND2, ZRANB2, PAGE4, ZNFX1, HLTF, and ZBED5), or are singularly expressed in mouse (Swt1, Tgfbr1, Rhox13, PhTF1, and Fmr1), macaque (ZNF850, MAGEB17, ZMYM1, and TCEA1), and human (PRDM7, full VCX family, ERBB3, ERVK13-1, SSX3, and TRIML2) (Table S3A).",
+        "span_offset": [
+          36929,
+          37326
+        ],
+        "summary": "In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by PRDM7. In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by ERBB3. In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by SSX3. In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by TRIML2.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PRDM7",
+            "sub_offset": [
+              326,
+              331
+            ],
+            "normalized_label": "PRDM7",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "ERBB3",
+            "sub_offset": [
+              350,
+              355
+            ],
+            "normalized_label": "ERBB3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "SSX3",
+            "sub_offset": [
+              367,
+              371
+            ],
+            "normalized_label": "SSX3",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "TRIML2",
+            "sub_offset": [
+              377,
+              383
+            ],
+            "normalized_label": "TRIML2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:2632b9dc94acd4edc378",
+        "span_literal": "TEX101",
+        "span_offset": [
+          36441,
+          36447
+        ],
+        "summary": "In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by TEX101.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "TEX101",
+            "sub_offset": [
+              0,
+              6
+            ],
+            "normalized_label": "TEX101",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:ca6703fe7932e32a4fad",
+        "span_literal": "LY6K",
+        "span_offset": [
+          36449,
+          36453
+        ],
+        "summary": "In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by LY6K.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "LY6K",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "LY6K",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:dc8eefac2d4d87eb4d5c",
+        "span_literal": "MEIOB",
+        "span_offset": [
+          36512,
+          36517
+        ],
+        "summary": "In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by MEIOB.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MEIOB",
+            "sub_offset": [
+              0,
+              5
+            ],
+            "normalized_label": "MEIOB",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:f4b0eba908b4bce0934c",
+        "span_literal": "SPATA22",
+        "span_offset": [
+          36526,
+          36533
+        ],
+        "summary": "In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by SPATA22.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "SPATA22",
+            "sub_offset": [
+              0,
+              7
+            ],
+            "normalized_label": "SPATA22",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:da6a7073d5b2f9ea2905",
+        "span_literal": "DNAJB11",
+        "span_offset": [
+          36539,
+          36546
+        ],
+        "summary": "In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by DNAJB11.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "DNAJB11",
+            "sub_offset": [
+              0,
+              7
+            ],
+            "normalized_label": "DNAJB11",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:1c580068da17967ae935",
+        "span_literal": "SPG4 expressed markers, such as MKI67",
+        "span_offset": [
+          34226,
+          34263
+        ],
+        "summary": "In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 4 is marked by MKI67.",
+        "terms": [
+          {
+            "sub_span": "SPG4",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TRANSITIONING SPERMATOGONIAL CELL 4",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "MKI67",
+            "sub_offset": [
+              32,
+              37
+            ],
+            "normalized_label": "MKI67",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:12df1eb01c7f3ce11333",
+        "span_literal": "SPG4 expressed markers, such as MKI67, PCNA",
+        "span_offset": [
+          34226,
+          34269
+        ],
+        "summary": "In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 4 is marked by PCNA.",
+        "terms": [
+          {
+            "sub_span": "SPG4",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TRANSITIONING SPERMATOGONIAL CELL 4",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PCNA",
+            "sub_offset": [
+              39,
+              43
+            ],
+            "normalized_label": "PCNA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:6460a5e4eefb2c17bc2a",
+        "span_literal": "SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1",
+        "span_offset": [
+          34226,
+          34294
+        ],
+        "summary": "In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 4 is marked by DMRT1.",
+        "terms": [
+          {
+            "sub_span": "SPG4",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TRANSITIONING SPERMATOGONIAL CELL 4",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "DMRT1",
+            "sub_offset": [
+              63,
+              68
+            ],
+            "normalized_label": "DMRT1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:43b30657325e2bcf875c",
+        "span_literal": "SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1",
+        "span_offset": [
+          34226,
+          34302
+        ],
+        "summary": "In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 4 is marked by DMRTB1.",
+        "terms": [
+          {
+            "sub_span": "SPG4",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TRANSITIONING SPERMATOGONIAL CELL 4",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "DMRTB1",
+            "sub_offset": [
+              70,
+              76
+            ],
+            "normalized_label": "DMRTB1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:83ad992174db3d0dec6c",
+        "span_literal": "SPG4 expressed markers, such as MKI67, PCNA, numerous cyclins, DMRT1, DMRTB1, and KIT",
+        "span_offset": [
+          34226,
+          34311
+        ],
+        "summary": "In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 4 is marked by KIT.",
+        "terms": [
+          {
+            "sub_span": "SPG4",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TRANSITIONING SPERMATOGONIAL CELL 4",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "KIT",
+            "sub_offset": [
+              82,
+              85
+            ],
+            "normalized_label": "KIT",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:65d4088272ac4bc6b31a",
+        "span_literal": "The macaque and human SPG5 population continue to express DMRT1 and DMRTB1 (unannotated in monkey) while turning down KIT and turning on STRA8 as well as the meiotic gene REC8 (Table S3; Figure S2F).",
+        "span_offset": [
+          35084,
+          35283
+        ],
+        "summary": "In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 5 is marked by DMRT1. In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 5 is marked by DMRTB1. In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 5 is marked by STRA8. In Homo sapiens, TRANSITIONING SPERMATOGONIAL CELL 5 is marked by REC8.",
+        "terms": [
+          {
+            "sub_span": "SPG5",
+            "sub_offset": [
+              22,
+              26
+            ],
+            "normalized_label": "TRANSITIONING SPERMATOGONIAL CELL 5",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "DMRT1",
+            "sub_offset": [
+              58,
+              63
+            ],
+            "normalized_label": "DMRT1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "DMRTB1",
+            "sub_offset": [
+              68,
+              74
+            ],
+            "normalized_label": "DMRTB1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "STRA8",
+            "sub_offset": [
+              137,
+              142
+            ],
+            "normalized_label": "STRA8",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "REC8",
+            "sub_offset": [
+              171,
+              175
+            ],
+            "normalized_label": "REC8",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:8470b7a84e5afe79a67d",
+        "span_literal": "SPG6 cells turn off DMRT1 while maintaining DMRTB1",
+        "span_offset": [
+          35644,
+          35694
+        ],
+        "summary": "In Homo sapiens, TYPE B DIFFERENTIATED SPERMATOGONIAL CELL is marked by DMRTB1.",
+        "terms": [
+          {
+            "sub_span": "SPG6",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "TYPE B DIFFERENTIATED SPERMATOGONIAL CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "DMRTB1",
+            "sub_offset": [
+              44,
+              50
+            ],
+            "normalized_label": "DMRTB1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:31538d2786d0c3ae38ff",
+        "span_literal": "Unlike in mouse, primate myoid cells do not express the SSC proliferative factor GDNF but rather express components of other signaling pathways not detected in mouse, such as PDGFRA, EGFR, PTCH1, and PPARA (Table S6).",
+        "span_offset": [
+          68014,
+          68231
+        ],
+        "summary": "In Homo sapiens, MYOID CELL is marked by PDGFRA. In Homo sapiens, MYOID CELL is marked by EGFR. In Homo sapiens, MYOID CELL is marked by PTCH1. In Homo sapiens, MYOID CELL is marked by PPARA.",
+        "terms": [
+          {
+            "sub_span": "myoid cells",
+            "sub_offset": [
+              25,
+              36
+            ],
+            "normalized_label": "MYOID CELL",
+            "term_type": "celltype",
+            "provenance": "explicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PDGFRA",
+            "sub_offset": [
+              175,
+              181
+            ],
+            "normalized_label": "PDGFRA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "EGFR",
+            "sub_offset": [
+              183,
+              187
+            ],
+            "normalized_label": "EGFR",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PTCH1",
+            "sub_offset": [
+              189,
+              194
+            ],
+            "normalized_label": "PTCH1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          },
+          {
+            "sub_span": "PPARA",
+            "sub_offset": [
+              200,
+              205
+            ],
+            "normalized_label": "PPARA",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:ea1718bc88f370742b9e",
+        "span_literal": "IGF1",
+        "span_offset": [
+          70175,
+          70179
+        ],
+        "summary": "In Homo sapiens, IMMATURE LEYDIG CELL is marked by IGF1.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "IMMATURE LEYDIG CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "IGF1",
+            "sub_offset": [
+              0,
+              4
+            ],
+            "normalized_label": "IGF1",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:7abd16a694f58d562bfc",
+        "span_literal": "CFD",
+        "span_offset": [
+          70183,
+          70186
+        ],
+        "summary": "In Homo sapiens, IMMATURE LEYDIG CELL is marked by CFD.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "IMMATURE LEYDIG CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "CFD",
+            "sub_offset": [
+              0,
+              3
+            ],
+            "normalized_label": "CFD",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim:3bf1b0d89f61bfc2abac",
+        "span_literal": "PTCH2",
+        "span_offset": [
+          70194,
+          70199
+        ],
+        "summary": "In Homo sapiens, IMMATURE LEYDIG CELL is marked by PTCH2.",
+        "terms": [
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "IMMATURE LEYDIG CELL",
+            "term_type": "celltype",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": null,
+            "sub_offset": null,
+            "normalized_label": "Homo sapiens",
+            "term_type": "organism",
+            "provenance": "implicit"
+          },
+          {
+            "sub_span": "PTCH2",
+            "sub_offset": [
+              0,
+              5
+            ],
+            "normalized_label": "PTCH2",
+            "term_type": "gene",
+            "provenance": "explicit",
+            "direction": "positive"
+          }
+        ]
+      }
+    ]
+  },
+  "links": {
+    "claim:7d4d41d0afc05baafdf5": "Supplementary Table S3#C. Human Markers",
+    "claim:f0663c6331df6572a96f": "Supplementary Table S3#C. Human Markers",
+    "claim:e7a50a4b9309f52fb423": "Supplementary Table S3#C. Human Markers",
+    "claim:efb11449ad7e44dd2706": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:4b22641c6ceabd51cc97": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:304b7c89eb828e11fe26": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:eb3202b35c545b492a2e": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:9ca4b7af20b1610f7ba4": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:87f4883fd84ac6d6c40c": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:dbdb885958a5faad8a09": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:48238d26461d6121a458": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:7ef718b91cc1304591d8": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:0933268119e79af44d24": "Supplementary Table S3#C. Human Markers",
+    "claim:a055e87a46e10b76a585": "Supplementary Table S3#C. Human Markers",
+    "claim:8da7eb42ec749a443a94": "Supplementary Table S3#C. Human Markers",
+    "claim:1a31faff4e32ecc996c7": "Supplementary Table S3#C. Human Markers",
+    "claim:7bafd1b66fb8376fe60c": "Supplementary Table S3#C. Human Markers",
+    "claim:c2bcceca6dc8fa99e373": "Supplementary Table S3#C. Human Markers",
+    "claim:fddfcc00261a2fe440a5": "Supplementary Table S3#C. Human Markers",
+    "claim:54500924f0f9eb3a31eb": "Supplementary Table S3#C. Human Markers",
+    "claim:2632b9dc94acd4edc378": "Supplementary Table S3#C. Human Markers",
+    "claim:ca6703fe7932e32a4fad": "Supplementary Table S3#C. Human Markers",
+    "claim:dc8eefac2d4d87eb4d5c": "Supplementary Table S3#C. Human Markers",
+    "claim:f4b0eba908b4bce0934c": "Supplementary Table S3#C. Human Markers",
+    "claim:da6a7073d5b2f9ea2905": "Supplementary Table S3#C. Human Markers",
+    "claim:1c580068da17967ae935": "Supplementary Table S3#C. Human Markers",
+    "claim:12df1eb01c7f3ce11333": "Supplementary Table S3#C. Human Markers",
+    "claim:6460a5e4eefb2c17bc2a": "Supplementary Table S3#C. Human Markers",
+    "claim:43b30657325e2bcf875c": "Supplementary Table S3#C. Human Markers",
+    "claim:83ad992174db3d0dec6c": "Supplementary Table S3#C. Human Markers",
+    "claim:65d4088272ac4bc6b31a": "Supplementary Table S3#C. Human Markers",
+    "claim:8470b7a84e5afe79a67d": "Supplementary Table S3#C. Human Markers",
+    "claim:31538d2786d0c3ae38ff": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:ea1718bc88f370742b9e": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:7abd16a694f58d562bfc": "Supplementary Table S6#B.HumanSoma-Markers",
+    "claim:3bf1b0d89f61bfc2abac": "Supplementary Table S6#B.HumanSoma-Markers"
+  },
+  "link_origins": {
+    "claim:7d4d41d0afc05baafdf5": "model",
+    "claim:f0663c6331df6572a96f": "model",
+    "claim:e7a50a4b9309f52fb423": "model",
+    "claim:efb11449ad7e44dd2706": "model",
+    "claim:4b22641c6ceabd51cc97": "model",
+    "claim:304b7c89eb828e11fe26": "model",
+    "claim:eb3202b35c545b492a2e": "model",
+    "claim:9ca4b7af20b1610f7ba4": "model",
+    "claim:87f4883fd84ac6d6c40c": "model",
+    "claim:dbdb885958a5faad8a09": "model",
+    "claim:48238d26461d6121a458": "model",
+    "claim:7ef718b91cc1304591d8": "model",
+    "claim:0933268119e79af44d24": "model",
+    "claim:a055e87a46e10b76a585": "model",
+    "claim:8da7eb42ec749a443a94": "model",
+    "claim:1a31faff4e32ecc996c7": "model",
+    "claim:7bafd1b66fb8376fe60c": "model",
+    "claim:c2bcceca6dc8fa99e373": "model",
+    "claim:fddfcc00261a2fe440a5": "model",
+    "claim:54500924f0f9eb3a31eb": "model",
+    "claim:2632b9dc94acd4edc378": "model",
+    "claim:ca6703fe7932e32a4fad": "model",
+    "claim:dc8eefac2d4d87eb4d5c": "model",
+    "claim:f4b0eba908b4bce0934c": "model",
+    "claim:da6a7073d5b2f9ea2905": "model",
+    "claim:1c580068da17967ae935": "model",
+    "claim:12df1eb01c7f3ce11333": "model",
+    "claim:6460a5e4eefb2c17bc2a": "model",
+    "claim:43b30657325e2bcf875c": "model",
+    "claim:83ad992174db3d0dec6c": "model",
+    "claim:65d4088272ac4bc6b31a": "model",
+    "claim:8470b7a84e5afe79a67d": "model",
+    "claim:31538d2786d0c3ae38ff": "model",
+    "claim:ea1718bc88f370742b9e": "model",
+    "claim:7abd16a694f58d562bfc": "model",
+    "claim:3bf1b0d89f61bfc2abac": "model"
+  },
+  "validation": {
+    "preparation": {
+      "raw_claims": 72,
+      "retained_claims": 72,
+      "reanchored_spans": 24,
+      "reconstructed_spans": 24,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": [],
+      "strict_exclusions": [
+        {
+          "reason": "span_not_exact",
+          "span_literal": "This population expressed multiple markers previously shown to be restricted to spindle-shaped putative progenitor (Lottrup et al., 2014) or differentiating Leydig cells (Hu et al., 2010; Wang et al., 2003) (DLK1 [unannotated in macaque], IGF1/2, CFD, SFRP, PTCH2, and IGFB3) (Figures 6A and S6C; Table S6), whereas their expression of steroidogenic enzymes (STAR and Cytochrome P450 genes) were very low (data not shown)."
+        },
+        {
+          "reason": "span_not_exact",
+          "span_literal": "In these six states (SPG1-SPG6), we identify two molecularly distinct undifferentiated spermatogonial cell states (SPG1: TSPAN33, PIWIL4, CDK17, MORC1, ID4, and ZBTB16; SPG2: L1TD1, ID4, GFRA1, and ZBTB16), consistent with earlier findings (Guo et al., 2018)."
+        }
+      ],
+      "strictly_grounded_claims": 70
+    },
+    "validation": {
+      "valid": true,
+      "n_claims": 36,
+      "n_errors": 0,
+      "errors": [],
+      "n_warnings": 0,
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,14 @@
+Extracted 28 marker claims: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/analysis/artifacts/mrkr_benchmark_organism_pilot_v2_20260721/papers/benchmark/He2021/mrkr-dku011ol/paper.claims.json
+Grounded 28 claims; resolved 105/112 terms: /Users/sinabooeshaghi/projects/markergeneextraction/llmarkers/analysis/artifacts/mrkr_benchmark_organism_pilot_v2_20260721/papers/benchmark/He2021/mrkr-dku011ol/paper.onto.json
+WARNING term.grounding_coarse at claims[0].terms[0]: term is grounded to a broader concept
+WARNING term.grounding_unresolved at claims[3].terms[0]: term is present but has no stable identifier
+WARNING term.grounding_unresolved at claims[6].terms[0]: term is present but has no stable identifier
+WARNING term.label_missing_summary at claims[6].terms[3].normalized_label: normalized label should occur in the claim summary
+WARNING term.grounding_unresolved at claims[7].terms[0]: term is present but has no stable identifier
+WARNING term.label_missing_summary at claims[7].terms[4].normalized_label: normalized label should occur in the claim summary
+WARNING term.label_missing_summary at claims[8].terms[0].normalized_label: normalized label should occur in the claim summary
+WARNING term.grounding_coarse at claims[8].terms[0]: term is grounded to a broader concept
+WARNING term.grounding_coarse at claims[12].terms[0]: term is grounded to a broader concept
+WARNING term.grounding_coarse at claims[13].terms[0]: term is grounded to a broader concept
+... 9 more warnings
+Valid: 28 claims; 19 warnings

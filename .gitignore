@@ -36,6 +36,7 @@ docs/mx/
 
 # Local scratch directories not part of this repository
 archive/
+tmp/
 
 # Manuscript contents (license restrictions)
 **/manuscript/manuscript.txt
@@ -47,19 +48,13 @@ archive/
 *.db
 *.sqlite
 analysis/cache/
+analysis/artifacts/mrkr_benchmark_v1/**/log.txt
+
+# Regenerated benchmark evidence documents (reports remain trackable)
+analysis/artifacts/benchmark_evidence_v1/papers/
 
 # Lean build artifacts
 analysis/formal/.lake/
-
-# Poster LaTeX build artifacts
-docs/poster/*.aux
-docs/poster/*.bbl
-docs/poster/*.blg
-docs/poster/*.fdb_latexmk
-docs/poster/*.fls
-docs/poster/*.log
-docs/poster/*.out
-docs/poster/*.pdf
 
 # LaTeX build artifacts
 /main.aux
@@ -131,78 +126,6 @@ data/hca/manuscripts/**
 data/cell_annotation_platform/anndata/*.h5ad
 data/cell_annotation_platform/**/*.zip
 
-# Generated cross-study intermediate caches
-analysis/artifacts/cross_study_candidate_profile_pairs.tsv
-analysis/artifacts/cross_study_edge_decomposition_review.tsv
-analysis/artifacts/cross_study_edge_driver_evidence.tsv
-analysis/artifacts/cross_study_edge_driver_summary.tsv
-analysis/artifacts/cross_study_edge_skos_summary.tsv
-analysis/artifacts/cross_study_figure4_corpus_summary.tsv
-analysis/artifacts/cross_study_marker_label_alignment.tsv
-analysis/artifacts/cross_study_marker_neighbor_space_compare.tsv
-analysis/artifacts/cross_study_marker_records.tsv
-analysis/artifacts/cross_study_marker_records_standardized.tsv
-analysis/artifacts/cross_study_monocyte_macrophage_pairs.tsv
-analysis/artifacts/cross_study_nearest_label_neighbors.tsv
-analysis/artifacts/cross_study_nearest_marker_neighbors.tsv
-analysis/artifacts/cross_study_nearest_neighbor_jaccard_summary.tsv
-analysis/artifacts/cross_study_paper_pair_jaccard.tsv
-analysis/artifacts/cross_study_profile_summary.tsv
-analysis/artifacts/cross_study_profile_summary_standardized.tsv
-analysis/artifacts/cross_study_same_name_pairs.tsv
-analysis/artifacts/cross_study_top_different_name_matches.tsv
-analysis/artifacts/cross_study_top_same_name_divergent_pairs.tsv
-
-# Generated exploratory cross-study review outputs
-analysis/artifacts/cross_study_context_comparison_candidates.tsv
-analysis/artifacts/cross_study_context_comparison_review.tsv
-analysis/artifacts/cross_study_figure4_raw_records.tsv
-analysis/artifacts/cross_study_gene_id_refactor_summary.md
-analysis/artifacts/cross_study_row3_example_candidates.tsv
-analysis/artifacts/cross_study_row3_resolution_summary.tsv
-analysis/artifacts/cross_study_same_label_partial_pairs.tsv
-analysis/artifacts/cross_study_same_label_partial_pairs_candidates.md
-analysis/artifacts/cross_study_same_label_partial_pairs_candidates.tsv
-analysis/artifacts/cross_study_same_label_partial_pairs_reviewed.md
-analysis/artifacts/cross_study_same_label_partial_pairs_summary.tsv
-
-# Generated extraction QC outputs
-analysis/artifacts/hca_extraction_downstream_pairs.tsv
-analysis/artifacts/hca_extraction_downstream_records.tsv
-analysis/artifacts/hca_extraction_empty_or_missing_papers.tsv
-analysis/artifacts/hca_extraction_low_verification_papers.tsv
-analysis/artifacts/hca_extraction_nonhuman_papers.tsv
-analysis/artifacts/hca_extraction_paper_summary.tsv
-analysis/artifacts/hca_extraction_record_summary.tsv
-analysis/artifacts/hca_extraction_report.md
-analysis/artifacts/hca_extraction_species_summary.tsv
-analysis/artifacts/hca_extraction_status_summary.tsv
-analysis/artifacts/hca_extraction_top_unmapped_human.tsv
-
-# Generated partition exploratory outputs
-analysis/artifacts/partition_pair_benchmark_pairs.tsv
-analysis/artifacts/partition_pair_benchmark_report.md
-analysis/artifacts/partition_pair_benchmark_summary.tsv
-
-# Generated markerfmt DE comparison scratch inputs
-analysis/artifacts/markerfmt_cap_de/cap_scanpy_de_input.h5ad
-analysis/artifacts/markerfmt_cap_de/mpl-cache/
-analysis/artifacts/markerfmt_cap_de/seurat_input/
-analysis/artifacts/markerfmt_cap_de/*.sqlite
-
-# Generated marker-context statement and embedding scratch artifacts
-analysis/artifacts/marker_context/statement_shards/
-analysis/artifacts/marker_context/statement_worker_batches/
-analysis/artifacts/marker_context/*_embedding_batches/
-analysis/artifacts/marker_context/*_embeddings.npz
-analysis/artifacts/marker_context/*_marker_embeddings.npz
-analysis/artifacts/marker_context/*_profile_embedding_centroids.npz
-analysis/artifacts/marker_context/*_embedding_records.tsv
-analysis/artifacts/marker_context/llmarkers_context_statement_llm_records.tsv
-analysis/artifacts/marker_context/llmarkers_context_statement_llm_outputs.jsonl
-analysis/artifacts/marker_context/llmarkers_context_statement_openai_batch_requests.jsonl
-!analysis/artifacts/marker_context/llmarkers_context_statement_llm_records.tsv.gz
-
 # Generated exploratory figures
 analysis/figures/biorxiv_immune_cluster.pdf
 analysis/figures/biorxiv_immune_cluster.png
@@ -225,8 +148,6 @@ analysis/figures/fig_gen_optimal_n.pdf
 analysis/figures/fig_gen_rank_cdf.pdf
 analysis/figures/fig_gen_rank_cdf_perdataset.pdf
 analysis/figures/fig_gen_rank_lfc_boxplot.pdf
-analysis/figures/hca_extraction_qc.pdf
-analysis/figures/hca_extraction_qc.png
 analysis/figures/fig_llm_curation.pdf
 analysis/figures/fig_llm_curation.png
 analysis/figures/fig_llm_recovery.pdf
@@ -253,6 +174,3 @@ analysis/artifacts/tcell_marker_hierarchy_gene_scores.tsv
 analysis/artifacts/tcell_marker_hierarchy_profiles.tsv
 analysis/artifacts/tcell_marker_hierarchy_programs.tsv
 analysis/artifacts/tcell_marker_hierarchy_report.md
-
-# Local TeX preview wrappers
-docs/paper/src/fig_paper_celltype_joint_preview.tex

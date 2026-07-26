@@ -1,0 +1,1834 @@
+{
+  "schema_version": "mrkr.onto.v1",
+  "source": {
+    "id": "benchmark/Gautam2021",
+    "sha256": "sha256:c631db67eb950e772b881a1b570111c8031dad11ef62c2a5d7a18684d2c4c832"
+  },
+  "producer": {
+    "name": "mrkr",
+    "version": "0.3.0"
+  },
+  "claims": [
+    {
+      "claim_id": "claim:e9dcd8407064ab806f0b",
+      "span_literal": "TRDN was shown to colocalise in VIM + cells in Muller glial cells while NIF3L1 colocalises with PKCA + BPs in RNA FISH experiments.",
+      "span_offset": [
+        13893,
+        14024
+      ],
+      "summary": "In Homo sapiens, TRDN is a marker of Muller glial cells, and NIF3L1 is a marker of bipolar cells in the retina.",
+      "terms": [
+        {
+          "sub_span": "Muller glial cells",
+          "sub_offset": [
+            47,
+            65
+          ],
+          "normalized_label": "Muller glial cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000125",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "TRDN",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "TRDN",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000186439",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:c240ca602f7915876bc0",
+      "span_literal": "TRDN was shown to colocalise in VIM + cells in Muller glial cells while NIF3L1 colocalises with PKCA + BPs in RNA FISH experiments.",
+      "span_offset": [
+        13893,
+        14024
+      ],
+      "summary": "In Homo sapiens, NIF3L1 is a marker of bipolar cells in the retina.",
+      "terms": [
+        {
+          "sub_span": "BPs",
+          "sub_offset": [
+            103,
+            106
+          ],
+          "normalized_label": "bipolar cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "NIF3L1",
+          "sub_offset": [
+            72,
+            78
+          ],
+          "normalized_label": "NIF3L1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000196290",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "retina",
+          "term_type": "tissue",
+          "provenance": "implicit",
+          "ontology_term": "UBERON:0000966",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7e7357cf606acb30097b",
+      "span_literal": "RAB41 was recently shown to localise in cone PRs13.",
+      "span_offset": [
+        14141,
+        14192
+      ],
+      "summary": "In Homo sapiens, RAB41 is a positive marker of cone photoreceptors in the retina.",
+      "terms": [
+        {
+          "sub_span": "cone PRs",
+          "sub_offset": [
+            40,
+            48
+          ],
+          "normalized_label": "cone photoreceptor",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000573",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "RAB41",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "RAB41",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000147127",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:af968ebacc90fa4bb35b",
+      "span_literal": "RAB41 localises with OPN1SW + cone cells in Fig. 2c.",
+      "span_offset": [
+        14278,
+        14330
+      ],
+      "summary": "In Homo sapiens, RAB41 and OPN1SW are positive markers of cone cells in the retina.",
+      "terms": [
+        {
+          "sub_span": "cone cells",
+          "sub_offset": [
+            30,
+            40
+          ],
+          "normalized_label": "cone cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "RAB41",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "RAB41",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000147127",
+          "exact": true
+        },
+        {
+          "sub_span": "OPN1SW",
+          "sub_offset": [
+            21,
+            27
+          ],
+          "normalized_label": "OPN1SW",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000128617",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6598673380200265ac55",
+      "span_literal": "One of them have high expression of the TGFBI gene than the rest of the cells, and another has high expression of the ELF3 gene (Fig. 3b, Supplementary Fig. 3e).",
+      "span_offset": [
+        19629,
+        19790
+      ],
+      "summary": "In Homo sapiens cornea, one epithelial cell subtype has high expression of TGFBI, while another epithelial cell subtype has high expression of ELF3.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "epithelial cell",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:0000066",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "TGFBI",
+          "sub_offset": [
+            40,
+            45
+          ],
+          "normalized_label": "TGFBI",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000120708",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "cornea",
+          "term_type": "tissue",
+          "provenance": "implicit",
+          "ontology_term": "UBERON:0000964",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:4c93c81eb03b464819ce",
+      "span_literal": "ANXA1 is a marker of cells undergoing inflammation17 is expressed highly in TGFBI-high epithelial cells (Supplementary Fig. 3e), while ELF3 is expressed in differentiating corneal epithelial cells18.",
+      "span_offset": [
+        19791,
+        19990
+      ],
+      "summary": "In Homo sapiens, ANXA1 is expressed highly in TGFBI-high epithelial cells, and ELF3 is expressed in differentiating corneal epithelial cells.",
+      "terms": [
+        {
+          "sub_span": "TGFBI-high epithelial cells",
+          "sub_offset": [
+            76,
+            103
+          ],
+          "normalized_label": "TGFBI-high epithelial cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000066",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ANXA1",
+          "sub_offset": [
+            0,
+            5
+          ],
+          "normalized_label": "ANXA1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000135046",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "cornea",
+          "term_type": "tissue",
+          "provenance": "implicit",
+          "ontology_term": "UBERON:0000964",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:2116368954258c2a200c",
+      "span_literal": "ANXA1 is a marker of cells undergoing inflammation17 is expressed highly in TGFBI-high epithelial cells (Supplementary Fig. 3e), while ELF3 is expressed in differentiating corneal epithelial cells18.",
+      "span_offset": [
+        19791,
+        19990
+      ],
+      "summary": "In Homo sapiens, ELF3 is a positive marker of differentiating corneal epithelial cells.",
+      "terms": [
+        {
+          "sub_span": "differentiating corneal epithelial cells",
+          "sub_offset": [
+            156,
+            196
+          ],
+          "normalized_label": "differentiating corneal epithelial cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000575",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ELF3",
+          "sub_offset": [
+            135,
+            139
+          ],
+          "normalized_label": "ELF3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000163435",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "cornea",
+          "term_type": "tissue",
+          "provenance": "implicit",
+          "ontology_term": "UBERON:0000964",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:aa6cc1f800463612111e",
+      "span_literal": "They expressed CD9 marker, which is implicated in the signalling of Schwann cells with axon23.",
+      "span_offset": [
+        21712,
+        21806
+      ],
+      "summary": "In Homo sapiens, CD9 is a positive marker of Schwann cells in the iris.",
+      "terms": [
+        {
+          "sub_span": "Schwann cells",
+          "sub_offset": [
+            68,
+            81
+          ],
+          "normalized_label": "Schwann cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000218",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CD9",
+          "sub_offset": [
+            15,
+            18
+          ],
+          "normalized_label": "CD9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000010278",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "iris",
+          "term_type": "tissue",
+          "provenance": "implicit",
+          "ontology_term": "UBERON:0001769",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1317c96083f5ce0366c6",
+      "span_literal": "They had high MYH11 and MYL9 (Supplementary Fig. 3f) expression, which are the canonical markers for SMCs25.",
+      "span_offset": [
+        22125,
+        22233
+      ],
+      "summary": "In Homo sapiens, MYH11 and MYL9 are canonical positive markers of smooth muscle cells.",
+      "terms": [
+        {
+          "sub_span": "SMCs",
+          "sub_offset": [
+            101,
+            105
+          ],
+          "normalized_label": "smooth muscle cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000192",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MYH11",
+          "sub_offset": [
+            14,
+            19
+          ],
+          "normalized_label": "MYH11",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000133392",
+          "exact": true
+        },
+        {
+          "sub_span": "MYL9",
+          "sub_offset": [
+            24,
+            28
+          ],
+          "normalized_label": "MYL9",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000101335",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6b5a25abf40ce7c86c19",
+      "span_literal": "They expressed canonical markers involved in pigmentation like MLANA and PMEL (Supplementary Fig. 3f).",
+      "span_offset": [
+        22297,
+        22399
+      ],
+      "summary": "In Homo sapiens, pigmented epithelial cells of the iris express MLANA and PMEL as canonical pigmentation markers.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "pigmented epithelial cell",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:0000529",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MLANA",
+          "sub_offset": [
+            63,
+            68
+          ],
+          "normalized_label": "MLANA",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000120215",
+          "exact": true
+        },
+        {
+          "sub_span": "PMEL",
+          "sub_offset": [
+            73,
+            77
+          ],
+          "normalized_label": "PMEL",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000185664",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "iris",
+          "term_type": "tissue",
+          "provenance": "implicit",
+          "ontology_term": "UBERON:0001769",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:6b3a7b89d97d921e9c70",
+      "span_literal": "All three cell types expressed of PAX6 and SIX3, eye field TFs (EFTF).",
+      "span_offset": [
+        24283,
+        24353
+      ],
+      "summary": "In Homo sapiens, putative stem cells, COL9A1-high ciliary body cells, and pigmented ciliary body cells express PAX6 and SIX3, which are eye field transcription factors.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "putative stem cell",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:0000034",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PAX6",
+          "sub_offset": [
+            34,
+            38
+          ],
+          "normalized_label": "PAX6",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000007372",
+          "exact": true
+        },
+        {
+          "sub_span": "SIX3",
+          "sub_offset": [
+            43,
+            47
+          ],
+          "normalized_label": "SIX3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000138083",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b86200ae6518e106dba9",
+      "span_literal": "Putative stem cells have an expression of OTX2, which is another EFTFs (Supplementary Fig. 3f).",
+      "span_offset": [
+        24354,
+        24449
+      ],
+      "summary": "In Homo sapiens, putative stem cells in the iris express OTX2, an eye field transcription factor.",
+      "terms": [
+        {
+          "sub_span": "Putative stem cells",
+          "sub_offset": [
+            0,
+            19
+          ],
+          "normalized_label": "putative stem cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000034",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "OTX2",
+          "sub_offset": [
+            42,
+            46
+          ],
+          "normalized_label": "OTX2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000165588",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "iris",
+          "term_type": "tissue",
+          "provenance": "implicit",
+          "ontology_term": "UBERON:0001769",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1874980fd7a6c8b966b3",
+      "span_literal": "COL9A1 high CBCs expressed CPAMD8 (Supplementary Fig. 3f), which plays a role in periocular mesenchyme development27.",
+      "span_offset": [
+        24450,
+        24567
+      ],
+      "summary": "In Homo sapiens, COL9A1-high ciliary body cells express CPAMD8, which plays a role in periocular mesenchyme development.",
+      "terms": [
+        {
+          "sub_span": "COL9A1 high CBCs",
+          "sub_offset": [
+            0,
+            16
+          ],
+          "normalized_label": "COL9A1-high ciliary body cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CPAMD8",
+          "sub_offset": [
+            27,
+            33
+          ],
+          "normalized_label": "CPAMD8",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000160111",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:5fbe51ef582124a9e218",
+      "span_literal": "The TFs that populate melanocytes of Iris included PAX3, MITF and SOX10 (Supplementary Fig. 6e).",
+      "span_offset": [
+        33894,
+        33990
+      ],
+      "summary": "In Homo sapiens, melanocytes of the iris express the transcription factors PAX3, MITF, and SOX10.",
+      "terms": [
+        {
+          "sub_span": "melanocytes",
+          "sub_offset": [
+            22,
+            33
+          ],
+          "normalized_label": "melanocyte",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000148",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PAX3",
+          "sub_offset": [
+            51,
+            55
+          ],
+          "normalized_label": "PAX3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000135903",
+          "exact": true
+        },
+        {
+          "sub_span": "MITF",
+          "sub_offset": [
+            57,
+            61
+          ],
+          "normalized_label": "MITF",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000187098",
+          "exact": true
+        },
+        {
+          "sub_span": "SOX10",
+          "sub_offset": [
+            66,
+            71
+          ],
+          "normalized_label": "SOX10",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000100146",
+          "exact": true
+        },
+        {
+          "sub_span": "Iris",
+          "sub_offset": [
+            37,
+            41
+          ],
+          "normalized_label": "iris",
+          "term_type": "tissue",
+          "provenance": "explicit",
+          "ontology_term": "UBERON:0001769",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:7a77c64260a7c4a440ee",
+      "span_literal": "To gain additional confidence in the presence of TF module specific to cell types, we verified SREBP2 and KLF7 specificity in RGCs and PBX1 in ACs and RGCs using RNA FISH.",
+      "span_offset": [
+        34476,
+        34647
+      ],
+      "summary": "In Homo sapiens, SREBF2 and KLF7 are specific transcription factors for retinal ganglion cells, and PBX1 is specific to amacrine cells and retinal ganglion cells, as verified by RNA fluorescence in situ hybridization.",
+      "terms": [
+        {
+          "sub_span": "RGCs",
+          "sub_offset": [
+            126,
+            130
+          ],
+          "normalized_label": "retinal ganglion cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000740",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "SREBP2",
+          "sub_offset": [
+            95,
+            101
+          ],
+          "normalized_label": "SREBF2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000198911",
+          "exact": true
+        },
+        {
+          "sub_span": "KLF7",
+          "sub_offset": [
+            106,
+            110
+          ],
+          "normalized_label": "KLF7",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000118263",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:187fc1c7c746e6c06f0f",
+      "span_literal": "To gain additional confidence in the presence of TF module specific to cell types, we verified SREBP2 and KLF7 specificity in RGCs and PBX1 in ACs and RGCs using RNA FISH.",
+      "span_offset": [
+        34476,
+        34647
+      ],
+      "summary": "In Homo sapiens, PBX1 is a specific transcription factor for amacrine cells, as verified by RNA fluorescence in situ hybridization.",
+      "terms": [
+        {
+          "sub_span": "ACs",
+          "sub_offset": [
+            143,
+            146
+          ],
+          "normalized_label": "amacrine cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000561",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PBX1",
+          "sub_offset": [
+            135,
+            139
+          ],
+          "normalized_label": "PBX1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000185630",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:e4f3c5b9a61d46fbebc7",
+      "span_literal": "However, markers like POU4F1 and EBF3, which act as markers for maturing RGC^(41,42), were present in cells (Supplementary Fig. 7j).",
+      "span_offset": [
+        38609,
+        38741
+      ],
+      "summary": "In Homo sapiens, POU4F1 and EBF3 act as positive markers for maturing retinal ganglion cells.",
+      "terms": [
+        {
+          "sub_span": "maturing RGC",
+          "sub_offset": [
+            64,
+            76
+          ],
+          "normalized_label": "maturing retinal ganglion cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000740",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "POU4F1",
+          "sub_offset": [
+            22,
+            28
+          ],
+          "normalized_label": "POU4F1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000152192",
+          "exact": true
+        },
+        {
+          "sub_span": "EBF3",
+          "sub_offset": [
+            33,
+            37
+          ],
+          "normalized_label": "EBF3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000108001",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:1e07cad66b912470c22c",
+      "span_literal": "Cells expressing ONECUT1, ONECUT2 and EBF3 were designated as RGC precursor cells because ONECUT TFs are expressed in developing RGCs43.",
+      "span_offset": [
+        38742,
+        38878
+      ],
+      "summary": "In Homo sapiens, ONECUT1, ONECUT2, and EBF3 are positive markers of retinal ganglion cell precursor cells.",
+      "terms": [
+        {
+          "sub_span": "RGC precursor cells",
+          "sub_offset": [
+            62,
+            81
+          ],
+          "normalized_label": "retinal ganglion cell precursor cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000740",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ONECUT1",
+          "sub_offset": [
+            17,
+            24
+          ],
+          "normalized_label": "ONECUT1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000169856",
+          "exact": true
+        },
+        {
+          "sub_span": "ONECUT2",
+          "sub_offset": [
+            26,
+            33
+          ],
+          "normalized_label": "ONECUT2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000119547",
+          "exact": true
+        },
+        {
+          "sub_span": "EBF3",
+          "sub_offset": [
+            38,
+            42
+          ],
+          "normalized_label": "EBF3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000108001",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:a058b6dc6b5abcc75e0e",
+      "span_literal": "ACE2 and TMPRSS2, the primary cell surface proteins responsible for entry into human33, are expressed in the cornea's conjunctival cells (Supplementary Fig. 5b, c).",
+      "span_offset": [
+        30876,
+        31040
+      ],
+      "summary": "In Homo sapiens, ACE2 and TMPRSS2 are expressed in conjunctival cells of the cornea.",
+      "terms": [
+        {
+          "sub_span": "conjunctival cells",
+          "sub_offset": [
+            118,
+            136
+          ],
+          "normalized_label": "conjunctival cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": "human",
+          "sub_offset": [
+            79,
+            84
+          ],
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "explicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ACE2",
+          "sub_offset": [
+            0,
+            4
+          ],
+          "normalized_label": "ACE2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000130234",
+          "exact": true
+        },
+        {
+          "sub_span": "TMPRSS2",
+          "sub_offset": [
+            9,
+            16
+          ],
+          "normalized_label": "TMPRSS2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000184012",
+          "exact": true
+        },
+        {
+          "sub_span": "cornea's",
+          "sub_offset": [
+            109,
+            117
+          ],
+          "normalized_label": "cornea",
+          "term_type": "tissue",
+          "provenance": "explicit",
+          "ontology_term": "UBERON:0000964",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:b8cb64fbc0c0125de25b",
+      "span_literal": "COL9A1 high CBCs, pigmented CBCs and putative stem cells have increased expression of PAX6 and SIX3, which are EFTF.",
+      "span_offset": [
+        42877,
+        42993
+      ],
+      "summary": "In Homo sapiens, COL9A1-high ciliary body cells, pigmented ciliary body cells, and putative stem cells have increased expression of PAX6 and SIX3, which are eye field transcription factors.",
+      "terms": [
+        {
+          "sub_span": "COL9A1 high CBCs",
+          "sub_offset": [
+            0,
+            16
+          ],
+          "normalized_label": "COL9A1-high ciliary body cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PAX6",
+          "sub_offset": [
+            86,
+            90
+          ],
+          "normalized_label": "PAX6",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000007372",
+          "exact": true
+        },
+        {
+          "sub_span": "SIX3",
+          "sub_offset": [
+            95,
+            99
+          ],
+          "normalized_label": "SIX3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000138083",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:8c2b14c1fbcd4e29fea3",
+      "span_literal": "COL9A1 high CBCs, pigmented CBCs and putative stem cells have increased expression of PAX6 and SIX3, which are EFTF.",
+      "span_offset": [
+        42877,
+        42993
+      ],
+      "summary": "In Homo sapiens, pigmented ciliary body cells have increased expression of PAX6 and SIX3, which are eye field transcription factors.",
+      "terms": [
+        {
+          "sub_span": "pigmented CBCs",
+          "sub_offset": [
+            18,
+            32
+          ],
+          "normalized_label": "pigmented ciliary body cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PAX6",
+          "sub_offset": [
+            86,
+            90
+          ],
+          "normalized_label": "PAX6",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000007372",
+          "exact": true
+        },
+        {
+          "sub_span": "SIX3",
+          "sub_offset": [
+            95,
+            99
+          ],
+          "normalized_label": "SIX3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000138083",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:429edb4bdc1d0eca61da",
+      "span_literal": "COL9A1 high CBCs, pigmented CBCs and putative stem cells have increased expression of PAX6 and SIX3, which are EFTF.",
+      "span_offset": [
+        42877,
+        42993
+      ],
+      "summary": "In Homo sapiens, putative stem cells have increased expression of PAX6 and SIX3, which are eye field transcription factors.",
+      "terms": [
+        {
+          "sub_span": "putative stem cells",
+          "sub_offset": [
+            37,
+            56
+          ],
+          "normalized_label": "putative stem cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000034",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "PAX6",
+          "sub_offset": [
+            86,
+            90
+          ],
+          "normalized_label": "PAX6",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000007372",
+          "exact": true
+        },
+        {
+          "sub_span": "SIX3",
+          "sub_offset": [
+            95,
+            99
+          ],
+          "normalized_label": "SIX3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000138083",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:bad7485fdc5796de76fa",
+      "span_literal": "Putative stem cell also has high expression of OTX2, which is another EFTF.",
+      "span_offset": [
+        42994,
+        43069
+      ],
+      "summary": "In Homo sapiens, putative stem cells have high expression of OTX2, an eye field transcription factor.",
+      "terms": [
+        {
+          "sub_span": "Putative stem cell",
+          "sub_offset": [
+            0,
+            18
+          ],
+          "normalized_label": "putative stem cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000034",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "OTX2",
+          "sub_offset": [
+            47,
+            51
+          ],
+          "normalized_label": "OTX2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000165588",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:26d32d8adf2180d23f83",
+      "span_literal": "COL9A1 high CBCs express CPAMD8, which was present in the ventral iris which was incompetent in regeneration after lentectomy27.",
+      "span_offset": [
+        43419,
+        43547
+      ],
+      "summary": "In Homo sapiens, COL9A1-high ciliary body cells express CPAMD8.",
+      "terms": [
+        {
+          "sub_span": "COL9A1 high CBCs",
+          "sub_offset": [
+            0,
+            16
+          ],
+          "normalized_label": "COL9A1-high ciliary body cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "CPAMD8",
+          "sub_offset": [
+            25,
+            31
+          ],
+          "normalized_label": "CPAMD8",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000160111",
+          "exact": true
+        },
+        {
+          "sub_span": "iris",
+          "sub_offset": [
+            66,
+            70
+          ],
+          "normalized_label": "iris",
+          "term_type": "tissue",
+          "provenance": "explicit",
+          "ontology_term": "UBERON:0001769",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:9d8e70e452adcc71ce52",
+      "span_literal": "MAGIC co-expression analysis based on MAGIC imputation revealed WNT receptors ROR1, ROR2, and FZD1 were specific to pigmented CBCs, putative stem cells and COL9A1-high CBCs, respectively.",
+      "span_offset": [
+        28847,
+        29034
+      ],
+      "summary": "In Homo sapiens, ROR1 is specific to pigmented ciliary body cells, ROR2 is specific to putative stem cells, and FZD1 is specific to COL9A1-high ciliary body cells.",
+      "terms": [
+        {
+          "sub_span": "pigmented CBCs",
+          "sub_offset": [
+            116,
+            130
+          ],
+          "normalized_label": "pigmented ciliary body cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ROR1",
+          "sub_offset": [
+            78,
+            82
+          ],
+          "normalized_label": "ROR1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000185483",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:608dc91ca0715f3c9f2a",
+      "span_literal": "MAGIC co-expression analysis based on MAGIC imputation revealed WNT receptors ROR1, ROR2, and FZD1 were specific to pigmented CBCs, putative stem cells and COL9A1-high CBCs, respectively.",
+      "span_offset": [
+        28847,
+        29034
+      ],
+      "summary": "In Homo sapiens, ROR2 is specific to putative stem cells, as revealed by MAGIC co-expression analysis.",
+      "terms": [
+        {
+          "sub_span": "putative stem cells",
+          "sub_offset": [
+            132,
+            151
+          ],
+          "normalized_label": "putative stem cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000034",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "ROR2",
+          "sub_offset": [
+            84,
+            88
+          ],
+          "normalized_label": "ROR2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000169071",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3ec0050708dd397ad8f9",
+      "span_literal": "MAGIC co-expression analysis based on MAGIC imputation revealed WNT receptors ROR1, ROR2, and FZD1 were specific to pigmented CBCs, putative stem cells and COL9A1-high CBCs, respectively.",
+      "span_offset": [
+        28847,
+        29034
+      ],
+      "summary": "In Homo sapiens, FZD1 is specific to COL9A1-high ciliary body cells, as revealed by MAGIC co-expression analysis.",
+      "terms": [
+        {
+          "sub_span": "COL9A1-high CBCs",
+          "sub_offset": [
+            156,
+            172
+          ],
+          "normalized_label": "COL9A1-high ciliary body cell",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "FZD1",
+          "sub_offset": [
+            94,
+            98
+          ],
+          "normalized_label": "FZD1",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000157240",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:34e71bddd6490b67f901",
+      "span_literal": "SREBP2 is TF involved in cholesterol biosynthesis35 and KLF7 involved in the axon regeneration response after optical nerve injury in the eye36.",
+      "span_offset": [
+        36425,
+        36569
+      ],
+      "summary": "In Homo sapiens, SREBF2 and KLF7 are transcription factors active in retinal ganglion cells; SREBF2 is involved in cholesterol biosynthesis and KLF7 in axon regeneration response after optic nerve injury.",
+      "terms": [
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "retinal ganglion cell",
+          "term_type": "celltype",
+          "provenance": "implicit",
+          "ontology_term": "CL:0000740",
+          "exact": true
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "SREBP2",
+          "sub_offset": [
+            0,
+            6
+          ],
+          "normalized_label": "SREBF2",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000198911",
+          "exact": true
+        },
+        {
+          "sub_span": "KLF7",
+          "sub_offset": [
+            56,
+            60
+          ],
+          "normalized_label": "KLF7",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000118263",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "claim_id": "claim:3ef52c101bbbe472c125",
+      "span_literal": "Fibroblasts highly expressing MEG3 is proliferating in glaucoma tenon fibroblast10.",
+      "span_offset": [
+        21376,
+        21459
+      ],
+      "summary": "In Homo sapiens, MEG3 is highly expressed in a subpopulation of fibroblasts in the iris.",
+      "terms": [
+        {
+          "sub_span": "Fibroblasts",
+          "sub_offset": [
+            0,
+            11
+          ],
+          "normalized_label": "MEG3-high fibroblast",
+          "term_type": "celltype",
+          "provenance": "explicit",
+          "ontology_term": "CL:0000057",
+          "exact": false
+        },
+        {
+          "sub_span": null,
+          "sub_offset": null,
+          "normalized_label": "Homo sapiens",
+          "term_type": "organism",
+          "provenance": "implicit",
+          "ontology_term": "NCBITaxon:9606",
+          "exact": true
+        },
+        {
+          "sub_span": "MEG3",
+          "sub_offset": [
+            30,
+            34
+          ],
+          "normalized_label": "MEG3",
+          "term_type": "gene",
+          "provenance": "explicit",
+          "direction": "positive",
+          "ontology_term": "ENSG00000214548",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "provider": "anthropic",
+    "model": "claude-opus-4-6",
+    "response_id": "msg_011CdG19Lyzrp7JVfxsjWGCu",
+    "prompt_template_sha256": "sha256:66b1b55ad4f3af47640e539051c622169cac2c87c093368764ba84c6db786749",
+    "organism": {
+      "key": "homo_sapiens",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "preparation": {
+      "raw_claims": 29,
+      "retained_claims": 29,
+      "reanchored_spans": 0,
+      "reconstructed_spans": 0,
+      "expanded_gene_shorthand": 0,
+      "excluded_claims": [],
+      "excluded_terms": []
+    }
+  },
+  "grounding": {
+    "genes": {
+      "provider": "offline-gene-map",
+      "organism": "homo_sapiens",
+      "sha256": "sha256:f656f7e852a36d30c2a23ebecd3ca1e36e061475248f7470a03192d9feea91c7",
+      "canonical_sha256": "sha256:8f73b5fb49d2944ebe885bf930ea38c55bf1f1759139caeaebd7e10155ff1a83"
+    },
+    "organism": {
+      "provider": "NCBI Taxonomy",
+      "label": "Homo sapiens",
+      "ontology_term": "NCBITaxon:9606"
+    },
+    "ontology_service": {
+      "provider": "OLS4",
+      "endpoint": "https://www.ebi.ac.uk/ols4/api/v2/tag_text",
+      "queries": [
+        {
+          "query": "Muller glial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:37.039457+00:00",
+          "response_sha256": "sha256:5ea289cda670369a6620c2675e830333c7e425268f020d403ceb5d54f2ae115d",
+          "ontology_term": "CL:0000125",
+          "exact": false
+        },
+        {
+          "query": "bipolar cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:37.674970+00:00",
+          "response_sha256": "sha256:d39d9fe574aa587f5dcb7955d76a41524e2b9ed5138a5c5ab58122097ee99585",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "retina",
+          "ontology": "uberon",
+          "retrieved_at": "2026-07-21T22:38:38.417311+00:00",
+          "response_sha256": "sha256:51fada5f55aa988c2163592a3514946216b87de9f2a964a27721cd59862f9686",
+          "ontology_term": "UBERON:0000966",
+          "exact": true
+        },
+        {
+          "query": "cone photoreceptor",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:39.091266+00:00",
+          "response_sha256": "sha256:36a7212251a79de792500be199456e6dd0cf6c3cef9543e39f1e44940488d863",
+          "ontology_term": "CL:0000573",
+          "exact": true
+        },
+        {
+          "query": "cone cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:39.786464+00:00",
+          "response_sha256": "sha256:37441e39035b8951501e61703304fa5ada06f8f52ab47212a22b02108bf13ab1",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "epithelial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:40.513590+00:00",
+          "response_sha256": "sha256:adec20a76ed8b6732881620711ffbf455d8ede6d23154fea538e60a54d1b4191",
+          "ontology_term": "CL:0000066",
+          "exact": true
+        },
+        {
+          "query": "cornea",
+          "ontology": "uberon",
+          "retrieved_at": "2026-07-21T22:38:41.190533+00:00",
+          "response_sha256": "sha256:c1339cbf7ea9b95e552b6d5043da011a5acf0ecef57f289e8680acdc0819fb2d",
+          "ontology_term": "UBERON:0000964",
+          "exact": true
+        },
+        {
+          "query": "TGFBI-high epithelial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:41.873596+00:00",
+          "response_sha256": "sha256:ff2b48297d1948ca741a2c2a9e95e04e4fb946f5a8198b59d0475f9823ed9a71",
+          "ontology_term": "CL:0000066",
+          "exact": false
+        },
+        {
+          "query": "differentiating corneal epithelial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:42.619121+00:00",
+          "response_sha256": "sha256:59eee9b812ecb2a81426fd9d7c27a40aa53686f4a3e4aa6d53dd4007bafea19e",
+          "ontology_term": "CL:0000575",
+          "exact": false
+        },
+        {
+          "query": "Schwann cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:43.293914+00:00",
+          "response_sha256": "sha256:360b229f1d4207ce238824fb3d5ffe77f378a0f6f3c78db38e3bc56cf3eb8dcd",
+          "ontology_term": "CL:0000218",
+          "exact": true
+        },
+        {
+          "query": "iris",
+          "ontology": "uberon",
+          "retrieved_at": "2026-07-21T22:38:43.977030+00:00",
+          "response_sha256": "sha256:2d6eb1da26c176cb020d1f45e588cecb587668f90ab7e36d189d01894b8664b1",
+          "ontology_term": "UBERON:0001769",
+          "exact": true
+        },
+        {
+          "query": "iri",
+          "ontology": "uberon",
+          "retrieved_at": "2026-07-21T22:38:44.728033+00:00",
+          "response_sha256": "sha256:76f0e0a1bedbd3252dcea0fc63485215e0caf59254af0ac9d47193c5f15a4477",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "smooth muscle cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:45.401675+00:00",
+          "response_sha256": "sha256:c7e1cafe5e09c6ee6bf08da5b8d463c0159e5450dc7d4297d9c7c99e5c952f26",
+          "ontology_term": "CL:0000192",
+          "exact": true
+        },
+        {
+          "query": "pigmented epithelial cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:46.065408+00:00",
+          "response_sha256": "sha256:cffc1874485cc3b4b2d33a8b66ed79abee77072621fc89b6c93be5f44b6f7538",
+          "ontology_term": "CL:0000529",
+          "exact": true
+        },
+        {
+          "query": "putative stem cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:49.797422+00:00",
+          "response_sha256": "sha256:1bec92b8f152a75c29b3d768ce9cf1cec93250f9c5a808b5fe519affff4173f6",
+          "ontology_term": "CL:0000034",
+          "exact": false
+        },
+        {
+          "query": "COL9A1-high ciliary body cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:50.475897+00:00",
+          "response_sha256": "sha256:f2cbbfbf2fef866dd3f338c0f3ac94ea3d66dfdf2ffc0a8368a7e8aa3f5cfba0",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "melanocyte",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:51.218215+00:00",
+          "response_sha256": "sha256:84c053e55023a62e66d164245465e1f762caaa0d1237e24d0ce63f66fb56d987",
+          "ontology_term": "CL:0000148",
+          "exact": true
+        },
+        {
+          "query": "retinal ganglion cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:51.833960+00:00",
+          "response_sha256": "sha256:91cb67734a06904492111434baecfae3e92b4fa3d230c12db72aa2a6d6ad0a79",
+          "ontology_term": "CL:0000740",
+          "exact": true
+        },
+        {
+          "query": "amacrine cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:52.573099+00:00",
+          "response_sha256": "sha256:60300f1bed45534587918abc21caa886626ccc0d184ceeb3e682b314c6468f98",
+          "ontology_term": "CL:0000561",
+          "exact": true
+        },
+        {
+          "query": "maturing retinal ganglion cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:53.258315+00:00",
+          "response_sha256": "sha256:d07961d6a087e1c1671016f6cefaeeca3f3955e7dddee62a903fb20668cca6d3",
+          "ontology_term": "CL:0000740",
+          "exact": false
+        },
+        {
+          "query": "retinal ganglion cell precursor cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:53.930289+00:00",
+          "response_sha256": "sha256:2a554cf7377524abad38b9d4b8d3e8903e5521ab3b88770c6937a418c0daca43",
+          "ontology_term": "CL:0000740",
+          "exact": false
+        },
+        {
+          "query": "conjunctival cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:54.670610+00:00",
+          "response_sha256": "sha256:342e9a5f39e46deff554b77c43b365819a599b801044d309d9d8b54a76e0f03b",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "pigmented ciliary body cell",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:55.372271+00:00",
+          "response_sha256": "sha256:e8e4b513c50824efea8bc9ba3f673c49afe23c216b09ad287da7cd63477b52ea",
+          "ontology_term": null,
+          "exact": null
+        },
+        {
+          "query": "MEG3-high fibroblast",
+          "ontology": "cl",
+          "retrieved_at": "2026-07-21T22:38:56.035487+00:00",
+          "response_sha256": "sha256:c1ebd238f35d1acff9ed4ce45f217528611e8ae74aada504391f7f1d61874032",
+          "ontology_term": "CL:0000057",
+          "exact": false
+        }
+      ]
+    }
+  }
+}

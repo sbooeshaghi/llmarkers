@@ -1,0 +1,22 @@
+{
+  "schema_version": "mrkr.joint-deg-extraction.v1",
+  "model": "claude-opus-4-6",
+  "papers": 7,
+  "totals": {
+    "raw_extractions": 325,
+    "claims": 152,
+    "predicted_terms": 311,
+    "excluded_claims": 5
+  },
+  "macro_mean": {
+    "pair_precision": 0.7455337135982297,
+    "pair_recall": 0.6100323675734328,
+    "pair_f1": 0.6375844761951962,
+    "triple_precision": 0.6880080703610115,
+    "triple_recall": 0.5856073428508978,
+    "triple_f1": 0.6077879907597026,
+    "source_gene_precision": 0.5884120238484409,
+    "source_gene_recall": 0.46865758458617396,
+    "source_gene_f1": 0.503956774103998
+  }
+}

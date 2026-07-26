@@ -1,0 +1,81 @@
+{
+  "claims": 153,
+  "macro_mean": {
+    "label_baseline": {
+      "claim_exact_pair_link_accuracy": 0.7471655328798186,
+      "claim_link_rate": 0.5652340246443405,
+      "claim_source_gene_link_accuracy": 0.37401883830455257,
+      "exact_pair_link_accuracy": 0.7789968652037618,
+      "link_rate": 0.5513059163059163,
+      "source_gene_f1": 0.250453863374825,
+      "source_gene_link_accuracy": 0.43057775557775557,
+      "source_gene_precision": 0.25103689960832815,
+      "source_gene_recall": 0.29894952786547657,
+      "triple_f1": 0.3413886847938729,
+      "triple_precision": 0.5745875203505284,
+      "triple_recall": 0.3092689903859334
+    },
+    "llm": {
+      "claim_exact_pair_link_accuracy": 0.8333333333333334,
+      "claim_link_rate": 0.9663865546218487,
+      "claim_source_gene_link_accuracy": 0.8472004186289901,
+      "exact_pair_link_accuracy": 0.8594566353187043,
+      "link_rate": 0.9682539682539683,
+      "source_gene_f1": 0.5270138141796473,
+      "source_gene_link_accuracy": 0.8931623931623932,
+      "source_gene_precision": 0.5495588538445682,
+      "source_gene_recall": 0.5635731741537735,
+      "triple_f1": 0.3125999991237269,
+      "triple_precision": 0.3367708185020953,
+      "triple_recall": 0.33201863078263266
+    }
+  },
+  "model": "claude-opus-4-6",
+  "papers": 7,
+  "pooled_conditional_claims": {
+    "exact_pair": {
+      "baseline_accuracy": 0.6101694915254238,
+      "baseline_correct": 36,
+      "baseline_only_correct": 1,
+      "evaluable": 59,
+      "llm_accuracy": 0.847457627118644,
+      "llm_correct": 50,
+      "llm_only_correct": 15,
+      "mcnemar_exact_p": 0.000518798828125
+    },
+    "source_gene": {
+      "baseline_accuracy": 0.3076923076923077,
+      "baseline_correct": 28,
+      "baseline_only_correct": 1,
+      "evaluable": 91,
+      "llm_accuracy": 0.9010989010989011,
+      "llm_correct": 82,
+      "llm_only_correct": 55,
+      "mcnemar_exact_p": 1.582067810090848e-15
+    }
+  },
+  "pooled_conditional_terms": {
+    "exact_pair": {
+      "baseline_accuracy": 0.7357142857142858,
+      "baseline_correct": 103,
+      "baseline_only_correct": 3,
+      "evaluable": 140,
+      "llm_accuracy": 0.8714285714285714,
+      "llm_correct": 122,
+      "llm_only_correct": 22,
+      "mcnemar_exact_p": 0.00015652179718017578
+    },
+    "source_gene": {
+      "baseline_accuracy": 0.3915094339622642,
+      "baseline_correct": 83,
+      "baseline_only_correct": 3,
+      "evaluable": 212,
+      "llm_accuracy": 0.9198113207547169,
+      "llm_correct": 195,
+      "llm_only_correct": 115,
+      "mcnemar_exact_p": 1.6487043659548457e-30
+    }
+  },
+  "positive_mapped_terms": 369,
+  "schema_version": "mrkr.deg-linkage.v1"
+}

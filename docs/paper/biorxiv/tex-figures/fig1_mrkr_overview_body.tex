@@ -1,0 +1,180 @@
+% Figure 1 body - from marker claims in papers to grounded .onto records.
+%
+% Coordinates are the design units of tex-figures/fig1_mrkr_overview.svg
+% (a 680 x 366 canvas). The y axis is negated so that y grows downward and the
+% numbers here match the SVG one for one.
+%
+% Color carries one meaning per hue and stays consistent across all panels:
+%   mkCell  cell type      mkGene  gene        mkComp  comparison group
+%   mkPass  verify pass    mkFail  verify fail mkHl    source sentence
+% Everything structural is grey.
+
+\begin{tikzpicture}[
+  x=0.02615cm,
+  y=-0.02615cm,
+  >=Latex,
+  font=\sffamily
+]
+
+% Colors.
+\definecolor{mkCell}{HTML}{2563EB}
+\definecolor{mkGene}{HTML}{D9730D}
+\definecolor{mkComp}{HTML}{0F766E}
+\definecolor{mkPass}{HTML}{16A34A}
+\definecolor{mkFail}{HTML}{DC2626}
+\definecolor{mkHl}{HTML}{FEF3C7}
+\definecolor{mkInk}{HTML}{334155}
+\definecolor{mkInkB}{HTML}{475569}
+\definecolor{mkInkC}{HTML}{64748B}
+\definecolor{mkLineA}{HTML}{94A3B8}
+\definecolor{mkLineB}{HTML}{CBD5E1}
+\definecolor{mkLineC}{HTML}{E2E8F0}
+\definecolor{mkFillA}{HTML}{F8FAFC}
+\definecolor{mkFillB}{HTML}{F1F5F9}
+\definecolor{mkFillC}{HTML}{FCFDFE}
+\definecolor{mkPaperB}{HTML}{EEF2F6}
+\definecolor{mkPaperC}{HTML}{F4F7FA}
+
+\tikzset{
+  mk body/.style={font=\sffamily\fontsize{4.9}{5.6}\selectfont, inner sep=0pt, anchor=base west, text=mkInkB},
+  mk chip text/.style={font=\sffamily\fontsize{5.2}{6}\selectfont\bfseries, inner sep=0pt, anchor=base west},
+  mk mono/.style={font=\ttfamily\fontsize{4.9}{5.6}\selectfont, inner sep=0pt, anchor=base west},
+  mk title/.style={font=\sffamily\fontsize{6.3}{7.5}\selectfont\bfseries, inner sep=0pt, anchor=base, text=mkInkB},
+  mk heading/.style={font=\sffamily\fontsize{6.3}{7.5}\selectfont\bfseries, inner sep=0pt, anchor=base west, text=mkInk},
+  mk wordmark/.style={font=\sffamily\fontsize{7.4}{9}\selectfont\bfseries, inner sep=0pt, anchor=base west, text=mkInk},
+  mk filename/.style={font=\ttfamily\fontsize{7}{8.5}\selectfont\bfseries, inner sep=0pt, anchor=base west, text=mkInk},
+  mk code/.style={font=\ttfamily\fontsize{6.3}{7.5}\selectfont, inner sep=0pt, anchor=base west, text=mkInkC},
+  mk dbcap/.style={font=\sffamily\fontsize{4.9}{5.6}\selectfont, inner sep=0pt, anchor=base, text=mkInkC},
+  mk pass/.style={font=\sffamily\fontsize{8.2}{9}\selectfont\bfseries, inner sep=0pt, anchor=base, text=mkPass},
+  mk fail/.style={font=\sffamily\fontsize{7.4}{9}\selectfont\bfseries, inner sep=0pt, anchor=base, text=mkFail},
+  mk panel/.style={rounded corners=1.8pt, line width=0.45pt},
+  mk box/.style={rounded corners=1.6pt, line width=0.45pt, fill=mkFillA, draw=mkLineC},
+  mk chip/.style={rounded corners=0.8pt, line width=0.45pt, fill=white, draw=mkLineB},
+  mk ghost/.style={rounded corners=0.5pt, fill=mkLineC, draw=none},
+  mk flow/.style={draw=mkLineA, line width=0.8pt, ->},
+  mk step/.style={draw=mkLineB, line width=0.95pt, ->},
+}
+
+%%% Papers %%%
+\draw[mk panel, fill=mkPaperB, draw=mkLineB] (16,22) rectangle (92,174);
+\draw[mk panel, fill=mkPaperC, draw=mkLineB] (20,26) rectangle (96,178);
+\draw[mk panel, fill=white,    draw=mkLineB] (24,30) rectangle (100,182);
+
+\node[mk heading] at (34,48) {Paper};
+\draw[mk ghost] (34,55) rectangle (94,59.5);
+
+\draw[rounded corners=1pt, fill=mkHl, draw=none] (30,66) rectangle (94,138);
+\node[mk body] at (34,78)  {\textcolor{mkCell}{\bfseries cDC1} cells were};
+\node[mk body] at (34,90)  {distinguished};
+\node[mk body] at (34,102) {from \textcolor{mkComp}{other}};
+\node[mk body] at (34,114) {\textcolor{mkComp}{\bfseries myeloid cells}};
+\node[mk body] at (34,126) {by \textcolor{mkGene}{\bfseries DNGR-1}.};
+
+\draw[mk ghost] (34,150) rectangle (94,154.5);
+\draw[mk ghost] (34,159) rectangle (82,163.5);
+\draw[mk ghost] (34,168) rectangle (90,172.5);
+
+%%% mrkr %%%
+\draw[rounded corners=2.6pt, line width=0.45pt, fill=mkFillC, draw=mkLineC] (104,22) rectangle (314,354);
+\node[mk wordmark] at (114,38) {mrkr};
+
+% Extract and normalize labels.
+\draw[mk box] (112,48) rectangle (306,128);
+\node[mk title] at (209,63) {Extract and normalize labels};
+
+\draw[mk chip] (120,75) rectangle (166,91);
+\node[mk chip text, text=mkCell] at (126,86) {cDC1};
+\draw[mk flow] (170,83) -- (182,83);
+\draw[mk chip] (186,72) rectangle (292,93);
+\node[mk body, text=mkCell] at (191,81) {CD141-positive myeloid};
+\node[mk body, text=mkCell] at (191,89) {dendritic cell};
+
+\draw[mk chip] (120,102) rectangle (166,118);
+\node[mk chip text, text=mkGene] at (126,113) {DNGR-1};
+\draw[mk flow] (170,110) -- (182,110);
+\draw[mk chip] (186,102) rectangle (292,118);
+\node[mk chip text, text=mkGene] at (191,113) {CLEC9A};
+
+\draw[mk step] (209,128) -- (209,140);
+
+% Verify extracted text.
+\draw[mk box] (112,142) rectangle (306,214);
+\node[mk title] at (209,157) {Verify extracted text};
+
+\draw[mk chip] (122,164) rectangle (182,180);
+\node[mk chip text, text=mkCell] at (128,175) {cDC1};
+\node[mk pass] at (191,176) {\checkmark};
+\draw[mk chip] (202,164) rectangle (262,180);
+\node[mk chip text, text=mkCell] at (208,175) {cDC-1};
+\node[mk fail] at (271,176) {$\times$};
+
+\draw[mk chip] (122,188) rectangle (182,204);
+\node[mk chip text, text=mkGene] at (128,199) {DNGR-1};
+\node[mk pass] at (191,200) {\checkmark};
+\draw[mk chip] (202,188) rectangle (262,204);
+\node[mk chip text, text=mkGene] at (208,199) {DNGR1};
+\node[mk fail] at (271,200) {$\times$};
+
+\draw[mk step] (209,214) -- (209,226);
+
+% Ground labels.
+\draw[mk box] (112,228) rectangle (306,342);
+\node[mk title] at (209,243) {Ground labels};
+
+\draw[mk chip] (120,253) rectangle (216,274);
+\node[mk body, text=mkCell] at (125,262) {CD141-positive myeloid};
+\node[mk body, text=mkCell] at (125,270) {dendritic cell};
+\draw[mk flow] (220,263) -- (232,263);
+\draw[mk chip] (236,255) rectangle (304,271);
+\node[mk mono, text=mkCell] at (241,266) {CL:0002394};
+
+\draw[mk chip] (120,282) rectangle (216,298);
+\node[mk chip text, text=mkGene] at (125,293) {CLEC9A};
+\draw[mk flow] (220,290) -- (232,290);
+\draw[mk chip] (236,282) rectangle (304,298);
+\node[mk mono, text=mkGene] at (241,293) {ENSG00000197992};
+
+% Database cylinders: bottom ellipse, body fill, side walls, top ellipse.
+\foreach \cx in {185,233}{%
+  \filldraw[fill=mkFillB, draw=mkLineB, line width=0.4pt] (\cx,323) ellipse[x radius=7.5, y radius=2.5];
+  \fill[mkFillB] (\cx-7.5,314) rectangle (\cx+7.5,323);
+  \draw[mkLineB, line width=0.4pt] (\cx-7.5,314) -- (\cx-7.5,323);
+  \draw[mkLineB, line width=0.4pt] (\cx+7.5,314) -- (\cx+7.5,323);
+  \filldraw[fill=mkFillB, draw=mkLineB, line width=0.4pt] (\cx,314) ellipse[x radius=7.5, y radius=2.5];
+}
+\node[mk dbcap] at (185,334) {Ensembl};
+\node[mk dbcap] at (233,334) {Cell Ontology};
+
+%%% Connectors between panels %%%
+\draw[draw=mkInkC, line width=1.25pt, ->] (99,88) -- (112,88);
+\draw[draw=mkLineA, line width=0.9pt, dash pattern=on 2.2pt off 2.2pt, ->]
+  (112,178) .. controls (88,178) and (62,180) .. (62,141);
+\draw[draw=mkLineA, line width=1.2pt, ->] (306,285) -- (320,285);
+
+%%% .onto record %%%
+\draw[mk panel, fill=white, draw=mkLineB] (322,22) rectangle (668,354);
+\draw[mk panel, fill=mkFillB, draw=mkLineB] (322,22) rectangle (668,42);
+\draw[fill=mkFillB, draw=none] (322.5,36) rectangle (667.5,41.5);
+\draw[draw=mkLineB, line width=0.45pt] (322,42) -- (668,42);
+\node[mk filename] at (334,37) {.onto};
+
+\node[mk code] at (330,72)  {\{};
+\node[mk code] at (338,86)  {"source": \{"id": \textcolor{mkLineA}{"doi:10.1038/\dots"}, "sha256": \textcolor{mkLineA}{"3f2a\dots"}\},};
+\node[mk code] at (338,100) {"span\_literal": \textcolor{mkInkB}{"}\textcolor{mkCell}{cDC1}\textcolor{mkInkB}{\ cells were distinguished from}};
+\node[mk code, text=mkInkB] at (422,114) {other \textcolor{mkComp}{myeloid cells} by \textcolor{mkGene}{DNGR-1}.",};
+\node[mk code] at (338,128) {"summary": \textcolor{mkInkB}{"}\textcolor{mkCell}{CD141-positive myeloid dendritic cell}};
+\node[mk code, text=mkInkB] at (392,142) {is distinguished from \textcolor{mkComp}{myeloid cell} by \textcolor{mkGene}{CLEC9A}.",};
+\node[mk code] at (338,156) {"terms": [};
+\node[mk code] at (348,170) {\{ "sub\_span": \textcolor{mkCell}{"cDC1"}, "term\_type": "celltype",};
+\node[mk code] at (358,184) {"normalized\_label": \textcolor{mkCell}{"CD141-positive myeloid dendritic cell"},};
+\node[mk code] at (358,198) {"ontology\_term": \textcolor{mkCell}{"CL:0002394"} \},};
+\node[mk code] at (348,212) {\{ "sub\_span": \textcolor{mkGene}{"DNGR-1"}, "term\_type": "gene",};
+\node[mk code] at (358,226) {"normalized\_label": \textcolor{mkGene}{"CLEC9A"},};
+\node[mk code] at (358,240) {"ontology\_term": \textcolor{mkGene}{"ENSG00000197992"} \},};
+\node[mk code] at (348,254) {\{ "sub\_span": \textcolor{mkComp}{"other myeloid cells"}, "term\_type": "comparison",};
+\node[mk code] at (358,268) {"normalized\_label": \textcolor{mkComp}{"myeloid cell"},};
+\node[mk code] at (358,282) {"ontology\_term": \textcolor{mkComp}{"CL:0000763"} \}};
+\node[mk code] at (338,296) {]};
+\node[mk code] at (330,310) {\}};
+
+\end{tikzpicture}
