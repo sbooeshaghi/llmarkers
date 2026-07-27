@@ -13,6 +13,10 @@ jobs:
       - uses: astral-sh/setup-uv@v9.0.0
         with:
           enable-cache: true
+      - name: Check out pinned mrkr
+        run: |
+          git clone https://github.com/sbooeshaghi/mrkr.git ../mrkr
+          git -C ../mrkr checkout c0e33d6d1450f3e80c1adb3ccdf892b225cb748e
       - run: uv sync --locked --group dev
       - run: uv run --locked pytest -q
       - run: >-
