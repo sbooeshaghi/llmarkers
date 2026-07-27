@@ -1,85 +1,50 @@
 /* global initSqlJs */
 
-const DEFAULT_PROFILE_WEIGHT = 0.9;
-const DEFAULT_CONTEXT_WEIGHT = 0.1;
-const PROFILE_RESULT_MIN_SCORE = 0.2;
-const MINILM_MODEL_ID = "onnx-community/all-MiniLM-L6-v2-ONNX";
-const MINILM_MODEL_NAME = "sentence-transformers_all-MiniLM-L6-v2@float16";
 const state = {
   db: null,
   currentPage: 1,
-  pageSize: 50,
+  pageSize: 40,
   totalRows: 0,
-  profiles: [],
-  miniLmExtractor: null,
-  miniLmStatus: "idle",
-  loadProgress: {
-    db: { ratio: 0, text: "Waiting" },
-    model: { ratio: 0, text: "Waiting" },
-  },
+  cellTypeIndex: null,
+  geneAliases: null,
+  searchCellTypes: new Map(),
+  searchMatches: new Map(),
 };
 
 const el = {
-  tabHome: document.getElementById("tabHome"),
-  tabRaw: document.getElementById("tabRaw"),
-  tabMethods: document.getElementById("tabMethods"),
-  tabAbout: document.getElementById("tabAbout"),
-  panelHome: document.getElementById("panelHome"),
-  panelRaw: document.getElementById("panelRaw"),
-  panelMethods: document.getElementById("panelMethods"),
-  panelAbout: document.getElementById("panelAbout"),
+  tabs: Array.from(document.querySelectorAll(".tab")),
+  panels: {
+    search: document.getElementById("panelSearch"),
+    data: document.getElementById("panelData"),
+    methods: document.getElementById("panelMethods"),
+    about: document.getElementById("panelAbout"),
+  },
   countPapers: document.getElementById("countPapers"),
-  countPapersDetail: document.getElementById("countPapersDetail"),
-  countMarkers: document.getElementById("countMarkers"),
-  countMarkersDetail: document.getElementById("countMarkersDetail"),
-  countProfiles: document.getElementById("countProfiles"),
-  countProfilesDetail: document.getElementById("countProfilesDetail"),
+  countClaims: document.getElementById("countClaims"),
+  countCellTypes: document.getElementById("countCellTypes"),
+  medianGenesPerCellType: document.getElementById("medianGenesPerCellType"),
   loadStrip: document.getElementById("loadStrip"),
   loadStatusText: document.getElementById("loadStatusText"),
   loadStatusMeta: document.getElementById("loadStatusMeta"),
+  loadBar: document.querySelector(".load-bar"),
   loadBarFill: document.getElementById("loadBarFill"),
-  profileQueryMode: document.getElementById("profileQueryMode"),
-  profileQueryInput: document.getElementById("profileQueryInput"),
-  profileQueryButton: document.getElementById("profileQueryButton"),
-  profileQueryLoader: document.getElementById("profileQueryLoader"),
-  profileQueryLoaderText: document.getElementById("profileQueryLoaderText"),
-  profileQuerySummary: document.getElementById("profileQuerySummary"),
-  profileResults: document.getElementById("profileResults"),
-  profileExamples: Array.from(document.querySelectorAll(".profile-example")),
+  queryInput: document.getElementById("queryInput"),
+  queryButton: document.getElementById("queryButton"),
+  querySummary: document.getElementById("querySummary"),
+  searchResults: document.getElementById("searchResults"),
+  examples: Array.from(document.querySelectorAll(".examples button")),
   collectionFilter: document.getElementById("collectionFilter"),
-  sourceTypeFilter: document.getElementById("sourceTypeFilter"),
-  speciesFilter: document.getElementById("speciesFilter"),
-  searchInput: document.getElementById("searchInput"),
-  tableBody: document.querySelector("#markerTable tbody"),
+  directionFilter: document.getElementById("directionFilter"),
+  groundingFilter: document.getElementById("groundingFilter"),
+  organismFilter: document.getElementById("organismFilter"),
+  tableSearchInput: document.getElementById("tableSearchInput"),
+  tableBody: document.querySelector("#evidenceTable tbody"),
   tableCount: document.getElementById("tableCount"),
   pageLabel: document.getElementById("pageLabel"),
   prevPage: document.getElementById("prevPage"),
   nextPage: document.getElementById("nextPage"),
   statusNote: document.getElementById("statusNote"),
 };
-
-function setActiveTab(name) {
-  const isHome = name === "home";
-  const isRaw = name === "raw";
-  const isMethods = name === "methods";
-  const isAbout = name === "about";
-  el.tabHome.classList.toggle("is-active", isHome);
-  el.tabRaw.classList.toggle("is-active", isRaw);
-  el.tabMethods.classList.toggle("is-active", isMethods);
-  el.tabAbout.classList.toggle("is-active", isAbout);
-  el.tabHome.setAttribute("aria-pressed", String(isHome));
-  el.tabRaw.setAttribute("aria-pressed", String(isRaw));
-  el.tabMethods.setAttribute("aria-pressed", String(isMethods));
-  el.tabAbout.setAttribute("aria-pressed", String(isAbout));
-  el.panelHome.hidden = !isHome;
-  el.panelRaw.hidden = !isRaw;
-  el.panelMethods.hidden = !isMethods;
-  el.panelAbout.hidden = !isAbout;
-}
-
-function fmtInt(value) {
-  return new Intl.NumberFormat("en-US").format(value ?? 0);
-}
 
 function esc(value) {
   if (value == null) return "";
@@ -91,28 +56,16 @@ function esc(value) {
     .replaceAll("'", "&#039;");
 }
 
-function toDoiUrl(doi) {
-  if (!doi) return "";
-  if (!/^10\.\d{4,9}\//i.test(String(doi).trim())) return "";
-  return `https://doi.org/${doi}`;
-}
-
-function truncate(value, n = 140) {
-  if (!value) return "";
-  const text = String(value);
-  if (text.length <= n) return text;
-  return `${text.slice(0, n - 1)}...`;
+function fmtInt(value) {
+  return new Intl.NumberFormat("en-US").format(Number(value) || 0);
 }
 
 function formatOrganism(value) {
-  const raw = String(value || "").trim();
-  if (!raw) return "";
-  return raw
+  return String(value || "")
     .split("_")
     .map((part, index) => {
       const lower = part.toLowerCase();
-      if (index === 0) return lower.charAt(0).toUpperCase() + lower.slice(1);
-      return lower;
+      return index === 0 ? lower.charAt(0).toUpperCase() + lower.slice(1) : lower;
     })
     .join(" ");
 }
@@ -121,647 +74,708 @@ function runRows(sql, params = []) {
   const result = state.db.exec(sql, params);
   if (!result.length) return [];
   const { columns, values } = result[0];
-  return values.map((row) => {
-    const obj = {};
-    for (let i = 0; i < columns.length; i += 1) {
-      obj[columns[i]] = row[i];
-    }
-    return obj;
-  });
+  return values.map((row) => Object.fromEntries(columns.map((column, index) => [column, row[index]])));
 }
 
 function runScalar(sql, params = []) {
   const rows = runRows(sql, params);
   if (!rows.length) return 0;
-  const first = rows[0];
-  return Number(first[Object.keys(first)[0]]) || 0;
+  return Number(rows[0][Object.keys(rows[0])[0]]) || 0;
 }
 
-function cosineSimilarity(a, b) {
-  let dot = 0;
-  let an = 0;
-  let bn = 0;
-  for (let i = 0; i < a.length; i += 1) {
-    dot += a[i] * b[i];
-    an += a[i] * a[i];
-    bn += b[i] * b[i];
+function setActiveTab(name) {
+  el.tabs.forEach((button) => {
+    const active = button.dataset.tab === name;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  Object.entries(el.panels).forEach(([panelName, panel]) => {
+    panel.hidden = panelName !== name;
+  });
+}
+
+function identifierUrl(curie) {
+  if (!curie) return "";
+  if (/^ENSG\d+$/i.test(curie)) {
+    return `https://www.ensembl.org/id/${encodeURIComponent(curie)}`;
   }
-  if (!an || !bn) return 0;
-  return dot / Math.sqrt(an * bn);
+  return `https://identifiers.org/${encodeURIComponent(curie)}`;
 }
 
-function parseJsonArray(value) {
+function identifierHtml(curie) {
+  if (!curie) return '<span class="unresolved">unresolved</span>';
+  const database = /^ENSG\d+$/i.test(curie) ? "Ensembl" : "Identifiers.org";
+  return `<a class="identifier" href="${identifierUrl(curie)}" target="_blank" rel="noopener" title="Open ${esc(curie)} in ${database}">${esc(curie)}</a>`;
+}
+
+function paperUrl(row) {
+  if (row.doi) {
+    const encodedDoi = row.doi.split("/").map(encodeURIComponent).join("/");
+    return `https://doi.org/${encodedDoi}`;
+  }
+  return row.source_url;
+}
+
+function parseTerms(value) {
   if (!value) return [];
   try {
-    const parsed = JSON.parse(value);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
+    const terms = JSON.parse(value);
+    return Array.isArray(terms) ? terms : [];
+  } catch (_error) {
     return [];
   }
 }
 
-function blobToFloat16Array(blob) {
-  if (!blob) return null;
-  const bytes = blob instanceof Uint8Array ? blob : new Uint8Array(blob);
-  const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
-  const out = new Float32Array(bytes.byteLength / 2);
-  for (let i = 0; i < out.length; i += 1) {
-    const uint16 = view.getUint16(i * 2, true);
-    const sign = (uint16 & 0x8000) >> 15;
-    const exponent = (uint16 & 0x7c00) >> 10;
-    const fraction = uint16 & 0x03ff;
-    let value;
-    if (exponent === 0) {
-      value = fraction === 0 ? 0 : (fraction / 1024) * Math.pow(2, -14);
-    } else if (exponent === 0x1f) {
-      value = fraction === 0 ? Infinity : Number.NaN;
-    } else {
-      value = (1 + fraction / 1024) * Math.pow(2, exponent - 15);
-    }
-    out[i] = sign ? -value : value;
-  }
-  return out;
+function termKey(term) {
+  return `${term.curie || ""}\t${String(term.label || "").toLowerCase()}`;
 }
 
-function parseGeneQuery(value) {
-  return new Set(
-    String(value || "")
-      .toUpperCase()
-      .split(/[,;\s]+/)
-      .map((part) => part.trim())
-      .filter(Boolean)
-  );
+function uniqueTerms(terms) {
+  const seen = new Set();
+  return terms.filter((term) => {
+    const key = termKey(term);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
-function intersectionSize(a, b) {
-  let n = 0;
-  for (const item of a) {
-    if (b.has(item)) n += 1;
-  }
-  return n;
+function renderTermLabels(terms, missingText) {
+  const values = uniqueTerms(terms);
+  if (!values.length) return `<span class="missing-context">${esc(missingText)}</span>`;
+  return values.map((term) => esc(term.label)).join(", ");
 }
 
-function jaccardSimilarity(a, b) {
-  if (!a.size && !b.size) return 0;
-  const shared = intersectionSize(a, b);
-  const union = a.size + b.size - shared;
-  return union ? shared / union : 0;
-}
-
-function clamp01(value) {
-  return Math.max(0, Math.min(1, value || 0));
-}
-
-function scoreBadgeStyle(score) {
-  const rawScore = Math.max(-1, Math.min(1, Number(score) || 0));
-  const steppedScore = Math.round(rawScore / 0.05) * 0.05;
-  const normalized = clamp01((steppedScore + 1) / 2);
-  const hue = 120 * normalized;
-  const saturation = 88;
-  const lightness = 38;
-  const borderLightness = 24;
-  const textColor = "#ffffff";
-  return `--score-bg: hsl(${hue.toFixed(1)} ${saturation}% ${lightness.toFixed(1)}%); --score-fg: ${textColor}; --score-border: hsl(${hue.toFixed(1)} ${saturation}% ${borderLightness.toFixed(1)}%);`;
-}
-
-function setLoadProgress(key, ratio, text) {
-  state.loadProgress[key] = {
-    ratio: clamp01(ratio),
-    text: text || state.loadProgress[key]?.text || "",
-  };
-  updateLoadUi();
-}
-
-function updateLoadUi() {
-  const db = state.loadProgress.db;
-  const model = state.loadProgress.model;
-  const overall = ((db.ratio || 0) + (model.ratio || 0)) / 2;
-  const dbText = `DB ${Math.round((db.ratio || 0) * 100)}%`;
-  const modelText = `MiniLM ${Math.round((model.ratio || 0) * 100)}%`;
-
-  el.loadStatusText.textContent = `${db.text}. ${model.text}.`;
-  el.loadStatusMeta.textContent = `${dbText} | ${modelText}`;
-  el.loadBarFill.style.width = `${Math.round(overall * 100)}%`;
-  el.loadStrip.querySelector(".load-bar").setAttribute("aria-valuenow", String(Math.round(overall * 100)));
-
-  if (db.ratio >= 1 && model.ratio >= 1 && state.miniLmStatus !== "failed") {
-    el.loadStatusText.textContent = "Database and MiniLM ready.";
-    el.loadStatusMeta.textContent = "100%";
-    window.setTimeout(() => {
-      el.loadStrip.classList.add("is-hidden");
-    }, 1200);
-  }
+function setLoadProgress(ratio, text) {
+  const bounded = Math.max(0, Math.min(1, ratio));
+  const percent = Math.round(bounded * 100);
+  el.loadStatusText.textContent = text;
+  el.loadStatusMeta.textContent = `${percent}%`;
+  el.loadBarFill.style.width = `${percent}%`;
+  el.loadBar.setAttribute("aria-valuenow", String(percent));
 }
 
 async function fetchWithProgress(url, onProgress) {
-  const response = await fetch(url, { cache: "no-cache" });
-  if (!response.ok) {
-    throw new Error(`Could not load ${url} (HTTP ${response.status})`);
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`HTTP ${response.status} while loading ${url}`);
+  const total = Number(response.headers.get("content-length")) || 0;
+  if (!response.body || !total) {
+    onProgress(0.45, "Reading database");
+    return response.arrayBuffer();
   }
-
-  const contentLength = Number(response.headers.get("content-length")) || 0;
-  if (!response.body || !contentLength) {
-    const buffer = await response.arrayBuffer();
-    onProgress?.(1, "Database downloaded");
-    return buffer;
-  }
-
   const reader = response.body.getReader();
   const chunks = [];
   let received = 0;
   while (true) {
     const { done, value } = await reader.read();
     if (done) break;
-    if (value) {
-      chunks.push(value);
-      received += value.length;
-      onProgress?.(received / contentLength, "Downloading database");
-    }
+    chunks.push(value);
+    received += value.length;
+    onProgress(received / total, `Loading database · ${fmtInt(received)} of ${fmtInt(total)} bytes`);
   }
-
   const merged = new Uint8Array(received);
   let offset = 0;
-  for (const chunk of chunks) {
+  chunks.forEach((chunk) => {
     merged.set(chunk, offset);
     offset += chunk.length;
-  }
-  onProgress?.(1, "Database downloaded");
+  });
   return merged.buffer;
 }
 
-function currentCollection() {
-  return el.collectionFilter.value;
-}
-
-function buildWhere() {
-  const clauses = [];
-  const params = [];
-
-  const collection = currentCollection();
-  if (collection !== "all") {
-    clauses.push("m.collection = ?");
-    params.push(collection);
-  }
-
-  const sourceType = el.sourceTypeFilter.value;
-  if (sourceType !== "all") {
-    clauses.push("m.source_type = ?");
-    params.push(sourceType);
-  }
-
-  const species = el.speciesFilter.value;
-  if (species !== "all") {
-    clauses.push("m.organism = ?");
-    params.push(species);
-  }
-
-  const query = el.searchInput.value.trim().toLowerCase();
-  if (query) {
-    clauses.push(`(
-      lower(coalesce(p.title, '')) LIKE ? OR
-      lower(coalesce(p.doi, '')) LIKE ? OR
-      lower(coalesce(m.organism, '')) LIKE ? OR
-      lower(coalesce(m.group_name, '')) LIKE ? OR
-      lower(coalesce(m.feature_name, '')) LIKE ? OR
-      lower(coalesce(m.feature_id, '')) LIKE ? OR
-      lower(coalesce(m.source_rationale, '')) LIKE ?
-    )`);
-    const like = `%${query}%`;
-    params.push(like, like, like, like, like, like, like);
-  }
-
-  return {
-    whereSql: clauses.length ? `WHERE ${clauses.join(" AND ")}` : "",
-    params,
-  };
-}
-
 function updateSummaryCards() {
-  const totalPapers = runScalar("SELECT COUNT(*) AS n FROM papers");
-  const benchmarkPapers = runScalar("SELECT COUNT(DISTINCT paper_id) AS n FROM markers WHERE collection = 'benchmark'");
-  const biorxivPapers = runScalar("SELECT COUNT(DISTINCT paper_id) AS n FROM markers WHERE collection = 'biorxiv'");
-  const hcaPapers = runScalar("SELECT COUNT(DISTINCT paper_id) AS n FROM markers WHERE collection = 'hca'");
-  const totalMarkers = runScalar("SELECT COUNT(*) AS n FROM markers");
-  const uniqueCellTypes = runScalar("SELECT COUNT(DISTINCT group_name) AS n FROM markers");
-  const uniqueGenes = runScalar(
-    "SELECT COUNT(DISTINCT CASE WHEN feature_id IS NOT NULL AND feature_id <> '' THEN feature_id ELSE feature_name END) AS n FROM markers"
-  );
-  const totalProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles");
-  const benchmarkProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles WHERE collection = 'benchmark'");
-  const biorxivProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles WHERE collection = 'biorxiv'");
-  const hcaProfiles = runScalar("SELECT COUNT(*) AS n FROM profiles WHERE collection = 'hca'");
+  const papers = runScalar("SELECT COUNT(*) FROM papers");
+  const claims = runScalar("SELECT COUNT(*) FROM claims");
+  const panelSizes = runRows(
+    `WITH evidence AS (
+       SELECT CASE
+                WHEN target_curie IS NOT NULL THEN 'id:' || target_curie
+                ELSE 'label:' || lower(trim(target_label))
+              END AS celltype_key,
+              COALESCE(gene_curie, upper(gene_symbol)) AS gene_key
+       FROM web_marker_evidence
+       WHERE trim(target_label)<>'' AND trim(gene_symbol)<>''
+     ), panel_sizes AS (
+       SELECT celltype_key, COUNT(DISTINCT gene_key) AS gene_count
+       FROM evidence
+       GROUP BY celltype_key
+     )
+     SELECT gene_count
+     FROM panel_sizes
+     ORDER BY gene_count`,
+  ).map((row) => Number(row.gene_count));
+  const midpoint = Math.floor(panelSizes.length / 2);
+  const medianGenes = panelSizes.length % 2
+    ? panelSizes[midpoint]
+    : (panelSizes[midpoint - 1] + panelSizes[midpoint]) / 2;
 
-  el.countPapers.textContent = fmtInt(totalPapers);
-  el.countPapersDetail.textContent = `(${fmtInt(benchmarkPapers)} benchmark, ${fmtInt(biorxivPapers)} bioRxiv, ${fmtInt(hcaPapers)} HCA; overlaps possible)`;
-  el.countMarkers.textContent = fmtInt(totalMarkers);
-  el.countMarkersDetail.textContent = `(${fmtInt(uniqueCellTypes)} cell types, ${fmtInt(uniqueGenes)} genes)`;
-  el.countProfiles.textContent = fmtInt(totalProfiles);
-  el.countProfilesDetail.textContent = `(${fmtInt(benchmarkProfiles)} benchmark, ${fmtInt(biorxivProfiles)} bioRxiv, ${fmtInt(hcaProfiles)} HCA)`;
-}
-
-function loadFilterOptions() {
-  const sourceTypes = runRows(
-    "SELECT source_type, COUNT(*) AS n FROM markers GROUP BY source_type ORDER BY source_type"
-  );
-  const organisms = runRows(
-    "SELECT organism, COUNT(*) AS n FROM markers WHERE organism IS NOT NULL AND organism <> '' GROUP BY organism ORDER BY organism"
-  );
-
-  el.sourceTypeFilter.innerHTML = '<option value="all">All</option>';
-  for (const row of sourceTypes) {
-    const opt = document.createElement("option");
-    opt.value = row.source_type;
-    opt.textContent = `${row.source_type} (${fmtInt(row.n)})`;
-    el.sourceTypeFilter.appendChild(opt);
-  }
-
-  el.speciesFilter.innerHTML = '<option value="all">All</option>';
-  for (const row of organisms) {
-    const opt = document.createElement("option");
-    opt.value = row.organism;
-    opt.textContent = `${formatOrganism(row.organism)} (${fmtInt(row.n)})`;
-    el.speciesFilter.appendChild(opt);
-  }
-}
-
-function loadProfiles() {
-  const rows = runRows(
-    `SELECT
-      pr.profile_id,
-      pr.paper_id,
-      pr.collection,
-      pr.organism,
-      pr.group_name,
-      pr.text_blob,
-      pr.paper_context_blob,
-      pr.gene_names_json,
-      pr.gene_ids_json,
-      pr.evidence_sentences_json,
-      emb.text_embedding_blob,
-      emb.context_embedding_blob,
-      pr.n_genes,
-      pr.n_gene_ids,
-      pr.n_sentences,
-      p.title,
-      p.doi,
-      p.year
-    FROM profiles pr
-    JOIN papers p ON p.paper_id = pr.paper_id
-    LEFT JOIN profile_embeddings_biomed emb
-      ON emb.profile_id = pr.profile_id
-      AND emb.model_name = '${MINILM_MODEL_NAME}'
-    ORDER BY p.year DESC, pr.profile_id`
-  );
-
-  state.profiles = rows.map((row) => {
-    const geneNames = parseJsonArray(row.gene_names_json);
-    const geneIds = parseJsonArray(row.gene_ids_json);
-    const evidenceSentences = parseJsonArray(row.evidence_sentences_json);
-    const miniLmTextEmbedding = blobToFloat16Array(row.text_embedding_blob);
-    const miniLmContextEmbedding = blobToFloat16Array(row.context_embedding_blob);
-    return {
-      profileId: Number(row.profile_id),
-      paperId: Number(row.paper_id),
-      collection: row.collection,
-      organism: row.organism || "",
-      groupName: row.group_name,
-      textBlob: row.text_blob,
-      paperContextBlob: row.paper_context_blob || "",
-      title: row.title || "",
-      doi: row.doi || "",
-      year: row.year,
-      geneNames,
-      geneIds,
-      evidenceSentences,
-      miniLmTextEmbedding,
-      miniLmContextEmbedding,
-      geneTokenSet: new Set([...geneNames, ...geneIds.filter(Boolean)]),
-      nGenes: Number(row.n_genes) || geneNames.length,
-      nGeneIds: Number(row.n_gene_ids) || geneIds.length,
-      nSentences: Number(row.n_sentences) || evidenceSentences.length,
-    };
+  el.countPapers.textContent = fmtInt(papers);
+  el.countClaims.textContent = fmtInt(claims);
+  el.countCellTypes.textContent = fmtInt(panelSizes.length);
+  el.medianGenesPerCellType.textContent = Number.isInteger(medianGenes)
+    ? fmtInt(medianGenes)
+    : Number(medianGenes).toFixed(1);
+  document.querySelectorAll('[data-stat="papers"]').forEach((node) => {
+    node.textContent = fmtInt(papers);
   });
 }
 
-async function ensureMiniLmExtractor() {
-  if (state.miniLmExtractor) return state.miniLmExtractor;
-  if (state.miniLmStatus === "loading") {
-    while (state.miniLmStatus === "loading") {
-      await new Promise((resolve) => setTimeout(resolve, 100));
-    }
-    return state.miniLmExtractor;
-  }
-
-  state.miniLmStatus = "loading";
-  setLoadProgress("model", 0.02, "Starting MiniLM download");
-  try {
-    const mod = await import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1");
-    mod.env.allowLocalModels = false;
-    mod.env.useBrowserCache = true;
-    state.miniLmExtractor = await mod.pipeline("feature-extraction", MINILM_MODEL_ID, {
-      pooling: "mean",
-      normalize: true,
-      progress_callback: (item) => {
-        const loaded = Number(item?.loaded);
-        const total = Number(item?.total);
-        const rawProgress = Number(item?.progress);
-        let ratio = Number.isFinite(rawProgress)
-          ? (rawProgress > 1 ? rawProgress / 100 : rawProgress)
-          : 0;
-        if (Number.isFinite(loaded) && Number.isFinite(total) && total > 0) {
-          ratio = loaded / total;
-        }
-        const status = item?.status || item?.file || "Loading MiniLM";
-        setLoadProgress("model", Math.max(0.02, clamp01(ratio)), status);
-      },
-    });
-    state.miniLmStatus = "ready";
-    setLoadProgress("model", 1, "MiniLM ready");
-    return state.miniLmExtractor;
-  } catch (error) {
-    state.miniLmStatus = "failed";
-    setLoadProgress("model", 1, "MiniLM unavailable");
-    throw error;
-  }
+function loadOrganismOptions() {
+  const rows = runRows(
+    `SELECT normalized_label AS label, ontology_term AS curie
+     FROM terms
+     WHERE term_type='organism'
+     GROUP BY normalized_label, ontology_term
+     ORDER BY normalized_label COLLATE NOCASE`,
+  );
+  rows.forEach((row) => {
+    const option = document.createElement("option");
+    option.value = row.curie || row.label;
+    option.textContent = row.label;
+    el.organismFilter.appendChild(option);
+  });
 }
 
-async function embedMiniLmQuery(query) {
-  const extractor = await ensureMiniLmExtractor();
-  const output = await extractor(query, { pooling: "mean", normalize: true });
-  return Float32Array.from(output.data ?? output.tolist?.() ?? output);
+function textPredicate(alias, query) {
+  const like = `%${query.toLowerCase()}%`;
+  const fields = [
+    "title",
+    "doi",
+    "organism_label",
+    "organism_curie",
+    "target_label",
+    "target_curie",
+    "gene_symbol",
+    "gene_curie",
+    "summary",
+    "span_literal",
+  ];
+  const fieldSql = fields.map((field) => `lower(COALESCE(${alias}.${field}, '')) LIKE ?`);
+  const sql = `(
+    ${fieldSql.join(" OR ")}
+    OR EXISTS (
+      SELECT 1 FROM terms search_term
+      WHERE search_term.claim_key=${alias}.claim_key
+        AND (
+          lower(search_term.normalized_label) LIKE ?
+          OR (
+            lower(COALESCE(search_term.ontology_term, '')) LIKE ?
+            AND (
+              search_term.term_type NOT IN ('celltype','comparison')
+              OR EXISTS (
+                SELECT 1 FROM cell_ontology_label_audit accepted_term
+                WHERE accepted_term.term_type=search_term.term_type
+                  AND accepted_term.curie=search_term.ontology_term
+                  AND accepted_term.observed_label=search_term.normalized_label
+                  AND accepted_term.semantic_exact=1
+              )
+            )
+          )
+        )
+    )
+  )`;
+  return { sql, params: Array(fields.length + 2).fill(like) };
 }
 
-function renderRows(rows) {
-  if (!rows.length) {
-    el.tableBody.innerHTML =
-      '<tr><td colspan="7" class="small">No rows match the current filters.</td></tr>';
-    return;
-  }
+function mainSearchPredicate(alias, query) {
+  const like = `%${query.toLowerCase()}%`;
+  const fields = ["target_label", "target_canonical_label", "target_curie", "gene_symbol", "gene_curie"];
+  return {
+    sql: `(${fields.map((field) => `lower(COALESCE(${alias}.${field}, '')) LIKE ?`).join(" OR ")})`,
+    params: Array(fields.length).fill(like),
+  };
+}
 
-  const html = rows
+function tableWhere() {
+  const clauses = [];
+  const params = [];
+  if (el.collectionFilter.value !== "all") {
+    clauses.push("w.collection=?");
+    params.push(el.collectionFilter.value);
+  }
+  if (el.directionFilter.value !== "all") {
+    clauses.push("w.direction=?");
+    params.push(el.directionFilter.value);
+  }
+  if (el.groundingFilter.value === "verified") clauses.push("w.target_semantic_exact=1");
+  if (el.groundingFilter.value === "unverified") clauses.push("w.target_semantic_exact=0");
+  if (el.organismFilter.value !== "all") {
+    clauses.push("COALESCE(w.organism_curie, w.organism_label)=?");
+    params.push(el.organismFilter.value);
+  }
+  const query = el.tableSearchInput.value.trim();
+  if (query) {
+    const predicate = textPredicate("w", query);
+    clauses.push(predicate.sql);
+    params.push(...predicate.params);
+  }
+  return { sql: clauses.length ? `WHERE ${clauses.join(" AND ")}` : "", params };
+}
+
+function renderTarget(row) {
+  const identifier = row.target_curie ? `<div>${identifierHtml(row.target_curie)}</div>` : "";
+  return `
+    <strong>${esc(row.target_label)}</strong>
+    ${identifier}
+  `;
+}
+
+function renderGene(row) {
+  const sign = row.direction === "negative" ? "−" : "+";
+  const identifier = row.gene_curie ? `<div>${identifierHtml(row.gene_curie)}</div>` : "";
+  return `
+    <span class="direction direction-${esc(row.direction)}" title="${esc(row.direction)} marker">${sign}</span>
+    <strong>${esc(row.gene_symbol)}</strong>
+    ${identifier}
+  `;
+}
+
+function renderTableRows(rows) {
+  el.tableBody.innerHTML = rows
     .map((row) => {
-      const title = row.title || "";
-      const doi = row.doi || "";
-      const doiUrl = toDoiUrl(doi);
-      const rationale = row.source_rationale || "";
-      const paperText = esc(title || doi);
-      const paperCell = doiUrl
-        ? `<a href="${esc(doiUrl)}" target="_blank" rel="noopener">${paperText}</a>`
-        : paperText;
-      const fullContext = esc(rationale);
-      const contextCell = rationale
-        ? `<details class="context-details"><summary>Show context</summary><div class="context-full">${fullContext}</div></details>`
-        : "";
-
+      const comparisons = parseTerms(row.comparison_terms_json);
+      const tissues = parseTerms(row.tissue_terms_json);
       return `
         <tr>
-          <td title="${esc(title || doi)}">${paperCell}</td>
-          <td>${row.year ?? ""}</td>
-          <td>${esc(formatOrganism(row.organism))}</td>
-          <td>${esc(row.group_name)}</td>
-          <td>${esc(row.feature_name)}</td>
-          <td class="small">${esc(row.feature_id || "")}</td>
-          <td class="rationale">${contextCell}</td>
-        </tr>
-      `;
+          <td class="paper-cell">
+            <a href="${esc(paperUrl(row))}" target="_blank" rel="noopener">${esc(row.title)}</a>
+          </td>
+          <td class="entity-cell">${renderTarget(row)}</td>
+          <td class="entity-cell">${renderGene(row)}</td>
+          <td class="context-cell">${renderTermLabels(comparisons, "Not reported")}</td>
+          <td class="context-cell">${renderTermLabels(tissues, "Not reported")}</td>
+          <td class="statement-cell">${esc(row.summary)}</td>
+        </tr>`;
     })
     .join("");
-
-  el.tableBody.innerHTML = html;
 }
 
 function updatePager() {
-  const maxPage = Math.max(1, Math.ceil(state.totalRows / state.pageSize));
-  if (state.currentPage > maxPage) state.currentPage = maxPage;
-  el.pageLabel.textContent = `Page ${state.currentPage} of ${maxPage}`;
+  const pages = Math.max(1, Math.ceil(state.totalRows / state.pageSize));
+  state.currentPage = Math.min(state.currentPage, pages);
+  el.pageLabel.textContent = `Page ${state.currentPage} of ${pages}`;
   el.prevPage.disabled = state.currentPage <= 1;
-  el.nextPage.disabled = state.currentPage >= maxPage;
-
-  const start = state.totalRows === 0 ? 0 : (state.currentPage - 1) * state.pageSize + 1;
-  const end = Math.min(state.currentPage * state.pageSize, state.totalRows);
-  el.tableCount.textContent = `${fmtInt(state.totalRows)} results${state.totalRows ? ` (${fmtInt(start)}-${fmtInt(end)})` : ""}`;
+  el.nextPage.disabled = state.currentPage >= pages;
 }
 
 function refreshTable() {
-  const { whereSql, params } = buildWhere();
-
-  state.totalRows = runScalar(
-    `SELECT COUNT(*) AS n
-     FROM markers m
-     JOIN papers p ON p.paper_id = m.paper_id
-     ${whereSql}`,
-    params
-  );
-
+  if (!state.db) return;
+  const where = tableWhere();
+  state.totalRows = runScalar(`SELECT COUNT(*) FROM web_marker_evidence w ${where.sql}`, where.params);
   const offset = (state.currentPage - 1) * state.pageSize;
   const rows = runRows(
-    `SELECT
-      p.title,
-      p.doi,
-      p.year,
-      m.organism,
-      m.group_name,
-      m.feature_name,
-      m.feature_id,
-      m.source_rationale
-    FROM markers m
-    JOIN papers p ON p.paper_id = m.paper_id
-    ${whereSql}
-    ORDER BY p.year DESC, p.paper_id, m.marker_id
-    LIMIT ? OFFSET ?`,
-    [...params, state.pageSize, offset]
+    `SELECT * FROM web_marker_evidence w
+     ${where.sql}
+     ORDER BY w.title COLLATE NOCASE, w.target_label COLLATE NOCASE,
+              w.gene_symbol COLLATE NOCASE, w.claim_key
+     LIMIT ? OFFSET ?`,
+    [...where.params, state.pageSize, offset],
   );
-
-  renderRows(rows);
+  renderTableRows(rows);
+  el.tableCount.textContent = `${fmtInt(state.totalRows)} evidence rows`;
   updatePager();
 }
 
-function updateProfilePlaceholder() {
-  if (el.profileQueryMode.value === "genes") {
-    el.profileQueryInput.placeholder = "IL7R LTB MALAT1 or ENSG00000168685 ENSG00000105374";
-  } else {
-    el.profileQueryInput.placeholder = "t cells, cytotoxic lymphocytes, stromal fibroblasts";
-  }
+function parseGeneQuery(value) {
+  return new Set(
+    String(value || "")
+      .split(/[\s,;]+/)
+      .map((item) => item.trim().toUpperCase())
+      .filter(Boolean),
+  );
 }
 
-function renderProfileResults(results, mode, query) {
-  if (!query) {
-    el.profileQuerySummary.textContent = "";
-    el.profileResults.innerHTML = "";
+function cellTypeKeySql(alias) {
+  return `CASE
+    WHEN ${alias}.target_curie IS NOT NULL THEN 'id:' || ${alias}.target_curie
+    ELSE 'label:' || lower(trim(${alias}.target_label))
+  END`;
+}
+
+function loadCellTypeIndex() {
+  if (state.cellTypeIndex) return state.cellTypeIndex;
+  const cellTypes = new Map();
+  const geneAliases = new Set();
+  const rows = runRows(
+    `SELECT ${cellTypeKeySql("w")} AS celltype_key,
+            w.target_label, w.target_curie, w.target_canonical_label,
+            w.gene_symbol, w.gene_curie, w.direction
+     FROM web_marker_evidence w
+     ORDER BY celltype_key, w.gene_symbol COLLATE NOCASE`,
+  );
+  rows.forEach((row) => {
+    if (!cellTypes.has(row.celltype_key)) {
+      cellTypes.set(row.celltype_key, {
+        cellTypeKey: row.celltype_key,
+        targetLabel: row.target_label,
+        targetCurie: row.target_curie,
+        canonicalLabel: row.target_canonical_label,
+        labels: new Set(),
+        markers: new Map(),
+      });
+    }
+    const cellType = cellTypes.get(row.celltype_key);
+    cellType.labels.add(row.target_label);
+    if (row.gene_symbol) {
+      const markerKey = row.gene_curie || row.gene_symbol.toUpperCase();
+      const marker = cellType.markers.get(markerKey) || {
+        symbol: row.gene_symbol,
+        curie: row.gene_curie,
+        directions: new Set(),
+        aliases: new Set(),
+      };
+      marker.aliases.add(row.gene_symbol.toUpperCase());
+      if (row.gene_curie) marker.aliases.add(row.gene_curie.toUpperCase());
+      marker.aliases.forEach((alias) => geneAliases.add(alias));
+      if (row.direction) marker.directions.add(row.direction);
+      cellType.markers.set(markerKey, marker);
+    }
+  });
+  state.cellTypeIndex = cellTypes;
+  state.geneAliases = geneAliases;
+  return cellTypes;
+}
+
+function loadCellTypeEvidence(cellTypeKeys) {
+  if (!cellTypeKeys.length) return [];
+  const placeholders = cellTypeKeys.map(() => "?").join(",");
+  const rows = runRows(
+    `SELECT w.*, ${cellTypeKeySql("w")} AS celltype_key
+     FROM web_marker_evidence w
+     WHERE ${cellTypeKeySql("w")} IN (${placeholders})
+     ORDER BY celltype_key, w.title COLLATE NOCASE, w.claim_key, w.gene_symbol COLLATE NOCASE`,
+    cellTypeKeys,
+  );
+  const grouped = new Map();
+  rows.forEach((row) => {
+    if (!grouped.has(row.celltype_key)) grouped.set(row.celltype_key, []);
+    grouped.get(row.celltype_key).push(row);
+  });
+  return cellTypeKeys
+    .filter((key) => grouped.has(key))
+    .map((key) => ({ cellTypeKey: key, rows: grouped.get(key) }));
+}
+
+function textSearchCellTypeKeys(query) {
+  const normalized = query.toLowerCase();
+  const like = `%${normalized}%`;
+  const predicate = mainSearchPredicate("w", query);
+  const rankSql = `CASE
+    WHEN lower(COALESCE(w.target_label, ''))=?
+      OR lower(COALESCE(w.target_canonical_label, ''))=?
+      OR lower(COALESCE(w.target_curie, ''))=?
+      OR lower(COALESCE(w.gene_symbol, ''))=?
+      OR lower(COALESCE(w.gene_curie, ''))=? THEN 0
+    WHEN lower(COALESCE(w.target_label, '')) LIKE ?
+      OR lower(COALESCE(w.target_canonical_label, '')) LIKE ?
+      OR lower(COALESCE(w.target_curie, '')) LIKE ?
+      OR lower(COALESCE(w.gene_symbol, '')) LIKE ?
+      OR lower(COALESCE(w.gene_curie, '')) LIKE ? THEN 1
+    ELSE 2 END`;
+  const rankParams = [
+    normalized, normalized, normalized, normalized, normalized,
+    like, like, like, like, like,
+  ];
+  const total = runScalar(
+    `SELECT COUNT(DISTINCT ${cellTypeKeySql("w")})
+     FROM web_marker_evidence w
+     WHERE ${predicate.sql}`,
+    predicate.params,
+  );
+  const ranked = runRows(
+    `SELECT ${cellTypeKeySql("w")} AS celltype_key,
+            MIN(${rankSql}) AS rank,
+            MIN(COALESCE(w.target_canonical_label, w.target_label)) AS display_label
+     FROM web_marker_evidence w
+     WHERE ${predicate.sql}
+     GROUP BY celltype_key
+     ORDER BY rank, display_label COLLATE NOCASE
+     LIMIT 12`,
+    [...rankParams, ...predicate.params],
+  );
+  return { ranked, total };
+}
+
+function cellTypeMarkers(rows) {
+  const markers = new Map();
+  rows.forEach((row) => {
+    const key = row.gene_curie || row.gene_symbol.toUpperCase();
+    if (!markers.has(key)) {
+      markers.set(key, { ...row, directions: new Set(), claimKeys: new Set() });
+    }
+    markers.get(key).directions.add(row.direction);
+    markers.get(key).claimKeys.add(row.claim_key);
+  });
+  return Array.from(markers.values())
+    .map((row) => ({
+      ...row,
+      direction: row.directions.size > 1 ? "mixed" : Array.from(row.directions)[0],
+      supportCount: row.claimKeys.size,
+    }))
+    .sort((a, b) => a.gene_symbol.localeCompare(b.gene_symbol));
+}
+
+function contextRecords(rows) {
+  const records = new Map();
+  rows.forEach((row) => {
+    if (!records.has(row.claim_key)) {
+      records.set(row.claim_key, { row, markers: new Map() });
+    }
+    const key = row.gene_curie || row.gene_symbol.toUpperCase();
+    if (!records.get(row.claim_key).markers.has(key)) {
+      records.get(row.claim_key).markers.set(key, row);
+    }
+  });
+  return Array.from(records.values()).sort((a, b) => (
+    a.row.title.localeCompare(b.row.title) || a.row.summary.localeCompare(b.row.summary)
+  ));
+}
+
+function markerMatches(row, sharedGenes) {
+  if (!sharedGenes) return false;
+  return [row.gene_symbol, row.gene_curie]
+    .filter(Boolean)
+    .some((value) => sharedGenes.has(value.toUpperCase()));
+}
+
+function markerKey(row) {
+  return row.gene_curie || row.gene_symbol.toUpperCase();
+}
+
+function markerLabel(row) {
+  if (row.direction === "negative") return `−${row.gene_symbol}`;
+  if (row.direction === "mixed") return `±${row.gene_symbol}`;
+  return row.gene_symbol;
+}
+
+function renderMarkerButton(row, sharedGenes) {
+  const shared = markerMatches(row, sharedGenes);
+  const directionClass = row.direction === "negative" ? " marker-negative" : "";
+  const mixedClass = row.direction === "mixed" ? " marker-mixed" : "";
+  const sharedClass = shared ? " marker-shared" : "";
+  const directionNote = row.direction === "mixed" ? " Reported in both directions." : "";
+  const title = `${fmtInt(row.supportCount)} supporting normalized ${row.supportCount === 1 ? "statement" : "statements"}.${directionNote}`;
+  return `<button class="marker-chip${directionClass}${mixedClass}${sharedClass}" type="button" data-gene-key="${esc(markerKey(row))}" aria-label="${esc(markerLabel(row))}, ${esc(title)}" aria-pressed="false" title="${esc(title)}"><span>${esc(markerLabel(row))}</span><strong>+${fmtInt(row.supportCount)}</strong></button>`;
+}
+
+function sortMarkers(markers) {
+  const directionRank = { positive: 0, negative: 1, mixed: 2 };
+  return [...markers].sort((a, b) => {
+    const directionOrder = (directionRank[a.direction] ?? 3) - (directionRank[b.direction] ?? 3);
+    return directionOrder
+      || b.supportCount - a.supportCount
+      || a.gene_symbol.localeCompare(b.gene_symbol);
+  });
+}
+
+function renderGeneEvidenceRecord(record) {
+  const row = record.row;
+  return `
+    <section class="evidence-record">
+      <a class="evidence-paper" href="${esc(paperUrl(row))}" target="_blank" rel="noopener">${esc(row.title)}</a>
+      <p class="evidence-statement">${esc(row.summary)}</p>
+      <details class="evidence-source">
+        <summary>Exact source text</summary>
+        <blockquote>${esc(row.span_literal)}</blockquote>
+      </details>
+    </section>`;
+}
+
+function renderGeneEvidence(cellType, geneKey) {
+  const rows = cellType.rows.filter((row) => markerKey(row) === geneKey);
+  if (!rows.length) return "";
+  const marker = cellTypeMarkers(rows)[0];
+  const contexts = contextRecords(rows);
+  const papers = new Set(rows.map((row) => row.paper_key));
+  const shownContexts = contexts.slice(0, 5);
+  const remainingContexts = contexts.length - shownContexts.length;
+  return `
+    <section class="gene-evidence">
+      <header>
+        <h4>${esc(marker.gene_symbol)}${marker.gene_curie ? ` <span class="inline-id">(${identifierHtml(marker.gene_curie)})</span>` : ""}</h4>
+        <p>${fmtInt(contexts.length)} ${contexts.length === 1 ? "statement" : "statements"} · ${fmtInt(papers.size)} ${papers.size === 1 ? "paper" : "papers"}</p>
+      </header>
+      <div data-evidence-records>
+        ${shownContexts.map(renderGeneEvidenceRecord).join("")}
+      </div>
+      ${remainingContexts > 0 ? `<button class="show-evidence" type="button" data-expand-evidence="${esc(geneKey)}">Show ${fmtInt(remainingContexts)} more evidence statements</button>` : ""}
+    </section>`;
+}
+
+function renderCellTypeCard(cellType, match) {
+  const rows = cellType.rows;
+  const first = rows[0];
+  const sharedGenes = match ? match.sharedGenes : null;
+  const markers = sortMarkers(cellTypeMarkers(rows));
+  const displayLabel = first.target_curie && first.target_canonical_label
+    ? first.target_canonical_label
+    : first.target_label;
+  const inlineId = first.target_curie
+    ? ` <span class="inline-id">(${identifierHtml(first.target_curie)})</span>`
+    : "";
+  return `
+    <article class="panel-card" data-celltype-card="${esc(cellType.cellTypeKey)}">
+      <header>
+        <h3>${esc(displayLabel)}${inlineId}</h3>
+      </header>
+      <section class="aggregate-panel">
+        <div class="marker-list" aria-label="Marker panel">
+          ${markers.map((row) => renderMarkerButton(row, sharedGenes)).join("")}
+        </div>
+      </section>
+      <div class="gene-evidence-slot" aria-live="polite"></div>
+    </article>`;
+}
+
+function renderSearchResults(cellTypes, matches = new Map()) {
+  if (!cellTypes.length) {
+    el.searchResults.innerHTML = '<div class="empty-state">No cell types matched this query.</div>';
     return;
   }
-
-  if (!results.length) {
-    el.profileQuerySummary.textContent = "No profile matches found.";
-    el.profileResults.innerHTML =
-      '<article class="profile-empty">No profiles matched the current query. Try a broader phrase or a longer gene list.</article>';
-    return;
-  }
-
-  const scoreLabel = mode === "genes" ? "Jaccard" : "Cos. Sim.";
-  const metricText = mode === "genes"
-    ? `${PROFILE_RESULT_MIN_SCORE.toFixed(1)} Jaccard similarity`
-    : `${PROFILE_RESULT_MIN_SCORE.toFixed(1)} cosine similarity`;
-  el.profileQuerySummary.textContent = `${results.length} matches >= ${metricText}.`;
-
-  el.profileResults.innerHTML = results
-    .map((result) => {
-      const doiUrl = toDoiUrl(result.doi);
-      const paperText = esc(result.title || result.doi || `Paper ${result.paperId}`);
-      const paperHtml = doiUrl
-        ? `<a href="${esc(doiUrl)}" target="_blank" rel="noopener">${paperText}</a>`
-        : paperText;
-      const evidence = result.evidenceSentences.length
-        ? truncate(result.evidenceSentences[0], 210)
-        : "No evidence sentence stored.";
-      const genesPreview = result.geneNames.slice(0, 10).join(", ");
-      const sharedHtml = mode === "genes" && result.sharedMatches.length
-        ? `<div class="profile-shared">Shared matches: ${esc(result.sharedMatches.join(", "))}</div>`
-        : "";
-
-      return `
-        <article class="profile-card">
-          <div class="profile-card-head">
-            <h3>${esc(result.groupName)}</h3>
-            <span class="profile-score" style="${scoreBadgeStyle(result.score)}">${scoreLabel} ${result.score.toFixed(3)}</span>
-          </div>
-          <div class="profile-card-meta">
-            <span>${esc(result.collection)}</span>
-            <span>${esc(formatOrganism(result.organism || ""))}</span>
-            <span>${result.year ?? ""}</span>
-            <span>${fmtInt(result.nGenes)} genes</span>
-          </div>
-          <div class="profile-paper">${paperHtml}</div>
-          <div class="profile-genes"><strong>Markers:</strong> <code>${esc(genesPreview)}</code></div>
-          ${sharedHtml}
-          <div class="profile-evidence"><strong>Quote:</strong> "${esc(evidence)}"</div>
-        </article>
-      `;
-    })
+  state.searchCellTypes = new Map(cellTypes.map((cellType) => [cellType.cellTypeKey, cellType]));
+  state.searchMatches = matches;
+  el.searchResults.innerHTML = cellTypes
+    .map((cellType) => renderCellTypeCard(cellType, matches.get(cellType.cellTypeKey)))
     .join("");
 }
 
-function setProfileQueryLoading(isLoading, text = "Running search...") {
-  el.profileQueryLoader.hidden = !isLoading;
-  el.profileQueryLoaderText.textContent = text;
+function searchByText(query) {
+  const result = textSearchCellTypeKeys(query);
+  const keys = result.ranked.map((row) => row.celltype_key);
+  const cellTypes = loadCellTypeEvidence(keys);
+  renderSearchResults(cellTypes);
+  const suffix = result.total > cellTypes.length
+    ? ` Showing the first ${fmtInt(cellTypes.length)}.`
+    : "";
+  const unit = result.total === 1 ? "cell type" : "cell types";
+  el.querySummary.textContent = `${fmtInt(result.total)} ${unit} matched “${query}”.${suffix}`;
 }
 
-function searchProfilesWithMiniLm(query, candidates, queryEmbedding) {
-  return candidates
-    .filter((profile) => profile.miniLmTextEmbedding && profile.miniLmContextEmbedding)
-    .map((profile) => ({
-      ...profile,
-      score:
-        (DEFAULT_PROFILE_WEIGHT * cosineSimilarity(queryEmbedding, profile.miniLmTextEmbedding)) +
-        (DEFAULT_CONTEXT_WEIGHT * cosineSimilarity(queryEmbedding, profile.miniLmContextEmbedding)),
-      sharedMatches: [],
-    }))
-    .filter((profile) => profile.score >= PROFILE_RESULT_MIN_SCORE)
-    .sort((a, b) => b.score - a.score || b.nSentences - a.nSentences || b.nGenes - a.nGenes);
+function searchByGenes(query) {
+  const queryGenes = parseGeneQuery(query);
+  if (!queryGenes.size) {
+    throw new Error("Enter one or more gene symbols or Ensembl IDs.");
+  }
+  const ranked = [];
+  loadCellTypeIndex().forEach((cellType) => {
+    const sharedGenes = new Set();
+    queryGenes.forEach((token) => {
+      if (Array.from(cellType.markers.values()).some((marker) => marker.aliases.has(token))) {
+        sharedGenes.add(token);
+      }
+    });
+    if (!sharedGenes.size) return;
+    const unionSize = queryGenes.size + cellType.markers.size - sharedGenes.size;
+    ranked.push({
+      cellTypeKey: cellType.cellTypeKey,
+      score: sharedGenes.size / unionSize,
+      sharedGenes,
+      sharedCount: sharedGenes.size,
+      querySize: queryGenes.size,
+      panelSize: cellType.markers.size,
+    });
+  });
+  ranked.sort((a, b) => b.sharedCount - a.sharedCount || b.score - a.score || a.panelSize - b.panelSize);
+  const selected = ranked.slice(0, 12);
+  const cellTypes = loadCellTypeEvidence(selected.map((row) => row.cellTypeKey));
+  const matches = new Map(selected.map((row) => [row.cellTypeKey, row]));
+  renderSearchResults(cellTypes, matches);
+  const unit = ranked.length === 1 ? "cell type shares" : "cell types share";
+  el.querySummary.textContent = `${fmtInt(ranked.length)} ${unit} at least one queried gene; showing the top ${fmtInt(cellTypes.length)}.`;
 }
 
-async function searchProfiles() {
-  const query = el.profileQueryInput.value.trim();
-  const mode = el.profileQueryMode.value;
-  const candidates = state.profiles;
+function isGeneSetQuery(query) {
+  const genes = parseGeneQuery(query);
+  if (genes.size < 2) return false;
+  loadCellTypeIndex();
+  const recognized = Array.from(genes).filter((gene) => state.geneAliases.has(gene)).length;
+  return /[,;]/.test(query) || recognized >= 2;
+}
 
+function runSearch() {
+  if (!state.db) return;
+  const query = el.queryInput.value.trim();
   if (!query) {
-    setProfileQueryLoading(false);
-    renderProfileResults([], mode, "");
+    el.querySummary.textContent = "Enter a cell type, marker gene, stable identifier, or gene set.";
+    el.searchResults.innerHTML = "";
     return;
   }
-
-  let results = [];
-  if (mode === "genes") {
-    setProfileQueryLoading(true, "Matching marker sets...");
-    const querySet = parseGeneQuery(query);
-    results = candidates
-      .map((profile) => {
-        const score = jaccardSimilarity(querySet, profile.geneTokenSet);
-        return {
-          ...profile,
-          score,
-          sharedMatches: [...querySet].filter((token) => profile.geneTokenSet.has(token)),
-        };
-      })
-      .filter((profile) => profile.score >= PROFILE_RESULT_MIN_SCORE)
-      .sort((a, b) =>
-        b.score - a.score ||
-        b.sharedMatches.length - a.sharedMatches.length ||
-        a.nGenes - b.nGenes
-      );
-    setProfileQueryLoading(false);
-  } else {
-    el.profileQueryButton.disabled = true;
-    setProfileQueryLoading(true, state.miniLmExtractor ? "Embedding and ranking..." : "Loading MiniLM...");
+  el.queryButton.disabled = true;
+  el.querySummary.textContent = "Searching...";
+  window.setTimeout(() => {
     try {
-      el.profileQuerySummary.textContent = state.miniLmExtractor
-        ? "Embedding query..."
-        : "Loading MiniLM query model...";
-      const queryEmbedding = await embedMiniLmQuery(query);
-      results = searchProfilesWithMiniLm(query, candidates, queryEmbedding);
+      if (isGeneSetQuery(query)) searchByGenes(query);
+      else searchByText(query);
     } catch (error) {
-      console.error("MiniLM query embedding failed.", error);
-      el.profileQuerySummary.textContent = "MiniLM query model is unavailable.";
-      results = [];
+      console.error(error);
+      el.querySummary.textContent = error.message;
+      el.searchResults.innerHTML = "";
     } finally {
-      el.profileQueryButton.disabled = false;
-      setProfileQueryLoading(false);
+      el.queryButton.disabled = false;
     }
-  }
+  }, 0);
+}
 
-  renderProfileResults(results, mode, query);
+function debounce(fn, delay) {
+  let timer = null;
+  return (...args) => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => fn(...args), delay);
+  };
 }
 
 function wireEvents() {
-  const rerenderFromFirstPage = () => {
+  el.tabs.forEach((button) => button.addEventListener("click", () => setActiveTab(button.dataset.tab)));
+  el.queryButton.addEventListener("click", runSearch);
+  el.queryInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") runSearch();
+  });
+  el.examples.forEach((button) => button.addEventListener("click", () => {
+    el.queryInput.value = button.dataset.query;
+    runSearch();
+  }));
+  el.searchResults.addEventListener("click", (event) => {
+    const expandButton = event.target.closest("[data-expand-evidence]");
+    if (expandButton) {
+      const card = expandButton.closest("[data-celltype-card]");
+      const cellType = card ? state.searchCellTypes.get(card.dataset.celltypeCard) : null;
+      const records = expandButton.closest(".gene-evidence").querySelector("[data-evidence-records]");
+      if (!cellType || !records) return;
+      const matchingRows = cellType.rows.filter((row) => markerKey(row) === expandButton.dataset.expandEvidence);
+      records.innerHTML = contextRecords(matchingRows).map(renderGeneEvidenceRecord).join("");
+      expandButton.remove();
+      return;
+    }
+    const button = event.target.closest("[data-gene-key]");
+    if (!button) return;
+    const card = button.closest("[data-celltype-card]");
+    const cellType = card ? state.searchCellTypes.get(card.dataset.celltypeCard) : null;
+    if (!cellType) return;
+    const slot = card.querySelector(".gene-evidence-slot");
+    const wasActive = button.classList.contains("is-active");
+    card.querySelectorAll("[data-gene-key]").forEach((geneButton) => {
+      geneButton.classList.remove("is-active");
+      geneButton.setAttribute("aria-pressed", "false");
+    });
+    if (wasActive) {
+      slot.innerHTML = "";
+      return;
+    }
+    button.classList.add("is-active");
+    button.setAttribute("aria-pressed", "true");
+    slot.innerHTML = renderGeneEvidence(cellType, button.dataset.geneKey);
+  });
+
+  const resetTable = () => {
     state.currentPage = 1;
     refreshTable();
   };
-
-  el.tabHome.addEventListener("click", () => setActiveTab("home"));
-  el.tabRaw.addEventListener("click", () => setActiveTab("raw"));
-  el.tabMethods.addEventListener("click", () => setActiveTab("methods"));
-  el.tabAbout.addEventListener("click", () => setActiveTab("about"));
-
-  el.collectionFilter.addEventListener("change", () => {
-    rerenderFromFirstPage();
-  });
-
-  el.sourceTypeFilter.addEventListener("change", rerenderFromFirstPage);
-  el.speciesFilter.addEventListener("change", rerenderFromFirstPage);
-
-  let searchTimer = null;
-  el.searchInput.addEventListener("input", () => {
-    clearTimeout(searchTimer);
-    searchTimer = setTimeout(rerenderFromFirstPage, 220);
-  });
-
-  el.profileQueryButton.addEventListener("click", searchProfiles);
-  el.profileQueryMode.addEventListener("change", () => {
-    updateProfilePlaceholder();
-    searchProfiles();
-  });
-  for (const button of el.profileExamples) {
-    button.addEventListener("click", () => {
-      el.profileQueryMode.value = button.dataset.mode || "text";
-      el.profileQueryInput.value = button.dataset.query || "";
-      updateProfilePlaceholder();
-      searchProfiles();
-    });
-  }
-  el.profileQueryInput.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      searchProfiles();
-    }
-  });
-
+  [el.collectionFilter, el.directionFilter, el.groundingFilter, el.organismFilter]
+    .forEach((control) => control.addEventListener("change", resetTable));
+  el.tableSearchInput.addEventListener("input", debounce(resetTable, 220));
   el.prevPage.addEventListener("click", () => {
     state.currentPage = Math.max(1, state.currentPage - 1);
     refreshTable();
   });
-
   el.nextPage.addEventListener("click", () => {
     state.currentPage += 1;
     refreshTable();
@@ -770,41 +784,31 @@ function wireEvents() {
 
 async function init() {
   try {
-    setLoadProgress("db", 0.01, "Preparing database");
-    setLoadProgress("model", 0.01, "Preparing MiniLM");
-    el.statusNote.textContent = "Loading database...";
-
-    const modelWarmup = ensureMiniLmExtractor().catch((error) => {
-      console.error("MiniLM warmup failed.", error);
-      return null;
-    });
-
+    setLoadProgress(0.01, "Preparing SQLite");
     const sqlPromise = initSqlJs({
       locateFile: (file) => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/${file}`,
     });
-    const dbFetchPromise = fetchWithProgress("llmarkers.sqlite", (ratio, text) => {
-      setLoadProgress("db", ratio, text);
-    });
-
-    const [SQL, buffer] = await Promise.all([sqlPromise, dbFetchPromise]);
-    setLoadProgress("db", 1, "Database ready");
-
+    const databasePromise = fetchWithProgress("llmarkers.sqlite", setLoadProgress);
+    const [SQL, buffer] = await Promise.all([sqlPromise, databasePromise]);
     state.db = new SQL.Database(new Uint8Array(buffer));
+
+    const schema = runRows("SELECT value FROM metadata WHERE key='website_schema_version'");
+    if (!schema.length || schema[0].value !== "llmarkers.web-db.v1") {
+      throw new Error("The website database does not use llmarkers.web-db.v1.");
+    }
+
     updateSummaryCards();
-    loadFilterOptions();
-    loadProfiles();
-    updateProfilePlaceholder();
-    setActiveTab("home");
+    loadOrganismOptions();
     wireEvents();
     refreshTable();
-    searchProfiles();
-
-    el.statusNote.textContent = "Database loaded.";
-    await modelWarmup;
-  } catch (err) {
-    console.error(err);
-    setLoadProgress("db", 1, "Database unavailable");
-    el.statusNote.textContent = `Failed to load database: ${err.message}`;
+    setActiveTab("search");
+    setLoadProgress(1, "Database ready");
+    el.statusNote.textContent = "Database loaded. Searches run locally in this browser.";
+    window.setTimeout(() => el.loadStrip.classList.add("is-hidden"), 450);
+  } catch (error) {
+    console.error(error);
+    setLoadProgress(1, "Database unavailable");
+    el.statusNote.textContent = `Failed to load database: ${error.message}`;
   }
 }
 

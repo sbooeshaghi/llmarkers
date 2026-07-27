@@ -283,20 +283,30 @@ claim.
 
 ## Website
 
-The static marker browser in `docs/` reads `docs/llmarkers.sqlite` in the
-browser.
+The static browser in `docs/` reads `docs/llmarkers.sqlite` entirely in the
+browser. Its database preserves the normalized claim schema and adds paper
+titles, source links, and a flattened `web_marker_evidence` view. Rebuild it
+from the validated corpus database restored above with:
 
 ```bash
-uv run --locked python analysis/build_llmarkers_sqlite.py
-uv run --locked python analysis/export_minilm_embeddings.py
+uv run --locked python analysis/build_website_db.py \
+  --claims-db ../mrkr_build/corpus_onto_v2/claims.sqlite \
+  --paper-index analysis/artifacts/mrkr_corpus_analysis_v1/papers.tsv \
+  --hca-manifest data/hca/manuscripts_manifest.tsv \
+  --cell-ontology-audit analysis/artifacts/mrkr_corpus_analysis_v1/cell_ontology_label_audit.tsv \
+  --out docs/llmarkers.sqlite
 python3 -m http.server 8000 -d docs
 ```
 
 Open `http://localhost:8000`.
 
-The MiniLM embedding export downloads
-`sentence-transformers/all-MiniLM-L6-v2` on the first run unless the model is
-already present in the local Hugging Face cache.
+Text search matches normalized labels, verified stable identifiers, paper
+titles, and source evidence. Cell Ontology identifiers are exposed as verified
+only when the normalized label is a canonical label or exact synonym in the
+pinned ontology release. Marker-panel search uses Jaccard similarity over gene
+symbols and Ensembl identifiers. Both searches are transparent and require no
+remote model or backend server. The complete database contract and example SQL
+are in `docs/notes/llm_database_instructions.md`.
 
 ## Formalization
 

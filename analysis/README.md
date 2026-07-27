@@ -17,5 +17,9 @@ The active figure and result dependencies are listed in
 root so paths such as `analysis/artifacts/` and `docs/paper/biorxiv/` resolve as
 written. Run the notebooks with `analysis/` as the working directory.
 
+`build_website_db.py` is the active builder for `docs/llmarkers.sqlite`. It
+derives the browser database from the normalized claim database and the pinned
+Cell Ontology label audit used by the corpus analysis.
+
 Exploratory analyses and superseded manuscript pipelines are kept outside the
 versioned tree under the local `archive/` directory.

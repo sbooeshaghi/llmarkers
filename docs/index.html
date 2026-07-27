@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LLMarkers Database</title>
+  <meta name="description" content="Source-grounded cell type marker statements linked to stable biological identifiers." />
+  <title>LLMarkersDB</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -12,35 +13,43 @@
 </head>
 <body>
   <main class="page">
-    <section class="hero">
-      <h1>LLMarkersDB: Find cell type marker genes</h1>
-    </section>
+    <header class="site-header">
+      <div>
+        <h1>LLMarkersDB</h1>
+        <p>Source-grounded marker statements linked to stable biological identifiers.</p>
+      </div>
+      <a class="repo-link" href="https://github.com/sbooeshaghi/llmarkers" target="_blank" rel="noopener">GitHub</a>
+    </header>
 
     <nav class="tabs" aria-label="Page sections">
-      <button id="tabHome" class="tab is-active" type="button" data-tab="home" aria-pressed="true">Search</button>
-      <button id="tabRaw" class="tab" type="button" data-tab="raw" aria-pressed="false">Data</button>
-      <button id="tabMethods" class="tab" type="button" data-tab="methods" aria-pressed="false">Methods</button>
-      <button id="tabAbout" class="tab" type="button" data-tab="about" aria-pressed="false">About</button>
+      <button class="tab is-active" type="button" data-tab="search" aria-pressed="true">Search</button>
+      <button class="tab" type="button" data-tab="data" aria-pressed="false">Evidence</button>
+      <button class="tab" type="button" data-tab="methods" aria-pressed="false">Methods</button>
+      <button class="tab" type="button" data-tab="about" aria-pressed="false">About</button>
     </nav>
 
-    <section class="cards" id="summaryCards">
+    <section class="cards" aria-label="Database summary">
       <article class="card">
         <h2 id="countPapers">-</h2>
-        <p>Total papers <span class="card-detail" id="countPapersDetail">-</span></p>
+        <p>Papers</p>
       </article>
       <article class="card">
-        <h2 id="countMarkers">-</h2>
-        <p>Marker records <span class="card-detail" id="countMarkersDetail">-</span></p>
+        <h2 id="countClaims">-</h2>
+        <p>Normalized marker statements</p>
       </article>
       <article class="card">
-        <h2 id="countProfiles">-</h2>
-        <p>Profiles <span class="card-detail" id="countProfilesDetail">-</span></p>
+        <h2 id="countCellTypes">-</h2>
+        <p>Cell types</p>
+      </article>
+      <article class="card">
+        <h2 id="medianGenesPerCellType">-</h2>
+        <p>Median genes per cell type</p>
       </article>
     </section>
 
     <section class="load-strip" id="loadStrip" aria-live="polite">
       <div class="load-strip-head">
-        <strong id="loadStatusText">Starting page load...</strong>
+        <strong id="loadStatusText">Loading the database</strong>
         <span id="loadStatusMeta">0%</span>
       </div>
       <div class="load-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
@@ -48,134 +57,77 @@
       </div>
     </section>
 
-    <section id="panelHome" class="tab-panel">
-      <section class="profile-search">
-        <div class="profile-controls">
-          <div class="profile-mode">
-            <select id="profileQueryMode">
-              <option value="text">Text description</option>
-              <option value="genes">Genes / Ensembl IDs</option>
-            </select>
-          </div>
-
-          <div class="profile-query">
-            <input id="profileQueryInput" type="text" placeholder="t cells, cytotoxic lymphocytes, stromal fibroblasts" />
-          </div>
-
-          <button id="profileQueryButton" type="button">Search profiles</button>
+    <section id="panelSearch" class="tab-panel">
+      <section class="search-panel">
+        <div class="search-heading">
+          <h2>Search marker evidence</h2>
+        </div>
+        <div class="search-controls">
+          <label class="query-field">
+            <span class="visually-hidden">Cell type, gene, or gene set</span>
+            <input id="queryInput" type="search" placeholder="Search a cell type, gene, stable identifier, or set of genes" />
+          </label>
+          <button id="queryButton" type="button">Search</button>
         </div>
 
-        <div class="profile-examples">
-          <span class="profile-examples-label">Examples:</span>
-          <button type="button" class="profile-example" data-mode="text" data-query="cytotoxic lymphocytes">cytotoxic lymphocytes</button>
-          <button type="button" class="profile-example" data-mode="text" data-query="stromal fibroblasts">stromal fibroblasts</button>
-          <button type="button" class="profile-example" data-mode="text" data-query="t cells">t cells</button>
-          <button type="button" class="profile-example" data-mode="genes" data-query="IL7R LTB MALAT1">IL7R LTB MALAT1</button>
-          <button type="button" class="profile-example" data-mode="genes" data-query="NKG7 PRF1 GNLY">NKG7 PRF1 GNLY</button>
-          <button type="button" class="profile-example" data-mode="genes" data-query="ENSG00000168685 ENSG00000105374">Ensembl ID query</button>
+        <div class="examples" aria-label="Example searches">
+          <span>Examples</span>
+          <button type="button" data-query="T cell">T cell</button>
+          <button type="button" data-query="CL:0000235">CL:0000235</button>
+          <button type="button" data-query="CD3D">CD3D</button>
+          <button type="button" data-query="NKG7 PRF1 GNLY">NKG7 PRF1 GNLY</button>
         </div>
 
-        <div class="profile-meta">
-          <div id="profileQueryLoader" class="profile-loader" hidden aria-live="polite">
-            <div class="rna-spinner" aria-hidden="true">
-              <span class="rna-helix rna-helix-a"></span>
-              <span class="rna-helix rna-helix-b"></span>
-            </div>
-            <span id="profileQueryLoaderText">Running search...</span>
-          </div>
-          <strong id="profileQuerySummary"></strong>
+        <div class="result-meta">
+          <strong id="querySummary">Search by cell type, marker gene, or a set of genes.</strong>
         </div>
-
-        <div id="profileResults" class="profile-results"></div>
+        <div id="searchResults" class="search-results"></div>
       </section>
-
       <p class="note" id="statusNote">Loading database...</p>
     </section>
 
-    <section id="panelMethods" class="tab-panel" hidden>
-      <section class="methods-panel">
-        <article class="method-card">
-          <h2>Data Curation</h2>
-          <p>
-            The database contains 860 distinct papers across the benchmark, bioRxiv, and Human Cell Atlas-linked collections. Across them, the site stores 35,092 marker records.
-          </p>
-          <p>
-            Each marker record stores a collection, a paper, a species label, a cell-type label, a gene, an optional Ensembl identifier, a source type, and optional supporting text. The benchmark records also carry 1,224 rows of differential-expression metadata, including log fold change, corrected p-value, and rank.
-          </p>
-          <p>
-            The current build contains 33,475 text-derived records and 1,617 image-derived records. Image-derived markers are kept, but their rationale text is excluded from the site. Ensembl identifiers are added when a marker can be mapped during ingestion. In the current build, 29,747 marker records have a non-empty Ensembl identifier.
-          </p>
-          <p>
-            The Data tab shows these rows directly. It is a provenance view of the database on disk: which paper reported which marker for which cell type, and what text supports that claim when the source was text.
-          </p>
-          <h2 class="method-section-break">Marker Search</h2>
-          <p>
-            Marker Search searches cell-type descriptions by semantic similarity and marker genes by set overlap. The search unit is a profile: one paper, one species, and one cell-type label grouped with its reported markers and supporting text. The current database contains 10,132 profiles: 183 from the benchmark, 3,805 from bioRxiv, and 6,144 from HCA-linked papers.
-          </p>
-          <p>
-            For text search, each profile has two text fields. The first contains the cell-type label, the paper title, and the supporting sentences attached to that profile. The second contains the paper title and abstract. Both are embedded offline with MiniLM and stored in SQLite as float16 vectors.
-          </p>
-          <p>
-            At query time, the browser embeds the input text with MiniLM through Transformers.js and ONNX Runtime. In the current site this runs in the browser on CPU with q8 model weights. Profiles are scored as 0.9 times cosine similarity to the main profile embedding plus 0.1 times cosine similarity to the title-and-abstract context embedding. Gene search is separate. Users can query with gene symbols or Ensembl identifiers, and profiles are ranked by Jaccard similarity between the query set and the stored marker set. Both text and gene search return results with score greater than or equal to 0.2.
-          </p>
-          <p>
-            Search runs entirely in the browser against the local SQLite file. No backend server is used for query embedding, ranking, or retrieval.
-          </p>
-        </article>
-      </section>
-    </section>
-
-    <section id="panelAbout" class="tab-panel" hidden>
-      <section class="about-panel">
-        <article class="method-card">
-          <h2>About LLMarkers</h2>
-          <p>
-            LLMarkers is a literature-linked marker-gene resource. It combines the seven-study benchmark used in the manuscript with markers extracted from 421 bioRxiv preprints and 434 Human Cell Atlas-linked publications.
-          </p>
-          <p>
-            This site reads directly from <code>llmarkers.sqlite</code> in the browser. The Data tab exposes marker-level records. The Search tab groups those records into paper-, species-, and cell-type-level profiles that can be queried by text or by genes.
-          </p>
-          <p>
-            The goal is to keep marker genes tied to the paper that reported them, the cell type they were used for, and the text that supports that claim. Source code and the data pipeline are available in the <a href="https://github.com/sbooeshaghi/llmarkers" target="_blank" rel="noopener">llmarkers GitHub repository</a>.
-          </p>
-        </article>
-      </section>
-    </section>
-
-    <section id="panelRaw" class="tab-panel" hidden>
+    <section id="panelData" class="tab-panel" hidden>
       <section class="table-wrap">
         <div class="table-guide">
-          <a href="llm_database_instructions.md" target="_blank" rel="noopener">Give this link to your AI</a>
+          <a href="llmarkers.sqlite" download>Download SQLite</a>
+          <span aria-hidden="true">·</span>
+          <a href="notes/llm_database_instructions.md" target="_blank" rel="noopener">Database guide</a>
         </div>
 
-        <div class="controls table-controls">
+        <div class="table-controls">
           <label>
             Collection
             <select id="collectionFilter">
               <option value="all">All</option>
-              <option value="benchmark">Benchmark</option>
               <option value="biorxiv">bioRxiv</option>
-              <option value="hca">HCA</option>
+              <option value="hca">HCA-linked</option>
             </select>
           </label>
-
           <label>
-            Source
-            <select id="sourceTypeFilter">
+            Direction
+            <select id="directionFilter">
+              <option value="all">All</option>
+              <option value="positive">Positive</option>
+              <option value="negative">Negative</option>
+            </select>
+          </label>
+          <label>
+            Target grounding
+            <select id="groundingFilter">
+              <option value="all">All</option>
+              <option value="verified">Verified Cell Ontology ID</option>
+              <option value="unverified">No verified Cell Ontology ID</option>
+            </select>
+          </label>
+          <label>
+            Organism
+            <select id="organismFilter">
               <option value="all">All</option>
             </select>
           </label>
-
-          <label>
-            Species
-            <select id="speciesFilter">
-              <option value="all">All</option>
-            </select>
-          </label>
-
-          <label class="search">
+          <label class="table-search">
             Search
-            <input id="searchInput" type="text" placeholder="gene, species, cell type, DOI, or quote text" />
+            <input id="tableSearchInput" type="search" placeholder="paper, label, gene, identifier, comparison, or tissue" />
           </label>
         </div>
 
@@ -189,21 +141,42 @@
         </div>
 
         <div class="table-scroll">
-          <table id="markerTable">
+          <table id="evidenceTable">
             <thead>
               <tr>
                 <th>Paper</th>
-                <th>Year</th>
-                <th>Species</th>
                 <th>Cell type</th>
-                <th>Gene</th>
-                <th>Ensembl ID</th>
-                <th>Context</th>
+                <th>Marker gene</th>
+                <th>Comparison set</th>
+                <th>Tissue</th>
+                <th>Normalized statement</th>
               </tr>
             </thead>
             <tbody></tbody>
           </table>
         </div>
+      </section>
+    </section>
+
+    <section id="panelMethods" class="tab-panel text-panel" hidden>
+      <section>
+        <h2>From papers to grounded marker evidence</h2>
+        <p><code>mrkr</code> reads each paper and uses a language model to return an exact source passage, a normalized marker statement, and normalized labels for the cell type, marker genes, comparison groups, tissues, and organism. The model does not assign database identifiers.</p>
+        <p>Deterministic checks confirm that quoted text and explicit labels occur in the paper. A separate grounding step maps accepted genes to Ensembl, cell types and comparison groups to the Cell Ontology, tissues to UBERON, and organisms to NCBI Taxonomy. Cell Ontology candidates are verified against a pinned ontology release and accepted only when the normalized label is a canonical label or exact synonym. The validated record is stored in <code>.onto</code>; this SQLite database is a derived representation of those records.</p>
+
+        <h2>What the site searches</h2>
+        <p>Search matches normalized target labels, verified Cell Ontology identifiers, gene symbols, and Ensembl identifiers. A query containing several recognized genes ranks aggregated cell type marker panels against the gene set. Search runs entirely in the browser against <code>llmarkers.sqlite</code>.</p>
+        <p>Search results group records by verified Cell Ontology identifier when one is available and otherwise by normalized cell type label. Each card shows the union marker panel. The number beside each gene is its count of supporting normalized statements. Selecting a gene shows those statements, their papers, and the exact source text.</p>
+        <p>The Evidence tab shows one row for each cell type–gene pair in a validated marker statement. Each row shows the paper, target cell type, marker direction, reported comparison set, tissue, and normalized statement.</p>
+      </section>
+    </section>
+
+    <section id="panelAbout" class="tab-panel text-panel" hidden>
+      <section>
+        <h2>About LLMarkers</h2>
+        <p>LLMarkersDB contains source-grounded marker evidence from <span data-stat="papers">979</span> bioRxiv and Human Cell Atlas-linked papers. It connects author labels across papers with stable identifiers while retaining the text that supports each connection.</p>
+        <p>Stable identifiers improve label reuse, but they do not replace experimental context. Comparison groups determine whether a gene distinguishes a target population. LLMarkersDB therefore preserves reported comparisons when authors provide them and makes missing comparisons visible.</p>
+        <p>Source code, validated artifacts, formalization, and reproduction commands are available in the <a href="https://github.com/sbooeshaghi/llmarkers" target="_blank" rel="noopener">llmarkers repository</a>. The extraction and validation tool is maintained in the <a href="https://github.com/sbooeshaghi/mrkr" target="_blank" rel="noopener">mrkr repository</a>.</p>
       </section>
     </section>
   </main>
