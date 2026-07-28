@@ -216,17 +216,6 @@ code,
   padding: 16px;
 }
 
-.search-heading {
-  margin-bottom: 12px;
-}
-
-.search-heading h2 {
-  margin: 0;
-  font-size: 19px;
-  line-height: 1.25;
-  letter-spacing: 0;
-}
-
 .search-controls {
   display: grid;
   grid-template-columns: minmax(280px, 1fr) 110px;
@@ -331,6 +320,10 @@ select:focus {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 13px;
+}
+
+.result-meta:empty {
+  display: none;
 }
 
 .search-results {

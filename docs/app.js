@@ -695,7 +695,7 @@ function runSearch() {
   if (!state.db) return;
   const query = el.queryInput.value.trim();
   if (!query) {
-    el.querySummary.textContent = "Enter a cell type, marker gene, stable identifier, or gene set.";
+    el.querySummary.textContent = "";
     el.searchResults.innerHTML = "";
     return;
   }

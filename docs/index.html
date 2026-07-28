@@ -59,9 +59,6 @@
 
     <section id="panelSearch" class="tab-panel">
       <section class="search-panel">
-        <div class="search-heading">
-          <h2>Search marker evidence</h2>
-        </div>
         <div class="search-controls">
           <label class="query-field">
             <span class="visually-hidden">Cell type, gene, or gene set</span>
@@ -78,9 +75,7 @@
           <button type="button" data-query="NKG7 PRF1 GNLY">NKG7 PRF1 GNLY</button>
         </div>
 
-        <div class="result-meta">
-          <strong id="querySummary">Search by cell type, marker gene, or a set of genes.</strong>
-        </div>
+        <div class="result-meta" id="querySummary" aria-live="polite"></div>
         <div id="searchResults" class="search-results"></div>
       </section>
       <p class="note" id="statusNote">Loading database...</p>
