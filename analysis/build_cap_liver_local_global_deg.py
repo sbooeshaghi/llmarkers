@@ -11,9 +11,6 @@ import numpy as np
 import pandas as pd
 import scipy.sparse as sp
 
-os.environ.setdefault("MPLCONFIGDIR", "/tmp/llmarkers-matplotlib")
-
-import matplotlib.pyplot as plt
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -21,12 +18,6 @@ CAP_DIR = REPO_ROOT / "data" / "cell_annotation_platform"
 ANNDATA_DIR = CAP_DIR / "anndata"
 RESULTS_DIR = REPO_ROOT / "analysis" / "artifacts"
 FIGURES_DIR = REPO_ROOT / "analysis" / "figures"
-PANEL_G_PATH = FIGURES_DIR / "fig3_panel_g_cap_liver_reported_marker_recovery.pdf"
-PANEL_G_PNG_PATH = FIGURES_DIR / "fig3_panel_g_cap_liver_reported_marker_recovery.png"
-PANEL_H_PATH = FIGURES_DIR / "fig3_panel_h_cap_liver_de_stability.pdf"
-PANEL_H_PNG_PATH = FIGURES_DIR / "fig3_panel_h_cap_liver_de_stability.png"
-PANEL_I_PATH = FIGURES_DIR / "fig3_panel_i_cap_liver_marker_retrieval.pdf"
-PANEL_I_PNG_PATH = FIGURES_DIR / "fig3_panel_i_cap_liver_marker_retrieval.png"
 RECOVERY_SUBSAMPLING_PATH = RESULTS_DIR / "cap_liver_local_global_recovery_subsampling.tsv"
 RECOVERY_SUBSAMPLING_SUMMARY_PATH = RESULTS_DIR / "cap_liver_local_global_recovery_subsampling_summary.tsv"
 
@@ -480,210 +471,12 @@ def write_outputs(
         subsampling_df.to_csv(RECOVERY_SUBSAMPLING_PATH, sep="\t", index=False)
         subsampling_summary_df.to_csv(RECOVERY_SUBSAMPLING_SUMMARY_PATH, sep="\t", index=False)
 
-    plot_summary(summary_df, marker_df, subsampling_summary_df)
     print(f"Wrote {summary_path.relative_to(REPO_ROOT)}")
     print(f"Wrote {marker_path.relative_to(REPO_ROOT)}")
     print(f"Wrote {top_path.relative_to(REPO_ROOT)}")
     if subsampling_df is not None and subsampling_summary_df is not None:
         print(f"Wrote {RECOVERY_SUBSAMPLING_PATH.relative_to(REPO_ROOT)}")
         print(f"Wrote {RECOVERY_SUBSAMPLING_SUMMARY_PATH.relative_to(REPO_ROOT)}")
-
-
-def plot_summary(
-    summary_df: pd.DataFrame,
-    marker_df: pd.DataFrame,
-    subsampling_summary_df: pd.DataFrame | None = None,
-) -> None:
-    ordered_rows = summary_df.sort_values("global_label").copy()
-    label_order = ordered_rows.local_label.tolist()
-    display_label_order = [
-        f"{row.local_label} ({row.global_label})"
-        for row in ordered_rows.itertuples(index=False)
-    ]
-    y = np.arange(len(label_order))
-    ordered = summary_df.set_index("local_label").loc[label_order]
-
-    save_single_panel(
-        PANEL_G_PATH,
-        PANEL_G_PNG_PATH,
-        lambda ax: draw_marker_recovery_panel(
-            ax,
-            ordered,
-            y,
-            display_label_order,
-            show_ylabels=True,
-            title_size=9,
-            subsampling_summary_df=subsampling_summary_df,
-        ),
-        figsize=(4.0, 3.6),
-        adjust={"left": 0.54, "right": 0.97, "bottom": 0.20, "top": 0.82},
-    )
-    save_single_panel(
-        PANEL_H_PATH,
-        PANEL_H_PNG_PATH,
-        lambda ax: draw_de_stability_panel(ax, ordered, y, display_label_order, show_ylabels=False, title_size=9),
-        figsize=(4.0, 3.6),
-        adjust={"left": 0.16, "right": 0.97, "bottom": 0.20, "top": 0.82},
-    )
-    save_single_panel(
-        PANEL_I_PATH,
-        PANEL_I_PNG_PATH,
-        lambda ax: draw_marker_retrieval_panel(ax, ordered, y, display_label_order, show_ylabels=False, title_size=9),
-        figsize=(4.0, 3.6),
-        adjust={"left": 0.16, "right": 0.97, "bottom": 0.20, "top": 0.82},
-    )
-
-
-def style_axis(ax: plt.Axes) -> None:
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
-
-
-def draw_marker_recovery_panel(
-    ax: plt.Axes,
-    ordered: pd.DataFrame,
-    y: np.ndarray,
-    label_order: list[str],
-    show_ylabels: bool,
-    title_size: float = 10,
-    subsampling_summary_df: pd.DataFrame | None = None,
-) -> None:
-    height = 0.38
-    ax.barh(
-        y - height / 2,
-        ordered["local_reported_recovery_top100"],
-        height=height,
-        facecolor="white",
-        edgecolor="black",
-        linewidth=0.55,
-        label="local myeloid DE",
-    )
-    ax.barh(
-        y + height / 2,
-        ordered["global_recovery_of_local_reported_top100"],
-        height=height,
-        facecolor="black",
-        edgecolor="black",
-        linewidth=0.55,
-        label="all-cell DE",
-    )
-    if subsampling_summary_df is not None and not subsampling_summary_df.empty:
-        interval_lookup = subsampling_summary_df.set_index(["local_label", "context"])
-        for row_idx, row in enumerate(ordered.itertuples(index=False)):
-            local_label = ordered.index[row_idx]
-            for context, y_value in [
-                ("local", y[row_idx] - height / 2),
-                ("global", y[row_idx] + height / 2),
-            ]:
-                key = (local_label, context)
-                if key not in interval_lookup.index:
-                    continue
-                interval = interval_lookup.loc[key]
-                low = max(0.0, float(interval["q025"]))
-                high = min(1.0, float(interval["q975"]))
-                cap_half_height = height * 0.23
-                ax.hlines(y_value, low, high, color="black", linewidth=0.7, zorder=5)
-                ax.vlines([low, high], y_value - cap_half_height, y_value + cap_half_height, color="black", linewidth=0.7, zorder=5)
-    ax.set_yticks(y)
-    ax.set_yticklabels(label_order if show_ylabels else [], fontsize=5.7)
-    ax.invert_yaxis()
-    ax.set_xlim(0, 1)
-    ax.set_xlabel("Fraction of reported markers\nrecovered in top 100", fontsize=8)
-    ax.tick_params(axis="both", labelsize=7.2)
-    ax.legend(frameon=False, fontsize=7, loc="lower right")
-    ax.set_title("Reported Marker Recovery", fontsize=title_size, weight="bold")
-    style_axis(ax)
-
-
-def draw_de_stability_panel(
-    ax: plt.Axes,
-    ordered: pd.DataFrame,
-    y: np.ndarray,
-    label_order: list[str],
-    show_ylabels: bool,
-    title_size: float = 10,
-) -> None:
-    ax.barh(
-        y,
-        ordered["local_top100_vs_global_top100_jaccard"],
-        facecolor="#D9D9D9",
-        edgecolor="black",
-        linewidth=0.6,
-        zorder=2,
-    )
-    ax.set_yticks(y)
-    ax.set_yticklabels(label_order if show_ylabels else [], fontsize=7.2)
-    ax.invert_yaxis()
-    ax.set_xlim(0, 1)
-    ax.set_xlabel("Jaccard(top 100 local myeloid DE,\ntop 100 all-cell DE)", fontsize=8)
-    ax.tick_params(axis="both", labelsize=7.2)
-    ax.set_title("DE Rank Stability", fontsize=title_size, weight="bold")
-    style_axis(ax)
-
-
-def draw_marker_retrieval_panel(
-    ax: plt.Axes,
-    ordered: pd.DataFrame,
-    y: np.ndarray,
-    label_order: list[str],
-    show_ylabels: bool,
-    title_size: float = 10,
-) -> None:
-    local_col = "local_reported_max_f1"
-    global_col = "global_recovery_of_local_reported_max_f1"
-    for i, row in enumerate(ordered.itertuples(index=False)):
-        ax.plot(
-            [getattr(row, global_col), getattr(row, local_col)],
-            [i, i],
-            color="#B0B0B0",
-            linewidth=1.0,
-            zorder=1,
-        )
-    ax.scatter(
-        ordered[global_col],
-        y,
-        facecolor="black",
-        edgecolor="black",
-        linewidth=0.75,
-        s=24,
-        label="all-cell DE",
-        zorder=3,
-    )
-    ax.scatter(
-        ordered[local_col],
-        y,
-        facecolor="white",
-        edgecolor="black",
-        linewidth=0.75,
-        s=24,
-        label="local myeloid DE",
-        zorder=2,
-    )
-    ax.set_yticks(y)
-    ax.set_yticklabels(label_order if show_ylabels else [], fontsize=7.2)
-    ax.invert_yaxis()
-    ax.set_xlim(0, 1)
-    ax.set_xlabel("Maximum F1", fontsize=8)
-    ax.tick_params(axis="both", labelsize=7.2)
-    ax.set_title("Reported Marker Retrieval", fontsize=title_size, weight="bold")
-    ax.legend(frameon=False, fontsize=7, loc="lower right")
-    style_axis(ax)
-
-
-def save_single_panel(
-    pdf_path: Path,
-    png_path: Path,
-    draw,
-    figsize: tuple[float, float],
-    adjust: dict[str, float] | None = None,
-) -> None:
-    fig, ax = plt.subplots(figsize=figsize)
-    draw(ax)
-    if adjust is not None:
-        fig.subplots_adjust(**adjust)
-    fig.savefig(pdf_path)
-    fig.savefig(png_path, dpi=300)
-    plt.close(fig)
 
 
 def main() -> None:

@@ -16,10 +16,11 @@ RESULTS_DIR = REPO_ROOT / "analysis" / "artifacts"
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-PANEL_A_PATH = FIGURE_DIR / "fig2_panel_a_benchmark_summary.pdf"
-PANEL_A_PNG_PATH = FIGURE_DIR / "fig2_panel_a_benchmark_summary.png"
-PANEL_B_PATH = FIGURE_DIR / "fig2_panel_b_optimal_deg_cutoff.pdf"
-PANEL_B_PNG_PATH = FIGURE_DIR / "fig2_panel_b_optimal_deg_cutoff.png"
+PANEL_A_PATH = FIGURE_DIR / "fig2_panel_a_modality_deg_presence.pdf"
+PANEL_A_PNG_PATH = FIGURE_DIR / "fig2_panel_a_modality_deg_presence.png"
+PANEL_B_PATH = FIGURE_DIR / "fig2_panel_b_rank_recovery.pdf"
+PANEL_B_PNG_PATH = FIGURE_DIR / "fig2_panel_b_rank_recovery.png"
+RANK_RECOVERY_N_MAX = 200
 PANEL_C_PATH = FIGURE_DIR / "fig2_panel_c_llm_recovery.pdf"
 PANEL_C_PNG_PATH = FIGURE_DIR / "fig2_panel_c_llm_recovery.png"
 
@@ -38,14 +39,17 @@ EXTRACTION_PRIMARY = "extracted_txt_rerun.json"
 EXTRACTION_FALLBACK = "extracted_txt.json"
 
 SOURCE_COLORS = {"image": "#4C78A8", "text": "#F58518"}
+SOURCE_DISPLAY = {"image": "Figure", "text": "Text"}
+BOTH_COLOR = "#B0B0B0"
+PRESENCE_COLOR = "#D9D9D9"
 MEAN_LINE_COLORS = {"image": "#A7C7E7", "text": "#F4C28B"}
 METHODS = [
-    ("gen_pair_f1", "Generation\ncell type names", "#E8913A"),
-    ("sel_pair_f1", "Selection\nDEGs", "#5B8DC9"),
-    ("joint_pair_f1", "Extraction\ncell type + gene", "#5AAE61"),
+    ("gen_pair_f1", "Generation\n(cell type names)", "#E8913A"),
+    ("sel_pair_f1", "Selection\n(DEGs)", "#5B8DC9"),
+    ("joint_pair_f1", "Extraction\n(cell type + gene)", "#5AAE61"),
     (
         "joint_triple_f1",
-        "Extraction\n+ data ID",
+        "Extraction\n(+ data ID)",
         "#3A7F49",
     ),
 ]
@@ -176,6 +180,115 @@ def upper_bound_pair_f1(truth_pairs: set[tuple[str, str]], deg: pd.DataFrame, to
     deg_pairs = key_set(deg_top, ["group_name", "feature_id"])
     overlap = len(truth_pairs & deg_pairs)
     return 2 * overlap / (len(truth_pairs) + overlap) if overlap else 0.0
+
+
+def matched_pair_ranks(human: pd.DataFrame, deg: pd.DataFrame, source_type: str) -> np.ndarray:
+    """DEG-table rank for each reported (data_id, cell type, gene) association."""
+    cols = ["data_id", "group_name", "feature_id"]
+    reported = key_frame(human[human["source_type"] == source_type], cols)
+    ranked = deg.dropna(subset=["metrics_rank"]).sort_values("metrics_rank")
+    ranked = key_frame(ranked, cols).join(ranked["metrics_rank"])
+    ranked = ranked.drop_duplicates(subset=cols, keep="first")
+    merged = reported.merge(ranked, on=cols, how="inner")
+    return merged["metrics_rank"].astype(int).to_numpy()
+
+
+def build_rank_recovery() -> pd.DataFrame:
+    rows = []
+    for dataset, short_name in DATASETS:
+        base = DATA_DIR / dataset
+        human = valid_marker_records(load_records(base / "evidence_human" / "extracted.json"))
+        deg = valid_marker_records(load_records(base / "evidence_deg" / "extracted.json"))
+        for source_type in ["image", "text"]:
+            for rank in matched_pair_ranks(human, deg, source_type):
+                rows.append({"study": short_name, "source_type": source_type, "rank": int(rank)})
+    ranks_df = pd.DataFrame(rows)
+    ranks_df.to_csv(RESULTS_DIR / "fig2_rank_recovery.tsv", sep="\t", index=False)
+
+    ns = np.arange(1, RANK_RECOVERY_N_MAX + 1)
+    summary_rows = []
+    for source_type in ["image", "text"]:
+        pooled = ranks_df.loc[ranks_df["source_type"] == source_type, "rank"].to_numpy()
+        f1_curves = []
+        for study in ranks_df["study"].unique():
+            study_ranks = np.array(
+                sorted(set(ranks_df.query("study == @study and source_type == @source_type")["rank"]))
+            )
+            if not len(study_ranks):
+                continue
+            recovered = (study_ranks[None, :] <= ns[:, None]).sum(axis=1)
+            precision = recovered / ns
+            recall = recovered / len(study_ranks)
+            with np.errstate(invalid="ignore", divide="ignore"):
+                f1 = np.where(precision + recall > 0, 2 * precision * recall / (precision + recall), 0.0)
+            f1_curves.append(f1)
+        mean_f1 = np.mean(f1_curves, axis=0)
+        best = int(np.argmax(mean_f1))
+        summary_rows.append(
+            {
+                "source_type": source_type,
+                "n_matched": len(pooled),
+                "pooled_recall_top50": float(np.mean(pooled <= 50)),
+                "pooled_recall_top100": float(np.mean(pooled <= 100)),
+                "mean_f1_peak_n": int(ns[best]),
+                "mean_f1_peak": float(mean_f1[best]),
+            }
+        )
+    pd.DataFrame(summary_rows).to_csv(RESULTS_DIR / "fig2_rank_recovery_summary.tsv", sep="\t", index=False)
+    return ranks_df
+
+
+def save_rank_recovery_panel(ranks_df: pd.DataFrame) -> None:
+    ns = np.arange(1, RANK_RECOVERY_N_MAX + 1)
+    fig, (ax, axm) = plt.subplots(
+        2, 1, figsize=(3.9, 3.35), sharex=True,
+        gridspec_kw={"height_ratios": [2.1, 1.0], "hspace": 0.14},
+    )
+    for (study, source_type), group in ranks_df.groupby(["study", "source_type"]):
+        ranks = group["rank"].to_numpy()
+        recall = (ranks[None, :] <= ns[:, None]).mean(axis=1)
+        ax.plot(ns, recall, color=SOURCE_COLORS[source_type], linewidth=0.8, alpha=0.35)
+    for source_type in ["image", "text"]:
+        pooled = ranks_df.loc[ranks_df["source_type"] == source_type, "rank"].to_numpy()
+        recall = (pooled[None, :] <= ns[:, None]).mean(axis=1)
+        ax.plot(ns, recall, color=SOURCE_COLORS[source_type], linewidth=2.0, label=SOURCE_DISPLAY[source_type])
+        for guide in (50, 100):
+            ax.scatter([guide], [np.mean(pooled <= guide)], s=14, color=SOURCE_COLORS[source_type],
+                       edgecolor="black", linewidth=0.5, zorder=4)
+    ax.set_ylim(0, 1.0)
+    ax.set_ylabel("Fraction of reported\nmarkers recovered", fontsize=8)
+    ax.tick_params(axis="both", labelsize=7.2)
+    ax.legend(frameon=False, fontsize=6.8, loc="lower right", handlelength=1.4)
+
+    for source_type in ["image", "text"]:
+        f1_curves = []
+        for study in ranks_df["study"].unique():
+            study_ranks = np.array(
+                sorted(set(ranks_df.query("study == @study and source_type == @source_type")["rank"]))
+            )
+            if not len(study_ranks):
+                continue
+            recovered = (study_ranks[None, :] <= ns[:, None]).sum(axis=1)
+            precision = recovered / ns
+            recall = recovered / len(study_ranks)
+            with np.errstate(invalid="ignore", divide="ignore"):
+                f1 = np.where(precision + recall > 0, 2 * precision * recall / (precision + recall), 0.0)
+            f1_curves.append(f1)
+        mean_f1 = np.mean(f1_curves, axis=0)
+        axm.plot(ns, mean_f1, color=SOURCE_COLORS[source_type], linewidth=1.6)
+        best = int(np.argmax(mean_f1))
+        axm.scatter([ns[best]], [mean_f1[best]], s=14, color=SOURCE_COLORS[source_type],
+                    edgecolor="black", linewidth=0.5, zorder=4)
+    axm.set_ylim(0, 0.6)
+    axm.set_yticks([0, 0.25, 0.5])
+    axm.set_ylabel("Mean F1", fontsize=8)
+    axm.set_xlim(0, RANK_RECOVERY_N_MAX)
+    axm.set_xticks([0, 50, 100, 150, 200])
+    axm.set_xlabel("Top N DEGs")
+    axm.tick_params(axis="both", labelsize=7.2)
+    fig.savefig(PANEL_B_PATH, bbox_inches="tight")
+    fig.savefig(PANEL_B_PNG_PATH, bbox_inches="tight", dpi=300)
+    plt.close(fig)
 
 
 def build_cutoff_results() -> pd.DataFrame:
@@ -330,86 +443,97 @@ def build_llm_results() -> pd.DataFrame:
     return merged
 
 
-def format_int(value: object) -> str:
-    if pd.isna(value):
-        return ""
-    return f"{int(value):,}"
+def valid_marker_records(df: pd.DataFrame) -> pd.DataFrame:
+    return df[(df["group_name"] != "") & df["feature_id"].str.startswith("ENS")]
 
 
-def format_percent(value: object) -> str:
-    if pd.isna(value):
-        return ""
-    return f"{float(value):.0f}%"
-
-
-def plot_summary_table(ax: plt.Axes, summary: pd.DataFrame) -> None:
-    ax.axis("off")
-    ax.text(
-        0.5,
-        1.02,
-        "LLMarkers benchmark",
-        transform=ax.transAxes,
-        ha="center",
-        va="top",
-        fontsize=10.0,
-        fontweight="bold",
-    )
-
-    columns = [
-        ("study", "Paper"),
-        ("cell_types", "CTs"),
-        ("genes", "Genes"),
-        ("pairs", "Pairs"),
-        ("tissue", "Tissue"),
-    ]
-    left_edges = np.array([0.00, 0.41, 0.54, 0.68, 0.82])
-    right_edges = np.array([0.37, 0.50, 0.64, 0.78, 1.00])
-    header_y = 0.775
-    row_y0 = 0.66
-    row_step = 0.087
-
-    ax.hlines(0.855, 0, 1, color="black", linewidth=0.85, transform=ax.transAxes)
-    ax.hlines(0.715, 0, 1, color="black", linewidth=0.55, transform=ax.transAxes)
-    ax.hlines(-0.015, 0, 1, color="black", linewidth=0.85, transform=ax.transAxes, clip_on=False)
-    ax.hlines(0.095, 0, 1, color="black", linewidth=0.45, transform=ax.transAxes)
-
-    for idx, (_field, label) in enumerate(columns):
-        ha = "left" if idx in {0, 4} else "right"
-        x = left_edges[idx] if idx in {0, 4} else right_edges[idx]
-        ax.text(
-            x,
-            header_y,
-            label,
-            transform=ax.transAxes,
-            ha=ha,
-            va="center",
-            fontsize=7.7,
-            fontweight="bold",
+def build_modality_presence() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Per-study report-location split and DE-table presence for reported markers."""
+    mod_rows: list[dict] = []
+    pres_rows: list[dict] = []
+    global_text: set[tuple[str, str]] = set()
+    global_image: set[tuple[str, str]] = set()
+    for dataset, short_name in DATASETS:
+        base = DATA_DIR / dataset
+        human = valid_marker_records(load_records(base / "evidence_human" / "extracted.json"))
+        deg = valid_marker_records(load_records(base / "evidence_deg" / "extracted.json"))
+        text_pairs = key_set(human[human["source_type"] == "text"], ["group_name", "feature_id"])
+        image_pairs = key_set(human[human["source_type"] == "image"], ["group_name", "feature_id"])
+        mod_rows.append(
+            {
+                "study": short_name,
+                "image_only": len(image_pairs - text_pairs),
+                "text_only": len(text_pairs - image_pairs),
+                "both": len(text_pairs & image_pairs),
+            }
         )
-
-    for row_idx, row in summary.iterrows():
-        y = row_y0 - row_idx * row_step
-        is_overall = row["study"] == "Total"
-        values = {
-            "study": row["study"],
-            "cell_types": format_int(row["cell_types"]),
-            "genes": format_int(row["genes"]),
-            "pairs": format_int(row["pairs"]),
-            "tissue": row["tissue"],
+        global_text |= text_pairs
+        global_image |= image_pairs
+        human_pairs = key_set(human, ["group_name", "feature_id"])
+        deg_pairs = key_set(deg, ["group_name", "feature_id"])
+        pres_rows.append(
+            {
+                "study": short_name,
+                "n_reported": len(human_pairs),
+                "n_in_deg": len(human_pairs & deg_pairs),
+            }
+        )
+    mod_rows.append(
+        {
+            "study": "All",
+            "image_only": len(global_image - global_text),
+            "text_only": len(global_text - global_image),
+            "both": len(global_text & global_image),
         }
-        for col_idx, (field, _label) in enumerate(columns):
-            ha = "left" if col_idx in {0, 4} else "right"
-            x = left_edges[col_idx] if col_idx in {0, 4} else right_edges[col_idx]
-            ax.text(
-                x,
-                y,
-                values[field],
-                transform=ax.transAxes,
-                ha=ha,
-                va="center",
-                fontsize=7.5,
-                fontweight="bold" if is_overall else "normal",
-            )
+    )
+    pres_rows.append(
+        {
+            "study": "All",
+            "n_reported": sum(row["n_reported"] for row in pres_rows),
+            "n_in_deg": sum(row["n_in_deg"] for row in pres_rows),
+        }
+    )
+    modality = pd.DataFrame(mod_rows)
+    modality["n"] = modality[["image_only", "text_only", "both"]].sum(axis=1)
+    presence = pd.DataFrame(pres_rows)
+    presence["fraction_in_deg"] = presence["n_in_deg"] / presence["n_reported"]
+    modality.to_csv(RESULTS_DIR / "fig2_modality.tsv", sep="\t", index=False)
+    presence.to_csv(RESULTS_DIR / "fig2_deg_presence.tsv", sep="\t", index=False)
+    return modality, presence
+
+
+def plot_modality_presence_panel(ax: plt.Axes, modality: pd.DataFrame, presence: pd.DataFrame) -> None:
+    ypos = np.arange(len(modality))
+    for i, (mod_row, pres_row) in enumerate(zip(modality.itertuples(index=False), presence.itertuples(index=False))):
+        n = mod_row.image_only + mod_row.text_only + mod_row.both
+        fractions = [mod_row.image_only / n, mod_row.text_only / n, mod_row.both / n]
+        left = 0.0
+        for fraction, color in zip(fractions, [SOURCE_COLORS["image"], SOURCE_COLORS["text"], BOTH_COLOR]):
+            ax.barh(i, -fraction, left=-left, height=0.62, facecolor=color, edgecolor="black", linewidth=0.55)
+            left += fraction
+        ax.barh(i, pres_row.fraction_in_deg, height=0.62, facecolor=PRESENCE_COLOR, edgecolor="black", linewidth=0.55)
+
+    ax.axvline(0, color="black", linewidth=0.8)
+    ax.set_yticks(ypos)
+    ax.set_yticklabels(
+        [f"{row.study} (n={row.n:,})" for row in modality.itertuples(index=False)], fontsize=7.2
+    )
+    ax.tick_params(axis="y", length=0)
+    ax.invert_yaxis()
+    ax.set_xlim(-1.0, 1.0)
+    ax.set_xticks([-1, -0.5, 0, 0.5, 1])
+    ax.set_xticklabels(["1.0", "0.5", "0", "0.5", "1.0"], fontsize=7.2)
+    ax.spines["left"].set_visible(False)
+    ax.text(-0.5, -0.13, "Fraction of reported markers\nby source",
+            transform=ax.get_xaxis_transform(), ha="center", va="top", fontsize=7.6)
+    ax.text(0.5, -0.13, "Fraction of reported markers\nin DE tables",
+            transform=ax.get_xaxis_transform(), ha="center", va="top", fontsize=7.6)
+    handles = [
+        plt.Rectangle((0, 0), 1, 1, facecolor=color, edgecolor="black", linewidth=0.55)
+        for color in [SOURCE_COLORS["image"], SOURCE_COLORS["text"], BOTH_COLOR]
+    ]
+    ax.legend(handles, ["Figure only", "Text only", "Both"], frameon=False, fontsize=6.6,
+              loc="upper center", bbox_to_anchor=(0.28, 1.14), ncol=3, columnspacing=0.8, handlelength=1.1)
 
 
 def plot_cutoff_panel(ax: plt.Axes, cutoffs: pd.DataFrame) -> None:
@@ -417,20 +541,20 @@ def plot_cutoff_panel(ax: plt.Axes, cutoffs: pd.DataFrame) -> None:
     ax.set_ylim(0, 1.0)
 
     label_offsets = {
-        ("Emont", "image"): (4, 0.010),
-        ("Emont", "text"): (4, -0.030),
-        ("Hildreth", "image"): (4, 0.018),
-        ("Hildreth", "text"): (4, -0.028),
-        ("He", "image"): (4, -0.030),
-        ("He", "text"): (4, 0.018),
-        ("Gautam", "image"): (4, 0.015),
-        ("Gautam", "text"): (4, -0.030),
-        ("Adams", "image"): (4, 0.015),
-        ("Adams", "text"): (-31, -0.030),
-        ("Wagner", "image"): (4, -0.030),
-        ("Wagner", "text"): (4, 0.015),
-        ("Shamis", "image"): (4, 0.015),
-        ("Shamis", "text"): (-32, -0.030),
+        ("Emont", "image"): (5, 4),
+        ("Emont", "text"): (5, -8),
+        ("Hildreth", "image"): (5, 4),
+        ("Hildreth", "text"): (5, 7),
+        ("He", "image"): (-6, -8),
+        ("He", "text"): (5, 4),
+        ("Gautam", "image"): (5, 4),
+        ("Gautam", "text"): (-6, -8),
+        ("Adams", "image"): (5, 4),
+        ("Adams", "text"): (-6, -8),
+        ("Wagner", "image"): (5, -10),
+        ("Wagner", "text"): (-6, 7),
+        ("Shamis", "image"): (-6, -10),
+        ("Shamis", "text"): (5, -4),
     }
     for _, row in cutoffs.iterrows():
         ax.scatter(
@@ -454,7 +578,7 @@ def plot_cutoff_panel(ax: plt.Axes, cutoffs: pd.DataFrame) -> None:
         )
 
     for source_type, color in SOURCE_COLORS.items():
-        ax.scatter([], [], s=36, color=color, edgecolor="black", linewidth=0.45, label=source_type.title())
+        ax.scatter([], [], s=36, color=color, edgecolor="black", linewidth=0.45, label=SOURCE_DISPLAY[source_type])
     ax.set_xlabel("Optimal number of DEGs")
     ax.set_ylabel("F-score at optimum")
     ax.legend(frameon=False, loc="upper right", handletextpad=0.4)
@@ -462,46 +586,48 @@ def plot_cutoff_panel(ax: plt.Axes, cutoffs: pd.DataFrame) -> None:
 
 def plot_llm_panel(ax: plt.Axes, results: pd.DataFrame) -> None:
     x_positions = np.arange(len(METHODS))
-    jitter = np.linspace(-0.10, 0.10, len(DATASETS))
+    jitter = np.linspace(-0.13, 0.13, len(DATASETS))
     for method_idx, (col, label, color) in enumerate(METHODS):
         values = results[col].to_numpy()
+        ax.bar(
+            x_positions[method_idx],
+            values.mean(),
+            width=0.58,
+            facecolor=color,
+            alpha=0.45,
+            edgecolor="black",
+            linewidth=0.7,
+            zorder=2,
+        )
         ax.scatter(
             np.full(len(values), method_idx) + jitter,
             values,
-            s=34,
+            s=26,
             color=color,
             edgecolor="black",
-            linewidth=0.45,
+            linewidth=0.5,
             zorder=3,
         )
-        mean_value = values.mean()
-        ax.plot(
-            [method_idx - 0.22, method_idx + 0.22],
-            [mean_value, mean_value],
-            color="black",
-            linewidth=1.4,
-            zorder=4,
-        )
-        ax.text(
-            method_idx,
-            mean_value + 0.035,
-            f"{mean_value:.2f}",
-            ha="center",
-            va="bottom",
-            fontsize=7.5,
-            zorder=5,
-            bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.4},
-        )
 
-    for row_idx, row in results.iterrows():
-        ax.plot(
-            [2 + jitter[row_idx], 3 + jitter[row_idx]],
-            [row["joint_pair_f1"], row["joint_triple_f1"]],
-            color="#9A9A9A",
-            linewidth=0.7,
-            alpha=0.8,
-            zorder=1,
-        )
+    # best achievable selection F1 if the model chose perfectly from the DEG list
+    ax.scatter(
+        1 + jitter,
+        results["sel_bound_f1"],
+        s=24,
+        facecolor="white",
+        edgecolor="#39618C",
+        linewidth=1.0,
+        zorder=3,
+    )
+    ax.hlines(
+        results["sel_bound_f1"].mean(),
+        1 - 0.29,
+        1 + 0.29,
+        color="#39618C",
+        linewidth=1.2,
+        linestyle=(0, (3, 2)),
+        zorder=4,
+    )
 
     ax.set_xticks(x_positions)
     ax.set_xticklabels([label for _, label, _ in METHODS])
@@ -536,24 +662,19 @@ def main() -> None:
             "axes.spines.right": False,
         }
     )
-    summary = build_benchmark_summary()
+    build_benchmark_summary()
+    modality, presence = build_modality_presence()
+    ranks_df = build_rank_recovery()
     cutoffs = build_cutoff_results()
     llm_results = build_llm_results()
 
     save_single_panel(
         PANEL_A_PATH,
         PANEL_A_PNG_PATH,
-        lambda ax: plot_summary_table(ax, summary),
-        figsize=(4.1, 3.35),
-        adjust={"left": 0.02, "right": 0.98, "bottom": 0.08, "top": 0.95},
+        lambda ax: plot_modality_presence_panel(ax, modality, presence),
+        figsize=(4.6, 3.35),
     )
-    save_single_panel(
-        PANEL_B_PATH,
-        PANEL_B_PNG_PATH,
-        lambda ax: plot_cutoff_panel(ax, cutoffs),
-        figsize=(3.9, 3.35),
-        adjust={"left": 0.17, "right": 0.98, "bottom": 0.22, "top": 0.94},
-    )
+    save_rank_recovery_panel(ranks_df)
     save_single_panel(
         PANEL_C_PATH,
         PANEL_C_PNG_PATH,

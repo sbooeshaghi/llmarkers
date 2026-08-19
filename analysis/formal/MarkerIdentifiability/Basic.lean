@@ -3324,6 +3324,52 @@ theorem local_family_marker_not_global_family_marker :
 
 end ContrastComparisonExample
 
+namespace PooledBackgroundExample
+
+inductive Study where
+  | s
+deriving DecidableEq, Fintype
+
+inductive Partition where
+  | immune
+deriving DecidableEq, Fintype
+
+inductive Group where
+  | tcell
+  | bcell
+  | cd4t
+deriving DecidableEq, Fintype
+
+inductive MarkerGene where
+  | trac
+deriving DecidableEq, Fintype
+
+def μ : LocalMeanProfile Study Partition Group MarkerGene
+  | Study.s, Partition.immune, Group.tcell, MarkerGene.trac => 10
+  | Study.s, Partition.immune, Group.bcell, MarkerGene.trac => 0
+  | Study.s, Partition.immune, Group.cd4t, MarkerGene.trac => 8
+
+/--
+A pooled one-vs-background test can pass while one pairwise comparison fails.
+With target mean 10, background means 0 and 8, and threshold 5, the
+equal-weight pooled contrast is `10 - (0 + 8)/2 = 6 > 5`, yet the pairwise
+contrast against the second group is `10 - 8 = 2 < 5`. Pooled one-vs-rest
+statistics and the conjunction of pairwise comparisons are therefore not
+equivalent marker definitions.
+-/
+theorem pooled_background_passes_while_pairwise_fails :
+    BackgroundContrastMarker μ 5 Study.s Partition.immune Group.tcell
+        ({Group.bcell, Group.cd4t} : Finset Group) (fun _ => (1 : ℝ) / 2)
+        MarkerGene.trac ∧
+      ¬ PairwiseContrastMarker μ 5 Study.s Partition.immune Group.tcell
+        Group.cd4t MarkerGene.trac := by
+  constructor
+  · norm_num [BackgroundContrastMarker, LocalBackgroundContrast, μ,
+      Finset.sum_pair (by decide : Group.bcell ≠ Group.cd4t)]
+  · norm_num [PairwiseContrastMarker, LocalPairwiseContrast, μ]
+
+end PooledBackgroundExample
+
 /-!
 ## Adding a comparison cell type can change marker status
 

@@ -167,6 +167,16 @@ in the available corpus, not necessarily "not expressed."
    global marker statement. Thus a machine-readable marker report needs the
    target, comparison group, and pairwise result, not only `(label, gene)`.
 
+24. **Pooled one-vs-background is not pairwise.** A pooled one-vs-background
+   contrast can clear a threshold while one pairwise comparison fails, because
+   pooling averages the background. Witness:
+   `PooledBackgroundExample.pooled_background_passes_while_pairwise_fails`
+   (target mean 10, background means 0 and 8, threshold 5: pooled contrast 6
+   passes, pairwise contrast 2 fails). Together with
+   `localBackgroundContrast_eq_weighted_pairwise`, this shows pooled
+   one-vs-rest statistics and the conjunction of pairwise comparisons are not
+   equivalent marker definitions.
+
 ## Claims We Can Make With LLMarkers
 
 These are empirical claims supported by applying the formal definitions to the

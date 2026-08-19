@@ -1,0 +1,21 @@
+metric	value
+myeloid_file	cap_1440_liver_myeloid.h5ad
+all_cells_file	cap_1437_liver_all_cells.h5ad
+n_cells_myeloid	40821
+n_cells_all	167598
+n_distinct_labels_myeloid	10
+n_distinct_labels_all	17
+n_barcodes_shared	40821
+n_myeloid_barcodes_missing_from_all	0
+n_myeloid_cells_with_mapped_label_in_all	34196
+fraction_mapped_label_agreement	0.8377
+fraction_mapped_label_agreement__Mac1	0.3308
+fraction_mapped_label_agreement__immature LAMs	0.0171
+fraction_mapped_label_agreement__mature LAMs	0.565
+fraction_mapped_label_agreement__Pre-moKCs and moKCs	0.9856
+fraction_mapped_label_agreement__ResKCs	0.9983
+fraction_mapped_label_agreement__Mono	0.8756
+fraction_mapped_label_agreement__Pat Mono	0.9999
+fraction_mapped_label_agreement__cDC1s	0.9841
+fraction_mapped_label_agreement__cDC2s	0.564
+fraction_mapped_label_agreement__Mig cDCs	0.7391

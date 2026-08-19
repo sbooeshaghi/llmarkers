@@ -1,10 +1,13 @@
 \begin{figure*}[ht!]
   \centering
-  \input{tex-figures/fig4_cap_partition_body}
-  \caption{\textbf{Marker recovery changes when the comparison groups change.} The same liver myeloid cells were analyzed in a local myeloid partition and a broader all-cell liver partition. \textbf{A}. Fraction of reported markers recovered among the top 100 one-vs-rest DEGs. Whiskers are 95\% intervals from 50 cell-type-stratified subsampling replicates. \textbf{B}. Jaccard similarity between the top 100 local and all-cell DEG rankings. \textbf{C}. Maximum F1 for recovering reported markers from each ranking. All panels show the ten labels from the local myeloid analysis.}
-  \label{fig:cap_partition}%
+  \includegraphics[width=\textwidth]{fig4_cap_partition_v2.pdf}
+  \caption{\textbf{Marker recovery changes when the comparison groups change.} The same liver myeloid cells were analyzed in a myeloid analysis and an all-cell liver analysis. \textbf{A}. For each myeloid cell type, the Jaccard similarity between the top 100 DEGs of the two analyses (left) and the fraction of reported markers recovered in the top 100 DEGs of each analysis (right). Whiskers are 95\% intervals from 50 cell-type-stratified subsampling replicates and can exclude the observed value. \textbf{B}. Mean recovery for the myeloid analysis and for the all-cell analysis with target groups defined by the study's labels or by the exact myeloid barcodes. Bars are means across the ten cell types and points are cell types. Per-cell-type values shift between the two all-cell definitions, but the means agree.}
+ \label{fig:cap_partition}%
   \claim{fig-cap-partition}{}%
-  \source{analysis/build_cap_liver_local_global_deg.py}%
+  \source{analysis/build_fig4_cap_partition.py}%
+ \source{analysis/build_cap_liver_local_global_deg.py}%
+ \source{analysis/artifacts/cap_liver_barcode_constant_recovery.tsv}%
+ \source{analysis/build_cap_liver_barcode_constant_deg.py}%
   \source{analysis/artifacts/cap_liver_local_global_deg_summary.tsv}%
   \source{analysis/artifacts/cap_liver_local_global_recovery_subsampling_summary.tsv}%
 \end{figure*}

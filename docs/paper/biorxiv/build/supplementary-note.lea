@@ -2,14 +2,14 @@
   "schema": "span/1",
   "generated_by": "manual",
   "summary": {
-    "paper_objects": 16,
+    "paper_objects": 17,
     "lean_nodes": 70,
-    "entries": 16,
-    "coherent": 16,
+    "entries": 17,
+    "coherent": 17,
     "paper_half": 0,
     "lean_half": 0,
     "incoherent": 0,
-    "fully_formalized_matches": 16
+    "fully_formalized_matches": 17
   },
   "kind_compat": "Curated alignment between the supplementary marker-gene note and analysis/formal/MarkerIdentifiability/Basic.lean.",
   "entries": [
@@ -46,6 +46,33 @@
         "MarkerIdentifiability.markerFamilyAxioms_mem_iff_all_pairwise",
         "MarkerIdentifiability.markerFamilyAxioms_eq_iInter_pairwise",
         "MarkerIdentifiability.markerFamilyAxioms_unique"
+      ],
+      "status": "proved",
+      "fully_formalized": true,
+      "span_status": "coherent"
+    },
+    {
+      "id": "align:marker-panel-hitting-set",
+      "kind": "definition",
+      "title": "Marker panels are hitting sets over the comparisons",
+      "paper_ids": [
+        "def:marker-panel-hitting-set"
+      ],
+      "lean_ids": [
+        "MarkerIdentifiability.HitsPairwiseMarkerSets",
+        "MarkerIdentifiability.MarkerPanelAxioms",
+        "MarkerIdentifiability.markerPanelAxioms_iff_hitsPairwiseMarkerSets",
+        "MarkerIdentifiability.markerPanelAxioms_unique",
+        "MarkerIdentifiability.ContrastFamilyMarkerPanel",
+        "MarkerIdentifiability.contrastFamilyMarkerPanel_iff_hitsPairwiseMarkerSets"
+      ],
+      "lean_decls": [
+        "MarkerIdentifiability.HitsPairwiseMarkerSets",
+        "MarkerIdentifiability.MarkerPanelAxioms",
+        "MarkerIdentifiability.markerPanelAxioms_iff_hitsPairwiseMarkerSets",
+        "MarkerIdentifiability.markerPanelAxioms_unique",
+        "MarkerIdentifiability.ContrastFamilyMarkerPanel",
+        "MarkerIdentifiability.contrastFamilyMarkerPanel_iff_hitsPairwiseMarkerSets"
       ],
       "status": "proved",
       "fully_formalized": true,
@@ -225,11 +252,13 @@
       ],
       "lean_ids": [
         "MarkerIdentifiability.LocalBackgroundContrast",
-        "MarkerIdentifiability.localBackgroundContrast_eq_weighted_pairwise"
+        "MarkerIdentifiability.localBackgroundContrast_eq_weighted_pairwise",
+        "MarkerIdentifiability.PooledBackgroundExample.pooled_background_passes_while_pairwise_fails"
       ],
       "lean_decls": [
         "MarkerIdentifiability.LocalBackgroundContrast",
-        "MarkerIdentifiability.localBackgroundContrast_eq_weighted_pairwise"
+        "MarkerIdentifiability.localBackgroundContrast_eq_weighted_pairwise",
+        "MarkerIdentifiability.PooledBackgroundExample.pooled_background_passes_while_pairwise_fails"
       ],
       "status": "proved",
       "fully_formalized": true,

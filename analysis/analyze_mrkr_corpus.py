@@ -17,7 +17,6 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -1301,149 +1300,6 @@ def write_frame(frame: pd.DataFrame, path: Path) -> None:
     frame.to_csv(path, sep="\t", index=False, na_rep="")
 
 
-def make_figure(
-    identifier_matched_summary: pd.DataFrame,
-    identifier_pairs: pd.DataFrame,
-    same_pairs: pd.DataFrame,
-    context_metrics: dict[str, float],
-    context_fit: pd.DataFrame,
-    accumulation: pd.DataFrame,
-    output_dir: Path,
-) -> None:
-    fig, axes = plt.subplots(
-        1,
-        3,
-        figsize=(12.2, 3.5),
-        gridspec_kw={"width_ratios": [1.35, 1, 1]},
-    )
-
-    order = [
-        "same_label_same_identifier",
-        "same_label_no_accepted_identifier",
-        "same_identifier_different_label",
-        "different_identifier_matched_control",
-    ]
-    panel_a = (
-        identifier_matched_summary[
-            identifier_matched_summary.metric == "any_shared_marker"
-        ]
-        .set_index("comparison")
-        .loc[order]
-    )
-    estimates = panel_a.estimate.to_numpy()
-    lowers = panel_a.uncertainty_95_lower.to_numpy()
-    uppers = panel_a.uncertainty_95_upper.to_numpy()
-    errors = np.vstack(
-        [
-            estimates - lowers,
-            uppers - estimates,
-        ]
-    )
-    axes[0].bar(
-        range(4),
-        estimates,
-        yerr=errors,
-        facecolor="white",
-        edgecolor="black",
-        linewidth=1.1,
-        width=0.68,
-        capsize=3,
-        error_kw={"ecolor": "black", "elinewidth": 1.1},
-    )
-    axes[0].set_xticks(
-        range(4),
-        [
-            f"Same label,\nsame ID\n(n={int(panel_a.iloc[0].available_pairs):,})",
-            f"Same label,\nno accepted ID\n(n={int(panel_a.iloc[1].available_pairs):,})",
-            f"Different labels,\nsame ID\n(n={len(identifier_pairs):,})",
-            "Different IDs,\nmatched control",
-        ],
-    )
-    axes[0].tick_params(axis="x", labelsize=7)
-    axes[0].set_ylim(0, 1)
-    axes[0].set_ylabel("Pairs sharing at least one marker")
-    axes[0].set_title("A", loc="left", fontweight="bold")
-
-    context_plot = same_pairs.dropna(subset=["context_jaccard", "marker_jaccard"])
-    axes[1].scatter(
-        context_plot.context_jaccard,
-        context_plot.marker_jaccard,
-        s=9,
-        facecolors="white",
-        edgecolors="black",
-        alpha=0.15,
-        linewidths=0.35,
-        rasterized=True,
-    )
-    axes[1].fill_between(
-        context_fit.context_jaccard,
-        context_fit.label_cluster_bootstrap_95_lower,
-        context_fit.label_cluster_bootstrap_95_upper,
-        color="#C62828",
-        alpha=0.16,
-        linewidth=0,
-    )
-    axes[1].plot(
-        context_fit.context_jaccard,
-        context_fit.fitted_marker_jaccard,
-        color="#C62828",
-        linewidth=2,
-    )
-    axes[1].text(
-        0.96,
-        0.94,
-        f"Pearson r = {context_metrics['pearson_r']:.3f}",
-        transform=axes[1].transAxes,
-        ha="right",
-        va="top",
-        fontsize=8,
-    )
-    axes[1].set_xlim(0, 1)
-    axes[1].set_ylim(0, 1)
-    axes[1].set_ylabel("Marker-panel Jaccard")
-    axes[1].set_xlabel("Co-reported-label Jaccard")
-    axes[1].set_title("B", loc="left", fontweight="bold")
-
-    axes[2].fill_between(
-        accumulation.papers_combined,
-        accumulation.uncertainty_95_lower,
-        accumulation.uncertainty_95_upper,
-        color="#00A598",
-        alpha=0.16,
-        linewidth=0,
-    )
-    axes[2].plot(
-        accumulation.papers_combined,
-        accumulation.estimate,
-        color="#00A598",
-        linewidth=2,
-    )
-    axes[2].scatter(
-        accumulation.papers_combined,
-        accumulation.estimate,
-        s=22,
-        facecolors="white",
-        edgecolors="black",
-        linewidths=0.7,
-        zorder=3,
-    )
-    axes[2].set_xlim(1, 10)
-    axes[2].set_ylim(0, 1)
-    axes[2].set_xticks(range(1, 11))
-    axes[2].set_xlabel("Papers combined per label")
-    axes[2].set_ylabel("Fraction of labels retaining a shared marker")
-    axes[2].set_title("C", loc="left", fontweight="bold")
-
-    for axis in axes:
-        axis.spines[["top", "right"]].set_visible(False)
-    fig.tight_layout()
-    fig.savefig(output_dir / "fig_mrkr_corpus_reuse_v1.pdf", bbox_inches="tight")
-    fig.savefig(
-        output_dir / "fig_mrkr_corpus_reuse_v1.png", dpi=220, bbox_inches="tight"
-    )
-    plt.close(fig)
-
-
 def write_report(
     output_dir: Path,
     summary: pd.DataFrame,
@@ -1783,15 +1639,6 @@ def run_analysis(
     write_frame(
         ontology_accumulation_draws,
         output_dir / "ontology_intersection_accumulation_bootstrap.tsv",
-    )
-    make_figure(
-        identifier_matched_summary,
-        identifier_pairs,
-        same_pairs,
-        context_metrics,
-        context_fit,
-        label_accumulation,
-        output_dir,
     )
     write_report(
         output_dir,

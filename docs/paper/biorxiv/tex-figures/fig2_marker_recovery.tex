@@ -1,11 +1,13 @@
 \begin{figure*}[ht!]
   \centering
   \input{tex-figures/fig2_marker_recovery_body}
-  \caption{\textbf{Reported markers are not fully recovered by DEG rank but can be extracted from source text.} \textbf{A}. Cell types, marker genes, cell type--gene pairs, and tissues represented in the seven-study \texttt{LLMarkers} benchmark. \textbf{B}. Optimal DEG cutoff and corresponding F1 for recovering markers reported in text or images. \textbf{C}. F1 for generation from cell type names, selection from ranked DEGs, and joint extraction from manuscript text and candidate DEG sources. Extraction was scored as exact cell type--gene pairs and as exact \texttt{data\_id}--cell type--gene triples. Each point represents one study; black bars show study means, and gray lines join extraction scores from the same study.}
+  \caption{\textbf{Reported markers are not fully recovered by DEG rank but can be extracted from papers.} \textbf{A}. For each study in the \texttt{LLMarkers} benchmark, the fraction of reported markers by source (left) and the fraction of reported markers present in that study's DE tables (right). \textbf{B}. Fraction of reported markers recovered among the top $N$ DEGs. Thin lines are studies, split by source; bold lines pool all studies; dots mark $N=50$ and $N=100$. The lower panel shows the mean F-score across studies at each cutoff, with each maximum marked. \textbf{C}. F-score for LLM curation tasks: marker generation from cell type names, selection from ranked DEGs, and extraction from manuscript text. Bars are means across studies and points are studies. Open circles show the F1 selection would reach if the model chose perfectly from each study's DEG list; the dashed line is their mean. All three tasks were scored against the markers reported in text (Methods).}
   \label{fig:marker_selection}%
   \label{fig:llm_curation}%
   \claim{fig-marker-selection}{}%
   \source{analysis/build_fig2_marker_recovery.py}%
+  \source{analysis/artifacts/fig2_modality.tsv}%
+  \source{analysis/artifacts/fig2_deg_presence.tsv}%
   \claim{fig-llm-curation}{}%
   \source{analysis/build_fig2_marker_recovery.py}%
   \source{analysis/artifacts/mrkr_benchmark_pilot_20260721/joint_deg_extraction_v1/joint_extraction_papers.tsv}%

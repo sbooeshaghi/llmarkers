@@ -3,8 +3,8 @@
 \resizebox{\textwidth}{!}{%
   \input{tex-figures/fig1_mrkr_overview_body}%
 }
-\caption{\textbf{\texttt{mrkr} converts reported marker statements into machine-readable \texttt{.onto} records.} The LLM extracts the source sentence and biological terms, then proposes normalized labels. Exact-string validation accepts \texttt{cDC1} and \texttt{DNGR-1} and rejects \texttt{cDC-1} and \texttt{DNGR1}, which do not occur in the source. Deterministic lookup maps normalized gene and cell type labels to Ensembl and Cell Ontology identifiers; the LLM does not assign identifiers. The \texttt{.onto} record retains the source sentence, normalized statement, source terms, and identifiers. Blue denotes the cell type, orange the marker gene, and teal the comparison group.}
-\label{fig:mrkr_overview}%
+\caption{\textbf{\texttt{mrkr} converts reported markers into machine-readable \texttt{.onto} records.} The LLM extracts the supporting sentence and the reported cell type and gene labels, then proposes normalized labels. Exact-string validation accepts \texttt{cDC1} and \texttt{DNGR-1} and rejects \texttt{cDC-1} and \texttt{DNGR1}, which do not occur in the paper. Deterministic lookup maps normalized labels to Ensembl and Cell Ontology identifiers; the LLM does not assign identifiers. The \texttt{.onto} record retains the supporting sentence, reported and normalized labels, and identifiers. Blue denotes the cell type, orange the marker gene, and teal the comparison group of cells.}
+  \label{fig:mrkr_overview}%
 \claim{fig-mrkr-overview}{}%
 \source{docs/paper/biorxiv/tex-figures/fig1_mrkr_overview_body.tex}%
 \source{README.md}%

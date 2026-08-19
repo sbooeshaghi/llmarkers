@@ -1,10 +1,13 @@
 \begin{figure*}[ht!]
   \centering
-  \includegraphics[width=\textwidth]{fig_mrkr_corpus_reuse_v1.pdf}
-  \caption{\textbf{Stable identifiers connect marker evidence across papers, but reported marker panels remain variable.} Each marker panel contains at least three mapped positive genes reported for one cell type in one paper. \textbf{A}. Fraction of cross-paper panel pairs sharing at least one marker for the same label and identifier, the same label without an accepted identifier, different labels with the same identifier, and a matched different-identifier control. Counts below the first three bars give the observed pairs. Identifier-only and control pairs were matched by corpus collection and panel size. Whiskers are 95\% intervals from 1{,}000 bootstrap or matched-sampling replicates. \textbf{B}. Marker-panel Jaccard versus co-reported-label Jaccard for 10{,}437 cross-paper pairs with the same normalized target label. The target was excluded from the co-reported-label calculation. The red line is an ordinary least-squares fit; the band is a 95\% interval from 1{,}000 bootstrap replicates that resampled target labels. \textbf{C}. Fraction of 37 normalized cell type labels retaining at least one shared marker as panels from additional papers are intersected. Points are means from 1{,}000 label-bootstrap and random-order replicates; the band spans the 2.5th--97.5th percentiles.}
+  \includegraphics[width=\textwidth]{fig3_corpus_reuse_v2.pdf}
+  \caption{\textbf{Stable identifiers connect markers across papers, but reported marker panels remain variable.} \textbf{A}. Fraction of reported marker genes and cell type labels mapped to stable identifiers. Cell type labels are split by canonical mapping versus synonym mapping. The illustration shows an example of cell type labels that map to one identifier. \textbf{B}. Fraction of marker gene panel pairs sharing at least one marker. A panel is the set of at least three mapped positive genes reported for one cell type in one paper. The white and gray bars use samples matched to the blue bar, with $n$ giving each pool size (Methods); whiskers are 95\% intervals. \textbf{C}. Marker-panel versus co-reported-label Jaccard for the 10{,}437 same-label panel pairs shaded by log density. The line and band are a least-squares fit with a 95\% bootstrap interval. \textbf{D}. Fraction of labels retaining a shared marker as panels are intersected across papers. The band spans the 2.5th--97.5th percentiles; the dashed line uses the 27 accepted Cell Ontology identifiers.}
   \label{fig:corpus_marker_reuse}%
   \claim{fig-corpus-marker-reuse}{}%
-  \source{analysis/analyze_mrkr_corpus.py}%
+  \source{analysis/build_fig3_corpus_reuse.py}%
+ \source{analysis/analyze_mrkr_corpus.py}%
+ \source{analysis/artifacts/mrkr_corpus_analysis_v1/term_coverage.tsv}%
+ \source{analysis/artifacts/mrkr_corpus_analysis_v1/cell_ontology_label_audit.tsv}%
   \source{analysis/artifacts/mrkr_corpus_analysis_v1/identifier_recovered_pairs.tsv}%
   \source{analysis/artifacts/mrkr_corpus_analysis_v1/identifier_recovered_matched_summary.tsv}%
   \source{analysis/artifacts/mrkr_corpus_analysis_v1/same_label_pairs.tsv}%

@@ -24,8 +24,8 @@
 \author[1,3,4]{Aaron Streets\textsuperscript{\textdagger}}
 \affil[1]{\small Department of Bioengineering, University of California Berkeley, Berkeley, CA, USA}
 \affil[2]{\small Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, Berkeley, CA, USA}
-\affil[3]{\small Department of Molecular and Cell Biology, University of California, Berkeley, CA, USA}
-\affil[4]{\small Center for Computational Biology, University of California, Berkeley, CA, USA}
+\affil[3]{\small Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA, USA}
+\affil[4]{\small Center for Computational Biology, University of California, Berkeley, Berkeley, CA, USA}
 \setlength{\affilsep}{2pt}
 \maketitle
 \footnotetext[2]{Co-corresponding authors: A.~Sina Booeshaghi (sinab@berkeley.edu), Allon Wagner (allonwag@berkeley.edu), and Aaron Streets (astreets@berkeley.edu).}
@@ -91,9 +91,9 @@ The no-rescue property is therefore a consequence, not an additional axiom. Addi
 The same axioms also define marker panels. A marker gene must work in every pairwise contrast, so marker genes are intersections of pairwise marker sets. A marker panel is weaker and more practical: it only requires that each pairwise contrast be covered by at least one selected gene.
 
 \begin{definition}[Marker panel]\label{def:marker-panel-hitting-set}
-Let $S\subseteq G$ be a finite set of selected genes. The panel $S$ is valid for target $t$ against comparison set $C$ when
+Let $P\subseteq G$ be a finite set of selected genes. The panel $P$ is valid for target $t$ against comparison set $C$ when
 \[
-  \forall h\in C,\qquad S\cap M(t,h)\neq\varnothing.
+  \forall h\in C,\qquad P\cap M(t,h)\neq\varnothing.
 \]
 Thus a marker panel is a hitting set over the pairwise marker sets $\{M(t,h):h\in C\}$.
 \end{definition}
@@ -108,7 +108,7 @@ Fix a study $s$ and a partition $p$ of the cells in that study. The partition ma
 \[
   M_{s,p}(t,h)\subseteq G
 \]
-for the pairwise marker set: the genes called as markers for $t$ against $h$ by the study's chosen differential-expression or marker-calling rule. At the contrast level, this can be implemented by, for example, a mean-expression profile $\mu$ and a threshold $\tau$:
+for the pairwise marker set: the genes called as markers for $t$ against $h$ by the study's chosen differential-expression or marker-calling rule. At the contrast level, this can be implemented by, for example, a mean-expression function $\mu$ and a threshold $\tau$:
 \[
   g\in M_{s,p}(t,h)
   \quad\Longleftrightarrow\quad
@@ -184,11 +184,11 @@ By definition, $M(I)$ is the intersection of the marker sets for the local insta
 
 Adding more local instances makes the definition stricter: if $I_{\mathrm{local}}\subseteq I_{\mathrm{global}}$, then $M(I_{\mathrm{global}})\subseteq M(I_{\mathrm{local}})$. Thus a marker that defines a cell type across many studies also works for any restricted subset of those studies, but a marker that works in one local instance need not define the cell type globally.
 
-The panel version is analogous. A marker-panel-supported cell type is a nonempty family of local instances $I$ together with a finite panel $S$ such that every local instance is covered:
+The panel version is analogous. A marker-panel-supported cell type is a nonempty family of local instances $I$ together with a finite panel $P$ such that every local instance is covered:
 \[
   \forall i=(s_i,p_i,t_i,C_i)\in I,\qquad
   \forall h\in C_i,\qquad
-  S\cap M_{s_i,p_i}(t_i,h)\neq\varnothing.
+  P\cap M_{s_i,p_i}(t_i,h)\neq\varnothing.
 \]
 This makes the cell type definition operational. A cell type is not only a name; it is a target group, observed in specified studies and partitions, that is identifiable from specified comparison groups by a marker gene or marker panel. The label can then be reused only to the extent that the underlying marker context is retained.
 
@@ -397,31 +397,31 @@ The panel should be experimentally usable. & Minimize panel size: the number of 
 \label{tab:marker-panel-selection-desiderata}
 \end{table}
 
-Let $P$ be the positive contexts that should be covered and let $N$ be the off-target contexts that should be avoided. For a panel $S$, define
+Let $C^{+}$ be the positive contexts that should be covered and let $C^{-}$ be the off-target contexts that should be avoided. For a panel $P$, define
 \[
-  \mathrm{coverage}(S)
+  \mathrm{coverage}(P)
   =
-  \left|\{c\in P:S\cap M(c)\neq\varnothing\}\right|
+  \left|\{c\in C^{+}:P\cap M(c)\neq\varnothing\}\right|
 \]
 and
 \[
-  \mathrm{offtarget}(S)
+  \mathrm{offtarget}(P)
   =
-  \left|\{c\in N:S\cap M(c)\neq\varnothing\}\right|.
+  \left|\{c\in C^{-}:P\cap M(c)\neq\varnothing\}\right|.
 \]
-The useful-panel problem is therefore multi-objective: increase coverage, decrease off-target hits, and decrease panel size $|S|$. A panel is Pareto-optimal when no other candidate panel has at least as much coverage, no more off-target hits, and no more genes, with one strict improvement. A single selected panel can be obtained only after adding a priority rule or tie-breaker, for example first maximizing coverage, then minimizing off-target hits, then minimizing size.
+The useful-panel problem is therefore multi-objective: increase coverage, decrease off-target hits, and decrease panel size $|P|$. A panel is Pareto-optimal when no other candidate panel has at least as much coverage, no more off-target hits, and no more genes, with one strict improvement. A single selected panel can be obtained only after adding a priority rule or tie-breaker, for example first maximizing coverage, then minimizing off-target hits, then minimizing size.
 
 The Lean formalization proves the monotonicity behind this tradeoff. Adding genes can only increase target coverage, but it can also only increase off-target hits. It also proves a diminishing-returns statement: adding the same gene to a larger panel covers no more new positive contexts than adding it to a smaller panel. Thus marker-panel construction is a finite hitting-set or set-cover optimization problem once the candidate genes, positive contexts, and off-target contexts are specified.
 
 \begin{proposition}[Binary marker-panel information bound]\label{prop:marker-panel-information-bound}
-If a panel $S$ separates all cell groups in a finite universe $K$, then
+If a panel $P$ separates all cell groups in a finite universe $K$, then
 \[
-  |K|\leq 2^{|S|}.
+  |K|\leq 2^{|P|}.
 \]
 \end{proposition}
 
 \begin{proof}
-A panel $S$ separates a set of cell groups when every distinct pair differs on at least one gene in $S$. Therefore the binary marker signatures on $S$ are injective, and there are only $2^{|S|}$ possible signatures.
+A panel $P$ separates a set of cell groups when every distinct pair differs on at least one gene in $P$. Therefore the binary marker signatures on $P$ are injective, and there are only $2^{|P|}$ possible signatures.
 \end{proof}
 
 The formalization also covers marker panels rather than single genes. It proves this information bound and includes a two-cell, two-gene example showing that minimum separating panels need not be unique. It therefore distinguishes essential genes, which occur in every minimum panel, from exchangeable genes, which occur in some but not all minimum panels.
