@@ -30,7 +30,7 @@
 \maketitle
 \footnotetext[2]{Co-corresponding authors: A.~Sina Booeshaghi (sinab@berkeley.edu), Allon Wagner (allonwag@berkeley.edu), and Aaron Streets (astreets@berkeley.edu).}
 
-Marker genes are often stored as cell type--gene pairs. That format is practical, but incomplete. In a single-cell experiment, a gene is called a marker because it distinguishes a target group from other groups in that experiment: sibling clusters, disease-specific subsets, a one-vs-rest background, or an atlas-level set of cell types. Changing those comparison groups can change whether the gene is a marker. This note formalizes that point, and related ones, with Lean. We assume that marker calls are binary, as is common when genes are selected for follow-up experiments and in marker-panel methods for cell isolation \citep{Delaney2019COMET,Tangherloni2023MAGNETO}, and that markers are evaluated through pairwise comparisons between cell groups, a standard differential-expression workflow \citep{Robinson_2009}. The structure is simple: biological desiderata imply marker axioms, the axioms force a definition of marker genes and marker panels, practical desiderata define how useful marker panels are selected, and these objects motivate a marker-supported definition of cell type. Dropping the binary assumption changes how marker genes are scored, ranked, or thresholded, but it does not change the requirement that a marker specify the target and comparison set.
+Marker genes are often stored as cell type--gene pairs. That format is practical, but incomplete. In a single-cell experiment, a gene is called a marker because it distinguishes a target group from other groups in that experiment: sibling clusters, disease-specific subsets, a one-vs-rest background, or an atlas-level set of cell types. Changing those comparison backgrounds can change whether the gene is a marker. This note formalizes that point, and related ones, with Lean. We assume that marker calls are binary, as is common when genes are selected for follow-up experiments and in marker-panel methods for cell isolation \citep{Delaney2019COMET,Tangherloni2023MAGNETO}, and that markers are evaluated through pairwise comparisons between cell groups, a standard differential-expression workflow \citep{Robinson_2009}. The structure is simple: biological desiderata imply marker axioms, the axioms force a definition of marker genes and marker panels, practical desiderata define how useful marker panels are selected, and these objects motivate a marker-supported definition of cell type. Dropping the binary assumption changes how marker genes are scored, ranked, or thresholded, but it does not change the requirement that a marker specify the target and comparison set.
 
 \section{Biological Desiderata and Marker Axioms}
 
@@ -45,7 +45,7 @@ Biological desideratum & Mathematical axiom \\
 \midrule
 A marker is meaningful only for a target group and the alternatives it must be distinguished from. & Marker validity is indexed by a target $t$ and comparison set $C$. \\
 If there are no alternatives, there is no distinguishing task. & Empty-set base case: every gene is in the marker set for $C=\varnothing$, and every panel is valid for $C=\varnothing$. \\
-For one alternative, the rule should agree with the ordinary pairwise marker call. & Pairwise agreement: for one comparison group $h$, the marker set is $M(t,h)$; a panel is valid if it contains at least one gene in $M(t,h)$. \\
+For one alternative, the rule should agree with the ordinary pairwise marker call. & Pairwise agreement: for one comparison background $h$, the marker set is $M(t,h)$; a panel is valid if it contains at least one gene in $M(t,h)$. \\
 To distinguish a target from many alternatives, the rule must work for each alternative. & Composition: validity over $C_1\cup C_2$ is validity over $C_1$ and over $C_2$. \\
 \bottomrule
 \end{tabular}
@@ -86,7 +86,7 @@ Equivalently,
 Build $C$ by adding one group at a time. The one-group axiom gives the marker set for one comparison, and the union axiom intersects this set with the marker set for the comparisons already added. The empty-set axiom supplies the base case. The Lean proof also shows uniqueness: any two marker rules satisfying these properties agree on every finite comparison set.
 \end{proof}
 
-The no-rescue property is therefore a consequence, not an additional axiom. Adding required comparison groups makes the marker rule stricter, not easier; it cannot rescue a gene that already failed one required pairwise contrast.
+The no-rescue property is therefore a consequence, not an additional axiom. Adding required comparison backgrounds makes the marker rule stricter, not easier; it cannot rescue a gene that already failed one required pairwise contrast.
 
 The same axioms also define marker panels. A marker gene must work in every pairwise contrast, so marker genes are intersections of pairwise marker sets. A marker panel is weaker and more practical: it only requires that each pairwise contrast be covered by at least one selected gene.
 
@@ -104,7 +104,7 @@ This framework begins after a study has chosen a measurement, a partition, and a
 
 \section{Marker Comparisons Define Cell Types and States}
 
-Fix a study $s$ and a partition $p$ of the cells in that study. The partition may be a clustering, a set of annotated cell types, disease strata, tissue compartments, or any other grouping used for marker analysis. Let $K_{s,p}$ be the finite set of groups in the partition, and let $G$ be the set of genes. For a target group $t\in K_{s,p}$ and a comparison group $h\in K_{s,p}$, write
+Fix a study $s$ and a partition $p$ of the cells in that study. The partition may be a clustering, a set of annotated cell types, disease strata, tissue compartments, or any other grouping used for marker analysis. Let $K_{s,p}$ be the finite set of groups in the partition, and let $G$ be the set of genes. For a target group $t\in K_{s,p}$ and a comparison background $h\in K_{s,p}$, write
 \[
   M_{s,p}(t,h)\subseteq G
 \]
@@ -145,7 +145,7 @@ By definition, $M_{s,p}(t;C)$ is the intersection of the pairwise marker sets $M
 This theorem is the marker-gene definition used in the paper. A marker gene is not a property of $(t,g)$ alone. It depends on $(s,p,t,C,g)$, where $C$ records the groups the target was compared against. The set $C$ can be broad, such as all observed atlas cell types; local, such as immune populations in blood; or task-specific, such as a set of biologically confusable neighbors. These are different marker definitions.
 
 \begin{corollary}[Pairwise reporting is reusable]\label{cor:pairwise-reporting-reusable}
-If a study reports $M_{s,p}(t,h)$ for each pairwise target--comparison contrast in a partition, then a later user can reconstruct $M_{s,p}(t;C)$ for any set $C$ of comparison groups contained in that partition by taking an intersection.
+If a study reports $M_{s,p}(t,h)$ for each pairwise target--comparison contrast in a partition, then a later user can reconstruct $M_{s,p}(t;C)$ for any set $C$ of comparison backgrounds contained in that partition by taking an intersection.
 \end{corollary}
 
 \begin{proof}
@@ -190,14 +190,14 @@ The panel version is analogous. A marker-panel-supported cell type is a nonempty
   \forall h\in C_i,\qquad
   P\cap M_{s_i,p_i}(t_i,h)\neq\varnothing.
 \]
-This makes the cell type definition operational. A cell type is not only a name; it is a target group, observed in specified studies and partitions, that is identifiable from specified comparison groups by a marker gene or marker panel. The label can then be reused only to the extent that the underlying marker context is retained.
+This makes the cell type definition operational. A cell type is not only a name; it is a target group, observed in specified studies and partitions, that is identifiable from specified comparison backgrounds by a marker gene or marker panel. The label can then be reused only to the extent that the underlying marker context is retained.
 
 \paragraph{Example.}
 A gene that marks monocytes in every blood, lung, and tumor myeloid comparison in a corpus is a marker for that cross-study monocyte definition. A gene that marks monocytes only in stimulated blood may still be a valid local marker, but it is not a marker for the broader definition unless it recurs across the other local instances.
 
 \section{Consequences of Comparison-Defined Markers}
 
-Once markers and cell types include their comparison sets, the main question is how they change when comparison groups are added or removed.
+Once markers and cell types include their comparison sets, the main question is how they change when comparison backgrounds are added or removed.
 
 \subsection{Local and Global Markers}
 
@@ -278,16 +278,16 @@ If $B$ is a background set and weights $w_h$ satisfy $\sum_{h\in B}w_h=1$, then
 Expand the right-hand side and distribute the weighted sum. The corresponding Lean proof states that any normalized one-vs-background contrast equals a weighted sum of pairwise contrasts.
 \end{proof}
 
-A one-vs-background mean contrast is therefore a weighted summary of pairwise mean contrasts. The same reasoning applies to $k$-vs-background mean contrasts after replacing the target mean by a weighted mean over the $k$ target groups. The singleton comparison sets and the full comparison set are the two ends of $\mathcal{P}(H)$, but a pooled one-vs-all statistic is not the intersection defined at the full-set end. In standard cell-level tests, the background is implicitly weighted by the number of cells in each non-target group, so abundant groups can dominate the contrast. Equal-weight backgrounds reduce this abundance effect, but they are still averages. They do not record whether the gene distinguished the target from each individual comparison group.
+A one-vs-background mean contrast is therefore a weighted summary of pairwise mean contrasts. The same reasoning applies to $k$-vs-background mean contrasts after replacing the target mean by a weighted mean over the $k$ target groups. The singleton comparison sets and the full comparison set are the two ends of $\mathcal{P}(H)$, but a pooled one-vs-all statistic is not the intersection defined at the full-set end. In standard cell-level tests, the background is implicitly weighted by the number of cells in each non-target group, so abundant groups can dominate the contrast. Equal-weight backgrounds reduce this abundance effect, but they are still averages. They do not record whether the gene distinguished the target from each individual comparison background.
 
 This decomposition is only for the mean or effect-size contrast. A pooled one-vs-all $t$-statistic is not generally a weighted sum of pairwise $t$-statistics, and it cannot generally be reconstructed from pairwise $t$-statistics, $p$-values, or binary marker calls alone. We return to this in the final section: pooled variance-aware tests can be recomputed only when the report preserves group-level sufficient statistics, such as means, variances, and sample sizes, together with the chosen test model.
 
 \paragraph{Example.}
-Suppose a gene has mean 10 in the target, mean 0 in an easy comparison group, and mean 9 in a hard comparison group. With threshold 5, it passes the easy pairwise contrast and fails the hard pairwise contrast. A one-vs-all average can still pass if the easy group dominates the background, or fail if the hard group dominates. The pairwise report preserves which distinction failed.
+Suppose a gene has mean 10 in the target, mean 0 in an easy comparison background, and mean 9 in a hard comparison background. With threshold 5, it passes the easy pairwise contrast and fails the hard pairwise contrast. A one-vs-all average can still pass if the easy group dominates the background, or fail if the hard group dominates. The pairwise report preserves which distinction failed.
 
 \subsection{Aggregation Across Studies}
 
-Aggregation first requires a consistent identity for each target and comparison group. Stable database identifiers, or validated mappings to them, provide the equality relation needed to decide whether two studies refer to the same group. They are therefore necessary for computing pair coverage across papers. They are not sufficient for marker validity: assigning the same identifier to two reported groups does not show that either study tested the marker against the same alternatives. Stable identifiers make comparison evidence joinable; the observed pairwise comparisons determine what the joined evidence supports.
+Aggregation first requires a consistent identity for each target and comparison background. Stable database identifiers, or validated mappings to them, provide the equality relation needed to decide whether two studies refer to the same group. They are therefore necessary for computing pair coverage across papers. They are not sufficient for marker validity: assigning the same identifier to two reported groups does not show that either study tested the marker against the same alternatives. Stable identifiers make comparison evidence joinable; the observed pairwise comparisons determine what the joined evidence supports.
 
 \begin{proposition}[Pair coverage supports aggregation]\label{prop:pair-coverage-aggregation}
 Suppose a collection of local experiments covers every required pairwise comparison in a global comparison set, and suppose the same marker panel separates each covered local experiment. Then the marker panel separates the global set.
@@ -433,7 +433,7 @@ Three binary marker genes can encode at most eight distinct marker signatures. I
 
 \section{Dropping the Binary Marker Assumption}
 
-The binary assumption in this note is an assumption about the reported marker call, not about gene expression or differential expression itself. In practice, a pairwise comparison often produces a real-valued statistic: an effect size, test statistic, posterior probability, stability score, or calibrated marker score. For a fixed target, write $q(h,g)$ for the score of gene $g$ against comparison group $h$. This score can include variance, uncertainty, or stability. The formal result only requires that the score be evaluated for each pairwise comparison before thresholding. A binary marker call is then obtained by a decision rule, for example by choosing a threshold $\tau$ and declaring
+The binary assumption in this note is an assumption about the reported marker call, not about gene expression or differential expression itself. In practice, a pairwise comparison often produces a real-valued statistic: an effect size, test statistic, posterior probability, stability score, or calibrated marker score. For a fixed target, write $q(h,g)$ for the score of gene $g$ against comparison background $h$. This score can include variance, uncertainty, or stability. The formal result only requires that the score be evaluated for each pairwise comparison before thresholding. A binary marker call is then obtained by a decision rule, for example by choosing a threshold $\tau$ and declaring
 \[
   M_{\tau}(t,h)=\{g\in G:q(h,g)\geq \tau\}.
 \]
@@ -483,7 +483,7 @@ Thus dropping the binary assumption changes the statistical layer: it changes ho
 
 \section{Conclusion}
 
-The definition of a marker gene is a gene that distinguishes a target group from every group in a specified comparison set. The definition of a marker panel is the corresponding hitting set over pairwise marker contrasts. Finding an effective panel is then an optimization problem over coverage, off-target hits, and panel size. Together, these statements motivate a marker-supported definition of cell type: a cell type is a target group, observed in specified studies and partitions, that is identifiable from specified comparison groups by a marker gene or marker panel. This is why pairwise marker context should be retained for each partition in a single-cell study. Pairwise marker calls can be recombined for any comparison set contained in the reported partition, but they cannot create contrasts against groups that were not observed. Across studies, stable identifiers make overlapping target--comparison evidence joinable, while pair coverage determines which broader marker sets the combined evidence supports. If future users need pooled statistical tests, the report should also retain sufficient summaries such as means, variances, and sample sizes. One-vs-all lists and flat cell type--gene tables generally cannot support either reuse case on their own.
+The definition of a marker gene is a gene that distinguishes a target group from every group in a specified comparison set. The definition of a marker panel is the corresponding hitting set over pairwise marker contrasts. Finding an effective panel is then an optimization problem over coverage, off-target hits, and panel size. Together, these statements motivate a marker-supported definition of cell type: a cell type is a target group, observed in specified studies and partitions, that is identifiable from specified comparison backgrounds by a marker gene or marker panel. This is why pairwise marker context should be retained for each partition in a single-cell study. Pairwise marker calls can be recombined for any comparison set contained in the reported partition, but they cannot create contrasts against groups that were not observed. Across studies, stable identifiers make overlapping target--comparison evidence joinable, while pair coverage determines which broader marker sets the combined evidence supports. If future users need pooled statistical tests, the report should also retain sufficient summaries such as means, variances, and sample sizes. One-vs-all lists and flat cell type--gene tables generally cannot support either reuse case on their own.
 
 \newpage
 \bibliographystyle{unsrtnat}
